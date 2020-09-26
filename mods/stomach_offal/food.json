@@ -1,0 +1,170 @@
+[
+  {
+    "id": "bag_stomach_vac",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "Vacuum pack (stomach)",
+    "name_plural": "Vacuum packs (stomach)",
+    "description": "A vacuum pack of plastic packaging containing the stomach. It can be opened and taken out. For the time being only packing, parasites may remain.",
+    "weight": 240,
+    "volume": 1,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "red",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "stomach",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_stomach_large_vac",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "Vacuum pack (big stomach)",
+    "name_plural": "Vacuum packs (big stomach)",
+    "description": "A vacuum pack of plastic packaging with a large stomach. It can be opened and taken out. For the time being only packing, parasites may remain.",
+    "weight": 240,
+    "volume": 1,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "red",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "stomach_large",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_offal_vac",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "Vacuum pack (offal)",
+    "name_plural": "Vacuum packs (offal)",
+    "description": "Vacuum pack of plastic packaging containing offal. It can be opened and taken out. For the time being only packing, parasites may remain.",
+    "weight": 240,
+    "volume": 1,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "red",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "offal",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_hstomach_vac",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "Vacuum pack (human stomach)",
+    "name_plural": "Vacuum packs (human stomach)",
+    "description": "A vacuum pack of plastic packaging containing human stomach. I can open and take it out. For the time being only packing, parasite may remain",
+    "weight": 240,
+    "volume": 1,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "red",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "hstomach",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_human_vac",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "Vacuum pack (human corpse)",
+    "name_plural": "Vacuum packs (human corpse)",
+    "description": "A vacuum pack of plastic packaging containing human corpses. I can open it and take it out.",
+    "weight": 81500,
+    "volume": 240,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "white",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "corpse",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_frozen_burrito",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "Burrito (vacuum packed)",
+    "name_plural": "Burritos (vacuum packed)",
+    "description": "It is a burrito that enables long-term storage by vacuum packaging. It can be taken out by opening it.",
+    "weight": 140,
+    "volume": 1,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "white",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "junk_burrito",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_frozen_dinner",
+    "type": "GENERIC",
+    "category": "food",
+    "name": "TV dinner (vacuum packed)",
+    "name_plural": "TV dinners (vacuum packed)",
+    "description": "It is a TV dinner that enables long-term storage by vacuum packaging. It can be taken out by opening it.",
+    "weight": 450,
+    "volume": 5,
+    "price": 450,
+    "bashing": 1,
+    "material": [ "plastic", "flesh" ],
+    "symbol": "%",
+    "color": "white",
+    "use_action": {
+      "menu_text": "Open",
+      "target": "frozen_dinner",
+      "msg": "You open the vacuum pack, exposing it to the atmosphere.",
+      "container": "bag_plastic",
+      "type": "transform"
+    }
+  },
+  {
+    "id": "bag_plastic_sealed",
+    "copy-from": "bag_plastic",
+    "type": "CONTAINER",
+    "category": "other",
+    "name": "Plastic bag (vacuum packaging)",
+    "name_plural": "Plastic bags (vacuum packaging)",
+    "description": "A small, open plastic bag.  Essentially trash.",
+    "symbol": ")",
+    "color": "light_gray",
+    "seals": false,
+    "preserves": true,
+    "unseals_into": "bag_plastic"
+  }
+]

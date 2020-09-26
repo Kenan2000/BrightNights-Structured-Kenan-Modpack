@@ -1,0 +1,57 @@
+[
+  {
+    "type": "mutation",
+    "id": "IRONJAW",
+    "name": "Head iron",
+    "points": 2,
+    "description": "The head made of bronze is the amount of iron.\r\n+5 head defense.\r\nUnlock Skill: Head Hammer",
+    "starting_trait": true,
+    "social_modifiers": { "intimidate": 2 },
+	"armor": [ { "parts": "HEAD", "cut": 5, "bash": 5 } ],
+    "cancels": [ "GLASSJAW" ],
+	"attacks": {
+      "attack_text_u": "You hit a mallet at% s",
+      "attack_text_npc": "% 1 $ s hits a hammer against% 2 $ s",
+      "body_part": "HEAD",
+      "chance": 25,
+      "strength_damage": { "damage_type": "bash", "amount": 4 }
+    }
+  },
+  {
+    "type": "mutation",
+    "id": "GLASSJAW",
+	"copy-from": "GLASSJAW",
+    "name": "Glass Jaw",
+    "cancels": [ "TOUGH","IRONJAW" ]
+  },
+  {
+    "id": "HAIR_BALD",
+	"copy-from": "HAIR_BALD",
+    "type": "mutation",
+    "name": "Shiny bald",
+	"player_display": true,
+    "description": "The less hair, the more powerful.\r\nHead Defense +8.\r\nUnlock Skills: Head Hammer, Broken Offspring Legs, Slap in the Face",
+    "social_modifiers": { "intimidate": -5 },
+	"armor": [ { "parts": "HEAD", "cut": 8, "bash": 8 } ],
+	"attacks": [
+	{
+      "attack_text_u": "*Punch * you made a hammer to% s!",
+      "attack_text_npc": "* Touch *% 1 $ s hit a hammer against% 2 $ s!",
+      "chance": 25,
+      "strength_damage": { "damage_type": "bash", "amount": 3 }
+    },
+	{
+      "attack_text_u": "*Puff*You kicked hard against% s crotch!\r\n*Ah!!!*\r\n",
+      "attack_text_npc": "*Puff*% 1 $ s kicked the crotch fiercely against% 2 $ s!",
+      "chance": 10,
+      "strength_damage": { "damage_type": "bash", "amount": 7 }
+    },
+	{
+      "attack_text_u": "* Slap * You slap your head on s' face fiercely!",
+      "attack_text_npc": "*Slap *% 1 $ s slaps a slap in the face of% 2 $ ss!",
+      "chance": 20,
+      "strength_damage": { "damage_type": "bash", "amount": 2 }
+    }
+	]
+  }
+]

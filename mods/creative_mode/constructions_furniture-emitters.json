@@ -1,0 +1,24 @@
+[
+	{
+	    "type": "construction",
+	    "id": "constr_debug_f_swamp_gas",
+	    "description": "Make [f_swamp_gas]",
+	    "category": "furniture-emitters",
+	    "required_skills": [  [ "fabrication", 0 ] ],
+	    "time": "0 m",
+	    "pre_note": "This is a creative mode thingie that lets you make [f_swamp_gas]",
+	    "pre_special": "check_empty",
+	    "post_terrain": "f_swamp_gas"
+  	},
+	{
+	    "type": "construction",
+	    "id": "constr_debug_f_fog",
+	    "description": "Make [f_fog]",
+	    "category": "furniture-emitters",
+	    "required_skills": [  [ "fabrication", 0 ] ],
+	    "time": "0 m",
+	    "pre_note": "This is a creative mode thingie that lets you make [f_fog]",
+	    "pre_special": "check_empty",
+	    "post_terrain": "f_fog"
+  	}
+]

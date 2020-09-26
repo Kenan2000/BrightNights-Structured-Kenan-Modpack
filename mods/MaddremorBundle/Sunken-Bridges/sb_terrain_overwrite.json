@@ -1,0 +1,108 @@
+[
+  {
+    "id": "t_pontoon_dp",
+    "type": "terrain",
+    "name": "pontoon bridge",
+    "description": "pontoon bridge",
+    "symbol": "8",
+    "color": [ "brown" ],
+    "move_cost": 4,
+    "deconstruct": {
+      "ter_set": "t_water_dp",
+      "items": [ { "item": "rope_makeshift_6", "count": [ 3, 4 ] }, { "item": "2x4", "count": 8 } ]
+    },
+    "flags": [ "TRANSPARENT", "FLAT", "SWIMMABLE" ]
+  },
+  {
+    "id": "t_pavement_bg_dp",
+    "type": "terrain",
+    "name": "bridge pavement",
+    "description": "bridge pavement",
+    "symbol": ".",
+    "color": [ "dkgray" ],
+    "move_cost": 2,
+    "bash": {
+      "str_min": 70,
+      "str_max": 300,
+      "ter_set": "t_water_dp",
+      "sound": "concrete cracking and metal screeching!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "rock", "count": [ 4, 20 ] }, { "item": "rebar", "count": [ 10, 20 ] } ]
+    },
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "SWIMMABLE" ]
+  },
+  {
+    "id": "t_pavement_y_bg_dp",
+    "type": "terrain",
+    "name": "bridge yellow pavement",
+    "description": "bridge yellow pavement",
+    "symbol": ".",
+    "color": [ "yellow" ],
+    "move_cost": 2,
+    "bash": {
+      "str_min": 70,
+      "str_max": 300,
+      "ter_set": "t_water_dp",
+      "sound": "concrete cracking and metal screeching!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "rock", "count": [ 4, 20 ] }, { "item": "rebar", "count": [ 10, 20 ] } ]
+    },
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "SWIMMABLE" ]
+  },
+  {
+    "id": "t_sidewalk_bg_dp",
+    "type": "terrain",
+    "name": "bridge sidewalk",
+    "description": "bridge sidewalk",
+    "symbol": ".",
+    "color": [ "ltgray" ],
+    "move_cost": 2,
+    "bash": {
+      "str_min": 70,
+      "str_max": 300,
+      "ter_set": "t_water_dp",
+      "sound": "concrete cracking and metal screeching!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "rock", "count": [ 4, 20 ] }, { "item": "rebar", "count": [ 10, 20 ] } ]
+    },
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "SWIMMABLE" ]
+  },
+  {
+    "id": "t_guardrail_bg_dp",
+    "type": "terrain",
+    "name": "guard rail",
+    "description": "guard rail",
+    "symbol": "#",
+    "color": [ "ltgray" ],
+    "move_cost": 3,
+    "bash": {
+      "str_min": 8,
+      "str_max": 150,
+      "ter_set": "t_pavement_bg_dp",
+      "sound": "crunch!",
+      "sound_fail": "clang!",
+      "items": [ { "item": "scrap", "count": [ 3, 6 ] } ]
+    },
+    "flags": [ "TRANSPARENT", "NOITEM", "REDUCE_SCENT", "MOUNTABLE", "SHORT", "THIN_OBSTACLE", "ROAD", "SWIMMABLE" ]
+  },
+  {
+    "id": "t_dock",
+    "type": "terrain",
+    "name": "dock",
+    "description": "dock",
+    "symbol": "8",
+    "color": [ "brown" ],
+    "move_cost": 4,
+    "bash": {
+      "str_min": 8,
+      "str_max": 80,
+      "ter_set": "t_water_sh",
+      "sound": "smash!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "2x4", "prob": 25, "count": 2 }, { "item": "splinter", "count": [ 2, 4 ] } ]
+    },
+    "deconstruct": { "ter_set": "t_water_sh", "items": [ { "item": "nail", "charges": [ 6, 12 ] }, { "item": "2x4", "count": 8 } ] },
+    "flags": [ "TRANSPARENT", "FLAT", "SWIMMABLE" ]
+  }
+]
+

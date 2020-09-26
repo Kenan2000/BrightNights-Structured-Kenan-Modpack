@@ -1,0 +1,170 @@
+[
+  {
+    "type": "TOOL",
+    "id": "pd_printing_stanag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing STANAG plastic magazine",
+    "description": "3D printer, currently busy printing the STANAG plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 4200, 
+      "target": "pd_finished_stanag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_m1911mag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing M1911 plastic magazine",
+    "description": "3D printer, currently busy printing the M1911 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2100, 
+      "target": "pd_finished_m1911mag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_m1911bigmag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing M1911 extended plastic magazine",
+    "description": "3D printer, currently busy printing the M1911 extended plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_m1911bigmag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mp5mag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing MP5 plastic magazine",
+    "description": "3D printer, currently busy printing the MP5 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_mp5mag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mp5bigmag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing MP5 extended plastic magazine",
+    "description": "3D printer, currently busy printing the MP5 extended plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 4200, 
+      "target": "pd_finished_mp5bigmag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_p226mag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing P226 plastic magazine",
+    "description": "3D printer, currently busy printing the P226 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_p226mag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_uzimag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing Uzi plastic magazine",
+    "description": "3D printer, currently busy printing the Uzi plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_uzimag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mac10mag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing MAC-10 plastic magazine",
+    "description": "3D printer, currently busy printing the MAC-10 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_mac10mag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glockmag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing Glock magazine",
+    "description": "3D printer, currently busy printing the standard Glock magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_glockmag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glockbigmag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing Glock extended magazine",
+    "description": "3D printer, currently busy printing the Glock extended magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_glockbigmag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glock17mag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing Glock 17 magazine",
+    "description": "3D printer, currently busy printing the Glock 17 magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_glock17mag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glock17_22mag_printer",
+    "copy-from": "3d_printer",
+    "name": "3D printer producing Glock 17 22-round magazine",
+    "description": "3D printer, currently busy printing the Glock 17 22-round magazine additively. Once it finishes, activate it and deconstruct the resulting printer to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_glock17_22mag_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the magazine.",
+      "msg": "You turn off the printer."
+    }
+  }
+]

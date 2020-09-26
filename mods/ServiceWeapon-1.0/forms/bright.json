@@ -1,0 +1,41 @@
+[
+  {
+    "type": "GUN",
+    "id": "service_weapon_charge",
+    "copy-from": "service_weapon_charge",
+    "name": {
+      "str": "Service Weapon, charge", 
+      "str_pl": "Service Weapons, charge",
+      "ctxt": "video game Control"
+    },
+    "symbol": "(",
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Switch to bright",
+      "target": "service_weapon_bright",
+      "msg": "The Service Weapon reconstructs itself into a spinning cylinder that glows red."
+    }
+  },
+  {
+    "type": "GUN",
+    "id": "service_weapon_bright",
+    "copy-from": "service_weapon_base",
+    "name": {
+      "str": "Service Weapon, bright", 
+      "str_pl": "Service Weapons, bright",
+      "ctxt": "video game Control"
+    },
+    "description": "Service Weapon, looking heavy yet feeling light in the hand. Currently set to its bright form: laser projector with good range of focus.",
+    "symbol": "(",
+    "ammo_effects": [
+      "LASER",
+      "DRAW_AS_LINE"
+    ],
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Switch to grip",
+      "target": "service_weapon_grip",
+      "msg": "The Service Weapon reconstructs itself into a long cloud of blocks."
+    }
+  }
+]

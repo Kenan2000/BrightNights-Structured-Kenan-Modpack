@@ -1,0 +1,82 @@
+[
+  {
+    "id": "omni_food",
+	"looks_like": "protein_bar_evac",
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "name": { "str": "Omni Corp. field ration" },
+    "description": "Field rations produced by Omni Corp. for their personel.",
+    "weight": "0 g",
+    "volume": "1 ml",
+    "price": 0,
+    "flags": [ "EDIBLE_FROZEN", "CARNIVORE_OK", "MYCUS_OK" ],
+    "healthy": 999,
+	"heal": 999,
+    "fun": 999,
+    "quench": 99999,
+    "material": [ "fruit", "veggy" ],
+    "symbol": "%",
+    "color": "green",
+	"charges": 200,
+	"stack_size": 200,
+    "container": "wrapper",
+    "calories": 99999,
+	"spoils_in" : 0,
+    "vitamins": [ [ "calcium", 30 ], [ "iron", 30 ], [ "vitA", 30 ], [ "vitB", 30 ], [ "vitC", 30 ] ]
+  },
+  {
+    "id": "omni_med",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": { "str": "Omni Corp. emergency medicine" },
+    "description": "Omni Corp. patented medicine for everything that ails you.",
+    "weight": "0 g",
+    "volume": "1 ml",
+    "price": 0,
+    "symbol": "!",
+    "color": "white",
+	"charges": 200,
+    "stack_size": 200,
+	"stim": 100,
+    "use_action": [ 
+	  {
+	    "type": "ANTIBIOTIC"
+      },
+	  {
+	    "type": "heal",
+		"bandages_power": 999,
+		"bleed": 1,
+		"move_cost": 0
+	  },
+	  {
+	    "type": "heal",
+		"disinfectant_power": 999,
+		"bite": 1,
+		"move_cost": 0
+	  },
+	  {
+	    "type": "ANTIFUNGAL"
+	  },
+	  {
+	    "type": "INHALER"
+	  },
+	  {
+	    "type": "consume_drug",
+		"effects": [ { "id": "pkill4", "duration": 999 }, { "id": "panacea", "duration": "60 m" }, { "id": "cureall" } ]
+	  },
+	  {
+	    "type": "PROZAC"
+	  },
+	  {
+	    "type": "PURIFIER"
+	  },
+	  {
+	    "type": "VACCINE"
+	  },
+	  {
+	    "type": "XANAX"
+	  }
+	],
+    "flags": [ "NPC_SAFE" ]
+  }
+]

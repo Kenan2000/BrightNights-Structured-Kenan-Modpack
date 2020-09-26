@@ -1,0 +1,52 @@
+[
+  {
+    "type": "GUN",
+    "id": "hk_mp5",
+    "copy-from": "hk_mp5",
+    "name": { "str": "H&K MP5A2" },
+    "magazines": [
+      [
+        "9mm",
+        [
+          "mp5mag",
+          "mp5bigmag",
+          "mp5mag_polymer",
+          "mp5bigmag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "briefcase_smg",
+    "copy-from": "briefcase_smg",
+    "name": { "str": "H&K operational briefcase" },
+    "magazines": [
+      [
+        "9mm",
+        [
+          "mp5mag",
+          "mp5mag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "uzi",
+    "copy-from": "uzi",
+    "name": {
+      "str": "Uzi 9mm",
+      "str_pl": "Uzi 9mm"
+    },
+    "magazines": [
+      [
+        "9mm",
+        [
+          "uzimag",
+          "uzimag_polymer"
+        ]
+      ]
+    ]
+  }
+]

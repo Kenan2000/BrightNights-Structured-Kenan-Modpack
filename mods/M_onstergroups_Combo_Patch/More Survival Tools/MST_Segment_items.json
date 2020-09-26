@@ -1,0 +1,79 @@
+[
+  {
+    "id" : "javelin",
+    "copy-from": "javelin",
+    "type": "AMMO",
+    "//": "Item type intentionally converted from GENERIC to AMMO",
+    "name" : "wooden javelin",
+    "volume": 1,
+    "count": 1,
+    "stack_size": 4,
+    "ammo_type": "javelin",
+    "range": 15,
+    "damage": 6,
+    "dispersion": 135,
+    "loudness": 0,
+    "effects": [ "RECOVER_10" ]
+  },
+  {
+    "id": "javelin_stone",
+    "copy-from": "javelin",
+    "type": "AMMO",
+    "name": "stone javelin",
+    "//": "Avoids negative numbers caused by any future rebalancing of mainline item",
+    "description": "A throwing spear with a stone spearhead.  The grip area has also been carved and covered for better grip.",
+    "material": [ "wood", "stone" ],
+    "color": "light_gray",
+    "count": 1,
+    "stack_size": 4,
+    "ammo_type": "javelin",
+    "range": 13,
+    "damage": 8,
+    "pierce": 1,
+    "relative": {
+      "weight": 100,
+      "cutting": 2
+    },
+    "proportional": {
+      "price": 0.5,
+      "bashing": 0.8
+    }
+  },
+  {
+    "id": "javelin_copper",
+    "copy-from": "javelin_iron",
+    "type": "AMMO",
+    "name": "copper javelin",
+    "//": "Avoids negative numbers caused by any future rebalancing of mainline item",
+    "description": "A copper-tipped throwing spear.  The grip area has also been carved and covered for better grip.",
+    "material": [ "wood", "copper" ],
+    "color": "light_red",
+    "count": 1,
+    "stack_size": 4,
+    "ammo_type": "javelin",
+    "damage": 9,
+    "pierce": 2,
+    "relative": { "weight": 30 },
+    "proportional": {
+      "price": 0.5,
+      "cutting": 0.85
+    }
+  },
+  {
+    "id" : "javelin_iron",
+    "copy-from": "javelin_iron",
+    "type": "AMMO",
+    "//": "Item type intentionally converted from GENERIC to AMMO",
+    "name" : "iron javelin",
+    "volume": 1,
+    "count": 1,
+    "stack_size": 4,
+    "ammo_type": "javelin",
+    "range": 10,
+    "damage": 10,
+    "pierce": 3,
+    "dispersion": 135,
+    "loudness": 0,
+    "effects": [ "RECOVER_15" ]
+  }
+]

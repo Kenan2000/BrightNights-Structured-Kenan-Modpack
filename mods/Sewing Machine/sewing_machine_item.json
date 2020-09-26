@@ -1,0 +1,31 @@
+[
+  {
+    "id": "sewing_machine",
+    "type": "TOOL",
+    "name": { "str": "sewing machine" },
+    "description": "A machine used to quickly stitch fabric and other materials together with thread. This use your tailoring skills.",
+    "weight": "6 kg",
+    "volume": "8000 ml",
+    "price": 58000,
+    "price_postapoc": 32000,
+    "to_hit": -1,
+    "material": [ "plastic", "steel" ],
+    "symbol": "%",
+    "color": "pink",
+    "ammo": "thread",
+    "initial_charges": 100,
+    "max_charges": 500,
+    "charges_per_use": 1,
+    "qualities": [ [ "SEW", 3 ] ],
+    "use_action": {
+      "type": "repair_item",
+      "item_action_type": "repair_fabric",
+      "materials": [ "cotton", "leather", "lycra", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "gutskin" ],
+      "skill": "tailor",
+      "tool_quality": 0,
+      "cost_scaling": 0.1,
+      "move_cost": 1000
+    },
+    "flags": [ "ALLOWS_REMOTE_USE" ]
+  }
+]

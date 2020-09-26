@@ -1,0 +1,58 @@
+[
+	{
+		"type": "mutation",
+		"id": "WINGS_BIRD",
+		"copy-from": "WINGS_BIRD",
+		"extend": { "leads_to": [ "WINGS_BIRD_ADAPTED" ] }
+	},
+	{
+		"type": "mutation",
+		"id": "WINGS_BIRD_ADAPTED",
+		"name": { "str": "Adapted Wing Muscles" },
+		"valid": false,
+    "points": 0,
+    "description": "Thanks to precise genetic engineering, you have muscles specifically adapted to your wings.  While this still doesn't allow flight, you are able to flap your wings to greatly enhance dodging and move faster over obstacles.",
+		"types": [ "WINGS" ],
+    "prereqs": [ "WINGS_BIRD" ],
+    "category": [ "BIRD" ],
+		"dodge_modifier": 4,
+		"movecost_obstacle_modifier": 0.75
+	},
+	{
+		"type": "mutation",
+		"id": "LEG_TENTACLES",
+		"copy-from": "LEG_TENTACLES",
+		"extend": { "leads_to": [ "LEG_TENTACLES_ADAPTED" ] }
+	},
+	{
+		"type": "mutation",
+		"id": "LEG_TENTACLES_ADAPTED",
+		"name": { "str": "Adapted Tentacle Coordination" },
+		"valid": false,
+    "points": 0,
+    "description": "Thanks to cutting edge neuroprogramming equipment, you have perfect coordination with your leg tentacles.  This negates the usual movement penalty and makes moving over obstacles easier.",
+		"types": [ "LEGS" ],
+    "prereqs": [ "LEG_TENTACLES" ],	
+    "category": [ "CEPHALOPOD" ],
+		"movecost_modifier": 0.84,
+		"movecost_obstacle_modifier": 0.75
+	},
+	{
+		"type": "mutation",
+		"id": "HOOVES",
+		"copy-from": "HOOVES",
+		"extend": { "leads_to": [ "HOOVES_ADAPTED" ] }
+	},
+	{
+		"type": "mutation",
+		"id": "HOOVES_ADAPTED",
+		"name": { "str": "Adapted Leg Joints" },
+		"valid": false,
+    "points": 0,
+    "description": "Thanks to some extra work done on your joints, you're able to use your hooved legs to their full potential.  You get a movement speed bonus when moving on flat ground.",
+		"types": [ "LEGS" ],
+    "prereqs": [ "HOOVES" ],
+    "category": [ "CATTLE" ],
+		"movecost_flatground_modifier": 0.85
+	}
+]

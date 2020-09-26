@@ -1,0 +1,260 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "futuretech_spy_pistol",
+    "entries": [
+      {
+        "item": "etc_ocg_spistol",
+        "ammo-item": "22etc_apt",
+        "charges": 7,
+        "contents-item": [ "pistol_scope", "laser_sight" ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "ocg_mags_qr555_pdw",
+    "entries": [
+      { "item": "ocg556_24", "ammo-item": "556blackout", "charges": 24 },
+      { "item": "ocg556_24", "ammo-item": "556blackout", "charges": 24 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "poor_mans_chainsword",
+    "entries": [ { "item": "carver_off", "charges": 200, "contents-item": "battery_ups" } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "silent_deel",
+    "entries": [ { "item": "etc_deel", "ammo-item": "9etcsap", "charges": 10, "contents-item": "suppressor_compact" } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "ultimate_holdout_needlegun",
+    "entries": [
+      {
+        "item": "needlegun",
+        "ammo-item": "5x50heavy",
+        "charges": 100,
+        "contents-item": [ "barrel_small", "folding_stock", "red_dot_sight", "rail_laser_sight", "laser_sight" ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "v29_sharpshooter",
+    "entries": [ { "item": "v29", "contents-item": [ "high_density_capacitor", "pistol_scope", "rail_laser_sight", "laser_sight" ] } ]
+  },
+  {
+    "type": "profession",
+    "ident": "omnicorp_exec",
+    "name": "OmniCorp Executive",
+    "description": "You were a VIP at OmniCorp attending a formal party when one of the guests tore the face of another executive off. You survived, used your status to \"borrow\" some useful products and are determined to not give up.",
+    "points": 8,
+    "//": "Mostly useless skills but very useful starting tools, two relatively silent guns, a spare sidearm for common 9mm rounds, good accessories and rare subsonic bullets.",
+    "skills": [ { "level": 7, "name": "barter" }, { "level": 5, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [ "briefcase", "knit_scarf", "diveknife", "multitool", "1st_aid", "red_dot_sight", "energy_drink", "aspirin" ],
+        "entries": [
+          { "item": "smart_phone", "charges": 120 },
+          { "item": "ref_lighter", "charges": 50 },
+          {
+            "item": "qr555_cqb",
+            "ammo-item": "556blackout",
+            "charges": 24,
+            "contents-item": [ "shoulder_strap", "light_grip", "rail_laser_sight" ]
+          },
+          { "item": "bootstrap", "contents-group": "silent_deel" },
+          { "item": "legpouch_large", "contents-group": "ocg_mags_qr555_pdw" },
+          { "item": "scabbard", "contents-group": "poor_mans_chainsword" },
+          { "item": "ocg_beel", "ammo-item": "9mmP2", "charges": 10, "container-item": "bootstrap" },
+          { "item": "deelmag", "ammo-item": "9etcsap", "charges": 10, "container-item": "legpouch" },
+          { "item": "heavy_atomic_battery_cell", "charges": 2900 },
+          { "item": "UPS_off", "charges": 1000 }
+        ]
+      },
+      "male": [ "briefs", "socks", "dress_shoes", "suit", "tieclip_pick", "tie_skinny", "sf_watch" ],
+      "female": {
+        "items": [ "barrette_pick", "bra", "tights", "gown", "long_glove_white", "silver_ear", "silver_ear" ],
+        "entries": [ { "item": "heels", "custom-flags": "no_auto_equip" } ]
+      }
+    },
+    "//": "The red dot sight starts detached from the QR555 to allow STR 8 characters to wield it one-handed until a better means of storage than the starting briefcase is found."
+  },
+  {
+    "type": "profession",
+    "ident": "rivtech_exec",
+    "name": "Rivtech Executive",
+    "//": "Different flavors of the same start. This one doesn't sacrifice firepower for silence, but depending on RNG all starting guns may become useless due to lack of enough ammo. Packed lots of it due to rarity.",
+    "description": "You were a VIP at Rivtech attending a formal party when one of the guests tore the face of another executive off. You survived, used your status to \"borrow\" some useful products and are determined to not give up.",
+    "points": 8,
+    "skills": [ { "level": 7, "name": "barter" }, { "level": 5, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "briefcase",
+          "knit_scarf",
+          "rx12_injector",
+          "knife_swissarmy",
+          "atomic_light_off",
+          "picklocks",
+          "energy_drink_atomic",
+          "aspirin"
+        ],
+        "entries": [
+          { "item": "lighter", "charges": 100 },
+          { "item": "smart_phone", "charges": 120 },
+          {
+            "item": "rm120c",
+            "ammo-item": "20x66_inc",
+            "charges": 5,
+            "contents-item": [ "shoulder_strap", "folding_stock", "red_dot_sight", "rail_laser_sight", "laser_sight" ]
+          },
+          { "item": "20x66_flechette", "charges": 40 },
+          { "item": "20x66_inc", "charges": 40 },
+          { "item": "5x50heavy", "charges": 200 },
+          { "item": "20x66_inc", "charges": 12, "container-item": "bandolier_shotgun" },
+          { "item": "20x66_flechette", "charges": 12, "container-item": "bandolier_shotgun" },
+          { "item": "holster", "contents-group": "ultimate_holdout_needlegun" },
+          { "item": "powered_earmuffs", "charges": 200 },
+          { "item": "knife_rm42", "container-item": "sheath" }
+        ]
+      },
+      "male": [ "briefs", "socks", "dress_shoes", "suit", "tieclip", "tie_skinny", "sf_watch" ],
+      "female": {
+        "items": [ "barrette", "bra", "tights", "gown", "long_glove_white", "silver_ear", "silver_ear" ],
+        "entries": [ { "item": "heels", "custom-flags": "no_auto_equip" } ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "leadworks_exec",
+    "name": "Leadworks Executive",
+    "description": "You were a VIP at Leadworks LLC attending a formal party when one of the guests tore the face of another executive off. You survived, used your status to \"borrow\" some useful products and are determined to not give up.",
+    "//": "There aren't many Leadworks guns that can be fired one-handed by a 8 STR character, only the revolvers and pistols. A custom one was added by this mod just for this.",
+    "points": 8,
+    "skills": [ { "level": 7, "name": "barter" }, { "level": 5, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "briefcase",
+          "knit_scarf",
+          "diveknife",
+          "matches",
+          "1st_aid",
+          "knife_swissarmy",
+          "picklocks",
+          "energy_drink",
+          "aspirin"
+        ],
+        "entries": [
+          { "item": "smart_phone", "charges": 120 },
+          { "item": "l_def_12_lrf", "ammo-item": "shot_flechette", "charges": 8, "contents-item": "shoulder_strap" },
+          { "item": "shot_slug", "charges": 12, "container-item": "bandolier_shotgun" },
+          { "item": "shot_flechette", "charges": 12, "container-item": "bandolier_shotgun" },
+          { "item": "l_mp_9mm", "ammo-item": "9mmP2", "charges": 21, "container-item": "sholster" },
+          { "item": "lw21mag", "ammo-item": "9mmP2", "charges": 21, "container-item": "legpouch_large" },
+          { "item": "powered_earmuffs", "charges": 200 },
+          { "item": "knife_trench", "container-item": "bootsheath" }
+        ]
+      },
+      "male": [ "briefs", "socks", "dress_shoes", "suit", "tieclip", "tie_skinny", "sf_watch" ],
+      "female": {
+        "items": [ "barrette", "bra", "tights", "gown", "long_glove_white", "silver_ear", "silver_ear" ],
+        "entries": [ { "item": "heels", "custom-flags": "no_auto_equip" } ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "aeriallabs_exec",
+    "name": "Aerial Labs Executive",
+    "description": "You were a VIP at Aerial Labs attending a formal party when one of the guests tore the face of another executive off. You survived, used your status to \"borrow\" some useful products and are determined to not give up.",
+    "points": 9,
+    "//": "It might look like an absolutely OP start, but its fully charged UPS will run out after either 11 shots with the main gun or 33 with the 'sidearm'. Only with a bionic UPS it will become an overpowered shoggoth slayer gear.",
+    "skills": [ { "level": 7, "name": "barter" }, { "level": 5, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [ "briefcase", "knit_scarf", "knife_swissarmy", "picklocks", "energy_drink", "aspirin" ],
+        "entries": [
+          { "item": "smart_phone", "charges": 120 },
+          { "item": "ref_lighter", "charges": 50 },
+          {
+            "item": "emp_gun",
+            "contents-item": [ "shoulder_strap", "folding_stock", "light_grip", "laser_sight", "high_density_capacitor", "beam_scatterer" ]
+          },
+          { "item": "holster", "contents-group": "v29_sharpshooter" },
+          { "item": "bfipowder", "charges": 20, "container-item": "bag_plastic" },
+          { "item": "quikclot", "charges": 30, "container-item": "bag_plastic" },
+          { "item": "heavy_atomic_battery_cell", "charges": 2900 },
+          { "item": "UPS_off", "charges": 1000 },
+          { "item": "goggles_nv", "custom-flags": "no_auto_equip", "contents-item": "battery_ups" }
+        ]
+      },
+      "male": [ "briefs", "socks", "dress_shoes", "suit", "tieclip", "tie_skinny", "sf_watch" ],
+      "female": {
+        "items": [ "barrette", "bra", "tights", "gown", "long_glove_white", "silver_ear", "silver_ear" ],
+        "entries": [ { "item": "heels", "custom-flags": "no_auto_equip" } ]
+      }
+    }
+  },
+  {
+    "type": "profession",
+    "ident": "corp_spymaster",
+    "name": "Corporate Spymaster",
+    "description": "Few can \"share\" trade secrets like you, who worked for many corporations, from Aerial Labs to Rivtech, switching sides more than once. Wisely using your skills, you \"borrowed\" some of their products as the cataclysm started.",
+    "points": 10,
+    "skills": [
+      { "level": 5, "name": "computer" },
+      { "level": 3, "name": "electronics" },
+      { "level": 3, "name": "mechanics" },
+      { "level": 5, "name": "speech" },
+      { "level": 4, "name": "barter" }
+    ],
+    "//": "Wide array of guns with one fit for almost every situation, but like the execs, no combat skills. Instead, great starting skills for talking, bribing, hacking or lockpicking a way in then out as expected from such background.",
+    "items": {
+      "both": {
+        "items": [
+          "fancy_sunglasses",
+          "dress_shirt",
+          "knit_scarf",
+          "diveknife",
+          "duster_leather",
+          "matches",
+          "rx12_injector",
+          "recipe_caseless",
+          "multitool"
+        ],
+        "entries": [
+          { "item": "22_casing_etc", "charges": 1 },
+          { "item": "eink_tablet_pc", "charges": 100, "contents-item": "battery_ups" },
+          { "item": "electrohack", "charges": 100, "contents-item": "battery_ups" },
+          { "item": "heavy_atomic_battery_cell", "charges": 2900 },
+          { "item": "etc_ocg_spistol", "contents-item": "spistol_mag", "ammo-item": "22etc_apt", "charges": 7 },
+          { "item": "UPS_off" },
+          {
+            "item": "emp_gun",
+            "contents-item": [ "shoulder_strap", "folding_stock", "laser_sight", "rail_laser_sight", "rifle_scope", "high_density_capacitor" ]
+          },
+          { "item": "shot_flechette", "charges": 12, "container-item": "bandolier_shotgun" },
+          { "item": "knife_rm42", "container-item": "sheath" },
+          { "item": "l_def_12", "ammo-item": "shot_flechette", "charges": 8, "container-item": "XL_holster" },
+          { "item": "spistol_mag", "ammo-item": "22etc_apt", "charges": 7 },
+          { "item": "spistol_mag", "ammo-item": "22etc_apt", "charges": 7, "container-item": "legpouch" },
+          { "item": "powered_earmuffs", "charges": 200, "contents-item": "battery_ups" }
+        ]
+      },
+      "male": [ "briefs", "socks", "tieclip_pick", "tie_skinny", "pants_leather", "dress_shoes", "sf_watch" ],
+      "female": [ "barrette_pick", "bra", "tights", "thigh_high_boots", "skirt", "ear_spool", "ear_spool" ]
+    }
+  }
+]

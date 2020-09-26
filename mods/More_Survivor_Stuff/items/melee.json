@@ -1,0 +1,38 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "mss_survivor_sledge",
+    "name": { "str": "survivor sledge" },
+    "description": "A highly customized sledgehammer with carefully-placed rubber along the handle and a wicked-looking steel head, sharp on one end and square on another. Designed for post-apocalyptic swinging pleasure, though you could also use it as a clumsy tool.",
+    "weight": "5800 g",
+    "to_hit": -2,
+    "color": "dark_gray",
+    "symbol": "/",
+    "material": [ "steel", "plastic" ],
+    "flags": [ "ALWAYS_TWOHAND", "NONCONDUCTIVE", "MESSY", "DURABLE_MELEE", "SPEAR" ],
+    "techniques": [ "WBLOCK_2", "BRUTAL" ],
+    "volume": "3100 ml",
+    "bashing": 65,
+    "cutting": 12,
+    "price": 110000,
+    "qualities": [ [ "HAMMER", 1 ] ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "mss_survivor_claymore",
+    "name": { "str": "survivor claymore" },
+    "description": "This is a ridiculously large and heavy custom-made sword. If you can get it moving, you can destroy anything.",
+    "weight": "9000 g",
+    "to_hit": -2,
+    "color": "dark_gray",
+    "symbol": "/",
+    "material": [ "steel", "plastic" ],
+    "flags": [ "ALWAYS_TWOHAND", "NONCONDUCTIVE", "DURABLE_MELEE", "SHEATH_SWORD" ],
+    "techniques": [ "WBLOCK_1", "BRUTAL", "WIDE", "SWEEP" ],
+    "volume": "4400 ml",
+    "bashing": 45,
+    "cutting": 45,
+    "price": 130000,
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 1 ] ]
+  }
+]

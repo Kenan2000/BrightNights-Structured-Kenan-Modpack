@@ -1,0 +1,232 @@
+[
+  {
+    "type": "recipe",
+    "result": "ai_module_melee",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_PARTS",
+    "skill_used": "electronics",
+    "skills_required": [ "computer", 6 ],
+    "difficulty": 8,
+    "time": "25 m",
+    "book_learn": [ [ "textbook_hack_robots", 7 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "tools": [ [ [ "software_hacking", -1 ] ], [ [ "control_laptop", 10 ] ] ],
+    "components": [ [ [ "ai_module", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_utilibot_knight",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 7 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 40 ], [ "welding_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "self_monitoring_module", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "android_legs", 1 ] ],
+	  [ [ "android_chassis", 1 ] ],
+	  [ [ "android_arms", 1 ] ],
+	  [ [ "broadsword", 1 ] ],
+	  [ [ "steel_armor", 6 ] ],
+	  [ [ "medium_storage_battery", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_utilibot_assan",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 7 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 40 ], [ "welding_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "self_monitoring_module", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "android_legs", 1 ] ],
+	  [ [ "android_chassis", 1 ] ],
+	  [ [ "android_arms", 1 ] ],
+	  [ [ "tanto", 1 ] ],
+	  [ [ "medium_storage_battery", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_utilibot_smasher",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 7 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 40 ], [ "welding_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "self_monitoring_module", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "android_legs", 1 ] ],
+	  [ [ "android_chassis", 1 ] ],
+	  [ [ "android_arms", 1 ] ],
+	  [ [ "medium_storage_battery", 1 ] ],
+	  [ [ "hammer_sledge", 1 ] ],
+	  [ [ "steel_armor", 12 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_utilibot_hellknight",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 7 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 40 ], [ "welding_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "self_monitoring_module", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "android_legs", 1 ] ],
+	  [ [ "android_chassis", 1 ] ],
+	  [ [ "android_arms", 1 ] ],
+	  [ [ "medium_storage_battery", 1 ] ],
+	  [ [ "sheet_nomex", 6 ] ],
+	  [ [ "steel_armor", 6 ] ],
+	  [ [ "gelled_gasoline", 1000 ] ],
+	  [ [ "broadsword", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_grocery_killer",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 7 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 40 ], [ "welding_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH", "level": 2 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "self_monitoring_module", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "android_legs", 1 ] ],
+	  [ [ "android_chassis", 1 ] ],
+	  [ [ "android_arms", 1 ] ],
+	  [ [ "elec_chainsaw_off", 1 ] ],
+	  [ [ "medium_storage_battery", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_doomba",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 6 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 6 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "roomba_hull", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "wheel_caster", 1 ] ],
+	  [ [ "motor_tiny", 1 ] ],
+	  [ [ "small_storage_battery", 1 ] ],
+	  [ [ "elec_chainsaw_off", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_roomba_boom",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 7 ], [ "computer", 6 ] ],
+    "difficulty": 8,
+    "book_learn": [ [ "textbook_hack_robots", 6 ] ],
+    "time": "60 m",
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 }
+    ],
+    "components": [
+	  [ [ "ai_module_melee", 1 ] ],
+	  [ [ "roomba_hull", 1 ] ],
+	  [ [ "sensor_module", 1 ] ],
+	  [ [ "memory_module", 1 ] ],
+	  [ [ "pathfinding_module", 1 ] ],
+	  [ [ "identification_module", 1 ] ],
+	  [ [ "wheel_caster", 1 ] ],
+	  [ [ "motor_tiny", 1 ] ],
+	  [ [ "small_storage_battery", 1 ] ],
+	  [ [ "grenade", 1 ] ]
+    ]
+  }
+]

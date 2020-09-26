@@ -1,0 +1,34 @@
+[
+  {
+  "id": "AWM",
+  "copy_from": "rifle_manual",
+   "reload_noise_volume": 10,
+  "looks_like": "pneumatic_bolt_driver",
+  "type": "GUN",
+  "name": "AWM",
+  "description": "The Aritic Warfare Magnum (AMW) is a bolt-action sniper rifle designed and manufactured by the British company Accuracy International, the AWM has seen immense popularity from all shooters, from civilian use to military use.",
+  "weight": "6486 g",
+  "volume": "4 L",
+  "price": 800000,
+  "bashing": 8,
+  "to_hit": -2,
+  "materials": ["steel", "plastic"],
+ "symbol": "|",
+  "ammo": "300",
+ "skill": "rifle",
+  "range": 70,
+  "dispersion": 30,
+  "durability": 6,
+  "barrel_length": " 140 ml",
+  "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "grip", 1 ],
+      [ "mechanism", 3 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ ["300", ["AWM_mag"] ]
+     ]
+  }
+ ]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bag_canvas_westtek_nylon",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "West-Tek Nylon Bag" },
+    "description": "A large nylon bag. You remember people making a big stink about these back before the cataclysm.",
+    "weight": "415 g",
+    "volume": "1 L",
+    "price": 0,
+    "to_hit": -5,
+    "rigid": false,
+    "material": [ "cotton" ],
+    "symbol": ")",
+    "color": "brown",
+    "contains": "15 L",
+    "seals": true
+  },
+  {
+    "id": "bottle_plastic_nukadark",
+    "type": "GENERIC",
+    "category": "container",
+    "name": { "str": "glass bottle" },
+    "description": "A plastic shell in the shape of a nuka-cola bottle. It has a glass bottle inside it... It doesn't pour well.",
+    "weight": "300 g",
+    "volume": "1000 ml",
+    "price": 0,
+    "to_hit": 1,
+    "bashing": 2,
+    "material": [ "glass" ],
+    "symbol": ")",
+    "color": "cyan",
+    "contains": "750 ml",
+    "seals": true,
+    "watertight": true,
+    "qualities": [ [ "BOIL", 1 ] ]
+  }
+]

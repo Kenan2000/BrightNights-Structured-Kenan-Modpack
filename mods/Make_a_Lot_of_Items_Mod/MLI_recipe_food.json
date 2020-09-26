@@ -1,0 +1,177 @@
+[
+
+{
+  "comment": "Precooked acorn: Ten pieces together",
+  "type" : "recipe",
+  "result": "acorns_cooked",
+  "id_suffix": "from_MLI",
+  "byproducts": [ [ "acorns_cooked", 9 ] ],
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_OTHER",
+  "skill_used": "cooking",
+  "difficulty": 5,
+  "skills_required": [[ "survival", 4 ],[ "cooking", 4 ]],
+  "time": 90000,
+  "reversible": false,
+  "autolearn": true,
+  "batch_time_factors":[50, 1],
+  "qualities":[
+    {"id":"COOK","level":3,"amount":1},
+    {"id":"CUT","level":1,"amount":1}
+  ], "tools": [
+	[
+	["big_pot", -1]
+	],
+    [
+      [ "hotplate", 50 ],
+      [ "char_smoker", 50 ],
+      [ "toolset", 50 ],
+      [ "fire", -1 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "acorns", 10 ]
+    ],
+    [
+      [ "water", 10 ],
+      [ "water_clean", 10 ]
+    ]
+  ]
+},{
+  "comment": "Dried spaghetti: Ten pieces together",
+  "type" : "recipe",
+  "result": "spaghetti_raw",
+  "id_suffix": "from_MLI",
+  "byproducts": [ [ "spaghetti_raw", 9 ] ],
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_PASTA",
+  "skill_used": "cooking",
+  "difficulty": 6,
+  "time": 120000,
+  "batch_time_factors":[50, 1],
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      ["hotplate", 250],
+      [ "char_smoker", 250 ],
+      ["toolset", 250],
+      ["fire", -1]
+    ],
+    [
+	["big_pastaextruder", -1]
+	],
+  	[
+	["big_pot", -1]
+	]
+  ],
+  "components": [
+    [ ["flour", 40] ],
+    [ ["water", 10], ["water_clean", 10] ]
+  ]
+},{
+  "comment": "Dry Lasagna: Ten pieces together",
+  "type" : "recipe",
+  "result": "lasagne_raw",
+  "id_suffix": "from_MLI",
+  "byproducts": [ [ "lasagne_raw", 9 ] ],
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_PASTA",
+  "skill_used": "cooking",
+  "difficulty": 6,
+  "time": 120000,
+  "batch_time_factors":[50, 1],
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      ["hotplate", 250],
+      [ "char_smoker", 250 ],
+      ["toolset", 250],
+      ["fire", -1]
+    ],
+    [
+	["big_pastaextruder", -1]
+	],
+  	[
+	["big_pot", -1]
+	]
+  ],
+  "components": [
+    [ ["flour", 40] ],
+    [ ["water", 10], ["water_clean", 10] ]
+  ]
+},{
+  "comment": "Dry Macaroni: Ten pieces together",
+  "type" : "recipe",
+  "result": "macaroni_raw",
+  "id_suffix": "from_MLI",
+  "byproducts": [ [ "macaroni_raw", 9 ] ],
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_PASTA",
+  "skill_used": "cooking",
+  "difficulty": 6,
+  "time": 120000,
+  "batch_time_factors":[50, 1],
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      ["hotplate", 250],
+      [ "char_smoker", 250 ],
+      ["toolset", 250],
+      ["fire", -1]
+    ],
+    [
+	["big_pastaextruder", -1]
+	],
+  	[
+	["big_pot", -1]
+	]
+  ],
+  "components": [
+    [ ["flour", 40] ],
+    [ ["water", 10], ["water_clean", 10] ]
+  ]
+},{
+  "comment": "Ramen: Five pieces together",
+  "type" : "recipe",
+  "result": "spaghetti_cooked",
+  "id_suffix": "from_MLI",
+  "byproducts": [ [ "spaghetti_cooked", 4 ] ],
+  "category": "CC_FOOD",
+  "subcategory": "CSC_FOOD_PASTA",
+  "skill_used": "cooking",
+  "difficulty": 1,
+  "time": 10000,
+  "reversible": false,
+  "autolearn": true,
+  "qualities":[
+    {"id":"COOK","level":3,"amount":1}
+  ], "tools": [
+    [
+      [ "hotplate", 16 ],
+      [ "char_smoker", 16 ],
+      [ "toolset", 16 ],
+      [ "fire", -1 ]
+    ],
+    [
+	["big_pot", -1]
+	]
+  ],
+  "components": [
+    [
+      [ "spaghetti_raw", 5 ],
+      [ "macaroni_raw", 5],
+      [ "noodles_fast", 5]
+    ],
+    [
+      [ "water", 5 ],
+      [ "water_clean", 5 ]
+    ]
+  ]
+}
+
+
+]

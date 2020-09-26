@@ -1,0 +1,128 @@
+[
+  {
+    "type": "TOOL",
+    "id": "pd_printing_9mm_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 9",
+    "description": "3D factory, currently busy printing the Private 9 plastic pistol additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 21600,
+      "target": "pd_finished_9mm_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_357_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 357",
+    "description": "3D factory, currently busy printing the Private 357 plastic pistol additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 21600,
+      "target": "pd_finished_357_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_45_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 45",
+    "description": "3D factory, currently busy printing the Private 45 plastic pistol additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 21600,
+      "target": "pd_finished_45_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_223_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 223",
+    "description": "3D factory, currently busy printing the Private 223 plastic carbine additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 43200,
+      "target": "pd_finished_223_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_3006_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 3006",
+    "description": "3D factory, currently busy printing the Private 3006 plastic rifle additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 50400, 
+      "target": "pd_finished_3006_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mp5_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 5",
+    "description": "3D factory, currently busy printing the Private 5 plastic SMG additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 39600, 
+      "target": "pd_finished_mp5_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mac10_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 10",
+    "description": "3D factory, currently busy printing the Private 10 plastic machine pistol additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 32400, 
+      "target": "pd_finished_mac10_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_uzi_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private U",
+    "description": "3D factory, currently busy printing the Private U plastic SMG additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 39600, 
+      "target": "pd_finished_uzi_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_pd12_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Private 12",
+    "description": "3D factory, currently busy printing the Private 12 subcompact plastic shotgun additively. Once it finishes, activate it and deconstruct the resulting factory to get the gun.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3900, 
+      "target": "pd_finished_pd12_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the gun.",
+      "msg": "You turn off the factory."
+    }
+  }
+]

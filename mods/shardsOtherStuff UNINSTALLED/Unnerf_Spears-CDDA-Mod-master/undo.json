@@ -1,0 +1,44 @@
+[
+  {
+    "id": "spear_knife",
+    "name": "knife spear",
+    "copy-from": "spear_knife",
+    "type": "TOOL",
+    "flags": [ "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE" ]
+  },{
+    "id": "pike_fake",
+    "name": "awl pike",
+    "type": "GENERIC",
+    "copy-from": "pike_fake",
+    "description": "This is a dull, cheaply made replica of a medieval weapon consisting of a wood shaft tipped with an iron spike.",
+    "to_hit": 2,
+    "bashing": 10,
+    "cutting": 15
+  },{
+    "id": "pike_inferior",
+    "name": "awl pike",
+    "type": "GENERIC",
+    "copy-from": "pike_inferior",
+    "description": "This is a medieval weapon consisting of a wood shaft tipped with an iron spike.  The spike seems to be pretty dull, and the whole thing feels poorly made.",
+    "weight": 6000,
+    "to_hit": 2,
+    "bashing": 12,
+    "cutting": 25
+  },{
+    "id": "pike",
+    "name": "awl pike",
+    "type": "GENERIC",
+    "copy-from": "pike",
+    "description": "This is a medieval weapon consisting of a wood shaft tipped with an iron spike.  Though large and heavy compared to other spears, its accuracy and damage are unparalleled.",
+    "weight": 6000,
+    "to_hit": 2,
+    "bashing": 15,
+    "cutting": 45
+  },{
+    "type":"GENERIC",
+    "id" : "spear_forked",
+    "name" : "forked spear",
+    "copy-from": "spear_forked",
+    "flags" : ["SPEAR", "REACH_ATTACK", "NONCONDUCTIVE"]
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "Food_Keeper",
+    "type": "construction",
+    "description": "RF.A food keeper",
+    "category": "FURN",
+    "difficulty": 0,
+    "time": 40,
+    "components": [ [ [ "rf_food_keeper", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_rf_food_keeper"
+  }
+]

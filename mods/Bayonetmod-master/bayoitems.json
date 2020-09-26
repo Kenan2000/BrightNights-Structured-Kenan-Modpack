@@ -1,0 +1,54 @@
+[
+  {
+    "id": "spear_bayonet",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "spear bayonet",
+    "description": "A spear bayonet is a large stabing weapon that can be attached to the front of a firearm or crossbow converting it into a pike.",
+    "weight": 923,
+    "volume": 7,
+    "price": 25000,
+    "to_hit": 1,
+    "bashing": 8,
+    "cutting": 25,
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "gunmod_data": {
+      "location": "underbarrel",
+      "mod_targets": [ "shotgun", "rifle", "crossbow", "launcher" ],
+      "dispersion_modifier": 20,
+      "mode_modifier": [ [ "REACH", "bayonet", 2, [ "MELEE" ] ] ],
+      "min_skills": [ [ "weapon", 2 ], [ "melee", 2 ] ]
+    },
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "qualities": [ [ "COOK", 1 ], [ "BUTCHER", 7 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "STAB" ]
+  },
+  {
+    "id": "trowl_bayonet",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "U.S. Bayonet Model 1873 Trowel",
+    "description": "A Trowel bayonet can be attached to the front of a firearm or crossbow converting it into a shovel.",
+    "weight": 923,
+    "volume": 7,
+    "price": 25000,
+    "to_hit": 1,
+    "bashing": 40,
+    "cutting": 5,
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "gunmod_data": {
+      "location": "underbarrel",
+      "mod_targets": [ "shotgun", "rifle", "crossbow", "launcher" ],
+      "dispersion_modifier": 20,
+      "mode_modifier": [ [ "REACH", "bayonet", 2, [ "MELEE" ] ] ],
+      "min_skills": [ [ "weapon", 2 ], [ "melee", 2 ] ]
+    },
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "qualities": [ [ "DIG", 3 ] ],
+    "flags": [ "DURABLE_MELEE" ]
+  }
+]

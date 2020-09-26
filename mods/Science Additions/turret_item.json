@@ -1,0 +1,24 @@
+[
+ {
+    "id": "bot_turret_science",
+    "type": "TOOL",
+    "name": "inactive science turret",
+    "description": "This is an inactive turret.  Using this item involves loading the unit with the rounds in your inventory (if you wish to divide your ammunition, set aside whatever ammo you do NOT want to give the turret) turning it on, and placing it on the ground, where it will attach itself.  The turret will then identify you as a friendly, and attack all enemies with a built-in LMG.",
+    "weight": 1709,
+    "volume": 15,
+    "price": 650000,
+    "to_hit": -3,
+    "bashing": 6,
+    "material": [ "steel", "aluminum" ],
+    "symbol": "*",
+    "color": "light_green",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_turret_science",
+      "difficulty": 8,
+      "moves": 150,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  }
+]

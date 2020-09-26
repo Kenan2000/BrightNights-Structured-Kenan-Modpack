@@ -1,0 +1,40 @@
+[
+  {
+    "id": "t_gel_wall",
+    "type": "terrain",
+    "name": "gel wall",
+    "description": "That's a gel wall.",
+    "symbol": "#",
+    "color": [ "light_green" ],
+    "move_cost": 0,
+    "connects_to": "WALL",
+    "bash": {
+      "str_min": 3,
+      "str_max": 110,
+      "sound": "loud oozing!",
+      "sound_fail": "oozing!",
+      "ter_set": "t_null",
+      "items": [ { "item": "slime_scrap", "prob": 100, "count": [ 15, 23, 37, 43 ] } ]
+    },
+    "flags": [ "TRANSPARENT", "NOITEM", "REDUCE_SCENT", "SUPPORTS_ROOF", "WALL", "AUTO_WALL_SYMBOL" ]
+  },
+  {
+    "id": "t_gel_wall_half",
+    "type": "terrain",
+    "name": "gel half-wall",
+    "description": "That's a gel wall.",
+    "symbol": "#",
+    "color": [ "light_green" ],
+    "move_cost": 4,
+    "bash": {
+      "str_min": 5,
+      "str_max": 40,
+      "sound": "loud oozing!",
+      "sound_fail": "oozing!",
+      "ter_set": "t_null",
+      "items": [ { "item": "slime_scrap", "prob": 100, "count": [ 12, 15, 23 ] } ]
+    },
+    "deconstruct": { "ter_set": "t_null", "items": [ { "item": "slime_scrap", "count": [ 30, 28, 15 ] } ] },
+    "flags": [ "TRANSPARENT", "NOITEM", "REDUCE_SCENT", "SUPPORTS_ROOF", "MOUNTABLE" ]
+  }
+]

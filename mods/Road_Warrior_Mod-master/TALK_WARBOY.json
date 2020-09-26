@@ -1,0 +1,100 @@
+[
+    {
+        "type": "talk_topic",
+        "id": "TALK_WARBOY",
+        "dynamic_line": {
+            "u_is_wearing": "jacket_road_warrior",
+            "yes": "Nice jacket, roadkill...",
+            "no": "You look pretty feckin' dangerous."
+        },
+        "responses": [
+            {
+                "text": "I'm actually new.",
+                "topic": "TALK_WARBOY_NEW"
+            },
+            {
+                "text": "What are you doing here?",
+                "topic": "TALK_WARBOY_DOING"
+            },
+            {
+                "text": "Heard anything new about the world?",
+                "topic": "TALK_WARBOY_WORLD"
+            },
+            {
+                "text": "Is there any way I can join your gang?",
+                "topic": "TALK_WARBOY_JOIN"
+            },
+            {
+                "text": "What's with your body?",
+                "topic": "TALK_WARBOY_MUTATION"
+            },
+            {
+                "text": "Anything I can help with?",
+                "topic": "TALK_MISSION_LIST"
+            },
+            {
+                "text": "Well, bye.",
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_WARBOY_NEW",
+        "dynamic_line": "You won't last long, out here...",
+        "responses": [
+            {
+                "text": "Whatever...",
+                "topic": "TALK_WARBOY"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_WARBOY_WORLD",
+        "dynamic_line": "You come from under a rock, roadkill? Same as always, out here.",
+        "responses": [
+            {
+                "text": "...",
+                "topic": "TALK_WARBOY"
+            },
+            {
+                "text": "No.",
+                "topic": "TALK_WARBOY_WORLD_OPTIMISTIC"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_WARBOY_WORLD_OPTIMISTIC",
+        "dynamic_line": "Then why feckin' ask? You lookin' to become roadkill?",
+        "responses": [
+            {
+                "text": "Nevermind.",
+                "topic": "TALK_WARBOY"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_WARBOY_JOIN",
+        "dynamic_line": "You? Ha! Like we need some more muscle. Maybe if you can prove yourself to the top dog 'round here, you can join up.",
+        "responses": [
+            {
+                "text": "...",
+                "topic": "TALK_WARBOY"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_WARBOY_DOING",
+        "dynamic_line": "I fight for the glory of our lord, and to ride eternal in valhalla, shiny and chrome.",
+        "responses": [
+            {
+                "text": "Okay.",
+                "topic": "TALK_WARBOY"
+            }
+        ]
+    }
+]

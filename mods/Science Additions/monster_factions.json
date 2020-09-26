@@ -1,0 +1,14 @@
+[
+    {
+        "type" : "MONSTER_FACTION",
+        "name" : "science_guard_bot",
+        "base_faction": "bot",
+        "neutral" : ["defense_bot", "utility_bot"]
+    },
+    {
+        "type": "MONSTER_FACTION",
+        "name": "zombie_science",
+        "base_faction": "zombie",
+        "neutral": ["science_guard_bot"]
+    }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "robogun_nail",
+    "type": "GUN",
+    "copy-from": "robogun_base",
+    "name": "integral nailgun",
+    "ammo": "nail",
+    "skill": "smg",
+    "relative": { "volume": 6, "range": 3, "ranged_damage": 4 },
+    "loudness": 5,
+    "clip_size": 100,
+    "dispersion": 300,
+    "ammo_effects": [ "NEVER_MISFIRES", "RECOVER_20", "NOGIB" ],
+    "modes": [ [ "AUTO", "auto", 3 ] ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "type" : "terrain",
+        "id" : "t_window_empty",
+		"copy-from": "t_window_empty",
+        "name": "empty window",
+        "symbol": "0",
+        "color": "yellow",
+        "move_cost": 8,
+        "flags": [
+            "TRANSPARENT", "NOITEM", "FLAMMABLE", "MOUNTABLE", "CONNECT_TO_WALL"
+        ],
+        "deconstruct": {
+            "ter_set": "t_floor",
+            "items": [
+                { "item": "2x4", "count": 15 },
+                { "item": "nail", "charges": [15,30] }
+            ]
+        },
+        "bash": {
+            "str_min": 10, "str_max": 70,
+            "sound": "crunch!",
+            "sound_fail": "whump!",
+            "ter_set": "t_floor",
+            "items": [
+                { "item": "2x4", "count": [0, 5] },
+                { "item": "nail", "charges": [0, 5] },
+                { "item": "splinter", "count": [5, 10] }
+            ]
+        }
+    }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "type": "TOOL",
+    "id": "pd_printing_supp_printer",
+    "copy-from": "3d_printer",
+    "name": "3D factory producing polymer suppressor",
+    "description": "3D factory, currently busy printing a polymer suppressor additively. Once it finishes, activate it and deconstruct the resulting printer to get the item.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 4200, 
+      "target": "pd_finished_supp_printer",
+      "not_ready_msg": "The printer is working slowly to bring you the suppressor.",
+      "msg": "You turn off the printer."
+    }
+  }
+]

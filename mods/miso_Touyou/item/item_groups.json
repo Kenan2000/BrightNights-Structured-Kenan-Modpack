@@ -1,0 +1,91 @@
+[
+  {
+    "type": "item_group",
+    "id": "farming_seeds",
+    "items": [ [ "mamesigure", 40 ], [ "seed_rice", 60 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "hydro",
+    "items": [ [ "mamesigure", 10 ], [ "seed_rice", 3 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "dresser",
+    "items": [ [ "kimono", 45 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "allclothes",
+    "items": [ [ "eboshi", 45 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "sports",
+    "items": [ [ "t_nunchaku", 6 ], [ "t_sansetukon", 2 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "antique_rare",
+    "items": [
+      [ "t_syoiko", 2 ],
+      [ "t_syoiko_dai", 2 ],
+      [ "t_kensi", 6 ],
+      [ "t_getugasan", 6 ],
+      [ "t_kusetuben", 6 ],
+      [ "t_wakyu_nami", 6 ],
+      [ "t_wakyu_nobi", 6 ],
+      [ "t_takemitu", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "allsporting",
+    "items": [ [ "t_nunchaku", 6 ], [ "t_sansetukon", 2 ], [ "t_sinai", 7 ], [ "t_wakyu_carbon", 5 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "female_underwear_top",
+    "items": [  ]
+  },
+  {
+    "type": "item_group",
+    "id": "female_underwear_bottom",
+    "items": [ [ "eboshi", 45 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "miko_suikan_tihaya",
+    "items": [ [ "miko_tihaya", 100 ], [ "miko_suikan", 100 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "comment": "ゾンビ霊夢専用ドロップリストです。",
+    "id": "mon_zombie_reimu2",
+    "entries": [
+      { "item": "t_setta", "damage": [ 1, 4 ] },
+      { "item": "miko_siraginu", "damage": [ 1, 4 ] },
+      { "item": "miko_suikan", "damage": [ 1, 4 ] },
+      { "item": "eboshi" },
+      { "item": "miko_hibakama", "damage": [ 1, 4 ] },
+      { "item": "kimono", "damage": [ 1, 4 ] },
+      { "item": "sarasi", "damage": [ 1, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "comment": "ゾンビ巫女専用ドロップリストです。",
+    "id": "mon_zombie_shaman",
+    "entries": [
+      { "group": "miko_suikan_tihaya", "damage": [ 1, 4 ] },
+      { "item": "t_setta", "damage": [ 1, 4 ] },
+      { "item": "miko_siraginu", "damage": [ 1, 4 ] },
+      { "item": "eboshi" },
+      { "item": "miko_hibakama", "damage": [ 1, 4 ] },
+      { "item": "kimono", "damage": [ 1, 4 ] },
+      { "item": "sarasi", "damage": [ 1, 4 ] }
+    ]
+  }
+]

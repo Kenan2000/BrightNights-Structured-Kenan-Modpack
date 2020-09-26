@@ -1,0 +1,90 @@
+[
+  {
+    "id": "broken_utilibot_knight",
+    "type": "GENERIC",
+    "name": "broken knight robot",
+	"category": "other",
+    "looks_like": "broken_utilibot",
+    "price": 2500,
+    "price_postapoc": 0,
+    "weight": "140 kg",
+    "volume": "65 L",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel", "aluminum" ],
+    "symbol": ";",
+	"description": "A broken knight robot, now silent and mangled. Could be stripped down for parts.",
+    "color": "dark_gray"
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_utilibot_assan",
+	"weight": "140 kg",
+    "volume": "65 L",
+	"looks_like": "broken_utilibot_butler",
+    "copy-from": "broken_utilibot",
+    "name": "broken assasin robot",
+    "description": "A broken assasin robot, now silent and mangled. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_utilibot_smasher",
+	"weight": "140 kg",
+    "volume": "65 L",
+	"looks_like": "broken_utilibot_const",
+    "copy-from": "broken_utilibot",
+    "name": "broken smasher robot",
+    "description": "A broken construction robot, now wrecked and immobile. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_utilibot_hellknight",
+	"weight": "140 kg",
+    "volume": "65 L",
+	"material": [ "steel", "nomex" ],
+	"looks_like": "broken_utilibot_fire",
+    "copy-from": "broken_utilibot",
+    "name": "broken hellknight robot",
+    "description": "A broken hellknight robot, now cold and inert. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_roomba_boom",
+	"weight": "16 kg",
+    "volume": "40 L",
+	"price": 2500,
+    "price_postapoc": 0,
+	"to_hit": -3,
+    "bashing": 8,
+	"symbol": "o",
+	"color": "dark_gray",
+	"material": [ "steel", "plastic" ],
+    "name": "broken kamikaze roomba",
+    "description": "A broken kamikaze roomba, now now wrecked and immobile. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_doomba",
+	"weight": "16 kg",
+    "volume": "40 L",
+	"price": 2500,
+    "price_postapoc": 0,
+	"to_hit": -3,
+    "bashing": 8,
+	"symbol": "o",
+	"color": "dark_gray",
+	"material": [ "steel", "plastic" ],
+    "name": "broken doomba",
+    "description": "A broken doomba, now now wrecked and immobile. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_grocery_killer",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "copy-from": "broken_utilibot",
+	"looks_like": "broken_grocerybot",
+    "name": "broken grocery bot mk2",
+    "description": "A grocery bot mk2, now now wrecked and immobile. Could be stripped down for parts."
+  }
+]

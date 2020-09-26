@@ -1,0 +1,108 @@
+[
+  {
+    "type": "item_group",
+    "id": "guns_pistol_rare",
+    "//": "Less common pistols including those only used by police/paramilitary forces.",
+    "items": [ [ "ocg_beel", 80 ], [ "etc_ocg_dbr", 60 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_pistol_milspec",
+    "//": "Military specification pistols only ever found at military sites.",
+    "items": [
+      [ "etc_adrevolver", 25 ],
+      [ "etc_amrevolver", 1 ],
+      [ "etc_ocg_smp", 30 ],
+      [ "etc_hac", 40 ],
+      [ "etc_ocg_spistol", 20 ],
+      [ "ocg_smc300", 60 ],
+      [ "ocg_smc308", 50 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_pistol_obscure",
+    "//": "Imported or otherwise very obscure pistols.",
+    "items": [ [ "etc_deel", 80 ], [ "etc_o92_doublemag", 50 ], [ "etc_o9_electromagnum", 100 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_smg_rare",
+    "//": "Less common SMGs including those only used by police/paramilitary forces.",
+    "items": [ [ "etc_o2038", 40 ], [ "etc_o2038h", 50 ], [ "etc_ocg_ssmg", 30 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_smg_milspec",
+    "//": "Military specification SMGs only ever found at military sites.",
+    "items": [
+      [ "etc_chaingun", 50 ],
+      [ "etc_nanogun", 40 ],
+      [ "etc_nanogunsd", 30 ],
+      [ "etc_o2038hsd", 50 ],
+      [ "etc_o2038sd", 40 ],
+      [ "qr555_cqb", 20 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_rare",
+    "//": "Less common rifles including those only used by police/paramilitary forces.",
+    "items": [
+      [ "etc_er555", 40 ],
+      [ "etc_er555_car", 10 ],
+      [ "etc_er555_cqb", 10 ],
+      [ "etc_er555_saw", 20 ],
+      [ "etc_er555_sr", 10 ],
+      [ "etc_ocg_22xlr", 30 ],
+      [ "etc_ocg_minisniper", 30 ],
+      [ "ocg_dmsmg", 40 ],
+      [ "ocg_minirifle", 40 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_milspec",
+    "//": "Military specification rifles only ever found at military sites.",
+    "items": [
+      [ "etc_dwom", 2 ],
+      [ "etc_hydrogen_gun", 1 ],
+      [ "etc_er555_ads", 10 ],
+      [ "etc_er555_udd", 20 ],
+      [ "etc_mar7k", 3 ],
+      [ "etc_ocg_ms400sd", 35 ],
+      [ "etc_seven7", 5 ],
+      [ "ocg_gauss_carbine166", 1 ],
+      [ "ocg_gauss_gun285", 1 ],
+      [ "ocg_mr9sd", 60 ],
+      [ "qr555", 90 ],
+      [ "qr555_car", 80 ],
+      [ "qr555_dmr", 20 ],
+      [ "qr555_saw", 70 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_shotgun_rare",
+    "//": "Less common shotguns including those only used by police/paramilitary forces.",
+    "items": [ [ "ocg12s_scuta", 40 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_shotgun_milspec",
+    "//": "Military specification shotguns only ever found at military sites.",
+    "items": [ [ "ocg12_excidia", 20 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_cop",
+    "//": "Police issue weapons of all types",
+    "items": [ [ "ocg_minirifle", 20 ], [ "etc_o2038", 5 ], [ "etc_o2038h", 5 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_swat",
+    "//": "Guns issued to paramilitary forces in addition to standard police issue.",
+    "items": [ { "group": "guns_cop", "prob": 100 }, [ "ocg_dmsmg", 40 ], [ "etc_ocg_minisniper", 15 ] ]
+  }
+]

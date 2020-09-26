@@ -1,0 +1,80 @@
+[
+  {
+    "type": "item_group",
+    "id": "mags_milspec",
+    "//": "Current military specification magazines.",
+    "items": [
+      [ "556etc_speedloader", 1 ],
+      [ "762ec_speedloader", 1 ],
+      [ "deelmag", 5 ],
+      [ "excidia40mag", 10 ],
+      [ "gc166mag", 2 ],
+      [ "gg285mag", 1 ],
+      [ "ocg9emag", 5 ],
+      [ "nanogun_240_mag", 2 ],
+      [ "nanogun_480_mag", 1 ],
+      [ "o2038_100_mag", 2 ],
+      [ "o2038h_56_mag", 3 ],
+      [ "ocg556_14", 5 ],
+      [ "ocg556_24", 2 ],
+      [ "ocg556_30", 10 ],
+      [ "ocg556_50", 5 ],
+      [ "ocg556_60", 4 ],
+      [ "ocg556_100", 1 ],
+      [ "ocg556e_14", 2 ],
+      [ "ocg556e_24", 1 ],
+      [ "ocg556e_30", 5 ],
+      [ "ocg556e_50", 3 ],
+      [ "ocg556e_60", 2 ],
+      [ "ocg556e_100", 1 ],
+      [ "ocg762e_7", 2 ],
+      [ "ocg762e_20", 2 ],
+      [ "ocg762e_30", 1 ],
+      [ "ocg762e_40", 1 ],
+      [ "ocg762e_50", 1 ],
+      [ "ocg762e_66", 1 ],
+      [ "smc300mag", 5 ],
+      [ "smp_30_mag", 2 ],
+      [ "smp_60_mag", 1 ],
+      [ "spistol_mag", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_cop",
+    "//": "Standard issue police magazines.",
+    "items": [ [ "minirifle_mag", 10 ], [ "o2038_100_mag", 5 ], [ "o2038h_56_mag", 5 ], [ "ocg556_14", 5 ], [ "ocg556_30", 5 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_swat",
+    "//": "Magazines issued to paramilitary forces in addition to standard police issue.",
+    "items": [ { "group": "mags_cop", "prob": 50 }, [ "deelmag", 5 ], [ "minirifle_magext", 20 ], [ "ocg556_30", 15 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_pistol_rare",
+    "//": "Aftermarket or otherwise uncommon pistol magazines excluding milspec.",
+    "items": [ [ "22etc_speedloader", 20 ], [ "9etc_speedloader", 20 ], [ "beelmag", 45 ], [ "deelmag", 30 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_smg_rare",
+    "//": "Aftermarket or otherwise uncomon SMG magazines excluding milspec.",
+    "items": [ [ "minirifle_magext", 20 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "mags_rifle_rare",
+    "//": "Aftermarket or otherwise uncommon rifle magazines excluding milspec.",
+    "items": [
+      [ "minirifle_mag", 20 ],
+      [ "ocg556_14", 20 ],
+      [ "ocg556_24", 15 ],
+      [ "ocg556_30", 20 ],
+      [ "ocg556_50", 10 ],
+      [ "ocg556_60", 10 ],
+      [ "ocg556_100", 5 ]
+    ]
+  }
+]

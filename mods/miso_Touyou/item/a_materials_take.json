@@ -1,0 +1,26 @@
+[
+  {
+    "type": "material",
+    "ident": "bamboomaterial",
+    "name": "bamboo",
+    "density": 4,
+    "edible": true,
+    "bash_resist": 3,
+    "cut_resist": 3,
+    "acid_resist": 4,
+    "fire_resist": 1,
+    "elec_resist": 10,
+    "chip_resist": 10,
+    "salvaged_into": "splinter",
+    "dmg_adj": [ "scratched", "chipped", "cracked", "splintered" ],
+    "vitamins": [ [ "calcium", 0.2 ], [ "vitA", 0 ], [ "vitC", 0.5 ], [ "iron", 0.1 ] ],
+    "bash_dmg_verb": "splintered",
+    "cut_dmg_verb": "gouged",
+    "burn_data": [
+      { "fuel": 1, "smoke": 1, "burn": 0.02, "chance": 5 },
+      { "fuel": 2, "smoke": 1, "burn": 0.04, "chance": 20 },
+      { "fuel": 3, "smoke": 1, "burn": 0.06 }
+    ],
+    "burn_products": [ [ "ash", 0.018 ] ]
+  }
+]

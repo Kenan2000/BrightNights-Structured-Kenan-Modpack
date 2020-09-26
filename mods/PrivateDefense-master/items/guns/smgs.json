@@ -1,0 +1,86 @@
+[
+  {
+    "type": "GUN",
+    "id": "pd_mp5",
+    "name": { "str": "Private 5" },
+    "copy-from": "hk_mp5",
+    "description": "A plastic printed copy of H&K MP5A2, a highly-successful SMG known for its accuracy and handling. Barrel and firing pin are made out of high-quality polymer compound, able to weather gunfire significantly better than regular plastic. Less durable than its market counterpart, but an effective firearm if you have nothing else available.",
+    "material": [ "plastic", "polymer" ],
+    "relative": {
+      "bashing":       -2,
+      "ranged_damage": -3,
+      "durability":    -4,
+      "dispersion":   100
+    },
+    "proportional": {
+      "weight": 0.66
+    },
+    "blackpowder_tolerance": 16,
+    "magazines": [
+      [
+        "9mm",
+        [
+          "mp5mag",
+          "mp5bigmag",
+          "mp5mag_polymer",
+          "mp5bigmag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "pd_mac10",
+    "name": { "str": "Private 10" },
+    "copy-from": "mac_10",
+    "description": "A plastic printed copy of MAC-10, popular with the military despite the gun's relatively-low quality. Barrel and firing pin are made out of high-quality polymer compound, able to weather gunfire significantly better than regular plastic. Less durable than its market counterpart, but an effective firearm if you have nothing else available.",
+    "material": [ "plastic", "polymer" ],
+    "relative": {
+      "bashing":       -2,
+      "ranged_damage": -3,
+      "durability":    -4,
+      "dispersion":   100
+    },
+    "proportional": {
+      "weight": 0.66
+    },
+    "blackpowder_tolerance": 24,
+    "magazines": [
+      [
+        "45",
+        [
+          "mac10mag",
+          "smg_45_mag",
+          "mac10mag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "pd_uzi",
+    "name": { "str": "Private U" },
+    "copy-from": "uzi",
+    "description": "A plastic printed copy of Uzi, highly-successful for more than 60 years. Barrel and firing pin are made out of high-quality polymer compound, able to weather gunfire significantly better than regular plastic. Less durable than its market counterpart, but an effective firearm if you have nothing else available.",
+    "material": [ "plastic", "polymer" ],
+    "relative": {
+      "bashing":       -2,
+      "ranged_damage": -3,
+      "durability":    -4,
+      "dispersion":   100
+    },
+    "proportional": {
+      "weight": 0.66
+    },
+    "blackpowder_tolerance": 24,
+    "magazines": [
+      [
+        "9mm",
+        [
+          "uzimag",
+          "uzimag_polymer"
+        ]
+      ]
+    ]
+  }
+]

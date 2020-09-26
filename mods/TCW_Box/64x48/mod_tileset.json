@@ -1,0 +1,36 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "64x48//64x48.png",
+		"sprite_width":64,
+		"sprite_height":48,
+		"sprite_offset_x":-16,
+		"sprite_offset_y":-16,
+        "tiles": [
+          { "id": "SB_paper", "fg": 1 },
+          { "id": "overlay_worn_SB_paper", "fg": 0 },
+          { "id": "overlay_wielded_SB_paper", "fg": 1 },
+		  
+          { "id": "SB_L_paper", "fg": 3 },
+          { "id": "overlay_worn_SB_L_paper", "fg": 2 },
+          { "id": "overlay_wielded_SB_L_paper", "fg": 3 },
+		  
+          { "id": "AKAR_B", "fg": 4 },
+          { "id": "AKAR_B_C", "fg": 4 },
+          { "id": "AKAR_B_C_U", "fg": 4 },
+          { "id": "overlay_wielded_AKAR_B", "fg": 5 },
+          { "id": "overlay_wielded_AKAR_B_U", "fg": 5 },
+		  
+          { "id": "RPG_TAC", "fg": 6 },
+          { "id": "RPG_TAC_U", "fg": 6 },
+          { "id": "RPG_TAC_C", "fg": 6 },
+          { "id": "overlay_wielded_RPG_TAC", "fg": 7 },
+          { "id": "overlay_wielded_RPG_TAC_U", "fg": 7 }
+        ]
+      }
+    ]
+  }
+]

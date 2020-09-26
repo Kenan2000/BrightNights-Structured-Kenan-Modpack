@@ -1,0 +1,13 @@
+[
+  {
+    "id": "sum_begin",
+    "type": "GENERIC",
+    "name": "Basics of Summoning",
+    "description": "A tome containing basic spells in Summoning",
+    "weight": 800,
+    "volume": 1,
+    "price": 300,
+    "symbol": "?",
+    "color": "magenta",
+    "use_action": { "type": "learn_spell", "spells": [ "s_dag", "s_buck", "s_ewolf" ] }
+  } ]

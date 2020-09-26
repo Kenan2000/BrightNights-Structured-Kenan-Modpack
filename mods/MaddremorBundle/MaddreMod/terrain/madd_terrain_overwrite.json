@@ -1,0 +1,27 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_recycler",
+    "name": "metal compactor",
+    "description": "A hydraulic compactor that can accept items made of various metals, and press them into basic shapes, ready for further crafting.",
+    "symbol": "&",
+    "color": "green",
+    "move_cost": 0,
+    "max_volume": 8000,
+    "flags": [ "TRANSPARENT", "REDUCE_SCENT", "PERMEABLE" ],
+    "examine_action": "recycle_compactor",
+    "deconstruct": { "ter_set": "t_rock_floor", "items": [ { "item": "madd_recycler", "count": 1 } ] },
+    "bash": {
+      "str_min": 20,
+      "str_max": 150,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_thconc_floor",
+      "items": [
+        { "item": "steel_lump", "count": [ 0, 2 ] },
+        { "item": "steel_chunk", "count": [ 1, 4 ] },
+        { "item": "scrap", "count": [ 3, 12 ] }
+      ]
+    }
+  }
+]

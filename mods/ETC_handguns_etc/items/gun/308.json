@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ocg_smc308",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": "OCG SMC308",
+    "//": "Somewhat like sawn-off Mosin AKA Obrez, except factory standard and burst capable",
+    "description": "Stockless Marksman Carbine, the first gun among OmniCorp products, is a selective-fire \"sidearm\" which shares magazines with sniper rifles. Includes critically needed gyroscopic stabilizer.",
+    "weight": 2140,
+    "volume": 4,
+    "price": 150000,
+    "to_hit": -1,
+    "bashing": 9,
+    "material": [ "steel", "plastic" ],
+    "color": "dark_gray",
+    "ammo": "308",
+    "range": -25,
+    "//": "Like in the AKS-74U, the round remains lethal beyond the effective range but extremely unlikely to hit anything. This modifier doesn't matter much because the high dispersion makes firing it at long ranges wasteful.",
+    "ranged_damage": -5,
+    "//": "255 mm/10 in barrel",
+    "dispersion": 300,
+    "durability": 8,
+    "loudness": 40,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2 ] ],
+    "built_in_mods": [ "ocg_stabilizer", "match_trigger" ],
+    "default_mods": "pistol_grip",
+    "looks_like": "rm103a_pistol",
+    "magazine_well": 1,
+    "magazines": [ [ "308", [ "m14smallmag", "m14mag" ] ], [ "300", [ "m2010mag", "smc300mag" ] ] ]
+  }
+]

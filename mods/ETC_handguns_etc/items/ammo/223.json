@@ -1,0 +1,35 @@
+[
+  {
+    "id": "223blackout",
+    "copy-from": "223",
+    "type": "AMMO",
+    "name": ".223 OCG Blackout",
+    "description": "5.56x45mm ammunition with subsonic 131gr tungsten bullets, a civilian/PDW version of the heavier 5.56 OCG Blackout. Trades range and power for low recoil, noise and good armor penetration.",
+    "material": [ "brass", "powder", "tungsten" ],
+    "//": "320 m/s muzzle velocity.",
+    "weight": 11,
+    "price": 9225,
+    "relative": { "damage": -19, "pierce": 15, "dispersion": 20 },
+    "proportional": { "range": 0.59, "recoil": 0.38 },
+    "loudness": 67,
+    "looks_like": "223",
+    "extend": { "effects": [ "NEVER_MISFIRES" ] }
+  },
+  {
+    "id": "556blackout",
+    "copy-from": "223",
+    "type": "AMMO",
+    "name": "5.56 OCG Blackout",
+    "description": "5.56x45mm ammunition with subsonic 154gr depleted uranium bullets. While weaker and shorter ranged than dedicated subsonic rounds such as 9x39mm, they are more compact and can cut armor like a hot knife through butter.",
+    "material": [ "brass", "powder", "uranium" ],
+    "//": "320 m/s muzzle velocity.",
+    "weight": 13,
+    "//": "Less efficient than electrothermal ignition, needs more gunpowder",
+    "price": 11160,
+    "relative": { "damage": -17, "pierce": 26, "dispersion": 7 },
+    "proportional": { "range": 0.73, "recoil": 0.45 },
+    "loudness": 68,
+    "looks_like": "556",
+    "extend": { "effects": [ "NEVER_MISFIRES" ] }
+  }
+]

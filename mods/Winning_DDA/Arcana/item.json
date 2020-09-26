@@ -1,0 +1,76 @@
+[
+  {
+    "id": "omnipotence_scroll",
+    "type": "BOOK",
+    "name": "Scroll of Omnipotence",
+    "name_plural": "Scrolls of Omnipotence",
+    "description": "Hidden most effectively by Alhacrast, Overlord of Jak-Nagiur.",
+    "weight": 1,
+    "volume": 1,
+    "price": 1,
+    "bashing": 1,
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "yellow",
+    "skill": "magic",
+    "required_level": 10,
+    "max_level": 10,
+    "intelligence": 15,
+    "time": 1,
+    "fun": 37
+},
+  {
+    "id": "win_potion",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": "Elixir of the Red Rooster",
+    "description": "You did it. You finally did it. By concentrating the light of the diamond obelisk inside the field of arcane instability created by your altar, you managed to distill drops of pure reality into a potion that will use your body as a catalyst to tear an unstable hole in reality itself. Having coalesced and merged with the flask drop by drop, all that remains is a small rich golden vial standing on its own. Once drunk, you will shed your body and sublime into a higher plane of existence.",
+    "weight": 1,
+    "volume": 1,
+    "price": 30000,
+    "container": "flask_glass",
+    "symbol": "~",
+    "color": "white",
+    "quench": 10,
+    "healthy": 500,
+    "stim": 50,
+    "fun": 7777,
+    "use_action": {
+      "target": "equestria_portal",
+      "msg": "An invisible choir sings, and you are bathed in radiance... The voice of Celestia booms out: 'Congratulations, mortal! In return to your service, I grant thee the gift of Immortality! You ascend to the status of Demigod and pass through the portal to live the rest of your eternal life in bliss.",
+      "target_charges": 1,
+      "active": true,
+      "menu_text": "Ascend",
+      "type": "transform"
+    },
+    "flags": [ "EATEN_COLD" ]
+},{
+    "id": "equestria_portal",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "Active Portal",
+    "name_plural": "portals to equestria",
+    "description": "Sublime.",
+    "weight": 1133,
+    "volume": 3,
+    "price": 0,
+    "to_hit": -3,
+    "bashing": 4,
+    "material": [ "paper", "powder" ],
+    "symbol": "*",
+    "color": "red",
+    "turns_per_charge": 1,
+    "explosion": {
+      "power": 3700,
+      "shrapnel": 7300
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 50,
+      "sound_msg": "Freedom!",
+      "explosion": { "power": 3700 }
+    },
+    "flags": [ "TRADER_AVOID" ]
+}
+]

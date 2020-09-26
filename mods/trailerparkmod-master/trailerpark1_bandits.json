@@ -1,0 +1,95 @@
+[
+	{
+		"type": "mapgen",
+		"method": "json",
+		"om_terrain": "trailerpark1_bandit",
+		"weight": 100,
+		"object": {
+			"fill_ter": "t_dirt",
+			"rows": [
+			"$$$$$$$$$$$$$$$$$$$$$$$$",
+            "$|-------|f_sssss_1OOOO_",
+            "$|t|0|s==|_.......___...",
+            "$|+|l|lll|v.............",
+            "$|lllllll|XX;;......._..",
+            "$|>llllll|_.XO..........",
+            "$._.________OX...._.....",
+            "$.W'________XX...._...._",
+            "$OO______.__XX..sss.....",
+            "$XXXXX______...s.w.s....",
+            "$..__XXOXX__....s.s...._",
+            "$..________1............",
+            "$..___._____............",
+            "$.._________...._.......",
+            "$.._____.___....__....._",
+            "$.._________s....___..._",
+            "$.._________s.....__..._",
+            "$.._..______s....__.....",
+            "$.._________s...._......",
+            "$.._________s..._.......",
+            "$..______.__sss__....._.",
+            "$.._1_____._6DD_........",
+            "$XXXXX___XXXXOX.....1._.",
+            "$$$;;;___;;;$$$$$$$$$$$$"
+			],
+			"place_npcs": [
+				{ "class": "militia_warrior", "x": [ 7, 16 ], "y": [ 8, 16 ] }
+			],
+			"terrain": {
+				">": "t_stairs_down",
+				"$": "t_fence_wire",
+				".": "t_grass",
+				"_": "t_dirt",
+				"'": "t_pit_glass",
+				";": "t_pit_spiked",
+				"1": "t_tree_young",
+				"|": "t_sconc_wall",
+				"-": "t_sconc_wall",
+				"+": "t_door_c",
+				"l": "t_linoleum_white",
+				"S": "t_linoleum_white",
+				"0": "t_linoleum_white",
+				"W": "t_water_pump"
+			},
+			"furniture": {
+				"f": "f_dandelion",
+				"O": "f_crate_o",
+				"0": "f_crate_o",
+				"X": "f_crate_c",
+				"t": "f_toilet",
+				"S": "f_sink",
+				"=": "f_counter",
+				"v": "f_vending_o",
+				"6": "f_bulletin",
+				"D": "f_dumpster",
+				"s": "f_sandbag_half",
+				"w": "f_woodstove"
+			},
+			"place_toilets": [
+				{ "x": 2, "y": 2 }
+			],
+			"place_monsters": [
+				{
+				"chance": 100,
+				"density": 10,
+                "monster": "GROUP_PET",
+				"x": 4,
+				"y": 12
+				}
+			],
+			"place_loot": [
+				{ "group": "ammo_casings", "x": 12, "y": 12, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 13, "y": 15, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 14, "y": 16, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 15, "y": 17, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 12, "y": 17, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 13, "y": 17, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 14, "y": 19, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 15, "y": 21, "chance": 20, "repeat": [ 1, 10 ] }
+			],
+			"set": [
+				{ "point": "trap", "id": "tr_nailboard", "x": [ 6, 8 ], "y": 23, "repeat": [ 10, 20 ] }
+			]
+		}
+	}
+]

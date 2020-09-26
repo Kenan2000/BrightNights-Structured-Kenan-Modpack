@@ -1,0 +1,51 @@
+[
+  {
+    "id" : "safe_cash",
+    "type": "item_group",
+    "items": [
+      { "collection": [
+        { "item": "money_bundle", "count": [ 5, 15 ] },
+        { "item": "cash_card", "charges-min": 50000, "charges-max": 100000, "count": [ 0, 3 ]}
+        ] 
+      }
+    ]
+  },
+  {
+    "id" : "dispensary",
+    "type": "item_group",
+    "items": [
+      { "collection": [
+        { "item": "joint", "chance": 50,  "count": [ 3, 5 ] },
+        { "item": "weed", "chance": 50, "count": [ 3, 5 ] },
+        { "item": "cannabis", "chance": 50, "count": [ 3, 5 ] },
+        { "item": "seed_weed", "chance": 50, "count": [ 5, 10 ]}
+        ] 
+      }
+    ]
+  },
+  {
+    "id" : "dining_ware",
+    "type": "item_group",
+    "items": [
+      ["ceramic_cup", 100],
+      ["ceramic_plate", 100],
+      ["ceramic_bowl", 100],
+      ["glass_plate", 100],
+      ["glass_bowl", 100],
+      ["glass", 100]
+    ]
+  },
+  {
+    "id" : "flatware",
+    "type": "item_group",
+    "items": [
+      { "collection": [
+        { "item": "fork" },
+        { "item": "spoon" },
+        { "item": "knife_butter" },
+        { "item": "knife_steak" }
+        ] 
+      }
+    ]
+  }
+]

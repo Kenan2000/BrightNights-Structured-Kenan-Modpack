@@ -1,0 +1,26 @@
+[
+{
+    "type": "furniture",
+    "id": "f_brazier_small",
+    "name": "small brazier",
+    "description": "A small brazier",
+    "symbol": "#",
+    "color": "red",
+    "move_cost_mod": 2,
+    "required_str": 1,
+    "looks_like": "f_brazier",
+    "flags": [ "PLACE_ITEM", "TRANSPARENT", "FIRE_CONTAINER", "EASY_DECONSTRUCT" ],
+    "deployed_item": "brazier_small",
+    "examine_action": "deployed_furniture",
+    "max_volume": "10000 ml",
+    "bash": {
+      "str_min": 8,
+      "str_max": 30,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 1, 5 ] },
+        { "item": "sheet_metal_small", "count": [ 1, 2 ] }
+      ]
+    }
+  }]

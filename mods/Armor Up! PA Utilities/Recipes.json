@@ -1,0 +1,93 @@
+[
+  {
+    "type": "recipe",
+    "result": "pa_back_holster",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ "gun", 2 ],
+    "time": 60000,
+    "autolearn": true,
+    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "forge", 200 ], [ "oxy_torch", 40 ] ] ],
+    "components": [ [ [ "steel_lump", 1 ], [ "steel_chunk", 4 ], [ "scrap", 12 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pa_holster",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "pistol", 1 ],
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "forge", 100 ], [ "oxy_torch", 20 ] ] ],
+    "components": [ [ [ "steel_chunk", 2 ], [ "scrap", 6 ] ] ]
+  },
+  {
+    "result": "pa_magbandolier",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "skills_required": [ "gun", 2 ],
+    "time": 25000,
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [
+      [ [ "wire", 1 ] ],
+      [ [ "leather", 5 ], [ "rag", 5 ] ],
+      [ [ "chestpouch", 4 ], [ "legpouch_large", 2 ] ],
+      [ [ "filament", 40, "LIST" ], [ "cordage", 2, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "pa_bscabbard",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ "cutting", 2 ],
+    "time": 48000,
+    "autolearn": true,
+    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "forge", 200 ], [ "oxy_torch", 40 ] ] ],
+    "components": [ [ [ "steel_lump", 1 ], [ "steel_chunk", 4 ], [ "scrap", 12 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "pa_scabbard",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ "cutting", 1 ],
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "forge", 100 ], [ "oxy_torch", 20 ] ] ],
+    "components": [ [ [ "steel_chunk", 2 ], [ "scrap", 6 ] ] ]
+  },
+  {
+    "result": "sheath",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "cutting", 1 ],
+    "time": 90000,
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [
+      [ [ "scrap", 1 ] ],
+      [ [ "leather", 6 ], [ "tanned_hide", 1 ] ],
+      [ [ "filament", 20, "LIST" ], [ "cordage", 1, "LIST" ] ]
+    ]
+  }
+]

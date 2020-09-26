@@ -1,0 +1,54 @@
+[
+  {
+    "type": "furniture",
+    "id": "magical_flame",
+    "name": "magical flame",
+    "symbol": "4",
+    "bgcolor": "yellow",
+    "description": "It is a small fire that will never disappear. Although it is not enough for lighting, it is possible to go through cooking using fire. You can also use it with a fire like a regular fireplace.",
+    "move_cost_mod": 2,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FIRE_CONTAINER", "SUPPRESS_SMOKE", "INDOORS", "PLACE_ITEM" ],
+    "crafting_pseudo_item": "fire",
+    "bash": {
+      "str_min": 18,
+      "str_max": 50,
+      "sound": "crunch!",
+      "sound_fail": "whump!",
+      "items": [ { "item": "charcoal", "count": 8 }, { "item": "ash", "count": [ 200, 500 ] } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_irori",
+    "name": "hearth",
+    "symbol": "#",
+    "description": "It is a Japanese traditional furnace. It is used not only for cooking but also for various applications such as heating and lighting.",
+    "bgcolor": "gray",
+    "move_cost_mod": 2,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FIRE_CONTAINER", "SUPPRESS_SMOKE", "INDOORS", "PLACE_ITEM" ],
+    "bash": {
+      "str_min": 6,
+      "str_max": 21,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "items": [
+        { "item": "ash", "count": [ 10, 21 ] },
+        { "item": "splinter", "count": [ 8, 10 ] },
+        { "item": "charcoal", "count": [ 2, 5 ] },
+        { "item": "2x4", "count": 2 }
+      ]
+    }
+  },
+  {
+    "id": "f_tatami",
+    "copy-from": "f_tatami",
+    "type": "furniture",
+    "name": "tatami mat",
+    "deconstruct": { "items": [ { "item": "tatami_mat", "count": 1 }, { "item": "straw_pile", "count": [ 1, 2 ] } ] },
+    "symbol": "#",
+    "color": [ "brown" ],
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "ORGANIC", "EASY_DECONSTRUCT" ]
+  }
+]

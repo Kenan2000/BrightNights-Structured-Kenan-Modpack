@@ -1,0 +1,84 @@
+[
+  {
+    "id": "knife_stiletto",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "stiletto",
+    "description": "A long thin dagger favored by knights and modern rogues.",
+    "weight": 350,
+    "volume": 2,
+    "price": 150000,
+    "to_hit": 1,
+    "bashing": 2,
+    "cutting": 17,
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "PRECISE", "RAPID" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 4 ] ],
+    "flags": [ "STAB", "SHEATH_KNIFE", "NO_CVD" ]
+  },
+  {
+    "id": "cauldron",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "cauldron (100L)",
+    "description": "A very large pot, ready to wash clothes in, or make a witches brew.",
+    "weight": 22679,
+    "volume": 500,
+    "price": 45000,
+    "to_hit": -4,
+    "bashing": 20,
+    "material": "iron",
+    "symbol": ")",
+    "color": "dark_gray",
+    "container_data": {
+      "contains": 400,
+      "watertight": true
+    },
+    "qualities": [ [ "COOK", 3 ], [ "BOIL", 3 ], [ "CONTAIN", 1 ] ],
+    "use_action": "HEAT_FOOD",
+    "flags": [ "DURABLE_MELEE" ]
+  },
+  {
+    "id": "cauldron_steel",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "steel cauldron (100L)",
+    "description": "A very large pot.  You can smell the crawfish boiling now.",
+    "weight": 18590,
+    "volume": 400,
+    "price": 45000,
+    "to_hit": -4,
+    "bashing": 20,
+    "material": "steel",
+    "symbol": ")",
+    "color": "light_gray",
+    "container_data": {
+      "contains": 400,
+      "watertight": true
+    },
+    "qualities": [ [ "COOK", 3 ], [ "BOIL", 3 ], [ "CONTAIN", 1 ], [ "CHEM", 1 ] ],
+    "use_action": "HEAT_FOOD"
+  },
+  {
+    "id": "mil_theatermap",
+    "type": "GENERIC",
+    "category": "books",
+    "name": "military theater map",
+    "description": "This is a detailed description of the region created from intel acquired through universal intrusive surveillance.  It includes information about local topography, climate, demographics, and faction estimates.",
+    "weight": 50,
+    "volume": 1,
+    "price": 1000000,
+    "to_hit": -1,
+    "material": "plastic",
+    "symbol": ";",
+    "color": "green",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 180,
+      "terrain": [ "field", "forest", "forest_water", "river_center", "river", "pond_field", "pond_forest", "pond_swamp", "mine_entrance", "cave", "cave_rat", "park", "farm", "orchard", "hiway", "road", "bridge", "sub_station", "pwr_sub_s", "pool", "public_works", "s_gun", "mil_surplus", "prison", "fema_entrance", "shelter", "evac_center", "police", "bunker", "outpost", "silo", "s_lot", "house", "hotel_tower", "hospital", "school", "bank", "religious_cemetery", "church", "cathedral", "s_restaurant_coffee", "s_restaurant", "s_restaurant_fast", "s_pharm", "s_hardware", "office_doctor", "s_grocery", "s_hardware", "s_electronics", "pawn", "furniture", "abstorefront", "s_sports", "s_liquor", "s_clothes", "s_library", "s_bookstore", "s_teashop", "bar", "s_pizza_parlor", "s_garage", "dirtlot", "megastore", "s_gas" ],
+      "message": "You gain detailed information about the surrounding area."
+    }
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "type": "item_group",
+    "id": "chem_clothes",
+    "items": [
+      [ "coat_lab", 40 ],
+      [ "apron_leather", 10 ],
+      [ "gloves_medical", 40 ],
+      [ "boots_rubber", 20 ],
+      [ "gloves_rubber", 20 ],
+      [ "glasses_safety", 40 ],
+      [ "jumpsuit", 20 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "chem_misc",
+    "items": [
+      [ "tongs", 10 ],
+      [ "laptop", 5 ],
+      [ "battery", 50 ],
+      [ "lighter", 60 ],
+      [ "bottle_plastic", 10 ],
+      [ "bottle_plastic_small", 5 ],
+      [ "bottle_glass", 20 ],
+      [ "jar_glass", 20 ],
+      [ "jar_3l_glass", 16 ],
+      [ "rag", 20 ],
+      [ "soldering_iron", 40 ]
+    ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "basement" ],
+    "weight": 50,
+    "object": {
+      "fill_ter": "t_rock",
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "   |----------------|   ",
+        "   |D=.....RR......D|   ",
+        "   |D%..D......D..cD|   ",
+        "   |D%..Dc....cD...D|   ",
+        "   |D=..D......D...D|   ",
+        "   ||-............--|   ",
+        "   ||..............D|   ",
+        "   |C.#.#.|--|.#C.c$|   ",
+        "   |C.#.#.|<<|.#C..D|   ",
+        "   |C.#.#.|..|.#C..D|   ",
+        "   |C.#.#.|++|.#C.c$|   ",
+        "   ||..............D|   ",
+        "   ||-............--|   ",
+        "   |D=..D......D...D|   ",
+        "   |D%..Dc....cD...D|   ",
+        "   |D%..D......D..cD|   ",
+        "   |D=.....LL......D|   ",
+        "   |----------------|   ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_rock_floor",
+        "c": "t_rock_floor",
+        "C": "t_rock_floor",
+        "D": "t_rock_floor",
+        "L": "t_rock_floor",
+        "R": "t_rock_floor",
+        "=": "t_wall_glass",
+        "$": "t_console_broken",
+        "%": "t_door_glass_c",
+        "<": "t_stairs_up",
+        "+": "t_door_c",
+        "|": "t_wall",
+        "-": "t_wall"
+      },
+      "furniture": { "#": "f_counter", "c": "f_chair", "C": "f_cupboard", "D": "f_desk", "L": "f_locker", "R": "f_rack" },
+      "place_loot": [
+        { "group": "chem_home", "x": 4, "y": [ 10, 13 ], "chance": 8, "repeat": [ 1, 10 ] },
+        { "group": "chem_home", "x": 6, "y": [ 10, 13 ], "chance": 8, "repeat": [ 1, 10 ] },
+        { "group": "chem_home", "x": 8, "y": [ 10, 13 ], "chance": 8, "repeat": [ 1, 10 ] },
+        { "group": "chem_home", "x": 4, "y": [ 4, 7 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "chem_home", "x": 4, "y": [ 16, 19 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "chem_home", "x": 8, "y": [ 5, 7 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "chem_home", "x": 8, "y": [ 16, 18 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "electronics", "x": [ 15, 16 ], "y": [ 10, 13 ], "chance": 24, "repeat": [ 1, 10 ] },
+        { "group": "electronics", "x": 19, "y": [ 4, 7 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "electronics", "x": 19, "y": [ 16, 19 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "electronics", "x": 19, "y": [ 11, 12 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "electronics", "x": 15, "y": [ 5, 7 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "electronics", "x": 15, "y": [ 16, 18 ], "chance": 4, "repeat": [ 1, 10 ] },
+        { "group": "chem_clothes", "x": [ 11, 12 ], "y": 19, "chance": 32, "repeat": [ 1, 4 ] },
+        { "group": "chem_misc", "x": [ 11, 12 ], "y": 4, "chance": 32, "repeat": [ 1, 4 ] }
+      ],
+      "place_monsters": [ { "monster": "GROUP_ZOMBIE", "x": [ 2, 23 ], "y": [ 1, 19 ], "chance": 2 } ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "type": "material",
+    "ident": "omni_alloy",
+    "name": "Omni Corp. superalloy",
+    "density": 0,
+    "specific_heat_liquid": 0,
+    "specific_heat_solid": 0,
+    "latent_heat": 9999,
+    "bash_resist": 9999,
+    "cut_resist": 9999,
+    "acid_resist": 9999999,
+    "fire_resist": 9999999,
+    "elec_resist": 9999999,
+    "chip_resist": 9999999,
+    "repaired_with": "scrap",
+    "dmg_adj": [ "marked", "dented", "smashed", "shattered" ],
+    "bash_dmg_verb": "dented",
+    "cut_dmg_verb": "scratched",
+    "burn_products": [ [ "omni_scrap", 1 ] ],
+    "compacts_into": [ "omni_scrap" ]
+  },
+  {
+    "id": "omni_scrap",
+    "type": "AMMO",
+    "category": "spare_parts",
+    "name": { "str": "Omni Corp. scrap parts" },
+    "description": "An assortment of small bits of scrap steel from taking apart Omni Corp. equipment.",
+    "weight": "0 g",
+    "volume": "1 ml",
+    "price": 0,
+    "count": 1,
+    "stack_size": 200,
+    "material": "omni_alloy",
+    "symbol": ",",
+    "color": "light_gray",
+    "ammo_type": "components"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mallmap",
+    "copy-from": "abstractmap",
+    "type": "GENERIC",
+    "name": "shopping brochure",
+    "description": "This is a brochure advertising a local shopping mall.  It includes a map with bus routes.  The buses aren't running but the roads should still be there.",
+    "color": "pink",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 180,
+      "terrain": [ "hiway", "road", "mall_edge", "mall_center","mall_hall", "mall_cross", "mall_cap", "mall_corner", "mall_lot", "mall_lot" ],
+      "message": "You add the mall to your map."
+    }
+  }
+]

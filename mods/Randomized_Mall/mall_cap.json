@@ -1,0 +1,45 @@
+[
+    {
+        "type": "mapgen",
+        "om_terrain": "mall_cap",
+        "weight": 100,
+        "method": "json",
+        "object": {
+            "fill_ter": "t_thconc_floor",
+             "rows": [
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "wwwwwwwwwwwwwwwwwwwwwwww",
+                "wwwwwwwwwwwwwwwwwwwwwwww",
+                "wwwwwwwww|GGGG|wwwwwwwww",
+                "wwwwwwwww|....|wwwwwwwww",
+                "wwwwwwwww|....|wwwwwwwww",
+                "-wwwwwww--....--wwwwwww-",
+                "-ggggggg--GGGG--ggggggg-",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "..........    ..........",
+                "----------    ----------"
+            ],
+            "rotation": 0,
+            "palettes": [
+                "mall_base"
+            ],
+           "place_nested": [
+              { "chunks": [ "mall_chunk_10_sw" ], "x": 0, "y": 13 },
+              { "chunks": [ "mall_chunk_10_se" ], "x": 14, "y": 13 }
+            ]
+        }
+    }
+]

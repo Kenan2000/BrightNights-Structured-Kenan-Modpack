@@ -1,0 +1,56 @@
+[
+  {
+    "id": "thigh_high_boots_quiver",
+    "type": "ARMOR",
+    "name": "thigh high quiver",
+    "name_plural": "thigh-high quiver boots",
+    "description": "Very long leather boots that reach past the knees.  Difficult to wear but extremely durable. And now you've gone and made them cursed...",
+    "weight": 1540,
+    "volume": 17,
+    "price": 8000,
+    "to_hit": -1,
+    "bashing": 1,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "TORSO" ],
+    "coverage": 30,
+    "encumbrance": 25,
+    "warmth": 5,
+    "material_thickness": 3,
+    "environmental_protection": 2,
+    "use_action": [
+      { "type": "bandolier", "capacity": 30, "ammo": [ "arrow", "bolt" ], "draw_cost": 30 },
+      {
+        "menu_text": "Curse.",
+        "type": "transform",
+        "target": "thigh_high_boots",
+        "msg": "You make a terrible plan..."
+      }
+    ],
+    "flags": [ "VARSIZE", "WATERPROOF", "FANCY" ]
+  },
+  {
+    "id": "thigh_high_boots",
+    "type": "ARMOR",
+    "name": "pair of thigh-high boots",
+    "name_plural": "pairs of thigh-high boots",
+    "description": "Very long leather boots that reach past the knees.  Difficult to wear but extremely durable.",
+    "weight": 1540,
+    "volume": 17,
+    "price": 8000,
+    "to_hit": -1,
+    "bashing": 1,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "FEET", "LEGS" ],
+    "coverage": 80,
+    "encumbrance": 25,
+    "warmth": 20,
+    "material_thickness": 3,
+    "environmental_protection": 2,
+    "use_action": { "menu_text": "Curse.", "type": "transform", "target": "thigh_high_boots_quiver", "msg": "You make a terrible plan..." },
+    "flags": [ "VARSIZE", "WATERPROOF", "FANCY" ]
+  }
+]

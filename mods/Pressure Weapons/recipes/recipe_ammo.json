@@ -1,0 +1,61 @@
+[
+    {
+        "type" : "recipe",
+        "result": "makeshift_rifle_bolt",
+        "category": "CC_AMMO",
+        "subcategory": "CSC_AMMO_ARROWS",
+        "skill_used": "fabrication",
+        "skills_required": [ ["survival", 2], ["fabrication", 1] ],
+        "difficulty": 3,
+        "time": 10000,
+        "autolearn": true,
+        "qualities":[
+          {"id":"SAW_W","level":1}
+        ], "components": [
+            [
+                ["2x4", 3], ["stick", 3]
+            ]
+        ]
+    },
+    {
+        "type" : "recipe",
+        "result": "steel_rifle_bolt",
+        "category": "CC_AMMO",
+        "subcategory": "CSC_AMMO_ARROWS",
+        "skill_used": "fabrication",
+        "skills_required": [ ["fabrication", 2] ],
+        "difficulty": 4,
+        "time": 10000,
+        "autolearn": true,
+        "book_learn" : [[ "recipe_arrows", 2 ]],
+        "qualities":[
+          {"id":"HAMMER","level":1},
+          {"id":"SAW_M","level":1}
+        ], "components": [
+            [
+              ["scrap", 6],
+              ["steel_chunk", 2]
+            ]
+        ]
+    },
+    {
+        "type" : "recipe",
+        "result": "iron_rifle_bolt",
+        "category": "CC_AMMO",
+        "subcategory": "CSC_AMMO_ARROWS",
+        "skill_used": "fabrication",
+        "skills_required": [ ["fabrication", 2] ],
+        "difficulty": 4,
+        "time": 10000,
+        "autolearn": true,
+        "book_learn" : [[ "recipe_arrows", 2 ]],
+        "qualities":[
+          {"id":"HAMMER","level":1},
+          {"id":"SAW_M","level":1}
+        ], "components": [
+            [
+              ["scrap", 6]
+            ]
+        ]
+    }
+]

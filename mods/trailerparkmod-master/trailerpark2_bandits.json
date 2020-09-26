@@ -1,0 +1,74 @@
+[
+	{
+		"type": "mapgen",
+		"method": "json",
+		"om_terrain": "trailerpark2_bandit",
+		"weight": 100,
+		"object": {
+			"fill_ter": "t_dirt",
+			"rows": [
+	            "$$$$$$$$$$$$$$$$$$$$$$$$",
+				"______....._.DD.._..._.$",
+				"__.1............_.___..$",
+				"_........._.._.........$",
+				"....._;;..;;..__....._.$",
+				"...;XXXXXXXXXX;._......$",
+				"....X...._...X_..._....$",
+				".._.X......._X_____....$",
+				"....X...._...X.........$",
+				"___.X...._...X........_$",
+				"...;XXXXXxXXXX;__......$",
+				"_.....;;.._;...____....$",
+				"..___...._....s........$",
+				"....._..._....s._..___.$",
+				"...._._.._....s.__.....$",
+				".....__....___s..___...$",
+				"_........_.___s...__...$",
+				"..........____s..__....$",
+				".sssssssssssss..._.....$",
+				".......__..___.._..1...$",
+				"1....._.._.....__.ODDD_$",
+				"..____.....__1__OOODDDO$",
+				"._...................._$",
+				"$$$$$$$$$$$$$$$$$$$$$$$$"
+			],
+			"place_npcs": [
+				{ "class": "militia_warrior", "x": 5, "y": 16 },
+				{ "class": "militia_king", "x": 8, "y": 8 }
+            ],
+			"terrain": {
+				"$": "t_fence_wire",
+				".": "t_grass",
+				"_": "t_dirt",
+				"1": "t_tree_young",
+				";": "t_pit_glass"
+			},
+			"furniture": {
+				"f": "f_dandelion",
+				"O": "f_crate_o",
+				"D": "f_dumpster"
+			},
+			"place_vehicles": [
+				{
+					"chance": 100,
+					"fuel": 50,
+					"rotation": 0,
+					"status": 1,
+					"vehicle": "bandit_trailer",
+					"x": 9,
+					"y": 8
+				}
+			],
+			"place_loot": [
+				{ "group": "ammo_casings", "x": 12, "y": 12, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 13, "y": 15, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 14, "y": 16, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 15, "y": 17, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 12, "y": 17, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 13, "y": 17, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 14, "y": 19, "chance": 20, "repeat": [ 1, 10 ] },
+				{ "group": "ammo_casings", "x": 15, "y": 21, "chance": 20, "repeat": [ 1, 10 ] }
+			]
+		}
+	}
+]

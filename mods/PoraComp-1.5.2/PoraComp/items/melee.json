@@ -1,0 +1,21 @@
+[
+  {
+    "id": "rapier_umbrella",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "rapier umbrella",
+    "description": "An umbrella modifed with raiper-esque tip, and reinforced with scrap. Useful for dispatching small threats while staying dry, though incredibly awkward to use.",
+    "weight": 456,
+	"looks-like": "umbrella",
+    "volume": 7,
+    "price": 3400,
+    "to_hit": -1,
+    "bashing": 4,
+    "cutting": 15,
+    "material": [ "plastic", "steel" ],
+    "symbol": "/",
+    "color": "magenta",
+    "techniques": [ "WBLOCK_1", "PRECISE" ],
+    "flags": [ "STAB", "RAIN_PROTECT", "SHEATH_SWORD" ]
+  }
+]

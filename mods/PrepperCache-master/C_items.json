@@ -1,0 +1,17 @@
+[
+  {
+    "id": "cachemap",
+    "copy-from": "abstractmap",
+    "type": "GENERIC",
+    "name": "prepper's map",
+    "plural_name": "prepper's maps",
+    "description": "A surprisingly well-drawn map outlining the locations of prepper cache's.",
+    "color": "green",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 180,
+      "terrain": [ "cache_main", "forest_trail" ],
+      "message": "You update your map with the prepper locations."
+    }
+  }
+]

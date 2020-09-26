@@ -1,0 +1,33 @@
+[
+  {
+    "type" : "npc",
+    "id" : "old_guard_rep",
+    "comment" : "Appears in the refugee center as a source of missions and info.  Faction critical.",
+    "comment" : "name+ is appended to the end of the npc's name.  If you remove the comma it sets the name as is.",
+    "name+" : ", Representative",
+    "comment" : "Class is based on the enum in npc.h.  The important ones are 0=NC_NONE, 2=NC_SHOPKEEP,",
+    "comment" : "3=NC_HACKER, 4=NC_DOCTOR, 5=NC_TRADER, 6=NC_NINJA, 7=NC_COWBOY, 8=NC_SCIENTIST,",
+    "comment" : "9=NC_BOUNTY_HUNTER, 10=NC_THUG, 11=NC_SCAVENGER, 13=NC_HUNTER, 14=NC_SOLDIER.",
+    "class" : 7,
+    "comment" : "Attitude is based on the enum in npc.h.  The important ones are 0=NPCATT_NULL, 1=NPCATT_TALK",
+    "comment" : "3=NPCATT_FOLLOW, 7=NPCATT_DEFEND, 10=NPCATT_KILL, and 11=NPCATT_FLEE",
+    "attitude" : 0,
+    "comment" : "Mission is based on the enum in npc.h.  The important ones are 0=NPC_MISSION_NUL, 3=NPC_MISSION_SHOPKEEP",
+    "comment" : "and 7=NPC_MISSION_GUARD",
+    "mission" : 7,
+    "chat" : "TALK_OLD_GUARD_REP",
+    "faction" : "old_guard",
+    "mission_offered" : 31,
+    "comment" : "Mission_offered is based on the enum mission_id in mission.h.  0=MISSION_NULL"
+  },{
+    "type" : "npc",
+    "id" : "warboy",
+    "comment" : "A warboy, bred for vehicle-based combat.",
+    "name+" : ", Warboy",
+    "class" : 10,
+    "attitude" : 1,
+    "mission" : 0,
+    "chat" : "TALK_WARBOY",
+    "faction" : "warboys"
+  }
+]

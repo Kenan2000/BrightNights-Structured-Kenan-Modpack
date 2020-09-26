@@ -1,0 +1,440 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_coffin_c",
+    "name": "coffin",
+    "description": "Holds the bodies of the countless you kill.",
+    "symbol": "0",
+    "bgcolor": "brown",
+    "move_cost_mod": -1,
+    "required_str": 14,
+    "flags": [
+      "TRANSPARENT",
+      "CONTAINER",
+      "SEALED",
+      "ALLOW_FIELD_EFFECT",
+      "FLAMMABLE",
+      "PLACE_ITEM",
+      "ORGANIC",
+      "MOUNTABLE",
+      "SHORT",
+      "FLAT_SURF",
+      "HIDE_PLACE"
+    ],
+    "deconstruct": {
+      "items": [ { "item": "2x4", "count": 12 }, { "item": "nail", "charges": [ 12, 24 ] }, { "item": "rag", "count": [ 15, 20 ] } ]
+    },
+    "max_volume": "1000 L",
+    "open": "f_coffin_o",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "wham!",
+      "items": [
+        { "item": "2x4", "count": [ 1, 5 ] },
+        { "item": "splinter", "count": [ 2, 6 ] },
+        { "item": "nail", "charges": [ 2, 10 ] },
+        { "item": "rag", "count": [ 8, 12 ] }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_coffin_o",
+    "name": "open coffin",
+    "description": "Look at the bodies of the countless you've killed.",
+    "symbol": "O",
+    "bgcolor": "brown",
+    "move_cost_mod": 1,
+    "required_str": 12,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE", "PLACE_ITEM", "ORGANIC", "MOUNTABLE", "SHORT", "HIDE_PLACE" ],
+    "deconstruct": {
+      "items": [ { "item": "2x4", "count": 12 }, { "item": "nail", "charges": [ 12, 24 ] }, { "item": "rag", "count": [ 15, 20 ] } ]
+    },
+    "max_volume": "1000 L",
+    "close": "f_coffin_c",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "wham!",
+      "items": [
+        { "item": "2x4", "count": [ 1, 5 ] },
+        { "item": "splinter", "count": [ 2, 6 ] },
+        { "item": "nail", "charges": [ 2, 10 ] },
+        { "item": "rag", "count": [ 8, 12 ] }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_cupboard",
+    "name": "cupboard",
+    "symbol": "#",
+    "description": "Store your cups.",
+    "color": "blue",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "SEALED", "CONTAINER", "PLACE_ITEM", "ORGANIC", "MOUNTABLE" ],
+    "deconstruct": { "items": [ { "item": "2x4", "count": 3 }, { "item": "nail", "charges": [ 6, 8 ] } ] },
+    "max_volume": "1000 L",
+    "open": "f_cupboard_o",
+    "bash": {
+      "str_min": 8,
+      "str_max": 30,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 1, 3 ] }, { "item": "nail", "charges": [ 2, 6 ] }, { "item": "splinter", "count": 1 } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_cupboard_o",
+    "name": "open cupboard",
+    "symbol": "#",
+    "description": "Store your cups.",
+    "color": "blue",
+    "move_cost_mod": 1,
+    "required_str": -1,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "CONTAINER", "PLACE_ITEM", "ORGANIC", "MOUNTABLE" ],
+    "deconstruct": { "items": [ { "item": "2x4", "count": 3 }, { "item": "nail", "charges": [ 6, 8 ] } ] },
+    "max_volume": "1000 L",
+    "close": "f_cupboard",
+    "bash": {
+      "str_min": 8,
+      "str_max": 30,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 1, 3 ] }, { "item": "nail", "charges": [ 2, 6 ] }, { "item": "splinter", "count": 1 } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_desk",
+    "name": "desk",
+    "symbol": "#",
+    "description": "Sit down at it, and, if up to, work on it.",
+    "color": "light_red",
+    "move_cost_mod": 1,
+    "required_str": 8,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "CONTAINER", "SEALED", "PLACE_ITEM", "ORGANIC", "MOUNTABLE", "FLAT_SURF" ],
+    "deconstruct": { "items": [ { "item": "2x4", "count": 4 }, { "item": "nail", "charges": [ 6, 10 ] } ] },
+    "max_volume": "1000 L",
+    "open": "f_desk_o",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 1, 3 ] }, { "item": "nail", "charges": [ 2, 6 ] }, { "item": "splinter", "count": 1 } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_desk_o",
+    "name": "desk",
+    "symbol": "#",
+    "description": "Sit down at it, and, if up to, work on it.",
+    "color": "light_red",
+    "move_cost_mod": 1,
+    "required_str": 8,
+    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "CONTAINER", "PLACE_ITEM", "ORGANIC", "MOUNTABLE", "FLAT_SURF" ],
+    "deconstruct": { "items": [ { "item": "2x4", "count": 4 }, { "item": "nail", "charges": [ 6, 10 ] } ] },
+    "max_volume": "1000 L",
+    "close": "f_desk",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 1, 3 ] }, { "item": "nail", "charges": [ 2, 6 ] }, { "item": "splinter", "count": 1 } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_dresser",
+    "name": "dresser",
+    "symbol": "{",
+    "description": "Dress yourself for the prom, or other occasions.",
+    "color": "brown",
+    "move_cost_mod": -1,
+    "required_str": 8,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE", "PLACE_ITEM", "ORGANIC", "BLOCKSDOOR", "MOUNTABLE" ],
+    "deconstruct": { "items": [ { "item": "2x4", "count": 6 }, { "item": "nail", "charges": [ 6, 8 ] } ] },
+    "max_volume": "2000 L",
+    "open": "f_dresser_o",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 2, 6 ] }, { "item": "nail", "charges": [ 4, 8 ] }, { "item": "splinter", "count": 1 } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_dresser_o",
+    "name": "dresser",
+    "symbol": "{",
+    "description": "Dress yourself for the prom, or other occasions.",
+    "color": "brown",
+    "move_cost_mod": -1,
+    "required_str": 8,
+    "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE", "PLACE_ITEM", "ORGANIC", "BLOCKSDOOR", "MOUNTABLE" ],
+    "deconstruct": { "items": [ { "item": "2x4", "count": 6 }, { "item": "nail", "charges": [ 6, 8 ] } ] },
+    "max_volume": "2000 L",
+    "close": "f_dresser",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [ { "item": "2x4", "count": [ 2, 6 ] }, { "item": "nail", "charges": [ 4, 8 ] }, { "item": "splinter", "count": 1 } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_fridge",
+    "name": "refrigerator",
+    "symbol": "{",
+    "description": "Freeze your food with the amazing science of electricity!  Oh wait, none is flowing.",
+    "color": "light_cyan",
+    "move_cost_mod": -1,
+    "required_str": 10,
+    "insulation": 3,
+    "flags": [ "CONTAINER", "PLACE_ITEM", "SEALED", "BLOCKSDOOR", "MINEABLE", "HIDE_PLACE", "DOOR" ],
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 2, 6 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] },
+        { "item": "steel_chunk", "count": [ 2, 3 ] },
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "cu_pipe", "count": [ 2, 5 ] },
+        { "item": "refrigerant_tank", "count": 1 },
+        { "item": "motor_tiny", "count": 1 }
+      ]
+    },
+    "max_volume": "2000 L",
+    "open": "f_fridge_o",
+    "bash": {
+      "str_min": 18,
+      "str_max": 50,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 8, 12 ] },
+        { "item": "steel_chunk", "count": [ 0, 3 ] },
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "cable", "charges": [ 1, 2 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "cu_pipe", "count": [ 2, 4 ] },
+        { "item": "scrap_copper", "count": [ 1, 2 ] },
+        { "item": "motor_tiny", "prob": 25 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_fridge_o",
+    "name": "refrigerator",
+    "symbol": "{",
+    "description": "Freeze your food with the amazing science of electricity!  Oh wait, none is flowing.",
+    "color": "light_cyan",
+    "move_cost_mod": 1,
+    "required_str": 10,
+    "insulation": 3,
+    "flags": [ "CONTAINER", "PLACE_ITEM", "BLOCKSDOOR","DOOR", "MINEABLE", "HIDE_PLACE" ],
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 2, 6 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] },
+        { "item": "steel_chunk", "count": [ 2, 3 ] },
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "cu_pipe", "count": [ 2, 5 ] },
+        { "item": "refrigerant_tank", "count": 1 },
+        { "item": "motor_tiny", "count": 1 }
+      ]
+    },
+    "max_volume": "1000 L",
+    "close": "f_fridge",
+    "bash": {
+      "str_min": 18,
+      "str_max": 50,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 8, 12 ] },
+        { "item": "steel_chunk", "count": [ 0, 3 ] },
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "cable", "charges": [ 1, 2 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "cu_pipe", "count": [ 2, 4 ] },
+        { "item": "scrap_copper", "count": [ 1, 2 ] },
+        { "item": "motor_tiny", "prob": 25 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_glass_fridge",
+    "name": "glass door fridge",
+    "symbol": "{",
+    "color": "light_cyan",
+    "description": "Wow!  See INTO your fridge before you open it!",
+    "move_cost_mod": -1,
+    "required_str": 10,
+    "insulation": 2,
+    "flags": [ "PLACE_ITEM", "SEALED", "BLOCKSDOOR", "DOOR" ],
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 2, 5 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 3 ] },
+        { "item": "steel_chunk", "count": [ 2, 3 ] },
+        { "item": "scrap", "count": [ 2, 6 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "glass_sheet", "count": 1 },
+        { "item": "cu_pipe", "count": [ 3, 6 ] },
+        { "item": "refrigerant_tank", "count": 1 },
+        { "item": "motor_tiny", "count": 1 }
+      ]
+    },
+    "max_volume": "1000 L",
+    "open": "f_glass_fridge_o",
+    "bash": {
+      "str_min": 12,
+      "str_max": 50,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 3 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 9 ] },
+        { "item": "steel_chunk", "count": [ 0, 3 ] },
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "cu_pipe", "count": [ 1, 4 ] },
+        { "item": "scrap_copper", "count": [ 0, 2 ] },
+        { "item": "glass_shard", "count": [ 3, 6 ] },
+        { "item": "motor_tiny", "prob": 25 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_glass_fridge_o",
+    "name": "glass door fridge",
+    "symbol": "{",
+    "color": "light_cyan",
+    "description": "Wow!  See INTO your fridge before you open it!",
+    "move_cost_mod": -1,
+    "required_str": 10,
+    "insulation": 2,
+    "flags": [ "PLACE_ITEM", "BLOCKSDOOR" ],
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 2, 5 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 3 ] },
+        { "item": "steel_chunk", "count": [ 2, 3 ] },
+        { "item": "scrap", "count": [ 2, 6 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "glass_sheet", "count": 1 },
+        { "item": "cu_pipe", "count": [ 3, 6 ] },
+        { "item": "refrigerant_tank", "count": 1 },
+        { "item": "motor_tiny", "count": 1 }
+      ]
+    },
+    "max_volume": "1250 L",
+    "close": "f_glass_fridge",
+    "bash": {
+      "str_min": 12,
+      "str_max": 50,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 3 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 9 ] },
+        { "item": "steel_chunk", "count": [ 0, 3 ] },
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "cable", "charges": [ 1, 3 ] },
+        { "item": "hose", "count": 1 },
+        { "item": "cu_pipe", "count": [ 1, 4 ] },
+        { "item": "scrap_copper", "count": [ 0, 2 ] },
+        { "item": "glass_shard", "count": [ 3, 6 ] },
+        { "item": "motor_tiny", "prob": 25 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_locker",
+    "name": "locker",
+    "symbol": "{",
+    "description": "Usually used for storing equipment or items.",
+    "color": "light_gray",
+    "move_cost_mod": -1,
+    "required_str": 9,
+    "flags": [ "CONTAINER", "PLACE_ITEM", "SEALED", "BLOCKSDOOR", "HIDE_PLACE", "DOOR" ],
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] },
+        { "item": "pipe", "count": [ 4, 8 ] }
+      ]
+    },
+    "open": "f_locker_o",
+    "max_volume": "2000 L",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "pipe", "count": 1 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_locker_o",
+    "name": "open locker",
+    "symbol": "{",
+    "description": "An open locker. Usually used for storing equipment or items.",
+    "color": "light_gray",
+    "move_cost_mod": 3,
+    "required_str": 9,
+    "flags": [ "CONTAINER", "PLACE_ITEM", "BLOCKSDOOR", "HIDE_PLACE", "DOOR" ],
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] },
+        { "item": "pipe", "count": [ 4, 8 ] }
+      ]
+    },
+    "close": "f_locker",
+    "max_volume": "2000 L",
+    "bash": {
+      "str_min": 12,
+      "str_max": 40,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "pipe", "count": 1 }
+      ]
+    }
+  }
+]

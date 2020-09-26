@@ -1,0 +1,24 @@
+[
+  {
+    "result": "SRC26",
+    "copy-from": "ammo_cartridge",
+    "type": "uncraft",
+    "using": [ [ "Ammo_SRC", 1 ], [ "ammo_bullet", 3 ] ],
+    "components": [ [ [ "gunpowder", 4 ] ] ]
+  },
+  	{
+    "result": "reloaded_SRC26",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ "gun", 4 ],
+    "time": 17500,
+    "batch_time_factors": [ 50, 10 ],
+    "book_learn": [ [ "recipe_bullets", 3 ] ],
+    "charges": 1,
+    "using": [ [ "bullet_forming", 2 ], [ "ammo_bullet", 2 ], [ "Ammo_SRC", 1 ] ],
+    "components": [ [ [ "gunpowder", 4 ] ] ]
+  }
+]

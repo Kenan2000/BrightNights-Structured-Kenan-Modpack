@@ -1,0 +1,30 @@
+[
+{
+   "id": "f_port_cooler",
+   "type": "furniture",
+   "name": "portable cooler",
+   "description": "A portable cooler. Keeps everything cold and fresh.",
+   "move_cost_mod": -1,
+   "price": 50000,
+   "required_str": 5,
+   "material": [ "plastic" ],
+   "symbol": ";",
+   "color": "blue",
+   "coverage": 60,
+   "insulation": 4,
+   "max_volume": "1500 L",
+   "deployed_item": "port_cooler",
+   "examine_action": "deployed_furniture",
+   "flags": [ "TRANSPARENT", "CONTAINER", "PLACE_ITEM", "MOUNTABLE" ],
+   "deconstruct": {
+     "items": [ { "item": "port_cooler", "count": 1 } ]
+  },
+  "bash": {
+    "str_min": 8,
+    "str_max": 40,
+    "sound": "smash!",
+    "sound_fail": "wham!",
+    "items": [ { "item": "plastic_chunk", "charges": [ 20, 30 ] } ]
+  }
+ }
+]

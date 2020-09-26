@@ -1,0 +1,19 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE" ],
+    "tiles-new": [
+      {
+        "file": "32x32//32x32.png",
+		"sprite_width":32,
+		"sprite_height":32,
+        "tiles": [
+          { "id": "mon_BBOX", "fg": 1 },
+          { "id": "SOS_VT", "fg": 0 },
+          { "id": "SOS_VT_O", "fg": 1 },
+          { "id": "f_SOS_VT_O", "fg": 2, "rotates": false }
+        ]
+      }
+    ]
+  }
+]

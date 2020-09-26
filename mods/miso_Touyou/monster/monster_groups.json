@@ -1,0 +1,27 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "alice_bot",
+    "neutral": [ "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "zombie_shaman",
+    "friendly": [ "blob", "zombie", "zombie_shaman2" ],
+    "neutral": [ "animal", "small_animal", "insect" ],
+    "by_mood": "bee"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "zombie_shaman2",
+    "friendly": [ "blob", "zombie", "zombie_shaman", "small_animal", "frog" ],
+    "neutral": [ "animal", "insect" ],
+    "by_mood": "bee"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_SHAMAN1",
+    "default": "mon_zombie_shaman",
+    "monsters": [ { "monster": "mon_zombie_shaman", "freq": 300, "cost_multiplier": 0 } ]
+  }
+]

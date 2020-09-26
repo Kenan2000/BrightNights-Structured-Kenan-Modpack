@@ -1,0 +1,28 @@
+[
+  {
+    "type": "item_group",
+	"id": "guns_obscure",
+	"items": [ 
+	{ "item": "ak_glock_17", "prob": 35, "charges-min": 0, "charges-max": 34 },
+    { "item": "ak_sw_610", "prob": 35, "charges-min": 0, "charges-max": 12 },
+	{ "item": "ak_tec9", "prob": 35, "charges-min": 0, "charges-max": 64 },
+	{ "item": "ak_deagle", "prob": 35, "charges-min": 0, "charges-max": 16 },
+	{ "item": "ak_1911", "prob": 35, "charges-min": 0, "charges-max": 14 } ]
+  },
+  {
+    "type": "item_group",
+	"id": "mags_obscure",
+	"items": [
+	{ "item": "ak_glockmag", "prob": 10, "charges-min": 0, "charges-max": 34 },
+	{ "item": "ak_40_speedloader", "prob": 10, "charges-min": 0, "charges-max": 12 },
+    { "item": "ak_tec9mag", "prob": 10, "charges-min": 0, "charges-max": 64 },
+	{ "item": "ak_deaglemag", "prob": 10, "charges-min": 0, "charges-max": 16 },
+	{ "item": "ak_1911mag", "prob": 10, "charges-min": 0, "charges-max": 14 },
+	{ "item": "ak_1911bigmag", "prob": 10, "charges-min": 0, "charges-max": 20 } ]
+  },
+  {
+    "type": "item_group",
+	"id": "book_gunmags",
+	"items": [ [ "ak_pistol_book", 50 ] ]
+  }
+]

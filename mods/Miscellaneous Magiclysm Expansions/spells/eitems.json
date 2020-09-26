@@ -1,0 +1,47 @@
+[
+{
+    "type": "GENERIC",
+    "id": "mdag",
+    "name": "ethereal dagger",
+    "description": "A light-magenta colored dagger shimmering in an organised pattern. It seems rather sharp.",
+    "weight": 1337,
+    "to_hit": 1,
+    "color": "magenta",
+    "symbol": "|",
+    "material": [ "superalloy" ],
+    "flags": [
+      "TRADER_AVOID",
+      "UNBREAKABLE_MELEE",
+      "NO_REPAIR",
+      "NO_SALVAGE",
+      "MAGIC_FOCUS"
+    ],
+    "volume": 5,
+    "cutting": 10,
+    "price": 0,
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 15 ] ]
+  },
+  {
+    "id": "ebuckler",
+    "type": "ARMOR",
+    "name": "ethereal buckler",
+    "category": "armor",
+    "description": "A small buckler, this light-magenta one shimmers magically.",
+    "weight": 1814,
+    "volume": 10,
+    "price": 0,
+    "bashing": 8,
+    "material": "steel",
+    "symbol": "[",
+    "color": "magenta",
+    "covers": [ "ARM_EITHER", "HAND_EITHER" ],
+    "coverage": 30,
+    "encumbrance": 8,
+    "material_thickness": 3,
+    "techniques": [ "WBLOCK_2" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "TRADER_AVOID",
+      "UNBREAKABLE_MELEE",
+      "NO_REPAIR",
+      "NO_SALVAGE" ]
+  }
+  ]

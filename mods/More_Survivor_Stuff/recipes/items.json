@@ -1,0 +1,17 @@
+[
+  {
+    "type": "recipe",
+    "result": "mss_machining_rig_item",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_PARTS",
+    "skill_used": "fabrication",
+    "skills_required": [ "electronics", 2 ],
+    "difficulty": 10,
+    "time": "5 h",
+    "autolearn": true,
+    "using": [ [ "blacksmithing_standard", 120 ], [ "steel_standard", 50 ], [ "welding_standard", 400 ]  ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "SAW_M", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ], [ [ "swage", -1 ] ]  ],
+    "components": [ [ [ "frame", 1 ] ], [ [ "circsaw_blade", 1 ] ], [ [ "cordless_drill", 1 ] ], [ [ "cable", 20 ] ], [ [ "motor_tiny", 2 ] ],  [ [ "motor_small", 1 ] ], [ [ "small_storage_battery", 1 ] ], [ [ "plut_cell", 1 ] ]  ]
+  }
+]

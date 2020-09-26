@@ -1,0 +1,37 @@
+[
+  {
+    "type": "recipe",
+    "result": "weap_roll_paper",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ "survival", 1 ],
+    "time": "1 m",
+    "autolearn": true,
+    "components": [ [ [ "newspapers", 10, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "weap_rock_paper",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+	"difficulty": 1,
+    "time": "4 m",
+    "autolearn": true,
+    "components": [ [ [ "newspapers", 5, "LIST" ] ], [ [ "rock", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "weap_mill_brick",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "skills_required": [ "survival", 1 ],
+    "time": "3 m",
+    "autolearn": true,
+    "components": [ [ [ "newspapers", 5, "LIST" ] ] ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "id": "laux_fuel_pod",
+        "type": "GENERIC",
+		"category": "container",
+        "symbol": "0",
+        "color": "dark_gray",
+		"pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "watertight": true,
+        "rigid": true,
+        "max_contains_volume": "1800 ml",
+        "max_contains_weight": "4500 g"
+      }
+    ],
+        "name": "large auxilliary fuel pod",
+        "description": "A gigantic steel pod designed to carry mass amounts of gasoline.",
+        "price": 0,
+        "weight": 93400,
+        "volume": 1800,
+        "bashing": 8,
+        "cutting": 0,
+        "to_hit": -9,
+        "material": "hardsteel",
+        "flags": ["RIGID", "SEALS", "WATERTIGHT"]
+    },
+    {
+        "id": "saux_fuel_pod",
+        "type": "GENERIC",
+		"category": "container",
+        "symbol": "0",
+        "color": "light_blue",
+		"pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+        "watertight": true,
+        "rigid": true,
+        "max_contains_volume": "1000 ml",
+        "max_contains_weight": "2500 g"
+      }
+    ],
+        "name": "small auxilliary fuel pod",
+        "description": "A small fuel pod designed to hold large amounts of gasoline.",
+        "price": 0,
+        "weight": 75600,
+        "volume": 1000,
+        "bashing": 8,
+        "cutting": 0,
+        "to_hit": -5,
+        "material": "hardsteel",
+        "flags": ["RIGID", "SEALS", "WATERTIGHT"]
+    }
+]

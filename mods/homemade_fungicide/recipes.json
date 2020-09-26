@@ -1,0 +1,34 @@
+ [
+    {
+      "result": "fungicidalbomb_jug",
+      "type" : "recipe",
+      "category": "CC_WEAPON",
+      "subcategory": "CSC_WEAPON_EXPLOSIVE",
+      "skill_used": "cooking",
+      "skills_required": [ "cooking", 1 ],
+      "difficulty": 1,
+      "time": 1000,
+      "autolearn": true,
+      "components": [
+        [ [ "ammonia", 2 ], [ "bleach", 2 ] ],
+        [ [ "jug_plastic", 1 ] ]
+      ]
+	},
+    {
+      "result": "fungicidalbomb_can",
+      "type" : "recipe",
+      "category": "CC_WEAPON",
+      "subcategory": "CSC_WEAPON_EXPLOSIVE",
+      "skill_used": "cooking",
+      "skills_required": [ "cooking", 1 ],
+      "difficulty": 1,
+      "time": 1000,
+      "autolearn": true,
+      "components": [
+        [ [ "ammonia", 1 ], [ "bleach", 1 ] ],
+        [ [ "canister_empty", 1 ], [ "can_food_unsealed", 1 ], [ "can_drink_unsealed", 1 ] ],
+		[ [ "duct_tape", 5 ] ]
+      ]
+    }
+  ]
+	

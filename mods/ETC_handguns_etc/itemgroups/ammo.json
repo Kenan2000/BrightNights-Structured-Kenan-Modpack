@@ -1,0 +1,60 @@
+[
+  {
+    "type": "item_group",
+    "id": "ammo_pistol_rare",
+    "//": "Less common pistol ammo including that only used by police/paramilitary forces.",
+    "items": [ [ "9etc", 10 ], [ "9etcfmj", 10 ], [ "9etchvp", 10 ], [ "9etcmatch", 10 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_pistol_milspec",
+    "//": "Military specification pistol ammo found at military sites.",
+    "items": [ [ "9etcsap", 40 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_pistol_reloaded",
+    "//": "Reloaded pistol ammo balanced according to rarity.",
+    "items": [ [ "reloaded_9etc", 30 ], [ "reloaded_9etcfmj", 15 ], [ "reloaded_9etchvp", 5 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_rare",
+    "//": "Less common rifle ammo including that only used by police/paramilitary forces.",
+    "items": [ [ "223blackout", 75 ], [ "22etc_hp", 40 ], [ "22etc_match", 20 ], [ "22etc_microflechette", 15 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_milspec",
+    "//": "Military specification rifle ammo found at military sites.",
+    "items": [
+      [ "1mm_magmg", 5 ],
+      [ "22etc_apt", 40 ],
+      [ "556blackout", 70 ],
+      [ "556dk", 50 ],
+      [ "556dk_incendiary", 15 ],
+      [ "556sap", 5 ],
+      [ "762ec", 5 ],
+      [ "762echv", 30 ],
+      [ "762echv_incendiary", 5 ],
+      [ "magpin", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_reloaded",
+    "//": "Reloaded rifle ammo balanced according to rarity. Those radioactive 7.62 EC hand loads won't be included here for obvious reasons.",
+    "items": [
+      [ "reloaded_22etc_hp", 30 ],
+      [ "reloaded_22etc_match", 5 ],
+      [ "reloaded_556dk", 5 ],
+      [ "reloaded_556dk_incendiary", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_shotgun_reloaded",
+    "//": "Reloaded shotgun ammo balanced according to rarity.",
+    "items": [ [ "reloaded_shot_antimateriel", 1 ], [ "reloaded_shot_microflechette", 1 ], [ "reloaded_shot_tungsten", 2 ] ]
+  }
+]

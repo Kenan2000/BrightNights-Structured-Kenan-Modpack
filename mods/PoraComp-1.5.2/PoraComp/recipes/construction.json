@@ -1,0 +1,45 @@
+[
+  {
+    "id" : "Canvas_Wall",
+    "type": "construction",
+    "description": "Build Canvas Wall",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 1 ] ],
+    "time": 10,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components": [ [ [ "sheet", 1 ], [ "rag", 20 ] ], [ [ "nail", 4 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_canvas_wall"
+  },
+  {
+    "id" : "Canvas Door",
+    "type": "construction",
+    "description": "Build Canvas Door",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 1 ] ],
+    "time": 15,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components": [ [ [ "sheet", 1 ], [ "rag", 20 ] ], [ [ "nail", 8 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_canvas_door"
+  },
+  {
+    "id" : "Centrifuge",
+    "type": "construction",
+    "description": "Build Centrifuge",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 8 ] ],
+    "time": 360,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components": [
+      [ [ "e_scrap", 5 ] ],
+      [ [ "cable", 10 ] ],
+      [ [ "circuit", 5 ] ],
+      [ [ "scrap", 5 ] ],
+      [ [ "sheet_metal", 4 ] ],
+      [ [ "motor_small", 1 ] ]
+    ],
+    "pre_special": "check_empty",
+    "post_terrain": "t_centrifuge"
+  }
+]

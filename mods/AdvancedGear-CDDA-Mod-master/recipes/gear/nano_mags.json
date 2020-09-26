@@ -1,0 +1,171 @@
+[
+  {
+    "type" : "recipe",
+    "result": "nano_dart_mag",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_AMMO",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": false,
+    "book_learn": [ [ "nanite_core_1", 1 ], [ "nanite_core_2", 1 ], [ "nanite_core_3", 1 ], [ "nanite_core_4", 1 ] ],
+    "flags": [ "BLIND_EASY" ],
+    "tools" : [
+      [
+        ["nano_ammo_fab", -1],
+        ["nanofactory_1", -1],
+        ["nanofactory_2", -1],
+        ["nanofactory_3", -1],
+        ["nanofactory_4", -1]
+      ]
+    ],
+    "components": [
+      [
+        [ "3d_resin_metal", 200],
+        [ "metal_nanopowder", 100],
+        [ "scrap", 40 ],
+        [ "steel_chunk", 8],
+        [ "steel_lump", 2],
+        [ "sheet_metal_small", 8]
+      ],
+      [
+        [ "nano_mag_empty", 1]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "nano_blade_mag",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_AMMO",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": false,
+    "book_learn": [ [ "nanite_core_1", 1 ], [ "nanite_core_2", 1 ], [ "nanite_core_3", 1 ], [ "nanite_core_4", 1 ] ],
+    "flags": [ "BLIND_EASY" ],
+    "tools" : [
+      [
+        ["nano_ammo_fab", -1],
+        ["nanofactory_1", -1],
+        ["nanofactory_2", -1],
+        ["nanofactory_3", -1],
+        ["nanofactory_4", -1]
+      ]
+    ],
+    "components": [
+      [
+        [ "3d_resin_metal", 200],
+        [ "metal_nanopowder", 100],
+        [ "scrap", 40 ],
+        [ "steel_chunk", 8],
+        [ "steel_lump", 2],
+        [ "sheet_metal_small", 8]
+      ],
+      [
+        [ "nano_mag_empty", 1]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "nano_wire_mag",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_AMMO",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": false,
+    "book_learn": [ [ "nanite_core_1", 1 ], [ "nanite_core_2", 1 ], [ "nanite_core_3", 1 ], [ "nanite_core_4", 1 ] ],
+    "flags": [ "BLIND_EASY" ],
+    "tools" : [
+      [
+        ["nano_ammo_fab", -1],
+        ["nanofactory_1", -1],
+        ["nanofactory_2", -1],
+        ["nanofactory_3", -1],
+        ["nanofactory_4", -1]
+      ]
+    ],
+    "components": [
+      [
+        [ "3d_resin_metal", 200],
+        [ "metal_nanopowder", 100],
+        [ "scrap", 40 ],
+        [ "steel_chunk", 8],
+        [ "steel_lump", 2],
+        [ "sheet_metal_small", 8]
+      ],
+      [
+        [ "nano_mag_empty", 1]
+      ],
+      [
+        [ "nanite_cluster", 10]
+      ],
+      [
+        [ "nanite_power_cell", 2]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "nano_deathcloud_mag",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_AMMO",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "reversible": false,
+    "book_learn": [ [ "nanite_core_3", 1 ], [ "nanite_core_4", 1 ] ],
+    "flags": [ "BLIND_EASY" ],
+    "tools" : [
+      [
+        ["nano_ammo_fab", -1],
+        ["nanofactory_1", -1],
+        ["nanofactory_2", -1],
+        ["nanofactory_3", -1],
+        ["nanofactory_4", -1]
+      ]
+    ],
+    "components": [
+      [
+        [ "3d_resin_metal", 200],
+        [ "metal_nanopowder", 100],
+        [ "scrap", 40 ],
+        [ "steel_chunk", 8],
+        [ "steel_lump", 2],
+        [ "sheet_metal_small", 8]
+      ],
+      [
+        [ "nano_mag_empty", 1]
+      ],
+      [
+        [ "nanite_cluster", 25]
+      ],
+      [
+        [ "nanite_power_cell", 5]
+      ]
+    ]
+  },{
+    "type" : "recipe",
+    "result": "nano_mag_empty",
+    "category": "CC_NANO",
+    "subcategory": "CSC_NANO_AMMO",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 1000,
+    "book_learn": [ [ "nanite_core_1", 1 ], [ "nanite_core_2", 1 ], [ "nanite_core_3", 1 ], [ "nanite_core_4", 1 ] ],
+    "qualities": [
+      {"id":"NANO_PRO","level":1,"amount":1},
+      {"id":"NANOTECH","level":1,"amount":1}
+    ],
+    "components": [
+      [
+        [ "3d_resin_metal", 100]
+      ],
+      [
+        [ "nanite_cluster", 25]
+      ],
+      [
+        [ "nanite_power_cell", 2]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[  
+	{
+		"type" : "npc",
+		"id" : "militia_warrior",
+		"name_suffix" : "Militia Berzerker",
+		"//" : "Class is based on the enum in npc.h.  The important ones are 0=NC_NONE, 2=NC_SHOPKEEP,",
+		"//" : "3=NC_HACKER, 4=NC_DOCTOR, 5=NC_TRADER, 6=NC_NINJA, 7=NC_COWBOY, 8=NC_SCIENTIST,",
+		"//" : "9=NC_BOUNTY_HUNTER, 10=NC_THUG, 11=NC_SCAVENGER, 13=NC_HUNTER, 14=NC_SOLDIER.",
+		"class" : "NC_BERZERKER",
+		"//" : "Attitude is based on the enum in npc.h.  The important ones are 0=NPCATT_NULL, 1=NPCATT_TALK",
+		"//" : "3=NPCATT_FOLLOW, 7=NPCATT_DEFEND, 10=NPCATT_KILL, and 11=NPCATT_FLEE",
+		"attitude" : 10,
+		"//" : "Mission is based on the enum in npc.h.  The important ones are 0=NPC_MISSION_NUL, 3=NPC_MISSION_SHOPKEEP",
+		"//" : "and 7=NPC_MISSION_GUARD",
+		"mission" : 0,
+		"//" : "Mission_offered is based on the enum mission_id in mission.h.  0=MISSION_NULL",
+		"chat" : "TALK_MUG",
+		"faction" : "corrupt_militia",
+		"//" : "by_mood is hostile to faction when angry, otherwise neutral",
+		"by_mood" : ["nether","wildlife","zombie"]
+	},
+	{
+		"type" : "npc",
+		"id" : "militia_king",
+		"name_unique" : "Roland Croninger",
+		"class" : "NC_MILITIAKING",
+		"attitude" : 10,
+		"mission" : 0,
+		"chat" : "TALK_MUG",
+		"faction" : "corrupt_militia",
+		"by_mood" : ["wildlife","zombie"],
+		"neutral" : ["nether"]
+	}
+]

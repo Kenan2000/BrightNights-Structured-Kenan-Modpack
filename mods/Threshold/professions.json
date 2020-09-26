@@ -1,0 +1,771 @@
+[
+    {
+        "type" : "profession",
+        "ident": "mutant_lizard",
+        "name": "Mutant (lizard)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "THICK_SCALES",
+            "BADTEMPER",
+            "LIZ_EYE",
+            "LIZ_IR",
+            "REGEN_LIZ",
+            "FANGS",
+            "MEMBRANE",
+            "TALONS",
+            "TAIL_THICK",
+            "MUT_TOUGH",
+            "PRED3",
+            "SAPIOVORE",
+            "LARGE_OK",
+            "STR_UP_2",
+            "DEX_UP_2",
+            "SLIT_NOSTRILS",
+            "FORKED_TONGUE",
+            "MUZZLE_LONG",
+            "TROGLO",
+            "WEBBED",
+            "CARNIVORE",
+            "COLDBLOOD4",
+            "HISS",
+            "THRESH_LIZARD"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_bird",
+        "name": "Mutant (bird)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "QUICK",
+            "GIZZARD",
+            "NIGHTVISION",
+            "DEFT",
+            "LIGHTSTEP",
+            "BADBACK",
+            "GLASSJAW",
+            "BIRD_EYE",
+			"FEATHERS",
+            "DOWN",
+            "TALONS",
+            "FLEET2",
+            "WINGS_BIRD",
+            "DEX_UP_3",
+            "PER_UP_4",
+            "HOLLOW_BONES",
+            "BEAK",
+            "THRESH_BIRD"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_fish",
+        "name": "Mutant (fish)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "GOODCARDIO",
+            "QUICK",
+            "LIGHTEATER",
+            "ROBUST",
+            "NIGHTVISION3",
+            "MEMBRANE",
+            "GILLS",
+            "SLEEK_SCALES",
+            "TAIL_FIN",
+            "DEX_UP_4",
+            "SMELLY2",
+            "DEFORMED",
+            "THIRST2",
+            "WEBBED",
+            "SLIMY",
+            "COLDBLOOD",
+            "THRESH_FISH"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_beast",
+        "name": "Mutant (beast)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "DEFT",
+            "ANIMALEMPATH",
+            "TERRIFYING",
+            "ADRENALINE",
+            "MYOPIC",
+            "SLEEPY",
+            "ANTIJUNK",
+            "FORGETFUL",
+            "NIGHTVISION2",
+            "FEL_EYE",
+            "FUR",
+            "FELINE_FUR",
+            "PAWS_LARGE",
+            "PHEROMONE_MAMMAL",
+            "PADDED_FEET",
+            "TAIL_FLUFFY",
+            "MUT_TOUGH",
+            "PRED4",
+            "SAPIOVORE",
+            "CANINE_EARS",
+            "STR_UP_4",
+            "SMELLY2",
+            "DEFORMED2",
+            "MUZZLE",
+            "HUNGER2",
+            "HEAVYSLEEPER2",
+            "TROGLO",
+            "CARNIVORE",
+            "SNARL",
+            "SHOUT2",
+            "THRESH_BEAST"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_feline",
+        "name": "Mutant (cat)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "LIGHTSTEP",
+            "PRETTY",
+            "SMELLY",
+            "FEL_EYE",
+            "FEL_NV",
+            "FELINE_FUR",
+            "SABER_TEETH",
+            "LYNX_FUR",
+            "CLAWS_RETRACT",
+            "PADDED_FEET",
+            "TAIL_LONG",
+            "PRED3",
+            "FELINE_EARS",
+            "WHISKERS",
+            "DEX_UP_3",
+            "SNOUT",
+            "SLEEPY2",
+            "PAWS",
+            "CARNIVORE",
+            "SNARL",
+            "THRESH_FELINE"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_lupine",
+        "name": "Mutant (lupine)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "PRETTY",
+            "SMELLY",
+            "ANIMALDISCORD",
+            "NIGHTVISION2",
+            "FANGS",
+            "LUPINE_FUR",
+            "PADDED_FEET",
+            "TAIL_FLUFFY",
+            "PRED3",
+            "LUPINE_EARS",
+            "STR_UP_3",
+            "PALE",
+            "MUZZLE",
+            "HEAVYSLEEPER2",
+            "PAWS",
+            "GROWL",
+            "SHOUT3",
+            "THRESH_LUPINE"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_ursine",
+        "name": "Mutant (bear)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "BADTEMPER",
+            "URSINE_EYE",
+            "URSINE_FUR",
+            "PAWS_LARGE",
+            "PADDED_FEET",
+            "TAIL_STUB",
+            "HIBERNATE",
+            "MUT_TOUGH3",
+            "PRED4",
+            "SAPIOVORE",
+            "URSINE_EARS",
+            "FAT",
+            "HUGE_OK",
+            "STR_UP_4",
+            "SMELLY2",
+            "DEFORMED2",
+            "MUZZLE_BEAR",
+            "PONDEROUS1",
+            "GROWL",
+            "THRESH_URSINE"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_cattle",
+        "name": "Mutant (cow)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "NIGHTVISION",
+            "THICKSKIN",
+            "DISRESISTANT",
+            "FUR",
+            "HOOVES",
+            "PHEROMONE_MAMMAL",
+            "GRAZER",
+            "HORNS",
+            "TAIL_CATTLE",
+            "MUT_TOUGH3",
+            "CANINE_EARS",
+            "HUGE_OK",
+            "STR_UP_2",
+            "DEFORMED",
+            "MINOTAUR",
+            "PONDEROUS2",
+            "THRESH_CATTLE"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_insect",
+        "name": "Mutant (insect)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "QUICK",
+            "LIGHTEATER",
+            "NIGHTVISION2",
+            "POISRESIST",
+            "TERRIFYING",
+            "HEAVYSLEEPER",
+            "INFRARED",
+            "CHITIN2",
+            "PHEROMONE_INSECT",
+            "COMPOUND_EYES",
+            "ANTENNAE",
+            "TAIL_STING",
+            "WINGS_INSECT",
+            "PROBOSCIS",
+            "STR_UP",
+            "DEX_UP",
+            "DEFORMED",
+            "TROGLO",
+            "COLDBLOOD3",
+            "INSECT_ARMS_OK",
+            "ACIDPROOF",
+            "ACIDBLOOD",
+            "THRESH_INSECT"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_plant",
+        "name": "Mutant (plant)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "HEAVYSLEEPER",
+            "BADHEARING",
+            "BARK",
+            "THORNS",
+            "LEAVES",
+            "FLOWERS",
+            "DISIMMUNE",
+            "SAPROPHAGE",
+            "STR_UP_2",
+            "DEFORMED2",
+            "PONDEROUS3",
+            "SUNLIGHT_DEPENDENT",
+            "VINES3",
+            "ROOTS3",
+            "CHLOROMORPH",
+            "THRESH_PLANT"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_slime",
+        "name": "Mutant (slime)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "POISRESIST",
+            "ROBUST",
+            "CHEMIMBALANCE",
+            "REGEN",
+            "RADIOGENIC",
+            "DISIMMUNE",
+            "PARAIMMUNE",
+            "POISONOUS",
+            "SLIME_HANDS",
+            "BENDY3",
+            "DEX_UP",
+            "INT_SLIME",
+            "PER_SLIME_OK",
+            "SMELLY2",
+            "DEFORMED3",
+            "HOLLOW_BONES",
+            "VOMITOUS",
+            "HUNGER2",
+            "THIRST2",
+            "POISONOUS",
+            "SORES",
+            "TROGLO",
+            "WEBBED",
+            "UNSTABLE",
+            "RADIOACTIVE1",
+            "VISCOUS",
+            "AMORPHOUS",
+            "SLIMESPAWNER",
+            "ACIDPROOF",
+            "ACIDBLOOD",
+            "THRESH_SLIME"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_troglobite",
+        "name": "Mutant (troglobite)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "QUICK",
+            "LIGHTEATER",
+            "MYOPIC",
+            "SUNBURN",
+            "NIGHTVISION3",
+            "INFRARED",
+            "REGEN",
+            "DISIMMUNE",
+            "INFRESIST",
+            "POISONOUS",
+            "ALCMET",
+            "PAINRESIST_TROGLO",
+            "STOCKY_TROGLO",
+            "SAPROVORE",
+            "EATPOISON",
+            "STR_UP_3",
+            "TROGLO3",
+            "SLIMY",
+            "THRESH_TROGLOBITE"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_cephalopod",
+        "name": "Mutant (cephalopod)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "CEPH_EYES",
+            "CEPH_VISION",
+            "GILLS_CEPH",
+            "CLAWS_TENTACLE",
+            "MOUTH_TENTACLES",
+            "DEX_UP_4",
+            "INT_UP_4",
+            "SLIT_NOSTRILS",
+            "DEFORMED",
+            "THIRST2",
+            "BEAK",
+            "SLIMY",
+            "COLDBLOOD",
+            "ARM_TENTACLES_8",
+            "SHELL2",
+            "LEG_TENTACLES",
+            "LEG_TENT_BRACE",
+            "THRESH_CEPHALOPOD"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_spider",
+        "name": "Mutant (spider)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "FLEET",
+            "POISRESIST",
+            "NIGHTVISION3",
+            "INFRARED",
+            "CHITIN_FUR3",
+            "CF_HAIR",
+            "POISONOUS2",
+            "PRED3",
+            "SAPIOVORE",
+            "MANDIBLES",
+            "FANGS_SPIDER",
+            "WEB_WALKER",
+            "WEB_WEAVER",
+            "WEB_RAPPEL",
+            "WEB_ROPE",
+            "DEX_UP_2",
+            "TROGLO",
+            "CARNIVORE",
+            "COLDBLOOD",
+            "ARACHNID_ARMS_OK",
+            "THRESH_SPIDER"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_rat",
+        "name": "Mutant (rat)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "DISRESISTANT",
+            "NIGHTVISION2",
+            "INCISORS",
+            "FUR",
+            "CLAWS_ST",
+            "INFRESIST",
+            "EATDEAD",
+            "BURROW",
+            "TAIL_RAT",
+            "WHISKERS_RAT",
+            "DEFORMED3",
+            "MUZZLE_RAT",
+            "VOMITOUS",
+            "MET_RAT",
+            "TROGLO2",
+            "GROWL",
+            "THRESH_RAT"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_raptor",
+        "name": "Mutant (raptor)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "QUICK",
+            "DEFT",
+            "ANTIJUNK",
+            "GLASSJAW",
+            "ANIMALDISCORD",
+            "UGLY",
+            "LIZ_EYE",
+            "LIZ_IR",
+            "SCALES",
+            "NAILS",
+            "RAP_TALONS",
+            "EATPOISON",
+            "TAIL_RAPTOR",
+            "PRED4",
+            "SAPIOVORE",
+            "STR_UP",
+            "DEX_UP_2",
+            "PER_UP_3",
+            "SLIT_NOSTRILS",
+            "FORKED_TONGUE",
+            "HUNGER2",
+            "CARNIVORE",
+            "COLDBLOOD2",
+            "HISS",
+            "THICKSKIN",
+            "SHOUT1",
+            "ARM_FEATHERS",
+            "THRESH_RAPTOR"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_medical",
+        "name": "Mutant (medical)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "FASTHEALER",
+            "PAINRESIST",
+            "POISRESIST",
+            "DISIMMUNE",
+            "SELFAWARE",
+            "ROBUST",
+            "HEAVYSLEEPER",
+            "INSOMNIA",
+            "FORGETFUL",
+            "LIGHTWEIGHT",
+            "ADDICTIVE",
+            "CHEMIMBALANCE",
+            "SCHIZOPHRENIC",
+            "JITTERY",
+            "MOODSWINGS",
+            "RADIOGENIC",
+            "INFIMMUNE",
+            "PARAIMMUNE",
+            "MUT_TOUGH2",
+            "PAINREC3",
+            "CENOBITE",
+            "NOPAIN",
+            "MUT_JUNKIE",
+            "VOMITOUS",
+            "HUNGER",
+            "UNSTABLE",
+            "ACIDPROOF",
+            "ACIDBLOOD",
+            "THRESH_MEDICAL"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_alpha",
+        "name": "Mutant (alpha)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "GOODHEARING",
+            "WAKEFUL",
+            "ROBUST",
+            "PER_ALPHA",
+            "INT_ALPHA",
+            "DEX_ALPHA",
+            "STR_ALPHA",
+            "WEAKSCENT",
+            "PRETTY",
+            "ANTIJUNK",
+            "WAKEFUL2",
+            "NAUSEA",
+            "HUNGER",
+            "ROT3",
+            "THRESH_ALPHA"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_elfa",
+        "name": "Mutant (elf)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "WAKEFUL3",
+            "LIGHTSTEP",
+            "BADBACK",
+            "CHEMIMBALANCE",
+            "ELFAEYES",
+            "ELFA_FNV",
+            "PLANTSKIN",
+            "LEAVES",
+            "PARAIMMUNE",
+            "BENDY1",
+            "ELFA_EARS",
+            "STR_UP",
+            "DEX_UP_3",
+            "INT_UP_3",
+            "PER_UP_3",
+            "BEAUTIFUL3",
+            "HOLLOW_BONES",
+            "VOMITOUS",
+            "HUNGER",
+            "THIRST",
+            "ROT1",
+            "RADIOACTIVE2",
+            "THRESH_ELFA"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_chimera",
+        "name": "Mutant (chimera)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "QUICK",
+            "THICKSKIN",
+            "TERRIFYING",
+            "ADRENALINE",
+            "SLEEPY",
+            "BADTEMPER",
+            "FORGETFUL",
+            "CHEMIMBALANCE",
+            "NIGHTVISION2",
+            "FANGS",
+            "SCALES",
+            "LIGHTFUR",
+            "TALONS",
+            "PARAIMMUNE",
+            "HOOVES",
+            "SAPROVORE",
+            "EATDEAD",
+            "SABER_TEETH",
+            "EATHEALTH",
+            "HORNS_CURLED",
+            "TAIL_CLUB",
+            "MUT_TOUGH2",
+            "PRED4",
+            "SAPIOVORE",
+            "CANINE_EARS",
+            "STR_UP_3",
+            "DEX_UP_2",
+            "PER_UP_2",
+            "MUT_JUNKIE",
+            "MOUTH_FLAPS",
+            "SMELLY2",
+            "DEFORMED3",
+            "HUNGER3",
+            "THIRST",
+            "ROT2",
+            "CHAOTIC",
+            "CARNIVORE",
+            "SNARL",
+            "SHOUT3",
+            "ACIDPROOF",
+            "ACIDBLOOD",
+            "THRESH_CHIMERA"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    },
+    {
+        "type" : "profession",
+        "ident": "mutant_mycus",
+        "name": "Mutant (mycus)",
+        "description": "Your dreams of becoming a super-human mutant through genetic alteration may have fallen a bit short, but when the Cataclysm struck, you and the scientists were ready to put your new body to the test.",
+        "points": 8,
+        "traits": [
+            "M_DEFENDER",
+            "M_DEPENDENT",
+            "M_IMMUNE",
+            "M_FERTILE",
+            "M_SKIN2",
+            "THRESH_MYCUS"
+        ],
+        "items":{
+            "both": [
+                "subsuit_xl"
+            ]
+        },
+        "flags": ["SCEN_ONLY"]
+    }
+]

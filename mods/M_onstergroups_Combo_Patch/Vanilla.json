@@ -1,0 +1,51 @@
+[
+  {
+    "type":"monstergroup",
+    "name" : "GROUP_VANILLA",
+    "_comment": "Bandit+PK",
+    "override": true,
+    "auto_total": true,
+    "default" : "mon_zombie",
+    "monsters" : [
+      { "monster" : "mon_bandit_glock", "freq" : 10, "cost_multiplier" : 5, "pack_size" : [1,3]  },
+      { "monster" : "mon_bandit_glock", "freq" : 8, "cost_multiplier" : 8, "pack_size" : [2,3]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 6, "cost_multiplier" : 8, "pack_size" : [1,2]  },
+      
+      { "monster" : "mon_zombie_fat", "freq" : 266, "cost_multiplier": 0},
+      { "monster" : "mon_zombie_child", "freq" : 100, "cost_multiplier" : 0} ,
+      { "monster" : "mon_zombie_tough", "freq" : 100, "cost_multiplier": 0},
+      { "monster" : "mon_zombie_rot", "freq" : 60, "cost_multiplier": 0},
+      { "monster" : "mon_zombie_dog", "freq" : 50, "cost_multiplier" : 0},
+      { "monster" : "mon_zombie_crawler", "freq" : 30, "cost_multiplier": 0}
+    ]
+  },
+  {
+    "type":"monstergroup",
+    "name": "GROUP_PREPPER_HOUSE",
+    "_comment": "Bandit+PK",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster" : "mon_bandit_glock", "freq" : 8, "cost_multiplier" : 5, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_glock", "freq" : 5, "cost_multiplier" : 8, "pack_size" : [2,3]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 5, "cost_multiplier" : 9, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 5, "cost_multiplier" : 8, "pack_size" : [2,2]  },
+      { "monster" : "mon_bandit_looter", "freq" : 10, "cost_multiplier" : 5, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_looter", "freq" : 10, "cost_multiplier" : 5, "pack_size" : [2,2]  },
+      
+      { "monster": "mon_zombie_radbag", "freq": 25, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_blind_pk", "freq": 75, "cost_multiplier": 0},
+      { "monster": "mon_zombie_survivor", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_smoker", "freq": 80, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_tough", "freq": 80, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_electric", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_master", "freq": 25, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_hollow", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_biter", "freq": 75, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_smoker_pk", "freq": 25, "cost_multiplier": 0 }
+    ]
+  } 
+
+
+]

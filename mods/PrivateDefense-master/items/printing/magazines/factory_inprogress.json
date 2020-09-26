@@ -1,0 +1,170 @@
+[
+  {
+    "type": "TOOL",
+    "id": "pd_printing_stanag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing STANAG plastic magazine",
+    "description": "3D factory, currently busy printing the STANAG plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_stanag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_m1911mag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing M1911 plastic magazine",
+    "description": "3D factory, currently busy printing the M1911 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 1800, 
+      "target": "pd_finished_m1911mag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_m1911bigmag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing M1911 plastic magazine",
+    "description": "3D factory, currently busy printing the M1911 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2100, 
+      "target": "pd_finished_m1911bigmag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mp5mag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing MP5 plastic magazine",
+    "description": "3D factory, currently busy printing the MP5 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_mp5mag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mp5bigmag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing MP5 extended plastic magazine",
+    "description": "3D factory, currently busy printing the MP5 extended plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 4200, 
+      "target": "pd_finished_mp5bigmag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_p226mag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing P226 plastic magazine",
+    "description": "3D factory, currently busy printing the P226 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_p226mag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_uzimag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Uzi plastic magazine",
+    "description": "3D factory, currently busy printing the Uzi plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_uzimag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_mac10mag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing MAC-10 plastic magazine",
+    "description": "3D factory, currently busy printing the MAC-10 plastic magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_mac10mag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glockmag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Glock magazine",
+    "description": "3D factory, currently busy printing the standard Glock magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_glockmag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glockbigmag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Glock extended magazine",
+    "description": "3D factory, currently busy printing the Glock extended magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_glockbigmag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glock17mag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Glock 17 magazine",
+    "description": "3D factory, currently busy printing the Glock 17 magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 2700, 
+      "target": "pd_finished_glock17mag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  },
+  {
+    "type": "TOOL",
+    "id": "pd_printing_glock17_22mag_factory",
+    "copy-from": "3d_factory",
+    "name": "3D factory producing Glock 17 22-round magazine",
+    "description": "3D factory, currently busy printing the Glock 17 22-round magazine additively. Once it finishes, activate it and deconstruct the resulting factory to get the magazine.",
+    "use_action": {
+      "type": "delayed_transform",
+      "transform_age": 3600, 
+      "target": "pd_finished_glock17_22mag_factory",
+      "not_ready_msg": "The factory is working slowly to bring you the magazine.",
+      "msg": "You turn off the factory."
+    }
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "type": "GUN",
+    "id": "m1911",
+    "copy-from": "m1911",
+    "name": { "str": "M1911" },
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag",
+          "m1911mag_polymer",
+          "m1911bigmag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "mac_10",
+    "copy-from": "mac_10",
+    "name": { "str": "MAC-10" },
+    "magazines": [
+      [
+        "45",
+        [
+          "mac10mag",
+          "smg_45_mag",
+          "mac10mag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "smg_45",
+    "copy-from": "smg_45",
+    "name": {
+      "str": "Luty SMG: .45",
+      "str_pl": "Luty SMGs: .45"
+    },
+    "magazines": [
+      [
+        "45",
+        [
+          "smg_45_mag",
+          "mac10mag",
+          "mac10mag_polymer"
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,267 @@
+[
+
+{
+  "type" : "recipe",
+  "result": "big_pot",
+  "id_suffix": "from_MLI",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "fabrication",
+  "difficulty": 4,
+  "time": 300000,
+  "reversible": false,
+  "autolearn": true,
+  "qualities":[
+    {"id":"HAMMER","level":3,"amount":1}
+  ], "tools": [
+      [ ["tongs", -1] ],
+      [ ["anvil", -1] ],
+      [ ["forge", 180], [ "oxy_torch", 36] ]
+      ],
+  "components":
+    [
+     [
+     [ "frame", 1],
+     [ "steel_lump", 8 ],
+     [ "steel_chunk", 32 ],
+     [ "scrap", 96 ]
+     ],
+     [
+     [ "sheet_metal", 5 ]
+     ]
+    ]
+}
+,{
+  "type" : "recipe",
+  "result": "big_pastaextruder",
+  "id_suffix": "from_MLI",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "fabrication",
+  "difficulty": 7,
+  "time": 300000,
+  "reversible": false,
+  "autolearn": true,
+  "qualities":[
+    {"id":"HAMMER","level":3,"amount":1}
+  ], "tools": [
+      [
+      ["tongs", -1]
+      ],
+      [
+      ["chisel", -1]
+      ],
+      [
+      ["anvil", -1]
+      ],
+      [
+      ["swage", -1]
+      ],
+      [
+      [ "forge", 300],
+      [ "oxy_torch", 60]
+      ]
+      ],
+  "components":
+    [
+     [
+     [ "frame", 1],
+     [ "steel_lump", 8 ],
+     [ "steel_chunk", 32 ],
+     [ "scrap", 96 ]
+     ],
+     [
+     [ "sheet_metal", 5 ]
+     ]
+    ]
+}
+,{
+  "type" : "recipe",
+  "result": "glass_bottle_manufacturing_mold_set",
+  "id_suffix": "from_MLI",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "fabrication",
+  "difficulty": 8,
+  "time": 480000,
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [[ "glass_workshop_manual", 8 ]],
+  "qualities":[
+    {"id":"HAMMER","level":3,"amount":1}
+  ], "tools": [
+      [
+      ["tongs", -1]
+      ],
+      [
+      ["chisel", -1]
+      ],
+      [
+      ["anvil", -1]
+      ],
+      [
+      ["swage", -1]
+      ],
+      [
+      [ "forge", 400],
+      [ "oxy_torch", 80]
+      ]
+      ],
+  "components":
+    [
+     [
+     [ "frame", 2],
+     [ "steel_lump", 16 ],
+     [ "steel_chunk", 64 ],
+     [ "scrap", 192 ]
+     ],
+     [
+     [ "sheet_metal", 5 ]
+     ],
+     [
+	    ["pipe", 1]
+     ],
+     [
+  	   [ "hose", 3 ]
+     ],
+     [
+  	   [ "jar_glass", 1 ]
+     ],
+     [
+	     [ "bottle_glass", 1 ]
+     ],
+     [
+	     [ "jar_3l_glass", 1 ]
+     ]
+    ]
+}
+,{
+  "type" : "recipe",
+  "result": "jar_glass",
+  "id_suffix": "from_MLI",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_CONTAINERS",
+  "skill_used": "fabrication",
+  "difficulty": 6,
+  "time": 30000,
+  "batch_time_factors":[50, 1],
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [[ "glass_workshop_manual", 6 ]],
+  "tools": [
+     [
+      ["tongs", -1]
+     ],
+     [
+      ["chisel", -1]
+     ],
+     [
+      ["pipe", -1]
+     ],
+     [
+      ["crucible", -1],
+      ["crucible_clay", -1]
+     ],
+     [
+      ["glass_bottle_manufacturing_mold_set", -1]
+     ],
+     [
+      ["forge", 50]
+     ]
+    ],
+  "components":
+    [
+     [
+     [ "glass_shard", 8 ],
+     [ "flask_glass", 2 ]
+     ]
+    ]
+}
+,{
+  "type" : "recipe",
+  "result": "bottle_glass",
+  "id_suffix": "from_MLI",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_CONTAINERS",
+  "skill_used": "fabrication",
+  "difficulty": 7,
+  "time": 50000,
+  "batch_time_factors":[50, 1],
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [[ "glass_workshop_manual", 7 ]],
+  "tools": [
+     [
+      ["tongs", -1]
+     ],
+     [
+      ["chisel", -1]
+     ],
+     [
+      ["pipe", -1]
+     ],
+     [
+      ["crucible", -1],
+      ["crucible_clay", -1]
+     ],
+     [
+      ["glass_bottle_manufacturing_mold_set", -1]
+     ],
+     [
+      ["forge", 75]
+     ]
+    ],
+  "components":
+    [
+     [
+     [ "glass_shard", 12 ],
+     [ "flask_glass", 3 ],
+     [ "jar_glass", 2 ]
+     ]
+    ]
+}
+,{
+  "type" : "recipe",
+  "result": "jar_3l_glass",
+  "id_suffix": "from_MLI",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_CONTAINERS",
+  "skill_used": "fabrication",
+  "difficulty": 8,
+  "time": 80000,
+  "batch_time_factors":[50, 1],
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [[ "glass_workshop_manual", 8 ]],
+  "tools": [
+     [
+      ["tongs", -1]
+     ],
+     [
+      ["chisel", -1]
+     ],
+     [
+      ["pipe", -1]
+     ],
+     [
+      ["crucible", -1],
+      ["crucible_clay", -1]
+     ],
+     [
+      ["glass_bottle_manufacturing_mold_set", -1]
+     ],
+     [
+      ["forge", 150]
+     ]
+    ],
+  "components":
+    [
+     [
+     [ "glass_shard", 48 ],
+     [ "flask_glass", 12 ],
+     [ "jar_glass", 6 ]
+     ]
+    ]
+}
+
+]

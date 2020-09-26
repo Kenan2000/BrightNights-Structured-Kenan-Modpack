@@ -1,0 +1,47 @@
+[
+  {
+    "id": "madd_mush",
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "name": "mush",
+    "description": "A gray , thick slurry containing all nutrients your body needs, but with the downside of being barely edible.",
+    "weight": 700,
+    "volume": 1,
+    "price": 0,
+    "material": [ "veggy", "flesh", "wheat" ],
+    "symbol": "%",
+    "color": "brown",
+    "charges": 2,
+    "stack_size": 120,
+    "calories": 20,
+    "quench": 2,
+    "healthy": 1,
+    "fun": -15,
+    "spoils_in": 240,
+    "vitamins": [ [ "calcium", 4 ], [ "iron", 5 ], [ "vitA", 4 ], [ "vitB", 3 ], [ "vitC", 4 ] ],
+    "flags": [ "EATEN_HOT" ]
+  },
+  {
+    "id": "madd_boozewater",
+    "type": "COMESTIBLE",
+    "comestible_type": "DRINK",
+    "name": "alcoholic water",
+    "description": "Water spiked with ethanol to kill bacteria, this should be safe to drink (liver and common sense excepted).",
+    "weight": 249,
+    "volume": 1,
+    "price": 300,
+    "phase": "liquid",
+    "material": [ "alcohol", "water" ],
+    "symbol": "~",
+    "color": "light_cyan",
+    "nutrition": 2,
+    "quench": 40,
+    "stim": -4,
+    "fun": 5,
+    "addiction_type": "alcohol",
+    "addiction_potential": 2,
+    "use_action": "ALCOHOL_WEAK",
+    "flags": [ "EATEN_COLD" ]
+  }
+]
+

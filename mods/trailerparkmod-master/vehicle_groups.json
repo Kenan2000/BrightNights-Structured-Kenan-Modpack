@@ -1,0 +1,39 @@
+[
+{ "type":"vehicle_group",
+	"id":"tp_vehicles_trailers",
+	"vehicles":[
+		["house_trailer",1000],
+		["trailer_small", 1000]
+	 ]
+},
+
+{ "type":"vehicle_group",
+	"id":"tp_vehicles_smallmix",
+	"vehicles":[
+		["motorcycle",500],
+		["motorcycle_sidecart",100],
+		["quad_bike",300],
+		["trailer_small", 600]
+	 ]
+},
+
+{ "type":"vehicle_group",
+	"id":"tp_vehicles_fullmix",
+	"vehicles":[
+		["house_trailer",500],
+		["rv",300],
+		["lux_rv",100],
+		["motorcycle",500],
+		["motorcycle_sidecart",100],
+		["quad_bike",300]
+	 ]
+},
+{ "type":"vehicle_group",
+	"id":"tp_vehicles_driveway",
+	"vehicles":[
+		["motorcycle",500],
+		["motorcycle_sidecart",100],
+		["quad_bike",300]
+	 ]
+}
+]

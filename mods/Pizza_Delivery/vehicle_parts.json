@@ -1,0 +1,44 @@
+[
+  {
+    "type": "vehicle_part",
+    "id": "insulated_box",
+    "name": "insulated box",
+    "name_plural": "insulated boxes",
+    "description": "A storage place to keep your pizzas warm.  Might be useable for other food as well.",
+    "symbol": "o",
+    "color": "red",
+    "broken_symbol": "#",
+    "broken_color": "red",
+    "damage_modifier": 60,
+    "durability": 100,
+    "size": 275,
+    "item": "insulated_box",
+    "difficulty": 1,
+    "location": "center",
+    "flags": [ "CARGO", "TOOL_SCREWDRIVER", "BOARDABLE", "COVERED", "LOCKABLE_CARGO" ],
+    "breaks_into": [
+      { "item": "insulated_box" },
+      { "item": "scrap", "count": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "vehicle_part",
+    "id": "drone_interface",
+    "name": "drone interface",
+    "symbol": "$",
+    "looks_like": "robot_controls",
+    "color": "light_green",
+    "broken_symbol": "*",
+    "broken_color": "light_gray",
+    "damage_modifier": 10,
+    "durability": 10,
+    "description": "A consumer interface for a robotic drone, complete with POS system.  The network is currently offline and cannot process your cash cards.",
+    "bonus": 40,
+    "item": "laptop",
+    "requirements": {
+      "install": { "time": 15000, "skills": [ [ "electronics", 4 ] ], "qualities": [ { "id": "SCREW", "level": 2 } ] },
+      "removal": { "skills": [ [ "electronics", 1 ] ], "qualities": [ { "id": "SCREW", "level": 2 } ] }
+    },
+    "breaks_into":"ig_vp_device"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "bootsheath",
+    "copy-from": "bootsheath",
+    "type": "ARMOR",
+    "name": "ankle sheath",
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath knife",
+      "holster_msg": "You sheath your %s",
+      "min_volume": 0,
+      "max_volume": 2,
+      "draw_cost": 30,
+      "flags": [
+        "SHEATH_KNIFE"
+      ]
+    }
+  }
+]

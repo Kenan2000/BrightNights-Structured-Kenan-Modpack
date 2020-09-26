@@ -1,0 +1,48 @@
+[
+  {
+    "type": "GENERIC",
+	"category": "weapons",
+	"id": "weap_roll_paper",
+	"looks_like": "baton",
+	"name": "rolled newspaper",
+	"description": "Literally just a few pages of newspaper rolled up to hit things with. Why would you use this? At least the headline about rising violence rates is amusingly ironic.",
+	"weight": "30 g",
+	"to_hit": 1,
+	"color": "white",
+	"symbol": "/",
+	"material": [ "paper" ],
+	"volume": "250 ml",
+	"bashing": 1,
+	"flags": [ "FRAGILE_MELEE", "NO_REPAIR", "TINDER" ]
+  },
+  {
+    "type": "GENERIC",
+	"category": "weapons",
+	"id": "weap_rock_paper",
+	"looks_like": "baton",
+	"name": "newspaper with rock",
+	"description": "A newpaper wrapped around a rock and bunched up at the other end. Why are you like this?",
+	"weight": "687 g",
+	"to_hit": 2,
+	"color": "white",
+	"symbol": "/",
+	"material": [ "paper" ],
+	"volume": "250 ml",
+	"bashing": 8,
+	"flags": [ "FRAGILE_MELEE", "NO_REPAIR" ]
+  },
+  {
+    "type": "GENERIC",
+	"category": "weapons",
+	"id": "weap_mill_brick",
+	"name": "Millwall Brick",
+	"description": "A bunch of rolled up and folded newpapers to use as a bludgeon. Popularized by the supporters of the Millwall Football Club.",
+	"weight": "15 g",
+	"color": "white",
+	"symbol": ".",
+	"material": [ "paper" ],
+	"volume": "125 ml",
+	"bashing": 5,
+	"flags": [ "NO_REPAIR", "TINDER" ]
+  }
+]

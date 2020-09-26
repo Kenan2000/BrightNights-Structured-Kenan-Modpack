@@ -1,0 +1,61 @@
+[
+    {
+        "type": "talk_topic",
+        "id": "TALK_BERZERKER",
+        "responses": [
+            {
+                "text": "What is this place?",
+                "topic": "TALK_BERZERKER_1"
+            },
+            {
+                "text": "Who are you?",
+                "topic": "TALK_BERZERKER_2"
+            },
+            {
+                "text": "Some third thing.",
+                "topic": "TALK_BERZERKER_3"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_BERZERKER_1",
+        "dynamic_line": "None of your goddamn business, that's what it is.",
+        "responses": [
+            {
+                "text": "Damn...",
+                "effect": "hostile",
+				"topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_BERZERKER_2",
+        "dynamic_line": "I'm the one that's going to end you.",
+        "responses": [
+            {
+                "text": "Go ahead and try...",
+				"effect": "hostile",
+                "topic": "TALK_DONE"
+            }
+        ]
+    },
+    {
+        "type": "talk_topic",
+        "id": "TALK_BERZERKER_3",
+        "dynamic_line": "Yeah.",
+        "responses": [
+            {
+                "text": "What...",
+                "topic": "TALK_DONE",
+				"effect": "hostile"
+            },
+            {
+                "text": "Nah, mate...",
+                "effect": "hostile",
+				"topic": "TALK_DONE"				
+            }
+        ]
+    }
+]

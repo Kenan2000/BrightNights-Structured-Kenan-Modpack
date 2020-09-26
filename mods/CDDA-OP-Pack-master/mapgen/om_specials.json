@@ -1,0 +1,16 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "omni_corp_outpost",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "omni_outpost_entrance_north" },
+	  { "point": [ 0, 0, 1 ], "overmap": "omni_outpost_roof_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "omni_outpost_under_north" }
+    ],
+    "locations": [ "land" ],
+    "city_distance": [ 4, -1 ],
+    "city_sizes": [ 2, 10 ],
+    "occurrences": [ 0, 5 ],
+    "flags": [ "CLASSIC" ]
+  }
+]

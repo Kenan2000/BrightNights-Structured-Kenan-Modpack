@@ -1,0 +1,198 @@
+[
+  {
+    "id": "revolver_shotgun",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "name": "shotgun revolver",
+    "description": "A shotgun modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "weight": 5443,
+    "volume": 12,
+    "price": 75000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "dispersion": 435,
+    "durability": 6,
+    "clip_size": 6,
+    "reload": 200,
+    "barrel_length": 4,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_3006",
+    "copy-from": "rifle_3006",
+    "type": "GUN",
+    "name": "revolver pipe rifle: .30-06",
+    "name_plural": "revolver pipe rifles: .30-06",
+    "description": "A homemade .30-06 pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "material": [ "steel", "wood" ],
+    "clip_size": 6,
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_22",
+    "copy-from": "rifle_22",
+    "type": "GUN",
+    "name": "revolver pipe rifle: .22",
+    "name_plural": "revolver pipe rifles: .22",
+    "description": "A homemade .22 pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "material": [ "steel", "wood" ],
+    "clip_size": 6,
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_9mm",
+    "copy-from": "rifle_9mm",
+    "type": "GUN",
+    "name": "revolver pipe rifle: 9x19mm",
+    "name_plural": "revolver pipe rifles: 9x19mm",
+    "description": "A homemade 9x19mm pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "material": [ "steel", "wood" ],
+    "clip_size": 6,
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_45",
+    "copy-from": "rifle_45",
+    "type": "GUN",
+    "name": "revolver pipe rifle: .45",
+    "name_plural": "revolver pipe rifles: .45",
+    "description": "A homemade .45 pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "material": [ "steel", "wood" ],
+    "clip_size": 6,
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_38",
+    "copy-from": "rifle_38",
+    "type": "GUN",
+    "name": "revolver pipe rifle: .38",
+    "name_plural": "revolver pipe rifles: .38",
+    "description": "A homemade .38 pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "material": [ "steel", "wood" ],
+    "clip_size": 6,
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_44",
+    "copy-from": "rifle_44",
+    "type": "GUN",
+    "name": "revolver pipe rifle: .44",
+    "name_plural": "revolver pipe rifles: .44",
+    "description": "A homemade .44 pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "material": [ "steel", "wood" ],
+    "clip_size": 6,
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_40",
+    "copy-from": "rifle_40",
+    "type": "GUN",
+    "name": "revolver pipe rifle: .40",
+    "name_plural": "revolver pipe rifles: .40",
+    "description": "A homemade .40 pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "clip_size": 6,
+    "material": [ "steel", "wood" ],
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  {
+    "id": "revolver_rifle_223",
+    "copy-from": "rifle_223",
+    "type": "GUN",
+    "name": "revolver pipe rifle: 5.56mm",
+    "name_plural": "revolver pipe rifles: 5.56mm",
+    "description": "A homemade 5.56mm pipe rifle modified to use a revolver cylinder mechanism, it can hold 6 cartridges.",
+    "clip_size": 6,
+    "material": [ "steel", "wood" ],
+    "relative": { "weight": 2000, "volume": 3 },
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS", "RELOAD_EJECT" ]
+  }
+]

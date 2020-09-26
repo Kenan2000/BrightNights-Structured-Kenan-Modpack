@@ -1,0 +1,18 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "old_healing",
+    "name": "Old Healing",
+    "authors": [ "Shard" ],
+    "description": "Resets healing speed back to pre-nerf levels, adjusted for turn length change.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "PLAYER_HEALING_RATE",
+    "info": "Set base player healing rate per turn. Default: 0.0001",
+    "stype": "float",
+    "value": 0.00167
+  }
+]

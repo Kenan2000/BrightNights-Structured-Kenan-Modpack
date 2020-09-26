@@ -1,0 +1,33 @@
+[
+  {
+    "id": "mon_zombie_brute_ninja",
+    "type": "MONSTER",
+    "name": "zombie nightstalker",
+    "copy-from": "mon_zombie_brute_ninja",
+    "hp": 150,
+    "speed": 100,
+    "melee_skill": 3,
+    "melee_dice": 2,
+    "dodge": 6,
+    "vision_day": 4,
+    "vision_night": 14,
+    "special_attacks": [ [ "GRAB", 3 ], [ "SHRIEK", 5 ], [ "BOOMER_GLOW", 20 ], { "type": "bite", "cooldown": 3 }, [ "scratch", 8 ] ],
+    "extend": { "flags": [ "GRABS", "HARDTOSHOOT", "KEENNOSE", "LOUDMOVES" ] },
+    "delete": { "flags": [ "NIGHT_INVISIBILITY" ] }
+  },{
+    "id": "mon_zombie_shady",
+    "type": "MONSTER",
+    "name": "shady zombie",
+    "copy-from": "mon_zombie_shady",
+    "hp": 60,
+    "speed": 110,
+    "melee_skill": 1,
+    "melee_dice": 2,
+    "dodge": 3,
+    "vision_day": 2,
+    "vision_night": 7,
+    "special_attacks": [ [ "SHRIEK", 20 ], [ "BOOMER_GLOW", 80 ], { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "extend": { "flags": [ "GOODHEARING", "GRABS", "HARDTOSHOOT", "KEENNOSE", "LOUDMOVES" ] },
+    "delete": { "flags": [ "NIGHT_INVISIBILITY" ] }
+  }
+]

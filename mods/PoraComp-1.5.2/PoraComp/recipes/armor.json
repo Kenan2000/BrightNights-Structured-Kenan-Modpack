@@ -1,0 +1,272 @@
+[
+  {
+    "result": "ups_pouch",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "using": [ [ "soldering_standard", 24 ] ],
+    "difficulty": 5,
+    "skills_required": [ "electronics", 4 ],
+    "time": 15000,
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "kevlar_plate", 5 ] ], [ [ "cable", 10 ] ] ]
+  },
+  {
+    "result": "porawep_survivorheavyplating",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [ "fabrication", 7 ],
+    "time": 360000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 200 ] ],
+    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], [ "toolset", 84 ] ] ],
+    "components": [
+      [ [ "rag", 20 ] ],
+      [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
+      [ [ "steel_chunk", 4 ], [ "scrap", 12 ] ],
+      [ [ "coat_rain", 1 ] ],
+      [
+        [ "chestrig", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 6 ],
+        [ "leather_pouch", 4 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 300 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 24 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivor_top",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 6 ],
+    "time": 100000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ] ],
+    "tools": [ [ [ "welder", 14 ], [ "welder_crude", 21 ], [ "soldering_iron", 21 ], [ "toolset", 21 ] ] ],
+    "components": [
+      [ [ "rag", 15 ] ],
+      [ [ "nomex", 9 ], [ "nomex_suit", 1 ] ],
+      [ [ "duct_tape", 100 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 12 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivor_bottoms",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 6 ],
+    "time": 100000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ] ],
+    "tools": [ [ [ "welder", 14 ], [ "welder_crude", 21 ], [ "soldering_iron", 21 ], [ "toolset", 21 ] ] ],
+    "components": [
+      [ [ "rag", 15 ] ],
+      [ [ "nomex", 9 ], [ "nomex_suit", 1 ] ],
+      [ [ "duct_tape", 100 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 12 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivorgloves",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HANDS",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 3 ],
+    "time": 60000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ] ],
+    "tools": [ [ [ "welder", 14 ], [ "welder_crude", 21 ], [ "soldering_iron", 21 ], [ "toolset", 21 ] ] ],
+    "components": [
+      [ [ "rag", 6 ] ],
+      [ [ "duct_tape", 80 ] ],
+      [ [ "gloves_tactical", 1 ], [ "kevlar_plate", 4 ] ],
+      [ [ "nomex_gloves", 1 ], [ "nomex", 6 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivorhood",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 4 ],
+    "time": 45000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 40 ] ],
+    "tools": [ [ [ "welder", 21 ], [ "welder_crude", 32 ], [ "soldering_iron", 32 ], [ "toolset", 32 ] ] ],
+    "components": [ [ [ "rag", 8 ] ], [ [ "kevlar_plate", 4 ] ], [ [ "nomex_hood", 1 ], [ "nomex", 6 ] ], [ [ "duct_tape", 100 ] ] ]
+  },
+  {
+    "result": "porawep_survivorboots",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 3 ],
+    "time": 120000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 80 ] ],
+    "tools": [ [ [ "welder", 21 ], [ "welder_crude", 32 ], [ "soldering_iron", 32 ], [ "toolset", 32 ] ] ],
+    "components": [
+      [ [ "rag", 8 ] ],
+      [ [ "kevlar_plate", 4 ] ],
+      [ [ "duct_tape", 100 ] ],
+      [ [ "nomex_socks", 1 ], [ "nomex", 9 ] ],
+      [ [ "boots_combat", 1 ], [ "boots_steel", 1 ], [ "boots_hiking", 1 ], [ "boots_bunker", 1 ], [ "boots", 1 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivormask",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": [ "tailor", 5 ],
+    "time": 20000,
+    "autolearn": true,
+    "using": [ [ "adhesive", 1 ], [ "sewing_standard", 10 ] ],
+    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], [ "toolset", 84 ] ] ],
+    "components": [
+      [ [ "mask_filter", 2 ], [ "mask_gas", 1 ], [ "mask_bunker", 1 ] ],
+      [ [ "glasses_safety", 2 ], [ "glasses_bal", 1 ] ],
+      [ [ "plastic_chunk", 3 ] ],
+      [ [ "scrap", 2 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivor_chestplate",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 6 ],
+    "time": 100000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "components": [
+      [ [ "leather", 10 ], [ "tanned_hide", 1 ] ],
+      [ [ "chestrig", 1 ] ],
+      [ [ "duct_tape", 100 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 12 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivor_armguards",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 6 ],
+    "time": 100000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "components": [
+      [ [ "leather", 10 ], [ "tanned_hide", 1 ] ],
+      [ [ "duct_tape", 100 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 12 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivor_legguards",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 6 ],
+    "time": 100000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ] ],
+    "tools": [ [ [ "welder", 28 ], [ "welder_crude", 42 ], [ "soldering_iron", 42 ], [ "toolset", 42 ] ] ],
+    "components": [
+      [ [ "leather", 10 ], [ "tanned_hide", 1 ] ],
+      [ [ "duct_tape", 100 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 12 ] ]
+    ]
+  },
+  {
+    "result": "porawep_survivorheavyplating",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 7,
+    "skills_required": [ "fabrication", 7 ],
+    "time": 360000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 200 ] ],
+    "tools": [ [ [ "welder", 56 ], [ "welder_crude", 84 ], [ "soldering_iron", 84 ], [ "toolset", 84 ] ] ],
+    "components": [
+      [ [ "steel_chunk", 4 ], [ "scrap", 12 ] ],
+      [
+        [ "chestrig", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 6 ],
+        [ "leather_pouch", 4 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 2 ],
+        [ "fanny", 2 ]
+      ],
+      [ [ "duct_tape", 300 ] ],
+      [ [ "modularvest", 1 ], [ "kevlar_plate", 24 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "Insulated_Canteen",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": 10000,
+    "autolearn": true,
+    "components": [ 
+		[ [ "canteen", 1 ] ],
+		[ [ "duct_tape", 100 ] ],
+		[ [ "Cellulose", 1 ] ]
+	]
+  },
+  {
+    "type": "recipe",
+    "result": "Insulated_2L_Canteen",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": 10000,
+    "autolearn": true,
+    "components": [ 
+		[ [ "2lcanteen", 1 ] ],
+		[ [ "duct_tape", 200 ] ],
+		[ [ "Cellulose", 2 ] ]
+	]
+  }
+]

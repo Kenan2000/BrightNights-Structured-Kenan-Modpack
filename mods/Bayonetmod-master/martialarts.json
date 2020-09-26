@@ -1,0 +1,122 @@
+[
+  {
+    "type": "martial_art",
+    "id": "style_bayonet",
+    "name": "Bayonet Fighting",
+    "description": "Technique for fighting with a bayonet attached to a weapon",
+    "initiate": [ "You start using the bayonet." ],
+    "arm_block": 99,
+    "leg_block": 99,
+    "static_buffs": [
+      {
+        "id": "bayonet_attach",
+        "name": "Attach Bayonets",
+        "melee_allowed": true,
+        "unarmed_allowed": false,
+        "min_melee": 0,
+        "mult_bonuses": [
+          { "stat": "damage", "type": "cut", "scale": 1.2 },
+          { "stat": "damage", "type": "stab", "scale": 1.2 },
+          { "stat": "damage", "type": "bash", "scale": 1.2 }
+        ],
+        "description": "Increased damage."
+      },
+      {
+        "id": "bayonet_enterench",
+        "name": "Entrench",
+        "min_melee": 3,
+        "description": "You are dug in, gain up to +6 armor",
+        "//": "FWIW, this is twice the amount of armor provided by bionic plating.",
+        "melee_allowed": true,
+        "unarmed_allowed": false,
+        "flat_bonuses": [
+          { "stat": "armor", "type": "bash", "scale": 6.0 },
+          { "stat": "armor", "type": "cut", "scale": 6.0 },
+          { "stat": "armor", "type": "stab", "scale": 6.0 }
+        ]
+      }
+    ],
+    "onhit_buffs": [
+      {
+        "id": "bayonet__stab",
+        "name": "Bayonet Stab",
+        "description": "Your bayonet sinks into the target",
+        "melee_allowed": true,
+        "unarmed_allowed": false,
+        "min_melee": 1,
+        "buff_duration": 2,
+        "max_stacks": 1,
+        "mult_bonuses": [
+          { "stat": "damage", "type": "cut", "scale": 2 },
+          { "stat": "damage", "type": "stab", "scale": 3 },
+          { "stat": "damage", "type": "bash", "scale": 1.2 }
+        ]
+      }
+    ],
+    "onmove_buffs": [
+      {
+        "id": "bayonet_charge",
+        "name": "Bayonet Charge",
+        "description": "+5 damage and +0.5 acc per stack and attack faster, but your defences are decreased",
+        "melee_allowed": true,
+        "unarmed_allowed": false,
+        "min_melee": 3,
+        "buff_duration": 5,
+        "max_stacks": 5,
+        "flat_bonuses": [
+          { "stat": "damage", "type": "cut", "scale": 5.0 },
+          { "stat": "damage", "type": "stab", "scale": 5.0 },
+          { "stat": "damage", "type": "bash", "scale": 5.0 },
+          { "stat": "hit", "scale": 0.5 },
+          { "stat": "movecost", "scale": -1.5 },
+          { "stat": "armor", "type": "bash", "scale": -2 },
+          { "stat": "armor", "type": "cut", "scale": -2 },
+          { "stat": "armor", "type": "stab", "scale": -2 }
+        ]
+      }
+    ],
+    "techniques": [ "WBLOCK_1", "WBLOCK_2", "tec_bayonet_gore", "IMPALE", "WIDE" ],
+    "weapons": [
+      "sword_bayonet",
+      "spear_bayonet",
+      "trowl_bayonet",
+      "mosin44",
+      "mosin44_ebr",
+      "scar_l",
+      "scar_h",
+      "hk_g3",
+      "m4a1",
+      "h&k416a5",
+      "m14ebr",
+      "fn_fal",
+      "m27iar",
+      "acr",
+      "win70",
+      "weatherby_5",
+      "arx160",
+      "ak47",
+      "an94",
+      "ak74",
+      "mosin91_30_ebr",
+      "steyr_aug",
+      "sig552",
+      "hk_g36",
+      "ar15",
+      "hk_g80",
+      "m1903",
+      "garand",
+      "sks",
+      "ruger_mini",
+      "cx4",
+      "ruger_1022",
+      "plasma_rifle",
+      "rm51_assault_rifle",
+      "marlin_9a",
+      "rifle_flintlock",
+      "compcrossbow",
+      "compbow",
+      "emp_gun",
+      "ftk93"
+    ]
+  }
+]

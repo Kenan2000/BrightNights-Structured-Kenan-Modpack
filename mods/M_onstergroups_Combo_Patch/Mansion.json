@@ -1,0 +1,20 @@
+[ 
+ {
+    "type": "monstergroup",
+    "name": "GROUP_MANSION",
+    "_comment": "PK+Salvaged Robots",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_zombie",
+    "monsters": [ 
+      { "monster": "mon_utilibot_butler", "freq": 20, "cost_multiplier": 2 },
+      
+      { "monster": "mon_zombie", "freq": 500, "cost_multiplier": 2, "pack_size": [ 2, 3 ] },
+      { "monster": "mon_zombie_crawler", "freq": 300, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_fat", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_child", "freq": 20, "cost_multiplier": 1 },
+      
+      { "monster": "mon_zombie_shapeshifter", "freq": 30, "cost_multiplier": 1 }
+    ]
+  }
+]

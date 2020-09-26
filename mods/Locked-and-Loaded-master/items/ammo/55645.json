@@ -1,0 +1,42 @@
+[
+{
+    "id": "55645",
+    "type": "AMMO",
+    "name": "5.56x45mm",
+    "description": "The 5.56x45mm NATO is a rimless bottlenecked round. It was designed in 1970s by FN Herstal. The unique design allows the bullet to fragment once it collides with the target. This of course can be problemmatic if fired to close to the opertaor.",
+    "weight": "4 g",
+    "volume": "250 ml",
+    "price": 4000,
+    "material": [ "brass", "powder" ],
+    "symbol": "-",
+    "color": "white",
+    "count": 10,
+    "stack_size": 5,
+    "ammo_type": "55645",
+    "casing": "55645_casing",
+    "range": 43,
+    "damage": 40,
+    "pierce": 10,
+    "dispersion": 50,
+    "recoil": 300,
+    "effects": ["FRAG"]
+    },
+    {
+    "id": "bp_55645",
+    "copy-from": "55645",
+    "type": "AMMO",
+    "name": "5.56x45mm black powder",
+    "proportional": { "price": 0.3, "damage": 0.76, "recoil": 0.76, "pierce": 0.5, "dispersion": 1.2 },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] }
+    },
+    {
+    "type": "GENERIC",
+    "id": "55645_casing",
+    "copy-from": "casing",
+    "name": "5.56x45mm casing",
+    "description": "An empty casing from a 5.56x45mm round.",
+    "material": "brass",
+    "volume": "100ml",
+    "weight": "1 g"
+    }
+    ]

@@ -1,0 +1,22 @@
+ [ 
+  {
+    "id": "fungicidalbomb_jug",
+    "copy-from": "grenade_canister",
+    "looks_like": "smokebomb",
+    "type": "GENERIC",
+    "name": "makeshift fungicidal jug grenade",
+    "price": 500,
+    "description": "This is a jug filled with homemade fungicidal solution.  Use this item to open the container and then use like an active fungicidal grenade.  In five turns it will begin to expel a volatile spray that is highly toxic to fungal life forms and humans.",
+    "countdown_action": { "menu_text": "Open jug", "type": "transform", "target": "fungicidalbomb_makeshift_act" }
+  },
+  {
+    "id": "fungicidalbomb_can",
+    "copy-from": "grenade_canister",
+    "looks_like": "smokebomb",
+    "type": "GENERIC",
+    "name": "makeshift fungicidal can grenade",
+    "price": 500,
+    "description": "This is a used can filled with homemade fungicidal solution.  Use this item to turn it into an active homemade fungicidal grenade.  In five turns it will begin to expel a volatile spray that is highly toxic to fungal life forms and humans.",
+    "countdown_action": { "menu_text": "Open can", "type": "transform", "target": "fungicidalbomb_makeshift_act" }
+  }
+]

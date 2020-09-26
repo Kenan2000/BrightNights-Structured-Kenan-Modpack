@@ -1,0 +1,13 @@
+[
+  {
+    "type": "scenario",
+    "ident": "apex_debug_evac",
+    "name": "APEX DEBUG",
+    "points": 0,
+    "description": "You have survived the initial wave of panic, and have achieved (relative) safety in one of the many government evac shelters.",
+    "allowed_locs": [ "shelter" ],
+    "start_name": "Evac Shelter",
+    "professions": [ "apex_debug_mk0", "apex_debug_mki", "apex_debug_mkii", "apex_debug_mkiii" ],
+    "flags": [ "CITY_START", "LONE_START" ]
+  }
+]

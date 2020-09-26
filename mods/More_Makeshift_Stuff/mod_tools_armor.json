@@ -1,0 +1,58 @@
+[
+ {
+        "id": "visored_helm",
+        "type": "TOOL_ARMOR",
+        "category" : "armor",
+        "symbol": "[",
+        "color": "light_gray",
+        "name": "visored helmet",
+        "description": "Helmet with openable visor. Not as thick and reliable as great helm due to all moving parts. Use it to open the visor and catch your breath.",
+        "price": 40000,
+        "material": ["steel", "leather"],
+        "weight": 2100,
+        "volume": 10,
+        "use_action": {
+            "type": "transform",
+			"moves": 100,
+            "msg": "You open your visor",
+            "target": "visored_helm_open"
+        },
+        "covers" : ["HEAD", "EYES", "MOUTH"],
+		"techniques" : ["WBLOCK_1"],
+        "flags" : ["VARSIZE"],
+        "warmth" : 10,
+        "environmental_protection" : 1,
+        "encumbrance" : 35,
+		"bashing" : 10,
+        "coverage" : 95,
+        "material_thickness" : 3
+  },{
+        "id": "visored_helm_open",
+        "type": "TOOL_ARMOR",
+        "category" : "armor",
+        "symbol": "[",
+        "color": "light_gray",
+        "name": "visored helmet(open)",
+        "description": "Helmet with openable visor. Use it to close the visor to protect your face.",
+        "price": 40000,
+        "material": ["steel", "leather"],
+        "weight": 2100,
+        "volume": 10,
+        "use_action": {
+            "type": "transform",
+			"moves": 100,
+            "msg": "You lower your visor",
+            "target": "visored_helm"
+        },
+        "covers" : ["HEAD"],
+		"techniques" : ["WBLOCK_1"],
+        "flags" : ["VARSIZE"],
+        "warmth" : 10,
+        "environmental_protection" : 1,
+        "encumbrance" : 35,
+		"bashing" : 10,
+        "coverage" : 95,
+		"qualities" : [["GLARE", 1]],
+        "material_thickness" : 3
+  }
+]

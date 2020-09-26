@@ -1,0 +1,73 @@
+[
+  {
+    "id": "SB_paper",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": "Geely carton",
+    "name_plural": "Geely carton",
+    "description": "  <color_yellow>▋</color>Geely carton ???(<color_yellow>strange</color>)\r\n<color_dark_gray>    「You also need a can of deodorant」</color>\r\n<color_dark_gray>─────────────────────────────────────────</color>\r\n  Defense          □□□□□□□□□□□□□□□□□□□□   0  \r\n  Coverage        <good>■■■■■■■■■■■■■■■■■■■■</good>   10  \r\n  flexibility        <good>■■■</good>□□□□□□□□□□□□□□□□□   2  \r\n<color_dark_gray>─────────────────────────────────────────</color>\r\n<color_dark_gray>   This big cardboard box with sexy zombies painted can make sure that no one finds you while you peep in a swimsuit zombies that can shake milk or sneak into a gun shop in the city center.</color>\r\n<color_dark_gray>─────────────────────────────────────────</color>\r\n<color_dark_gray>* This stuff makes you think you are mentally retarded. Intelligence-3 \ r \ n * The two small holes can't see clearly. Perception-3\r\n* 这玩意碍手矮脚的 敏捷-3 速度-20</color>",
+    "weight": 360,
+    "volume": 10,
+    "price": 230,
+    "to_hit": 1,
+    "material": [ "paper" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "LEGS", "TORSO", "ARMS", "HANDS", "HEAD", "FEET", "MOUTH" ],
+    "coverage": 98,
+    "encumbrance": 50,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "BELTED" ],
+	"artifact_data": {
+		"effects_worn": [ "AEP_INVISIBLE","AEP_INT_DOWN","AEP_PER_DOWN","AEP_DEX_DOWN", "AEP_SPEED_DOWN" ]
+		}
+  },
+  {
+    "result": "SB_paper",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "survival",
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+	"tools": [[ [ "permanent_marker", 5 ],[ "survival_marker", 5 ] ]],
+    "components": [ [ [ "box_large", 2 ] ], [ [ "duct_tape", 10 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "id": "SB_L_paper",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": "Optimistic carton",
+    "name_plural": "Optimistic carton",
+    "description": "Before the end, the pain is still there, stay optimistic, and smile.",
+    "weight": 150,
+    "volume": 4,
+    "price": 100,
+    "to_hit": 1,
+    "material": [ "paper" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "HEAD", "MOUTH" ],
+    "coverage": 98,
+    "encumbrance": 7,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE","HELMET_COMPAT" ]
+  },
+  {
+    "result": "SB_L_paper",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "survival",
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+	"tools": [[ [ "permanent_marker", 1 ],[ "survival_marker", 1 ] ]],
+    "components": [ [ [ "box_small", 1 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  }
+]

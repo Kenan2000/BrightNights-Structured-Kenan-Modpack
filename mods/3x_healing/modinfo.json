@@ -1,0 +1,18 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "3x_healing",
+    "name": "3x Healing",
+    "authors": [ "Shard" ],
+    "description": "Triples base healing rate.",
+    "category": "rebalance",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "PLAYER_HEALING_RATE",
+    "info": "Set base player healing rate per turn. Default: 0.0001",
+    "stype": "float",
+    "value": 0.0003
+  }
+]

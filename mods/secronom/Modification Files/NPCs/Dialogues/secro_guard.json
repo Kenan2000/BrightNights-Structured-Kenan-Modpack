@@ -1,0 +1,59 @@
+{
+  "type": "talk_topic",
+  "id": "TALK_SECRO_GUARD_main",
+  "dynamic_line": {
+    "u_has_effect": "secro_scientist_mission1_progress",
+    "no": "You are not suppose to be in here, survivor.",
+    "yes": {
+      "u_has_effect": "secro_guard_mission1_help",
+      "no": "I heard it. We will protect these people from the mutant hordes.",
+      "yes": {
+        "u_has_effect": "secro_scientist_partake_mission1",
+        "no": "Focus on our path! There's no time for chit-chats!",
+        "yes": {
+          "u_has_effect": "secro_guard_mission1_help_done",
+          "no": "You're skilled more than what I've expected from you. Good job!",
+          "yes": "What is it, survivor?"
+        }
+      }
+    }
+  },
+  "responses": [
+    {
+      "text": "Okay. Follow my lead.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [ { "not": { "u_has_effect": "secro_guard_mission1_help" } }, { "u_has_effect": "secro_scientist_mission1_progress" } ]
+      },
+      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_help" }, "follow_only" ]
+    },
+    {
+      "text": "I know, now stand still and be a real guard.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          { "not": { "u_has_effect": "secro_guard_mission1_help_done" } },
+          { "u_has_effect": "secro_scientist_partake_mission1" }
+        ]
+      },
+      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_help_done" }, "stop_following" ]
+    },
+    {
+      "truefalsetext": {
+        "condition": { "u_has_effect": "secro_scientist_mission1_progress" },
+        "true": "No, you're staying here.",
+        "false": "...",
+        "topic": "TALK_DONE"
+      },
+      "condition": { "not": { "u_has_effect": "secro_guard_mission1_help" } }
+    },
+    {
+      "text": "Okay then...",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [ { "not": { "u_has_effect": "secro_guard_mission1_help_done" } }, { "u_has_effect": "secro_guard_mission1_help" } ]
+      }
+    },
+    { "text": "Nothing...", "topic": "TALK_DONE", "condition": { "u_has_effect": "secro_guard_mission1_help_done" } }
+  ]
+}

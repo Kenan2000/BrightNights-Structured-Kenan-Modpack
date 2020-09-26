@@ -1,0 +1,23 @@
+[
+  {
+	"result": "anesthesia",
+	"type": "recipe",
+	"byproducts": [ [ "syringe" ] ],
+	"category": "CC_OTHER",
+	"subcategory": "CC_OTHER_MEDICAL",
+	"skill_used": "firstaid",
+	"difficulty": 4,
+	"skills_required": [ "cooking", 5 ],
+	"time": 20000,
+	"book_learn":[ [ "textbook_firstaid", 2 ], [ "manual_first_aid", 2 ], [ "emergency_book", 2 ], [ "pocket_firstaid", 2 ] ],
+	"qualities": [
+		{ "id": "CHEM", "level": 3},
+		{"id": "COOK", "level": 3}
+		],
+	"components":[
+		[ [ "syringe", 1 ] ],
+		[ ["codeine", 2 ], ["heroin", 2 ], ["morphine", 2 ], ["poppy_pain", 5 ], ["oxycodone", 2] ],
+		[ ["aspirin", 10] ]
+	]
+  }
+]

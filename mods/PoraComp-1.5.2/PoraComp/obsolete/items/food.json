@@ -1,0 +1,20 @@
+[  
+{
+    "type": "COMESTIBLE",
+    "id": "Synthetic_Nutrient_Base",
+    "name": "Synthetic Nutrient Base",
+    "weight": 110,
+    "color": "light_gray",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 2,
+    "calories": 308,
+    "//": "(Dehydrated Meat 400 + Dehydrated Veggies 400 + Dehydrated Fruit 320 / 4 for portions) * 1.1 for cooking gains",
+    "description": "A powder derived from dehydrated meats, vegtables, and fruits. Has been perciscely cooked to increase effective vitamin content and lost much flavour due to the process.",
+    "price": 500,
+    "material": "powder",
+    "charges": 4,
+    "vitamins": [ [ "calcium", 6 ], [ "iron", 7 ], [ "vitA", 8 ], [ "vitB", 6 ], [ "vitC", 5 ] ],
+    "volume": 3
+  }
+]

@@ -1,0 +1,465 @@
+[
+  {
+    "id": "acr",
+    "copy-from": "acr",
+    "type": "GUN",
+    "name": "Remington ACR",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "ar15",
+    "copy-from": "ar15",
+    "type": "GUN",
+    "name": "AR-15",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "h&k416a5",
+    "copy-from": "h&k416a5",
+    "type": "GUN",
+    "name": "H&K 416A5",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "hk_g36",
+    "copy-from": "hk_g36",
+    "type": "GUN",
+    "name": "H&K G36",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "m249",
+    "copy-from": "m249",
+    "type": "GUN",
+    "name": "M249",
+    "magazines": [
+      [
+        "223",
+        [
+          "belt223",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "308", [ "belt308" ] ]
+    ]
+  },
+  {
+    "id": "m27iar",
+    "copy-from": "m27iar",
+    "type": "GUN",
+    "name": "M27 IAR",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "m4a1",
+    "copy-from": "m4a1",
+    "type": "GUN",
+    "name": "M4A1",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "qr555",
+    "copy-from": "rifle_base",
+    "type": "GUN",
+    "name": "OCG QR555",
+    "name_plural": "OCG QR555",
+    "description": "OmniCorp bullpup QR555 covert ops platform uses new subsonic 5.56 NATO loads in several roles, \"quietly\". Identical to the ER555 in furniture and most of its parts, the base model is claimed to combine the best qualities of the M16, AN-94 and AS Val. It can fire 2 or 3-round 'pulses'.",
+    "weight": 2150,
+    "//": "No capacitor as it's a conventional, chemically propelled only firearm.",
+    "volume": 4,
+    "price": 850000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "superalloy", "steel", "plastic" ],
+    "color": "dark_gray",
+    "ammo": "223",
+    "ranged_damage": 1,
+    "built_in_mods": [ "qr555_suppressor", "ocg_er555_barrel" ],
+    "recoil": 0,
+    "dispersion": 135,
+    "durability": 8,
+    "recoil_shots": 3,
+    "delay_percent": 75,
+    "modes": [
+      [ "DEFAULT", "semi-auto", 1 ],
+      [ "BURST", "2 rd.", 2, [ "SIMULTANEOUS" ] ],
+      [ "3BURST", "3 rd.", 3, [ "SIMULTANEOUS" ] ]
+    ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 2 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "looks_like": "l_mbr_223",
+    "magazines": [
+      [
+        "223",
+        [
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "qr555_car",
+    "copy-from": "qr555",
+    "type": "GUN",
+    "name": "OCG QR555-CAR",
+    "name_plural": "OCG QR555-CAR",
+    "description": "OmniCorp bullpup QR555 covert ops platform uses new subsonic 5.56 NATO loads in several roles, \"quietly\". The Carbine supports automatic fire, has integrated recoil stock and foregrip, with room for one more underbarrel accessory.",
+    "price": 830000,
+    "range": 7,
+    "relative": { "weight": 300 },
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2, [ "SIMULTANEOUS" ] ], [ "AUTO", "auto", 10 ] ],
+    "magazines": [
+      [
+        "223",
+        [
+          "ocg556_24",
+          "ocg556_14",
+          "ocg556_30",
+          "ocg556_50",
+          "ocg556_60",
+          "ocg556_100",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "built_in_mods": [ "qr555_suppressor", "ocg_er555_carbarrel", "ocg_recoil_stock", "grip" ],
+    "looks_like": "l_car_223"
+  },
+  {
+    "id": "qr555_cqb",
+    "copy-from": "qr555",
+    "type": "GUN",
+    "name": "OCG QR555-SMG",
+    "name_plural": "OCG QR555-SMG",
+    "description": "OmniCorp bullpup QR555 covert ops platform uses new subsonic 5.56 NATO loads in several roles, \"quietly\". The Submachinegun supports automatic fire and ammo belts, comes with integrated recoil stock, underbarrel laser sight and RM42I bayonet.",
+    "price": 810000,
+    "range": 7,
+    "relative": { "weight": 50, "bashing": 4 },
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2, [ "SIMULTANEOUS" ] ], [ "AUTO", "auto", 18 ] ],
+    "built_in_mods": [ "qr555_suppressor", "ocg_er555_cqbbarrel", "ocg_recoil_stock", "int_rm42i_bayonet", "laser_sight" ],
+    "looks_like": "l_car_223",
+    "magazines": [
+      [
+        "223",
+        [
+          "ocg556_24",
+          "ocg556_14",
+          "ocg556_30",
+          "ocg556_50",
+          "ocg556_60",
+          "ocg556_100",
+          "belt223",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "flags": [ "DURABLE_MELEE" ]
+  },
+  {
+    "id": "qr555_dmr",
+    "copy-from": "qr555",
+    "type": "GUN",
+    "name": "OCG QR555-DMR",
+    "name_plural": "OCG QR555-DMR",
+    "description": "OmniCorp bullpup QR555 covert ops platform uses new subsonic 5.56 NATO loads in several roles, \"quietly\". The Designated Marksman Rifle features a longer, match-grade barrel and an accurized action, limited to only semi-auto and 2-round bursts.",
+    "price": 930000,
+    "relative": { "weight": 650, "dispersion": -10 },
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2, [ "SIMULTANEOUS" ] ] ],
+    "magazines": [
+      [
+        "223",
+        [
+          "ocg556_24",
+          "ocg556_14",
+          "ocg556_30",
+          "ocg556_50",
+          "ocg556_60",
+          "ocg556_100",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ]
+    ],
+    "built_in_mods": [ "qr555_suppressor", "qr555_dmrbarrel", "ocg_grippod_fg", "ocg_grippod_bipod", "cheek_pad" ],
+    "looks_like": "l_dsr_223"
+  },
+  {
+    "id": "qr555_saw",
+    "copy-from": "qr555",
+    "type": "GUN",
+    "name": "OCG QR555-SAW",
+    "name_plural": "OCG QR555-SAW",
+    "description": "OmniCorp bullpup QR555 covert ops platform uses new subsonic 5.56 NATO loads in several roles, \"quietly\". The Squad Automatic Weapon has a reinforced barrel, support for ammo belts, a very high rate of fire and comes with integrated forward grip/bipod unit, recoil stock and gyroscopic stabilizer.",
+    "price": 900000,
+    "relative": { "weight": 1100 },
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2, [ "SIMULTANEOUS" ] ], [ "AUTO", "auto", 18 ] ],
+    "built_in_mods": [
+      "qr555_suppressor",
+      "ocg_er555_lmgbarrel",
+      "ocg_grippod_fg",
+      "ocg_grippod_bipod",
+      "ocg_recoil_stock",
+      "ocg_stabilizer"
+    ],
+    "looks_like": "l_lmg_223",
+    "magazines": [
+      [
+        "223",
+        [
+          "belt223",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100",
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "ruger_mini",
+    "copy-from": "ruger_mini",
+    "type": "GUN",
+    "name": "Ruger Mini-14",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag10",
+          "stanag30",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag" ] ]
+    ]
+  },
+  {
+    "id": "scar_l",
+    "copy-from": "scar_l",
+    "type": "GUN",
+    "name": "FN SCAR-L",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "scarhmag", "scarhbigmag" ] ]
+    ]
+  },
+  {
+    "id": "sig552",
+    "copy-from": "sig552",
+    "type": "GUN",
+    "name": "SIG 552",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  },
+  {
+    "id": "steyr_aug",
+    "copy-from": "steyr_aug",
+    "type": "GUN",
+    "name": "Steyr AUG",
+    "magazines": [
+      [
+        "223",
+        [
+          "stanag30",
+          "stanag10",
+          "stanag50",
+          "survivor223mag",
+          "ocg556_30",
+          "ocg556_14",
+          "ocg556_50",
+          "ocg556_24",
+          "ocg556_60",
+          "ocg556_100"
+        ]
+      ],
+      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
+      [ "308", [ "g3mag", "g3bigmag" ] ]
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "result": "223_fungicidal",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ [ "gun", 1 ], [ "cooking", 3 ] ],
+    "time": 30000,
+    "autolearn": true,
+    "using": [ [ "bullet_forming", 40 ] ],
+    "components": [
+      [ [ "223_casing", 30 ] ],
+      [ [ "smrifle_primer", 30 ] ],
+      [ [ "gunpowder", 10 ] ],
+      [ [ "gas_fungicidal", 50 ], [ "antifungal", 5 ] ],
+      [ [ "plastic_chunk", 10 ] ]
+    ]
+  },
+  {
+    "result": "308_fungicidal",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ [ "gun", 1 ], [ "cooking", 3 ] ],
+    "time": 30000,
+    "autolearn": true,
+    "using": [ [ "bullet_forming", 40 ] ],
+    "components": [
+      [ [ "308_casing", 20 ], [ "762_51_casing", 20 ] ],
+      [ [ "lgrifle_primer", 20 ] ],
+      [ [ "gunpowder", 10 ] ],
+      [ [ "gas_fungicidal", 50 ], [ "antifungal", 5 ] ],
+      [ [ "plastic_chunk", 15 ] ]
+    ]
+  },
+  {
+    "result": "50_fungicidal",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_RIFLE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "skills_required": [ [ "gun", 1 ], [ "cooking", 3 ] ],
+    "time": 30000,
+    "autolearn": true,
+    "using": [ [ "bullet_forming", 40 ] ],
+    "components": [
+      [ [ "50_casing", 25 ] ],
+      [ [ "lgrifle_primer", 25 ] ],
+      [ [ "gunpowder", 25 ] ],
+      [ [ "gas_fungicidal", 50 ], [ "antifungal", 5 ] ],
+      [ [ "plastic_chunk", 20 ] ]
+    ]
+  },
+  {
+    "result": "fungicidal_bomb",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "cooking",
+    "skills_required": [ "mechanics", 1 ],
+    "difficulty": 4,
+    "time": 8000,
+    "autolearn": true,
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "gas_fungicidal", 100 ], [ "antifungal", 10 ] ],
+      [ [ "canister_empty", 1 ], [ "can_food_unsealed", 1 ], [ "can_drink_unsealed", 1 ] ],
+      [ [ "superglue", 1 ] ]
+    ]
+  },
+  {
+    "result": "40mm_fungicidal",
+    "type": "recipe",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_GRENADES",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "skills_required": [ [ "gun", 2 ], [ "cooking", 3 ] ],
+    "time": 3750,
+    "autolearn": true,
+    "charges": 1,
+    "tools": [ [ [ "press", -1 ] ] ],
+    "components": [
+      [
+        [ "40x46mm_m1006", 1 ],
+        [ "40x46mm_m433", 1 ],
+        [ "40x46mm_m576", 1 ],
+        [ "40x46mm_m651", 1 ],
+        [ "40x46mm_buckshot_m118", 1 ],
+        [ "40x46mm_buckshot_m199", 1 ],
+        [ "40x46mm_slug_m118", 1 ],
+        [ "40x46mm_slug_m199", 1 ],
+        [ "40x46mm_flechette_m118", 1 ],
+        [ "40x46mm_flechette_m199", 1 ]
+      ],
+      [ [ "gunpowder", 40 ] ],
+      [ [ "gas_fungicidal", 100 ], [ "antifungal", 10 ] ]
+    ]
+  }
+]

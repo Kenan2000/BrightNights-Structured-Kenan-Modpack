@@ -1,0 +1,31 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_missile",
+    "name": "missile",
+	"description": "It's a missile. Bashing it will make it explode.",
+    "symbol": "#",
+    "color": "light_blue",
+    "move_cost": 0,
+    "flags": [ "NOITEM" ],
+    "bash": {
+      "str_min": 50,
+      "str_max": 400,
+      "explosive": 100,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_missile_exploded",
+      "items": [ { "item": "scrap", "count": [ 4, 8 ] }, { "item": "plut_cell", "charges": [ 0, 1 ] } ]
+    },
+    "deconstruct": {
+      "ter_set": "t_metal_floor",
+      "items": [
+        { "item": "scrap", "count": [ 4, 8 ] },
+        { "item": "e_scrap", "count": [ 2, 8 ], "prob": 60 },
+        { "item": "RAM", "count": [ 1, 2 ] },
+        { "item": "plastic_chunk", "count": [ 4, 8 ] },
+        { "item": "plut_cell", "charges": [ 0, 1 ] }
+      ]
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "result": "spiral_matrix",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "//": "Originally needed a CVD machine, but that changed when crafting_pseudo_item was changed, it doesn't seem to work in the current experimental, so I removed it.",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": 30000,
+    "autolearn":true,
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "tools": [
+      [ [ "chisel", -1 ] ],
+      [ [ "cvd_machine", -1 ] ]
+    ],
+    "components": [
+      [ [ "charcoal", 1000 ] ],
+      [ [ "plasma", 100 ] ],
+      [ [ "spiral_stone", 1 ] ]
+    ]
+  },
+  {
+    "result": "dobelisk",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": 120000,
+    "reversible": false,
+    "book_learn": [ [ "spiral_matrix", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "spiral_matrix", 1000 ] ] ],
+    "components": [
+      [ [ "frame_wood", 5 ] ],
+      [ [ "solar_panel", 12 ] ],
+      [ [ "spiral_stone", 10 ] ]
+    ]
+  }
+]

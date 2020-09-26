@@ -1,0 +1,29 @@
+{
+  "type" : "recipe",
+  "result": "makeshift_engine_hoist",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "mechanics",
+  "skills_required": ["fabrication", 3],
+  "difficulty": 5,
+  "time": 60000,
+  "autolearn": true,
+  "book_learn": [["textbook_mechanics", 2], ["manual_mechanics", 3]],
+  "using": [ [ "welding_standard", 10 ], [ "steel_tiny", 12 ]],
+  "qualities" : [
+    {"id":"WRENCH","level":2},
+    {"id":"SAW_M","level":2},
+    {"id":"DRILL","level":3}
+  ],
+  "components": [
+    [
+      [ "stick", 4 ], [ "2x4", 4 ], ["pipe", 4]
+    ],
+    [
+      [ "rope_30", 4 ], [ "chain", 4 ]
+    ],
+    [
+      [ "jack_makeshift", 1 ], [ "jack_small", 1 ], ["jack", 1]
+    ]
+  ]
+}

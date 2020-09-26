@@ -1,0 +1,30 @@
+[
+  {
+    "type": "recipe",
+    "result": "SMakeshift_Canteen",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "survival",
+    "difficulty": 0,
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [
+	[ ["bottle_plastic", 1], ["jar_glass", 1 ] ], 
+	[ [ "string_36", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "LMakeshift_Canteen",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": "5 m",
+    "reversible": true,
+    "autolearn": true,
+    "components": [ 
+	[ ["jug_plastic", 1 ] ], 
+	[ [ "string_36", 2 ] ] ]
+  }
+]

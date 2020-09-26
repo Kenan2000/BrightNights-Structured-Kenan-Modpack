@@ -1,0 +1,62 @@
+[
+  {
+    "id": "broken_utilibot",
+    "type": "GENERIC",
+    "name": "broken utility robot",
+	"category": "other",
+    "looks_like": "mon_cleanerbot",
+    "price": 250000,
+    "price_postapoc": 100000,
+    "weight": "140 kg",
+    "volume": "65 L",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel", "aluminum" ],
+    "symbol": ";",
+	"description": "A broken utility robot, now silent and mangled. Could be stripped down for parts.",
+    "color": "dark_gray"
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_utilibot_butler",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "copy-from": "broken_utilibot",
+    "name": "broken butler robot",
+    "description": "A broken butler robot, now silent and mangled. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_utilibot_const",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "copy-from": "broken_utilibot",
+    "name": "broken construction robot",
+    "description": "A broken construction robot, now wrecked and immobile. Could be stripped down for parts."
+  },
+  {
+    "type": "GENERIC",
+    "id": "broken_utilibot_fire",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "copy-from": "broken_utilibot",
+    "name": "broken firefighter robot",
+    "description": "A broken firefighter robot, now cold and inert. Could be stripped down for parts."
+  },
+  {
+    "id": "broken_roomba",
+    "type": "GENERIC",
+    "name": "broken roomba",
+	"category": "other",
+    "price": 50000,
+    "price_postapoc": 25000,
+    "weight": "15 kg",
+    "volume": "30 L",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": "o",
+	"description": "A broken roomba, now silent and mangled. Could be stripped down for parts.",
+    "color": "dark_gray"
+  }
+]

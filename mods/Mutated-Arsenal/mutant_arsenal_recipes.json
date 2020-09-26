@@ -1,0 +1,50 @@
+[
+ {
+    "result": "power_armor_mutant",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "skills_required": [ "fabrication", 10 ],
+    "book_learn": [ [ "textbook_robots", 10 ] , [ "recipe_lab_elec", 9 ] ],
+    "time": 640000,
+	"qualities": [
+      {"id": "CUT", "level": 3}, 
+      {"id": "HAMMER", "level": 3 }
+	],
+    "tools": [
+	[ [ "welder", 1000 ], [ "welder_crude", 1500 ], [ "soldering_iron", 1500 ], [ "toolset", 1500 ] ] 
+	],
+    "components": [
+      [ [ "power_armor_heavy", 1 ] ],
+      [ [ "slime_scrap", 500 ] ],
+      [ [ "plut_cell", 10 ], [ "adv_UPS_off", 5 ] ],
+	  [ [ "steel_chunk", 100 ], [ "scrap", 300 ] ]
+	]
+  },	  
+  {
+    "result": "power_armor_helmet_mutant",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "electronics",
+    "difficulty": 10,
+    "skills_required": [ "fabrication", 10 ],
+    "time": 640000,
+    "book_learn": [ [ "textbook_robots", 10 ] , [ "recipe_lab_elec", 9 ] ],
+    "qualities": [
+      {"id": "CUT", "level": 3}, 
+	  {"id": "HAMMER", "level": 3 }
+	],
+    "tools": [
+	[ [ "welder", 1000 ], [ "welder_crude", 1500 ], [ "soldering_iron", 1500 ], [ "toolset", 1500 ] ] 
+	],
+    "components": [
+      [ [ "power_armor_helmet_heavy", 1 ] ],
+      [ [ "slime_scrap", 500 ] ],
+      [ [ "plut_cell", 10 ], [ "adv_UPS_off", 5 ] ],
+      [ [ "steel_chunk", 100 ], [ "scrap", 300 ] ]
+  ]
+ }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "hipoint40mag",
+    "type": "MAGAZINE",
+    "name": "Hi-Point 40 magazine",
+    "description": "10 round standard capacity magazine for any Hi-point chambered in .40.",
+    "weight": 80,
+    "volume": 1,
+    "price": 1000,
+    "material": "steel",
+    "symbol": "#",
+    "color": "grey",
+    "ammo_type": "40",
+    "capacity": 10,
+    "reliability": 8,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "hipoint40magext",
+    "type": "MAGAZINE",
+    "name": "Hi-Point 40 extended magazine",
+    "description": "15 round extended magazine for any Hi-point chambered in .40",
+    "//": "The extended magazine is much less reliable then the standard magazine",
+    "weight": 80,
+    "volume": 1,
+    "price": 1000,
+    "material": "steel",
+    "symbol": "#",
+    "color": "grey",
+    "ammo_type": "40",
+    "capacity": 15,
+    "reliability": 4,
+    "flags": [ "MAG_BULKY" ]
+  }
+]

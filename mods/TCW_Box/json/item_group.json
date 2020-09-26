@@ -1,0 +1,232 @@
+[
+  {
+    "id": "SOS_VT",
+    "type": "TOOL",
+    "name": "Doomsday Reserve Box",
+    "description": "An apocalyptic storage box with an electronic lock.",
+    "//": "Refreshed box.",
+    "weight": "20 kg",
+    "volume": "20000 ml",
+    "price": 500000,
+    "price_postapoc": 100000,
+    "to_hit": -20,
+    "bashing": 15,
+    "material": "steel",
+    "symbol": "%",
+    "color": "yellow",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_BBOX",
+	  "place_randomly": true,
+      "friendly_msg": "You pressed the button on the box. \r\n*didi*\r\n The doomsday storage box is open.",
+      "hostile_msg": "You press the button on the box. \r\n*dididi*\r\n The doomsday storage box is open.",
+      "difficulty": 0,
+      "moves": 150
+    }
+  },
+  {
+    "id": "SOS_VT_O",
+    "type": "TOOL",
+    "name": "Doomsday Reserve Box (empty)",
+    "description": "An empty doomsday storage box can be placed.",
+    "//": "Open box.",
+    "weight": "5 kg",
+    "volume": "20000 ml",
+    "price": 10000,
+    "price_postapoc": 5000,
+    "to_hit": -15,
+    "bashing": 15,
+    "material": "steel",
+    "symbol": "%",
+    "color": "yellow",
+	"drop_action": {
+      "type": "deploy_furn",
+      "furn_type": "f_SOS_VT_O"
+    },
+    "use_action": { "type": "deploy_furn", "furn_type": "f_SOS_VT_O" }
+  },
+  {
+    "id": "SOS_VT_O2",
+    "type": "TOOL",
+	"looks_like": "SOS_VT_O",
+    "name": "Doomsday Reserve Box (empty)",
+    "description": "An empty doomsday storage box to hold.",
+    "//": "Open box.",
+    "weight": "5 kg",
+    "volume": "20000 ml",
+    "price": 10000,
+    "price_postapoc": 5000,
+    "to_hit": -15,
+    "bashing": 15,
+    "material": "steel",
+    "symbol": "%",
+    "color": "yellow",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_SOS_VT_O" }
+  },
+  {
+    "type": "furniture",
+    "id": "f_SOS_VT_O",
+    "name": "Doomsday Reserve Box",
+    "symbol": "{",
+    "description": "Usually used to store firearms, ammunition or other supplies.",
+    "color": "light_gray",
+    "move_cost_mod": 1,
+    "coverage": 35,
+    "required_str": 1,
+    "flags": [ "CONTAINER", "TRANSPARENT", "SHORT", "MOUNTABLE", "PLACE_ITEM" ],
+	"deployed_item": "SOS_VT_O2",
+    "examine_action": "deployed_furniture",
+    "deconstruct": {
+      "items": [
+        { "item": "sheet_metal", "count": [ 1, 2 ] },
+        { "item": "sheet_metal_small", "count": [ 0, 4 ] },
+        { "item": "lock", "count": [ 0, 1 ] },
+        { "item": "pipe", "count": [ 4, 8 ] }
+      ]
+    },
+    "max_volume": "0375 ml",
+    "bash": {
+      "str_min": 15,
+      "str_max": 40,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "scrap", "count": [ 2, 8 ] },
+        { "item": "steel_chunk", "count": [ 2, 4 ] },
+        { "item": "sheet_metal_small", "count": [ 6, 10 ] },
+        { "item": "pipe", "count": 1 }
+      ]
+    }
+  },
+  {
+    "id": "mon_BBOX",
+    "type": "MONSTER",
+    "name": "Red light on electronic lock",
+    "//": "he opened chest refreshes the treasure chest monster, disappears instantly and drops the item when it comes out.",
+    "description": ".",
+    "default_faction": "factionless",
+    "species": [ "UNKNOWN" ],
+    "volume": "62500 ml",
+    "weight": 81500,
+    "hp": 1,
+    "speed": 1,
+    "symbol": "#",
+    "color": "cyan",
+    "aggression": -99,
+    "morale": 2,
+    "luminance": 1,
+    "dodge": 0,
+    "harvest": "exempt",
+    "fear_triggers": [ "PLAYER_CLOSE" ],
+    "special_attacks": [ [ "DISAPPEAR", 1 ] ],
+    "death_function": [ "DISAPPEAR" ],
+	"death_drops": "BBOX",
+    "flags": [ "FLIES", "NO_BREATHE", "NOT_HALLUCINATION", "HARDTOSHOOT" ]
+  },
+  {
+    "id": "BBOX",
+    "type": "item_group",
+    "subtype": "distribution",
+    "//": "Main item, randomly refresh a group from the group list.",
+    "entries": [
+      { "group": "AKAR", "prob": 50 , "damage": [ 0, 0 ] },
+      { "group": "RPG_TAC", "prob": 50 , "damage": [ 0, 0 ] }
+    ]
+  },
+  {
+    "id": "AKAR",
+    "type": "item_group",
+    "magazine": 100,
+    "ammo": 100,
+    "subtype": "collection",
+    "//": "Sub-item group, empty box (SOS_VT_O) is ranked last, and finally generated to provide item maps.",
+    "entries": [
+          { "item": "AKAR_B_U", "prob": 100 },
+          { "item": "stanag30", "prob": 100, "count": [ 3, 10 ] },
+          { "item": "223", "prob": 100, "count": [ 3, 20 ] },
+          { "item": "vodka", "prob": 100, "count": [ 2, 12 ] },
+          { "item": "hat_fur", "prob": 100 },
+          { "item": "mre_beefstew_box", "prob": 80, "count": [ 2, 10 ] },
+          { "item": "mre_hotdog_box", "prob": 80, "count": [ 2, 10 ] },
+          { "item": "pur_tablets", "prob": 80, "charges-min": 100, "charges-max": 100 },
+          { "item": "water_clean", "prob": 80, "count": [ 3, 10 ] },
+          { "item": "mp3", "prob": 10 },
+          { "item": "portable_game", "prob": 10 },
+          { "item": "vibrator", "prob": 10 },
+          { "item": "1st_aid", "prob": 100 },
+          { "item": "rollmat", "prob": 100 },
+          { "item": "sleeping_bag_roll", "prob": 100 },
+          { "item": "tent_kit", "prob": 100 },
+          { "item": "SOS_VT_O" }
+        ]
+  },
+  {
+    "id": "RPG_TAC",
+    "type": "item_group",
+    "magazine": 100,
+    "ammo": 100,
+    "subtype": "collection",
+    "//": "Sub-item group, empty box (SOS_VT_O) is ranked last, and finally generated to provide item maps.",
+    "entries": [
+          { "item": "RPG_TAC_U", "prob": 100 },
+          { "item": "RPG-7_og7v", "prob": 100, "count": [ 4, 15 ] },
+          { "item": "RPG-7_ammo", "prob": 50, "count": [ 3, 15 ] },
+          { "item": "RPG-7_pg7vr", "prob": 5, "count": [ 0, 3 ] },
+          { "item": "RPG-7_tbg7v", "prob": 15, "count": [ 0, 3 ] },
+          { "item": "mre_beefstew_box", "prob": 80, "count": [ 2, 5 ] },
+          { "item": "mre_hotdog_box", "prob": 80, "count": [ 2, 5 ] },
+          { "item": "pur_tablets", "prob": 80, "charges-min": 100, "charges-max": 100 },
+          { "item": "water_clean", "prob": 80, "count": [ 3, 5 ] },
+		  { "item": "mp3", "prob": 10 },
+		  { "item": "portable_game", "prob": 10 },
+          { "item": "vibrator", "prob": 10 },
+          { "item": "1st_aid", "prob": 100 },
+          { "item": "rollmat", "prob": 100 },
+          { "item": "sleeping_bag_roll", "prob": 100 },
+          { "item": "tent_kit", "prob": 100 },
+          { "item": "SOS_VT_O" }
+        ]
+  },
+  {
+    "//": "The following are refreshing Doomsday Reserve Boxes",
+    "type": "item_group",
+    "id": "helicopter",
+    "magazine": 100,
+    "items": [
+      [ "SOS_VT", 3 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "military",
+    "magazine": 100,
+    "items": [
+      [ "SOS_VT", 2 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bedroom",
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      [ "SOS_VT", 6 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "swat_gear",
+    "subtype": "distribution",
+    "items": [
+      [ "SOS_VT", 6 ]
+    ]
+  },
+  {
+    "id": "cop_armory",
+    "type": "item_group",
+    "magazine": 100,
+    "items": [
+      [ "SOS_VT", 6 ]
+    ]
+  }
+]

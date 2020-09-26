@@ -1,0 +1,20 @@
+[
+  {
+    "id": "xm29launcher",
+    "type": "GUNMOD",
+    "name": "XM-29 HE module",
+    "name_plural": "XM-29 HE module",
+    "description": "the grenade launching bit for the XM-29. If your seeing this then its probably a bug.",
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "material": [ "steel", "plastic" ],
+    "symbol": ":",
+    "color": "light_red",
+    "location": "underbarrel",
+    "mod_targets": [ "rifle", "crossbow" ],
+    "gun_data": { "ammo": "20x28mm", "skill": "launcher", "dispersion": 130, "durability": 5, "barrel_length": 1 },
+    "dispersion_modifier": 30,
+    "magazines": [ [ "20x28mm", [ "xm29_launchermag" ] ] ]
+  }
+]

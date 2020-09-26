@@ -1,0 +1,76 @@
+[
+  {
+    "result": "spiral_matrix",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": 30000,
+    "book_learn": [ [ "spiral_stone", 1 ], [ "vortex_stone", 1 ], [ "spiral_matrix", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "tools": [
+      [ [ "chisel", -1 ] ],
+      [ [ "cvd_machine", -1 ] ]
+    ],
+    "components": [
+      [ [ "spiral_stone", 1 ] ]
+    ]
+},  {
+    "result": "dobelisk",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": 120000,
+    "reversible": false,
+    "book_learn": [ [ "spiral_matrix", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "spiral_matrix", 1000 ] ] ],
+    "components": [
+      [ [ "solar_panel", 7 ] ],
+      [ [ "spiral_stone", 3 ] ]
+    ]
+},  {
+    "result": "omnipotence_scroll",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 9,
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT_FINE", "level": 2 } ],
+    "tools": [ [ [ "magnifying_glass", -1 ] ] ],
+    "components": [
+      [ [ "book_syncretism", 1 ] ],
+      [ [ "book_sacrifice", 1 ] ],
+      [ [ "book_potioncraft", 1 ] ],
+      [ [ "book_scrollcraft", 1 ] ],
+      [ [ "book_bloodmagic", 1 ] ],
+      [ [ "book_summoning", 1 ] ],
+      [ [ "book_hexenhammer", 1 ] ]
+    ]
+},  {
+    "result": "win_potion",
+    "type": "recipe",
+    "override": true,
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "magic",
+    "difficulty": 10,
+    "time": 30000,
+    "book_learn": [ [ "omnipotence_scroll", 10 ] ],
+    "tools": [
+      [ [ "hallowed_altar", 1 ] ],
+      [ [ "chemistry_set", -1 ] ]
+    ],
+    "components": [
+      [ [ "flask_glass", 1 ] ]
+    ]
+}
+]

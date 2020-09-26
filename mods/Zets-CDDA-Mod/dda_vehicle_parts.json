@@ -1,0 +1,17 @@
+[
+  {
+    "id": "minifreezer",
+    "copy-from": "minifreezer",
+    "type": "vehicle_part",
+    "name": "minifreezer",
+    "size": 1400,
+    "extend": { "flags": [ "LOCKABLE_CARGO" ] }
+  },
+  {
+    "id": "minifridge",
+    "copy-from": "minifridge",
+    "type": "vehicle_part",
+    "name": "minifridge",
+    "extend": { "flags": [ "LOCKABLE_CARGO" ] }
+  }
+]

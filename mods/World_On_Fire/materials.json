@@ -1,0 +1,34 @@
+[
+  {
+    "type": "material",
+    "ident": "firechitin",
+    "name": "Fire Chitin",
+    "density": 15,
+    "bash_resist": 3,
+    "cut_resist": 4,
+    "acid_resist": 2,
+    "fire_resist": 20,
+    "elec_resist": 2,
+    "chip_resist": 10,
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "chipped",
+    "burn_data": [ { "immune": true }, { "immune": true }, { "immune": true } ]
+    },
+{
+    "type": "material",
+    "ident": "fire_stinger",
+    "name": "Fire Ant Stinger",
+    "density": 5,
+    "bash_resist": 3,
+    "cut_resist": 3,
+    "acid_resist": 2,
+    "fire_resist": 20,
+    "elec_resist": 2,
+    "chip_resist": 8,
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "chipped",
+    "burn_data": [ { "immune": true }, { "immune": true }, { "immune": true } ]
+    }
+]

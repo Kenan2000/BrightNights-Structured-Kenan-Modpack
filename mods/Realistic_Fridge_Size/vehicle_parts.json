@@ -1,0 +1,28 @@
+[
+{
+    "type": "vehicle_part",
+    "id": "minifridge",
+    "name": "minifridge",
+    "symbol": "H",
+    "color": "light_blue",
+    "broken_symbol": "#",
+    "broken_color": "light_blue",
+    "damage_modifier": 80,
+    "durability": 100,
+    "description": "A small fridge.  When turned on, it will cool the food inside, extended the time until the food spoils.",
+    "//": "Use average consumption, not the max on the appliance rating plate. 30W ~ 260kWh per annum",
+    "epower": -30,
+    "size": 700,
+    "item": "minifridge",
+    "difficulty": 3,
+    "location": "center",
+    "flags": [ "CARGO", "OBSTACLE", "FRIDGE", "COVERED", "TOOL_WRENCH", "ENABLED_DRAINS_EPOWER" ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 8, 13 ] },
+      { "item": "steel_chunk", "count": [ 8, 13 ] },
+      { "item": "scrap", "count": [ 8, 13 ] },
+      { "item": "hose", "prob": 50 },
+      { "item": "motor_tiny", "prob": 25 }
+    ]
+  }
+  ]

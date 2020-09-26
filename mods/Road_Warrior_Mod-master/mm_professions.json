@@ -1,0 +1,83 @@
+[
+   {
+        "type": "profession",
+        "ident": "road_warrior",
+        "name": "Road Warrior",
+        "description": "A burnt-out husk of a human being, left for dead in this cruel new world, you've adapted, and through many trials, survived the end.",
+        "points": 3,
+        "skills": [
+            {
+                "level": 4,
+                "name": "driving"
+            },
+            {
+                "level": 1,
+                "name": "survival"
+            },
+            {
+                "level": 2,
+                "name": "shotgun"
+            }
+        ],
+        "items": {
+            "both": [
+                "pants_leather",
+                "tshirt",
+                "socks",
+                "boots",
+				"gloves_fingerless",
+				"jacket_leather",
+				"holster",
+                "pipe_combination_gun"
+            ],
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+    },
+	{
+        "type": "profession",
+        "ident": "MFP_Officer",
+        "name": "MFP Officer",
+        "description": "An officer of the Main Force Patrol, assigned to enforce order on the chaotic roads.",
+        "points": 3,
+        "skills": [
+            {
+                "level": 2,
+                "name": "driving"
+            },
+            {
+                "level": 2,
+                "name": "gun"
+            }
+        ],
+        "traits": [
+            "PROF_POLICE"
+        ],
+        "items": {
+            "both": [
+                "pants_leather",
+                "tshirt",
+                "socks",
+                "boots",
+				"gloves_leather",
+				"jacket_leather",
+				"badge_MFP",
+				"sholster",
+                "sw_610",
+				"40sw"
+            ],
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+    }
+]

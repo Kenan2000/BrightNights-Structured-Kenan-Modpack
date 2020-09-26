@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ninja_map_cosplaypt",
+    "type": "GENERIC",
+    "category": "books",
+    "name": "Cosplay map",
+    "description": "A map of the venue of a cosplay party.",
+    "weight": 30,
+    "volume": 1,
+    "price": 100,
+    "to_hit": -1,
+    "material": "paper",
+    "symbol": ";",
+    "color": "white",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 180,
+      "terrain": [ "dojo", "Ninja Tower" ],
+      "message": "You now know where the cosplay party is."
+    }
+  },
+  {
+    "id": "ninja_note",
+    "type": "GENERIC",
+    "category": "books",
+    "name": "Ninja note",
+    "name_plural": "Ninja notes",
+    "description": "It is a note of a ninja. I use it to write each other's correspondence and phrase. The letters are written in black.",
+    "weight": 1,
+    "volume": 0,
+    "price": 0,
+    "material": "paper",
+    "symbol": ",",
+    "color": "white",
+    "snippet_category": "ninja_snippet_note"
+  }
+]

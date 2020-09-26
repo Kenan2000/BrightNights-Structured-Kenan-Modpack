@@ -1,0 +1,602 @@
+[
+  {
+    "id": "jerky",
+    "copy-from": "jerky",
+    "type": "COMESTIBLE",
+    "name": "meat jerky",
+    "name_plural": "meat jerky",
+    "description": "Salty dried meat that lasts for a long time, but will make you thirsty.",
+    "spoils_in": 0
+  },
+  {
+    "id": "salted_fish",
+    "copy-from": "salted_fish",
+    "type": "COMESTIBLE",
+    "name": "salted fish",
+    "name_plural": "salted fish",
+    "description": "Salty dried fish that lasts for a long time, but will make you thirsty.",
+    "spoils_in": 0
+  },
+  {
+    "id": "jerky_human",
+    "copy-from": "jerky_human",
+    "type": "COMESTIBLE",
+    "name": "jerk jerky",
+    "name_plural": "jerk jerky",
+    "description": "Salty dried human flesh that never goes bad, but will make you thirsty.",
+    "spoils_in": 0
+  },
+  {
+    "id": "meat_smoked",
+    "copy-from": "meat_smoked",
+    "type": "COMESTIBLE",
+    "name": "smoked meat",
+    "description": "Tasty meat that has been heavily smoked for long term preservation.",
+    "spoils_in": 0
+  },
+  {
+    "id": "fish_smoked",
+    "copy-from": "fish_smoked",
+    "type": "COMESTIBLE",
+    "name": "smoked fish",
+    "name_plural": "smoked fish",
+    "description": "Tasty fish that has been heavily smoked for long term preservation.",
+    "spoils_in": 0
+  },
+  {
+    "id": "human_smoked",
+    "copy-from": "human_smoked",
+    "type": "COMESTIBLE",
+    "name": "smoked sucker",
+    "description": "A heavily smoked portion of human flesh.  Lasts for a very long time and tastes pretty good, if you like that sort of thing.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "plant_sac",
+    "copy-from": "plant_sac",
+    "name": "fluid sac",
+    "description": "A fluid bladder from a plant based lifeform.  Not very nutritious, but fine to eat anyway.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "tallow",
+    "copy-from": "tallow",
+    "name": "tallow",
+    "description": "A smooth white block of cleaned and rendered animal fat.  It will remain edible for a very long time, and can be used as an ingredient in many foods and projects.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "lard",
+    "name": "lard",
+    "copy-from": "tallow",
+    "description": "A smooth white block of dry-rendered animal fat.  It will remain edible for a very long time, and can be used as an ingredient in many foods and projects.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_fish",
+    "copy-from": "dry_fish",
+    "//": "It would help if they thought to add proper storage first.",
+    "name": "dehydrated fish",
+    "name_plural": "dehydrated fish",
+    "description": "Dehydrated fish flakes.  With proper storage, this dried food will remain edible for an incredibly long time.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "lutefisk",
+    "copy-from": "lutefisk",
+    "name": "lutefisk",
+    "description": "Lutefisk is preserved fish that has been dried in a lye solution.  Vile and soap-like yet highly nutritious, it is reminiscent of the afterbirth of a dog or the world's largest chunk of phlegm.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "sausage",
+    "copy-from": "sausage",
+    "name": "sausage",
+    "description": "A hefty sausage that has been cured for long term storage.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mannwurst",
+    "copy-from": "mannwurst",
+    "name": "Mannwurst",
+    "description": "A hefty long pork sausage that has been cured for long term storage.  Very tasty, if you're in the market for human flesh.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fruit_leather",
+    "copy-from": "fruit_leather",
+    "name": "fruit leather",
+    "description": "Dried strips of sugary fruit paste.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "chips",
+    "copy-from": "chips",
+    "name": "potato chips",
+    "name_plural": "potato chips",
+    "description": "Betcha can't eat just one.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fried_seeds",
+    "copy-from": "fried_seeds",
+    "name": "fried seeds",
+    "name_plural": "fried seeds",
+    "description": "Some fried seeds of a sunflower, pumpkin or other plant.  Quite nutritious and tasty.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "cereal",
+    "copy-from": "cereal",
+    "name": "sugary cereal",
+    "description": "A box of sugary breakfast cereal with marshmallows.  It takes you back to your childhood.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "cereal2",
+    "copy-from": "cereal2",
+    "name": "wheat cereal",
+    "description": "A box of whole-grain wheat cereal.  It's surprisingly good, and allegedly good for your heart.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "cereal3",
+    "copy-from": "cereal3",
+    "name": "corn cereal",
+    "description": "A box of cornflakes.  They're not that good, but it beats nothing.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "chips2",
+    "copy-from": "chips2",
+    "name": "potato chips",
+    "name_plural": "potato chips",
+    "description": "Some plain, salted potato chips.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "chips3",
+    "copy-from": "chips3",
+    "name": "potato chips",
+    "name_plural": "potato chips",
+    "description": "Oh man, you love these chips!  Score!",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "nachos",
+    "copy-from": "nachos",
+    "name": "tortilla chips",
+    "name_plural": "tortilla chips",
+    "description": "Salted chips made from corn tortillas, could really use some cheese, maybe some beef.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "popcorn",
+    "copy-from": "popcorn",
+    "name": "popcorn",
+    "name_plural": "popcorn",
+    "description": "Plain and unseasoned popcorn.  Not as tasty as other kinds, but healthier as a result.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "popcorn2",
+    "copy-from": "popcorn2",
+    "name": "salted popcorn",
+    "name_plural": "salted popcorn",
+    "description": "Popcorn with salt added for extra flavor.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "popcorn3",
+    "copy-from": "popcorn3",
+    "name": "buttered popcorn",
+    "name_plural": "buttered popcorn",
+    "description": "Popcorn with a light covering of butter for extra flavor.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "pretzels",
+    "copy-from": "pretzels",
+    "name": "pretzels",
+    "name_plural": "pretzels",
+    "description": "A salty treat of a snack.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "chocpretzels",
+    "copy-from": "chocpretzels",
+    "name": "chocolate-covered pretzel",
+    "description": "A salty treat of a snack, covered in chocolate.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "chocolate",
+    "copy-from": "chocolate",
+    "//": "Catnip shall not be denied.",
+    "name": "chocolate bar",
+    "description": "Chocolate isn't very healthy, but it does make a delicious treat.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "marshmallow",
+    "copy-from": "marshmallow",
+    "name": "marshmallows",
+    "name_plural": "marshmallows",
+    "description": "A handful of squishy, fluffy, puffy, delicious marshmallows.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "pemmican",
+    "copy-from": "pemmican",
+    "name": "pemmican",
+    "description": "A concentrated mixture of fat and protein used as a nutritious high-energy food.  Composed of meat, tallow, and edible plants, it provides excellent nutrition in an easy to carry form.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "granola",
+    "copy-from": "granola",
+    "name": "granola",
+    "description": "A tasty and nutritious mixture of oats, honey, and other ingredients that has been baked until crisp.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "porkstick",
+    "copy-from": "porkstick",
+    "name": "pork stick",
+    "nutrition": 16,
+    "description": "Salty dried pork.  Tastes good, but it will make you thirsty.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "candy",
+    "copy-from": "candy",
+    "//": "You could call this change, pointless as it is, a...flavor change.  Ba dum tish.",
+    "name": "peanut butter candy",
+    "name_plural": "peanut butter candies",
+    "description": "A big bag of peanut butter cups...  your favorite!",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "candy2",
+    "copy-from": "candy3",
+    "name": "chocolate candy",
+    "name_plural": "chocolate candies",
+    "description": "A big bag of colorful chocolate filled candies.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "candy3",
+    "copy-from": "candy3",
+    "name": "chewy candy",
+    "name_plural": "chewy candies",
+    "description": "A big bag of colorful fruit-flavored chewy candy.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "powder_candy",
+    "copy-from": "powder_candy",
+    "name": "powder candy sticks",
+    "name_plural": "powder candy sticks",
+    "description": "Thin paper tubes of sweet & sour candy powder.  Who thinks of this stuff?",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "maple_candy",
+    "copy-from": "maple_candy",
+    "name": "maple syrup candy",
+    "name_plural": "maple syrup candies",
+    "description": "This golden, translucent leaf candy is made with pure maple syrup and melt slowly as you savor the taste of real maple.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_mushroom",
+    "copy-from": "dry_mushroom",
+    "name": "dried mushroom",
+    "description": "Dried mushrooms are a tasty and healthy addition to many meals.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "spaghetti_raw",
+    "copy-from": "spaghetti_raw",
+    "name": "raw spaghetti",
+    "name_plural": "raw spaghetti",
+    "description": "It could be eaten raw if you're desperate, but is much better cooked.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "lasagne_raw",
+    "copy-from": "lasagne_raw",
+    "name": "raw lasagne",
+    "description": "It could be eaten raw if you're desperate, but is much better cooked.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "macaroni_raw",
+    "copy-from": "macaroni_raw",
+    "name": "raw macaroni",
+    "name_plural": "raw macaroni",
+    "description": "It could be eaten raw if you're desperate, but is much better cooked.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "flour",
+    "copy-from": "flour",
+    "name": "flour",
+    "name_plural": "flour",
+    "description": "This enriched white flour is useful for baking.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "cornmeal",
+    "copy-from": "cornmeal",
+    "name": "cornmeal",
+    "description": "This yellow cornmeal is useful for baking.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "oatmeal",
+    "copy-from": "oatmeal",
+    "name": "oatmeal",
+    "description": "Dry flakes of flattened grain.  Tasty and nutritious when cooked, it also doubles as food for horses while dry.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_beans",
+    "copy-from": "dry_beans",
+    "name": "dried beans",
+    "name_plural": "dried beans",
+    "description": "Dehydrated great northern beans.  Tasty and nutritious when cooked, virtually inedible when dry.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_rice",
+    "copy-from": "dry_rice",
+    "name": "dried rice",
+    "name_plural": "dried rice",
+    "description": "Dehydrated long-grain rice.  Tasty and nutritious when cooked, virtually inedible when dry.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "acorns",
+    "copy-from": "acorns",
+    "name": "handful of acorns",
+    "name_plural": "handfuls of acorns",
+    "description": "A handful of acorns, still in their shells.  Squirrels like them, but they're not very good for you to eat in this state.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "bacon",
+    "copy-from": "bacon",
+    "name": "bacon",
+    "name_plural": "pieces of bacon",
+    "description": "A thick slab of salty cured bacon.  Shelf stable, precooked and ready-to-eat, it tastes better when reheated.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "crackers",
+    "copy-from": "crackers",
+    "name": "cracker",
+    "description": "Dry and salty, these crackers will leave you quite thirsty.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "grahmcrackers",
+    "copy-from": "grahmcrackers",
+    "name": "graham cracker",
+    "description": "Dry and sugary, these crackers will leave you thirsty, but go good with some chocolate and marshmallows.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "cookies",
+    "copy-from": "cookies",
+    "name": "cookie",
+    "description": "Sweet and delicious cookies, just like grandma used to bake.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "hardtack",
+    "copy-from": "hardtack",
+    "name": "hardtack",
+    "description": "A dry and virtually tasteless bread product capable of remaining edible without spoilage for vast lengths of time.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "sauerkraut",
+    "copy-from": "sauerkraut",
+    "name": "sauerkraut",
+    "name_plural": "sauerkraut",
+    "description": "This crunchy, sour topping made from lettuce or cabbage is perfect for your hot dogs and hamburgers, or, if you're desperate, straight to your stomach.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "cheese_hard",
+    "copy-from": "cheese_hard",
+    "name": "hard cheese",
+    "name_plural": "hard cheese",
+    "description": "Hard, dry cheese made to last, unlike modern processed cheese.  Will make you thirsty though.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "choco_coffee_beans",
+    "copy-from": "choco_coffee_beans",
+    "name": "chocolate-covered coffee bean",
+    "description": "Roasted coffee beans coated with dark chocolate, natural source of concentrated caffeine.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "noodles_fast",
+    "copy-from": "noodles_fast",
+    "name": "fast noodles",
+    "name_plural": "fast noodles",
+    "description": "So-called ramen noodles.  Can be eaten raw.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "maltballs",
+    "copy-from": "maltballs",
+    "name": "malted milk ball",
+    "description": "Crunchy sugar in chocolate capsules.  Legal and stimmy.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mintpatties",
+    "copy-from": "mintpatties",
+    "name": "peppermint patty",
+    "name_plural": "peppermint patties",
+    "description": "A big bag of soft chocolate-covered peppermint patties...  yum!",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_meat",
+    "copy-from": "dry_meat",
+    "name": "dehydrated meat",
+    "description": "Dehydrated meat flakes.  With proper storage, this dried food will remain edible for an incredibly long time.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_hflesh",
+    "copy-from": "dry_hflesh",
+    "name": "dehydrated human flesh",
+    "name_plural": "dehydrated human flesh",
+    "description": "Dehydrated human flesh flakes.  With proper storage, this dried food will remain edible for an incredibly long time.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_veggy",
+    "copy-from": "dry_veggy",
+    "name": "dehydrated vegetable",
+    "description": "Dehydrated vegetable flakes.  With proper storage, this dried food will remain edible for an incredibly long time.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_fruit",
+    "copy-from": "dry_fruit",
+    "name": "dehydrated fruit",
+    "name_plural": "dehydrated fruit",
+    "description": "Dehydrated fruit flakes.  With proper storage, this dried food will remain edible for an incredibly long time.  They are useful for several cooking recipes.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "neccowafers",
+    "copy-from": "neccowafers",
+    "name": "Necco wafer",
+    "description": "A handful of candy wafers, in assorted flavors: orange, lemon, lime, clove, chocolate, wintergreen, cinnamon, and licorice.  Yum!",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "candycigarette",
+    "copy-from": "candycigarette",
+    "name": "candy cigarette",
+    "description": "Candy sticks.  Slightly more healthy than tobacco cigarettes, but with no possibility of addiction.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dried_salad",
+    "copy-from": "dried_salad",
+    "name": "dried salad",
+    "description": "Dried salad packed in a box with mayonnaise and ketchup.  Add water to enjoy.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_meat_tainted",
+    "copy-from": "dry_meat_tainted",
+    "//": "Why is this change even needed.  Who is going around making zombie jerky?",
+    "name": "dehydrated tainted meat",
+    "description": "Pieces of poisonous meat that have been dried to prevent them from rotting away.  It will still poison you if you eat this.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_veggy_tainted",
+    "copy-from": "dry_veggy_tainted",
+    "name": "dehydrated tainted veggy",
+    "name_plural": "dehydrated tainted veggies",
+    "description": "Pieces of poisonous veggy that have been dried to prevent them from rotting away.  It will still poison you if you eat this.",
+    "spoils_in": 0
+  },
+  {
+    "id": "sausage_wasteland",
+    "copy-from": "sausage_wasteland",
+    "type": "COMESTIBLE",
+    "name": "wasteland sausage",
+    "description": "Lean sausage made from heavily salt-cured offal, with natural gut casing.  Waste not, want not.",
+    "spoils_in": 0
+  },
+  {
+    "id": "garlic",
+    "copy-from": "garlic",
+    "type": "COMESTIBLE",
+    "name": "garlic bulb",
+    "description": "A pungent garlic bulb.  Popular as a seasoning for its strong flavor.  Can be disassembled to cloves.",
+    "spoils_in": 0
+  },
+  {
+    "id": "garlic_clove",
+    "copy-from": "garlic_clove",
+    "type": "COMESTIBLE",
+    "name": "garlic clove",
+    "name_plural": "garlic cloves",
+    "description": "Cloves of garlic.  Useful as a seasoning, or for planting.",
+    "spoils_in": 0
+  }
+]

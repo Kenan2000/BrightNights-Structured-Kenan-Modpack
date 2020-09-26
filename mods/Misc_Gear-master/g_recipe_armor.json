@@ -1,0 +1,173 @@
+[
+{
+  "type" : "recipe",
+  "result": "necklace_teeth",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_TORSO",
+  "skill_used": "tailor",
+  "difficulty": 0,
+  "time": 2000,
+  "reversible": true,
+  "autolearn": true,
+  "decomp_learn": 0,
+  "components": [
+    [
+      [ "string_6", 2 ]
+    ],
+    [
+      [ "bone", 1 ]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "belt_hands",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_STORAGE",
+  "skill_used": "tailor",
+  "difficulty": 1,
+  "time": 4000,
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      [ "needle_bone", 4 ],
+      [ "needle_wood", 4 ],
+      [ "tailors_kit", 4 ],
+      [ "sewing_kit", 4 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "tool_belt", 1 ],
+      [ "leather_belt", 1 ]
+    ],
+    [
+      [ "human_flesh", 2 ]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "belt_bandolier",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_STORAGE",
+  "skill_used": "tailor",
+  "difficulty": 3,
+  "time": 6000,
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      [ "needle_bone", 6 ],
+      [ "needle_wood", 6 ],
+      [ "tailors_kit", 6 ],
+      [ "sewing_kit", 6 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "tool_belt", 1 ],
+      [ "leather_belt", 1 ]
+    ],
+    [
+      [ "leather", 6 ]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "steel_bra",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_TORSO",
+  "skill_used": "tailor",
+  "difficulty": 3,
+  "time": 6000,
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      [ "needle_bone", 6 ],
+      [ "needle_wood", 6 ],
+      [ "tailors_kit", 6 ],
+      [ "sewing_kit", 6 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "leather", 6 ],
+      [ "leather_belt", 3 ]
+    ],
+    [
+      [ "scrap", 6 ]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "spiked_pauldrons",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_TORSO",
+  "skill_used": "tailor",
+  "difficulty": 3,
+  "time": 6000,
+  "reversible": false,
+  "autolearn": true,
+  "tools": [
+    [
+      [ "needle_bone", 8 ],
+      [ "needle_wood", 8 ],
+      [ "tailors_kit", 8 ],
+      [ "sewing_kit", 8 ]
+    ]
+  ],
+  "components": [
+    [
+      [ "leather", 6 ],
+      [ "leather_belt", 2 ]
+    ],
+    [
+      [ "scrap", 8 ]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "necklace_picks",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_OTHER",
+  "skill_used": "tailor",
+  "difficulty": 0,
+  "time": 700,
+  "reversible": false,
+  "autolearn": true,
+  "components": [
+    [
+      [ "string_6", 2 ]
+    ],
+    [
+      [ "picklocks", 1 ]
+    ]
+  ]
+},{
+  "type" : "recipe",
+  "result": "necklace_bullet",
+  "category": "CC_ARMOR",
+  "subcategory": "CSC_ARMOR_OTHER",
+  "skill_used": "tailor",
+  "difficulty": 0,
+  "time": 700,
+  "reversible": false,
+  "autolearn": true,
+  "components": [
+    [
+      [ "string_6", 3 ]
+    ],
+    [
+      [ "44_casing", 5 ],
+	  [ "9mm_casing", 5 ],
+	  [ "38_casing", 5 ],
+	  [ "45_casing", 5 ],
+	  [ "40_casing", 5 ]
+    ],
+	[
+      [ "scrap", 1 ]
+    ]
+  ]
+}
+]

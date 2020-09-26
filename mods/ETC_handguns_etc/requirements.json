@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ammo_223",
+    "type": "requirement",
+    "//": "Components required for 5.56 NATO ammo",
+    "components": [ [ [ "223_casing", 1 ] ], [ [ "smrifle_primer", 1 ] ] ]
+  },
+  {
+    "id": "ammo_22etc",
+    "type": "requirement",
+    "//": "Components required for .22 electrothermal ammo",
+    "components": [ [ [ "22_casing_etc", 1 ] ] ]
+  },
+  {
+    "id": "ammo_556etc",
+    "type": "requirement",
+    "//": "Components required for 5.56mm electrothermal ammo",
+    "components": [ [ [ "223_casing", 1 ] ], [ [ "smrifle_plasmac", 1 ] ] ]
+  },
+  {
+    "id": "ammo_762etc",
+    "type": "requirement",
+    "//": "Components required for 7.62mm electrothermal ammo",
+    "components": [ [ [ "762_51_casing", 1 ], [ "308_casing", 1 ] ], [ [ "lgrifle_plasmac", 1 ] ] ]
+  },
+  {
+    "id": "ammo_9etc",
+    "type": "requirement",
+    "//": "Components required for 9mm electrothermal ammo",
+    "components": [ [ [ "9mm_casing", 1 ] ], [ [ "smpistol_plasmac", 1 ] ] ]
+  },
+  {
+    "id": "casing_22etc",
+    "type": "requirement",
+    "//": "Components required for .22 electrothermal casing",
+    "components": [ [ [ "22_casing_new", 1 ] ], [ [ "scrap", 1 ] ], [ [ "chem_aluminium_powder", 1 ] ] ]
+  },
+  {
+    "id": "primer_crafting",
+    "type": "requirement",
+    "//": "Tools required to craft firearm primers",
+    "qualities": [ { "id": "HAMMER", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ], [ [ "press", -1 ] ] ]
+  },
+  {
+    "id": "plasma_primer",
+    "type": "requirement",
+    "//": "Components required for electrothermal-chemical plasma primers",
+    "components": [
+      [ [ "can_drink_unsealed", 2 ], [ "can_food_unsealed", 2 ], [ "canister_empty", 2 ], [ "scrap", 4 ] ],
+      [ [ "chem_aluminium_powder", 115 ] ]
+    ]
+  },
+  {
+    "id": "plasma_primer_ref",
+    "type": "requirement",
+    "//": "Spare plasma primers to serve as reference.",
+    "tools": [ [ [ "22_casing_etc", -1 ], [ "smpistol_plasmac", -1 ], [ "smrifle_plasmac", -1 ], [ "lgrifle_plasmac", -1 ] ] ]
+  },
+  {
+    "id": "plutonium_slurry_tools",
+    "type": "requirement",
+    "//": "Tools for those insane enough to craft highly radioactive components.",
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "HAMMER", "level": 3 } ]
+  }
+]

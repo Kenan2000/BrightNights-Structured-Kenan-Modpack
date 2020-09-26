@@ -1,0 +1,78 @@
+[
+  {
+    "type": "recipe",
+    "result": "22_casing_etc",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "gun", 3 ], [ "cooking", 5 ], [ "electronics", 4 ] ],
+    "difficulty": 5,
+    "time": 450,
+    "book_learn": [ [ "manual_pistol", 4 ], [ "recipe_bullets", 3 ] ],
+    "charges": 1,
+    "using": [ [ "primer_crafting", 1 ], [ "plasma_primer_ref", 1 ], [ "casing_22etc", 1 ] ],
+    "tools": [ [ [ "fire", -1 ], [ "hotplate", 2 ], [ "toolset", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "smpistol_plasmac",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "gun", 3 ], [ "cooking", 3 ], [ "electronics", 3 ] ],
+    "difficulty": 4,
+    "time": 45000,
+    "book_learn": [ [ "manual_pistol", 3 ], [ "recipe_bullets", 2 ] ],
+    "using": [ [ "primer_crafting", 1 ], [ "plasma_primer_ref", 1 ], [ "plasma_primer", 1 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "smrifle_plasmac",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "gun", 3 ], [ "cooking", 3 ], [ "electronics", 3 ] ],
+    "difficulty": 4,
+    "time": 45000,
+    "book_learn": [ [ "manual_pistol", 3 ], [ "recipe_bullets", 2 ] ],
+    "using": [ [ "primer_crafting", 1 ], [ "plasma_primer_ref", 1 ], [ "plasma_primer", 1 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "lgrifle_plasmac",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "gun", 3 ], [ "cooking", 3 ], [ "electronics", 3 ] ],
+    "difficulty": 4,
+    "time": 45000,
+    "book_learn": [ [ "manual_pistol", 3 ], [ "recipe_bullets", 2 ] ],
+    "using": [ [ "primer_crafting", 1 ], [ "plasma_primer_ref", 1 ], [ "plasma_primer", 1 ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "lgrifle_plut_microcellhl",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "electronics", 6 ] ],
+    "difficulty": 8,
+    "time": 225,
+    "book_learn": [ [ "manual_pistol", 7 ], [ "recipe_bullets", 6 ] ],
+    "charges": 1,
+    "using": [ [ "plutonium_slurry_tools", 1 ], [ "bullet_forming", 1 ] ],
+    "components": [ [ [ "lead", 1 ] ], [ [ "plut_slurry_divided", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "plut_slurry_divided",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_COMPONENTS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": 35000,
+    "book_learn": [ [ "recipe_lab_elec", 10 ] ],
+    "tools": [ [ [ "test_tube", -1 ] ] ],
+    "components": [ [ [ "plut_slurry_dense", 2 ] ] ]
+  }
+]

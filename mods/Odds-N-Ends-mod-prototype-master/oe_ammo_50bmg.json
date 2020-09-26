@@ -1,0 +1,19 @@
+[
+  {
+    "id": "50bmg_HEIAP",
+    "copy-from": "50bmg",
+    "type": "AMMO",
+    "name": ".50 BMG HEIAP",
+    "description": "A 671 grain High Explosive Incendiary Armor Piercing round.",
+    "weight": 114,
+    "count": 200,
+    "damage": 135,
+    "pierce": 55,
+    "recoil": 17000,
+    "explosion": {
+      "power": 24,
+      "distance_factor": 0.2
+    },
+    "effects": [ "COOKOFF", "CUSTOM_EXPLOSION", "INCENDIARY", "NEVER_MISFIRES" ]
+  }
+]

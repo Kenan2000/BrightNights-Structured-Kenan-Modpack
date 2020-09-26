@@ -1,0 +1,54 @@
+[
+  {
+    "id": "tank_little",
+    "type": "vehicle_part",
+    "name": "vehicle tank (2L)",
+    "item": "metal_tank_little",
+    "symbol": "O",
+    "broken_color": "red",
+    "difficulty": 1,
+    "durability": 75,
+    "size": 2000,
+    "damage_modifier": 80,
+    "breaks_into": [ { "item": "scrap", "count": [ 1, 2 ] } ]
+  },
+  {
+    "id": "inboard_mirror",
+    "type": "vehicle_part",
+    "name": "inboard mirror",
+    "item": "mirror",
+    "symbol": "o",
+    "broken_symbol": "*",
+    "color": "light_cyan",
+    "broken_color": "dark_gray",
+    "durability": 30,
+    "damage_modifier": 10,
+    "folded_volume": 1,
+    "breaks_into": [ { "item": "glass_shard", "count": [ 0, 2 ] } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": 10000, "qualities": [ { "id": "SCREW", "level": 1 } ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "qualities": [ { "id": "SCREW", "level": 1 } ] },
+      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": 2000, "using": [ [ "adhesive", 1 ] ] }
+    },
+    "flags": [ "VISION", "FOLDABLE" ]
+  },
+  {
+    "id": "omnicam",
+    "type": "vehicle_part",
+    "name": "security camera",
+    "item": "omnicamera",
+    "symbol": "o",
+    "broken_symbol": "#",
+    "color": "light_red",
+    "broken_color": "red",
+    "difficulty": 4,
+    "durability": 100,
+    "epower": -75,
+    "bonus": 24,
+    "damage_modifier": 10,
+    "folded_volume": 8,
+    "breaks_into": [ { "item": "e_scrap", "count": [ 4, 16 ] }, { "item": "plastic_chunk", "count": [ 2, 8 ] } ],
+    "flags": [ "VISION", "CAMERA", "TOOL_SCREWDRIVER", "ENABLED_DRAINS_EPOWER" ]
+  }
+]
+

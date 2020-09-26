@@ -1,0 +1,53 @@
+[
+  {
+    "result": "bot_dust_box_mon",
+    "type": "recipe",
+    "id_suffix": "from_mat",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "GLARE", "level": 2 },
+      { "id": "CUT_FINE", "level": 2 },
+      { "id": "HAMMER_FINE", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "SAW_M_FINE", "level": 1 }
+    ],
+    "tools": [ [ [ "welder", 50 ], [ "welder_crude", 75 ] ], [ [ "soldering_iron", 20 ] ], [ [ "forge", 50 ], [ "oxy_torch", 10 ] ] ],
+    "components": [
+      [ [ "steel_lump", 2 ], [ "steel_chunk", 8 ], [ "scrap", 24 ] ],
+      [ [ "55gal_drum", 1 ], [ "metal_tank", 4 ] ],
+      [ [ "brick_kiln", 1 ], [ "kiln", 1 ], [ "forge", 1 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "power_supply", 2 ] ],
+      [ [ "amplifier", 4 ] ],
+      [ [ "blade_trap", 2 ], [ "circsaw_blade", 2 ] ]
+    ]
+  },
+  {
+    "result": "bot_dust_box_mon",
+    "type": "recipe",
+    "id_suffix": "from_bro",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": 10000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
+    "tools": [ [ [ "soldering_iron", 20 ] ] ],
+    "components": [
+      [ [ "broken_dust_box", 1 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "scrap", 2 ] ]
+    ]
+  }
+]

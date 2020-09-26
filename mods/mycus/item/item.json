@@ -1,0 +1,140 @@
+[
+  {
+    "id": "veggy_tainted_tanning_hide",
+    "type": "TOOL",
+    "category": "spare_parts",
+    "name": "mushroom skin (tanned)",
+    "name_plural": "mushroom skins (tanned)",
+    "description": "We applied chemical treatment to leather-like fibers so that they could be used as materials. By using it, the skin can be expanded and used for other purposes.",
+    "weight": 400,
+    "volume": 4,
+    "price": 0,
+    "to_hit": -2,
+    "material": [ "veggy", "leather" ],
+    "symbol": ",",
+    "color": "brown",
+    "use_action": {
+      "target": "tanned_hide",
+      "msg": "I've made up my mind to feel good. This would work just like animal leather.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 28800,
+      "not_ready_msg": "The skin is not finished yet.",
+      "//": "2 days"
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "sphagnum_mushroom",
+    "type": "COMESTIBLE",
+    "comestible_type": "MED",
+    "name": "minamata",
+    "description": "It is the wisdom of the old-fashioned life that uses Minamata as a remedy. The microbes in the blisters promote treatment.",
+    "weight": 70,
+    "volume": 1,
+    "price": 600,
+    "material": "veggy",
+    "symbol": "!",
+    "color": "white",
+    "charges": 3,
+    "stack_size": 9,
+    "use_action": {
+      "type": "heal",
+      "limb_power": 3,
+      "head_power": 1,
+      "torso_power": 3,
+      "bleed": 0.95,
+      "bite": 0.4,
+      "infect": 0.35,
+      "move_cost": 300
+    }
+  },
+  {
+    "id": "mycena_chlorophos_lamp",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "mycena chlorophos lamp (on)",
+    "description": "Among the light-emitting mushrooms, the brightness of Yakutake is particularly great. Furthermore, this Yakutake is mutated, and illuminates a very wide area.",
+    "weight": 5438,
+    "volume": 4,
+    "price": 5000,
+    "to_hit": -2,
+    "bashing": 2,
+    "material": [ "veggy" ],
+    "symbol": ",",
+    "color": "light_green",
+    "use_action": {
+      "target": "mycena_chlorophos_lamp_off",
+      "msg": "I concealed the light emission part and made it not light.",
+      "menu_text": "Close cover",
+      "type": "transform"
+    },
+    "flags": [ "LIGHT_9", "DURABLE_MELEE" ]
+  },
+  {
+    "id": "mycena_chlorophos_lamp_off",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "mycena chlorophos lamp (off)",
+    "description": "A cover is put on this Yakutake, and it is made not to shine. Remove to brighten.",
+    "weight": 5438,
+    "volume": 4,
+    "price": 5000,
+    "to_hit": -2,
+    "bashing": 2,
+    "material": [ "veggy" ],
+    "symbol": ",",
+    "color": "light_green",
+    "use_action": {
+      "target": "mycena_chlorophos_lamp",
+      "msg": "I removed the cover and let the surrounding lights shine.",
+      "menu_text": "Open cover",
+      "type": "transform"
+    },
+    "flags": [ "DURABLE_MELEE" ]
+  },
+  {
+    "id": "tukiyotake_lamp",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "tukiyotake lamp (on)",
+    "description": "Tukiyotake is widely distributed in Far East Russia and northeastern China, centering on Japan. It is a kind of mushroom that belongs to the genus Tsukiyotake of the genus Haratake eyes. It is light-emitting though weak.",
+    "weight": 5438,
+    "volume": 4,
+    "price": 5000,
+    "to_hit": -2,
+    "bashing": 2,
+    "material": [ "veggy" ],
+    "symbol": ",",
+    "color": "light_green",
+    "use_action": {
+      "target": "tukiyotake_lamp_off",
+      "msg": "I concealed the light emission part and made it not light.",
+      "menu_text": "Close cover",
+      "type": "transform"
+    },
+    "flags": [ "LIGHT_4", "DURABLE_MELEE" ]
+  },
+  {
+    "id": "tukiyotake_lamp_off",
+    "type": "GENERIC",
+    "category": "tools",
+    "name": "tukiyotake lamp (off)",
+    "description": "This Tsukiyotake is covered and covered so it does not glow. Remove to brighten.",
+    "weight": 5438,
+    "volume": 4,
+    "price": 5000,
+    "to_hit": -2,
+    "bashing": 2,
+    "material": [ "veggy" ],
+    "symbol": ",",
+    "color": "light_green",
+    "use_action": {
+      "target": "tukiyotake_lamp",
+      "msg": "I removed the cover and let the surrounding lights shine.",
+      "menu_text": "Open cover",
+      "type": "transform"
+    },
+    "flags": [ "DURABLE_MELEE" ]
+  }
+]

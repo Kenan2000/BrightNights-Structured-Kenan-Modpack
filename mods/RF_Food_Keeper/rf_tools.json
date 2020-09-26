@@ -1,0 +1,40 @@
+[
+  {
+    "id": "rf_food_keeper",
+    "type": "TOOL",
+    "symbol": "&",
+    "color": "light_green",
+    "name": "RF.A food keeper",
+    "description": "Irradiator for food preservation made by Rivtech. The age of cold food preservation has already ended. From now on, nuclear power will protect your life and food forever. When using it, please secure it on a flat ground for safety.",
+    "price": 100000,
+    "material": [ "superalloy", "plastic" ],
+    "flags": [ "DURABLE_MELEE" ],
+    "weight": 100000,
+    "volume": 300,
+    "bashing": 40,
+    "to_hit": -5,
+    "max_charges": 0,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0
+  },
+  {
+    "id": "rf_irradiate",
+    "type": "TOOL",
+    "symbol": "&",
+    "color": "light_green",
+    "name": "RF.A food keeper (installed)",
+    "description": "This item will not appear unless you bug it or use debugging.",
+    "price": 100000,
+    "material": [ "superalloy", "plastic" ],
+    "flags": [ "DURABLE_MELEE" ],
+    "weight": 100000,
+    "volume": 200,
+    "bashing": 40,
+    "to_hit": -5,
+    "max_charges": 0,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0
+  }
+]

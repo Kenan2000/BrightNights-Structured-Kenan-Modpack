@@ -1,0 +1,45 @@
+[
+  {
+    "id": "ocg_grippod_bipod",
+    "copy-from": "bipod",
+    "type": "GUNMOD",
+    "name": "grip/pod bipod",
+    "description": "All-in-one bipod and forward grip for recoil control. This is the bipod component, usable only on certain surfaces, a bit less effective than a dedicated bipod but faster to equip.",
+    "weight": 310,
+    "integral_volume": 1,
+    "mod_targets": [ "rifle", "shotgun", "smg", "launcher" ],
+    "handling_modifier": 12,
+    "flags": [ "BIPOD", "IRREMOVABLE" ]
+  },
+  {
+    "id": "ocg_grippod_fg",
+    "copy-from": "grip",
+    "type": "GUNMOD",
+    "name": "grip/pod forward grip",
+    "description": "All-in-one bipod and forward grip for recoil control. This is the grip component, it is slightly less effective than a dedicated forward grip.",
+    "weight": 90,
+    "handling_modifier": 5,
+    "add_mod": [ [ "underbarrel", 1 ] ],
+    "flags": [ "IRREMOVABLE" ]
+  },
+  {
+    "id": "int_rm42i_bayonet",
+    "type": "GUNMOD",
+    "name": "RM42I bayonet",
+    "description": "A licensed integrated variant of the RM42 fighting knife for the ER555-CQB and QR555-SMG with a shorter blade.",
+    "weight": 123,
+    "volume": 1,
+    "price": 40000,
+    "to_hit": -1,
+    "cutting": 16,
+    "material": [ "ceramic", "plastic" ],
+    "symbol": ":",
+    "color": "dark_gray",
+    "location": "underbarrel",
+    "mod_targets": [ "shotgun", "rifle" ],
+    "dispersion_modifier": 10,
+    "mode_modifier": [ [ "REACH", "bayonet", 2, [ "MELEE", "REACH_ATTACK" ] ] ],
+    "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ], [ "BUTCHER", -18 ] ],
+    "flags": [ "DURABLE_MELEE", "IRREMOVABLE", "STAB", "NO_CVD" ]
+  }
+]

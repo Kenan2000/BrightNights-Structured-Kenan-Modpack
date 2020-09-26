@@ -1,0 +1,302 @@
+[
+  {
+    "type": "recipe",
+    "result": "take_pillow",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "difficulty": 6,
+    "skill_used": "fabrication",
+    "time": 10000,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 40 ] ],
+    "components": [ [ [ "take_tutu", 4 ] ], [ [ "2x4", 1 ],[ "stick", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "takeyari",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_PIERCING",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 0,
+    "time": 5000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "fire", -1 ] ] ],
+    "components": [
+      [ [ "take_tutu", 4 ], [ "take_log", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "t_wakyu_samurai",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "archery", 6 ],
+    "difficulty": 9,
+    "time": 900000,
+    "reversible": false,
+    "decomp_learn": 1,
+    "autolearn" : false,
+    "book_learn": [ [ "recipe_bows", 10 ], [ "textbook_weapeast", 8 ], [ "textbook_armeast", 10 ] ],
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ 
+                 [ 
+               [ "take_tutu", 8 ]
+                 ],
+                 [ 
+               [ "bone_glue", 3 ]
+                 ],
+                 [
+               [ "cordage", 2, "LIST" ],
+               [ "filament", 200, "LIST" ]
+                 ]
+                            ]
+  },
+  {
+    "type": "recipe",
+    "result": "t_wakyu_nami",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "archery", 5 ],
+    "difficulty": 8,
+    "time": 900000,
+    "reversible": false,
+    "decomp_learn": 1,
+    "autolearn" : false,
+    "book_learn": [ [ "recipe_bows", 9 ], [ "textbook_weapeast", 7 ], [ "textbook_armeast", 10 ] ],
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ 
+                 [ 
+               [ "take_tutu", 5 ]
+                 ],
+                 [ 
+               [ "bone_glue", 3 ]
+                 ],
+                 [
+               [ "cordage", 2, "LIST" ],
+               [ "filament", 200, "LIST" ]
+                 ]
+                            ]
+  },
+  {
+    "type": "recipe",
+    "result": "t_wakyu_nobi",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "archery", 5 ],
+    "difficulty": 8,
+    "time": 900000,
+    "reversible": false,
+    "decomp_learn": 1,
+    "autolearn" : false,
+    "book_learn": [ [ "recipe_bows", 9 ], [ "textbook_weapeast", 7 ], [ "textbook_armeast", 10 ] ],
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ 
+                 [ 
+               [ "take_tutu", 6 ]
+                 ],
+                 [ 
+               [ "bone_glue", 3 ]
+                 ],
+                 [
+               [ "cordage", 2, "LIST" ],
+               [ "filament", 200, "LIST" ]
+                 ]
+                            ]
+  },
+  {
+    "type": "recipe",
+    "result": "t_wakyu_carbon",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "archery", 4 ],
+    "difficulty": 8,
+    "time": 960000,
+    "reversible": false,
+    "decomp_learn": 1,
+    "autolearn" : false,
+    "book_learn": [ [ "recipe_bows", 9 ], [ "textbook_weapeast", 7 ], [ "textbook_armeast", 10 ] ],
+  "qualities":[
+    {"id":"CHEM","level":2}
+  ],
+  "tools": [
+    [ ["tongs", -1]  ],
+    [ ["swage", -1]  ],
+    [ ["forge", 80], [ "oxy_torch", 13] ]
+           ],
+    "components": [ 
+                 [ 
+               [ "coal_lump", 250 ]
+                 ],
+                 [
+               [ "cordage", 2, "LIST" ],
+               [ "filament", 200, "LIST" ]
+                 ]
+                            ]
+  },
+{
+  "type" : "recipe",
+  "result" : "arrow_take",
+  "category" : "CC_AMMO",
+  "subcategory": "CSC_AMMO_ARROWS",
+  "skill_used" : "fabrication",
+  "skills_required": [[ "archery", 5 ], [ "survival", 1 ]],
+  "difficulty" : 9,
+  "time" : 35000,
+  "autolearn" : false,
+  "book_learn" : [[ "recipe_arrows", 9 ], [ "textbook_weapeast", 7 ], [ "textbook_armeast", 10 ] ],
+  "tools" : [
+    [
+      [ "fire", -1 ]
+    ]
+  ],
+  "qualities" : [
+    {"id":"CUT","level":1},
+    {"id":"HAMMER","level":1},
+    {"id":"SAW_M","level":1}
+  ], "components" : [
+    [
+      [ "adhesive", 1, "LIST" ],
+      [ "filament", 20, "LIST" ]
+    ],
+    [
+      [ "take_tutu", 1 ]
+    ],
+    [
+      [ "scrap", 9 ],
+      [ "steel_chunk", 3 ]
+    ],
+    [
+      [ "feather", 10 ],
+      [ "duct_tape", 40 ],
+      [ "paper", 40 ],
+      [ "bag_plastic", 1 ],
+      [ "bottle_plastic_small", 1 ],
+      [ "box_small", 1 ],
+      [ "plastic_chunk", 1 ],
+      [ "aluminum_foil", 40 ],
+      [ "cash_card", 2 ]
+    ]
+  ]
+},
+  {
+    "type": "recipe",
+    "result": "take_suitou_500ml",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 2,
+    "time": 10000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "take_tutu", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "take_suitou_1_5l",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 2,
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "take_tutu", 2 ] ],
+      [ [ "cordage", 1, "LIST" ], [ "filament", 60, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "take_suitou_3l",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 2,
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "take_tutu", 3 ] ],
+      [ [ "cordage", 1, "LIST" ], [ "filament", 90, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "take_suitou_5l",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_CONTAINERS",
+    "skill_used": "fabrication",
+    "skills_required": [ "survival", 1 ],
+    "difficulty": 3,
+    "time": 30000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "take_tutu", 4 ] ],
+      [ [ "cordage", 1, "LIST" ], [ "filament", 120, "LIST" ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "pot_take",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_TOOLS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": 15000,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "take_tutu", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "2x4",
+    "id_suffix": "from_take",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "time": 1000,
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_W", "level": 2 },{ "id": "AXE", "level": 1 } ],
+    "components": [ [ [ "take_tutu", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "take_tutu",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "time": 4000,
+    "autolearn": true,
+    "qualities": [ [ { "id": "SAW_W", "level": 2 },{ "id": "AXE", "level": 1 } ] ],
+    "components": [ [ [ "take_log", 1 ] ] ]
+  }
+
+
+]

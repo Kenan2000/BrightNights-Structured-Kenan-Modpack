@@ -1,0 +1,43 @@
+[
+  {
+    "type": "vehicle_part",
+    "id": "madd_internal_tank_small",
+    "name": "internal tank (100L)",
+    "symbol": "O",
+    "color": "light_gray",
+    "broken_symbol": "Q",
+    "broken_color": "red",
+    "durability": 160,
+    "size": 100000,
+    "item": "30gal_drum",
+    "difficulty": 1,
+    "location": "center",
+    "damage_modifier": 80,
+    "flags": [ "UNMOUNT_ON_DAMAGE", "OBSTACLE", "COVERED" ]
+  },
+  {
+    "id": "madd_internal_tank",
+    "copy-from": "madd_internal_tank_small",
+    "type": "vehicle_part",
+    "name": "internal tank (200L)",
+    "item": "55gal_drum",
+    "size": 200000
+  },
+  {
+    "type": "vehicle_part",
+    "id": "madd_concrete_mixer",
+    "name": "concrete mixer",
+    "symbol": "$",
+    "color": "dark_gray",
+    "broken_symbol": "$",
+    "broken_color": "brown",
+    "damage_modifier": 80,
+    "durability": 350,
+    "item": "con_mix",
+    "tools": [ "con_mix" ],
+    "difficulty": 1,
+    "location": "center",
+    "flags": [ "OBSTACLE", "COVERED", "UNMOUNT_ON_DAMAGE" ]
+  }
+]
+

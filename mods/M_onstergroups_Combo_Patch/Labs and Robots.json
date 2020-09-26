@@ -1,0 +1,413 @@
+[
+  {
+    "type":"monstergroup",
+    "name": "GROUP_DOOMLAB",
+    "_comment": "PoraComp+Nechronica+(Cata++)+PK",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_null",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 85, "cost_multiplier" : 0 },
+    
+      { "monster" : "mon_nec_valkyrie", "freq" : 15, "cost_multiplier" : 5},
+      
+      { "monster": "mon_failed_weapon", "freq": 4, "cost_multiplier": 80 },
+      { "monster": "mon_zombie_failed_weapon", "freq": 4, "cost_multiplier": 30 },
+      { "monster": "mon_fungus_failed_weapon", "freq": 0, "cost_multiplier": 30 },
+      { "monster": "mon_zombie_bio_infantry", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_knight", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_scout", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_tool", "freq": 10, "cost_multiplier": 15 },
+
+
+      { "monster": "mon_manhack", "freq": 25, "cost_multiplier": 0, "pack_size": [1,2] },
+      { "monster": "mon_manhack", "freq": 25, "cost_multiplier": 3, "pack_size": [6,12] },
+      { "monster": "mon_skitterbot", "freq": 75, "cost_multiplier": 0, "pack_size": [1,3] },
+      { "monster": "mon_secubot", "freq": 25, "cost_multiplier": 3 },
+      { "monster": "mon_turret_rifle", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_turret_bmg", "freq": 10, "cost_multiplier": 5 },
+      { "monster": "mon_turret_shockcannon", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_cyborg_guard", "freq": 10, "cost_multiplier": 5},
+      { "monster": "mon_broken_cyborg", "freq": 50, "cost_multiplier": 1},
+      { "monster": "mon_blob_small", "freq": 25, "cost_multiplier": 0, "pack_size": [2,3] },
+      { "monster": "mon_blob", "freq": 25, "cost_multiplier": 0, "pack_size": [1,2] },
+      { "monster": "mon_blob_large", "freq": 14, "cost_multiplier": 3 },
+      { "monster": "mon_shoggoth", "freq": 1, "cost_multiplier": 5 },
+      { "monster": "mon_zombie", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_scientist", "freq": 150, "cost_multiplier": 0, "pack_size": [1,4] },
+      { "monster": "mon_zombie_hazmat", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_bio_op", "freq": 50, "cost_multiplier": 5 },
+      { "monster": "mon_zombie_armored", "freq": 25, "cost_multiplier": 5 },
+      { "monster": "mon_zombie_soldier", "freq": 35, "cost_multiplier": 3 },
+      { "monster": "mon_crawler", "freq": 15, "cost_multiplier": 3 },
+
+      { "monster": "mon_cherub", "freq": 5, "cost_multiplier": 0, "pack_size": [2,5] },
+      { "monster": "mon_doom_churl", "freq": 5, "cost_multiplier": 5, "pack_size": [1,3] },
+      { "monster": "mon_doom_churl_revive", "freq": 5, "cost_multiplier": 3, "pack_size": [1,4] },
+      { "monster": "mon_imp", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_imp_revive", "freq": 5, "cost_multiplier": 3, "pack_size": [1,2], "starts": 5 },
+      { "monster": "mon_imp_black", "freq": 5, "cost_multiplier": 1, "starts": 2 },
+      { "monster": "mon_pinky", "freq": 15, "cost_multiplier": 1, "pack_size": [1,4], "starts": 5 },
+      { "monster": "mon_pinky_revive", "freq": 5, "cost_multiplier": 3, "pack_size": [1,4], "starts": 5 },
+      { "monster": "mon_lostsoul", "freq": 10, "cost_multiplier": 0, "pack_size": [2,5] },
+      { "monster": "mon_revenant", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_hell_knight", "freq": 5, "cost_multiplier": 5, "pack_size": [1,2] },
+      { "monster": "mon_hell_knight_revive", "freq": 5, "cost_multiplier": 5, "pack_size": [1,2], "starts": 5 },
+      { "monster": "mon_hell_baron", "freq": 5, "cost_multiplier": 5, "pack_size": [1,2], "starts": 25 },
+      { "monster": "mon_mancubus", "freq": 2, "cost_multiplier": 5, "pack_size": [1,2], "starts": 50 },
+      { "monster": "mon_cacodemon", "freq": 2, "cost_multiplier": 0, "pack_size": [1,2] },
+      { "monster": "mon_cacodemon_revive", "freq": 1, "cost_multiplier": 0, "pack_size": [1,2], "starts": 5 },
+      { "monster": "mon_mechaspider", "freq": 8, "cost_multiplier": 5, "pack_size": [1,2] },
+      { "monster": "mon_doom_archvile", "freq": 1, "cost_multiplier": 60, "starts":   100, "conditions": ["SUMMER", "AUTUMN"] },
+      { "monster": "mon_doom_archvile_2", "freq": 1, "cost_multiplier": 60, "starts":   10, "conditions": ["DAY", "SPRING", "SUMMER"] },
+      { "monster": "mon_doom_archvile_3", "freq": 1, "cost_multiplier": 60, "starts":   10, "conditions": ["DAWN", "NGIHT", "DUSK", "SPRING", "SUMMER"] },
+      { "monster": "mon_doom_archvile_4", "freq": 1, "cost_multiplier": 60, "starts":   10, "conditions": ["DAY", "AUTUMN", "WINTER"] },
+      { "monster": "mon_doom_archvile_5", "freq": 1, "cost_multiplier": 60, "starts":   10, "conditions": ["DAWN", "NGIHT", "DUSK", "AUTUMN", "WINTER"] },
+      { "monster": "mon_cyberdemon", "freq": 1, "cost_multiplier": 50, "starts": 50, "conditions": ["NGIHT"] }
+    ]
+  },{
+    "type":"monstergroup",
+    "name": "GROUP_LAB",
+    "_comment": "PoraComp+Nechronica+(Cata++)+PK+Salvaged Robots+Jury Rigged Robots",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_zombie_scientist",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 85, "cost_multiplier" : 0 },
+      
+      { "monster" : "mon_nec_valkyrie", "freq" : 15, "cost_multiplier" : 5},
+      
+      { "monster": "mon_failed_weapon", "freq": 4, "cost_multiplier": 80 },
+      { "monster": "mon_zombie_failed_weapon", "freq": 4, "cost_multiplier": 30 },
+      { "monster": "mon_fungus_failed_weapon", "freq": 0, "cost_multiplier": 30 },
+      { "monster": "mon_zombie_bio_infantry", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_knight", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_scout", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_tool", "freq": 10, "cost_multiplier": 15 },
+
+
+      { "monster": "mon_crawler", "freq": 25, "cost_multiplier": 3 },
+      { "monster": "mon_blob", "freq": 25, "cost_multiplier": 1, "pack_size": [1,2] },
+      { "monster": "mon_blob_large", "freq": 14, "cost_multiplier": 3 },
+      { "monster": "mon_shoggoth", "freq": 1, "cost_multiplier": 5 },
+      { "monster": "mon_turret_shockcannon", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_cyborg_guard", "freq": 15, "cost_multiplier": 5 },
+      { "monster": "mon_broken_cyborg", "freq": 50, "cost_multiplier": 1 },
+      { "monster": "mon_turret_rifle", "freq": 25, "cost_multiplier": 0 },
+
+      { "monster": "mon_blob_small", "freq": 25, "cost_multiplier": 0, "pack_size": [1,4] },
+      { "monster": "mon_manhack", "freq": 200, "cost_multiplier": 0 },
+      { "monster": "mon_manhack", "freq": 45, "cost_multiplier": 0, "pack_size": [2,3] },
+      { "monster": "mon_skitterbot", "freq": 85, "cost_multiplier": 0 },
+      { "monster": "mon_skitterbot", "freq": 85, "cost_multiplier": 0, "pack_size": [2,3] },
+      { "monster": "mon_skitterbot", "freq": 1, "cost_multiplier": 0, "pack_size": [8,12] },
+      { "monster": "mon_zombie_hazmat", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_bio_op", "freq": 50, "cost_multiplier": 5 },
+      { "monster": "mon_zombie_armored", "freq": 5, "cost_multiplier": 5 },
+      
+      { "monster": "mon_utilibot", "freq": 5, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_secubot", "freq": 0, "cost_multiplier": 10 },
+      { "monster": "mon_defbot_9mm", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_milbot_556", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_milbot_8x40mm", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_milbot_needle", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_advbot_laser", "freq": 2, "cost_multiplier": 20 },
+      { "monster": "mon_medibot", "freq": 5, "cost_multiplier": 3, "pack_size": [ 1, 2 ] },
+      
+      { "monster" : "mon_seeker_bot", "freq" : 50, "cost_multiplier" : 5}, 
+      { "monster" : "mon_hunter_bot", "freq" : 50, "cost_multiplier" : 0, "pack_size" : [3,4] },
+      { "monster" : "mon_pursuer_bot", "freq" : 50, "cost_multiplier" : 0},
+      { "monster" : "mon_chaser_bot", "freq" : 50, "cost_multiplier" : 5}
+      
+    ]
+  },{
+    "type": "monstergroup",
+    "name": "GROUP_CENTRAL_LAB",
+    "_comment": "PoraComp+Nechronica+Salvaged Robots+PK",
+    "auto_total": true,
+    "override": true,
+    "default": "mon_zombie_scientist",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 85, "cost_multiplier" : 0 },
+      
+      { "monster" : "mon_nec_valkyrie", "freq" : 15, "cost_multiplier" : 5},
+      
+      { "monster": "mon_secubot", "freq": 0, "cost_multiplier": 10 },
+      { "monster": "mon_utilibot", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_defbot_9mm", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_milbot_556", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_milbot_308", "freq": 1, "cost_multiplier": 20 },
+      { "monster": "mon_milbot_8x40mm", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_milbot_needle", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_advbot_laser", "freq": 2, "cost_multiplier": 20 },
+      { "monster": "mon_medibot", "freq": 3, "cost_multiplier": 3 },
+      
+      { "monster" : "mon_zombie_soldier", "freq" : 25, "cost_multiplier" : 0, "pack_size" : [1,4] },
+      { "monster" : "mon_manhack", "freq" : 200, "cost_multiplier" : 0 },
+      { "monster" : "mon_manhack", "freq" : 45, "cost_multiplier" : 0, "pack_size" : [2,3] },
+      { "monster" : "mon_skitterbot", "freq" : 100, "cost_multiplier" : 0 },
+      { "monster" : "mon_skitterbot", "freq" : 145, "cost_multiplier" : 0, "pack_size" : [2,3] },
+      { "monster" : "mon_skitterbot", "freq" : 1, "cost_multiplier" : 0, "pack_size" : [8,12] },
+      { "monster" : "mon_secubot", "freq" : 5, "cost_multiplier" : 10 },
+      { "monster" : "mon_zombie_hazmat", "freq" : 100, "cost_multiplier" : 0},
+      { "monster" : "mon_zombie_bio_op", "freq" : 50, "cost_multiplier" : 5},
+      { "monster" : "mon_zombie_armored", "freq" : 5, "cost_multiplier" : 5},
+      { "monster" : "mon_zombie_technician", "freq" : 50, "cost_multiplier" : 3},
+      { "monster" : "mon_zombie_electric", "freq" : 50, "cost_multiplier" : 3},
+      { "monster" : "mon_zombie_brute_shocker", "freq" : 10, "cost_multiplier" : 5},
+      { "monster" : "mon_chickenbot", "freq" : 1, "cost_multiplier" : 50 },
+      { "monster" : "mon_zombie_hulk", "freq" : 1, "cost_multiplier" : 50 },
+      { "monster" : "mon_skeleton_hulk", "freq" : 1, "cost_multiplier" : 50 }
+
+    ]
+  },{
+    "type":"monstergroup",
+    "name": "GROUP_ICE_LAB",
+    "_comment": "PoraComp+Nechronica+(Cata++)+PK+Jury Rigged Robots",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_zombie_scientist",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 85, "cost_multiplier" : 0 },
+      
+      { "monster" : "mon_nec_valkyrie", "freq" : 15, "cost_multiplier" : 5},
+      
+      { "monster": "mon_failed_weapon", "freq": 4, "cost_multiplier": 80 },
+      { "monster": "mon_zombie_failed_weapon", "freq": 4, "cost_multiplier": 30 },
+      { "monster": "mon_fungus_failed_weapon", "freq": 0, "cost_multiplier": 30 },
+      { "monster": "mon_zombie_bio_infantry", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_knight", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_scout", "freq": 10, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_tool", "freq": 10, "cost_multiplier": 15 },
+
+      { "monster": "mon_crawler", "freq": 25, "cost_multiplier": 3 },
+      { "monster": "mon_blob", "freq": 25, "cost_multiplier": 1, "pack_size": [1,2] },
+      { "monster": "mon_blob_large", "freq": 14, "cost_multiplier": 3 },
+      { "monster": "mon_shoggoth", "freq": 1, "cost_multiplier": 5 },
+      { "monster": "mon_turret_shockcannon", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_cyborg_guard", "freq": 15, "cost_multiplier": 5 },
+      { "monster": "mon_broken_cyborg", "freq": 50, "cost_multiplier": 1 },
+      { "monster": "mon_turret_rifle", "freq": 25, "cost_multiplier": 0 },
+
+      { "monster": "mon_blob_small", "freq": 25, "cost_multiplier": 0, "pack_size": [1,4] },
+      { "monster": "mon_manhack", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_manhack", "freq": 50, "cost_multiplier": 0, "pack_size": [2,3] },
+      { "monster": "mon_skitterbot", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_skitterbot", "freq": 50, "cost_multiplier": 0, "pack_size": [2,3] },
+      { "monster": "mon_zombie_hazmat", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_zombie_bio_op", "freq": 50, "cost_multiplier": 5 },
+      { "monster": "mon_zombie_armored", "freq": 5, "cost_multiplier": 5 },
+      
+      { "monster" : "mon_seeker_bot", "freq" : 50, "cost_multiplier" : 5}, 
+      { "monster" : "mon_hunter_bot", "freq" : 50, "cost_multiplier" : 0, "pack_size" : [3,4] },
+      { "monster" : "mon_pursuer_bot", "freq" : 50, "cost_multiplier" : 0},
+      { "monster" : "mon_chaser_bot", "freq" : 50, "cost_multiplier" : 5}
+    ]
+  },{
+    "type": "monstergroup",
+    "name": "GROUP_SMALL_STATION",
+    "_comment": "PoraComp+Bandit+PK+(Cata++)+Salavaged Robots",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_zombie_technician",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 50, "cost_multiplier" : 0 },
+      
+      { "monster" : "mon_bandit_glock", "freq" : 20, "cost_multiplier" : 5, "pack_size" : [1,3]  },
+      { "monster" : "mon_bandit_glock", "freq" : 15, "cost_multiplier" : 7, "pack_size" : [2,3]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 14, "cost_multiplier" : 10, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 12, "cost_multiplier" : 12, "pack_size" : [2,2]  },
+      { "monster" : "mon_bandit_looter", "freq" : 20, "cost_multiplier" : 5, "pack_size" : [2,3]  },
+      
+      { "monster": "mon_zombie_electric", "freq": 55, "cost_multiplier": 4, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_zombie_technician", "freq": 50, "cost_multiplier": 5, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_zombie_tough", "freq": 25, "cost_multiplier": 0 },
+      
+      { "monster": "mon_failed_weapon", "freq": 15, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_failed_weapon", "freq": 20, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_bio_infantry", "freq": 20, "cost_multiplier": 15 },
+      { "monster": "mon_zombie_bio_knight", "freq": 20, "cost_multiplier": 15 },
+      { "monster": "mon_zombie_bio_scout", "freq": 20, "cost_multiplier": 15 },
+      { "monster": "mon_zombie_bio_tool", "freq": 20, "cost_multiplier": 15 },
+      
+      { "monster": "mon_utilibot", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_utilibot_const", "freq": 10, "cost_multiplier": 0 }
+    ]
+  },{
+    "type":"monstergroup",
+    "name": "GROUP_LARGE_STATION",
+    "_comment": "PoraComp+Bandit+PK+(Cata++)+Salavaged Robots",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_zombie_technician",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 85, "cost_multiplier" : 0 },
+      
+      { "monster" : "mon_bandit_glock", "freq" : 20, "cost_multiplier" : 5, "pack_size" : [1,3]  },
+      { "monster" : "mon_bandit_glock", "freq" : 10, "cost_multiplier" : 7, "pack_size" : [2,3]  },
+      { "monster" : "mon_bandit_raider", "freq" : 6, "cost_multiplier" : 10, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 12, "cost_multiplier" : 10, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_looter", "freq" : 20, "cost_multiplier" : 7, "pack_size" : [1,4]  },
+      { "monster" : "mon_bandit_scrapper", "freq" : 18, "cost_multiplier" : 14, "pack_size" : [2,3]  },
+      
+      { "monster": "mon_failed_weapon", "freq": 25, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_failed_weapon", "freq": 15, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_bio_infantry", "freq": 20, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_knight", "freq": 15, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_scout", "freq": 20, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_tool", "freq": 25, "cost_multiplier": 15 },
+
+
+      { "monster": "mon_robot_drone", "freq": 25, "cost_multiplier": 0 },
+      { "monster": "mon_cyborg_cop", "freq": 15, "cost_multiplier": 5},
+      { "monster": "mon_cyborg_guard", "freq": 50, "cost_multiplier": 5},
+      { "monster": "mon_broken_cyborg", "freq": 100, "cost_multiplier": 1},
+      { "monster": "mon_zombie_radbag", "freq": 50, "cost_multiplier": 3 },
+      { "monster": "mon_beekeeper_pk", "freq": 100, "cost_multiplier": 5, "pack_size": [1,3] },
+      { "monster": "mon_zombie_brute_shocker", "freq": 200, "cost_multiplier": 2, "pack_size": [1,2] },
+      { "monster": "mon_zombie_electric_pk", "freq": 50, "cost_multiplier": 3, "pack_size": [1,2] },
+      { "monster": "mon_zombie_electric", "freq": 75, "cost_multiplier": 3, "pack_size": [1,2] },
+      { "monster": "mon_zombie_technician", "freq": 100, "cost_multiplier": 5, "pack_size": [2,4] },
+      { "monster": "mon_zombie_tough", "freq": 50, "cost_multiplier": 0 },
+      
+      { "monster": "mon_utilibot", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_utilibot_const", "freq": 10, "cost_multiplier": 0 }
+    ]
+  },{
+    "type":"monstergroup",
+    "name": "GROUP_ROBOT",
+    "_comment": "PoraComp+Bandit+PK+(Cata++)+Salavaged Robots",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_manhack",
+    "monsters": [
+      { "monster" : "mon_BioCo_ScavBot", "freq" : 200, "cost_multiplier" : 0 },
+      
+      { "monster" : "mon_bandit_shotgun", "freq" : 6, "cost_multiplier" : 7, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_looter", "freq" : 10, "cost_multiplier" : 5, "pack_size" : [1,3]  },
+
+      { "monster": "mon_failed_weapon", "freq": 25, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_failed_weapon", "freq": 15, "cost_multiplier": 20 },
+      { "monster": "mon_zombie_bio_infantry", "freq": 20, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_knight", "freq": 15, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_scout", "freq": 20, "cost_multiplier": 15},
+      { "monster": "mon_zombie_bio_tool", "freq": 25, "cost_multiplier": 15 },
+      
+      { "monster": "mon_utilibot", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_utilibot_const", "freq": 10, "cost_multiplier": 0 },
+
+      { "monster": "mon_cyborg_cop", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_cyborg_guard", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_broken_cyborg", "freq": 75, "cost_multiplier": 0 },
+      { "monster": "mon_robot_drone", "freq": 50, "cost_multiplier": 0 },
+
+      { "monster": "mon_skitterbot", "freq": 150, "cost_multiplier": 0 },
+      { "monster": "mon_secubot", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_copbot", "freq": 100, "cost_multiplier": 0 },
+      
+      { "monster": "mon_medibot", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_defbot_9mm", "freq": 20, "cost_multiplier": 0 },
+      { "monster": "mon_defbot_shot", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_defbot_riotcontrol", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_milbot_556", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_milbot_308", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_milbot_50bmg", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_milbot_8x40mm", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_milbot_needle", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_milbot_flame", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_advbot_laser", "freq": 20, "cost_multiplier": 0 },
+      { "monster": "mon_advbot_plasma", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_advbot_lightning", "freq": 1, "cost_multiplier": 0 },
+      
+      { "monster": "mon_molebot", "freq": 55, "cost_multiplier": 0 },
+      { "monster": "mon_tripod", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_chickenbot", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_tankbot", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },{
+    "type":"monstergroup",
+    "name": "GROUP_TURRET",
+    "_comment": "Bandit+PK+Turrets Mod",
+    "override": true,
+    "auto_total": true,
+    "default": "mon_turret",
+    "monsters": [
+      { "monster" : "mon_bandit_looter", "freq" : 10, "cost_multiplier" : 5, "pack_size" : [2,3]  },
+
+      { "monster": "mon_turret_beanbag", "freq": 30, "cost_multiplier": 1 },
+      { "monster": "mon_turret_teargas", "freq": 30, "cost_multiplier": 1 },
+      { "monster": "mon_turret_9mm", "freq": 40, "cost_multiplier": 1 },
+      { "monster": "mon_turret_shot", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_556", "freq": 40, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_308", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_50bmg", "freq": 10, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_40mm", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_8x40mm", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_needle", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_milturret_flame", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_advturret_laser", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_advturret_plasma", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_advturret_acid", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_advturret_lightning", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_advturret_emp", "freq": 10, "cost_multiplier": 1 },
+      
+      { "monster": "mon_turret_rifle", "freq": 0, "cost_multiplier": 0 },
+      { "monster": "mon_turret_bmg", "freq": 0, "cost_multiplier": 0 },
+
+      { "monster": "mon_copbot", "freq": 100, "cost_multiplier": 3, "pack_size": [2,4] },
+      { "monster": "mon_cyborg_cop", "freq": 150, "cost_multiplier": 3, "pack_size": [1,3] },
+      { "monster": "mon_cyborg_guard", "freq": 100, "cost_multiplier": 3, "pack_size": [1,3] },
+      { "monster": "mon_robot_drone", "freq": 100, "cost_multiplier": 0 },
+      { "monster": "mon_turret_rifle", "freq": 200, "cost_multiplier": 1 },
+      { "monster": "mon_turret_bmg", "freq": 200, "cost_multiplier": 2 },
+      { "monster": "mon_turret_shockcannon", "freq": 50, "cost_multiplier": 3 }
+    ]
+  },{
+    "type":"monstergroup",
+    "name" : "GROUP_ELECTRO",
+    "_comment": "Bandit+PK",
+    "override": true,
+    "auto_total": true,
+    "default" : "mon_zombie",
+    "monsters" : [
+      { "monster" : "mon_bandit_glock", "freq" : 12, "cost_multiplier" : 5, "pack_size" : [1,3]  },
+      { "monster" : "mon_bandit_glock", "freq" : 10, "cost_multiplier" : 7, "pack_size" : [2,3]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 8, "cost_multiplier" : 9, "pack_size" : [1,2]  },
+      { "monster" : "mon_bandit_shotgun", "freq" : 8, "cost_multiplier" : 9, "pack_size" : [2,2]  },
+      { "monster" : "mon_bandit_looter", "freq" : 18, "cost_multiplier" : 5, "pack_size" : [1,4]  },
+      { "monster" : "mon_bandit_scrapper", "freq" : 12, "cost_multiplier" : 10, "pack_size" : [2,4]  },
+    
+      { "monster" : "mon_zombie_fat", "freq" : 130, "cost_multiplier": 2},
+      { "monster" : "mon_zombie_tough", "freq" : 50, "cost_multiplier": 3},
+      { "monster" : "mon_zombie_child", "freq" : 50, "cost_multiplier" : 1 },
+      { "monster" : "mon_zombie_rot", "freq" : 10, "cost_multiplier": 2},
+      { "monster" : "mon_zombie_crawler", "freq" : 5, "cost_multiplier": 2},
+      { "monster" : "mon_zombie_cop", "freq" : 20, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_hazmat", "freq" : 10, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_fireman", "freq" : 10, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_dog", "freq" : 40, "cost_multiplier" : 2 },
+      { "monster" : "mon_dog_skeleton", "freq" : 10, "cost_multiplier" : 2 },
+      { "monster" : "mon_dog_zombie_cop", "freq" : 10, "cost_multiplier" : 2 },
+      { "monster" : "mon_dog_zombie_rot", "freq" : 10, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_grabber", "freq" : 70, "cost_multiplier" : 1 },
+      { "monster" : "mon_skeleton", "freq" : 30, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_smoker", "freq" : 30, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_shady", "freq" : 30, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_gasbag", "freq" : 10, "cost_multiplier": 5},
+      { "monster" : "mon_zombie_swimmer", "freq" : 20, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_shrieker", "freq" : 30, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_spitter", "freq" : 20, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_acidic", "freq" : 30, "cost_multiplier" : 2 },
+      { "monster" : "mon_zombie_electric", "freq" : 180, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_necro", "freq" : 1, "cost_multiplier" : 25 },
+      { "monster" : "mon_zombie_survivor", "freq" : 1, "cost_multiplier" : 25 },
+      { "monster" : "mon_boomer", "freq" : 30, "cost_multiplier" : 7 },
+      { "monster" : "mon_boomer_huge", "freq" : 20, "cost_multiplier" : 5 },
+      { "monster" : "mon_zombie_brute", "freq" : 10, "cost_multiplier" : 15 },
+      { "monster" : "mon_zombie_hulk", "freq" : 1, "cost_multiplier" : 50 },
+      { "monster" : "mon_skeleton_hulk", "freq" : 1, "cost_multiplier" : 50 },
+      { "monster" : "mon_zombie_master", "freq" : 1, "cost_multiplier" : 25 },
+      { "monster" : "mon_zombie_brute_shocker", "freq" : 6, "cost_multiplier" : 26 }
+    ]
+  }
+]

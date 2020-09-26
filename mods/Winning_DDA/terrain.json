@@ -1,0 +1,139 @@
+[
+    {
+        "type" : "terrain",
+        "id" : "t_altar",
+        "description": "",
+        "name": "macabre altar",
+        "symbol": "#",
+        "color": "red",
+        "move_cost": 7,
+        "flags": ["NOITEM", "TRANSPARENT","REDUCE_SCENT", "SHORT", "THIN_OBSTACLE"]
+    },    {
+        "type" : "terrain",
+        "override": true,
+        "id" : "t_secretdoor_wall_c",
+        "description": "",
+        "name": "solid rock",
+        "symbol": "#",
+        "color": "white",
+        "move_cost": 0,
+        "flags": [ "INDOORS", "DOOR", "NOITEM", "CONNECT_TO_WALL"],
+        "open": "t_secretdoor_wall_o",
+        "bash": {
+            "str_min": 1000, "str_max": 1200,
+            "sound": "smash!",
+            "sound_fail": "a loud knock!",
+            "ter_set": "t_floor",
+            "items": [
+                { "item": "chain", "count": [0, 2] },
+                { "item": "spring", "count": [1, 3] },
+                { "item": "2x4", "count": [2, 6] },
+                { "item": "nail", "charges": [4, 12] },
+                { "item": "splinter", "count": 1 }
+            ]
+        }
+},{
+        "type" : "terrain",
+        "override": true,
+        "id" : "t_window_stained_green",
+        "description": "",
+        "name": "high stained glass window",
+        "symbol": "\"",
+        "color": "light_green",
+        "move_cost": 0,
+        "roof": "t_rock_floor",
+        "flags": ["NOITEM", "SUPPORTS_ROOF", "WALL"]
+    },{
+        "type" : "terrain",
+        "override": true,
+        "id" : "t_window_stained_red",
+        "description": "",
+        "name": "high stained glass window",
+        "symbol": "\"",
+        "color": "light_red",
+        "move_cost": 0,
+        "roof": "t_rock_floor",
+        "flags": ["NOITEM", "SUPPORTS_ROOF", "WALL"]
+    },{
+        "type" : "terrain",
+        "override": true,
+        "id" : "t_window_stained_blue",
+        "description": "",
+        "name": "high stained glass window",
+        "symbol": "\"",
+        "color": "light_blue",
+        "move_cost": 0,
+        "roof": "t_rock_floor",
+        "flags": ["NOITEM", "SUPPORTS_ROOF", "WALL"]
+    },{
+        "type" : "terrain",
+        "id" : "t_secretdoor_wall_o",
+        "description": "",
+        "name": "open secret door",
+        "symbol": ".",
+        "color": "yellow",
+        "move_cost": 2,
+        "flags": [ "TRANSPARENT", "FLAMMABLE", "INDOORS", "DOOR", "FLAT" ],
+        "close": "t_secretdoor_wall_c",
+        "bash": {
+            "str_min": 6, "str_max": 40,
+            "sound": "smash!",
+            "sound_fail": "whump!",
+            "ter_set": "t_floor",
+            "items": [
+                { "item": "chain", "count": [0, 2] },
+                { "item": "spring", "count": [1, 3] },
+                { "item": "2x4", "count": [2, 6] },
+                { "item": "nail", "charges": [4, 12] },
+                { "item": "splinter", "count": 1 }
+            ]
+        }
+},{
+        "type" : "terrain",
+        "id" : "t_secretdoor_brick_wall_o",
+        "description": "",
+        "name": "open secret",
+        "symbol": ".",
+        "color": "yellow",
+        "move_cost": 2,
+        "flags": [ "TRANSPARENT", "FLAMMABLE", "INDOORS", "DOOR", "FLAT" ],
+        "close": "t_secretdoor_brick_wall_c",
+        "bash": {
+            "str_min": 6, "str_max": 40,
+            "sound": "smash!",
+            "sound_fail": "whump!",
+            "ter_set": "t_floor",
+            "items": [
+                { "item": "chain", "count": [0, 2] },
+                { "item": "spring", "count": [1, 3] },
+                { "item": "brick", "count": [0, 1] },
+                { "item": "rock", "charges": [1, 5] },
+                { "item": "splinter", "count": 1 }
+            ]
+        }
+},{
+        "type" : "terrain",
+        "id" : "t_secretdoor_brick_wall_c",
+        "description": "",
+        "name": "wall",
+        "override": true,    
+        "symbol": "\"",
+        "color": "light_blue",
+        "move_cost": 0,
+        "flags": [ "INDOORS", "DOOR", "NOITEM", "CONNECT_TO_WALL"],
+        "open": "t_secretdoor_brick_wall_o",
+        "bash": {
+            "str_min": 1000, "str_max": 1200,
+            "sound": "glass breaking!",
+            "sound_fail": "whack!",
+            "ter_set": "t_floor",
+            "items": [
+                { "item": "chain", "count": [0, 2] },
+                { "item": "spring", "count": [1, 3] },
+                { "item": "brick", "count": [0, 1] },
+                { "item": "rock", "charges": [1, 5] },
+                { "item": "splinter", "count": 1 }
+            ]
+        }
+    }
+]

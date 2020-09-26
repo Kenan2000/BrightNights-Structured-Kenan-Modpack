@@ -1,0 +1,70 @@
+[
+   {
+        "id" : "soapy_water",
+        "type" : "COMESTIBLE",
+        "comestible_type" : "MED",
+        "name" : "soapy water",
+        "name_plural" : "soapy water",
+        "description" : "Soap mixed with water, good for cleaning.",
+        "weight" : 135,
+        "volume" : 1,
+        "price" : 100,
+        "charges" : 2,
+        "symbol" : "~",
+        "color" : "white",
+        "phase" : "liquid",
+        "container" : "bottle_plastic",
+        "use_action" : {
+            "type" : "heal",
+            "limb_power" : 1,
+            "bite" : 0.25,
+            "move_cost" : 10000,
+            "long_action" : true
+        }
+   },{
+        "type" : "AMMO",
+        "id" : "soap_shavings",
+        "category" : "chems",
+        "price" : 300,
+        "name" : "soap shavings",
+        "symbol" : "=",
+        "color" : "white",
+        "description" : "Soap cut up into small flakes.",
+        "volume" : 1,
+        "weight" : 9,
+        "ammo_type" : "soap",
+        "count" : 100,
+        "stack_size" : 100
+   },{
+        "type" : "recipe",
+        "result": "soap_shavings",
+        "category": "CC_AMMO",
+        "subcategory": "CSC_AMMO_OTHER",
+        "skill_used": "fabrication",
+        "time": 5000,
+        "autolearn": true,
+        "flags": ["BLIND_EASY"],
+        "qualities":[
+            {"id":"CUT","level":1}
+         ],
+         "components": [ [ [ "soap", 1 ] ] ]
+   },{
+        "type" : "recipe",
+        "result": "soapy_water",
+        "category": "CC_CHEM",
+        "subcategory": "CSC_CHEM_OTHER",
+        "skill_used": "cooking",
+        "time": 1000,
+        "autolearn": true,
+        "flags": ["BLIND_EASY"],
+        "components": [
+            [
+               [ "water_clean", 2 ],
+               [ "water", 2 ]
+            ],
+            [
+               [ "soap_shavings", 15 ]
+            ]
+         ]
+   }
+]

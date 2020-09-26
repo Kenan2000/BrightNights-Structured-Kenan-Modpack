@@ -1,0 +1,178 @@
+[
+{
+    "id": "daisle",
+    "type": "vehicle_part",
+    "name": "crystal path",
+    "item": "diamondplate",
+    "symbol": "=",
+    "difficulty": 6,
+    "durability": 3000,
+    "breaks_into": [
+      { "item": "spiral_matrix" },
+      { "item": "dshards", "count": [ 75, 150 ] },
+      { "item": "dcluster", "count": [ 4, 8 ] }
+    ],
+    "flags": [ "AISLE", "BOARDABLE" ]
+  },
+  {
+    "id": "obeliskoflight",
+    "type": "vehicle_part",
+    "name": "diamond obelisk",
+    "item": "dobelisk",
+    "location": "on_roof",
+    "symbol": "T",
+    "broken_symbol": "#",
+    "color": "white",
+    "broken_color": "white",
+    "difficulty": 4,
+    "durability": 5000,
+    "epower": 900,
+    "damage_modifier": 50,
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": 42000,
+        "using": "blazemod_diamondminor"
+      },
+      "removal": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": 5000,
+        "using": "blazemod_diamondminor"
+      },
+      "repair": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": 14000,
+        "using": "blazemod_diamondfix"
+      }
+    },
+    "flags": [ "TURRET", "MANUAL", "SOLAR_PANEL" ]
+  },
+  {
+    "id": "prismoflight",
+    "type": "vehicle_part",
+    "name": "diamond prism",
+    "item": "dprism",
+    "location": "on_roof",
+    "symbol": "*",
+    "broken_symbol": "#",
+    "color": "white",
+    "broken_color": "white",
+    "difficulty": 4,
+    "durability": 1000,
+    "epower": 50,
+    "damage_modifier": 10,
+    "requirements": {
+      "install": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": 42000,
+        "using": "blazemod_diamondminor"
+      },
+      "removal": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": 5000,
+        "using": "blazemod_diamondminor"
+      },
+      "repair": {
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": 14000,
+        "using": "blazemod_diamondfix"
+      }
+    },
+    "flags": [ "TURRET", "SOLAR_PANEL" ]
+  },
+  {
+    "id" : "dobelisk",
+    "copy-from" : "blaze_gun_base",
+    "type" : "GUN",
+    "name" : "diamond obelisk",
+    "description" : "A tall tower composed almost entirely of diamond, the cluster of diamond matrices focuses the energy from an array of solar panels into a terribly powerful laser.  It is also capable of storing energy from the sun and can fire even in the dark.",
+    "weight" : 250000,
+    "volume" : 120,
+    "price" : 60000,
+    "material" : ["diamond"],
+    "symbol" : "(",
+    "color" : "white",
+    "skill" : "launcher",
+    "range" : 30,
+    "ranged_damage" : 100,
+    "pierce" : 50,
+    "dispersion" : 150,
+    "sight_dispersion" : 150,
+    "reload" : 1000,
+    "recoil" : 0,
+    "ups_charges" : 200,
+    "ammo_effects" : ["LASER", "WIDE", "FLAME", "DRAW_AS_LINE"],
+    "modes" : [
+      ["DEFAULT", "single", 1]
+    ]
+  },
+  {
+    "id" : "dprism",
+    "copy-from" : "blaze_gun_base",
+    "type" : "GUN",
+    "name" : "diamond prism",
+    "description" : "A smaller crystal that fell off the diamond obelisk upon creation.  Through some unknown mechanism, is able to link with the obelisk to fire a small, yet still powerful laser.  Even more perplexing is its ability to do so without guidance.",
+    "weight" : 2500,
+    "volume" : 10,
+    "price" : 60000,
+    "material" : ["diamond"],
+    "symbol" : "(",
+    "color" : "white",
+    "skill" : "launcher",
+    "range" : 10,
+    "ranged_damage" : 15,
+    "pierce" : 15,
+    "dispersion" : 150,
+    "sight_dispersion" : 150,
+    "reload" : 1000,
+    "recoil" : 0,
+    "ups_charges" : 25,
+    "ammo_effects" : ["LASER", "WIDE", "DRAW_AS_LINE"],
+    "modes" : [
+      ["DEFAULT", "single", 1]
+    ]
+  },
+  {
+    "id" : "spiral_matrix",
+    "type" : "TOOL",
+    "name" : "diamond matrix",
+    "description" : "A sparkling diamond with a dazzling spiral pattern.  Small pieces of glittering crystal form on the edges as you hold it.  With enough base material, applying it to objects causes organic matter, wood in particular, to rapidly transform into diamond. However, this new crystalline compound quickly disintegrates without some other form of support.",
+    "weight" : 250,
+    "volume" : 1,
+    "price" : 500000,
+    "to_hit" : -5,
+    "material" : "diamond",
+    "symbol" : "*",
+    "color" : "white",
+    "revert_to" : "spiral_matrix",
+    "max_charges" : 1000,
+    "ammo" : "charcoal",
+    "book_data" : {
+      "max_level" : 0,
+      "intelligence" : 0,
+      "time" : 1,
+      "fun" : 0,
+      "skill" : "fabrication",
+      "required_level" : 1
+    }
+  },
+  {
+    "id" : "blazemod_diamond",
+    "type" : "requirement",
+    "//" : "Making Diamond Stuff",
+    "tools" : [[["spiral_matrix", 250]]]
+  }, {
+    "id" : "blazemod_diamondfix",
+    "type" : "requirement",
+    "//" : "Fixing Diamond Stuff",
+    "tools" : [[["spiral_matrix", 25]]]
+  }, {
+    "id" : "blazemod_diamondminor",
+    "type" : "requirement",
+    "tools" : [[["spiral_matrix", 100]]]
+  }, {
+    "id" : "blazemod_diamondfixminor",
+    "type" : "requirement",
+    "tools" : [[["spiral_matrix", 10]]]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "result": "helmet_szyszak",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "difficulty": 7,
+    "time": "540 m",
+    "book_learn": [ [ "textbook_armwest", 6 ] ],
+    "using": [ [ "forging_standard", 15 ], [ "steel_standard", 10 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CHISEL", "level": 3 }
+    ],
+    "tools": [
+      [ [ "tongs", -1 ] ],
+      [ [ "anvil", -1 ] ],
+      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ]
+    ],
+    "components": [ [ [ "fur", 4 ], [ "leather", 4 ] ] ]
+  },
+  {
+    "result": "wings_ornamental",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "40 m",
+    "book_learn": [ [ "tailor_portfolio", 4 ] ],
+    "using": [ [ "filament", 30 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "components": [
+      [ [ "2x4", 4 ] ],
+      [ [ "nail", 10 ] ],
+      [ [ "feather", 30 ] ],
+      [ [ "w_paint", 10 ], [ "b_paint", 10 ] ],
+      [ [ "r_paint", 10 ], [ "g_paint", 10 ] ]
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+		{
+			"type" : "terrain",
+			"id" : "t_shrub",
+			"copy-from": "t_shrub",
+			"name": "shrub",
+			"symbol": "#",
+			"color": "green",
+			"move_cost": 8,
+			"flags": [
+				"TRANSPARENT", "CONTAINER", "FLAMMABLE_ASH", "THIN_OBSTACLE", "PLACE_ITEM", "NOCOLLIDE",
+				"SHRUB", "SHORT"
+			]
+		},{
+        "type" : "terrain",
+        "id" : "t_underbrush",
+		"copy-from": "t_underbrush",
+        "name": "underbrush",
+        "description": "Small plants and shrubs that decorate the forest.  An observant forager could obtain edible plants, acorns, eggs, and mushrooms from it.",
+        "symbol": "#",
+        "color": "light_green",
+        "move_cost": 6,
+        "flags": [
+            "TRANSPARENT", "DIGGABLE", "CONTAINER", "FLAMMABLE_ASH", "THIN_OBSTACLE", "PLACE_ITEM", "NOCOLLIDE",
+            "SHRUB", "SHORT"
+        ],
+        "examine_action": "shrub_wildveggies",
+        "bash": {
+            "str_min": 4, "str_max": 30,
+            "sound": "crunch.",
+            "sound_fail": "brush.",
+            "ter_set": "t_dirt",
+            "items": [
+                { "item": "withered", "prob": 50, "count": [1, 2] }
+            ]
+        }
+	}
+]

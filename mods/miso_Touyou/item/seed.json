@@ -1,0 +1,47 @@
+[
+  {
+    "id": "mamesigure",
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "name": "mameshigure seed",
+    "name_plural": "mameshigure seeds",
+    "description": "Beans are human beings. You can grow by planting.",
+    "category": "seeds",
+    "volume": 5,
+    "weight": 250,
+    "price": 120,
+    "charges": 1,
+    "stack_size": 1,
+    "material": "hflesh",
+    "symbol": "o",
+    "fun": 6,
+    "nutrition": 30,
+    "seed_data": { "plant_name": "bean plant", "fruit": "mamesigure", "byproducts": [ "bone_human" ], "grow": 91 },
+    "color": "brown"
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "seed_rice",
+    "copy-from": "seed",
+    "price": 160,
+    "name": "rice seed",
+    "name_plural": "rice seeds",
+    "description": "It is a seed rice of Japonica rice. Because it is upland rice, it can be grown in the field.",
+    "weight": 5,
+    "charges": 2,
+    "stack_size": 40,
+    "color": "yellow",
+    "seed_data": { "plant_name": "rice", "fruit": "rice_ine", "grow": 100 }
+  },
+  {
+    "result": "mamesigure",
+    "type": "uncraft",
+    "id_suffix": "from_mamesigure",
+    "skill_used": "cooking",
+    "difficulty": 4,
+    "time": 500,
+    "reversible": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "bone_human", 2 ] ], [ [ "human_flesh", 2 ] ] ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ocg_gauss_carbine166",
+    "copy-from": "etc_rifle_base",
+    "type": "GUN",
+    "name": "OCG GC166 Gauss carbine",
+    "description": "A milspec bullpup coilgun which can shoot proprietary OmniCorp magpins and, with reduced efficiency, DIY flechettes and nails. Fed by UPS and a 120-round helical magazine. Bulky due to its capacitor and thick ceramic reinforced barrel but very compact in length.",
+    "weight": 2220,
+    "volume": 5,
+    "//": "Short 90 mm/3.5 in barrel.",
+    "price": 900000,
+    "price_postapoc": 2700000,
+    "//": "Rare, milspec, mostly silent, plentiful ammo and made of some quite expensive materials. Its price would be inflated.",
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "ceramic", "plastic", "steel" ],
+    "ammo": "magpin",
+    "range": 32,
+    "ranged_damage": 16,
+    "pierce": 30,
+    "loudness": -129,
+    "dispersion": 70,
+    "durability": 9,
+    "ups_charges": 7,
+    "looks_like": "calico",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 10 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazine_well": 2,
+    "magazines": [ [ "magpin", [ "gc166mag" ] ], [ "1magmg", [ "gg285mag" ] ] ]
+  }
+]

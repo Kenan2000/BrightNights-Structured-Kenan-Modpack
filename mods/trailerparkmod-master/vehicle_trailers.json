@@ -1,0 +1,273 @@
+[
+	{
+		"type" : "vehicle",
+		"id" : "house_trailer",
+		"name" : "House Trailer",
+		"blueprint" : [
+			["|WW-+-WW-|"],
+			["|K=-====b-"],
+			["|M==##===|"],
+			["|===HH==B|"],
+			["|bb-sT==B|"],
+			["|WW---WW-|"]
+        ],
+		"parts" : [
+			{"x": -5, "y": -3, "part": "hdframe_horizontal" },
+			{"x": -5, "y": -3, "part": "board_horizontal" },
+
+			{"x": -5, "y": -2, "part": "hdframe_horizontal" },
+			{"x": -5, "y": -2, "part": "board_vertical" },
+			
+			{"x": -5, "y": -1, "part": "hdframe_horizontal" },
+			{"x": -5, "y": -1, "part": "board_vertical" },
+			{"x": -5, "y": -1, "part": "horn_big" },
+			{"x": -5, "y": -1, "part": "omnicam" },
+			
+			{"x": -5, "y": 0, "part": "hdframe_horizontal" },
+			{"x": -5, "y": 0, "part": "board_vertical" },
+			
+			{"x": -5, "y": 1, "part": "hdframe_horizontal" },
+			{"x": -5, "y": 1, "part": "board_vertical" },
+			
+			{"x": -5, "y": 2, "part": "hdframe_horizontal" },
+			{"x": -5, "y": 2, "part": "board_horizontal" },
+			
+			{"x": -4, "y": -3, "part": "hdframe_horizontal" },
+			{"x": -4, "y": -3, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": -4, "y": -3, "part": "windshield" },
+			{"x": -4, "y": -3, "part": "v_curtain" },
+			
+			{"x": -4, "y": -2, "part": "hdframe_horizontal" },
+			{"x": -4, "y": -2, "part": "kitchen_unit" },
+			{"x": -4, "y": -2, "part": "roof" },
+			{"x": -4, "y": -2, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			
+			{"x": -4, "y": -1, "part": "hdframe_horizontal" },
+			{"x": -4, "y": -1, "part": "minifridge" },
+			{"x": -4, "y": -1, "part": "roof" },
+			
+			{"x": -4, "y": 0, "part": "hdframe_horizontal" },
+			{"x": -4, "y": 0, "part": "aisle_vertical" },
+			{"x": -4, "y": 0, "part": "roof" },
+			
+			{"x": -4, "y": 1, "part": "hdframe_horizontal" },
+			{"x": -4, "y": 1, "part": "box" },
+			{"x": -4, "y": 1, "part": "roof" },
+			{"x": -4, "y": 1, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			
+			{"x": -4, "y": 2, "part": "hdframe_horizontal" },
+			{"x": -4, "y": 2, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": -4, "y": 2, "part": "windshield" },
+			{"x": -4, "y": 2, "part": "v_curtain" },
+			
+			{"x": -3, "y": -3, "part": "hdframe_horizontal" },
+			{"x": -3, "y": -3, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": -3, "y": -3, "part": "windshield" },
+			{"x": -3, "y": -3, "part": "v_curtain" },
+			
+			{"x": -3, "y": -2, "part": "hdframe_horizontal" },
+			{"x": -3, "y": -2, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": -3, "y": -2, "part": "aisle_vertical" },
+			{"x": -3, "y": -2, "part": "roof" },
+			
+			{"x": -3, "y": -1, "part": "hdframe_horizontal" },
+			{"x": -3, "y": -1, "part": "aisle_vertical" },
+			{"x": -3, "y": -1, "part": "roof" },
+			
+			{"x": -3, "y": 0, "part": "hdframe_horizontal" },
+			{"x": -3, "y": 0, "part": "aisle_vertical" },
+			{"x": -3, "y": 0, "part": "roof" },
+			
+			{"x": -3, "y": 1, "part": "hdframe_horizontal" },
+			{"x": -3, "y": 1, "part": "box" },
+			{"x": -3, "y": 1, "part": "roof" },
+			{"x": -3, "y": 1, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			
+			{"x": -3, "y": 2, "part": "hdframe_horizontal" },
+			{"x": -3, "y": 2, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": -3, "y": 2, "part": "windshield" },
+			{"x": -3, "y": 2, "part": "v_curtain" },
+			
+			{"x": -2, "y": -3, "part": "hdframe_horizontal" },
+			{"x": -2, "y": -3, "part": "board_vertical" },
+			
+			{"x": -2, "y": -2, "part": "hdframe_horizontal" },
+			{"x": -2, "y": -2, "part": "board_horizontal" },
+			{"x": -2, "y": -2, "part": "roof" },
+			
+			{"x": -2, "y": -1, "part": "hdframe_horizontal" },
+			{"x": -2, "y": -1, "part": "aisle_vertical" },
+			{"x": -2, "y": -1, "part": "roof" },
+			
+			{"x": -2, "y": 0, "part": "hdframe_horizontal" },
+			{"x": -2, "y": 0, "part": "aisle_vertical" },
+			{"x": -2, "y": 0, "part": "roof" },
+			
+			{"x": -2, "y": 1, "part": "hdframe_horizontal" },
+			{"x": -2, "y": 1, "part": "board_horizontal" },
+			{"x": -2, "y": 1, "part": "tank", "fuel": "water_clean" },
+			{"x": -2, "y": 1, "part": "funnel" },
+			{"x": -2, "y": 1, "part": "roof" },
+			
+			{"x": -2, "y": 2, "part": "hdframe_horizontal" },
+			{"x": -2, "y": 2, "part": "board_vertical" },
+			
+			{"x": -1, "y": -3, "part": "hdframe_horizontal" },
+			{"x": -1, "y": -3, "part": "door_opaque" },
+			
+			{"x": -1, "y": -2, "part": "hdframe_horizontal" },
+			{"x": -1, "y": -2, "part": "aisle_vertical" },
+			{"x": -1, "y": -2, "part": "roof" },
+			
+			{"x": -1, "y": -1, "part": "hdframe_horizontal" },
+			{"x": -1, "y": -1, "part": "aisle_vertical" },
+			{"x": -1, "y": -1, "part": "roof" },
+			{"x": -1, "y": -1, "part": "solar_panel" },
+			
+			{"x": -1, "y": 0, "part": "hdframe_horizontal" },
+			{"x": -1, "y": 0, "part": "aisle_vertical" },
+			{"x": -1, "y": 0, "part": "roof" },
+			{"x": -1, "y": 0, "part": "solar_panel" },
+			
+			{"x": -1, "y": 1, "part": "hdframe_horizontal" },
+			{"x": -1, "y": 1, "part": "reclining_seat" },
+			{"x": -1, "y": 1, "part": "roof" },
+			
+			{"x": -1, "y": 2, "part": "hdframe_horizontal" },
+			{"x": -1, "y": 2, "part": "board_vertical" },
+			
+			{"x": 0, "y": -3, "part": "hdframe_horizontal" },
+			{"x": 0, "y": -3, "part": "board_vertical" },
+			{"x": 0, "y": -3, "part": "roof" },
+			
+			{"x": 0, "y": -2, "part": "hdframe_horizontal" },
+			{"x": 0, "y": -2, "part": "aisle_vertical" },
+			{"x": 0, "y": -2, "part": "roof" },
+			
+			{"x": 0, "y": -1, "part": "hdframe_horizontal" },
+			{"x": 0, "y": -1, "part": "aisle_vertical" },
+			{"x": 0, "y": -1, "part": "roof" },
+			{"x": 0, "y": -1, "part": "solar_panel" },
+			
+			{"x": 0, "y": 0, "part": "hdframe_horizontal" },
+			{"x": 0, "y": 0, "part": "reclining_seat" },
+			{"x": 0, "y": 0, "part": "roof" },
+			{"x": 0, "y": 0, "part": "solar_panel" },
+			
+			{"x": 0, "y": 1, "part": "hdframe_horizontal" },
+			{"x": 0, "y": 1, "part": "veh_table_wood" },
+			{"x": 0, "y": 1, "part": "vehicle_clock" },
+			{"x": 0, "y": 1, "part": "stereo" },
+			{"x": 0, "y": 1, "part": "controls_electronic" },
+			{"x": 0, "y": 1, "part": "storage_battery_mount" },
+			{"x": 0, "y": 1, "part": "storage_battery_removable" },
+			{"x": 0, "y": 1, "part": "roof" },
+			
+			{"x": 0, "y": 2, "part": "hdframe_horizontal" },
+			{"x": 0, "y": 2, "part": "board_vertical" },
+			
+			{"x": 1, "y": -3, "part": "hdframe_horizontal" },
+			{"x": 1, "y": -3, "part": "windshield" },
+			{"x": 1, "y": -3, "part": "v_curtain" },
+			
+			{"x": 1, "y": -2, "part": "hdframe_horizontal" },
+			{"x": 1, "y": -2, "part": "aisle_vertical" },
+			{"x": 1, "y": -2, "part": "roof" },
+
+			{"x": 1, "y": -1, "part": "hdframe_horizontal" },
+			{"x": 1, "y": -1, "part": "aisle_vertical" },
+			{"x": 1, "y": -1, "part": "roof" },
+
+			{"x": 1, "y": 0, "part": "hdframe_horizontal" },
+			{"x": 1, "y": 0, "part": "aisle_vertical" },
+			{"x": 1, "y": 0, "part": "roof" },
+			
+			{"x": 1, "y": 1, "part": "hdframe_horizontal" },
+			{"x": 1, "y": 1, "part": "reclining_seat" },
+			{"x": 1, "y": 1, "part": "roof" },
+
+			{"x": 1, "y": 2, "part": "hdframe_horizontal" },
+			{"x": 1, "y": 2, "part": "windshield" },
+			{"x": 1, "y": 2, "part": "v_curtain" },
+			
+			{"x": 2, "y": -3, "part": "hdframe_horizontal" },
+			{"x": 2, "y": -3, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": 2, "y": -3, "part": "windshield" },
+			{"x": 2, "y": -3, "part": "v_curtain" },
+			
+			{"x": 2, "y": -2, "part": "hdframe_horizontal" },
+			{"x": 2, "y": -2, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": 2, "y": -2, "part": "aisle_vertical" },
+			{"x": 2, "y": -2, "part": "roof" },
+			
+			{"x": 2, "y": -1, "part": "hdframe_horizontal" },
+			{"x": 2, "y": -1, "part": "aisle_vertical" },
+			{"x": 2, "y": -1, "part": "roof" },
+			
+			{"x": 2, "y": 0, "part": "hdframe_horizontal" },
+			{"x": 2, "y": 0, "part": "aisle_vertical" },
+			{"x": 2, "y": 0, "part": "roof" },
+			
+			{"x": 2, "y": 1, "part": "hdframe_horizontal" },
+			{"x": 2, "y": 1, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": 2, "y": 1, "part": "aisle_vertical" },
+			{"x": 2, "y": 1, "part": "roof" },
+			
+			{"x": 2, "y": 2, "part": "hdframe_horizontal" },
+			{"x": 2, "y": 2, "parts": [ "wheel_mount_medium", "wheel_wide" ] },
+			{"x": 2, "y": 2, "part": "windshield" },
+			{"x": 2, "y": 2, "part": "v_curtain" },
+			
+			{"x": 3, "y": -3, "part": "hdframe_horizontal" },
+			{"x": 3, "y": -3, "part": "board_vertical" },
+			
+			{"x": 3, "y": -2, "part": "hdframe_horizontal" },
+			{"x": 3, "y": -2, "part": "box" },
+			{"x": 3, "y": -2, "part": "roof" },
+			
+			{"x": 3, "y": -1, "part": "hdframe_horizontal" },
+			{"x": 3, "y": -1, "part": "aisle_vertical" },
+			{"x": 3, "y": -1, "part": "roof" },
+			
+			{"x": 3, "y": 0, "part": "hdframe_horizontal" },
+			{"x": 3, "y": 0, "part": "bed" },
+			{"x": 3, "y": 0, "part": "roof" },
+			
+			{"x": 3, "y": 1, "part": "hdframe_horizontal" },
+			{"x": 3, "y": 1, "part": "bed" },
+			{"x": 3, "y": 1, "part": "roof" },
+			
+			{"x": 3, "y": 2, "part": "hdframe_horizontal" },
+			{"x": 3, "y": 2, "part": "board_vertical" },
+			
+			{"x": 4, "y": -3, "part": "hdframe_horizontal" },
+			{"x": 4, "y": -3, "part": "board_vertical" },
+			
+			{"x": 4, "y": -2, "part": "hdframe_horizontal" },
+			{"x": 4, "y": -2, "part": "board_horizontal" },
+			
+			{"x": 4, "y": -1, "part": "hdframe_horizontal" },
+			{"x": 4, "y": -1, "part": "board_horizontal" },			
+
+			{"x": 4, "y": 0, "part": "hdframe_horizontal" },
+			{"x": 4, "y": 0, "part": "board_horizontal" },
+
+			{"x": 4, "y": 1, "part": "hdframe_horizontal" },
+			{"x": 4, "y": 1, "part": "board_horizontal" },
+			
+			{"x": 4, "y": 2, "part": "hdframe_horizontal" },
+			{"x": 4, "y": 2, "part": "board_vertical" }
+		],
+		"items" : [
+            {"x": -4, "y": 1, "chance": 25, "item_groups": "fast_food"},
+            {"x": -3, "y": 1, "chance": 50, "item_groups": "snacks"},
+
+            {"x": -4, "y": -1, "chance": 33, "item_groups": ["fridgesnacks"]},
+            {"x": -4, "y": -1, "chance": 33, "item_groups": ["fridgesnacks"]},
+            {"x": -4, "y": -1, "chance": 33, "item_groups": ["wines_worthy"]},
+            {"x": -4, "y": -1, "chance": 25, "items": ["beer", "beer", "beer", "beer", "beer", "beer"]},
+            {"x": 3, "y": -2, "chance": 15, "item_groups": ["homeguns"]},
+            {"x": 3, "y": -2, "chance": 50, "item_groups": ["bed"]}
+        ]
+    }
+]

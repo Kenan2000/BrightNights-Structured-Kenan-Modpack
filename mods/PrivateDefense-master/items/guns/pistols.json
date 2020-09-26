@@ -1,0 +1,76 @@
+[
+  {
+    "type": "GUN",
+    "id": "pd_9mm",
+    "copy-from": "glock_19",
+    "name": { "str": "Private 9" },
+    "description": "A plastic printed copy of Glock 19, a popular handgun already known for its mostly-plastic construction. Barrel and firing pin are made out of high-quality polymer compound, able to weather gunfire significantly better than regular plastic. Less reliable than its market counterpart, but an effective firearm if you have nothing else available.",
+    "material": [ "plastic", "polymer" ],
+    "relative": {
+      "bashing":       -2,
+      "ranged_damage": -3,
+      "durability":    -4,
+      "dispersion":    80
+    },
+    "proportional": {
+      "weight": 0.55
+    },
+    "blackpowder_tolerance": 24
+  },
+  {
+    "type": "GUN",
+    "id": "pd_357",
+    "copy-from": "p226_357sig",
+    "name": { "str": "Private 357" },
+    "description": "A plastic printed copy of SIG Sauer P226, popular with law enforcement organizations around the world. Barrel and firing pin are made out of high-quality polymer compound, able to weather gunfire significantly better than regular plastic. Less reliable than its market counterpart, but an effective firearm if you have nothing else available.",
+    "material": [ "plastic", "polymer" ],
+    "relative": {
+      "bashing":       -2,
+      "ranged_damage": -3,
+      "durability":    -4,
+      "dispersion":    80
+    },
+    "proportional": {
+      "weight": 0.55
+    },
+    "blackpowder_tolerance": 24,
+    "magazines": [
+      [
+        "357sig",
+        [
+          "p226mag_15rd_357sig",
+          "p226mag_polymer"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GUN",
+    "id": "pd_45",
+    "copy-from": "m1911",
+    "name": { "str": "Private 45" },
+    "description": "A plastic printed copy of M1911, a highly-successful handgun with a long history of employment. Barrel and firing pin are made out of high-quality polymer compound, able to weather gunfire significantly better than regular plastic. Less reliable than its market counterpart, but an effective firearm if you have nothing else available.",
+    "material": [ "plastic", "polymer" ],
+    "relative": {
+      "bashing":       -2,
+      "ranged_damage": -3,
+      "durability":    -4,
+      "dispersion":    80
+    },
+    "proportional": {
+      "weight": 0.55
+    },
+    "blackpowder_tolerance": 24,
+    "magazines": [
+      [
+        "45",
+        [
+          "m1911mag",
+          "m1911bigmag",
+          "m1911mag_polymer",
+          "m1911bigmag_polymer"
+        ]
+      ]
+    ]
+  }
+]

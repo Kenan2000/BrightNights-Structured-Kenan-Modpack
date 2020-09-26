@@ -1,0 +1,62 @@
+[
+  {
+    "result": "osrs_shortbow_unf_willow",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_iron" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "material_osrs_logs_willow", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "osrs_shortbow_willow",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_iron" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "osrs_shortbow_unf_willow", 1 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
+  },
+  {
+    "result": "osrs_crossbow_stock_willow",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_iron" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "material_osrs_logs_willow", 1 ] ] ]
+  },
+  {
+    "result": "osrs_longbow_unf_willow",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_iron" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "material_osrs_logs_willow", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "osrs_longbow_willow",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_iron" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "osrs_longbow_unf_willow", 1 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
+  }
+]

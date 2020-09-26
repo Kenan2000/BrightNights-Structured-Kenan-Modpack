@@ -1,0 +1,52 @@
+[
+  {
+    "id": "SRC_Case",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "M1926 SRC Casing",
+    "description": "An empty case for M1926 SRC rounds.",
+    "weight": 6,
+    "volume": "8ml",
+    "stackable": true,
+    "material": "brass",
+    "symbol": "=",
+    "color": "yellow",
+    "damage_states": [ 0, 0 ]
+  },
+  {
+    "id": "SRC26",
+    "type": "AMMO",
+    "name": "M1926 SRC",
+    "name_plural": "M1926 SRC",
+    "description": "Round(s) of M1926 Short Rifle Cartridge. Initially designed for the M1926 QFW, itself designed as a light support weapon, the round now sees service in the far superior SSRA.",
+    "weight": 12,
+    "volume": 1,
+    "price": 2200,
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 40,
+    "stack_size": 40,
+    "ammo_type": "SRC",
+    "casing": "SRC_Case",
+    "range": 50,
+    "damage": 45,
+    "pierce": 8,
+    "dispersion": 35,
+    "recoil": 1500,
+    "effects": [ "COOKOFF" ]
+  },
+    {
+    "id": "reloaded_SRC26",
+    "copy-from": "SRC26",
+    "type": "AMMO",
+    "name": "reloaded M1926 SRC",
+    "name_plural": "reloaded SRC",
+    "proportional": {
+      "price": 0.7,
+      "damage": 0.9,
+      "dispersion": 1.1
+    },
+    "extend": { "effects": [ "RECYCLED" ] }
+  }
+  ]

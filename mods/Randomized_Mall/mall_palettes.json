@@ -1,0 +1,843 @@
+[
+ {
+    "type": "palette",
+    "id": "mall_base",
+    "terrain":{
+      ".": "t_thconc_floor",
+      "=": "t_brick_wall",
+      "-": "t_concrete_wall",
+      "|": "t_concrete_wall",
+      "+": "t_door_c",
+      "<": "t_stairs_up",
+      ">": "t_stairs_down",
+      "&": "t_linoleum_white",
+      "1": "t_little_column",
+      "2": "t_atm",
+      "6": "t_console_broken",
+      "e": "t_elevator",
+      "E": "t_elevator_control_off",
+      "g": "t_wall_glass",
+      "G": "t_door_glass_c",
+      "m": "t_metal_floor",
+      "M": "t_wall_metal",
+      "P": "t_pavement",
+      "w": "t_sidewalk",
+      "~": "t_water_sh"
+    },
+    "furniture":{
+      "@": "f_mannequin",
+      "&": "f_toilet",
+      "$": "f_safe_l",
+      "a": "f_armchair",
+      "A": "f_sofa",
+      "b": "f_bookcase",
+      "B": "f_bed",
+      "c": "f_chair",
+      "C": "f_counter",
+      "d": "f_displaycase",
+      "D": "f_desk",
+      "l": "f_locker",
+      "L": "f_rack",
+      "n": "f_bench",
+      "o": "f_oven",
+      "p": [ "f_indoor_plant", "f_indoor_plant_y" ],
+      "r": "f_fridge",
+      "R": "f_glass_fridge",
+      "s": "f_sink",
+      "S": "f_shower",
+      "t": "f_trashcan",
+      "T": "f_table",
+      "U": "f_cupboard",
+      "V": "f_vending_c",
+      "x": "f_crate_o",
+      "X": "f_crate_c"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_bathroom",
+    "items": {
+      "l": { "item": "cleaning", "chance": 30 },
+      "D": { "item": "office", "chance": 80 },
+      "X": { "item": "cleaning", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_with_bathroom",
+    "items": {
+      "l": { "item": "cleaning", "chance": 30 },
+      "D": { "item": "office", "chance": 80 },
+      "X": { "item": "cleaning", "chance": 30 }
+    },
+    "terrain":{
+      ";": "t_linoleum_white",
+      "&": "t_linoleum_white",
+      "s": "t_linoleum_white",
+      "S": "t_linoleum_white"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_skylight",
+    "item": {
+      " ": { "item": "glass_shard", "chance": 40, "amount": [1,5] },
+      ".": { "item": "glass_shard", "chance": 40, "amount": [1,5] },
+      "n": { "item": "glass_shard", "chance": 50, "amount": [1,5] },
+      "~": { "item": "glass_shard", "chance": 80, "amount": [1,6] }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_office",
+    "items": {
+      "b": { "item": "office", "chance": 50 },
+      "D": { "item": "office", "chance": 80 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_store",
+    "items": {
+      ".": { "item": "floor_trash", "chance": 1 },
+      "t": { "item": "floor_trash", "chance": 50 },
+      "l": { "item": "floor_trash", "chance": 1 },
+      "o": { "item": "floor_trash", "chance": 1 },
+      "r": { "item": "floor_trash", "chance": 1 },
+      "R": { "item": "floor_trash", "chance": 1 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_food",
+    "items": {
+      "C": { "item": "fast_food", "chance": 30 },
+      "T": { "item": "dining", "chance": 30 },
+      "l": { "item": "cleaning", "chance": 30 },
+      "L": { "item": "cannedfood", "chance": 30 },
+      "R": { "item": "fridge", "chance": 30 },
+      "U": { "item": "cannedfood", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_coffee",
+    "items": {
+      "C": { "item": "coffee_table", "chance": 30 },
+      "T": { "item": "coffee_table", "chance": 30 },
+      "l": { "item": "coffee_display", "chance": 30 },
+      "L": { "item": "coffee_display", "chance": 30 },
+      "R": { "item": "coffee_fridge", "chance": 30 },
+      "U": { "item": "coffee_display", "chance": 80, "amount": 3 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_candy",
+    "items": {
+      "@": [
+          { "item": "clothing_outdoor_set", "chance": 80 },
+          { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "candy_shop", "chance": 30 },
+      "T": { "item": "candy_shop", "chance": 30 },
+      "L": { "item": "candy_shop", "chance": 99 },
+      "d": { "item": "floor_trash", "chance": 100 },
+      "b": { "item": "child_items", "chance": 100 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_flower",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "flower_pots", "chance": 30 },
+      "T": { "item": "flower_pots", "chance": 30 },
+      "L": { "item": "flower_shop", "chance": 30 },
+      "x": { "item": "flower_shop", "chance": 30 },
+      "X": { "item": "flower_shop", "chance": 30 },
+      "d": { "item": "flower_pots", "chance": 30 },
+      "b": { "item": "waitingroom", "chance": 30 }
+    },
+    "item": {
+      "R": { "item": "withered", "chance": 90 },
+      "r": { "item": "withered", "chance": 90 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_music",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "music_shop", "chance": 30 },
+      "T": { "item": "music_shop", "chance": 30 },
+      "L": { "item": "music_shop", "chance": 50 },
+      "d": { "item": "music_shop", "chance": 30 },
+      "b": { "item": "music_shop", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_instrument",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "mussto_windinst", "chance": 30 },
+      "T": { "item": "mussto_stringinst", "chance": 30 },
+      "L": { "item": "musicstore_showpiece", "chance": 50 },
+      "d": { "item": "musicstore_showpiece", "chance": 30 },
+      "b": { "item": "light_reading", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_vitamin",
+    "items": {
+      "@": [
+        { "item": "clothing_outdoor_set", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "vitamin_shop", "chance": 30 },
+      "T": { "item": "vitamin_shop", "chance": 30 },
+      "L": { "item": "vitamin_shop", "chance": 50 },
+      "d": { "item": "vitamin_shop", "chance": 50 },
+      "b": { "item": "vitamin_shop", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_outdoor",
+    "items": {
+      "@": [
+        { "item": "clothing_outdoor_set", "chance": 60 },
+        { "item": "allsporting", "chance": 25 }
+      ],
+      "C": { "item": "bags", "chance": 30 },
+      "T": { "item": "allsporting", "chance": 30 },
+      "L": { "item": "camping", "chance": 60 },
+      "d": { "item": "camping", "chance": 50 },
+      "b": { "item": "allsporting", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_toy",
+    "items": {
+      "C": { "item": "toy_store", "chance": 30 },
+      "T": { "item": "toy_store", "chance": 30 },
+      "L": { "item": "toy_store", "chance": 30 },
+      "d": { "item": "toy_store", "chance": 80 },
+      "b": { "item": "toy_store", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_glasses",
+    "items": {
+      "@": [
+        { "item": "glasses", "chance": 100 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "glasses", "chance": 30 },
+      "T": { "item": "glasses", "chance": 30 },
+      "L": { "item": "glasses", "chance": 50 },
+      "d": { "item": "glasses", "chance": 50 },
+      "b": { "item": "glasses", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_knife",
+    "items": {
+      "@": [
+        { "item": "clothing_outdoor_set", "chance": 80 },
+        { "item": "knife_shop", "chance": 25 }
+      ],
+      "C": { "item": "knife_shop", "chance": 30 },
+      "T": { "item": "knife_shop", "chance": 30 },
+      "L": { "item": "knife_shop", "chance": 50 },
+      "d": { "item": "knife_shop", "chance": 50 },
+      "b": { "item": "knife_shop", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_key",
+    "items": {
+      "@": [
+        { "item": "clothing_outdoor_set", "chance": 80 },
+        { "item": "knife_shop", "chance": 25 }
+      ],
+      "C": { "item": "key_shop", "chance": 30 },
+      "T": { "item": "key_shop", "chance": 30 },
+      "L": { "item": "key_shop", "chance": 50 },
+      "d": { "item": "key_shop", "chance": 50 },
+      "b": { "item": "key_shop", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_wine",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 20 }
+      ],
+      "C": { "item": "wines_worthy", "chance": 50 },
+      "T": { "item": "wines_worthy", "chance": 30 },
+      "L": { "item": "wines_worthy", "chance": 50, "amount": [2,8] },
+      "d": { "item": "wines_worthy", "chance": 50, "amount": 3 },
+      "b": { "item": "wines_worthy", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_smoke",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "smoke_shop", "chance": 30 },
+      "T": { "item": "smoke_shop", "chance": 30 },
+      "L": { "item": "smoke_shop", "chance": 50 },
+      "d": { "item": "smoke_shop", "chance": 30 },
+      "b": { "item": "light_reading", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_weed",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "smoke_shop", "chance": 30 },
+      "L": { "item": "dispensary", "chance": 30 },
+      "T": { "item": "smoke_shop", "chance": 30 },
+      "d": { "item": "smoke_shop", "chance": 30 },
+      "b": { "item": "light_reading", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_phone",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 80 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "cell_shop", "chance": 30 },
+      "T": { "item": "cell_shop", "chance": 30 },
+      "L": { "item": "cell_shop", "chance": 50 },
+      "b": { "item": "light_reading", "chance": 30 }
+    },
+    "item": { "r": { "item": "smart_phone", "chance": 90 } }
+  },
+  {
+    "type": "palette",
+    "id": "mall_beauty",
+    "items": {
+      "@": [
+        { "item": "victoria_shop", "chance": 100 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "beauty", "chance": 30 },
+      "T": { "item": "beauty", "chance": 30 },
+      "L": { "item": "beauty", "chance": 50 },
+      "d": { "item": "beauty", "chance": 50 },
+      "b": { "item": "tailorbooks", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_golf",
+    "items": {
+     "@": [
+        { "item": "golf_cart", "chance": 80 },
+        { "item": "suits", "chance": 25 }
+      ],
+      "C": { "item": "golf_cart", "chance": 30 },
+      "T": { "item": "golf_cart", "chance": 30 },
+      "L": { "item": "golf_cart", "chance": 50 },
+      "d": { "item": "golf_cart", "chance": 50 },
+      "b": { "item": "golf_cart", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_sport",
+    "items": {
+      "@": [
+        { "item": "clothing_outdoor_set", "chance": 30 },
+        { "item": "college_sports", "chance": 60 }
+      ],
+      "C": { "item": "sports", "chance": 30 },
+      "T": { "item": "sports", "chance": 30 },
+      "L": { "item": "allsporting", "chance": 50 },
+      "d": { "item": "sports", "chance": 50 },
+      "b": { "item": "sports", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_dollar",
+    "items": {
+      "@": [
+        { "item": "dollar_clothes", "chance": 30 },
+        { "item": "dollar_tools", "chance": 10 }
+      ],
+      "C": { "item": "dollar_tools", "chance": 30 },
+      "T": { "item": "dollar_tools", "chance": 30 },
+      "L": { "item": "dollar_kitchen", "chance": 50 },
+      "d": { "item": "dollar_kitchen", "chance": 50 },
+      "b": { "item": "dollar_books", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_jewel",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 30 },
+        { "item": "jewelry_front", "chance": 30 }
+      ],
+      "C": { "item": "jewelry_front", "chance": 10 },
+      "T": { "item": "jewelry_front", "chance": 30 },
+      "L": { "item": "jewelry_front", "chance": 30 },
+      "d": { "item": "jewelry_front", "chance": 30 },
+      "b": { "item": "jewelry_front", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_dining",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 30 },
+        { "item": "jewelry_front", "chance": 5 }
+      ],
+      "C": { "item": "dining_ware", "chance": 30 },
+      "T": { "item": "dining_ware", "chance": 50 },
+      "L": { "item": "dining_ware", "chance": 50 },
+      "d": { "item": "flatware", "chance": 50, "amount": 10 },
+      "b": { "item": "magazines", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_book",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 30 },
+        { "item": "jewelry_front", "chance": 1 }
+      ],
+      "C": { "item": "bookstore_misc", "chance": 30 },
+      "T": { "item": "bookstore_misc", "chance": 50 },
+      "L": { "item": "homebooks", "chance": 50 },
+      "d": { "item": "textbooks", "chance": 50, "amount": 3 },
+      "b": { "item": "homebooks", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_tech",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 30 },
+        { "item": "jewelry_front", "chance": 1 }
+      ],
+      "C": { "item": "elecsto_diy", "chance": 50 },
+      "T": { "item": "elecsto_stor", "chance": 30 },
+      "L": { "item": "elecsto_persele", "chance": 80 },
+      "d": { "item": "elecsto_pcs", "chance": 50, "amount": 3 },
+      "b": { "item": "elecsto_books", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_victoria",
+    "items": {
+      "@": [
+        { "item": "victoria_shop", "chance": 100 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "victoria_shop", "chance": 30 },
+      "T": { "item": "victoria_shop", "chance": 30 },
+      "L": { "item": "victoria_shop", "chance": 50 },
+      "d": { "item": "victoria_shop", "chance": 50 },
+      "b": { "item": "tailorbooks", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_shoe",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 1 },
+        { "item": "shoestore_shoes", "chance": 80 }
+      ],
+      "C": { "item": "shoestore_shoes", "chance": 50 },
+      "T": { "item": "shoestore_shoes", "chance": 30 },
+      "L": { "item": "shoestore_shoes", "chance": 50, "amount": [ 1,3 ] },
+      "d": { "item": "shoestore_accessories", "chance": 50, "amount": 3 },
+      "b": { "item": "shoestore_shoes", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_clothes",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 30 },
+        { "item": "shoestore_shoes", "chance": 80 }
+      ],
+      "C": { "item": "dress_shoes", "chance": 20 },
+      "T": { "item": "suits", "chance": 30 },
+      "L": [
+        { "item": "jackets", "chance": 25 },
+        { "item": "pants", "chance": 25 },
+        { "item": "shirts", "chance": 25 },
+        { "item": "dress_shop", "chance": 25 },
+        { "item": "shoestore_shoes", "chance": 20 }
+      ],
+      "d": { "item": "dress_shop", "chance": 30, "amount": 3 },
+      "b": { "item": "tailorbooks", "chance": 20 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_tux",
+    "items": {
+      "@": [
+        { "item": "suits", "chance": 50 },
+        { "item": "jewelry_front", "chance": 25 }
+      ],
+      "C": { "item": "tux_shop", "chance": 30 },
+      "T": { "item": "dress_shoes", "chance": 30 },
+      "L": { "item": "tux_shop", "chance": 50 },
+      "d": { "item": "jewelry_front", "chance": 30 },
+      "b": { "item": "tailorbooks", "chance": 30 }
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_wedding",
+    "items": {
+      "@": [
+        { "item": "wedding_dresses", "chance": 50 },
+        { "item": "jewelry_front", "chance": 20 }
+      ],
+      "C": { "item": "wedding_dresses", "chance": 50 },
+      "T": { "item": "wedding_dresses", "chance": 30 },
+      "L": { "item": "wedding_dresses", "chance": 50, "amount": [ 1, 2 ] },
+      "d": { "item": "jewelry_front", "chance": 30, "amount": 2 },
+      "b": { "item": "dress_shoes", "chance": 30 }
+    }
+  },
+
+  {
+    "type": "palette",
+    "id": "mall_linoleum_gray",
+    "terrain":{
+      ".": "t_linoleum_gray",
+      "@": "t_linoleum_gray",
+      "&": "t_linoleum_gray",
+      "$": "t_linoleum_gray",
+      "a": "t_linoleum_gray",
+      "A": "t_linoleum_gray",
+      "b": "t_linoleum_gray",
+      "B": "t_linoleum_gray",
+      "c": "t_linoleum_gray",
+      "C": "t_linoleum_gray",
+      "d": "t_linoleum_gray",
+      "D": "t_linoleum_gray",
+      "l": "t_linoleum_gray",
+      "L": "t_linoleum_gray",
+      "n": "t_linoleum_gray",
+      "o": "t_linoleum_gray",
+      "p": "t_linoleum_gray",
+      "r": "t_linoleum_gray",
+      "R": "t_linoleum_gray",
+      "s": "t_linoleum_gray",
+      "S": "t_linoleum_gray",
+      "t": "t_linoleum_gray",
+      "T": "t_linoleum_gray",
+      "U": "t_linoleum_gray",
+      "V": "t_linoleum_gray",
+      "x": "t_linoleum_gray",
+      "X": "t_linoleum_gray"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_linoleum_white",
+    "terrain":{
+      ".": "t_linoleum_white",
+      "@": "t_linoleum_white",
+      "&": "t_linoleum_white",
+      "$": "t_linoleum_white",
+      "a": "t_linoleum_white",
+      "A": "t_linoleum_white",
+      "b": "t_linoleum_white",
+      "B": "t_linoleum_white",
+      "c": "t_linoleum_white",
+      "C": "t_linoleum_white",
+      "d": "t_linoleum_white",
+      "D": "t_linoleum_white",
+      "l": "t_linoleum_white",
+      "L": "t_linoleum_white",
+      "n": "t_linoleum_white",
+      "o": "t_linoleum_white",
+      "p": "t_linoleum_white",
+      "r": "t_linoleum_white",
+      "R": "t_linoleum_white",
+      "s": "t_linoleum_white",
+      "S": "t_linoleum_white",
+      "t": "t_linoleum_white",
+      "T": "t_linoleum_white",
+      "U": "t_linoleum_white",
+      "V": "t_linoleum_white",
+      "x": "t_linoleum_white",
+      "X": "t_linoleum_white"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_concrete",
+    "terrain":{
+      ".": "t_thconc_floor",
+      "@": "t_thconc_floor",
+      "&": "t_thconc_floor",
+      "$": "t_thconc_floor",
+      "a": "t_thconc_floor",
+      "A": "t_thconc_floor",
+      "b": "t_thconc_floor",
+      "B": "t_thconc_floor",
+      "c": "t_thconc_floor",
+      "C": "t_thconc_floor",
+      "d": "t_thconc_floor",
+      "D": "t_thconc_floor",
+      "l": "t_thconc_floor",
+      "L": "t_thconc_floor",
+      "n": "t_thconc_floor",
+      "o": "t_thconc_floor",
+      "p": "t_thconc_floor",
+      "r": "t_thconc_floor",
+      "R": "t_thconc_floor",
+      "s": "t_thconc_floor",
+      "S": "t_thconc_floor",
+      "t": "t_thconc_floor",
+      "T": "t_thconc_floor",
+      "U": "t_thconc_floor",
+      "V": "t_thconc_floor",
+      "x": "t_thconc_floor",
+      "X": "t_thconc_floor"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_carpet_green",
+    "terrain":{
+      ".": "t_carpet_green",
+      "@": "t_carpet_green",
+      "&": "t_carpet_green",
+      "$": "t_carpet_green",
+      "a": "t_carpet_green",
+      "A": "t_carpet_green",
+      "b": "t_carpet_green",
+      "B": "t_carpet_green",
+      "c": "t_carpet_green",
+      "C": "t_carpet_green",
+      "d": "t_carpet_green",
+      "D": "t_carpet_green",
+      "l": "t_carpet_green",
+      "L": "t_carpet_green",
+      "n": "t_carpet_green",
+      "o": "t_carpet_green",
+      "p": "t_carpet_green",
+      "r": "t_carpet_green",
+      "R": "t_carpet_green",
+      "s": "t_carpet_green",
+      "S": "t_carpet_green",
+      "t": "t_carpet_green",
+      "T": "t_carpet_green",
+      "U": "t_carpet_green",
+      "V": "t_carpet_green",
+      "x": "t_carpet_green",
+      "X": "t_carpet_green"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_carpet_yellow",
+    "terrain":{
+      ".": "t_carpet_yellow",
+      "@": "t_carpet_yellow",
+      "&": "t_carpet_yellow",
+      "$": "t_carpet_yellow",
+      "a": "t_carpet_yellow",
+      "A": "t_carpet_yellow",
+      "b": "t_carpet_yellow",
+      "B": "t_carpet_yellow",
+      "c": "t_carpet_yellow",
+      "C": "t_carpet_yellow",
+      "d": "t_carpet_yellow",
+      "D": "t_carpet_yellow",
+      "l": "t_carpet_yellow",
+      "L": "t_carpet_yellow",
+      "n": "t_carpet_yellow",
+      "o": "t_carpet_yellow",
+      "p": "t_carpet_yellow",
+      "r": "t_carpet_yellow",
+      "R": "t_carpet_yellow",
+      "s": "t_carpet_yellow",
+      "S": "t_carpet_yellow",
+      "t": "t_carpet_yellow",
+      "T": "t_carpet_yellow",
+      "U": "t_carpet_yellow",
+      "V": "t_carpet_yellow",
+      "x": "t_carpet_yellow",
+      "X": "t_carpet_yellow"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_carpet_red",
+    "terrain":{
+      ".": "t_carpet_red",
+      "@": "t_carpet_red",
+      "&": "t_carpet_red",
+      "$": "t_carpet_red",
+      "a": "t_carpet_red",
+      "A": "t_carpet_red",
+      "b": "t_carpet_red",
+      "B": "t_carpet_red",
+      "c": "t_carpet_red",
+      "C": "t_carpet_red",
+      "d": "t_carpet_red",
+      "D": "t_carpet_red",
+      "l": "t_carpet_red",
+      "L": "t_carpet_red",
+      "n": "t_carpet_red",
+      "o": "t_carpet_red",
+      "p": "t_carpet_red",
+      "r": "t_carpet_red",
+      "R": "t_carpet_red",
+      "s": "t_carpet_red",
+      "S": "t_carpet_red",
+      "t": "t_carpet_red",
+      "T": "t_carpet_red",
+      "U": "t_carpet_red",
+      "V": "t_carpet_red",
+      "x": "t_carpet_red",
+      "X": "t_carpet_red"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_carpet_purple",
+    "terrain":{
+      ".": "t_carpet_purple",
+      "@": "t_carpet_purple",
+      "&": "t_carpet_purple",
+      "$": "t_carpet_purple",
+      "a": "t_carpet_purple",
+      "A": "t_carpet_purple",
+      "b": "t_carpet_purple",
+      "B": "t_carpet_purple",
+      "c": "t_carpet_purple",
+      "C": "t_carpet_purple",
+      "d": "t_carpet_purple",
+      "D": "t_carpet_purple",
+      "l": "t_carpet_purple",
+      "L": "t_carpet_purple",
+      "n": "t_carpet_purple",
+      "o": "t_carpet_purple",
+      "p": "t_carpet_purple",
+      "r": "t_carpet_purple",
+      "R": "t_carpet_purple",
+      "s": "t_carpet_purple",
+      "S": "t_carpet_purple",
+      "t": "t_carpet_purple",
+      "T": "t_carpet_purple",
+      "U": "t_carpet_purple",
+      "V": "t_carpet_purple",
+      "x": "t_carpet_purple",
+      "X": "t_carpet_purple"
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_carpet_wild",
+    "terrain":{
+      ".": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "@": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "$": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "a": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "A": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "b": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "B": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "c": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "C": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "d": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "D": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "l": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "L": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "n": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "o": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "p": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "r": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "R": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "S": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "t":  "t_carpet_red", 
+      "T": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "U": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "V": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "x": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ],
+      "X": [ "t_carpet_red", "t_carpet_purple", "t_carpet_yellow", "t_carpet_green" ]
+    }
+  },
+  {
+    "type": "palette",
+    "id": "mall_wood",
+    "terrain":{
+      ".": "t_floor",
+      "@": "t_floor",
+      "&": "t_floor",
+      "$": "t_floor",
+      "a": "t_floor",
+      "A": "t_floor",
+      "b": "t_floor",
+      "B": "t_floor",
+      "c": "t_floor",
+      "C": "t_floor",
+      "d": "t_floor",
+      "D": "t_floor",
+      "l": "t_floor",
+      "L": "t_floor",
+      "n": "t_floor",
+      "o": "t_floor",
+      "p": "t_floor",
+      "r": "t_floor",
+      "R": "t_floor",
+      "s": "t_floor",
+      "S": "t_floor",
+      "t": "t_floor",
+      "T": "t_floor",
+      "U": "t_floor",
+      "V": "t_floor",
+      "x": "t_floor",
+      "X": "t_floor"
+    }
+  }
+]

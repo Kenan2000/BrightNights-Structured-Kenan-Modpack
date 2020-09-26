@@ -1,0 +1,30 @@
+[
+    {
+        "type" : "overmap_special",
+        "id" : "trailerpark1",
+        "overmaps" :
+        [
+            { "point":[0,0,0], "overmap": "trailerpark1_north"},
+			{ "point": [ 1, 0, 0 ], "overmap": "trailerpark2_north" },
+			{ "point": [ 0, 0, -1 ], "overmap": "trailerpark_under_north" }
+        ],
+        "locations" : [ "wilderness" ], "//":"what special locations does it spawn",
+        "city_distance" : [1, 15], "//":"how far from a city it should be",
+        "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
+        "occurrences" : [0, 0], "//":"how many per overmap"
+    },
+	{
+        "type" : "overmap_special",
+        "id" : "trailerpark1_bandit",
+        "overmaps" :
+        [
+            { "point":[0,0,0], "overmap": "trailerpark1_bandit_north"},
+			{ "point": [ 1, 0, 0 ], "overmap": "trailerpark2_bandit_north" },
+			{ "point": [ 0, 0, -1 ], "overmap": "trailerpark_under_north" }
+        ],
+        "locations" : [ "wilderness" ], "//":"what special locations does it spawn",
+        "city_distance" : [1, 15], "//":"how far from a city it should be",
+        "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
+        "occurrences" : [1, 10], "//":"how many per overmap"
+    }
+]

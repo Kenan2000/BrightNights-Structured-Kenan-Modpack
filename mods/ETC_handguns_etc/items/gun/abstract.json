@@ -1,0 +1,125 @@
+[
+  {
+    "abstract": "etc_pistol_base",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": "base ETC pistol",
+    "name_plural": "base ETC pistols",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "magazine", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "ups_charges": 1
+  },
+  {
+    "abstract": "etc_pistol_revolver",
+    "copy-from": "pistol_revolver",
+    "type": "GUN",
+    "name": "EC ammo ETC revolver",
+    "name_plural": "EC ammo ETC revolvers",
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ], [ "stock", 1 ] ]
+  },
+  {
+    "abstract": "etc_pistol_revolver_1ups",
+    "copy-from": "etc_pistol_revolver",
+    "type": "GUN",
+    "name": "ETC revolver",
+    "name_plural": "ETC revolvers",
+    "ups_charges": 1
+  },
+  {
+    "abstract": "etc_pistol_revolver_2ups",
+    "copy-from": "etc_pistol_revolver",
+    "type": "GUN",
+    "name": "2 charges ETC revolver",
+    "name_plural": "2 charges ETC revolvers",
+    "ups_charges": 2
+  },
+  {
+    "abstract": "etc_rifle_base",
+    "copy-from": "rifle_base",
+    "type": "GUN",
+    "name": "EC ammo ETC rifle",
+    "name_plural": "EC ammo ETC rifles",
+    "//": "No bore mods. These cannot be just converted to different calibers",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "magazine", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "abstract": "etc_rifle_base_1ups",
+    "copy-from": "etc_rifle_base",
+    "type": "GUN",
+    "name": "base ETC rifle",
+    "name_plural": "base ETC rifles",
+    "ups_charges": 1
+  },
+  {
+    "abstract": "etc_rifle_base_2ups",
+    "copy-from": "etc_rifle_base",
+    "type": "GUN",
+    "name": "2 charges ETC rifle",
+    "name_plural": "2 charges ETC rifles",
+    "ups_charges": 2
+  },
+  {
+    "abstract": "etc_rifle_manual",
+    "copy-from": "rifle_manual",
+    "type": "GUN",
+    "name": "EC ammo ETC rifle with manual actions",
+    "name_plural": "EC ammo ETC rifles with manual actions",
+    "//": "No magazine or bore mods",
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  {
+    "abstract": "etc_rifle_manual_1ups",
+    "copy-from": "etc_rifle_manual",
+    "type": "GUN",
+    "name": "ETC rifle with manual actions",
+    "name_plural": "ETC rifles with manual actions",
+    "ups_charges": 1
+  },
+  {
+    "abstract": "etc_rifle_manual_2ups",
+    "copy-from": "etc_rifle_manual",
+    "type": "GUN",
+    "name": "2 charges ETC rifle with manual actions",
+    "name_plural": "2 charges ETC rifle with manual actions",
+    "ups_charges": 2
+  },
+  {
+    "abstract": "etc_smg_base",
+    "copy-from": "smg_base",
+    "type": "GUN",
+    "name": "base ETC SMG",
+    "name_plural": "base ETC SMGs",
+    "ups_charges": 1
+  }
+]

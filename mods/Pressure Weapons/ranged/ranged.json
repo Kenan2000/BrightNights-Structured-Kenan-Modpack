@@ -1,0 +1,27 @@
+[
+    {
+        "copy-from": "rifle_base",
+        "id": "press_rifle",
+        "type": "GUN",
+        "name": "pressure rifle",
+        "name-plural": "pressure rifles",
+        "description": "A crudely made pressure rifle. Properly named, uses built up air-pressure to fire a bolt at high speeds",
+        "skill": "rifle",
+        "weight": 400,
+        "volume": 35,
+        "price": 1000,
+        "to_hit": -2,
+        "bashing": 6,
+        "material": [ "wood" ],
+        "symbol": "~",
+        "clip_size" : 1,
+        "color": "dark_gray",
+        "flags": [ "PRIMITIVE_RANGED_WEAPON", "CHARGE" ],
+        "ammo": "press_rifle_ammo",
+        "ranged_damage": -1,
+        "dispersion": 480,
+        "durability": 6,
+        "reload": 420,
+        "mods": ["improve_sights"]
+    }
+]

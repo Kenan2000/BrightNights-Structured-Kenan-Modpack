@@ -1,0 +1,48 @@
+[
+  {
+    "type": "AMMO",
+    "id": "arrow_take",
+    "price": 500000,
+    "name": "bamboo arrow",
+    "name_plural": "bamboo arrows",
+    "symbol": "=",
+    "color": "green",
+    "description": "It is a long arrow made of bamboo. It is a work of art that the craftsmen grinds bamboo one by one and uses fire to increase strength. The thrown arrow remains on the ground with high probability.",
+    "material": [ "steel", "bamboomaterial" ],
+    "volume": 1,
+    "weight": 63,
+    "bashing": 3,
+    "cutting": 2,
+    "ammo_type": "arrow",
+    "damage": { "damage_type": "stab", "amount": 14, "armor_penetration": 10 },
+    "range": 12,
+    "dispersion": 30,
+    "loudness": 0,
+    "count": 10,
+    "effects": [ "RECOVER_15" ]
+  },
+  {
+    "id": "juhu_paper",
+    "type": "AMMO",
+    "category": "other",
+    "name": "spirit sign",
+    "name_plural": "spirit sign",
+    "description": "It is a spirit sign written widely with rapid order along with the epistemic abolition. Alone is only likely to serve as an amulet.",
+    "material": "paper",
+    "ammo_type": "juhu_paper",
+    "price": 3,
+    "symbol": ",",
+    "weight": 1,
+    "volume": 1,
+    "color": "white",
+    "count": 70,
+    "stack_size": 100,
+    "proportional": { "damage": 3, "pierce": 2 }
+  },
+  {
+    "type": "ammunition_type",
+    "id": "juhu_paper",
+    "name": "spirit sign",
+    "default": "juhu_paper"
+  }
+]

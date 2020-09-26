@@ -1,0 +1,239 @@
+[
+    {
+    "type": "mapgen",
+    "om_terrain": [ "hell_city_B3N_A" ],
+    "method": "json",
+    "override":true,
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "########################",
+        "########################",
+        "########################",
+        "########################",
+        "#########22222##########",
+        "########22>>>22#########",
+        "#######222@@@222########",
+        "######2222@@@2222#######",
+        "#####2222722272222######",
+        "####111          111####",
+        "##111              111##",
+        "111                  111",
+        "11                    11",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1      111   111       1",
+        "1      111   111       1",
+        "1  <<  111   111   <<  1",
+        "1111111111   11111111111",
+        "1111                1111",
+        "111                  111",
+        "11                    11",
+        "1                      1"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_column",
+        "~": "t_lava",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "1": "t_window_stained_red",
+        "2": "t_window_stained_blue",
+        "7": "t_secretdoor_brick_wall_c"
+      },
+      "furniture": {
+        "^": "f_rubble_rock",
+        "S": "f_statue",
+        "x": "f_ash",
+        "n": "f_slab",
+        "J": "f_spike",
+        "/": "f_blade",
+        "8": "f_shackle"
+      }
+    }
+    },
+    {
+    "type": "mapgen",
+    "om_terrain": [ "hell_city_B3S_A" ],
+    "override":true,
+    "method": "json",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "11                    11",
+        "11                    11",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "11                    11",
+        "#1                    1#",
+        "#1                    1#",
+        "#11                  11#",
+        "##1                  1##",
+        "##1                  1##",
+        "##11                11##",
+        "###1                1###",
+        "###1                1###",
+        "###11G    0000     11###",
+        "####11   00  00   11####",
+        "######TT00 00 00TT######",
+        "######TTT00  00TTT######",
+        "#######TTT0  0TTT#######",
+        "########TTTTTTTT########"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "1": "t_window_stained_red",
+        "~": "t_lava",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "T": "t_secretdoor_wall_c",
+        "0": "t_window_stained_green"
+      },      "furniture": {
+        "S": "f_statue"
+      },
+      "place_items": [ 
+        { "item": "doom_lootpack", "x": [ 11, 11 ], "y": [ 22, 22 ], "chance": 100 },
+        { "item": "doom_lootpack", "x": [ 12, 12 ], "y": [ 22, 22 ], "chance": 100 },
+        { "item": "doom_lootpack", "x": [ 11, 11 ], "y": [ 21, 21 ], "chance": 100 },
+        { "item": "doom_lootpack", "x": [ 12, 12 ], "y": [ 21, 21 ], "chance": 100 },
+        { "item": "doom_lootpack", "x": [ 10, 10 ], "y": [ 20, 20 ], "chance": 100 },
+        { "item": "doom_lootpack", "x": [ 13, 13 ], "y": [ 20, 20 ], "chance": 100 },
+        { "item": "doom_stimpack", "x": [ 11, 11 ], "y": [ 19, 19 ], "chance": 100 },
+        { "item": "doom_stimpack", "x": [ 12, 12 ], "y": [ 19, 19 ], "chance": 100 }
+      ],
+      "monster": {
+        "G": { "monster": "mon_mechaspider" }
+      }
+    }
+    },
+    {
+    "type": "mapgen",
+    "om_terrain": [ "hell_city_B4N" ],
+    "override":true,
+    "method": "json",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "########################",
+        "########################",
+        "########################",
+        "########################",
+        "##########@@@###########",
+        "##########@@@###########",
+        "##########@@@###########",
+        "########11   111########",
+        "######111      111######",
+        "####111          111####",
+        "##111              111##",
+        "111                  111",
+        "11                    11",
+        "1                      1",
+        "1                      1",
+        "1      GGGG GGGG       1",
+        "1      111G G111       1",
+        "1      111G G111       1",
+        "1      111G G111       1",
+        "1111111111G G11111111111",
+        "1111                1111",
+        "111                  111",
+        "11                    11",
+        "1                      1"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "0": "t_column",
+        "~": "t_lava",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "1": "t_window_stained_red"
+      },
+      "furniture": {
+        "S": "f_statue"
+      },
+      "monster": {
+        "G": { "monster": "mon_doom_sacrifice" }
+      }
+    }
+    },
+    {
+    "type": "mapgen",
+    "override":true,
+    "om_terrain": [ "hell_city_B4S" ],
+    "method": "json",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_rock_floor",
+        "rows": [
+        "11                    11",
+        "11                    11",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "1                      1",
+        "11                    11",
+        "#1                    1#",
+        "#1                    1#",
+        "#11                  11#",
+        "##1                  1##",
+        "##1                  1##",
+        "##11                11##",
+        "###1                1###",
+        "###1                1###",
+        "###11G    0000     11###",
+        "####11   00  00   11####",
+        "######TT00 00 00TT######",
+        "######TTT00  00TTT######",
+        "#######TTT0  0TTT#######",
+        "########TTTTTTTT########"
+      ],
+      "terrain": {
+        ".": "t_rock_floor",
+        "#": "t_rock",
+        ">": "t_stairs_down",
+        "<": "t_stairs_up",
+        "1": "t_window_stained_green",
+        "~": "t_lava",
+        "@": "t_pit_corpsed",
+        "p": "t_pit_spiked",
+        "T": "t_secretdoor_wall_c",
+        "0": "t_window_stained_blue"
+      },      "furniture": {
+        "S": "f_statue"
+      },
+      "place_items": [ 
+        { "item": "bionics_op", "x": [ 11, 11 ], "y": [ 22, 22 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 12, 12 ], "y": [ 22, 22 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 11, 11 ], "y": [ 21, 21 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 12, 12 ], "y": [ 21, 21 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 10, 10 ], "y": [ 20, 20 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 13, 13 ], "y": [ 20, 20 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 11, 11 ], "y": [ 19, 19 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 12, 12 ], "y": [ 19, 19 ], "chance": 100 }
+      ],
+      "monster": {
+        "G": { "monster": "mon_mechaspider_queen" }
+      }
+    }
+    }
+]

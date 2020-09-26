@@ -1,0 +1,299 @@
+[
+  {
+    "id": "TALK_BL9_TRADER",
+    "type": "talk_topic",
+    "dynamic_line": "Welcome, stranger.",
+    "responses": [ { "text": "[BUY]", "topic": "TALK_BL9_TRADER_buy" }, { "text": "[GOODBYE]", "topic": "GOODBYE_BL9_TRADER" } ]
+  },
+  {
+    "id": "GOODBYE_BL9_TRADER",
+    "type": "talk_topic",
+    "dynamic_line": "Come back, anytime..",
+    "responses": [ { "text": "[...]", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "bl9_trader",
+      "type": "general",
+      "context": "bought",
+      "value": "yes",
+      "no": "What are you buying?",
+      "yes": "Hehehe, thank you."
+    },
+    "responses": [
+      {
+        "text": "*BL9-infused pistol*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_pistol",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_pistol", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused pistol MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_pistol_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_pistol" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_pistol", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_pistol_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused submachine gun*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_smg",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_smg", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused submachine gun MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_smg_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_smg" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_smg", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_smg_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused sniper rifle*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sniper",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_sniper", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused sniper rifle MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sniper_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_sniper" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_sniper", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_sniper_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused automatic rifle*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_auto",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_auto", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused automatic rifle MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_auto_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_auto" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_auto", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_auto_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused shotgun*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_shotgun",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_shotgun", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused shotgun MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_shotgun_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_shotgun" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_shotgun", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_shotgun_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused magnum*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_magnum",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_magnum", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused magnum MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_magnum_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_magnum" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_magnum", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_magnum_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused sprayer*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sprayer",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_sprayer", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused sprayer MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sprayer_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_sprayer" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_sprayer", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_sprayer_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused launcher*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_launcher",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_launcher", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused launcher MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_launcher_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_launcher" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_launcher", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_launcher_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused bow*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_bow",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_bow", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused bow MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_bow_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_bow" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_bow", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_bow_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused crossbow*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_crossbow",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_crossbow", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused crossbow MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_crossbow_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_crossbow" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_crossbow", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_crossbow_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused survivor helmet*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorhelmet",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorhelmet", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused survivor helmet MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorhelmet_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_survivorhelmet" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorhelmet", "value": "yes" },
+            {
+              "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorhelmet_mk2", "value": "yes" }
+            }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused survivor cargo pants*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorpants",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorpants", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused survivor cargo pants MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorpants_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_survivorpants" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorpants", "value": "yes" },
+            {
+              "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorpants_mk2", "value": "yes" }
+            }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused survivor suit*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorsuit",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorsuit", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused survivor suit MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorsuit_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_survivorsuit" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorsuit", "value": "yes" },
+            {
+              "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorsuit_mk2", "value": "yes" }
+            }
+          ]
+        }
+      },
+      {
+        "text": "*pair of BL9-infused survivor gloves*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorgloves",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorgloves", "value": "yes" } }
+      },
+      {
+        "text": "*pair of BL9-infused survivor gloves MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorgloves_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_survivorgloves" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorgloves", "value": "yes" },
+            {
+              "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorgloves_mk2", "value": "yes" }
+            }
+          ]
+        }
+      },
+      {
+        "text": "*pair of BL9-infused survivor boots*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorboots",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorboots", "value": "yes" } }
+      },
+      {
+        "text": "*pair of BL9-infused survivor boots MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_survivorboots_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_survivorboots" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorboots", "value": "yes" },
+            {
+              "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_survivorboots_mk2", "value": "yes" }
+            }
+          ]
+        }
+      },
+      {
+        "text": "*BL9-infused body armor*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_bodyarmor",
+        "condition": { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_bodyarmor", "value": "yes" } }
+      },
+      {
+        "text": "*BL9-infused body armor MK ii*",
+        "topic": "TALK_BL9_TRADER_buy_BL9_bodyarmor_mk2",
+        "condition": {
+          "and": [
+            { "u_has_item": "BL9_bodyarmor" },
+            { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_bodyarmor", "value": "yes" },
+            { "not": { "u_has_var": "bl9_trader", "type": "bought", "context": "BL9_bodyarmor_mk2", "value": "yes" } }
+          ]
+        }
+      },
+      {
+        "text": "Later.",
+        "topic": "TALK_BL9_TRADER",
+        "effect": { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+      }
+    ]
+  }
+]

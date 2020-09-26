@@ -1,0 +1,170 @@
+[
+  {
+    "id": "bot_utility_w_rope_to_thread",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot",
+    "name": { "str": "[thread from long rope x 1] utility robot working" },
+    "description": "A utility robot working with a rope, disassembling into long units of thread. Activate once the task is done.",
+	"material": [ "steel", "aluminum", "cotton" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_utility_f_rope_to_thread",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 28800,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_butler_w_scramble",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot_butler",
+    "name": { "str": "[scrambled eggs from eggs x 1] butler robot working" },
+    "description": "A butler robot cooking scrambled eggs for one person. Activate once the task is done.",
+	"material": [ "steel", "aluminum" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_butler_f_scramble",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 900,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_butler_w_scramble_5",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot_butler",
+    "name": { "str": "[scrambled eggs from eggs x 5] butler robot working" },
+    "description": "A butler robot cooking scrambled eggs for five persons. Activate once the task is done.",
+	"material": [ "steel", "aluminum" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_butler_f_scramble_5",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 1800,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_utility_w_rope_to_thread_5",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot",
+    "name": { "str": "[thread from long ropes x 5] utility robot working" },
+    "description": "A utility robot working with five ropes, disassembling into long units of thread. Activate once the task is done.",
+	"material": [ "steel", "aluminum", "cotton" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_utility_f_rope_to_thread_5",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 57600,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_utility_w_rag_to_socks",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot",
+    "name": { "str": "[socks sewing x 1] utility robot working" },
+    "description": "A utility robot working to make a pair of sock using a sewing kit, thread and rags. Activate once the task is done.",
+	"material": [ "steel", "aluminum", "cotton" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_utility_f_rag_to_socks",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 1800,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_utility_w_rag_to_socks_5",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot",
+    "name": { "str": "[socks sewing x 5] utility robot working" },
+    "description": "A utility robot working to make five pairs of sock using a sewing kit, thread and rags. Activate once the task is done.",
+	"material": [ "steel", "aluminum", "cotton" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_utility_f_rag_to_socks_5",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 3600,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_utility_w_rag_to_briefs",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot",
+    "name": { "str": "[briefs sewing x 1] utility robot working" },
+    "description": "A utility robot working to make one brief using a sewing kit, thread and rags. Activate once the task is done.",
+	"material": [ "steel", "aluminum", "cotton" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_utility_f_rag_to_briefs",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 1800,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  },
+  {
+    "id": "bot_utility_w_rag_to_briefs_5",
+    "type": "GENERIC",
+	"symbol": ";",
+	"category": "other",
+	"looks_like": "bot_utilibot",
+    "name": { "str": "[briefs sewing x 5] utility robot working" },
+    "description": "A utility robot working to make five briefs using a sewing kit, thread and rags. Activate once the task is done.",
+	"material": [ "steel", "aluminum", "cotton" ],
+    "weight": "170 kg",
+    "volume": "70 L",
+    "use_action": {
+      "target": "bot_utility_f_rag_to_briefs_5",
+      "msg": "You see that the robot finished the asked task and now it's in idle mode.",
+      "moves": 150,
+      "type": "delayed_transform",
+      "transform_age": 3600,
+      "not_ready_msg": "The robot didn't finished the task yet."
+    },
+    "flags": [ "NO_SALVAGE" ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "reloaded_shot_antimateriel",
+    "copy-from": "reloaded_shot_microflechette",
+    "type": "AMMO",
+    "name": "anti-materiel slug",
+    "description": "A custom armor-piercing incendiary slug with an extracted 262gr 9x19mm ETC SAP depleted uranium projectile as its tip, enveloped by a lead outer core which in turn is covered by a copper jacket.",
+    "price": 65000,
+    "material": [ "plastic", "powder", "uranium" ],
+    "dispersion": 80,
+    "relative": { "damage": 12, "range": 14, "pierce": -17 },
+    "proportional": { "recoil": 2 },
+    "extend": { "effects": [ "INCENDIARY" ] },
+    "delete": { "effects": [ "SHOT" ] }
+  },
+  {
+    "id": "reloaded_shot_microflechette",
+    "type": "AMMO",
+    "name": "micro-flechette shell",
+    "description": "A shell filled with very tiny tungsten darts, this is a custom hand load for hunting prey made of metal rather than flesh and bones.",
+    "weight": 32,
+    "volume": 1,
+    "price": 35000,
+    "material": [ "plastic", "powder", "tungsten" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 20,
+    "stack_size": 20,
+    "ammo_type": "shot",
+    "casing": "shot_hull",
+    "range": 12,
+    "damage": 38,
+    "pierce": 50,
+    "recoil": 2750,
+    "loudness": 160,
+    "effects": [ "COOKOFF", "SHOT", "RECYCLED" ]
+  },
+  {
+    "id": "reloaded_shot_tungsten",
+    "copy-from": "reloaded_shot_microflechette",
+    "type": "AMMO",
+    "name": "hardcore slug",
+    "description": "A custom armor-piercing slug with an extracted 100gr .22 ETC tungsten ball converted into its tip, enveloped by a lead outer core which in turn is covered by a copper jacket.",
+    "price": 40000,
+    "dispersion": 90,
+    "relative": { "damage": 6, "range": 12, "pierce": -34 },
+    "proportional": { "recoil": 1.5 },
+    "delete": { "effects": [ "SHOT" ] }
+  }
+]

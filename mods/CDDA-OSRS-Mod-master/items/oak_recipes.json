@@ -1,0 +1,50 @@
+[
+  {
+    "result": "osrs_shortbow_unf_oak",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_bronze" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "material_osrs_logs_oak", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "osrs_shortbow_oak",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_bronze" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "osrs_shortbow_unf_oak", 1 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
+  },
+  {
+    "result": "osrs_longbow_unf_oak",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_bronze" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "material_osrs_logs_oak", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "osrs_longbow_oak",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "5 m",
+    "book_learn": [ [ "osrs_manual_recipes_bronze" ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "osrs_shortbow_unf_oak", 1 ] ], [ [ "cordage_superior", 2, "LIST" ] ] ]
+  }
+]

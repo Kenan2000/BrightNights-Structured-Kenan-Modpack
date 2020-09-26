@@ -1,0 +1,140 @@
+[
+  {
+    "id": "bot_utilibot_knight",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "type": "TOOL",
+	"symbol": ";",
+	"looks_like": "bot_utilibot",
+	"material": [ "steel", "aluminum" ],
+    "name": "inactive knight robot",
+	"description": "A utility robot modified for melee combat, one of the hand was welded with a broadsword and it's IA core was reprogrammed to attack and dodge attacks and the most fragile areas was reinforced with steel plates.",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_utilibot_knight",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  },
+  {
+    "id": "bot_utilibot_assan",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "type": "TOOL",
+	"symbol": ";",
+	"looks_like": "bot_utilibot_butler",
+	"material": [ "steel", "aluminum" ],
+    "name": "inactive assasin robot",
+	"description": "A butler robot modified for melee combat, one of the hand was welded with a tanto and it's IA core was reprogrammed to attack and dodge attacks, it use hit and run tactics and the extra speed of the safety overrides to compensate of how fragile it's.",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_utilibot_assan",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  },
+  {
+    "id": "bot_utilibot_smasher",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "type": "TOOL",
+	"symbol": ";",
+	"looks_like": "bot_utilibot_const",
+	"material": [ "steel", "aluminum" ],
+    "name": "inactive smasher robot",
+	"description": "A construction robot modified for melee combat, all the integrated tools were strip of it and one of the hand was welded with a sledge hammer and it's IA core was reprogrammed to attack but it doesn't dodge incomming attacks, it use a steel plating armor to protect itself and can withstand a lot of damage before it shuts down but it's rather slow.",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_utilibot_smasher",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  },
+  {
+    "id": "bot_utilibot_hellknight",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "type": "TOOL",
+	"symbol": ";",
+	"looks_like": "bot_utilibot_fire",
+	"material": [ "steel", "nomex" ],
+    "name": "inactive hellknight robot",
+	"description": "A firefighter robot modified for melee combat, the water cannon was strip and one of the hand was welded with a broadsword and it's IA core was reprogrammed to attack and dodge incomming attacks. It use it's own integrated water pumping system to pump and ignite the sword on fire to cause even more damage.",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_utilibot_hellknight",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  },
+  {
+    "id": "bot_roomba_boom",
+	"weight": "16 kg",
+    "volume": "40 L",
+    "type": "TOOL",
+	"symbol": "o",
+	"material": [ "steel", "plastic" ],
+    "name": "inactive kamikaze roomba",
+	"description": "A modified roomba with a explosive charge on it. Deploy and it'll go to the first unfortunate target.",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_roomba_boom",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  },
+  {
+    "id": "bot_doomba",
+	"weight": "32 kg",
+    "volume": "60 L",
+    "type": "TOOL",
+	"symbol": "o",
+	"material": [ "steel", "plastic" ],
+    "name": "inactive doomba",
+	"description": "A modified roomba with a FULL SIZE CHAINSAW ON IT! IT'LL RIP AND TEAR THROUGH IT'S ENEMIES!",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_doomba",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  },
+  {
+    "id": "bot_grocery_killer",
+	"weight": "140 kg",
+    "volume": "65 L",
+    "type": "TOOL",
+	"symbol": ";",
+	"looks_like": "bot_grocerybot",
+	"material": [ "steel", "aluminum" ],
+    "name": "inactive grocery bot mk2",
+	"description": "A grocery bot modified for melee combat, one of the hand was welded with a electric chainsaw and it's IA core was reprogrammed to attack but it doesn't dodge attacks.",
+	"copy_from": "bot_utilibot_base",
+	"use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_grocery_killer",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "type": "recipe",
+    "result": "etc_er555car_kit",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "gun", 3 ] ],
+    "difficulty": 5,
+    "time": 25000,
+    "//": "Involves a few relatively simple adjustments. These kits are interchangeable.",
+    "reversible": true,
+    "autolearn": true,
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "components": [ [ [ "etc_qr555car_kit", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "etc_er555cqb_kit",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "gun", 3 ] ],
+    "difficulty": 5,
+    "time": 25000,
+    "reversible": true,
+    "autolearn": true,
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "components": [ [ [ "etc_qr555cqb_kit", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "etc_er555saw_kit",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "gun", 3 ] ],
+    "difficulty": 5,
+    "time": 25000,
+    "reversible": true,
+    "autolearn": true,
+    "tools": [ [ [ "small_repairkit", -1 ], [ "large_repairkit", -1 ] ] ],
+    "components": [ [ [ "etc_qr555saw_kit", 1 ] ], [ [ "barrel_ported", 1 ] ] ]
+  }
+]

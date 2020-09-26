@@ -1,0 +1,68 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_gel_door_frame",
+    "name": "empty gel door frame",
+    "description": "A gel door frame",
+    "symbol": ".",
+    "color": [ "light_green" ],
+    "move_cost": 2,
+    "roof": "t_flat_roof",
+    "flags": [ "TRANSPARENT", "FLAT", "CONNECT_TO_WALL", "ROAD" ],
+    "bash": {
+      "str_min": 6,
+      "str_max": 25,
+      "sound": "loud oozing!",
+      "sound_fail": "oozing!",
+      "ter_set": "t_null",
+      "items": [ { "item": "slime_scrap", "count": [ 12, 10, 8 ] } ]
+    },
+    "deconstruct": { "ter_set": "t_floor", "items": [ { "item": "slime_scrap", "count": 10 } ] }
+  },
+  {
+    "type": "terrain",
+    "id": "t_gel_door_c",
+    "name": "closed gel door",
+    "description": "A closed gel door",
+    "symbol": "+",
+    "color": "light_green",
+    "move_cost": 0,
+    "roof": "t_flat_roof",
+    "flags": [ "FLAMMABLE_ASH", "DOOR", "NOITEM", "BARRICADABLE_DOOR", "CONNECT_TO_WALL" ],
+    "open": "t_gel_door_o",
+    "deconstruct": { "ter_set": "t_gel_door_frame", "items": [ { "item": "slime_scrap", "count": 20 } ] },
+    "bash": {
+      "str_min": 8,
+      "str_max": 80,
+      "str_min_blocked": 15,
+      "str_max_blocked": 100,
+      "sound": "loud oozing!",
+      "sound_fail": "oozing!",
+      "ter_set": "t_gel_door_frame",
+      "items": [ { "item": "slime_scrap", "count": [ 18, 19, 15, 13 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_gel_door_o",
+    "name": "open gel door",
+    "description": "An open gel door",
+    "symbol": "'",
+    "color": "light_green",
+    "move_cost": 2,
+    "roof": "t_flat_roof",
+    "flags": [ "FLAMMABLE_ASH", "TRANSPARENT", "FLAT", "BARRICADABLE_DOOR", "CONNECT_TO_WALL", "ROAD" ],
+    "deconstruct": { "ter_set": "t_gel_door_frame", "items": [ { "item": "slime_scrap", "count": 20 } ] },
+    "close": "t_gel_door_c",
+    "bash": {
+      "str_min": 5,
+      "str_max": 80,
+      "str_min_blocked": 7,
+      "str_max_blocked": 100,
+      "sound": "loud oozing!",
+      "sound_fail": "oozing!",
+      "ter_set": "t_gel_door_frame",
+      "items": [ { "item": "slime_scrap", "count": [ 18, 19, 15, 13 ] } ]
+    }
+  }
+]

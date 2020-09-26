@@ -1,0 +1,26 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "hell_spire",
+    "overmaps":
+    [
+      { "point": [ 0, 0, 0 ], "overmap": "hell_city_entranceNW_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "hell_city_entranceNE_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "hell_city_entranceSW_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "hell_city_entranceSE_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "hell_city_tunnel_B1W_north" },
+      { "point": [ 1, 0, -1 ], "overmap": "hell_city_tunnel_B1E_north" },
+      { "point": [ 0, 0, -2 ], "overmap": "hell_city_tunnel_prison_N_north" },
+      { "point": [ 0, 1, -2 ], "overmap": "hell_city_tunnel_prison_S_north" },
+      { "point": [ 1, 0, -2 ], "overmap": "hell_city_tunnel_B2E_north" },
+      { "point":[1,0,-3], "overmap": "hell_city_B3N_A" },
+      { "point":[1,1,-3], "overmap": "hell_city_B3S_A" },
+      { "point":[1,0,-4], "overmap": "hell_city_B4N" },
+      { "point":[1,1,-4], "overmap": "hell_city_B4S" }
+    ],
+    "locations": [ "land" ],
+    "city_sizes": [ 5, 16 ],
+    "occurrences": [ 1, 2 ],
+    "spawns": { "group": "GROUP_DOOM", "population": [ 50, 130 ], "radius": [ 12, 35 ] }
+  }
+]

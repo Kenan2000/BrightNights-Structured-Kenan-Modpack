@@ -1,0 +1,21 @@
+[
+  {
+    "type": "scenario",
+    "ident": "pasta",
+    "name": "At that time, I was eating pasta",
+    "points" : 0,
+    "description": "An outbreak occurred when pasta was enjoyed at a pasta restaurant.",
+    "allowed_locs": ["MLI_s_pasta_restaurant"],
+    "start_name": "Pasta restaurant"
+  }
+  ,
+  {
+    "type": "scenario",
+    "ident": "glass",
+    "name": "Watching the glass workshop",
+    "points" : 0,
+    "description": "An outbreak occurred while observing the glass workshop.",
+    "allowed_locs": ["MLI_glass_workshop"],
+    "start_name": "Glass workshop"
+  }
+]

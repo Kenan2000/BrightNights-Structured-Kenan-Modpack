@@ -1,0 +1,47 @@
+[
+	{
+        "type" : "overmap_terrain",
+        "id" : "trailerpark1",
+        "name" : "trailer park",
+        "sym" : "94",
+        "color" : "light_gray",
+        "see_cost" : 2,
+        "spawns" : { "group": "GROUP_FOREST", "population": [0, 1], "chance": 80 }
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "trailerpark2",
+        "name" : "trailer park",
+        "sym" : "94",
+        "color" : "light_gray",
+        "see_cost" : 2,
+        "spawns" : { "group": "GROUP_FOREST", "population": [0, 1], "chance": 80 }
+    },
+	{
+		"type": "overmap_terrain",
+		"id": "trailerpark_under",
+		"name": "trailer park storage",
+		"sym": "94",
+		"color": "light_gray",
+		"see_cost": 2,
+		"spawns" : { "group": "GROUP_FOREST", "population": [0, 1], "chance": 80 }
+	},
+		{
+        "type" : "overmap_terrain",
+        "id" : "trailerpark1_bandit",
+        "name" : "reclaimed trailer park",
+        "sym" : "94",
+        "color" : "light_gray",
+        "see_cost" : 2,
+        "spawns" : { "group": "GROUP_FOREST", "population": [0, 1], "chance": 80 }
+    },
+	{
+        "type" : "overmap_terrain",
+        "id" : "trailerpark2_bandit",
+        "name" : "reclaimed trailer park",
+        "sym" : "94",
+        "color" : "light_gray",
+        "see_cost" : 2,
+        "spawns" : { "group": "GROUP_FOREST", "population": [0, 1], "chance": 80 }
+    }
+	]

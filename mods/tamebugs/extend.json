@@ -1,0 +1,239 @@
+[
+  {
+    "id": "mon_fish_lobster",
+    "type": "MONSTER",
+    "name": "lobster",
+    "copy-from": "mon_fish_lobster",
+    "extend": { "flags": [ "CATFOOD" ] }
+  },{
+    "id": "mon_fish_crayfish",
+    "type": "MONSTER",
+    "name": "crayfish",
+    "copy-from": "mon_fish_crayfish",
+    "extend": { "flags": [ "CATFOOD" ] }
+  },{
+    "id": "mon_giant_cockroach",
+    "type": "MONSTER",
+    "name": "giant cockroach",
+    "copy-from": "mon_giant_cockroach",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_giant_cockroach_nymph",
+    "type": "MONSTER",
+    "name": "giant cockroach nymph",
+    "copy-from": "mon_giant_cockroach_nymph",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_pregnant_giant_cockroach",
+    "type": "MONSTER",
+    "name": "pregnant giant cockroach",
+    "copy-from": "mon_pregnant_giant_cockroach",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_bee",
+    "type": "MONSTER",
+    "name": "giant bee",
+    "copy-from": "mon_bee",
+    "extend": { "flags": [ "BIRDFOOD" ] }
+  },{
+    "id": "mon_centipede_giant",
+    "type": "MONSTER",
+    "name": "giant centipede",
+    "copy-from": "mon_centipede_giant",
+    "extend": { "flags": [ "CATTLEFODDER" ] }
+  },{
+    "id": "mon_dragonfly_giant",
+    "type": "MONSTER",
+    "name": "giant dragonfly",
+    "name_plural": "giant dragonflies",
+    "copy-from": "mon_dragonfly_giant",
+    "extend": { "flags": [ "CATTLEFODDER" ] }
+  },{
+    "id": "mon_fly",
+    "type": "MONSTER",
+    "name": "giant fly",
+    "name_plural": "giant flies",
+    "copy-from": "mon_fly",
+    "extend": { "flags": [ "CATTLEFODDER" ] }
+  },{
+    "id": "mon_mosquito_giant",
+    "type": "MONSTER",
+    "name": "giant mosquito",
+    "copy-from": "mon_mosquito_giant",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_cellar_giant",
+    "type": "MONSTER",
+    "name": "giant cellar spider",
+    "copy-from": "mon_spider_cellar_giant",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_cellar_giant_s",
+    "type": "MONSTER",
+    "name": "immature giant cellar spider",
+    "copy-from": "mon_spider_cellar_giant_s",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_jumping_giant",
+    "type": "MONSTER",
+    "name": "giant jumping spider",
+    "copy-from": "mon_spider_jumping_giant",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_trapdoor_giant",
+    "type": "MONSTER",
+    "name": "giant trapdoor spider",
+    "copy-from": "mon_spider_trapdoor_giant",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_web",
+    "type": "MONSTER",
+    "name": "giant web spider",
+    "copy-from": "mon_spider_web",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_web_s",
+    "type": "MONSTER",
+    "name": "immature giant web spider",
+    "copy-from": "mon_spider_web_s",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_widow_giant",
+    "type": "MONSTER",
+    "name": "giant black widow",
+    "copy-from": "mon_spider_widow_giant",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_widow_giant_s",
+    "type": "MONSTER",
+    "name": "giant black widow spiderling",
+    "copy-from": "mon_spider_widow_giant_s",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_spider_wolf_giant",
+    "type": "MONSTER",
+    "name": "giant wolf spider",
+    "copy-from": "mon_spider_wolf_giant",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_wasp",
+    "type": "MONSTER",
+    "name": "giant wasp",
+    "copy-from": "mon_wasp",
+    "extend": { "flags": [ "BIRDFOOD" ] }
+  },{
+    "id": "mon_dermatik",
+    "type": "MONSTER",
+    "name": "dermatik",
+    "copy-from": "mon_dermatik",
+    "extend": { "flags": [ "BIRDFOOD" ] }
+  },{
+    "id": "mon_dermatik_larva",
+    "type": "MONSTER",
+    "name": "dermatik larva",
+    "copy-from": "mon_dermatik_larva",
+    "extend": { "flags": [ "BIRDFOOD" ] }
+  },{
+    "id": "mon_ant",
+    "type": "MONSTER",
+    "name": "giant ant",
+    "copy-from": "mon_ant",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_acid",
+    "type": "MONSTER",
+    "name": "giant acidic ant",
+    "copy-from": "mon_ant_acid",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_acid_larva",
+    "type": "MONSTER",
+    "name": "acidic ant larva",
+    "copy-from": "mon_ant_acid_larva",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_acid_queen",
+    "type": "MONSTER",
+    "name": "acidic queen ant",
+    "copy-from": "mon_ant_acid_queen",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_acid_soldier",
+    "type": "MONSTER",
+    "name": "acidic soldier ant",
+    "copy-from": "mon_ant_acid_soldier",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_larva",
+    "type": "MONSTER",
+    "name": "ant larva",
+    "copy-from": "mon_ant_larva",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_queen",
+    "type": "MONSTER",
+    "name": "queen ant",
+    "copy-from": "mon_ant_queen",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_ant_soldier",
+    "type": "MONSTER",
+    "name": "soldier ant",
+    "copy-from": "mon_ant_soldier",
+    "extend": { "flags": [ "CATFOOD", "DOGFOOD", "BIRDFOOD", "CATTLEFODDER" ] }
+  },{
+    "id": "mon_locust",
+    "type": "MONSTER",
+    "name": "giant locust",
+    "copy-from": "mon_locust",
+    "extend": { "flags": [ "CATTLEFODDER" ] }
+  },{
+    "id": "mon_locust_nymph",
+    "type": "MONSTER",
+    "name": "locust nymph",
+    "copy-from": "mon_locust_nymph",
+    "extend": { "flags": [ "CATTLEFODDER" ] }
+  },{
+    "id": "mon_slug_giant",
+    "type": "MONSTER",
+    "name": "giant slug",
+    "copy-from": "mon_slug_giant",
+    "extend": { "flags": [ "CATTLEFODDER" ] }
+  },{
+    "id": "mon_alpha_razorclaw",
+    "type": "MONSTER",
+    "name": "alpha razorclaw",
+    "copy-from": "mon_alpha_razorclaw",
+    "extend": { "flags": [ "CATFOOD" ] }
+  },{
+    "id": "mon_giant_crayfish",
+    "type": "MONSTER",
+    "name": "giant crayfish",
+    "copy-from": "mon_giant_crayfish",
+    "extend": { "flags": [ "CATFOOD" ] }
+  },{
+    "id": "mon_graboid",
+    "type": "MONSTER",
+    "name": "graboid",
+    "copy-from": "mon_graboid",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_halfworm",
+    "type": "MONSTER",
+    "name": "half worm",
+    "copy-from": "mon_halfworm",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  },{
+    "id": "mon_razorclaw",
+    "type": "MONSTER",
+    "name": "razorclaw",
+    "copy-from": "mon_razorclaw",
+    "extend": { "flags": [ "CATFOOD" ] }
+  },{
+    "id": "mon_worm",
+    "type": "MONSTER",
+    "name": "giant worm",
+    "copy-from": "mon_worm",
+    "extend": { "flags": [ "DOGFOOD" ] }
+  }
+]

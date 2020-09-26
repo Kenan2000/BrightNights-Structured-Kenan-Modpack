@@ -1,0 +1,99 @@
+[
+
+  {
+    "type":"GENERIC",
+    "id": "big_pot",
+    "symbol": "U",
+    "color": "light_gray",
+    "name": "Sitetron pot",
+    "description": "A larger pot than general household, you can cook many materials at the same time.",
+    "price": 19000,
+    "material": "steel",
+    "weight": 1850,
+    "volume": 24,
+    "bashing": 11,
+    "category" : "tools",
+    "to_hit": -1,
+    "qualities": [["COOK", 3], ["BOIL", 2], ["CONTAIN", 1], ["CHEM", 1]],
+    "container_data" : {
+        "contains": 40,
+        "watertight": true
+    }
+  }
+  ,
+  {
+    "type":"GENERIC",
+    "id": "big_pastaextruder",
+    "symbol": "P",
+    "color": "dark_gray",
+    "name": "Large-scale pasta extruder",
+    "description": "A pasta extruder that is larger than ordinary households, can make many pasta at once.",
+    "price": 12000,
+    "material": "iron",
+    "weight": 8628,
+    "volume": 18,
+    "bashing": 14,
+    "category" : "tools",
+    "to_hit": -1
+  }
+  ,
+  {
+    "type":"GENERIC",
+    "id": "glass_bottle_manufacturing_mold_set",
+    "symbol": "G",
+    "color": "dark_gray",
+    "name": "A set of glass bottle manufacturing molds",
+    "description": "A set of molds and working tools that can efficiently produce glass products used in glass workshops.",
+    "price": 24500,
+    "material": "iron",
+    "weight": 18436,
+    "volume": 36,
+    "bashing": 14,
+    "category" : "tools",
+    "to_hit": -3
+  }
+ ,
+    {
+        "type" : "BOOK",
+        "id" : "glass_workshop_manual",
+        "name" : "Glass studio manual",
+        "name_plural" : "Glass studio manual",
+        "max_level" : 8,
+        "description" : "Work manual of the glass workshop, and a method of manufacturing an efficient glass product are described.",
+        "weight" : 2220,
+        "to_hit" : -2,
+        "color" : "blue",
+        "intelligence" : 9,
+        "symbol" : "?",
+        "material" : ["paper"],
+        "volume" : 7,
+        "bashing" : 4,
+        "time" : 45,
+        "fun" : -1,
+        "skill" : "fabrication",
+        "price" : 6500,
+        "required_level" : 6
+    }  
+ ,
+  {
+    "id": "mymap",
+    "category": "books",
+    "type": "GENERIC",
+    "symbol": ";",
+    "color": "blue",
+    "name": "Search Map",
+    "description": "Quickly add additional map position",
+    "price": 100,
+    "material": "paper",
+    "weight": 30,
+    "volume": 1,
+    "to_hit": -1,
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 180,
+      "terrain": ["hiway", "road", "bridge", "hotel_tower", "s_restaurant", "cathedral", "s_restaurant_fast", "megastore", "MLI_s_pasta_restaurant","MLI_glass_workshop"],
+      "message": "You add roads and tourist attractions to your map."
+    }
+  }
+  
+  ]

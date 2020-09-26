@@ -1,0 +1,85 @@
+[  
+  {
+    "type": "effect_type",
+    "id": "cold",
+    "name": [ "Chilly", "Cold", "Freezing" ],
+    "desc": [ "Your %s is exposed to the cold.", "Your %s is very exposed to the cold.", "Your %s is dangerously cold!" ],
+    "speed_name": "Cold",
+    "max_intensity": 3,
+    "part_descs": true,
+    "base_mods": {
+      "speed_mod": [ 0 ],
+      "dex_mod": [ 0 ],
+      "hunger_min": [ 0 ],
+      "hunger_max": [ 0 ],
+      "hunger_tick": [ 0 ],
+      "hunger_chance": [ 0 ],
+      "health_min": [ 0 ],
+      "health_tick": [ 0 ],
+      "health_chance": [ 0 ],
+      "h_mod_tick": [ 0 ],
+      "h_mod_chance": [ 0 ]
+    },
+    "scaling_mods": {
+      "speed_mod": [ 0 ],
+      "int_mod": [ 0 ],
+      "dex_mod": [ 0 ],
+      "hurt_min": [ 0 ],
+      "hurt_chance": [ 0 ],
+      "pkill_tick": [ 0 ],
+      "pkill_min": [ 0 ],
+      "pkill_max_val": [ 0 ],
+      "hunger_min": [ 0 ],
+      "hunger_max": [ 0 ],
+      "hunger_tick": [ 0 ],
+      "hunger_chance": [ 0 ],
+      "stamina_min": [ 0 ],
+      "health_min": [ 0 ],
+      "health_tick": [ 0 ],
+      "h_mod_min": [ 0 ]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "hot",
+    "name": [ "Warm", "Hot", "Scorching" ],
+    "desc": [
+      "Your %s feels warm.",
+      "Your %s is sweating from the heat.  Be careful not to get sick.",
+      "Your %s is sweating profusely!"
+    ],
+    "speed_name": "Hot",
+    "max_intensity": 3,
+    "part_descs": true,
+    "base_mods": {
+      "speed_mod": [ 0 ],
+      "thirst_min": [ 0 ],
+      "thirst_max": [ 0 ],
+      "thirst_tick": [ 0 ],
+      "thirst_chance": [ 0 ],
+      "pain_min": [ 0 ],
+      "pain_chance": [ 0 ],
+      "pain_max_val": [ 0 ],
+      "hurt_min": [ 0 ],
+      "hurt_chance": [ 0 ],
+      "stamina_chance": [ 0 ],
+      "health_min": [ 0 ],
+      "health_tick": [ 0 ],
+      "health_chance": [ 0 ],
+      "h_mod_tick": [ 0 ],
+      "h_mod_chance": [ 0 ]
+    },
+    "scaling_mods": {
+      "speed_mod": [ 0 ],
+      "hunger_max": [ 0 ],
+      "thirst_tick": [ 0 ],
+      "thirst_chance": [ 0 ],
+      "pain_max_val": [ 0 ],
+      "hurt_chance": [ 0 ],
+      "stamina_min": [ 0 ],
+      "health_min": [ 0 ],
+      "health_tick": [ -0 ],
+      "h_mod_min": [ 0 ]
+    }
+  }
+]

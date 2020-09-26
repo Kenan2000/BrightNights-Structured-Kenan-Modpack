@@ -1,0 +1,61 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "slimepit_down" ],
+    "weight": 500,
+    "object": {
+      "fill_ter": "t_slime",
+      "rows": [
+        "         ######         ",
+        "         #q.Zq#         ",
+        "         ##..##         ",
+        " F        #..#          ",
+        "  A       #..#      <   ",
+        "          #..#          ",
+        "          #..# F        ",
+        "          #..#       Z  ",
+        "      B   #..#          ",
+        "          #..#          ",
+        "          #..#    BB    ",
+        " B        #BB#    BB    ",
+        "      F   #..#    BB    ",
+        "          #BB#          ",
+        "          #..#          ",
+        "          #..#      Z   ",
+        "  B       #..#          ",
+        "          #..Z     A    ",
+        "   ZA     #..#          ",
+        "          #..# B        ",
+        "          #..#       F  ",
+        "          #..#          ",
+        "    Z     #F.#  F       ",
+        "G         #  #          "
+      ],
+      "terrain": {
+        " ": "t_slime",
+        "<": "t_stairs_up",
+        "#": "t_slime",
+        ".": "t_slime",
+        "q": "t_slime"
+      },
+      "place_items": [
+        { "item": "bionics_op", "x": [ 11, 11 ], "y": [ 22, 22 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 12, 12 ], "y": [ 22, 22 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 11, 11 ], "y": [ 21, 21 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 12, 12 ], "y": [ 21, 21 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 10, 10 ], "y": [ 20, 20 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 13, 13 ], "y": [ 20, 20 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 11, 11 ], "y": [ 19, 19 ], "chance": 100 },
+        { "item": "bionics_op", "x": [ 12, 12 ], "y": [ 19, 19 ], "chance": 100 }
+      ],
+      "monster": {
+        "G": { "monster": "mon_blob_brain" },
+        "A": { "monster": "mon_shoggoth" },
+        "B": { "monster": "mon_blob" },
+        "Z": { "monster": "mon_blob_large" },
+        "F": { "monster": "mon_gelatin" }
+      }
+    }
+    }
+]

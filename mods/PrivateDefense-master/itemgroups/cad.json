@@ -1,0 +1,130 @@
+[
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_9mm",
+    "items": [
+      [ "pd_9mm_cad",           60 ],
+      [ "pd_glockmag_cad",      40 ],
+      [ "pd_glockbigmag_cad",   20 ],
+      [ "pd_glock17mag_cad",    30 ],
+      [ "pd_glock17_22mag_cad", 15 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_mp5",
+    "items": [
+      [ "pd_mp5_cad",           60 ],
+      [ "pd_mp5mag_cad",        40 ],
+      [ "pd_mp5bigmag_cad",     20 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_45",
+    "items": [
+      [ "pd_45_cad",            60 ],
+      [ "pd_m1911mag_cad",      40 ],
+      [ "pd_m1911bigmag_cad",   20 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_12",
+    "items": [
+      [ "pd_12_cad",            60 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_357",
+    "items": [
+      [ "pd_357_cad",           60 ],
+      [ "pd_p226mag_cad",       50 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_223",
+    "items": [
+      [ "pd_223_cad",           60 ],
+      [ "pd_stanag_cad",        40 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_mac10",
+    "items": [
+      [ "pd_mac10_cad",         60 ],
+      [ "pd_mac10mag_cad",      40 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_uzi",
+    "items": [
+      [ "pd_uzi_cad",           60 ],
+      [ "pd_uzimag_cad",        40 ],
+      [ "pd_supp_cad",           5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "pd_cad_group_3006",
+    "items": [
+      [ "pd_3006_cad",         100 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "pd_cad_files",
+    "groups": [
+      [ "pd_cad_group_9mm",   20 ],
+      [ "pd_cad_group_mp5",   15 ],
+      [ "pd_cad_group_45",    10 ],
+      [ "pd_cad_group_12",    10 ],
+      [ "pd_cad_group_357",   10 ],
+      [ "pd_cad_group_223",   10 ],
+      [ "pd_cad_group_mac10", 10 ],
+      [ "pd_cad_group_uzi",   10 ],
+      [ "pd_cad_group_3006",   5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "nightstand",
+    "groups": [
+      [ "pd_cad_files", 5 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bedroom",
+    "groups": [
+      [ "pd_cad_files", 3 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "kitchen",
+    "//": "this and below are unconventional places to hide illegal blueprints around the house",
+    "groups": [
+      [ "pd_cad_files", 1 ]
+    ]
+
+  },
+  {
+    "type": "item_group",
+    "id": "cleaning",
+    "groups": [
+      [ "pd_cad_files", 1 ]
+    ]
+  }
+]

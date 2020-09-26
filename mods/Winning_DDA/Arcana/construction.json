@@ -1,0 +1,37 @@
+[
+    {
+        "type" : "construction",
+        "description" : "Erect Altar",
+        "id" : "Alter",
+        "category" : "CONSTRUCT",
+        "required_skills" : [
+            [ "magic", 7 ]
+        ],
+        "time" : 460,
+        "components" : [
+            [ [ "megabear_skull", 1 ] ],
+            [ [ "jabberwock_skull", 2 ] ],
+            [ [ "triffid_marrow", 1 ] ],
+            [ [ "preserved_brain", 1 ] ],
+            [ [ "mastermind_brain", 1 ] ],
+            [ [ "fungal_seeds", 1 ] ],
+            [ [ "marloss_gel", 1 ] ],
+            [ [ "queen_egg", 1 ] ]
+        ],
+        "pre_special" : "check_empty",
+        "post_terrain" : "t_altar"
+    },    {
+        "type" : "construction",
+        "description" : "Hallow Altar",
+        "id" : "Hallow_alter",
+        "category" : "CONSTRUCT",
+        "required_skills" : [ [ "magic", 10 ] ],
+        "time" : 460,
+        "components" : [
+            [ [ "candle", 7 ] ],
+            [ [ "dobelisk", 1 ] ]
+        ],
+        "pre_terrain" : "t_altar",
+        "post_terrain" : "f_hallowed_altar"
+    }
+]

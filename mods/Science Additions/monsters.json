@@ -1,0 +1,53 @@
+[
+  {
+    "id": "mon_turret_science",
+    "type": "MONSTER",
+    "name": "science turret",
+    "description": "The Modern Science MK-1 \"Steel Cutter\", a large, box-like light machine gun turret, it's equipped with light armor plating.",
+    "default_faction": "defense_bot",
+    "species": [ "ROBOT" ],
+    "diff": 14,
+    "size":"LARGE",
+    "hp": 70,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "2",
+    "color": "ltgray",
+    "aggression": 100,
+    "morale": 100,
+    "armor_bash": 17,
+    "armor_cut": 20,
+    "luminance": 200,
+    "revert_to_itype": "bot_turret_science",
+    "starting_ammo": { "8mm_hvp": 4000 },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 2,
+        "gun_type": "rm614_lmg",
+        "ranges": [
+          [ 0, 6, "AUTO" ],
+          [ 7, 12, "DEFAULT" ]
+        ]
+      }
+    ],
+    "death_drops": {
+      "groups": [
+        [ "robots", 10 ]
+      ]
+    },
+    "death_function": [ "EXPLODE" ],
+    "flags": [ "SEES", "NOHEAD", "ELECTRONIC", "IMMOBILE", "NO_BREATHE" ]
+  },
+  {
+    "id": "mon_zombie_scientist",
+    "copy-from": "mon_zombie_scientist",
+    "type": "MONSTER",
+    "name": "zombie scientist",
+    "description": "Apart from the jet black eyes it would be easy to believe this scientist was still alive.  Clad in a tattered lab coat, it looks to have some measure of situational awareness and resourcefulness.",
+    "special_attacks": [
+      [ "SCIENCE", 20 ],
+      [ "scratch", 20 ]
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+    {
+        "type" : "terrain",
+        "id" : "t_cvdmachine",
+        "description": "",
+        "name": "CVD control panel",
+        "symbol": "&",
+        "color": "cyan",
+        "move_cost": 0,
+        "flags": ["TRANSPARENT", "NOITEM", "PERMEABLE"],
+        "examine_action": "cvdmachine",
+        "deconstruct": {
+            "ter_set": "t_concrete",
+            "items": [
+                { "item": "minireactor", "prob": 25 },
+                { "item": "RAM", "count": [4, 8] },
+                { "item": "cable", "charges": [8, 16] },
+                { "item": "small_lcd_screen", "count": [2, 4] },
+                { "item": "e_scrap", "count": [12, 24] },
+                { "item": "circuit", "count": [6, 10] },
+                { "item": "power_supply", "count": [4, 8] },
+                { "item": "amplifier", "count": [3, 6] },
+                { "item": "cvd_machine", "prob": 100 },
+                { "item": "scrap", "count": [8, 16] }
+            ]
+        }
+}
+]

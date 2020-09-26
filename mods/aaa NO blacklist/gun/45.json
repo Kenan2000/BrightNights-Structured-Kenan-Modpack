@@ -1,0 +1,43 @@
+[
+  {
+    "id": "hipoint45",
+    "type": "GUN",
+    "name": "Hi-Point 45",
+    "description": "For a handgun that's just a little over $200 it's exactly what you would expect. It's heavy and awkward to handle, but it works.",
+    "weight": 993,
+    "volume": 3,
+    "price": 600,
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "budget_steel", "plastic" ],
+    "symbol": "(",
+    "color": "grey",
+    "ammo": "45",
+    "skill": "pistol",
+    "dispersion": 700,
+    "durability": 6,
+    "valid_mod_locations": [ [ "rail", 1 ], [ "accessories", 2 ] ],
+    "magazines": [ [ "45", [ "hipoint45mag", "hipoint45magext" ] ] ]
+  },
+  {
+    "id": "hipoint45car",
+    "type": "GUN",
+    "name": "Hi-Point 45 Carbine",
+    "description": "The Hi-Point 45 carbine was designed to work in tandem with the Hi-Point 45 handgun. Both weapons use the same magazines.",
+    "weight": 2837,
+    "volume": 8,
+    "price": 3000,
+    "to_hit": -3,
+    "bashing": 10,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "grey",
+    "ammo": "45",
+    "skill": "smg",
+    "dispersion": 420,
+    "durability": 4,
+    "barrel_length": 1,
+    "Valid_mod_locations": [ [ "accessories", 4 ], [ "sights", 1 ], [ "Mechanism", 2 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
+    "magazines": [ [ "45", [ "hipoint45mag", "hipoint45magext" ] ] ]
+  }
+]

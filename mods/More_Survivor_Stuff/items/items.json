@@ -1,0 +1,19 @@
+[
+  {
+    "id": "mss_machining_rig_item",
+    "copy-from": "vehicle_rig",
+    "type": "GENERIC",
+    "name": "vehicle machining rig",
+    "weight": "400000 g",
+    "volume": "200 L",
+    "qualities": [ [ "MACHINING", 3 ] ],
+    "description": "This is a massive rig that manages to fit an entire precision machining shop into a module compact enough to mount to a frame. It's a pain to use and has no storage available once mounted, but it will let you perform many precise works with materials."
+  },
+  {
+    "id": "mss_ammolink_shot",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": "shotshell ammo belt linkage",
+    "use_action": { "type": "ammobelt", "belt": "mss_belt_shot" }
+  }
+]

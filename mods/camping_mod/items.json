@@ -1,0 +1,35 @@
+[
+  {
+    "id": "brazier_small",
+    "type": "TOOL",
+    "name": "small brazier",
+    "name_plural": "small braziers",
+    "looks_like": "brazier",
+    "description": "It is a small metal bowl that can be used to burn fire inside the camp. The fire that burns in the brazier does not ignite the surrounding combustibles. Unlike a large brazier, it can not be used as a cooking tool.",
+    "weight": 1 ,
+    "volume": 2,
+    "price": 5000,
+    "to_hit": -2,
+    "bashing": 2,
+    "material": [ "steel" ],
+    "symbol": ";",
+    "color": "light_gray",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_brazier_small" }
+  },
+  {
+    "id": "waterproof_rag",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "waterproof rag",
+    "name_plural": "waterproof rags",
+    "description": "It is a large waterproofed fabric. There is no blade protection, so it can not be treated as a tarpaulin for disassembly.",
+    "looks_like": "fiber_mat",
+    "weight": 2,
+    "volume": 6,
+    "price": 0,
+    "material": [ "cotton", "plastic" ],
+    "symbol": ",",
+    "color": "white",
+    "flags": [ "NO_SALVAGE" ]
+  }
+]

@@ -1,0 +1,906 @@
+[
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_pistol",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 0Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[0Gcomb] BL9-infused pistol",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_buy_item": "BL9_pistol", "count": 1 },
+          { "u_buy_item": "9mmBL9mag", "count": 1 },
+          { "u_buy_item": "BL9_repair_soldering", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_pistol", "value": "yes" }
+        ]
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_smg",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 15Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[15Gcomb] BL9-infused submachine gun",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 15 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 15 },
+          { "npc_consume_item": "goldcoincomb", "count": 15 },
+          { "u_buy_item": "BL9_smg", "count": 1 },
+          { "u_buy_item": "9mmBL9smgmag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_smg", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[15Gcomb] BL9-infused submachine gun",
+        "topic": "TALK_BL9_TRADER_buy_BL9_smg",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 15 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_sniper",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 28Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[28Gcomb] BL9-infused sniper rifle",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 28 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 28 },
+          { "npc_consume_item": "goldcoincomb", "count": 28 },
+          { "u_buy_item": "BL9_sniper", "count": 1 },
+          { "u_buy_item": "308BL9mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_sniper", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[28Gcomb] BL9-infused sniper rifle",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sniper",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 28 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_auto",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 25Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[25Gcomb] BL9-infused automatic rifle",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 25 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 25 },
+          { "npc_consume_item": "goldcoincomb", "count": 25 },
+          { "u_buy_item": "BL9_auto", "count": 1 },
+          { "u_buy_item": "556223BL9mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_auto", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[25Gcomb] BL9-infused automatic rifle",
+        "topic": "TALK_BL9_TRADER_buy_BL9_auto",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 25 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_shotgun",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 20Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[20Gcomb] BL9-infused shotgun",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 20 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 20 },
+          { "npc_consume_item": "goldcoincomb", "count": 20 },
+          { "u_buy_item": "BL9_shotgun", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_shotgun", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[20Gcomb] BL9-infused shotgun",
+        "topic": "TALK_BL9_TRADER_buy_BL9_shotgun",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 20 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_magnum",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 26Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[26Gcomb] BL9-infused magnum",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 26 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 26 },
+          { "npc_consume_item": "goldcoincomb", "count": 26 },
+          { "u_buy_item": "BL9_magnum", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_magnum", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[26Gcomb] BL9-infused magnum",
+        "topic": "TALK_BL9_TRADER_buy_BL9_magnum",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 26 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_sprayer",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 37Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[37Gcomb] BL9-infused sprayer",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 37 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 37 },
+          { "npc_consume_item": "goldcoincomb", "count": 37 },
+          { "u_buy_item": "BL9_sprayer", "count": 1 },
+          { "u_buy_item": "tank_BL9", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_sprayer", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[37Gcomb] BL9-infused sprayer",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sprayer",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 37 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_launcher",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 30Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[30Gcomb] BL9-infused launcher",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 30 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 30 },
+          { "npc_consume_item": "goldcoincomb", "count": 30 },
+          { "u_buy_item": "BL9_launcher", "count": 1 },
+          { "u_buy_item": "40BL9mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_launcher", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[30Gcomb] BL9-infused launcher",
+        "topic": "TALK_BL9_TRADER_buy_BL9_launcher",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 30 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_bow",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 18Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[18Gcomb] BL9-infused bow",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 18 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 18 },
+          { "npc_consume_item": "goldcoincomb", "count": 18 },
+          { "u_buy_item": "BL9_bow", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_bow", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[18Gcomb] BL9-infused bow",
+        "topic": "TALK_BL9_TRADER_buy_BL9_bow",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 18 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_crossbow",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 22Gcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[22Gcomb] BL9-infused crossbow",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "goldcoincomb", "count": 22 } },
+        "effect": [
+          { "u_sell_item": "goldcoincomb", "count": 22 },
+          { "npc_consume_item": "goldcoincomb", "count": 22 },
+          { "u_buy_item": "BL9_crossbow", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_crossbow", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[22Gcomb] BL9-infused crossbow",
+        "topic": "TALK_BL9_TRADER_buy_BL9_crossbow",
+        "condition": { "not": { "u_has_items": { "item": "goldcoincomb", "count": 22 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_pistol_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 22Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[22Pcomb] BL9-infused pistol MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 22 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 22 },
+          { "npc_consume_item": "platcoincomb", "count": 22 },
+          { "u_sell_item": "BL9_pistol" },
+          { "npc_consume_item": "BL9_pistol" },
+          { "u_buy_item": "BL9_pistol_mk2", "count": 1 },
+          { "u_buy_item": "9mmBL9mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_pistol_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[22Pcomb] BL9-infused pistol MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_pistol_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoincomb", "count": 22 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_smg_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 33Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[33Pcomb] BL9-infused submachine gun MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 33 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 33 },
+          { "npc_consume_item": "platcoincomb", "count": 33 },
+          { "u_sell_item": "BL9_smg" },
+          { "npc_consume_item": "BL9_smg" },
+          { "u_buy_item": "BL9_smg_mk2", "count": 1 },
+          { "u_buy_item": "9mmBL9smgmag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_smg_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[33Pcomb] BL9-infused submachine gun MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_smg_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoincomb", "count": 33 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_sniper_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 61Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[61Pcomb] BL9-infused sniper rifle MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 61 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 61 },
+          { "npc_consume_item": "platcoincomb", "count": 61 },
+          { "u_sell_item": "BL9_sniper" },
+          { "npc_consume_item": "BL9_sniper" },
+          { "u_buy_item": "BL9_sniper_mk2", "count": 1 },
+          { "u_buy_item": "308BL9mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_sniper_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[61Pcomb] BL9-infused sniper rifle MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sniper_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoin", "count": 61 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_auto_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 55Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[55Pcomb] BL9-infused automatic rifle MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 55 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 55 },
+          { "npc_consume_item": "platcoincomb", "count": 55 },
+          { "u_sell_item": "BL9_auto" },
+          { "npc_consume_item": "BL9_auto" },
+          { "u_buy_item": "BL9_auto_mk2", "count": 1 },
+          { "u_buy_item": "556223BL9mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_auto_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[55Pcomb] BL9-infused automatic rifle MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_auto_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoin", "count": 55 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_shotgun_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 44Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[44Pcomb] BL9-infused shotgun MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 44 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 44 },
+          { "npc_consume_item": "platcoincomb", "count": 44 },
+          { "u_sell_item": "BL9_shotgun" },
+          { "npc_consume_item": "BL9_shotgun" },
+          { "u_buy_item": "BL9_shotgun_mk2", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_shotgun_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[44Pcomb] BL9-infused shotgun MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_shotgun_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoin", "count": 44 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_magnum_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 57Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[57Pcomb] BL9-infused magnum MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 57 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 57 },
+          { "npc_consume_item": "platcoincomb", "count": 57 },
+          { "u_sell_item": "BL9_magnum" },
+          { "npc_consume_item": "BL9_magnum" },
+          { "u_buy_item": "BL9_magnum_mk2", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_magnum_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[57Pcomb] BL9-infused magnum MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_magnum_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoin", "count": 57 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_sprayer_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 81Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[81Pcomb] BL9-infused sprayer MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 81 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 81 },
+          { "npc_consume_item": "platcoincomb", "count": 81 },
+          { "u_sell_item": "BL9_sprayer" },
+          { "npc_consume_item": "BL9_sprayer" },
+          { "u_buy_item": "BL9_sprayer_mk2", "count": 1 },
+          { "u_buy_item": "tank_BL9", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_sprayer_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[81Pcomb] BL9-infused sprayer MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_sprayer_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoincomb", "count": 81 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_launcher_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 66Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[66Pcomb] BL9-infused launcher MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 66 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 66 },
+          { "npc_consume_item": "platcoincomb", "count": 66 },
+          { "u_sell_item": "BL9_launcher" },
+          { "npc_consume_item": "BL9_launcher" },
+          { "u_buy_item": "BL9_launcher_mk2", "count": 1 },
+          { "u_buy_item": "40_BL9mk2mag", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_launcher_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[66Pcomb] BL9-infused launcher MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_launcher_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoincomb", "count": 66 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_bow_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 39Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[39Pcomb] BL9-infused bow MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 39 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 39 },
+          { "npc_consume_item": "platcoincomb", "count": 39 },
+          { "u_sell_item": "BL9_bow" },
+          { "npc_consume_item": "BL9_bow" },
+          { "u_buy_item": "BL9_bow_mk2", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_bow_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[39Pcomb] BL9-infused bow MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_bow_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoincomb", "count": 39 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_BL9_TRADER_buy_BL9_crossbow_mk2",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "and": [
+        {
+          "u_has_var": "bl9_trader",
+          "type": "general",
+          "context": "nocash",
+          "value": "yes",
+          "no": "That will be 48Pcomb.",
+          "yes": "Not enough cash, stranger."
+        }
+      ]
+    },
+    "responses": [
+      {
+        "text": "[48Pcomb] BL9-infused crossbow MK ii",
+        "topic": "TALK_BL9_TRADER_buy",
+        "condition": { "u_has_items": { "item": "platcoincomb", "count": 48 } },
+        "effect": [
+          { "u_sell_item": "platcoincomb", "count": 48 },
+          { "npc_consume_item": "platcoincomb", "count": 48 },
+          { "u_sell_item": "BL9_crossbow" },
+          { "npc_consume_item": "BL9_crossbow" },
+          { "u_buy_item": "BL9_crossbow_mk2", "count": 1 },
+          { "u_add_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" },
+          { "u_add_var": "bl9_trader", "type": "bought", "context": "BL9_crossbow_mk2", "value": "yes" }
+        ]
+      },
+      {
+        "text": "[48Pcomb] BL9-infused crossbow MK ii",
+        "topic": "TALK_BL9_TRADER_buy_BL9_crossbow_mk2",
+        "condition": { "not": { "u_has_items": { "item": "platcoincomb", "count": 48 } } },
+        "effect": { "u_add_var": "bl9_trader", "type": "bought", "context": "nocash", "value": "yes" }
+      },
+      {
+        "text": "I need something else.",
+        "topic": "TALK_BL9_TRADER_buy",
+        "effect": [
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "nocash", "value": "yes" },
+          { "u_lose_var": "bl9_trader", "type": "general", "context": "bought", "value": "yes" }
+        ]
+      }
+    ]
+  }
+]

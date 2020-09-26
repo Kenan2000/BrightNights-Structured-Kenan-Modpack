@@ -1,0 +1,99 @@
+[
+    {
+        "type": "profession",
+        "ident": "karoliner",
+        "name": "Carolean",
+        "description": "Soldiers of the Swedish Empire during the reign of king Charles XII.  Units included musketeers in addition to cavalry, pikemen, and grendadiers.",
+        "points": 4,
+        "skills": [
+            {
+                "level": 2,
+                "name": "melee"
+            },
+            {
+                "level": 1,
+                "name": "stabbing"
+            },
+            {
+                "level": 2,
+                "name": "gun"
+            },
+            {
+                "level": 1,
+                "name": "rifle"
+            }
+        ],
+        "items": {
+            "both": {
+                "ammo": 100,
+                "items": [
+                    "socks",
+                    "knee_high_boots",
+                    "breeches",
+                    "waistcoat",
+                    "greatcoat",
+                    "tricorne",
+                    "gloves_leather",
+                    "backpack",
+                    "waterskin"
+                ],
+                "entries": [
+                    { "item": "rapier", "container-item": "scabbard" },
+                    { "item": "rifle_flintlock", "ammo-item": "flintlock_ammo", "charges": 1, "contents-item": "shoulder_strap" },
+                    { "item": "flintlock_ammo", "charges": 15, "container-item": "flintlock_pouch" }
+                ]
+            }
+        }
+    },
+    {
+        "type": "profession",
+        "ident": "husaria",
+        "name": "Winged Hussar",
+        "description": "Heavy cavalry associated with the Polish-Lithanian Commonwealth during the 16th to 18th centuries.  Known for their ornate armor including decorative wings, making any arrival a fashionable one.",
+        "points": 5,
+        "skills": [
+            {
+                "level": 2,
+                "name": "melee"
+            },
+            {
+                "level": 2,
+                "name": "cutting"
+            },
+            {
+                "level": 1,
+                "name": "stabbing"
+            },
+            {
+                "level": 2,
+                "name": "gun"
+            },
+            {
+                "level": 2,
+                "name": "driving"
+            }
+        ],
+        "items": {
+            "both": {
+                "ammo": 100,
+                "items": [
+                    "socks",
+                    "knee_high_boots",
+                    "breeches",
+                    "tunic",
+                    "cuirass_lightplate",
+                    "armguard_lightplate",
+                    "gloves_leather",
+                    "helmet_szyszak",
+                    "wings_ornamental",
+                    "backpack",
+                    "waterskin",
+                    "spear_steel"
+                ],
+                "entries": [
+                    { "item": "cavalry_sabre", "container-item": "scabbard" }
+                ]
+            }
+        }
+    }
+]

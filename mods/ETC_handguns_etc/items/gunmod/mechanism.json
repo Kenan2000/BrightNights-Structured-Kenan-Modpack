@@ -1,0 +1,50 @@
+[
+  {
+    "id": "nanogun_capacitor",
+    "type": "GUNMOD",
+    "copy-from": "high_density_capacitor",
+    "name": "N8 high density capacitor",
+    "description": "A capacitor for the Nanogun's boosted electrothermal-chemical action, which improves armor penetration at the cost of more power consumption, noise and recoil.",
+    "weight": 0,
+    "price": 0,
+    "range_modifier": 0,
+    "damage_modifier": 0,
+    "loudness_modifier": 10,
+    "location": "mechanism",
+    "mod_targets": [ "smg" ],
+    "ups_charges": 2,
+    "flags": [ "IRREMOVABLE" ]
+  },
+  {
+    "id": "minisniper_capacitor",
+    "type": "GUNMOD",
+    "copy-from": "high_density_capacitor",
+    "name": "MS400 high density capacitor",
+    "description": "A capacitor for the overcharged MS400 electrothermal-chemical action, which improves damage, effective range and armor penetration at the cost of more power consumption, noise and recoil.",
+    "weight": 0,
+    "price": 0,
+    "range_modifier": 10,
+    "damage_modifier": 5,
+    "loudness_modifier": 20,
+    "location": "mechanism",
+    "mod_targets": [ "rifle" ],
+    "ups_charges": 3,
+    "flags": [ "IRREMOVABLE" ]
+  },
+  {
+    "id": "ad_capacitor",
+    "type": "GUNMOD",
+    "copy-from": "high_density_capacitor",
+    "name": "OCG anti-drone capacitor",
+    "description": "A capacitor for overcharged 5.56 ETC caliber electrothermal-chemical guns, improving penetration against the heaviest drone and power armors at the cost of much more power consumption, noise and recoil.",
+    "weight": 0,
+    "price": 0,
+    "range_modifier": 0,
+    "damage_modifier": 0,
+    "loudness_modifier": 80,
+    "location": "mechanism",
+    "mod_targets": [ "rifle", "pistol" ],
+    "ups_charges": 7,
+    "flags": [ "IRREMOVABLE" ]
+  }
+]

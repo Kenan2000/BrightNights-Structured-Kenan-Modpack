@@ -1,0 +1,24 @@
+[
+  {
+    "id": "barrette_pick",
+    "type": "ARMOR",
+    "copy-from": "barrette",
+    "name": "barrette pick",
+    "description": "A barrette with lots of ornament and hidden locksmith tools. Their quality is too good for a novelty item or prop. This might be a true spy gadget.",
+    "weight": 300,
+    "price": 20800,
+    "material": [ "superalloy", "plastic" ],
+    "use_action": { "type": "picklock", "pick_quality": 5 }
+  },
+  {
+    "id": "tieclip_pick",
+    "type": "ARMOR",
+    "copy-from": "tieclip",
+    "name": "tie clip pick",
+    "description": "A tie clip with hidden locksmith tools. Their quality is too good for a novelty item or prop. This might be a true spy gadget.",
+    "weight": 590,
+    "price": 50000,
+    "material": [ "superalloy", "silver" ],
+    "use_action": { "type": "picklock", "pick_quality": 5 }
+  }
+]

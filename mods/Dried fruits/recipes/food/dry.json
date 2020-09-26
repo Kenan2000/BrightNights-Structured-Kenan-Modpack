@@ -1,0 +1,194 @@
+[
+  {
+    "type" : "recipe",
+    "result": "raisins",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "batch_time_factors": [ 67, 5 ],
+	    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "grapes", 1 ], [ "irradiated_grapes", 1 ] ] ] 
+  },
+  {
+    "type" : "recipe",
+    "result": "dried_apricots",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "apricot_slices", 2 ] ] ] 
+  },
+  {
+    "type" : "recipe",
+    "result": "dried_plums",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "plum_slices", 2 ] ] ] 
+  },
+  {
+    "type" : "recipe",
+    "result": "dried_apple",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "apple_slices", 2 ] ] ] 
+  },
+
+  {
+    "type" : "recipe",
+    "result": "dried_blueberries",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+	"result_mult": 1,
+    "time": 20000,
+    "autolearn": true,
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "blueberries", 1 ], [ "irradiated_blueberries", 1 ] ] ] 
+  },
+  {
+    "type" : "recipe",
+    "result": "dried_cranberries",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "cranberries", 1 ], [ "irradiated_cranberries", 1 ] ] ]
+  },
+  {
+    "type" : "recipe",
+    "result": "dried_peaches",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "peach_slices", 2 ] ] ] 
+  },
+    {
+    "type" : "recipe",
+    "result": "dried_bananas",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ [ "banana_slices", 2 ] ] ]	
+  },
+  {
+    "type" : "recipe",
+    "result": "dried_pineapple",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ ["pineapple_slices", 1 ] ] ]
+  },
+    {
+    "type" : "recipe",
+    "result": "dried_mango",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ 
+	  [ ["mango_slices", 2 ] ] ]
+  },
+      {
+    "type" : "recipe",
+    "result": "dried_kiwi",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ ["kiwi_slices", 2 ] ] ]
+  },
+      {
+    "type" : "recipe",
+    "result": "dried_papaya",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_DRY",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "time": 20000,
+    "autolearn": true,
+	"qualities": [ { "id": "CUT", "level": 1 } ],
+    "batch_time_factors": [ 67, 5 ],
+    "tools": [
+      [ [ "dehydrator", 25 ], [ "char_smoker", 25 ] ]
+    ],
+    "components": [ [ ["papaya_slices",  2] ] ]
+  }
+]

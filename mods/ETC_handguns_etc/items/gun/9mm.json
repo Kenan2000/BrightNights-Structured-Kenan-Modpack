@@ -1,0 +1,70 @@
+[
+  {
+    "id": "ocg_beel",
+    "type": "GUN",
+    "copy-from": "etc_deel",
+    "name": "OCG Baby Eel",
+    "name_plural": "OCG Baby Eels",
+    "description": "Externally almost identical to the electrothermal Desert Eel, this pocket pistol is very lightweight, but felt recoil is higher than in most 9mm pistols.",
+    "weight": 400,
+    "//": "200g lighter from capacitor and other unneeded ETC parts.",
+    "price": 70000,
+    "pierce": 0,
+    "ammo": "9mm"
+  },
+  {
+    "id": "ocg_dmsmg",
+    "type": "GUN",
+    "copy-from": "etc_rifle_base",
+    "//": "Cx4 Storm meets Colt 9mm SMG on steroids.",
+    "name": "OCG MR9 DMSMG",
+    "name_plural": "OCG MR9 DMSMG",
+    "description": "OmniCorp MR9 is called a Designated Marksman Submachinegun. It has a very long, match-grade barrel and a highly accurate action. Technically a submachinegun, it resembles and is handled like a rifle.",
+    "weight": 2600,
+    "volume": 8,
+    "price": 200000,
+    "to_hit": -1,
+    "bashing": 10,
+    "material": [ "steel", "superalloy" ],
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "ranged_damage": 5,
+    "range": 20,
+    "dispersion": 140,
+    "durability": 9,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 10 ] ],
+    "magazines": [ [ "9mm", [ "minirifle_mag", "minirifle_magext" ] ] ],
+    "looks_like": "ar15"
+  },
+  {
+    "id": "ocg_minirifle",
+    "type": "GUN",
+    "copy-from": "ocg_dmsmg",
+    "name": "OCG MR9S Mini Rifle",
+    "name_plural": "OCG MR9S Mini Rifle",
+    "description": "A civilian, semi-automatic version of OmniCorp MR9 DMSMG with the same very long barrel. Some call it a carbine despite its barrel length, others call it a rifle. Either way, it is good for what it is but expensive.",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
+    "price": 160000
+  },
+  {
+    "id": "ocg_mr9sd",
+    "type": "GUN",
+    "copy-from": "ocg_dmsmg",
+    "name": "OCG MR9SD Styx",
+    "name_plural": "OCG MR9SD Styx",
+    "description": "Without requiring subsonic rounds and with the same length as the MR9 DMSMG, OmniCorp Styx is a pretty \"silent\" firearm. Weaker and shorter ranged than a rifle caliber one like the VSS Vintorez, it still is useful for covert marksmen.",
+    "price": 3500000,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "magazine", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "built_in_mods": [ "mr9sd_suppressor" ]
+  }
+]

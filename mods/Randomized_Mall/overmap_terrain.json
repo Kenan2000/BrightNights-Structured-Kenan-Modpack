@@ -1,0 +1,81 @@
+[
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_lot",
+    "name" : "parking lot",
+    "sym" : "112",
+    "color" : "light_blue",
+    "extras": "field",
+    "see_cost" : 0,
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 50 },
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_lot2",
+    "name" : "parking lot",
+    "sym" : "112",
+    "color" : "light_blue",
+    "see_cost" : 0,
+    "extras": "field",
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 50 },
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_cross",
+    "name" : "shopping mall",
+    "sym" : "109",
+    "color" : "i_magenta",
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 50 },
+    "see_cost" : 3
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_corner",
+    "name" : "shopping mall",
+    "sym" : "109",
+    "color" : "i_magenta",
+    "see_cost" : 3,
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 50 },
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_hall",
+    "name" : "shopping mall",
+    "sym" : "109",
+    "color" : "i_magenta",
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 50 },
+    "see_cost" : 3
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_cap",
+    "name" : "shopping mall",
+    "sym" : "109",
+    "color" : "i_magenta",
+    "see_cost" : 3,
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 50 },
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_edge",
+    "name" : "shopping mall",
+    "sym" : "109",
+    "color" : "i_magenta",
+    "see_cost" : 3,
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 50, 100 ], "chance": 30 },
+    "flags": [ "SIDEWALK" ]
+  },
+  {
+    "type" : "overmap_terrain",
+    "id" : "mall_center",
+    "name" : "shopping mall",
+    "sym" : "109",
+    "color" : "i_magenta",
+    "spawns": { "group": "GROUP_ZOMBIE", "population": [ 100, 200 ], "chance": 80 },
+    "see_cost" : 3
+  }
+]

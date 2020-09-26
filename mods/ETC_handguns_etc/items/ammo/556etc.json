@@ -1,0 +1,82 @@
+[
+  {
+    "id": "556dk",
+    "type": "AMMO",
+    "name": "5.56 DK",
+    "description": "5.56x45mm electrothermal-chemical ammunition with 16gr drone killer bullets. A hypervelocity round with great range, armor penetration and accuracy, useful for designated marksman and battle rifles.",
+    "//": "2600m/s muzzle velocity, even higher in overcharged guns like the ADR",
+    "weight": 12,
+    "volume": 1,
+    "price": 6580,
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 30,
+    "stack_size": 47,
+    "ammo_type": "556etc",
+    "casing": "223_casing",
+    "range": 48,
+    "damage": 39,
+    "//": "damage reduced by 20. Stopping power might still be too high for such a lightweight round, regardless of muzzle velocity.",
+    "pierce": 51,
+    "dispersion": 15,
+    "recoil": 2700,
+    "looks_like": "556",
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "556eb",
+    "type": "AMMO",
+    "name": "5.56 Electro Blackout",
+    "description": "Test item. A preternaturally dense, subsonic 5.56x45mm electrothermal-chemical ammunition with 1466gr AP bullets made from some extradimensional unobtainium.",
+    "copy-from": "556dk",
+    "//": "270m/s muzzle velocity",
+    "proportional": { "weight": 19, "price": 1000, "range": 0.83, "damage": 1.52, "pierce": 0.98, "dispersion": 1.66, "recoil": 0.92 },
+    "loudness": 35,
+    "//": "It is possible to override the round loudness calculations of the game with this, now for a more realistic, underpowered subsonic round.",
+    "looks_like": "556",
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "556sap",
+    "type": "AMMO",
+    "name": "5.56 SAP",
+    "description": "5.56x45mm electrothermal-chemical ammunition with a depleted uranium 154gr subsonic armor piercing bullet. OCG quickly adapted this round to conventional 5.56 NATO and kept producing both before the Cataclysm.",
+    "copy-from": "556dk",
+    "material": [ "brass", "powder", "uranium" ],
+    "//": "320m/s muzzle velocity. Pitiful muzzle energy for a ETC rifle round but great ballistic coefficient, terminal ballistics and very dense round make up for it to an extent.",
+    "proportional": { "weight": 0.85, "price": 2, "range": 0.55, "damage": 0.7, "pierce": 0.55, "dispersion": 2.5, "recoil": 0.25 },
+    "loudness": 68,
+    "looks_like": "223",
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "556dk_incendiary",
+    "copy-from": "556dk",
+    "type": "AMMO",
+    "name": "5.56 DK tracer",
+    "description": "This ammunition is a one-in-five mix of tracer rounds to help keep the weapon they are fired from on target.",
+    "looks_like": "556_incendiary",
+    "extend": { "effects": [ "INCENDIARY" ] }
+  },
+  {
+    "id": "reloaded_556dk",
+    "copy-from": "556dk",
+    "type": "AMMO",
+    "name": "reloaded 5.56 DK",
+    "proportional": { "price": 0.7, "damage": 0.9, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "looks_like": "reloaded_556",
+    "delete": { "effects": [ "NEVER_MISFIRES" ] }
+  },
+  {
+    "id": "reloaded_556dk_incendiary",
+    "copy-from": "556dk_incendiary",
+    "type": "AMMO",
+    "name": "reloaded 5.56 DK tracer",
+    "proportional": { "price": 0.7, "damage": 0.9, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "looks_like": "reloaded_556_incendiary",
+    "delete": { "effects": [ "NEVER_MISFIRES" ] }
+  }
+]

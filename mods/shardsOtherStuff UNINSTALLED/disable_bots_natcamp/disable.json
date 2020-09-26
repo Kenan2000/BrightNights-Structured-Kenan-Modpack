@@ -1,0 +1,133 @@
+[
+  {
+    "id": "bot_w11b10",
+    "type": "TOOL",
+    "copy-from": "broken_copbot",
+    "looks_like": "mon_w11b10",
+    "volume": "62500 ml",
+    "weight": 81500,
+    "name": "inactive w11b10",
+    "description": "Wraitheon (11B) Infantry 10 Level.  Part of Wraitheon's series of one-to-one auxiliaries designed to seamlessly integrate with more traditional forces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_w11b10",
+      "friendly_msg": "The robot activates safely.",
+      "hostile_msg": "You messed up the targeting system, beware!",
+      "difficulty": 6,
+      "moves": 100,
+      "place_randomly": false,
+      "skill1": "electronics",
+      "skill2": "computer"
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },{
+    "id": "bot_w11b20b4",
+    "type": "TOOL",
+    "copy-from": "broken_copbot",
+    "looks_like": "mon_w11b20b4",
+    "volume": "62500 ml",
+    "weight": 81500,
+    "name": "inactive w11b10b4",
+    "description": "Wraitheon (11B) Infantry 20 Level (B4) Sniper.  Part of Wraitheon's series of one-to-one auxiliaries designed to seamlessly integrate with more traditional forces.  ",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_w11b20b4",
+      "friendly_msg": "The robot activates safely.",
+      "hostile_msg": "You messed up the targeting system, beware!",
+      "difficulty": 6,
+      "moves": 100,
+      "place_randomly": false,
+      "skill1": "electronics",
+      "skill2": "computer"
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },{
+    "id": "bot_w12b10",
+    "type": "TOOL",
+    "copy-from": "broken_copbot",
+    "looks_like": "mon_w12b10",
+    "volume": "62500 ml",
+    "weight": 81500,
+    "name": "inactive w12b10",
+    "description": "Wraitheon (12B) Combat Engineer 10 Level.  Part of Wraitheon's series of one-to-one auxiliaries designed to seamlessly integrate with more traditional forces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_w12b10",
+      "friendly_msg": "The robot activates safely.",
+      "hostile_msg": "You messed up the targeting system, beware!",
+      "difficulty": 6,
+      "moves": 100,
+      "place_randomly": false,
+      "skill1": "electronics",
+      "skill2": "computer"
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },{
+    "id": "bot_w11h10",
+    "type": "TOOL",
+    "copy-from": "broken_copbot",
+    "looks_like": "mon_w11h10",
+    "volume": "62500 ml",
+    "weight": 81500,
+    "name": "inactive w11h10",
+    "description": "Wraitheon (11H) Anti-Tank Infantry 10 Level.  Part of Wraitheon's series of one-to-one auxiliaries designed to seamlessly integrate with more traditional forces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_w11h10",
+      "friendly_msg": "The robot activates safely.",
+      "hostile_msg": "You messed up the targeting system, beware!",
+      "difficulty": 6,
+      "moves": 100,
+      "place_randomly": false,
+      "skill1": "electronics",
+      "skill2": "computer"
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },{
+    "id": "bot_w12n10",
+    "type": "TOOL",
+    "copy-from": "broken_copbot",
+    "looks_like": "mon_w12n10",
+    "volume": "62500 ml",
+    "weight": 81500,
+    "name": "inactive w12n10",
+    "description": "Wraitheon (12N) Construction Engineer 10 Level.  Part of Wraitheon's series of one-to-one auxiliaries designed to seamlessly integrate with more traditional forces.",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_w12n10",
+      "friendly_msg": "The robot activates safely.",
+      "hostile_msg": "You messed up the targeting system, beware!",
+      "difficulty": 6,
+      "moves": 100,
+      "place_randomly": false,
+      "skill1": "electronics",
+      "skill2": "computer"
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },{
+    "id": "mon_w11b10",
+    "copy-from": "mon_w11b10",
+    "type": "MONSTER",
+    "revert_to_itype": "bot_w11b10"
+  },{
+    "id": "mon_w11b20b4",
+    "copy-from": "mon_w11b20b4",
+    "type": "MONSTER",
+    "revert_to_itype": "bot_w11b20b4"
+  },{
+    "id": "mon_w12b10",
+    "copy-from": "mon_w12b10",
+    "type": "MONSTER",
+    "revert_to_itype": "bot_w12b10"
+  },{
+    "id": "mon_w11h10",
+    "copy-from": "mon_w11h10",
+    "type": "MONSTER",
+    "revert_to_itype": "bot_w11h10"
+  },{
+    "id": "mon_w12n10",
+    "copy-from": "mon_w12n10",
+    "type": "MONSTER",
+    "revert_to_itype": "bot_w12n10"
+  }
+]

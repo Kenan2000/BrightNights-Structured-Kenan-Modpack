@@ -1,0 +1,12 @@
+[
+ {
+    "type": "scenario",
+    "ident": "burning mansion",
+    "name": "Burning Mansion Escape",
+    "points" : -8,
+    "description": "You've made it to a large mansion, thinking it might provide you shelter. However, trying to get the lights on caused a short circuit and a fire and now you're in the basement of a burning mansion surrounded by zombies who have noticed the fire.",
+    "allowed_locs":["tsc_m_basement_1"],
+    "start_name": "Burning Mansion Basement",
+    "flags" : [ "SUR_START", "FIRE_START"]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "beelmag",
+    "type": "MAGAZINE",
+    "name": "Baby Eel Magazine",
+    "description": "10-round magazine for the Baby Eel that fits inside its magazine well.",
+    "weight": 40,
+    "volume": "125ml",
+    "price": 2500,
+    "material": [ "superalloy" ],
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "9mm",
+    "capacity": 10,
+    "reliability": 8,
+    "looks_like": "usp9mag",
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "minirifle_mag",
+    "type": "MAGAZINE",
+    "name": "MR9 Mini Rifle magazine",
+    "description": "A compact 20-round casket magazine for use with OmniCorp MR9 DMSMG and variants.",
+    "weight": 120,
+    "volume": 1,
+    "price": 6000,
+    "material": "superalloy",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "9mm",
+    "capacity": 20,
+    "reliability": 7,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "minirifle_magext",
+    "type": "MAGAZINE",
+    "name": "MR9 DMSMG magazine",
+    "description": "A compact 40-round casket magazine for use with OmniCorp MR9 DMSMG and variants.",
+    "weight": 240,
+    "volume": 2,
+    "price": 12000,
+    "material": "superalloy",
+    "symbol": "#",
+    "color": "dark_gray",
+    "ammo_type": "9mm",
+    "capacity": 40,
+    "reliability": 7,
+    "flags": [ "MAG_COMPACT" ]
+  }
+]

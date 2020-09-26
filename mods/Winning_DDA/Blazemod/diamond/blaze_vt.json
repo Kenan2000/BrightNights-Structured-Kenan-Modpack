@@ -1,0 +1,66 @@
+[ {
+    "id" : "spiral_matrix",
+    "type" : "TOOL",
+    "name" : "diamond matrix",
+    "description" : "A sparkling diamond with a dazzling spiral pattern.  Small pieces of glittering crystal form on the edges as you hold it.  With enough base material, applying it to objects causes organic matter, wood in particular, to rapidly transform into diamond. However, this new crystalline compound quickly disintegrates without some other form of support.",
+    "weight" : 250,
+    "volume" : 1,
+    "price" : 500000,
+    "to_hit" : -5,
+    "material" : "diamond",
+    "symbol" : "*",
+    "color" : "white",
+    "max_charges" : 1000,
+    "ammo" : "charcoal",
+    "book_data" : {
+      "max_level" : 0,
+      "intelligence" : 0,
+      "time" : 1,
+      "fun" : 0,
+      "skill" : "fabrication",
+      "required_level" : 1
+    }
+},{
+    "id" : "dobelisk",
+    "type" : "GUN",
+    "name" : "diamond obelisk",
+    "description" : "A tall tower composed almost entirely of diamond, the cluster of diamond matrices focuses the energy from an array of solar panels into a terribly powerful laser.  It is also capable of storing energy from the sun and can fire even in the dark.",
+    "weight" : 250000,
+    "volume" : 120,
+    "price" : 60000,
+    "material" : ["diamond"],
+    "symbol" : "(",
+    "color" : "white",
+    "skill" : "launcher",
+    "range" : 30,
+    "ranged_damage" : 100,
+    "pierce" : 50,
+    "dispersion" : 150,
+    "sight_dispersion" : 150,
+    "reload" : 1000,
+    "recoil" : 0,
+    "ups_charges" : 200,
+    "ammo_effects" : ["LASER", "WIDE", "FLAME", "DRAW_AS_LINE"],
+    "modes" : [
+      ["DEFAULT", "single", 1]
+    ]
+  }, {
+    "id" : "blazemod_diamond",
+    "type" : "requirement",
+    "//" : "Making Diamond Stuff",
+    "tools" : [[["spiral_matrix", 250]]]
+  }, {
+    "id" : "blazemod_diamondfix",
+    "type" : "requirement",
+    "//" : "Fixing Diamond Stuff",
+    "tools" : [[["spiral_matrix", 25]]]
+  }, {
+    "id" : "blazemod_diamondminor",
+    "type" : "requirement",
+    "tools" : [[["spiral_matrix", 100]]]
+  }, {
+    "id" : "blazemod_diamondfixminor",
+    "type" : "requirement",
+    "tools" : [[["spiral_matrix", 10]]]
+  }
+]

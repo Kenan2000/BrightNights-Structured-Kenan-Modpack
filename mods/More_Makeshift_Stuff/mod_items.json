@@ -1,0 +1,41 @@
+[
+  {
+    "id": "makeshift_raft",
+    "type": "TOOL",
+    "symbol": "0",
+    "color": "brown",
+    "name": "makeshift raft",
+    "description": "This is a primitive raft folded in half for storage. (A)ctivate to unfold and place it.",
+    "price": 10000,
+    "material": "wood",
+    "weight": 41000,
+    "volume": 80,
+    "bashing": 8,
+    "to_hit": -5,
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "makeshift_raft",
+      "unfold_msg": "You unfold the %s.",
+      "moves": 500
+    }
+  },{
+    "id": "makeshift_canoe",
+    "type": "TOOL",
+    "symbol": "0",
+    "color": "brown",
+    "name": "makeshift canoe",
+    "description": "This is a dugout canoe hollowed out of tree trunk. (A)ctivate to place it.",
+    "price": 10000,
+    "material": "wood",
+    "weight": 60000,
+    "volume": 300,
+    "bashing": 8,
+    "to_hit": -25,
+    "use_action": {
+      "type": "unfold_vehicle",
+      "vehicle_name": "makeshift_canoe",
+      "unfold_msg": "You place the %s.",
+      "moves": 500
+    }
+  }
+]

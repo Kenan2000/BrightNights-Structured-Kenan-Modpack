@@ -1,0 +1,159 @@
+[
+  {
+    "id": "TALK_SHARE_EQUIPMENT",
+    "type": "talk_topic",
+    "category": "CATEGORY_EQUIP",
+    "responses": [
+      {
+        "text": "I'm not asking anymore.  Give me your stuff or else!",
+        "topic": "TALK_MUG_NPC",
+        "condition": { "not": { "u_has_any_trait": [ "PACIFIST","PROF_FED","PROF_PD_DET","PROF_SWAT","PROF_POLICE","PROF_CYBERCOP" ] } },
+        "trial": { "type": "INTIMIDATE", "difficulty": 0, "mod": [ [ "BRAVERY", -3 ], [ "FEAR", 2 ] ] }, 
+        "success": { "topic": "TALK_MUG_NPC", "opinion": { "trust":-10, "anger": 5, "value": -5, "fear": 2 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "id": [ "TALK_STRANGER_NEUTRAL", "TALK_STRANGER_FRIENDLY" ],
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "Stick 'em up, <name_g>!  This is a hiest!",
+        "condition": { "not": { "u_has_any_trait": [ "PACIFIST", "PROF_FED", "PROF_PD_DET", "PROF_SWAT", "PROF_POLICE", "PROF_CYBERCOP" ] } },
+        "trial": { "type": "INTIMIDATE", "difficulty": 0, "mod": [ [ "BRAVERY", -3 ], [ "FEAR", 2 ]] },
+        "success": { "topic": "TALK_MUG_NPC", "opinion": { "trust":-10, "anger": 5, "fear": 2 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "id": [ "TALK_STRANGER_WARY" ],
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "How about you give me all your gear, and I let you walk away in one piece.",
+        "condition": { "not": { "u_has_any_trait": [ "PACIFIST", "PROF_FED", "PROF_PD_DET", "PROF_SWAT", "PROF_POLICE", "PROF_CYBERCOP" ] } },
+        "trial": { "type": "INTIMIDATE", "difficulty": 10 , "mod": [ [ "BRAVERY", -3 ], [ "FEAR", 2 ] ] },
+        "success": { "topic": "TALK_MUG_NPC", "opinion": { "trust":-5, "anger": 5, "fear": 2 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "id": [ "TALK_STRANGER_SCARED" ],
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "You're gonna give me your gear, or get ripped to shreds.",
+        "condition": { "not": { "u_has_any_trait": [ "PACIFIST", "PROF_FED", "PROF_PD_DET", "PROF_SWAT", "PROF_POLICE", "PROF_CYBERCOP" ] } },
+        "trial": { "type": "INTIMIDATE", "difficulty": 20, "mod": [ [ "BRAVERY", -3 ], [ "FEAR", 2 ] ] },
+        "success": { "topic": "TALK_MUG_NPC",  "opinion": { "trust":-5, "anger": 5, "fear": 2 } },
+        "failure": { "topic": "TALK_DONE", "effect": "flee" }
+      }
+    ]
+  },
+  {
+    "id": "TALK_STRANGER_AGGRESSIVE",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "No, I think you're the one who's gonna back down.  Hand over your goods, <name_g>.",
+        "condition": { "not": { "u_has_any_trait": [ "PACIFIST", "PROF_FED", "PROF_PD_DET", "PROF_SWAT", "PROF_POLICE", "PROF_CYBERCOP" ] } },
+        "trial": { "type": "INTIMIDATE", "difficulty": 0, "mod": [ [ "BRAVERY", -2 ], [ "AGGRESSION", -3 ] ] }, 
+        "success": { "topic": "TALK_MUG_NPC", "opinion": { "anger": 2, "fear": 2 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "id": "TALK_WEAPON_DROPPED",
+    "type": "talk_topic",
+    "//": "Easier trial since it follows a successful intimidate.",
+    "responses": [
+      {
+        "text": "Now hand over your loot.",
+        "condition": { "not": { "u_has_any_trait": [ "PACIFIST", "PROF_FED", "PROF_PD_DET", "PROF_SWAT", "PROF_POLICE", "PROF_CYBERCOP" ] } },
+        "trial": { "type": "INTIMIDATE", "difficulty": 85 },
+        "success": { "topic": "TALK_MUG_NPC", "opinion": { "trust":-10, "anger": 2, "fear": 2 }  },
+        "failure": { "topic": "TALK_DONE", "effect": "flee" }
+      }
+    ]
+  },
+  {
+    "id": "TALK_MUG",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "No, you'll be the one giving me your loot, if you want to live.",
+        "condition": { 
+          "and":[ 
+            {"not": { "u_has_any_trait": [ "PACIFIST", "PROF_FED", "PROF_PD_DET", "PROF_SWAT", "PROF_POLICE", "PROF_CYBERCOP" ] } },
+            "u_has_weapon"
+          ]
+        },
+        "trial": { "type": "INTIMIDATE", "difficulty": 0, "mod": [ [ "BRAVERY", -2 ], [ "AGGRESSION", -3 ], [ "FEAR", -1 ] ]}, 
+        "success": { "topic": "TALK_MUG_NPC", "opinion": { "anger": 2, "fear": 2 } },
+        "failure": { "topic": "TALK_DONE", "effect": "hostile" }
+      }
+    ]
+  },
+  {
+    "id": [ "TALK_MUG_NPC" ],
+    "type": "talk_topic",
+    "dynamic_line": "OK, OK.  I'm cooperating.",
+    "responses": [
+      {
+        "text": "Lay your weapon on the ground, real slow like.",
+        "condition": "npc_has_weapon",
+        "topic": "TALK_MUG_NPC", 
+        "effect": "drop_weapon",
+        "opinion": { "fear": 1 } 
+      },
+      {
+        "text": "Let's see what you've got.",
+        "topic": "TALK_MUG_NPC", 
+        "effect": "give_equipment", 
+        "opinion": { "trust": -1 }
+      },
+      {
+        "text": "You don't have anything else worth taking.  Get lost.",
+        "topic": "TALK_DONE", 
+        "effect": [ "flee", { "npc_add_effect": "mugged_by_player", "duration": 14400 } ],
+        "opinion": { "trust": 1 }
+      },
+      {
+        "text": "[PSYCHO] Did you really think I'd let you live?  Nah, I'm going to kill you anyway.",
+        "condition": { "u_has_trait":  "PSYCHOPATH" },
+        "topic": "TALK_DONE", 
+        "effect": ["hostile", { "npc_add_effect": "mugged_by_player", "duration": 14400 } ],
+        "opinion": { "fear": 1, "trust": -10 } 
+      },
+      {
+        "text": "[CANNIBAL] You still have to hand over all that tasty human meat.",
+        "condition": { "u_has_trait":  "CANNIBAL" },
+        "topic": "TALK_DONE", 
+        "effect": ["hostile", { "npc_add_effect": "mugged_by_player", "duration": 14400 } ],
+        "opinion": { "fear": 5, "trust": -10 } 
+      },
+      {
+        "text": "[PREDATOR] Thank you for your cooperation.  Now you must die.",
+        "condition": { "u_has_any_trait": [ "PRED1", "PRED2", "PRED3", "PRED4" ] },
+        "topic": "TALK_DONE", 
+        "effect": ["hostile", { "npc_add_effect": "mugged_by_player", "duration": 14400 } ],
+        "opinion": { "fear": 5, "trust": -10 } 
+      },
+      {
+        "text": "Regrettable, but I'm sure you understand that this is just how the world works now.  No hard feelings?",
+        "condition": { "u_has_any_trait": [ "PRETTY", "LIAR", "ELFAEYES", "THRESH_ALPHA" ] },
+        "trial": { "type": "PERSUADE", "difficulty": 10 },
+        "success": { 
+            "topic": "TALK_SHELTER", 
+            "effect": [ "stranger_neutral", { "npc_add_effect": "mugged_by_player", "duration": 14400 } ],
+            "opinion": { "anger": -2, "trust": 2, "fear": -2 } 
+        },
+        "failure": { "topic": "TALK_DONE", "effect": [ "flee", { "npc_add_effect": "mugged_by_player", "duration": 14400 } ] }
+      }
+    ]
+  }
+]

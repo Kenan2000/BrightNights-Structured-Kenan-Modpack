@@ -1,0 +1,123 @@
+◆ Description of Make_a_Lot_of_Items_Mod
+
+◇ Ver: 0.1
+・ Time-efficient mass production recipe and special tools required for it are added. Addition of maps related to special tools.
+-Add special tool items, recipes, and maps. No adjustments to existing items or recipes.
+-Mass production improves time efficiency, but does not change required materials.
+・ Mod that specializes in acorn → acorn (cooked) → flour → spaghetti (dry) → ramen (boiled).
+・ It is a mod made because it takes time to prepare food for multiple NPCs, and it does not take time to search, build, and build.
+
+◇ Person who recommends this mod introduction
+・ Acorn people use food for acorns.
+・ Food is spaghetti! Person who wants to make spaghetti more efficiently.
+・ A person who wants to make ramen at once with a soup pot.
+・ People who want to make many glass bottles necessary to store a large amount of stored food.
+-A person who has multiple NPCs as their friends but the food situation is severe and it takes time to prepare food for all of them, and the activity time of exploration production construction cannot be taken.
+
+■ Caution
+・ This Mod does not increase the difficulty. Rather, it's a fun mod.
+・ As a pasta restaurant is a spaghetti restaurant, the number of characters will be longer, so it is not meaningful because it is a pasta restaurant.
+-Adds a recipe to shorten the production time requiring special tools.
+・ It is made on the assumption that you play in Japanese.
+-When making a batch of recipes that generate many by-products, the display may be incorrect, but it can be manufactured normally (normal operation has been confirmed when the main unit Ver. 4626).
+Example, when 4x is selected for acorn (cooked): By-product: 9 acorns (cooked) (4) → 36 acorns (cooked)
+Add up to 4 of the main products for a total of 40.
+・ Because the operation check is complicated, there may be a problem.
+
+◆ How to add Make_a_Lot_of_Items_Mod
+-Put "Make_a_Lot_of_Items_Mod" in "data \ mods" in the main unit folder.
+■ Add to new world
+・ [Initial Settings] [Mod / Item Addition] → [Addition-Mass Production Time Efficiency]
+
+■ Adaptation of existing world
+-Add "Make_a_Lot_of_Items_Mod" to "mods.json" of "save \ world folder" in the main body folder.
+-ModID: "Make_a_Lot_of_Items_Mod"
+
+◆ Items to be added
+
+◇ shark pan
+・ Tools necessary for mass cooking.
+□ How to obtain
+→ Drop from oven or kitchen with low probability
+→ Automatically learn recipes at production level 4 and make your own with [Other] [Tool]
+
+◇ Large pasta extrusion machine
+・ Tools necessary for mass cooking.
+□ How to obtain
+→ Drop at pasta restaurant
+→ Automatic recipe acquisition at production level 7, self-made with [Other] [Tool]
+
+一 Complete set of molds for glass bottle production
+・ Tools necessary for mass production.
+□ How to obtain
+→ Drop at the glass workshop
+→ Additional level 8 recipes learned in the additional manual “Glass Studio Manual”, self-made with [Other] [Tool]
+
+◇ Glass workshop manual
+・ Necessary for learning recipes for mass production.
+□ How to obtain
+→ Drop at the glass workshop
+
+◆ Maps to be added
+
+◇ Pasta restaurant
+・ Map symbol: Pink [P]
+・ A restaurant with a lot of spaghetti.
+-A restaurant where the "large pasta extruder" may be down.
+
+◇ Glass workshop
+・ Map symbol: Light blue [G]
+・ A workshop where the "glass bottle manufacturing mold set" may have fallen.
+・ A workshop where the "Glass Workshop Manual" may be dropped with a high probability.
+
+◆ Additional recipe
+
+■ Food
+◇ Acorn (cooked) 10 in total
+・ Cook 4, Survival 4: Automatic learning
+・ Necessary tools: Inlet pot
+
+◇ 10 pieces of spaghetti (dry) together
+◇ Lasagna (dry) 10
+◇ Macaroni (dry) 10 in a mass
+・ Cook 6: Automatic learning
+・ Necessary tools: Inlet pot
+・ Necessary tools: Large pasta extruder
+
+◇ Five ramen (boiled) together
+・ Cook 1: Automatic learning
+・ Necessary tools: Inlet pot
+
+■ Other
+◇ Inlet pot
+・ Production 4: Automatic learning
+
+◇ Large pasta extruder
+・ Production 7: Automatic acquisition
+
+一 Complete set of molds for glass bottle production
+・ Production 8: Recipe book “Glass Studio Manual”
+
+◇ Bottle (3L / glass) time efficiency improvement
+・ Necessary tool: Glass bottle manufacturing mold set
+・ Production 8: Recipe book “Glass Studio Manual”
+
+◇ Improved time efficiency of glass bottle (750ml)
+・ Necessary tool: Glass bottle manufacturing mold set
+・ Production 7: Recipe required, “Glass Studio Manual”
+
+◇ Bottle (500ml / glass) time efficiency improvement
+・ Necessary tool: Glass bottle manufacturing mold set
+・ Production 6: Required recipe book “Glass Studio Manual”
+
+◆ Additional scenarios
+・ This is an additional scenario that does not require searching for an additional map.
+
+◇ "At that time I was eating pasta"
+・ Initial position is "pasta restaurant" of additional map
+
+◇ "Glass workshop tour"
+・ The initial position is "Glass Studio" on the additional map
+
+◆ Update history
+・ 2016/04/15: Ver0.1 released

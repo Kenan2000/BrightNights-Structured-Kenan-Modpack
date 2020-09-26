@@ -1,0 +1,26 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_rf_food_keeper",
+    "name": "RF.A food keeper",
+    "description": "A RF.A food keeper.",
+    "symbol": "&",
+    "color": "light_green",
+    "move_cost_mod": -1,
+    "required_str": -1,
+    "crafting_pseudo_item": "rf_irradiate",
+    "deconstruct": { "items": [ { "item": "rf_food_keeper", "count": 1 } ] },
+    "flags": [ "NOITEM" ],
+    "bash": {
+      "str_min": 4,
+      "str_max": 8,
+      "sound": "crunch!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "alloy_sheet", "count": [ 2, 6 ] },
+        { "item": "scrap", "count": [ 2, 6 ] },
+        { "item": "plastic_chunk", "count": [ 2, 3 ] }
+      ]
+    }
+  }
+]

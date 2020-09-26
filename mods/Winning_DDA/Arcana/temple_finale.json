@@ -1,0 +1,59 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "temple_finale" ],
+    "weight": 500,
+    "object": {
+      "rows": [
+        "         ######         ",
+        "         #q..q#         ",
+        "         ##..##         ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #..#          ",
+        "          #<<#          "
+      ],
+      "terrain": {
+        " ": "t_rock_floor",
+        "<": "t_stairs_up",
+        "#": "t_fault",
+        ".": "t_carpet_purple",
+        "q": "t_lava"
+      },
+      "place_items": [
+        { "item": "magic_items", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_items", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_items", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_items", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_consumables", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_consumables", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_consumables", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_consumables", "x": [ 11, 11 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_tools", "x": [ 12, 12 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_tools", "x": [ 12, 12 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_tools", "x": [ 12, 12 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "magic_tools", "x": [ 12, 12 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "temple_eye", "x": [ 12, 12 ], "y": [ 1, 1 ], "chance": 100 },
+        { "item": "temple_quest", "x": [ 12, 12 ], "y": [ 1, 1 ], "chance": 100 }
+      ] 
+    }
+  }
+]

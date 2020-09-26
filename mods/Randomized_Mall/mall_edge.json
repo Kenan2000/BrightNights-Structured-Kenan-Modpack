@@ -1,0 +1,266 @@
+[
+  {
+    "type": "mapgen",
+    "om_terrain": "mall_edge",
+    "weight": 1000,
+    "method": "json",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+       "rows": [
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "|gggggggggggggggggggggg|",
+        "|nnn................nnn|",
+        "|TTT...c...c....c...TTT|",
+        "|nnn..TT...TT...TT..nnn|",
+        "|nnn..TT..cTT..cTT..nnn|",
+        "|TTT..c....c.....c..TTT|",
+        "|nnn................nnn|",
+        "|----+--...............|",
+        "|rrsU t|.6........-+-+-|",
+        "|C     |.Y........| |;;|",
+        "|CoooCC|.Y....ppp.|t|&s|",
+        "-----------GG-----------"
+      ],
+      "rotation": 0,
+      "palettes": [ "mall_base", "mall_linoleum_gray", "mall_food", "mall_with_bathroom" ],
+      "furniture":{ "Y": "f_counter" },
+      "terrain":{
+        "Y": "t_floor",
+        ",": "t_thconc_floor",
+        "t": "t_thconc_floor",
+        "o": "t_thconc_floor",
+        "U": "t_thconc_floor",
+        "r": "t_thconc_floor"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "mall_edge",
+    "weight": 1000,
+    "method": "json",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+       "rows": [
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "|gggggggggggggggggggggg|",
+        "|......................|",
+        "|.--------------------+|",
+        "|................+..c..|",
+        "|.,,,,,,,,,,,.C6C|.DDDp|",
+        "|.,,,,,,,,,,,.---------|",
+        "|.,,,,,,,,,,,.|lllllltt|",
+        "|.,,,,,,,,,,,.+..nn....|",
+        "|.,,,,,,,,,,,.|.....-+-|",
+        "|.,,,,,,,,,,,.-+--+-|;s|",
+        "|.............|;S|;S|;&|",
+        "-----------++-----------"
+      ],
+      "rotation": 0,
+      "palettes": ["mall_base", "mall_with_bathroom" ],
+      "furniture": {",": "f_tatami"},
+      "terrain": {"S": "t_linoleum_white"}
+    }
+  },
+
+  {
+    "type": "mapgen",
+    "om_terrain": "mall_edge",
+    "weight": 800,
+    "method": "json",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+       "rows": [
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "|......................|",
+        "|%|VV|vv|tt|VV|vv|VV|tt|",
+        "|+---------------------|",
+        "|.+.................+.l|",
+        "|t|.................|.l|",
+        "|--+---------------+---|",
+        "|b..DD|1vvtCCtVV1|p.DDD|",
+        "|b..cD|v........V|...c.|",
+        "|....6|v........V|D....|",
+        "|.....|v........V|D....+",
+        "+..bbb|1t.......1|Dd..p|",
+        "-----------..-----------"
+      ],
+      "rotation": 0,
+      "palettes": ["mall_base", "mall_office" ],
+      "terrain":{ "%": "t_atm" },
+      "vendingmachines": { 
+        "V": { "item_group": "vending_drink", "amount": [ 5, 10 ] },
+        "v": { "item_group": "vending_food", "amount": [ 2, 10 ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "mall_edge",
+    "weight": 800,
+    "method": "json",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+       "rows": [
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "|-gggggggggGGgggggg----|",
+        "|..................d6.U|",
+        "|Y.................Cc.U|",
+        "|........Y|Y.......d..x|",
+        "|Y..ZZ...Y|Y.......-+--|",
+        "|...ZZ..-----......|..x|",
+        "|Y.......Y|Y.......|..D|",
+        "|........Y|Y...ZZ..|xcD|",
+        "|Y..ZZ.........ZZ..----|",
+        "|...ZZ.............|;;s|",
+        "|Y.....ZZZZ..ZZ....+;;&|",
+        "-----------++-----------"
+      ],
+      "rotation": 0,
+      "palettes": ["mall_base", "mall_carpet_wild", "mall_with_bathroom" ],
+      "furniture":{
+        "Y": "f_arcade_machine",
+        "Z": "f_pinball_machine"
+      },
+      "terrain":{
+        "Y": "t_carpet_red",
+        "Z": "t_carpet_yellow"
+      },
+      "items": {
+        "x": { "item": "arcade_prizes", "chance": 80, "amount": [ 5, 10 ] }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "mall_edge",
+    "weight": 1000,
+    "method": "json",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+       "rows": [
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "wwwwwwwwwwwwwwwwwwwwwwww",
+        "|---gggggggGGgggggg----|",
+        "|DD|...cTTc.....CCC|rrr|",
+        "|c.|....TT......C.R|r r|",
+        "|..+............C.R|-+-|",
+        "|UU|..TT...........+  Y|",
+        "|---.cTT..c.....C.C|Y Y|",
+        "|st|......TT....C.U|U Y|",
+        "|&;+......TT....C.C|Y o|",
+        "|---.cTTc.......C..+  o|",
+        "|st|..TT........C.L|  U|",
+        "|&;+............C.L|ssU|",
+        "-----------++-----------"
+      ],
+      "rotation": 0,
+      "palettes": [  "mall_base", "mall_wood", "mall_food" , "mall_with_bathroom" ],
+      "furniture":{ "Y": "f_counter" },
+      "terrain":{
+        ",": "t_thconc_floor",
+        "Y": "t_thconc_floor",
+        "o": "t_thconc_floor",
+        "U": "t_thconc_floor",
+        "r": "t_thconc_floor",
+        "t": "t_linoleum_white"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": "mall_edge",
+    "weight": 1000,
+    "method": "json",
+    "object": {
+      "fill_ter": "t_thconc_floor",
+       "rows": [
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "PPPPPPPPPPPPPPPPPPPPPPPP",
+        "wwwwwwwwwwwwwPPPPPPPPPww",
+        "wwwwwwwwwwwwwPPPPPPPPPww",
+        "wwwwwwwwwwwwwPPPPPPPPPww",
+        "wwwwwwwwwww--*********-w",
+        "wwwwwwwwwww|%.........|w",
+        "-----+------..........--",
+        "|.XX..XX..Xx..........6|",
+        "|......................|",
+        "|.XX..XX..xX...........|",
+        "|..............v.......|",
+        "|......................|",
+        "|------+--.............|",
+        "|TT..+...|.............|",
+        "|....|..6b.............|",
+        "|Dc..|.cDg.............|",
+        "|DDD.|..Dg...|l|l|l|l|l|",
+        "-----------++-----------"
+      ],
+      "rotation": 0,
+      "palettes": ["mall_base", "mall_office"],
+      "terrain":{
+        "*": "t_door_metal_locked",
+        "%": "t_gates_mech_control"
+      },
+      "vehicles": { "v": { "vehicle": "forklift", "chance": 80, "status": 0 } }
+    }
+  }
+]

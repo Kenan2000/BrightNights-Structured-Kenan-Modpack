@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ocg_gauss_gun285",
+    "copy-from": "ocg_gauss_carbine166",
+    "type": "GUN",
+    "name": "OCG GG285 Gauss gun",
+    "description": "A milspec bullpup coilgun which accelerates OmniCorp proprietary 1.06mm magmetal glass flechettes to hypervelocity, fed by an UPS and a 300-round helical magazine. Bulky and heavy due to its capacitor but still compact in length.",
+    "volume": 7,
+    "weight": 3270,
+    "price": 1500000,
+    "price_postapoc": 750000,
+    "//": "Super rare ammo lowers its value. On the other hand, its ammo is very expensive",
+    "ammo": "1magmg",
+    "range": 58,
+    "ranged_damage": 52,
+    "pierce": 50,
+    "loudness": -30,
+    "dispersion": 65,
+    "ups_charges": 9,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2 ], [ "AUTO", "auto", 10 ] ],
+    "magazine_well": 2
+  }
+]

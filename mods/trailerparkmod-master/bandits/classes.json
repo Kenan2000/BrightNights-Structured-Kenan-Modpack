@@ -1,0 +1,53 @@
+[
+	{
+		"type" : "npc_class",
+		"id" : "NC_BERZERKER",
+		"name" : "Berzerker",
+		"common" : false,
+		"job_description" : "BUG? You shouldn't be able to talk to them.",
+		"bonus_str" : { "rng" : [ 2, 4 ] },
+		"bonus_dex" : { "rng" : [ 0, 2 ] },
+		"bonus_per" : { "rng" : [ 0, 2 ] },
+		"skills" : [
+			{
+				"skill" : "ALL", "level" : {
+					"mul" : [
+						{ "one_in" : 3 },
+						{
+							"sum" : [
+								{ "dice" : [ 2, 2 ] },
+								{ "rng" : [ 1, 2 ] }
+							]
+						}
+					]
+				}
+			},
+			{ "skill": "dodge", "bonus" : { "rng" : [ 2, 4 ] } },
+			{ "skill": "gun", "bonus" : { "rng" : [ 1, 4 ] } },
+			{ "skill": "pistol", "bonus" : { "rng" : [ 4, 6 ] } }
+		],
+		"traits": [
+			[ "ADRENALINE", 100 ]
+		]
+	},
+	{
+		"type" : "npc_class",
+		"id" : "NC_MILITIAKING",
+		"name" : "Militia King",
+		"common" : false,
+		"job_description" : "BUG? You shouldn't be able to talk to me.",
+		"bonus_str" : 5,
+		"bonus_dex" : 5,
+		"bonus_per" : 5,
+		"skills" : [
+			{ "skill": "dodge", "bonus" : 5 },
+			{ "skill": "gun", "bonus" : 5 },
+			{ "skill": "shotgun", "bonus" : { "rng" : [ 5, 8 ] } },
+			{ "skill": "firstaid", "bonus" : { "rng" : [ 4, 6 ] } }
+		],
+		"traits": [
+            [ "PAINRESIST", 100 ],
+            [ "ADRENALINE", 100 ]
+		]
+	}
+]

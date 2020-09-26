@@ -1,0 +1,82 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_SECRO_RESEARCHER_main",
+    "dynamic_line": {
+      "u_has_effect": "secro_scientist_mission1_progress",
+      "no": "You are not authorized to this area.",
+      "yes": {
+        "u_has_effect": "secro_researcher_mission1_help",
+        "no": "What is it?",
+        "yes": {
+          "u_has_effect": "secro_scientist_partake_mission1",
+          "no": "You better get going.",
+          "yes": {
+            "u_has_effect": "secro_researcher_mission1_help_done",
+            "no": "Great job, survivor. I never expect an outsider help us with our dilemma, yet here you are.",
+            "yes": "What do you want?"
+          }
+        }
+      }
+    },
+    "responses": [
+      {
+        "text": "We need to go.",
+        "topic": "TALK_SECRO_RESEARCHER_mission1_progress",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "secro_researcher_mission1_help" } },
+            { "u_has_effect": "secro_scientist_mission1_progress" }
+          ]
+        }
+      },
+      {
+      "text": "Yeah, and I want to know more about your plans.",
+      "topic": "TALK_DONE",
+      "condition": {
+        "and": [
+          { "not": { "u_has_effect": "secro_researcher_mission1_help_done" } },
+          { "u_has_effect": "secro_scientist_partake_mission1" }
+        ]
+      },
+      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_researcher_mission1_help_done" }, "stop_following" ]
+    },
+      {
+        "truefalsetext": {
+          "condition": { "u_has_effect": "secro_scientist_mission1_progress" },
+          "true": "Nothing.",
+          "false": "Bye then...",
+          "topic": "TALK_DONE"
+        },
+        "condition": { "not": { "u_has_effect": "secro_researcher_mission1_help" } }
+      },
+      {
+        "text": "I am.",
+        "topic": "TALK_DONE",
+        "condition": {
+          "and": [
+            { "not": { "u_has_effect": "secro_scientist_partake_mission1" } },
+            { "u_has_effect": "secro_researcher_mission1_help" }
+          ]
+        }
+      },
+      {
+        "text": "Nothing.",
+        "topic": "TALK_DONE",
+        "condition": { "u_has_effect": "secro_researcher_mission1_help_done" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_SECRO_RESEARCHER_mission1_progress",
+    "dynamic_line": "I know. Just lead us all to that chamber.",
+    "responses": [
+      {
+        "text": "Okay.",
+        "topic": "TALK_DONE",
+        "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_researcher_mission1_help" }, "follow_only" ]
+      }
+    ]
+  }
+]

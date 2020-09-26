@@ -1,0 +1,40 @@
+[
+  {
+    "id": "gas_fungicidal",
+    "type": "AMMO",
+    "name": "sprayable fungicide",
+    "description": "Fungicide enhanced with sulfur to create sprayable anti-fungal ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
+    "weight": "3 g",
+    "volume": "250 ml",
+    "price": 600,
+    "price_postapoc": 3500,
+    "material": "water",
+    "symbol": "=",
+    "color": "yellow",
+    "container": "bottle_plastic",
+    "phase": "liquid",
+    "ammo_type": "chemical_spray",
+    "range": 4,
+    "count": 100,
+    "effects": [ "TOXICGAS", "GAS_FUNGICIDAL", "STREAM_GAS_FUNGICIDAL", "NEVER_MISFIRES", "JET" ]
+  },
+  {
+    "id": "gas_insecticidal",
+    "type": "AMMO",
+    "name": "sprayable insecticide",
+    "description": "Strong sprayable insecticide ammo for the chemical thrower.  Best be used with some kind of mask or mouth protection.",
+    "weight": "3 g",
+    "volume": "250 ml",
+    "price": 500,
+    "price_postapoc": 3500,
+    "material": "water",
+    "symbol": "=",
+    "color": "yellow",
+    "container": "bottle_plastic",
+    "phase": "liquid",
+    "ammo_type": "chemical_spray",
+    "range": 4,
+    "count": 100,
+    "effects": [ "TOXICGAS", "GAS_INSECTICIDAL", "STREAM_GAS_INSECTICIDAL", "NEVER_MISFIRES", "JET" ]
+  }
+]
