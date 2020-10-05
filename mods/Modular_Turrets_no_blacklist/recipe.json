@@ -1,7 +1,7 @@
 [
   {
+	"abstract": "bot_MThack_base",
     "type": "recipe",
-    "result": "bot_hack_base",
     "override": "true",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_OTHER",
@@ -34,7 +34,7 @@
   {
     "type": "recipe",
     "result": "bot_manhack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "components": [
       [ [ "bot_manhack", 1 ], [ "broken_manhack", 1 ], [ "broken_grenade_hack", 1 ] ],
       [ [ "grenade", 1 ] ],
@@ -47,7 +47,7 @@
   {
     "type": "recipe",
     "result": "bot_grenade_hack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "components": [
       [ [ "bot_manhack", 1 ], [ "broken_manhack", 1 ], [ "broken_grenade_hack", 1 ] ],
       [ [ "grenade", 1 ] ],
@@ -60,7 +60,7 @@
   {
     "type": "recipe",
     "result": "bot_gasbomb_hack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "components": [
       [ [ "bot_manhack", 1 ], [ "broken_manhack", 1 ], [ "broken_gasbomb_hack", 1 ] ],
       [ [ "gasbomb", 1 ] ],
@@ -73,7 +73,7 @@
   {
     "type": "recipe",
     "result": "bot_flashbang_hack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "components": [
       [ [ "bot_manhack", 1 ], [ "broken_manhack", 1 ], [ "broken_flashbang_hack", 1 ] ],
       [ [ "flashbang", 1 ] ],
@@ -86,7 +86,7 @@
   {
     "type": "recipe",
     "result": "bot_EMP_hack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "components": [
       [ [ "bot_manhack", 1 ], [ "broken_manhack", 1 ], [ "broken_EMP_hack", 1 ] ],
       [ [ "EMPbomb", 1 ] ],
@@ -99,7 +99,7 @@
   {
     "type": "recipe",
     "result": "bot_c4_hack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "components": [
       [ [ "bot_manhack", 1 ], [ "broken_manhack", 1 ], [ "broken_c4_hack", 1 ] ],
       [ [ "c4", 1 ] ],
@@ -112,7 +112,7 @@
   {
     "type": "recipe",
     "result": "bot_mininuke_hack",
-    "copy-from": "bot_hack_base",
+    "copy-from": "bot_MThack_base",
     "difficulty": 7,
     "time": 35000,
     "reversible": false,
