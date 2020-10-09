@@ -1,0 +1,26 @@
+[
+  {
+    "type": "TOOL",
+    "id": "ultrasonication_station",
+    "name": { "str": "ultrasonication station" },
+    "description": "A portable station used for ultrasonic breakdown of materials into nanopowders.",
+    "symbol": ",",
+    "color": "light_gray",
+    "volume": "83 L",
+    "weight": "12 kg",
+    "ammo": [ "battery" ],
+    "charges_per_use": 1,
+	"magazines": [
+      [
+        "battery",
+        [
+          "medium_battery_cell",
+          "medium_plus_battery_cell",
+          "medium_atomic_battery_cell",
+          "medium_disposable_cell"
+        ]
+      ]
+    ],
+	"magazine_well": 4
+  }
+]
