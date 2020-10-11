@@ -1,6 +1,7 @@
 [
   {
     "type" : "vehicle_part",
+	"looks_like" : "wheel_armor",
     "id" : "heavy_mech_leg",
     "name" : "heavy mech leg",
     "symbol" : "H",
@@ -13,7 +14,7 @@
     "item" : "heavy_mech_leg",
     "difficulty" : 8,
     "location" : "under",
-    "flags" : ["WHEEL", "VARIABLE_SIZE"],
+    "flags" : ["WHEEL", "VARIABLE_SIZE", "STEERABLE"],
     "breaks_into" : [
             {"item": "hdframe", "min": 2, "max": 3},
             {"item": "hard_plate", "min": 2, "max": 4},
@@ -25,6 +26,7 @@
 },
 {
     "type" : "vehicle_part",
+	"looks_like" : "wheel_armor",
     "id" : "medium_mech_leg",
     "name" : "medium mech leg",
     "symbol" : "H",
@@ -37,7 +39,7 @@
     "item" : "medium_mech_leg",
     "difficulty" : 8,
     "location" : "under",
-    "flags" : ["WHEEL", "VARIABLE_SIZE"],
+    "flags" : ["WHEEL", "VARIABLE_SIZE", "STEERABLE"],
     "breaks_into" : [
             {"item": "frame", "min": 2, "max": 3},
             {"item": "steel_plate", "min": 2, "max": 4},
@@ -49,6 +51,7 @@
 },
 {
     "type" : "vehicle_part",
+	"looks_like" : "wheel_armor",
     "id" : "light_mech_leg",
     "name" : "light mech leg",
     "symbol" : "H",
@@ -61,7 +64,7 @@
     "item" : "light_mech_leg",
     "difficulty" : 8,
     "location" : "under",
-    "flags" : ["WHEEL", "VARIABLE_SIZE"],
+    "flags" : ["WHEEL", "VARIABLE_SIZE", "STEERABLE"],
     "breaks_into" : [
             {"item": "frame", "min": 2, "max": 3},
             {"item": "alloy_plate", "min": 2, "max": 4},
@@ -74,6 +77,7 @@
   },
   {
         "type" : "vehicle_part",
+        "looks_like" : "plasma_gun",
         "id" : "mounted_railgun",
         "name" : "mounted railgun",
         "symbol" : "t",
@@ -93,6 +97,7 @@
     },
   {
         "type" : "vehicle_part",
+        "looks_like" : "mounted_m134",
         "id" : "mounted_gatling",
         "name" : "mounted gatling gun",
         "symbol" : "t",
@@ -112,6 +117,7 @@
     },
   {
         "type" : "vehicle_part",
+		"looks_like" : "wheel_bicycle",
         "id" : "wheel_buggy",
         "name" : "buggy wheel",
         "symbol" : "O",
@@ -350,6 +356,7 @@
         ]
     },{
         "type" : "vehicle_part",
+        "looks_like": "hddoor_opaque",
         "id" : "ehd_hatch",
         "name" : "mech hatch",
         "symbol" : "+",
@@ -370,6 +377,7 @@
         ]
     },{
         "type" : "vehicle_part",
+        "looks_like": "door_shutter",
         "id" : "mech_shutter",
         "name": "blast shutters",
         "symbol": "+",
@@ -382,7 +390,7 @@
         "item": "sheet_metal",
         "location": "on_windshield",
         "difficulty": 3,
-        "flags": ["OPENABLE", "OPENCLOSE_INSIDE", "OPAQUE", "CURTAIN"],
+        "flags": ["OPENABLE", "OPENCLOSE_INSIDE", "OPAQUE", "CURTAIN", "BOARDABLE"],
         "breaks_into": []
     }
 ]

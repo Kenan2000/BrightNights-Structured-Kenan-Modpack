@@ -101,25 +101,21 @@
             }
         ],
         "items": {
-            "both": [
+             "both": {
+                   "items": [
 				"jumpsuit",
-                "gloves_tactical",
+                     "gloves_tactical",
 				"boots_combat",
-				"sholster",
 				"helmet_mechpilot",
-				"l_enforcer_45",
-				"45_super",
-				"45_super",
-				"legrig"
-            ],
-            "male": [
-                "briefs"
-            ],
-            "female": [
-                "sports_bra",
-                "panties"
-            ]
+                      "legrig"
+                     ],
+                     "entries": [
+				{ "item": "rm103a_pistol", "ammo_item": "8mm_hvp", "container-item": "XL_holster", "charges": 10 },
+				{ "item": "tacvest", "contents-group": "army_mags_rm11b" }
+        ],
+            "male": [ "briefs" ],
+            "female": [ "sports_bra", "panties" ]
         }
-    }
-	
+  }
+}
 ]

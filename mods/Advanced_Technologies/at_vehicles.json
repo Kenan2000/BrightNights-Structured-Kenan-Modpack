@@ -17,7 +17,10 @@
             {"x": 0, "y": 0, "part": "seatbelt_heavyduty"},
             {"x": 0, "y": 0, "part": "hdroof"},
             {"x": 0, "y": 0, "part": "controls"},
-			{"x": 0, "y": 1, "part": "hdframe_sw"},
+            {"x": 0, "y": 0, "part": "dashboard"},
+            {"x": 0, "y": 0, "part": "cam_control"},
+            {"x": 0, "y": 0, "part": "vehicle_clock"},
+ 			{"x": 0, "y": 1, "part": "hdframe_sw"},
 			{"x": 0, "y": 1, "part": "storage_battery"},
 			{"x": 0, "y": 1, "part": "hdboard_sw"},
             {"x": 0, "y": 2, "part": "hdframe_vertical_2"},
@@ -68,6 +71,8 @@
             {"x": 0, "y": 0, "part": "seatbelt_heavyduty"},
             {"x": 0, "y": 0, "part": "hdroof"},
             {"x": 0, "y": 0, "part": "controls"},
+            {"x": 0, "y": 0, "part": "dashboard"},
+            {"x": 0, "y": 0, "part": "vehicle_clock"},
 			{"x": 0, "y": 1, "part": "ehdframe_sw"},
 			{"x": 0, "y": 1, "part": "storage_battery"},
 			{"x": 0, "y": 1, "part": "hdboard_sw"},
@@ -130,7 +135,9 @@
             {"x": 0, "y": 0, "part": "seatbelt_heavyduty"},
             {"x": 0, "y": 0, "part": "hdroof"},
             {"x": 0, "y": 0, "part": "controls"},
-			{"x": 0, "y": 0, "part": "cam_control"},
+            {"x": 0, "y": 0, "part": "dashboard"},
+            {"x": 0, "y": 0, "part": "cam_control"},
+            {"x": 0, "y": 0, "part": "vehicle_clock"},
 			{"x": 0, "y": 1, "part": "hdframe_sw"},
 			{"x": 0, "y": 1, "part": "storage_battery"},
 			{"x": 0, "y": 1, "part": "hdboard_sw"},
@@ -175,11 +182,13 @@
             {"x": 1, "y": 0, "part": "headlight_reinforced"},
             {"x": 1, "y": 0, "part": "battery_motorbike"},
             {"x": 2, "y": 0, "part": "frame_vertical"},
-            {"x": 2, "y": 0, "part": "wheel_motorbike"},
-			{"x": 2, "y": 0, "part": "engine_electric"},
+            {"x": 2, "y": 0, "part": "engine_electric"},
+            {"x": 2, "y": 0, "part": "wheel_mount_light_steerable"},  
+            {"x": 2, "y": 0, "part": "wheel_motorbike"},		
             {"x": -1, "y": 0, "part": "frame_vertical"},
-            {"x": -1, "y": 0, "part": "wheel_motorbike"},
-			{"x": -1, "y": 0, "part": "engine_electric"}
-        ]
+            {"x": -1, "y": 0, "part": "engine_electric"},
+            {"x": -1, "y": 0, "part": "wheel_mount_light"},
+            {"x": -1, "y": 0, "part": "wheel_motorbike"}
+            ]
     }
 ]

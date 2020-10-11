@@ -725,5 +725,39 @@
     "reliability": 8,
     "reload_time": 100,
     "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "460mag",
+    "type": "MAGAZINE",
+    "name": "M1911A1 .460 Rowland magazine",
+    "description": "A custom 7-round magazine for use with the M1911A1 .460 Conversion handgun.",
+    "weight": "70 g",
+    "volume": "250 ml",
+    "price": 2980,
+    "material": [ "steel" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ ".460" ],
+    "capacity": 7,
+    "reliability": 10,
+    "reload_time": 100,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "460mag2",
+    "type": "MAGAZINE",
+    "name": "M1911A1 .460 Rowland magazine",
+    "description": "A custom 10-round magazine for use with the M1911A1 .460 Conversion handgun.",
+    "weight": "120 g",
+    "volume": "500 ml",
+    "price": 2980,
+    "material": [ "steel" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ ".460" ],
+    "capacity": 10,
+    "reliability": 10,
+    "reload_time": 125,
+    "flags": [ "MAG_COMPACT" ]
   }
 ]
