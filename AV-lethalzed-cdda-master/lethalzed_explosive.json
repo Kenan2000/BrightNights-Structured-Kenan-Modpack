@@ -1,0 +1,42 @@
+[
+  {
+    "id": "mon_boomer",
+    "copy-from": "mon_boomer",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medcharge", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_boomer_huge",
+    "copy-from": "mon_boomer_huge",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highcharge", 40 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_gas_zombie",
+    "copy-from": "mon_gas_zombie",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_gasbag",
+    "copy-from": "mon_zombie_gasbag",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  }
+]

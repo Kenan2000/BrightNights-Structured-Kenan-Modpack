@@ -1,0 +1,115 @@
+[
+  {
+    "id": "mon_zhark",
+    "copy-from": "mon_zhark",
+    "type": "MONSTER"
+  },
+  {
+    "id": "mon_zombie_dog",
+    "copy-from": "mon_zombie_dog",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 5 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_dog_skeleton",
+    "copy-from": "mon_dog_skeleton",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 4 ],
+        [ "lz_lowcharge", 25 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_dog_zombie_cop",
+    "copy-from": "mon_dog_zombie_cop",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 40 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_dog_zombie_rot",
+    "copy-from": "mon_dog_zombie_rot",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 35 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zolf",
+    "copy-from": "mon_zolf",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 5 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombear",
+    "copy-from": "mon_zombear",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highscratch", 40 ],
+        [ "lz_highcharge", 35 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_pig",
+    "copy-from": "mon_zombie_pig",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombeaver",
+    "copy-from": "mon_zombeaver",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 11 ],
+        [ "lz_lowcharge", 75 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zoose",
+    "copy-from": "mon_zoose",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zougar",
+    "copy-from": "mon_zougar",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 15 ],
+        [ "lz_lowcharge", 20 ]
+      ]
+    }
+  }
+]

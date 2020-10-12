@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mon_zombie_scientist",
+    "copy-from": "mon_zombie_scientist",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 11 ],
+        [ "lz_lowcharge", 35 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_labsecurity",
+    "copy-from": "mon_zombie_labsecurity",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 22 ],
+        [ "lz_lowscratch", 14 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  }
+]

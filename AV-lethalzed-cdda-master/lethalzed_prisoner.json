@@ -1,0 +1,12 @@
+{
+    "id": "mon_zombie_prisoner",
+    "copy-from": "mon_zombie_prisoner",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 9 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  }

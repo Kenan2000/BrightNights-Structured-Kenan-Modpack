@@ -1,0 +1,78 @@
+[
+  {
+    "id": "mon_zombie_anklebiter",
+    "copy-from": "mon_zombie_anklebiter",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 23 ],
+        [ "lz_lowscratch", 7 ],
+        [ "lz_lowcharge", 40 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_child",
+    "copy-from": "mon_zombie_child",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 7 ],
+        [ "lz_lowcharge", 45 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_creepy",
+    "copy-from": "mon_zombie_creepy",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 5 ],
+        [ "lz_lowcharge", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_shriekling",
+    "copy-from": "mon_zombie_shriekling",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 30 ],
+        [ "lz_lowscratch", 10 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_snotgobbler",
+    "copy-from": "mon_zombie_snotgobbler",
+    "type": "MONSTER"
+  },
+  {
+    "id": "mon_zombie_sproglodyte",
+    "copy-from": "mon_zombie_sproglodyte",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_waif",
+    "copy-from": "mon_zombie_waif",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 22 ],
+        [ "lz_medscratch", 26 ],
+        [ "lz_lowcharge", 35 ]
+      ]
+    }
+  }
+]

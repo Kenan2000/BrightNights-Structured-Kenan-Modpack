@@ -1,0 +1,140 @@
+[
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_lowgrabbite",
+    "accuracy": 4,
+    "move_cost": 100,
+    "damage_max_instance": [ { "damage_type": "stab", "amount": 10, "armor_multiplier": 0.5 } ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO" }
+    ],
+    "hit_dmg_u": "The %1$s bites as it grasps at you!",
+    "hit_dmg_npc": "The %1$s bites <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s bites you, but you dodge!",
+    "miss_msg_npc": "The %s bites <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_medgrabbite",
+    "accuracy": 7,
+    "move_cost": 100,
+    "damage_max_instance": [ { "damage_type": "stab", "amount": 15, "armor_multiplier": 0.5 } ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO" }
+    ],
+    "hit_dmg_u": "The %1$s bites as it grasps at you!",
+    "hit_dmg_npc": "The %1$s bites <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s bites you, but you dodge!",
+    "miss_msg_npc": "The %s bites <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_highgrabbite",
+    "accuracy": 10,
+    "move_cost": 100,
+    "damage_max_instance": [ { "damage_type": "stab", "amount": 25, "armor_multiplier": 0.5 } ],
+    "effects": [
+      { "id": "grabbed", "duration": 1000, "bp": "TORSO" }
+    ],
+    "hit_dmg_u": "The %1$s bites as it grasps at you!",
+    "hit_dmg_npc": "The %1$s bites <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to bite you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to bite <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s bites you, but you dodge!",
+    "miss_msg_npc": "The %s bites <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_lowscratch",
+    "accuracy": 7,
+    "move_cost": 125,
+    "damage_max_instance": [ { "damage_type": "cut", "amount": 8, "armor_multiplier": 0.7 } ],
+    "hit_dmg_u": "The %1$s scratches you!",
+    "hit_dmg_npc": "The %1$s scratches <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s scratches you, but you dodge!",
+    "miss_msg_npc": "The %s scratches <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_medscratch",
+    "accuracy": 6,
+    "move_cost": 150,
+    "damage_max_instance": [ { "damage_type": "cut", "amount": 16, "armor_multiplier": 0.725 } ],
+    "hit_dmg_u": "The %1$s scratches you!",
+    "hit_dmg_npc": "The %1$s scratches <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s scratches you, but you dodge!",
+    "miss_msg_npc": "The %s scratches <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_highscratch",
+    "accuracy": 5,
+    "move_cost": 200,
+    "damage_max_instance": [ { "damage_type": "cut", "amount": 32, "armor_multiplier": 0.75 } ],
+    "hit_dmg_u": "The %1$s scratches you!",
+    "hit_dmg_npc": "The %1$s scratches <npcname>!",
+    "no_dmg_msg_u": "The %1$s tries to scratch you, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tries to scratch <npcname>, but fails to penetrate their armor!",
+    "miss_msg_u": "The %s scratches you, but you dodge!",
+    "miss_msg_npc": "The %s scratches <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_lowcharge",
+    "accuracy": 2,
+    "move_cost": 250,
+    "damage_max_instance": [ { "damage_type": "bash", "amount": 10, "armor_multiplier": 0.6 } ],
+    "effects": [ { "id": "downed", "duration": 2 }, { "id": "stunned", "duration": 1, "chance": 25 } ],
+    "hit_dmg_u": "You were brought down by the %1$s's staggering charge!",
+    "hit_dmg_npc": "<npcname> were brought down into the floor!",
+    "no_dmg_msg_u": "The %1$s charges at you, but you bat them away!",
+    "no_dmg_msg_npc": "The %1$s charges at <npcname>, but they bat them away!",
+    "miss_msg_u": "The %1$s charges at you, but you dodge!",
+    "miss_msg_npc": "The %1$s charges at <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_medcharge",
+    "accuracy": 4,
+    "move_cost": 300,
+    "damage_max_instance": [ { "damage_type": "bash", "amount": 15, "armor_multiplier": 0.7 } ],
+    "effects": [ { "id": "downed", "duration": 4 }, { "id": "stunned", "duration": 1, "chance": 50 } ],
+    "hit_dmg_u": "You were brought down by the %1$s's charge!",
+    "hit_dmg_npc": "<npcname> were brought down into the floor!",
+    "no_dmg_msg_u": "The %1$s charges at you, but you bat them away!",
+    "no_dmg_msg_npc": "The %1$s charges at <npcname>, but they bat them away!",
+    "miss_msg_u": "The %1$s charges at you, but you dodge!",
+    "miss_msg_npc": "The %1$s charges at <npcname>, but they dodge!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "lz_highcharge",
+    "accuracy": 8,
+    "move_cost": 400,
+    "damage_max_instance": [ { "damage_type": "bash", "amount": 20, "armor_multiplier": 0.8 } ],
+    "effects": [ { "id": "downed", "duration": 6 }, { "id": "stunned", "duration": 1, "chance": 75 } ],
+    "hit_dmg_u": "You were brought down by the %1$s's destructive charge!",
+    "hit_dmg_npc": "<npcname> were brought down into the floor!",
+    "no_dmg_msg_u": "The %1$s charges at you, but you bat them away!",
+    "no_dmg_msg_npc": "The %1$s charges at <npcname>, but they bat them away!",
+    "miss_msg_u": "The %1$s charges at you, but you dodge!",
+    "miss_msg_npc": "The %1$s charges at <npcname>, but they dodge!"
+  }
+]

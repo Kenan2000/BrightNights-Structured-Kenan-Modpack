@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mon_zombie_survivor",
+    "copy-from": "mon_zombie_survivor",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 7 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_survivor_elite",
+    "copy-from": "mon_zombie_survivor_elite",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 25 ]
+      ]
+    }
+  }
+]

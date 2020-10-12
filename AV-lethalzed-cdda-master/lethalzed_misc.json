@@ -1,0 +1,273 @@
+[
+  {
+    "id": "mon_zombie_biter",
+    "copy-from": "mon_zombie_biter",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highgrabbite", 28 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_brainless",
+    "copy-from": "mon_zombie_brainless",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 16 ],
+        [ "lz_lowcharge", 60 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_brute",
+    "copy-from": "mon_zombie_brute",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_brute_grappler",
+    "copy-from": "mon_zombie_brute_grappler",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 13 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_brute_ninja",
+    "copy-from": "mon_zombie_brute_ninja",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 10 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_ears",
+    "copy-from": "mon_zombie_ears",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 12 ],
+        [ "lz_lowcharge", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_grabber",
+    "copy-from": "mon_zombie_grabber",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 15 ],
+        [ "lz_lowscratch", 5 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_grappler",
+    "copy-from": "mon_zombie_grappler",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_medscratch", 13 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_hollow",
+    "copy-from": "mon_zombie_hollow",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 4 ],
+        [ "lz_lowcharge", 100 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_hulk",
+    "copy-from": "mon_zombie_hulk",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_hunter",
+    "copy-from": "mon_zombie_hunter",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medgrabbite", 26 ],
+        [ "lz_lowscratch", 5 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_mancroc",
+    "copy-from": "mon_zombie_mancroc",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highgrabbite", 39 ],
+        [ "lz_medscratch", 13 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_master",
+    "copy-from": "mon_zombie_master",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 10 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_necro",
+    "copy-from": "mon_zombie_necro",
+    "type": "MONSTER"
+  },
+  {
+    "id": "mon_zombie_runner",
+    "copy-from": "mon_zombie_runner",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_predator",
+    "copy-from": "mon_zombie_predator",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medgrabbite", 24 ],
+        [ "lz_highscratch", 38 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_screecher",
+    "copy-from": "mon_zombie_screecher",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medgrabbite", 27 ],
+        [ "lz_medscratch", 18 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_shady",
+    "copy-from": "mon_zombie_shady",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 30 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 70 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_shrieker",
+    "copy-from": "mon_zombie_shrieker",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 9 ],
+        [ "lz_lowcharge", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_skull",
+    "copy-from": "mon_zombie_skull",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 8 ],
+        [ "lz_lowcharge", 40 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_smoker",
+    "copy-from": "mon_zombie_smoker",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_swimmer",
+    "copy-from": "mon_zombie_swimmer",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 7 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_technician",
+    "copy-from": "mon_zombie_technician",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 23 ],
+        [ "lz_lowscratch", 14 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_thorny",
+    "copy-from": "mon_zombie_thorny",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 23 ],
+        [ "lz_medscratch", 14 ],
+        [ "lz_lowcharge", 40 ]
+      ]
+    }
+  }
+]

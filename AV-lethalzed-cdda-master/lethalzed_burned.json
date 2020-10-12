@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mon_zombie_child_scorched",
+    "copy-from": "mon_zombie_child_scorched",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_lowcharge", 40 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_fiend",
+    "copy-from": "mon_zombie_fiend",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medgrabbite", 31 ],
+        [ "lz_medscratch", 18 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_scorched",
+    "copy-from": "mon_zombie_scorched",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 8 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  }
+]

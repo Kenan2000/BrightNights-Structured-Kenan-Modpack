@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mon_crawler",
+    "copy-from": "mon_crawler",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 20 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_devourer",
+    "copy-from": "mon_devourer",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highgrabbite", 44 ],
+        [ "lz_lowscratch", 6 ],
+        [ "lz_medscratch", 26 ],
+        [ "lz_highcharge", 100 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_crushed_giant",
+    "copy-from": "mon_zombie_crushed_giant",
+    "type": "MONSTER"
+  },
+  {
+    "id": "mon_zombie_gasbag_immobile",
+    "copy-from": "mon_zombie_gasbag_immobile",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 22 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_gasbag_crawler",
+    "copy-from": "mon_zombie_gasbag_crawler",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 7 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_gasbag_impaler",
+    "copy-from": "mon_zombie_gasbag_impaler",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 9 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_living_wall",
+    "copy-from": "mon_zombie_living_wall",
+    "type": "MONSTER",
+    "special_attacks": [ [ "GRAB", 2 ] ]
+  }
+]

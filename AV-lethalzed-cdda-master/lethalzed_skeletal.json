@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mon_skeleton",
+    "copy-from": "mon_skeleton",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 15 ],
+        [ "lz_lowscratch", 5 ],
+        [ "lz_lowcharge", 20 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_skeleton_brute",
+    "copy-from": "mon_skeleton_brute",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 20 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_skeleton_electric",
+    "copy-from": "mon_skeleton_electric",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 8 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_skeleton_hulk",
+    "copy-from": "mon_skeleton_hulk",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highscratch", 39 ],
+        [ "lz_highcharge", 30 ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "id": "mon_zombie_soldier",
+    "copy-from": "mon_zombie_soldier",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 13 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_soldier_blackops_1",
+    "copy-from": "mon_zombie_soldier_blackops_1",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 22 ],
+        [ "lz_lowscratch", 12 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_soldier_blackops_2",
+    "copy-from": "mon_zombie_soldier_blackops_2",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 25 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_soldier_acid_1",
+    "copy-from": "mon_zombie_soldier_acid_1",
+    "type": "MONSTER"
+  },
+  {
+    "id": "mon_zombie_soldier_acid_2",
+    "copy-from": "mon_zombie_soldier_acid_2",
+    "type": "MONSTER"
+  },
+  {
+    "id": "mon_zombie_kevlar_1",
+    "copy-from": "mon_zombie_kevlar_1",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_kevlar_2",
+    "copy-from": "mon_zombie_kevlar_2",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_highcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_military_pilot",
+    "copy-from": "mon_zombie_military_pilot",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 25 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_flamer",
+    "copy-from": "mon_zombie_flamer",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 25 ],
+        [ "lz_medcharge", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_armored",
+    "copy-from": "mon_zombie_armored",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 25 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_bio_op",
+    "copy-from": "mon_zombie_bio_op",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 22 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_bio_op2",
+    "copy-from": "mon_zombie_bio_op2",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medscratch", 18 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  }
+]

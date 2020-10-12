@@ -1,0 +1,152 @@
+[
+  {
+    "id": "mon_beekeeper",
+    "copy-from": "mon_beekeeper",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 14 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie",
+    "copy-from": "mon_zombie",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_cop",
+    "copy-from": "mon_zombie_cop",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 16 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_crawler",
+    "copy-from": "mon_zombie_crawler",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 11 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_fat",
+    "copy-from": "mon_zombie_fat",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medgrabbite", 29 ],
+        [ "lz_lowscratch", 22 ],
+        [ "lz_medcharge", 40 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_fireman",
+    "copy-from": "mon_zombie_fireman",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 20 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_hazmat",
+    "copy-from": "mon_zombie_hazmat",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 40 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_rot",
+    "copy-from": "mon_zombie_rot",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 12 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_swat",
+    "copy-from": "mon_zombie_swat",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowscratch", 27 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_tough",
+    "copy-from": "mon_zombie_tough",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_medgrabbite", 24 ],
+        [ "lz_lowscratch", 12 ],
+        [ "lz_medcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_resort_dancer",
+    "copy-from": "mon_zombie_resort_dancer",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_resort_bouncer",
+    "copy-from": "mon_zombie_resort_bouncer",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  },
+  {
+    "id": "mon_zombie_resort_staff",
+    "copy-from": "mon_zombie_resort_staff",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [
+        [ "lz_lowgrabbite", 20 ],
+        [ "lz_lowscratch", 10 ],
+        [ "lz_lowcharge", 30 ]
+      ]
+    }
+  }
+]
