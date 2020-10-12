@@ -12,7 +12,6 @@
     "volume": "62500 ml",
     "weight": 81500,
     "hp": 100,
-    "emit_fields": [ "emit_flesh_biome_immunity" ],
     "speed": 70,
     "material": [ "flesh" ],
     "symbol": "Z",
@@ -30,13 +29,7 @@
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
       [ "GRAB", 7 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -86,13 +79,7 @@
     "special_attacks": [
       { "type": "bite", "cooldown": 5, "min_mul": 0.7 },
       [ "GRAB", 7 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -142,13 +129,7 @@
     "harvest": "zombie",
     "special_attacks": [
       { "type": "bite", "cooldown": 5, "min_mul": 0.75 },
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -202,13 +183,7 @@
     "harvest": "mr_bones",
     "special_attacks": [
       [ "scratch", 10 ],
-      { "type": "bite", "cooldown": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 5 }
     ],
     "death_drops": "default_zombie_clothes",
     "death_function": [ "NORMAL" ],
@@ -297,13 +272,7 @@
     "harvest": "zombie",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -355,13 +324,7 @@
     "harvest": "mr_bones",
     "special_attacks": [
       [ "SMASH", 45 ],
-      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 15, "armor_multiplier": 0.6 } ] },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 15, "armor_multiplier": 0.6 } ] }
     ],
     "death_drops": "default_zombie_clothes",
     "death_function": [ "NORMAL" ],
@@ -400,13 +363,7 @@
       [ "SMASH", 20 ],
       [ "STRETCH_ATTACK", 20 ],
       [ "LONGSWIPE", 20 ],
-      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 23, "armor_multiplier": 0.8 } ] }
     ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "death_function": [ "NORMAL" ],
@@ -464,13 +421,7 @@
       [ "SHRIEK", 20 ],
       { "type": "bite", "cooldown": 5, "min_mul": 1 },
       [ "GRAB", 7 ],
-      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 16 } ] },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "id": "scratch", "damage_max_instance": [ { "damage_type": "cut", "amount": 16 } ] }
     ],
     "death_drops": "mon_zombie_survivor_death_drops",
     "death_function": [ "NORMAL" ],
@@ -528,13 +479,7 @@
           { "damage_type": "bash", "amount": 10, "armor_multiplier": 0.3 }
         ]
       },
-      [ "GRAB", 4 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "GRAB", 4 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -586,13 +531,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "GRAB", 7 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -641,13 +580,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "GRAB", 6 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -701,13 +634,7 @@
     "special_attacks": [
       { "type": "bite", "cooldown": 5, "min_mul": 0.7 },
       [ "GRAB", 6 ],
-      [ "scratch", 15 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 15 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -759,13 +686,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "SMASH", 30 ],
-      [ "GRAB", 7 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "GRAB", 7 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -819,13 +740,7 @@
       [ "SMASH", 30 ],
       [ "BIO_OP_TAKEDOWN", 20 ],
       [ "RANGED_PULL", 20 ],
-      [ "GRAB_DRAG", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "GRAB_DRAG", 10 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -879,13 +794,7 @@
     "special_attacks": [
       [ "SMASH", 40 ],
       [ "STRETCH_ATTACK", 20 ],
-      [ "LONGSWIPE", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "LONGSWIPE", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -938,13 +847,7 @@
     "special_attacks": [
       [ "RANGED_PULL", 20 ],
       [ "GRAB_DRAG", 3 ],
-      { "type": "bite", "cooldown": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 5 }
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -997,13 +900,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "STRETCH_BITE", 10 ],
-      [ "STRETCH_ATTACK", 5 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "STRETCH_ATTACK", 5 ]
     ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_hollow",
@@ -1038,13 +935,7 @@
     "vision_night": 4,
     "harvest": "zombie",
     "special_attacks": [
-      [ "SMASH", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "SMASH", 20 ]
     ],
     "death_drops": "mon_zombie_hulk_death_drops",
     "death_function": [ "NORMAL" ],
@@ -1100,12 +991,6 @@
         "type": "bite",
         "cooldown": 10,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 12, "armor_multiplier": 0.7 } ]
-      },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -1165,13 +1050,7 @@
         ]
       },
       [ "GRAB", 20 ],
-      [ "GRAB_DRAG", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "GRAB_DRAG", 10 ]
     ],
     "death_drops": "mon_zombie_swimmer_death_drops",
     "death_function": [ "NORMAL" ],
@@ -1226,13 +1105,7 @@
     "harvest": "zombie",
     "path_settings": { "max_dist": 10 },
     "special_attacks": [
-      [ "UPGRADE", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "UPGRADE", 10 ]
     ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "death_drops": "default_zombie_death_drops",
@@ -1283,13 +1156,7 @@
     "harvest": "zombie",
     "path_settings": { "max_dist": 10 },
     "special_attacks": [
-      [ "RESURRECT", 0 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "RESURRECT", 0 ]
     ],
     "anger_triggers": [ "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "death_drops": "default_zombie_death_drops",
@@ -1347,13 +1214,7 @@
         "cooldown": 10,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 10, "armor_multiplier": 0.2 } ]
       },
-      { "id": "impale" },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "id": "impale" }
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -1391,13 +1252,7 @@
     "special_attacks": [
       [ "SHRIEK_ALERT", 20 ],
       [ "SHRIEK_STUN", 1 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -1446,13 +1301,7 @@
     "special_attacks": [
       [ "GRAB", 7 ],
       [ "scratch", 20 ],
-      [ "PARA_STING", 30 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "PARA_STING", 30 ]
     ],
     "death_drops": "mon_zombie_thorny_death_drops",
     "death_function": [ "NORMAL" ],
@@ -1505,13 +1354,7 @@
     "emit_fields": [ { "emit_id": "emit_smoke_stream", "delay": "1 s" } ],
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
-      [ "scratch", 15 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 15 ]
     ],
     "death_function": [ "DISINTEGRATE" ],
     "burn_into": "mon_zombie_smoker",
@@ -1559,13 +1402,7 @@
     "vision_day": 30,
     "vision_night": 3,
     "special_attacks": [
-      { "type": "bite", "cooldown": 2 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 2 }
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
@@ -1613,13 +1450,7 @@
     "vision_night": 3,
     "harvest": "zombie",
     "special_attacks": [
-      [ "scratch", 15 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 15 ]
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_children_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
@@ -1668,13 +1499,7 @@
     "vision_night": 10,
     "harvest": "zombie",
     "special_attacks": [
-      [ "SHRIEK", 5 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "SHRIEK", 5 ]
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
@@ -1725,13 +1550,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "SHRIEK", 5 ],
-      [ "scratch", 15 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 15 ]
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
@@ -1780,13 +1599,7 @@
     "vision_night": 5,
     "harvest": "zombie",
     "special_attacks": [
-      [ "GRAB", 5 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "GRAB", 5 ]
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "BOOMER" ],
@@ -1822,13 +1635,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "scratch", 10 ],
-      { "type": "leap", "cooldown": 10, "max_range": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "leap", "cooldown": 10, "max_range": 5 }
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
@@ -1880,13 +1687,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "SHRIEK", 15 ],
-      [ "scratch", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 10 ]
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
@@ -1937,13 +1738,7 @@
     "harvest": "CBM_SUBS",
     "special_attacks": [
       [ "SHOCKSTORM", 15 ],
-      [ "SMASH", 30 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "SMASH", 30 ]
     ],
     "special_when_hit": [ "ZAPBACK", 75 ],
     "death_drops": "default_zombie_death_drops",
@@ -1993,13 +1788,7 @@
     "luminance": 8,
     "harvest": "CBM_CIV",
     "special_attacks": [
-      [ "SHOCKSTORM", 25 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "SHOCKSTORM", 25 ]
     ],
     "special_when_hit": [ "ZAPBACK", 100 ],
     "death_drops": "default_zombie_death_drops",
@@ -2049,14 +1838,6 @@
     "luminance": 16,
     "harvest": "CBM_SUBS",
     "emit_fields": [ { "emit_id": "emit_shock_cloud", "delay": "1 s" } ],
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
-    ],
     "special_when_hit": [ "ZAPBACK", 75 ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
@@ -2090,14 +1871,6 @@
     "luminance": 4,
     "harvest": "zombie",
     "special_when_hit": [ "ZAPBACK", 100 ],
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
-    ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_static",
@@ -2147,13 +1920,7 @@
     "harvest": "CBM_SCI",
     "path_settings": { "max_dist": 5 },
     "special_attacks": [
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "mon_zombie_scientist_death_drops",
     "death_function": [ "NORMAL" ],
@@ -2206,13 +1973,7 @@
     "harvest": "exempt",
     "special_attacks": [
       [ "BOOMER", 20 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_items",
     "death_function": [ "BOOMER" ],
@@ -2264,13 +2025,7 @@
     "harvest": "zombie",
     "special_attacks": [
       [ "BOOMER_GLOW", 20 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_items",
     "death_function": [ "BOOMER_GLOW" ],
@@ -2321,13 +2076,7 @@
     "luminance": 8,
     "harvest": "exempt",
     "special_attacks": [
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "default_zombie_items",
     "death_function": [ "CONFLAGRATION" ],
@@ -2377,13 +2126,7 @@
     "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
     "special_attacks": [
       [ "SUICIDE", 20 ],
-      [ "scratch", 15 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 15 ]
     ],
     "death_drops": "default_zombie_items",
     "death_function": [ "GAS" ],
@@ -2419,13 +2162,7 @@
     "vision_night": 3,
     "harvest": "zombie",
     "special_attacks": [
-      { "type": "bite", "cooldown": 5, "min_mul": 0.8 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 5, "min_mul": 0.8 }
     ],
     "death_drops": "mon_zombie_soldier_death_drops",
     "death_function": [ "NORMAL" ],
@@ -2479,12 +2216,6 @@
         "type": "bite",
         "cooldown": 8,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 8, "armor_multiplier": 0.8 } ]
-      },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
       }
     ],
     "death_drops": "mon_zombie_soldier_death_drops",
@@ -2614,13 +2345,7 @@
     "harvest": "zombie_kevlar",
     "special_attacks": [
       { "id": "slam", "cooldown": 10, "damage_max_instance": [ { "damage_type": "bash", "amount": 12 } ] },
-      [ "SMASH", 30 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "SMASH", 30 ]
     ],
     "death_drops": "mon_zombie_kevlar_death_drops",
     "death_function": [ "NORMAL" ],
@@ -2672,13 +2397,7 @@
     "special_attacks": [
       { "id": "slam", "cooldown": 12, "damage_max_instance": [ { "damage_type": "bash", "amount": 35 } ] },
       [ "LONGSWIPE", 20 ],
-      [ "SMASH", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "SMASH", 20 ]
     ],
     "death_drops": "mon_zombie_kevlar_death_drops",
     "death_function": [ "NORMAL" ],
@@ -2730,13 +2449,7 @@
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },
       [ "GRAB", 7 ],
-      [ "scratch", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "scratch", 20 ]
     ],
     "death_drops": "mon_zombie_military_pilot_death_drops",
     "death_function": [ "NORMAL" ],
@@ -2789,13 +2502,7 @@
     "luminance": 4,
     "harvest": "CBM_OP",
     "special_attacks": [
-      [ "BIO_OP_TAKEDOWN", 20 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "BIO_OP_TAKEDOWN", 20 ]
     ],
     "special_when_hit": [ "ZAPBACK", 75 ],
     "death_drops": "mon_zombie_bio_op_death_drops",
@@ -2857,13 +2564,7 @@
     "vision_night": 3,
     "harvest": "zombie",
     "special_attacks": [
-      [ "ACID_BARF", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "ACID_BARF", 10 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "ACID", "NORMAL" ],
@@ -2928,13 +2629,7 @@
         "description": "The corrosive zombie spits a glob of blood acid!",
         "ranges": [ [ 2, 10, "DEFAULT" ] ]
       },
-      [ "ACID_BARF", 5 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "ACID_BARF", 5 ]
     ],
     "special_when_hit": [ "ACIDSPLASH", 100 ],
     "death_drops": "default_zombie_death_drops",
@@ -2986,13 +2681,7 @@
     "vision_day": 14,
     "harvest": "zombie",
     "special_attacks": [
-      [ "ACID_BARF", 22 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "ACID_BARF", 22 ]
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "ACID", "NORMAL" ],
@@ -3042,13 +2731,7 @@
     "armor_bash": 6,
     "harvest": "zombie",
     "special_attacks": [
-      { "type": "bite", "cooldown": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 5 }
     ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_dog",
@@ -3084,13 +2767,7 @@
     "vision_night": 3,
     "harvest": "mr_bones",
     "special_attacks": [
-      { "type": "bite", "cooldown": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 5 }
     ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_dog_skeleton",
@@ -3125,13 +2802,7 @@
     "vision_night": 4,
     "harvest": "zombie",
     "special_attacks": [
-      { "type": "bite", "cooldown": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 5 }
     ],
     "death_drops": { "subtype": "collection", "groups": [ [ "dog_cop", 40 ] ] },
     "death_function": [ "NORMAL" ],
@@ -3179,13 +2850,7 @@
     "vision_night": 4,
     "harvest": "zombie",
     "special_attacks": [
-      { "type": "bite", "cooldown": 2, "accuracy": 4, "no_infection_chance": 12 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 2, "accuracy": 4, "no_infection_chance": 12 }
     ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_dog_zombie_rot",
@@ -3231,13 +2896,7 @@
     "vision_night": 5,
     "harvest": "zombie_fur",
     "special_attacks": [
-      [ "HOWL", 10 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      [ "HOWL", 10 ]
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
@@ -3286,14 +2945,6 @@
     "vision_day": 30,
     "vision_night": 5,
     "harvest": "zombie_fur",
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
-    ],
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
@@ -3341,13 +2992,7 @@
     "harvest": "zombie_leather",
     "path_settings": { "max_dist": 10 },
     "special_attacks": [
-      { "type": "bite", "cooldown": 2 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "bite", "cooldown": 2 }
     ],
     "anger_triggers": [ "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "fear_triggers": [ "FIRE" ],
@@ -3395,14 +3040,6 @@
     "dodge": 2,
     "vision_day": 30,
     "vision_night": 5,
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
-    ],
     "harvest": "zombie_leather",
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
@@ -3449,14 +3086,6 @@
     "armor_cut": 4,
     "vision_day": 30,
     "vision_night": 5,
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
-    ],
     "harvest": "zombie_leather",
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],
@@ -3492,13 +3121,7 @@
     "vision_night": 10,
     "harvest": "zombie_fur",
     "special_attacks": [
-      { "type": "leap", "cooldown": 10, "max_range": 5 },
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_flesh_infect_target" },
-        "cooldown": 11,
-        "monster_message": "<color_magenta>%1$s engulfs %3$s with their flesh!</color>"
-      }
+      { "type": "leap", "cooldown": 10, "max_range": 5 }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ],

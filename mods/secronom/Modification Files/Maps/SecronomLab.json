@@ -284,8 +284,8 @@
         "  aaataaaa    aaaadaaa  ",
         "  ddddaaa      aaaddtd  ",
         "  aCadaa        aadaaa  ",
-        "  kaalaa   bb   aalBak  ",
-        "  aaadaaa  aa  aaataaa  ",
+        "  kaalaa  abba  aalBak  ",
+        "  aaadaaa aaaa aaataaa  ",
         "  ddtdaaadhaagdaaaddtd  ",
         "  aaadaaadhjahdaaadaaa  ",
         "  kAalaaadsaafdaaalaak  ",
@@ -382,9 +382,9 @@
         { "density": 0.25, "monster": "GROUP_SECROLAB_BOWSPECIMENS", "x": [ 20, 22 ], "y": [ 19, 21 ] }
       ],
       "rows": [
-        "                        ",
-        "                        ",
-        "           aa           ",
+        "          dddd          ",
+        "         sdaads         ",
+        "          dddd          ",
         "           bb           ",
         "  dddd    ddddjnnnnn    ",
         "  dfes hk ddddjddddds   ",
@@ -467,10 +467,10 @@
         "   kaaeaaaaaaaaaaeaak   ",
         "   aaadaaaaaaaaaafaaa   ",
         "   aaadaaaighjaaadaaa   ",
-        "   aaafaak    kaadaaa   ",
-        "       aa  bb  aa       ",
-        "   aaadaa  cc  aadaaa   ",
-        "   aaadaak aa kaafaaa   ",
+        "   aaafaa      aadaaa   ",
+        "       aa abba aa       ",
+        "   aaadaa aaaa aadaaa   ",
+        "   aaadaa  cc  aafaaa   ",
         "   aaafaaaaaaaaaadaaa   ",
         "   kaaeaaaaaaaaaaeaak   ",
         "       edfddfddde       ",
@@ -496,6 +496,69 @@
       }
     },
     "om_terrain": [ "SecronomSSLab_failspecs" ],
+    "type": "mapgen"
+  },
+  {
+    "method": "json",
+    "object": {
+      "computers": {
+        "k": {
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ],
+          "name": "SS Enigma Specimen Containment Room",
+          "options": [ { "action": "unlock", "name": "UNLOCK ENIGMA SPECIMEN CONTAINMENT DOORS", "security": 3 } ],
+          "security": 2
+        }
+      },
+      "fill_ter": "t_strconc_wall",
+      "furniture": { "h": "f_desk", "j": "f_chair", "z": "f_desk" },
+      "place_loot": [ { "chance": 100, "group": "tools_medical", "repeat": [ 3 ], "x": [ 12, 12 ], "y": [ 10, 10 ] } ],
+      "rows": [
+        "           aa           ",
+        "          aaaa          ",
+        "          abbag         ",
+        "          aaaa          ",
+        "           ee           ",
+        "         aaaaa          ",
+        "   aaaaaaabaaa          ",
+        "  aaaaaabaabaa          ",
+        "  aabaaabaaaaa          ",
+        "  aaabaaaaaaa           ",
+        "  aaaaa       ik        ",
+        "  aaaa  aaaaeaaaaeaaaa  ",
+        "  abba aaaaafaaaafaaaaa ",
+        "  aaaa aaaaaaaaaaaaaaaa ",
+        "  aaaa       aaaa       ",
+        "  aaaa aaaaaeaaaaeaaaaa ",
+        "  abba aaaaadaaaafaaaaa ",
+        "  aaaa  aaaafaaaadaaaa  ",
+        "  aaaaa       cc        ",
+        "  aaabaaaaaaaaaajh      ",
+        "  aabaabaaabaaabaz      ",
+        "  aaaaabaaabaaabjh      ",
+        "   aaaaaaaaaaaaaig      ",
+        "                        "
+      ],
+      "terrain": {
+        "a": "t_strconc_floor",
+        "b": "t_thconc_floor_olight",
+        "c": "t_door_metal_c",
+        "d": "t_reinforced_glass",
+        "e": "t_door_metal_locked",
+        "f": [ "t_strconc_floor", "t_reinforced_glass" ],
+        "g": "t_console",
+        "h": "t_strconc_floor",
+        "i": "t_machinery_electronic",
+        "j": "t_strconc_floor",
+        "k": "t_console"
+      },
+      "item": { "z": { "item": "secro_recipe_flesh", "chance": 100 } },
+      "nested": {
+        "a": {
+          "chunks": [ [ "null", 200 ], [ "SecronomSSBunker_nest_bloodmess", 4 ], [ "SecronomSSBunker_nest_deadscientist", 2 ] ]
+        }
+      }
+    },
+    "om_terrain": [ "SecronomSSLab_enigmaspecs" ],
     "type": "mapgen"
   },
   {
@@ -531,6 +594,7 @@
         { "chance": 60, "item": "lab_shoes", "x": 10, "y": 6 },
         { "chance": 25, "item": "guns_rifle_rare", "x": 17, "y": 5 }
       ],
+      "place_item": [ { "item": "secro_id_fvvault", "x": 10, "y": 6 } ],
       "place_monster": [ { "monster": "mon_zombie_scientist", "x": 17, "y": 7 }, { "monster": "mon_zombie_scientist", "x": 14, "y": 8 } ],
       "rows": [
         "||||||||||||||||||||||||",

@@ -16,17 +16,17 @@
         "       oaaaaaaaao       ",
         "      aaaabaabaaaa      ",
         "     aaaaddccddaaaa     ",
-        "    aab ddaaaadd baa    ",
-        "   aaa  aaaaaaaa  aaa   ",
-        "   aaadaaaaaaaaaadaaa   ",
-        "  aaaddaaaaaaaaaaddaaa  ",
-        "  aaa faaaaaaaaaaf aaa  ",
-        "  qba fpaaaghjaapf abq  ",
-        "  aaa faaaaiiaaaaf aaa  ",
-        "  aaaddaaaaaaaaaaddaaa  ",
-        "   aaadaaaaaaaaaadaaa   ",
-        "   aaa  aaaaaaaa  aaa   ",
-        "    aab ddakladd baa    ",
+        "    aab ddrrrrdd baa    ",
+        "   aaa  rrrrrrrr  aaa   ",
+        "   aaadrrrrrrrrrrdaaa   ",
+        "  aaaddrrrrrrrrrrddaaa  ",
+        "  aaa frrrrrrrrrrf aaa  ",
+        "  qba fprrrghjrrpf abq  ",
+        "  aaa frrrriirrrrf aaa  ",
+        "  aaaddrrrrrrrrrrddaaa  ",
+        "   aaadrrrrrrrrrrdaaa   ",
+        "   aaa  rrrrrrrr  aaa   ",
+        "    aab ddrklrdd baa    ",
         "     aaaadd  ddaaaa     ",
         "      oaaaaaaaaaao      ",
         "        aaaaaaaa        ",
@@ -51,14 +51,15 @@
         "n": "t_card_science",
         "o": "t_strconc_floor",
         "p": "t_strconc_floor",
-        "q": "t_strconc_floor"
+        "q": "t_strconc_floor",
+        "r": "t_strconc_floor"
       },
       "place_npcs": [
         { "class": "secronom_scientist", "x": 13, "y": 10 },
         { "class": "secronom_researcher", "x": 16, "y": 14 },
         { "class": "secronom_guard", "x": 10, "y": 17 }
       ],
-      "place_monsters": [ { "density": 3.5, "monster": "GROUP_SECROLAB_ALL", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "monster": { "a": { "group": "GROUP_SECROLAB_ALL", "chance": 60 } },
       "nested": {
         "a": {
           "chunks": [ [ "null", 400 ], [ "SecronomSSBunker_nest_bloodmess", 2 ], [ "SecronomSSBunker_nest_deadscientist", 1 ] ]
