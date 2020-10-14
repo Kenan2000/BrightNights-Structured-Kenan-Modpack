@@ -485,11 +485,15 @@
     "id": "TALK_SECRO_SCIENTIST_uhelp_turret",
     "dynamic_line": {
       "u_has_effect": "secro_scientist_mission2_progress",
-      "no": "Yes, the autonomous turrets that you saw on the bunker. So, do you accept my request?",
-      "yes":  "Take your time while you gather them."
+      "no": "Yes, the autonomous turrets that you saw on the bunker is what I want to acquire. Do you accept my request?",
+      "yes": "Take your time while you gather them."
     },
     "responses": [
-      { "text": "Yes.", "topic": "TALK_MISSION_OFFER", "condition": { "not": { "u_has_effect": "secro_scientist_mission2_progress" } } },
+      {
+        "text": "Yes.",
+        "topic": "TALK_MISSION_OFFER",
+        "condition": { "not": { "u_has_effect": "secro_scientist_mission2_progress" } }
+      },
       {
         "text": "I'll do it later.",
         "topic": "TALK_SECRO_SCIENTIST_main",
