@@ -58,7 +58,7 @@
   },
   {
     "name": "GROUP_TENDRILS_UPGRADEX",
-    "//": "Cycle the evolution until it hits the final upgrade.",
+    "note": "Cycle the evolution until it hits the final upgrade.",
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -93,6 +93,16 @@
     "monsters": [
       { "monster": "mon_zombie_spoderhug", "freq": 80, "cost_multiplier": 1 },
       { "monster": "mon_zombie_spodertickle", "freq": 100, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "name": "GROUP_ZSPIDER_UPGRADEX",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_zombie_spodertickle", "freq": 25, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_spoderhug", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_zombie_arachnia", "freq": 100, "cost_multiplier": 10 }
     ]
   },
   {

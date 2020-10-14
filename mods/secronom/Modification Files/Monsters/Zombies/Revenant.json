@@ -1,6 +1,6 @@
 [
   {
-    "//": "Support-type zed that manipulates the stats of targeted creatures.",
+    "note": "Support-type zed that manipulates the stats of targeted creatures.",
     "id": "mon_zombie_revenant",
     "type": "MONSTER",
     "name": "revenant",
@@ -8,7 +8,7 @@
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "harvest": "zombie",
     "hp": 65,
     "diff": 1,
@@ -43,7 +43,7 @@
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "harvest": "zombie",
     "diff": 15,
     "hp": 75,
@@ -77,7 +77,7 @@
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "harvest": "zombie",
     "hp": 70,
     "diff": 15,
@@ -102,6 +102,6 @@
     ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "HARDTOSHOOT" ]
   }
 ]

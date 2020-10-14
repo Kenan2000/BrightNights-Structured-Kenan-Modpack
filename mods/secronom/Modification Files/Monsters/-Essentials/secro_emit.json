@@ -70,7 +70,7 @@
   {
     "id": "secro_vector_smol_seeding",
     "type": "emit",
-    "//": "Very rare seeding for spores.",
+    "note": "Very rare seeding for spores.",
     "field": "fd_vector_seed",
     "intensity": 3,
     "qty": 1,
@@ -87,7 +87,7 @@
   {
     "id": "secro_vector_stream",
     "type": "emit",
-    "//": "Stream of haze for bloomers.",
+    "note": "Stream of haze for bloomers.",
     "field": "fd_vector_haze",
     "intensity": 2,
     "qty": 20,
@@ -96,7 +96,7 @@
   {
     "id": "secro_vector_seeding",
     "type": "emit",
-    "//": "Rare seeding for bloomers.",
+    "note": "Rare seeding for bloomers.",
     "field": "fd_vector_seed",
     "intensity": 3,
     "qty": 1,
@@ -105,7 +105,7 @@
   {
     "id": "secro_vector_tree_spread",
     "type": "emit",
-    "//": "Big explosion of haze for trees.",
+    "note": "Big explosion of haze for trees.",
     "field": "fd_vector_haze",
     "intensity": 2,
     "qty": 100,
@@ -114,7 +114,7 @@
   {
     "id": "secro_vector_tree_seeding",
     "type": "emit",
-    "//": "Large seeding for trees.",
+    "note": "Large seeding for trees.",
     "field": "fd_vector_seed",
     "intensity": 3,
     "qty": 5,
@@ -368,7 +368,7 @@
     "id": "emit_flesh_tree_grab",
     "type": "emit",
     "field": "fd_flesh_tree_grab",
-    "//": "The flesh tree spreads its 'grabbing branches and stem' in 6 directions per turn",
+    "note": "The flesh tree spreads its 'grabbing branches and stem' in 6 directions per turn",
     "qty": 7,
     "intensity": 1
   },
@@ -477,6 +477,51 @@
     "id": "emit_petty",
     "type": "emit",
     "field": "fd_mon_pet",
+    "qty": 1,
+    "intensity": 1
+  },
+  {
+    "id": "emit_shifter_illu_limiter",
+    "type": "emit",
+    "field": "fd_shifter_illu_limiter",
+    "qty": 1,
+    "intensity": 1
+  },
+  {
+    "id": "emit_secro_power_armor_flesh_link",
+    "type": "emit",
+    "field": "fd_secro_power_armor_flesh_link",
+    "qty": 1,
+    "intensity": 1
+  },
+  {
+    "id": "emit_sflesh_fleshling_maybe",
+    "type": "emit",
+    "field": "fd_sflesh_fleshling",
+    "qty": 1,
+    "intensity": 1,
+    "chance": 100
+  },
+  {
+    "id": "emit_sflesh_fleshling_birth",
+    "type": "emit",
+    "field": "fd_sflesh_fleshling_birth",
+    "qty": 1,
+    "intensity": 1,
+    "chance": 1
+  },
+  {
+    "id": "emit_sflesh_fleshling_scavengy_forms",
+    "type": "emit",
+    "field": "fd_sflesh_fleshling_scavengy_forms",
+    "qty": 1,
+    "intensity": 1,
+    "chance": 10
+  },
+  {
+    "id": "emit_sflesh_fleshling_scavengy_forms_limit",
+    "type": "emit",
+    "field": "fd_sflesh_fleshling_scavengy_forms_limit",
     "qty": 1,
     "intensity": 1
   }

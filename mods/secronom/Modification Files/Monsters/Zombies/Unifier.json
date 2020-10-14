@@ -7,10 +7,10 @@
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "harvest": "zombie",
     "hp": 155,
-    "speed": 100,
+    "speed": 85,
     "material": [ "flesh" ],
     "attack_effs": [ { "id": "unify_bloodslow", "duration": 120, "chance": 25 } ],
     "diff": 1,
@@ -28,9 +28,9 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "mon_zombie_unify_bv" },
-        "cooldown": 44,
-        "monster_message": "<color_yellow>A blood vessel were created under %2$s's hands!</color>"
+        "spell_data": { "id": "mon_zombie_unify_bv_target" },
+        "cooldown": 45,
+        "monster_message": "<color_yellow>A blood vessel were created under %1$s's hands!</color>"
       }
     ],
     "death_drops": "default_zombie_death_drops",
@@ -61,7 +61,7 @@
     "harvest": "zombie",
     "species": [ "ZOMBIE", "SECROZED_2" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "hp": 205,
     "speed": 75,
     "diff": 15,
@@ -79,16 +79,16 @@
     "armor_bash": 10,
     "armor_stab": 5,
     "attack_cost": 250,
-    "//": "slow attack speed, so don't worry.",
+    "note": "slow attack speed, so don't worry.",
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED" ],
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "mon_zombie_unity_bv" },
-        "cooldown": 50,
-        "monster_message": "<color_yellow>Blood vessels has emerged from %2$s's core!</color>"
+        "spell_data": { "id": "mon_zombie_unity_bv_target" },
+        "cooldown": 60,
+        "monster_message": "<color_yellow>Blood vessels has emerged from %1$s's core!</color>"
       }
     ],
     "upgrades": { "half_life": 20, "into_group": "GROUP_UNIFIER_UPGRADEX" },
@@ -118,7 +118,7 @@
     "harvest": "zombie",
     "species": [ "ZOMBIE", "SECROZED_3" ],
     "volume": "92500 ml",
-    "weight": 120000,
+    "weight": "120000 g",
     "hp": 380,
     "diff": 15,
     "speed": 70,
@@ -143,8 +143,8 @@
       {
         "type": "spell",
         "spell_data": { "id": "mon_zombie_hemo_bwave" },
-        "cooldown": 65,
-        "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Blood vessels and a fiend emerges from %2$s!</color>"
+        "cooldown": 60,
+        "monster_message": "<color_red>%1$s manipulates its own blood and sends it to %3$s!</color>\n<color_yellow>Several blood vessel emerges from %1$s's body!</color>"
       }
     ],
     "regenerates": 2,
@@ -168,11 +168,11 @@
     "id": "mon_zombie_bloodvessel",
     "type": "MONSTER",
     "name": "blood vessel",
-    "description": "An animate substance completely made out of blood, too viscous to move in limited speed.",
+    "description": "An animate substance completely made out of blood, too viscous to move in limited speed. It throbs erratically.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "hp": 20,
     "speed": 50,
     "material": [ "flesh" ],
@@ -191,6 +191,14 @@
     "armor_bash": 20,
     "death_function": [ "MELT" ],
     "regenerates": 3,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_bloodvessel_explo_target" },
+        "cooldown": 120,
+        "monster_message": "<color_yellow>The blood vessel explodes!</color>"
+      }
+    ],
     "flags": [
       "SEES",
       "HEARS",
@@ -209,11 +217,11 @@
     "id": "mon_zombie_bloodfiend",
     "type": "MONSTER",
     "name": "blood fiend",
-    "description": "A large, animated substance made out of thickened blood. Dark goo seeps from its 'mouth'.",
+    "description": "A large, animated substance made out of thickened blood. Bloated portions of its body looks volatile, and throbs at a faster pace.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "92500 ml",
-    "weight": 120000,
+    "weight": "120000 g",
     "hp": 40,
     "speed": 40,
     "diff": 50,
@@ -232,6 +240,14 @@
     "armor_bash": 24,
     "death_function": [ "MELT" ],
     "regenerates": 5,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "mon_zombie_bloodfiend_explo_target" },
+        "cooldown": 120,
+        "monster_message": "<color_yellow>The blood fiend explodes violently!</color>"
+      }
+    ],
     "looks_like": "mon_zombie_bloodvessel",
     "flags": [
       "SEES",

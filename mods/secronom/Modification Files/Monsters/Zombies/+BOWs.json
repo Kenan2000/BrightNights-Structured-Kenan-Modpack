@@ -1,14 +1,14 @@
 [
   {
-    "//": "BOWs are special zeds adapted to confront players who are ready for anything. Exclusive in secronom labs.",
+    "note": "BOWs are special zeds adapted to confront players who are ready for anything. Exclusive in secronom labs.",
     "id": "mon_zedbow_kaxix",
     "type": "MONSTER",
-    "name": "kaxix",
+    "name": { "str": "kaxix" },
     "description": "A humanoid creature, with its hands ruptured into a scythe and a head similar to eels. It is wearing an experimental suit, denoting a state of progress.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "hp": 140,
     "speed": 90,
     "material": [ "flesh" ],
@@ -42,7 +42,7 @@
     "death_drops": "SSmutant_drop",
     "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_KAXIX" },
     "death_function": [ "NORMAL" ],
-    "flags": [ "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BLEED" ]
+    "flags": [ "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zedbow_kaxix_armed",
@@ -59,12 +59,12 @@
   {
     "id": "mon_zedbow_axxuros",
     "type": "MONSTER",
-    "name": "axxuros",
+    "name": { "str": "axxuros" },
     "description": "A humanoid creature, partially suffering in necrotic shelling. Both of its arm merged and developed numerous bony spikes between them. It is wearing an experimental suit, denoting a state of progress.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "hp": 165,
     "speed": 85,
     "material": [ "flesh" ],
@@ -95,7 +95,7 @@
     "death_drops": "SSmutant_drop",
     "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_AXXUROS" },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BLEED" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zedbow_axxuros_armed",
@@ -112,12 +112,12 @@
   {
     "id": "mon_zedbow_exios",
     "type": "MONSTER",
-    "name": "exios",
+    "name": { "str": "exios" },
     "description": "A humanoid creature, with head and tail featuring a canine appearance. One of its hand altered into heaps of tentacle tipped with awkward bony blades. It is wearing an experimental suit, denoting a state of progress.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "62500 ml",
-    "weight": 81500,
+    "weight": "81500 g",
     "hp": 120,
     "speed": 105,
     "material": [ "flesh" ],
@@ -149,7 +149,7 @@
     "death_drops": "SSmutant_drop",
     "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_EXIOS" },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BLEED" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zedbow_exios_armed",
@@ -166,12 +166,12 @@
   {
     "id": "mon_zedbow_drexx",
     "type": "MONSTER",
-    "name": "drexx",
+    "name": { "str": "drexx" },
     "description": "A large humanoid creature, with its hand morphed like that of a hammer. Made out of solidified bone, its momentum could do more than what is expected. It is wearing an experimental suit, denoting a state of progress.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "92500 ml",
-    "weight": 120000,
+    "weight": "120000 g",
     "hp": 180,
     "speed": 60,
     "material": [ "flesh" ],
@@ -206,12 +206,12 @@
   {
     "id": "mon_zedbow_epixo",
     "type": "MONSTER",
-    "name": "epixo",
+    "name": { "str": "epixo" },
     "description": "A gigantic, morbidly deformed creature, vaguely a humanoid in appearance. with its bulging muscles and disastrous nature, its seeks wrath to the living. It is wearing a special experimental suit, denoting a state of progress.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "HUMAN" ],
     "volume": "875000 ml",
-    "weight": 200000,
+    "weight": "200000 g",
     "hp": 435,
     "speed": 100,
     "material": [ "flesh" ],
@@ -245,7 +245,7 @@
     "death_drops": "SSmutant_drop",
     "upgrades": { "half_life": 10, "into_group": "GROUP_BOW_EPIXO" },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "BLEED" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "FILTHY", "BASHES", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zedbow_epixo_armed",

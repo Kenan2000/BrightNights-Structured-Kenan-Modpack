@@ -6,14 +6,20 @@
       { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 8, "pack_size": [ 11, 22 ] },
       { "monster": "mon_zombie_swarmer_segway", "freq": 1, "cost_multiplier": 10, "pack_size": [ 4, 12 ] },
       { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 15, "pack_size": [ 22, 44 ] },
-      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 23, "pack_size": [ 44, 88 ] },
       {
-        "//": "Lets fill the streets with these!",
+        "monster": "mon_zombie_swarmer_weak",
+        "freq": 1,
+        "cost_multiplier": 23,
+        "pack_size": [ 44, 88 ],
+        "starts": 4380
+      },
+      {
+        "note": "Lets fill the streets with these!",
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 40,
         "pack_size": [ 88, 176 ],
-        "starts": 2912
+        "starts": 8760
       },
       { "monster": "mon_zombie_swarmer_weak", "freq": 100, "cost_multiplier": 0, "pack_size": [ 3, 5 ] },
       { "monster": "mon_zombie_blade", "freq": 10, "cost_multiplier": 4 },
@@ -31,17 +37,17 @@
         "monster": "mon_zombie_nocturne",
         "freq": 1,
         "cost_multiplier": 40,
-        "starts": 1092,
+        "starts": 4380,
         "conditions": [ "DUSK", "NIGHT" ]
       },
-      { "monster": "mon_zombie_nix", "freq": 1, "cost_multiplier": 25, "starts": 1092 },
-      { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 40, "starts": 1092 },
-      { "monster": "mon_zombie_gorepit", "freq": 1, "cost_multiplier": 65, "starts": 1456 },
-      { "monster": "mon_zombie_cordev", "freq": 1, "cost_multiplier": 55, "starts": 1456 },
-      { "monster": "mon_zombie_fleshysnaky", "freq": 1, "cost_multiplier": 125, "starts": 2912 },
-      { "monster": "mon_zombie_akin", "freq": 1, "cost_multiplier": 30, "starts": 2912 },
-      { "monster": "mon_zombie_equinox", "freq": 1, "cost_multiplier": 80, "starts": 2912 },
-      { "monster": "mon_zombie_relinquish", "freq": 1, "cost_multiplier": 110, "starts": 2912 }
+      { "monster": "mon_zombie_nix", "freq": 1, "cost_multiplier": 25, "starts": 4380 },
+      { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 40, "starts": 4380 },
+      { "monster": "mon_zombie_gorepit", "freq": 1, "cost_multiplier": 65, "starts": 8760 },
+      { "monster": "mon_zombie_cordev", "freq": 1, "cost_multiplier": 55, "starts": 8760 },
+      { "monster": "mon_zombie_fleshysnaky", "freq": 1, "cost_multiplier": 125, "starts": 10950 },
+      { "monster": "mon_zombie_akin", "freq": 1, "cost_multiplier": 30, "starts": 10950 },
+      { "monster": "mon_zombie_equinox", "freq": 1, "cost_multiplier": 80, "starts": 10950 },
+      { "monster": "mon_zombie_relinquish", "freq": 1, "cost_multiplier": 110, "starts": 10950 }
     ]
   },
   {
@@ -101,10 +107,10 @@
   {
     "type": "monstergroup",
     "name": "DUMP_ZOMBIES",
-    "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 1092 } ]
+    "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 4380 } ]
   },
   {
-    "//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
+    "note": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_ALL",
     "default": "mon_null",
@@ -123,7 +129,7 @@
     ]
   },
   {
-    "//": "Spawn random secrolab specimens. Failed specimens are common here",
+    "note": "Spawn random secrolab specimens. Failed specimens are common here",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_SPECIMENS",
     "default": "mon_null",
@@ -132,7 +138,7 @@
       { "monster": "mon_zedfail_floral", "freq": 30, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_twistcrawl", "freq": 25, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_chomp", "freq": 35, "cost_multiplier": 0 },
-      { "monster": "mon_zedfail_squirtler", "freq": 120, "cost_multiplier": 1 },
+      { "monster": "mon_zedfail_squirtler", "freq": 10, "cost_multiplier": 0 },
       { "monster": "mon_zedbow_kaxix", "freq": 1, "cost_multiplier": 5 },
       { "monster": "mon_zedbow_axxuros", "freq": 1, "cost_multiplier": 6 },
       { "monster": "mon_zedbow_exios", "freq": 1, "cost_multiplier": 7 },
@@ -141,7 +147,7 @@
     ]
   },
   {
-    "//": "Spawn random secrolab failed specimens.",
+    "note": "Spawn random secrolab failed specimens.",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_FAILEDSPECIMENS",
     "default": "mon_null",
@@ -150,11 +156,11 @@
       { "monster": "mon_zedfail_floral", "freq": 25, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_twistcrawl", "freq": 20, "cost_multiplier": 0 },
       { "monster": "mon_zedfail_chomp", "freq": 30, "cost_multiplier": 0 },
-      { "monster": "mon_zedfail_squirtler", "freq": 40, "cost_multiplier": 3 }
+      { "monster": "mon_zedfail_squirtler", "freq": 5, "cost_multiplier": 0 }
     ]
   },
   {
-    "//": "Spawn random secrolab BOWs",
+    "note": "Spawn random secrolab BOWs",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_BOWSPECIMENS",
     "default": "mon_null",
@@ -169,7 +175,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
-    "//": "Break the law and let this appear in sewers!",
+    "note": "Break the law and let this appear in sewers!",
     "is_animal": false,
     "monsters": [ { "monster": "mon_zombie_nautilus", "freq": 125, "cost_multiplier": 10 } ]
   },
@@ -178,10 +184,7 @@
     "name": "GROUP_FOREST",
     "monsters": [
       { "monster": "mon_ayenel", "freq": 1, "cost_multiplier": 60 },
-      { "monster": "mon_fleshweaver", "freq": 1, "cost_multiplier": 45 },
       { "monster": "mon_maneater", "freq": 1, "cost_multiplier": 50 },
-      { "monster": "mon_unknown_unknown_carrion", "freq": 1, "cost_multiplier": 75 },
-      { "monster": "mon_unknown_unknown_vector", "freq": 1, "cost_multiplier": 75 },
       { "monster": "mon_shifter_zombie", "freq": 1, "cost_multiplier": 90 },
       { "monster": "mon_shifter_zombie_rot", "freq": 1, "cost_multiplier": 90 }
     ]
@@ -191,10 +194,7 @@
     "name": "GROUP_SWAMP",
     "monsters": [
       { "monster": "mon_ayenel", "freq": 1, "cost_multiplier": 60 },
-      { "monster": "mon_fleshweaver", "freq": 1, "cost_multiplier": 45 },
       { "monster": "mon_maneater", "freq": 1, "cost_multiplier": 50 },
-      { "monster": "mon_unknown_unknown_carrion", "freq": 1, "cost_multiplier": 75 },
-      { "monster": "mon_unknown_unknown_vector", "freq": 1, "cost_multiplier": 75 },
       { "monster": "mon_shifter_zombie", "freq": 1, "cost_multiplier": 90 },
       { "monster": "mon_shifter_zombie_rot", "freq": 1, "cost_multiplier": 90 }
     ]
@@ -220,6 +220,18 @@
       { "monster": "mon_vector_seedler", "freq": 30, "cost_multiplier": 1 },
       { "monster": "mon_vector_stinger", "freq": 35, "cost_multiplier": 1 },
       { "monster": "mon_vector_tree", "freq": 50, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VECTOR_BIOME",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_vector_sprig", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_vector_sprout", "freq": 10, "cost_multiplier": 1 },
+      { "monster": "mon_vector", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_vector_seedler", "freq": 30, "cost_multiplier": 1 },
+      { "monster": "mon_vector_stinger", "freq": 35, "cost_multiplier": 1 }
     ]
   },
   {
@@ -406,5 +418,28 @@
     "type": "monstergroup",
     "name": "GROUP_VEINSTALK_CRAWLER",
     "default": "mon_sflesh_veinstalk_crawly"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FLESHLING",
+    "default": "mon_sflesh_fleshling_tiny"
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FLESHLING_CHILDREN",
+    "default": "mon_sflesh_fleshling_stingy",
+    "monsters": [
+      { "monster": "mon_sflesh_fleshling_ravagy", "freq": 90, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_fleshling_scavengy", "freq": 120, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FLESHLING_SCAVENGY_FORMS",
+    "default": "mon_sflesh_fleshling_scavengy_sticky",
+    "monsters": [
+      { "monster": "mon_sflesh_fleshling_scavengy_explosive", "freq": 85, "cost_multiplier": 0 },
+      { "monster": "mon_sflesh_fleshling_scavengy_tent", "freq": 100, "cost_multiplier": 0 }
+    ]
   }
 ]

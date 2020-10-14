@@ -18,9 +18,8 @@
     "id": "mon_zombie_mouth",
     "material": [ "flesh" ],
     "melee_cut": 3,
-    "melee_damage": [ { "amount": 2, "damage_type": "bash" }, { "amount": 4, "damage_type": "stab" } ],
     "melee_dice": 1,
-    "melee_dice_sides": 4,
+    "melee_dice_sides": 3,
     "melee_skill": 4,
     "morale": 100,
     "name": "mouthswell zombie",
@@ -37,7 +36,7 @@
     "type": "MONSTER",
     "upgrades": { "half_life": 12, "into_group": "GROUP_MOUTH_UPGRADE" },
     "volume": "62500 ml",
-    "weight": 81500
+    "weight": "81500 g"
   },
   {
     "aggression": 100,
@@ -59,10 +58,9 @@
     "id": "mon_zombie_bellymouth",
     "material": [ "flesh" ],
     "melee_cut": 3,
-    "melee_damage": [ { "amount": 8, "damage_type": "cut" }, { "amount": 5, "damage_type": "stab" } ],
     "melee_dice": 3,
-    "melee_dice_sides": 5,
-    "melee_skill": 5,
+    "melee_dice_sides": 4,
+    "melee_skill": 4,
     "morale": 100,
     "name": "bellymouth zombie",
     "special_attacks": [
@@ -82,7 +80,7 @@
     "type": "MONSTER",
     "upgrades": { "half_life": 16, "into_group": "GROUP_MOUTH_UPGRADEX" },
     "volume": "62500 ml",
-    "weight": 81500
+    "weight": "81500 g"
   },
   {
     "aggression": 100,
@@ -103,15 +101,10 @@
     "diff": 5,
     "id": "mon_zombie_omouth",
     "material": [ "flesh" ],
-    "melee_cut": 5,
-    "melee_damage": [
-      { "amount": 4, "damage_type": "bash" },
-      { "amount": 8, "damage_type": "cut" },
-      { "amount": 2, "damage_type": "stab" }
-    ],
-    "melee_dice": 2,
-    "melee_dice_sides": 5,
-    "melee_skill": 5,
+    "melee_cut": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 3,
+    "melee_skill": 4,
     "morale": 100,
     "name": "roundelmouth zombie",
     "special_attacks": [
@@ -121,7 +114,7 @@
           { "amount": 7, "armor_multiplier": 0.6, "damage_type": "bash" },
           { "amount": 7, "armor_multiplier": 0.6, "damage_type": "stab" }
         ],
-        "effects": [ { "bp": "TORSO", "duration": 1000, "id": "grabbed" } ],
+        "effects": [ { "bp": "torso", "duration": 1000, "id": "grabbed" } ],
         "type": "bite"
       }
     ],
@@ -131,10 +124,10 @@
     "type": "MONSTER",
     "upgrades": { "half_life": 16, "into_group": "GROUP_MOUTH_UPGRADEX" },
     "volume": "62500 ml",
-    "weight": 81500
+    "weight": "81500 g"
   },
   {
-    "//": "Perfectly strong biter!",
+    "note": "Perfectly strong biter!",
     "aggression": 100,
     "armor_acid": 2,
     "armor_bash": 8,
@@ -154,14 +147,9 @@
     "diff": 15,
     "id": "mon_zombie_suctionmouth",
     "material": [ "flesh" ],
-    "melee_cut": 4,
-    "melee_damage": [
-      { "amount": 8, "damage_type": "bash" },
-      { "amount": 10, "damage_type": "cut" },
-      { "amount": 8, "damage_type": "stab" }
-    ],
-    "melee_dice": 2,
-    "melee_dice_sides": 4,
+    "melee_cut": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
     "melee_skill": 6,
     "morale": 100,
     "name": "sucker",
@@ -173,7 +161,7 @@
           { "amount": 20, "armor_multiplier": 0.4, "damage_type": "cut" },
           { "amount": 20, "armor_multiplier": 0.6, "damage_type": "stab" }
         ],
-        "effects": [ { "bp": "TORSO", "duration": 1000, "id": "grabbed" } ],
+        "effects": [ { "bp": "torso", "duration": 1000, "id": "grabbed" } ],
         "type": "bite"
       }
     ],
@@ -182,6 +170,6 @@
     "symbol": "⪃",
     "type": "MONSTER",
     "volume": "92500 ml",
-    "weight": 120000
+    "weight": "120000 g"
   }
 ]
