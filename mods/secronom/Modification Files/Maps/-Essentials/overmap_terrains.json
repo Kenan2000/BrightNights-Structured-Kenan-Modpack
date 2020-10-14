@@ -21,6 +21,7 @@
     "name": "underground secronom lab",
     "sym": "L",
     "color": "light_gray",
+    "flags": [ "NO_ROTATE" ],
     "see_cost": 5
   },
   {
@@ -723,7 +724,7 @@
     "see_cost": 10
   },
   {
-    "//": "The buildings in Flesh City does not show their original symbols, rendering them unknown from the overmap (but at the center of the city is sure to be the commercial structures)",
+    "note": "The buildings in Flesh City does not show their original symbols, rendering them unknown from the overmap (but at the center of the city is sure to be the commercial structures)",
     "type": "overmap_terrain",
     "id": "s_house_flesh",
     "name": "fleshed structure",
@@ -977,5 +978,228 @@
     "sym": ".",
     "color": "brown",
     "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "SecronomSSLab_enigmaspecs",
+    "name": "underground secronom lab",
+    "sym": "L",
+    "color": "light_gray",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 5
+  },
+  {
+    "id": "vector_forest_curve",
+    "type": "overmap_terrain",
+    "name": "forest",
+    "sym": "F",
+    "color": "green",
+    "spawns": { "group": "GROUP_VECTOR_BIOME", "population": [ 1, 2 ] },
+    "see_cost": 10
+  },
+  {
+    "id": "vector_forest_edge",
+    "type": "overmap_terrain",
+    "name": "forest",
+    "sym": "F",
+    "color": "green",
+    "spawns": { "group": "GROUP_VECTOR_BIOME", "population": [ 1, 2 ] },
+    "see_cost": 10
+  },
+  {
+    "id": "vector_forest_center",
+    "type": "overmap_terrain",
+    "name": "forest",
+    "sym": "F",
+    "color": "green",
+    "spawns": { "group": "GROUP_VECTOR_BIOME", "population": [ 1, 2 ] },
+    "see_cost": 10
+  },
+  {
+    "id": "carrion_forest",
+    "type": "overmap_terrain",
+    "name": "forest",
+    "sym": "F",
+    "color": "green",
+    "see_cost": 10
+  },
+  {
+    "id": "fleshweaver_spawn",
+    "type": "overmap_terrain",
+    "name": "forest",
+    "sym": "F",
+    "color": "green",
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_bunker_flesh",
+    "name": "military bunker",
+    "sym": "B",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "KNOWN_DOWN", "RISK_HIGH", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_bunker_basement_flesh",
+    "name": "military bunker",
+    "sym": "B",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "KNOWN_UP", "NO_ROTATE", "RISK_HIGH", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_bunker_basement_fvvault_flesh",
+    "name": "military bunker",
+    "sym": "B",
+    "color": "red",
+    "see_cost": 2,
+    "flags": [ "KNOWN_UP", "NO_ROTATE", "RISK_HIGH", "SOURCE_WEAPON", "SOURCE_AMMO" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_lluu",
+    "name": "flesh wall",
+    "sym": "┌",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_luu",
+    "name": "flesh wall",
+    "sym": "─",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_uu",
+    "name": "flesh wall",
+    "sym": "┈",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_uur",
+    "name": "flesh wall",
+    "sym": "─",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_uurr",
+    "name": "flesh wall",
+    "sym": "┐",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_urr",
+    "name": "flesh wall",
+    "sym": "│",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_rr",
+    "name": "flesh wall",
+    "sym": "┊",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_rrd",
+    "name": "flesh wall",
+    "sym": "│",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_rrdd",
+    "name": "flesh wall",
+    "sym": "┘",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_rdd",
+    "name": "flesh wall",
+    "sym": "─",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_dd",
+    "name": "flesh wall",
+    "sym": "┈",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_ddl",
+    "name": "flesh wall",
+    "sym": "─",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_ddll",
+    "name": "flesh wall",
+    "sym": "└",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_dll",
+    "name": "flesh wall",
+    "sym": "│",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_ll",
+    "name": "flesh wall",
+    "sym": "┊",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "secro_fleshcamp_start_wall_llu",
+    "name": "flesh wall",
+    "sym": "│",
+    "color": "red",
+    "flags": [ "NO_ROTATE" ],
+    "see_cost": 10
   }
 ]

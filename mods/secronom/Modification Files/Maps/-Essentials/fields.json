@@ -1,7 +1,6 @@
 [
   {
-    "//": "Fields are now customizable and thanks to the devs for this feature!",
-    "//": "Spawning monsters with fields has a delay for approximately 10 turns (probably depends on device's memory). This is a bug that spawns all monster in an instance.",
+    "note": "Spawning monsters with fields has a delay for approximately 10 turns (probably depends on device's memory). This is a bug that spawns all monster in an instance.",
     "id": "fd_portal_carrion",
     "type": "field_type",
     "intensity_levels": [
@@ -186,7 +185,7 @@
   },
   {
     "id": "fd_jolt_elec",
-    "//": "Hidden field for spawning purposes of jolt. Has to be its damaging electric discharges, but it doesn't work.",
+    "note": "Hidden field for spawning purposes of jolt. Has to be its damaging electric discharges, but it doesn't work.",
     "type": "field_type",
     "intensity_levels": [
       {
@@ -207,7 +206,7 @@
     "display_field": false
   },
   {
-    "//": "Uruxis picks from the GROUP_ZOMBIE monstergroup to summon passively.",
+    "note": "Uruxis picks from the GROUP_ZOMBIE monstergroup to summon passively.",
     "id": "fd_uruxis_normal",
     "type": "field_type",
     "intensity_levels": [
@@ -226,7 +225,7 @@
     "display_field": false
   },
   {
-    "//": "Uruxis casts a spell to spread this field in a wide range, and at this range, summoning chance is much higher.",
+    "note": "Uruxis casts a spell to spread this field in a wide range, and at this range, summoning chance is much higher.",
     "id": "fd_uruxis_combat",
     "type": "field_type",
     "intensity_levels": [
@@ -270,7 +269,7 @@
     "display_field": false
   },
   {
-    "//": "This field provides immunity to the gorepit's constant damage.",
+    "note": "This field provides immunity to the gorepit's constant damage.",
     "id": "fd_gorepit_center",
     "type": "field_type",
     "intensity_levels": [
@@ -348,7 +347,7 @@
     "display_field": false
   },
   {
-    "//": "Similar case to uruxis.",
+    "note": "Similar case to uruxis.",
     "id": "fd_gorepit_combat",
     "type": "field_type",
     "intensity_levels": [
@@ -452,7 +451,7 @@
     "display_field": true
   },
   {
-    "//": "These fields appear as the result of equinox performing attacks.",
+    "note": "These fields appear as the result of equinox performing attacks.",
     "id": "fd_equinox_flesh",
     "type": "field_type",
     "intensity_levels": [
@@ -476,13 +475,12 @@
     "display_field": true
   },
   {
-    "//": "It's the trail of charger charging towards the target, and it exploits the glitch of it going OVER/ABOVE the player, so that the effect gets applied successfully.",
+    "note": "It's the trail of charger charging towards the target, and it exploits the glitch of it going OVER/ABOVE the player, so that the effect gets applied successfully.",
     "id": "fd_charger_stun",
     "type": "field_type",
     "intensity_levels": [
       {
         "name": "...",
-        "//": "Reading the name in-game is a bug.",
         "color": "black",
         "effects": [ { "effect_id": "stunned", "body_part": "TORSO", "min_duration": "3 seconds", "max_duration": "6 seconds" } ]
       }
@@ -494,7 +492,7 @@
     "display_field": false
   },
   {
-    "//": "This web doesn't break when a creature moves through it.",
+    "note": "This web doesn't break when a creature moves through it.",
     "id": "fd_mawy_web",
     "type": "field_type",
     "intensity_levels": [
@@ -587,7 +585,7 @@
     "display_field": false
   },
   {
-    "//": "This gas should disappear immediately when it is outside the structure.",
+    "note": "This gas should disappear immediately when it is outside the structure.",
     "id": "fd_fleshknot_gas",
     "type": "field_type",
     "intensity_levels": [
@@ -658,7 +656,7 @@
     "display_field": false
   },
   {
-    "//": "We'll detach saddlers using field emission. its the only way to create custom death function, I think....",
+    "note": "We'll detach saddlers using field emission. its the only way to create custom death function, I think....",
     "id": "fd_saddler_detach",
     "type": "field_type",
     "intensity_levels": [
@@ -716,7 +714,7 @@
     "display_field": false
   },
   {
-    "//": "Similar thing from above...",
+    "note": "Similar thing from above...",
     "id": "fd_relinquished_revive",
     "type": "field_type",
     "intensity_levels": [
@@ -810,7 +808,7 @@
     "display_field": false
   },
   {
-    "//": "Make hatching a chance using blindness effect.",
+    "note": "Make hatching a chance using blindness effect.",
     "id": "fd_sflesh_sack_maybe",
     "type": "field_type",
     "intensity_levels": [
@@ -1221,7 +1219,137 @@
     "display_field": true
   },
   {
-    "//": "Fields designed for all creatures.",
+    "id": "fd_shifter_illu_limiter",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effects": [
+          {
+            "effect_id": "mon_shifter_illu_limit",
+            "body_part": "TORSO",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
+  {
+    "id": "fd_secro_power_armor_flesh_link",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effects": [
+          {
+            "effect_id": "secro_power_armor_flesh_linked",
+            "body_part": "HEAD",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
+  {
+    "id": "fd_sflesh_fleshling",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "monster_spawn_chance": 5000,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_FLESHLING"
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 turns",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_sflesh_fleshling_birth",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "monster_spawn_chance": 1,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_FLESHLING_CHILDREN",
+        "effects": [
+          {
+            "effect_id": "mon_sflesh_fleshling_huge_limit",
+            "body_part": "HEAD",
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds"
+          }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 turns",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_sflesh_fleshling_scavengy_forms",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "monster_spawn_chance": 5,
+        "monster_spawn_count": 2,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_FLESHLING_SCAVENGY_FORMS",
+        "effects": [ { "effect_id": "mon_sflesh_fleshling_scavengy_cost", "min_duration": "1 seconds", "max_duration": "1 seconds" } ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 turns",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_sflesh_fleshling_scavengy_forms_limit",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effects": [
+          { "effect_id": "mon_sflesh_fleshling_scavengy_spawnlimits", "min_duration": "1 seconds", "max_duration": "1 seconds" }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": false,
+    "display_field": false
+  },
+  {
+    "note": "Fields designed for all creatures.",
     "id": "fd_mon_down_immune",
     "type": "field_type",
     "intensity_levels": [

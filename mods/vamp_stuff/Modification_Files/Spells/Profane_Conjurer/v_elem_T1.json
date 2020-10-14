@@ -22,7 +22,7 @@
     "base_casting_time": 125,
     "min_duration": 250,
     "max_duration": 1000,
-    "damage_type": "heat"
+    "damage_type": "fire"
   },
   {
     "id": "t1_elem_frost",
@@ -32,7 +32,7 @@
     "valid_targets": [ "hostile" ],
     "effect": "projectile_attack",
     "effect_str": "v_spell_elem_freeze",
-    "affected_body_parts": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+    "affected_body_parts": [ "HEAD", "TORSO", "ARM_L", "ARM_R", "LEG_L", "LEG_R" ],
     "base_energy_cost": 150,
     "final_energy_cost": 200,
     "energy_source": "MANA",

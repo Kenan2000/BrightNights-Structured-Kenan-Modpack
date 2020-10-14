@@ -7,7 +7,7 @@
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
     "effect_str": "v_spell_elem_flame_curse",
-    "affected_body_parts": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+    "affected_body_parts": [ "HEAD", "TORSO", "ARM_L", "ARM_R", "LEG_L", "LEG_R" ],
     "base_energy_cost": 275,
     "final_energy_cost": 475,
     "energy_source": "MANA",
@@ -22,7 +22,7 @@
     "base_casting_time": 125,
     "min_duration": 1000,
     "max_duration": 3000,
-    "damage_type": "heat"
+    "damage_type": "fire"
   },
   {
     "id": "t3_elem_blizzaga",
@@ -32,7 +32,7 @@
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
     "effect_str": "v_spell_elem_flashfreeze",
-    "affected_body_parts": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+    "affected_body_parts": [ "HEAD", "TORSO", "ARM_L", "ARM_R", "LEG_L", "LEG_R" ],
     "base_energy_cost": 325,
     "final_energy_cost": 500,
     "energy_source": "MANA",

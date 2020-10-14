@@ -7,7 +7,7 @@
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
     "effect_str": "onfire",
-    "affected_body_parts": [ "head", "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
+    "affected_body_parts": [ "HEAD", "TORSO", "ARM_L", "ARM_R", "LEG_L", "LEG_R" ],
     "base_energy_cost": 150,
     "final_energy_cost": 225,
     "energy_source": "MANA",
@@ -23,6 +23,6 @@
     "base_casting_time": 125,
     "min_duration": 1100,
     "max_duration": 4400,
-    "damage_type": "heat"
+    "damage_type": "fire"
   }
 ]
