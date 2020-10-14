@@ -318,10 +318,30 @@
   },
   {
     "type": "vehicle_part",
-    "id": "secro_flesh_aisle",
+    "id": "secro_flesh_aisle_horizontal",
     "name": { "str": "bio-organic aisle" },
-    "symbol": "S",
-    "symbols": { "horizontal": "H", "vertical": "=" },
+	"symbol": "=",
+    "color": "light_red",
+    "broken_symbol": "#",
+    "broken_color": "red",
+    "durability": 350,
+    "description": "A smooth, flesh aisle.",
+    "item": "secro_flesh_plate_small",
+    "location": "center",
+    "requirements": {
+      "install": { "time": "10 m", "using": [ [ "secro_flesh_vehicle_morph", 2 ] ] },
+      "removal": { "time": "10 m", "using": [ [ "secro_flesh_vehicle_reform", 1 ] ] },
+      "repair": { "time": "5 m", "using": [ [ "secro_flesh_vehicle_morph", 1 ] ] }
+    },
+    "flags": [ "AISLE", "BOARDABLE", "NEEDS_SECRO_FLESH" ],
+    "breaks_into": [ { "item": "meat", "prob": 50, "repeat": 6 } ],
+    "damage_reduction": { "all": 20, "bash": 45 }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "secro_flesh_aisle_vertical",
+    "name": { "str": "bio-organic aisle" },
+    "symbol": "H",
     "color": "light_red",
     "broken_symbol": "#",
     "broken_color": "red",
