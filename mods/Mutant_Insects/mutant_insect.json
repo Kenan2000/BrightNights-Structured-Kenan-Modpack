@@ -59,7 +59,6 @@
     "vision_night": 5,
     "harvest": "arachnid",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS" ]
   },
@@ -93,7 +92,6 @@
     "vision_night": 7,
     "harvest": "arachnid",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "SMELLS", "HEARS" ]
   },
@@ -126,7 +124,6 @@
     "vision_day": 10,
     "vision_night": 10,
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "harvest": "arachnid",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "SMELLS", "HEARS" ]
@@ -153,7 +150,6 @@
     "melee_dice": 1,
     "melee_dice_sides": 2,
     "melee_cut": 1,
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "harvest": "meatslug",
     "death_function": [ "NORMAL" ],
     "flags": [ "SMELLS", "LARVA", "PET_WONT_FOLLOW" ]
@@ -179,7 +175,6 @@
     "melee_dice": 1,
     "melee_dice_sides": 4,
     "melee_cut": 0,
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "harvest": "meatslug",
     "death_function": [ "NORMAL" ],
     "flags": [ "SMELLS", "LARVA", "PET_WONT_FOLLOW" ]
@@ -200,7 +195,6 @@
     "aggression": 10,
     "upgrades": { "half_life": 30, "into": "mon_ant_acid_soldier" },
     "special_attacks": [ [ "ACID", 23 ], [ "EAT_FOOD", 30 ] ],
-    "biosignature": { "biosig_item": "acid_free", "biosig_timer": 10 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "ACID", "NORMAL" ],
     "harvest": "arachnid_acid",
@@ -223,7 +217,6 @@
     "aggression": 40,
     "morale": 50,
     "reproduction": { "baby_egg": "egg_acid_ant", "baby_count": 5, "baby_timer": 1 },
-    "biosignature": { "biosig_item": "acid_free", "biosig_timer": 10 },
     "special_attacks": [ [ "EAT_FOOD", 30 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "ACID", "NORMAL" ],
@@ -249,7 +242,6 @@
     "upgrades": { "half_life": 364, "into": "mon_mega_acid_ant" },
     "//": "half life set high due to large population",
     "special_attacks": [ [ "ACID", 15 ] ],
-    "biosignature": { "biosig_item": "acid_free", "biosig_timer": 10 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "ACID", "NORMAL" ],
     "harvest": "arachnid_acid",
@@ -273,7 +265,6 @@
     "attack_effs": [ { "id": "downed", "chance": 10, "duration": 3 } ],
     "special_attacks": [ [ "ACID", 15 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
-    "biosignature": { "biosig_item": "acid_free", "biosig_timer": 10 },
     "death_function": [ "ACID", "NORMAL" ],
     "harvest": "arachnid_acid",
     "flags": [ "ACIDPROOF", "SHORTACIDTRAIL", "CLIMBS", "HEARS", "POISON", "SEES", "SMELLS", "PET_MOUNTABLE"  ]
@@ -291,7 +282,6 @@
     "color": "yellow",
     "fear_triggers": [ "HURT" ],
     "upgrades": { "age_grow": 3, "into": "mon_ant_acid" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "harvest": "meat_slug",
     "flags": [ "ACIDPROOF", "LARVA", "POISON", "SMELLS", "PET_WONT_FOLLOW" ]
   },
@@ -317,7 +307,6 @@
     "aggression": 10,
     "upgrades": { "half_life": 30, "into": "mon_ant_soldier" },
     "special_attacks": [ [ "EAT_FOOD", 30 ] ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 99 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_WEAK" ],
     "flags": [ "CLIMBS", "HEARS", "SEES", "SMELLS", "PET_MOUNTABLE"  ]
   },
@@ -338,7 +327,6 @@
     "aggression": 40,
     "morale": 50,
     "reproduction": { "baby_egg": "ant_egg", "baby_count": 5, "baby_timer": 1 },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 99 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "flags": [ "HEARS", "SEES", "SMELLS" ]
   },
@@ -359,7 +347,6 @@
     "armor_bash": 8,
     "armor_cut": 10,
     "upgrades": { "half_life": 364, "into": "mon_mega_ant" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 99 },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "ACID", "NORMAL" ],
     "flags": [ "CLIMBS", "HEARS", "SEES", "SMELLS", "PET_MOUNTABLE"  ]
@@ -396,7 +383,6 @@
     "color": "white",
     "fear_triggers": [ "HURT" ],
     "upgrades": { "age_grow": 3, "into": "mon_ant" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "flags": [ "LARVA", "SMELLS", "PET_WONT_FOLLOW" ]
   },
   {
@@ -423,7 +409,6 @@
     "melee_cut": 6,
     "special_attacks": [ [ "PARROT", 30 ] ],
     "dodge": 9,
-    "biosignature": { "biosig_item": "honeycomb", "biosig_timer": 10 },
     "harvest": "arachnid_stinger",
     "attack_effs": [ { "id": "poison", "chance": 30, "duration": 20 } ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_CLOSE"],
@@ -447,7 +432,6 @@
     "aggression": 40,
     "morale": 50,
     "reproduction": { "baby_egg": "egg_bee", "baby_count": 5, "baby_timer": 1 },
-    "biosignature": { "biosig_item": "egg_bee", "biosig_timer": 10 },
     "harvest": "arachnid_stinger",
     "attack_effs": [ { "id": "poison", "chance": 30, "duration": 20 } ],    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "flags": [ "HEARS", "SEES", "SMELLS" ]
@@ -537,7 +521,6 @@
     "color": "blue",
     "fear_triggers": [ "HURT" ],
     "upgrades": { "age_grow": 3, "into": "mon_giant_beetle" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "flags": [ "LARVA", "SMELLS", "PET_WONT_FOLLOW" ]
   },
   {
@@ -671,7 +654,6 @@
     "vision_night": 10,
     "reproduction": { "baby_egg": "egg_roach", "baby_count": 1, "baby_timer": 7 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "upgrades": { "age_grow": 7, "into": "mon_pregnant_giant_cockroach" },
     "special_attacks": [ [ "EAT_FOOD", 60 ] ],
     "fear_triggers": [ "SOUND", "FIRE" ],
@@ -691,7 +673,6 @@
     "vision_night": 10,
     "reproduction": { "baby_egg": "egg_roach", "baby_count": 1, "baby_timer": 7 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "special_attacks": [ [ "EAT_FOOD", 60 ] ],
     "death_function": [ "NORMAL", "PREG_ROACH" ],
     "fear_triggers": [ "SOUND", "FIRE" ],
@@ -731,7 +712,6 @@
     "vision_night": 10,
     "reproduction": { "baby_egg": "egg_roach_plague", "baby_count": 1, "baby_timer": 7 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "upgrades": { "age_grow": 7, "into": "mon_plague_vector" },
     "special_attacks": [ [ "EAT_FOOD", 60 ] ],
     "harvest": "arachnid_tainted",
@@ -753,7 +733,6 @@
     "vision_night": 10,
     "reproduction": { "baby_egg": "egg_roach", "baby_count": 1, "baby_timer": 7 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "special_attacks": [ [ "EAT_FOOD", 60 ] ],
     "harvest": "arachnid_tainted",
     "fear_triggers": [ "SOUND", "FIRE" ],
@@ -797,7 +776,6 @@
     "//": "not needed? DERMATIK_GROWTH, 14400",
     "fear_triggers": [ "HURT" ],
     "upgrades": { "age_grow": 3, "into": "mon_dermatik" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "flags": [ "HEARS", "SMELLS", "POISON", "CAN_DIG", "LARVA" ]
   },
   {
@@ -988,7 +966,6 @@
     "color": "white",
     "fear_triggers": [ "HURT" ],
     "upgrades": { "age_grow": 3, "into": "mon_fly" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "flags": [ "LARVA", "SMELLS" ]
   },
   {
@@ -1152,7 +1129,6 @@
     "color": "pink",
     "fear_triggers": [ "HURT" ],
     "upgrades": { "age_grow": 12, "into": "mon_wasp" },
-    "biosignature": { "biosig_item": "feces_roach", "biosig_timer": 3 },
     "flags": [ "LARVA", "SMELLS" ]
   },
   {

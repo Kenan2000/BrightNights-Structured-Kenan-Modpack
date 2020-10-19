@@ -29,7 +29,6 @@
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "age_grow": 20, "into": "mon_pig" },
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 7 },
     "special_attacks": [ [ "EAT_FOOD", 40 ] ],
     "flags": [ "ANIMAL", "BLEED", "CATTLEFODDER", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PET_MOUNTABLE", "SEES", "SMELLS", "WARM" ]
   },
@@ -59,7 +58,6 @@
     "harvest": "mammal_large_leather",
     "reproduction": { "baby_monster": "mon_pig_piglet", "baby_count": 3, "baby_timer": 10 },
     "baby_flags": [ "SPRING", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 2 },
     "path_settings": { "max_dist": 10 },
     "anger_triggers": [ "PLAYER_WEAK", "FRIEND_ATTACKED" ],
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],

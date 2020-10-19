@@ -25,8 +25,7 @@
     "anger_triggers": [ "PLAYER_CLOSE", "STALK", "FRIEND_ATTACKED" ],
     "fear_triggers": [ "SOUND", "HURT", "FRIEND_DIED", "FIRE" ],
     "placate_triggers": [ "SOUND", "PLAYER_WEAK" ],
-    "death_function": [ "NORMAL" ],
-    "biosignature": { "biosig_item": "feces_bird", "biosig_timer": 8 }
+    "death_function": [ "NORMAL" ]
   },
   {
     "id": "mon_frog_giant",
@@ -183,7 +182,6 @@
     "melee_dice_sides": 10,
     "melee_cut": 4,
     "dodge": 2,
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 12 },
     "anger_triggers": [ "PLAYER_WEAK", "FRIEND_ATTACKED", "SOUND" ],
     "fear_triggers": [ "SOUND", "HURT" ],
     "placate_triggers": [ "MEAT", "PLAYER_CLOSE" ]
@@ -603,7 +601,6 @@
       [ "wound_minor", 40 ],
       { "type": "bite", "cooldown": 7, "min_mul": 0.5, "no_infection_chance": 18, "//": "strong jaws" }
     ],
-    "biosignature": { "biosig_item": "feces_dog", "biosig_timer": 6 },
     "anger_triggers": [ "STALK", "FRIEND_DIED", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "placate_triggers": [ "MEAT", "FRIEND_ATTACKED" ]
   },
@@ -612,8 +609,7 @@
     "type": "MONSTER",
     "copy-from": "mon_coyote",
     "hp": 28,
-    "upgrades": { "half_life": 17, "into": "mon_coyote_small" },
-    "biosignature": { "biosig_item": "feces_dog", "biosig_timer": 6 }
+    "upgrades": { "half_life": 17, "into": "mon_coyote_small" }
   },
   {
     "id": "mon_skunk",
@@ -997,7 +993,6 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_WEAK", "MEAT", "FIRE" ],
     "fear_triggers": [ "HURT", "PLAYER_CLOSE", "FRIEND_DIED", "SOUND" ],
     "death_function": [ "NORMAL" ],
-    "biosignature": { "biosig_item": "feces_dog", "biosig_timer": 6 },
     "flags": [
       "SEES",
       "HEARS",
@@ -1052,7 +1047,6 @@
       }
     ],
     "death_function": [ "NORMAL" ],
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 12 },
     "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "BLEED" ],
     "anger_triggers": [ "PLAYER_WEAK", "STALK", "PLAYER_CLOSE" ],
     "fear_triggers": [ "SOUND", "HURT", "FIRE" ],
@@ -1088,7 +1082,6 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT", "SOUND", "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 15 },
     "flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER_1", "ANIMAL", "WARM", "KEENNOSE", "BLEED", "SWARMS", "GROUP_MORALE", "CAN_DIG" ]
   },
   {

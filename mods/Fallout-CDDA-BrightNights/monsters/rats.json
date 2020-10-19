@@ -64,7 +64,6 @@
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "age_grow": 5, "into": "mon_rat_pig" },
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 7 },
     "special_attacks": [ [ "EAT_FOOD", 120 ] ],
     "flags": [
       "SEES",
@@ -107,7 +106,6 @@
     "dodge": 2,
     "reproduction": { "baby_monster": "mon_rat_piglet", "baby_count": 3, "baby_timer": 10 },
     "baby_flags": [ "SPRING", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 2 },
     "vision_day": 30,
     "vision_night": 10,
     "harvest": "mammal_large_fur",
@@ -164,7 +162,6 @@
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "age_grow": 5, "into": "mon_rat_mole_lesser" },
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 7 },
     "special_attacks": [ [ "EAT_FOOD", 120 ] ],
     "flags": [
       "SEES",
@@ -207,7 +204,6 @@
     "dodge": 2,
     "reproduction": { "baby_monster": "mon_rat_mole_young", "baby_count": 3, "baby_timer": 10 },
     "baby_flags": [ "SPRING", "AUTUMN" ],
-    "biosignature": { "biosig_item": "feces_manure", "biosig_timer": 2 },
     "vision_day": 30,
     "vision_night": 10,
     "harvest": "mammal_large_leather",
