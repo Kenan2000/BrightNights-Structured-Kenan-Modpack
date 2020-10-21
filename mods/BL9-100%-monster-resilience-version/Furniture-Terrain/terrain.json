@@ -714,6 +714,67 @@
   },
   {
     "type": "terrain",
+    "id": "t_card_science",
+    "name": "card reader",
+    "description": "This is a smartcard reader.  It sports the stylized symbol of an atom inside a flask that is universally known to indicate SCIENCE.  The stark red LED blinks askance at your geek cred.  You could swipe a scientific ID badge near it to unlock the gates to discovery.",
+    "//": "Science",
+    "symbol": "6",
+    "color": "pink",
+    "move_cost": 0,
+    "flags": [ "NOITEM", "CONNECT_TO_WALL" ],
+    "examine_action": "cardreader",
+    "bash": {
+      "str_min": 140,
+      "str_max": 300,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_card_reader_broken",
+      "items": [ { "item": "plastic_chunk", "count": [ 0, 2 ] }, { "item": "scrap", "prob": 50 } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_card_military",
+    "name": "card reader",
+    "description": "This is a smartcard reader.  The universal symbol of an eagle driving a tank, biting a grenade pin stands rampant in front of an American flag.  A small, red LED remains constant, as if watching you, waiting.  You could swipe a military ID card in front of the reader if you dared.",
+    "//": "Military",
+    "symbol": "6",
+    "color": "pink",
+    "move_cost": 0,
+    "flags": [ "NOITEM", "CONNECT_TO_WALL" ],
+    "examine_action": "cardreader",
+    "bash": {
+      "str_min": 140,
+      "str_max": 300,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_card_reader_broken",
+      "items": [ { "item": "plastic_chunk", "count": [ 0, 2 ] }, { "item": "scrap", "prob": 50 } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_card_industrial",
+    "looks_like": "t_card_science",
+    "name": "card reader",
+    "description": "This is a smartcard reader.  The symbol of a gear in front of a bulging bicep is emblazoned on the matte black surface with an illegible heavy industrial company title.  A red LED blinks on the card reader.  Perhaps an industrial ID card could still open it.",
+    "//": "Industrial",
+    "symbol": "6",
+    "color": "pink",
+    "move_cost": 0,
+    "flags": [ "NOITEM", "CONNECT_TO_WALL" ],
+    "examine_action": "cardreader",
+    "bash": {
+      "str_min": 140,
+      "str_max": 300,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_card_reader_broken",
+      "items": [ { "item": "plastic_chunk", "count": [ 0, 2 ] }, { "item": "scrap", "prob": 50 } ]
+    }
+  },
+  {
+    "type": "terrain",
     "id": "t_gud_lava",
     "looks_like": "t_lava",
     "name": "Gud lava",

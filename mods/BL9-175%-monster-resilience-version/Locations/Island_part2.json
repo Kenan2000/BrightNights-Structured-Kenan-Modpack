@@ -726,7 +726,7 @@
         "!": "t_column_halfway",
         "W": "t_reinforced_glass",
         "%": "t_concrete_wall",
-		">": "t_BL9_svat",
+        ">": "t_BL9_svat",
         "<": "t_stairs_up",
         "`": "t_BL9_hole",
         "?": [ "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_o" ],
@@ -764,10 +764,7 @@
         "n": { "item": "BL9_treasure_search2", "chance": 100, "repeat": [ 1, 1 ] },
         "h": { "item": "BL9_treasure_search2", "chance": 100, "repeat": [ 1, 1 ] }
       },
-      "place_item": [
-        { "item": "id_industrial", "x": 21, "y": 12 },
-        { "item": "BL9_commander_sample", "x": 11, "y": 7 }
-      ],
+      "place_item": [ { "item": "id_industrial", "x": 21, "y": 12 }, { "item": "BL9_commander_sample", "x": 11, "y": 7 } ],
       "place_signs": [
         {
           "signage": "WARNING, WARNING - DESTRUCTION OF THE CENTRAL TERMINAL WILL OVERRIDE THE REACTOR, APPROACH WITH EXTREME CAUTION",
@@ -842,7 +839,7 @@
         "!": "t_column_halfway",
         "W": "t_reinforced_glass",
         "%": "t_concrete_wall",
-		">": "t_BL9_svat",
+        ">": "t_BL9_svat",
         "<": "t_stairs_up",
         "`": "t_BL9_hole",
         "?": [ "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_o" ],

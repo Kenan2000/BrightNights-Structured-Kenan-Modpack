@@ -1313,7 +1313,7 @@
         ".": "t_metal_floor",
         ">": "t_stairs_down",
         "<": "t_stairs_up",
-		"?": [ "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_o" ],
+        "?": [ "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_c", "t_door_metal_o" ],
         "`": "t_water_dp",
         "%": "t_concrete_wall",
         "i": "t_card_industrial",
@@ -1337,9 +1337,7 @@
         "e": { "item": "BL9_treasure_search2", "chance": 100, "repeat": [ 1, 1 ] },
         "l": { "item": "army_personal_locker", "chance": 80, "repeat": [ 1, 1 ] }
       },
-      "place_item": [
-        { "item": "BL9_guide_note6", "x": 7, "y": 9 }
-      ],
+      "place_item": [ { "item": "BL9_guide_note6", "x": 7, "y": 9 } ],
       "place_monster": [
         { "monster": "mon_BL9_regen_spiky", "x": 17, "y": 17 },
         { "monster": "mon_BL9_assassin", "x": 3, "y": 11 },

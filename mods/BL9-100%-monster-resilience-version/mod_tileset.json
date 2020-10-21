@@ -1,10 +1,17 @@
 [
   {
     "type": "mod_tileset",
-    "compatibility": [ "MshockXottoplus", "MSX++DEAD_PEOPLE", "UNDEAD_PEOPLE", "UNDEAD_PEOPLE_BASE" ],
+    "compatibility": [
+      "MshockXottoplus",
+      "MSX++DEAD_PEOPLE",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UltimateCataclysm",
+      "UltimateCataclysmDemo"
+    ],
     "tiles-new": [
       {
-        "file": "terrain32x32.png",
+        "file": "mod_tileset/terrain32x32.png",
         "tiles": [
           {
             "id": "t_BL9uniqmazing_fl_red",
@@ -44,16 +51,16 @@
               { "id": "t_connection", "fg": [ 37, 38, 39, 40 ] },
               { "id": "edge", "fg": [ 41, 42 ] },
               { "id": "end_piece", "fg": [ 43, 44, 45, 46 ] },
-              { "id": "unconnected", "fg": 48 }
+              { "id": "unconnected", "fg": 47 }
             ],
             "rotates": true
           },
           {
             "id": "t_BL9uniqmazing_fl_purple",
-            "fg": 49,
+            "fg": 48,
             "multitile": true,
             "additional_tiles": [
-              { "id": "center", "fg": 49 },
+              { "id": "center", "fg": 48 },
               { "id": "corner", "fg": [ 49, 50, 51, 52 ] },
               { "id": "t_connection", "fg": [ 53, 54, 55, 56 ] },
               { "id": "edge", "fg": [ 57, 58 ] },
@@ -246,15 +253,15 @@
           },
           {
             "id": "t_BL9uniqmazing_liq_yellow",
-            "fg": 272,
+            "fg": 608,
             "multitile": true,
             "additional_tiles": [
-              { "id": "center", "fg": 272 },
-              { "id": "corner", "fg": [ 273, 274, 275, 276 ] },
-              { "id": "t_connection", "fg": [ 277, 278, 279, 280 ] },
-              { "id": "edge", "fg": [ 281, 282 ] },
-              { "id": "end_piece", "fg": [ 283, 284, 285, 286 ] },
-              { "id": "unconnected", "fg": 287 }
+              { "id": "center", "fg": 608 },
+              { "id": "corner", "fg": [ 609, 610, 611, 612 ] },
+              { "id": "t_connection", "fg": [ 613, 614, 615, 616 ] },
+              { "id": "edge", "fg": [ 617, 618 ] },
+              { "id": "end_piece", "fg": [ 619, 620, 621, 622 ] },
+              { "id": "unconnected", "fg": 623 }
             ],
             "rotates": true
           },
@@ -439,6 +446,72 @@
               { "id": "unconnected", "fg": 495 }
             ],
             "rotates": true
+          },
+          {
+            "id": "f_BL9_lava",
+            "fg": 656,
+            "multitile": true,
+            "additional_tiles": [
+              { "id": "center", "fg": 656 },
+              { "id": "corner", "fg": [ 657, 658, 659, 660 ] },
+              { "id": "t_connection", "fg": [ 661, 662, 663, 664 ] },
+              { "id": "edge", "fg": [ 665, 666 ] },
+              { "id": "end_piece", "fg": [ 667, 668, 669, 670 ] },
+              { "id": "unconnected", "fg": 671 }
+            ],
+            "rotates": true
+          },
+          { "id": "platcoin", "fg": 672, "rotates": false },
+          { "id": "goldcoin", "fg": 673, "rotates": false },
+          { "id": "BL9_teleport_item", "fg": 674, "rotates": false },
+          {
+            "id": "f_BL9_long_torch",
+            "animated": true,
+            "fg": [
+              { "weight": 12, "sprite": 675 },
+              { "weight": 12, "sprite": 676 },
+              { "weight": 12, "sprite": 677 },
+              { "weight": 12, "sprite": 678 }
+            ],
+            "rotates": false
+          },
+          {
+            "id": "f_BL9_acid",
+            "animated": true,
+            "fg": [
+              { "weight": 20, "sprite": 679 },
+              { "weight": 20, "sprite": 680 },
+              { "weight": 20, "sprite": 681 },
+              { "weight": 20, "sprite": 682 }
+            ],
+            "rotates": false
+          },
+          { "id": "t_sand_underground", "fg": 683, "rotates": false },
+          { "id": "mon_BL9_cultist_cut", "fg": 684, "bg": 704, "rotates": false },
+          { "id": "mon_BL9_cultist_stab", "fg": 685, "bg": 704, "rotates": false },
+          { "id": "mon_BL9_cultist_bash", "fg": 687, "bg": 704, "rotates": false },
+          {
+            "id": "t_BL9_hole",
+            "fg": 688,
+            "multitile": true,
+            "additional_tiles": [
+              { "id": "center", "fg": 688 },
+              { "id": "corner", "fg": [ 689, 690, 691, 692 ] },
+              { "id": "t_connection", "fg": [ 693, 694, 695, 696 ] },
+              { "id": "edge", "fg": [ 697, 698 ] },
+              { "id": "end_piece", "fg": [ 699, 700, 701, 702 ] },
+              { "id": "unconnected", "fg": 703 }
+            ],
+            "rotates": true
+          },
+          { "id": "mon_BL9_cultist_crossbow", "fg": 705, "bg": 704, "rotates": false },
+          { "id": "mon_BL9_cultist_patrolleader", "fg": 706, "bg": 704, "rotates": false },
+          {
+            "id": "mon_dr_gonzalez",
+            "animated": true,
+            "fg": [ { "weight": 10, "sprite": 707 }, { "weight": 10, "sprite": 708 } ],
+            "bg": 704,
+            "rotates": false
           }
         ]
       }
