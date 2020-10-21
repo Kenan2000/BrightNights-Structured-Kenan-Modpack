@@ -98,7 +98,7 @@
   {
     "type": "item_group",
     "id": "BL9_herbs",
-    "items": [ [ "mild_curing_herb", 45 ], [ "medium_curing_herb", 25 ], [ "strong_curing_herb", 10 ] ]
+    "items": [ [ "mild_curing_herb", 33 ], [ "medium_curing_herb", 17 ], [ "strong_curing_herb", 7 ] ]
   },
   {
     "type": "item_group",
@@ -219,22 +219,84 @@
     ]
   },
   {
+    "type": "item_group",
+    "id": "BL9_common_drops",
+    "subtype": "collection",
+    "items": [
+      { "group": "tools_general", "prob": 45 },
+      { "group": "tools_hunting", "prob": 45 },
+      { "group": "chem_home", "prob": 40 },
+      { "group": "tools_lighting", "prob": 30 },
+      { "group": "tools_survival", "prob": 45 },
+      { "group": "consumer_electronics", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "BL9_uncommon_drops",
+    "subtype": "collection",
+    "items": [
+      { "group": "tools_general", "prob": 45 },
+      { "group": "chem_home", "prob": 65 },
+      { "group": "tools_lighting", "prob": 45 },
+      { "group": "electronics", "prob": 45 },
+      { "group": "military", "prob": 45 },
+      { "group": "science", "prob": 45 },
+      { "group": "tools_robotics", "prob": 45 }
+    ]
+  },
+  {
     "id": "BL9_lore_journal",
     "type": "item_group",
-	"subtype": "collection",
-	"entries": [ { "item": "BL9_agent_journal1", "prob": 100 }, { "item": "BL9_agent_journal2", "prob": 100 }, { "item": "BL9_agent_journal3", "prob": 100 }, { "item": "BL9_agent_journal4", "prob": 100 }, { "item": "BL9_agent_journal5", "prob": 100 }, { "item": "BL9_agent_journal6", "prob": 100 }, { "item": "BL9_agent_journal7", "prob": 100 }, { "item": "BL9_agent_journal8", "prob": 100 }, { "item": "BL9_agent_journal9", "prob": 100 } ]
+    "subtype": "collection",
+    "entries": [
+      { "item": "BL9_agent_journal1", "prob": 100 },
+      { "item": "BL9_agent_journal2", "prob": 100 },
+      { "item": "BL9_agent_journal3", "prob": 100 },
+      { "item": "BL9_agent_journal4", "prob": 100 },
+      { "item": "BL9_agent_journal5", "prob": 100 },
+      { "item": "BL9_agent_journal6", "prob": 100 },
+      { "item": "BL9_agent_journal7", "prob": 100 },
+      { "item": "BL9_agent_journal8", "prob": 100 },
+      { "item": "BL9_agent_journal9", "prob": 100 }
+    ]
   },
   {
     "id": "BL9_whereabouts_journal",
     "type": "item_group",
-	"subtype": "collection",
-	"entries": [ { "item": "BL9_castlemap", "prob": 100 }, { "item": "BL9_agent_journal1", "prob": 40 }, { "item": "BL9_agent_journal2", "prob": 40 }, { "item": "BL9_agent_journal3", "prob": 40 }, { "item": "BL9_agent_journal4", "prob": 40 }, { "item": "BL9_agent_journal5", "prob": 40 }, { "item": "BL9_agent_journal6", "prob": 40 }, { "item": "BL9_agent_journal7", "prob": 40 }, { "item": "BL9_agent_journal8", "prob": 40 }, { "item": "BL9_agent_journal9", "prob": 40 } ]
+    "subtype": "collection",
+    "entries": [
+      { "item": "BL9_castlemap", "prob": 100 },
+      { "item": "BL9_agent_journal1", "prob": 40 },
+      { "item": "BL9_agent_journal2", "prob": 40 },
+      { "item": "BL9_agent_journal3", "prob": 40 },
+      { "item": "BL9_agent_journal4", "prob": 40 },
+      { "item": "BL9_agent_journal5", "prob": 40 },
+      { "item": "BL9_agent_journal6", "prob": 40 },
+      { "item": "BL9_agent_journal7", "prob": 40 },
+      { "item": "BL9_agent_journal8", "prob": 40 },
+      { "item": "BL9_agent_journal9", "prob": 40 }
+    ]
   },
   {
     "id": "BL9_lore_journal_patrol",
     "type": "item_group",
-	"subtype": "collection",
-    "entries": [ { "item": "BL9_guide_note2", "prob": 75 }, { "item": "BL9_guide_note3", "prob": 75 }, { "item": "BL9_guide_note4", "prob": 75 }, { "item": "BL9_guide_note5", "prob": 75 }, { "item": "BL9_agent_journal1", "prob": 25 }, { "item": "BL9_agent_journal2", "prob": 25 }, { "item": "BL9_agent_journal3", "prob": 25 }, { "item": "BL9_agent_journal4", "prob": 25 }, { "item": "BL9_agent_journal5", "prob": 25 }, { "item": "BL9_agent_journal6", "prob": 25 }, { "item": "BL9_agent_journal7", "prob": 25 }, { "item": "BL9_agent_journal8", "prob": 25 }, { "item": "BL9_agent_journal9", "prob": 25 } ]
+    "subtype": "collection",
+    "entries": [
+      { "item": "BL9_guide_note2", "prob": 75 },
+      { "item": "BL9_guide_note3", "prob": 75 },
+      { "item": "BL9_guide_note4", "prob": 75 },
+      { "item": "BL9_guide_note5", "prob": 75 },
+      { "item": "BL9_agent_journal1", "prob": 25 },
+      { "item": "BL9_agent_journal2", "prob": 25 },
+      { "item": "BL9_agent_journal3", "prob": 25 },
+      { "item": "BL9_agent_journal4", "prob": 25 },
+      { "item": "BL9_agent_journal5", "prob": 25 },
+      { "item": "BL9_agent_journal6", "prob": 25 },
+      { "item": "BL9_agent_journal7", "prob": 25 },
+      { "item": "BL9_agent_journal8", "prob": 25 },
+      { "item": "BL9_agent_journal9", "prob": 25 }
+    ]
   },
   {
     "type": "item_group",
@@ -257,7 +319,7 @@
       [ "shot_slug", 20 ],
       [ "shot_bird", 20 ],
       [ "44fmj", 20 ],
-	  { "group": "BL9_whereabouts_journal", "prob": 45 }
+      { "group": "BL9_whereabouts_journal", "prob": 45 }
     ]
   },
   {
@@ -266,7 +328,7 @@
     "subtype": "collection",
     "items": [
       { "group": "clothing_outdoor_set", "prob": 100, "damage": [ 1, 4 ] },
-	  { "group": "BL9_whereabouts_journal", "prob": 35 },
+      { "group": "BL9_whereabouts_journal", "prob": 35 },
       { "distribution": [ { "item": "m240", "damage": [ 2, 4 ] }, { "item": "m60", "damage": [ 2, 4 ] } ] },
       { "item": "corpse", "prob": 50, "damage": 4 }
     ]
@@ -326,7 +388,7 @@
       [ "hobo_stove", 1 ],
       [ "l-stick", 1 ],
       [ "eclipse_glasses", 1 ],
-	  { "group": "BL9_whereabouts_journal", "prob": 3 }
+      { "group": "BL9_whereabouts_journal", "prob": 3 }
     ]
   },
   {
@@ -340,7 +402,7 @@
       [ "manuals", 10 ],
       [ "textbooks", 5 ],
       [ "exotic_books", 5 ],
-	  [ "BL9_whereabouts_journal", 15 ]
+      [ "BL9_whereabouts_journal", 15 ]
     ]
   },
   {
@@ -368,7 +430,7 @@
       { "group": "newspaper", "prob": 15 },
       [ "news_regional", 2 ],
       [ "magnifying_glass", 1 ],
-	  { "group": "BL9_whereabouts_journal", "prob": 10 }
+      { "group": "BL9_whereabouts_journal", "prob": 10 }
     ]
   },
   {
@@ -537,7 +599,7 @@
       [ "mess_tin", 10 ],
       [ "survival_kit", 30 ],
       [ "premium_survival_kit", 3 ],
-	  { "group": "BL9_whereabouts_journal", "prob": 10 }
+      { "group": "BL9_whereabouts_journal", "prob": 10 }
     ]
   },
   {
@@ -617,7 +679,7 @@
       { "item": "survnote", "prob": 10 },
       { "item": "tool_rdx_charge", "prob": 10 },
       { "item": "v29", "prob": 10 },
-	  { "group": "BL9_whereabouts_journal", "prob": 30 }
+      { "group": "BL9_whereabouts_journal", "prob": 30 }
     ]
   },
   {
@@ -637,7 +699,7 @@
       [ "e_tool", 30 ],
       [ "jackhammer", 5 ],
       [ "elec_jackhammer", 5 ],
-	  { "group": "BL9_whereabouts_journal", "prob": 15 }
+      { "group": "BL9_whereabouts_journal", "prob": 15 }
     ]
   },
   {
@@ -654,7 +716,7 @@
       [ "backpack", 30 ],
       [ "backpack_leather", 30 ],
       [ "e_tool", 30 ],
-	  { "group": "BL9_whereabouts_journal", "prob": 30 }
+      { "group": "BL9_whereabouts_journal", "prob": 30 }
     ]
   },
   {
@@ -703,7 +765,7 @@
       { "item": "manual_swordsmanship", "prob": 3 },
       { "item": "book_lockpick", "prob": 1 },
       { "group": "rare_martial_arts_books", "prob": 6 },
-	  { "group": "BL9_whereabouts_journal", "prob": 5 }
+      { "group": "BL9_whereabouts_journal", "prob": 5 }
     ]
   }
 ]
