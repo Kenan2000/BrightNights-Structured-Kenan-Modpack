@@ -325,5 +325,26 @@
     
     "placate_triggers":["PLAYER_WEAK", "SOUND", "MEAT"],
     "categories":["CLASSIC"]
+  },
+{
+    "id": "surv_levershotgun",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "name": "handmade lever shotgun",
+    "description": "A well designed homemade lever-action shotgun.  With a 8 round magazine, this is one of the better homemade weapons.",
+    "weight": 3934,
+    "volume": 10,
+    "price": 135000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "ranged_damage": 1,
+    "dispersion": 455,
+    "durability": 6,
+    "clip_size": 8,
+    "reload": 200,
+    "barrel_length": 4,
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "stock", 1 ], [ "barrel", 1 ] ],
+    "flags": [ "RELOAD_ONE" ]
   }
 ]
