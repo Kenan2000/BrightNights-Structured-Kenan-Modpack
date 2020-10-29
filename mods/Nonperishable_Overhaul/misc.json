@@ -41,5 +41,20 @@
     "name": "curdled milk",
     "description": "Milk that has been curdled with vinegar and rennet.  It still needs to be salted and drained of whey.",
     "spoils_in": 0
+  },
+  {
+    "id": "jerky_offal",
+    "//": "Depending on mod load order, MST Extra's jerked offal may fail to inherit the changes to vanilla jerky, so this redundant entry is needed to ensure the desired interaction between the two mods",
+    "copy-from": "jerky",
+    "type": "COMESTIBLE",
+    "name": "jerked offal",
+    "name_plural": "jerked offal",
+    "description": "Salty dried organ meat.  Smells a bit like dog food, but will last a long time.",
+    "fun": -2,
+    "healthy": -1,
+    "calories": 92,
+    "proportional": { "price": 0.8 },
+    "delete": { "flags": [ "NO_CRAFT_INHERIT" ] },
+    "spoils_in": 0
   }
 ]

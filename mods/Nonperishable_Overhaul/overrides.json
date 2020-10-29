@@ -18,14 +18,6 @@
     "spoils_in": 0
   },
   {
-    "id": "jerky_human",
-    "type": "COMESTIBLE",
-    "name": "jerk jerky",
-    "name_plural": "jerk jerky",
-    "description": "Salty dried human flesh that never goes bad, but will make you thirsty.",
-    "spoils_in": 0
-  },
-  {
     "id": "meat_smoked",
     "copy-from": "meat_smoked",
     "type": "COMESTIBLE",
@@ -40,13 +32,6 @@
     "name": "smoked fish",
     "name_plural": "smoked fish",
     "description": "Tasty fish that has been heavily smoked for long term preservation.",
-    "spoils_in": 0
-  },
-  {
-    "id": "human_smoked",
-    "type": "COMESTIBLE",
-    "name": "smoked sucker",
-    "description": "A heavily smoked portion of human flesh.  Lasts for a very long time and tastes pretty good, if you like that sort of thing.",
     "spoils_in": 0
   },
   {
@@ -67,10 +52,38 @@
   },
   {
     "type": "COMESTIBLE",
+    "id": "mutant_tallow",
+    "name": "mutant tallow",
+    "copy-from": "mutant_tallow",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mutant_human_tallow",
+    "name": "mutant humanoid tallow",
+    "copy-from": "mutant_human_tallow",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
     "id": "lard",
     "name": "lard",
-    "copy-from": "tallow",
+    "copy-from": "lard",
     "description": "A smooth white block of dry-rendered animal fat.  It will remain edible for a very long time, and can be used as an ingredient in many foods and projects.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mutant_lard",
+    "name": "mutant lard",
+    "copy-from": "mutant_lard",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "mutant_human_lard",
+    "name": "mutant humanoid lard",
+    "copy-from": "mutant_human_lard",
     "spoils_in": 0
   },
   {
@@ -101,14 +114,8 @@
   },
   {
     "type": "COMESTIBLE",
-    "id": "mannwurst",
-    "name": "Mannwurst",
-    "description": "A hefty long pork sausage that has been cured for long term storage.  Very tasty, if you're in the market for human flesh.",
-    "spoils_in": 0
-  },
-  {
-    "type": "COMESTIBLE",
     "id": "fruit_leather",
+    "copy-from": "fruit_leather",
     "name": "fruit leather",
     "description": "Dried strips of sugary fruit paste.",
     "spoils_in": 0
@@ -504,19 +511,18 @@
   },
   {
     "type": "COMESTIBLE",
-    "id": "dry_hflesh",
-    "copy-from": "dry_hflesh",
-    "name": "dehydrated human flesh",
-    "name_plural": "dehydrated human flesh",
-    "description": "Dehydrated human flesh flakes.  With proper storage, this dried food will remain edible for an incredibly long time.",
-    "spoils_in": 0
-  },
-  {
-    "type": "COMESTIBLE",
     "id": "dry_veggy",
     "copy-from": "dry_veggy",
     "name": "dehydrated vegetable",
     "description": "Dehydrated vegetable flakes.  With proper storage, this dried food will remain edible for an incredibly long time.",
+    "spoils_in": 0
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_tofu",
+    "copy-from": "dry_tofu",
+    "name": "dehydrated tofu",
+    "name_plural": "dehydrated tofu",
     "spoils_in": 0
   },
   {
