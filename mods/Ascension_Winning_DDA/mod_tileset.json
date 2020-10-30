@@ -12,7 +12,7 @@
       "brownlikebears",
       "UNDEAD_PEOPLE",
       "UNDEAD_PEOPLE_BASE",
-      "UNDEAD_PEOPLE_LIGHT",
+      "UNDEAD_PEOPLE_LEGACY",
       "UlticaShell",
       "MshockXottoplus12",
       "MSX++DEAD_PEOPLE",
@@ -21,20 +21,15 @@
     ],
     "tiles-new": [
       {
-        "file": "Armor_Up__Survivor_Expansion_normal.png",
+        "file": "Ascension_normal.png",
         "tiles": [
-          { "id": "armored_pack", "fg": 1, "rotates": false },
-          { "id": "overlay_worn_armored_pack", "fg": 2, "rotates": false },
-          { "id": "armor_alloyplate", "fg": 3, "rotates": false },
-          { "id": "overlay_worn_armor_alloyplate", "fg": 4, "rotates": false },
-          { "id": "environmental_skinsuit", "fg": 5, "rotates": false },
-          { "id": "overlay_worn_environmental_skinsuit", "fg": 6, "rotates": false },
-          { "id": "survivor_alloyplate", "fg": 7, "rotates": false },
-          { "id": "overlay_worn_survivor_alloyplate", "fg": 8, "rotates": false },
-          { "id": "survivor_lightplate", "fg": 9, "rotates": false },
-          { "id": "overlay_worn_survivor_lightplate", "fg": 10, "rotates": false },
-          { "id": "survivor_skinsuit", "fg": 11, "rotates": false },
-          { "id": "overlay_worn_survivor_skinsuit", "fg": 12, "rotates": false }
+          { "id": "jabberwock_skull", "fg": 1, "rotates": false },
+          { "id": "mastermind_brain", "fg": 2, "rotates": false },
+          { "id": "megabear_skull", "fg": 3, "rotates": false },
+          { "id": "moss_relic", "fg": 4 },
+          { "id": "preserved_brain", "fg": 5, "rotates": false },
+          { "id": "queen_egg", "fg": 6, "rotates": false },
+          { "id": "triffid_marrow", "fg": 7, "rotates": false }
         ],
         "//": "range 1 to 16",
         "sprite_width": 32,
