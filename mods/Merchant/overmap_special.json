@@ -12,7 +12,7 @@
         "locations" : [ "field" ], "//":"what special locations does it spawn",
         "city_distance" : [7, 12], "//":"how far from a city it should be",
         "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
-        "occurrences" : [1, 1], "//":"how many per overmap"
+        "occurrences" : [0, 1], "//":"how many per overmap"
     },{
         "type" : "overmap_special",
         "id" : "Safezone",
@@ -25,8 +25,7 @@
         "locations" : [ "wilderness" ],
         "city_distance" : [12, -1],
         "city_sizes" : [4, 12],
-        "occurrences" : [1, 2],
-        "flags" : [ "UNIQUE" ]
+        "occurrences" : [0, 2]
     },
 	{
         "type" : "overmap_special",
@@ -41,7 +40,7 @@
         "locations" : [ "field" ], "//":"what special locations does it spawn",
         "city_distance" : [7, 12], "//":"how far from a city it should be",
         "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
-        "occurrences" : [1, 1], "//":"how many per overmap"
+        "occurrences" : [0, 1], "//":"how many per overmap"
     },
 	{
         "type" : "overmap_special",
@@ -57,6 +56,6 @@
         "locations" : [ "field" ], "//":"what special locations does it spawn",
         "city_distance" : [6, -1], "//":"how far from a city it should be",
         "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
-        "occurrences" : [1, 1], "//":"how many per overmap"
+        "occurrences" : [0, 1], "//":"how many per overmap"
     }
 ]	
