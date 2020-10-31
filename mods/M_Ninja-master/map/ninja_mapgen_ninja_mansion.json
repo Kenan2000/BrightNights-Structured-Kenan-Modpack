@@ -48,15 +48,8 @@
         "r": "t_floor",
         "|": "t_wall"
       },
-      "traps": {
-        "*": "tr_landmine_buried",
-        "O": "tr_spike_pit",
-        "^": "tr_caltrops"
-      },
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" },
-        "r": { "monster": "mon_ninja_spring_floor" }
-      }
+      "traps": { "*": "tr_landmine_buried", "O": "tr_spike_pit", "^": "tr_caltrops" },
+      "monster": { "2": { "monster": "mon_turret_rifle" }, "r": { "monster": "mon_ninja_spring_floor" } }
     }
   },
   {
@@ -114,29 +107,16 @@
         "|": "t_wall",
         "~": "t_water_dp"
       },
-      "furniture": {
-        "&": "f_brazier",
-        "M": "f_mannequin"
-      },
-      "traps": {
-        "O": "tr_spike_pit"
-      },
-      "fields": {
-        "&": { "field": "fd_fire", "density": 1, "age": 1 }
-      },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_mansion" }
-      },
+      "furniture": { "&": "f_brazier", "M": "f_mannequin" },
+      "traps": { "O": "tr_spike_pit" },
+      "fields": { "&": { "field": "fd_fire", "density": 1, "age": 1 } },
+      "signs": { "T": { "snippet": "ninja_snippet_mansion" } },
       "place_loot": [
         { "item": "2x4", "x": 9, "y": 3, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "2x4", "x": 14, "y": 3, "chance": 100, "repeat": [ 20, 30 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "monster": { "2": { "monster": "mon_turret_rifle" } }
     }
   },
   {
@@ -189,30 +169,17 @@
         "O": "t_dirt",
         "|": "t_wall"
       },
-      "furniture": {
-        "#": "f_tatami",
-        "&": "f_brazier",
-        "@": "f_tatami"
-      },
-      "traps": {
-        "O": "tr_spike_pit"
-      },
-      "fields": {
-        "&": { "field": "fd_fire", "density": 1, "age": 1 }
-      },
+      "furniture": { "#": "f_tatami", "&": "f_brazier", "@": "f_tatami" },
+      "traps": { "O": "tr_spike_pit" },
+      "fields": { "&": { "field": "fd_fire", "density": 1, "age": 1 } },
       "place_loot": [
         { "item": "2x4", "x": 3, "y": 6, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "2x4", "x": 14, "y": 15, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "2x4", "x": 3, "y": 15, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "2x4", "x": 14, "y": 6, "chance": 100, "repeat": [ 20, 30 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" },
-        "C": { "monster": "mon_chickenbot" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "monster": { "2": { "monster": "mon_turret_rifle" }, "C": { "monster": "mon_chickenbot" } }
     }
   },
   {
@@ -266,14 +233,8 @@
         "O": "t_dirt",
         "|": "t_wall"
       },
-      "traps": {
-        "O": "tr_spike_pit"
-      },
-      "monster": {
-        "1": { "monster": "mon_turret" },
-        "2": { "monster": "mon_turret_rifle" },
-        "3": { "monster": "mon_turret_rifle" }
-      }
+      "traps": { "O": "tr_spike_pit" },
+      "monster": { "1": { "monster": "mon_turret" }, "2": { "monster": "mon_turret_rifle" }, "3": { "monster": "mon_turret_rifle" } }
     }
   },
   {
@@ -321,17 +282,13 @@
         "^": "t_floor",
         "|": "t_wall"
       },
-      "traps": {
-        "^": "tr_caltrops"
-      },
+      "traps": { "^": "tr_caltrops" },
       "place_loot": [
         { "item": "bone_human", "x": [ 4, 12 ], "y": [ 6, 6 ], "chance": 40, "repeat": [ 2, 4 ] },
         { "item": "bone_human", "x": [ 12, 14 ], "y": [ 11, 13 ], "chance": 40, "repeat": [ 2, 4 ] },
         { "item": "bone_human", "x": [ 7, 15 ], "y": [ 16, 18 ], "chance": 40, "repeat": [ 2, 4 ] }
       ],
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" }
-      }
+      "monster": { "2": { "monster": "mon_turret_rifle" } }
     }
   },
   {
@@ -382,16 +339,9 @@
         "|": "t_wall",
         "~": "t_water_dp"
       },
-      "traps": {
-        "O": "tr_spike_pit"
-      },
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" },
-        "C": { "monster": "mon_fish_carp" }
-      }
+      "traps": { "O": "tr_spike_pit" },
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "monster": { "2": { "monster": "mon_turret_rifle" }, "C": { "monster": "mon_fish_carp" } }
     }
   },
   {
@@ -447,10 +397,7 @@
         "r": "t_ninja_secret_rock_floor",
         "|": "t_wall"
       },
-      "traps": {
-        "*": "tr_landmine_buried",
-        "O": "tr_spike_pit"
-      },
+      "traps": { "*": "tr_landmine_buried", "O": "tr_spike_pit" },
       "monster": {
         "1": { "monster": "mon_turret" },
         "2": { "monster": "mon_turret_rifle" },
@@ -535,20 +482,10 @@
         "&": "f_brazier",
         "d": "f_dresser"
       },
-      "traps": {
-        "O": "tr_spike_pit",
-        "^": "tr_caltrops",
-        "t": "tr_shotgun_2"
-      },
-      "fields": {
-        "&": { "field": "fd_fire", "density": 1, "age": 1 }
-      },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_dojo" }
-      },
-      "toilets": {
-        "t": {}
-      },
+      "traps": { "O": "tr_spike_pit", "^": "tr_caltrops", "t": "tr_shotgun_2" },
+      "fields": { "&": { "field": "fd_fire", "density": 1, "age": 1 } },
+      "signs": { "T": { "snippet": "ninja_snippet_dojo" } },
+      "toilets": { "t": {  } },
       "place_loot": [
         { "item": "2x4", "x": 14, "y": 4, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "2x4", "x": 22, "y": 4, "chance": 100, "repeat": [ 20, 30 ] },
@@ -582,12 +519,8 @@
         { "group": "dresser", "x": 22, "y": 17, "chance": 80, "repeat": [ 5, 10 ] },
         { "group": "dresser", "x": 23, "y": 17, "chance": 80, "repeat": [ 5, 10 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "monster": { "2": { "monster": "mon_turret_rifle" } }
     }
   },
   {
@@ -645,21 +578,12 @@
         "c": [ "t_grass", "t_grass", "t_grass", "t_dirt", "t_dirt", "t_dirt", "t_shrub", "t_shrub" ],
         "|": "t_wall"
       },
-      "furniture": {
-        "F": "f_fridge",
-        "S": "f_sink",
-        "W": "f_straw_bed",
-        "[": "f_rack",
-        "^": "f_egg_sackbw",
-        "s": "f_egg_sackbw"
-      },
-      "traps": {
-        "O": "tr_spike_pit"
-      },
+      "furniture": { "F": "f_fridge", "S": "f_sink", "W": "f_straw_bed", "[": "f_rack", "^": "f_egg_sackbw", "s": "f_egg_sackbw" },
+      "traps": { "O": "tr_spike_pit" },
       "place_loot": [
         { "item": "egg_bird", "x": 8, "y": 9, "chance": 100, "repeat": [ 10, 15 ] },
         { "item": "can_sealer", "x": 9, "y": 9, "chance": 100, "repeat": [ 1, 1 ] },
-        { "item": "can_food_unsealed", "x": 9, "y": 9, "chance": 100, "repeat": [ 15, 20 ] },
+        { "item": "can_food", "x": 9, "y": 9, "chance": 100, "repeat": [ 15, 20 ] },
         { "item": "jug_plastic", "x": 9, "y": 9, "chance": 100, "repeat": [ 5, 10 ] },
         { "item": "vac_sealer", "x": 10, "y": 9, "chance": 100, "repeat": [ 1, 1 ] },
         { "item": "bag_plastic", "x": 10, "y": 9, "chance": 100, "repeat": [ 20, 30 ] },
@@ -723,10 +647,7 @@
         "R": "t_railing_v",
         "|": "t_wall"
       },
-      "furniture": {
-        "#": "f_tatami",
-        "M": "f_mannequin"
-      },
+      "furniture": { "#": "f_tatami", "M": "f_mannequin" },
       "place_loot": [
         { "item": "katana", "x": 1, "y": 5, "chance": 20, "repeat": [ 1, 1 ] },
         { "item": "helmet_kabuto", "x": 1, "y": 5, "chance": 100, "repeat": [ 1, 1 ] },
@@ -747,9 +668,7 @@
         { "item": "helmet_kabuto", "x": 22, "y": 9, "chance": 100, "repeat": [ 1, 1 ] },
         { "item": "armor_samurai", "x": 22, "y": 9, "chance": 100, "repeat": [ 1, 1 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } }
     }
   },
   {
@@ -800,10 +719,7 @@
         "r": "t_floor",
         "|": "t_wall"
       },
-      "monster": {
-        "2": { "monster": "mon_turret_rifle" },
-        "r": { "monster": "mon_ninja_spring_floor" }
-      }
+      "monster": { "2": { "monster": "mon_turret_rifle" }, "r": { "monster": "mon_ninja_spring_floor" } }
     }
   },
   {
@@ -857,17 +773,9 @@
         "t": "t_floor",
         "|": "t_wall"
       },
-      "furniture": {
-        "#": "f_tatami",
-        "h": "f_chair",
-        "&": "f_brazier",
-        "t": "f_table"
-      },
-      "traps": {
-      },
-      "npcs": {
-        "@": { "class": "ninja_npc_high_ninja" }
-      }
+      "furniture": { "#": "f_tatami", "h": "f_chair", "&": "f_brazier", "t": "f_table" },
+      "traps": {  },
+      "npcs": { "@": { "class": "ninja_npc_high_ninja" } }
     }
   },
   {
@@ -904,12 +812,7 @@
         "////////////////////////",
         "////////////////////////"
       ],
-      "terrain": {
-        "-": "t_wall",
-        ".": "t_floor",
-        "/": "t_open_air",
-        "|": "t_wall"
-      }
+      "terrain": { "-": "t_wall", ".": "t_floor", "/": "t_open_air", "|": "t_wall" }
     }
   },
   {
@@ -960,10 +863,7 @@
         "r": "t_floor",
         "|": "t_wall"
       },
-      "furniture": {
-        "B": "f_bookcase",
-        "[": "f_rack"
-      },
+      "furniture": { "B": "f_bookcase", "[": "f_rack" },
       "place_loot": [
         { "group": "ninja_rare_ammo", "x": 2, "y": 1, "chance": 100, "repeat": [ 6, 10 ] },
         { "group": "ninja_rare_ammo", "x": 2, "y": 1, "chance": 100, "repeat": [ 6, 10 ] },
@@ -981,12 +881,8 @@
         { "group": "mansion_books", "x": 1, "y": 1, "chance": 70, "repeat": [ 4, 6 ] },
         { "item": "manual_ninjutsu", "x": 1, "y": 1, "chance": 100, "repeat": [ 1, 1 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_high_ninja" }
-      },
-      "monster": {
-        "r": { "monster": "mon_ninja_spring_floor" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_high_ninja" } },
+      "monster": { "r": { "monster": "mon_ninja_spring_floor" } }
     }
   }
 ]

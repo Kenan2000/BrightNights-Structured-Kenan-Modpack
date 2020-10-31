@@ -22,25 +22,15 @@
   },
   {
     "type": "vehicle_part",
-    "id": "mounted_tank_auto",
+    "id": "mounted_tank_manual_105mm",
+    "looks_like": "mounted_tank_manual",
     "copy-from": "turret_tank",
-    "name": "120mm tank gun (AL)",
+    "name": "105mm tank gun",
     "range": 25,
-    "item": "tank_gun_auto",
-    "size": 50,
-    "breaks_into": [ { "item": "tank_gun_auto", "prob": 50 } ],
+    "item": "tank_gun_manual_105mm",
+    "size": 10,
+    "breaks_into": [ { "item": "tank_gun_manual_105mm", "prob": 50 } ],
     "requirements": { "install": { "skills": [ [ "mechanics", 5 ], [ "launcher", 2 ] ] } }
-  },
-  {
-    "type": "vehicle_part",
-    "id": "mounted_tank_rws",
-    "copy-from": "turret_tank",
-    "name": "120mm RWS",
-    "range": 25,
-    "item": "tank_gun_rws",
-    "size": 100,
-    "breaks_into": [ { "item": "tank_gun_rws", "prob": 50 } ],
-    "requirements": { "install": { "skills": [ [ "mechanics", 5 ], [ "launcher", 3 ], [ "electronics", 3 ] ] } }
   },
   {
     "type": "vehicle_part",
@@ -66,13 +56,14 @@
   },
   {
     "type": "vehicle_part",
-    "id": "mounted_30mm_autocannon",
+    "id": "mounted_25mm_autocannon",
+    "looks_like": "mounted_30mm_autocannon",
     "copy-from": "turret_tank",
-    "name": "30mm chaingun",
+    "name": "25mm chaingun",
     "range": 25,
-    "item": "30mm_autocannon",
+    "item": "25mm_autocannon",
     "size": 50,
-    "breaks_into": [ { "item": "30mm_autocannon", "prob": 50 } ],
+    "breaks_into": [ { "item": "25mm_autocannon", "prob": 50 } ],
     "requirements": { "install": { "skills": [ [ "mechanics", 5 ], [ "rifle", 3 ] ] } }
   }
 ]

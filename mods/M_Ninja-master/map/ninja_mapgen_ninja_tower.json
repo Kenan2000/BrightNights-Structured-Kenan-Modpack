@@ -70,9 +70,7 @@
         "m": "f_sofa",
         "n": "f_trashcan"
       },
-      "toilets": {
-        "t": {}
-      },
+      "toilets": { "t": {  } },
       "place_loot": [
         { "group": "vending_drink", "x": 5, "y": 23, "chance": 100, "repeat": [ 4, 48 ] },
         { "group": "cubical_office", "x": 23, "y": 5, "chance": 50, "repeat": [ 1, 3 ] },
@@ -80,12 +78,8 @@
         { "group": "cubical_office", "x": 23, "y": 14, "chance": 50, "repeat": [ 1, 3 ] },
         { "group": "ninja_rare_vparts", "x": 23, "y": 17, "chance": 100, "repeat": [ 1, 1 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "monster": {
-        "2": { "monster": "mon_turret" }
-      },
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "monster": { "2": { "monster": "mon_turret" } },
       "place_vehicles": [
         { "vehicle": "swivel_chair", "x": 9, "y": 6, "chance": 100, "rotation": 90 },
         { "vehicle": "swivel_chair", "x": 18, "y": 6, "chance": 100, "rotation": 90 }
@@ -164,9 +158,7 @@
         "m": "f_sofa",
         "n": "f_trashcan"
       },
-      "toilets": {
-        "t": {}
-      },
+      "toilets": { "t": {  } },
       "place_loot": [
         { "group": "vending_drink", "x": 18, "y": 23, "chance": 100, "repeat": [ 4, 48 ] },
         { "group": "cubical_office", "x": 0, "y": 5, "chance": 50, "repeat": [ 1, 3 ] },
@@ -174,9 +166,7 @@
         { "group": "cubical_office", "x": 1, "y": 14, "chance": 50, "repeat": [ 1, 3 ] },
         { "group": "cubical_office", "x": 1, "y": 14, "chance": 50, "repeat": [ 1, 3 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
       "place_vehicles": [
         { "vehicle": "swivel_chair", "x": 5, "y": 6, "chance": 100, "rotation": 90 },
         { "vehicle": "swivel_chair", "x": 14, "y": 6, "chance": 100, "rotation": 90 }
@@ -238,15 +228,8 @@
         "x": "t_console_broken",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "V": "f_vending_c",
-        "^": "f_indoor_plant",
-        "m": "f_sofa",
-        "n": "f_trashcan"
-      },
-      "place_loot": [
-        { "group": "vending_food", "x": 5, "y": 0, "chance": 100, "repeat": [ 4, 48 ] }
-      ],
+      "furniture": { "V": "f_vending_c", "^": "f_indoor_plant", "m": "f_sofa", "n": "f_trashcan" },
+      "place_loot": [ { "group": "vending_food", "x": 5, "y": 0, "chance": 100, "repeat": [ 4, 48 ] } ],
       "place_vehicles": [
         { "vehicle": "ninja_vehicle_ninja_ZX14_custom", "x": [ 7, 7 ], "y": [ 8, 8 ], "chance": 20, "rotation": 90 },
         { "vehicle": "ninja_vehicle_ninja_ZX14_custom", "x": [ 10, 10 ], "y": [ 8, 8 ], "chance": 20, "rotation": 90 },
@@ -325,18 +308,10 @@
         "m": "f_sofa",
         "n": "f_trashcan"
       },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_tower" }
-      },
-      "place_loot": [
-        { "group": "vending_food", "x": 18, "y": 0, "chance": 100, "repeat": [ 4, 48 ] }
-      ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "place_vehicles": [
-        { "vehicle": "ninja_vehicle_yakata_car", "x": [ 4, 4 ], "y": [ 12, 12 ], "chance": 100, "rotation": 90 }
-      ]
+      "signs": { "T": { "snippet": "ninja_snippet_tower" } },
+      "place_loot": [ { "group": "vending_food", "x": 18, "y": 0, "chance": 100, "repeat": [ 4, 48 ] } ],
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "place_vehicles": [ { "vehicle": "ninja_vehicle_yakata_car", "x": [ 4, 4 ], "y": [ 12, 12 ], "chance": 100, "rotation": 90 } ]
     }
   },
   {
@@ -397,18 +372,9 @@
         "|": "t_wall_metal",
         "~": "t_water_sh"
       },
-      "furniture": {
-        "^": "f_indoor_plant",
-        "a": "f_table",
-        "h": "f_chair"
-      },
-      "toilets": {
-        "t": {}
-      },
-      "monster": {
-        "A": { "monster": "mon_secubot" },
-        "f": { "monster": "mon_fish_trout" }
-      }
+      "furniture": { "^": "f_indoor_plant", "a": "f_table", "h": "f_chair" },
+      "toilets": { "t": {  } },
+      "monster": { "A": { "monster": "mon_secubot" }, "f": { "monster": "mon_fish_trout" } }
     }
   },
   {
@@ -465,17 +431,9 @@
         "x": "t_console_broken",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "L": "f_locker",
-        "X": "f_locker",
-        "^": "f_indoor_plant"
-      },
-      "traps": {
-        "X": "tr_landmine_buried"
-      },
-      "toilets": {
-        "t": {}
-      }
+      "furniture": { "L": "f_locker", "X": "f_locker", "^": "f_indoor_plant" },
+      "traps": { "X": "tr_landmine_buried" },
+      "toilets": { "t": {  } }
     }
   },
   {
@@ -534,17 +492,8 @@
         "x": "t_console_broken",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "L": "f_locker",
-        "S": "f_safe_l",
-        "^": "f_indoor_plant",
-        "a": "f_table",
-        "d": "f_desk",
-        "m": "f_sofa"
-      },
-      "traps": {
-        "*": "tr_landmine_buried"
-      },
+      "furniture": { "L": "f_locker", "S": "f_safe_l", "^": "f_indoor_plant", "a": "f_table", "d": "f_desk", "m": "f_sofa" },
+      "traps": { "*": "tr_landmine_buried" },
       "place_loot": [
         { "group": "vault", "x": 5, "y": 6, "chance": 100, "repeat": [ 1, 2 ] },
         { "group": "vault", "x": 5, "y": 7, "chance": 100, "repeat": [ 1, 2 ] },
@@ -557,13 +506,8 @@
         { "group": "alcohol", "x": 21, "y": 10, "chance": 100, "repeat": [ 3, 5 ] },
         { "group": "alcohol", "x": 22, "y": 10, "chance": 100, "repeat": [ 3, 5 ] }
       ],
-      "monster": {
-        "A": { "monster": "mon_secubot" },
-        "r": { "monster": "mon_ninja_spring_floor" }
-      },
-      "place_vehicles": [
-        { "vehicle": "swivel_chair", "x": 6, "y": 14, "chance": 100, "rotation": 0 }
-      ]
+      "monster": { "A": { "monster": "mon_secubot" }, "r": { "monster": "mon_ninja_spring_floor" } },
+      "place_vehicles": [ { "vehicle": "swivel_chair", "x": 6, "y": 14, "chance": 100, "rotation": 0 } ]
     }
   },
   {
@@ -619,14 +563,7 @@
         "m": "t_floor",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "L": "f_locker",
-        "S": "f_sink",
-        "]": "f_bookcase",
-        "a": "f_table",
-        "f": "f_fridge",
-        "m": "f_sofa"
-      },
+      "furniture": { "L": "f_locker", "S": "f_sink", "]": "f_bookcase", "a": "f_table", "f": "f_fridge", "m": "f_sofa" },
       "place_loot": [
         { "group": "fridge", "x": 4, "y": 6, "chance": 100, "repeat": [ 10, 20 ] },
         { "group": "fridge", "x": 5, "y": 6, "chance": 100, "repeat": [ 10, 20 ] },
@@ -654,9 +591,7 @@
         { "group": "cleaning", "x": 7, "y": 18, "chance": 30, "repeat": [ 4, 5 ] },
         { "item": "bucket", "x": 7, "y": 18, "chance": 100, "repeat": [ 1, 2 ] }
       ],
-      "monster": {
-        "A": { "monster": "mon_secubot" }
-      }
+      "monster": { "A": { "monster": "mon_secubot" } }
     }
   },
   {
@@ -718,20 +653,9 @@
         "w": "t_shrub",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "1": "f_vending_c",
-        "2": "f_vending_reinforced",
-        "m": "f_sofa"
-      },
-      "traps": {
-        "B": "tr_blade",
-        "[": "tr_shotgun_2",
-        "^": "tr_caltrops",
-        "_": "tr_spike_pit"
-      },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_combatroom1" }
-      },
+      "furniture": { "1": "f_vending_c", "2": "f_vending_reinforced", "m": "f_sofa" },
+      "traps": { "B": "tr_blade", "[": "tr_shotgun_2", "^": "tr_caltrops", "_": "tr_spike_pit" },
+      "signs": { "T": { "snippet": "ninja_snippet_combatroom1" } },
       "place_loot": [
         { "item": "ninja_shuriken", "x": 12, "y": 23, "chance": 100, "repeat": [ 10, 10 ] },
         { "item": "ninja_shuriken_star", "x": 12, "y": 23, "chance": 100, "repeat": [ 10, 10 ] },
@@ -740,10 +664,7 @@
         { "item": "ninja_ration", "x": 12, "y": 23, "chance": 100, "repeat": [ 3, 3 ] },
         { "group": "vending_drink", "x": 12, "y": 22, "chance": 100, "repeat": [ 4, 48 ] }
       ],
-      "monster": {
-        "Z": { "monster": "mon_irradiated_wanderer_3" },
-        "r": { "monster": "mon_ninja_spring_floor" }
-      }
+      "monster": { "Z": { "monster": "mon_irradiated_wanderer_3" }, "r": { "monster": "mon_ninja_spring_floor" } }
     }
   },
   {
@@ -801,12 +722,8 @@
         "x": "t_console_broken",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "L": "f_locker"
-      },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_const_warn" }
-      },
+      "furniture": { "L": "f_locker" },
+      "signs": { "T": { "snippet": "ninja_snippet_const_warn" } },
       "place_loot": [
         { "item": "wire", "x": 15, "y": 14, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "scrap", "x": 14, "y": 14, "chance": 100, "repeat": [ 20, 30 ] },
@@ -899,19 +816,10 @@
         "m": "f_sofa",
         "n": "f_trashcan"
       },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_dojo" },
-        "Y": { "snippet": "ninja_snippet_combatroom2" }
-      },
-      "toilets": {
-        "t": {}
-      },
-      "place_loot": [
-        { "group": "vending_drink", "x": [ 5, 5 ], "y": [ 13, 14 ], "chance": 100, "repeat": [ 4, 12 ] }
-      ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      }
+      "signs": { "T": { "snippet": "ninja_snippet_dojo" }, "Y": { "snippet": "ninja_snippet_combatroom2" } },
+      "toilets": { "t": {  } },
+      "place_loot": [ { "group": "vending_drink", "x": [ 5, 5 ], "y": [ 13, 14 ], "chance": 100, "repeat": [ 4, 12 ] } ],
+      "npcs": { "@": { "class": "ninja_npc_ninja" } }
     }
   },
   {
@@ -958,21 +866,10 @@
         "H": "t_reinforced_glass_shutter_open",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "#": "f_tatami",
-        "&": "f_brazier",
-        "Y": "f_brazier",
-        "@": "f_tatami"
-      },
-      "traps": {
-      },
-      "fields": {
-        "&": { "field": "fd_fire", "density": 1, "age": 1 },
-        "Y": { "field": "fd_fire", "density": 1, "age": 1 }
-      },
-      "toilets": {
-        "t": {}
-      },
+      "furniture": { "#": "f_tatami", "&": "f_brazier", "Y": "f_brazier", "@": "f_tatami" },
+      "traps": {  },
+      "fields": { "&": { "field": "fd_fire", "density": 1, "age": 1 }, "Y": { "field": "fd_fire", "density": 1, "age": 1 } },
+      "toilets": { "t": {  } },
       "place_loot": [
         { "item": "2x4", "x": 5, "y": 8, "chance": 100, "repeat": [ 3, 5 ] },
         { "item": "2x4", "x": 16, "y": 8, "chance": 100, "repeat": [ 3, 5 ] },
@@ -983,9 +880,7 @@
         { "item": "2x4", "x": 7, "y": 16, "chance": 100, "repeat": [ 3, 5 ] },
         { "item": "2x4", "x": 14, "y": 16, "chance": 100, "repeat": [ 3, 5 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } }
     }
   },
   {
@@ -1090,17 +985,9 @@
         "|": "t_wall_metal",
         "~": "t_water_sh"
       },
-      "furniture": {
-        "#": "f_tatami",
-        "&": "f_brazier",
-        "@": "f_tatami"
-      },
-      "traps": {
-        "^": "tr_caltrops"
-      },
-      "fields": {
-        "&": { "field": "fd_fire", "density": 1, "age": 1 }
-      },
+      "furniture": { "#": "f_tatami", "&": "f_brazier", "@": "f_tatami" },
+      "traps": { "^": "tr_caltrops" },
+      "fields": { "&": { "field": "fd_fire", "density": 1, "age": 1 } },
       "place_loot": [
         { "item": "2x4", "x": 3, "y": 15, "chance": 100, "repeat": [ 20, 30 ] },
         { "item": "2x4", "x": 3, "y": 17, "chance": 100, "repeat": [ 20, 30 ] },
@@ -1108,12 +995,8 @@
         { "item": "2x4", "x": 15, "y": 17, "chance": 100, "repeat": [ 20, 30 ] },
         { "group": "ninja_rare_special", "x": 1, "y": 5, "chance": 100, "repeat": [ 1, 1 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_high_ninja" }
-      },
-      "place_monster": [
-        { "monster": "mon_fish_carp", "x": [ 5, 9 ], "y": [ 8, 11 ], "repeat": [ 3, 8 ] }
-      ]
+      "npcs": { "@": { "class": "ninja_npc_high_ninja" } },
+      "place_monster": [ { "monster": "mon_fish_carp", "x": [ 5, 9 ], "y": [ 8, 11 ], "repeat": [ 3, 8 ] } ]
     }
   },
   {
@@ -1173,20 +1056,9 @@
         "x": "t_console_broken",
         "|": "t_wall_metal"
       },
-      "furniture": {
-        "B": "f_bed",
-        "L": "f_locker",
-        "a": "f_table",
-        "h": "f_chair",
-        "m": "f_sofa"
-      },
-      "traps": {
-        "^": "tr_caltrops",
-        "t": "tr_shotgun_2"
-      },
-      "toilets": {
-        "t": {}
-      },
+      "furniture": { "B": "f_bed", "L": "f_locker", "a": "f_table", "h": "f_chair", "m": "f_sofa" },
+      "traps": { "^": "tr_caltrops", "t": "tr_shotgun_2" },
+      "toilets": { "t": {  } },
       "place_loot": [
         { "group": "waitingroom", "x": 20, "y": 12, "chance": 60, "repeat": [ 2, 4 ] },
         { "group": "office_breakroom", "x": 19, "y": 12, "chance": 60, "repeat": [ 2, 4 ] },
@@ -1203,9 +1075,7 @@
         { "item": "blanket", "x": 20, "y": 16, "chance": 100, "repeat": [ 1, 1 ] },
         { "item": "blanket", "x": 22, "y": 16, "chance": 100, "repeat": [ 1, 1 ] }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } }
     }
   },
   {
@@ -1300,12 +1170,8 @@
         "k": "f_sink",
         "m": "f_sofa"
       },
-      "traps": {
-        "v": "tr_shotgun_2"
-      },
-      "toilets": {
-        "t": {}
-      },
+      "traps": { "v": "tr_shotgun_2" },
+      "toilets": { "t": {  } },
       "place_loot": [
         { "item": "pillow", "x": 17, "y": 6, "chance": 100, "repeat": [ 1, 1 ] },
         { "item": "pillow", "x": 18, "y": 6, "chance": 100, "repeat": [ 1, 1 ] },

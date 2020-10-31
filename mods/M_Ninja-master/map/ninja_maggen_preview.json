@@ -43,17 +43,9 @@
         "A": "t_rock_floor",
         "|": "t_wall"
       },
-      "furniture": {
-        "#": "f_tatami",
-        "&": "f_brazier",
-        "@": "f_tatami",
-        "A": "f_tatami"
-      },
-      "traps": {
-      },
-      "fields": {
-        "&": { "field": "fd_fire", "density": 1, "age": 1 }
-      },
+      "furniture": { "#": "f_tatami", "&": "f_brazier", "@": "f_tatami", "A": "f_tatami" },
+      "traps": {  },
+      "fields": { "&": { "field": "fd_fire", "density": 1, "age": 1 } },
       "place_loot": [
         { "item": "ninja_katana", "x": 9, "y": 11, "chance": 100 },
         { "item": "ninja_diamond_katana", "x": 10, "y": 11, "chance": 100 },
@@ -68,12 +60,8 @@
         { "item": "ninja_decoy", "x": 13, "y": 4, "chance": 100 },
         { "item": "ninja_tengu_mask", "x": 14, "y": 4, "chance": 100 }
       ],
-      "npcs": {
-        "@": { "class": "ninja_npc_ninja" }
-      },
-      "monster": {
-        "A": { "monster": "mon_ninja_afterimage" }
-      }
+      "npcs": { "@": { "class": "ninja_npc_ninja" } },
+      "monster": { "A": { "monster": "mon_ninja_afterimage" } }
     }
   }
 ]

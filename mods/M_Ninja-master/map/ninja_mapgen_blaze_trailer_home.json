@@ -41,15 +41,9 @@
         "w": "t_shrub",
         "~": "t_water_sh"
       },
-      "traps": {
-        "=": "tr_beartrap"
-      },
-      "signs": {
-        "T": { "snippet": "ninja_snippet_blaze_home" }
-      },
-      "npcs": {
-        "@": { "class": "ninja_npc_high_ninja_blaze" }
-      },
+      "traps": { "=": "tr_beartrap" },
+      "signs": { "T": { "snippet": "ninja_snippet_blaze_home" } },
+      "npcs": { "@": { "class": "ninja_npc_high_ninja_blaze" } },
       "place_vehicles": [
         { "vehicle": "ninja_vehicle_house_trailer", "x": 10, "y": 5, "chance": 100, "rotation": 180 },
         { "vehicle": "ninja_vehicle_ninja_ZX14_custom", "x": 4, "y": 15, "chance": 20, "rotation": 90 }
