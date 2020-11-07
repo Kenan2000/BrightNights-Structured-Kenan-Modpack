@@ -14,7 +14,8 @@
     "max_damage": 100000000,
     "//": "There's a bug in which self-damaging spells are being 'reflected', so we'll use a damaging effect to apply to the caster (the effect requires a turn to apply the damage, and it's a bit unpleasant... but still a backup to prevent overcasting).",
     "min_aoe": 1,
-    "max_aoe": 1
+    "max_aoe": 1,
+    "damage_type": "none"
   },
   {
     "type": "SPELL",
@@ -4194,9 +4195,7 @@
     "id": "mon_secro_electurret_target",
     "name": "a spell",
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "extra_effects": [
-      { "id": "mon_secro_electurret_elecshock", "hit_self": true }
-    ],
+    "extra_effects": [ { "id": "mon_secro_electurret_elecshock", "hit_self": true } ],
     "flags": [ "SILENT" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "effect": "target_attack",
@@ -4240,9 +4239,7 @@
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster shoots with its concentrated ray of heat, which pierces through the targets.'",
     "flags": [ "SILENT" ],
     "valid_targets": [ "hostile", "ally", "ground" ],
-    "extra_effects": [
-      { "id": "mon_secro_turret_hpdown", "hit_self": true }
-    ],
+    "extra_effects": [ { "id": "mon_secro_turret_hpdown", "hit_self": true } ],
     "effect": "line_attack",
     "min_damage": 12,
     "max_damage": 16,
