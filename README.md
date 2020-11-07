@@ -4,6 +4,26 @@ Kenan's personal modpack for Bright Nights version of CDDA by Coolcthulhu - **or
 # Bright Nights by Coolcthulhu/BroadFlatNails
 Link to the great sci-fi Cataclysm fork by **Coolcthulhu/BroadFlatNails** - **Bright Nights** - https://github.com/cataclysmbnteam/Cataclysm-BN/releases
 
+# Installation Guide (MUST-READ)
+
+**1) Download the modpack** ;
+
+**2) Copy all of the mods from the modpack folder as shown in the picture** https://imgur.com/a/c66bMcG ;
+
+**3) Paste them all into the `cdda/data/mods` directory as shown in the picture** https://imgur.com/a/mK1cEER ;
+
+**4) Overwrite and replace all the files if you get a prompt** ;
+
+**5) Enjoy the mods**
+
+**NEXT STEPS IF YOU UPDATE THE BRIGHT NIGHTS VERSION** 
+
+**6) Update the game by installing the newest version in the releases** - https://github.com/cataclysmbnteam/Cataclysm-BN/releases ;
+
+**7) Repeat 2) , 3) , 4) and 5)** ;
+
+**8) Enjoy the mods**
+
 # Links to my other works
 
 My HUGE and AWESOME **BL9** mod
