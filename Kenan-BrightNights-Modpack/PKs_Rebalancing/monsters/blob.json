@@ -38,7 +38,7 @@
     "id": "mon_shoggoth",
     "type": "MONSTER",
     "copy-from": "mon_shoggoth",
-    "name": "shoggoth",
+    "name": { "str": "shoggoth" },
     "description": "A gargantuan protoplasmic blob, constantly reshaping, forming new pseudopods seemingly at will.  All over its body are eyes that form and disappear.  It looks at you with malice.",
     "speed": 100,
     "aggression": 80,
@@ -61,7 +61,7 @@
         "damage_max_instance": [ { "damage_type": "bash", "amount": 20, "armor_multiplier": 0.5 } ]
       }
     ],
-	"regenerates": 10,
+    "regenerates": 10,
     "regen_morale": true,
     "flags": [
       "SEES",

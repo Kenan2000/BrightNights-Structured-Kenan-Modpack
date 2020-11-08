@@ -2,7 +2,7 @@
   {
     "id": "mon_razorclaw",
     "type": "MONSTER",
-    "name": "razorclaw",
+    "name": { "str": "razorclaw" },
     "copy-from": "mon_razorclaw",
     "path_settings": { "max_dist": 12 },
     "attack_effs": [ { "id": "rad_tenths", "duration": 10 }, { "id": "flu_zed", "duration": 14400, "chance": 5 } ],
@@ -86,14 +86,14 @@
     "attack_effs": [ { "id": "rad_tenths", "duration": 30 } ],
     "special_attacks": [ [ "sliming", 30 ] ],
     "emit_fields": [ "emit_sludge" ],
-	"regenerates": 1,
+    "regenerates": 1,
     "flags": [ "NOHEAD", "SEES", "POISON", "HEARS", "SMELLS", "SLUDGEPROOF", "SWIMS", "FLAMMABLE", "NOGIB" ]
   },
   {
     "id": "mon_sludge_crawler_queen",
     "type": "MONSTER",
     "copy-from": "mon_sludge_crawler",
-    "name": "sludge crawler",
+    "name": { "str": "sludge crawler" },
     "description": "A large sluglike creature, nine feet long and the width of a refrigerator.  Its black body glistens as it oozes its way along the ground.  Eye stalks occasionally push their way out of the oily mass and look around.  This big mama looks important.",
     "default_faction": "mutant_omnivore",
     "species": [ "MUTANT" ],
@@ -104,6 +104,7 @@
     "material": [ "flesh" ],
     "symbol": "S",
     "color": "light_gray",
+    "looks_like": "mon_gelatin",
     "aggression": 40,
     "morale": 90,
     "melee_skill": 5,
@@ -118,19 +119,8 @@
     "vision_day": 10,
     "vision_night": 30,
     "death_function": [ "MELT" ],
-	"regenerates": 1,
-    "flags": [
-      "NOHEAD",
-      "SEES",
-      "POISON",
-      "HEARS",
-      "SMELLS",
-      "SLUDGEPROOF",
-      "SWIMS",
-      "FLAMMABLE",
-      "NOGIB",
-      "HARDTOSHOOT"
-    ]
+    "regenerates": 1,
+    "flags": [ "NOHEAD", "SEES", "POISON", "HEARS", "SMELLS", "SLUDGEPROOF", "SWIMS", "FLAMMABLE", "NOGIB", "HARDTOSHOOT" ]
   },
   {
     "id": "mon_chud",
@@ -234,7 +224,7 @@
   {
     "id": "mon_thing_head",
     "type": "MONSTER",
-    "name": "dog head",
+    "name": { "str": "dog head" },
     "description": "A dogs head, with ichorous black ooze and tentacles flowing from its stump.",
     "default_faction": "mutant",
     "species": [ "NETHER" ],
@@ -262,7 +252,7 @@
   {
     "id": "mon_thing_spider",
     "type": "MONSTER",
-    "name": "spider head",
+    "name": { "str": "spider head" },
     "description": "A detached, malformed head with ten spiderly limbs and a bemoaning stare.",
     "default_faction": "mutant",
     "species": [ "NETHER" ],
@@ -303,7 +293,7 @@
   {
     "id": "mon_headless_dog_thing",
     "type": "MONSTER",
-    "name": "tentacle dog",
+    "name": { "str": "tentacle dog" },
     "copy-from": "mon_headless_dog_thing",
     "description": "A dog's body with a mass of ropey, black tentacles reaching out from its head.",
     "default_faction": "mutant_predator",
@@ -391,8 +381,8 @@
     "vision_night": 7,
     "special_attacks": [ [ "wound_minor", 40 ], [ "scratch", 20 ], [ "slash", 40 ] ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "FRIEND_ATTACKED" ],
-	"regenerates": 1,
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "POISON", "HUMAN", "LEATHER", "CLIMBS", "SWARMS"]
+    "regenerates": 1,
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "POISON", "HUMAN", "LEATHER", "CLIMBS", "SWARMS" ]
   },
   {
     "id": "mon_jabberwock",
@@ -446,7 +436,7 @@
   {
     "id": "mon_jabberwock_pk",
     "type": "MONSTER",
-    "name": "jabberwock",
+    "name": { "str": "jabberwock" },
     "description": "A putrid amalgamation of body parts from humans and other creatures have fused together in this aberration of flesh.  The eyes of all the heads dart about rapidly and the mouths form a chorus of groaning screams.  Its coming for you",
     "default_faction": "jabberwock",
     "species": [ "ABERRATION" ],
@@ -457,6 +447,7 @@
     "material": [ "flesh" ],
     "symbol": "J",
     "color": "dark_gray_red",
+    "looks_like": "mon_jabberwock",
     "aggression": 100,
     "morale": 100,
     "melee_skill": 13,
@@ -506,7 +497,7 @@
   {
     "id": "mon_bat_vampire",
     "type": "MONSTER",
-    "name": "vampire bat",
+    "name": { "str": "vampire bat" },
     "description": "A mutated bat with a narrow, proboscis-like snout.  After its pack stuns the prey, it uses its teeth to gouge a hole into it and its slender tongue to quickly lap up the resulting blood.",
     "default_faction": "mutant_small",
     "categories": [ "WILDLIFE" ],
@@ -519,6 +510,7 @@
     "harvest": "mammal_small_fur",
     "symbol": "w",
     "color": "brown_red",
+    "looks_like": "mon_bat",
     "aggression": -5,
     "morale": 20,
     "melee_skill": 4,
@@ -563,7 +555,7 @@
   {
     "id": "mon_coyote_wolf_zerg",
     "type": "MONSTER",
-    "name": "scythed coyote",
+    "name": { "str": "scythed coyote" },
     "description": "It looks like a brown coyote with black streaks along its side.  Except against either haunch rests a muscular folded limb terminating in a scythe-like bony protrusion.",
     "default_faction": "dog",
     "categories": [ "WILDLIFE" ],
@@ -576,6 +568,7 @@
     "harvest": "mammal_fur",
     "symbol": "d",
     "color": "brown_white",
+    "looks_like": "mon_wolf",
     "aggression": 0,
     "morale": 15,
     "melee_skill": 6,
@@ -616,7 +609,7 @@
       "WARM",
       "FUR",
       "KEENNOSE",
-      "BLEED",
+	  "BLEED",
       "BONES",
       "FAT",
       "SWARMS",
@@ -626,7 +619,7 @@
   {
     "id": "mon_raphael",
     "type": "MONSTER",
-    "name": "turtle man",
+    "name": { "str": "turtle man" },
     "description": "A large green humanoid with bloated-looking skin and a hardened brown shell surrounding its midrift.  Though muscular and agile, both skin and carapace shimmer with a sickening sheen.  It wears a crude blindfold with large hole to allow vision.",
     "default_faction": "mutant",
     "species": [ "REPTILE" ],
@@ -683,7 +676,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-      "BLEED",
+	  "BLEED",
       "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_1",
@@ -695,7 +688,7 @@
   {
     "id": "mon_donatello",
     "type": "MONSTER",
-    "name": "turtle man",
+    "name": { "str": "turtle man" },
     "copy-from": "mon_raphael",
     "hp": 160,
     "speed": 110,
@@ -741,7 +734,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-      "BLEED",
+	  "BLEED",
       "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_2",
@@ -753,7 +746,7 @@
   {
     "id": "mon_leonardo",
     "type": "MONSTER",
-    "name": "turtle man",
+    "name": { "str": "turtle man" },
     "copy-from": "mon_raphael",
     "hp": 180,
     "speed": 115,
@@ -805,7 +798,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-      "BLEED",
+	  "BLEED",
       "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_2",
@@ -817,7 +810,7 @@
   {
     "id": "mon_michelangelo",
     "type": "MONSTER",
-    "name": "turtle man",
+    "name": { "str": "turtle man" },
     "copy-from": "mon_raphael",
     "hp": 160,
     "speed": 120,
@@ -837,25 +830,14 @@
       { "type": "leap", "cooldown": 15, "max_range": 2 }
     ],
     "regen_morale": true,
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "BASHES",
-      "GROUP_BASH",
-      "HUMAN",
-      "BLEED",
-      "BONES",
-      "GROUP_MORALE",
-      "PATH_AVOID_DANGER_2"
-    ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "GROUP_BASH", "HUMAN", "BLEED", "BONES", "GROUP_MORALE", "PATH_AVOID_DANGER_2" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK" ],
     "placate_triggers": [ "FIRE", "PLAYER_WEAK" ]
   },
   {
     "id": "mon_ratman_ninja",
     "type": "MONSTER",
-    "name": "ratten",
+    "name": { "str": "ratten" },
     "description": "A hunch-backed rat man-thing with vicious looking claws and a loose fitting tunic.  Hungry eyes peer into the dark and search for food - or baubles.",
     "default_faction": "mutant",
     "species": [ "MAMMAL" ],
@@ -909,7 +891,7 @@
       "KEENNOSE",
       "BORES",
       "HUMAN",
-      "BLEED",
+	  "BLEED",
       "BONES",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS",
@@ -921,7 +903,7 @@
   {
     "id": "mon_giant_crayfish",
     "type": "MONSTER",
-    "name": "giant crayfish",
+    "name": { "str": "giant crayfish" },
     "copy-from": "mon_giant_crayfish",
     "diff": 16,
     "size": "MEDIUM",
@@ -956,7 +938,7 @@
           { "damage_type": "bash", "amount": 13, "armor_multiplier": 0.8 },
           { "damage_type": "cut", "amount": 5, "armor_multiplier": 0.8 }
         ],
-        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ]
+        "effects": [ { "id": "grabbed", "duration": 1000, "body_part": "TORSO" } ]
       }
     ],
     "death_function": [ "NORMAL" ],
@@ -967,7 +949,7 @@
   {
     "id": "mon_graboid",
     "type": "MONSTER",
-    "name": "graboid",
+    "name": { "str": "graboid" },
     "copy-from": "mon_graboid",
     "diff": 28,
     "hp": 230,
@@ -1001,7 +983,7 @@
           { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.85 },
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.85 }
         ],
-        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ]
+        "effects": [ { "id": "grabbed", "duration": 1000, "body_part": "TORSO" } ]
       }
     ],
     "death_function": [ "WORM", "NORMAL" ],
@@ -1012,7 +994,7 @@
   {
     "id": "mon_worm",
     "type": "MONSTER",
-    "name": "giant worm",
+    "name": { "str": "giant worm" },
     "copy-from": "mon_worm",
     "diff": 14,
     "hp": 67,
@@ -1028,20 +1010,27 @@
     "armor_cut": 2,
     "special_attacks": [ [ "wound_minor", 30 ] ],
     "regen_morale": true,
-	"regenerates": 1,
-    "flags": [ "DIGS", "HEARS", "GOODHEARING", "WARM", "LEATHER"],
+    "regenerates": 1,
+    "flags": [ "DIGS", "HEARS", "GOODHEARING", "WARM", "LEATHER" ],
     "anger_trigger": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_trigger": [ "HURT", "FRIEND_DIED" ]
   },
   {
     "id": "mon_halfworm",
     "type": "MONSTER",
-    "name": "half worm",
-    "copy-from": "mon_halfworm",
+    "name": { "str": "half worm" },
+    "description": "A squiggling severed portion of a wounded giant worm.",
+    "default_faction": "worm",
+    "bodytype": "snake",
+    "species": [ "WORM" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
     "diff": 8,
     "size": "MEDIUM",
     "hp": 35,
     "speed": 80,
+    "material": [ "flesh" ],
+    "symbol": "s",
     "aggression": 15,
     "morale": 40,
     "melee_skill": 4,
@@ -1050,18 +1039,19 @@
     "melee_cut": 3,
     "attack_effs": [ { "id": "rad_tenths", "duration": 10 } ],
     "armor_bash": 2,
+    "harvest": "mutant_meatslug",
+    "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 3, "into_group": "GROUP_WORM" },
-	"regenerates": 1,
+    "regenerates": 1,
     "regen_morale": true,
-    "flags": [ "CAN_DIG", "HEARS", "GOODHEARING", "WARM", "LEATHER"],
+    "flags": [ "CAN_DIG", "HEARS", "GOODHEARING", "WARM", "LEATHER" ],
     "anger_trigger": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_trigger": [ "HURT", "FRIEND_DIED" ]
   },
   {
     "id": "mon_thing_swamp",
     "type": "MONSTER",
-    "name": "swampass",
-    "name_plural": "swampasses",
+    "name": { "str": "swampass", "str_pl": "swampasses" },
     "description": "A reed-cloaked entity, slow, untiring, and reeking of the grave and all that toxic waste.",
     "default_faction": "mutant",
     "species": [ "HORROR" ],
@@ -1095,19 +1085,6 @@
     "emit_fields": [ "emit_gas_stream", "emit_gas_stream", "emit_radiation_plume" ],
     "path_settings": { "max_dist": 30 },
     "death_function": [ "MELT", "ACID" ],
-    "flags": [
-      "SEES",
-      "HEARS",
-      "POISON",
-      "HUMAN",
-      "WARM",
-      "BASHES",
-      "GROUP_BASH",
-      "BLEED",
-      "NO_BREATHE",
-      "LEATHER",
-      "BONES",
-      "STUMBLES"
-    ]
+    "flags": [ "SEES", "HEARS", "POISON", "HUMAN", "WARM", "BASHES", "GROUP_BASH", "BLEED", "NO_BREATHE", "LEATHER", "BONES", "STUMBLES" ]
   }
 ]

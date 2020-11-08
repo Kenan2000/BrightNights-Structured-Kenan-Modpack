@@ -2,21 +2,21 @@
   {
     "id": "mon_mutant_carp",
     "type": "MONSTER",
-    "name": "giant carp",
+    "name": { "str": "giant carp" },
     "copy-from": "mon_mutant_carp",
     "default_faction": "fish_predator"
   },
   {
     "id": "mon_mutant_salmon",
     "type": "MONSTER",
-    "name": "giant carp",
+    "name": { "str": "giant carp" },
     "copy-from": "mon_mutant_salmon",
     "default_faction": "fish_predator"
   },
   {
     "id": "mon_fish_eel_large",
     "type": "MONSTER",
-    "name": "giant freshwater eel",
+    "name": { "str": "giant freshwater eel" },
     "description": "A giant eel, thick as a man's torso.  Ravenous and oppurtunistic, this hook-jawed horror prowls the rivers freely.",
     "default_faction": "rat",
     "categories": [ "WILDLIFE" ],
@@ -63,7 +63,7 @@
   {
     "id": "mon_fish_flying",
     "type": "MONSTER",
-    "name": "flying fish",
+    "name": { "str": "flying fish" },
     "description": "A fish with an incredible ability to leap from the water; its fins and teeth are large and powerful.",
     "default_faction": "rat",
     "categories": [ "WILDLIFE" ],
@@ -107,7 +107,7 @@
   {
     "id": "mon_fish_lobster_giant",
     "type": "MONSTER",
-    "name": "giant lobster",
+    "name": { "str": "giant lobster" },
     "description": "A sea cockroach, engorged to preposterous proportions.  With a large claw for crushing and a slightly smaller large claw for scooping out flesh from shells, this normally sluggish monster is surprisingly agile and predatory when a meal is nearby.",
     "default_faction": "fish_predator",
     "categories": [ "WILDLIFE" ],
@@ -162,7 +162,7 @@
     ],
     "regen_morale": true,
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "SWIMS", "DESTROYS", "ARTHROPOD_BLOOD", "STUMBLES"],
+    "flags": [ "SEES", "SMELLS", "SWIMS", "DESTROYS", "ARTHROPOD_BLOOD", "STUMBLES" ],
     "anger_triggers": [ "PLAYER_CLOSE", "STALK", "FIRE", "HURT" ],
     "placate_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "SOUND" ]
   }

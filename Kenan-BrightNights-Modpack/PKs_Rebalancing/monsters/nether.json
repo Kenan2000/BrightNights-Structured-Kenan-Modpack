@@ -30,7 +30,7 @@
   {
     "id": "mon_stemcell_nether",
     "type": "MONSTER",
-    "name": "shimmering light",
+    "name": { "str": "shimmering light" },
     "description": "A shimmering light.  It has no shape at all, yet you can see limbs and appendages poking out of and into its core.  It clearly has some kind of sentience, judging by its informed actions.",
     "default_faction": "nether",
     "size": "SMALL",
@@ -76,7 +76,7 @@
     "id": "mon_gracke",
     "type": "MONSTER",
     "copy-from": "mon_gracke",
-    "name": "gracken",
+    "name": { "str": "gracken" },
     "description": "A bizarre humanoid creature with a calculating stare.  Its twitching hands move so fast they appear to be nothing but blurs.",
     "default_faction": "nether",
     "species": [ "NETHER" ],
@@ -113,7 +113,7 @@
   {
     "id": "mon_flaming_eye",
     "type": "MONSTER",
-    "name": "flaming eye",
+    "name": { "str": "flaming eye" },
     "copy-from": "mon_flaming_eye",
     "diff": 25,
     "hp": 250,
@@ -125,7 +125,7 @@
   {
     "id": "mon_gozu",
     "type": "MONSTER",
-    "name": "gozu",
+    "name": { "str": "gozu" },
     "copy-from": "mon_gozu",
     "size": "LARGE",
     "speed": 85,
@@ -157,7 +157,7 @@
     "id": "mon_mi_go",
     "type": "MONSTER",
     "copy-from": "mon_mi_go",
-    "name": "mi-go",
+    "name": { "str": "mi-go" },
     "description": "A flexuous monstrosity seeming as a giant crab covered in writhing antennae, clawed tentacles, and star-shaped growths, with a head like the insides of a fish but for its dire utterance.",
     "upgrades": { "half_life": 1, "into_group": "MI_GO_EVO" }
   },
@@ -165,7 +165,7 @@
     "id": "mon_mi_go_terminal",
     "type": "MONSTER",
     "copy-from": "mon_mi_go",
-    "name": "mi-go",
+    "name": { "str": "mi-go" },
     "hp": 200,
     "description": "A flexuous monstrosity seeming as a giant crab covered in writhing antennae, clawed tentacles, and star-shaped growths, with a head like the insides of a fish but for its dire utterance."
   },
@@ -173,7 +173,7 @@
     "id": "mon_mi_go_fly",
     "type": "MONSTER",
     "copy-from": "mon_mi_go",
-    "name": "flying mi-go",
+    "name": { "str": "flying mi-go" },
     "description": "THEY HAVE WINGS",
     "hp": 180,
     "speed": 125,
@@ -183,7 +183,7 @@
   {
     "id": "mon_horror_dusk",
     "type": "MONSTER",
-    "name": "dusk horror",
+    "name": { "str": "dusk horror" },
     "description": "An anteater twisted into humanoid form.  Its elongated trunk wriggles with fury.  Its antlers are hairy.  Its eyebrows bushel into a furrow.  Beware its deadly saliva!  Now you know why you fear the night.",
     "default_faction": "nether",
     "species": [ "ABERRATION" ],
@@ -243,7 +243,7 @@
       "BONES",
       "POISON",
       "PLASTIC",
-      "BLEED",
+	  "BLEED",
       "PATH_AVOID_DANGER_2",
       "SWARMS",
       "SUNDEATH"
@@ -252,7 +252,7 @@
   {
     "id": "mon_horror_dusk_queen",
     "type": "MONSTER",
-    "name": "dusk horror",
+    "name": { "str": "dusk horror" },
     "copy-from": "mon_horror_dusk",
     "hp": 440,
     "speed": 100,
@@ -271,19 +271,6 @@
     "vision_day": 40,
     "vision_night": 5,
     "regen_morale": true,
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "WARM",
-      "BASHES",
-      "BONES",
-      "POISON",
-      "PLASTIC",
-      "BLEED",
-      "PATH_AVOID_DANGER_2",
-      "SWARMS",
-      "QUEEN"
-    ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "BONES", "POISON", "PLASTIC", "BLEED", "PATH_AVOID_DANGER_2", "SWARMS", "QUEEN" ]
   }
 ]

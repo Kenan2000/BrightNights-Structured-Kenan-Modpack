@@ -3,7 +3,7 @@
     "id": "mon_creeper_hub",
     "type": "MONSTER",
     "copy-from": "mon_creeper_hub",
-    "name": "crowned creeper",
+    "name": { "str": "crowned creeper" },
     "description": "A thick stalk with rapidly sprouting tendrils at the base and a 'crown' of deep magenta pitchers at its head.  The pitchers taper into o-rings, pointing at various angles away from the hub.  From the center of the crown stems a single large, mace-like tentacle that flails around menacingly.",
     "size": "LARGE",
     "hp": 140,
@@ -29,7 +29,7 @@
     "id": "mon_creeper_vine",
     "type": "MONSTER",
     "copy-from": "mon_creeper_vine",
-    "name": "creeping grass",
+    "name": { "str": "creeping grass" },
     "description": "A vine-like tendril that is rooted to the ground.  It flails about constantly in a violent fashion for a time before disappearing into the Earth.",
     "hp": 5,
     "attack_effs": [ { "id": "rad_tenths", "duration": 3 } ],
@@ -87,7 +87,7 @@
   {
     "id": "mon_biollante_pk",
     "type": "MONSTER",
-    "name": "glowing biollante",
+    "name": { "str": "glowing biollante" },
     "copy-from": "mon_biollante",
     "description": "A puckered flower is all that adorns the stalk of this biollante.  Beneath its luminescent petals, something rigid appears to be moving, and consistent wisps of gas can be seen escaping into the surrounding air.",
     "default_faction": "triffid",
@@ -120,7 +120,7 @@
   {
     "id": "mon_creeper_vine_terminal",
     "type": "MONSTER",
-    "name": "creeping grass",
+    "name": { "str": "creeping grass" },
     "description": "A vine-like tendril that is rooted to the ground.  This one is behaving oddly.",
     "copy-from": "mon_creeper_vine",
     "default_faction": "triffid",
@@ -146,7 +146,7 @@
   {
     "id": "mon_creeper_vine_pk",
     "type": "MONSTER",
-    "name": "creeping vine",
+    "name": { "str": "creeping vine" },
     "description": "A long thorned length of line the width of your wrist found tunneling through the shallow dirt.  Appears to act of its own accord.",
     "copy-from": "mon_creeper_vine",
     "default_faction": "triffid",
@@ -178,7 +178,7 @@
   {
     "id": "mon_creeper_vine_terminal_pk",
     "type": "MONSTER",
-    "name": "creeping vine",
+    "name": { "str": "creeping vine" },
     "copy-from": "mon_creeper_vine",
     "description": "A long thorned length of line the width of your wrist found tunneling through the shallow dirt.  Acts in a chaotic manner.",
     "default_faction": "triffid",
@@ -209,7 +209,7 @@
   {
     "id": "mon_creeper_root",
     "type": "MONSTER",
-    "name": "slithering root",
+    "name": { "str": "slithering root" },
     "copy-from": "mon_creeper_vine",
     "description": "A twisting cluster of roots, with 3 barbed vines curled limply around a wildy cluster of smaller vines.  When disturbed, it can release several of these vines.",
     "default_faction": "triffid",
@@ -256,7 +256,7 @@
   {
     "id": "mon_vinebeast_terminal",
     "type": "MONSTER",
-    "name": "vine beast",
+    "name": { "str": "vine beast" },
     "copy-from": "mon_creeper_vine",
     "description": "An animated mass of roots and vines, creeping along the ground with alarming speed.  The tangle is thick enough that the center from which they grow is concealed.  This one looks tough.",
     "default_faction": "triffid",
@@ -297,7 +297,7 @@
   {
     "id": "mon_vinebeast_pk",
     "type": "MONSTER",
-    "name": "tangala",
+    "name": { "str": "tangala" },
     "copy-from": "mon_creeper_vine",
     "description": "A walking mass of vines.  Its body concealed in writhing vines, this deadly monster is a meter or so from being pocket-sized, but carries several deadly toxins within it.",
     "default_faction": "triffid",
@@ -348,7 +348,7 @@
   {
     "id": "mon_triffid_pk",
     "type": "MONSTER",
-    "name": "triffid",
+    "name": { "str": "triffid" },
     "copy-from": "mon_triffid",
     "description": "A creeping animate plant, growing as tall as a moose.  It has a single bark-covered stalk supporting a flowery head with a paralyzing sting concealed within.  This one looks tough.",
     "default_faction": "triffid",
@@ -382,7 +382,7 @@
   {
     "id": "mon_treent",
     "type": "MONSTER",
-    "name": "blue aurora",
+    "name": { "str": "blue aurora" },
     "copy-from": "mon_triffid",
     "description": "A massive slab of bark with faintly glowing flattened blue tendrils and large brown cones instead of leaves.  It looks 'sort' of like a tree in that the tendrils are thickest at the base of the monster and taper into thin, densely packed slivers at the top.  Its actually almost beautiful at night, where it can be seen from a distance pulsating among the tallest tree.",
     "default_faction": "triffid",
@@ -428,7 +428,7 @@
     "id": "mon_triffid_queen",
     "type": "MONSTER",
     "copy-from": "mon_triffid_queen",
-    "name": "triffid queen",
+    "name": { "str": "triffid queen" },
     "speed": 75,
     "aggression": 30,
     "morale": 80,
@@ -450,7 +450,7 @@
   {
     "id": "mon_treent_green",
     "type": "MONSTER",
-    "name": "treunt",
+    "name": { "str": "treunt" },
     "copy-from": "mon_triffid",
     "description": "A monster resembling a healthy young tree.  With a little effort, the triffids seem to have produced a guardian that blends into the forest.  Its poisonous barbs are visible upon close examination, but otherwise its not a bad disguise.",
     "default_faction": "triffid",
@@ -491,7 +491,7 @@
   {
     "id": "mon_dionaea_sprout",
     "type": "MONSTER",
-    "name": "dionaea sprout",
+    "name": { "str": "dionaea sprout" },
     "copy-from": "mon_triffid",
     "description": "An animated carnivorous plant a little under 2 meters long, this juvenile still packs a wallop with its fetid mouth.",
     "default_faction": "triffid",
@@ -530,7 +530,7 @@
   {
     "id": "mon_dionaea",
     "type": "MONSTER",
-    "name": "dionaea",
+    "name": { "str": "dionaea" },
     "copy-from": "mon_triffid",
     "description": "A rotund armored 'head' with a massive fetid maw dominates this monster's form.  Its head hangs low when its not in use, saving energy for its coordinated slither along the ground.",
     "default_faction": "triffid",
@@ -569,7 +569,7 @@
   {
     "id": "mon_minecraft",
     "type": "MONSTER",
-    "name": "hissing brood",
+    "name": { "str": "hissing brood" },
     "copy-from": "mon_creeper_vine",
     "description": "a dried up shrub with rustling brown leaves adept at ambushes.  Highly volatile and easily excited.",
     "default_faction": "triffid",
@@ -603,7 +603,7 @@
   {
     "id": "mon_minecraft_charged",
     "type": "MONSTER",
-    "name": "charged hissing brood",
+    "name": { "str": "charged hissing brood" },
     "copy-from": "mon_creeper_vine",
     "description": "Somehow this dessicated plant has become charged up with some lightning?  Probably not good for nearby electronic devices. . .",
     "default_faction": "triffid",
