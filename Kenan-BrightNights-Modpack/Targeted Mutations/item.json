@@ -1,0 +1,2602 @@
+[
+	{
+    "id": "target_iv_mutagen_fleet",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fleet-footed serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you a little faster on flat surfaces.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FLEET" }
+	},
+	{
+    "id": "target_iv_mutagen_plant_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Plant threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more plant-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_PLANT" }
+	},
+	{
+    "id": "target_iv_mutagen_insect_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insect threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more insect-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_INSECT" }
+	},
+	{
+    "id": "target_iv_mutagen_spider_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Spider threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more arachnid-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_SPIDER" }
+	},
+	{
+    "id": "target_iv_mutagen_slime_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Slime threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more slime-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_SLIME" }
+	},
+	{
+    "id": "target_iv_mutagen_fish_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fish threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more fish-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_FISH" }
+	},
+	{
+    "id": "target_iv_mutagen_rat_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rat threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more rat-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_RAT" }
+	},
+	{
+    "id": "target_iv_mutagen_beast_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Beast threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more beastial state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_BEAST" }
+	},
+	{
+    "id": "target_iv_mutagen_ursine_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ursine threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more bear-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_URSINE" }
+	},
+	{
+    "id": "target_iv_mutagen_feline_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feline threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more cat-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_FELINE" }
+	},
+	{
+    "id": "target_iv_mutagen_lupine_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lupine threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more canine-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_LUPINE" }
+	},
+	{
+    "id": "target_iv_mutagen_cattle_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cattle threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more cow-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_CATTLE" }
+	},
+	{
+    "id": "target_iv_mutagen_cephalopod_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cephalopod threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more octopus-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_CEPHALOPOD" }
+	},
+	{
+    "id": "target_iv_mutagen_bird_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bird threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more avian-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_BIRD" }
+	},
+	{
+    "id": "target_iv_mutagen_lizard_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lizard threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more reptilian-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_LIZARD" }
+	},
+	{
+    "id": "target_iv_mutagen_troglobite_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Troglobite threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more subterranean state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_TROGLOBITE" }
+	},
+	{
+    "id": "target_iv_mutagen_alpha_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Alpha threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will turn you into an alpha specimen permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_ALPHA" }
+	},
+	{
+    "id": "target_iv_mutagen_medical_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Medical threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body into an experimental medical prototype permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_MEDICAL" }
+	},
+	{
+    "id": "target_iv_mutagen_chimera_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Chimera threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will turn you into a chimera of species permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_CHIMERA" }
+	},
+	{
+    "id": "target_iv_mutagen_elfa_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Elfa threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more elf-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_ELFA" }
+	},
+	{
+    "id": "target_iv_mutagen_raptor_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Raptor threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more raptor-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_RAPTOR" }
+	},
+	{
+    "id": "target_iv_mutagen_mouse_thresh",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Mouse threshold serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will adapt your body to a more mouse-like state permanently if your body supports such a change.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THRESH_MOUSE" }
+	},
+	{
+    "id": "target_iv_mutagen_biolum0",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Relfexive photophore serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you grow an uncontrollable organ on your head that glows in response to your physical or emotional state.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BIOLUM0" }
+	},
+	{
+    "id": "target_iv_mutagen_biolum1",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Weak photophore serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you grow a controllable organ on your head that glows weakly, sufficient for reading.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BIOLUM1" }
+	},
+	{
+    "id": "target_iv_mutagen_biolum2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Photophore serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you grow a controllable organ on your head that glows brightly, bright enough to replace a lamp.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BIOLUM2" }
+	},
+	{
+    "id": "target_iv_mutagen_goodhearing",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hearing enhancement serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one enhances your hearing.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GOODHEARING" }
+	},
+	{
+    "id": "target_iv_mutagen_feyhearing",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Elven hearing serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you hear as good as elves of fantasy settings, if your body supports it.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FEYHEARING" }
+	},
+	{
+    "id": "target_iv_mutagen_goodcardio",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Indefatigable serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you have more stamina and regenerate it faster.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GOODCARDIO" }
+	},
+	{
+    "id": "target_iv_mutagen_goodcardio2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hyperactive serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will give you a lot more stamina and stamina recovery if your body supports it.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GOODCARDIO2" }
+	},
+	{
+    "id": "target_iv_mutagen_quick",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Quickening serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make faster in general.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "QUICK" }
+	},
+	{
+    "id": "target_iv_mutagen_fasthealer",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fast healing serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will increase your healing speed by a bit.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FASTHEALER" }
+	},
+	{
+    "id": "target_iv_mutagen_lighteater",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Light eater serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you require less food than most",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LIGHTEATER" }
+	},
+	{
+    "id": "target_iv_mutagen_easysleeper",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Accomplished sleeper serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make it easier for you to fall asleep.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "EASYSLEEPER" }
+	},
+	{
+    "id": "target_iv_mutagen_easysleeper2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Practised sleeper serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you capable of falling asleep just about anywhere, if your body supports it.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "EASYSLEEPER2" }
+	},
+	{
+    "id": "target_iv_mutagen_painresist",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pain resistance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you more resistant to pain.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAINRESIST" }
+	},
+	{
+    "id": "target_iv_mutagen_nightvision",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Nightvision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your eyes a little more sensitive to light in low-light situations, granting a weak nightvision.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NIGHTVISION" }
+	},
+	{
+    "id": "target_iv_mutagen_poisresist",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Poison resistance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one will make you more resistant to poisons.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "POISRESIST" }
+	},
+	{
+    "id": "target_iv_mutagen_toughfeet",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tough feet serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one thickens the skin underneath your feet, removing penalties for going barefoot.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TOUGH_FEET" }
+	},
+	{
+    "id": "target_iv_mutagen_tough",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tough serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one hardens your bones and muscles, increasing the amount of hits you can take.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TOUGH" }
+	},
+	{
+    "id": "target_iv_mutagen_tough2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Durability serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one further enhances your body's durability beyond simple toughness.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TOUGH2" }
+	},
+	{
+    "id": "target_iv_mutagen_tough3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Unbreakable serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Basically super soldier body durability.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TOUGH3" }
+	},
+	{
+    "id": "target_iv_mutagen_thickskin",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Thick skin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. It thickens your skin and gives you some resistance to being cut.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THICKSKIN" }
+	},
+	{
+    "id": "target_iv_mutagen_strongback",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Strong back serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. With this your spine reinforces itself and you become capable of carrying heavier loads.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STRONGBACK" }
+	},
+	{
+    "id": "target_iv_mutagen_strongstomach",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Strong stomach serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases fortitude of digestive systems.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STRONGSTOMACH" }
+	},
+	{
+    "id": "target_iv_mutagen_goodmemory",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Good memory serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Improves long and short term memory.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GOODMEMORY" }
+	},
+	{
+    "id": "target_iv_mutagen_deft",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Deftness serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Improves recovery from attacks that didn't connect with a target via an increased fight response reflex.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DEFT" }
+	},
+	{
+    "id": "target_iv_mutagen_tolerance",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Substance tolerance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Improves your body's filtration of intoxicants.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TOLERANCE" }
+	},
+	{
+    "id": "target_iv_mutagen_gourmand",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Gourmand serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases dopamine production in response to ingesting good-tasting foods and expands digestive system to accomodate more volume.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GOURMAND" }
+	},
+	{
+    "id": "target_iv_mutagen_nonaddictive",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Addiction resistance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Lowers the brain's reliance on external dopamine sources, effectively increasing resistance to addictions.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NONADDICTIVE" }
+	},
+	{
+    "id": "target_iv_mutagen_animalempath",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Animal empathy serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Inserts an instinctual movement pattern that activates in the presence of animals into your brain that makes animals less skittish or untrustworthy of you.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ANIMALEMPATH" }
+	},
+	{
+    "id": "target_iv_mutagen_animalempath2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Animal kinship serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Rewrites certain parts of your brain to make you move in the presence of animals in such a way that makes most animals leave you alone or be curious enough that they act in a friendly manner to check you out.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ANIMALEMPATH2" }
+	},
+	{
+    "id": "target_iv_mutagen_terrifying",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Terrifier serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Modifies your pheromones and the way you carry yourself to instill fear into the minds of creatures, making them more likely to flee or be intimidated.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TERRIFYING" }
+	},
+	{
+    "id": "target_iv_mutagen_disresistant",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Disease resistance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Enhances your immune system against diseases.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DISRESISTANCE" }
+	},
+	{
+    "id": "target_iv_mutagen_adrenaline",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Adrenaline serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases the response and size of adrenal glands.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ADRENALINE" }
+	},
+	{
+    "id": "target_iv_mutagen_wakeful",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Less sleep serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Lessens your body's reliance on sleep.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WAKEFUL" }
+	},
+	{
+    "id": "target_iv_mutagen_selfaware",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Self awareness serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases your awareness on your body's state of being.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SELFAWARE" }
+	},
+	{
+    "id": "target_iv_mutagen_masochist",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Masochism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Rewrites your brain to associate pain with pleasure.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MASOCHIST" }
+	},
+	{
+    "id": "target_iv_mutagen_lightstep",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lighter steps serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Changes your movement patterns to make less noise while walking and lessens the chance of triggering traps.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LIGHTSTEP" }
+	},
+	{
+    "id": "target_iv_mutagen_robust",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Robust genetics serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Supplements your DNA with buffers against damage and degeneration.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ROBUST" }
+	},
+	{
+    "id": "target_iv_mutagen_eagleeyed",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Scout serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases your sight range and allows you to see distant things better.",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "EAGLEEYED" }
+	},
+	{
+    "id": "target_iv_mutagen_cannibal",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cannibalism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Rewrites some sections of your brain to cause you to both crave and get an increase in dopamine production when eating your own kind.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CANNIBAL" }
+	},
+	{
+    "id": "target_iv_mutagen_psychopath",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Psychopathy serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Removes your capacity to care about moralistic actions and morality in general.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PSYCHOPATH" }
+	},
+	{
+    "id": "target_iv_mutagen_killer",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Killer drive serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Heightens dopamine production when killing something and as a result of that makes you crave it.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "KILLER" }
+	},
+	{
+    "id": "target_iv_mutagen_weakscent",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Weak scent serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Removes most of your odour-producing sweat glands and general smelliness.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEAKSCENT" }
+	},
+	{
+    "id": "target_iv_mutagen_pretty",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Prettification serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Like beauty creams, except you inject this one, and it actually works. Makes you more appealing to look at.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PRETTY" }
+	},
+	{
+    "id": "target_iv_mutagen_heavysleeper",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Heavy sleeper serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Lowers your environmental reactivity while asleep.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HEAVYSLEEPER" }
+	},
+	{
+    "id": "target_iv_mutagen_albino",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Albinism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Removes the pigmentation from your body and removes your body's capability to produce pigmentation.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ALBINO" }
+	},
+	{
+    "id": "target_iv_mutagen_roughskin",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rough skin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives your skin a rough texture.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ROUGH_SKIN" }
+	},
+	{
+    "id": "target_iv_mutagen_nightvision2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "High nightvision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases the amount of light-sensitive cones in your eyes to enable very good nightvision.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NIGHTVISION2" }
+	},
+	{
+    "id": "target_iv_mutagen_nightvision3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Full nightvision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you an abundance of light-sensitive cones in your eyes, granting better nightsight than most creatures have.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NIGHTVISION3" }
+	},
+	{
+    "id": "target_iv_mutagen_cepheyes",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cephalopod eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Mutates your eye structure into that of a cephalopod.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CEPH_EYES" }
+	},
+	{
+    "id": "target_iv_mutagen_cephvision",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cephalopod vision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Grants cephalopodic vision, allowing you to see in the dark but sunlight might be a bit too bright most of the time.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CEPH_VISION" }
+	},
+	{
+    "id": "target_iv_mutagen_elfaeyes",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fey eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Replaces the pigmentation of your eyes with self-modulating chromatophores that can only shift into various shades of green.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ELFAEYES" }
+	},
+	{
+    "id": "target_iv_mutagen_elfanv",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fey vision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your eyes sensitive to picking up light in low-light situations, also changes the irisses of your eyes into shade-shifting green chromatophores.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ELFA_NV" }
+	},
+	{
+    "id": "target_iv_mutagen_elfafnv",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fey nightsight serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Further improves the nightvision-enabling capabilities of the fey vision serum, side effects still apply.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ELFA_FNV" }
+	},
+	{
+    "id": "target_iv_mutagen_feleye",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feline eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Mutates your eyes into those of a cat. Nightvision not included.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FEL_EYE" }
+	},
+	{
+    "id": "target_iv_mutagen_felnv",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feline nightvision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you the same amount of nightvision as a feline. Side effects may  like optical structural changes may apply.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FEL_NV" }
+	},
+	{
+    "id": "target_iv_mutagen_ursineeye",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ursine vision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you nightvision at the cost of nearsightedness in the light.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "URSINE_EYE" }
+	},
+	{
+    "id": "target_iv_mutagen_birdeye",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bird eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Structurally changes your eyes to be similar to that of avians, heightening visual acuity and perception.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BIRD_EYE" }
+	},
+	{
+    "id": "target_iv_mutagen_infrared",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Infrared vision serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Changes your eyes to see the infrared wavelengths, allowing you to see warm-blooded creatures in the dark.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INFRARED" }
+	},
+	{
+    "id": "target_iv_mutagen_lizeye",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lizard eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Structurally mutates your eyes to be like a reptile's. Reptilian infrared not included.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LIZ_EYE" }
+	},
+	{
+    "id": "target_iv_mutagen_lizir",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lizard infrared serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Grants your eyes the ability to see into the infrared spectrum like various reptiles, physical changes may apply.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LIZ_IR" }
+	},
+	{
+    "id": "target_iv_mutagen_fasthealer2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Very fast healer serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases cell division rate in response to structural damage, improving your healing factor above normal.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FASTHEALER2" }
+	},
+	{
+    "id": "target_iv_mutagen_regen",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Regeneration serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Cell division rate in response to structural damage is increased to nearly unnatural levels, improving healing to a very high degree.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "REGEN" }
+	},
+	{
+    "id": "target_iv_mutagen_regenliz",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Reptilian healing serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Grants self-setting and automatic fast repair to both skeletal breakage and wounds of the flesh.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ROBUST" }
+	},
+	{
+    "id": "target_iv_mutagen_wakeful2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Very little sleep serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows your brain to perform short bursts of functions similar to REM sleep while awake, lengthening times you're awake and lowering the amount of time you need to sleep.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WAKEFUL2" }
+	},
+	{
+    "id": "target_iv_mutagen_wakeful3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tireless serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Your brain constantly performs similar functions to REM sleep all the time, effectively removing the need to sleep.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WAKEFUL3" }
+	},
+	{
+    "id": "target_iv_mutagen_fangs",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fangs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a set of fangs.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FANGS" }
+	},
+	{
+    "id": "target_iv_mutagen_incisors",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Incisors serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Grows your frontal teeth into rodent-like incisors.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INCISORS" }
+	},
+	{
+    "id": "target_iv_mutagen_membrane",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Nictitating membrane serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Restores the nictitating membrane that humans have lost, allowing you to see underwater. Side effects may apply.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MEMBRANE" }
+	},
+	{
+    "id": "target_iv_mutagen_gills",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Gills serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you gills, allowing you to breathe underwater.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GILLS" }
+	},
+	{
+    "id": "target_iv_mutagen_gillsceph",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cephalopodic gills serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you the gills of an octopus or squid, allowing you to breathe underwater.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GILLS_CEPH" }
+	},
+	{
+    "id": "target_iv_mutagen_scales",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Scales serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body with green reptilian scales.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SCALES" }
+	},
+	{
+    "id": "target_iv_mutagen_thickscales",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Thick scales serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in thick, heavy green reptilian scales.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THICK_SCALES" }
+	},
+	{
+    "id": "target_iv_mutagen_sleekscales",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Sleek scales serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in sleek, hydrodynamic scales like a fish.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SLEEK_SCALES" }
+	},
+	{
+    "id": "target_iv_mutagen_lightbones",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Light bones serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Lightens your bones, making you faster but weaker.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LIGHT_BONES" }
+	},
+	{
+    "id": "target_iv_mutagen_feathers",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feathers serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in feathers.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FEATHERS" }
+	},
+	{
+    "id": "target_iv_mutagen_down",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Down serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a fine layer of down feathers.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DOWN" }
+	},
+	{
+    "id": "target_iv_mutagen_lightfur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lightly furred serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in a fine layer of fur.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LIGHTFUR" }
+	},
+	{
+    "id": "target_iv_mutagen_fur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Furry serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in a thick layer of fur.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FUR" }
+	},
+	{
+    "id": "target_iv_mutagen_ursinefur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Shaggy fur serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in a very thick layer of fur like that of a bear.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "URSINE_FUR" }
+	},
+	{
+    "id": "target_iv_mutagen_lupinefur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Gray fur serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in a layer of fur like that of a wolf.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LUPINE_FUR" }
+	},
+	{
+    "id": "target_iv_mutagen_felinefur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Sleek fur serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your body in a layer of sleek brown fur like that of a feline.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FELINE_FUR" }
+	},
+	{
+    "id": "target_iv_mutagen_lynxfur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lynx fur serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your cheeks and neck with longer fur for better insulation. Fur in other places may apply.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LYNX_FUR" }
+	},
+	{
+    "id": "target_iv_mutagen_chitin",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Chitin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your epidermis in a flexible thin layer of chitin.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHITIN" }
+	},
+	{
+    "id": "target_iv_mutagen_chitin2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Chitin armour serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your epidermis in a hard layer of chitinous armour.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHITIN2" }
+	},
+	{
+    "id": "target_iv_mutagen_chitin3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Chitin plate serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your epidermis in an inflexible layer of thick chitinous armour plating.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHITIN3" }
+	},
+	{
+    "id": "target_iv_mutagen_chitinfur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hairy chitin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your epidermis in a slightly hairy chitin.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHITIN_FUR" }
+	},
+	{
+    "id": "target_iv_mutagen_chitinfur2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Furred chitin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your epidermis in a very hairy layer of chitin.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHITIN_FUR2" }
+	},
+	{
+    "id": "target_iv_mutagen_chitinfur3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Furred plate serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your epidermis in furry chitinous carapace.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHITIN_FUR3" }
+	},
+	{
+    "id": "target_iv_mutagen_cfhair",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Urticating hairs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Loosens the hairs on your chitin as a defense mechanism against melee attackers.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CF_HAIR" }
+	},
+	{
+    "id": "target_iv_mutagen_spines",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Spines serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your skin with sharp spines for defense.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SPINES" }
+	},
+	{
+    "id": "target_iv_mutagen_quills",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Quills serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your large sharp quills for defense.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "QUILLS" }
+	},
+	{
+    "id": "target_iv_mutagen_barbs",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Assault barbs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your skin with loose quills that you can fling at enemies or use as melee defense.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BARBS" }
+	},
+	{
+    "id": "target_iv_mutagen_plantskin",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Phelloderm serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your skin green and slightly woody and better able to retain moisture.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PLANTSKIN" }
+	},
+	{
+    "id": "target_iv_mutagen_bark",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bark serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your skin in light bark like a tree.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BARK" }
+	},
+	{
+    "id": "target_iv_mutagen_thorns",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Thorns serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Covers your skin in small woody thorns.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "THORNS" }
+	},
+	{
+    "id": "target_iv_mutagen_leaves",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Leaves serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turns your hair into long grass-like leaves.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LEAVES" }
+	},
+	{
+    "id": "target_iv_mutagen_leaves2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lush leaves serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you larger leaves.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LEAVES2" }
+	},
+	{
+    "id": "target_iv_mutagen_leaves3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Verdant leaves serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you large and vibrant leaves that can act as a source of nutrition if uncovered.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LEAVES3" }
+	},
+	{
+    "id": "target_iv_mutagen_transpiration",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Transpiration serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Changes your to use the evaporation of water as a way to move nutrients.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TRANSPIRATION" }
+	},
+	{
+    "id": "target_iv_mutagen_flowers",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Flower serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes flowers bloom on your scalp.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FLOWERS" }
+	},
+	{
+    "id": "target_iv_mutagen_rosebuds",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rosebud serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes the top of your head bloom with rosebuds.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ROSEBUDS" }
+	},
+	{
+    "id": "target_iv_mutagen_nails",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Long fingernails serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you longer fingernails capable of cutting people.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NAILS" }
+	},
+	{
+    "id": "target_iv_mutagen_claws",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Claws serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you claws at the end of your fingertips.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CLAWS" }
+	},
+	{
+    "id": "target_iv_mutagen_clawsrat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rat claws serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you rat-like claws.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CLAWS_RAT" }
+	},
+	{
+    "id": "target_iv_mutagen_clawsst",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Stainless claws serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you claws as if made from stainless steel.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CLAWS_ST" }
+	},
+	{
+    "id": "target_iv_mutagen_clawsretract",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Retractable claws serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you claws capable of retracting when not in use.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CLAWS_RETRACT" }
+	},
+	{
+    "id": "target_iv_mutagen_clawstentacle",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tentacle rakes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives your tentacles large hook-barbed rakes.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CLAWS_TENTACLE" }
+	},
+	{
+    "id": "target_iv_mutagen_inkglands",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ink glands serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you ink glands to spray and potentially blind things with.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INK_GLANDS" }
+	},
+	{
+    "id": "target_iv_mutagen_talons",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Talons serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Grows your index fingers into hude talons.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TALONS" }
+	},
+	{
+    "id": "target_iv_mutagen_radiogenic",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Radiogenic serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you capable of healing from radiation.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "REDIOGENIC" }
+	},
+	{
+    "id": "target_iv_mutagen_pheromoneinsect",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insect pheromones serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your body produce insect pheromones and identifies you as friendly to most insects.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PHEROMONE_INSECT" }
+	},
+	{
+    "id": "target_iv_mutagen_pheromonemammal",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Mammal pheromones serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your body produce mammal pheromones that calms most mammals and makes them more friendly.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PHEROMONE_MAMMAL" }
+	},
+	{
+    "id": "target_iv_mutagen_disimmune",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Disease immunity serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you immune to ambient diseases.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DISIMMUNE" }
+	},
+	{
+    "id": "target_iv_mutagen_infresist",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Infection resistance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you resistant to infections.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INFRESIST" }
+	},
+	{
+    "id": "target_iv_mutagen_infimmune",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Infection immunity serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you immune to infections.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INFIMMUNE" }
+	},
+	{
+    "id": "target_iv_mutagen_paraimmune",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Parasite immunity serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your body inhospitable to parasites, effectively immunizing you.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PARAIMMUNE" }
+	},
+	{
+    "id": "target_iv_mutagen_poisonous",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Venomous serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your biological attacks inject your enemies with venom.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "POISONOUS" }
+	},
+	{
+    "id": "target_iv_mutagen_poisonous2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Strongly venomous serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your biological attacks inject your enemies with a strong venom.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "POISONOUS2" }
+	},
+	{
+    "id": "target_iv_mutagen_slimehands",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Slime hands serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your hands produce a caustic slime.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SLIME_HANDS" }
+	},
+	{
+    "id": "target_iv_mutagen_bendy1",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Stretchy limbs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives a bit more flexibility to your limbs.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BENDY1" }
+	},
+	{
+    "id": "target_iv_mutagen_bendy2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rubbery limbs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Signifigantly flexifies your limbs",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BENDY2" }
+	},
+	{
+    "id": "target_iv_mutagen_bendy3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pseudolimbs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turns your limbs into pseudopod-like limbs.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BENDY3" }
+	},
+	{
+    "id": "target_iv_mutagen_compoundeyes",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Compound eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you insect-like compound eyes.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "COMPOUND_EYES" }
+	},
+	{
+    "id": "target_iv_mutagen_raptalons",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Toe talons serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you talons on your toes like those of raptors.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "RAP_TALONS" }
+	},
+	{
+    "id": "target_iv_mutagen_hooves",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hooves serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turns your feet into hooves.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HOOVES" }
+	},
+	{
+    "id": "target_iv_mutagen_alcmet",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Alcohol metabolism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows your digestive system to extract nutrients from alcohol and use it as a food source.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ALCMET" }
+	},
+	{
+    "id": "target_iv_mutagen_painresisttroglo",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Troglobitic tunnel pain resistance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Adapts your body to be fine with the aches and pains of underground living.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAINRESIST_TROGLO" }
+	},
+	{
+    "id": "target_iv_mutagen_stockytroglo",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Troglobitic stockiness serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Shortens you but converts the mass into muscle, increasing strength but lowering dexterity.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STOCKY_TROGLO" }
+	},
+	{
+    "id": "target_iv_mutagen_saprovore",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Saprovore serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to eat rotting food.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SAPROVORE" }
+	},
+	{
+    "id": "target_iv_mutagen_saprophage",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Saprophage serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a metabolic preference to root and photosynthesis-based sustenance and the occasional rotting food.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SAPROPHAGE" }
+	},
+	{
+    "id": "target_iv_mutagen_gizzard",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Gizzard serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a gizzard, like a bird's.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GIZZARD" }
+	},
+	{
+    "id": "target_iv_mutagen_ruminant",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ruminance serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to eat plants like shrubs and bushes directly.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "RUMINANT" }
+	},
+	{
+    "id": "target_iv_mutagen_grazer",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Grazer serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you capable of eating grass.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GRAZER" }
+	},
+	{
+    "id": "target_iv_mutagen_eatpoison",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Intestinal fortitude serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to eat poisonous food.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "EATPOISON" }
+	},
+	{
+    "id": "target_iv_mutagen_eatdead",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Eater of the dead serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. With this those zombies will be looking like a meal-ticket in no time.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "EATDEAD" }
+	},
+	{
+    "id": "target_iv_mutagen_burrow",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Burrowing serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to dig through almost anything with your claws.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BURROW" }
+	},
+	{
+    "id": "target_iv_mutagen_saberteeth",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Saber teeth serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you grow extremely large and incredibly sharp fangs.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SABER_TEETH" }
+	},
+	{
+    "id": "target_iv_mutagen_eathealth",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hyper metabolism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Hikes up your metabolism so much that it allows you to directly convert excess food into usable tissue for wounds and such.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "EATHEALTH" }
+	},
+	{
+    "id": "target_iv_mutagen_horns",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Horns serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you small horns on your head.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HORNS" }
+	},
+	{
+    "id": "target_iv_mutagen_hornscurled",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Curled horns serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you curled horns.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HORNS_CURLED" }
+	},
+	{
+    "id": "target_iv_mutagen_hornspointed",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pointed horns serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you pointed horns.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HORNS_POINTED" }
+	},
+	{
+    "id": "target_iv_mutagen_antlers",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Antlers serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you antlers.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ANTLERS" }
+	},
+	{
+    "id": "target_iv_mutagen_antennae",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Antennae serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you antennae like an insect.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ANTENNAE" }
+	},
+	{
+    "id": "target_iv_mutagen_fleet2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Road runner serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes you move a lot faster on flat surfaces.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FLEET2" }
+	},
+	{
+    "id": "target_iv_mutagen_tailstub",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Stubby tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a stubby little tail.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_STUB" }
+	},
+	{
+    "id": "target_iv_mutagen_tailfin",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tail fin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a tail like that of a shark or fish.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_FIN" }
+	},
+	{
+    "id": "target_iv_mutagen_taillong",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Long tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a cat-like tail.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_LONG" }
+	},
+	{
+    "id": "target_iv_mutagen_tailcattle",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cattle tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a tail like a cow's.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_CATTLE" }
+	},
+	{
+    "id": "target_iv_mutagen_tailrat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rat tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a long rat-like tail.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_RAT" }
+	},
+	{
+    "id": "target_iv_mutagen_tailthick",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Thick tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a thick reptilian tail serviceable as a whip.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_THICK" }
+	},
+	{
+    "id": "target_iv_mutagen_tailraptor",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Raptor tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a long and somewhat stiff raptor's tail that helps with balance.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_RAPTOR" }
+	},
+	{
+    "id": "target_iv_mutagen_tailfluffy",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fluffy tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a long and fluffy tail.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_FLUFFY" }
+	},
+	{
+    "id": "target_iv_mutagen_tailsting",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Spiked tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you a long tail with a spike at the end useful for stabbing things.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_STING" }
+	},
+	{
+    "id": "target_iv_mutagen_tailclub",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Club tail serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you tail with a club at its end useful for bashing things.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TAIL_CLUB" }
+	},
+	{
+    "id": "target_iv_mutagen_hibernate",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hibernation serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to store fat and sleep for really long periods of time.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HIBERNATE" }
+	},
+	{
+    "id": "target_iv_mutagen_muttough",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Resilience serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your body more resilient.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUT_TOUGH" }
+	},
+	{
+    "id": "target_iv_mutagen_muttough2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Solidly built serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Makes your body really resilient.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUT_TOUGH2" }
+	},
+	{
+    "id": "target_iv_mutagen_muttough3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tank serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Might as well take a few hits for laughs now.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUT_TOUGH3" }
+	},
+	{
+    "id": "target_iv_mutagen_painrec1",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pain recovery serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to recover from pain faster.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAINREC1" }
+	},
+	{
+    "id": "target_iv_mutagen_painrec2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Quick pain recovery serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to recover from pain much faster.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAINREC2" }
+	},
+	{
+    "id": "target_iv_mutagen_painrec3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Very quick pain recovery serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Recover from pain in little to no time at all.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAINREC3" }
+	},
+	{
+    "id": "target_iv_mutagen_masochistmed",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pain junkie serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Start to crave and like pain.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MASOCHIST_MED" }
+	},
+	{
+    "id": "target_iv_mutagen_cenobite",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cenobite serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You'll REALLY like pain.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CENOBITE" }
+	},
+	{
+    "id": "target_iv_mutagen_nopain",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Deadening serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Essentially removes all pain nerves.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NOPAIN" }
+	},
+	{
+    "id": "target_iv_mutagen_wingsbird",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bird wings serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Grows feathery wings that won't fly but will stop falls form hurting.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WINGS_BIRD" }
+	},
+	{
+    "id": "target_iv_mutagen_wingsinsect",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insect wings serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you membranous wings like a bee or wasp.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WINGS_INSECT" }
+	},
+	{
+    "id": "target_iv_mutagen_mouthtentacles",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Mouth tentacles serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you tentacles around your mouth.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MOUTH_TENTACLES" }
+	},
+	{
+    "id": "target_iv_mutagen_mandibles",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Mandibles serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. TUrns your mouth into a system that uses insectoid mandibles.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MANDIBLES" }
+	},
+	{
+    "id": "target_iv_mutagen_fangsspider",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Folding fangs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turns mandibles into spider fangs.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FANGS_SPIDER" }
+	},
+	{
+    "id": "target_iv_mutagen_canineears",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Canine ears serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you dog ears.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CANINE_EARS" }
+	},
+	{
+    "id": "target_iv_mutagen_lupineears",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lupine ears serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you wolf ears.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LUPINE_EARS" }
+	},
+	{
+    "id": "target_iv_mutagen_felineears",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feline ears serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you cat ears.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FELINE_EARS" }
+	},
+	{
+    "id": "target_iv_mutagen_ursineears",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ursine ears serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you bear ears.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "URSINE_EARS" }
+	},
+	{
+    "id": "target_iv_mutagen_elfaears",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pointed ears serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you elven ears.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ELFA_EARS" }
+	},
+	{
+    "id": "target_iv_mutagen_mouseears",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rodent ears serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you the ears of a rodent.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MOUSE_EARS" }
+	},
+	{
+    "id": "target_iv_mutagen_webwalker",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Web walker serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to walk through webs without being slowed.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEB_WALKER" }
+	},
+	{
+    "id": "target_iv_mutagen_webweaver",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Web weaver serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gives you the capabilities to produce your own webbing.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEB_WEAVER" }
+	},
+	{
+    "id": "target_iv_mutagen_webrappel",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Web diver serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to use your webs as a way to scale shear drops.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEB_RAPPEL" }
+	},
+	{
+    "id": "target_iv_mutagen_webrope",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rope webs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to make ropes from your spider silk.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEB_ROPE" }
+	},
+	{
+    "id": "target_iv_mutagen_whiskers",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Whiskers serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one gives you feline whiskers.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WHISKERS" }
+	},
+	{
+    "id": "target_iv_mutagen_whiskersrat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Wiry whiskers serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one gives you rodent whiskers.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WHISKERS_RAT" }
+	},
+	{
+    "id": "target_iv_mutagen_fat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fat deposits serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain weight instantly! Fitness nuts hate this!",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FAT" }
+	},
+	{
+    "id": "target_iv_mutagen_largeok",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Enlargening serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Try this enlargement serum and get bigger, today! Large Inc. is not responsible for any lack of growth due to unsupported infratructure.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LARGE_OK" }
+	},
+	{
+    "id": "target_iv_mutagen_hugeok",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Enhugement serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become HUUUGE!!! If your body can support it...",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HUGE_OK" }
+	},
+	{
+    "id": "target_iv_mutagen_strup3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Extremely strong serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Dude, you're ripped!",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STR_UP_3" }
+	},
+	{
+    "id": "target_iv_mutagen_strup4",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insanely strong serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Argh! Look at my bulging muscles!",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STR_UP_4" }
+	},
+	{
+    "id": "target_iv_mutagen_stralpha",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Alpha strength serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. It's only natural that an alpha such as I be this strong.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STR_ALPHA" }
+	},
+	{
+    "id": "target_iv_mutagen_dexup3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Extremely dextrous serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You can do card tricks now.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DEX_UP_3" }
+	},
+	{
+    "id": "target_iv_mutagen_dexup4",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insanely dextrous serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You can do that trick with the coin flipping between your knuckles.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DEX_UP_4" }
+	},
+	{
+    "id": "target_iv_mutagen_dexalpha",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Alpha dexterity serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Alphas ought to be this dextrous, yes.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "DEX_ALPHA" }
+	},
+	{
+    "id": "target_iv_mutagen_intup3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Extremely intelligent serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Deep blue has no chance against you.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INT_UP_3" }
+	},
+	{
+    "id": "target_iv_mutagen_intup4",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insanely intelligent serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You've passed the singularity.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INT_UP_4" }
+	},
+	{
+    "id": "target_iv_mutagen_intalpha",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Alpha intelligence serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Non-alphas are such intellectual plebeians.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INT_ALPHA" }
+	},
+	{
+    "id": "target_iv_mutagen_perup3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Extremely perceptive serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Perceive most things.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PER_UP_3" }
+	},
+	{
+    "id": "target_iv_mutagen_perup4",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insanely perceptive serum",
+    "description": "A special mutagenic serum, designed to give you a single mutation. Perceive all there is around you.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PER_UP_4" }
+	},
+	{
+    "id": "target_iv_mutagen_peralpha",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Alpha perception serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Alphas are able to perceive the smallest of details, of course.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PER_ALPHA" }
+	},
+	{
+    "id": "target_iv_mutagen_intslime",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Distributed neurology serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Distributes your brain across your slimy body. Become basically one big brain.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INT_SLIME" }
+	},
+	{
+    "id": "target_iv_mutagen_perslimeok",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Distributed senses serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become capable of growing and retracting sensory organs at will.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PER_SLIME_OK" }
+	},
+	{
+    "id": "target_iv_mutagen_small2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tiny serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become half your original size.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SMALL2" }
+	},
+	{
+    "id": "target_iv_mutagen_smallok",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Unassuming serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Master the tiny form.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SMALL_OK" }
+	},
+	{
+    "id": "target_iv_mutagen_crafty",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Crafty serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become as crafty as a mouse.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CRAFTY" }
+	},
+	{
+    "id": "target_iv_mutagen_slitnostrils",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Slit nostrils serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Flatten your nose and gain thin slits for nostrils.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SLIT_NOSTRILS" }
+	},
+	{
+    "id": "target_iv_mutagen_forkedtongue",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Forked tongue serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a forked tongue.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FORKED_TONGUE" }
+	},
+	{
+    "id": "target_iv_mutagen_wingsbat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bat wings serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a pair of leathery wings like that of a bat.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WINGS_BAT" }
+	},
+	{
+    "id": "target_iv_mutagen_wingsbutterfly",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Butterfly wings serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain the wings of a pretty butterfly.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WINGS_BUTTERFLY" }
+	},
+	{
+    "id": "target_iv_mutagen_pale",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Pale serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Get pale skin.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PALE" }
+	},
+	{
+    "id": "target_iv_mutagen_spots",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Spots serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Becomes the collection of polkadots you've always wanted to be.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SPOTS" }
+	},
+	{
+    "id": "target_iv_mutagen_beautiful",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Beautification serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become beautiful.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BEAUTIFUL" }
+	},
+	{
+    "id": "target_iv_mutagen_beautiful2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Deluxe beautification serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become very beautiful.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BEAUTIFUL2" }
+	},
+	{
+    "id": "target_iv_mutagen_beautiful3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Glorification serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become glorious.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BEAUTIFUL3" }
+	},
+	{
+    "id": "target_iv_mutagen_snout",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Snout serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Get a snout.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SNOUT" }
+	},
+	{
+    "id": "target_iv_mutagen_minotaur",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bovine snout serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become the source of cowlicks.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MINOTAUR" }
+	},
+	{
+    "id": "target_iv_mutagen_muzzle",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lupine muzzle serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You were always more of a dog person anyway.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUZZLE" }
+	},
+	{
+    "id": "target_iv_mutagen_muzzlebear",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ursine muzzle serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Maybe now you can lick out those honeypots.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUZZLE_BEAR" }
+	},
+	{
+    "id": "target_iv_mutagen_muzzlerat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rodent muzzle serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Get a rat face.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUZZLE_RAT" }
+	},
+	{
+    "id": "target_iv_mutagen_muzzlelong",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Reptilian muzzle serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Reptile mouth ahoy.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MUZZLE_LONG" }
+	},
+	{
+    "id": "target_iv_mutagen_proboscis",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Proboscis serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Whether you're more like a fly or a mosquito after this is for you to figure out.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PROBOSCIS" }
+	},
+	{
+    "id": "target_iv_mutagen_hollowbones",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hollow bones serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Hollows out your bones like a bird's, making you faster but not capable of carrying a lot.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HOLLOW_BONES" }
+	},
+	{
+    "id": "target_iv_mutagen_vomitous",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Vomitous serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Why anyone would want to throw up a lot is their business.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "VOMITOUS" }
+	},
+	{
+    "id": "target_iv_mutagen_hunger",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fast metabolism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increases your metabolic rate, increasing caloric burn and stamina regeneration.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HUNGER" }
+	},
+	{
+    "id": "target_iv_mutagen_metrat",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rapid metabolism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You'll require more resources than most, but heal more rapidly.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "MET_RAT" }
+	},
+	{
+    "id": "target_iv_mutagen_hunger2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Very fast metabolism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You'll need to eat a lot but your stamina regeneration isn't anything to sneeze at.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HUNGER2" }
+	},
+	{
+    "id": "target_iv_mutagen_hunger3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Extreme metabolism serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. How you sustain yourself is anybody's guess but you've got a lot of endurance to show for it.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HUNGER3" }
+	},
+	{
+    "id": "target_iv_mutagen_nothirst",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Metabolic rehydration serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain moisture from what you eat and have your hunger and thirst be equal, like mice.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "NO_THIRST" }
+	},
+	{
+    "id": "target_iv_mutagen_heavysleeper2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Very heavy sleeper serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Sleep through gunfire.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HEAVYSLEEPER2" }
+	},
+	{
+    "id": "target_iv_mutagen_webbed",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Webbed extremities serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain webbed hands and feet.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEBBED" }
+	},
+	{
+    "id": "target_iv_mutagen_paws",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Paws serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turn your hands into quasi-paws.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAWS" }
+	},
+	{
+    "id": "target_iv_mutagen_pawslarge",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Broad paws serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turn your hands into large paws that're better at swimming but manula dexteriry and manipulation is going to be a problem.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PAWS_LARGE" }
+	},
+	{
+    "id": "target_iv_mutagen_beak",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Beak serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain the beak of a bird that'll allow you to peck at things.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BEAK" }
+	},
+	{
+    "id": "target_iv_mutagen_beakpeck",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Woodpecker beak serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain the beak of a woodpecker and peck at enemies all day long.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BEAK_PECK" }
+	},
+	{
+    "id": "target_iv_mutagen_beakhum",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hummingbird beak serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a hummingbird beak, making those flowers look mighty tasty.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BEAK_HUM" }
+	},
+	{
+    "id": "target_iv_mutagen_radioactive",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Radioactivity serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become slightly radioactive for whatever reason.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "RADIOACTIVE" }
+	},
+	{
+    "id": "target_iv_mutagen_slimy",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Slimy serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Be always coated in a fine layer of slime.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SLIMY" }
+	},
+	{
+    "id": "target_iv_mutagen_viscous",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Viscous serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Increase your body's slime output to be sticky and gel-like",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "VISCOUS" }
+	},
+	{
+    "id": "target_iv_mutagen_amorphous",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Amorphous body serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Make your flesh and pleasing gel-like consistency.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "AMORPHOUS" }
+	},
+	{
+    "id": "target_iv_mutagen_slimespawner",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Omnicellular serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become one big cell",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SLIMESPAWNER" }
+	},
+	{
+    "id": "target_iv_mutagen_herbivore",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Herbivore serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become a herbivore",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HERBIVORE" }
+	},
+	{
+    "id": "target_iv_mutagen_carnivore",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Carnivore serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become a carnivore.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CARNIVORE" }
+	},
+	{
+    "id": "target_iv_mutagen_vines2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Vine limbs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain vine-like limbs to lash at things with or rappel down drops.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "VINES2" }
+	},
+	{
+    "id": "target_iv_mutagen_vines3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Vine sprouter serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain full control over vine limbs and their detachment.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "VINES3" }
+	},
+	{
+    "id": "target_iv_mutagen_hairroots",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hair roots serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Have roots growing from out of your hair.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HAIRROOTS" }
+	},
+	{
+    "id": "target_iv_mutagen_roots2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Roots serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain roots for feet.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ROOTS2" }
+	},
+	{
+    "id": "target_iv_mutagen_roots3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Rooter serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become better at rooting yourself at the cost of being slower on diggable terrain.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ROOTS3" }
+	},
+	{
+    "id": "target_iv_mutagen_chloromorph",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Chloromorphosis serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Sleeping on diggable soil will satisfy any hunger or thirst you might have.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "CHLOROMORPH" }
+	},
+	{
+    "id": "target_iv_mutagen_treecommunion",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Mycorrhizal communion serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Talk to trees like a sane being.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "TREE_COMMUNION" }
+	},
+	{
+    "id": "target_iv_mutagen_coldblood3",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Cold blooded serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You're slower the colder it gets but you don't have to eat as much.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "COLDBLOOD3" }
+	},
+	{
+    "id": "target_iv_mutagen_coldblood4",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Ectothermic serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. You're even slower the colder it gets but at least your food needs are even lower.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "COLDBLOOD4" }
+	},
+	{
+    "id": "target_iv_mutagen_growl",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Growling serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a growl in your voice.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "GROWL" }
+	},
+	{
+    "id": "target_iv_mutagen_snarl",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Snarling serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a snarl in your voice.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SNARL" }
+	},
+	{
+    "id": "target_iv_mutagen_hiss",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Hissing serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a hiss in your voice.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "HISS" }
+	},
+	{
+    "id": "target_iv_mutagen_armfeathers",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feathered arms serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Get feathers on your arms. Not much use beyond waterproofing and very minor protection.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ARM_FEATHERS" }
+	},
+	{
+    "id": "target_iv_mutagen_insectarmsok",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Insect arms serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Sprout two extra insect-like arms. They don't have much use currently.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INSECT_ARMS_OK" }
+	},
+	{
+    "id": "target_iv_mutagen_arachnidarmsok",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Arachnid arms serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Sprout four extra arachnidian arms. They don't have much use currently.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ARACHNID_ARMS_OK" }
+	},
+	{
+    "id": "target_iv_mutagen_armtentacles8",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "8 tentacle arms serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain 8 tentacle arms.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ARM_TENTACLES_8" }
+	},
+	{
+    "id": "target_iv_mutagen_shell",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Shell serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain a shell to protect you. Restricts and will destroy torso equipment on growth.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SHELL" }
+	},
+	{
+    "id": "target_iv_mutagen_shell2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Roomy shell serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turn your shell into one you can sleep in and gain warmth in.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SHELL2" }
+	},
+	{
+    "id": "target_iv_mutagen_legtentacles",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tentacle legs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Swap your legs for some tentacles.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LEG_TENTACLES" }
+	},
+	{
+    "id": "target_iv_mutagen_legtentbrace",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Tentacle bracing serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Give your lower tentacles some suckers to keep you in place.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "LEG_TENT_BRACE" }
+	},
+	{
+    "id": "target_iv_mutagen_acidproof",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Acidproof serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Make your flesh immune to acid.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ACIDPROOF" }
+	},
+	{
+    "id": "target_iv_mutagen_acidblood",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Acid blood serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Turn your blood into acid, make them regret hurting you.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ACIDBLOOD" }
+	},
+	{
+    "id": "target_iv_mutagen_amphibian",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Amphibious serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become amphibiousm comfortable both on land and in water.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "AMPHIBIAN" }
+	},
+	{
+    "id": "target_iv_mutagen_seesleep",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Lidless eyes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Remove your eyelids and replace them with a see-through membrane.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SEESLEEP" }
+	},
+	{
+    "id": "target_iv_mutagen_watersleep",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Aqueous repose serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Falling asleep underwater should be easier now.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WATERSLEEP" }
+	},
+	{
+    "id": "target_iv_mutagen_freshwaterosmosis",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Freshwater osmosis serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Hydrate your body by being in water.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FRESHWATEROSMOSIS" }
+	},
+	{
+    "id": "target_iv_mutagen_electroreceptors",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Electroreceptors serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Become capable of seeing robots and electric creatures through walls but be weak to shocks.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "ELECTRORECEPTORS" }
+	},
+	{
+    "id": "target_iv_mutagen_sharkteeth",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Shark teeth serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain sharp teeth like those of a shark and shed and replace them frequently.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "SHARKTEETH" }
+	},
+	{
+    "id": "target_iv_mutagen_fastreflexes",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Fast reflexes serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Gain faster reflexes and improve your dodging.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FAST_REFLEXES" }
+	}
+  ]
