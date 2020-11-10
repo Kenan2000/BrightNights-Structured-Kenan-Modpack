@@ -7,7 +7,7 @@
     "skill_used": "tailor",
     "difficulty": 7,
     "skills_required": [ "fabrication", 2 ],
-    "time": "1 h",
+    "time": "3 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 60 ] ],
     "tools": [ [ [ "welder", 10 ], [ "welder_crude", 16 ], [ "soldering_iron", 16 ], [ "toolset", 16 ] ] ],
@@ -32,7 +32,7 @@
     "skill_used": "tailor",
     "difficulty": 7,
     "skills_required": [ "fabrication", 2 ],
-    "time": "2 h",
+    "time": "3 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 90 ] ],
     "tools": [ [ [ "welder", 14 ], [ "welder_crude", 25 ], [ "soldering_iron", 25 ], [ "toolset", 25 ] ] ],
@@ -51,7 +51,7 @@
     "skill_used": "tailor",
     "difficulty": 8,
     "skills_required": [ "fabrication", 3 ],
-    "time": "45 m",
+    "time": "3 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 35 ] ],
     "tools": [ [ [ "welder", 30 ], [ "welder_crude", 47 ], [ "soldering_iron", 47 ], [ "toolset", 47 ] ] ],
@@ -83,7 +83,7 @@
     "skill_used": "fabrication",
     "difficulty": 6,
     "skills_required": [ "tailor", 6 ],
-    "time": "20 m",
+    "time": "1 h",
     "autolearn": true,
     "using": [ [ "adhesive", 1 ], [ "sewing_standard", 30 ] ],
     "tools": [ [ [ "welder", 30 ], [ "welder_crude", 50 ], [ "soldering_iron", 50 ], [ "toolset", 50 ] ] ],
@@ -102,7 +102,7 @@
     "skill_used": "tailor",
     "difficulty": 5,
     "skills_required": [ "fabrication", 4 ],
-    "time": "45 m",
+    "time": "1 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 60 ] ],
     "tools": [ [ [ "welder", 13 ], [ "welder_crude", 21 ], [ "soldering_iron", 21 ], [ "toolset", 21 ] ] ],
@@ -116,7 +116,7 @@
     "skill_used": "tailor",
     "difficulty": 7,
     "skills_required": [ "fabrication", 4 ],
-    "time": "3 h",
+    "time": "7 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 130 ] ],
     "tools": [ [ [ "welder", 20 ], [ "welder_crude", 30 ], [ "soldering_iron", 30 ], [ "toolset", 30 ] ] ],
@@ -135,7 +135,7 @@
         [ "fanny", 2 ]
       ],
       [ [ "duct_tape", 130 ] ],
-      [ [ "kevlar", 1 ], [ "modularvest", 1 ], [ "swat_armor", 1 ], [ "kevlar_plate", 18 ] ]
+      [ [ "kevlar", 1 ], [ "ballistic_vest_empty", 1 ], [ "swat_armor", 1 ], [ "kevlar_plate", 18 ] ]
     ]
   },
   {
@@ -146,7 +146,7 @@
     "skill_used": "tailor",
     "difficulty": 8,
     "skills_required": [ "fabrication", 9 ],
-    "time": "2 h",
+    "time": "5 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 50 ], [ "blacksmithing_standard", 24 ], [ "steel_standard", 6 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 } ],
@@ -173,7 +173,7 @@
     "skill_used": "tailor",
     "difficulty": 8,
     "skills_required": [ "fabrication", 9 ],
-    "time": "3 h",
+    "time": "5 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 70 ], [ "blacksmithing_standard", 32 ], [ "steel_standard", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 } ],
@@ -194,7 +194,7 @@
     "skill_used": "tailor",
     "difficulty": 8,
     "skills_required": [ "fabrication", 9 ],
-    "time": "4 h",
+    "time": "7 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 15 ], [ "blacksmithing_standard", 32 ], [ "steel_standard", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 } ],
@@ -226,7 +226,7 @@
     "skill_used": "fabrication",
     "difficulty": 9,
     "skills_required": [ "tailor", 7 ],
-    "time": "4 h",
+    "time": "6 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 70 ], [ "blacksmithing_standard", 32 ], [ "steel_standard", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 } ],
@@ -245,7 +245,7 @@
     "skill_used": "tailor",
     "difficulty": 7,
     "skills_required": [ "fabrication", 9 ],
-    "time": "3 h",
+    "time": "4 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 40 ], [ "blacksmithing_standard", 32 ], [ "steel_standard", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 } ],
@@ -266,7 +266,7 @@
     "skill_used": "tailor",
     "difficulty": 8,
     "skills_required": [ "fabrication", 9 ],
-    "time": "10 h",
+    "time": "72 h",
     "autolearn": true,
     "using": [ [ "sewing_standard", 200 ], [ "blacksmithing_standard", 120 ], [ "steel_standard", 20 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 } ],
@@ -287,8 +287,107 @@
         [ "fanny", 2 ]
       ],
       [ [ "duct_tape", 350 ] ],
-      [ [ "kevlar", 2 ], [ "modularvest", 2 ], [ "swat_armor", 2 ], [ "kevlar_plate", 48 ] ],
-	  [ [ "kevlar", 2 ], [ "modularvest", 2 ], [ "swat_armor", 2 ], [ "kevlar_plate", 48 ] ]
+      [ [ "kevlar", 2 ], [ "ballistic_vest_empty", 2 ], [ "swat_armor", 2 ], [ "kevlar_plate", 48 ] ],
+	  [ [ "kevlar", 2 ], [ "ballistic_vest_empty", 2 ], [ "swat_armor", 2 ], [ "kevlar_plate", 48 ] ]
+    ]
+  },
+  {
+    "result": "mss_cloak_hsurvivor",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "12 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 250 ] ],
+    "components": [ [ [ "leather", 72 ], [ "tanned_hide", 12 ] ] ]
+  },
+  {
+    "result": "mss_rubber_survivor_undersuit",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "time": "9 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 40 ] ],
+	"tools": [ [ [ "soldering_iron", 50 ] ], [ [ "surface_heat", 60, "LIST" ] ] ],
+    "components": [
+	[ [ "rag", 7 ] ],
+	[ [ "chunk_rubber", 20 ] ],
+	[ [ "plastic_chunk", 16 ] ]
+	]
+  },
+  {
+    "result": "mss_fancy_plate_gloves",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HANDS",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [ "fabrication", 10 ],
+    "time": "48 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 60 ], [ "blacksmithing_standard", 35 ], [ "steel_standard", 10 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
+    "components": [
+      [ [ "leather", 10 ], [ "tanned_hide", 2 ] ]
+    ]
+  },
+  {
+    "result": "mss_fancy_plate_boots",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [ "fabrication", 10 ],
+    "time": "62 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 60 ], [ "blacksmithing_standard", 40 ], [ "steel_standard", 14 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
+    "components": [
+      [ [ "leather", 20 ], [ "tanned_hide", 4 ] ]
+    ]
+  },
+  {
+    "result": "mss_fancy_plate_helmet",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [ "fabrication", 10 ],
+    "time": "96 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 50 ], [ "blacksmithing_standard", 80 ], [ "steel_standard", 22 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
+    "components": [
+      [ [ "leather", 10 ], [ "tanned_hide", 2 ] ]
+    ]
+  },
+  {
+    "result": "mss_fancy_plate_armor",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 8,
+    "skills_required": [ "fabrication", 10 ],
+    "time": "112 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 150 ], [ "blacksmithing_standard", 130 ], [ "steel_standard", 25 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "swage", -1 ] ] ],
+    "components": [
+      [ [ "rag", 25 ] ],
+      [ [ "leather", 30 ], [ "tanned_hide", 6 ] ],
+      [ [ "coat_rain", 1 ], [ "jacket_windbreaker", 1 ], [ "jacket_evac", 1 ], [ "coat_gut", 1 ] ]
     ]
   }
 ]
