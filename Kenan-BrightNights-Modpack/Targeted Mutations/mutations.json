@@ -328,13 +328,14 @@
   {
     "type": "mutation",
     "id": "NIGHTVISION",
+    "copy-from": "NIGHTVISION",
+    "extend": { "category": [ "NIGHTVISION" ] },
     "name": { "str": "Night Vision" },
     "points": 2,
     "description": "You possess natural night vision, and can see further in the dark than most.  Activate to toggle NV-visible areas on or off.",
     "starting_trait": true,
     "changes_to": [ "NIGHTVISION2" ],
     "cancels": [ "ELFA_NV", "ELFA_FNV", "FEL_NV", "URSINE_EYE" ],
-    "category": [ "BIRD", "CATTLE", "INSECT", "NIGHTVISION" ],
     "active": true,
     "starts_active": true
   },
@@ -366,7 +367,7 @@
     "points": 1,
     "description": "The bottoms of your feet are tough and you are accustomed to going barefoot.  You receive no movement penalty for not wearing shoes.",
     "starting_trait": true,
-	"category": [ "TOUGH_FFET" ],
+    "category": [ "TOUGH_FFET" ],
     "valid": false
   },
   {
@@ -377,7 +378,7 @@
     "description": "It takes a lot to bring you down!  You get a 20% bonus to all hit points.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "TOUGH" ],
+    "category": [ "TOUGH" ],
     "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
     "changes_to": [ "TOUGH2" ],
     "social_modifiers": { "intimidate": 2 },
@@ -390,7 +391,7 @@
     "points": 3,
     "description": "You can shrug off almost anything!  You get a 30% bonus to all hit points.",
     "valid": false,
-	"category": [ "TOUGH2" ],
+    "category": [ "TOUGH2" ],
     "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
     "prereqs": [ "TOUGH" ],
     "changes_to": [ "TOUGH3" ],
@@ -404,7 +405,7 @@
     "points": 4,
     "description": "Nothing can break you!  You get a 40% bonus to all hit points.",
     "valid": false,
-	"category": [ "TOUGH3" ],
+    "category": [ "TOUGH3" ],
     "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
     "prereqs": [ "TOUGH2" ],
     "social_modifiers": { "intimidate": 4 },
@@ -446,7 +447,7 @@
     "description": "You are capable of carrying far more than someone with similar strength could.  Your maximum weight carried is increased by 35%.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "STRONGBACK" ],
+    "category": [ "STRONGBACK" ],
     "cancels": [ "BADBACK" ],
     "weight_capacity_modifier": 1.35
   },
@@ -477,7 +478,7 @@
     "points": 1,
     "description": "You are less likely to throw up from food poisoning, alcohol, etc.  If you throw up nevertheless, you won't suffer a residual nausea.",
     "starting_trait": true,
-	"category": [ "STRONGSTOMACH" ],
+    "category": [ "STRONGSTOMACH" ],
     "changes_to": [ "NAUSEA" ],
     "//": "nope.  This does NOT lead to EATPOISON.  Stomach problems are part of the GI upgrades--one advantage to not having Robust Genetics.",
     "cancels": [ "WEAKSTOMACH" ]
@@ -492,7 +493,7 @@
     "skill_rust_multiplier": 1.33,
     "starting_trait": true,
     "valid": false,
-	"category": [ "GOODMEMORY" ],
+    "category": [ "GOODMEMORY" ],
     "cancels": [ "FORGETFUL" ]
   },
   {
@@ -521,7 +522,7 @@
     "points": 1,
     "description": "You can handle intoxicants well.  Their effects clear up more quickly for you.",
     "starting_trait": true,
-	"category": [ "TOLERANCE" ],
+    "category": [ "TOLERANCE" ],
     "leads_to": [ "ALCMET", "EATPOISON" ],
     "cancels": [ "LIGHTWEIGHT" ]
   },
@@ -555,7 +556,7 @@
     "description": "Whether due to a lifetime of exposure or through simple willpower, it's harder for you to become addicted to substances, and easier to rid yourself of these addictions.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "NONADDICTIVE" ],
+    "category": [ "NONADDICTIVE" ],
     "cancels": [ "ADDICTIVE" ]
   },
   {
@@ -639,7 +640,7 @@
     "description": "Although you still suffer the negative effects of pain, it also brings a unique pleasure to you.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "MASOCHIST" ],
+    "category": [ "MASOCHIST" ],
     "changes_to": [ "MASOCHIST_MED", "CENOBITE" ]
   },
   {
@@ -715,7 +716,7 @@
     "description": "For your whole life you've been forbidden from indulging in your peculiar tastes.  Now the world's ended, and you'll be damned if anyone is going to tell you that you can't eat people.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "CANNIBAL" ],
+    "category": [ "CANNIBAL" ],
     "cancels": [ "VEGETARIAN", "HERBIVORE", "RUMINANT", "GRAZER" ],
     "flags": [ "CANNIBAL" ]
   },
@@ -738,7 +739,7 @@
     "description": "You don't experience guilt like others do.  Even when you know your actions are wrong, you just don't care.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "PSYCHOPATH" ],
+    "category": [ "PSYCHOPATH" ],
     "social_modifiers": { "intimidate": 5 },
     "cancels": [ "KILLER", "PACIFIST" ],
     "flags": [ "CANNIBAL" ]
@@ -751,7 +752,7 @@
     "description": "You derive enjoyment from killing things.  Putting end to life seem to spark some dark satisfaction and thrill, and you crave it every moment.",
     "starting_trait": true,
     "valid": false,
-	"category": [ "KILLER" ],
+    "category": [ "KILLER" ],
     "social_modifiers": { "intimidate": 10 },
     "prereqs": [ "PSYCHOPATH" ],
     "cancels": [ "PACIFIST" ],
@@ -1497,26 +1498,28 @@
   {
     "type": "mutation",
     "id": "NIGHTVISION2",
+    "copy-from": "NIGHTVISION2",
+    "extend": { "category": [ "NIGHTVISION2" ] },
     "name": { "str": "High Night Vision" },
     "points": 4,
     "description": "You can see incredibly well in the dark!  Activate to toggle NV-visible areas on or off.",
     "prereqs": [ "NIGHTVISION" ],
     "changes_to": [ "NIGHTVISION3" ],
     "cancels": [ "ELFA_NV", "ELFA_FNV", "FEL_NV", "URSINE_EYE" ],
-    "category": [ "FISH", "BEAST", "INSECT", "RAT", "CHIMERA", "LUPINE", "MOUSE", "NIGHTVISION2" ],
     "active": true,
     "starts_active": true
   },
   {
     "type": "mutation",
     "id": "NIGHTVISION3",
+    "copy-from": "NIGHTVISION3",
+    "extend": { "category": [ "NIGHTVISION3" ] },
     "name": { "str": "Full Night Vision" },
     "points": 6,
     "description": "You can see in pitch blackness as if you were wearing night-vision goggles.  Activate to toggle NV-visible areas on or off.",
     "prereqs": [ "NIGHTVISION2" ],
     "leads_to": [ "INFRARED" ],
     "cancels": [ "ELFA_NV", "ELFA_FNV", "FEL_NV", "URSINE_EYE" ],
-    "category": [ "FISH", "TROGLOBITE", "SPIDER", "NIGHTVISION3" ],
     "active": true,
     "starts_active": true
   },
@@ -1535,12 +1538,13 @@
   {
     "type": "mutation",
     "id": "CEPH_VISION",
+    "copy-from": "CEPH_VISION",
+    "extend": { "category": [ "CEPH_VISION" ] },
     "name": { "str": "Cephalopod Vision" },
     "points": 3,
     "description": "Your brain has caught up with your eyes.  You can see much better in the dark, but sunlight seems much brighter now.  Activate to toggle NV-visible areas on or off.",
     "prereqs": [ "CEPH_EYES" ],
     "cancels": [ "LIZ_IR", "FEL_NV", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3", "ELFA_NV", "ELFA_FNV" ],
-    "category": [ "CEPHALOPOD", "CEPH_VISION" ],
     "active": true,
     "starts_active": true
   },
@@ -1559,25 +1563,27 @@
   {
     "type": "mutation",
     "id": "ELFA_NV",
+    "copy-from": "ELFA_NV",
+    "extend": { "category": [ "ELFA_NV" ] },
     "name": { "str": "Fey Vision" },
     "points": 3,
     "description": "The shadows don't seem as dark now.  Activate to toggle NV-visible areas on or off.",
     "prereqs": [ "ELFAEYES" ],
     "changes_to": [ "ELFA_FNV" ],
     "cancels": [ "LIZ_IR", "FEL_NV", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3" ],
-    "category": [ "ELFA", "ELFA_NV" ],
     "active": true,
     "starts_active": true
   },
   {
     "type": "mutation",
     "id": "ELFA_FNV",
+    "copy-from": "ELFA_FNV",
+    "extend": { "category": [ "ELFA_FNV" ] },
     "name": { "str": "Fey Nightsight" },
     "points": 5,
     "description": "You have great low-light vision now, though that doesn't allow you to perform fine tasks such as crafting and reading in darkness.  Activate to toggle NV-visible areas on or off.",
     "prereqs": [ "ELFA_NV" ],
     "cancels": [ "LIZ_IR", "FEL_NV", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3" ],
-    "category": [ "ELFA", "ELFA_FNV" ],
     "active": true,
     "starts_active": true
   },
@@ -1609,6 +1615,8 @@
   {
     "type": "mutation",
     "id": "URSINE_EYE",
+    "copy-from": "URSINE_EYE",
+    "extend": { "category": [ "URSINE_EYE" ] },
     "name": { "str": "Ursine Vision" },
     "points": 1,
     "description": "Your visual processing has shifted: though you can see better in the dark, you're nearsighted in the light.  Maybe glasses would help.  Activate to toggle NV-visible areas on or off.",
@@ -1623,7 +1631,6 @@
       "NIGHTVISION3",
       "MYOPIC"
     ],
-    "category": [ "URSINE", "URSINE_EYE" ],
     "active": true,
     "starts_active": true
   },
@@ -2411,7 +2418,7 @@
     "visibility": 1,
     "ugliness": 2,
     "description": "Your skin is covered with fine spines.  Whenever an unarmed opponent strikes a part of your body that is not covered by clothing, they will receive moderate damage.",
-	"category": [ "SPINES" ],
+    "category": [ "SPINES" ],
     "changes_to": [ "QUILLS" ]
   },
   {
@@ -2422,7 +2429,7 @@
     "visibility": 3,
     "ugliness": 3,
     "description": "Your body is covered with large quills.  Whenever an unarmed opponent strikes a part of your body that is not covered by clothing, they will receive significant damage.",
-	"category": [ "QUILLS" ],
+    "category": [ "QUILLS" ],
     "prereqs": [ "SPINES" ]
   },
   {
@@ -2436,7 +2443,7 @@
     "active": true,
     "cost": 10,
     "hunger": true,
-	"category": [ "BARBS" ],
+    "category": [ "BARBS" ],
     "ranged_mutation": { "type": "mut_quills", "message": "You fire off some of your quills." },
     "prereqs": [ "QUILLS" ]
   },
@@ -3347,7 +3354,7 @@
     "types": [ "HORNS" ],
     "prereqs": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
-	"category": [ "HORNS_POINTED" ],
+    "category": [ "HORNS_POINTED" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You stab %s with your pointed horns",
@@ -3368,7 +3375,7 @@
     "types": [ "HORNS" ],
     "prereqs": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
-	"category": [ "ANTLERS" ],
+    "category": [ "ANTLERS" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You butt %s with your antlers",
@@ -3541,7 +3548,7 @@
     "types": [ "TAIL" ],
     "prereqs": [ "TAIL_LONG" ],
     "restricts_gear": [ "LEG_L", "LEG_R" ],
-	"category": [ "TAIL_STING" ],
+    "category": [ "TAIL_STING" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You sting %s with your tail",
@@ -3633,7 +3640,7 @@
     "name": { "str": "Pain Recovery" },
     "points": 3,
     "description": "You recover from pain slightly faster than normal.",
-	"category": [ "PAINREC1" ],
+    "category": [ "PAINREC1" ],
     "changes_to": [ "PAINREC2" ]
   },
   {
@@ -3643,7 +3650,7 @@
     "points": 5,
     "description": "You recover from pain faster than normal.",
     "prereqs": [ "PAINREC1" ],
-	"category": [ "PAINREC2" ],
+    "category": [ "PAINREC2" ],
     "changes_to": [ "PAINREC3" ]
   },
   {
@@ -3653,7 +3660,7 @@
     "points": 8,
     "description": "You recover from pain much faster than normal.",
     "prereqs": [ "PAINREC2" ],
-	"category": [ "PAINREC3" ]
+    "category": [ "PAINREC3" ]
   },
   {
     "type": "mutation",
@@ -3879,7 +3886,7 @@
     "types": [ "WINGS" ],
     "prereqs": [ "WINGS_STUB" ],
     "category": [ "INSECT", "WINGS_INSECT" ],
-	"enchantments": [ "EFFECT_SLOW_FALL" ],
+    "enchantments": [ "EFFECT_SLOW_FALL" ],
     "active": true,
     "cost": 20,
     "time": 10,
@@ -4520,7 +4527,7 @@
     "prereqs": [ "SMALL" ],
     "cancels": [ "LARGE", "LARGE_OK", "HUGE", "HUGE_OK" ],
     "changes_to": [ "SMALL_OK" ],
-    "category": [ "MOUSE", "SMALL2"],
+    "category": [ "MOUSE", "SMALL2" ],
     "hp_modifier": -0.3,
     "dodge_modifier": 2,
     "weight_capacity_modifier": 0.5,
@@ -4641,10 +4648,10 @@
     "ugliness": 4,
     "description": "You have a pair of large, leathery wings. Like those of a bat. Though they don't allow you to fly, you can at least slow your falls to safe levels with them. Activate to unfurl.",
     "types": [ "WINGS" ],
-	"enchantments": [ "EFFECT_SLOW_FALL" ],
-	"active": true,
+    "enchantments": [ "EFFECT_SLOW_FALL" ],
+    "active": true,
     "prereqs": [ "WINGS_STUB" ],
-	"category": [ "WINGS_BAT" ]
+    "category": [ "WINGS_BAT" ]
   },
   {
     "type": "mutation",
@@ -4656,10 +4663,10 @@
     "description": "You have a very large and very beautiful pair of brightly-colored wings.  They can't lift you, but falls shouldn't be so bad anymore and they certainly catch air and attention! Activate to use.",
     "valid": false,
     "purifiable": false,
-	"active": true,
+    "active": true,
     "encumbrance_always": [ [ "TORSO", 10 ] ],
     "types": [ "WINGS" ],
-	"enchantments": [ "EFFECT_SLOW_FALL" ],
+    "enchantments": [ "EFFECT_SLOW_FALL" ],
     "prereqs": [ "WINGS_STUB" ],
     "threshreq": [ "THRESH_INSECT" ],
     "category": [ "INSECT", "WINGS_BUTTERFLY" ],
@@ -4687,7 +4694,7 @@
     "visibility": 6,
     "ugliness": 2,
     "description": "Your skin is covered in a pattern of red spots.",
-	"category": [ "SPOTS" ],
+    "category": [ "SPOTS" ],
     "changes_to": [ "SORES" ]
   },
   {
@@ -4751,7 +4758,7 @@
     "description": "You're a real head-turner.  Some people will react well to your appearance, and most people have an easier time trusting you.",
     "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
     "prereqs": [ "PRETTY" ],
-	"category": [ "BEAUTIFUL" ],
+    "category": [ "BEAUTIFUL" ],
     "changes_to": [ "BEAUTIFUL2" ]
   },
   {
@@ -4764,7 +4771,7 @@
     "description": "You are a vision of beauty.  Some people will react very well to your looks, and most people will trust you immediately.",
     "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
     "prereqs": [ "BEAUTIFUL" ],
-	"category": [ "BEAUTIFUL2" ],
+    "category": [ "BEAUTIFUL2" ],
     "changes_to": [ "BEAUTIFUL3" ]
   },
   {
@@ -5439,7 +5446,7 @@
     "description": "Your body's ability to digest meat is severely hampered.  Eating meat has a good chance of making you vomit it back up; even if you manage to keep it down, its nutritional value is greatly reduced.",
     "cancels": [ "CARNIVORE", "CANNIBAL", "EATDEAD", "STRICT_HUMANITARIAN", "SAPIOVORE", "ANTIFRUIT", "MEATARIAN" ],
     "prereqs": [ "VEGETARIAN" ],
-	"category": [ "HERBIVORE" ],
+    "category": [ "HERBIVORE" ],
     "leads_to": [ "RUMINANT" ]
   },
   {
@@ -6051,7 +6058,7 @@
     "points": 1,
     "description": "You sometimes look back on your days before your tail came in.  But you're better now.",
     "valid": false,
-	"category": [ "THRESH_LIZARD" ],
+    "category": [ "THRESH_LIZARD" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6062,7 +6069,7 @@
     "points": 1,
     "description": "You're sure you'll fly someday.  In the meantime, there are still nests to build.",
     "valid": false,
-	"category": [ "THRESH_BIRD" ],
+    "category": [ "THRESH_BIRD" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6073,7 +6080,7 @@
     "points": 1,
     "description": "Ninety percent of the planet, and it's yours to explore.  And colonize.  And enjoy.  What was that about a surface?",
     "valid": false,
-	"category": [ "THRESH_FISH" ],
+    "category": [ "THRESH_FISH" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6084,7 +6091,7 @@
     "points": 1,
     "description": "It's about time you grew out.  Now that you've matured, it is time to make something of yourself.",
     "valid": false,
-	"category": [ "THRESH_BEAST" ],
+    "category": [ "THRESH_BEAST" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6095,7 +6102,7 @@
     "points": 1,
     "description": "Stalking prey, eating well, and lying in the sun.  Mmm, all you could ever desire.",
     "valid": false,
-	"category": [ "THRESH_FELINE" ],
+    "category": [ "THRESH_FELINE" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6106,7 +6113,7 @@
     "points": 1,
     "description": "You're the perfect candidate to lead a pack.",
     "valid": false,
-	"category": [ "THRESH_LUPINE" ],
+    "category": [ "THRESH_LUPINE" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6118,7 +6125,7 @@
     "description": "So the humans died, what's the worry?  Now they won't ruin the woods.",
     "cancels": [ "CARNIVORE" ],
     "valid": false,
-	"category": [ "THRESH_URSINE" ],
+    "category": [ "THRESH_URSINE" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6129,7 +6136,7 @@
     "points": 1,
     "description": "Civilization collapsed?  Great!  You and your kin will never have to worry about a slaughterhouse again.",
     "valid": false,
-	"category": [ "THRESH_CATTLE" ],
+    "category": [ "THRESH_CATTLE" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6140,7 +6147,7 @@
     "points": 1,
     "description": "It would be good to be a Queen, having workers constantly servicing your every need… but how would you keep them in line?",
     "valid": false,
-	"category": [ "THRESH_INSECT" ],
+    "category": [ "THRESH_INSECT" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6151,7 +6158,7 @@
     "points": 1,
     "description": "Well, you still have those other walking flowers-and the mushrooms too-to deal with.  But you'll manage.",
     "valid": false,
-	"category": [ "THRESH_PLANT" ],
+    "category": [ "THRESH_PLANT" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6162,7 +6169,7 @@
     "points": 1,
     "description": "What was that old advertisement, 'paint the planet'?  That might be a good long-term goal, but for now…",
     "valid": false,
-	"category": [ "THRESH_SLIME" ],
+    "category": [ "THRESH_SLIME" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6173,7 +6180,7 @@
     "points": 1,
     "description": "Not much point to rebuilding up in that horribly bright roofless wasteland.  Now that you've become accustomed to your new digs, there's the beginnings of a great empire right here, underground.",
     "valid": false,
-	"category": [ "THRESH_TROGLOBITE" ],
+    "category": [ "THRESH_TROGLOBITE" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6184,7 +6191,7 @@
     "points": 1,
     "description": "Strange aeons, true, but Death seems to be slacking and you are doing just fine.",
     "valid": false,
-	"category": [ "THRESH_CEPHALOPOD" ],
+    "category": [ "THRESH_CEPHALOPOD" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6195,7 +6202,7 @@
     "points": 1,
     "description": "Well, maybe you'll just have to make your own world wide web.",
     "valid": false,
-	"category": [ "THRESH_SPIDER" ],
+    "category": [ "THRESH_SPIDER" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6206,7 +6213,7 @@
     "points": 1,
     "description": "Hey.  Civilization fell.  You're still around.  'Rat' just isn't respectful.",
     "valid": false,
-	"category": [ "THRESH_RAT" ],
+    "category": [ "THRESH_RAT" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6217,7 +6224,7 @@
     "points": 1,
     "description": "After all those experiments, what's a few more, hmm?",
     "valid": false,
-	"category": [ "THRESH_MEDICAL" ],
+    "category": [ "THRESH_MEDICAL" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6228,7 +6235,7 @@
     "points": 1,
     "description": "You're the perfect candidate to tidy this mess.",
     "valid": false,
-	"category": [ "THRESH_ALPHA" ],
+    "category": [ "THRESH_ALPHA" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6239,7 +6246,7 @@
     "points": 1,
     "description": "You are the tree under which humankind will shelter during these dark times.",
     "valid": false,
-	"category": [ "THRESH_ELFA" ],
+    "category": [ "THRESH_ELFA" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6250,7 +6257,7 @@
     "points": 1,
     "description": "You can't tell what you are anymore.  Everything and yet nothing, like you weren't meant to exist.  But you do, and you're a force, no matter what happens.",
     "valid": false,
-	"category": [ "THRESH_CHIMERA" ],
+    "category": [ "THRESH_CHIMERA" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6261,7 +6268,7 @@
     "points": 1,
     "description": "The chance to undo not one but TWO extinction events.  You're confident you'll do fine.",
     "valid": false,
-	"category": [ "THRESH_RAPTOR" ],
+    "category": [ "THRESH_RAPTOR" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6272,7 +6279,7 @@
     "points": 1,
     "description": "So much food, everywhere!  And nobody's even guarding it anymore!  These are good times.",
     "valid": false,
-	"category": [ "THRESH_MOUSE" ],
+    "category": [ "THRESH_MOUSE" ],
     "purifiable": false,
     "threshold": true
   },
@@ -6897,7 +6904,7 @@
     "points": 3,
     "description": "You have fast reflexes, allowing you to dodge attacks and grabs more easily.",
     "starting_trait": true,
-	"category": [ "FAST_REFLEXES" ],
+    "category": [ "FAST_REFLEXES" ],
     "dodge_modifier": 2
   }
 ]
