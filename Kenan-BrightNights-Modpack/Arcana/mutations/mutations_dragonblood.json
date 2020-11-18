@@ -185,7 +185,7 @@
       { "part": "HAND_R", "ignored": 2 },
       { "part": "TORSO", "ignored": 20 }
     ],
-    "armor": [ { "parts": "ALL", "bash": 1, "cut": 4, "stab": 2, "acid": 3 } ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 4, "stab": 2, "bullet": 1, "acid": 3 } ]
   },
   {
     "type": "mutation",
@@ -512,7 +512,7 @@
     "types": [ "HORNS" ],
     "restricts_gear": [ "HEAD" ],
     "allow_soft_gear": true,
-    "armor": [ { "parts": "HEAD", "bash": 7, "cut": 9, "stab": 5 } ],
+    "armor": [ { "parts": "HEAD", "bash": 7, "cut": 9, "stab": 5, "bullet": 3 } ],
     "attacks": {
       "attack_text_u": "You headbutt %s",
       "attack_text_npc": "%1$s headbutts %2$s",
@@ -537,7 +537,7 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "wet_protection": [ { "part": "TORSO", "ignored": 15 } ],
     "encumbrance_always": [ [ "TORSO", 5 ] ],
-    "armor": [ { "parts": "TORSO", "bash": 5, "cut": 15, "stab": 10 } ]
+    "armor": [ { "parts": "TORSO", "bash": 5, "cut": 15, "stab": 10, "bullet": 5 } ]
   },
   {
     "type": "mutation",
