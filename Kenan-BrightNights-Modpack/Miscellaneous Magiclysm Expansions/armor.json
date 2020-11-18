@@ -1,1 +1,28 @@
-[ ]
+[
+  {
+    "id": "demon_chitin_armor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "demon armor" },
+    "//": "Armor crafted from the chitin of some foul creature",
+    "description": "Thine armour hath been forged from some foul daemon, which provides ye unrivaled protection from their fires!.",
+    "weight": "1073 g",
+    "volume": "12 L",
+    "price": 1000,
+    "price_postapoc": 27500,
+    "to_hit": 1,
+    "bashing": 1,
+    "looks_like": "dragonskin",
+    "material": [ "demon_chitin" ],
+    "symbol": "#",
+    "color": "red",
+    "covers": [ "TORSO", "ARM_L", "ARM_R", "HAND_L", "HAND_R", "LEG_L", "LEG_R", "FOOT_L", "FOOT_R", "HEAD", "EYES", "MOUTH" ],
+    "coverage": 100,
+    "encumbrance": 20,
+    "storage": "0 ml",
+    "warmth": 25,
+    "material_thickness": 8,
+    "environmental_protection": 40,
+    "flags": [ "STURDY" ]
+  }
+]

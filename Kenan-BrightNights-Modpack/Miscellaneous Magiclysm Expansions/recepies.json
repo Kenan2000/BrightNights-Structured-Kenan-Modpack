@@ -1,5 +1,6 @@
-  [
-   {"result": "small_mana_crystal",
+[
+  {
+    "result": "small_mana_crystal",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_AMMO",
@@ -7,12 +8,12 @@
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
     "time": "15 m",
-	"autolearn": true,
-        "tools": [ [ [ "mortar_pestle", -1 ] ] ],
-	 "components": [
-       [ [ "crystallized_mana", 10 ] ] ]   
+    "autolearn": true,
+    "tools": [ [ [ "mortar_pestle", -1 ] ] ],
+    "components": [ [ [ "crystallized_mana", 10 ] ] ]
   },
-  {"result": "mana_potion_lesser",
+  {
+    "result": "mana_potion_lesser",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_POTIONS",
@@ -22,10 +23,10 @@
     "time": "15 m",
     "autolearn": true,
     "qualities": [ { "id": "CONTAIN", "level": 1 }, { "id": "BOIL", "level": 2 } ],
-    "components": [
-       [ [ "crystallized_mana", 5 ] ], [ [ "potion_starter", 1 ] ] ]
+    "components": [ [ [ "crystallized_mana", 5 ] ], [ [ "potion_starter", 1 ] ] ]
   },
-   {"result": "wand_demon_fireball",
+  {
+    "result": "wand_demon_fireball",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -33,12 +34,12 @@
     "skills_required": [ "spellcraft", 2 ],
     "difficulty": 2,
     "time": "30 m",
-	"autolearn": true,
-	"qualities": [ { "id": "CHISEL", "level": 1 } ],
-	 "components": [
-       [ [ "demon_chitin_piece", 5 ] ], [ [ "demon_spider_fang", 2 ] ] ]                 
+    "autolearn": true,
+    "qualities": [ { "id": "CHISEL", "level": 1 } ],
+    "components": [ [ [ "demon_chitin_piece", 5 ] ], [ [ "demon_spider_fang", 2 ] ] ]
   },
-  {"result": "mana_engine",
+  {
+    "result": "mana_engine",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
@@ -47,12 +48,23 @@
     "difficulty": 5,
     "time": "1 h 30 m",
     "autolearn": true,
-    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 }, { "id": "MANA_INFUSE", "level": 1 } ],
+    "qualities": [
+      { "id": "ANVIL", "level": 3 },
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CHISEL", "level": 3 },
+      { "id": "MANA_INFUSE", "level": 1 }
+    ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 400 ] ] ],
     "components": [
-       [ [ "crystallized_mana", 10 ] ], [ [ "pipe", 12 ] ], [ [ "steel_chunk", 8 ] ], [ [ "small_mana_crystal", 10 ] ], [ [ "rune_technomancer", 1 ] ] ]   
+      [ [ "crystallized_mana", 10 ] ],
+      [ [ "pipe", 12 ] ],
+      [ [ "steel_chunk", 8 ] ],
+      [ [ "small_mana_crystal", 10 ] ],
+      [ [ "rune_technomancer", 1 ] ]
+    ]
   },
-  {"result": "crystallized_mana",
+  {
+    "result": "crystallized_mana",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_MATERIALS",
@@ -60,12 +72,12 @@
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
     "time": "15 m",
-	"autolearn": true,
-        "tools": [ [ [ "mortar_pestle", -1 ] ] ],
-	 "components": [
-       [ [ "mushroom_magic", 5 ] ] ]   
+    "autolearn": true,
+    "tools": [ [ [ "mortar_pestle", -1 ] ] ],
+    "components": [ [ [ "mushroom_magic", 5 ] ] ]
   },
-  {"result": "magic_fuel_bunker",
+  {
+    "result": "magic_fuel_bunker",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
@@ -76,10 +88,10 @@
     "autolearn": true,
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 400 ] ] ],
-    "components": [
-       [ [ "crystallized_mana", 10 ] ], [ [ "pipe", 12 ] ], [ [ "steel_chunk", 4 ] ], [ [ "rune_technomancer", 1 ] ] ]   
+    "components": [ [ [ "crystallized_mana", 10 ] ], [ [ "pipe", 12 ] ], [ [ "steel_chunk", 4 ] ], [ [ "rune_technomancer", 1 ] ] ]
   },
-  {"result": "seed_mushroom_magic",
+  {
+    "result": "seed_mushroom_magic",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
@@ -87,12 +99,12 @@
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
     "time": "15 m",
-	"autolearn": true,
-        "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
-	 "components": [ 
-       [ [ "seed_mushroom", 1 ], [ "seed_mushroom_morel", 1 ] ] ]                                          
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
+    "components": [ [ [ "seed_mushroom", 1 ], [ "seed_mushroom_morel", 1 ] ] ]
   },
-  {"result": "demon_chitin_armor",
+  {
+    "result": "demon_chitin_armor",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_ARMOR",
@@ -100,10 +112,12 @@
     "skills_required": [ "spellcraft", 3 ],
     "difficulty": 4,
     "time": "1 h",
-	"autolearn": true,
-	"qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
-	"tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 400 ] ] ],
-	 "components": [
+    "autolearn": true,
+    "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 400 ] ] ],
+    "components": [
       [ [ "demon_chitin_piece", 20 ], [ "demon_chitin_plate", 10 ] ],
-      [ [ "fur", 20 ], [ "tanned_pelt", 3 ], [ "leather", 20 ], [ "tanned_hide", 3 ] ] ] } ] 
-   
+      [ [ "fur", 20 ], [ "tanned_pelt", 3 ], [ "leather", 20 ], [ "tanned_hide", 3 ] ]
+    ]
+  }
+]
