@@ -609,7 +609,12 @@
     "type": "GUN",
     "name": "STG-44 (5.56x45 full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 5.56x45 round. The lower receiver has been replaced with an original lower receiver.",
-    "ammo": "223"
+    "ammo": "223",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "223", [ "stgmag223" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_223_sbr_auto",
@@ -617,7 +622,12 @@
     "type": "GUN",
     "name": "STG-44 (5.56x45 SBR full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 5.56x45 round. The lower receiver has been replaced with an original lower receiver and it has also been cut down and converted into an SBR.",
-    "ammo": "223"
+    "ammo": "223",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "223", [ "stgmag223" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_223_smol_auto",

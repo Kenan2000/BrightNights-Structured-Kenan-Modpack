@@ -1,0 +1,210 @@
+[
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_brute_swipe",
+    "cooldown": 10,
+    "move_cost": 150,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 20,
+        "armor_penetration": 10
+      }
+    ],
+    "body_parts": [ [ "TORSO", 1 ] ],
+    "effects": [
+      { "id": "stunned", "duration": 2, "chance": 75 },
+      { "id": "parasite_poison", "duration": 10, "chance": 100 }
+    ],
+    "hit_dmg_u": "The %1$s tentacle impacts, leaving a painful mark!",
+    "hit_dmg_npc": "The %1$s tentacle impacts <npcname>'s torso!",
+    "no_dmg_msg_u": "The %1$s tentacle glances off your armor!",
+    "no_dmg_msg_npc": "The %1$s tentacle thrashes at <npcname>'s torso, but the blow reflects off armor."
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hulk_swipe",
+    "cooldown": 10,
+    "move_cost": 175,
+    "damage_max_instance": [
+      {
+        "damage_type": "bash",
+        "amount": 35,
+        "armor_penetration": 10
+      }
+    ],
+    "body_parts": [ [ "TORSO", 1 ] ],
+    "effects": [
+      { "id": "stunned", "duration": 2, "chance": 75 },
+      { "id": "parasite_poison", "duration": 10, "chance": 100 }
+    ],
+    "hit_dmg_u": "The %1$s tentacle impacts, leaving a painful mark!",
+    "hit_dmg_npc": "The %1$s tentacle impacts <npcname>'s torso!",
+    "no_dmg_msg_u": "The %1$s tentacle glances off your armor!",
+    "no_dmg_msg_npc": "The %1$s tentacle thrashes at <npcname>'s torso, but the blow reflects off armor."
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hulk_stab",
+    "cooldown": 10,
+    "move_cost": 300,
+    "damage_max_instance": [
+      {
+        "damage_type": "stab",
+        "amount": 40,
+        "armor_penetration": 10,
+        "armor_multiplier": 0.5
+      }
+    ],
+    "body_parts": [ [ "TORSO", 1 ] ],
+    "effects": [
+      { "id": "bleed", "duration": 50, "bp": "TORSO", "chance": 100 },
+      { "id": "parasite_poison", "duration": 50, "chance":100 }
+    ],
+    "hit_dmg_u": "The %1$s tentacle impales your midsection with a white hot flash of pain!",
+    "hit_dmg_npc": "The %1$s tentacle impales <npcname>'s torso!",
+    "no_dmg_msg_u": "The %1$s tentacle tries to impale your torso, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "The %1$s tentacle tries to impale <npcname>'s torso, but fails to penetrate their armor!"
+  },
+  {
+    "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hollow_slash_torso",
+    "cooldown": 5,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 20,
+        "armor_multiplier": 0.8
+      }
+    ],
+    "body_parts": [ [ "TORSO", 1 ] ],
+    "effects": [
+      { "id": "bleed", "duration": 5, "bp": "TORSO", "chance": 50 },
+      { "id": "parasite_poison", "duration": 5, "chance": 10 }
+    ],
+    "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your chest!",
+    "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s chest!",
+    "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
+    "no_dmg_msg_npc": "The %1$s tentacle flicks swiftly across <npcname>, but fails to mscore any serious hit!"
+  },
+  {
+   "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hollow_slash_leg_l",
+    "cooldown": 10,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 20,
+        "armor_multiplier": 0.8
+      }
+    ],
+    "body_parts": [ [ "LEG_L", 1 ] ],
+    "effects": [
+      { "id": "bleed", "duration": 5, "bp": "LEG_L", "chance": 50 },
+      { "id": "parasite_poison", "duration": 5, "chance": 10 }
+    ],
+    "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your leg!",
+    "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s leg!",
+    "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
+    "no_dmg_msg_npc": "The %1$s tentacle flicks swiftly across <npcname>, but fails to mscore any serious hit!"
+  },
+  {
+   "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hollow_slash_leg_r",
+    "cooldown": 10,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 20,
+        "armor_multiplier": 0.8
+      }
+    ],
+    "body_parts": [ [ "LEG_R", 1 ] ],
+    "effects": [
+      { "id": "bleed", "duration": 5, "bp": "LEG_R", "chance": 50 },
+      { "id": "parasite_poison", "duration": 5, "chance": 10 }
+    ],
+    "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your leg!",
+    "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s leg!",
+    "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
+    "no_dmg_msg_npc": "The %1$s tentacle flicks swiftly across <npcname>, but fails to mscore any serious hit!"
+  },
+  {
+   "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hollow_slash_arm_l",
+    "cooldown": 10,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 20,
+        "armor_multiplier": 0.8
+      }
+    ],
+    "body_parts": [ [ "ARM_L", 1 ] ],
+    "effects": [
+      { "id": "bleed", "duration": 5, "bp": "ARM_L", "chance": 50 },
+      { "id": "parasite_poison", "duration": 5, "chance": 10 }
+    ],
+    "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your arm!",
+    "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s arm!",
+    "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
+    "no_dmg_msg_npc": "The %1$s tentacle flicks swiftly across <npcname>, but fails to mscore any serious hit!"
+  },
+  {
+   "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hollow_slash_arm_r",
+    "cooldown": 10,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 20,
+        "armor_multiplier": 0.8
+      }
+    ],
+	"effects": [
+      { "id": "bleed", "duration": 5, "bp": "ARM_R", "chance": 50 },
+      { "id": "parasite_poison", "duration": 5, "chance": 10 }
+    ],
+    "body_parts": [ [ "ARM_R", 1 ] ],
+    "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your arm!",
+    "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s arm!",
+    "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
+    "no_dmg_msg_npc": "The %1$s tentacle flicks swiftly across <npcname>, but fails to mscore any serious hit!"
+  },
+  {
+   "type": "monster_attack",
+    "attack_type": "melee",
+    "id": "twisted_hollow_slash_head",
+    "cooldown": 15,
+    "move_cost": 100,
+    "damage_max_instance": [
+      {
+        "damage_type": "cut",
+        "amount": 20,
+        "armor_multiplier": 0.8
+      }
+    ],
+    "body_parts": [ [ "HEAD", 1 ] ],
+    "effects": [
+      { "id": "bleed", "duration": 5, "bp": "HEAD", "chance": 50 },
+      { "id": "parasite_poison", "duration": 2, "chance": 10 }
+    ],
+    "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your head!",
+    "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s head!",
+    "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
+    "no_dmg_msg_npc": "The %1$s tentacle flicks swiftly across <npcname>, but fails to mscore any serious hit!"
+  }
+]

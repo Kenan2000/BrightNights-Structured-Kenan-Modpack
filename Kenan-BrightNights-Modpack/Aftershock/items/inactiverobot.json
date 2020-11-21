@@ -281,9 +281,10 @@
     "flags": [ "LEAK_DAM", "RADIOACTIVE", "TRADER_AVOID" ]
   },
   {
-    "abstract": "bot_utilibot_base",
+    "id": "bot_utilibot_base",
     "type": "TOOL",
     "name": "inactive utilibot",
+    "description": "Base for utility bots.",
     "looks_like": "mon_cleanerbot",
     "price": 10000,
     "price_postapoc": 10000,
@@ -295,6 +296,27 @@
     "symbol": ";",
     "color": "dark_gray",
     "flags": [ "LEAK_DAM", "RADIOACTIVE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "bot_utilibot_butler",
+    "weight": "140 kg",
+    "volume": "65 L",
+    "type": "TOOL",
+    "symbol": ";",
+    "price": 35000000,
+    "price_postapoc": 10000000,
+    "material": [ "steel", "aluminum" ],
+    "name": "inactive butler robot",
+    "description": "A luxury edition of the utility robot, manufacture with a integrated AI core capable of talking, learn cooking recipes by itself and detect simple signs of it owner to known the desires, emotions and status of it and responde properly. This last carasteristic made this robot quite controversial but those who owned claim that they were extremly pleased of how useful, careful and gentle this robot can be.",
+    "copy_from": "bot_utilibot_base",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_utilibot_butler",
+      "difficulty": 4,
+      "moves": 100,
+      "skill1": "electronics",
+      "skill2": "computer"
+    }
   },
   {
     "abstract": "bot_hack_base",
@@ -337,6 +359,7 @@
     "name": "inactive military robot",
     "looks_like": "mon_secubot",
     "material": [ "steel", "kevlar" ],
+    "description": "Base for offensive bots.",
     "weight": "140 kg",
     "volume": "62500 ml",
     "price": 10000,
@@ -383,6 +406,7 @@
     "name": "inactive defense robot",
     "looks_like": "mon_riotbot",
     "material": [ "steel", "plastic" ],
+    "description": "Base for defensive bots.",
     "weight": "140 kg",
     "volume": "62500 ml",
     "price": 10000,
