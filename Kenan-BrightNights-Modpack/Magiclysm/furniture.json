@@ -265,5 +265,66 @@
       "str_max": 40,
       "items": [ { "item": "splinter", "count": [ 2, 8 ] }, { "item": "nail", "charges": [ 5, 10 ] } ]
     }
+  },
+  {
+    "type": "furniture",
+    "id": "f_hedge_tall",
+    "name": "tall hedge",
+    "description": "A tall shrub with small green leaves, trimmed into a squared shape.  You can't see past this thick hedgerow.",
+    "symbol": "LINE_OXOX",
+    "color": "green",
+    "looks_like": "t_shrub",
+    "move_cost_mod": -1,
+    "coverage": 90,
+    "required_str": 14,
+    "connects_to": "WOODFENCE",
+    "flags": [ "FLAMMABLE_ASH", "SHRUB", "PERMEABLE", "BLOCK_WIND", "NOITEM" ],
+    "bash": {
+      "str_min": 16,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "items": [ { "item": "stick_long", "count": [ 3, 6 ] }, { "item": "splinter", "count": [ 8, 16 ] } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_topiary_abstract",
+    "name": "abstract topiary",
+    "description": "A tall shrub with small green leaves, trimmed into a fanciful abstract shape.",
+    "symbol": "^",
+    "color": "green",
+    "looks_like": "t_shrub_hydrangea",
+    "move_cost_mod": 4,
+    "coverage": 60,
+    "required_str": -1,
+    "flags": [ "FLAMMABLE_ASH", "SHRUB", "PERMEABLE" ],
+    "bash": {
+      "str_min": 10,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "items": [ { "item": "stick_long", "count": [ 3, 6 ] }, { "item": "splinter", "count": [ 8, 16 ] } ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_topiary_dragon",
+    "name": "animal topiary",
+    "description": "A tall shrub with small green leaves, trimmed into a dragon shape.",
+    "symbol": "^",
+    "color": "green",
+    "looks_like": "t_shrub_hydrangea",
+    "move_cost_mod": 4,
+    "coverage": 60,
+    "required_str": -1,
+    "flags": [ "FLAMMABLE_ASH", "SHRUB", "PERMEABLE" ],
+    "bash": {
+      "str_min": 10,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "items": [ { "item": "stick_long", "count": [ 3, 6 ] }, { "item": "splinter", "count": [ 8, 16 ] } ]
+    }
   }
 ]

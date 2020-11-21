@@ -1,0 +1,24 @@
+[
+{
+    "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE",
+	"monsters" : [
+		{ "monster" : "mon_MutEx_zombie_brute", "freq" : 1, "cost_multiplier": 20, "pack_size": [1,2] },
+		{ "monster" : "mon_MutEx_zombie_hollow", "freq" : 1, "cost_multiplier": 50, "pack_size": [1,2] },
+		{ "monster" : "mon_MutEx_zombie_hulk", "freq" : 1, "cost_multiplier": 100 },
+		{ "monster" : "mon_MutEx_zombie_acidbag", "freq" : 5, "cost_multiplier": 5},
+        { "monster" : "mon_MutEx_zombie_acidbag", "freq" : 2, "cost_multiplier": 25, "pack_size": [3,5]}
+	]
+},
+{
+    "type":"monstergroup",
+    "name" : "GROUP_ZOMBIE_MID",
+	"monsters" : [
+		{ "monster" : "mon_MutEx_zombie_brute", "freq" : 15, "cost_multiplier": 20, "pack_size": [2,3] },
+		{ "monster" : "mon_MutEx_zombie_hollow", "freq" : 10, "cost_multiplier": 20, "pack_size": [2,3] },
+		{ "monster" : "mon_MutEx_zombie_hulk", "freq" : 3, "cost_multiplier": 20 },
+		{ "monster" : "mon_MutEx_zombie_echo", "freq" : 1, "cost_multiplier": 50 },
+		{ "monster" : "mon_MutEx_zombie_beserker", "freq" : 1, "cost_multiplier": 50 }
+	]
+}
+]

@@ -51,7 +51,8 @@
     "type": "MONSTER",
     "copy-from": "mon_coyote_wolf",
     "hp": 25,
-    "upgrades": { "half_life": 19, "into": "mon_coyote_wolf_zerg" }
+    "upgrades": { "half_life": 19, "into": "mon_coyote_wolf_zerg" },
+    "delete": { "upgrades": { "half_life": 182, "into_group": "GROUP_CANINE_SICK" } }
   },
   {
     "id": "mon_sewer_snake",

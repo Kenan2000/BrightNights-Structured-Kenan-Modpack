@@ -52,7 +52,7 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "plastic" ],
-    "ammo": "9mm",
+    "ammo": [ "9mm", "40" ],
     "dispersion": 90,
     "durability": 7,
     "magazine_well": 1,
@@ -74,7 +74,7 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "ammo": "44",
+    "ammo": [ "44", "357_mag", "45", "38" ],
     "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 200,
     "durability": 8,
@@ -279,7 +279,10 @@
     "ranged_damage": { "damage_type": "stab", "amount": -1 },	
     "dispersion": 90,
     "durability": 6,
-    "clip_size": 9
+    "clip_size": 9,
+    "magazines": [
+        [ "9mm", [ "ccw9mm_mag" ] ]
+    ]
   },
   {
     "id": "kahr_k9",
@@ -293,7 +296,7 @@
     "to_hit": -2,
     "bashing": 7,
     "material": [ "steel" ],
-    "ammo": "9mm",
+    "ammo": [ "9mm", "40" ],
     "dispersion": 140,
     "durability": 7,
     "magazine_well": 1,

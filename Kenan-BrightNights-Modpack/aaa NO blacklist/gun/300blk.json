@@ -5,7 +5,11 @@
     "type": "GUN",
     "name": "M16a3",
     "description": "the third generation of the M16 series of rifles. The a3 variants have an intigrated quad-rail and a detachable carry handle for mounting optics, as well as semi-auto, burst, and full-auto fire modes. This rifle is chambered in 300 blackout",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a3burst_300blk",
@@ -13,7 +17,11 @@
     "type": "GUN",
     "name": "M16a3 (burst)",
     "description": "the third generation of the M16 series of rifles. The a3 variants have an intigrated quad-rail and a detachable carry handle for mounting optics. This rifle has an a2 lower receiver and as such only has semi-auto and burst capabilities. This rifle is chambered in 300 blackout",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a3auto_300blk",
@@ -21,7 +29,11 @@
     "type": "GUN",
     "name": "M16a3 (auto)",
     "description": "the third generation of the M16 series of rifles. The a3 variants have an intigrated quad-rail and a detachable carry handle for mounting optics. This rifle has an a1 lower receiver and as such only has semi-auto and full-auto capabilities. This rifle is chambered in 300 blackout",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "ar15_300blk",
@@ -29,7 +41,11 @@
     "type": "GUN",
     "name": "ar-15",
     "description": "This ubiquitous rifle is the forefather of M16 rifle series.  It is lightweight and accurate, but will malfunction if not properly maintained.  This one is a semi automatic civilian version and is chambered in 300 blackout",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a1_300blk",
@@ -37,7 +53,11 @@
     "type": "GUN",
     "name": "M16a1",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle is chambered in 300 blackout",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "ar15a1_300blk",
@@ -45,7 +65,11 @@
     "type": "GUN",
     "name": "m16a1  (semi-auto)",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle is a civilian reproduction chambered in 300 blackout.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a1burst_300blk",
@@ -53,7 +77,11 @@
     "type": "GUN",
     "name": "M16a1 (burst)",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle is chambered in 300 blackout and has an a2 lower receiver giving it burst fire capabilities instead of full-auto.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a1/a3_300blk",
@@ -61,7 +89,11 @@
     "type": "GUN",
     "name": "M16a1 (auto/burst)",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle is chambered in 300 blackout and has an a3 lower receiver giving it burst fire and full-auto capabilities.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a2_300blk",
@@ -69,7 +101,11 @@
     "type": "GUN",
     "name": "M16a2",
     "description": "The second generation of the M16. Full-auto was phased out in favor of a 3 shot burst mode. This rifle is chambered in 300 blackout",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a2auto_300blk",
@@ -77,7 +113,11 @@
     "type": "GUN",
     "name": "M16a2 (auto)",
     "description": "The second generation of the M16. This rifle is chambered in 300 blackout and has an a1 lower reciver giving full-auto capabilities instead of 3 shot burst.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "m16a2/a3_300blk",
@@ -85,7 +125,11 @@
     "type": "GUN",
     "name": "M16a2 (auto/burst)",
     "description": "The second generation of the M16. This rifle is chambered in 300 blackout and has an a3 lower reciver giving full-auto and 3 shot burst capabilities",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "ar15a2_300blk",
@@ -93,7 +137,11 @@
     "type": "GUN",
     "name": "M16a2 (semi-auto)",
     "description": "The second generation of the M16. This rifle is a civilian variant chambered in 300 blackout, as such it only has semi-auto capabilities.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_300blk",
@@ -101,7 +149,11 @@
     "type": "GUN",
     "name": "STG-44 (300 blackout)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and fires the proprietary 7.92 x 33 kurtz and has an effective range of 600 meters. This is a reproduction chambered in 300 blackout.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_sbr_300blk",
@@ -109,7 +161,11 @@
     "type": "GUN",
     "name": "STG-44 (300 blackout SBR)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and fires the proprietary 7.92 x 33 kurtz and has an effective range of 600 meters. This is a reproduction chambered in 300 blackout. It's been converted into an SBR and the lower receiver has been replaced with an original lower receiver.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_300blk_smol",
@@ -117,7 +173,11 @@
     "type": "GUN",
     "name": "STG-44 (300 blackout pistol)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 300 blackout round. The stock has been cut off and barrel sawed down to make for a very compact firearm.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_300blk_auto",
@@ -125,7 +185,11 @@
     "type": "GUN",
     "name": "STG-44 (300 blackout full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and fires the proprietary 7.92 x 33 kurtz and has an effective range of 600 meters. This is a reproduction chambered in 300 blackout. The lower receiver has been replaced with an original lower receiver.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_sbr_300blk_auto",
@@ -133,7 +197,11 @@
     "type": "GUN",
     "name": "STG-44 (300 blackout SBR full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and fires the proprietary 7.92 x 33 kurtz and has an effective range of 600 meters. This is a reproduction chambered in 300 blackout. It's been converted into an SBR and the lower receiver has been replaced with an original lower receiver.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   },
   {
     "id": "HMG44_300blk_smol_auto",
@@ -141,6 +209,10 @@
     "type": "GUN",
     "name": "STG-44 (300 blackout pistol full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 300 blackout round. The stock has been cut off and barrel sawed down to make for a very compact firearm. The lower receiver has been replaced with an original lower receiver.",
-    "ammo": "300blk"
+    "ammo": "300blk",
+    "magazines": [
+      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
+      [ "300blk", [ "stgmag300blk" ] ]
+    ]
   }
 ]

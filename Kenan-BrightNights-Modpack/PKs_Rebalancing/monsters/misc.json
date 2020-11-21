@@ -101,6 +101,7 @@
     "placate_triggers": [ "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 14, "into": "mon_rattlesnake_giant" },
+    "delete": { "upgrades": { "half_life": 182, "into_group": "GROUP_SNAKE_MUTANT" } },
     "flags": [ "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "SWIMS" ]
   },
   {
@@ -692,6 +693,7 @@
     "death_function": [ "NORMAL" ],
     "harvest": "mammal_fur",
     "upgrades": { "half_life": 17, "into": "mon_coyote_small" },
+    "delete": { "upgrades": { "half_life": 182, "into_group": "GROUP_CANINE_SICK" } },
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN", "KEENNOSE" ]
   },
   {

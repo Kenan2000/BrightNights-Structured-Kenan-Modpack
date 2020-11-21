@@ -1,0 +1,59 @@
+[
+	{
+		"type": "effect_type",
+		"id": "parasite_poison",
+		"int_dur_factor": 20,
+		"base_mods": {
+			"pain_chance": [2],
+			"pain_min": [1],
+			"pain_max": [3]
+		},
+		"scaling_mods": {
+			"pain_min": [2],
+			"pain_max": [2]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "beserker_rage",
+		"base_mods": {
+			"speed_mod": [100]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "speed_distortion_terrible",
+		"name": ["Distortion"],
+		"desc": ["Local time and space bend as dimensions draw closer!"],
+		"base_mods": {
+			"speed_mod": [-50]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "speed_distortion_bad",
+		"name": ["Distortion"],
+		"desc": ["Local time and space bend as dimensions draw closer!"],
+		"base_mods": {
+			"speed_mod": [-25]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "speed_distortion_good",
+		"name": ["Distortion"],
+		"desc": ["Local time and space bend as dimensions draw closer!"],
+		"base_mods": {
+			"speed_mod": [25]
+		}
+	},
+	{
+		"type": "effect_type",
+		"id": "speed_distortion_great",
+		"name": ["Distortion"],
+		"desc": ["Local time and space bend as dimensions draw closer!"],
+		"base_mods": {
+			"speed_mod": [50]
+		}
+	}
+]

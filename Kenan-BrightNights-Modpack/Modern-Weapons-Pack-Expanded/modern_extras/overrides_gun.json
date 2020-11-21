@@ -60,7 +60,7 @@
     "id": "ruger_1022",
     "copy-from": "ruger_1022",
     "type": "GUN",
-    "name": "Ruger 10/22",	
+    "name": "Ruger 10/22",
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "receiver", 1 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] 
     ]	  
   },  
@@ -69,6 +69,7 @@
     "copy-from": "deagle_44",
     "type": "GUN",
     "name": "Desert Eagle .44",
+    "ammo": [ "44", "357_mag", "45", "9mm" ],
     "magazines": [
       [ "44", [ "deaglemag" ] ],
       [ "357_mag", [ "357_mag" ] ],
@@ -81,7 +82,8 @@
     "copy-from": "acr",
     "type": "GUN",
     "name": "Bushmaster ACR",
-	"default_mods": [ "folding_stock" ],	
+	"default_mods": [ "folding_stock" ],
+    "ammo": [ "308", "22", "223" ],
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -95,7 +97,8 @@
     "type": "GUN",
     "name": "AR-15",
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "receiver", 1 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] 
-    ],	
+    ],
+    "ammo": [ "308", "22", "9mm", "223" ],
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -107,7 +110,8 @@
     "id": "h&k416a5",
     "copy-from": "h&k416a5",
     "type": "GUN",
-    "name": "H&K 416A5",	
+    "name": "H&K 416A5",
+    "ammo": [ "308", "22", "223" ],	
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -126,7 +130,8 @@
     ],
     "default_mods": [ "folding_stock" ],
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "magazine", 1 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 2 ], [ "stock", 1 ], [ "underbarrel", 1 ]
-    ],	
+    ],
+    "ammo": [ "308", "22", "223" ],
     "magazines": [
       [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -137,7 +142,8 @@
     "id": "m249",
     "copy-from": "m249",
     "type": "GUN",
-    "name": "M249",	
+    "name": "M249",
+    "ammo": [ "308", "223" ],
     "magazines": [
       [ "223", [ "stanag50", "stanag30", "transmag", "belt223", "223betacmag" ] ],
       [ "308", [ "belt308", "308betacmag" ] ]
@@ -147,7 +153,8 @@
     "id": "m27iar",
     "copy-from": "m27iar",
     "type": "GUN",
-    "name": "M27 IAR",	
+    "name": "M27 IAR",
+    "ammo": [ "308", "22", "223" ],
     "magazines": [
       [ "223", [ "stanag50", "stanag30", "transmag", "stanag10", "223betacmag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -171,7 +178,8 @@
     "type": "GUN",
     "name": "Ruger Mini-14",
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "mechanism", 4 ], [ "receiver", 1 ], [ "muzzle", 1 ], [ "sights", 1 ] 
-    ],	
+    ],
+    "ammo": [ "308", "22", "223" ],
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -182,7 +190,8 @@
     "id": "scar_l",
     "copy-from": "scar_l",
     "type": "GUN",
-    "name": "FN SCAR-L",	
+    "name": "FN SCAR-L",
+    "ammo": [ "308", "22", "223" ],	
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -194,6 +203,7 @@
     "copy-from": "sig552",
     "type": "GUN",
     "name": "SIG 552",	
+    "ammo": [ "308", "22", "223" ],
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -204,7 +214,8 @@
     "id": "steyr_aug",
     "copy-from": "steyr_aug",
     "type": "GUN",
-    "name": "Steyr AUG",	
+    "name": "Steyr AUG",
+    "ammo": [ "308", "22", "223" ],
     "magazines": [
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -215,7 +226,8 @@
     "id": "fn_fal",
     "copy-from": "fn_fal",
     "type": "GUN",
-    "name": "FN FAL",	
+    "name": "FN FAL",
+    "ammo": [ "308", "223" ],
     "magazines": [
       [ "308", [ "falmag", "falbigmag", "308betacmag" ] ],
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag" ] ]
@@ -225,7 +237,8 @@
     "id": "hk_g3",
     "copy-from": "hk_g3",
     "type": "GUN",
-    "name": "H&K G3",	
+    "name": "H&K G3",
+    "ammo": [ "308", "223" ],
     "magazines": [
       [ "308", [ "g3mag", "g3bigmag", "308betacmag" ] ],
       [ "223", [ "stanag30", "transmag", "stanag10", "stanag50", "223betacmag" ] ]
@@ -236,6 +249,7 @@
     "copy-from": "m1a",
     "type": "GUN",
     "name": "M1A",
+    "ammo": [ "308", "223" ],
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "sights", 1 ] ],	
     "magazines": [
       [ "308", [ "m14mag", "m14smallmag", "308x_14mag50" ] ],
@@ -247,6 +261,7 @@
     "copy-from": "m14ebr",
     "type": "GUN",
     "name": "M14 EBR-RI",
+    "ammo": [ "308", "223" ],
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] 
     ],	
     "magazines": [
@@ -269,7 +284,8 @@
     "id": "ak47",
     "copy-from": "ak47",
     "type": "GUN",
-    "name": "AKM",	
+    "name": "AKM",
+    "ammo": [ "762", "223", "308" ],
     "magazines": [
       [ "762", [ "akmag30", "akmag40", "akdrum75" ] ], 
       [ "223", [ "223ak74mag30", "223ak74mag35", "223ak74mag10" ] ],
@@ -281,6 +297,7 @@
     "copy-from": "arx160",
     "type": "GUN",
     "name": "Beretta ARX-160",
+    "ammo": [ "762", "223", "545x39", "308" ],
     "magazines": [
       [ "762", [ "akmag30", "akmag40", "akdrum75" ] ],
       [ "545x39", [ "ak74mag", "rpk74mag" ] ],
@@ -294,7 +311,8 @@
     "type": "GUN",
     "name": "Cx4 Storm",
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] 
-    ],	
+    ],
+    "ammo": [ "9mm", "22", "45", "46", "57" ],
     "magazines": [
       [ "9mm", [ "uzimag", "m9mag", "m9bigmag", "nato9mag", "9mmbetacmag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -307,7 +325,8 @@
     "id": "hk_mp5",
     "copy-from": "hk_mp5",
     "type": "GUN",
-    "name": "H&K MP5",	
+    "name": "H&K MP5",
+    "ammo": [ "9mm", "22", "45", "46", "57" ],
     "magazines": [
       [ "9mm", [ "mp5mag", "mp5bigmag", "9mmbetacmag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -325,6 +344,7 @@
     "description": "A uniquely designed pistol caliber carbine with an integral folding stock and that makes use of a large variety of 9mm magazines.",
     "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ] 
     ],
+    "ammo": [ "9mm", "22", "40", "45", "46", "57" ],
     "magazines": [
       [ "9mm", [ "glockmag", "glockbigmag", "uzimag", "m9mag", "m9bigmag", "sw9mm_mag", "nato9mag", "9mmbetacmag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
@@ -338,7 +358,8 @@
     "id": "uzi",
     "copy-from": "uzi",
     "type": "GUN",
-    "name": "Uzi 9mm",	
+    "name": "Uzi 9mm",
+    "ammo": [ "9mm", "22", "45", "46", "57" ],
     "magazines": [
       [ "9mm", [ "uzimag", "nato9mag", "9mmbetacmag" ] ],
       [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ],
