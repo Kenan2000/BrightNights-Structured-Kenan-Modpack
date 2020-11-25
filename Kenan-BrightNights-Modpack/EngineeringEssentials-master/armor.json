@@ -4,48 +4,24 @@
     "type": "ARMOR",
     "name": "rifle bandolier",
     "copy-from": "bandolier_rifle",
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-          "22": 16,
-          "223": 16,
-          "5x50": 16,
-          "545x39": 16,
-          "3006": 16,
-          "308": 16,
-          "300": 16,
-          "762": 16,
-          "762R": 16,
-          "8x40mm": 16,
-          "metal_rail": 16
-        },
-        "moves": 20
-      }
-    ]
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 16,
+      "ammo": [ "22", "223", "5x50", "545x39", "3006", "308", "300", "762", "762R", "8x40mm", "metal_rail" ],
+      "draw_cost": 20
+    }
   },
   {
     "id": "bandolier_wrist",
     "type": "ARMOR",
     "name": "wrist bandolier",
     "copy-from": "bandolier_wrist",
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-          "22": 4,
-          "223": 4,
-          "5x50": 4,
-          "545x39": 4,
-          "3006": 4,
-          "308": 4,
-          "300": 4,
-          "762": 4,
-          "762R": 4,
-          "8x40mm": 4,
-          "metal_rail": 4
-        },
-        "moves": 20
-      }
-    ]
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 4,
+      "ammo": [ "22", "223", "5x50", "545x39", "3006", "308", "300", "762", "762R", "8x40mm", "metal_rail" ],
+      "draw_cost": 20
+    }
   },
   {
     "id": "goggles_welding",

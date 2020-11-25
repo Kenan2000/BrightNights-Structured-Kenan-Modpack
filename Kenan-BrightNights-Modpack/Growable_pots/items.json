@@ -1,19 +1,13 @@
 [
   {
     "type": "GENERIC",
-	"category": "container",
+    "category": "container",
     "id": "gp_pot",
     "symbol": ")",
     "color": "brown",
-	"pocket_data": [
-      {
-        "pocket_type": "CONTAINER",
-        "watertight": true,
-        "rigid": true,
-        "max_contains_volume": "1250 ml",
-        "max_contains_weight": "2500 g"
-      }
-    ],
+    "contains": "1250 ml",
+    "seals": true,
+    "watertight": true,
     "name": "garden pot",
     "description": "A special pot for growing plants, maintaining them at comfortable conditions for maximum yield.  It can be crafted with various seeds to plant them.",
     "price": 600,

@@ -1,7 +1,7 @@
 [
   {
     "id": "mask_filter_xl",
-    "copy-from" : "mask_filter",
+    "copy-from": "mask_filter",
     "type": "ARMOR",
     "name": "Smoke-proof mask(XL)",
     "weight": 300,
@@ -47,7 +47,7 @@
     "volume": 2,
     "price": 6500,
     "bashing": 2,
-	"looks_like": "quiver",
+    "looks_like": "quiver",
     "material": [ "leather" ],
     "symbol": "[",
     "color": "brown",
@@ -55,84 +55,61 @@
     "coverage": 5,
     "encumbrance": 7,
     "material_thickness": 1,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "arrow": 10,
-		  "bolt": 10
-        },
-        "moves": 3
-      }
-    ],
+    "use_action": { "type": "bandolier", "capacity": 10, "ammo": [ "arrow", "bolt" ], "draw_cost": 3 },
     "flags": [ "WAIST", "VARSIZE", "OVERSIZE" ]
   },
-    {
-        "id": "assist_armor_off_vo",
-        "type": "TOOL_ARMOR",
-        "category" : "armor",
-        "symbol": "[",
-        "color": "white",
-        "name": "Power assist suit (off)",
-        "description": "It is an auxiliary tool that makes it easy to lift heavy objects. It's not for battle, so it's not durable.",
-        "flags" : ["BELTED"],
-        "price": 3500000,
-        "material": ["steel", "plastic"],
-        "weight" : 9500,
-        "volume": 35,
-        "to_hit" : -3,
-        "max_charges": 1000,
-        "charges_per_use": 1,
-        "ammo": "battery",
-        "revert_to": "assist_armor_off_vo",
-        "covers" : ["TORSO", "ARMS", "LEGS", "FEET"],
-        "warmth" : 0,
-        "environmental_protection" : 0,
-        "encumbrance" : 20,
-        "coverage" : 40,
-        "material_thickness" : 2,
-	    "use_action":[
-	    {
-        "type": "transform",
-        "msg": "I turned on the assist function.",
-        "active": true,
-        "target": "assist_armor_on_vo"
-    	}
-	]
-    },
-    {
-        "id": "assist_armor_on_vo",
-        "type": "TOOL_ARMOR",
-        "category" : "armor",
-        "symbol": "[",
-        "color": "white",
-        "name": "Power Assist Suit (On)",
-        "description": "It is an auxiliary tool that makes it easy to lift heavy objects. It's not for battle, so it's not durable.",
-        "flags" : ["BELTED"],
-        "price": 3500000,
-        "material": ["steel", "plastic"],
-        "weight" : 1900,
-        "volume": 35,
-        "to_hit" : -3,
-        "max_charges": 1000,
-        "turns_per_charge": 4,
-        "ammo": "battery",
-        "revert_to": "assist_armor_off_vo",
-        "covers" : ["TORSO", "ARMS", "LEGS", "FEET"],
-        "storage" : 0,
-        "warmth" : 0,
-        "environmental_protection" : 0,
-        "encumbrance" : 10,
-        "coverage" : 40,
-        "material_thickness" : 2,
-	    "use_action":[
-	    {
-        "type": "transform",
-        "msg": "Assist function turned off.",
-        "target": "assist_armor_off_vo"
-    	}
-	],
-    "artifact_data" : {
-    "effects_worn": ["AEP_CARRY_MORE"]
-    }
-    }
+  {
+    "id": "assist_armor_off_vo",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "symbol": "[",
+    "color": "white",
+    "name": "Power assist suit (off)",
+    "description": "It is an auxiliary tool that makes it easy to lift heavy objects. It's not for battle, so it's not durable.",
+    "flags": [ "BELTED" ],
+    "price": 3500000,
+    "material": [ "steel", "plastic" ],
+    "weight": 9500,
+    "volume": 35,
+    "to_hit": -3,
+    "max_charges": 1000,
+    "charges_per_use": 1,
+    "ammo": "battery",
+    "revert_to": "assist_armor_off_vo",
+    "covers": [ "TORSO", "ARMS", "LEGS", "FEET" ],
+    "warmth": 0,
+    "environmental_protection": 0,
+    "encumbrance": 20,
+    "coverage": 40,
+    "material_thickness": 2,
+    "use_action": [ { "type": "transform", "msg": "I turned on the assist function.", "active": true, "target": "assist_armor_on_vo" } ]
+  },
+  {
+    "id": "assist_armor_on_vo",
+    "type": "TOOL_ARMOR",
+    "category": "armor",
+    "symbol": "[",
+    "color": "white",
+    "name": "Power Assist Suit (On)",
+    "description": "It is an auxiliary tool that makes it easy to lift heavy objects. It's not for battle, so it's not durable.",
+    "flags": [ "BELTED" ],
+    "price": 3500000,
+    "material": [ "steel", "plastic" ],
+    "weight": 1900,
+    "volume": 35,
+    "to_hit": -3,
+    "max_charges": 1000,
+    "turns_per_charge": 4,
+    "ammo": "battery",
+    "revert_to": "assist_armor_off_vo",
+    "covers": [ "TORSO", "ARMS", "LEGS", "FEET" ],
+    "storage": 0,
+    "warmth": 0,
+    "environmental_protection": 0,
+    "encumbrance": 10,
+    "coverage": 40,
+    "material_thickness": 2,
+    "use_action": [ { "type": "transform", "msg": "Assist function turned off.", "target": "assist_armor_off_vo" } ],
+    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE" ] }
+  }
 ]

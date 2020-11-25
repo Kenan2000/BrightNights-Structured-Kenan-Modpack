@@ -129,27 +129,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 1,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "32": 18,
-		  "38": 18,
-		  "44": 18,
-          "45": 18,
-          "9mm": 18,
-          "22": 18,
-          "223": 18,
-          "3006": 18,
-          "308": 18,
-          "762": 18,
-          "762R": 18,
-          "8x40mm": 18,
-          "shot": 18,
-          "20x66mm": 18
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 18,
+      "ammo": [ "32", "38", "44", "45", "9mm", "22", "223", "3006", "308", "762", "762R", "8x40mm", "shot", "20x66mm" ],
+      "draw_cost": 20
+    },
     "flags": [ "VARSIZE", "POCKETS" ]
   },
   {
@@ -192,14 +177,7 @@
     "warmth": 9,
     "material_thickness": 2,
     "environmental_protection": 0,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "40mm": 8
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": { "type": "bandolier", "capacity": 8, "ammo": [ "40mm" ], "draw_cost": 20 },
     "flags": [ "WATERPROOF", "BELTED" ]
   },
   {
@@ -242,27 +220,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 2,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "32": 18,
-		  "38": 18,
-		  "44": 18,
-          "45": 18,
-          "9mm": 18,
-          "22": 18,
-          "223": 18,
-          "3006": 18,
-          "308": 18,
-          "762": 18,
-          "762R": 18,
-          "8x40mm": 18,
-          "shot": 18,
-          "20x66mm": 18
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 18,
+      "ammo": [ "32", "38", "44", "45", "9mm", "22", "223", "3006", "308", "762", "762R", "8x40mm", "shot", "20x66mm" ],
+      "draw_cost": 20
+    },
     "flags": [ "STURDY", "VARSIZE", "POCKETS", "FANCY", "WATERPROOF", "RAINPROOF" ]
   },
   {
@@ -421,27 +384,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 2,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "32": 18,
-		  "38": 18,
-		  "44": 18,
-          "45": 18,
-          "9mm": 18,
-          "22": 18,
-          "223": 18,
-          "3006": 18,
-          "308": 18,
-          "762": 18,
-          "762R": 18,
-          "8x40mm": 18,
-          "shot": 18,
-          "20x66mm": 18
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 18,
+      "ammo": [ "32", "38", "44", "45", "9mm", "22", "223", "3006", "308", "762", "762R", "8x40mm", "shot", "20x66mm" ],
+      "draw_cost": 20
+    },
     "flags": [ "STURDY", "VARSIZE", "POCKETS", "FANCY", "WATERPROOF", "RAINPROOF" ]
   },
   {
@@ -484,27 +432,12 @@
     "warmth": 15,
     "material_thickness": 3,
     "environmental_protection": 2,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "32": 18,
-		  "38": 18,
-		  "44": 18,
-          "45": 18,
-          "9mm": 18,
-          "22": 18,
-          "223": 18,
-          "3006": 18,
-          "308": 18,
-          "762": 18,
-          "762R": 18,
-          "8x40mm": 18,
-          "shot": 18,
-          "20x66mm": 18
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 18,
+      "ammo": [ "32", "38", "44", "45", "9mm", "22", "223", "3006", "308", "762", "762R", "8x40mm", "shot", "20x66mm" ],
+      "draw_cost": 20
+    },
     "flags": [ "STURDY", "VARSIZE", "POCKETS", "FANCY", "WATERPROOF", "RAINPROOF" ]
   },
   {
@@ -547,27 +480,12 @@
     "warmth": 15,
     "material_thickness": 4,
     "environmental_protection": 3,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "32": 18,
-		  "38": 18,
-		  "44": 18,
-          "45": 18,
-          "9mm": 18,
-          "22": 18,
-          "223": 18,
-          "3006": 18,
-          "308": 18,
-          "762": 18,
-          "762R": 18,
-          "8x40mm": 18,
-          "shot": 18,
-          "20x66mm": 18
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 18,
+      "ammo": [ "32", "38", "44", "45", "9mm", "22", "223", "3006", "308", "762", "762R", "8x40mm", "shot", "20x66mm" ],
+      "draw_cost": 20
+    },
     "flags": [ "STURDY", "VARSIZE", "POCKETS", "FANCY", "WATERPROOF", "RAINPROOF" ]
   },
   {
@@ -628,27 +546,12 @@
     "warmth": 15,
     "material_thickness": 4,
     "environmental_protection": 3,
-	"pocket_data": [
-      {
-        "ammo_restriction": {
-		  "32": 18,
-		  "38": 18,
-		  "44": 18,
-          "45": 18,
-          "9mm": 18,
-          "22": 18,
-          "223": 18,
-          "3006": 18,
-          "308": 18,
-          "762": 18,
-          "762R": 18,
-          "8x40mm": 18,
-          "shot": 18,
-          "20x66mm": 18
-        },
-        "moves": 20
-      }
-    ],
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 18,
+      "ammo": [ "32", "38", "44", "45", "9mm", "22", "223", "3006", "308", "762", "762R", "8x40mm", "shot", "20x66mm" ],
+      "draw_cost": 20
+    },
     "flags": [ "STURDY", "VARSIZE", "POCKETS", "FANCY", "WATERPROOF", "RAINPROOF" ]
   }
 ]
