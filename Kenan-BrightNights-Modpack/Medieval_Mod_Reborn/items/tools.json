@@ -15,5 +15,25 @@
     "cutting": 42,
     "material": "superalloy",
     "color": "dark_gray"
+  },
+  {
+    "id": "sword_gladius",
+    "type": "TOOL",
+    "category": "weapons",
+    "looks_like": "sword_forged",
+    "name": { "str": "gladius", "str_pl": "gladii" },
+    "description": "A thrusting sword adopted by Ancient Rome during the conquest of the Iberian Peninsula, the \"gladius hispaniensis\" supplanted the hasta as the most common weapon of the Roman Legions, until the shift towards the longer spatha during the later days of the Empire.",
+    "weight": "750 g",
+    "volume": "1750 ml",
+    "price": 12000,
+    "to_hit": 2,
+    "bashing": 6,
+    "cutting": 24,
+    "material": "steel",
+    "symbol": "!",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_2" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 8 ] ],
+    "flags": [ "SHEATH_SWORD", "DURABLE_MELEE", "SPEAR" ]
   }
 ]
