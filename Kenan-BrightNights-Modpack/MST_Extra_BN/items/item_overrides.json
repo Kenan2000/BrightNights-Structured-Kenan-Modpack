@@ -40,7 +40,14 @@
     "type": "ARMOR",
     "copy-from": "javelin_bag",
     "name": "javelin bag",
-    "use_action": { "type": "bandolier", "capacity": 4, "ammo": [ "javelin" ], "draw_cost": 25 }
+    "use_action": {
+      "type": "bandolier",
+      "capacity": 4,
+      "ammo": [
+        "javelin"
+      ],
+      "draw_cost": 25
+    }
   },
   {
     "id": "char_purifier",
