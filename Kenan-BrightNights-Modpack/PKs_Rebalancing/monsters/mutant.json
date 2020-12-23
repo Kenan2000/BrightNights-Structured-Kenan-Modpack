@@ -921,7 +921,7 @@
     "melee_cut": 6,
     "dodge": 2,
     "attack_effs": [ { "id": "rad_tenths", "duration": 10 } ],
-    "armor: bash": 5,
+    "armor_bash": 5,
     "armor_cut": 8,
     "vision_day": 35,
     "vision_night": 7,
@@ -989,8 +989,8 @@
     ],
     "death_function": [ "WORM", "NORMAL" ],
     "flags": [ "SEES", "HEARS", "GOODHEARING", "DIGS", "BASHES", "POISON", "WARM", "LEATHER", "FAT" ],
-    "anger_trigger": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
-    "fear_trigger": [ "HURT", "FRIEND_DIED", "FIRE" ]
+    "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
+    "fear_triggers": [ "HURT", "FRIEND_DIED", "FIRE" ]
   },
   {
     "id": "mon_worm",
@@ -1013,8 +1013,8 @@
     "regen_morale": true,
     "regenerates": 1,
     "flags": [ "DIGS", "HEARS", "GOODHEARING", "WARM", "LEATHER" ],
-    "anger_trigger": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
-    "fear_trigger": [ "HURT", "FRIEND_DIED" ]
+    "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
+    "fear_triggers": [ "HURT", "FRIEND_DIED" ]
   },
   {
     "id": "mon_halfworm",
@@ -1046,8 +1046,8 @@
     "regenerates": 1,
     "regen_morale": true,
     "flags": [ "CAN_DIG", "HEARS", "GOODHEARING", "WARM", "LEATHER" ],
-    "anger_trigger": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
-    "fear_trigger": [ "HURT", "FRIEND_DIED" ]
+    "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
+    "fear_triggers": [ "HURT", "FRIEND_DIED" ]
   },
   {
     "id": "mon_thing_swamp",
