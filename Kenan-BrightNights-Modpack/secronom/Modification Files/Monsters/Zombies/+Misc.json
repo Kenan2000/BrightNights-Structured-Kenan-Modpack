@@ -802,7 +802,7 @@
           { "amount": 12, "armor_multiplier": 0.3, "armor_penetration": 10, "damage_type": "bash" },
           { "amount": 12, "armor_multiplier": 0.6, "armor_penetration": 20, "damage_type": "stab" }
         ],
-        "effects": [ { "body_part": "ARM_L", "duration": 30, "id": "grabbed" }, { "body_part": "ARM_R", "duration": 30, "id": "grabbed" } ],
+        "effects": [ { "bp": "ARM_L", "duration": 30, "id": "grabbed" }, { "bp": "ARM_R", "duration": 30, "id": "grabbed" } ],
         "type": "bite"
       }
     ],

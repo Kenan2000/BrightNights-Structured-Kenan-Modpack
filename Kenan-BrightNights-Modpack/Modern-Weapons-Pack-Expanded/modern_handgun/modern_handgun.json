@@ -74,16 +74,15 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "ammo": [ "44", "357_mag", "45", "38" ],
+    "ammo": [ "44", "357mag", "45", "38" ],
     "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 200,
     "durability": 8,
     "magazine_well": 1,
     "magazines": [
         [ "44", [ "deaglemag" ] ],
-        [ "357_mag", [ "357_mag" ] ],
-        [ "45", [ "m1911mag", "m1911bigmag" ] ],
-        [ "38", [ "taurus38mag" ] ]
+        [ "357mag", [ "357_mag" ] ],
+        [ "45", [ "m1911mag", "m1911bigmag" ] ]
     ]
   },
   {
@@ -160,13 +159,13 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "ammo": "357_mag",
+    "ammo": "357mag",
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "dispersion": 30,
     "durability": 9,	
     "magazine_well": 1,	
     "magazines": [
-      [ "357_mag", [ "357_mag" ] ]
+      [ "357mag", [ "357_mag" ] ]
     ],
     "default_mods": [ "muzzle_brake" ]
   }, 
@@ -318,7 +317,7 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],	
-    "ammo": "357_mag",
+    "ammo": "357mag",
     "range" : 2,
     "ranged_damage": { "damage_type": "stab", "amount": 6 },	
     "dispersion": 10,
@@ -338,7 +337,7 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],	
-    "ammo": "357_mag",
+    "ammo": "357mag",
     "range" : 1,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },	
     "dispersion": 25,
@@ -358,7 +357,7 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],	
-    "ammo": "357_mag",
+    "ammo": "357mag",
     "range" : 1,
     "ranged_damage": { "damage_type": "stab", "amount": 4 },	
     "dispersion": 10,
@@ -421,7 +420,7 @@
     "to_hit": -2,
     "bashing": 8,
     "material": [ "steel", "wood" ],	
-    "ammo": "357_mag",	
+    "ammo": "357mag",	
     "dispersion": 45,
     "durability": 7,
     "clip_size": 6

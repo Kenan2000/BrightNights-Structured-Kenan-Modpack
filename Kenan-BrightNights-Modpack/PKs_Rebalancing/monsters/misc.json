@@ -201,7 +201,7 @@
           { "damage_type": "stab", "amount": 14, "armor_multiplier": 0.5 },
           { "damage_type": "bash", "amount": 31, "armor_multiplier": 0.5 }
         ],
-        "effects": [ { "id": "grabbed", "duration": 1000, "body_part": "TORSO" }, { "id": "infection_minor", "duration": 28800 } ]
+        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" }, { "id": "infection_minor", "duration": 28800 } ]
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],

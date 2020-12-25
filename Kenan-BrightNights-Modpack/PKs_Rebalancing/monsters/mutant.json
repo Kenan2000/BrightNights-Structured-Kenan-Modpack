@@ -939,7 +939,7 @@
           { "damage_type": "bash", "amount": 13, "armor_multiplier": 0.8 },
           { "damage_type": "cut", "amount": 5, "armor_multiplier": 0.8 }
         ],
-        "effects": [ { "id": "grabbed", "duration": 1000, "body_part": "TORSO" } ]
+        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ]
       }
     ],
     "death_function": [ "NORMAL" ],
@@ -984,7 +984,7 @@
           { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.85 },
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.85 }
         ],
-        "effects": [ { "id": "grabbed", "duration": 1000, "body_part": "TORSO" } ]
+        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ]
       }
     ],
     "death_function": [ "WORM", "NORMAL" ],

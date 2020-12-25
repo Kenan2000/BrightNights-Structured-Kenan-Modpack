@@ -2,7 +2,6 @@
   {
 	"abstract": "bot_MThack_base",
     "type": "recipe",
-    "override": "true",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_OTHER",
     "skill_used": "electronics",
@@ -284,7 +283,7 @@
   {
     "type": "recipe",
     "result": "bot_laserturret",
-    "override": "true",
+    "id_suffix": "MT_recipe",
     "copy-from": "bot_turret_base",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_PARTS",
