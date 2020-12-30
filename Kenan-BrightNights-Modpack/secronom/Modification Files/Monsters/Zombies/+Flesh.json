@@ -403,7 +403,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_taken_target" },
         "cooldown": 5,
-        "self": true,
+        "hit_self": true,
         "monster_message": "<color_light_red>The taken bursts, letting loose of its content!</color>"
       }
     ],
@@ -445,7 +445,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_wall_ing_target" },
         "cooldown": 5,
-        "self": true,
+        "hit_self": true,
         "monster_message": "<color_light_red>%1$s trembles!</color>"
       }
     ],
@@ -571,7 +571,7 @@
         "type": "spell",
         "spell_data": { "id": "mon_sflesh_wall_city_ing_target" },
         "cooldown": 5,
-        "self": true,
+        "hit_self": true,
         "monster_message": "<color_light_red>%1$s trembles!</color>"
       }
     ],
@@ -649,7 +649,7 @@
         "spell_data": { "id": "mon_sflesh_veinstalk_spread_target" },
         "cooldown": 10,
         "monster_message": "<color_red>%1$s twitches violently...</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "death_function": [ "MELT" ],
@@ -711,7 +711,7 @@
         "spell_data": { "id": "mon_sflesh_fleshling_tiny_devour" },
         "cooldown": 50,
         "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "harvest": "exempt",
@@ -748,7 +748,7 @@
         "spell_data": { "id": "mon_sflesh_fleshling_smol_devour" },
         "cooldown": 75,
         "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
@@ -783,7 +783,7 @@
         "spell_data": { "id": "mon_sflesh_fleshling_med_devour" },
         "cooldown": 100,
         "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
@@ -818,7 +818,7 @@
         "spell_data": { "id": "mon_sflesh_fleshling_big_devour" },
         "cooldown": 125,
         "monster_message": "<color_magenta>%1$s devours %3$s...</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
@@ -853,7 +853,7 @@
         "spell_data": { "id": "mon_sflesh_fleshling_huge_devour" },
         "cooldown": 150,
         "monster_message": "<color_light_red>%1$s devours %3$s...</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "flags": [ "SEES", "SMELLS", "WARM", "POISON", "NO_BREATHE", "STUN_IMMUNE", "ABSORBS", "PACIFIST" ]
@@ -1001,7 +1001,7 @@
         "spell_data": { "id": "mon_sflesh_fleshling_scavengy_explosive_pop_target" },
         "cooldown": 5,
         "monster_message": "<color_yellow>%1$s explodes into gore!</color>",
-        "self": true
+        "hit_self": true
       }
     ],
     "harvest": "exempt",

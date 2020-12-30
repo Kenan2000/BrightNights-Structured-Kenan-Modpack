@@ -6,11 +6,11 @@
     "description": "A flat, rooftop, covered in gorey flesh.",
     "symbol": ".",
     "color": "red",
-    "note": "Flesh version of terrains has +3 move cost.",
+    "//": "Flesh version of terrains has +3 move cost.",
     "move_cost": 5,
     "flags": [ "TRANSPARENT", "FLAT", "S_FLESH" ],
     "bash": {
-      "note": "Flesh terrains' str_min and _max has +5 bash resistance.",
+      "//": "Flesh terrains' str_min and _max has +5 bash resistance.",
       "str_min": 8,
       "str_max": 16,
       "sound": "splash!",
@@ -155,7 +155,7 @@
     "flags": [ "TRANSPARENT", "GOES_UP", "INDOORS", "PLACE_ITEM", "S_FLESH" ]
   },
   {
-    "note": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
+    "//": "Since terrains are not capable to act as emitters, we use an invincible, but flammable furniture for the solution.",
     "type": "furniture",
     "id": "f_secro_fleshknot_emitter",
     "name": "flesh wart",
@@ -168,7 +168,7 @@
     "flags": [ "TRANSPARENT", "FLAMMABLE", "NOCOLLIDE", "S_FLESH", "EMITTER" ]
   },
   {
-    "note": "Starting here are the furnitures and terrains seen in flesh forest.",
+    "//": "Starting here are the furnitures and terrains seen in flesh forest.",
     "type": "terrain",
     "id": "t_secro_dirt_flesh",
     "name": "fleshed dirt",
@@ -272,7 +272,7 @@
     "required_str": 10,
     "crafting_pseudo_item": "boulder_anvil",
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "TINY" ],
-    "bash": { "str_min": 8, "str_max": 16, "sound": "splash!", "sound_fail": "splat.", "ter_set": "f_boulder_small" }
+    "bash": { "str_min": 8, "str_max": 16, "sound": "splash!", "sound_fail": "splat." }
   },
   {
     "type": "furniture",
@@ -286,7 +286,7 @@
     "required_str": 16,
     "crafting_pseudo_item": "boulder_anvil",
     "flags": [ "FLAMMABLE_HARD", "NOITEM", "TRANSPARENT", "S_FLESH", "UNSTABLE", "MOUNTABLE", "SHORT", "BASHABLE" ],
-    "bash": { "str_min": 8, "str_max": 16, "sound": "splash!", "sound_fail": "splat.", "ter_set": "f_boulder_medium" }
+    "bash": { "str_min": 8, "str_max": 16, "sound": "splash!", "sound_fail": "splat." }
   },
   {
     "type": "furniture",
@@ -299,10 +299,10 @@
     "coverage": 65,
     "required_str": 32,
     "flags": [ "FLAMMABLE_HARD", "NOITEM", "S_FLESH", "BASHABLE", "BLOCK_WIND" ],
-    "bash": { "str_min": 8, "str_max": 16, "sound": "splash!", "sound_fail": "splat.", "ter_set": "f_boulder_large" }
+    "bash": { "str_min": 8, "str_max": 16, "sound": "splash!", "sound_fail": "splat." }
   },
   {
-    "note": "Flesh forest's terrestrial body parts. Here we encounter LOTS of FF's abominations.",
+    "//": "Flesh forest's terrestrial body parts. Here we encounter LOTS of FF's abominations.",
     "type": "terrain",
     "id": "t_secro_flesh",
     "name": "flesh",
@@ -349,7 +349,7 @@
     "coverage": 95,
     "emissions": [ "emit_flesh_tree_grab" ],
     "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "REDUCE_SCENT", "S_FLESH", "EMITTER" ],
-    "bash": { "str_min": 16, "str_max": 24, "sound": "splash!", "sound_fail": "splat!", "ter_set": "t_tree" }
+    "bash": { "str_min": 16, "str_max": 24, "sound": "splash!", "sound_fail": "splat!" }
   },
   {
     "type": "terrain",
@@ -415,7 +415,7 @@
     "coverage": 20,
     "emissions": [ "emit_flesh_sack_hatch" ],
     "flags": [ "FLAMMABLE", "S_FLESH", "EMITTER" ],
-    "bash": { "str_min": 12, "str_max": 24, "sound": "splook!", "sound_fail": "splat!", "ter_set": "f_null" }
+    "bash": { "str_min": 12, "str_max": 24, "sound": "splook!", "sound_fail": "splat!" }
   },
   {
     "type": "furniture",
@@ -429,7 +429,7 @@
     "coverage": 5,
     "emissions": [ "emit_flesh_tentclus" ],
     "flags": [ "FLAMMABLE", "TRANSPARENT", "S_FLESH", "EMITTER" ],
-    "bash": { "str_min": 15, "str_max": 30, "sound": "splook!", "sound_fail": "splat!", "ter_set": "f_null" }
+    "bash": { "str_min": 15, "str_max": 30, "sound": "splook!", "sound_fail": "splat!" }
   },
   {
     "type": "terrain",
@@ -462,7 +462,7 @@
     "required_str": -1,
     "emissions": [ "emit_flesh_bones" ],
     "flags": [ "FLAMMABLE", "TRANSPARENT", "S_FLESH", "ROUGH", "EMITTER", "FF_BIOHAZARD" ],
-    "bash": { "str_min": 10, "str_max": 20, "sound": "splash!", "sound_fail": "splook!", "ter_set": "f_null" }
+    "bash": { "str_min": 10, "str_max": 20, "sound": "splash!", "sound_fail": "splook!" }
   },
   {
     "type": "furniture",
@@ -475,10 +475,10 @@
     "required_str": -1,
     "emissions": [ "emit_flesh_tendrils" ],
     "flags": [ "FLAMMABLE", "TRANSPARENT", "S_FLESH", "EMITTER", "FF_BIOHAZARD" ],
-    "bash": { "str_min": 7, "str_max": 14, "sound": "splook!", "sound_fail": "splat!", "ter_set": "t_secro_flesh" }
+    "bash": { "str_min": 7, "str_max": 14, "sound": "splook!", "sound_fail": "splat!" }
   },
   {
-    "note": "Another type of floor augmented with traps by the flesh.",
+    "//": "Another type of floor augmented with traps by the flesh.",
     "looks_like": "t_secro_flesh",
     "type": "furniture",
     "id": "f_secro_flesh",
@@ -575,7 +575,7 @@
     "flags": [ "FLAMMABLE_HARD", "TRANSPARENT", "FLAT", "S_FLESH", "FC_EXIT" ]
   },
   {
-    "note": "Destroy these to prevent them from spawning veinstalks.",
+    "//": "Destroy these to prevent them from spawning veinstalks.",
     "type": "furniture",
     "id": "f_secro_veinstalk",
     "name": "veinbush",
@@ -587,7 +587,7 @@
     "coverage": 10,
     "emissions": [ "emit_veinstalk_spawn" ],
     "flags": [ "FLAMMABLE", "S_FLESH", "EMITTER" ],
-    "bash": { "str_min": 12, "str_max": 22, "sound": "splook!", "sound_fail": "splat!", "ter_set": "f_null" }
+    "bash": { "str_min": 12, "str_max": 22, "sound": "splook!", "sound_fail": "splat!" }
   },
   {
     "type": "furniture",
@@ -611,13 +611,7 @@
     "color": "red",
     "move_cost_mod": 1,
     "required_str": -1,
-    "bash": {
-      "str_min": 13,
-      "str_max": 23,
-      "sound": "splook!",
-      "sound_fail": "splat!",
-      "items": [ { "item": "secro_flesh_core", "count": [ 1, 2 ] } ]
-    },
+    "bash": { "str_min": 13, "str_max": 23, "sound": "splook!", "sound_fail": "splat!", "items": [ { "item": "secro_flesh_core", "count": [ 1, 2 ] } ] },
     "flags": [ "NOITEM", "S_FLESH" ]
   },
   {
@@ -795,7 +789,7 @@
     "bash": { "sound": "splash!", "ter_set": "t_thconc_floor", "str_min": 8, "str_max": 16 }
   },
   {
-    "note": "These are used in flesh cities to keep players from climbing a building (rooftops are complicated)",
+    "//": "These are used in flesh cities to keep players from climbing a building (rooftops are complicated)",
     "type": "terrain",
     "id": "t_secro_ladder_broken_flesh",
     "name": "fleshed ladder",

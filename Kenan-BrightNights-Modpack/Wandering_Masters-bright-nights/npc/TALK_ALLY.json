@@ -1,0 +1,47 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_ALLY_ORDERS",
+    "responses": [
+      {
+        "text": "Do you have any brew on you?",
+        "condition": { "npc_has_var": "know_brew", "type": "flag", "context": "brew", "value": "yes" },
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "not": { "npc_has_effect": "wait_time" }
+          }
+        },
+        "success": {
+          "topic": "TALK_DRUNKEN_BREW"
+        },
+        "failure": { "topic": "TALK_DRUNKEN_BREW_nope" }
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_DRUNKEN_BREW",
+    "dynamic_line": "I can brew something for you.",
+    "responses": [ { "text": "Brew something for me.", "topic": "TALK_BREW_SOMETHING" }, { "text": "<done_conversation_section>", "topic": "TALK_NONE" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_DRUNKEN_BREW_nope",
+    "dynamic_line": "No brew bro.",
+    "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_BREW_SOMETHING",
+    "dynamic_line": "Are you sure?",
+    "responses": [
+      {
+        "text": "Yes.",
+        "topic": "TALK_DONE",
+        "effect": [ { "npc_add_effect": "wait_time", "duration": 1209600 } ]
+      },
+      { "text": "<done_conversation_section>", "topic": "TALK_ALLY" }
+    ]
+  }
+]

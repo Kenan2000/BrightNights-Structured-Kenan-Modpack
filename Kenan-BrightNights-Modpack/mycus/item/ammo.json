@@ -34,8 +34,7 @@
     "stack_size": 50,
     "ammo_type": "mushroom_ammo",
     "range": 14,
-    "damage": 22,
-    "pierce": 4,
+    "damage": { "damage_type": "stab", "amount": 22, "armor_penetration": 4 },
     "dispersion": 60,
     "recoil": 1400,
     "effects": [ "COOKOFF" ]

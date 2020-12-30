@@ -8,7 +8,7 @@
     "price": 65000,
     "material": [ "plastic", "powder", "uranium" ],
     "dispersion": 80,
-    "relative": { "damage": 12, "range": 14, "pierce": -17 },
+    "relative": { "damage": { "damage_type": "stab", "amount": 12, "armor_penetration": -17 }, "range": 14 },
     "proportional": { "recoil": 2 },
     "extend": { "effects": [ "INCENDIARY" ] },
     "delete": { "effects": [ "SHOT" ] }
@@ -29,8 +29,7 @@
     "ammo_type": "shot",
     "casing": "shot_hull",
     "range": 12,
-    "damage": 38,
-    "pierce": 50,
+    "damage": { "damage_type": "stab", "amount": 38, "armor_penetration": 50 },
     "recoil": 2750,
     "loudness": 160,
     "effects": [ "COOKOFF", "SHOT", "RECYCLED" ]
@@ -43,7 +42,7 @@
     "description": "A custom armor-piercing slug with an extracted 100gr .22 ETC tungsten ball converted into its tip, enveloped by a lead outer core which in turn is covered by a copper jacket.",
     "price": 40000,
     "dispersion": 90,
-    "relative": { "damage": 6, "range": 12, "pierce": -34 },
+    "relative": { "damage": { "damage_type": "stab", "amount": 6, "armor_penetration": -34 }, "range": 12 },
     "proportional": { "recoil": 1.5 },
     "delete": { "effects": [ "SHOT" ] }
   }

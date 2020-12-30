@@ -30,8 +30,7 @@
     "ammo_type": "SRC",
     "casing": "SRC_Case",
     "range": 50,
-    "damage": 45,
-    "pierce": 8,
+    "damage": { "damage_type": "stab", "amount": 45, "armor_penetration": 8 },
     "dispersion": 35,
     "recoil": 1500,
     "effects": [ "COOKOFF" ]

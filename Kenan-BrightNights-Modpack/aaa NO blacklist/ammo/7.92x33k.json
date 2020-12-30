@@ -26,7 +26,7 @@
     "name": "7.92x33 kurtz FMJ",
     "description": "7.92x33 kurtz rounds with a 125gr full metal jacket bullet. ",
     "extend": { "effects": [ "COOKOFF" ] },
-    "relative": { "damage": 15, "pierce": 2, "dispersion": 30 }
+    "relative": { "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 2 }, "dispersion": 30 }
   },
   {
     "id": "7.92x33k_fmjbt",
@@ -35,6 +35,6 @@
     "name": "7.92x33 kurtz FMJ-BT",
     "description": "7.92x33 kurtz rounds with 123gr full metal jacket boat tail bullet",
     "extend": { "effects": [ "COOKOFF" ] },
-    "relative": { "pierce": 6 }
+    "relative": { "damage": { "damage_type": "stab", "armor_penetration": 6 } }
   }
 ]

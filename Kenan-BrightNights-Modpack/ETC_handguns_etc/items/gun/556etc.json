@@ -16,8 +16,7 @@
     "material": [ "superalloy", "aluminum", "wood" ],
     "color": "dark_gray",
     "ammo": "556etc",
-    "ranged_damage": -3,
-    "pierce": 15,
+    "ranged_damage": { "damage_type": "stab", "amount": -3, "armor_penetration": 15 },
     "recoil": 1080,
     "dispersion": 240,
     "range": -6,
@@ -74,7 +73,7 @@
     "name_plural": "OCG ER555-ADS",
     "description": "OmniCorp bullpup ER555 platform uses hypervelocity 5.56 ETC rounds in several roles. The Anti-Drone Sniper features an overcharged electrothermal action. Comes with integrated forward grip/bipod unit, gyroscopic stabilizer and cheek pad.",
     "price": 750000,
-    "relative": { "weight": 200, "pierce": 15, "recoil": 1080 },
+    "relative": { "weight": 200, "ranged_damage": { "damage_type": "stab", "armor_penetration": 15 }, "recoil": 1080 },
     "built_in_mods": [ "ocg_er555_barrel", "ad_capacitor", "ocg_grippod_fg", "ocg_grippod_bipod", "ocg_stabilizer", "cheek_pad" ]
   },
   {
@@ -154,7 +153,7 @@
     "name_plural": "OCG ER555-UDD",
     "description": "OmniCorp bullpup ER555 platform uses hypervelocity 5.56 ETC rounds in several roles. The Urban Drone Destroyer is very powerful, fast firing but difficult to control in full auto. Comes with integrated recoil stock, ported barrel and gyroscopic stabilizer.",
     "price": 700000,
-    "relative": { "weight": 350, "pierce": 15, "recoil": 1080 },
+    "relative": { "weight": 350, "ranged_damage": { "damage_type": "stab", "armor_penetration": 15 }, "recoil": 1080 },
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2, [ "SIMULTANEOUS" ] ], [ "AUTO", "auto", 18 ] ],
     "built_in_mods": [ "ad_capacitor", "ocg_er555_cqbbarrel", "ocg_recoil_stock", "barrel_ported", "ocg_stabilizer" ],
     "looks_like": "l_car_223"

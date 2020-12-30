@@ -5,7 +5,7 @@
     "type": "AMMO",
     "name": ".50 Action Express FMJ",
     "description": "A brass-jacketed variant of the .50 Action express round.  This increases penetration slightly at the cost of reduced damage from expansion.",
-    "relative": { "damage": -2, "pierce": 10 }
+    "relative": { "damage": { "damage_type": "stab", "amount": -2, "armor_penetration": 10 } }
   },
   {
     "id": "50_action_express",
@@ -24,8 +24,7 @@
     "ammo_type": "50AE",
     "casing": "50AE_casing",
     "range": 18,
-    "damage": 56,
-    "pierce": 6,
+    "damage": { "damage_type": "stab", "amount": 56, "armor_penetration": 6 },
     "dispersion": 50,
     "recoil": 1870,
     "effects": [ "COOKOFF" ]
@@ -55,7 +54,6 @@
     "name": "blackpowder .50 Action Express",
     "description": "This .50 AE cartridge is loaded with 45gr of blackpowder and a 250gr cast lead semi-wadcutter.",
     "proportional": { "price": 0.6, "dispersion": 1.2 },
-    "pierce": 0,
     "extend": { "effects": [ "RECYCLED", "MUZZLE_SMOKE" ] },
     "delete": { "effects": [ "NEVER_MISFIRES" ] }
   }

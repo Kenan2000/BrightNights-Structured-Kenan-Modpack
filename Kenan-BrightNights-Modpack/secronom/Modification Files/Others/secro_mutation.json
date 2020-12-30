@@ -68,7 +68,14 @@
       {
         "attack_text_u": "You slap %s with your tendrils",
         "attack_text_npc": "%1$s strikes %2$s with their tendrils",
-        "body_part": ["HAND_L", "HAND_R"],
+        "body_part": "HAND_L",
+        "chance": 10,
+        "strength_damage": { "damage_type": "bash", "amount": 0.5 }
+      },
+	  {
+        "attack_text_u": "You slap %s with your tendrils",
+        "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+        "body_part": "HAND_R",
         "chance": 10,
         "strength_damage": { "damage_type": "bash", "amount": 0.5 }
       }
@@ -89,7 +96,7 @@
     "types": [ "HANDS" ],
     "restricts_gear": [ "HAND_L", "HAND_R" ],
     "prereqs": [ "SECRO_TENDRIL" ],
-    "additions": [ "SECRO_TENDRIL_THICK_THRESHOLD" ],
+    "leads_to": [ "SECRO_TENDRIL_THICK_THRESHOLD" ],
     "encumbrance_always": [ [ "HAND_L", 45 ], [ "HAND_R", 45 ] ],
     "encumbrance_covered": [ [ "HAND_L", 55 ], [ "HAND_R", 55 ] ],
     "rand_bash_bonus": { "min": 3, "max": 8 },
@@ -97,7 +104,14 @@
       {
         "attack_text_u": "You slap %s with your thick tendrils",
         "attack_text_npc": "%1$s strikes %2$s with their thick tendrils",
-        "body_part": ["HAND_L", "HAND_R"],
+        "body_part": "HAND_L",
+        "chance": 10,
+        "strength_damage": { "damage_type": "bash", "amount": 0.7 }
+      },
+	  {
+        "attack_text_u": "You slap %s with your thick tendrils",
+        "attack_text_npc": "%1$s strikes %2$s with their thick tendrils",
+        "body_part": "HAND_R",
         "chance": 10,
         "strength_damage": { "damage_type": "bash", "amount": 0.7 }
       }
@@ -119,7 +133,7 @@
     "types": [ "HANDS" ],
     "restricts_gear": [ "HAND_L", "HAND_R" ],
     "prereqs": [ "SECRO_TENDRIL" ],
-    "additions": [ "SECRO_TENDRIL_TENT_THRESHOLD" ],
+    "leads_to": [ "SECRO_TENDRIL_TENT_THRESHOLD" ],
     "encumbrance_always": [ [ "HAND_L", 15 ], [ "HAND_R", 15 ], [ "FOOT_R", 5 ], [ "FOOT_L", 5 ], [ "LEG_R", 5 ], [ "LEG_L", 5 ], [ "TORSO", 5 ], [ "HEAD", 5 ], [ "ARM_L", 5 ], [ "ARM_R", 5 ] ],
     "encumbrance_covered": [ [ "HAND_L", 25 ], [ "HAND_R", 25 ], [ "FOOT_R", 25 ], [ "FOOT_L", 25 ], [ "LEG_R", 25 ], [ "LEG_L", 25 ], [ "TORSO", 25 ], [ "HEAD", 25 ], [ "ARM_L", 25 ], [ "ARM_R", 25 ] ],
     "rand_bash_bonus": { "min": 1, "max": 2 },
@@ -127,15 +141,29 @@
       {
         "attack_text_u": "You slap %s with your tendrils",
         "attack_text_npc": "%1$s strikes %2$s with their tendrils",
-        "body_part": ["HAND_L", "HAND_R"],
+        "body_part": "HAND_L",
+        "chance": 10,
+        "strength_damage": { "damage_type": "bash", "amount": 0.375 }
+      },
+	  {
+        "attack_text_u": "You slap %s with your tendrils",
+        "attack_text_npc": "%1$s strikes %2$s with their tendrils",
+        "body_part": "HAND_R",
         "chance": 10,
         "strength_damage": { "damage_type": "bash", "amount": 0.375 }
       },
       {
         "attack_text_u": "You pierced %s with your tendrils",
         "attack_text_npc": "%1$s pierces %2$s with their tendrils",
-        "body_part": ["HAND_L", "HAND_R"],
-        "chance": 20,
+        "body_part": "HAND_L",
+        "chance": 30,
+        "strength_damage": { "damage_type": "stab", "amount": 0.3 }
+      },
+	  {
+        "attack_text_u": "You pierced %s with your tendrils",
+        "attack_text_npc": "%1$s pierces %2$s with their tendrils",
+        "body_part": "HAND_R",
+        "chance": 30,
         "strength_damage": { "damage_type": "stab", "amount": 0.3 }
       }
     ],
@@ -210,7 +238,7 @@
     "types": [ "HANDS" ],
     "restricts_gear": [ "HAND_L" ],
     "prereqs": [ "SECRO_BLADE_L" ],
-    "additions": [ "SECRO_BLADE_SHARP_THRESHOLD" ],
+    "leads_to": [ "SECRO_BLADE_SHARP_THRESHOLD" ],
     "encumbrance_always": [ [ "HAND_L", 100 ] ],
     "rand_cut_bonus": { "min": 4, "max": 12 },
     "armor": [ { "parts": "ARM_L", "bash": 6, "cut": 6, "stab": 6 } ],
@@ -230,7 +258,7 @@
     "types": [ "HANDS" ],
     "restricts_gear": [ "HAND_L" ],
     "prereqs": [ "SECRO_BLADE_L" ],
-    "additions": [ "SECRO_BLADE_SERRATED_THRESHOLD" ],
+    "leads_to": [ "SECRO_BLADE_SERRATED_THRESHOLD" ],
     "encumbrance_always": [ [ "HAND_L", 100 ] ],
     "rand_cut_bonus": { "min": 3, "max": 8 },
     "rand_bash_bonus": { "min": 3, "max": 8 },

@@ -341,18 +341,20 @@
     "melee_dice": 4,
     "melee_dice_sides": 6,
     "melee_cut": 1,
-    "starting_ammo": { "nail": 1000 },
     "special_attacks": [
       {
         "type": "gun",
         "move_cost": 150,
+        "require_targeting_player": false,
+        "require_targeting_npc": false,
+        "require_targeting_monster": false,
+        "targeting_cost": 150,
         "gun_type": "robogun_nail",
         "fake_skills": [ [ "gun", 0 ], [ "pistol", 2 ] ],
         "fake_dex": 8,
         "ranges": [ [ 0, 3, "BURST" ] ]
       }
-    ],
-    "extend": { "flags": [ "DROPS_AMMO" ] }
+    ]
   },
   {
     "id": "mon_utilibot_fire",
@@ -428,22 +430,23 @@
     "reproduction": { "baby_egg": "honeycomb", "baby_count": 50, "baby_timer": 5 },
     "baby_flags": [ "SUMMER" ],
     "//": [ "emit_bee_trail" ],
-    "starting_ammo": { "bolt_wood": 100 },
     "special_attacks": [
       [ "PARROT", 10 ],
       {
         "type": "gun",
         "move_cost": 100,
         "gun_type": "robogun_crossbow",
-        "ammo_type": "bolt_wood",
+        "require_targeting_player": false,
+        "require_targeting_npc": false,
+        "require_targeting_monster": false,
+        "targeting_cost": 100,
         "fake_skills": [ [ "gun", 3 ], [ "archery", 3 ] ],
         "fake_dex": 8,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 10, "DEFAULT" ] ]
       }
     ],
     "death_drops": { "groups": [ [ "broken_robots", 1 ], [ "beehive", 1 ] ] },
-    "extend": { "flags": [ "STUMBLES", "DROPS_AMMO" ] }
+    "extend": { "flags": [ "STUMBLES" ] }
   },
   {
     "id": "mon_medibot",
@@ -634,13 +637,12 @@
         "cooldown": 3,
         "move_cost": 300,
         "gun_type": "robogun_8x40mm",
-        "ammo_type": "8mm_caseless",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 6 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 10, "DEFAULT" ] ]
       }
-    ]
+    ],
+    "extend": { "flags": [ "DROPS_AMMO" ] }
   },
   {
     "id": "mon_broken_cyborg",
@@ -700,10 +702,8 @@
         "move_cost": 150,
         "cooldown": 2,
         "gun_type": "robogun_shot",
-        "ammo_type": "shot",
         "fake_skills": [ [ "gun", 2 ], [ "shotgun", 2 ] ],
         "fake_dex": 9,
-        "no_ammo_sound": "click click!",
         "ranges": [ [ 0, 8, "DEFAULT" ] ]
       }
     ],
@@ -760,10 +760,8 @@
         "cooldown": 2,
         "move_cost": 150,
         "gun_type": "robogun_paintball",
-        "ammo_type": "paintball",
         "fake_skills": [ [ "gun", 4 ], [ "launcher", 4 ] ],
         "fake_dex": 9,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 15, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -792,10 +790,8 @@
         "cooldown": 2,
         "move_cost": 150,
         "gun_type": "robogun_556",
-        "ammo_type": "556",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 4, "BURST" ], [ 5, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -824,10 +820,8 @@
         "cooldown": 3,
         "move_cost": 150,
         "gun_type": "robogun_308",
-        "ammo_type": "762_51",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 5, "DEFAULT" ], [ 6, 10, "BURST" ], [ 11, 20, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -855,10 +849,8 @@
         "cooldown": 3,
         "move_cost": 150,
         "gun_type": "robogun_50bmg",
-        "ammo_type": "50bmg",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 5, "DEFAULT" ], [ 6, 10, "BURST" ], [ 11, 20, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -886,10 +878,8 @@
         "move_cost": 150,
         "cooldown": 2,
         "gun_type": "robogun_8x40mm",
-        "ammo_type": "8mm_caseless",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 6 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "whirrrr!",
         "ranges": [ [ 0, 5, "BURST" ], [ 6, 10, "AUTO" ], [ 11, 24, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -917,10 +907,8 @@
         "move_cost": 150,
         "cooldown": 2,
         "gun_type": "robogun_needle",
-        "ammo_type": "5x50dart",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 4, "BURST" ], [ 4, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -949,10 +937,8 @@
         "move_cost": 250,
         "cooldown": 3,
         "gun_type": "robogun_40mm",
-        "ammo_type": "40x46mm_m433",
         "fake_skills": [ [ "gun", 4 ], [ "launcher", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 6, 30, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -980,10 +966,8 @@
         "type": "gun",
         "cooldown": 1,
         "gun_type": "robogun_flame",
-        "ammo_type": "napalm",
         "fake_skills": [ [ "gun", 4 ], [ "launcher", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "hiss!",
         "ranges": [ [ 0, 10, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -1084,10 +1068,8 @@
         "type": "gun",
         "cooldown": 4,
         "gun_type": "robogun_rail",
-        "ammo_type": "steel_rail",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "buzz!",
         "ranges": [ [ 0, 18, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
@@ -1175,10 +1157,8 @@
         "move_cost": 50,
         "cooldown": 0,
         "gun_type": "robogun_shot",
-        "ammo_type": "shot",
         "fake_skills": [ [ "gun", 2 ], [ "shotgun", 2 ] ],
         "fake_dex": 9,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 3, "DEFAULT" ] ]
       }
     ],
@@ -1238,10 +1218,12 @@
         "cooldown": 5,
         "move_cost": 200,
         "gun_type": "robogun_flame",
-        "ammo_type": "gasoline",
         "fake_skills": [ [ "gun", 4 ], [ "launcher", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "hiss!",
+        "targeting_cost": 200,
+        "require_targeting_player": false,
+        "require_targeting_npc": false,
+        "require_targeting_monster": false,
         "ranges": [ [ 0, 10, "DEFAULT" ] ]
       }
     ],
@@ -1265,14 +1247,14 @@
     "special_attacks": [
       {
         "type": "gun",
-        "cooldown": 0,
+        "cooldown": 1,
         "move_cost": 100,
         "gun_type": "robogun_9mm",
-        "ammo_type": "9mm",
         "fake_skills": [ [ "gun", 3 ], [ "smg", 3 ] ],
         "fake_dex": 9,
-        "no_ammo_sound": "click click!",
-        "ranges": [ [ 0, 10, "AUTO" ] ]
+        "ranges": [ [ 0, 10, "AUTO" ] ],
+        "targeting_cost": 150,
+        "require_targeting_player": false
       }
     ],
     "extend": { "flags": [ "DROPS_AMMO" ] }
@@ -1307,12 +1289,10 @@
         "type": "gun",
         "cooldown": 2,
         "gun_type": "robogun_556",
-        "ammo_type": "556",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "no_ammo_sound": "click!",
         "ranges": [ [ 0, 16, "BURST" ] ],
-        "require_targeting_player": true
+        "require_targeting_player": false
       }
     ],
     "extend": { "flags": [ "DROPS_AMMO" ] }
@@ -1338,19 +1318,15 @@
         "cooldown": 3,
         "move_cost": 150,
         "gun_type": "robogun_50bmg",
-        "ammo_type": "50bmg",
         "fake_skills": [ [ "gun", 6 ], [ "rifle", 8 ] ],
         "fake_dex": 11,
         "fake_per": 10,
-        "no_ammo_sound": "click!",
+        "max_ammo": 400,
         "ranges": [ [ 0, 30, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
-        "targeting_cost": 30,
-        "targeting_timeout_extend": -50,
-        "targeting_sound": "\"Hostile Detected.\"",
-        "targeting_volume": 10
+        "targeting_cost": 150
       }
     ],
     "extend": { "flags": [ "DROPS_AMMO" ] }

@@ -36,7 +36,7 @@
     "occurrences": [ 25, 100 ]
   },
   {
-    "note": "This is disabled.",
+    "//": "This is disabled.",
     "id": "Saddler Nest",
     "locations": [ "field" ],
     "occurrences": [ 0, 0 ],
@@ -486,7 +486,9 @@
   {
     "type": "overmap_special",
     "id": "Extras for Flesh Forest",
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "flesh_biome_extra_north" } ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "flesh_biome_extra_north" }
+    ],
     "locations": [ "flesh_forest_dp" ],
     "occurrences": [ 0, 5 ]
   },

@@ -28,8 +28,7 @@
     "stack_size": 4,
     "ammo_type": "javelin",
     "range": 13,
-    "damage": 8,
-    "pierce": 1,
+    "damage": { "damage_type": "stab", "amount": 8, "armor_penetration": 1 },
     "relative": {
       "weight": 100,
       "cutting": 2
@@ -51,8 +50,7 @@
     "count": 1,
     "stack_size": 4,
     "ammo_type": "javelin",
-    "damage": 9,
-    "pierce": 2,
+    "damage": { "damage_type": "stab", "amount": 9, "armor_penetration": 2 },
     "relative": { "weight": 30 },
     "proportional": {
       "price": 0.5,
@@ -70,8 +68,7 @@
     "stack_size": 4,
     "ammo_type": "javelin",
     "range": 10,
-    "damage": 10,
-    "pierce": 3,
+    "damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 3 },
     "dispersion": 135,
     "loudness": 0,
     "effects": [ "RECOVER_15" ]

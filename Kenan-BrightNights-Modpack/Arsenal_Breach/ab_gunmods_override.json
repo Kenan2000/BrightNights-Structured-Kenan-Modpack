@@ -48,9 +48,8 @@
       "range": 28,
       "loudness": 12,
       "ups_charges": 22,
-      "ranged_damage": 12,
+      "ranged_damage": { "damage_type": "stab", "amount": 12, "armor_penetration": 15 },
       "reload": 300,
-      "pierce": 15,
       "ammo_effects": [ "LASER", "INCENDIARY" ]
     },
     "dispersion_modifier": 15,

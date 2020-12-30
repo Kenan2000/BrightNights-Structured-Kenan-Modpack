@@ -57,8 +57,7 @@
     "casing": "357_casing",
     "relative": {
       "range": 2,
-      "damage": 10,
-      "pierce": 4,
+      "damage": { "damage_type": "stab", "amount": 10, "armor_penetration": 4 },
       "recoil": 800
     }
   },
