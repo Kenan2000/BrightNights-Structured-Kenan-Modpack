@@ -2,7 +2,6 @@
 	{
     "id": "stomach",
     "copy-from": "flesh",
-    "override": true,
     "type": "COMESTIBLE",
     "name": "digestive tract",
     "description": "The digestive tract of a woodland creature.  It is surprisingly durable.",
@@ -18,7 +17,6 @@
   {
     "id": "stomach_large",
     "copy-from": "stomach",
-    "override": true,
     "type": "COMESTIBLE",
     "name": "large digestive tract",
     "description": "The digestive tract of a large woodland creature.  It is surprisingly durable.",
@@ -249,7 +247,7 @@
   },
   {
 	  "type" : "recipe",
-	  "override": true,
+	  "id_suffix": "WL_recipes",
 	  "result": "small_stomach_boiled",
 	  "category": "CC_FOOD",
 	  "subcategory": "CSC_FOOD_MEAT",
@@ -273,7 +271,7 @@
   },
   {
 	  "type" : "recipe",
-	  "override": true,
+	  "id_suffix": "WL_recipes",
 	  "result": "stomach_boiled",
 	  "category": "CC_FOOD",
 	  "subcategory": "CSC_FOOD_MEAT",
@@ -295,7 +293,7 @@
   },
   {
 	  "type" : "recipe",
-	  "override": true,
+	  "id_suffix": "WL_recipes",
 	  "result": "stomach_boiled",
 	  "category": "CC_FOOD",
 	  "subcategory": "CSC_FOOD_MEAT",
@@ -316,7 +314,7 @@
 	},
 	{
 	  "type" : "recipe",
-	  "override": true,
+	  "id_suffix": "WL_recipes",
 	  "result": "small_stomach_boiled",
 	  "category": "CC_FOOD",
 	  "subcategory": "CSC_FOOD_MEAT",
@@ -340,7 +338,7 @@
 	},
 	{
     "type" : "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "haggis",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_MEAT",
@@ -363,9 +361,8 @@
   },
   {
     "type" : "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "haggis",
-    "id_suffix": "large",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_MEAT",
     "skill_used": "cooking",
@@ -388,7 +385,7 @@
   },
   {
 	  "type" : "recipe",
-	  "override": true,
+	  "id_suffix": "WL_recipes",
 	  "result": "sausage_raw",
 	  "category": "CC_FOOD",
 	  "subcategory": "CSC_FOOD_MEAT",
@@ -418,9 +415,8 @@
 	},
 	{
     "type": "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "sausage",
-    "id_suffix": "npc",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_MEAT",
     "skill_used": "cooking",
@@ -445,7 +441,7 @@
   },
   {
     "type" : "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "sausage_wasteland",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_MEAT",
@@ -473,7 +469,7 @@
   },
   {
     "type" : "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "sausage_wasteland_raw",
     "category": "CC_FOOD",
     "subcategory": "CSC_FOOD_MEAT",
@@ -500,7 +496,7 @@
   },
   {
 		"type" : "recipe",
-		"override": true,
+		"id_suffix": "WL_recipes",
 		"result": "brew_milk_curdled",
 		"result_mult" : 18,
 		"category": "CC_FOOD",
@@ -525,7 +521,7 @@
 	},
 	{
     "type": "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "stomach_sealed",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_CONTAINERS",
@@ -543,7 +539,7 @@
   },
   {
     "type": "recipe",
-    "override": true,
+    "id_suffix": "WL_recipes",
     "result": "large_stomach_sealed",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_CONTAINERS",

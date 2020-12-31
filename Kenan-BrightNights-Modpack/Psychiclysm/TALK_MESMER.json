@@ -24,7 +24,11 @@
             { "not": { "npc_has_trait": "UNTHRALL" } },
             { "not": { "npc_has_effect": "hypno_suggest" } },
             { "not": { "npc_has_effect": "block_mesmer" } },
-            { "not": { "npc_has_any_trait": [ "MYCCUS", "WILLPOWER", "AWAKENED", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] } }
+            {
+              "not": {
+                "npc_has_any_trait": [ "MYCCUS", "WILLPOWER", "AWAKENED", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ]
+              }
+            }
           ]
         },
         "topic": "TALK_MESMER_THRALL"
@@ -36,9 +40,11 @@
             { "not": "is_by_radio" },
             { "u_has_trait": "MESMER" },
             { "not": { "u_has_trait": "block_psychic" } },
-            { "not": { "npc_has_any_trait": ["THRALL"] } },
+            { "not": { "npc_has_any_trait": [ "THRALL" ] } },
             { "not": { "npc_has_any_trait": [ "WILLPOWER", "AWAKENED" ] } },
-            { "not": { "npc_has_any_trait": ["MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] } },
+            {
+              "not": { "npc_has_any_trait": [ "MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] }
+            },
             { "not": { "npc_has_effect": "hypno_suggest" } },
             { "not": { "npc_has_effect": "block_mesmer" } }
           ]
@@ -55,7 +61,7 @@
             { "not": "npc_friend" },
             { "npc_has_any_trait": [ "MESMER", "AWAKENED" ] },
             { "not": { "npc_has_effect": "psychic_duelist" } },
-            { "not": {"npc_has_var": "psychic_duelist", "type": "general", "context": "mesmer", "value": "yes" } }
+            { "not": { "npc_has_var": "psychic_duelist", "type": "general", "context": "mesmer", "value": "yes" } }
           ]
         },
         "topic": "TALK_MESMER_START_DUEL"
@@ -87,46 +93,19 @@
         "switch": true,
         "condition": {
           "and": [
-            { "and":
-              [
-                { "npc_has_any_trait":
-                  [
-                    "CHEMIMBALANCE",
-                    "UNOBSERVANT",
-                    "SLOWLEARNER",
-                    "INSOMNIA",
-                    "FORGETFUL",
-                    "NARCOLEPTIC",
-                    "TRUTHTELLER"
-                  ]
+            {
+              "and": [
+                {
+                  "npc_has_any_trait": [ "CHEMIMBALANCE", "UNOBSERVANT", "SLOWLEARNER", "INSOMNIA", "FORGETFUL", "NARCOLEPTIC", "TRUTHTELLER" ]
                 },
-                { "npc_has_any_trait":
-                  [
-                    "PYROMANIA",
-                    "PSYCHOPATH",
-                    "KILLER",
-                    "MASOCHIST",
-                    "BADTEMPER",
-                    "ADDICTIVE",
-                    "SCHIZOPHRENIC",
-                    "HOARDER",
-                    "MOODSWINGS"
-                  ]
+                {
+                  "npc_has_any_trait": [ "PYROMANIA", "PSYCHOPATH", "KILLER", "MASOCHIST", "BADTEMPER", "ADDICTIVE", "SCHIZOPHRENIC", "HOARDER", "MOODSWINGS" ]
                 }
               ]
             },
-            { "not":
-              { "npc_has_any_trait":
-                [ 
-                  "FEARLESS",
-                  "FASTLEARNER",
-                  "GOODMEMORY",
-                  "SPIRITUAL",
-                  "OPTIMISTIC",
-                  "NONADDICTIVE",
-                  "SELFAWARE",
-                  "SAVANT"
-                ]
+            {
+              "not": {
+                "npc_has_any_trait": [ "FEARLESS", "FASTLEARNER", "GOODMEMORY", "SPIRITUAL", "OPTIMISTIC", "NONADDICTIVE", "SELFAWARE", "SAVANT" ]
               }
             }
           ]
@@ -136,11 +115,7 @@
         "text": "Yes.  Sleepy.  Very sleepy...",
         "switch": true,
         "condition": "npc_friend",
-        "trial": {
-          "type": "PERSUADE",
-          "difficulty": 40,
-          "mod": [ [ "AGGRESSION", -2 ], [ "TRUST", 2 ] ]
-        },
+        "trial": { "type": "PERSUADE", "difficulty": 40, "mod": [ [ "AGGRESSION", -2 ], [ "TRUST", 2 ] ] },
         "success": { "topic": "TALK_MESMER_SUCCESS" },
         "failure": { "topic": "TALK_MESMER_FAIL" }
       },
@@ -148,12 +123,8 @@
         "text": "Your eyes are tired.  Your mind is wrapped in thick fog.",
         "switch": true,
         "default": true,
-        "condition": {"not": "npc_friend" },
-        "trial": {
-          "type": "PERSUADE",
-          "difficulty": 20,
-          "mod": [ [ "AGGRESSION", -2 ] ]
-        },
+        "condition": { "not": "npc_friend" },
+        "trial": { "type": "PERSUADE", "difficulty": 20, "mod": [ [ "AGGRESSION", -2 ] ] },
         "success": { "topic": "TALK_MESMER_SUCCESS" },
         "failure": { "topic": "TALK_MESMER_FAIL" }
       }
@@ -163,13 +134,7 @@
     "type": "talk_topic",
     "id": "TALK_MESMER_FAIL",
     "dynamic_line": "Wha!  What was that?  I zoned out for a second.",
-    "responses": [
-      {
-        "text": "...",
-        "topic": "TALK_DONE",
-        "effect": { "npc_add_effect": "block_mesmer", "duration": 86400 }
-      }
-    ]
+    "responses": [ { "text": "...", "topic": "TALK_DONE", "effect": { "npc_add_effect": "block_mesmer", "duration": 86400 } } ]
   },
   {
     "type": "talk_topic",
@@ -178,45 +143,32 @@
     "responses": [
       {
         "text": "From henceforth, you will be my psychic thrall, forever bound to my will! (only one attempt per NPC)",
-        "topic": "TALK_DONE",
         "condition": { "not": { "npc_has_any_trait": [ "THRALL", "UNTHRALL" ] } },
-        "trial": {
-          "type": "PERSUADE",
-          "difficulty": 0,
-          "mod": [ [ "BRAVERY", -2 ], [ "POS_FEAR", -1 ], [ "AGGRESSION", -2 ] ]
-        },
-        "success": { 
-          "topic": "TALK_DONE", 
-          "effect": [ { "npc_add_trait": "THRALL"}, { "u_add_effect": "thrall_victory", "duration": 2 } ],
+        "trial": { "type": "PERSUADE", "difficulty": 0, "mod": [ [ "BRAVERY", -2 ], [ "POS_FEAR", -1 ], [ "AGGRESSION", -2 ] ] },
+        "success": {
+          "topic": "TALK_DONE",
+          "effect": [ { "npc_add_trait": "THRALL" }, { "u_add_effect": "thrall_victory", "duration": 2 } ],
           "opinion": { "trust": 5, "fear": 5 }
         },
-        "failure": { 
+        "failure": {
           "topic": "TALK_MESMER_FAIL",
-          "effect": [ { "npc_add_trait": "UNTHRALL"} ],
+          "effect": [ { "npc_add_trait": "UNTHRALL" } ],
           "opinion": { "trust": -5, "fear": 3, "anger": 3 }
         }
       },
       {
         "text": "Set down your weapon.  There is no need for violence.",
-        "topic": "TALK_DONE",
         "condition": "npc_has_weapon",
         "trial": { "type": "PERSUADE", "difficulty": 50 },
         "success": { "topic": "TALK_DONE", "effect": "drop_weapon", "opinion": { "fear": 3, "anger": -3 } },
-        "failure": { 
-          "topic": "TALK_MESMER_FAIL",
-          "opinion": { "trust": -1, "fear": 1, "anger": 2 }
-        }
+        "failure": { "topic": "TALK_MESMER_FAIL", "opinion": { "trust": -1, "fear": 1, "anger": 2 } }
       },
       {
         "text": "We should travel together as companions.  Doesn't that sound like a good idea?  A good idea.",
-        "topic": "TALK_DONE",
         "condition": { "not": "npc_following" },
         "trial": { "type": "PERSUADE", "difficulty": 50 },
-        "success": { "topic": "TALK_DONE", "effect": "follow", "opinion": { "trust": 1, "fear": 2, "anger":-2 } },
-        "failure": { 
-          "topic": "TALK_MESMER_FAIL",
-          "opinion": { "trust": -1, "fear": 2, "anger": 1 }
-        }
+        "success": { "topic": "TALK_DONE", "effect": "follow", "opinion": { "trust": 1, "fear": 2, "anger": -2 } },
+        "failure": { "topic": "TALK_MESMER_FAIL", "opinion": { "trust": -1, "fear": 2, "anger": 1 } }
       },
       {
         "text": "[NPC -ANGER]  Let go of your hostility and relax.  Relax.  Be peaceful and serene.",
@@ -237,7 +189,7 @@
         "opinion": { "fear": -10, "anger": -10 }
       },
       {
-        "text": "[NPC +SLEEP]  Yes sleep.  Let the heaviness pull you into a deep slumber.  Sleep.", 
+        "text": "[NPC +SLEEP]  Yes sleep.  Let the heaviness pull you into a deep slumber.  Sleep.",
         "topic": "TALK_DONE",
         "effect": [
           { "npc_add_effect": "block_mesmer", "duration": 86400 },
@@ -245,10 +197,7 @@
           { "npc_add_effect": "narcosis", "duration": 28800 }
         ]
       },
-      {
-        "text": "You will forget all about this...",
-        "topic": "TALK_DONE"
-      }
+      { "text": "You will forget all about this...", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -259,8 +208,8 @@
       {
         "text": "Purge yourself of weakness and evil, minion!",
         "topic": "TALK_DONE",
-        "condition": { 
-          "npc_has_any_trait":[
+        "condition": {
+          "npc_has_any_trait": [
             "CHEMIMBALANCE",
             "UNOBSERVANT",
             "SLOWLEARNER",
@@ -280,31 +229,31 @@
             "HOARDER"
           ]
         },
-        "effect": [ 
+        "effect": [
           { "npc_add_effect": "hypno_suggest", "duration": 86400 },
-          { "npc_lose_trait": "CHEMIMBALANCE"},
-          { "npc_lose_trait": "UNOBSERVANT"},
-          { "npc_lose_trait": "SLOWLEARNER"},
-          { "npc_lose_trait": "INSOMNIA"},
-          { "npc_lose_trait": "DISORGANIZED"},
-          { "npc_lose_trait": "FORGETFUL"},
-          { "npc_lose_trait": "NARCOLEPTIC"},
-          { "npc_lose_trait": "PYROMANIA"},
-          { "npc_lose_trait": "CANNIBAL"},
-          { "npc_lose_trait": "PSYCHOPATH"},
-          { "npc_lose_trait": "KILLER"},
-          { "npc_lose_trait": "MASOCHIST"},
-          { "npc_lose_trait": "BADTEMPER"},
-          { "npc_lose_trait": "ADDICTIVE"},
-          { "npc_lose_trait": "SCHIZOPHRENIC"},
-          { "npc_lose_trait": "MOODSWINGS"},
-          { "npc_lose_trait": "HOARDER"}
+          { "npc_lose_trait": "CHEMIMBALANCE" },
+          { "npc_lose_trait": "UNOBSERVANT" },
+          { "npc_lose_trait": "SLOWLEARNER" },
+          { "npc_lose_trait": "INSOMNIA" },
+          { "npc_lose_trait": "DISORGANIZED" },
+          { "npc_lose_trait": "FORGETFUL" },
+          { "npc_lose_trait": "NARCOLEPTIC" },
+          { "npc_lose_trait": "PYROMANIA" },
+          { "npc_lose_trait": "CANNIBAL" },
+          { "npc_lose_trait": "PSYCHOPATH" },
+          { "npc_lose_trait": "KILLER" },
+          { "npc_lose_trait": "MASOCHIST" },
+          { "npc_lose_trait": "BADTEMPER" },
+          { "npc_lose_trait": "ADDICTIVE" },
+          { "npc_lose_trait": "SCHIZOPHRENIC" },
+          { "npc_lose_trait": "MOODSWINGS" },
+          { "npc_lose_trait": "HOARDER" }
         ]
       },
       {
         "text": "Fortify your mind to the horrors of the cosmos.  Many dangers lie ahead.",
         "topic": "TALK_DONE",
-        "effect": [ 
+        "effect": [
           { "npc_add_effect": "hypno_suggest", "duration": 86400 },
           { "npc_add_effect": "resist_fear", "duration": 86400 },
           { "npc_add_effect": "resist_psychic_feedback", "duration": 86400 },
@@ -319,7 +268,7 @@
       {
         "text": "[NPC +VALUE]  Submit your will to me.",
         "topic": "TALK_DONE",
-        "effect": [ 
+        "effect": [
           { "npc_add_effect": "hypno_suggest", "duration": 86400 },
           { "npc_lose_effect": "asked_to_follow" },
           { "npc_lose_effect": "asked_to_train" },
@@ -330,8 +279,8 @@
       {
         "text": "Lend me your life-power, mindslave.",
         "topic": "TALK_DONE",
-        "condition": { "not": { "npc_has_effect":"thrall_drain" } },
-        "effect": [ 
+        "condition": { "not": { "npc_has_effect": "thrall_drain" } },
+        "effect": [
           { "npc_add_effect": "hypno_suggest", "duration": 86400 },
           { "npc_add_effect": "thrall_drain", "duration": 86400 },
           { "u_add_effect": "thrall_boost", "duration": 43200 }
@@ -345,52 +294,43 @@
     "id": "TALK_MESMER_START_DUEL",
     "dynamic_line": "You have picked the wrong target, 'friend', for I too am awakened to the powers of the mind.  \nPrepare yourself for battle!",
     "responses": [
-      {
-        "text": "Forgive my mistake! I concede...",
-        "topic": "TALK_MESMER_DUEL_CONCEDE"
-      },
+      { "text": "Forgive my mistake! I concede...", "topic": "TALK_MESMER_DUEL_CONCEDE" },
       {
         "text": "Another psychic?  So be it.  Let the duel begin!",
         "topic": "TALK_MESMER_DUEL_0c",
-        "effect": [ 
+        "effect": [
           { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
           { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" }
         ]
       },
-      {
-        "text": "How does a duel work?",
-        "topic": "TALK_MESMER_DUEL_RULES"
-      }
+      { "text": "How does a duel work?", "topic": "TALK_MESMER_DUEL_RULES" }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_MESMER_DUEL_RULES",
     "dynamic_line": "A psychic duel is fought in a series of rounds.  \nEach successful round establishes one 'contact'.  \nThe first to gain three contacts wins.  \nYou can also risk an assault with less than three contacts,  \n but a failed assault results in instant defeat.",
-    "responses": [
-      {
-        "text": "I see...",
-        "topic": "TALK_MESMER_START_DUEL"
-      }
-    ]
+    "responses": [ { "text": "I see...", "topic": "TALK_MESMER_START_DUEL" } ]
   },
-
   {
     "type": "talk_topic",
     "id": "TALK_MESMER_DUEL_0c",
-    "dynamic_line": ["<mesmer_0c>"],
+    "dynamic_line": [ "<mesmer_0c>" ],
     "responses": [
       {
         "switch": true,
         "text": "* DUEL * [0/3]",
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
-        "trial": { "type": "PERSUADE", "difficulty": -20 },
-        "mod": [ [ "ALTRUISM", 1 ], [ "AGRESSION", -1 ], [ "ANGER", 1 ], [ "BRAVERY", 2 ], [ "FEAR", -2 ] ],
-        "success":{ 
-          "topic": "TALK_MESMER_DUEL_1c",
-          "effect": [{ "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }]
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": -20,
+          "mod": [ [ "ALTRUISM", 1 ], [ "AGRESSION", -1 ], [ "ANGER", 1 ], [ "BRAVERY", 2 ], [ "FEAR", -2 ] ]
         },
-        "failure":{
+        "success": {
+          "topic": "TALK_MESMER_DUEL_1c",
+          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" } ]
+        },
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
           "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
@@ -401,36 +341,42 @@
       {
         "switch": true,
         "text": "* DUEL * [0/3]",
-        "trial": { "type": "PERSUADE", "difficulty": -10 },
-        "mod": [ [ "ALTRUISM", 2 ], [ "AGRESSION", -2 ], [ "ANGER", 1 ], [ "BRAVERY", -1 ], [ "FEAR", 1 ] ],
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": -10,
+          "mod": [ [ "ALTRUISM", 2 ], [ "AGRESSION", -2 ], [ "ANGER", 1 ], [ "BRAVERY", -1 ], [ "FEAR", 1 ] ]
+        },
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
-        "success": { 
+        "success": {
           "topic": "TALK_MESMER_DUEL_1c",
-          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }]
+          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" } ]
         },
         "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" }]
+          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" } ]
         }
       },
       {
         "switch": true,
         "text": "* DUEL * [0/3]",
-        "trial": { "type": "PERSUADE", "difficulty": 0 },
-        "mod": [ [ "ALTRUISM", -1 ], [ "AGRESSION", 2 ], [ "ANGER", 2 ], [ "BRAVERY", 1 ], [ "FEAR", -3 ] ],
-        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
-        "success":{ 
-          "topic": "TALK_MESMER_DUEL_1c",
-           "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }]
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 0,
+          "mod": [ [ "ALTRUISM", -1 ], [ "AGRESSION", 2 ], [ "ANGER", 2 ], [ "BRAVERY", 1 ], [ "FEAR", -3 ] ]
         },
-        "failure":{
+        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
+        "success": {
+          "topic": "TALK_MESMER_DUEL_1c",
+          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" } ]
+        },
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }]
+          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" } ]
         }
       },
       {
         "text": "* CONCEDE *",
-        "condition":{
+        "condition": {
           "not": {
             "or": [
               { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
@@ -443,26 +389,25 @@
       }
     ]
   },
-
-
   {
     "type": "talk_topic",
     "id": "TALK_MESMER_DUEL_1c",
-    "dynamic_line": ["<mesmer_1c>"],
+    "dynamic_line": [ "<mesmer_1c>" ],
     "responses": [
       {
         "switch": true,
         "text": "* DUEL * [1/3]",
-        "trial": { "type": "PERSUADE", "difficulty": -10 },
-        "mod": [ [ "ALTRUISM", -2 ], [ "AGRESSION", 2 ], [ "ANGER", 1 ], [ "BRAVERY", -1 ], [ "FEAR", 0 ] ],
-        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
-        "success":{ 
-          "topic": "TALK_MESMER_DUEL_2c",
-           "effect": [ 
-            { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" }
-          ]
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": -10,
+          "mod": [ [ "ALTRUISM", -2 ], [ "AGRESSION", 2 ], [ "ANGER", 1 ], [ "BRAVERY", -1 ], [ "FEAR", 0 ] ]
         },
-        "failure":{
+        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
+        "success": {
+          "topic": "TALK_MESMER_DUEL_2c",
+          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" } ]
+        },
+        "failure": {
           "topic": "TALK_MESMER_DUEL_DEFEAT",
           "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
@@ -473,47 +418,53 @@
       {
         "switch": true,
         "text": "* DUEL * [1/3]",
-        "trial": { "type": "PERSUADE", "difficulty": 0 },
-        "mod": [ [ "ALTRUISM", 1 ], [ "AGRESSION", -3 ], [ "ANGER", -2 ], [ "BRAVERY", 3 ], [ "FEAR", -1 ] ],
-        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
-        "success":{ 
-          "topic": "TALK_MESMER_DUEL_2c",
-           "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" }]
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 0,
+          "mod": [ [ "ALTRUISM", 1 ], [ "AGRESSION", -3 ], [ "ANGER", -2 ], [ "BRAVERY", 3 ], [ "FEAR", -1 ] ]
         },
-        "failure":{
+        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
+        "success": {
+          "topic": "TALK_MESMER_DUEL_2c",
+          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" } ]
+        },
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" }]
+          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" } ]
         }
       },
       {
         "switch": true,
         "text": "* DUEL * [1/3]",
-        "trial": { "type": "PERSUADE", "difficulty": 10 },
-        "mod": [ [ "ALTRUISM", 1 ], [ "AGRESSION", -1 ], [ "ANGER", 2 ], [ "BRAVERY", -2 ], [ "FEAR", 2 ] ],
-        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
-        "success":{ 
-          "topic": "TALK_MESMER_DUEL_2c",
-           "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" }]
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 10,
+          "mod": [ [ "ALTRUISM", 1 ], [ "AGRESSION", -1 ], [ "ANGER", 2 ], [ "BRAVERY", -2 ], [ "FEAR", 2 ] ]
         },
-        "failure":{
+        "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
+        "success": {
+          "topic": "TALK_MESMER_DUEL_2c",
+          "effect": [ { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" } ]
+        },
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }]
+          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" } ]
         }
       },
       {
         "text": "* Final Assault *",
         "trial": { "type": "PERSUADE", "difficulty": -20 },
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
-        "success":{ 
+        "success": {
           "topic": "TALK_MESMER_DUEL_VICTORY",
-           "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
         },
-        "failure":{
+        "failure": {
           "topic": "TALK_MESMER_DUEL_DEFEAT",
-          "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
@@ -521,27 +472,28 @@
       }
     ]
   },
-
-
   {
     "type": "talk_topic",
     "id": "TALK_MESMER_DUEL_2c",
-    "dynamic_line": ["<mesmer_2c>"],
+    "dynamic_line": [ "<mesmer_2c>" ],
     "responses": [
       {
         "switch": true,
         "text": "* DUEL * [2/3]",
-        "trial": { "type": "PERSUADE", "difficulty": 0 },
-        "mod": [ [ "ALTRUISM", 3 ], [ "AGRESSION", 0 ], [ "ANGER", -2 ], [ "BRAVERY", -1 ], [ "FEAR", 0 ] ],
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 0,
+          "mod": [ [ "ALTRUISM", 3 ], [ "AGRESSION", 0 ], [ "ANGER", -2 ], [ "BRAVERY", -1 ], [ "FEAR", 0 ] ]
+        },
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
-        "success":{ 
+        "success": {
           "topic": "TALK_MESMER_DUEL_VICTORY",
-           "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
         },
-        "failure":{
+        "failure": {
           "topic": "TALK_MESMER_DUEL_DEFEAT",
           "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
@@ -552,53 +504,59 @@
       {
         "switch": true,
         "text": "* DUEL * [2/3]",
-        "trial": { "type": "PERSUADE", "difficulty": 10 },
-        "mod": [ [ "ALTRUISM", 0 ], [ "AGRESSION", -2 ], [ "ANGER", 2 ], [ "BRAVERY", 0 ], [ "FEAR", 1 ] ],
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 10,
+          "mod": [ [ "ALTRUISM", 0 ], [ "AGRESSION", -2 ], [ "ANGER", 2 ], [ "BRAVERY", 0 ], [ "FEAR", 1 ] ]
+        },
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
-        "success":{ 
+        "success": {
           "topic": "TALK_MESMER_DUEL_VICTORY",
-           "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
         },
-        "failure":{
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" }]
+          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" } ]
         }
       },
       {
         "switch": true,
         "text": "* DUEL * [2/3]",
-        "trial": { "type": "PERSUADE", "difficulty": 20 },
-        "mod": [ [ "NPC_PERSUASION", 1 ], [ "AGRESSION", 3 ], [ "ANGER", 3 ], [ "BRAVERY", 0 ], [ "FEAR", -4 ] ],
+        "trial": {
+          "type": "PERSUADE",
+          "difficulty": 20,
+          "mod": [ [ "NPC_PERSUASION", 1 ], [ "AGRESSION", 3 ], [ "ANGER", 3 ], [ "BRAVERY", 0 ], [ "FEAR", -4 ] ]
+        },
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
-        "success":{ 
+        "success": {
           "topic": "TALK_MESMER_DUEL_VICTORY",
-           "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
         },
-        "failure":{
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }]
+          "effect": [ { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" } ]
         }
       },
       {
         "text": "* Final Assault *",
         "trial": { "type": "PERSUADE", "difficulty": -20 },
         "condition": { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
-        "success":{ 
+        "success": {
           "topic": "TALK_MESMER_DUEL_VICTORY",
-           "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
         },
-        "failure":{
+        "failure": {
           "topic": "TALK_MESMER_DUEL_CONTACTED",
-          "effect": [ 
+          "effect": [
             { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "lost" },
             { "npc_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "won" }
           ]
@@ -606,13 +564,14 @@
       }
     ]
   },
-
-
   {
     "type": "talk_topic",
     "id": "TALK_MESMER_DUEL_CONTACTED",
     "dynamic_line": {
-      "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1",
+      "npc_has_var": "psyduel_contact",
+      "type": "general",
+      "context": "mesmer",
+      "value": "1",
       "no": "You'll never defeat me.  [2/3]",
       "yes": "Ha ha.  Your defenses are crumbling.  [1/3]"
     },
@@ -637,7 +596,7 @@
       },
       {
         "text": "[+INSOMNIA] * Absorb your opponent's sleep disorder, permanently, to gain one contact.",
-        "condition":{
+        "condition": {
           "and": [
             { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
             { "u_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
@@ -655,7 +614,7 @@
       },
       {
         "text": "[-ANIMAL EMPATHY] * Sacrifice your empathic nature, permanently, to remove two of your opponent's contacts.",
-        "condition":{
+        "condition": {
           "and": [
             { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
             { "u_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
@@ -671,7 +630,7 @@
       },
       {
         "text": "[+SCHIZO +MOODSWINGS] * Damage your mental state, permanently, to remove two of your opponent's contacts.",
-        "condition":{
+        "condition": {
           "and": [
             { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
             { "u_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
@@ -688,7 +647,7 @@
       },
       {
         "text": "[TERRIFYING vs JITTERY] * Leverage your terrifying nature to gain one contact and remove one of your opponent's.",
-        "condition":{
+        "condition": {
           "and": [
             { "not": { "u_has_var": "psyduel_bonus_contact", "type": "general", "context": "mesmer", "value": "true" } },
             { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
@@ -707,10 +666,10 @@
       },
       {
         "text": "[vs SQUEAMISH] * Take advantage of your opponent's neurosis to gain one contact.  This will cause you psychic feedback.",
-        "condition":{
+        "condition": {
           "and": [
             { "not": { "u_has_var": "psyduel_bonus_contact", "type": "general", "context": "mesmer", "value": "true" } },
-            { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1"},
+            { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
             { "u_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "0" },
             { "npc_has_trait": "SQUEAMISH" },
             { "not": { "u_has_trait": "SQUEAMISH" } }
@@ -725,28 +684,28 @@
       },
       {
         "text": "[SPIRITUAL] * Rely on your spirituality to remove one of your opponent's contacts.  This will also summon dark beings from your subconscious mind.",
-        "condition":{
+        "condition": {
           "and": [
             { "not": { "u_has_var": "psyduel_bonus_contact", "type": "general", "context": "mesmer", "value": "true" } },
-            { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2"},
+            { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
             { "u_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
             { "u_has_trait": "SPIRITUAL" }
           ]
         },
         "effect": [
-         { "mapgen_update": "summon_shadows" },
-         { "u_add_var": "psyduel_bonus_contact", "type": "general", "context": "mesmer", "value": "true" },
-         { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }
+          { "mapgen_update": "summon_shadows" },
+          { "u_add_var": "psyduel_bonus_contact", "type": "general", "context": "mesmer", "value": "true" },
+          { "u_add_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" }
         ],
         "topic": "TALK_MESMER_DUEL_1c"
       },
       {
         "text": "[+PACIFIST] Destroy your inner hostility, permanently, to remove two of your opponent's contacts.",
-        "condition":{
+        "condition": {
           "and": [
             { "npc_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "2" },
             { "u_has_var": "psyduel_contact", "type": "general", "context": "mesmer", "value": "1" },
-            { "not": { "u_has_any_trait": [ "BADTEMPER", "PACIFIST", "KILLER", "PSYCHOPATH"] } },
+            { "not": { "u_has_any_trait": [ "BADTEMPER", "PACIFIST", "KILLER", "PSYCHOPATH" ] } },
             { "not": { "u_has_trait_flag": "CANNIBAL" } }
           ]
         },
@@ -759,8 +718,6 @@
       }
     ]
   },
-
-
   {
     "type": "talk_topic",
     "id": "TALK_MESMER_DUEL_VICTORY",
@@ -780,39 +737,30 @@
         "text": "I have proven myself to be the superior mentalist.  \nThere is no need to punish you for your inevitable failure.",
         "topic": "TALK_DONE",
         "opinion": { "fear": -10, "anger": -10, "value": 4, "favor": 1 },
-        "effect": [ 
-          {"npc_add_var": "psychic_duelist", "type": "general", "context": "mesmer", "value": "yes" }
-        ]
+        "effect": [ { "npc_add_var": "psychic_duelist", "type": "general", "context": "mesmer", "value": "yes" } ]
       },
       {
         "text": "You have failed.  Now fall into a deep slumber.",
         "topic": "TALK_DONE",
         "opinion": { "fear": 10, "anger": -5, "trust": 1 },
-        "effect": [
-            { "npc_add_effect": "sleep", "duration": 28800 },
-            { "npc_add_effect": "narcosis", "duration": 28800 }
-          ]
+        "effect": [ { "npc_add_effect": "sleep", "duration": 28800 }, { "npc_add_effect": "narcosis", "duration": 28800 } ]
       },
       {
         "text": "You are too dangerous to let go. \nI will crush your mind and seal your powers.",
         "topic": "TALK_DONE",
         "opinion": { "fear": 50, "anger": 40, "value": -40, "trust": -15 },
         "effect": [
-            { "npc_add_effect": "sleep", "duration": 28800 },
-            { "npc_add_effect": "narcosis", "duration": 28800 },
-            { "npc_add_trait": "LOBOTOMY" },
-            { "npc_lose_trait": "AWAKENED" },
-            { "npc_lose_trait": "MESMER" },
-            { "npc_lose_trait": "PSYCHIC_DEFENSE" },
-            { "npc_lose_trait": "PSYCHIC_STRENGTH" },
-            { "npc_lose_trait": "PSYCHIC_PROJECT" }
-          ]
+          { "npc_add_effect": "sleep", "duration": 28800 },
+          { "npc_add_effect": "narcosis", "duration": 28800 },
+          { "npc_add_trait": "LOBOTOMY" },
+          { "npc_lose_trait": "AWAKENED" },
+          { "npc_lose_trait": "MESMER" },
+          { "npc_lose_trait": "PSYCHIC_DEFENSE" },
+          { "npc_lose_trait": "PSYCHIC_STRENGTH" },
+          { "npc_lose_trait": "PSYCHIC_PROJECT" }
+        ]
       },
-      {
-        "text": "Those who oppose me...  \n...must DIE!",
-        "topic": "TALK_DONE",
-        "effect": "npc_die"
-      }
+      { "text": "Those who oppose me...  \n...must DIE!", "topic": "TALK_DONE", "effect": "npc_die" }
     ]
   },
   {
@@ -834,7 +782,7 @@
         "switch": true,
         "text": "So this is how it ends...",
         "topic": "TALK_DONE",
-        "condition": { "npc_has_trait_flag":  "CANNIBAL"  },
+        "condition": { "npc_has_trait_flag": "CANNIBAL" },
         "effect": [ { "u_add_effect": "psychic_death", "duration": 77760 } ]
       },
       {
@@ -842,22 +790,21 @@
         "text": "What a humiliating defeat.",
         "topic": "TALK_DONE",
         "condition": { "npc_has_trait": "PACIFIST" },
-        "effect": [ { "npc_add_effect": "psychic_duelist", "duration": 77760 }]
+        "effect": [ { "npc_add_effect": "psychic_duelist", "duration": 77760 } ]
       },
       {
         "switch": true,
         "text": "Mercy!",
-        "trial": { "type": "PERSUADE", "difficulty": 20,
-        "mod": [ [ "ALTRUISM", 3 ], [ "AGRESSION", -2 ], [ "ANGER", -3 ] ] },
-        "success":{
+        "trial": { "type": "PERSUADE", "difficulty": 20, "mod": [ [ "ALTRUISM", 3 ], [ "AGRESSION", -2 ], [ "ANGER", -3 ] ] },
+        "success": {
           "topic": "TALK_DONE",
           "opinion": { "fear": -10, "value": -20 },
-          "effect": [ { "u_add_effect": "psychic_shackles", "duration": 864000 } ] 
+          "effect": [ { "u_add_effect": "psychic_shackles", "duration": 864000 } ]
         },
-        "failure":{
-        "topic": "TALK_DONE",
+        "failure": {
+          "topic": "TALK_DONE",
           "effect": [
-            { "u_add_effect": "psychic_shackles", "duration": 864000 }, 
+            { "u_add_effect": "psychic_shackles", "duration": 864000 },
             { "u_add_effect": "madness", "duration": "PERMANENT" },
             { "u_add_trait": "LOBOTOMY" },
             { "u_lose_trait": "AWAKENED" },
@@ -876,7 +823,7 @@
     "dynamic_line": "A wise choice.  There is no doubt your frail mind would be crushed under the weight of my awesome power.",
     "speaker_effect": [
       {
-       "effect": [
+        "effect": [
           { "npc_lose_var": "psyduel_contact", "type": "general", "context": "mesmer" },
           { "u_lose_var": "psyduel_contact", "type": "general", "context": "mesmer" },
           { "u_lose_var": "psyduel_bonus_contact", "type": "general", "context": "mesmer" },
@@ -899,7 +846,9 @@
             { "u_has_trait": "MESMER" },
             { "not": { "npc_has_trait": "THRALL" } },
             { "not": { "npc_has_any_trait": [ "WILLPOWER", "AWAKENED" ] } },
-            { "not": { "npc_has_any_trait": ["MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] } },
+            {
+              "not": { "npc_has_any_trait": [ "MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] }
+            },
             { "not": { "npc_has_effect": "hypno_suggest" } },
             { "not": { "npc_has_effect": "block_mesmer" } }
           ]
@@ -915,11 +864,7 @@
     "responses": [
       {
         "text": "Damn!",
-        "effect": [ 
-          { "npc_add_trait": "UNTHRALL" },
-          { "npc_add_trait": "WILLPOWER" },
-          { "npc_add_trait": "FEARLESS" }
-        ],
+        "effect": [ { "npc_add_trait": "UNTHRALL" }, { "npc_add_trait": "WILLPOWER" }, { "npc_add_trait": "FEARLESS" } ],
         "topic": "TALK_TRUE_FOODPERSON"
       }
     ]
@@ -936,7 +881,9 @@
             { "u_has_trait": "MESMER" },
             { "not": { "npc_has_trait": "THRALL" } },
             { "not": { "npc_has_any_trait": [ "WILLPOWER", "AWAKENED" ] } },
-            { "not": { "npc_has_any_trait": ["MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] } },
+            {
+              "not": { "npc_has_any_trait": [ "MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] }
+            },
             { "not": { "npc_has_effect": "hypno_suggest" } },
             { "not": { "npc_has_effect": "block_mesmer" } }
           ]
@@ -954,11 +901,7 @@
       {
         "text": "Your eyes are tired.  Your mind is wrapped in thick fog.",
         "switch": true,
-        "trial": {
-          "type": "PERSUADE",
-          "difficulty": 30,
-          "mod": [ [ "AGGRESSION", -2 ] ]
-        },
+        "trial": { "type": "PERSUADE", "difficulty": 30, "mod": [ [ "AGGRESSION", -2 ] ] },
         "success": { "topic": "TALK_MESMER_GUARD_SUCCESS" },
         "failure": { "topic": "TALK_MESMER_FAIL" }
       }
@@ -970,12 +913,10 @@
     "dynamic_line": "So... tired...",
     "responses": [
       { "text": "Awaken.  And forget this ever happened.", "topic": "TALK_DONE" },
-      { "text": "Yes sleep.  Let the heaviness pull you into a deep slumber.  Sleep!", 
+      {
+        "text": "Yes sleep.  Let the heaviness pull you into a deep slumber.  Sleep!",
         "topic": "TALK_DONE",
-        "effect": [
-          { "npc_add_effect": "sleep", "duration": 28800 },
-          { "npc_add_effect": "narcosis", "duration": 28800 }
-        ]
+        "effect": [ { "npc_add_effect": "sleep", "duration": 28800 }, { "npc_add_effect": "narcosis", "duration": 28800 } ]
       }
     ]
   },
@@ -985,21 +926,20 @@
     "responses": [
       {
         "text": "[MESMER]  There is no item.  You must be seeing things.",
-        "condition":{
-          "and":[
+        "condition": {
+          "and": [
             { "u_has_trait": "MESMER" },
             "u_has_stolen_item",
             { "not": { "npc_has_any_trait": [ "WILLPOWER", "MESMER", "AWAKENED" ] } },
-            { "not": { "npc_has_any_trait": ["MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] } },
+            {
+              "not": { "npc_has_any_trait": [ "MYCCUS", "MARLOSS", "THRESH_ALPHA", "THRESH_SLIME", "THRESH_CEPHALOPOD" ] }
+            },
             { "not": { "npc_has_effect": "hypno_suggest" } },
             { "not": { "npc_has_effect": "block_mesmer" } }
           ]
         },
         "trial": { "type": "PERSUADE", "difficulty": 40, "mod": [ [ "TRUST", 4 ], [ "VALUE", 0 ], [ "ANGER", -1 ] ] },
-        "success": { 
-          "topic": "TALK_MESMER_KEEP_ITEM",
-          "effect": { "npc_add_effect": "hypno_suggest", "duration": 3600 }
-        },
+        "success": { "topic": "TALK_MESMER_KEEP_ITEM", "effect": { "npc_add_effect": "hypno_suggest", "duration": 3600 } },
         "failure": { "topic": "TALK_DISALLOW_KEEP_ITEM", "opinion": { "trust": -3, "anger": 2 }, "effect": { "u_faction_rep": -15 } }
       }
     ]

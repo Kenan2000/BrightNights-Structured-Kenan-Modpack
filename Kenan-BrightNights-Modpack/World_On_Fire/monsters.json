@@ -1,5 +1,5 @@
 [
- {
+  {
     "id": "mon_ant_fire",
     "type": "MONSTER",
     "name": "giant fire ant",
@@ -27,21 +27,10 @@
     "vision_day": 5,
     "vision_night": 5,
     "upgrades": { "age_grow": 14, "into": "mon_ant_fire_soldier" },
-    "special_attacks": [ [ "EAT_FOOD", 30 ],
-{
-        "type": "melee",
-        "cooldown": 25,
-        "move_cost": 150,
-        "melee_type": "firesting",
-        "ammo_type": "generic_no_ammo",
-        "fake_str": 5,
-        "fake_dex": 4,
-        "fake_per": 6,
-        "max_ammo": 1000,
-        "ranges": [ [ 1, 1, "DEFAULT" ] ],
-        "description": "Fire Ant bites, then attempts to sting!"
-      },
-{
+    "special_attacks": [
+      [ "EAT_FOOD", 30 ],
+      { "id": "firesting" },
+      {
         "type": "gun",
         "cooldown": 25,
         "move_cost": 150,
@@ -54,7 +43,7 @@
         "ranges": [ [ 2, 8, "DEFAULT" ] ],
         "description": "Fire ant manibles click with a spark, launching firey spit!"
       }
- ],
+    ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
     "harvest": "arachnid_fire",
@@ -144,20 +133,9 @@
     "armor_cut": 14,
     "vision_day": 5,
     "vision_night": 5,
-    "special_attacks": [ {
-        "type": "melee",
-        "cooldown": 25,
-        "move_cost": 150,
-        "melee_type": "firesting",
-        "ammo_type": "generic_no_ammo",
-        "fake_str": 5,
-        "fake_dex": 4,
-        "fake_per": 6,
-        "max_ammo": 1000,
-        "ranges": [ [ 1, 1, "DEFAULT" ] ],
-        "description": "Fire Ant bites, then attempts to sting!"
-      },
-{
+    "special_attacks": [
+      { "id": "firesting" },
+      {
         "type": "gun",
         "cooldown": 25,
         "move_cost": 150,
@@ -170,13 +148,13 @@
         "ranges": [ [ 2, 8, "DEFAULT" ] ],
         "description": "Fire ant manibles click with a spark, launching a glob of firey spit!"
       }
-],
+    ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "FIREBALL", "NORMAL" ],
     "harvest": "arachnid_fire",
     "flags": [ "FIREPROOF", "DRIPS_NAPALM", "CLIMBS", "HEARS", "VENOM", "ATTACKMON", "SEES", "SMELLS", "SWIMS" ]
   },
-{
+  {
     "id": "mon_zombie_firebag",
     "type": "MONSTER",
     "name": "ember bloated zombie",
@@ -206,7 +184,7 @@
     "death_function": [ "FIREBALL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY", "FLAMMABLE" ]
   },
-{
+  {
     "id": "mon_zombie_firey",
     "type": "MONSTER",
     "name": "volatile zombie",
@@ -231,7 +209,8 @@
     "dodge": 1,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ {
+    "special_attacks": [
+      {
         "type": "gun",
         "cooldown": 25,
         "move_cost": 150,
@@ -244,7 +223,7 @@
         "ranges": [ [ 2, 8, "DEFAULT" ] ],
         "description": "Volatile zombie ejects firey spit!"
       }
- ],
+    ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "FIREBALL", "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
@@ -265,7 +244,7 @@
       "FILTHY"
     ]
   },
-{
+  {
     "id": "mon_zombie_fspitter",
     "type": "MONSTER",
     "name": "fire spitter zombie",
@@ -290,7 +269,8 @@
     "dodge": 1,
     "vision_night": 3,
     "harvest": "zombie",
-    "special_attacks": [ {
+    "special_attacks": [
+      {
         "type": "gun",
         "cooldown": 20,
         "move_cost": 150,
@@ -302,7 +282,8 @@
         "max_ammo": 1000,
         "ranges": [ [ 2, 8, "DEFAULT" ] ],
         "description": "Spitter vomits out a glob of firey spit!"
-      } ],
+      }
+    ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "FIREBALL", "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
@@ -323,7 +304,7 @@
       "FILTHY"
     ]
   },
-{
+  {
     "id": "mon_zombie_incendiary",
     "type": "MONSTER",
     "name": "incendiary zombie",
@@ -351,7 +332,8 @@
     "vision_night": 3,
     "luminance": 0,
     "harvest": "zombie",
-    "special_attacks": [ {
+    "special_attacks": [
+      {
         "type": "gun",
         "cooldown": 10,
         "move_cost": 150,
@@ -363,7 +345,8 @@
         "max_ammo": 1000,
         "ranges": [ [ 2, 8, "DEFAULT" ] ],
         "description": "Incendiary zombie spits a wad of fire!"
-      }, {
+      },
+      {
         "type": "gun",
         "cooldown": 15,
         "move_cost": 150,
@@ -376,7 +359,7 @@
         "ranges": [ [ 2, 8, "DEFAULT" ] ],
         "description": "Incendiary zombie vomits up a glob of flamming spit!"
       }
- ],
+    ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "FIREBALL", "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
@@ -397,7 +380,7 @@
       "FILTHY"
     ]
   },
-{
+  {
     "id": "mon_zombie_fire",
     "type": "MONSTER",
     "name": "crimson zombie",
@@ -442,7 +425,7 @@
       "FILTHY"
     ]
   },
-{
+  {
     "id": "mon_zombie_brute_crimson",
     "type": "MONSTER",
     "name": "crimson brute",
@@ -499,7 +482,8 @@
     "volume": "62500 ml",
     "weight": 81500,
     "hp": 200,
-    "speed": 50, "//": "slow walk speed - intimidating!",
+    "speed": 50,
+    "//": "slow walk speed - intimidating!",
     "material": [ "flesh" ],
     "symbol": "Z",
     "color": "i_red",
@@ -507,35 +491,15 @@
     "morale": 100,
     "melee_skill": 5,
     "melee_dice": 1,
-    "melee_dice_sides": 2, "//": "melee damage is quite weak since the shockfield around it is its most dangerous function",
+    "melee_dice_sides": 2,
+    "//": "melee damage is quite weak since the shockfield around it is its most dangerous function",
     "vision_night": 3,
     "luminance": 16,
     "harvest": "CBM_SUBS",
-    "special_attacks": [ {
-        "type": "melee",
-        "cooldown": 20,
-        "move_cost": 150,
-        "melee_type": "spark",
-        "ammo_type": "generic_no_ammo",
-        "fake_str": 5,
-        "fake_dex": 4,
-        "fake_per": 6,
-        "max_ammo": 1000,
-        "ranges": [ [ 1, 1, "DEFAULT" ] ],
-        "description": "The husk lights a fire!"
-      } ],
+    "special_attacks": [ { "id": "spark" } ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL", "FIREBALL" ],
-    "flags": [
-      "SEES",
-      "HEARS",
-      "WARM",
-      "POISON",
-      "FIREY",
-      "NO_BREATHE",
-      "REVIVES",
-      "FILTHY"
-    ]
+    "flags": [ "SEES", "HEARS", "WARM", "POISON", "FIREY", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_flamebot",
@@ -563,7 +527,7 @@
     "death_function": [ "EXPLODE", "FIREBALL" ],
     "flags": [ "SEES", "HEARS", "BASHES", "ELECTRONIC", "NO_BREATHE", "PATH_AVOID_DANGER_1", "LOUDMOVES", "FIREPROOF" ]
   },
-{
+  {
     "id": "mon_flametank",
     "type": "MONSTER",
     "name": "exterminator tank",
@@ -584,7 +548,9 @@
     "armor_cut": 14,
     "vision_day": 50,
     "revert_to_itype": "bot_flametank",
-    "special_attacks": [ [ "FLAMETHROWER", 12 ], {
+    "special_attacks": [
+      [ "FLAMETHROWER", 12 ],
+      {
         "type": "gun",
         "cooldown": 25,
         "move_cost": 150,
@@ -596,12 +562,24 @@
         "max_ammo": 1000,
         "ranges": [ [ 2, 10, "DEFAULT" ] ],
         "description": "Tank discharges a massive napalm bomb!"
-      } ],
+      }
+    ],
     "death_drops": { "groups": [ [ "robots", 4 ] ] },
     "death_function": [ "EXPLODE", "FIREBALL" ],
-    "flags": [ "SEES", "HEARS", "BASHES", "ELECTRONIC", "DESTROYS", "GOODHEARING", "NO_BREATHE", "PATH_AVOID_DANGER_1", "LOUDMOVES", "FIREPROOF" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "BASHES",
+      "ELECTRONIC",
+      "DESTROYS",
+      "GOODHEARING",
+      "NO_BREATHE",
+      "PATH_AVOID_DANGER_1",
+      "LOUDMOVES",
+      "FIREPROOF"
+    ]
   },
-{
+  {
     "id": "mon_minebot",
     "type": "MONSTER",
     "name": "explosive skitterbot",
@@ -629,7 +607,7 @@
     "death_function": [ "EXPLODE" ],
     "flags": [ "SEES", "HEARS", "GOODHEARING", "ELECTRONIC", "NO_BREATHE", "PATH_AVOID_DANGER_1" ]
   },
-{
+  {
     "id": "mon_fireminebot",
     "type": "MONSTER",
     "name": "incendiary skitterbot",
@@ -653,9 +631,8 @@
     "revert_to_itype": "bot_fireminebot",
     "path_settings": { "max_dist": 5 },
     "starting_ammo": { "grenade_inc": 1 },
-    "special_attacks": [ [ "KAMIKAZE", 0 ] ], 
+    "special_attacks": [ [ "KAMIKAZE", 0 ] ],
     "death_function": [ "FIREBALL", "EXPLODE" ],
     "flags": [ "SEES", "HEARS", "GOODHEARING", "ELECTRONIC", "NO_BREATHE", "PATH_AVOID_DANGER_1" ]
   }
 ]
-

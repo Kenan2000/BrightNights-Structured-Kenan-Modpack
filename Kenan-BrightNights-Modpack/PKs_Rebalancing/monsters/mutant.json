@@ -411,28 +411,25 @@
         ]
       }
     ],
-    "upgrades": {
-      "half_life": 28,
-      "into": "mon_jabberwock_pk",
-      "flags": [
-        "SEES",
-        "HEARS",
-        "SMELLS",
-        "STUMBLES",
-        "WARM",
-        "BASHES",
-        "DESTROYS",
-        "ATTACKMON",
-        "FUR",
-        "LEATHER",
-        "BONES",
-        "POISON",
-        "BONES",
-        "FAT",
-        "REVIVES",
-        "NO_NECRO"
-      ]
-    }
+    "upgrades": { "half_life": 28, "into": "mon_jabberwock_pk" },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "DESTROYS",
+      "ATTACKMON",
+      "FUR",
+      "LEATHER",
+      "BONES",
+      "POISON",
+      "BONES",
+      "FAT",
+      "REVIVES",
+      "NO_NECRO"
+    ]
   },
   {
     "id": "mon_jabberwock_pk",
@@ -610,7 +607,7 @@
       "WARM",
       "FUR",
       "KEENNOSE",
-	  "BLEED",
+      "BLEED",
       "BONES",
       "FAT",
       "SWARMS",
@@ -652,13 +649,13 @@
         "id": "slash",
         "cooldown": 20,
         "damage_max_instance": [
-          { "damage_type": "stab", "amount": 6, "armor_multiplier": 0.75 },
-          { "damage_type": "cut", "amount": 16, "armor_multiplier": 0.75 }
+          { "damage_type": "cut", "amount": 18, "armor_multiplier": 0.75 },
+          { "damage_type": "stab", "amount": 4, "armor_multiplier": 0.75 }
         ]
       },
       { "type": "leap", "cooldown": 15, "max_range": 2 },
       {
-        "id": "LUNGE",
+        "id": "impale",
         "cooldown": 20,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 18, "armor_multiplier": 0.75 },
@@ -677,7 +674,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-	  "BLEED",
+      "BLEED",
       "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_1",
@@ -735,7 +732,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-	  "BLEED",
+      "BLEED",
       "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_2",
@@ -799,7 +796,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-	  "BLEED",
+      "BLEED",
       "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_2",
@@ -892,7 +889,7 @@
       "KEENNOSE",
       "BORES",
       "HUMAN",
-	  "BLEED",
+      "BLEED",
       "BONES",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS",
@@ -1086,6 +1083,19 @@
     "emit_fields": [ "emit_gas_stream", "emit_gas_stream", "emit_radiation_plume" ],
     "path_settings": { "max_dist": 30 },
     "death_function": [ "MELT", "ACID" ],
-    "flags": [ "SEES", "HEARS", "POISON", "HUMAN", "WARM", "BASHES", "GROUP_BASH", "BLEED", "NO_BREATHE", "LEATHER", "BONES", "STUMBLES" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "POISON",
+      "HUMAN",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "BLEED",
+      "NO_BREATHE",
+      "LEATHER",
+      "BONES",
+      "STUMBLES"
+    ]
   }
 ]

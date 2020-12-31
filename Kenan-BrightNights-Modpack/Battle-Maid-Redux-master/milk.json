@@ -5,12 +5,12 @@
     "category": "other",
     "symbol": "m",
     "color": "white",
-    "name": "little maid pet (seeded)",
+    "name": { "str": "little maid pet (seeded)" },
     "description": "A little maid with a growing stomach. She's gently blushing and gently smiling at you. You can milk her after 28 days.",
     "price": 60000,
     "material": [ "maid" ],
-    "weight": 34000,
-    "volume": 40,
+    "weight": "34000 g",
+    "volume": "10 L",
     "use_action": {
       "type": "delayed_transform",
       "transform_age": 403200,
@@ -26,12 +26,12 @@
     "category": "other",
     "symbol": "m",
     "color": "white",
-    "name": "little maid pet (milkable)",
+    "name": { "str": "little maid pet (milkable)" },
     "description": "A little maid whose belly and breasts have swollen considerably. She's staring at you with lavishing eyes. You can milk her.",
     "price": 60000,
     "material": [ "maid" ],
-    "weight": 36000,
-    "volume": 45
+    "weight": "36000 g",
+    "volume": "11250 ml"
   },
   {
     "id": "little_maid_R18_milk2",
@@ -39,19 +39,19 @@
     "category": "other",
     "symbol": "m",
     "color": "white",
-    "name": "little maid pet (milked)",
+    "name": { "str": "little maid pet (milked)" },
     "description": "A little maid who has been recently milked. She has a fulfilled expression on her face and her skin is shining. You can milk her again after 23 hours.",
     "price": 60000,
     "material": [ "maid" ],
-    "weight": 36000,
-    "volume": 45,
+    "weight": "36000 g",
+    "volume": "11250 ml",
     "use_action": {
       "type": "delayed_transform",
       "transform_age": 13800,
       "not_ready_msg": "The little maid gently took your hand and placed it on her belly. It feels very warm...",
       "msg": "The little maid came close to you. She's staring at you, waiting to be milked.",
       "moves": 0,
-      "target": "little_maid_R18_milk"
+      "target": "little_maid_R18"
     }
   },
   {
@@ -71,11 +71,11 @@
   {
     "type": "COMESTIBLE",
     "id": "maid_aphrodisiac",
-    "name": "aphrodisiac",
-    "weight": 322,
+    "name": { "str": "aphrodisiac" },
+    "weight": "322 g",
     "color": "pink",
     "addiction_type": "none",
-    "spoils_in": 0,
+    "spoils_in": "0 hours",
     "stim": 0,
     "comestible_type": "DRINK",
     "container": "bottle_plastic",
@@ -86,15 +86,16 @@
     "nutrition": 10,
     "description": "An aphrodisiac that raises your vitality if you drink it. If you give it to a little maid, she'll lay eggs.",
     "price": 300,
-    "material": "veggy",
+    "material": [ "veggy" ],
     "tool": "null",
-    "volume": 1,
+    "volume": "250 ml",
     "phase": "liquid",
     "charges": 1,
     "fun": 20
   },
   {
     "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
     "result": "maid_aphrodisiac",
     "id_suffix": "from_apple",
     "result_mult": 2,
@@ -106,7 +107,7 @@
     "reversible": false,
     "autolearn": true,
     "qualities": [ { "id": "CHEM", "level": 1, "amount": 1 } ],
-    "tools": [ [ [ "hotplate", 6 ], [ "char_smoker", 1 ], [ "toolset", 6 ], [ "fire", -1 ] ] ],
+    "tools": [ [ [ "hotplate", 6 ], [ "char_smoker", 1 ], [ "toolset", 6 ], [ "surface_heat", 1, "LIST" ] ] ],
     "components": [
       [ [ "apple", 1 ], [ "pomegranate", 1 ], [ "onion", 1 ], [ "lettuce", 1 ], [ "garlic", 1 ], [ "pepper", 10 ] ],
       [ [ "honey_bottled", 1 ], [ "honey_glassed", 1 ], [ "honeycomb", 1 ] ],
@@ -115,6 +116,7 @@
   },
   {
     "type": "recipe",
+    "activity_level": "NO_EXERCISE",
     "result": "milk",
     "id_suffix": "from_little_maid_R18_milk",
     "result_mult": 3,
@@ -131,6 +133,7 @@
   },
   {
     "type": "recipe",
+    "activity_level": "NO_EXERCISE",
     "result": "egg_bird",
     "id_suffix": "from_maid_aphrodisiac",
     "result_mult": 3,
@@ -148,7 +151,7 @@
   {
     "type": "mutation",
     "id": "futanari",
-    "name": "Hermaphrodite",
+    "name": { "str": "Hermaphrodite" },
     "points": 0,
     "description": "There are two genders in your body.",
     "starting_trait": true,
@@ -157,7 +160,7 @@
   {
     "type": "mutation",
     "id": "syokusyu",
-    "name": "Reproductive Tentacles",
+    "name": { "str": "Reproductive Tentacles" },
     "points": 0,
     "description": "Writhing tentacles that can be used in reproduction are growing in your body.",
     "starting_trait": true,

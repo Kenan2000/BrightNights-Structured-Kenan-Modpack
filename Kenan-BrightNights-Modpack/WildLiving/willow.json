@@ -1,7 +1,7 @@
 [
 	{
 		"type": "terrain",
-		"override": true,
+		"copy-from": "t_tree_willow",
 		"id": "t_tree_willow",
 		"name": "willow tree",
 		"description": "A willow tree",
@@ -127,7 +127,7 @@
 	},
 	{
 		"type": "recipe",
-		"override": true,
+		"id_suffix": "WL_recipes",
 		"result": "rope_makeshift_6",
 		"category": "CC_OTHER",
 		"subcategory": "CSC_OTHER_MATERIALS",

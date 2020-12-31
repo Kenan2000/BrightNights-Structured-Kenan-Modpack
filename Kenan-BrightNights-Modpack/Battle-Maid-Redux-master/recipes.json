@@ -411,20 +411,38 @@
   {
     "type": "recipe",
     "result": "flask_shoggoth",
+	"id_suffix": "from_tainted_meat",
     "category": "CC_OTHER",
     "skill_used": "cooking",
     "difficulty": 9,
-    "time": "100 m",
+    "time": "180 m",
     "reversible": false,
     "autolearn": false,
     "book_learn": [ [ "book_shoggoth", 9 ] ],
     "tools": [ [ [ "chemistry_set", 5 ] ] ],
     "components": [
-      [ [ "meat_shoggoth", 1 ] ],
+      [ [ "meat_tainted", 1 ] ],
       [ [ "flask_glass", 1 ] ],
       [ [ "blood", 10 ] ],
-      [ [ "maid_point", 4454 ] ],
+      [ [ "maid_point", 4000 ] ],
       [ [ "maid_dress", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "flask_shoggoth",
+    "category": "CC_OTHER",
+    "skill_used": "cooking",
+    "difficulty": 7,
+    "time": "30 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "book_shoggoth", 9 ] ],
+    "tools": [ [ [ "chemistry_set", 5 ] ] ],
+    "components": [
+      [ [ "meat_shoggoth", 2 ] ],
+      [ [ "flask_glass", 1 ] ],
+      [ [ "blood", 10 ] ]
     ]
   },
   {
@@ -609,7 +627,7 @@
     "id_suffix": "from_recall_ration",
     "byproducts": [ [ "water_clean" ] ],
     "category": "CC_FOOD",
-    "subcategory": "CSC_OTHER_TOOLS",
+    "subcategory": "CSC_FOOD_MEAT",
     "skill_used": "fabrication",
     "difficulty": 0,
     "time": "3 m",
@@ -702,7 +720,7 @@
     "reversible": false,
     "autolearn": true,
     "qualities": [ { "id": "COOK", "level": 3, "amount": 1 }, { "id": "CUT", "level": 1, "amount": 1 } ],
-    "tools": [ [ [ "hotplate", 7 ], [ "char_smoker", 7 ], [ "toolset", 7 ], [ "fire", -1 ] ] ],
+    "tools": [ [ [ "hotplate", 7 ], [ "char_smoker", 7 ], [ "toolset", 7 ], [ "surface_heat", 1, "LIST" ] ] ],
     "components": [ [ [ "human_flesh", 3 ], [ "meat_tainted", 3 ] ], [ [ "maid_point", 50 ] ] ]
   },
   {
@@ -749,5 +767,20 @@
     "autolearn": true,
     "tools": [ [ [ "sewing_kit", 15 ] ] ],
     "components": [ [ [ "rag", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "milk_serum",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "skills_required": [ "firstaid", 3 ],
+    "difficulty": 7,
+    "time": "2 h",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_serum", 6 ], [ "recipe_animal", 6 ] ],
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "mutagen_cattle", 2 ] ] ],
+    "flags": [ "SECRET" ]
   }
 ]
