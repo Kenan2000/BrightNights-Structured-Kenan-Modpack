@@ -8,7 +8,8 @@
     "description": "Replacing several key parts flaregun to convert it to a .40 firearm.  The conversion results in reduced accuracy and increased recoil.",
     "location": "accessories",
     "price": 48000,
-    "material": "steel",
+    "install_time": "15 m",
+    "material": [ "steel" ],
     "weight": "226 g",
     "volume": "250 ml",
     "bashing": 3,
@@ -27,6 +28,7 @@
     "weight": "1500 g",
     "volume": "750 ml",
     "price": 100000,
+    "install_time": "15 m",
     "material": [ "steel", "ceramic" ],
     "symbol": ":",
     "color": "light_gray",
@@ -42,7 +44,6 @@
     "id": "emas",
     "name": "E.M.A.S.",
     "dispersion_modifier": 45,
-    "damage_modifier": 4,
     "description": "ElectroMagnetic Acceleration System is an array of electromagnets attached to the front of the barrel, accelerating any projectile fired to even higher velocities, increasing damage, recoil and reducing accuracy.  It does however drain UPS charges when firing and due to extensive modifications the gun can no longer operate without a UPS.",
     "location": "barrel",
     "weight": "450 g",
@@ -50,10 +51,20 @@
     "symbol": ":",
     "material": [ "steel" ],
     "mod_targets": [ "smg", "rifle", "shotgun", "pistol" ],
+    "gun_data": {
+      "skill": "launcher",
+      "ammo": [ "metal_rail", "nail" ],
+      "durability": 10,
+      "range": 14,
+      "loudness": 12,
+      "ups_charges": 3,
+      "ranged_damage": { "damage_type": "stab", "amount": 4 }
+    },
     "volume": "500 ml",
     "bashing": 5,
     "handling_modifier": -5,
     "price": 20000,
+    "install_time": "15 m",
     "min_skills": [ [ "gun", 5 ] ]
   }
 ]

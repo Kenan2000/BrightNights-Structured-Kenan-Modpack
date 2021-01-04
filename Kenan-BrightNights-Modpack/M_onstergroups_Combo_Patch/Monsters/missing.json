@@ -253,7 +253,7 @@
     "luminance": 0,
     "hp": 80,
     "death_function": "NORMAL",
-    "special_attack": [ [ "GRAB", 4 ], { "type": "leap", "cooldown": 10, "max_range": 5 } ],
+    "special_attacks": [ [ "GRAB", 4 ], { "type": "leap", "cooldown": 10, "max_range": 5 } ],
     "description": "A true monster if you ever saw one. It is hunched over on two highly muscled legs with massive claws on four limbs. It's back and head is covered with thick, organic, armored plates.",
     "regen_morale": true,
     "flags": [
@@ -305,7 +305,7 @@
     "hp": 100,
     "special_freq": [ 0 ],
     "death_function": "NORMAL",
-    "special_attack": [ [ "GRAB", 2 ], { "type": "leap", "cooldown": 10, "max_range": 4 } ],
+    "special_attacks": [ [ "GRAB", 2 ], { "type": "leap", "cooldown": 10, "max_range": 4 } ],
     "description": "A wicked beast with four arms and razor-sharp claws. Do NOT get into close-combat with these things. It's back and head is covered with thick, organic, armored plates.",
     "regen_morale": true,
     "flags": [
@@ -358,7 +358,7 @@
     "hp": 210,
     "special_freq": [ 0 ],
     "death_function": "NORMAL",
-    "special_attack": [ [ "SHRIEK", 22 ] ],
+    "special_attacks": [ [ "SHRIEK", 22 ] ],
     "description": "A towering beast, covered in thick plates of heavy chitin. It's muscles ripple beneath it's tough hide.",
     "regen_morale": true,
     "flags": [
@@ -410,7 +410,7 @@
     "hp": 10,
     "special_freq": [ 0 ],
     "death_function": "NORMAL",
-    "special_attack": [ { "type": "leap", "cooldown": 15, "max_range": 8 } ],
+    "special_attacks": [ { "type": "leap", "cooldown": 15, "max_range": 8 } ],
     "description": "A snake-like creature that slithers along the ground at astonishing speed. It is very small but incredably agile.",
     "regen_morale": true,
     "flags": [
