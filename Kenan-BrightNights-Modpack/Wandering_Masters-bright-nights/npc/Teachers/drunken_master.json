@@ -23,12 +23,13 @@
     "bonus_int": { "rng": [ 4, 6 ] },
     "bonus_per": { "rng": [ 0, 4 ] },
     "weapon_override": "EMPTY_GROUP",
+    "carry_override": "EMPTY_GROUP",
     "traits": [ { "group": "Appearance_EastAsian" }, { "group": "NPC_starting_traits" }, { "trait": "BGSS_drunken_master" } ],
     "skills": [ { "skill": "unarmed", "bonus": { "rng": [ 4, 8 ] } }, { "skill": "dodge", "bonus": { "rng": [ 4, 8 ] } } ]
   },
   {
     "type": "talk_topic",
-    "id": [ "TALK_drunken_master_1", "TALK_drunken_master_brew_nope", "TALK_drunken_master_Background_style" ],
+    "id": [ "TALK_drunken_master_1", "TALK_drunken_master_brew_nope", "TALK_drunken_master_Background_style","TALK_drunken_master_rest" ],
     "dynamic_line": "<greet>",
     "speaker_effect": {
       "effect": [
@@ -55,8 +56,15 @@
       },
       {
         "text": "Do you need any help?",
-        "topic": "TALK_MISSION_LIST",
         "condition": { "npc_has_var": "master_mission", "type": "flag", "context": "mission", "value": "yes" },
+        "trial": {
+          "type": "CONDITION",
+          "condition": {
+            "not": { "npc_has_effect":"dm_brew"}
+          }
+        },
+        "success": { "topic": "TALK_MISSION_LIST" },
+        "failure": { "topic": "TALK_drunken_master_rest" },
         "switch": true
       },
       {
@@ -72,7 +80,7 @@
         },
         "effect": "follow"
       },
-      { "text": "Can you teach me something?", "topic": "TALK_drunken_master_teach_check" },
+      { "text": "Can you teach me something?", "condition": { "npc_has_var": "master_mission", "type": "flag", "context": "mission", "value": "yes" }, "topic": "TALK_drunken_master_teach_check" },
       { "text": "Goodbye.", "topic": "TALK_DONE" }
     ]
   },
@@ -93,22 +101,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_drunken_master_Background_style",
-    "dynamic_line": "Ну, учитель из меня так себе, но поскольку ты мне нравишься, я могу попробовать.  Но учти, что за свою работу я потребую небольшую плату.  Я не оставил свой путь в поисках редчайшего пойла.  Я нашёл древнюю книгу с рецептами зелий древних кельтских шаманов, и мне нужны ингредиенты для их приготовления.  Приноси"
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_drunken_master_wait",
-    "dynamic_line": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке... По моим прикидкам, это займёт целый день.  Приходи попозже.",
-    "responses": [
-      {
-        "text": "...",
-        "topic": "TALK_DONE",
-        "effect": [
-          { "npc_add_effect": "wait_time", "duration": 86400 },
-          { "npc_add_var": "wait", "type": "general", "context": "brew", "value": "yes" }
-        ]
-      }
-    ]
+    "dynamic_line": "Ну, учитель из меня так себе, но поскольку ты мне нравишься, я могу попробовать.  Но учти, что за свою работу я потребую небольшую плату.  Я не оставил свой путь в поисках редчайшего пойла.  Я нашёл древнюю книгу с рецептами зелий древних кельтских шаманов, и мне нужны ингредиенты для их приготовления.  Если поможешь мне с поиском ингредиентов, я помогу тебе в изучении моего стиля боя."
   },
   {
     "type": "talk_topic",
@@ -117,8 +110,13 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_drunken_master_rest",
+    "dynamic_line": "Мне нужен отдых, <name_g>.  Давай как-нибудь потом."
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_drunken_master_brew_ready",
-    "dynamic_line": "*\"Всё готово, <name_g>.  Ну что, попробуем наше 'зелье'?\", - он заговорщически подмигнул",
+    "dynamic_line": "Всё готово, <name_g>.\", он заговорщически подмигнул. \"Ну что, попробуем наше 'зелье'?",
     "responses": [
       {
         "text": "Let's do it!",
@@ -181,7 +179,7 @@
     "id": "TALK_drunken_master_mayhem",
     "dynamic_line": {
       "has_assigned_mission": true,
-      "yes": "Я всё ещё впереди по очкам!  ",
+      "yes": "Я всё ещё впереди по очкам!",
       "no": "Ладно, признаю твою победу.  Теперь давай передохнем."
     },
     "responses": [
@@ -197,10 +195,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_drunken_master_teach_check",
-    "dynamic_line": "I teach only those who help holy warriors in need.  Do you help holy warriors in need?",
+    "dynamic_line": "А ты помог мне, ученик?",
     "responses": [
       {
-        "text": "Yes, my brother.",
+        "text": "Yes, master.",
         "condition": { "npc_has_var": "u_helped_drunken_master", "type": "general", "context": "meeting", "value": "yes" },
         "trial": {
           "type": "CONDITION",
@@ -221,25 +219,20 @@
   {
     "type": "talk_topic",
     "id": "TALK_drunken_master_teach",
-    "dynamic_line": {
-      "and": [
-        "I learned all from this book. You can take it.  God bless you, my ",
-        { "u_male": true, "yes": "brother!", "no": "sister!" }
-      ]
-    },
-    "responses": [ { "text": "Thank you, holy warrior.", "topic": "TALK_drunken_master_1" } ]
+    "dynamic_line": "I learned all from this book. You can take it.",
+    "responses": [ { "text": "Thank you, master.", "topic": "TALK_drunken_master_1" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_drunken_master_teach_done",
     "dynamic_line": "I already taught you all I knew.",
-    "responses": [ { "text": "Thanks again, holy warrior.", "topic": "TALK_DONE" } ]
+    "responses": [ { "text": "Thank you again, master", "topic": "TALK_DONE" } ]
   },
   {
     "id": "MISSION_drunken_master_1",
     "type": "mission_definition",
     "has_generic_rewards": false,
-    "name": { "str": "Принеси ингредиенты" },
+    "name": { "str": "Ингредиенты для пойла" },
     "description": "Gather:\n <color_light_blue>12 pinecones</color>\n <color_light_blue>8 birchbarks</color>\n <color_light_blue>4 cattail stalks</color>\n <color_light_blue>2 lotus flowers</color>",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
@@ -254,6 +247,10 @@
     "value": 0,
     "end": {
       "effect": [
+        {"u_consume_item": "pinecone", "count": 12},
+        {"u_consume_item": "birchbark", "count": 8},
+        {"u_consume_item": "cattail_stalk", "count": 4},
+        {"u_consume_item": "lotus", "count": 2},
         { "npc_add_effect": "wait_time", "duration": 86400 },
         { "npc_add_var": "wait", "type": "general", "context": "brew", "value": "yes" }
       ]
@@ -262,12 +259,12 @@
     "followup": "MISSION_drunken_master_2",
     "dialogue": {
       "describe": "-",
-      "offer": "Итак, для следующего пойла мне нужно: pinecone, 12 штук; birchbark, 8 штук; cattail stalk, 4 штуки; lotus flower, 2 штуки.  Приноси и я попробую что-нибудь сварить из этого.",
+      "offer": "Итак, для следующего пойла мне нужно: pinecone, 12 штук; birchbark, 8 штук; cattail stalk, 4 штуки; lotus flower, 2 штуки.  Принеси мне эти ингридиенты и я попробую что-нибудь сварить из этого.",
       "accepted": "Good.  I'll wait.",
       "rejected": "Bah.",
-      "advice": "-",
+      "advice": "<yawn>",
       "inquire": "You got the stuff?",
-      "success": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке... По моим прикидкам, это займёт целый день.  Приходи попозже.",
+      "success": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке… по моим прикидкам, это займёт целый день.  Приходи попозже.",
       "success_lie": "-",
       "failure": "-"
     }
@@ -276,23 +273,24 @@
     "id": "MISSION_drunken_master_2",
     "type": "mission_definition",
     "has_generic_rewards": false,
-    "name": { "str": "Prove that you are true warrior of the light" },
-    "description": "Knight asked you to prove that you are true warrior of the light by killing 100 zombies.",
+    "name": { "str": "Drunken competition" },
+    "description": "Kill 100 zombies before you get sober.",
     "goal": "MGOAL_KILL_MONSTER_SPEC",
     "monster_species": "ZOMBIE",
     "monster_kill_goal": 100,
     "difficulty": 0,
     "value": 0,
     "start": {
-      "effect": [ { "npc_add_effect": "dm_brew", "duration": "21600 s" }, { "u_add_effect": "dm_brew", "duration": "21600 s" } ]
+      "effect": [ { "npc_add_effect": "dm_brew", "duration": "3600 s" }, { "u_add_effect": "dm_brew", "duration": "3600 s" } ]
     },
     "end": {
       "effect": [
+        "stop_following",
         { "npc_add_var": "master_mission", "type": "count", "context": "mission", "value": "1" },
         { "npc_first_topic": "TALK_drunken_master_1" }
       ]
     },
-    "fail": { "effect": "end_conversation" },
+    "fail": { "effect": ["end_conversation", "leave"] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_drunken_master_3",
     "dialogue": {
@@ -302,7 +300,7 @@
       "rejected": "-",
       "advice": "-",
       "inquire": "-",
-      "success": "It's good to see another warrior of the light.  I'm pleased to see that you succeed in this task.",
+      "success": "It's good to see another true warrior.  I'm pleased to see that you succeed in this task.  Now I need some rest.  Let's talk later.",
       "success_lie": "-",
       "failure": "Неудачник."
     }
@@ -311,21 +309,25 @@
     "id": "MISSION_drunken_master_3",
     "type": "mission_definition",
     "has_generic_rewards": false,
-    "name": { "str": "Принеси ингредиенты" },
-    "description": "Gather <color_light_blue>12 pinecone</color>, <color_light_blue>8 birchbark</color>, <color_light_blue>4 cattail stalk</color>, <color_light_blue>2 lotus flower</color>.",
+    "name": { "str": "Ингредиенты для пойла" },
+    "description": "Gather:\n <color_light_blue>20 tobacco leaves</color>,\n <color_light_blue>40 coffee beans</color>,\n <color_light_blue>0.75L of whiskey</color>,\n <color_light_blue>12 chunks of mutant meat</color>.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
       "and": [
-        { "u_has_items": { "item": "pinecone", "count": 12 } },
-        { "u_has_items": { "item": "willowbark", "count": 8 } },
-        { "u_has_items": { "item": "willowbark", "count": 4 } },
-        { "u_has_items": { "item": "lotus_flower", "count": 2 } }
+        { "u_has_items": { "item": "tobacco", "count": 20 } },
+        { "u_has_items": { "item": "coffee_bean", "count": 40 } },
+        { "u_has_items": { "item": "whiskey", "count": 21 } },
+        { "u_has_items": { "item": "mutant_meat", "count": 12 } }
       ]
     },
     "difficulty": 0,
     "value": 0,
     "end": {
       "effect": [
+        {"u_consume_item": "tobacco", "count": 20 },
+        {"u_consume_item": "coffee_bean", "count": 40},
+        {"u_consume_item": "whiskey", "count": 4 },
+        {"u_consume_item": "mutant_meat", "count": 12},
         { "npc_add_var": "master_mission", "type": "count", "context": "mission", "value": "1" },
         { "npc_add_effect": "wait_time", "duration": 86400 },
         { "npc_add_var": "wait", "type": "general", "context": "brew", "value": "yes" }
@@ -335,37 +337,38 @@
     "followup": "MISSION_drunken_master_4",
     "dialogue": {
       "describe": "-",
-      "offer": "Итак, для следующего пойла мне нужно: pinecone, 12 штук; birchbark, 8 штук; cattail stalk, 4 штуки; lotus flower, 2 штуки.  Приноси и я попробую что-нибудь сварить из этого.",
-      "accepted": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке... По моим прикидкам, это займёт целый день.  Приходи попозже.",
-      "rejected": "-",
-      "advice": "-",
-      "inquire": "-",
-      "success": "It's good to see another warrior of the light.  I'm pleased to see that you succeed in this task.",
+      "offer": "Итак, для следующего пойла мне нужно нечто новое: 20 tobacco leaves, 40 coffee beans, 0.75L of whiskey, 12 chunks of mutant meat.  Приноси и я попробую что-нибудь сварить из этого.",
+      "accepted": "Good.  I'll wait.",
+      "rejected": "Bah.",
+      "advice": "<yawn>",
+      "inquire": "You got the stuff?",
+      "success": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке… по моим прикидкам, это займёт целый день.  Приходи попозже.",
       "success_lie": "-",
-      "failure": "Неудачник."
+      "failure": "-"
     }
   },
   {
     "id": "MISSION_drunken_master_4",
     "type": "mission_definition",
     "has_generic_rewards": false,
-    "name": { "str": "Prove that you are true warrior of the light" },
-    "description": "Knight asked you to prove that you are true warrior of the light by killing 100 zombies.",
+    "name": { "str": "Drunken competition" },
+    "description": "Kill 200 zombies before you get sober.",
     "goal": "MGOAL_KILL_MONSTER_SPEC",
     "monster_species": "ZOMBIE",
     "monster_kill_goal": 200,
     "difficulty": 0,
     "value": 0,
     "start": {
-      "effect": [ { "npc_add_effect": "dm_brew", "duration": "43200 s" }, { "u_add_effect": "dm_brew", "duration": "43200 s" } ]
+      "effect": [ { "npc_add_effect": "dm_brew", "duration": "7200 s" }, { "u_add_effect": "dm_brew", "duration": "7200 s" } ]
     },
     "end": {
       "effect": [
+        "stop_following",
         { "npc_add_var": "master_mission", "type": "count", "context": "mission", "value": "2" },
         { "npc_first_topic": "TALK_drunken_master_1" }
       ]
     },
-    "fail": { "effect": "end_conversation" },
+    "fail": { "effect": ["end_conversation", "leave"] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_drunken_master_5",
     "dialogue": {
@@ -375,7 +378,7 @@
       "rejected": "-",
       "advice": "-",
       "inquire": "-",
-      "success": "It's good to see another warrior of the light.  I'm pleased to see that you succeed in this task.",
+      "success": "It's good to see another true warrior.  I'm pleased to see that you succeed in this task.  Now I need some rest.  Let's talk later.",
       "success_lie": "-",
       "failure": "Неудачник."
     }
@@ -384,7 +387,7 @@
     "id": "MISSION_drunken_master_5",
     "type": "mission_definition",
     "has_generic_rewards": false,
-    "name": { "str": "Принеси ингредиенты" },
+    "name": { "str": "Ингредиенты для пойла" },
     "description": "Gather <color_light_blue>20 ammonium nitrate</color>, <color_light_blue>0.3L gasoline</color>, <color_light_blue>15 hops</color>, <color_light_blue>5 <zombie> pheromone</color>.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": {
@@ -399,6 +402,10 @@
     "value": 0,
     "end": {
       "effect": [
+        {"u_consume_item": "chem_ammonium_nitrate", "count": 20  },
+        {"u_consume_item": "gasoline", "count": 300  },
+        {"u_consume_item": "hops", "count": 15  },
+        {"u_consume_item": "pheromone", "count": 5  },
         { "npc_add_var": "master_mission", "type": "count", "context": "mission", "value": "2" },
         { "npc_add_effect": "wait_time", "duration": 86400 },
         { "npc_add_var": "wait", "type": "general", "context": "brew", "value": "yes" }
@@ -408,38 +415,39 @@
     "followup": "MISSION_drunken_master_6",
     "dialogue": {
       "describe": "-",
-      "offer": "Итак, следующее пойло будет немного экзотическим.  Я не уверен в своих догадках, но думаю, что эффект можно усилить добавив немного жижи <zombie>... Что ты на меня так смотришь?  Я не шучу!  На этот раз мне нужно: ammonium nitrate, 20 штук; gasoline, 0.3L; hops, 15 штуки; <zombie> pheromone, 5 штуки.  Приноси и я попробую что-нибудь сварить из этого.",
-      "accepted": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке... По моим прикидкам, это займёт целый день.  Приходи попозже.",
-      "rejected": "-",
-      "advice": "-",
-      "inquire": "-",
-      "success": "It's good to see another warrior of the light.  I'm pleased to see that you succeed in this task.",
+      "offer": "Итак, следующее пойло будет немного экзотическим.  Я не уверен в своих догадках, но думаю, что эффект можно усилить добавив немного жижи <zombie>… что ты на меня так смотришь?  Я не шучу!  На этот раз мне нужно: ammonium nitrate, 20 штук; gasoline, 0.3L; hops, 15 штуки; <zombie> pheromone, 5 штуки.  Приноси и я попробую что-нибудь сварить из этого.",
+      "accepted": "Good.  I'll wait.",
+      "rejected": "Bah.",
+      "advice": "<yawn>",
+      "inquire": "You got the stuff?",
+      "success": "Отлично, теперь мне нужно время, чтобы вся эта гадость побродила в моём тайной бутылочке… по моим прикидкам, это займёт целый день.  Приходи попозже.",
       "success_lie": "-",
-      "failure": "Неудачник."
+      "failure": "-"
     }
   },
   {
     "id": "MISSION_drunken_master_6",
     "type": "mission_definition",
     "has_generic_rewards": false,
-    "name": { "str": "Prove that you are true warrior of the light" },
-    "description": "Knight asked you to prove that you are true warrior of the light by killing 100 zombies.",
-    "goal": "MGOAL_KILL_MONSTER_SPEC",
-    "monster_species": "ZOMBIE",
-    "monster_kill_goal": 100,
+    "name": { "str": "Drunken competition" },
+    "description": "Kill 35 zombie brutes before you get sober.",
+    "goal": "MGOAL_KILL_MONSTER_TYPE",
+    "monster_type": "mon_zombie_brute",
+    "monster_kill_goal": 35,
     "difficulty": 0,
     "value": 0,
     "start": {
-      "effect": [ { "npc_add_effect": "dm_brew", "duration": "86400 s" }, { "u_add_effect": "dm_brew", "duration": "86400 s" } ]
+      "effect": [ { "npc_add_effect": "dm_brew", "duration": "14400 s" }, { "u_add_effect": "dm_brew", "duration": "14400 s" } ]
     },
     "end": {
       "effect": [
+        "stop_following",
         { "npc_add_var": "u_helped_drunken_master", "type": "general", "context": "meeting", "value": "yes" },
         { "npc_add_var": "drunken_master_teach", "type": "general", "context": "meeting", "value": "yes" },
         { "npc_first_topic": "TALK_drunken_master_1" }
       ]
     },
-    "fail": { "effect": "end_conversation" },
+    "fail": { "effect": ["end_conversation", "leave"] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "-",
@@ -448,7 +456,7 @@
       "rejected": "-",
       "advice": "-",
       "inquire": "-",
-      "success": "It's good to see another warrior of the light.  I'm pleased to see that you succeed in this task.",
+      "success": "It's good to see another true warrior.  I'm pleased to see that you succeed in this task.  Now I need some rest.  Let's talk later.",
       "success_lie": "-",
       "failure": "Неудачник."
     }

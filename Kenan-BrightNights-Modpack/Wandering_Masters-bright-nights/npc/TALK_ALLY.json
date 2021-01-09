@@ -22,26 +22,21 @@
   {
     "type": "talk_topic",
     "id": "TALK_DRUNKEN_BREW",
-    "dynamic_line": "I can brew something for you.",
-    "responses": [ { "text": "Brew something for me.", "topic": "TALK_BREW_SOMETHING" }, { "text": "<done_conversation_section>", "topic": "TALK_NONE" } ]
+    "dynamic_line": "Sure, I have some leftovers.  Wanna drink it now?",
+    "responses": [
+      { "text": "Yeah, give it to me.", "topic": "TALK_DONE",
+        "effect": [
+          { "npc_add_effect": "wait_time", "duration": 1209600 },
+          { "npc_add_effect": "dm_brew", "duration": "14400 s" }, { "u_add_effect": "dm_brew", "duration": "14400 s" }
+        ]
+      },
+      { "text": "<done_conversation_section>", "topic": "TALK_NONE" }
+    ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_DRUNKEN_BREW_nope",
-    "dynamic_line": "No brew bro.",
+    "dynamic_line": "Nothing right now, <name_g>, but I'm making a new one.  Ask me later.",
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" } ]
-  },
-  {
-    "type": "talk_topic",
-    "id": "TALK_BREW_SOMETHING",
-    "dynamic_line": "Are you sure?",
-    "responses": [
-      {
-        "text": "Yes.",
-        "topic": "TALK_DONE",
-        "effect": [ { "npc_add_effect": "wait_time", "duration": 1209600 } ]
-      },
-      { "text": "<done_conversation_section>", "topic": "TALK_ALLY" }
-    ]
   }
 ]
