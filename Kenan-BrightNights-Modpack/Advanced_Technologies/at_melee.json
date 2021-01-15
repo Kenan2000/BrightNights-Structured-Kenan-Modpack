@@ -72,6 +72,26 @@
     "turns_per_charge": 0
   },
   {
+    "id": "zweihander",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "hulking sword" },
+    "description": "Too big to be a sword and indeed, it is a sharpened heap of hard steel.",
+    "weight": "10000 g",
+    "volume": "15000 ml",
+    "price": 160000,
+    "price_postapoc": 10000,
+    "to_hit": 6,
+    "bashing": 70,
+    "cutting": 250,
+    "material": ["hardsteel", "steel", "silver", "platinum"],
+    "symbol": "/",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 4 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "ALWAYS_TWOHAND" ]
+  },
+  {
 	"type":"GENERIC",
     "id": "broken_cyborg_advanced",
     "symbol": ",",
