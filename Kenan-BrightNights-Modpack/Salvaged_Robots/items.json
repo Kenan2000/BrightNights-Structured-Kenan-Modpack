@@ -168,11 +168,11 @@
       [ "CHISEL", 3 ],
       [ "PULL", 1 ],
       [ "PRY", 2 ],
-	  [ "ANVIL", 3 ],
-	  [ "SEW", 3 ],
-	  [ "SEW_CURVED", 1 ],
-	  [ "KNIT", 1 ], 
-	  [ "LEATHER_AWL", 2 ]
+      [ "ANVIL", 3 ],
+      [ "SEW", 3 ],
+      [ "SEW_CURVED", 1 ],
+      [ "KNIT", 1 ],
+      [ "LEATHER_AWL", 2 ]
     ],
     "use_action": [
       { "type": "HAMMER" },
@@ -190,7 +190,7 @@
         "cost_scaling": 0.1,
         "move_cost": 1000
       },
-	  {
+      {
         "type": "repair_item",
         "item_action_type": "repair_fabric",
         "materials": [ "cotton", "leather", "lycra", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "gutskin" ],
@@ -199,14 +199,28 @@
         "cost_scaling": 0.1,
         "move_cost": 1000
       },
-	  {
+      {
         "type": "sew_advanced",
-        "materials": [ "cotton", "leather", "lycra", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "neoprene", "gutskin", "plastic", "kevlar_rigid" ],
+        "materials": [
+          "cotton",
+          "leather",
+          "lycra",
+          "nylon",
+          "wool",
+          "fur",
+          "faux_fur",
+          "nomex",
+          "kevlar",
+          "neoprene",
+          "gutskin",
+          "plastic",
+          "kevlar_rigid"
+        ],
         "skill": "tailor",
         "clothing_mods": [ "leather_padded", "steel_padded", "kevlar_padded", "furred", "wooled" ]
       },
       { "type": "place_monster", "monster_id": "mon_craftbuddy", "moves": 100 }
-    ]    
+    ]
   },
   {
     "type": "TOOL",

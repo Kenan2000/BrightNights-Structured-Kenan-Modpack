@@ -6,13 +6,11 @@
     "subcategory": "CSC_ELECTRONIC_OTHER",
     "skill_used": "computer",
     "difficulty": 2,
-	"autolearn": false,
-	"tools": [ [ [ "UPS_off", 150 ], [ "adv_UPS_off", 150 ] ], [ [ "bot_pseudo_craftbuddy", -1 ] ] ],
+    "autolearn": false,
+    "tools": [ [ [ "UPS_off", 150 ], [ "adv_UPS_off", 150 ] ], [ [ "bot_pseudo_craftbuddy", -1 ] ] ],
     "book_learn": [ [ "recipe_lab_elec", 3 ], [ "mag_robotics", 3 ], [ "textbook_robots", 3 ] ],
     "time": "2 m",
-    "components": [
-	  [ [ "rope_30", 1 ], [ "bag_plastic", 1 ] ]
-    ]
+    "components": [ [ [ "rope_30", 1 ], [ "bag_plastic", 1 ] ] ]
   },
   {
     "id": "craftbuddy_rope_to_thread_inprogress",
@@ -42,12 +40,12 @@
   {
     "id": "craftbuddy_rope_to_thread_done",
     "type": "GENERIC",
-	"symbol": ";",
-	"category": "tools",
-	"looks_like": "bag_plastic",
+    "symbol": ";",
+    "category": "tools",
+    "looks_like": "bag_plastic",
     "name": { "str": "AutoPack with threads from a single long rope" },
     "description": "A inactive AutoPack that finished it's work and disassembled single long rope into large units of thread.",
-	"material": [ "plastic", "cotton" ],
+    "material": [ "plastic", "cotton" ],
     "weight": "700 g",
     "volume": "1 L"
   },
@@ -57,10 +55,7 @@
     "skill_used": "fabrication",
     "difficulty": 0,
     "time": "1 m",
-	"flags": [ "NO_REPAIR" ],
-    "components": [
-	  [ [ "bag_plastic", 1 ] ],
-	  [ [ "thread", 9000 ] ]
-	]
+    "flags": [ "NO_REPAIR" ],
+    "components": [ [ [ "bag_plastic", 1 ] ], [ [ "thread", 9000 ] ] ]
   }
 ]
