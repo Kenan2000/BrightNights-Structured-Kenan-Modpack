@@ -1,5 +1,5 @@
 [
- {
+  {
     "abstract": "mon_cat_mutant",
     "type": "MONSTER",
     "name": "cat",
@@ -8,7 +8,7 @@
     "categories": [ "WILDLIFE" ],
     "species": [ "MAMMAL" ],
     "volume": "4000 ml",
-    "weight": 4000,
+    "weight": "4000 g",
     "hp": 12,
     "speed": 150,
     "material": [ "flesh" ],
@@ -71,7 +71,7 @@
     "name": "vampire cat",
     "description": "A mutated feline grown to the size of a large dog.  It runs swiftly on six legs and possesses razor sharp fangs.",
     "volume": "13250 ml",
-    "weight": 13250,
+    "weight": "13250 g",
     "hp": 50,
     "speed": 150,
     "morale": 50,
@@ -103,7 +103,7 @@
     "name": "whip tongue",
     "description": "A mutated feline grown to the size of a large dog.  Its fur has been replaced with hard lizard-like scales and thorny knobs.  The cat has no eyes but its long tongue continually sways back and forth tasting the air for signs of prey.",
     "volume": "13250 ml",
-    "weight": 13250,
+    "weight": "13250 g",
     "hp": 40,
     "speed": 150,
     "morale": 50,
@@ -114,7 +114,7 @@
     "dodge": 5,
     "harvest": "mammal_leather",
     "color": "green",
-    "remove": { "flags": [ "SEES" ] },
+    "delete": { "flags": [ "SEES" ] },
     "extend": { "flags": [ "KEENNOSE", "HIT_AND_RUN" ] }
   }
 ]
