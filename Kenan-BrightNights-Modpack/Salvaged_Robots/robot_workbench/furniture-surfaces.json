@@ -1,0 +1,34 @@
+[
+ {
+    "type": "furniture",
+    "id": "f_bot_craftbuddy_stationary",
+    "name": "Stationary CraftBuddy",
+    "description": "A robot crafting assistant. Useable as stationary all-purpose craft station and as workbench with great boost to work speed, also help you butcher things near it. Unfolding it into stationary form produced some little AutoPack section you can use to create some auto-crafting packets with simple tasks. Can be dismantled retain it's portable form and functionality.",
+    "symbol": "#",
+    "color": "light_cyan",
+    "move_cost_mod": -1,
+    "required_str": -1,
+	"coverage": 65,
+	"looks_like": "mon_tripod",
+	"crafting_pseudo_item": "bot_pseudo_craftbuddy",
+    "flags": [ "TRANSPARENT", "FLAT_SURF", "BUTCHER_EQ", "NOITEM" ],
+	"examine_action": "workbench",
+    "workbench": { "multiplier": 4.0, "mass": 200000, "volume": "85L" },
+    "deconstruct": {
+      "items": [ { "item": "bot_craftbuddy", "count": 1 } ]
+    },
+    "bash": {
+      "str_min": 35,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "items": [
+        { "item": "pipe", "count": [ 4, 6 ] },
+        { "item": "sheet_metal", "count": [ 0, 1 ] },
+        { "item": "sheet_metal_small", "count": [ 12, 24 ] },
+        { "item": "steel_chunk", "count": [ 4, 8 ] },
+        { "item": "scrap", "count": [ 12, 24 ] }
+      ]
+    }
+  }  
+]

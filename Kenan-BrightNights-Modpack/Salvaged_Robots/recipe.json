@@ -9,7 +9,7 @@
     "difficulty": 8,
     "time": "150 s",
     "reversible": true,
-    "autolearn": true,
+    "book_learn": [ [ "recipe_lab_elec", 3 ], [ "mag_robotics", 3 ], [ "textbook_robots", 3 ] ],
     "tools": [ [ [ "electrohack", 20 ] ] ],
     "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
@@ -33,7 +33,7 @@
     "difficulty": 3,
     "time": "150 s",
     "reversible": true,
-    "autolearn": true,
+    "book_learn": [ [ "recipe_lab_elec", 3 ], [ "mag_robotics", 3 ], [ "textbook_robots", 3 ] ],
     "tools": [ [ [ "electrohack", 20 ] ] ],
     "qualities": [ { "id": "SCREW", "level": 1 } ]
   },
@@ -89,7 +89,7 @@
     "difficulty": 6,
     "time": "25 m",
     "reversible": false,
-    "autolearn": true,
+    "book_learn": [ [ "recipe_lab_elec", 3 ], [ "mag_robotics", 3 ], [ "textbook_robots", 3 ] ],
     "tools": [ [ [ "electrohack", 20 ] ] ],
     "using": [ [ "soldering_standard", 20 ], [ "welding_standard", 5 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ]
@@ -149,7 +149,7 @@
     "difficulty": 6,
     "time": "15 m",
     "reversible": false,
-    "autolearn": true,
+    "book_learn": [ [ "recipe_lab_elec", 3 ], [ "mag_robotics", 3 ], [ "textbook_robots", 3 ] ],
     "tools": [ [ [ "electrohack", 20 ] ] ],
     "using": [ [ "soldering_standard", 15 ], [ "welding_standard", 4 ] ],
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ]
