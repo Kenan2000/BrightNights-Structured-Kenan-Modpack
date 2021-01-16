@@ -134,17 +134,16 @@
     "symbol": ";",
     "color": "light_gray",
     "looks_like": "mon_tripod",
-    "name": { "str": "inactive craftbuddy", "str_pl": "inactive craftbuddies" },
+    "name": { "str": "inactive CraftBuddy", "str_pl": "inactive CraftBuddies" },
     "category": "other",
-    "description": "A robot crafting assistant.  Useable in its current state as a portable workbench, or deployable as a traveling companion.",
+    "description": "A robot crafting assistant. Useable in its current state as a portable all-purpose craft station, or deployable as a traveling companion. It's complex geometry doesn't allow it to provide workbench surface, which makes you a little disappointed. You can probably instal it as an more functional immobile crafting station.",
     "price": 1000000,
     "price_postapoc": 1000000,
     "material": [ "superalloy", "plastic" ],
-    "weight": "19310 g",
-    "volume": "55 L",
+    "weight": "50 kg",
+    "volume": "65 L",
     "bashing": 8,
     "to_hit": -3,
-    "ammo": "battery",
     "qualities": [
       [ "CONTAIN", 1 ],
       [ "BUTCHER", 10 ],
@@ -169,7 +168,11 @@
       [ "CHISEL", 3 ],
       [ "PULL", 1 ],
       [ "PRY", 2 ],
-      [ "ANVIL", 3 ]
+      [ "ANVIL", 3 ],
+      [ "SEW", 3 ],
+      [ "SEW_CURVED", 1 ],
+      [ "KNIT", 1 ],
+      [ "LEATHER_AWL", 2 ]
     ],
     "use_action": [
       { "type": "HAMMER" },
@@ -187,15 +190,37 @@
         "cost_scaling": 0.1,
         "move_cost": 1000
       },
+      {
+        "type": "repair_item",
+        "item_action_type": "repair_fabric",
+        "materials": [ "cotton", "leather", "lycra", "nylon", "wool", "fur", "faux_fur", "nomex", "kevlar", "gutskin" ],
+        "skill": "tailor",
+        "tool_quality": 10,
+        "cost_scaling": 0.1,
+        "move_cost": 1000
+      },
+      {
+        "type": "sew_advanced",
+        "materials": [
+          "cotton",
+          "leather",
+          "lycra",
+          "nylon",
+          "wool",
+          "fur",
+          "faux_fur",
+          "nomex",
+          "kevlar",
+          "neoprene",
+          "gutskin",
+          "plastic",
+          "kevlar_rigid"
+        ],
+        "skill": "tailor",
+        "clothing_mods": [ "leather_padded", "steel_padded", "kevlar_padded", "furred", "wooled" ]
+      },
       { "type": "place_monster", "monster_id": "mon_craftbuddy", "moves": 100 }
-    ],
-    "magazines": [
-      [
-        "battery",
-        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
-      ]
-    ],
-    "magazine_well": 2
+    ]
   },
   {
     "type": "TOOL",
