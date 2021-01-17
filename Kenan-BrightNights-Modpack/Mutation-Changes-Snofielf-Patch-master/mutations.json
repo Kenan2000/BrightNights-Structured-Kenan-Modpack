@@ -45,42 +45,20 @@
     "type": "mutation",
     "id": "CHITIN",
     "copy-from": "CHITIN",
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 3,
-        "acid": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 3, "acid": 1 } ]
   },
   {
     "type": "mutation",
     "id": "CHITIN2",
     "copy-from": "CHITIN2",
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 6,
-        "cut": 6,
-        "acid": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 6, "cut": 6, "acid": 2 } ]
   },
   {
     "type": "mutation",
     "id": "CHITIN3",
     "copy-from": "CHITIN3",
     "allow_soft_gear": true,
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 14,
-        "cut": 14,
-        "acid": 2,
-        "bullet": 2
-      }
-    ],
+    "armor": [ { "parts": "ALL", "bash": 14, "cut": 14, "acid": 2, "bullet": 2 } ],
     "extend": { "category": [ "INSECT" ] }
   },
   {
@@ -88,14 +66,7 @@
     "id": "CHITIN_FUR",
     "copy-from": "CHITIN_FUR",
     "bodytemp_modifiers": [ 100, 200 ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 3,
-        "acid": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 3, "acid": 1 } ]
   },
   {
     "type": "mutation",
@@ -114,14 +85,7 @@
       { "part": "HAND_R", "ignored": 1 },
       { "part": "TORSO", "ignored": 10 }
     ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 6,
-        "cut": 6,
-        "acid": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 6, "cut": 6, "acid": 2 } ]
   },
   {
     "type": "mutation",
@@ -142,15 +106,7 @@
       { "part": "TORSO", "ignored": 18 }
     ],
     "allow_soft_gear": true,
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 14,
-        "cut": 14,
-        "acid": 2,
-        "bullet": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 14, "cut": 14, "acid": 2, "bullet": 2 } ]
   },
   {
     "type": "mutation",
@@ -258,13 +214,7 @@
     "copy-from": "FEATHERS",
     "bodytemp_modifiers": [ 75, 150 ],
     "extend": { "prereqs": [ "AVIAN_SKIN" ] },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 1,
-        "cut": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -342,13 +292,7 @@
     "prereqs": [ "TORTOISE_SCALES" ],
     "prereqs2": [ "MUZZLE_SNAPPER" ],
     "passive_mods": { "str_mod": 1, "dex_mod": -1 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 3
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 3 } ]
   },
   {
     "type": "mutation",
@@ -364,13 +308,7 @@
     "prereqs": [ "RAPTOR_SCALES" ],
     "prereqs2": [ "MUZZLE_RAPTOR" ],
     "passive_mods": { "str_mod": 1, "dex_mod": 1 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 1,
-        "cut": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -388,13 +326,7 @@
     "prereqs": [ "CHLOROMORPH" ],
     "prereqs2": [ "FLOWERS" ],
     "passive_mods": { "str_mod": 1 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 1,
-        "cut": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -412,13 +344,7 @@
     "prereqs": [ "FUR_SCALES" ],
     "prereqs2": [ "MUZZLE_CHIMERA" ],
     "passive_mods": { "str_mod": 4, "dex_mod": 3, "per_mod": 2, "int_mod": 1 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 4,
-        "cut": 4
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 4, "cut": 4 } ]
   },
   {
     "type": "mutation",
@@ -436,13 +362,7 @@
     "prereqs": [ "BEAST_FUR" ],
     "prereqs2": [ "MUZZLE_BEAST" ],
     "passive_mods": { "str_mod": 2, "dex_mod": 1, "per_mod": 1, "int_mod": -1 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 2,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 2, "cut": 2 } ]
   },
   {
     "type": "mutation",
@@ -575,13 +495,7 @@
       "RAT_BODY"
     ],
     "passive_mods": { "dex_mod": 2, "per_mod": 2 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 3
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 3 } ]
   },
   {
     "type": "mutation",
@@ -612,13 +526,7 @@
       "SPIDER_BODY"
     ],
     "passive_mods": { "dex_mod": 2 },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 2,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 2, "cut": 2 } ]
   },
   {
     "type": "mutation",
@@ -662,25 +570,13 @@
     "id": "PLANTSKIN",
     "copy-from": "PLANTSKIN",
     "extend": { "leads_to": [ "MOSS" ] },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 3
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 3 } ]
   },
   {
     "type": "mutation",
     "id": "BARK",
     "copy-from": "BARK",
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 5,
-        "cut": 5
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 5, "cut": 5 } ]
   },
   {
     "type": "mutation",
@@ -829,13 +725,7 @@
     "copy-from": "SCALES",
     "extend": { "category": [ "TORTOISE" ], "changes_to": [ "FUR_SCALES", "TORTOISE_SCALES", "RAPTOR_SCALES" ] },
     "prereqs": [ "SNAKE_SKIN" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 1,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 2 } ]
   },
   {
     "type": "mutation",
@@ -861,14 +751,7 @@
       { "part": "HAND_R", "ignored": 2 },
       { "part": "TORSO", "ignored": 20 }
     ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 2,
-        "cut": 3,
-        "acid": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 2, "cut": 3, "acid": 1 } ]
   },
   {
     "type": "mutation",
@@ -895,15 +778,7 @@
       { "part": "HAND_R", "ignored": 2 },
       { "part": "TORSO", "ignored": 20 }
     ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 1,
-        "cut": 2,
-        "acid": 1,
-        "electric": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 2, "acid": 1, "electric": 1 } ]
   },
   {
     "type": "mutation",
@@ -917,26 +792,14 @@
     "id": "FUR",
     "copy-from": "FUR",
     "extend": { "changes_to": [ "CATTLE_FUR", "BEAST_FUR" ] },
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 2 } ]
   },
   {
     "type": "mutation",
     "id": "URSINE_FUR",
     "copy-from": "URSINE_FUR",
     "leads_to": [ "URSINE_BODY" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 2 } ]
   },
   {
     "type": "mutation",
@@ -952,38 +815,20 @@
     "prereqs": [ "FUR" ],
     "category": [ "CATTLE" ],
     "leads_to": [ "BOVINE_BODY" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 2 } ]
   },
   {
     "type": "mutation",
     "id": "LUPINE_FUR",
     "copy-from": "LUPINE_FUR",
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 3,
-        "cut": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 3, "cut": 2 } ]
   },
   {
     "type": "mutation",
     "id": "FELINE_FUR",
     "copy-from": "FELINE_FUR",
     "changes_to": [ "BEAST_FUR" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 2,
-        "cut": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 2, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -997,13 +842,7 @@
     "description": "You've grown a thick pelt of rough black fur, providing protection from cold and attacks.",
     "types": [ "SKIN" ],
     "prereqs": [ "FELINE_FUR", "FUR" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 4,
-        "cut": 3
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 4, "cut": 3 } ]
   },
   {
     "type": "mutation",
@@ -1033,14 +872,7 @@
     "id": "SLEEK_SCALES",
     "copy-from": "SLEEK_SCALES",
     "leads_to": [ "WATER_GOOD" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 1,
-        "cut": 2,
-        "acid": 2
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 1, "cut": 2, "acid": 2 } ]
   },
   {
     "type": "mutation",
@@ -1070,14 +902,7 @@
       { "part": "HAND_R", "ignored": 4 },
       { "part": "TORSO", "ignored": 26 }
     ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 5,
-        "cut": 5,
-        "acid": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 5, "cut": 5, "acid": 1 } ]
   },
   {
     "type": "mutation",
@@ -1707,14 +1532,7 @@
     "id": "THICK_SCALES",
     "copy-from": "THICK_SCALES",
     "leads_to": [ "SCUTES" ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 4,
-        "cut": 4,
-        "acid": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 4, "cut": 4, "acid": 1 } ]
   },
   {
     "type": "mutation",
@@ -1739,14 +1557,7 @@
       { "part": "HAND_R", "ignored": 2 },
       { "part": "TORSO", "ignored": 18 }
     ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 10,
-        "cut": 10,
-        "acid": 1
-      }
-    ]
+    "armor": [ { "parts": "ALL", "bash": 10, "cut": 10, "acid": 1 } ]
   },
   {
     "type": "mutation",
@@ -1773,14 +1584,7 @@
       { "part": "HAND_R", "ignored": 4 },
       { "part": "TORSO", "ignored": 30 }
     ],
-    "armor": [
-      {
-        "parts": "ALL",
-        "bash": 6,
-        "cut": 6,
-        "acid": 1
-      }
-    ],
+    "armor": [ { "parts": "ALL", "bash": 6, "cut": 6, "acid": 1 } ],
     "passive_mods": { "dex_mod": -3 }
   },
   {
