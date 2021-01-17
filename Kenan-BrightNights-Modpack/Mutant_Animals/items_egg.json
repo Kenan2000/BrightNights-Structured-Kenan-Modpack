@@ -14,7 +14,7 @@
     "description": "Nutritious egg laid by a bird.",
     "price": 250,
     "material": "egg",
-    "volume": 1,
+    "volume": "250 ml",
     "stack_size": 4,
     "fun": -8,
     "flags": [ "FREEZERBURN" ],
@@ -55,7 +55,7 @@
     "description": "Poisonous egg laid by a bird.",
     "price": 0,
     "material": "egg",
-    "volume": 1,
+    "volume": "250 ml",
     "stack_size": 4,
     "fun": -50,
     "rot_spawn": "GROUP_EGG_GHOUL"
@@ -63,7 +63,7 @@
   {
     "type": "COMESTIBLE",
     "id": "egg_bird_mutant_elephant",
-    "volume": 4,
+    "volume": "1 L",
     "calories": 500,
     "weight": 300,
     "name": "elephant egg",

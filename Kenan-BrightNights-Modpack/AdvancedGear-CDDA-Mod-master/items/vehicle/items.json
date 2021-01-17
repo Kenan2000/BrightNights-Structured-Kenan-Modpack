@@ -10,7 +10,7 @@
     "material": "nanite",
     "ammo": "metal_nanopowder",
     "flags": ["NEVER_JAMS", "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "WATERPROOF_GUN", "MOUNTED_GUN" ],
-    "volume": 1,
+    "volume": "250 ml",
     "bashing": 0,
     "cutting": 0,
     "to_hit": 0,
@@ -27,7 +27,7 @@
     "price": 500000,
     "material": "nanite",
     "flags": ["NEVER_JAMS", "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID" ],
-    "volume": 1,
+    "volume": "250 ml",
     "bashing": 0,
     "cutting": 0,
     "to_hit": 0
@@ -39,7 +39,7 @@
     "description": "Nanotech shotgun turret, blasts out large clouds of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
     "looks_like": "nano_turret_shredder",
     "weight": 4375,
-    "volume": 8,
+    "volume": "2 L",
     "use_action": [
       {
         "type": "place_monster",
@@ -63,7 +63,7 @@
     "description": "Nanotech pistol turret, fires bursts of of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
     "looks_like": "nano_turret_pistol",
     "weight": 3627,
-    "volume": 4,
+    "volume": "1 L",
     "use_action": [
       {
         "type": "place_monster",
@@ -87,7 +87,7 @@
     "description": "Nanotech rifle turret, fires large bursts of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
     "looks_like": "nano_turret_rifle",
     "weight": 4375,
-    "volume": 8,
+    "volume": "2 L",
     "use_action": [
       {
         "type": "place_monster",
@@ -112,7 +112,7 @@
     "looks_like": "nano_turret_smg",
     "weight": 4523,
     "price": 375000,
-    "volume": 6,
+    "volume": "1500 ml",
     "use_action": [
       {
         "type": "place_monster",
@@ -137,7 +137,7 @@
     "looks_like": "rm614_lmg",
     "weight": 4375,
     "skill": "shotgun",
-    "volume": 8,
+    "volume": "2 L",
     "ranged_damage": 18,
     "range": 4,
     "dispersion": 400,
@@ -165,7 +165,7 @@
     "weight": 3627,
     "price": 250000,
     "skill": "pistol",
-    "volume": 4,
+    "volume": "1 L",
     "ranged_damage": 2,
     "range": 8,
     "dispersion": 60,
@@ -193,7 +193,7 @@
     "looks_like": "rm11b_sniper_rifle",
     "weight": 4375,
     "skill": "rifle",
-    "volume": 8,
+    "volume": "2 L",
     "ranged_damage": 2,
     "range": 24,
     "dispersion": 0,
@@ -222,7 +222,7 @@
     "weight": 4523,
     "price": 375000,
     "skill": "smg",
-    "volume": 6,
+    "volume": "1500 ml",
     "ranged_damage": 8,
     "range": 4,
     "dispersion": 200,
@@ -299,7 +299,7 @@
     "name": { "str": "nanotech storage array", "str_pl": "nanotech storage arrays" },
     "description": "A mass of nanites programmed to store vast amounts of power.",
     "weight": 3600,
-    "volume": 6,
+    "volume": "1500 ml",
     "price" : 600000,
     "material": [ "nanite" ],
     "symbol": ":",
