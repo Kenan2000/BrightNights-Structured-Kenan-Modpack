@@ -1,0 +1,577 @@
+[
+  {
+    "type": "item_group",
+    "id": "dresser",
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      [ "maid_dress_cyberpunk", 3 ],
+      [ "maid_hat_cyberpunk", 3 ],
+	  [ "maid_boots_cyberpunk", 3 ],
+	  [ "maid_dress_victorian", 3 ],
+      [ "maid_hat_victorian", 3 ],
+	  [ "maid_dress_combat", 3 ],
+	  [ "maid_dress_steampunk", 3 ],
+	  [ "socks_programmer", 3 ],
+	  [ "fatigues_us", 1 ],
+	  [ "jacket_eisenhower", 1 ],
+	  [ "fatigues_ija", 1 ],
+	  [ "service_cap_ija", 1 ],
+	  [ "headband_hachimaki", 1 ],
+	  [ "belt_senninbari", 1 ]
+    ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "book_gunref",
+    "//": "Reference books about guns",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "recipe_bullets_japan", "prob": 40 }
+    ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "book_military",
+    "//": "Military combat manuals and related books",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "recipe_bullets_japan", "prob": 40 }
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "textbooks_school",
+    "//": "Same as textbooks, but without inappropriate books, like weapons or traps. Contains archery and armors/melee weapons as sport and historical information sources.",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "recipe_bullets_japan", "prob": 2 }
+    ]
+  },
+  
+  
+  
+  
+    {
+    "type": "item_group",
+    "id": "pawn",
+    "items": [
+      [ "recipe_bullets_japan", 3 ],
+	  [ "maid_dress_cyberpunk", 3 ],
+      [ "maid_hat_cyberpunk", 3 ],
+	  [ "maid_boots_cyberpunk", 3 ],
+	  [ "maid_dress_victorian", 3 ],
+      [ "maid_hat_victorian", 3 ],
+	  [ "maid_dress_combat", 3 ],
+	  [ "maid_dress_steampunk", 3 ],
+	  	  	  [ "fatigues_us", 1 ],
+		  [ "jacket_eisenhower", 1 ],
+		  [ "boots_jump", 1 ],
+	  [ "fatigues_ija", 1 ],
+	  [ "service_cap_ija", 1 ],
+	  [ "headband_hachimaki", 1 ],
+	  [ "belt_senninbari", 1 ],
+	  [ "helm_type92", 1]
+    ]
+  },
+
+ {
+    "type": "item_group",
+    "id": "allclothes",
+    "items": [
+      [ "maid_dress_cyberpunk", 3 ],
+      [ "maid_hat_cyberpunk", 3 ],
+	  [ "maid_boots_cyberpunk", 3 ],
+	  [ "maid_dress_victorian", 3 ],
+      [ "maid_hat_victorian", 3 ],
+	  [ "maid_dress_combat", 3 ],
+	  [ "maid_dress_steampunk", 3 ],
+	  [ "socks_programmer", 5 ],
+	  [ "fatigues_us", 1 ],
+	  [ "jacket_eisenhower", 1 ],
+	  [ "fatigues_ija", 1 ],
+	  [ "service_cap_ija", 1 ],
+	  [ "headband_hachimaki", 1 ],
+	  [ "belt_senninbari", 1 ]
+    ]
+  },
+
+  {
+    "id": "cm_maid",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "maid_hat", "prob": 50, "damage": [ 0, 4 ] },
+      { "item": "maid_dress", "prob": 100, "damage": [ 0, 4 ] },
+	  { "item": "maid_hat_victorian", "prob": 50, "damage": [ 0, 4 ] },
+      { "item": "maid_dress_victorian", "prob": 100, "damage": [ 0, 4 ] }
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "laundry",
+    "items": [
+
+      [ "maid_dress_cyberpunk", 3 ],
+      [ "maid_hat_cyberpunk", 3 ],
+	  [ "maid_boots_cyberpunk", 3 ],
+	  [ "maid_dress_victorian", 3 ],
+      [ "maid_hat_victorian", 3 ],
+	  [ "maid_dress_combat", 3 ],
+	  [ "maid_dress_steampunk", 3 ],
+	  [ "socks_programmer", 5 ]
+
+    ]
+  },
+  
+
+  
+    {
+    "type": "item_group",
+    "id": "military",
+    "items": [
+      [ "maid_dress_combat", 2 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "army_personal_locker",
+    "items": [
+      [ "maid_dress_combat", 40 ]
+    ]
+  },
+
+  {
+    "type": "item_group",
+    "id": "guns_pistol_rare",
+    "//": "Less common pistols including those only used by police/paramilitary forces.",
+    "items": [
+      { "item": "gyro_pistol", "prob": 35, "charges-min": 0, "charges-max": 8 },
+	  { "item": "gyro_pistol_enhanced", "prob": 5, "charges-min": 0, "charges-max": 8 }
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "mags_pistol_rare",
+    "//": "Aftermarket or otherwise uncommon pistol magazines excluding milspec.",
+    "items": [
+      [ "13mm_gyro_mag", 15 ]
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "ammo_pistol_rare",
+    "//": "Less common pistol ammo including that only used by police/paramilitary forces.",
+    "items": [
+      [ "13mm_gyro", 15 ],
+	  [ "13mm_gyro_explosive", 10 ]
+    ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "guns_rifle_rare",
+    "//": "Less common rifles including those only used by police/paramilitary forces.",
+    "items": [
+      { "item": "51_gyro_rifle", "prob": 35, "charges-min": 0, "charges-max": 30 },
+	  { "item": "drehen_700", "prob": 35, "charges-min": 0, "charges-max": 3 },
+	  { "item": "drehen_308", "prob": 35, "charges-min": 0, "charges-max": 5 },
+	  { "item": "drehen_556", "prob": 35, "charges-min": 0, "charges-max": 9 },
+	  { "item": "drehen_50", "prob": 35, "charges-min": 0, "charges-max": 4 },
+	  { "item": "rifle_flintlock_tactical", "prob": 35, "charges-min": 0, "charges-max": 2 },
+	  { "item": "boys_antitank", "prob": 35, "charges-min": 0, "charges-max": 5 }
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "mags_rifle_rare",
+    "//": "Aftermarket or otherwise uncommon rifle magazines excluding milspec.",
+    "items": [
+      [ "51_gyro_mag_10", 15 ],
+	  [ "51_gyro_mag_30", 10 ],
+	  [ "belt_51_gyro", 5 ],
+	  [ "boysmag", 15 ]
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "ammo_rifle_rare",
+    "//": "Less common rifle ammo including that only used by police/paramilitary forces.",
+    "items": [
+      [ "51_gyro", 15 ],
+	  [ "51_gyro_explosive", 10 ],
+	  [ "51_gyro_high", 5 ],
+	  [ "55_boys_mk1", 15 ],
+	  [ "55_boys_mk1_tracer", 5 ],
+	  [ "55_boys_mk2", 10 ],
+	  [ "55_boys_APCR", 5 ]
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "guns_shotgun_rare",
+    "//": "Uncommon or rare shotguns in civilian possession.",
+    "subtype": "distribution",
+    "entries": [
+	  { "item": "drehen_12", "prob": 35, "charges-min": 0, "charges-max": 6 },
+	  { "item": "drehen_8", "prob": 35, "charges-min": 0, "charges-max": 5 }
+    ]
+  },
+  
+  
+  
+  {
+    "type": "item_group",
+    "id": "ammo_shotgun_rare",
+    "//": "Less common rifle ammo including that only used by police/paramilitary forces.",
+    "items": [
+      [ "8ga_00", 15 ],
+	  [ "8ga_dragon", 5 ],
+	  [ "8ga_flechette", 15 ],
+	  [ "8ga_he", 5 ],
+	  [ "8ga_slug", 15 ]
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "cannedfood",
+    "items": [
+      [ "chili_canned", 40 ],
+      [ "chili_canned_nobeans", 40 ],
+	  [ "beans_refried", 40 ],
+	  [ "can_cocktail", 40 ],
+	  [ "beefaroni", 40 ],
+	  [ "beefaroni_cheese", 20 ],
+	  [ "macaroni_can", 40 ],
+	  [ "can_beef", 30 ]
+
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "salty_snacks",
+    "items": [
+      [ "cheezits", 40 ],
+      [ "cheesepuffs", 40 ],
+	  [ "takis", 40 ]
+
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "fridgesnacks",
+    "items": [
+      [ "chiliburger", 8 ],
+	  [ "crab_imitation", 20 ],
+	  [ "citrusrush", 10 ],
+	  [ "kiwi_strawberry", 10 ],
+	  [ "pineapple_soda", 10 ],
+	  [ "cola_cocaine", 1 ],
+	  [ "jumpjuice", 1 ]
+    ]
+  },
+
+  {
+    "id": "barbecue",
+    "type": "item_group",
+    "items": [
+      [ "chiliburger", 30 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "fast_food",
+    "items": [
+      [ "chiliburger", 35 ],
+	  [ "pizza_junk", 35 ],
+	  [ "fastfood_burrito", 35 ],
+	  [ "fastfood_taco", 35 ],
+	  [ "fastfood_quesadilla", 35 ],
+      [ "hotsauce", 45 ],
+	  [ "crab_imitation", 20 ]
+    ]
+  },
+  
+  
+  
+    {
+    "type": "item_group",
+    "id": "condiments",
+    "ammo": 75,
+    "magazine": 100,
+    "items": [
+
+      [ "hotsauce", 25 ]
+
+    ]
+  },
+
+  {
+    "type": "item_group",
+    "id": "guns_rifle_obscure",
+    "//": "Imported or otherwise very obscure rifles.",
+    "items": [
+      { "item": "shoggoth_gun", "prob": 1, "charges-min": 0, "charges-max": 1  }
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "science",
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      [ "gravity_gun", 1 ]
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "ammo_rifle_obscure",
+    "//": "Imported or otherwise very obscure rifle ammo.",
+    "items": [ [ "950jdj", 20 ],
+	           [ "950_silver", 10 ],
+               [ "950_overkill", 5 ]		   ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "bed",
+    "items": [ 
+	           [ "pillow_throw", 8 ],
+			   [ "pillow_wool", 8 ],
+			   [ "cushion_seat", 8 ],
+			   [ "pillow_racecar", 1 ],
+			   
+			   [ "pillow", 18 ],
+			   [ "blanket", 18 ],
+			   
+			   [ "blanket_survivor", 1 ],
+			   [ "fur_blanket_survivor", 1 ],
+			   [ "snuggie_survivor", 1 ],
+			   
+			   [ "plushie_puffball", 1 ],
+			   
+	           [ "bodypillow_miia", 1 ],
+               [ "bodypillow_papi", 1 ],
+			   [ "bodypillow_kanna", 1 ],
+			   [ "bodypillow_mero", 1 ],
+			   [ "bodypillow_megumin", 1 ],
+			   [ "bodypillow_aqua", 1 ],
+			   [ "bodypillow_michiru", 1 ],
+			   [ "bodypillow_browning", 1 ],
+			   [ "bodypillow_survivor", 1 ],
+			   [ "bodypillow_gwen", 1 ],
+			   [ "bodypillow_tefnut", 1 ],
+			   [ "bodypillow_panty", 1 ],
+			   [ "bodypillow_stocking", 1 ],
+			   [ "bodypillow_angeldust", 1 ],
+               [ "astolfo_bean", 1 ]			   ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "mut_lab",
+    "ammo": 50,
+    "magazine": 100,
+    "items": [
+      [ "iv_mutagen_kitsune", 2 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mutagens",
+    "items": [
+      [ "mutagen_kitsune", 2 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mut_iv",
+    "items": [
+      [ "iv_mutagen_kitsune", 2 ]
+
+    ]
+  },
+  
+  
+  
+  
+  
+    {
+    "type": "item_group",
+    "id": "guns_pistol_obscure",
+    "items": [
+      { "item": "type_26_revolver", "prob": 50, "charges-min": 0, "charges-max": 6 },
+	  { "item": "nambu_14", "prob": 50, "charges-min": 0, "charges-max": 8 },
+	  { "item": "type2", "prob": 5, "charges-min": 0, "charges-max": 30 }
+	 ]
+  },
+  
+      {
+    "type": "item_group",
+    "id": "ammo_pistol_obscure",
+    "items": [
+      { "item": "9x22mmR", "prob": 50},
+	  { "item": "8x22mm_fmj", "prob": 50 },
+	  { "item": "8x22mm_jhp", "prob": 50 },
+	  { "item": "8x22mm_p", "prob": 5 }
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "mags_pistol_obscure",
+    "items": [
+      { "item": "nambumag", "prob": 50},
+	  { "item": "type2mag", "prob": 5 },
+	  { "item": "type2extmag", "prob": 1 }
+	 ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "guns_smg_obscure",
+    "items": [
+      { "item": "type100", "prob": 50, "charges-min": 0, "charges-max": 30 }
+	 ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "mags_smg_obscure",
+    "items": [
+      { "item": "type100mag", "prob": 50}
+	 ]
+  },
+  
+  
+      {
+    "type": "item_group",
+    "id": "guns_rifle_obscure",
+    "items": [
+      { "item": "type30", "prob": 75, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type30_carbine", "prob": 75, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type38", "prob": 50, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type38_carbine", "prob": 50, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type1_tera", "prob": 5, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type97", "prob": 50, "charges-min": 0, "charges-max": 5 },
+	  
+	  { "item": "type96", "prob": 25, "charges-min": 0, "charges-max": 30 },
+	  { "item": "type3", "prob": 25, "charges-min": 0, "charges-max": 500 },
+	  
+	  { "item": "type99", "prob": 25, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type99_carbine", "prob": 25, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type99_sniper", "prob": 25, "charges-min": 0, "charges-max": 5 },
+	  
+	  { "item": "type99_lmg", "prob": 10, "charges-min": 0, "charges-max": 30 },
+	  { "item": "type92", "prob": 10, "charges-min": 0, "charges-max": 500 }
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "ammo_rifle_obscure",
+    "items": [
+      { "item": "6x50mm", "prob": 50},
+	  { "item": "6x50mm_round", "prob": 25 },
+	  { "item": "6x50mm_genso", "prob": 5 },
+	  
+	  { "item": "7x58mm", "prob": 50 },
+	  { "item": "7x58mm_ap", "prob": 35 },
+	  { "item": "7x58mm_tracer", "prob": 25 },
+	  { "item": "7x58mm_explosive", "prob": 5 }
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "mags_rifle_obscure",
+    "items": [
+      { "item": "type96mag", "prob": 50},
+	  { "item": "belt6x50mm", "prob": 10, "charges-min": 500, "charges-max": 500 },
+	  
+	  { "item": "type99mag", "prob": 25 },
+	  { "item": "belt7x58mm", "prob": 5, "charges-min": 500, "charges-max": 500 }
+	 ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "farming_seeds",
+    "items": [
+      [ "seed_olive_bonsai", 6 ],
+      [ "seed_cactus_explosive", 1 ]
+    ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "hydro",
+    "items": [
+      [ "seed_olive_bonsai", 2 ],
+      [ "seed_cactus_explosive", 1 ]
+    ]
+  },
+  
+  
+    {
+    "type": "item_group",
+    "id": "everyday_gear",
+    "items": [
+      [ "wrist_comp_bad", 50 ],
+      [ "wrist_comp_budget", 180 ]
+    ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "electronics",
+    "items": [
+      [ "wrist_comp_bad", 20 ],
+	  [ "wrist_comp_budget", 10 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "ammo": 25,
+    "magazine": 100,
+    "id": "consumer_electronics",
+    "items": [
+      [ "wrist_comp_bad", 50 ],
+	  [ "wrist_comp_budget", 25 ]
+    ]
+  },
+  
+  
+  
+    {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "phones",
+    "items": [
+      { "item": "wrist_comp_bad", "prob": 9, "charges-min": 0, "charges-max": 15 },
+      { "item": "wrist_comp_bad", "prob": 1, "charges-min": 50, "charges-max": 50 },
+      { "item": "wrist_comp_budget", "prob": 9, "charges-min": 0, "charges-max": 15 },
+      { "item": "wrist_comp_budget", "prob": 1, "charges-min": 130, "charges-max": 130 }
+    ]
+  }
+  
+]

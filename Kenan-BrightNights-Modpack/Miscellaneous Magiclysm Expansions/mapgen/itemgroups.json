@@ -1,32 +1,62 @@
-[{
+[
+  {
     "type": "item_group",
     "id": "homebooks",
-    "items": [ { "group": "spellbook_loot_0", "prob": 4 }, { "group": "magicmanuals", "prob": 2 }, { "group": "mis_spellbooks", "prob": 3 } ]
+    "items": [
+      { "group": "spellbook_loot_0", "prob": 4 },
+      { "group": "magicmanuals", "prob": 2 },
+      { "group": "mis_spellbooks", "prob": 3 }
+    ]
   },
   {
     "type": "item_group",
     "id": "mis_spellbooks",
-    "items": [ [ "sum_begin", 80 ], [ "sum", 70 ], [ "sum_ancient", 60 ], [ "necro1", 80 ], [ "necro2", 50 ], [ "hchem_notebook", 30 ], [ "alchemist", 50 ], [ "atro_basic", 70 ], [ "atro", 60 ], [ "pyro", 60 ], [ "pyro2", 58 ], [ "ice", 60 ], [ "ice2", 58 ] ]
+    "items": [
+      [ "hchem_notebook", 30 ],
+      [ "necro1", 80 ],
+      [ "necro2", 50 ],
+      [ "alchemist", 50 ],
+      [ "atro_basic", 70 ],
+      [ "atro", 60 ],
+      [ "pyro", 60 ],
+      [ "pyro2", 58 ],
+      [ "ice", 60 ],
+      [ "ice2", 58 ]
+    ]
   },
   {
     "type": "item_group",
     "id": "magicmanuals",
-    "items": [ [ "staves_magus", 80 ], [ "staves_kelvin", 80 ], [ "staves_animist", 80 ], [ "staves_druid", 80 ], [ "staves_earth", 80 ], [ "staves_storm", 80 ], [ "staves_tech", 80 ], [ "staves_bio", 80 ] ]
+    "items": [
+      [ "staves_magus", 80 ],
+      [ "staves_kelvin", 80 ],
+      [ "staves_animist", 80 ],
+      [ "staves_druid", 80 ],
+      [ "staves_earth", 80 ],
+      [ "staves_storm", 80 ],
+      [ "staves_tech", 80 ],
+      [ "staves_bio", 80 ]
+    ]
   },
   {
     "type": "item_group",
     "id": "manuals",
-    "items": [ { "group": "spellbook_loot_0", "prob": 3 }, { "group": "magicmanuals", "prob": 3 }, { "group": "dragon_books", "prob": 4 }, { "group": "mis_spellbooks", "prob": 4 } ]
-  }, 
+    "items": [
+      { "group": "spellbook_loot_0", "prob": 3 },
+      { "group": "magicmanuals", "prob": 3 },
+      { "group": "dragon_books", "prob": 4 },
+      { "group": "mis_spellbooks", "prob": 4 }
+    ]
+  },
   {
     "type": "item_group",
     "id": "magic_shop_wands",
     "items": [
       { "item": "wand_magic_missile_minor", "prob": 35, "charges-min": 12, "charges-max": 34 },
-	  { "item": "stave_magic_missile", "prob": 15, "charges-min": 22, "charges-max": 50 },
-	  { "item": "gstave_magic_missile", "prob": 5, "charges-min": 22, "charges-max": 50 },
-	  { "item": "stave_fireball", "prob": 15, "charges-min": 22, "charges-max": 50 },
-	  { "item": "gstave_fireball", "prob": 5, "charges-min": 22, "charges-max": 50 },
+      { "item": "stave_magic_missile", "prob": 15, "charges-min": 22, "charges-max": 50 },
+      { "item": "gstave_magic_missile", "prob": 5, "charges-min": 22, "charges-max": 50 },
+      { "item": "stave_fireball", "prob": 15, "charges-min": 22, "charges-max": 50 },
+      { "item": "gstave_fireball", "prob": 5, "charges-min": 22, "charges-max": 50 },
       { "item": "wand_fireball_minor", "prob": 25, "charges-min": 3, "charges-max": 24 }
     ]
   },
@@ -54,8 +84,8 @@
       { "group": "lair_loot_generic", "prob": 80, "count": [ 2, 6 ] },
       { "item": "dragon_black_scale", "count": [ 48, 120 ] },
       { "group": "enchanted_tokens_weapon", "prob": 30 },
-	  { "group": "staves_common", "prob": 20 },
-	  { "group": "staves_rare", "prob": 10 },
+      { "group": "staves_common", "prob": 20 },
+      { "group": "staves_rare", "prob": 10 },
       { "group": "enchanted_rings_common", "prob": 40 },
       { "group": "enchanted_rings_uncommon", "prob": 30 },
       { "group": "enchanted_rings_unusual", "prob": 20 },
@@ -82,8 +112,8 @@
     "items": [
       { "group": "enchanted_combat_items", "prob": 20 },
       { "group": "enchanted_misc", "prob": 40 },
-	  { "group": "staves_common", "prob": 20 },
-	  { "group": "staves_rare", "prob": 10 },
+      { "group": "staves_common", "prob": 20 },
+      { "group": "staves_rare", "prob": 10 },
       { "group": "enchanted_rings_unusual", "prob": 10 },
       { "group": "enchanted_rings_rare", "prob": 20 },
       { "group": "magicmanuals", "prob": 10 },
@@ -94,11 +124,7 @@
   {
     "id": "staves_common",
     "type": "item_group",
-    "items": [
-      [ "stave_magic_missile", 20 ],
-      [ "stave_fireball", 20 ],
-      [ "stave_hoaryblast", 20 ]
-    ]
+    "items": [ [ "stave_magic_missile", 20 ], [ "stave_fireball", 20 ], [ "stave_hoaryblast", 20 ] ]
   },
   {
     "id": "staves_rare",
@@ -106,8 +132,8 @@
     "items": [
       [ "gstave_magic_missile", 20 ],
       [ "gstave_fireball", 20 ],
-	  [ "stave_zompack", 10 ],
-	  [ "gstave_zompack", 5 ],
+      [ "stave_zompack", 10 ],
+      [ "gstave_zompack", 5 ],
       [ "gstave_hoaryblast", 20 ]
     ]
   },
@@ -118,10 +144,10 @@
       { "group": "spellbook_loot_1", "prob": 60 },
       { "group": "magicmanuals", "prob": 60 },
       { "group": "spell_scroll_tier_0", "prob": 80 },
-      { "group": "mis_spellbooks", "prob": 80 },  
+      { "group": "mis_spellbooks", "prob": 80 },
       { "group": "spell_scroll_tier_1", "prob": 60 },
       { "group": "spell_scroll_tier_2", "prob": 30 },
       { "group": "magic_recipe_basic", "prob": 50 }
     ]
   }
-  ]
+]

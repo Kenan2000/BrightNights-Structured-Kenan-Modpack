@@ -1,24 +1,4 @@
-[{
-    "id": "shield",
-    "type": "SPELL",
-    "name": "Shield",
-    "description": "You conjure a protective aura around yourself.",
-    "message": "A strange aura erupts within existance around you!",
-    "valid_targets": [ "ally", "self" ],
-    "effect": "spawn_item",
-    "effect_str": "shield_aura",
-    "min_damage": 1,
-    "max_damage": 1,
-    "base_casting_time": 100,
-    "base_energy_cost": 100,
-    "energy_source": "MANA",
-    "spell_class": "MAGUS",
-    "difficulty": 0,
-    "max_level": 20,
-    "min_duration": 100000,
-    "max_duration": 1000000,
-    "duration_increment": 2000
-  },
+[
   {
     "id": "mhand",
     "type": "SPELL",
@@ -67,4 +47,4 @@
     "difficulty": 0,
     "damage_type": "none"
   }
-  ]
+]

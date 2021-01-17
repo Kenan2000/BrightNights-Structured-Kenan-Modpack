@@ -1,0 +1,27 @@
+[
+  {
+    "type": "material",
+    "ident": "plastic_trans",
+    "name": "Translucent Plastic",
+    "density": 8,
+    "specific_heat_liquid": 1.6,
+    "specific_heat_solid": 1.6,
+    "latent_heat": 50,
+    "bash_resist": 3,
+    "cut_resist": 1,
+    "acid_resist": 10,
+    "fire_resist": 2,
+    "elec_resist": 5,
+    "chip_resist": 6,
+    "repaired_with": "transplastic_chunk",
+    "salvaged_into": "transplastic_chunk",
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "dented",
+    "cut_dmg_verb": "gouged",
+    "burn_data": [
+      { "fuel": 1, "smoke": 2, "burn": 1, "volume_per_turn": "750 ml" },
+      { "fuel": 1, "smoke": 3, "burn": 2 },
+      { "fuel": 1, "smoke": 5, "burn": 5 }
+    ]
+  }
+]

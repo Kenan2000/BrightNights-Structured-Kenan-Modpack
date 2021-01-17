@@ -1,6 +1,8 @@
-[{
+[
+  {
     "type": "terrain",
     "id": "t_rock_wall_light",
+    "looks_like": "t_rock_wall",
     "name": "stone wall",
     "description": "A sturdy stone wall. A small light has been affixed to it.",
     "symbol": "LINE_OXOX",
@@ -19,4 +21,5 @@
       "ter_set": "t_null",
       "items": [ { "item": "rock", "count": [ 8, 18 ] } ]
     }
-  }]
+  }
+]

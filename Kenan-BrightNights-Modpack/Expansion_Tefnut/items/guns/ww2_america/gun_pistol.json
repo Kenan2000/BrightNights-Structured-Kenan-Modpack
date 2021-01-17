@@ -1,0 +1,31 @@
+[
+   
+ {
+    "id": "greasegun",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "M3A1",
+    "description": "The 'grease gun'; a gun made during the end of the second World War. While it barely saw use there due to the end of the war, it saw extended use into the Korean and Vietnam wars, cementing the gun's reputation for reliability. (Dev warning: Another similar, but incompatible gun appears in Fallout: New England. I'm probably gonna change it to copy this one later)",
+    "weight": 2945,
+    "volume": 8,
+    "price": 40000,
+    "bashing": 10,
+    "material": "steel",
+    "symbol": "[",
+    "color": "dark_gray",
+	"looks_like": "sten",
+    "ammo": "45",
+    "skill": "smg",
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "dispersion": 360,
+    "durability": 10,
+    "burst": 10,
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "muzzle", 1 ], [ "stock", 1 ], ["grip", 1] ],
+    "magazines": [
+	  [ "45", [ "m3mag" ] ]
+	             ]
+  }
+  
+   
+   
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "shoggoth_gun",
+    "looks_like": "trex_gun",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": ".950 JDJ Rifle",
+    "description": "A .950 JDJ rifle, a rare collector's item before the cataclysm. Whatever you shoot with this is GOING to die. If you can handle firing it, that is. There are only three rifles like this in the world, at least officially.",
+    "weight": "54082 g",
+    "volume": "4 L",
+    "price": 2000000,
+    "to_hit": 1,
+    "bashing": 16,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "light_blue",
+    "ammo": "950jdj",
+    "skill": "rifle",
+    "dispersion": 90,
+    "durability": 8,
+    "clip_size": 1,
+    "reload": 600,
+    "barrel_length": 4,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+	  [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "flags": [ "NEVER_JAMS", "RELOAD_EJECT" ]
+  },
+  
+   {
+    "id": "shoggoth_gun_scom",
+    "looks_like": "trex_gun",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "S-Com Ranger .950",
+    "description": "A powerful rifle chambered in .950 JDJ. It has a 5 shot magazine. This is basically a cannon. You love cannons, everyone loves cannons!",
+    "weight": "54082 g",
+    "volume": "4 L",
+    "price": 2000000,
+    "to_hit": 1,
+    "bashing": 16,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "950jdj",
+    "skill": "rifle",
+    "dispersion": 90,
+    "durability": 10,
+    "reload": 300,
+    "barrel_length": 4,
+	"valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+	  [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+	"default_mods": [ "bipod", "rifle_scope", "muzzle_brake" ],
+    "magazine_well": 1,
+    "magazines": [ [ "950jdj", [ "950mag" ] ] ],
+    "flags": [ "NEVER_JAMS", "RELOAD_EJECT" ]
+  } 
+  
+  
+  
+]

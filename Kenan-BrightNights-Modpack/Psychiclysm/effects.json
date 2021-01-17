@@ -171,7 +171,7 @@
     "remove_memorial_log": "Recovered from Insanity.",
     "rating": "bad",
     "resist_traits": [ "WILLPOWER", "FEARLESS"],
-    "block_effects": [ "block_psychic"],
+    "blocks_effects": [ "block_psychic"],
     "base_mods": {
       "per_mod": [ -2, -1 ],
       "int_mod": [ -1, -1 ]
@@ -415,11 +415,12 @@
     "apply_memorial_log": "Suffered a melted brain",
     "base_mods": {
       "int_mod": [ -10 ],
-      "per_mod": [  -100 ],
+      "per_mod": [ -100 ],
       "pain_tick": [ 1 ],
       "pain_min": [ 2 ],
       "hurt_chance": [ 1 ],
-      "hurt_min": [ 2 ]
+      "hurt_min": [ 999 ],
+      "hurt_max": [ 999 ]
     }
   },
   {

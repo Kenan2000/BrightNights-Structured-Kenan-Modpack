@@ -8,7 +8,6 @@
       "2": "t_door_metal_c",
       "4": "t_door_metal_pickable",
       "5": "t_door_metal_locked",
-      "6": "t_console_broken",
       "[": "t_door_glass_c",
       "-": "t_wall",
       "|": "t_concrete_wall",
@@ -57,22 +56,20 @@
       "^": "f_indoor_plant",
       "x": "f_safe_l"
     }
-    },
-    {
+  },
+  {
     "type": "palette",
     "id": "wiz_roof",
-    "terrain": {
-      ".": "t_flat_roof"  
-    }
-    },
+    "terrain": { ".": "t_flat_roof" }
+  },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -102,23 +99,28 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "magus", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "magus_old", "x": 10, "y": 13 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -148,69 +150,28 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "animist", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "techno_kid", "x": 10, "y": 13 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
-      "fill_ter": "t_floor",
-     "rows": [
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "   ////::://///://://   ",
-        "   /....a...b/@./~.&/   ",
-        "   /........t/@./i../   ",
-        "   /b.......-//+//+//   ",
-        "   /.....l........../   ",
-        "   :...............b/   ",
-        "   /r...........tt.o:   ",
-        "   /r..............k/   ",
-        "   /r....b....bfnick/   ",
-        "   ///:////++///:////   ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        "
-      ],
-      "palettes": [ "wiz_shack" ],
-      "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "biomancer", "x": 10, "y": 13 }
-      ]
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
-    "//": "Ground level - Z-0.",
-    "weight": 100,
-    "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -240,23 +201,28 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "druid", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "healer_priest", "x": 10, "y": 13 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -286,23 +252,28 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "earthshaper", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "magus_old", "x": 10, "y": 13 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -332,23 +303,28 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "kelvinist", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "techno_kid", "x": 10, "y": 13 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -378,23 +354,28 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "stormshaper", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "healer_priest", "x": 10, "y": 13 } ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "wiz_shack" ],
-    "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 40 ], "y": [ 0, 40 ] } ],
     "//": "Ground level - Z-0.",
     "weight": 100,
     "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "fill_ter": "t_floor",
       "rows": [
         "                        ",
@@ -424,13 +405,69 @@
       ],
       "palettes": [ "wiz_shack" ],
       "items": {
-      "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
-      "k": [ { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] }, { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] }, { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] } ],
-      "f": [ { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] }, { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] } ]
-    },
-      "place_npcs": [
-        { "class": "technomancer", "x": 10, "y": 13 }
-      ]
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "magus_old", "x": 10, "y": 13 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "wiz_shack" ],
+    "//": "Ground level - Z-0.",
+    "weight": 100,
+    "object": {
+      "faction_owner": [ { "id": "wizards_ancient", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "fill_ter": "t_floor",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "   ////::://///://://   ",
+        "   /....a...b/@./~.&/   ",
+        "   /........t/@./i../   ",
+        "   /b.......-//+//+//   ",
+        "   /.....l........../   ",
+        "   :...............b/   ",
+        "   /r...........tt.o:   ",
+        "   /r..............k/   ",
+        "   /r....b....bfnick/   ",
+        "   ///:////++///:////   ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [ "wiz_shack" ],
+      "items": {
+        "r": { "item": "spellbook_loot_0", "chance": 100, "repeat": [ 2, 5 ] },
+        "k": [
+          { "item": "dry_goods", "chance": 100, "repeat": [ 2, 5 ] },
+          { "item": "preserved_food", "chance": 100, "repeat": [ 4, 8 ] },
+          { "item": "pantry", "chance": 100, "repeat": [ 4, 8 ] }
+        ],
+        "f": [
+          { "item": "barbecue", "chance": 70, "repeat": [ 2, 5 ] },
+          { "item": "fridgesnacks", "chance": 100, "repeat": [ 4, 8 ] }
+        ]
+      },
+      "place_npcs": [ { "class": "techno_kid", "x": 10, "y": 13 } ]
     }
   },
   {
@@ -452,7 +489,7 @@
         "   ..................   ",
         "   ..................   ",
         "   ..................   ",
-        "   :.................   ",
+        "   ..................   ",
         "   ..................   ",
         "   ..................   ",
         "   ..................   ",
@@ -468,4 +505,5 @@
       ],
       "palettes": [ "wiz_roof" ]
     }
-  }]
+  }
+]
