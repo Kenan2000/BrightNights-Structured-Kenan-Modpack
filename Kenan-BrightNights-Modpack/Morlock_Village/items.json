@@ -35,8 +35,7 @@
   {
     "type": "COMESTIBLE",
     "id": "mushroom_tea",
-    "name": "mush-tea",
-    "name_plural": "mush-tea",
+    "name": { "str": "mush-tea", "str_pl": "mush-tea" },
     "weight": 250,
     "color": "brown",
     "container": "ceramic_cup",
@@ -86,8 +85,7 @@
     "type": "COMESTIBLE",
     "id": "seed_mushroom_glowing",
     "copy-from": "seed_mushroom_base",
-    "name": "glowing mushroom spores",
-    "name_plural": "glowing mushroom spores",
+    "name": { "str": "glowing mushroom spores", "str_pl": "glowing mushroom spores" },
     "flags": [ "FREEZERBURN", "LIGHT_2" ],
     "seed_data": { "plant_name": "glowing mushroom", "fruit": "mushroom_glowing", "grow": "45 days" }
   },
@@ -101,8 +99,7 @@
   {
     "type": "COMESTIBLE",
     "id": "glowing_tea",
-    "name": "magic tea",
-    "name_plural": "magic tea",
+    "name": { "str": "magic tea", "str_pl": "magic tea" },
     "weight": 250,
     "color": "brown",
     "container": "ceramic_cup",
@@ -127,8 +124,7 @@
   {
     "type": "COMESTIBLE",
     "id": "brew_sunshine",
-    "name": "sunshine mash",
-    "name_plural": "sunshine mashes",
+    "name": { "str": "sunshine mash", "str_pl": "sunshine mashes" },
     "description": "Unfermented sunshine.  Just some water, sugar, and glowing mutant mushrooms, just like Urist used to make.",
     "weight": 50,
     "color": "yellow",
@@ -148,8 +144,7 @@
   {
     "type": "COMESTIBLE",
     "id": "wash_sunshine",
-    "name": "sunshine wash",
-    "name_plural": "sunshine washes",
+    "name": { "str": "sunshine wash", "str_pl": "sunshine washes" },
     "description": "Fermented, but not distilled sunshine.  Contains all the contaminants you don't want in your sunshine.",
     "weight": 50,
     "color": "yellow",
@@ -172,8 +167,7 @@
   {
     "type": "COMESTIBLE",
     "id": "sunshine",
-    "name": "sunshine",
-    "name_plural": "sunshine",
+    "name": { "str": "sunshine", "str_pl": "sunshine" },
     "weight": 35,
     "color": "yellow",
     "addiction_type": "alcohol",

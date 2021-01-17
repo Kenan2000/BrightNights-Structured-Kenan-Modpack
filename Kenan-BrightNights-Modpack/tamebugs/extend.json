@@ -44,15 +44,13 @@
   },{
     "id": "mon_dragonfly_giant",
     "type": "MONSTER",
-    "name": "giant dragonfly",
-    "name_plural": "giant dragonflies",
+    "name": { "str": "giant dragonfly", "str_pl": "giant dragonflies" },
     "copy-from": "mon_dragonfly_giant",
     "extend": { "flags": [ "CATTLEFODDER" ] }
   },{
     "id": "mon_fly",
     "type": "MONSTER",
-    "name": "giant fly",
-    "name_plural": "giant flies",
+    "name": { "str": "giant fly", "str_pl": "giant flies" },
     "copy-from": "mon_fly",
     "extend": { "flags": [ "CATTLEFODDER" ] }
   },{

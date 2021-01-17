@@ -3,8 +3,7 @@
     "type": "COMESTIBLE",
     "id": "lemonade",
     "copy-from": "lemonade",
-    "name": "lemonade",
-    "name_plural": "lemonade",
+    "name": { "str": "lemonade", "str_pl": "lemonade" },
     "description": "Lemon juice mixed with water and sugar to dull the sourness.  Delicious and refreshing.",
     "spoils_in": 0
   },
@@ -12,8 +11,7 @@
     "type": "COMESTIBLE",
     "id": "sports_drink",
     "copy-from": "sports_drink",
-    "name": "sports drink",
-    "name_plural": "sports drink",
+    "name": { "str": "sports drink", "str_pl": "sports drink" },
     "description": "Consisting of a special blend of electrolytes and simple sugars, this beverage tastes like bottled sweat but rehydrates the body faster than water.",
     "spoils_in": 0
   },
@@ -21,8 +19,7 @@
     "type": "COMESTIBLE",
     "id": "irish_coffee",
     "copy-from": "irish_coffee",
-    "name": "Irish coffee",
-    "name_plural": "Irish coffee",
+    "name": { "str": "Irish coffee", "str_pl": "Irish coffee" },
     "description": "Sweetened coffee and whiskey topped with milk.  Start your day the closeted alcoholic way!",
     "spoils_in": 0
   },
@@ -30,8 +27,7 @@
     "type": "COMESTIBLE",
     "id": "drink_wild_apple",
     "copy-from": "drink_wild_apple",
-    "name": "wild apple",
-    "name_plural": "wild apple",
+    "name": { "str": "wild apple", "str_pl": "wild apple" },
     "description": "Like apple cider, only with vodka.",
     "spoils_in": 0
   },
@@ -39,8 +35,7 @@
     "type": "COMESTIBLE",
     "id": "mead",
     "copy-from": "mead",
-    "name": "spiced mead",
-    "name_plural": "spiced mead",
+    "name": { "str": "spiced mead", "str_pl": "spiced mead" },
     "description": "Well-aged honey wine, spiced with a hint of hops.  Goes down bittersweet.",
     "spoils_in": 0
   },
@@ -48,8 +43,7 @@
     "type": "COMESTIBLE",
     "id": "dandelion_wine",
     "copy-from": "dandelion_wine",
-    "name": "dandelion wine",
-    "name_plural": "dandelion wine",
+    "name": { "str": "dandelion wine", "str_pl": "dandelion wine" },
     "description": "A light and delicious wine made from dandelion flowers.  Slightly effervescent, it is smooth and crisp.",
     "spoils_in": 0
   },
@@ -57,8 +51,7 @@
     "type": "COMESTIBLE",
     "id": "pine_wine",
     "copy-from": "pine_wine",
-    "name": "pine wine",
-    "name_plural": "pine wine",
+    "name": { "str": "pine wine", "str_pl": "pine wine" },
     "description": "A potent wine flavored with pine resin.  Bold and pungent, its biting taste and strong aroma takes some getting used to.",
     "spoils_in": 0
   },
@@ -66,8 +59,7 @@
     "type": "COMESTIBLE",
     "id": "hb_beer",
     "copy-from": "hb_beer",
-    "name": "homebrew beer",
-    "name_plural": "homebrew beer",
+    "name": { "str": "homebrew beer", "str_pl": "homebrew beer" },
     "description": "Not the finest drink you've had, but hey, it's alcohol by the gallon.",
     "spoils_in": 0
   },
@@ -75,8 +67,7 @@
     "type": "COMESTIBLE",
     "id": "moonshine",
     "copy-from": "moonshine",
-    "name": "moonshine",
-    "name_plural": "moonshine",
+    "name": { "str": "moonshine", "str_pl": "moonshine" },
     "description": "Only the strongest, purest, good ol' fashioned hooch.  Guaranteed to make you forget about the whole cataclysm thing, or you get your vision back.",
     "spoils_in": 0
   },
@@ -84,8 +75,7 @@
     "type": "COMESTIBLE",
     "id": "stout",
     "copy-from": "stout",
-    "name": "stout",
-    "name_plural": "stout",
+    "name": { "str": "stout", "str_pl": "stout" },
     "description": "A tasty craft beer, as dark in color as the days ahead.",
     "spoils_in": 0
   },
@@ -93,8 +83,7 @@
     "type": "COMESTIBLE",
     "id": "belgian_ale",
     "copy-from": "belgian_ale",
-    "name": "Belgian ale",
-    "name_plural": "Belgian ale",
+    "name": { "str": "Belgian ale", "str_pl": "Belgian ale" },
     "description": "A flavorful and filling ale brewed by monks in Belgium.  Best served in a goblet.",
     "spoils_in": 0
   },
@@ -102,8 +91,7 @@
     "type": "COMESTIBLE",
     "id": "imperial_stout",
     "copy-from": "imperial_stout",
-    "name": "imperial stout",
-    "name_plural": "imperial stout",
+    "name": { "str": "imperial stout", "str_pl": "imperial stout" },
     "description": "A very flavorful beer that has been aged in bourbon barrels.  It is as black as midnight on a moonless night and has the viscosity of oil.  While very tasty, it also has an alcohol content on the level with wine.",
     "spoils_in": 0
   },
@@ -119,8 +107,7 @@
     "type": "COMESTIBLE",
     "id": "coffee",
     "copy-from": "coffee",
-    "name": "coffee",
-    "name_plural": "coffee",
+    "name": { "str": "coffee", "str_pl": "coffee" },
     "description": "Coffee.  The morning ritual of the pre-apocalyptic world.",
     "spoils_in": 0
   },
@@ -128,8 +115,7 @@
     "type": "COMESTIBLE",
     "id": "atomic_coffee",
     "copy-from": "atomic_coffee",
-    "name": "atomic coffee",
-    "name_plural": "atomic coffee",
+    "name": { "str": "atomic coffee", "str_pl": "atomic coffee" },
     "description": "This serving of coffee has been created using an atomic coffee pot's FULL NUCLEAR brewing cycle.  Every possible microgram of caffeine and flavor has been carefully extracted for your enjoyment, using the power of the atom.",
     "spoils_in": 0
   },
@@ -145,8 +131,7 @@
     "type": "COMESTIBLE",
     "id": "blood",
     "copy-from": "blood",
-    "name": "blood",
-    "name_plural": "blood",
+    "name": { "str": "blood", "str_pl": "blood" },
     "description": "Blood, possibly that of a human.  Disgusting!",
     "spoils_in": 0
   },
@@ -154,8 +139,7 @@
     "type": "COMESTIBLE",
     "id": "dandelion_tea",
     "copy-from": "dandelion_tea",
-    "name": "dandelion tea",
-    "name_plural": "dandelion tea",
+    "name": { "str": "dandelion tea", "str_pl": "dandelion tea" },
     "description": "A healthy beverage made from dandelion roots steeped in boiling water.",
     "spoils_in": 0
   },
@@ -211,8 +195,7 @@
     "type": "COMESTIBLE",
     "id": "kernels",
     "copy-from": "kernels",
-    "name": "popcorn kernels",
-    "name_plural": "popcorn kernels",
+    "name": { "str": "popcorn kernels", "str_pl": "popcorn kernels" },
     "description": "Dried kernels from a particular type of corn.  Practically inedible raw, they can be cooked to make a tasty snack.",
     "spoils_in": 0
   },
@@ -220,8 +203,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_blueberries",
     "copy-from": "irradiated_blueberries",
-    "name": "irradiated blueberry",
-    "name_plural": "irradiated blueberries",
+    "name": { "str": "irradiated blueberry", "str_pl": "irradiated blueberries" },
     "description": "An irradiated blueberry will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -229,8 +211,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_strawberries",
     "copy-from": "irradiated_strawberries",
-    "name": "irradiated strawberry",
-    "name_plural": "irradiated strawberries",
+    "name": { "str": "irradiated strawberry", "str_pl": "irradiated strawberries" },
     "description": "An irradiated strawberry will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -238,8 +219,7 @@
     "type": "COMESTIBLE",
     "id": "wheat",
     "copy-from": "wheat",
-    "name": "wheat",
-    "name_plural": "wheat",
+    "name": { "str": "wheat", "str_pl": "wheat" },
     "description": "Raw wheat, not very tasty.",
     "spoils_in": 0
   },
@@ -247,8 +227,7 @@
     "type": "COMESTIBLE",
     "id": "buckwheat",
     "copy-from": "buckwheat",
-    "name": "buckwheat",
-    "name_plural": "buckwheat",
+    "name": { "str": "buckwheat", "str_pl": "buckwheat" },
     "description": "Seeds from a wild buckwheat plant.  Not particularly good to eat in their raw state, they are commonly cooked or ground into flour.",
     "spoils_in": 0
   },
@@ -256,8 +235,7 @@
     "type": "COMESTIBLE",
     "id": "hops",
     "copy-from": "hops",
-    "name": "hops flower",
-    "name_plural": "hops flowers",
+    "name": { "str": "hops flower", "str_pl": "hops flowers" },
     "description": "A cluster of small cone-like flowers, indispensable for brewing beer.",
     "spoils_in": 0
   },
@@ -289,8 +267,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_tomato",
     "copy-from": "irradiated_tomato",
-    "name": "irradiated tomato",
-    "name_plural": "irradiated tomatoes",
+    "name": { "str": "irradiated tomato", "str_pl": "irradiated tomatoes" },
     "description": "An irradiated tomato will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -298,8 +275,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_broccoli",
     "copy-from": "irradiated_broccoli",
-    "name": "irradiated broccoli",
-    "name_plural": "irradiated broccoli",
+    "name": { "str": "irradiated broccoli", "str_pl": "irradiated broccoli" },
     "description": "An irradiated cluster of broccoli will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -331,8 +307,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_corn",
     "copy-from": "irradiated_corn",
-    "name": "irradiated corn",
-    "name_plural": "irradiated corn",
+    "name": { "str": "irradiated corn", "str_pl": "irradiated corn" },
     "description": "An irradiated ear of corn will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -349,8 +324,7 @@
     "type": "COMESTIBLE",
     "id": "wax",
     "copy-from": "wax",
-    "name": "wax",
-    "name_plural": "waxes",
+    "name": { "str": "wax", "str_pl": "waxes" },
     "description": "A large chunk of beeswax.  Not very tasty or nourishing, but okay in an emergency.",
     "spoils_in": 0
   },
@@ -358,8 +332,7 @@
     "type": "COMESTIBLE",
     "id": "royal_jelly",
     "copy-from": "royal_jelly",
-    "name": "royal jelly",
-    "name_plural": "royal jellies",
+    "name": { "str": "royal jelly", "str_pl": "royal jellies" },
     "description": "A translucent hexagonal chunk of wax, filled with dense, milky jelly.  Delicious, and rich with the most beneficial substances the hive can produce, it is useful for curing all sorts of afflictions.",
     "spoils_in": 0
   },
@@ -367,8 +340,7 @@
     "type": "COMESTIBLE",
     "id": "oats",
     "copy-from": "oats",
-    "name": "oats",
-    "name_plural": "oats",
+    "name": { "str": "oats", "str_pl": "oats" },
     "description": "Raw oats.",
     "spoils_in": 0
   },
@@ -376,8 +348,7 @@
     "type": "COMESTIBLE",
     "id": "sugar",
     "copy-from": "sugar",
-    "name": "sugar",
-    "name_plural": "sugar",
+    "name": { "str": "sugar", "str_pl": "sugar" },
     "description": "Sweet, sweet sugar.  Bad for your teeth and surprisingly not very tasty on its own.",
     "spoils_in": 0
   },
@@ -409,8 +380,7 @@
     "type": "COMESTIBLE",
     "id": "meal_chitin_piece",
     "copy-from": "meal_chitin_piece",
-    "name": "chitin powder",
-    "name_plural": "chitin powder",
+    "name": { "str": "chitin powder", "str_pl": "chitin powder" },
     "description": "This chitin powder can be used to craft fertilizer and some other things.",
     "spoils_in": 0
   },
@@ -418,8 +388,7 @@
     "type": "COMESTIBLE",
     "id": "wild_herbs",
     "copy-from": "wild_herbs",
-    "name": "wild herbs",
-    "name_plural": "wild herbs",
+    "name": { "str": "wild herbs", "str_pl": "wild herbs" },
     "description": "A tasty collection of wild herbs including violet, sassafras, mint, clover, purslane, fireweed, and burdock.",
     "spoils_in": 0
   },
@@ -427,8 +396,7 @@
     "type": "COMESTIBLE",
     "id": "herbal_tea",
     "copy-from": "herbal_tea",
-    "name": "herbal tea",
-    "name_plural": "herbal tea",
+    "name": { "str": "herbal tea", "str_pl": "herbal tea" },
     "description": "A healthy beverage made from herbs steeped in boiling water.",
     "spoils_in": 0
   },
@@ -436,8 +404,7 @@
     "type": "COMESTIBLE",
     "id": "pine_tea",
     "copy-from": "pine_tea",
-    "name": "pine needle tea",
-    "name_plural": "pine needle tea",
+    "name": { "str": "pine needle tea", "str_pl": "pine needle tea" },
     "description": "A fragrant and healthy beverage made from pine needles steeped in boiling water.",
     "spoils_in": 0
   },
@@ -446,8 +413,7 @@
     "id": "powder_eggs",
     "copy-from": "powder_eggs",
     "//": "Another one that they missed.",
-    "name": "powdered egg",
-    "name_plural": "powdered eggs",
+    "name": { "str": "powdered egg", "str_pl": "powdered eggs" },
     "description": "Whole fresh eggs, dehydrated into an easy to store powder.",
     "spoils_in": 0
   },
@@ -463,8 +429,7 @@
     "type": "COMESTIBLE",
     "id": "maple_sap",
     "copy-from": "maple_sap",
-    "name": "maple sap",
-    "name_plural": "maple sap",
+    "name": { "str": "maple sap", "str_pl": "maple sap" },
     "description": "A water and sugar solution that has been extracted from a maple tree.",
     "spoils_in": 0
   },
@@ -472,8 +437,7 @@
     "type": "COMESTIBLE",
     "id": "syrup",
     "copy-from": "syrup",
-    "name": "maple syrup",
-    "name_plural": "maple syrup",
+    "name": { "str": "maple syrup", "str_pl": "maple syrup" },
     "description": "Sweet and delicious, real Vermont maple syrup.",
     "spoils_in": 0
   },
@@ -481,8 +445,7 @@
     "type": "COMESTIBLE",
     "id": "beet_syrup",
     "copy-from": "beet_syrup",
-    "name": "sugar beet syrup",
-    "name_plural": "sugar beet syrup",
+    "name": { "str": "sugar beet syrup", "str_pl": "sugar beet syrup" },
     "description": "A thick syrup produced from shredded sugar beets.  Useful in cooking as a sweetener.",
     "spoils_in": 0
   },
@@ -490,8 +453,7 @@
     "type": "COMESTIBLE",
     "id": "tea_raw",
     "copy-from": "tea_raw",
-    "name": "tea leaf",
-    "name_plural": "tea leaves",
+    "name": { "str": "tea leaf", "str_pl": "tea leaves" },
     "description": "Dried leaves of a tropical plant.  You can boil them into tea, or you can just eat them raw.  They aren't too filling though.",
     "spoils_in": 0
   },
@@ -499,8 +461,7 @@
     "type": "COMESTIBLE",
     "id": "coffee_raw",
     "copy-from": "coffee_raw",
-    "name": "coffee powder",
-    "name_plural": "coffee powder",
+    "name": { "str": "coffee powder", "str_pl": "coffee powder" },
     "description": "Ground coffee beans.  You can boil it into a mediocre stimulant, or swallow it raw for a lesser stimulative boost.",
     "spoils_in": 0
   },
@@ -508,8 +469,7 @@
     "type": "COMESTIBLE",
     "id": "milk_powder",
     "copy-from": "milk_powder",
-    "name": "powdered milk",
-    "name_plural": "powdered milk",
+    "name": { "str": "powdered milk", "str_pl": "powdered milk" },
     "description": "Dehydrated milk powder.  Mix with water to make drinkable milk.",
     "spoils_in": 0
   },
@@ -517,8 +477,7 @@
     "type": "COMESTIBLE",
     "id": "coffee_syrup",
     "copy-from": "coffee_syrup",
-    "name": "coffee syrup",
-    "name_plural": "coffee syrup",
+    "name": { "str": "coffee syrup", "str_pl": "coffee syrup" },
     "description": "A thick syrup made of water and sugar strained through coffee grounds.  Can be used to flavor many foods and beverages.",
     "spoils_in": 0
   },
@@ -526,8 +485,7 @@
     "type": "COMESTIBLE",
     "id": "honey_bottled",
     "copy-from": "honey_bottled",
-    "name": "forest honey",
-    "name_plural": "forest honey",
+    "name": { "str": "forest honey", "str_pl": "forest honey" },
     "description": "Honey, that stuff bees make.  This one is \"forest honey\", a liquid form of honey.  This honey won't spoil and is good for your digestion.",
     "spoils_in": 0
   },
@@ -535,8 +493,7 @@
     "type": "COMESTIBLE",
     "id": "honey_glassed",
     "copy-from": "honey_glassed",
-    "name": "candied honey",
-    "name_plural": "candied honey",
+    "name": { "str": "candied honey", "str_pl": "candied honey" },
     "description": "Honey, that stuff the bees make.  This variant is \"candied honey\", a variant of very thick consistence.  This honey won't spoil and is good for your digestion.",
     "spoils_in": 0
   },
@@ -561,8 +518,7 @@
     "type": "COMESTIBLE",
     "id": "drink_boozeberry",
     "copy-from": "drink_boozeberry",
-    "name": "boozeberry",
-    "name_plural": "boozeberries",
+    "name": { "str": "boozeberry", "str_pl": "boozeberries" },
     "description": "This fermented blueberry mixture is surprisingly hearty, though the soup-like consistency is slightly unsettling no matter how much you drink.",
     "spoils_in": 0
   },
@@ -578,8 +534,7 @@
     "type": "COMESTIBLE",
     "id": "vinegar",
     "copy-from": "vinegar",
-    "name": "vinegar",
-    "name_plural": "vinegar",
+    "name": { "str": "vinegar", "str_pl": "vinegar" },
     "description": "Shockingly tart white vinegar.",
     "spoils_in": 0
   },
@@ -587,8 +542,7 @@
     "type": "COMESTIBLE",
     "id": "cooking_oil",
     "copy-from": "cooking_oil",
-    "name": "cooking oil",
-    "name_plural": "cooking oil",
+    "name": { "str": "cooking oil", "str_pl": "cooking oil" },
     "description": "Thin yellow vegetable oil used for cooking.",
     "spoils_in": 0
   },
@@ -604,8 +558,7 @@
     "type": "COMESTIBLE",
     "id": "coffee_bean",
     "copy-from": "coffee_bean",
-    "name": "coffee beans",
-    "name_plural": "coffee beans",
+    "name": { "str": "coffee beans", "str_pl": "coffee beans" },
     "description": "Some coffee beans, can be roasted.",
     "spoils_in": 0
   },
@@ -613,8 +566,7 @@
     "type": "COMESTIBLE",
     "id": "roasted_coffee_bean",
     "copy-from": "roasted_coffee_bean",
-    "name": "roasted coffee beans",
-    "name_plural": "roasted coffee beans",
+    "name": { "str": "roasted coffee beans", "str_pl": "roasted coffee beans" },
     "description": "Some roasted coffee beans, can be ground into powder.",
     "spoils_in": 0
   },
@@ -622,8 +574,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_cherries",
     "copy-from": "irradiated_cherries",
-    "name": "irradiated cherry",
-    "name_plural": "irradiated cherries",
+    "name": { "str": "irradiated cherry", "str_pl": "irradiated cherries" },
     "description": "An irradiated cherry will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -639,8 +590,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_grapes",
     "copy-from": "irradiated_grapes",
-    "name": "irradiated grape",
-    "name_plural": "irradiated grapes",
+    "name": { "str": "irradiated grape", "str_pl": "irradiated grapes" },
     "description": "An irradiated grape will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -656,8 +606,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_peach",
     "copy-from": "irradiated_peach",
-    "name": "irradiated peach",
-    "name_plural": "irradiated peaches",
+    "name": { "str": "irradiated peach", "str_pl": "irradiated peaches" },
     "description": "An irradiated peach will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -665,8 +614,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_cranberries",
     "copy-from": "irradiated_cranberries",
-    "name": "irradiated cranberry",
-    "name_plural": "irradiated cranberries",
+    "name": { "str": "irradiated cranberry", "str_pl": "irradiated cranberries" },
     "description": "An irradiated cranberry will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -674,8 +622,7 @@
     "type": "COMESTIBLE",
     "id": "lemonade_powder",
     "copy-from": "lemonade_powder",
-    "name": "lemonade drink mix",
-    "name_plural": "servings of lemonade drink mix",
+    "name": { "str": "lemonade drink mix", "str_pl": "servings of lemonade drink mix" },
     "description": "Tangy yellow powder that smells strongly of lemons.  Can be mixed with water to make lemonade.",
     "spoils_in": 0
   },
@@ -699,8 +646,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_raspberries",
     "copy-from": "irradiated_raspberries",
-    "name": "irradiated raspberry",
-    "name_plural": "irradiated raspberries",
+    "name": { "str": "irradiated raspberry", "str_pl": "irradiated raspberries" },
     "description": "An irradiated raspberry will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -708,8 +654,7 @@
     "type": "COMESTIBLE",
     "id": "irradiated_blackberries",
     "copy-from": "irradiated_blackberries",
-    "name": "irradiated blackberry",
-    "name_plural": "irradiated blackberries",
+    "name": { "str": "irradiated blackberry", "str_pl": "irradiated blackberries" },
     "description": "An irradiated blackberry will remain edible nearly forever.  Sterilized using radiation, so it's safe to eat.",
     "spoils_in": 0
   },
@@ -717,8 +662,7 @@
     "type": "COMESTIBLE",
     "id": "molasses",
     "copy-from": "molasses",
-    "name": "molasses",
-    "name_plural": "molasses",
+    "name": { "str": "molasses", "str_pl": "molasses" },
     "description": "An extremely sugary tar-like syrup, with a slightly bitter aftertaste.",
     "spoils_in": 0
   },
@@ -774,8 +718,7 @@
     "type": "COMESTIBLE",
     "id": "single_malt_whiskey",
     "copy-from": "single_malt_whiskey",
-    "name": "single malt whiskey",
-    "name_plural": "single malt whiskey",
+    "name": { "str": "single malt whiskey", "str_pl": "single malt whiskey" },
     "description": "Only the finest whiskey straight from the bung.",
     "spoils_in": 0
   },
@@ -791,8 +734,7 @@
     "type": "COMESTIBLE",
     "id": "soysauce",
     "copy-from": "soysauce",
-    "name": "soy sauce",
-    "name_plural": "soy sauce",
+    "name": { "str": "soy sauce", "str_pl": "soy sauce" },
     "description": "Salty fermented soybean sauce.",
     "spoils_in": 0
   },
@@ -800,8 +742,7 @@
     "type": "COMESTIBLE",
     "id": "horseradish",
     "copy-from": "horseradish",
-    "name": "horseradish",
-    "name_plural": "horseradish",
+    "name": { "str": "horseradish", "str_pl": "horseradish" },
     "description": "A spicy grated root vegetable packed in vinegared brine.",
     "spoils_in": 0
   },
@@ -809,8 +750,7 @@
     "type": "COMESTIBLE",
     "id": "sugar_fried",
     "copy-from": "sugar_fried",
-    "name": "caramel",
-    "name_plural": "caramel",
+    "name": { "str": "caramel", "str_pl": "caramel" },
     "description": "Some caramel.  Still bad for your health.",
     "spoils_in": 0
   },

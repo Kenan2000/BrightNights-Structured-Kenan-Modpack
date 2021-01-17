@@ -2,8 +2,7 @@
   {
     "id": "cbma_pile_ammo",
     "type": "AMMO",
-    "name": "molded glaze",
-    "name_plural": "molded glaze",
+    "name": { "str": "molded glaze", "str_pl": "molded glaze" },
     "description": "It is a molded glaze used for firing the glaze hammer. Steel exteriors are damaged at launch and can not be reused.",
     "weight": 30,
     "volume": 1,
@@ -25,8 +24,7 @@
   {
     "id": "cbma_em_rail_iron",
     "type": "AMMO",
-    "name": "iron electromagnetic projectile",
-    "name_plural": "iron electromagnetic projectiles",
+    "name": { "str": "iron electromagnetic projectile", "str_pl": "iron electromagnetic projectiles" },
     "description": "A rod for electromagnetic projectile guns made of iron. It is easy to make, but it is fragile compared to other EM projectiles, so it lacks flight distance and stability.",
     "weight": 15,
     "volume": 1,
@@ -49,8 +47,7 @@
     "id": "cbma_em_rail_steel",
     "copy-from": "cbma_em_rail_iron",
     "type": "AMMO",
-    "name": "steel electromagnetic projectile",
-    "name_plural": "steel electromagnetic projectiles",
+    "name": { "str": "steel electromagnetic projectile", "str_pl": "steel electromagnetic projectiles" },
     "description": "A rod for electromagnetic projectile guns made of steel. It is a standard projectile with stable performance.",
     "material": [ "steel" ],
     "relative": {
@@ -63,8 +60,7 @@
     "id": "cbma_em_rail_alloy",
     "copy-from": "cbma_em_rail_iron",
     "type": "AMMO",
-    "name": "superalloy electromagnetic projectile",
-    "name_plural": "superalloy electromagnetic projectiles",
+    "name": { "str": "superalloy electromagnetic projectile", "str_pl": "superalloy electromagnetic projectiles" },
     "description": "A rod for electromagnetic projectile guns made of superalloy. It is a projectile with high performance due to its excellent electrical and chemical properties.",
     "material": [ "superalloy" ],
     "relative": {
@@ -76,8 +72,7 @@
   {
     "id": "cbma_em_railmag",
     "type": "MAGAZINE",
-    "name": "electromagnetic projectile magazine",
-    "name_plural": "electromagnetic projectile magazines",
+    "name": { "str": "electromagnetic projectile magazine", "str_pl": "electromagnetic projectile magazines" },
     "description": "A magazine dedicated to the improved electromagnetic projectile gun. You can load up to 20 rods.",
     "weight": 150,
     "volume": 2,
