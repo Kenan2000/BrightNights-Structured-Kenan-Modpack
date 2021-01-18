@@ -17,8 +17,7 @@
     "id": "modularvestceramic",
     "type": "ARMOR",
     "category": "armor",
-    "name": "MBR vest (ceramic plates)",
-    "name_plural": "MBR vests (ceramic plates)",
+    "name": { "str": "MBR vest (ceramic plates)", "str_pl": "MBR vests (ceramic plates)" },
     "copy-from": "modularvestceramic",
 	"flags": [ "BELTED", "STURDY" ],
     "extend": {
@@ -31,8 +30,7 @@
     "id": "modularvesthard",
     "type": "ARMOR",
     "category": "armor",
-    "name": "MBR vest (hard plates)",
-    "name_plural": "MBR vests (hard plates)",
+    "name": { "str": "MBR vest (hard plates)", "str_pl": "MBR vests (hard plates)" },
     "copy-from": "modularvesthard",
 	"flags": [ "BELTED", "STURDY" ],
     "extend": {
@@ -45,8 +43,7 @@
     "id": "modularvestkevlar",
     "type": "ARMOR",
     "category": "armor",
-    "name": "MBR vest (Kevlar plates)",
-    "name_plural": "MBR vests (Kevlar plates)",
+    "name": { "str": "MBR vest (Kevlar plates)", "str_pl": "MBR vests (Kevlar plates)" },
     "copy-from": "modularvestkevlar",
 	"flags": [ "BELTED", "STURDY" ],
     "extend": {
@@ -59,8 +56,7 @@
     "id": "modularveststeel",
     "type": "ARMOR",
     "category": "armor",
-    "name": "MBR vest (steel plating)",
-    "name_plural": "MBR vests (steel plating)",
+    "name": { "str": "MBR vest (steel plating)", "str_pl": "MBR vests (steel plating)" },
     "description": "A Modular Bullet Resistant Vest.  Its armor pouches have steel plates in them; this improves protection, but makes the vest much heavier and encumbering.",
     "copy-from": "modularveststeel",
 	"flags": [ "BELTED", "STURDY" ],
@@ -74,8 +70,7 @@
     "id": "modularvestsuper",
     "type": "ARMOR",
     "category": "armor",
-    "name": "MBR vest (superalloy)",
-    "name_plural": "MBR vests (superalloy)",
+    "name": { "str": "MBR vest (superalloy)", "str_pl": "MBR vests (superalloy)" },
     "copy-from": "modularvestsuper",
 	"flags": [ "BELTED", "STURDY" ],
     "extend": {
@@ -89,16 +84,14 @@
     "copy-from": "UPS_off",
     "id": "UPS_off",
     "type": "TOOL",
-    "name": "UPS",
-    "name_plural": "UPS's",
+    "name": { "str": "UPS", "str_pl": "UPS's" },
     "extend": { "flags": [ "UPS_MAG" ] }
   },
   {
     "copy-from": "adv_UPS_off",
     "id": "adv_UPS_off",
     "type": "TOOL",
-    "name": "advanced UPS",
-    "name_plural": "advanced UPS's",
+    "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
     "extend": { "flags": [ "UPS_MAG" ] }
   },
   {

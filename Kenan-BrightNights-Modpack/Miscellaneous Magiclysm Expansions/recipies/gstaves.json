@@ -1,18 +1,6 @@
- [{  "result": "staff_magic",
-    "//": "A base recipe for all greater staves, from which to copy.", 
-    "type": "recipe",
-    "category": "CC_ENCHANTED",
-    "subcategory": "CSC_ENCHANTED_WEAPONS",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 5 ],
-    "difficulty": 6,
-    "time": "1 h 30 m",
-    "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ] ]   
-  },
-  {  "result": "gstave_magic_missile",
+[
+  {
+    "result": "gstave_magic_missile",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -22,11 +10,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_magus", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_magus", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_magus", 2 ] ]
+    ]
   },
-  {  "result": "gstave_gravity_well",
+  {
+    "result": "gstave_gravity_well",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -36,11 +28,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_magus", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_magus", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_magus", 2 ] ]
+    ]
   },
-  {  "result": "gstave_mana_blast",
+  {
+    "result": "gstave_mana_blast",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -50,11 +46,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_magus", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_magus", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_magus", 2 ] ]
+    ]
   },
-  {  "result": "gstave_fireball",
+  {
+    "result": "gstave_fireball",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -62,13 +62,17 @@
     "skills_required": [ "spellcraft", 5 ],
     "difficulty": 6,
     "time": "1 h 30 m",
-     "book_learn": [ [ "staves_kelvin", 8 ] ],
+    "book_learn": [ [ "staves_kelvin", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_kelvinist", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_kelvinist", 2 ] ]
+    ]
   },
-  {  "result": "gstave_point_flare",
+  {
+    "result": "gstave_point_flare",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -76,13 +80,17 @@
     "skills_required": [ "spellcraft", 5 ],
     "difficulty": 6,
     "time": "1 h 30 m",
-     "book_learn": [ [ "staves_kelvin", 8 ] ],
+    "book_learn": [ [ "staves_kelvin", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_kelvinist", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_kelvinist", 2 ] ]
+    ]
   },
-  {  "result": "gstave_ice_spike",
+  {
+    "result": "gstave_ice_spike",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -90,13 +98,17 @@
     "skills_required": [ "spellcraft", 5 ],
     "difficulty": 6,
     "time": "1 h 30 m",
-     "book_learn": [ [ "staves_kelvin", 8 ] ],
+    "book_learn": [ [ "staves_kelvin", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_kelvinist", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_kelvinist", 2 ] ]
+    ]
   },
-  {  "result": "gstave_hoaryblast",
+  {
+    "result": "gstave_hoaryblast",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -104,41 +116,17 @@
     "skills_required": [ "spellcraft", 5 ],
     "difficulty": 6,
     "time": "1 h 30 m",
-     "book_learn": [ [ "staves_kelvin", 8 ] ],
+    "book_learn": [ [ "staves_kelvin", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_kelvinist", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_kelvinist", 2 ] ]
+    ]
   },
-  {  "result": "gstave_summon_zombie",
-    "type": "recipe",
-    "category": "CC_ENCHANTED",
-    "subcategory": "CSC_ENCHANTED_WEAPONS",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 5 ],
-    "difficulty": 6,
-    "time": "1 h 30 m",
-    "book_learn": [ [ "staves_animist", 8 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_animist", 2 ] ] ]   
-  },
-  {  "result": "gstave_summon_skeleton",
-    "type": "recipe",
-    "category": "CC_ENCHANTED",
-    "subcategory": "CSC_ENCHANTED_WEAPONS",
-    "skill_used": "fabrication",
-    "skills_required": [ "spellcraft", 5 ],
-    "difficulty": 6,
-    "time": "1 h 30 m",
-    "book_learn": [ [ "staves_animist", 8 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_animist", 2 ] ] ]   
-  },
-  {  "result": "gstave_decayed_pouncer",
+  {
+    "result": "gstave_summon_zombie",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -148,11 +136,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_animist", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_animist", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_animist", 2 ] ]
+    ]
   },
-  {  "result": "gstave_summon_wisps",
+  {
+    "result": "gstave_summon_skeleton",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -162,11 +154,51 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_animist", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_animist", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_animist", 2 ] ]
+    ]
   },
-  {  "result": "gstave_veggrasp",
+  {
+    "result": "gstave_decayed_pouncer",
+    "type": "recipe",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_WEAPONS",
+    "skill_used": "fabrication",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 6,
+    "time": "1 h 30 m",
+    "book_learn": [ [ "staves_animist", 8 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_animist", 2 ] ]
+    ]
+  },
+  {
+    "result": "gstave_summon_wisps",
+    "type": "recipe",
+    "category": "CC_ENCHANTED",
+    "subcategory": "CSC_ENCHANTED_WEAPONS",
+    "skill_used": "fabrication",
+    "skills_required": [ "spellcraft", 5 ],
+    "difficulty": 6,
+    "time": "1 h 30 m",
+    "book_learn": [ [ "staves_animist", 8 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_animist", 2 ] ]
+    ]
+  },
+  {
+    "result": "gstave_veggrasp",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -176,11 +208,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_druid", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_druid", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_druid", 2 ] ]
+    ]
   },
-  {  "result": "gstave_rootstrike",
+  {
+    "result": "gstave_rootstrike",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -190,11 +226,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_druid", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_druid", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_druid", 2 ] ]
+    ]
   },
-  {  "result": "gstave_fungicide",
+  {
+    "result": "gstave_fungicide",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -204,11 +244,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_druid", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_druid", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_druid", 2 ] ]
+    ]
   },
-  {  "result": "gstave_regrowth",
+  {
+    "result": "gstave_regrowth",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -218,11 +262,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_druid", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_druid", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_druid", 2 ] ]
+    ]
   },
-  {  "result": "gstave_druidic_healing",
+  {
+    "result": "gstave_druidic_healing",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -232,11 +280,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_druid", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_druid", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_druid", 2 ] ]
+    ]
   },
-  {  "result": "gstave_shardspray",
+  {
+    "result": "gstave_shardspray",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -246,11 +298,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_earth", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_earthshaper", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_earthshaper", 2 ] ]
+    ]
   },
-  {  "result": "gstave_piercing_bolt",
+  {
+    "result": "gstave_piercing_bolt",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -260,11 +316,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_earth", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_earthshaper", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_earthshaper", 2 ] ]
+    ]
   },
-  {  "result": "gstave_move_earth",
+  {
+    "result": "gstave_move_earth",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -274,11 +334,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_earth", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_earthshaper", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_earthshaper", 2 ] ]
+    ]
   },
-  {  "result": "gstave_lightning_bolt",
+  {
+    "result": "gstave_lightning_bolt",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -288,11 +352,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_storm", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_stormshaper", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_stormshaper", 2 ] ]
+    ]
   },
-  {  "result": "gstave_lightning_blast",
+  {
+    "result": "gstave_lightning_blast",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -302,11 +370,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_storm", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_stormshaper", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_stormshaper", 2 ] ]
+    ]
   },
-  {  "result": "gstave_wall_of_fog",
+  {
+    "result": "gstave_wall_of_fog",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -316,11 +388,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_storm", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_stormshaper", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_stormshaper", 2 ] ]
+    ]
   },
-  {  "result": "gstave_laze",
+  {
+    "result": "gstave_laze",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -330,11 +406,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_tech", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_technomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_technomancer", 2 ] ]
+    ]
   },
-  {  "result": "gstave_quantum_tunnel_lesser",
+  {
+    "result": "gstave_quantum_tunnel_lesser",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -344,11 +424,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_tech", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_technomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_technomancer", 2 ] ]
+    ]
   },
-  {  "result": "gstave_animated_blade",
+  {
+    "result": "gstave_animated_blade",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -358,11 +442,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_tech", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_technomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_technomancer", 2 ] ]
+    ]
   },
-  {  "result": "gstave_overcharge_eyes",
+  {
+    "result": "gstave_overcharge_eyes",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -372,11 +460,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_tech", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_technomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_technomancer", 2 ] ]
+    ]
   },
-  {  "result": "gstave_bio_acidicspray",
+  {
+    "result": "gstave_bio_acidicspray",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -386,11 +478,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_bio", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_biomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_biomancer", 2 ] ]
+    ]
   },
-  {  "result": "gstave_visceral_projection",
+  {
+    "result": "gstave_visceral_projection",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -400,11 +496,15 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_bio", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_biomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_biomancer", 2 ] ]
+    ]
   },
-  {  "result": "gstave_paralytic_dart",
+  {
+    "result": "gstave_paralytic_dart",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_WEAPONS",
@@ -414,8 +514,11 @@
     "time": "1 h 30 m",
     "book_learn": [ [ "staves_bio", 8 ] ],
     "qualities": [ { "id": "CHISEL", "level": 2 }, { "id": "MANA_INFUSE", "level": 2 }, { "id": "CUT", "level": 2 } ],
-    "components": [ [ [ "crystallized_mana", 400 ] ],
-                  [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
-                  [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ], [ [ "rune_biomancer", 2 ] ] ]   
+    "components": [
+      [ [ "crystallized_mana", 400 ] ],
+      [ [ "stick_long", 1 ], [ "pool_cue", 1 ] ],
+      [ [ "rag", 1 ], [ "felt_patch", 1 ], [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "rune_biomancer", 2 ] ]
+    ]
   }
-  ]
+]

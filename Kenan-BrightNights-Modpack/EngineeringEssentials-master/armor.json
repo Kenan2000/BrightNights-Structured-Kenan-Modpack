@@ -26,8 +26,7 @@
   {
     "id": "goggles_welding",
     "type": "ARMOR",
-    "name": "pair of welding goggles",
-    "name_plural": "pairs of welding goggles",
+    "name": { "str": "pair of welding goggles", "str_pl": "pairs of welding goggles" },
     "copy-from": "goggles_welding",
     "description": "A dark pair of goggles.  They make seeing very difficult, but protect you from bright flashes. Use them to move to your forehead.",
     "use_action": {
@@ -40,11 +39,10 @@
   {
     "id": "goggles_welding_forehead",
     "type": "ARMOR",
-    "name": "pair of welding goggles (forehead)",
-    "name_plural": "pairs of welding goggles (forehead)",
+    "name": { "str": "pair of welding goggles (forehead)", "str_pl": "pairs of welding goggles (forehead)" },
     "description": "A dark pair of goggles, weared on the forehead. Can't protect from bright flashes in this state. Use them to cover your eyes.",
     "weight": 153,
-    "volume": 1,
+    "volume": "250 ml",
     "price": 1400,
     "to_hit": -3,
     "material": [ "plastic" ],

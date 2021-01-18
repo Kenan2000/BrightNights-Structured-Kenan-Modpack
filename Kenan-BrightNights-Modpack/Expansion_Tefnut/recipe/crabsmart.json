@@ -1,0 +1,66 @@
+[
+  {
+    "type": "recipe",
+    "result": "crabsmart_sandwich",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "time": "4 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "crab_imitation", 1 ] ],
+      [
+        [ "flatbread", 2 ],
+        [ "bread", 2 ],
+        [ "cornbread", 2 ],
+        [ "wastebread", 2 ],
+        [ "sourdough_bread", 2 ],
+        [ "brioche", 2 ]
+      ],
+      [
+        [ "pickle", 1 ],
+        [ "veggy_pickled", 1 ],
+        [ "onion", 1 ],
+        [ "irradiated_onion", 1 ],
+        [ "can_tomato", 1 ],
+        [ "irradiated_tomato", 1 ],
+        [ "tomato", 1 ],
+        [ "lettuce", 1 ],
+        [ "irradiated_lettuce", 1 ]
+      ],
+      [
+        [ "ketchup", 1 ],
+        [ "mustard", 1 ],
+        [ "horseradish", 1 ],
+        [ "mayonnaise", 1 ],
+        [ "bacon", 1 ],
+        [ "seasoning_salt", 1 ],
+        [ "soysauce", 1 ]
+      ]
+    ]
+  },
+  
+    {
+    "result": "macaroni_crabsmart",
+    "type": "recipe",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_PASTA",
+    "skill_used": "cooking",
+    "difficulty": 1,
+    "charges": 2,
+    "time": "10 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 3 } ],
+    "tools": [ [ [ "surface_heat", 4, "LIST" ] ] ],
+    "components": [
+      [ [ "spaghetti_raw", 1 ], [ "macaroni_raw", 1 ], [ "noodles_fast", 1 ] ],
+      [
+        [ "crab_imitation", 1 ]
+      ],
+      [ [ "cheese", 2 ], [ "cheese_hard", 2 ], [ "can_cheese", 2 ] ],
+      [ [ "water", 1 ], [ "water_clean", 1 ] ]
+    ]
+  }
+]

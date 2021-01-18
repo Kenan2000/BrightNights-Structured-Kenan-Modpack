@@ -9,8 +9,7 @@
   {
     "type": "COMESTIBLE",
     "id": "acid_free",
-    "name": "concentrated acid",
-    "name_plural": "concentrated acid",
+    "name": { "str": "concentrated acid", "str_pl": "concentrated acid" },
     "weight": 250,
     "color": "green",
     "flags": [ "ACID" ],
@@ -21,7 +20,7 @@
     "healthy": -4,
     "description": "Concentrated acid.  Don't drink it.",
     "price": 2000,
-    "volume": 1,
+    "volume": "250 ml",
     "phase": "liquid",
     "category": "chems",
     "fun": -45,

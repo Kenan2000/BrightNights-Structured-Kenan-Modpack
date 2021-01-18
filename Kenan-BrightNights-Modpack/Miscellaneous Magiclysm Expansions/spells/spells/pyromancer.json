@@ -117,26 +117,5 @@
     "max_level": 1,
     "flags": [ "SOMATIC", "NO_LEGS" ],
     "energy_source": "MANA"
-  },
-  {
-    "id": "firewhip",
-    "type": "SPELL",
-    "name": "Flamewhip",
-    "description": "This spell conjures a magical flaming bullwhip.",
-    "valid_targets": [ "none" ],
-    "flags": [ "CONCENTRATE", "SOMATIC", "VERBAL", "NO_LEGS" ],
-    "min_damage": 1,
-    "max_damage": 1,
-    "effect": "spawn_item",
-    "effect_str": "firewhip",
-    "base_casting_time": 200,
-    "base_energy_cost": 250,
-    "min_duration": 20000,
-    "max_duration": 40000,
-    "duration_increment": 1000,
-    "difficulty": 4,
-    "max_level": 20,
-    "spell_class": "PYRO",
-    "energy_source": "MANA"
   }
 ]

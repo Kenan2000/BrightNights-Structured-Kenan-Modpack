@@ -1,0 +1,22 @@
+[
+  {
+    "result": "small_makeshift_rotor",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": "240 m",
+    "reversible": true,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_fabrication", 5 ], [ "welding_book", 6 ] ],
+    "using": [ [ "welding_standard", 10 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "motor", 16 ] ],
+      [ [ "scrap", 90 ], [ "steel_chunk", 30 ], [ "steel_lump", 10 ] ],
+      [ [ "blade", 4 ] ],
+      [ [ "steel_plate", 8 ] ]
+    ]
+  }
+]

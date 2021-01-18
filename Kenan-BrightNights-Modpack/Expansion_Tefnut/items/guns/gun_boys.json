@@ -1,0 +1,27 @@
+[
+  {
+    "id": "boys_antitank",
+    "copy-from": "rifle_base",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "name": { "str_sp": "Boys anti-tank rifle" },
+    "description": "A smaller anti-tank rifle from the second world war. While effective against light tanks, it left service before said war ended, on account of it just not being good enough to deal with the increasingly large and heavy armored tanks the world began to produce. However, against anything short of a tank, this weapon should suffice. At the least, you can carry it more easily than a browning.",
+    "weight": "16000 g",
+    "volume": "4500 ml",
+    "price": 1483300,
+    "price_postapoc": 12000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": "steel",
+    "ammo": "55_boys",
+    "range": 100,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "dispersion": 130,
+    "durability": 8,
+    "barrel_length": "1250 ml",
+    "default_mods": [ "bipod", "muzzle_brake" ],
+    "magazine_well": 1,
+    "magazines": [ [ "55_boys", [ "boysmag" ] ] ],
+    "flags": [ "NEVER_JAMS" ]
+  }
+]

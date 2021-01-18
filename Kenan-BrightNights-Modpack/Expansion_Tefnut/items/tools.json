@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gravity_gun",
+    "type": "TOOL",
+    "name": "gravity gun",
+    "description": "A mysterious gun-shaped machine, this allows you to lift heavy vehicles with basically no limits.",
+    "material": "steel",
+    "symbol": ";",
+    "color": "light_blue",
+    "weight": "5000 g",
+    "volume": "1500 ml",
+    "price": 18000,
+    "bashing": 8,
+    "to_hit": -2,
+    "qualities": [ [ "LIFT", 400 ], [ "JACK", 400 ] ]
+  },
+  
+  
+    {
+    "type": "GENERIC",
+    "category": "tools",
+    "id": "pan_drying",
+    "name": { "str": "cast-iron drying pan" },
+    "description": "You turned this ordinary frying pan into a drying pan. You can use this to protect yourself from the rain.",
+    "copy-from": "base_cookpot",
+    "material": "iron",
+    "color": "dark_gray",
+    "weight": "2628 g",
+    "volume": "1 L",
+    "bashing": 12,
+    "to_hit": -3,
+    "container_data": { "contains": "1 L", "watertight": true },
+    "delete": { "qualities": [ [ "COOK", 3 ] ] },
+    "extend": { "qualities": [ [ "HAMMER", 1 ], [ "COOK", 2 ] ] },
+	"flags": [ "RAIN_PROTECT" ]
+  },
+  
+  {
+    "type": "GENERIC",
+    "category": "weapons",
+    "id": "pan_dying",
+    "name": { "str": "cast-iron dying pan" },
+    "description": "A cast-iron pan with nails welded onto it. Its quality as a cooking tool has been reduced, but it will kill.",
+    "copy-from": "base_cookpot",
+    "material": "iron",
+    "color": "dark_gray",
+    "weight": "2628 g",
+    "volume": "1 L",
+    "bashing": 12,
+	"cutting": 3,
+    "flags": [ "STAB" ],
+    "to_hit": -3,
+    "delete": { "qualities": [ [ "COOK", 3 ] ] },
+    "extend": { "qualities": [ [ "HAMMER", 1 ], [ "COOK", 1 ] ] }
+  }
+
+
+]

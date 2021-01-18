@@ -1,0 +1,107 @@
+[
+  {
+    "id": "type100mag",
+    "looks_like": "mp5mag",
+    "type": "MAGAZINE",
+    "name": { "str": "Type 100 magazine" },
+    "description": "A standard-issue 30-round magazine for the Nambu Type 100.",
+    "weight": "255 g",
+    "volume": "750 ml",
+    "price": 4000,
+    "price_postapoc": 200,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "8x22mm",
+    "capacity": 30,
+    "reliability": 8,
+    "reload_time": 120,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "type96mag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "Type 96 Magazine" },
+    "description": "A 30 round box magazine for the Type 96 light machine gun.",
+    "weight": "300 g",
+    "volume": "750 ml",
+    "price": 8500,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "6x50mm",
+    "capacity": 30,
+    "reliability": 7,
+    "reload_time": 120,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "belt6x50mm",
+    "copy-from": "magazine_belt",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "6.5x50mm Arisaka ammo belt" },
+	    "description": "A 500 round 6.5x50mm Arisaka Ammo belt, made for use with the type 3 LMG, though it can also be used for the Type 96 LMG.",
+    "ammo_type": "6x50mm",
+    "capacity": 500,
+	"reload_time": 120,
+    "default_ammo": "6x50mm",
+    "linkage": "ammolink6x50mm"
+  },
+  
+    {
+    "id": "ammolink6x50mm",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": "6.5x50mm Arisaka ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "belt6x50mm" }
+  },
+  
+  
+      {
+    "id": "type99mag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "Type 99 Magazine" },
+    "description": "A 30 round box magazine for the Type 99 light machine gun.",
+    "weight": "300 g",
+    "volume": "750 ml",
+    "price": 8500,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "7x58mm",
+    "capacity": 30,
+    "reliability": 7,
+    "reload_time": 120,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "belt7x58mm",
+    "copy-from": "magazine_belt",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "7.7x56mm Arisaka ammo belt" },
+	    "description": "A 500 round 7.7x58mm Arisaka Ammo belt, made for use with the type 3 LMG, though it can also be used for the Type 96 LMG. It's reloadable, because the mod creator wanted these NOT to be an excercise in CBT to use.",
+    "ammo_type": "7x58mm",
+    "capacity": 500,
+	"reload_time": 120,
+    "default_ammo": "7x58mm",
+    "linkage": "ammolink7x58mm"
+  },
+  
+    {
+    "id": "ammolink7x58mm",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": "7.7x56mm Arisaka ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "belt7x58mm" }
+  }
+  
+]

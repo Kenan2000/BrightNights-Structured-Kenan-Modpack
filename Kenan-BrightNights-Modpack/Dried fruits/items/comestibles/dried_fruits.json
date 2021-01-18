@@ -2,8 +2,7 @@
   {
     "type": "COMESTIBLE",
     "id": "raisins",
-    "name": "raisins",
-    "name_plural": "raisins",
+    "name": { "str": "raisins", "str_pl": "raisins" },
     "weight": 50,
     "color": "light_green",
     "spoils_in": "360 days",
@@ -16,7 +15,7 @@
     "price": 300,
     "material": "fruit",
     "vitamins": [ [ "iron", 1 ], [ "vitC", 3 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 4
@@ -24,8 +23,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_raisins",
-    "name": "raisins",
-    "name_plural": "raisins",
+    "name": { "str": "raisins", "str_pl": "raisins" },
     "weight": 50,
     "color": "light_green",
     "spoils_in": "540 days",
@@ -39,7 +37,7 @@
     "price": 300,
     "material": "fruit",
     "vitamins": [ [ "iron", 1 ], [ "vitC", 3 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 6,
     "fun": 4
@@ -47,8 +45,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_apricots",
-    "name": "dried apricots",
-    "name_plural": "dried apricots",
+    "name": { "str": "dried apricots", "str_pl": "dried apricots" },
     "weight": 100,
     "color": "yellow",
     "spoils_in": "210 days",
@@ -61,7 +58,7 @@
     "price": 140,
     "material": "fruit",
     "vitamins": [ [ "vitA", 18 ], [ "iron", 4 ], [ "vitC", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 3
@@ -69,8 +66,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_apricots",
-    "name": "dried apricots",
-    "name_plural": "dried apricots",
+    "name": { "str": "dried apricots", "str_pl": "dried apricots" },
     "weight": 100,
     "color": "yellow",
     "spoils_in": "360 days",
@@ -84,7 +80,7 @@
     "price": 140,
     "material": "fruit",
     "vitamins": [ [ "vitA", 18 ], [ "iron", 4 ], [ "vitC", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 3
@@ -92,8 +88,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_plums",
-    "name": "dried plums",
-    "name_plural": "dried plums",
+    "name": { "str": "dried plums", "str_pl": "dried plums" },
     "weight": 33,
     "color": "magenta",
     "spoils_in": "210 days",
@@ -106,7 +101,7 @@
     "price": 200,
     "material": "fruit",
     "vitamins": [ [ "vitA", 3 ], [ "iron", 1 ], [ "vitB", 2 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 3
@@ -114,8 +109,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_plums",
-    "name": "dried plums",
-    "name_plural": "dried plums",
+    "name": { "str": "dried plums", "str_pl": "dried plums" },
     "weight": 100,
     "color": "magenta",
     "spoils_in": "360 days",
@@ -129,7 +123,7 @@
     "price": 200,
     "material": "fruit",
     "vitamins": [ [ "vitA", 3 ], [ "iron", 1 ], [ "vitB", 2 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 3
@@ -137,8 +131,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_apple",
-    "name": "dried apple slices",
-    "name_plural": "dried apple slices",
+    "name": { "str": "dried apple slices", "str_pl": "dried apple slices" },
     "weight": 100,
     "color": "red",
     "spoils_in": "210 days",
@@ -151,7 +144,7 @@
     "price": 200,
     "material": "fruit",
     "vitamins": [ [ "vitC", 1 ], [ "iron", 2 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 3
@@ -159,8 +152,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_apple",
-    "name": "dried apple slices",
-    "name_plural": "dried apple slices",
+    "name": { "str": "dried apple slices", "str_pl": "dried apple slices" },
     "weight": 100,
     "color": "red",
     "spoils_in": "360 days",
@@ -174,7 +166,7 @@
     "price": 200,
     "material": "fruit",
     "vitamins": [ [ "vitC", 1 ], [ "iron", 2 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 3
@@ -182,8 +174,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_blueberries",
-    "name": "dried blueberries",
-    "name_plural": "dried blueberries",
+    "name": { "str": "dried blueberries", "str_pl": "dried blueberries" },
     "weight": 50,
     "color": "blue",
     "spoils_in": "210 days",
@@ -196,7 +187,7 @@
     "price": 200,
     "material": "fruit",
     "vitamins": [ [ "vitC", 1 ], [ "vitA", 2 ], [ "calcium", 5 ], ["iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 3
@@ -204,8 +195,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_blueberries",
-    "name": "dried blueberries",
-    "name_plural": "dried blueberries",
+    "name": { "str": "dried blueberries", "str_pl": "dried blueberries" },
     "weight": 50,
     "color": "blue",
     "spoils_in": "360 days",
@@ -219,7 +209,7 @@
     "price": 200,
     "material": "fruit",
     "vitamins": [ [ "vitC", 1 ], [ "vitA", 2 ], [ "calcium", 5 ],  ["iron",1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 6,
     "fun": 3
@@ -227,8 +217,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_cranberries",
-    "name": "dried cranberries",
-    "name_plural": "dried cranberries",
+    "name": { "str": "dried cranberries", "str_pl": "dried cranberries" },
     "weight": 50,
     "color": "red",
     "spoils_in": "210 days",
@@ -241,7 +230,7 @@
     "description": "Dried cranberries, sugar added for taste so remember to brush.",
     "price": 150,
     "material": "fruit",
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 2
@@ -249,8 +238,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_cranberries",
-    "name": "dried cranberries",
-    "name_plural": "dried cranberries",
+    "name": { "str": "dried cranberries", "str_pl": "dried cranberries" },
     "weight": 50,
     "color": "red",
     "spoils_in": "360 days",
@@ -264,7 +252,7 @@
     "description": "Dried cranberries, sugar added for taste so remember to brush.",
     "price": 150,
     "material": "fruit",
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 6,
     "fun": 2
@@ -272,8 +260,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_peaches",
-    "name": "dried peaches",
-    "name_plural": "dried peaches",
+    "name": { "str": "dried peaches", "str_pl": "dried peaches" },
     "weight": 100,
     "color": "yellow",
     "spoils_in": "210 days",
@@ -285,7 +272,7 @@
     "price": 140,
     "material": "fruit",
     "vitamins": [ [ "vitA", 12 ], [ "iron", 5 ], [ "vitC", 2 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 4
@@ -293,8 +280,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_peaches",
-    "name": "dried peaches",
-    "name_plural": "dried peaches",
+    "name": { "str": "dried peaches", "str_pl": "dried peaches" },
     "weight": 100,
     "color": "yellow",
     "spoils_in": "360 days",
@@ -307,7 +293,7 @@
     "price": 140,
     "material": "fruit",
     "vitamins": [ [ "vitA", 12 ], [ "iron", 5 ], [ "vitC", 2 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 4
@@ -315,8 +301,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_figs",
-    "name": "dried figs",
-    "name_plural": "dried figs",
+    "name": { "str": "dried figs", "str_pl": "dried figs" },
     "weight": 100,
     "color": "red",
     "spoils_in": "360 days",
@@ -330,7 +315,7 @@
     "price": 180,
     "material": "fruit",
     "vitamins": [ [ "iron", 6 ], [ "calcium", 8 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 3
@@ -338,8 +323,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_dates",
-    "name": "dried dates",
-    "name_plural": "dreid dates",
+    "name": { "str": "dried dates", "str_pl": "dreid dates" },
     "weight": 100,
     "color": "red",
     "spoils_in": "360 days",
@@ -353,7 +337,7 @@
     "price": 180,
     "material": "fruit",
     "vitamins": [ [ "iron", 3 ], [ "calcium", 4 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 3
@@ -361,8 +345,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_bananas",
-    "name": "dried banana slices",
-    "name_plural": "dried banana slices",
+    "name": { "str": "dried banana slices", "str_pl": "dried banana slices" },
     "weight": 50,
     "color": "red",
     "spoils_in": "210 days",
@@ -374,7 +357,7 @@
     "price": 205,
     "material": "fruit",
     "vitamins": [ [ "vitC", 3 ], [ "vitA", 1 ], [ "iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 5
@@ -382,8 +365,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_bananas",
-    "name": "dried banana slices",
-    "name_plural": "dried banana slices",
+    "name": { "str": "dried banana slices", "str_pl": "dried banana slices" },
     "weight": 100,
     "color": "red",
     "spoils_in": "360 days",
@@ -396,7 +378,7 @@
     "price": 205,
     "material": "fruit",
     "vitamins": [ [ "vitC", 3 ], [ "vitA", 1 ], [ "iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 5
@@ -404,8 +386,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_pineapple",
-    "name": "dried pineapple chunks",
-    "name_plural": "dried pineapple chunks",
+    "name": { "str": "dried pineapple chunks", "str_pl": "dried pineapple chunks" },
     "weight": 100,
     "color": "red",
     "spoils_in": "210 days",
@@ -418,7 +399,7 @@
     "price": 205,
     "material": "fruit",
     "vitamins": [ [ "vitC", 6 ], [ "vitA", 1 ], [ "iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 1,
     "fun": 5
@@ -426,8 +407,7 @@
   {
     "type": "COMESTIBLE",
     "id": "b_dried_pineapple",
-    "name": "dried pineapple chunks",
-    "name_plural": "dried pineapple chunks",
+    "name": { "str": "dried pineapple chunks", "str_pl": "dried pineapple chunks" },
     "weight": 100,
     "color": "red",
     "spoils_in": "360 days",
@@ -441,7 +421,7 @@
     "price": 205,
     "material": "fruit",
     "vitamins": [ [ "vitC", 6 ], [ "vitA", 1 ], [ "iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 5
@@ -449,8 +429,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_mango",
-    "name": "dried mango slices",
-    "name_plural": "dried mango slices",
+    "name": { "str": "dried mango slices", "str_pl": "dried mango slices" },
     "weight": 100,
     "color": "red",
     "spoils_in": "210 days",
@@ -463,15 +442,14 @@
     "price": 180,
     "material": "fruit",
     "vitamins": [ [ "vitC", 18 ], [ "vitA", 7 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "fun": 5
   },
   {
     "type": "COMESTIBLE",
     "id": "b_dried_mango",
-    "name": "dried mango slices",
-    "name_plural": "dried mango slices",
+    "name": { "str": "dried mango slices", "str_pl": "dried mango slices" },
     "weight": 100,
     "color": "red",
     "spoils_in": "360 days",
@@ -485,7 +463,7 @@
     "price": 180,
     "material": "fruit",
     "vitamins": [ [ "vitC", 18 ], [ "vitA", 7 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 5
@@ -493,8 +471,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_kiwi",
-    "name": "dried kiwi slices",
-    "name_plural": "dried kiwi slices",
+    "name": { "str": "dried kiwi slices", "str_pl": "dried kiwi slices" },
     "weight": 100,
     "color": "brown",
     "spoils_in": "210 days",
@@ -508,15 +485,14 @@
     "price": 250,
     "material": "fruit",
     "vitamins": [ [ "calcium", 4 ], [ "iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "fun": 3
   },
   {
     "type": "COMESTIBLE",
     "id": "b_dried_kiwi",
-    "name": "dried kiwi slices",
-    "name_plural": "dried kiwi slices",
+    "name": { "str": "dried kiwi slices", "str_pl": "dried kiwi slices" },
     "weight": 100,
     "color": "brown",
     "spoils_in": "360 days",
@@ -529,7 +505,7 @@
     "price": 250,
     "material": "fruit",
     "vitamins": [ [ "calcium", 4 ], [ "iron", 1 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 3
@@ -537,8 +513,7 @@
   {
     "type": "COMESTIBLE",
     "id": "dried_papaya",
-    "name": "dried papaya slices",
-    "name_plural": "dried papaya slices",
+    "name": { "str": "dried papaya slices", "str_pl": "dried papaya slices" },
     "weight": 100,
     "color": "yellow",
     "spoils_in": "210 days",
@@ -550,15 +525,14 @@
     "price": 250,
     "material": "fruit",
     "vitamins": [ [ "vitC", 3 ], [ "calcium", 3 ], [ "iron", 3 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "fun": 5
   },
   {
     "type": "COMESTIBLE",
     "id": "b_dried_papaya",
-    "name": "dried papaya slices",
-    "name_plural": "dried papaya slices",
+    "name": { "str": "dried papaya slices", "str_pl": "dried papaya slices" },
     "weight": 100,
     "color": "yellow",
     "spoils_in": "360 days",
@@ -572,7 +546,7 @@
     "price": 250,
     "material": "fruit",
     "vitamins": [ [ "vitC", 3 ], [ "calcium", 3 ], [ "iron", 3 ] ],
-    "volume": 1,
+    "volume": "250 ml",
     "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "fun": 5

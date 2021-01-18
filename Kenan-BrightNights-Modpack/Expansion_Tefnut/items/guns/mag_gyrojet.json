@@ -1,0 +1,65 @@
+[
+  {
+    "id": "13mm_gyro_mag",
+    "type": "MAGAZINE",
+    "name": "Gyrojet pistol magazine",
+    "description": "A compact magazine for a gyrojet pistol",
+    "weight": "90 g",
+    "volume": "250 ml",
+    "price": 3900,
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "13mm_gyro",
+    "capacity": 8,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+  
+    {
+    "id": "51_gyro_mag_10",
+    "type": "MAGAZINE",
+    "name": "Gyrojet rifle 10-round magazine",
+    "description": "A compact 10-round magazine for a .51 Gyrojet rifle.",
+    "weight": "131 g",
+    "volume": "250 ml",
+    "price": 3900,
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "51_gyro",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+      {
+    "id": "51_gyro_mag_30",
+    "type": "MAGAZINE",
+    "name": "Gyrojet rifle 30-round magazine",
+    "description": "A compact 30-round magazine for a .51 Gyrojet rifle.",
+    "weight": "245 g",
+    "volume": "500 ml",
+    "price": 3900,
+    "material": "plastic",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "51_gyro",
+    "capacity": 30,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "belt_51_gyro",
+    "copy-from": "magazine_belt",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": ".51 Gyrojet ammo belt" },
+    "ammo_type": "51_gyro",
+    "capacity": 500,
+    "count": 100,
+    "default_ammo": "51_gyro"
+  }
+]

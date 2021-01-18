@@ -1,0 +1,75 @@
+[
+  {
+    "name": "GROUP_STRAY_DOGS",
+    "type": "monstergroup",
+    "default": "mon_dog",
+    "monsters": [
+      { "monster": "mon_dog_pug", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_dog_pug_pup", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_PETS",
+    "type": "monstergroup",
+    "default": "mon_dog",
+    "monsters": [
+      { "monster": "mon_dog_pug", "freq": 50, "cost_multiplier": 0 },
+      { "monster": "mon_dog_pug_pup", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },
+  
+  
+    {
+    "type":"monstergroup",
+    "name" : "GROUP_RIVER",
+    "default" : "mon_null",
+    "monsters" : [
+      { "monster" : "mon_fish_angler", "freq" :  35, "cost_multiplier" : 3, "pack_size" : [1,3] },
+	  { "monster" : "mon_anglerfish_huge", "freq" :  25, "cost_multiplier" : 3, "pack_size" : [1,3] },
+	  { "monster" : "mon_megakoi", "freq" :  25, "cost_multiplier" : 3, "pack_size" : [1,3] }
+
+    ]
+  },
+  
+  
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FISH",
+	"monsters" : [
+      { "monster" : "mon_fish_angler", "freq" :  15, "cost_multiplier" : 3, "pack_size" : [1,3] },
+	  { "monster" : "mon_anglerfish_huge", "freq" :  5, "cost_multiplier" : 3, "pack_size" : [1,3] },
+	  { "monster" : "mon_megakoi", "freq" :  15, "cost_multiplier" : 3, "pack_size" : [1,3] }
+ 
+    ]
+  },
+  
+  
+    {
+    "type": "monstergroup",
+    "name": "GROUP_CAVE",
+    "default": "mon_null",
+    "is_animal": true,
+    "monsters": [
+      { "monster": "mon_cougar_terror", "freq": 10, "cost_multiplier": 20, "pack_size": [ 1, 1 ] }
+    ]
+  },
+  
+  
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FOREST",
+    "default": "mon_null",
+    "is_animal": true,
+    "monsters": [
+
+      { "monster": "mon_cougar_terror", "freq": 3, "cost_multiplier": 3, "starts": 168  },
+      { "monster": "mon_redtail_large", "freq": 2, "cost_multiplier": 3, "starts": 168 },
+	  { "monster": "mon_redtail", "freq": 2, "cost_multiplier": 3 },
+	  { "monster": "mon_lemur_ringtail", "freq": 2, "cost_multiplier": 3 }
+ 
+    ]
+  }
+  
+  
+  
+]

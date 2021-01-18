@@ -195,7 +195,7 @@
     "cancels": [ "BAD_MANA_MULT1", "BAD_MANA_MULT2", "BAD_MANA_MULT3" ],
     "changes_to": [ "MANA_MULT2" ],
     "types": [ "MANA_MULT" ],
-   "category": [ "MAGIC" ],
+    "category": [ "MAGIC" ],
     "starting_trait": true,
     "flags": [ "NON_THRESH" ],
     "mana_multiplier": 1.25
@@ -209,7 +209,7 @@
     "cancels": [ "BAD_MANA_MULT1", "BAD_MANA_MULT2", "BAD_MANA_MULT3" ],
     "changes_to": [ "MANA_MULT3" ],
     "types": [ "MANA_MULT" ],
-   "category": [ "MAGIC" ],
+    "category": [ "MAGIC" ],
     "prereqs": [ "MANA_MULT1" ],
     "flags": [ "NON_THRESH" ],
     "mana_multiplier": 1.9
@@ -279,16 +279,6 @@
   {
     "type": "mutation",
     "id": "MAG1",
-    "name": "Innate Spell: Shield",
-    "points": 2,
-    "description": "Your attunement to the Magi allows one to conjure a protective aura.",
-    "category": [ "MAGIC" ],
-    "prereqs": [ "MAGUS" ],
-    "spells_learned": [ [ "shield", 1 ] ]
-  },
-  {
-    "type": "mutation",
-    "id": "MAG2",
     "name": "Innate Spell: Mage Hand",
     "points": 2,
     "description": "Your attunement to the Magi allows one to summon an ethereal hand.",
@@ -298,7 +288,7 @@
   },
   {
     "type": "mutation",
-    "id": "MAG3",
+    "id": "MAG2",
     "name": "Innate Spell: Shockwave",
     "points": 2,
     "description": "Your attunement to the Magi allows one to blast opponents to the ground.",

@@ -1,0 +1,116 @@
+[
+  {
+    "type": "TOOL_ARMOR",
+    "id": "wrist_comp_bad",
+    "name": { "str": "liger wristboy", "str_pl": "liger wristboys" },
+    "category": "clothing",
+    "volume": "1000 ml",
+    "description": "A 'hi-tec' wrist-mounted computer... In reality, its basically a cheap hunk of translucent plastic with an LCD screen and a shitty flashlight. Activate to play a game or use the flashlight.",
+    "weight": "112 g",
+    "to_hit": -1,
+    "color": "light_gray",
+    "covers": [ "HAND_EITHER" ],
+    "price": 6000,
+    "price_postapoc": 100,
+    "material": [ "plastic_trans" ],
+	"use_action": [
+      {
+        "target": "wrist_comp_bad_flashlight",
+        "msg": "You activate the flashlight.",
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The wrist computer's charge is too low.",
+        "type": "transform"
+      },
+	  "PORTABLE_GAME"
+    ],
+    "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE" ],
+    "coverage": 15,
+    "symbol": "[",
+    "ammo": "battery",
+    "magazines": [ [ "battery", [ "light_minus_battery_cell", "light_minus_atomic_battery_cell", "light_minus_disposable_cell", "light_battery_cell","light_atomic_battery_cell", "light_disposable_cell" ] ] ]
+  },
+  
+    {
+    "id": "wrist_comp_bad_flashlight",
+    "copy-from": "wrist_comp_bad",
+    "type": "TOOL",
+    "name": { "str": "Liger Wristboy - Flashlight", "str_pl": "Liger Wristboys - Flashlight" },
+    "power_draw": 500,
+    "revert_to": "wrist_comp_bad",
+    "use_action": [ { "target": "wrist_comp_bad", "msg": "You stop lighting up the screen.", "menu_text": "Turn off", "type": "transform" } ],
+    "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "LIGHT_8", "CHARGEDIM", "TRADER_AVOID" ]
+  },
+  
+  
+    {
+    "type": "TOOL_ARMOR",
+    "id": "wrist_comp_budget",
+    "name": { "str": "wrist computer", "str_pl": "wrist computers" },
+    "category": "clothing",
+    "volume": "1000 ml",
+    "description": "A fancy wrist-mounted computer, with a menagerie of useful features, such as SD reading, a built-in thermometer, and even a radiation monitor!",
+    "weight": "112 g",
+    "to_hit": -1,
+    "color": "light_gray",
+    "covers": [ "HAND_EITHER" ],
+	    "initial_charges": 500,
+    "max_charges": 600,
+    "charges_per_use": 1,
+    "price": 6000,
+    "price_postapoc": 100,
+    "material": [ "plastic_trans" ],
+	    "use_action": [
+      {
+        "target": "wrist_comp_budget_flashlight",
+        "msg": "You activate the flashlight.",
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The wrist computer's charge is too low.",
+        "type": "transform"
+      },
+      "CAMERA",
+      "MP3",
+	  "PORTABLE_GAME",
+	  "EINKTABLETPC",
+	  "RADGLOVE"
+    ],
+    "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ],
+    "coverage": 15,
+    "symbol": "[",
+    "ammo": "battery"
+
+  },
+  
+    {
+    "id": "wrist_comp_budget_music",
+    "copy-from": "wrist_comp_budget",
+    "type": "TOOL",
+    "name": { "str": "wrist computer - music", "str_pl": "wrist computers - music" },
+    "description": "This wrist computer is playing music, steadily raising your morale.  You can't hear anything else while you're listening.",
+    "power_draw": 300,
+    "revert_to": "wrist_comp_budget",
+    "use_action": ["MP3_ON" ],
+    "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ],
+    "magazine_well": 1
+  },
+  {
+    "id": "wrist_comp_budget_flashlight",
+    "copy-from": "wrist_comp_budget",
+    "type": "TOOL",
+    "name": { "str": "wrist computer - Flashlight", "str_pl": "wrist computers - Flashlight" },
+    "power_draw": 1500,
+    "revert_to": "wrist_comp_budget",
+    "use_action": [
+	{
+      "target": "wrist_comp_budget",
+      "msg": "You deactivate the flashlight app.",
+      "menu_text": "Turn off flashlight",
+      "type": "transform"
+    }
+	],
+    "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "LIGHT_20", "CHARGEDIM", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ]
+  }
+  
+  
+]

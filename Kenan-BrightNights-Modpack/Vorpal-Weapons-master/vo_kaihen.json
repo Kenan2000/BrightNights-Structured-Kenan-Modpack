@@ -66,7 +66,7 @@
     "price": 25000,
     "material": ["steel"],
     "weight": 2722,
-    "volume": 7,
+    "volume": "1750 ml",
     "bashing": 13,
     "cutting": 26,
     "techniques": [ "BRUTAL" ],
@@ -78,8 +78,7 @@
     "copy-from": "diveknife",
     "id": "diveknife",
     "type": "TOOL",
-    "name": "dive knife",
-    "name_plural": "dive knives",
+    "name": { "str": "dive knife", "str_pl": "dive knives" },
     "use_action": ["CROWBAR"]
   },
     {
@@ -123,16 +122,14 @@
     "copy-from": "zweifire_on",
     "id": "zweifire_on", "//": "All of this is SUPPOSED to be in German.",
     "type": "TOOL",
-    "name": "flammenschwert (an)",
-    "name_plural": "flammenschwerter (an)",
+    "name": { "str": "flammenschwert (an)", "str_pl": "flammenschwerter (an)" },
     "techniques": "SPIN"
   },
   {
     "copy-from": "broadfire_off",
     "id": "broadfire_off",
     "type": "TOOL",
-    "name": "firebrand (off)",
-    "name_plural": "firebrands (off)",
+    "name": { "str": "firebrand (off)", "str_pl": "firebrands (off)" },
     "techniques": "SWEEP",
     "bashing": 12,
     "cutting": 31
@@ -141,8 +138,7 @@
     "copy-from": "broadfire_on",
     "id": "broadfire_on",
     "type": "TOOL",
-    "name": "firebrand (on)",
-    "name_plural": "firebrands (on)",
+    "name": { "str": "firebrand (on)", "str_pl": "firebrands (on)" },
     "techniques": ["SWEEP","WIDE"],
     "bashing": 12,
     "cutting": 31
@@ -151,8 +147,7 @@
     "copy-from": "shishkebab_on",
     "id": "shishkebab_on",
     "type": "TOOL",
-    "name": "shishkebab (on)",
-    "name_plural": "shishkebabs (on)",
+    "name": { "str": "shishkebab (on)", "str_pl": "shishkebabs (on)" },
     "techniques": ["WIDE","SPIN"]
   },
   {
@@ -167,8 +162,7 @@
     "copy-from": "firekatana_off",
     "id": "firekatana_off",
     "type": "TOOL",
-    "name": "Rising Sun (off)",
-    "name_plural": "Rising Suns (off)",
+    "name": { "str": "Rising Sun (off)", "str_pl": "Rising Suns (off)" },
     "bashing": 4,
     "cutting": 35
   },
@@ -176,8 +170,7 @@
     "copy-from": "firekatana_on",
     "id": "firekatana_on",
     "type": "TOOL",
-    "name": "Rising Sun (on)",
-    "name_plural": "Rising Suns (on)",
+    "name": { "str": "Rising Sun (on)", "str_pl": "Rising Suns (on)" },
     "techniques": ["RAPID", "WIDE"],
     "bashing": 4,
     "cutting": 35
@@ -186,16 +179,14 @@
     "copy-from": "firemachete_on",
     "id": "firemachete_on",
     "type": "TOOL",
-    "name": "No. 9 (on)",
-    "name_plural": "No. 9's (on)",
+    "name": { "str": "No. 9 (on)", "str_pl": "No. 9's (on)" },
     "techniques": ["WBLOCK_1","WIDE"]
   },
   {
     "copy-from": "torch_lit",
     "id": "torch_lit",
     "type": "TOOL",
-    "name": "torch (lit)",
-    "name_plural": "torches (lit)",
+    "name": { "str": "torch (lit)", "str_pl": "torches (lit)" },
     "techniques" : ["WIDE"]
   },
   {

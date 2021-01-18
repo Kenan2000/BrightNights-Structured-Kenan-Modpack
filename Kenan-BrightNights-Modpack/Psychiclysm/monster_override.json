@@ -16,8 +16,7 @@
   {
     "id": "mon_blank",
     "type": "MONSTER",
-    "name": "blank body",
-    "name_plural": "blank bodies",
+    "name": { "str": "blank body", "str_pl": "blank bodies" },
     "copy-from": "mon_blank",
     "extend": { "special_attacks": [ { "type": "spell", "spell_data": {"id": "monspell_fear"}, "cooldown": 40 } ] }
   },
@@ -111,8 +110,7 @@
   {
     "id": "mon_homunculus",
     "type": "MONSTER",
-    "name": "homunculus",
-    "name_plural": "homunculi",
+    "name": { "str": "homunculus", "str_pl": "homunculi" },
     "copy-from": "mon_homunculus",
     "extend": { "special_attacks": [ { "type": "spell", "spell_data": {"id": "monspell_psychic_stress"}, "cooldown": 20 } ] }
   },
@@ -189,16 +187,14 @@
   {
     "id": "mon_twisted_body",
     "type": "MONSTER",
-    "name": "twisted body",
-    "name_plural": "twisted bodies",
+    "name": { "str": "twisted body", "str_pl": "twisted bodies" },
     "copy-from": "mon_twisted_body",
     "extend": { "special_attacks": [ { "type": "spell", "spell_data": {"id": "monspell_psychic_stress"}, "cooldown": 70 } ] }
   },
   {
     "id": "mon_vortex",
     "type": "MONSTER",
-    "name": "vortex",
-    "name_plural": "vortexes",
+    "name": { "str": "vortex", "str_pl": "vortexes" },
     "copy-from": "mon_vortex",
     "extend": { "special_attacks": [ { "type": "spell", "spell_data": {"id": "monspell_psychic_stress"}, "cooldown": 10 } ] }
   },

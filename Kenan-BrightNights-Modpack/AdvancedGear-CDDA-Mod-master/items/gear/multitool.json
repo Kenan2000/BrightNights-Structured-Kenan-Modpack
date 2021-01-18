@@ -9,16 +9,17 @@
     "looks_like": "knife_rm42",
     "price": 120,
     "material": "nanite",
-    "weight": 3680,
-    "volume": 1,
+    "weight": "3680 g",
+    "volume": "250 ml",
     "bashing": 3,
     "cutting": 12,
     "to_hit": 1,
-    "flags": [ "BELT_CLIP", "SHEATH_KNIFE", "NONCONDUCTIVE", "TRADER_AVOID", "NO_CVD" ],
+    "flags": [ "BELT_CLIP", "FIRESTARTER", "SHEATH_KNIFE", "NONCONDUCTIVE", "TRADER_AVOID", "NO_CVD" ],
     "max_charges": 0,
     "initial_charges": 0,
     "charges_per_use": 0,
     "turns_per_charge": 0,
+    "ammo": [ "nanite_ammo" ],
     "use_action": [
       {
         "type": "transform",
@@ -26,25 +27,16 @@
         "active": false,
         "msg": "You switch your multitool to large tools mode.",
         "menu_text": "Switch tool mode",
-        "moves" : 150
+        "moves": 150
       },
       "BOLTCUTTERS",
       "GEIGER",
       "HAMMER",
       "HOTPLATE",
       "SIPHON",
-      {
-        "type": "firestarter",
-        "moves_cost": 5
-      },
-      {
-        "type": "picklock",
-        "pick_quality": 50
-      },
-      {
-        "flame": false,
-        "type": "cauterize"
-      },
+      { "type": "firestarter", "moves": 5 },
+      { "type": "picklock", "pick_quality": 50 },
+      { "flame": false, "type": "cauterize" },
       {
         "type": "repair_item",
         "item_action_type": "repair_fabric",
@@ -55,8 +47,27 @@
         "move_cost": 500
       }
     ],
-    "qualities": [["CUT", 3], ["CUT_FINE", 5], ["SMOOTH", 1], ["HAMMER", 3], ["HAMMER_FINE", 1], ["SAW_M_FINE", 1], ["COOK", 3], ["DISTILL", 1], ["CHEM", 3], ["BOIL", 1], ["WRENCH", 3], ["WRENCH_FINE", 1], ["SCREW", 3], ["SCREW_FINE", 1], ["BUTCHER", 50], ["DRILL", 3], [ "CHISEL", 3] ]
-  },{
+    "qualities": [
+      [ "CUT", 3 ],
+      [ "CUT_FINE", 5 ],
+      [ "SMOOTH", 1 ],
+      [ "HAMMER", 3 ],
+      [ "HAMMER_FINE", 1 ],
+      [ "SAW_M_FINE", 1 ],
+      [ "COOK", 3 ],
+      [ "DISTILL", 1 ],
+      [ "CHEM", 3 ],
+      [ "BOIL", 1 ],
+      [ "WRENCH", 3 ],
+      [ "WRENCH_FINE", 1 ],
+      [ "SCREW", 3 ],
+      [ "SCREW_FINE", 1 ],
+      [ "BUTCHER", 50 ],
+      [ "DRILL", 3 ],
+      [ "CHISEL", 3 ]
+    ]
+  },
+  {
     "id": "nanite_multitool_large",
     "type": "TOOL",
     "symbol": ";",
@@ -66,16 +77,17 @@
     "looks_like": "e_tool",
     "price": 120,
     "material": "nanite",
-    "weight": 3680,
-    "volume": 8,
+    "weight": "3680 g",
+    "volume": "2 L",
     "bashing": 16,
     "cutting": 6,
     "to_hit": 2,
-    "flags": [ "BELT_CLIP", "SHEATH_SWORD", "NONCONDUCTIVE", "TRADER_AVOID", "NEEDS_UNFOLD", "NO_CVD" ],
+    "flags": [ "BELT_CLIP", "FIRESTARTER", "SHEATH_SWORD", "NONCONDUCTIVE", "TRADER_AVOID", "NEEDS_UNFOLD", "NO_CVD" ],
     "max_charges": 0,
     "initial_charges": 0,
     "charges_per_use": 0,
     "turns_per_charge": 0,
+    "ammo": [ "nanite_ammo" ],
     "use_action": [
       {
         "type": "transform",
@@ -83,7 +95,7 @@
         "active": false,
         "msg": "You switch your multitool to laser welder mode.",
         "menu_text": "Switch tool mode",
-        "moves" : 150
+        "moves": 150
       },
       "BOLTCUTTERS",
       "CROWBAR",
@@ -92,13 +104,11 @@
       "LUMBER",
       "MAKEMOUND",
       "PICKAXE",
-      {
-        "type": "firestarter",
-        "moves_cost": 150
-      }
+      { "type": "firestarter", "moves": 150 }
     ],
-    "qualities": [[ "PRY", 4 ],["HAMMER", 3], ["SAW_W", 2], ["SAW_M", 2], ["AXE", 3], ["DIG", 3] ]
-  },{
+    "qualities": [ [ "PRY", 4 ], [ "HAMMER", 3 ], [ "SAW_W", 2 ], [ "SAW_M", 2 ], [ "AXE", 3 ], [ "DIG", 3 ] ]
+  },
+  {
     "id": "nanite_multitool_weld",
     "type": "TOOL",
     "symbol": ";",
@@ -108,16 +118,29 @@
     "looks_like": "v29",
     "price": 120,
     "material": "nanite",
-    "weight": 3680,
-    "volume": 2,
+    "weight": "3680 g",
+    "volume": "500 ml",
     "bashing": 8,
     "cutting": 0,
     "to_hit": 0,
-    "flags": [ "FIRE", "NO_AMMO", "NEVER_JAMS", "WATERPROOF_GUN" , "NO_UNLOAD", "BELT_CLIP", "NONCONDUCTIVE", "TRADER_AVOID", "NEEDS_UNFOLD", "NO_CVD" ],
+    "flags": [
+      "FIRE",
+      "NO_AMMO",
+      "FIRESTARTER",
+      "NEVER_JAMS",
+      "WATERPROOF_GUN",
+      "NO_UNLOAD",
+      "BELT_CLIP",
+      "NONCONDUCTIVE",
+      "TRADER_AVOID",
+      "NEEDS_UNFOLD",
+      "NO_CVD"
+    ],
     "max_charges": 0,
     "initial_charges": 0,
     "charges_per_use": 0,
     "turns_per_charge": 0,
+    "ammo": [ "nanite_ammo" ],
     "use_action": [
       {
         "type": "transform",
@@ -125,13 +148,10 @@
         "active": false,
         "msg": "You switch your multitool to small tools mode.",
         "menu_text": "Switch tool mode",
-        "moves" : 150
+        "moves": 150
       },
       "OXYTORCH",
-      {
-        "type": "firestarter",
-        "moves_cost": 5
-      },
+      { "type": "firestarter", "moves": 5 },
       {
         "type": "repair_item",
         "item_action_type": "repair_metal",
@@ -140,20 +160,17 @@
         "cost_scaling": 0.1,
         "move_cost": 250
       },
-      {
-      "flame": false,
-      "type": "cauterize"
-      }
+      { "flame": false, "type": "cauterize" }
     ],
-    "qualities": [["WELD", 4] ],
-    "gun_data" : {
-      "ammo_effects": ["LASER"],
+    "qualities": [ [ "WELD", 4 ] ],
+    "gun_data": {
+      "ammo_effects": [ "LASER" ],
       "skill": "pistol",
       "ranged_damage": 10,
       "range": 5,
       "dispersion": 1,
       "sight_dispersion": 4,
-      "aim_speed" : 0,
+      "aim_speed": 0,
       "recoil": 0,
       "durability": 10,
       "burst": 3,
