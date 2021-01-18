@@ -1,41 +1,46 @@
 # Bright-Nights-Kenan-Mod-Pack
-Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolcthulhu - **original modpack creator is Chromosome Kun! - without his help, this would not exist** 
+Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolcthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
+
+**original modpack creator is Chromosome Kun! - without his help, this would not exist** 
 
 **IF YOU ARE EXPERIENCING ANY BUGS OR ERRORS - EITHER THE FIXES WILL BE RELEASED SOON-ISH OR THE MOD IS WIP**
 
-# Bright Nights by Coolcthulhu/BroadFlatNails
-Link to the great sci-fi Cataclysm fork by **Coolcthulhu/BroadFlatNails** - **Bright Nights** - https://github.com/cataclysmbnteam/Cataclysm-BN/releases
+# Modpack INSTALLATION Guide
 
-# Installation Guide (MUST-READ)
+1. Download and install latest release of Cataclysm fork by **Coolcthulhu/BroadFlatNails** - [*Bright Nights*](https://github.com/cataclysmbnteam/Cataclysm-BN/releases)
+2. Download current modpack by clicking Code - Download ZIP, or clicking [**here**](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/archive/master.zip)
+3. Unpack contents of the downloaded .zip archive into new folder; results should be looking [**like this**](https://i.imgur.com/UfvpOyV.png)
+4. Copy contents of this folder and paste into `cdda/data/mods` directory as shown in the [**picture**](https://i.imgur.com/iDJyZYh.png)
+5. Overwrite and replace all the files if you get a prompt
+6. Enjoy the mods!
 
-**1) Download the modpack** ;
+# Modpack UPDATE Guide
 
-**2) Copy all of the mods from the modpack folder as shown in the picture** https://imgur.com/a/c66bMcG ;
+1. Remove the contents of the `cdda/data/mods` folder
+2. Repeat all steps from the INSTALLATION guide
+3. You're all set!
 
-**3) Paste them all into the `cdda/data/mods` directory as shown in the picture** https://imgur.com/a/mK1cEER ;
+# FAQ:
 
-**4) Overwrite and replace all the files if you get a prompt** ;
+* Q: Why should I remove `cdda/data/mods` folder when updating?
+  * A: Because sometimes some mods become obsolete and no longer mainained, so you won't need them inside your mods folder anymore.
 
-**5) Enjoy the mods**
+* Q: After updating my save file no longer loading!
+  * A: It is rare, but will happen when some mod that've been used in your save has new ID and/or name, or you're trying to load the mod that is no longer used/merged with other one. You can fix it by reading `debug.log` to view what's mod should be changed, then go to `cdda\save\world_name\mods.json` and replace target mod ID with the new one, or delete it's entry from this file if there is no replacement. Also, you can read latest commits to see what is happening, if you want
 
-**NEXT STEPS IF YOU UPDATE THE BRIGHT NIGHTS VERSION** 
+Example commit of mod ID change: [c72f700f2fe35e2e5bd32995917746b47edb428e](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/commit/c72f700f2fe35e2e5bd32995917746b47edb428e)
 
-**6) Update the game by installing the newest version in the releases** - https://github.com/cataclysmbnteam/Cataclysm-BN/releases ;
+Example commit of mod removal: [603464b7d4ee27430b84f3625cc4644f4510fb53](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/commit/603464b7d4ee27430b84f3625cc4644f4510fb53)
 
-**7) Repeat 2) , 3) , 4) and 5)** ;
-
-**8) Enjoy the mods**
+* Q: I have some other issues to report!
+  * A: Feel free to submit your issue into the [issues tab](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/issues).
 
 # Links to my other works
 
-My HUGE and AWESOME **BL9** mod
+1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack)
+2. Updated and even more awesome Otopack soundpack maintained by me: https://github.com/Kenan2000/Otopack-Mods-Updates
 
-1) https://github.com/Kenan2000/BL9
+# Links to other cool stuff
+Legendary **UndeadPeople** tileset by SomeDeadGuy: https://github.com/SomeDeadGuy/UndeadPeopleTileset
 
-Updated and even more awesome Otopack soundpack maintained by me
-
-2) https://github.com/Kenan2000/Otopack-Mods-Updates
-
-# Link to the legendary tileset by SomeDeadGuy
-
-**UDP** tileset by **SDG** - https://github.com/SomeDeadGuy/UndeadPeopleTileset
+CO.AG MusicPack Redux: https://discourse.cataclysmdda.org/t/musicpack-co-ag-musicpack-redux-11-dec-2019/18992
