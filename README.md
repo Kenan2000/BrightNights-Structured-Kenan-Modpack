@@ -22,8 +22,8 @@ Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolct
 
 # FAQ:
 
-* Q: Why should I remove `cdda/data/mods` folder when updating?
-  * A: Because sometimes some mods become obsolete and no longer mainained, so you won't need them inside your mods folder anymore.
+* Q: Why should I remove manually some specific non-mainlined mods when updating?
+  * A: Because sometimes some mod files become obsolete and no longer used, so you won't need them inside your mods folder anymore, so for dealing with these problems you need to delete the mod and fully reinstall it.
 
 * Q: After updating my save file no longer loading!
   * A: It is rare, but will happen when some mod that've been used in your save has new ID and/or name, or you're trying to load the mod that is no longer used/merged with other one. You can fix it by reading `debug.log` to view what's mod should be changed, then go to `cdda\save\world_name\mods.json` and replace target mod ID with the new one, or delete it's entry from this file if there is no replacement. Also, you can read latest commits to see what is happening, if you want
@@ -35,12 +35,10 @@ Example commit of mod removal: [603464b7d4ee27430b84f3625cc4644f4510fb53](https:
 * Q: I have some other issues to report!
   * A: Feel free to submit your issue into the [issues tab](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/issues).
 
-# Links to my other works
-
-1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack)
-2. Updated and even more awesome Otopack soundpack maintained by me: https://github.com/Kenan2000/Otopack-Mods-Updates
-
-# Links to other cool stuff
+# Links to the legendary tileset by SomeDeadGuy
 Legendary **UndeadPeople** tileset by SomeDeadGuy: https://github.com/SomeDeadGuy/UndeadPeopleTileset
 
-CO.AG MusicPack Redux: https://discourse.cataclysmdda.org/t/musicpack-co-ag-musicpack-redux-11-dec-2019/18992
+# Links to other cool stuff
+1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack)
+2. Updated and even more awesome Otopack soundpack maintained by me: https://github.com/Kenan2000/Otopack-Mods-Updates
+3. CO.AG MusicPack Redux: https://discourse.cataclysmdda.org/t/musicpack-co-ag-musicpack-redux-11-dec-2019/18992
