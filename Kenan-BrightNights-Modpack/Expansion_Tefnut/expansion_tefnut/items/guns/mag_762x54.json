@@ -1,0 +1,119 @@
+[
+  {
+    "id": "ammolink762R",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": "7.62x54mmR ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "belt762R" }
+  },
+
+  {
+    "id": "belt762R",
+    "copy-from": "magazine_belt",
+    "type": "MAGAZINE",
+    "name": { "str": "7.62x54mmR ammo belt" },
+    "ammo_type": "762R",
+    "capacity": 500,
+    "count": 100,
+    "default_ammo": "762_54R",
+    "linkage": "ammolink762R"
+  },
+  
+    {
+    "id": "dragunovsmallmag",
+    "looks_like": "stanag5",
+    "type": "MAGAZINE",
+    "name": { "str": "Dragunov compact magazine" },
+    "description": "A compact aftermarket 5-round steel box magazine compatible with Dragunov pattern rifles.  Although it has a low capacity it is easy to store and quick to reload.",
+    "weight": "60 g",
+    "volume": "250 ml",
+    "price": 2900,
+    "price_postapoc": 100,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 5,
+    "reliability": 10,
+    "reload_time": 50,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "dragunovmag",
+    "looks_like": "stanag20",
+    "type": "MAGAZINE",
+    "name": { "str": "Dragunov magazine" },
+    "description": "A military issue 10-round steel box magazine compatible with Dragunov pattern rifles.",
+    "weight": "200 g",
+    "volume": "400 ml",
+    "price": 1700,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+  {
+    "id": "dragunovbigmag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "Dragunov magazine" },
+    "description": "A military issue 20-round steel box magazine compatible with Dragunov pattern rifles.",
+    "weight": "280 g",
+    "volume": "500 ml",
+    "price": 1700,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 20,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "avs36mag",
+    "looks_like": "stanag20",
+    "type": "MAGAZINE",
+    "name": { "str": "AVS-36 magazine" },
+    "description": "A 15-round single stack box magazine for the venerable AVS-36 rifle.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": 3000,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 15,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+  
+  {
+    "id": "avs36bigmag",
+    "looks_like": "stanag20",
+    "type": "MAGAZINE",
+    "name": { "str": "AVS-36 expanded magazine" },
+    "description": "A 30-round double stack box magazine for the venerable AVS-36 rifle.",
+    "weight": "450 g",
+    "volume": "500 ml",
+    "price": 3000,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "762R",
+    "capacity": 30,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  }
+  
+]

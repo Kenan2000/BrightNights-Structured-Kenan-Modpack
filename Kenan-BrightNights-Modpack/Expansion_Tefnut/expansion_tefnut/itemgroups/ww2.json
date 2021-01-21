@@ -1,0 +1,224 @@
+[
+    {
+    "type": "item_group",
+    "id": "guns_pistol_ww2",
+    "items": [
+      { "item": "type_26_revolver", "prob": 50, "charges-min": 0, "charges-max": 6 },
+	  { "item": "nambu_14", "prob": 50, "charges-min": 0, "charges-max": 8 },
+	  { "item": "type2", "prob": 5, "charges-min": 0, "charges-max": 30 }
+	 ]
+  },
+  
+      {
+    "type": "item_group",
+    "id": "ammo_pistol_ww2",
+    "items": [
+      { "item": "9x22mmR", "prob": 50},
+	  { "item": "8x22mm_fmj", "prob": 50 },
+	  { "item": "8x22mm_jhp", "prob": 50 },
+	  { "item": "8x22mm_p", "prob": 5 }
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "mags_pistol_ww2",
+    "items": [
+      { "item": "nambumag", "prob": 50},
+	  { "item": "type2mag", "prob": 5 },
+	  { "item": "type2extmag", "prob": 1 }
+	 ]
+  },
+  
+    {
+    "type": "item_group",
+    "id": "guns_smg_ww2",
+    "items": [
+      { "item": "type100", "prob": 50, "charges-min": 0, "charges-max": 30 },
+	  { "item": "greasegun", "prob": 75, "charges-min": 0, "charges-max": 30 },
+	  { "item": "tommygun", "prob": 50, "charges-min": 0, "charges-max": 20 }
+	 ]
+  },
+  
+  
+        {
+    "type": "item_group",
+    "id": "ammo_smg_ww2",
+    "items": [
+	  { "item": "8x22mm_fmj", "prob": 50 },
+	  { "item": "8x22mm_jhp", "prob": 50 },
+	  { "item": "8x22mm_p", "prob": 5 },
+	  
+	  { "item": "45_acp", "prob": 50 },
+	  { "item": "45_jhp", "prob": 50 },
+	  { "item": "45_super", "prob": 5 }
+	  
+	 ]
+  },
+  
+  
+  {
+    "type": "item_group",
+    "id": "mags_smg_ww2",
+    "items": [
+      { "item": "type100mag", "prob": 50},
+	  { "item": "m3mag", "prob": 50},
+	  { "item": "thompson_mag", "prob": 50}
+	 ]
+  },
+  
+  
+      {
+    "type": "item_group",
+    "id": "guns_rifle_ww2",
+    "items": [
+      { "item": "type30", "prob": 75, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type30_carbine", "prob": 75, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type38", "prob": 50, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type38_carbine", "prob": 50, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type1_tera", "prob": 5, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type97", "prob": 50, "charges-min": 0, "charges-max": 5 },
+	  
+	  { "item": "type96", "prob": 25, "charges-min": 0, "charges-max": 30 },
+	  { "item": "type3", "prob": 25, "charges-min": 0, "charges-max": 500 },
+	  
+	  { "item": "type99", "prob": 25, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type99_carbine", "prob": 25, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type99_sniper", "prob": 25, "charges-min": 0, "charges-max": 5 },
+	  
+	  { "item": "type99_lmg", "prob": 10, "charges-min": 0, "charges-max": 5 },
+	  { "item": "type92", "prob": 10, "charges-min": 0, "charges-max": 5 },
+	  
+	  
+	  { "item": "garand", "prob": 100, "charges-min": 0, "charges-max": 8 },
+	  { "item": "m1903", "prob": 75, "charges-min": 0, "charges-max": 5 },
+	  { "item": "m1918", "prob": 75, "charges-min": 0, "charges-max": 20 },
+	  { "item": "m1941_johnson", "prob": 50, "charges-min": 0, "charges-max": 20 },
+	  { "item": "m1919", "prob": 5, "charges-min": 0, "charges-max": 500 },
+	  
+	  { "item": "avs36", "prob": 50, "charges-min": 0, "charges-max": 15 }
+	  
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "ammo_rifle_ww2",
+    "items": [
+	  { "item": "3006", "prob": 100},
+	  { "item": "3006_incendiary", "prob": 50},
+	  { "item": "3006fmj", "prob": 50},
+	
+      { "item": "6x50mm", "prob": 50},
+	  { "item": "6x50mm_round", "prob": 25 },
+	  { "item": "6x50mm_genso", "prob": 5 },
+	  
+	  { "item": "7x58mm", "prob": 50 },
+	  { "item": "7x58mm_ap", "prob": 35 },
+	  { "item": "7x58mm_tracer", "prob": 25 },
+	  { "item": "7x58mm_explosive", "prob": 5 },
+	  
+	  { "item": "762_54R", "prob": 10 }
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "mags_rifle_ww2",
+    "items": [
+	  { "item": "m1941mag", "prob": 50},
+	  { "item": "m1941bigmag", "prob": 10 },
+	  
+	  { "item": "garandclip", "prob": 50},
+	  
+	  { "item": "m1918mag", "prob": 50},
+	  { "item": "m1918bigmag", "prob": 10 },
+	
+	
+      { "item": "type96mag", "prob": 50},
+	  { "item": "belt6x50mm", "prob": 10 },
+	  
+	  { "item": "type99mag", "prob": 25 },
+	  { "item": "belt7x58mm", "prob": 5 },
+	  
+	  { "item": "avs36mag", "prob": 50},
+	  { "item": "avs36bigmag", "prob": 10 }
+	 ]
+  },
+  
+      {
+    "type": "item_group",
+    "id": "guns_heavy_ww2",
+    "items": [
+      { "item": "m2browning", "prob": 50, "charges-min": 0, "charges-max": 100 },
+	  { "item": "m1919", "prob": 50, "charges-min": 0, "charges-max": 500 },
+	  { "item": "bazooka_m9", "prob": 50, "charges-min": 0, "charges-max": 1 },
+	  { "item": "boys_antitank", "prob": 25, "charges-min": 0, "charges-max": 5 }
+	 ]
+  },
+  
+      {
+    "type": "item_group",
+    "id": "ammo_heavy_ww2",
+    "items": [
+      { "item": "3006", "prob": 50},
+	  
+	  { "item": "50bmg", "prob": 50 },
+	  
+	  	  
+	  { "item": "55_boys_mk1", "prob": 25 },
+	  { "item": "55_boys_mk1_tracer", "prob": 20 },
+	  { "item": "55_boys_mk2", "prob": 10 },
+	  { "item": "55_boys_APCR", "prob": 5 },
+	  
+	  { "item": "bazooka_heat", "prob": 50 },
+	  { "item": "bazooka_training", "prob": 50 }
+
+
+	 ]
+  },
+  
+   {
+    "type": "item_group",
+    "id": "mags_heavy_ww2",
+    "items": [
+      { "item": "belt3006", "prob": 50},
+	  { "item": "belt50", "prob": 25 },
+	  { "item": "boysmag", "prob": 10}
+	 ]
+  },
+  
+  
+        {
+    "type": "item_group",
+    "id": "guns_shot_ww2",
+    "items": [
+      { "item": "winchester_1897", "prob": 50, "charges-min": 0, "charges-max": 6 }
+	 ]
+  },
+  
+      {
+    "type": "item_group",
+    "id": "ammo_shot_ww2",
+    "items": [
+      { "item": "shot_00", "prob": 50}
+
+	 ]
+  },
+  
+        {
+    "type": "item_group",
+    "id": "uniform_ww2",
+    "items": [
+	  { "item": "fatigues_us", "prob": 30},
+	  { "item": "jacket_eisenhower", "prob": 30},
+	  { "item": "boots_jump", "prob": 30},
+      { "item": "fatigues_ija", "prob": 10},
+	  { "item": "service_cap_ija", "prob": 10},
+	  { "item": "headband_hachimaki", "prob": 10},
+	  { "item": "belt_senninbari", "prob": 10},
+	  { "item": "helm_type92", "prob": 10}   
+
+	 ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "crab_imitation",
+    "type": "COMESTIBLE",
+	"comestible_type": "FOOD",
+    "name": "imitation crab meat",
+    "name_plural": "imitation crab meat",
+    "description": "Imitation crab meat. A real delicacy, with a decent amount of longevity to it. A rather smart snack, bringing you back to days before the dead walked.",
+    "//": "Nutrition information based on whitefish",
+    "weight": "148 g",
+    "volume": "50 ml",
+	"symbol": "%",
+	"color": "red",
+	"container": "plastic_bag_vac",
+	"charges": 4,
+	"healthy": -1,
+    "fun": 5,
+    "price": 500,
+    "spoils_in": "24 days",
+    "vitamins": [ [ "vitA", 1 ], [ "vitC", 1 ], [ "calcium", 1 ], [ "iron", 2 ], [ "vitB", 5 ] ],
+    "calories": 90
+  },
+  
+  
+    {
+    "type": "COMESTIBLE",
+    "id": "crabsmart_sandwich",
+    "name": { "str": "imitation crab sandwich", "str_pl": "imitation crab sandwiches" },
+    "weight": "201 g",
+    "color": "yellow",
+    "spoils_in": "3 days",
+    "container": "wrapper",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "calories": 481,
+    "description": "A delicious sandwich with imitation crab within.",
+    "price": 800,
+    "material": [ "flesh", "wheat" ],
+    "volume": "750 ml",
+    "fun": 14,
+    "vitamins": [ [ "vitA", 2 ], [ "vitC", 3 ], [ "calcium", 10 ], [ "iron", 10 ], [ "vitB", 5 ] ]
+  },
+  
+    {
+    "type": "COMESTIBLE",
+    "id": "macaroni_crabsmart",
+    "name": "imitation crab macaroni and cheese",
+    "weight": "170 g",
+    "color": "red",
+    "spoils_in": "1 day",
+    "container": "box_small",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": 13,
+    "healthy": 1,
+    "calories": 393,
+    "description": "Imitation crab in a delicious dish of macaroni and cheese. A surprisingly good combo.",
+    "price": 490,
+    "material": [ "wheat", "flesh", "milk" ],
+    "volume": "250 ml",
+    "flags": [ "EATEN_HOT", "FREEZERBURN" ],
+    "fun": 9,
+    "vitamins": [ [ "vitA", 15 ], [ "vitC", 4 ], [ "calcium", 32 ], [ "iron", 20 ], [ "vitB", 195 ] ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+{
+    "id": "aa12",
+    "copy-from": "shotgun_base",
+    "looks_like": "saiga_12",
+    "type": "GUN",
+    "name": { "str": "Atchisson AA-12" },
+    "description": "The Atchisson Auto Assault-12, originally called the Atchisson Assault Shotgun, was an automatic combat shotgun designed in the 70s, and eventually adopted by many military groups in the early 2000s. While fully automatic only, it fires slow enough a single trigger pull shouldn't cause any problems.",
+    "weight": "3600 g",
+    "volume": "2750 ml",
+    "price": 189000,
+    "price_postapoc": 4500,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "plastic" ],
+    "dispersion": 395,
+    "durability": 7,
+	"modes": [ [ "DEFAULT", "single", 1 ], [ "AUTO", "auto", 3 ] ],
+    "barrel_length": "81 ml",
+    "magazine_well": 1,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "stock mount", 1 ],
+      [ "mechanism", 4 ],
+      [ "barrel", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip mount", 1 ],
+      [ "rail mount", 1 ],
+      [ "sights mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "magazines": [ [ "shot", [ "aa12boxmag", "aa12drummag", "aa12bigdrummag" ] ] ]
+  }
+  
+  
+]

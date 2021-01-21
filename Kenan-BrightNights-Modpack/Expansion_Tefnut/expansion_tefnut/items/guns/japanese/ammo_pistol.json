@@ -1,0 +1,73 @@
+[
+  {
+    "id": "9x22mmR",
+    "type": "AMMO",
+    "name": { "str": "9x22mmR" },
+    "description": "An obscure japanese ammo type used by the Type 26 revolver, its similar to .38, but not interchangable.",
+    "weight": "8 g",
+    "volume": "250 ml",
+    "price": 210,
+    "price_postapoc": 800,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 40,
+    "stack_size": 40,
+    "ammo_type": "9x22mmR",
+    "casing": "9x22mm_casing",
+    "range": 15,
+    "damage": { "damage_type": "stab", "amount": 23 },
+    "dispersion": 30,
+    "recoil": 275,
+    "effects": [ "COOKOFF" ]
+  },
+  
+  
+  
+    {
+    "id": "8x22mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "8x22mm Nambu FMJ" },
+    "description": "8x22mm Nambu was a round used in the second world war by the Japanese. Comparable to .380, this rare ammo only slightly beats said caliber out. Rare for it's effectiveness, it might be safe to consider this round a novelty.",
+    "weight": "6 g",
+    "volume": "250 ml",
+    "price": 140,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 50,
+    "stack_size": 50,
+    "ammo_type": "8x22mm",
+    "casing": "8x22mm_casing",
+    "range": 15,
+    "damage": { "damage_type": "stab", "amount": 17, "armor_penetration": 2 },
+    "dispersion": 60,
+    "recoil": 300,
+    "effects": [ "COOKOFF" ]
+  },
+  {
+    "id": "8x22mm_jhp",
+    "copy-from": "8x22mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "8x22 Nambu JHP" },
+    "description": "8x22mm Nambu was a round used in the second world war by the Japanese. Comparable to .380, this rare ammo only slightly beats said caliber out. Rare for it's effectiveness, it might be safe to consider this round a novelty.",
+    "relative": { "damage": { "damage_type": "stab", "amount": 2, "armor_penetration": -2 } }
+  },
+  {
+    "id": "8x22mm_p",
+    "copy-from": "8x22mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "8x22mm Nambu +P" },
+    "description": "8x22mm Nambu was a round used in the second world war by the Japanese. Comparable to .380, this rare ammo only slightly beats said caliber out. Rare for it's effectiveness, it might be safe to consider this round a novelty. At the least, these rounds, being overpressured, might do some real damage",
+    "price": 190,
+    "price_postapoc": 1500,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "count": 25,
+    "relative": { "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 2 }, "dispersion": -15 },
+    "proportional": { "recoil": 1.1 }
+  }
+  
+]

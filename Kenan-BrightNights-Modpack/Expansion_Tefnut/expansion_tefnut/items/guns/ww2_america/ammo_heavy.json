@@ -1,0 +1,43 @@
+[
+  {
+    "type": "AMMO",
+    "id": "bazooka_heat",
+    "price": 10000,
+    "name": "M6A3 HEAT",
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "A HEAT rocket for the M9 and M9A1 Bazooka.",
+    "material": [ "steel", "powder" ],
+    "volume": "1750 ml",
+    "price_postapoc": 2000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "weight": "2600 g",
+    "ammo_type": "bazooka_rocket",
+    "damage": { "damage_type": "stab", "amount": 3000, "armor_penetration": 750 },
+    "range": 60,
+    "dispersion": 75,
+    "recoil": 450,
+    "effects": [ "COOKOFF", "EXPLOSIVE_PG7VL", "TRAIL", "NEVER_MISFIRES" ]
+  },
+  
+    {
+    "type": "AMMO",
+    "id": "bazooka_training",
+    "price": 10000,
+    "name": "M7A3 HEAT",
+    "symbol": "=",
+    "color": "dark_gray",
+    "description": "A non-explosive practice rocket for the M9 and M9A1 Bazooka. While it may not explode, it will still hurt a lot to get hit by this",
+    "material": [ "steel", "powder" ],
+    "volume": "1750 ml",
+    "price_postapoc": 2000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "weight": "2600 g",
+    "ammo_type": "bazooka_rocket",
+    "damage": { "damage_type": "stab", "amount": 3000, "armor_penetration": 750 },
+    "range": 60,
+    "dispersion": 75,
+    "recoil": 450,
+    "effects": [ "COOKOFF", "TRAIL", "NEVER_MISFIRES" ]
+  }
+]

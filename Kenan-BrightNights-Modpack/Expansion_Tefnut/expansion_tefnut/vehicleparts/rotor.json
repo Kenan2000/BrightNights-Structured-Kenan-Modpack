@@ -1,0 +1,21 @@
+[
+ {
+    "id": "small_makeshift_rotors",
+    "copy-from": "helicopter_rotors",
+    "type": "vehicle_part",
+    "name": "small makeshift rotors",
+    "item": "small_makeshift_rotor",
+    "//": "rotor diameter is in meters",
+    "rotor_diameter": 4,
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 10 ] ], "time": "2 h", "using": [ [ "welding_standard", 20 ] ] },
+      "removal": { "skills": [ [ "mechanics", 10 ] ], "time": "2 h", "using": [ [ "vehicle_weld_removal", 4 ] ] },
+      "repair": { "skills": [ [ "mechanics", 10 ] ], "time": "2 h", "using": [ [ "welding_standard", 20 ] ] }
+    },
+    "durability": 75,
+    "description": "A set of four handmade rotors used in small gyrocopters.",
+    "damage_modifier": 80,
+    "breaks_into": [ { "item": "scrap", "count": [ 8, 15 ] }, { "item": "steel_chunk", "count": [ 2, 8 ] } ],
+    "damage_reduction": { "all": 22 }
+  }
+]

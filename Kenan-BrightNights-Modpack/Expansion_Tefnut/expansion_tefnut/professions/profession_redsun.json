@@ -1,0 +1,52 @@
+[
+
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "redsun_mags_type100",
+    "entries": [ { "item": "type100mag", "ammo-item": "8x22mm_p", "charges": 30 }, { "item": "type100mag", "ammo-item": "8x22mm_p", "charges": 30 } ]
+  },
+
+{
+    "type": "profession",
+    "ident": "redsun_grunt",
+    "name": "Red Sun Grunt",
+    "description": "You had just joined Red Sun before the apocalypse hit. The day of, you were the guard for a delivery mission, when someone stole your van, and the shipment within. At least the end of the world stopped this from coming out of your pay...",
+    "points": 4,
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "smg" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "items": [
+          "fatigues_ija",
+          "ballistic_vest_esapi",
+          "helm_type92",
+          "headband_hachimaki",
+		  "belt_senninbari",
+          "gloves_liner",
+          "gloves_tactical",
+          "socks",
+          "boots_jump",
+          "wristwatch",
+          "molle_pack"
+        ],
+        "entries": [
+          { "group": "charged_two_way_radio" },
+          { "item": "legpouch_large", "contents-group": "redsun_mags_type100" },
+          { "item": "ear_plugs", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "type100", "ammo-item": "8x22mm_p", "charges": 30, "contents-item": [ "shoulder_strap" ] }
+        ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "sports_bra", "boxer_shorts" ]
+    }
+  }
+  
+  
+]

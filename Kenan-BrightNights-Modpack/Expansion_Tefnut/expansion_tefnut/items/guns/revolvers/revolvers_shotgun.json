@@ -1,0 +1,44 @@
+[
+  {
+    "id": "drehen_12",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "name": { "str": "Drehenfeuer S-12" },
+    "description": "The Drehenfeuer Schuss-12 was a 12-gauge shotgun revolver. Aimed at police and civilians alike, it saw relative success due to it's common ammo type, but was limited by only carrying six shots.",
+    "weight": "4100 g",
+    "volume": "3525 ml",
+    "looks_like": "remington_870",
+    "price": 80000,
+    "price_postapoc": 2000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "dispersion": 425,
+    "durability": 6,
+    "clip_size": 6,
+    "extend": { "flags": [ "RELOAD_ONE" ] }
+  },
+  
+    {
+    "id": "drehen_8",
+    "copy-from": "shotgun_base",
+    "type": "GUN",
+    "name": { "str": "Drehenfeuer S-8" },
+    "description": "The Drehenfeuer Schuss-8 was a 8-gauge shotgun revolver. Aimed at the wealthy and SWAT, it didn't see much success due to the rarer ammo type",
+    "weight": "4100 g",
+    "volume": "3525 ml",
+    "looks_like": "remington_870",
+    "price": 80000,
+    "price_postapoc": 2000,
+    "to_hit": -1,
+    "bashing": 12,
+	    "ammo": "8ga",
+    "material": [ "steel", "wood" ],
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "dispersion": 425,
+    "durability": 6,
+    "clip_size": 5,
+    "extend": { "flags": [ "RELOAD_ONE" ] }
+  }
+]

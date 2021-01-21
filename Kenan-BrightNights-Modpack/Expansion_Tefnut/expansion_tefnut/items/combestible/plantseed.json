@@ -1,0 +1,92 @@
+[
+
+  {
+    "type": "COMESTIBLE",
+    "id": "olive_black",
+    "name": { "str_sp": "black olive" },
+    "weight": "153 g",
+    "color": "light_green",
+    "spoils_in": "5 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+    "calories": 115,
+    "description": "Tasty little black orbs. You can press them into oil! (Note: Not implimented yet) The pits arent salvagable.",
+    "price": 170,
+    "price_postapoc": 50,
+    "material": "veggy",
+    "volume": "750 ml",
+    "flags": [ "EATEN_HOT", "SMOKABLE", "RAW" ],
+    "smoking_result": "dry_veggy",
+    "vitamins": [ [ "vitA", 2 ], [ "calcium", 12 ], [ "iron", 4 ] ]
+  },
+
+
+
+  {
+    "id": "seed_olive_bonsai",
+    "copy-from": "seed_fruit",
+    "type": "COMESTIBLE",
+    "name": { "str_sp": "bonsai olive pits" },
+    "description": "Some bonsai olive pits, designed to make small olive trees.",
+    "seed_data": { "plant_name": "bonsai olive", "fruit": "olive_black", "byproducts": [ "withered" ], "grow": "91 days" }
+  },
+  
+    {
+    "type": "COMESTIBLE",
+    "id": "barrel_cactus",
+    "name": { "str_sp": "explosive barrel cactus fruit" },
+    "weight": "144 g",
+    "color": "red",
+    "spoils_in": "2 days 12 hours",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": 3,
+    "healthy": 1,
+    "calories": 46,
+    "description": "Tasty, juicy mutant berry. Can be used to make decent explosives.",
+    "price": 400,
+    "price_postapoc": 100,
+    "material": "fruit",
+    "volume": "250 ml",
+    "fun": 5,
+    "flags": [ "SMOKABLE" ],
+    "vitamins": [ [ "vitC", 140 ], [ "calcium", 1 ], [ "iron", 3 ] ]
+  },
+  
+  
+    {
+    "id": "seed_cactus_explosive",
+    "copy-from": "seed_fruit",
+    "type": "COMESTIBLE",
+    "name": { "str_sp": "explosive barrel cactus seed" },
+    "description": "Explosive Barrel Cactus seeds. Grow yourself an arsenal!",
+    "seed_data": { "plant_name": "explosive barrel cactus", "fruit": "barrel_cactus", "byproducts": [ "withered" ], "grow": "91 days" }
+  },
+  
+    {
+    "type": "COMESTIBLE",
+    "id": "barrel_cactus_juice",
+    "name": "barrel cactus juice",
+    "weight": "125 g",
+    "color": "light_red",
+    "spoils_in": "5 days",
+    "container": "bottle_plastic",
+    "comestible_type": "DRINK",
+    "symbol": "~",
+    "quench": 20,
+    "healthy": 2,
+    "calories": 32,
+    "description": "Freshly-squeezed barrel cactus juice!  Tasty and nutritious, but flammable.",
+    "price": 80,
+    "price_postapoc": 50,
+    "material": "fruit",
+    "primary_material": "water",
+    "volume": "250 ml",
+    "phase": "liquid",
+    "charges": 2,
+    "flags": [ "EATEN_COLD" ],
+    "vitamins": [ [ "vitC", 53 ], [ "iron", 2 ] ],
+    "fun": 3
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "gyro_pistol",
+    "looks_like": "glock_17",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "MBA Gyrojet",
+    "name_plural": "MBA Gyrojet",
+    "description": "A product of cold war creativity, the MBA gyrojet was a commercial failure. Original models like this were a collector's item pre-cataclysm.",
+    "weight": "820 g",
+    "volume": "500 ml",
+    "price": 75000,
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "13mm_gyro",
+    "skill": "pistol",
+    "dispersion": 680,
+    "durability": 3,
+    "min_cycle_recoil": 504,
+    "valid_mod_locations": [
+      [ "grip", 1 ],
+      [ "sights", 1 ]
+    ],
+    "faults": [ "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "magazine_well": 1,
+    "magazines": [ [ "13mm_gyro", [ "13mm_gyro_mag" ] ] ]
+  },
+  
+  {
+    "id": "gyro_pistol_enhanced",
+    "looks_like": "glock_17",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": "TAC Gyrojet",
+    "name_plural": "TAC Gyrojet",
+    "description": "Reworked from an old design, this baby is like an old gyrojet, but it actually works reliably.",
+    "weight": "820 g",
+    "volume": "500 ml",
+    "price": 75000,
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "13mm_gyro",
+    "skill": "pistol",
+    "dispersion": 240,
+    "durability": 8,
+    "min_cycle_recoil": 504,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "faults": [ "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "magazine_well": 1,
+    "magazines": [ [ "13mm_gyro", [ "13mm_gyro_mag" ] ] ]
+  },
+  
+  
+    {
+    "id": "51_gyro_rifle",
+    "copy-from": "rifle_auto",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "name": { "str": "TAC GJAR-51" },
+    "description": "Also known as the 'spacer rifle', the TAC GJAR-51 is the first ever 'Moon Rifle'; a weapon intended for low gravity, low-oxygen environments where conventional firearms might fail. It saw service during the campaign in the Sea of Tranquility, as well as the early days of Martian Colonization, where it was praised for its reliability, though its been all but replaced by more modern gyrojet weapons in military service, since, being the first of its kind, there were many unrefined systems, that while they worked fine, caused the weapon to be much heavier and more finnicky. The gun is well known for its use of translucent plastic, which, while allowing the wielder to check mechanical failures, was liable to get damaged in intense firefights, expecially with explosive weaponry.",
+    "weight": "5500 g",
+    "volume": "8 L",
+    "price": 234300,
+    "price_postapoc": 6000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "plastic_trans" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": "51_gyro",
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
+    "dispersion": 150,
+    "durability": 7,
+    "min_cycle_recoil": 1350,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
+    "barrel_length": "250 ml",
+    "built_in_mods": [ "folding_stock" ],
+    "magazines": [
+      [
+        "51_gyro",
+        [
+		  "51_gyro_mag_30",
+          "51_gyro_mag_10",
+          "belt_51_gyro"
+        ]
+      ]
+    ]
+  }
+]

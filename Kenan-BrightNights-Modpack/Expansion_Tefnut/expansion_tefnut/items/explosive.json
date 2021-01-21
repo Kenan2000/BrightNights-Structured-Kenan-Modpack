@@ -1,0 +1,77 @@
+[
+ {
+    "id": "cactus_grenade",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "cactus grenade" },
+    "description": "A clay canister of flammable cactus juice with a rag inserted, used by tribal raiders.  Use this item to light the rag.  You will, of course, need a lighter or matches in your inventory to do this.  After lighting it, throw it to cause an explosion.",
+    "weight": "742 g",
+    "volume": "750 ml",
+    "price": 500,
+    "price_postapoc": 500,
+    "to_hit": 1,
+    "bashing": 5,
+    "material": [ "clay", "cotton" ],
+    "symbol": "*",
+    "color": "light_gray",
+    "initial_charges": 3,
+    "max_charges": 3,
+	"explode_in_fire": true,
+    "explosion": {
+      "damage": 40,
+      "radius": 2,
+	  "fire": true
+    },
+    "use_action": {
+      "target": "cactus_grenade_lit",
+      "msg": "You light the Molotov cocktail!",
+      "target_charges": 1,
+      "active": true,
+      "moves": 75,
+      "need_fire": 1,
+      "menu_text": "Light rag",
+      "type": "transform"
+    },
+    "flags": [ "NPC_ACTIVATE", "NO_REPAIR" ]
+  },
+  
+  
+  {
+    "id": "cactus_grenade_lit",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "lit cactus grenade" },
+    "description": "A clay canister of flammable cactus juice with a flaming rag inserted.  Throwing it will shatter the bottle on impact and ignite a fireball.  Dropping it will set you on fire, so don't do that unless you want to burn to death.",
+    "weight": "742 g",
+    "volume": "750 ml",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": 1,
+    "bashing": 5,
+    "material": [ "glass", "cotton" ],
+    "symbol": "*",
+    "color": "light_gray",
+    "initial_charges": 3,
+    "max_charges": 3,
+    "turns_per_charge": 1,
+    "explode_in_fire": true,
+    "explosion": {
+      "damage": 40,
+      "radius": 2,
+	  "fire": true
+    },
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 0,
+      "sound_msg": "ssss...",
+      "no_deactivate_msg": "You've already lit the %s, try throwing it instead.",
+      "explosion": {
+        "damage": 40,
+        "radius": 2,
+		"fire": true
+      }
+	  },
+    "flags": [  "TRADER_AVOID", "BOMB", "DANGEROUS",	"NO_REPAIR", "WATER_EXTINGUISH" ]
+  }
+  
+]

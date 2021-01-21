@@ -1,0 +1,43 @@
+[
+  {
+    "id": "pm9",
+    "copy-from": "smg_base",
+    "looks_like": "uzi",
+    "type": "GUN",
+    "name": { "str_sp": "Minebea PM-9" },
+
+    "description": "A Japanese machine pistol used by the Japan Self Defense Forces. While import was illegal for a long time, eventually, when those restricitons were loosened, and now theyre popular due to their similarity to the Uzi, while just looking more stylish. Among the things that cemented their popularity is use by the Speed Lords street gang. Uses Uzi mags.",
+    "weight": "2700 g",
+    "volume": "1500 ml",
+    "price": 208000,
+    "price_postapoc": 3000,
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [ "steel", "wood" ],
+    "color": "dark_gray",
+    "ammo": "9mm",
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "dispersion": 360,
+    "durability": 7,
+    "min_cycle_recoil": 450,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 3 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazine_well": 1,
+    "magazines": [ [ "9mm", [ "uzimag" ] ] ]
+  }
+  
+  
+]
