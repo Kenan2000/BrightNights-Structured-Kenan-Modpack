@@ -8,8 +8,8 @@
     "m2c": 60,
     "//": "30% energy efficiency",
     "description": "A combustion engine for use on aircraft.  Burns gasoline or avgas fuel from a tank in the vehicle."
-   },
-   {
+  },
+  {
     "id": "aero_engine_light",
     "copy-from": "engine_gasoline",
     "type": "ENGINE",
@@ -21,7 +21,7 @@
     "price_postapoc": 2000,
     "displacement": 524
   },
-   {
+  {
     "id": "engine_aero_light",
     "copy-from": "aero_engine",
     "type": "vehicle_part",
@@ -41,5 +41,5 @@
       "repair": { "skills": [ [ "mechanics", 8 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
     "damage_reduction": { "all": 50 }
-   }
+  }
 ]
