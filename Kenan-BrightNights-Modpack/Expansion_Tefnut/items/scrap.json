@@ -13,5 +13,21 @@
     "symbol": ",",
     "color": "light_blue",
     "flags": [ "NO_SALVAGE" ]
+  },
+  
+    {
+    "type": "GENERIC",
+    "id": "fur_sasquatch",
+    "symbol": ",",
+    "color": "brown",
+    "name": { "str": "sasquatch fur pelt" },
+    "description": "A small bolt of fur from a sasquatch.  Can be made into warm clothing.",
+    "price": 1000,
+    "price_postapoc": 10,
+    "material": [ "fur_sasquatch", "leather" ],
+    "flags": [ "NO_SALVAGE" ],
+    "weight": "114 g",
+    "volume": "250 ml",
+    "category": "spare_parts"
   }
   ]

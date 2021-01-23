@@ -326,6 +326,11 @@
     "id": "guns_rifle_obscure",
     "//": "Imported or otherwise very obscure rifles.",
     "items": [
+	  { "item": "dragunov", "prob": 75, "charges-min": 0, "charges-max": 10 },
+	  { "item": "aek999", "prob": 75, "charges-min": 100, "charges-max": 500 },
+	  { "item": "avs36", "prob": 50, "charges-min": 0, "charges-max": 15 },
+	  { "item": "pkm", "prob": 25, "charges-min": 100, "charges-max": 500 },
+	  { "item": "huaqing", "prob": 25, "charges-min": 100, "charges-max": 500 },
       { "item": "shoggoth_gun", "prob": 1, "charges-min": 0, "charges-max": 1  }
     ]
   },
@@ -339,6 +344,28 @@
       [ "gravity_gun", 1 ]
     ]
   },
+  
+    {
+    "type": "item_group",
+    "id": "mags_obscure",
+    "//": "Magazines for imported firearms.",
+    "items": [
+      [ "dragunovsmallmag", 5 ],
+	  [ "dragunovmag", 10 ],
+	  [ "dragunovbigmag", 5 ],
+	  [ "avs36mag", 10 ],
+	  [ "avs36bigmag", 5 ],
+	  { "item": "nambumag", "prob": 10},
+	  { "item": "type2mag", "prob": 5 },
+	  { "item": "type2extmag", "prob": 1 },
+	  { "item": "type96mag", "prob": 10},
+	  { "item": "type99mag", "prob": 10 },
+	  { "item": "belt6x50mm", "prob": 10, "charges-min": 100, "charges-max": 500 },
+	  { "item": "belt7x58mm", "prob": 5, "charges-min": 100, "charges-max": 500 },
+	  { "item": "belt762R", "prob": 5, "charges-min": 100, "charges-max": 500 }
+    ]
+  },
+  
   
     {
     "type": "item_group",

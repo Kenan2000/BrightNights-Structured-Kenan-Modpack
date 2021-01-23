@@ -123,9 +123,86 @@
       "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 1 ] ] }
     }
+  },
+  
+  
+          {
+    "id": "mounted_dragunov",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted Dragunov" },
+    "item": "dragunov",
+    "color": "blue",
+    "broken_color": "magenta",
+    "breaks_into": [ { "item": "scrap", "count": 6 }, { "item": "steel_chunk", "count": 5 }, { "item": "steel_lump", "count": 2 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ] }
+    }
+  },
+  
+  {
+    "id": "mounted_avs36",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted AVS-36" },
+    "item": "avs36",
+    "color": "blue",
+    "broken_color": "magenta",
+    "breaks_into": [ { "item": "scrap", "count": 6 }, { "item": "steel_chunk", "count": 5 }, { "item": "steel_lump", "count": 2 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ] }
+    }
+  },
+  
+  
+  {
+    "id": "mounted_aek999",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted AEK-999" },
+    "item": "aek999",
+    "color": "blue",
+    "broken_color": "magenta",
+    "breaks_into": [ { "item": "scrap", "count": 6 }, { "item": "steel_chunk", "count": 5 }, { "item": "steel_lump", "count": 2 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ] }
+    }
+  },
+  
+  
+    {
+    "id": "mounted_pkm",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted PKM" },
+    "item": "pkm",
+    "color": "blue",
+    "broken_color": "magenta",
+    "breaks_into": [ { "item": "scrap", "count": 6 }, { "item": "steel_chunk", "count": 5 }, { "item": "steel_lump", "count": 2 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ] }
+    }
+  },
+  
+  
+    {
+    "id": "mounted_huaqing",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "mounted Hua Qing Minigun" },
+    "item": "huaqing",
+    "color": "blue",
+    "broken_color": "magenta",
+    "breaks_into": [ { "item": "scrap", "count": 6 }, { "item": "steel_chunk", "count": 5 }, { "item": "steel_lump", "count": 2 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ], [ "rifle", 3 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ] }
+    }
   }
-  
-  
   
   
 ]
