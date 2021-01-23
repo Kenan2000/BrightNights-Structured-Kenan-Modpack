@@ -1,0 +1,129 @@
+[
+  {
+    "id": "mon_copbot_redsun",
+    "type": "MONSTER",
+    "name": { "str": "Red Sun hijacked police bot" },
+    "description": "One of the many models of armored law enforcement robots employed shortly before the collapse of civilization.  Solar powered like many other robots, it maintains its programmed pursuit of law and order, propelled on a trio of omni wheels. This ones been jury rigged by Red Sun, and equipped with a Type 100 SMG.",
+    "default_faction": "redsun",
+	"looks_like": "mon_copbot",
+    "species": [ "ROBOT" ],
+    "diff": 10,
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 80,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "R",
+    "color": "light_blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 3,
+    "melee_dice_sides": 2,
+    "melee_cut": 0,
+    "dodge": 8,
+    "armor_bash": 12,
+    "armor_cut": 8,
+    "vision_day": 50,
+    "path_settings": { "max_dist": 5 },
+    "revert_to_itype": "bot_copbot",
+	
+	"starting_ammo": { "8x22mm_p": 120 },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 150,
+        "gun_type": "type100",
+        "ammo_type": "8x22mm_p",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "fake_dex": 12,
+        "ranges": [ [ 0, 20, "DEFAULT" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": false,
+        "targeting_cost": 200,
+        "targeting_timeout_extend": -10,
+        "targeting_sound": "\"Enemy spotted.\"",
+        "targeting_volume": 50,
+        "no_ammo_sound": "a chk!"
+      }
+    ],
+	
+    "death_drops": { "groups": [ [ "robots", 4 ], [ "copbot", 1 ] ] },
+    "death_function": [ "BROKEN" ],
+    "flags": [ "SEES", "HEARS", "BASHES", "ELECTRONIC", "COLDPROOF", "NO_BREATHE", "PRIORITIZE_TARGETS", "PATH_AVOID_DANGER_1", "DROPS_AMMO" ]
+  },
+  
+  
+    {
+    "id": "mon_grocerybot_redsun",
+    "type": "MONSTER",
+    "name": { "str": "Red Sun hijacked grocery bot" },
+    "description": "A popular product from Uncanny, this friendly android can carry your bag or push your Grocery Cart for you.  You know it's friendly because its human face is constantly smiling at you.  According to the ads it uses a state-machine of a complexity never seen before, Uncanny even hired professional actors to record its lines.  This one has been repurposed by Red Sun. Instead of pushing your cart, it wields a low caliber LMG.",
+    "default_faction": "redsun",
+		"looks_like": "mon_grocerybot",
+    "species": [ "ROBOT" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 80,
+    "speed": 100,
+    "material": [ "steel" ],
+    "symbol": "g",
+    "color": "white",
+    "bodytype": "human",
+	"aggression": 100,
+    "morale": 100,
+    "dodge": 3,
+    "armor_bash": 10,
+    "armor_cut": 10,
+	"vision_day": 50,
+    "path_settings": { "max_dist": 5 },
+    "revert_to_itype": "bot_grocerybot",
+	
+	"starting_ammo": { "6x50mm": 60 },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 1,
+        "move_cost": 150,
+        "gun_type": "type96",
+        "ammo_type": "6x50mm",
+        "fake_skills": [ [ "gun", 8 ], [ "rifle", 8 ] ],
+        "fake_dex": 12,
+        "ranges": [ [ 0, 20, "DEFAULT" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": false,
+        "targeting_cost": 200,
+        "targeting_timeout_extend": -10,
+        "targeting_sound": "\"Enemy spotted, boss!\"",
+        "targeting_volume": 50,
+        "no_ammo_sound": "a chk!"
+      },
+	  
+	  [ "PAID_BOT", 1 ]
+	  
+    ],
+	
+	
+    "death_drops": { "groups": [ [ "robots", 4 ] ] },
+    "death_function": [ "BROKEN" ],
+    "flags": [
+      "SEES",
+	  "PRIORITIZE_TARGETS",
+      "ELECTRONIC",
+      "COLDPROOF",
+      "NO_BREATHE",
+      "FIREPROOF",
+      "PUSH_MON",
+      "HEARS",
+      "PAY_BOT",
+      "PET_HARNESSABLE",
+      "PATH_AVOID_DANGER_2",
+	  "DROPS_AMMO"
+    ]
+  }
+  
+  
+]

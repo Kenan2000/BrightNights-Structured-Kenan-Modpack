@@ -16,7 +16,7 @@ Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolct
 
 # Modpack UPDATE Guide
 
-1. Remove the contents of the `cdda/data/mods` folder
+1. Remove certain non-mainlined mods if you are experiencing any conflicts with them
 2. Repeat all steps from the INSTALLATION guide
 3. You're all set!
 

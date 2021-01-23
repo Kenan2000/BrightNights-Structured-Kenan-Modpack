@@ -1,0 +1,60 @@
+[
+{
+    "id": "m1941bigmag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "M1941 extended magazine" },
+    "description": "An aftermarket magazine for use with the Browning Automatic Rifle, holds 30 rounds.",
+    "weight": "300 g",
+    "volume": "750 ml",
+    "price": 8500,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "3006",
+    "capacity": 30,
+    "reliability": 7,
+    "reload_time": 120,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  {
+    "id": "m1941mag",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": "M1941 magazine" },
+    "description": "A standard capacity magazine for use with the Browning Automatic Rifle, holds 20 rounds.",
+    "weight": "200 g",
+    "volume": "500 ml",
+    "price": 3600,
+    "price_postapoc": 100,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "3006",
+    "capacity": 20,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+    {
+    "id": "belt3006",
+    "copy-from": "magazine_belt",
+    "type": "MAGAZINE",
+    "name": { "str": ".30-06 ammo belt" },
+    "ammo_type": "3006",
+    "capacity": 500,
+    "count": 100,
+    "default_ammo": "3006",
+    "linkage": "ammolink3006"
+  },
+  
+    
+    {
+    "id": "ammolink3006",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": ".30-06 ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "belt3006" }
+  }
+]

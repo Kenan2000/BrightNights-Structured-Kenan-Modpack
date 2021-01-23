@@ -1,0 +1,87 @@
+[
+  {
+    "id": "mon_null_mutant",
+    "type": "MONSTER",
+    "name": { "str": "null" },
+    "description": "A terrifying, emaciated mutant humanoid with no eyes. In fact, its only facial features are earholes, nostrils, and a huge, gaping, toothy maw. It stalks the underground, hunting for fresh meat. It charges around on all fours.",
+    "default_faction": "null_mutant",
+    "bodytype": "human",
+    "species": [ "MUTANT" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 120,
+    "speed": 360,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "white",
+    "aggression": 30,
+    "morale": 30,
+    "melee_skill": 6,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "dodge": 3,
+	"armor_bash": 5,
+    "armor_cut": 5,
+    "harvest": "mutant_human",
+    "path_settings": { "max_dist": 10 },
+	"special_attacks": [
+      {
+        "type": "bite",
+        "cooldown": 20,
+        "accuracy": 6,
+        "damage_max_instance": [
+          { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
+          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+        ],
+        "effects": [ { "id": "grabbed", "duration": 1000, "bp": "TORSO" } ],
+        "no_infection_chance": 2
+      }
+    ],
+	"anger_triggers": [ "PLAYER_WEAK", "PLAYER_CLOSE", "STALK", "SOUND" ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [ [ "subway", 40 ], [ "sewer", 20 ], [ "trash", 5 ], [ "ammo", 18 ] ]
+    },
+    "death_function": [ "NORMAL" ],
+    "flags": [ "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "HUMAN", "FILTHY" ]
+  },
+  
+  
+    {
+    "id": "mon_lithovore",
+    "type": "MONSTER",
+    "name": { "str": "lithovore" },
+    "description": "A stout mutated humanoid, covered in rocky spikes. It wanders the vast underground, digging vast tunnels to sate its massive appetite. Its rocky skin allows it to resist even heavy attacks.",
+    "default_faction": "lithovore",
+    "bodytype": "human",
+    "species": [ "MUTANT" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 60,
+    "speed": 110,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "white",
+    "aggression": 30,
+    "morale": 30,
+    "melee_skill": 6,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "dodge": 3,
+	"armor_bash": 17,
+    "armor_cut": 22,
+    "harvest": "mutant_human",
+    "path_settings": { "max_dist": 10 },
+    "special_attacks": [ [ "scratch", 15 ] ],
+    "death_drops": {
+      "subtype": "collection",
+      "groups": [ [ "subway", 40 ], [ "sewer", 20 ], [ "trash", 5 ], [ "bedroom", 5 ], [ "dresser", 10 ], [ "ammo", 18 ] ]
+    },
+    "death_function": [ "NORMAL" ],
+    "flags": [ "SEES", "HEARS", "WARM", "BORES", "CAN_DIG", "BASHES", "GROUP_BASH", "HUMAN", "FILTHY" ]
+  }
+  
+  
+]
