@@ -1,7 +1,7 @@
 [
   {
     "type": "profession",
-    "ident": "wizard_advanced",
+    "id": "wizard_advanced",
     "name": "Apprintice Magus",
     "description": "You once found a pamphlet with bright colors claiming you can be a Wizard. After some study, you feel as though you understand this well.",
     "spells": [
@@ -20,7 +20,7 @@
   },
   {
     "type": "profession",
-    "ident": "a_necromancer",
+    "id": "a_necromancer",
     "name": "Apprintice Necromancer",
     "description": "You were once shunned for your magic. You're alive, something most of the Dracionic heads cannot claim.",
     "spells": [
@@ -39,7 +39,7 @@
   },
   {
     "type": "profession",
-    "ident": "a_stormshaper",
+    "id": "a_stormshaper",
     "name": "Apprintice Stormshaper",
     "description": "The son of a weatherman, you were always interested in the weather.  Some time ago you found it was possible to manipulate the weather yourself through arcane means!  Unfortunately you did not have long to enjoy your power, as events unfolded...",
     "spells": [ { "id": "lightning_bolt", "level": 11 }, { "id": "windrun", "level": 5 }, { "id": "windstrike", "level": 5 } ],
@@ -54,7 +54,7 @@
   },
   {
     "type": "profession",
-    "ident": "n_kelvin",
+    "id": "n_kelvin",
     "name": "Novice Kelvinist",
     "description": "You always had a passion for control in powerful frost and flame. The advancements of Archlord Kelvin were just what you wanted.",
     "skills": [ { "level": 1, "name": "spellcraft" } ],
@@ -69,7 +69,7 @@
   },
   {
     "type": "profession",
-    "ident": "a_kelvin",
+    "id": "a_kelvin",
     "name": "Apprintice Kelvinist",
     "description": "You always had a passion for control in powerful frost and flame, and recived some schooling within the Kelvinic arts. What you shall use your knowledge for remains to be seen.",
     "skills": [ { "level": 2, "name": "spellcraft" } ],
@@ -84,7 +84,7 @@
   },
   {
     "type": "profession",
-    "ident": "a_earthshaper",
+    "id": "a_earthshaper",
     "name": "Apprintice Earthshaper",
     "description": "You always were tough in a fight. Your coach taught you more than a few tricks.",
     "spells": [ { "id": "stonefist", "level": 10 }, { "id": "seismic_stomp", "level": 5 }, { "id": "recover_stamina", "level": 6 } ],
@@ -104,7 +104,7 @@
   },
   {
     "type": "profession",
-    "ident": "a_technomancer",
+    "id": "a_technomancer",
     "name": "Apprintice Technomancer",
     "description": "With the recent Cataclysm, the several ways you found to cheat on tests may have to find some other use.",
     "CBMs": [ "bio_power_storage_mkII", "bio_torsionratchet" ],
