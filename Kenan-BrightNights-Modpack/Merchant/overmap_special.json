@@ -10,9 +10,9 @@
             { "point" : [0,1,0], "terrain" : "road" }
         ],
         "locations" : [ "field" ], "//":"what special locations does it spawn",
-        "city_distance" : [7, 12], "//":"how far from a city it should be",
-        "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
-        "occurrences" : [0, 1], "//":"how many per overmap"
+        "city_distance" : [7, 12], "//1":"how far from a city it should be",
+        "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
+        "occurrences" : [0, 1], "//3":"how many per overmap"
     },{
         "type" : "overmap_special",
         "id" : "Safezone",
@@ -38,9 +38,9 @@
             { "point" : [0,1,0], "terrain" : "road" }
         ],
         "locations" : [ "field" ], "//":"what special locations does it spawn",
-        "city_distance" : [7, 12], "//":"how far from a city it should be",
-        "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
-        "occurrences" : [0, 1], "//":"how many per overmap"
+        "city_distance" : [7, 12], "//1":"how far from a city it should be",
+        "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
+        "occurrences" : [0, 1], "//3":"how many per overmap"
     },
 	{
         "type" : "overmap_special",
@@ -54,8 +54,8 @@
             { "point" : [0,1,0], "terrain" : "road" }
         ],
         "locations" : [ "field" ], "//":"what special locations does it spawn",
-        "city_distance" : [6, -1], "//":"how far from a city it should be",
-        "city_sizes" : [4, 12], "//":"what city sizes should it spawn in",
-        "occurrences" : [0, 1], "//":"how many per overmap"
+        "city_distance" : [6, -1], "//1":"how far from a city it should be",
+        "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
+        "occurrences" : [0, 1], "//3":"how many per overmap"
     }
 ]	

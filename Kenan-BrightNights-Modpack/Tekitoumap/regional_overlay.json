@@ -2,9 +2,9 @@
    {
       "type": "region_overlay",
       "id": "tm_overlay",              "//": "unique identifier for this overlay",
-      "regions": [ "all" ],                 "//": "A list of regions to which this overlay should be applied",
+      "regions": [ "all" ],                 "//1": "A list of regions to which this overlay should be applied",
       "city": {
-          "shops": {                        "//": "weighted list of oterrains for commercial zoning",
+          "shops": {                        
               "backst": 5,
               "meat": 1,
               "vege": 1,
@@ -13,7 +13,8 @@
               "bicycle": 2,
               "petshop": 2,
               "smith": 1
-          }
+          },
+		  "//2": "weighted list of oterrains for commercial zoning"
       }
    }
 ]

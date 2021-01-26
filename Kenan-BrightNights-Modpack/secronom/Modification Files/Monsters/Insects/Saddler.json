@@ -215,7 +215,7 @@
     "color": "green",
     "aggression": 100,
     "morale": 100,
-    "//": "+4 melee skill for the living, +2 for zed.",
+    "//1": "+4 melee skill for the living, +2 for zed.",
     "melee_skill": 6,
     "melee_dice": 1,
     "melee_dice_sides": 6,
@@ -225,7 +225,7 @@
     "armor_cut": 2,
     "armor_stab": 4,
     "special_attacks": [ { "type": "bite", "cooldown": 25 }, [ "GRAB", 40 ], [ "scratch", 32 ], [ "PARROT", 22 ] ],
-    "//": "The saddler detaches from the host after its death.",
+    "//2": "The saddler detaches from the host after its death.",
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_death_drop" ] },
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
