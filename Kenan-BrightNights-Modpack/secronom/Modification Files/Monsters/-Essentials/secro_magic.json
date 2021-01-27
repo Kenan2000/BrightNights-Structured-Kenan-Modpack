@@ -1,7 +1,7 @@
 [
   {
     "//": "Every spell that a monster casts are explained here. There's no way of telling you the description in-game, and here we are, reading infos about 'em at this file!",
-    "//": "Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them... Combo (combination) spell and a regular one, casted in an instance!",
+    "//1": "Since monsters can only have one spell in their special attacks (and idk if this is intentional to the devs), I tend to combine them... Combo (combination) spell and a regular one, casted in an instance!",
     "id": "sacrifice_spell",
     "type": "SPELL",
     "name": "Sacrifice",
@@ -12,7 +12,7 @@
     "effect_str": "secro_sacrifice_effect",
     "min_damage": 100000000,
     "max_damage": 100000000,
-    "//": "There's a bug in which self-damaging spells are being 'reflected', so we'll use a damaging effect to apply to the caster (the effect requires a turn to apply the damage, and it's a bit unpleasant... but still a backup to prevent overcasting).",
+    "//2": "There's a bug in which self-damaging spells are being 'reflected', so we'll use a damaging effect to apply to the caster (the effect requires a turn to apply the damage, and it's a bit unpleasant... but still a backup to prevent overcasting).",
     "min_aoe": 1,
     "max_aoe": 1,
     "damage_type": "none"
@@ -129,12 +129,12 @@
     "flags": [ "SILENT" ],
     "valid_targets": [ "ground", "hostile" ],
     "effect": "target_attack",
-    "//": "Add an effect to spell. Monster won't cast a spell if it doesn't do anything to the target... I think?.",
+    "//1": "Add an effect to spell. Monster won't cast a spell if it doesn't do anything to the target... I think?.",
     "effect_str": "secro_magic_target",
     "min_range": 69,
-    "//": "As long as caster sees the target, it will cast (if its not on cooldown, ofc). Nice.",
+    "//2": "As long as caster sees the target, it will cast (if its not on cooldown, ofc). Nice.",
     "max_range": 69,
-    "//": "Nice.",
+    "//3": "Nice.",
     "min_duration": 1,
     "max_duration": 1
   },
@@ -1103,7 +1103,7 @@
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [
       { "//": "To successfully morph, it kills itself.", "id": "sacrifice_spell", "hit_self": true },
-      { "//": "Then place the monster beside them.", "id": "mon_zombie_fake_poly_ichorus", "hit_self": true }
+      { "//1": "Then place the monster beside them.", "id": "mon_zombie_fake_poly_ichorus", "hit_self": true }
     ],
     "flags": [ "SILENT" ],
     "valid_targets": [ "ally", "hostile", "ground" ],
@@ -2401,7 +2401,7 @@
     "name": "Charge!",
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gains momentum, increasing movement speed, hit chance and impact damage as it takes effect.'",
     "//": "Momentum's a short duration haste, accuracy and bonus bash damage. Max intensity after casting the spell.",
-    "//": "Momentum is also a unique stat modifier that differs to the type of charger.",
+    "//1": "Momentum is also a unique stat modifier that differs to the type of charger.",
     "flags": [ "SILENT" ],
     "valid_targets": [ "self" ],
     "effect": "projectile_attack",
@@ -2410,7 +2410,7 @@
     "max_aoe": 13,
     "min_duration": 100,
     "max_duration": 100,
-    "//": "Use field to stun DIRECTLY the PLAYER.",
+    "//2": "Use field to stun DIRECTLY the PLAYER.",
     "field_id": "fd_charger_stun",
     "min_field_intensity": 1,
     "max_field_intensity": 1
@@ -3517,7 +3517,7 @@
     "max_aoe": 50,
     "//": "The reach of this spell is close to the reality bubble, incase of veinhole dies because of something else.",
     "base_casting_time": -1,
-    "//": "That being said, the spell is casted by you, and it's a bit unstable (like warnings about casting a spell while you are hurt)."
+    "//1": "That being said, the spell is casted by you, and it's a bit unstable (like warnings about casting a spell while you are hurt)."
   },
   {
     "id": "mon_sflesh_sack_hatch",
