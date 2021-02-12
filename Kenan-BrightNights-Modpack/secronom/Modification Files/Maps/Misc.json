@@ -4,8 +4,37 @@
     "method": "json",
     "update_mapgen_id": "mx_secro_vector",
     "object": {
-      "place_monsters": [ { "monster": "GROUP_VECTOR_BIOME", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.069, "repeat": [ 5, 10 ] } ],
-      "place_monster": [ { "monster": "mon_vector_tree", "x": 11, "y": 11 } ]
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "          xxxxx         ",
+        "         xxxxxxx        ",
+        "        xxxxxxxxx       ",
+        "        xxxxxxxxx       ",
+        "        xxxxaxxxx       ",
+        "        xxxxxxxxx       ",
+        "        xxxxxxxxx       ",
+        "         xxxxxxx        ",
+        "          xxxxx         ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { "a": "t_vector" },
+      "furniture": {  },
+      "place_monsters": [ { "monster": "GROUP_VECTOR_BIOME", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.16 } ],
+      "monster": { "a": { "monster": "mon_vector_tree" } },
+      "ter_furn_transforms": { "x": { "transform": "vectorize" }, " ": { "transform": "vectorize_weak" } }
     }
   },
   {
