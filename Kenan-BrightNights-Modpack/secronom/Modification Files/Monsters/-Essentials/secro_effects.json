@@ -1026,8 +1026,13 @@
   },
   {
     "type": "effect_type",
+    "id": "eff_swarmer_stop",
+    "base_mods": { "speed_mod": [ -100 ] }
+  },
+  {
+    "type": "effect_type",
     "id": "eff_carrion_alpha_rally_atk_cmd",
-    "max_duration": 1,
+    "max_duration": 100,
     "removes_effects": [ "controlled" ],
     "blocks_effects": [ "controlled" ]
   },

@@ -3,25 +3,25 @@
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
     "monsters": [
-      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 8, "pack_size": [ 11, 22 ] },
-      { "monster": "mon_zombie_swarmer_segway", "freq": 1, "cost_multiplier": 10, "pack_size": [ 4, 12 ] },
-      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 15, "pack_size": [ 22, 44 ] },
+      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 8, "pack_size": [ 18, 36 ] },
+      { "monster": "mon_zombie_swarmer_segway", "freq": 1, "cost_multiplier": 10, "pack_size": [ 6, 12 ] },
+      { "monster": "mon_zombie_swarmer_weak", "freq": 1, "cost_multiplier": 15, "pack_size": [ 30, 60 ] },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 23,
-        "pack_size": [ 44, 88 ],
+        "pack_size": [ 50, 100 ],
         "starts": 4380
       },
       {
-        "note": "Lets fill the streets with these!",
+        "//": "Lets fill the streets with these!",
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 40,
-        "pack_size": [ 88, 176 ],
+        "pack_size": [ 122, 244 ],
         "starts": 8760
       },
-      { "monster": "mon_zombie_swarmer_weak", "freq": 100, "cost_multiplier": 0, "pack_size": [ 3, 5 ] },
+      { "monster": "mon_zombie_swarmer_weak", "freq": 100, "cost_multiplier": 0, "pack_size": [ 12, 24 ] },
       { "monster": "mon_zombie_blade", "freq": 10, "cost_multiplier": 4 },
       { "monster": "mon_zombie_spoder", "freq": 10, "cost_multiplier": 4, "pack_size": [ 1, 2 ] },
       { "monster": "mon_zombie_tendrils", "freq": 8, "cost_multiplier": 4 },
@@ -110,7 +110,7 @@
     "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 4380 } ]
   },
   {
-    "note": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
+    "//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_ALL",
     "default": "mon_zombie_scientist",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "note": "Spawn random secrolab specimens. Failed specimens are common here",
+    "//": "Spawn random secrolab specimens. Failed specimens are common here",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_SPECIMENS",
     "default": "mon_zedfail_seeker",
@@ -145,7 +145,7 @@
     ]
   },
   {
-    "note": "Spawn random secrolab failed specimens.",
+    "//": "Spawn random secrolab failed specimens.",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_FAILEDSPECIMENS",
     "default": "mon_zedfail_seeker",
@@ -157,7 +157,7 @@
     ]
   },
   {
-    "note": "Spawn random secrolab BOWs",
+    "//": "Spawn random secrolab BOWs",
     "type": "monstergroup",
     "name": "GROUP_SECROLAB_BOWSPECIMENS",
     "default": "mon_zedbow_kaxix",
@@ -171,7 +171,7 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
-    "note": "Break the law and let this appear in sewers!",
+    "//": "Break the law and let this appear in sewers!",
     "is_animal": false,
     "monsters": [ { "monster": "mon_zombie_nautilus", "freq": 125, "cost_multiplier": 10 } ]
   },
@@ -230,9 +230,7 @@
     "type": "monstergroup",
     "name": "GROUP_VECTOR_SEEDLING",
     "default": "mon_vector_spore",
-    "monsters": [
-      { "monster": "mon_vector_sprig", "freq": 100, "cost_multiplier": 0 }
-    ]
+    "monsters": [ { "monster": "mon_vector_sprig", "freq": 100, "cost_multiplier": 0 } ]
   },
   {
     "type": "monstergroup",
