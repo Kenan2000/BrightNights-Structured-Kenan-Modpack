@@ -270,9 +270,9 @@
         "#!!!!!!!!!!!!!!!!!!!!!!#",
         "!!????????????????????!!",
         "!??????????????????????!",
+        "???..................???",
         "??....................??",
         "?......................?",
-        "........................",
         "........................",
         "........................",
         "........................",
@@ -292,6 +292,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] }
@@ -332,6 +334,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] }
@@ -372,6 +376,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] }
@@ -411,7 +417,11 @@
         "........................"
       ],
       "palettes": [ "breach" ],
-      "place_nested": [ { "chunks": [ [ "breach_spawn_spiral", 100 ] ], "x": [ 9, 12 ], "y": 19 } ],
+      "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
+        { "chunks": [ [ "breach_spawn_spiral", 100 ] ], "x": [ 9, 12 ], "y": 19 }
+      ],
       "place_loot": [ { "group": "spiral", "x": [ 16, 20 ], "y": [ 2, 5 ] } ]
     }
   },
@@ -449,6 +459,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
@@ -490,6 +502,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
@@ -531,6 +545,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         {
@@ -582,6 +598,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         {
@@ -633,6 +651,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         {
           "chunks": [
             [ "breach_chunk_ruins_strange", 50 ],
@@ -680,6 +700,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         {
           "chunks": [
             [ "breach_chunk_ruins_strange", 50 ],
@@ -711,8 +733,8 @@
         "........................",
         "........................",
         "........................",
-        "........................",
-        "........................",
+        "...........>>...........",
+        "...........>>...........",
         "........................",
         "........................",
         "........................",
@@ -727,11 +749,12 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
-        { "chunks": [ [ "null", 75 ], [ "breach_chunk_1", 25 ] ], "x": [ 0, 19 ], "y": [ 1, 19 ], "repeat": 4 },
-        { "chunks": [ [ "null", 10 ], [ "breach_chunk_down", 90 ] ], "x": 11, "y": 11 }
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_1", 25 ] ], "x": [ 0, 19 ], "y": [ 1, 19 ], "repeat": 4 }
       ]
     }
   },
@@ -753,8 +776,8 @@
         "........................",
         "........................",
         "........................",
-        "........................",
-        "........................",
+        "...........>>...........",
+        "...........>>...........",
         "........................",
         "........................",
         "........................",
@@ -769,11 +792,12 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
-        { "chunks": [ [ "null", 75 ], [ "breach_chunk_1", 25 ] ], "x": [ 0, 19 ], "y": [ 1, 19 ], "repeat": 4 },
-        { "chunks": [ [ "null", 10 ], [ "breach_chunk_down", 90 ] ], "x": 11, "y": 11 }
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_1", 25 ] ], "x": [ 0, 19 ], "y": [ 1, 19 ], "repeat": 4 }
       ]
     }
   },
@@ -811,6 +835,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 75 ], [ "breach_chunk_1", 25 ] ], "x": [ 1, 19 ], "y": [ 1, 19 ], "repeat": 4 }
@@ -851,6 +877,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_vertical", 40 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 60 ], [ "breach_chunk_wall_horizontal", 40 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 75 ], [ "breach_chunk_1", 25 ] ], "x": [ 1, 19 ], "y": [ 1, 19 ], "repeat": 4 }
@@ -891,6 +919,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_vertical", 25 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_horizontal", 25 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         {
           "chunks": [
@@ -941,6 +971,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_vertical", 25 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_horizontal", 25 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         {
           "chunks": [
@@ -990,7 +1022,11 @@
         "###!!???................"
       ],
       "palettes": [ "breach" ],
-      "place_nested": [ { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] } ]
+      "place_nested": [
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_vertical", 25 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_horizontal", 25 ] ], "x": 0, "y": 21 },
+        { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] }
+      ]
     }
   },
   {
@@ -1026,7 +1062,11 @@
         "###!!!?................."
       ],
       "palettes": [ "breach" ],
-      "place_nested": [ { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] } ]
+      "place_nested": [
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_vertical", 75 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 75 ], [ "breach_chunk_wall_horizontal", 75 ] ], "x": 0, "y": 21 },
+        { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] }
+      ]
     }
   },
   {
@@ -1063,6 +1103,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 50 ], [ "breach_chunk_wall_vertical", 50 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 50 ], [ "breach_chunk_wall_horizontal", 50 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 50 ], [ "breach_spawn_standard", 50 ] ], "x": [ 9, 10 ], "y": [ 9, 10 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
@@ -1104,6 +1146,8 @@
       ],
       "palettes": [ "breach" ],
       "place_nested": [
+        { "chunks": [ [ "null", 50 ], [ "breach_chunk_wall_vertical", 50 ] ], "x": 21, "y": 0 },
+        { "chunks": [ [ "null", 50 ], [ "breach_chunk_wall_horizontal", 50 ] ], "x": 0, "y": 21 },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 0, 2 ], "y": [ 16, 18 ] },
         { "chunks": [ [ "null", 40 ], [ "breach_chunk_pillar", 60 ] ], "x": [ 16, 18 ], "y": [ 16, 18 ] },
         {
