@@ -223,5 +223,31 @@
       "ter_set": "t_null",
       "items": [ { "item": "splinter", "count": [ 15, 30 ] } ]
     }
+  },
+  {
+    "type": "terrain",
+    "id": "t_covered_well_bucket",
+    "name": "well with bucket and pulley",
+    "looks_like": "t_covered_well",
+    "description": "Deep well collecting ground water.  A simple bucket and pulley allows drawing water from it.",
+    "symbol": "&",
+    "color": "light_gray",
+    "move_cost": 2,
+    "coverage": 40,
+    "flags": [ "TRANSPARENT", "THIN_OBSTACLE", "MINEABLE" ],
+    "bash": {
+      "str_min": 80,
+      "str_max": 300,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_pit",
+      "items": [
+        { "item": "rock", "count": [ 8, 18 ] },
+        { "item": "2x4", "count": [ 0, 2 ] },
+        { "item": "nail", "charges": [ 1, 4 ] },
+        { "item": "splinter", "count": [ 1, 2 ] }
+      ]
+    },
+    "examine_action": "water_source"
   }
 ]
