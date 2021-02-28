@@ -1,9 +1,9 @@
 [
   {
-    "note": "A monster that appears as a humanoid creature (and is friendly to that specie... before dying). It has several disorienting abilities with a chance to immobilize nearby creatures, while draining the stamina of the target.",
+    "//": "A monster that appears as a humanoid creature (and is friendly to that specie... before dying). It has several disorienting abilities with a chance to immobilize nearby creatures, while draining the stamina of the target.",
     "id": "mon_shifter",
     "type": "MONSTER",
-    "name": "shapeshifter",
+    "name": { "str": "shapeshifter" },
     "description": "An inhumane creature, shrouded in disorienting atmosphere. Its appearance is a complete mystery, neither its true nature.",
     "default_faction": "shifter",
     "species": [ "ABERRATION", "SECROSPEC" ],
@@ -13,6 +13,7 @@
     "speed": 85,
     "material": [ "secro_null" ],
     "symbol": "@",
+    "emit_fields": [ "emit_shifter_fog" ],
     "color": "dark_gray",
     "aggression": 100,
     "morale": 100,
@@ -31,30 +32,44 @@
       {
         "type": "spell",
         "spell_data": { "id": "mon_shifter_target" },
-        "cooldown": 10,
+        "cooldown": 25,
         "monster_message": "<color_red>The air surrounding %1$s intensifies!</color>"
+      },
+      {
+        "type": "gun",
+        "cooldown": 10,
+        "move_cost": 150,
+        "gun_type": "shifter_shadows",
+        "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "targeting_cost": 300,
+        "targeting_sound": "the eerie shadows building up.",
+        "description": "The shapeshifter sends out errant shadows!",
+        "ranges": [ [ 2, 3, "N" ], [ 4, 7, "M" ], [ 7, 20, "L" ] ]
       }
     ],
     "death_function": [ "DISAPPEAR" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "POISON", "ATTACKMON", "NO_BREATHE", "STUN_IMMUNE", "PUSH_MON" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "POISON", "NO_BREATHE", "STUN_IMMUNE", "PUSH_MON" ]
   },
   {
-    "note": "Illusionary copies have 1/4 stats, except for speed. They have a life span for up to 18 turns if remained untouched.",
+    "//": "Illusionary copies have 1/4 stats, except for speed.",
     "looks_like": "mon_shifter",
     "id": "mon_shifter_illu",
     "type": "MONSTER",
-    "name": "shapeshifter",
+    "name": { "str": "shapeshifter" },
     "description": "An inhumane creature, shrouded in disorienting atmosphere. Its appearance is a complete mystery, neither its true nature.",
     "default_faction": "shifter",
-    "species": [ "ABERRATION", "SECROSPEC" ],
-    "diff": 30,
+    "species": [ "ABERRATION" ],
+    "diff": 100,
     "volume": "62500 ml",
     "weight": "81500 g",
     "hp": 90,
     "speed": 90,
     "material": [ "secro_null" ],
-    "emit_fields": [ "emit_shifter_illu_limiter" ],
     "symbol": "@",
+    "emit_fields": [ "emit_shifter_fog_smol" ],
     "color": "dark_gray",
     "aggression": 100,
     "morale": 100,
@@ -71,18 +86,32 @@
       {
         "type": "spell",
         "spell_data": { "id": "mon_shifter_illu_target" },
-        "cooldown": 10,
+        "cooldown": 20,
         "monster_message": "<color_yellow>%1$s shifts erratically!</color>"
+      },
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 300,
+        "gun_type": "shifter_illu_shadows",
+        "fake_skills": [ [ "gun", 2 ], [ "rifle", 2 ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "targeting_cost": 600,
+        "targeting_sound": "the eerie shadows building up.",
+        "description": "The shapeshifter sends out errant shadows!",
+        "ranges": [ [ 2, 4, "N" ], [ 5, 15, "M" ] ]
       }
     ],
     "death_function": [ "DISAPPEAR" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "POISON", "NO_BREATHE" ]
   },
   {
-    "note": "We copy some of the vanilla zeds.",
+    "//": "We copy some of the vanilla zeds.",
     "id": "mon_shifter_zombie",
     "type": "MONSTER",
-    "name": "zombie",
+    "name": { "str": "zombie" },
     "description": "A human body, swaying as it moves, an unstoppable rage visible in its oily black eyes. Within a closer look, its visage blurs occasionally.",
     "copy-from": "mon_zombie",
     "looks_like": "mon_zombie",
@@ -92,7 +121,7 @@
   {
     "id": "mon_shifter_zombie_rot",
     "type": "MONSTER",
-    "name": "decayed zombie",
+    "name": { "str": "decayed zombie" },
     "description": "A once-dead human corpse. Its discolored swollen flesh is riddled with festering wounds and open sores. Within a closer look, its visage blurs occasionally.",
     "copy-from": "mon_zombie_rot",
     "looks_like": "mon_zombie_rot",
