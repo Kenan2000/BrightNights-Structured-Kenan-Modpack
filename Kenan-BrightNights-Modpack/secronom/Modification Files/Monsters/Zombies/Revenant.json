@@ -5,7 +5,7 @@
     "type": "MONSTER",
     "name": "revenant",
     "description": "Enveloped in odd stench, this severely diluted corpse has became an overseer for its fiendish undeads.",
-    "default_faction": "zombie",
+    "default_faction": "zombie_revenant",
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
@@ -23,18 +23,18 @@
     "melee_dice": 0,
     "melee_dice_sides": 0,
     "melee_cut": 0,
-    "special_attacks": [
-      {
-        "type": "spell",
-        "spell_data": { "id": "mon_zombie_revenant_target" },
-        "cooldown": 12,
-        "monster_message": "<color_red>%1$s snaps the potent prowess of nearby monsters!</color>"
-      }
-    ],
     "upgrades": { "half_life": 12, "into_group": "GROUP_REVENANT_UPGRADE" },
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY" ]
+  },
+  {
+    "id": "mon_zombie_revenant_idle",
+    "copy-from": "mon_zombie_revenant",
+    "type": "MONSTER",
+    "name": "revenant",
+    "description": "Enveloped in odd stench, this severely diluted corpse has became an overseer for its fiendish undeads.",
+    "default_faction": "zombie"
   },
   {
     "id": "mon_zombie_revenant_forsaken",
@@ -75,7 +75,7 @@
     "type": "MONSTER",
     "name": "alluring revenant",
     "description": "Concealed beneath a thick, eerie fog, a slim, humanoid figure stands firm. Mischievous, its claws drip with peculiar black goo.",
-    "default_faction": "zombie",
+    "default_faction": "zombie_revenant",
     "species": [ "ZOMBIE", "SECROZED_2", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
@@ -104,5 +104,13 @@
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "POISON", "NO_BREATHE", "REVIVES", "BONES", "FILTHY", "HARDTOSHOOT" ]
+  },
+  {
+    "id": "mon_zombie_revenant_allure_idle",
+    "copy-from": "mon_zombie_revenant_allure",
+    "type": "MONSTER",
+    "name": "alluring revenant",
+    "description": "Concealed beneath a thick, eerie fog, a slim humanoid figure stands firm. Mischievous, its claws drip with peculiar black goo.",
+    "default_faction": "zombie"
   }
 ]
