@@ -5,7 +5,6 @@
     "name": "Vessel Recruit",
     "description": "<color_light_red>Equipment on this profession is in WIP state. Use at your own risk!</color>\nYou are a military recruit tasked to perform an alpha field test on the bio-organic power armor - the flesh vessel - installed with necessary bionics. After the Cataclysm struck, your connection to the team were lost.",
     "points": 6,
-    "proficiencies": [ "prof_gunsmithing_basic" ],
     "traits": [ "SECRO_FLESH_VESSEL_1" ],
     "skills": [
       { "level": 2, "name": "gun" },
@@ -14,17 +13,16 @@
       { "level": 1, "name": "stabbing" },
       { "level": 1, "name": "dodge" }
     ],
-    "CBMs": [ "bio_secro_fv", "bio_secro_fv_core", "bio_power_storage_mkII", "bio_power_storage_mkII" ],
+    "CBMs": [ "bio_secro_fv", "bio_secro_fv_core", "bio_ups", "bio_power_storage_mkII", "bio_power_storage_mkII" ],
     "items": {
       "both": {
         "items": [
           "secro_power_armor_flesh",
           "secro_recipe_flesh_field",
-          "backpack_fleshmod"
+          "secro_flesh_backpack"
         ],
         "entries": [
           { "item": "secro_power_armor_flesh_bor", "ammo-item": "secro_flesh", "charges": 100 },
-          { "item": "knife_combat", "container-item": "secro_power_armor_flesh_sheath" },
           { "item": "secro_flesh", "count": 4 },
           { "group": "charged_cell_phone" }
         ]
@@ -44,7 +42,6 @@
     "name": "Vessel Elite",
     "description": "<color_light_red>Equipment on this profession is in WIP state. Use at your own risk!</color>\nYou are one of the finest super soldiers ever trained and specialized to harness the experimental exoskeleton \"flesh vessel\".  Unfortunately, the outbreak has already took place to the point escaping is impossible.  As far as you can tell, military command abandoned you in this hellhole when you missed the emergency evac",
     "points": 12,
-    "proficiencies": [ "prof_gunsmithing_basic", "prof_traps", "prof_disarming" ],
     "traits": [ "SECRO_FLESH_VESSEL_1" ],
     "skills": [
       { "level": 6, "name": "gun" },
@@ -60,19 +57,18 @@
       { "level": 4, "name": "secro_flesh_combat" },
       { "level": 2, "name": "secro_flesh_craft" }
     ],
-    "CBMs": [ "bio_secro_fv", "bio_secro_fv_core", "bio_power_storage_mkII", "bio_power_storage_mkII" ],
+    "CBMs": [ "bio_secro_fv", "bio_secro_fv_core", "bio_ups", "bio_power_storage_mkII", "bio_power_storage_mkII" ],
     "items": {
       "both": {
         "items": [
           "secro_power_armor_flesh",
-          "secro_power_armor_flesh_bag",
-          "secro_power_armor_flesh_harness"
+          "secro_recipe_flesh_field",
+          "secro_flesh_backpack"
         ],
         "entries": [
           { "item": "secro_power_armor_flesh_bor", "ammo-item": "secro_flesh", "charges": 250 },
           { "item": "secro_flesh", "count": 6 },
-          { "group": "charged_cell_phone" },
-          { "item": "kukri", "container-item": "secro_power_armor_flesh_sheath" }
+          { "group": "charged_cell_phone" }
         ]
       }
     },
