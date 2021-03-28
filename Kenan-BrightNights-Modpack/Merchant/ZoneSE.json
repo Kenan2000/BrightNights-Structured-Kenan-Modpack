@@ -31,22 +31,14 @@
         "      bb    bbgggggg    ",
         "                        "
       ],
-            "mapping": {
-                "X": {
-                    "furniture": "f_brazier",
-                    "item": { "item": "2x4", "count": 6 },
-                    "fields": { "field": "fd_fire" }
-                }
-            },
-	  "place_npcs": [
+      "mapping": { "X": { "furniture": "f_brazier", "item": { "item": "2x4", "amount": [ 5, 6 ] }, "fields": { "field": "fd_fire" } } },
+      "place_npcs": [
         { "class": "merchant_guard2", "x": 17, "y": 21 },
         { "class": "merchant_guardH", "x": 14, "y": 19 },
         { "class": "merchant_guardH", "x": 2, "y": 20 },
         { "class": "merchant_guardH", "x": 10, "y": 6 }
-		],
-            "fields" : {
-                "#": { "field": "fd_fire" }
-            },
+      ],
+      "fields": { "#": { "field": "fd_fire" } },
       "terrain": {
         "a": "t_palisade",
         "b": "t_dirt",
