@@ -61,5 +61,19 @@
     "book_learn": [ [ "textbook_fabrication", 1 ] ],
     "tools": [ [ [ "press", -1 ], [ "material_sand", -1 ], [ "clay_lump", -1 ] ], [ [ "surface_heat", 7, "LIST" ] ] ],
     "components": [ [ [ "slime_scrap", 20 ] ], [ [ "alloy_plate", 1 ] ], [ [ "pebble", 135 ] ] ]
+  },
+   {
+    "type": "recipe",
+    "result": "pebble_clay_mk2",
+    "category": "CC_AMMO",
+    "subcategory": "CSC_AMMO_OTHER",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "mechanics", 6 ], [ "fabrication", 7 ] ],
+    "difficulty": 4,
+    "time": "45 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_fabrication", 1 ] ],
+    "tools": [ [ [ "press", -1 ], [ "material_sand", -1 ], [ "crucible_clay", -1 ] ], [ [ "surface_heat", 7, "LIST" ] ] ],
+    "components": [ [ [ "scrap", 3 ] ], [ [ "steel_chunk", 2 ] ], [ [ "pebble_clay", 45 ] ] ]
   }
 ]
