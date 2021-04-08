@@ -384,7 +384,7 @@
     "material_thickness": 1,
     "container_data": { "contains": 1, "seals": true, "watertight": true },
     "use_action": { "target": "sac_purse_arm", "msg": "You take a moment to adjust the strings of your pouch.", "type": "transform" },
-    "flags": [ "BULKY", "FRAGILE" ]
+    "flags": [ "FRAGILE" ]
   },
   {
     "id": "sac_purse_arm",
@@ -408,7 +408,7 @@
     "material_thickness": 1,
     "container_data": { "contains": 1, "seals": true, "watertight": true },
     "use_action": { "target": "sac_purse_leg", "msg": "You take a moment to adjust the strings of your arm-pouch.", "type": "transform" },
-    "flags": [ "BULKY", "FRAGILE" ]
+    "flags": [ "FRAGILE" ]
   },
   {
     "id": "sac_purse_leg",
@@ -437,7 +437,7 @@
       "msg": "You take a moment to adjust the strings of your leg-pouch.",
       "type": "transform"
     },
-    "flags": [ "BULKY", "FRAGILE" ]
+    "flags": [ "FRAGILE" ]
   },
   {
     "id": "sac_purse_ankle",
@@ -461,7 +461,7 @@
     "material_thickness": 1,
     "container_data": { "contains": 1, "seals": true, "watertight": true },
     "use_action": { "target": "sac_purse", "msg": "You take a moment to reset the strings of your pouch.", "type": "transform" },
-    "flags": [ "BULKY", "FRAGILE" ]
+    "flags": [ "FRAGILE" ]
   },
   {
     "id": "sac_purse_clean_water_ankle",
@@ -641,6 +641,6 @@
     "warmth": 25,
     "material_thickness": 3,
     "environmental_protection": 2,
-    "flags": [ "STURDY", "BLOCK_WHILE_WORN", "BULKY", "BELTED" ]
+    "flags": [ "STURDY", "BLOCK_WHILE_WORN", "BELTED" ]
   }
 ]

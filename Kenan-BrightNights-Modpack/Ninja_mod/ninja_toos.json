@@ -16,7 +16,7 @@
     "color": "dark_gray",
     "techniques": [ "PRECISE", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 18 ] ],
-	"looks_like": "katana",
+    "looks_like": "katana",
     "flags": [ "DURABLE_MELEE", "SLICE", "VORPAL", "NON_STUCK", "SHEATH_SWORD" ]
   },
   {
@@ -112,7 +112,7 @@
     "delete": { "flags": [ "FIRE_100" ] }
   },
   {
-   "id": "ninja_scroll_afterimage",
+    "id": "ninja_scroll_afterimage",
     "type": "TOOL",
     "category": "tools",
     "name": "Scroll of afterimage",
@@ -126,8 +126,8 @@
     "color": "dark_gray",
     "ammo": "battery",
     "max_charges": 100,
-	"charges_per_use": 25
- },
+    "charges_per_use": 25
+  },
   {
     "id": "ninja_scroll_typhoon",
     "type": "TOOL",
@@ -209,12 +209,7 @@
     "warmth": 8,
     "material_thickness": 3,
     "environmental_protection": 4,
-    "use_action": {
-      "type": "holster",
-      "max_volume": 2,
-      "draw_cost": 10,
-      "skills": [ "pistol", "rifle", "launcher" ]
-    },
+    "use_action": { "type": "holster", "max_volume": 2, "draw_cost": 10, "skills": [ "pistol", "rifle", "launcher" ] },
     "flags": [ "VARSIZE", "RAINPROOF", "STURDY", "POCKETS", "FANCY" ]
   },
   {
@@ -498,12 +493,7 @@
     "material_thickness": 1,
     "environmental_protection": 0,
     "artifact_data": { "effects_worn": [ "AEP_SPEED_UP", "AEP_SPEED_UP" ] },
-    "use_action": {
-      "target": "ninja_jetpack",
-      "msg": "You stopped the jet pack",
-      "active": false,
-      "type": "transform"
-    },
+    "use_action": { "target": "ninja_jetpack", "msg": "You stopped the jet pack", "active": false, "type": "transform" },
     "flags": [ "STURDY", "RAINPROOF", "BELTED", "FANCY", "TRADER_AVOID" ]
   },
   {
@@ -527,16 +517,9 @@
     "sight_dispersion": 105,
     "recoil": 60,
     "durability": 9,
-    "modes": [
-      [ "AUTO", "8 shots", 8 ],
-      [ "BURST", "9 shots", 9 ],
-      [ "DEFAULT", "3 shots", 3 ]
-    ],
+    "modes": [ [ "AUTO", "8 shots", 8 ], [ "BURST", "9 shots", 9 ], [ "DEFAULT", "3 shots", 3 ] ],
     "magazine_well": 1,
-    "magazines": [
-      [ "9mm", [ "glockbigmag" ] ],
-      [ "9mm", [ "glockmag" ] ]
-    ],
+    "magazines": [ [ "9mm", [ "glockbigmag" ] ], [ "9mm", [ "glockmag" ] ] ],
     "flags": [ "DURABLE_MELEE" ]
   }
 ]
