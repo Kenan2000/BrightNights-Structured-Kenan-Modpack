@@ -3,29 +3,29 @@
     "id": "ninja_katana",
     "type": "TOOL",
     "category": "weapons",
-    "name": "Knight katana",
+    "name": { "str": "Knight katana" },
     "description": "This is a sword that Japanese ninja deal with. It is a straight sword with no warpage, with a length intermediate between the sword and chisel. I could also use it to climb the wall with my legs on the brim.",
-    "weight": 1000,
+    "weight": "1000 g",
     "volume": "1 L",
     "price": "950 USD",
     "to_hit": 2,
     "bashing": 2,
     "cutting": 22,
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": "/",
     "color": "dark_gray",
-    "techniques": [ "PRECISE", "WBLOCK_2" ],
+    "techniques": [ "PRECISE", "WBLOCK_2", "VORPAL" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 18 ] ],
     "looks_like": "katana",
-    "flags": [ "DURABLE_MELEE", "SLICE", "VORPAL", "NON_STUCK", "SHEATH_SWORD" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "ninja_kusari_gama",
     "type": "TOOL",
     "category": "weapons",
-    "name": "Kusari gama",
-    "description": "It is a weapon that connects weights to a mowing scythe with a long chain. It was mainly used as a hidden weapon. By throwing the weight like a sling, you can hit an enemy of a distant intervalã€‚",
-    "weight": 1050,
+    "name": { "str": "Kusari gama" },
+    "description": "It is a weapon that connects weights to a mowing scythe with a long chain. It was mainly used as a hidden weapon. By throwing the weight like a sling, you can hit an enemy of a distant intervalã€",
+    "weight": "1050 g",
     "volume": "1250 ml",
     "price": "500 USD",
     "to_hit": 1,
@@ -34,17 +34,17 @@
     "material": [ "steel", "wood" ],
     "symbol": "&",
     "color": "dark_gray",
-    "techniques": [ "WIDE", "WRAP", "WHIP_DISARM" ],
+    "techniques": [ "WIDE", "WRAP", "WHIP_DISARM", "VORPAL" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 7 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "REACH_ATTACK", "REACH3", "BELT_CLIP" ]
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "REACH3", "BELT_CLIP" ]
   },
   {
     "id": "ninja_nunchuk",
     "type": "TOOL",
     "category": "weapons",
-    "name": "Nunchuku",
+    "name": { "str": "Nunchuku" },
     "description": "It is a weapon originating from Okinawa in Japan. By interwoven fighting by bare hands, we can shoot a variety of blows while dazzling our opponent. You wish you were Bruce Lee.",
-    "weight": 520,
+    "weight": "520 g",
     "volume": "1 L",
     "price": "300 USD",
     "to_hit": 3,
@@ -54,7 +54,7 @@
     "symbol": "v",
     "color": "black",
     "techniques": [ "BRUTAL", "RAPID", "SPIN", "WBLOCK_1" ],
-    "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON", "REACH_ATTACK", "REACH2", "BELT_CLIP" ]
+    "flags": [ "DURABLE_MELEE", "UNARMED_WEAPON", "REACH_ATTACK", "BELT_CLIP" ]
   },
   {
     "id": "ninja_scroll_lightning",
@@ -108,7 +108,8 @@
     "burst": 10,
     "loudness": 150,
     "clip_size": 10,
-    "extend": { "flags": [ "MODE_BURST", "SHOT", "PRIMITIVE_RANGED_WEAPON", "MODE_BURST" ] },
+    "ammo_effects": [ "SHOT" ],
+    "extend": { "flags": [ "MODE_BURST", "PRIMITIVE_RANGED_WEAPON", "MODE_BURST" ] },
     "delete": { "flags": [ "FIRE_100" ] }
   },
   {

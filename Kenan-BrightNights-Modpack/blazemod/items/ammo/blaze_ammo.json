@@ -98,7 +98,7 @@
     "ammo_type": "h_projectile",
     "damage": { "damage_type": "stab", "amount": 14 },
     "effects": [ "MININUKE_MOD", "NEVER_MISFIRES" ],
-    "flags": [ "LEAK_RAD" ]
+    "flags": [ "LEAK_DAM", "RADIOACTIVE" ]
   },
   {
     "id": "harpoon",
@@ -217,7 +217,7 @@
     "ammo_type": "hbolt",
     "damage": { "damage_type": "stab", "amount": 14 },
     "effects": [ "MININUKE_MOD", "NEVER_MISFIRES" ],
-    "flags": [ "LEAK_RAD" ]
+    "flags": [ "LEAK_DAM", "RADIOACTIVE" ]
   },
   {
     "id": "hbolt_wood",

@@ -16,7 +16,7 @@
     "color": "light_gray",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 1 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE" ]
+    "flags": [ "DURABLE_MELEE" ]
   },
   {
     "id": "scythe_war_perfected",
@@ -35,7 +35,7 @@
     "color": "light_gray",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 2 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "TRADER_AVOID" ]
+    "flags": [ "DURABLE_MELEE", "TRADER_AVOID" ]
   }, 
   {
     "id": "scythe_diamond",
@@ -54,7 +54,7 @@
     "color": "light_gray",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 10 ] ],
-    "flags": [ "UNBREAKABLE_MELEE", "SLICE", "TRADER_AVOID", "NO_SALVAGE" ]
+    "flags": [ "UNBREAKABLE_MELEE", "TRADER_AVOID", "NO_SALVAGE" ]
   }, 
   {
     "id": "scythe_fire_off",
@@ -73,7 +73,7 @@
     "color": "light_gray",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -2 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "FIRE" ],
+    "flags": [ "DURABLE_MELEE", "FIRE" ],
     "max_charges": 50,
     "ammo": "gasoline",
     "use_action":[
@@ -104,7 +104,7 @@
     "color": "light_gray",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -2 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING" ],
+    "flags": [ "DURABLE_MELEE", "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING" ],
     "max_charges": 50,
     "turns_per_charge": 30,
     "ammo": "gasoline",
@@ -141,7 +141,7 @@
     "color": "magenta",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 1 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "NO_SALVAGE" ],
+    "flags": [ "DURABLE_MELEE", "NO_SALVAGE" ],
     "artifact_data":
         {
         "effects_wielded": ["AEP_SAP_LIFE", "AEP_SPEED_UP"]
@@ -187,6 +187,6 @@
     "color": "light_gray",
     "techniques": [ "WIDE", "BRUTAL", "WBLOCK_2" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -1 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "BADPOISON" ]
+    "flags": [ "DURABLE_MELEE" ]
   }
 ]

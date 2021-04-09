@@ -284,6 +284,7 @@
     "symbol": ")",
     "color": "light_gray",
     "contains": "10 L",
+    "rigid": true,
     "seals": true,
     "watertight": true,
     "name": "nanotech liquid compressor",
@@ -296,7 +297,7 @@
     "to_hit": 0,
     "material": "nanite",
     "armor_data": { "covers": [ "TORSO" ], "coverage": 10, "encumbrance": 4, "material_thickness": 1 },
-    "flags": [ "RIGID", "SEALS", "WATERTIGHT", "NONCONDUCTIVE", "TRADER_AVOID" ],
+    "flags": [ "NONCONDUCTIVE", "TRADER_AVOID" ],
     "preserves": true,
     "insulation": 50
   }

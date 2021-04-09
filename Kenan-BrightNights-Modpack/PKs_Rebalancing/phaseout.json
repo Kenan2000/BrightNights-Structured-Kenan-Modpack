@@ -22,7 +22,8 @@
     "symbol": "*",
     "color": "light_green",
     "ammo_type": "thrown",
-    "flags": [ "ACT_ON_RANGED_HIT", "RECOVER_9" ],
+    "effects": [ "RECOVER_9" ],
+    "flags": [ "ACT_ON_RANGED_HIT" ],
     "emits": [ "emit_acid_trail_slow" ],
     "countdown_interval": 18,
     "countdown_destroy": true
@@ -54,7 +55,8 @@
     "symbol": "*",
     "color": "i_green",
     "ammo_type": "thrown",
-    "flags": [ "ACT_ON_RANGED_HIT", "RECOVER_9" ],
+    "effects": [ "RECOVER_9" ],
+    "flags": [ "ACT_ON_RANGED_HIT" ],
     "emits": [ "emit_acid_large" ],
     "countdown_interval": 8,
     "countdown_destroy": true

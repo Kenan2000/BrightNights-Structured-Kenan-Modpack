@@ -78,7 +78,7 @@
     "revert_to": null,
     "techniques": [ "WBLOCK_2", "SPIN" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ],
-    "flags": [ "CHOP", "DURABLE_MELEE" ]
+    "flags": [ "DURABLE_MELEE" ]
   },
   {
     "id": "cddaxp_happo",
@@ -337,9 +337,9 @@
     "material": [ "ceramic", "plastic" ],
     "symbol": "/",
     "color": "white",
-    "techniques": [ "RAPID", "PRECISE", "WBLOCK_2" ],
+    "techniques": [ "RAPID", "PRECISE", "WBLOCK_2", "VORPAL" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 16 ] ],
-    "flags": [ "DURABLE_MELEE", "SLICE", "SHEATH_SWORD", "VORPAL" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "cddaxp_cmachete",
@@ -358,7 +358,7 @@
     "color": "white",
     "techniques": "WBLOCK_1",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ],
-    "flags": [ "CHOP", "NON_STUCK", "DURABLE_MELEE", "SHEATH_SWORD" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "cddaxp_cknife",
@@ -396,7 +396,7 @@
     "color": "white",
     "techniques": "WBLOCK_1",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ],
-    "flags": [ "CHOP", "DURABLE_MELEE", "SHEATH_KNIFE" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_KNIFE" ]
   },
   {
     "id": "cddaxp_crapier",
@@ -432,9 +432,9 @@
     "material": [ "ceramic", "plastic" ],
     "symbol": "/",
     "color": "white",
-    "techniques": "WBLOCK_2",
+    "techniques": [ "WBLOCK_2", "VORPAL" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 16 ] ],
-    "flags": [ "CHOP", "DURABLE_MELEE", "SHEATH_SWORD", "VORPAL" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "cddaxp_czweihander",
@@ -451,8 +451,8 @@
     "material": [ "ceramic", "plastic" ],
     "symbol": "/",
     "color": "white",
-    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL" ],
-    "flags": [ "CHOP", "DURABLE_MELEE", "SHEATH_SWORD", "VORPAL" ]
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "VORPAL" ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "cddaxp_cwakizashi",
@@ -471,7 +471,7 @@
     "color": "white",
     "techniques": [ "RAPID", "WBLOCK_1", "PRECISE" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 23 ] ],
-    "flags": [ "SLICE", "DURABLE_MELEE", "SHEATH_SWORD" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "cddaxp_cnodachi",
@@ -488,9 +488,9 @@
     "material": [ "ceramic", "plastic" ],
     "symbol": "/",
     "color": "white",
-    "techniques": [ "RAPID", "WIDE", "BRUTAL" ],
+    "techniques": [ "RAPID", "WIDE", "BRUTAL", "VORPAL" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 10 ] ],
-    "flags": [ "SLICE", "DURABLE_MELEE", "SHEATH_SWORD", "VORPAL" ]
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ]
   },
   {
     "id": "cddaxp_dkusarigama",
@@ -515,7 +515,7 @@
     "revert_to": null,
     "techniques": [ "WBLOCK_2", "SPIN" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ],
-    "flags": [ "CHOP", "DURABLE_MELEE" ]
+    "flags": [ "DURABLE_MELEE" ]
   },
   {
     "id": "cddaxp_ckusarigama",
@@ -540,6 +540,6 @@
     "revert_to": null,
     "techniques": [ "WBLOCK_2", "SPIN" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 20 ] ],
-    "flags": [ "CHOP", "DURABLE_MELEE" ]
+    "flags": [ "DURABLE_MELEE" ]
   }
 ]

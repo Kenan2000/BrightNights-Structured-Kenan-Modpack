@@ -1,31 +1,5 @@
 [
   {
-    "id": "ups_pouch",
-    "type": "ARMOR",
-    "name": { "str": "UPS Pouch", "str_pl": "UPS Pouches" },
-    "description": "A kevlar pouch created specifically to house a UPS. Wiring allows access to the UPS without removal.",
-    "weight": 140,
-    "volume": "250 ml",
-    "price": "25 USD",
-    "encumbrance": 0,
-    "material": "kevlar",
-    "symbol": "[",
-    "color": "dark_gray",
-    "covers": [ ],
-    "coverage": 15,
-    "material_thickness": 2,
-    "use_action": {
-      "type": "holster",
-      "holster_prompt": "Stash UPS",
-      "holster_msg": "You stash your %s.",
-      "max_volume": 10,
-	  "multi": 4,
-      "draw_cost": 40,
-      "flags": [ "UPS_MAG" ]
-    },
-    "flags": [ "WATER_FRIENDLY" ]
-  },
-  {
     "id": "Insulated_2L_Canteen",
     "type": "ARMOR",
     "name": "Insulated 2.5L Canteen",

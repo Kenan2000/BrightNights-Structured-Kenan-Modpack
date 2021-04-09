@@ -7,6 +7,7 @@
     "weight": 377,
     "volume": "500 ml",
     "price": "400 USD",
+    "install_time": "30 m",
     "to_hit": -1,
     "bashing": 0,
     "cutting": 24,
@@ -16,7 +17,7 @@
     "location": "underbarrel",
     "mod_targets": [ "shotgun", "smg", "rifle", "crossbow", "launcher" ],
     "dispersion_modifier": 10,
-    "flags": [ "NON_STUCK", "SPEAR", "BAYONET" ]
+    "flags": [ "SPEAR" ]
   },
   {
     "id": "cddaxp_cswordbayonet",
@@ -26,6 +27,7 @@
     "weight": 364,
     "volume": "750 ml",
     "price": "500 USD",
+    "install_time": "30 m",
     "bashing": 0,
     "cutting": 30,
     "material": [ "ceramic", "plastic" ],
@@ -33,8 +35,7 @@
     "color": "white",
     "location": "underbarrel",
     "mod_targets": [ "shotgun", "rifle", "crossbow", "launcher" ],
-    "dispersion_modifier": 20,
-    "flags": [ "NON_STUCK", "CHOP", "BAYONET" ]
+    "dispersion_modifier": 20
   },
   {
     "id": "cddaxp_cpistolbayonet",
@@ -44,6 +45,7 @@
     "weight": 360,
     "volume": "250 ml",
     "price": "400 USD",
+    "install_time": "30 m",
     "to_hit": -4,
     "bashing": 0,
     "cutting": 24,
@@ -53,6 +55,6 @@
     "location": "underbarrel",
     "mod_targets": [ "pistol", "smg", "crossbow" ],
     "dispersion_modifier": 15,
-    "flags": [ "STAB", "BAYONET" ]
+    "flags": [ "STAB" ]
   }
 ]

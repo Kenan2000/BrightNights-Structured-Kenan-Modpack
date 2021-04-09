@@ -80,21 +80,6 @@
     }
   },
   {
-  "//" : "UPS change for UPS Pouch",
-    "copy-from": "UPS_off",
-    "id": "UPS_off",
-    "type": "TOOL",
-    "name": { "str": "UPS", "str_pl": "UPS's" },
-    "extend": { "flags": [ "UPS_MAG" ] }
-  },
-  {
-    "copy-from": "adv_UPS_off",
-    "id": "adv_UPS_off",
-    "type": "TOOL",
-    "name": { "str": "advanced UPS", "str_pl": "advanced UPS's" },
-    "extend": { "flags": [ "UPS_MAG" ] }
-  },
-  {
 	"id": "holo_cloak",
 	"type": "TOOL_ARMOR",
 	"name": "hologram cloak",
