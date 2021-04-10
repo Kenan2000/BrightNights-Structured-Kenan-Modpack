@@ -782,5 +782,18 @@
     "using": [ [ "serum_production_standard", 37 ] ],
     "components": [ [ [ "mutagen_cattle", 2 ] ] ],
     "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "mutagen_maid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "difficulty": 9,
+    "time": "1 h",
+    "book_learn": [ [ "recipe_serum", 6 ] ],
+    "reversible": false,
+    "autolearn": true,
+    "components": [ [ [ "maid_point", 1000 ] ] ]
   }
 ]
