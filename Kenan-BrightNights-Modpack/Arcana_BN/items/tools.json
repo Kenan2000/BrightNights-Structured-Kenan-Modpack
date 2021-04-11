@@ -101,11 +101,11 @@
     "flags": [ "MAGIC_FOCUS" ],
     "artifact_data": { "charge_type": "ARTC_TIME" },
     "use_action": {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_charm_bone_empowered",
-        "no_fail": true,
-        "need_wielding": true,
-        "level": 0
+      "type": "cast_spell",
+      "spell_id": "arcana_item_charm_bone_empowered",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
     }
   },
   {
@@ -120,11 +120,11 @@
     "flags": [ "MAGIC_FOCUS" ],
     "artifact_data": { "charge_type": "ARTC_TIME" },
     "use_action": {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_stinger_flute_empowered",
-        "no_fail": true,
-        "need_wielding": true,
-        "level": 0
+      "type": "cast_spell",
+      "spell_id": "arcana_item_stinger_flute_empowered",
+      "no_fail": true,
+      "need_wielding": true,
+      "level": 0
     }
   },
   {
@@ -1462,11 +1462,7 @@
         "type": "sew_advanced",
         "materials": [ "bone", "chitin", "acidchitin", "clay", "cotton", "fur", "leather", "gutskin", "stone", "wood", "wool" ],
         "skill": "magic",
-        "clothing_mods": [
-          "arcana_birchbark_weave",
-          "arcana_tanbark_weave",
-          "arcana_willowbark_weave"
-        ]
+        "clothing_mods": [ "arcana_birchbark_weave", "arcana_tanbark_weave", "arcana_willowbark_weave" ]
       }
     ],
     "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ]
@@ -1546,6 +1542,29 @@
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_spatial_displacement", "no_fail": true, "level": 0 } ]
   },
   {
+    "id": "bot_mech_arcana",
+    "type": "TOOL",
+    "name": { "str": "inactive anomaly recon mech" },
+    "description": "A hulking mass of parts running off anomalous technology, with an exotic laser weapon and advanced defensive tools.  With a completely bespoke power cell fueled by magical essence installed, use it to deploy and set up the mech for use, consuming a random amount of charges from its power cell to restore it to life.",
+    "volume": "500 L",
+    "weight": "750 kg",
+    "price_postapoc": "75 USD",
+    "to_hit": -3,
+    "bashing": 8,
+    "material": [ "steel" ],
+    "symbol": ",",
+    "color": "cyan",
+    "flags": [ "ALLOWS_REMOTE_USE" ],
+    "looks_like": "broken_mech_recon",
+    "use_action": {
+      "type": "place_monster",
+      "monster_id": "mon_mech_arcana",
+      "is_pet": true,
+      "friendly_msg": "You set up the mech and start powering it up, a surge of essence bringing flickering energy fields to life and animating spindly limbs.",
+      "moves": 1000
+    }
+  },
+  {
     "id": "verge_meteoric",
     "type": "TOOL",
     "category": "weapons",
@@ -1611,13 +1630,7 @@
     "ammo": "essence_blood_type",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
     "relic_data": {
-      "passive_effects": [
-        {
-          "has": "WIELD",
-          "condition": "ACTIVE",
-          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ]
-        }
-      ]
+      "passive_effects": [ { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ] } ]
     },
     "use_action": [
       {
@@ -1736,14 +1749,7 @@
       ]
     },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [
-      "UNBREAKABLE_MELEE",
-      "NO_SALVAGE",
-      "MAGIC_FOCUS",
-      "NONCONDUCTIVE",
-      "NO_UNLOAD",
-      "SHEATH_SWORD"
-    ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "NO_UNLOAD", "SHEATH_SWORD" ]
   },
   {
     "id": "draconic_heart_mutator",
