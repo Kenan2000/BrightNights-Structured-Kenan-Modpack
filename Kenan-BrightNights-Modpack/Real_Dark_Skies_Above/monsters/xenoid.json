@@ -113,7 +113,7 @@
     "species": [ "ALIEN", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "hp": 120,
+    "hp": 110,
     "speed": 110,
     "material": [ "flesh" ],
     "symbol": "@",
@@ -133,7 +133,7 @@
     "harvest": "dkz_mhuman_chipped",
     "special_attacks": [
       [ "PARROT", 5 ],
-      { "id": "tool_slash" },
+      { "id": "knife_slash" },
       {
         "type": "spell",
         "spell_data": { "id": "dkz_monspell_panic" },
@@ -207,7 +207,7 @@
     "harvest": "dkz_mhuman_chipped",
     "special_attacks": [
       [ "PARROT", 5 ],
-      { "id": "tool_slash" },
+      { "id": "knife_slash" },
       {
         "type": "spell",
         "spell_data": { "id": "dkz_monspell_stun" },
@@ -261,7 +261,7 @@
     "species": [ "ALIEN", "HUMAN" ],
     "volume": "62500 ml",
     "weight": "81500 g",
-    "hp": 120,
+    "hp": 110,
     "speed": 110,
     "material": [ "flesh" ],
     "symbol": "@",
@@ -401,6 +401,78 @@
     ]
   },
   {
+    "id": "dkz_xenoid_fumigator",
+    "type": "MONSTER",
+    "name": { "str": "xenoid fumigator" },
+    "description": "A human-sized soldier dressed in light armor, an evil-looking mask, and long gun with a strange nozzle on the end.  Light blue fumes drip from the nozzle and quickly dissipate.  Its haunting gaze makes your eyes ache.",
+    "default_faction": "xenoid",
+    "bodytype": "human",
+    "categories": [ "ALIEN" ],
+    "species": [ "ALIEN", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 100,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "blue",
+    "aggression": 10,
+    "morale": 90,
+    "melee_skill": 5,
+    "melee_dice": 1,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "dodge": 6,
+    "vision_day": 30,
+    "vision_night": 7,
+    "armor_bash": 5,
+    "armor_stab": 7,
+    "armor_cut": 5,
+    "harvest": "dkz_mhuman_chipped",
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "dkz_monspell_halluc" },
+        "cooldown": 13,
+        "monster_message": "<color_pink>%1$s gesticulates at %3$s and a pulse of mind-bending psionic energy ripples through the air!</color>"
+      },
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 500,
+        "gun_type": "dkz_mon_gasgun",
+        "ranges": [ [ 0, 15, "DEFAULT" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": false,
+        "targeting_cost": 300,
+        "description": "<color_light_green>The %1$s fires a stream of flowery, sweet-smelling gas!</color>"
+      }
+    ],
+    "death_drops": "dkz_xenoid_fumigator",
+    "path_settings": { "max_dist": 5 },
+    "death_function": [ "NORMAL" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "GOODHEARING",
+      "NO_BREATHE",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "GROUP_BASH",
+      "FIREPROOF",
+      "HUMAN",
+      "PATH_AVOID_DANGER_2",
+      "PRIORITIZE_TARGETS",
+      "CLIMBS",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
     "id": "dkz_xenoid_pyro",
     "type": "MONSTER",
     "name": { "str": "xenoid incinerator" },
@@ -432,14 +504,14 @@
     "special_attacks": [
       [ "PARROT", 5 ],
       { "id": "heavyslash" },
-      { "id": "tool_slash" },
+      { "id": "knife_slash" },
       {
         "type": "gun",
         "cooldown": 60,
         "move_cost": 500,
         "gun_type": "dkz_mon_flamesword",
-        "fake_skills": [ [ "gun", 5 ], [ "pistol", 5 ] ],
-        "fake_dex": 9,
+        "fake_skills": [ [ "gun", 4 ], [ "pistol", 4 ] ],
+        "fake_dex": 8,
         "ranges": [ [ 3, 11, "DEFAULT" ] ],
         "require_targeting_npc": false,
         "require_targeting_monster": false,
@@ -506,7 +578,7 @@
       [ "PARROT", 20 ],
       { "id": "knockdown" },
       { "id": "shieldbash" },
-      { "id": "tool_slash" },
+      { "id": "knife_slash" },
       { "id": "heavyslash" },
       {
         "type": "spell",
@@ -580,7 +652,7 @@
       [ "PARROT", 20 ],
       { "id": "knockdown" },
       { "id": "shieldbash" },
-      { "id": "tool_slash" },
+      { "id": "knife_slash" },
       { "id": "heavyslash" },
       {
         "type": "spell",
@@ -672,7 +744,7 @@
         "targeting_cost": 500,
         "targeting_sound": "the sound of pressurized gas hissing loudly.",
         "targeting_volume": 50,
-        "description": "<color_light_green>The emissary emits a stream of sedative gas!</color>"
+        "description": "<color_light_green>The emissary emits a stream of flowery, sweet-smelling gas!</color>"
       }
     ],
     "death_function": [ "BROKEN" ],
@@ -977,8 +1049,8 @@
     "melee_skill": 4,
     "melee_dice": 4,
     "melee_dice_sides": 6,
-    "armor_bash": 4,
-    "armor_cut": 2,
+    "armor_bash": 10,
+    "armor_cut": 8,
     "vision_night": 15,
     "harvest": "mutant_meatslug",
     "special_attacks": [
