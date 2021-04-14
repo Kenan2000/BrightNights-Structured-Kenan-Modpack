@@ -4,7 +4,7 @@
     "type": "bionic",
     "name": { "str": "Bio-organic Exoskeleton Interface" },
     "description": "The command center of your flesh vessel. This allows one to activate its suit to morph their gear limited to their knowledge.",
-    "occupied_bodyparts": [ [ "TORSO", 2 ], [ "HEAD", 3 ] ],
+    "occupied_bodyparts": [ [ "torso", 2 ], [ "head", 3 ] ],
     "included_bionics": [ "bio_secro_fv_link", "bio_secro_fv_morph_blades", "bio_secro_fv_morph_tentacles", "bio_secro_fv_morph_fleshpound", "bio_secro_fv_morph_jawarms", "bio_secro_fv_morph_shield", "bio_secro_fv_morph_spit", "bio_secro_fv_morph_bonelance" ],
     "installation_requirement": "req_bio_secro_fv"
   },
@@ -21,7 +21,7 @@
     "type": "bionic",
     "name": { "str": "Artificial Flesh Core" },
     "description": "A prototype version of the flesh has been infused on your chest with its veins creeping towards every parts of your body. It allows one to consume specialized, artificial flesh and convert it into bionic power. The process is slow, but highly renewable.",
-    "occupied_bodyparts": [ [ "TORSO", 10 ] ],
+    "occupied_bodyparts": [ [ "torso", 10 ] ],
     "fuel_options": [ "secro_flesh_fuel" ],
     "fuel_capacity": 250,
     "fuel_efficiency": 1,
