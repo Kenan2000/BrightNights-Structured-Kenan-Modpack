@@ -27,7 +27,7 @@
     "description": "A PRM brand medikit.  Can be quickly applied in battlefield situations; though it is designed to quickly attach itself to damaged tissue, not disinfect.",
     "weight": "400 g",
     "volume": "500 ml",
-    "price": 50000,
+    "price": "500 USD",
     "material": [ "spess_plastic" ],
     "symbol": "+",
     "color": "red",
@@ -44,7 +44,7 @@
       "bite": 0.99,
       "effects": [ { "id": "doom_unhealth", "duration": 10 }, { "id": "pkill1", "duration": 300 }, { "id": "gauze", "duration": 17200 } ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "berserker_drug",
@@ -53,7 +53,7 @@
     "description": "An iv drip in a protective case.  PRM patented stimulants will push the body to its limits for a brief period, making intense combat easier.",
     "weight": "360 g",
     "volume": "500 ml",
-    "price": 1000000,
+    "price": "10000 USD",
     "to_hit": -1,
     "material": [ "plastic" ],
     "symbol": "|",
@@ -70,7 +70,7 @@
       "moves": 250,
       "type": "transform"
     },
-    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS", "NO_RELOAD", "NO_UNLOAD", "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS", "NO_RELOAD", "NO_UNLOAD", "NPC_SAFE" ]
   },
   {
     "id": "berserker_drug_act",
@@ -79,7 +79,7 @@
     "description": "An iv drip in a protective case.  Inside, PRM brand chemicals are surging through the needle, providing incredible strength and agility to its user.",
     "weight": "360 g",
     "volume": "500 ml",
-    "price": 1000000,
+    "price": "10000 USD",
     "to_hit": -1,
     "material": [ "plastic" ],
     "symbol": "|",
@@ -93,7 +93,7 @@
     "encumbrance": 1,
     "material_thickness": 0,
     "use_action": { "type": "consume_drug", "effects": [ { "id": "doom_stimpack", "duration": 40 } ] },
-    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS", "NO_RELOAD", "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "WATER_FRIENDLY", "BELTED", "ALLOWS_NATURAL_ATTACKS", "NO_RELOAD", "NPC_SAFE" ]
   },
   {
     "id": "stamina_vial",
@@ -102,7 +102,7 @@
     "description": "Containing a slew of charged organic chemicals, this 3-layer slurry might go down hard but provides a noticeable endurance boost for hardcore athletes and demanding soldiers alike.  Like most PRM products it is designed for short-term use only, and may upset the body's balance.",
     "weight": "720 g",
     "volume": "750 ml",
-    "price": 100000,
+    "price": "1000 USD",
     "to_hit": -1,
     "phase": "liquid",
     "container": "bottle_glass",
@@ -117,7 +117,7 @@
       "type": "consume_drug",
       "effects": [ { "id": "doom_unhealth", "duration": 3 }, { "id": "stamina_regen", "duration": 150 } ]
     },
-    "flags": [ "NO_RELOAD", "NO_UNLOAD", "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "NPC_SAFE" ]
   },
   {
     "id": "homebrew_antiseptic",
@@ -141,7 +141,7 @@
       "long_action": true,
       "effects": [ { "id": "stung", "duration": 12 } ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "antidote_posion",
@@ -150,7 +150,7 @@
     "description": "A handmade brew to ward off basic poisons.  Works on a wide variety of known poisons, but may not be up to the task of the nastier venoms.  Cures and blocks biological poisons.",
     "weight": "175 g",
     "volume": "250 ml",
-    "price": 35000,
+    "price": "350 USD",
     "phase": "liquid",
     "container": "flask_glass",
     "material": [ "powder" ],
@@ -162,7 +162,7 @@
       "tools_needed": { "syringe": 1 },
       "effects": [ { "id": "triffid_cure", "duration": 1 }, { "id": "doom_unhealth", "duration": 5 } ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "antidote_badpoison",
@@ -171,7 +171,7 @@
     "description": "A concentrated medical brew to neutralize most known toxins and flush them out of the system.  Unlike royal jelly, it blocks future attacks for a time.",
     "weight": "175 g",
     "volume": "250 ml",
-    "price": 35000,
+    "price": "350 USD",
     "phase": "liquid",
     "container": "flask_glass",
     "material": [ "powder" ],
@@ -183,7 +183,7 @@
       "tools_needed": { "syringe": 1 },
       "effects": [ { "id": "triffid_neutralization", "duration": 1 } ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "type": "COMESTIBLE",
@@ -204,7 +204,7 @@
       "effects": [ { "id": "rad_reduce", "duration": 360 } ],
       "vitamins": [ [ "calcium", 0, 4 ], [ "iron", 0, 8 ] ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "type": "COMESTIBLE",
@@ -225,7 +225,7 @@
       "effects": [ { "id": "rad_reduce", "duration": 360 }, { "id": "rad_reduce", "duration": 120 } ],
       "vitamins": [ [ "iron", 0, 4 ] ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "vitamins",
@@ -238,7 +238,7 @@
       "effects": [ { "id": "chelated_iron", "duration": 400 }, { "id": "rad_reduce", "duration": 400 } ],
       "vitamins": [ [ "calcium", 16, 32 ], [ "iron", 16, 32 ], [ "vitA", 16, 32 ], [ "vitB", 16, 32 ], [ "vitC", 16, 32 ] ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "gummy_vitamins",
@@ -257,7 +257,7 @@
       "effects": [ { "id": "chelated_iron", "duration": 600 }, { "id": "rad_reduce", "duration": 600 } ],
       "vitamins": [ [ "calcium", 25, 50 ], [ "iron", 25, 50 ], [ "vitA", 25, 50 ], [ "vitB", 25, 50 ], [ "vitC", 25, 50 ] ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "prussian_blue",
@@ -267,11 +267,11 @@
     "description": "Tablets containing oxidized ferrous ferrocyanide salts.  Capable of purging nuclear contaminants from the body if taken after radiation exposure.  Results take hours to manifest, lasts all day, and can be amplified by taking multiple doses.",
     "weight": "1 g",
     "volume": "250 ml",
-    "price": 3000,
+    "price": "30 USD",
     "charges": 10,
     "stack_size": 200,
     "material": [ "powder" ],
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ],
+    "flags": [ "NPC_SAFE" ],
     "symbol": "!",
     "color": "blue",
     "use_action": {
@@ -294,7 +294,7 @@
     "charges": 16,
     "stack_size": 16,
     "description": "Agricultural grade, ionically-treated fertilizer for cleansing minerals from aquariums.  Could remove radiation from the body in a pinch.",
-    "price": 1500,
+    "price": "15 USD",
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You consume a helping of the %s.",
@@ -307,7 +307,7 @@
       ],
       "vitamins": [ [ "iron", 30, 60 ] ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "type": "AMMO",
@@ -325,7 +325,7 @@
     "copy-from": "flu_shot",
     "description": "Pharmaceutical flu shot designed for mass vaccinations, still in the packaging.  Purported to provide immunity to influenza.  Most work by infecting you with a weakened or inert strain or proteins of the virus to allow your natural immune response to develop.",
     "healthy": 3,
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   },
   {
     "id": "dr_stem_cell",
@@ -334,7 +334,7 @@
     "description": "A heavily regulated dose of stem cells.  Though availible for sporting and industrial accidents, the majority of treatments are reserved for those who can afford its hefty cost.  Users may experience crippling pain.  Not all users may experience the same level of results.  Use as directed.  Consult your doctor if you have artifical limbs, plan to live past the age of 30, or are already over the age of 30.",
     "weight": "175 g",
     "volume": "250 ml",
-    "price": 777000,
+    "price": "7770 USD",
     "phase": "liquid",
     "container": "flask_glass",
     "material": [ "powder" ],
@@ -346,6 +346,6 @@
       "tools_needed": { "syringe": 1 },
       "effects": [ { "id": "stemcell_treatment", "duration": 30 }, { "id": "slashed", "duration": 30 } ]
     },
-    "flags": [ "USE_ON_NPC", "NPC_SAFE" ]
+    "flags": [ "NPC_SAFE" ]
   }
 ]

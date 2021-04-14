@@ -1,0 +1,213 @@
+[
+  {
+    "id": "Set_up_Atm",
+    "type": "construction",
+    "description": "Set up ATM",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 150,
+    "tools": [ [ [ "oxy_torch", 100 ], [ "welder", 100 ], [ "welder_crude", 100 ], [ "toolset", 100 ] ] ],
+    "qualities": [ [ { "id": "SCREW", "level": 1 } ], [ { "id": "WRENCH", "level": 1 } ] ],
+    "components": [ [ [ "aaf_atm_module", 1 ] ] ],
+    "post_terrain": "t_atm"
+  },
+  {
+    "id": "install_Recycling_Machine",
+    "type": "construction",
+    "description": "Install Recycling Machine",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 150,
+    "tools": [ [ [ "oxy_torch", 100 ], [ "welder", 100 ], [ "welder_crude", 100 ], [ "toolset", 100 ] ] ],
+    "qualities": [ [ { "id": "SCREW", "level": 1 } ], [ { "id": "WRENCH", "level": 1 } ] ],
+    "components": [ [ [ "aaf_recycler", 1 ] ] ],
+    "post_terrain": "t_recycler"
+  },
+  {
+    "id": "Make_an_oven",
+    "type": "construction",
+    "description": "Make an oven",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 100,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "SCREW", "level": 1 } ] ],
+    "components": [
+      [ [ "sheet_metal", 2 ] ],
+      [ [ "scrap", 6 ], [ "steel_chunk", 3 ] ],
+      [ [ "nail", 8 ] ],
+      [ [ "element", 4 ] ],
+      [ [ "pilot_light", 1 ] ]
+    ],
+    "post_terrain": "f_oven"
+  },
+  {
+    "id": "Make_a_Shutter_and_Hoisting_Machine",
+    "type": "construction",
+    "description": "Make a shutter and hoisting machine",
+    "category": "FURN",
+    "difficulty": 7,
+    "time": 300,
+    "tools": [ [ [ "oxy_torch", 150 ], [ "welder", 150 ], [ "welder_crude", 150 ], [ "toolset", 150 ] ] ],
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "SCREW", "level": 1 } ], [ { "id": "WRENCH", "level": 1 } ] ],
+    "components": [
+      [ [ "pipe", 8 ] ],
+      [ [ "sheet_metal", 16 ], [ "steel_plate", 8 ] ],
+      [ [ "scrap", 8 ] ],
+      [ [ "foot_crank", 1 ] ],
+      [ [ "chain", 2 ] ]
+    ],
+    "post_terrain": "t_gates_mech_control"
+  },
+  {
+    "id": "Bury_Corpses",
+    "type": "construction",
+    "description": "Bury corpses",
+    "category": "FURN",
+    "difficulty": 2,
+    "time": 60,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "DIG", "level": 1 } ] ],
+    "components": [ [ [ "rock", 5 ] ], [ [ "corpse", 1 ], [ "bone_human", 1 ], [ "bone_tainted", 1 ], [ "bone", 1 ] ] ],
+    "post_terrain": "f_grave_head"
+  },
+  {
+    "id": "Erect_Gravestone",
+    "type": "construction",
+    "description": "Erect gravestone",
+    "category": "FURN",
+    "difficulty": 3,
+    "time": 100,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components": [ [ [ "rock", 5 ] ] ],
+    "post_terrain": "f_grave_stone"
+  },
+  {
+    "id": "gate_mech_control",
+    "type": "gate",
+    "handle": "t_gates_mech_control",
+    "other_handles": [ "t_gates_control_concrete", "t_gates_control_brick" ],
+    "door": "t_door_metal_locked",
+    "floor": "t_floor",
+    "walls": [
+      "t_wall",
+      "t_wall_r",
+      "t_wall_w",
+      "t_wall_b",
+      "t_wall_g",
+      "t_wall_y",
+      "t_wall_p",
+      "t_concrete_wall",
+      "t_brick_wall",
+      "t_wall_metal"
+    ],
+    "messages": {
+      "pull": "You turn the handle...",
+      "open": "The gate is opened!",
+      "close": "The gate is closed!",
+      "fail": "The gate can't be closed!"
+    },
+    "moves": 1800,
+    "bashing_damage": 40
+  },
+  {
+    "type": "terrain",
+    "id": "gate_mech_control",
+    "name": "mechanical winch",
+    "description": "This is a gate control winch.  If it's functioning, it can be used to open or close a nearby gate or door.",
+    "symbol": "6",
+    "color": "cyan_red",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "INDOORS", "PERMEABLE", "THIN_OBSTACLE" ],
+    "examine_action": "controls_gate",
+    "bash": {
+      "str_min": 18,
+      "str_max": 80,
+      "sound": "metal screeching!",
+      "sound_fail": "clang!",
+      "ter_set": "t_floor",
+      "items": [ { "item": "steel_chunk", "count": [ 1, 4 ] }, { "item": "scrap", "count": [ 3, 6 ] } ]
+    }
+  },
+  {
+    "id": "aaf_atm_module",
+    "type": "TOOL",
+    "symbol": "&",
+    "color": "light_gray",
+    "name": "Home ATM",
+    "description": "A carefully reconstructed ATM. Though it's successfully jury-rigged to access the main bank database, it's not advanced enough to steal or counterfeit funds, so only standard withdraw/deposit operations are allowed. Must be placed to use.",
+    "price": "500 USD",
+    "material": [ "steel", "plastic" ],
+    "weight": 15000,
+    "volume": 20,
+    "bashing": 10,
+    "category": "tools"
+  },
+  {
+    "id": "Atm_module",
+    "type": "recipe",
+    "result": "aaf_atm_module",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_COMPONENTS",
+    "skill_used": "electronics",
+    "skills_required": [ "computer", 6 ],
+    "difficulty": 5,
+    "time": 72000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 }, { "id": "SCREW_FINE", "level": 1, "amount": 1 } ],
+    "tools": [ [ [ "electrohack", 100 ] ], [ [ "soldering_iron", 100 ], [ "toolset", 100 ] ] ],
+    "components": [
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "cable", 10 ] ],
+      [ [ "small_lcd_screen", 1 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "circuit", 2 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "amplifier", 2 ] ],
+      [ [ "plastic_chunk", 10 ] ],
+      [ [ "scrap", 10 ] ],
+      [ [ "solar_cell", 1 ] ]
+    ]
+  },
+  {
+    "id": "aaf_recycler",
+    "type": "TOOL",
+    "symbol": "&",
+    "color": "green",
+    "name": "Home Recycler",
+    "description": "A refabricated industrial-grade crusher/shredder capable of recycling almost any pure-metal items. Must be placed to use.",
+    "price": "750 USD",
+    "material": [ "steel", "plastic" ],
+    "weight": 40000,
+    "volume": 50,
+    "bashing": 10,
+    "category": "tools"
+  },
+  {
+    "id": "Recycler_module",
+    "type": "recipe",
+    "result": "aaf_recycler",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "mechanics",
+    "skills_required": [ "electronics", 4 ],
+    "difficulty": 7,
+    "time": 72000,
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 3, "amount": 1 }, { "id": "SCREW_FINE", "level": 1, "amount": 1 } ],
+    "tools": [ [ [ "oxy_torch", 12 ], [ "welder", 60 ], [ "welder_crude", 90 ], [ "toolset", 100 ] ] ],
+    "components": [
+      [ [ "cable", 10 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "motor_enhanced", 1 ], [ "motor_large", 2 ], [ "motor", 4 ] ],
+      [ [ "plastic_chunk", 10 ] ],
+      [ [ "scrap", 20 ] ],
+      [ [ "sheet_metal", 10 ], [ "steel_plate", 5 ] ],
+      [ [ "hdframe", 4 ] ],
+      [ [ "circsaw_blade", 2 ], [ "blade_trap", 1 ] ],
+      [ [ "jack", 1 ] ]
+    ]
+  }
+]

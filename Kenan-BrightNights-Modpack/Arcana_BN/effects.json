@@ -26,8 +26,8 @@
   {
     "type": "effect_type",
     "id": "temporal_stimulation_effect",
-    "//": "This adds the stamina and fatigue effects to TS.",
-    "base_mods": { "stamina_min": [ 10 ], "fatigue_min": [ 1 ], "fatigue_tick": [ 300 ] }
+    "//": "This adds the stamina and fatigue effects to TS.  And the speed boost, because speed enchantments can't be trusted to work.",
+    "base_mods": { "speed_mod": [ 100 ], "stamina_min": [ 20 ], "fatigue_min": [ 1 ], "fatigue_tick": [ 300 ] }
   },
   {
     "type": "effect_type",
@@ -330,11 +330,14 @@
     "type": "effect_type",
     "id": "poison_ward",
     "name": [ "Ward Against Poison" ],
-    "desc": [ "Protection against toxic gas and venom." ],
+    "desc": [
+      "Protection against toxic gas and venom, suppresses the effect of radiation sickness while reducing accumulated radiation steadily."
+    ],
     "remove_message": "You feel a momentary weakness as the protective magic fades.",
-    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas", "migo_atmosphere" ],
+    "removes_effects": [ "stung", "poison", "badpoison", "paralyzepoison", "teargas", "migo_atmosphere", "irradiated" ],
     "max_duration": 1000,
-    "int_dur_factor": "1 m"
+    "int_dur_factor": "1 m",
+    "base_mods": { "rad_min": [ -1 ] }
   },
   {
     "type": "effect_type",
@@ -955,6 +958,33 @@
     "id": "arcana_clairvoyance_hidden",
     "//": "This version is used by the orb of the veil.",
     "flags": [ "EFFECT_CLAIRVOYANCE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_mech_laser_immunities",
+    "name": [ "Environmental Shielding" ],
+    "desc": [
+      "A barrier projected by your mech is currently providing resistance to acid and fire, plus immunity to toxic gas.  Also shields you from being blinded, and negates falling damage."
+    ],
+    "//": "Protects against blindness since flares can dazzle targets, feather fall effect since mech is supposed to be able to fly.  Some effects of Free Action, Clarity of Blood, Ward Against Poison, Ward Against Fire, and Ward Against Acid.",
+    "blocks_effects": [
+      "blind",
+      "downed",
+      "slimed",
+      "sap",
+      "relax_gas",
+      "grabbed",
+      "onfire",
+      "smoke",
+      "corroding",
+      "spores",
+      "stung",
+      "poison",
+      "badpoison",
+      "teargas",
+      "migo_atmosphere"
+    ],
+    "flags": [ "EFFECT_FEATHER_FALL", "EFFECT_COLD_IMMUNE" ]
   },
   {
     "type": "effect_type",

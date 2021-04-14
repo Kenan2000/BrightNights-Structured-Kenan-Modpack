@@ -5,17 +5,20 @@
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "fabrication",
-    "difficulty": 6,
-    "skills_required": [ "mechanics", 3 ],
-    "time": 180000,
+    "difficulty": 8,
+    "skills_required": [ [ "mechanics", 5 ], [ "electronics", 8 ] ],
+    "time": "24 h",
     "autolearn": true,
-    "using": [ [ "welding_standard", 30 ] ],
+    "using": [ [ "welding_standard", 10 ], [ "soldering_standard", 15 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
-      [ [ "pipe", 24 ], [ "rebar", 12 ] ],
+      [ [ "pipe", 4 ], [ "rebar", 2 ] ],
       [ [ "steel_chunk", 18 ], [ "steel_lump", 6 ] ],
-      [ [ "spring", 6 ] ],
-      [ [ "solar_panel", 12 ] ]
+      [ [ "spring", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "self_monitoring_module", 1 ] ],
+      [ [ "solar_panel", 7 ] ]
     ]
   },
   {
@@ -24,17 +27,20 @@
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "fabrication",
-    "difficulty": 6,
-    "skills_required": [ "mechanics", 3 ],
-    "time": 180000,
+    "difficulty": 8,
+    "skills_required": [ [ "mechanics", 5 ], [ "electronics", 8 ] ],
+    "time": "24 h",
     "autolearn": true,
-    "using": [ [ "welding_standard", 30 ] ],
+    "using": [ [ "welding_standard", 10 ], [ "soldering_standard", 15 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
-      [ [ "pipe", 24 ], [ "rebar", 12 ] ],
+      [ [ "pipe", 4 ], [ "rebar", 2 ] ],
       [ [ "steel_chunk", 18 ], [ "steel_lump", 6 ] ],
-      [ [ "spring", 6 ] ],
-      [ [ "solar_panel_v2", 12 ] ]
+      [ [ "spring", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "self_monitoring_module", 1 ] ],
+      [ [ "solar_panel_v2", 7 ] ]
     ]
   },
   {
@@ -43,17 +49,20 @@
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "fabrication",
-    "difficulty": 6,
-    "skills_required": [ "mechanics", 3 ],
-    "time": 180000,
+    "difficulty": 8,
+    "skills_required": [ [ "mechanics", 5 ], [ "electronics", 8 ] ],
+    "time": "24 h",
     "autolearn": true,
-    "using": [ [ "welding_standard", 30 ] ],
+    "using": [ [ "welding_standard", 10 ], [ "soldering_standard", 15 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
     "components": [
-      [ [ "pipe", 24 ], [ "rebar", 12 ] ],
+      [ [ "pipe", 4 ], [ "rebar", 2 ] ],
       [ [ "steel_chunk", 18 ], [ "steel_lump", 6 ] ],
-      [ [ "spring", 6 ] ],
-      [ [ "reinforced_solar_panel_v2", 12 ] ]
+      [ [ "spring", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "self_monitoring_module", 1 ] ],
+      [ [ "reinforced_solar_panel_v2", 7 ] ]
     ]
   },
   {

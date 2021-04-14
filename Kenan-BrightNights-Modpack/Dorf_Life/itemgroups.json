@@ -5,13 +5,13 @@
     "id": "caveyot_miners",
     "entries": [
       { "item": "corpse", "damage": 3 },
-      { "group": "clothing_work_set", "damage-min": 1, "damage-max": 4 },
+      { "group": "clothing_work_set", "damage": [ 1, 4 ] },
       {
         "distribution": [
-          { "item": "backpack", "damage-min": 1, "damage-max": 4, "prob": 40 },
-          { "item": "slingpack", "damage-min": 1, "damage-max": 4, "prob": 15 },
-          { "item": "briefcase", "damage-min": 1, "damage-max": 4, "prob": 5 },
-          { "item": "backpack_leather", "damage-min": 1, "damage-max": 4, "prob": 20 }
+          { "item": "backpack", "prob": 40, "damage": [ 1, 4 ] },
+          { "item": "slingpack", "prob": 15, "damage": [ 1, 4 ] },
+          { "item": "briefcase", "prob": 5, "damage": [ 1, 4 ] },
+          { "item": "backpack_leather", "prob": 20, "damage": [ 1, 4 ] }
         ]
       },
       { "group": "caveyot_mine_tools", "prob": 50, "count": [ 1, 2 ] }
@@ -113,41 +113,27 @@
       {
         "distribution": [
           {
-            "collection": [
-              {
-                "distribution": [
-                  { "item": "longshirt", "damage-min": 1, "damage-max": 4, "prob": 50 },
-                  { "item": "tunic", "damage-min": 1, "damage-max": 4, "prob": 50 }
-                ]
-              },
-              { "item": "breeches" }
-            ],
+            "collection": [ { "distribution": [ { "item": "longshirt", "prob": 50, "damage": [ 1, 4 ] }, { "item": "tunic", "prob": 50, "damage": [ 1, 4 ] } ] }, { "item": "breeches", "damage": [ 1, 4 ] } ],
             "prob": 50
           },
-          { "item": "dress", "damage-min": 1, "damage-max": 4, "prob": 25 },
-          { "item": "robe", "damage-min": 1, "damage-max": 4, "prob": 25 }
+          { "item": "dress", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "robe", "prob": 25, "damage": [ 1, 4 ] }
         ]
       },
       {
-        "distribution": [
-          { "item": "cloak_wool", "damage-min": 1, "damage-max": 4, "prob": 75 },
-          { "item": "greatcoat", "damage-min": 1, "damage-max": 4, "prob": 25 }
-        ],
+        "distribution": [ { "item": "cloak_wool", "prob": 75, "damage": [ 1, 4 ] }, { "item": "greatcoat", "prob": 25, "damage": [ 1, 4 ] } ],
         "prob": 50
       },
       {
         "distribution": [
-          { "item": "armor_larmor", "damage-min": 1, "damage-max": 4, "prob": 25 },
-          { "item": "chainmail_suit", "damage-min": 1, "damage-max": 4, "prob": 25 },
-          { "item": "cuirass_lightplate", "damage-min": 1, "damage-max": 4, "prob": 50 }
+          { "item": "armor_larmor", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "chainmail_suit", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "cuirass_lightplate", "prob": 50, "damage": [ 1, 4 ] }
         ],
         "prob": 50
       },
       {
-        "distribution": [
-          { "item": "helmet_larmor", "damage-min": 1, "damage-max": 4, "prob": 25 },
-          { "item": "helmet_barbute", "damage-min": 1, "damage-max": 4, "prob": 75 }
-        ],
+        "distribution": [ { "item": "helmet_larmor", "prob": 25, "damage": [ 1, 4 ] }, { "item": "helmet_barbute", "prob": 75, "damage": [ 1, 4 ] } ],
         "prob": 80
       },
       {
@@ -161,7 +147,7 @@
           {
             "collection": [
               { "item": "crossbow" },
-              { "item": "quiver", "damage-min": 1, "damage-max": 4 },
+              { "item": "quiver", "damage": [ 1, 4 ] },
               { "item": "bolt_steel_bodkin", "count": [ 1, 3 ] }
             ],
             "prob": 25
@@ -242,7 +228,7 @@
       [ "rope_6", 65 ],
       [ "minifreezer", 5 ],
       [ "waterskin", 5 ],
-      [ "bag_canvas", 35 ],
+      [ "bag_canvas", 35],
       [ "trumpet", 4 ],
       [ "flute", 4 ],
       [ "cow_bell", 2 ],
@@ -269,7 +255,11 @@
     "subtype": "distribution",
     "magazine": 100,
     "ammo": 75,
-    "items": [ { "group": "homeguns", "prob": 90 }, [ "gloves_leather", 5 ], [ "jedi_cloak", 5 ] ]
+    "items": [
+      { "group": "homeguns", "prob": 90 },
+      [ "gloves_leather", 5 ],
+      [ "jedi_cloak", 5 ]
+    ]
   },
   {
     "type": "item_group",
@@ -288,6 +278,12 @@
     "type": "item_group",
     "id": "caveyot_minetown_light",
     "//": "Mimics item spawns in Izchak's light shop, Nethack.",
-    "items": [ [ "candle", 78 ], [ "oil_lamp", 9 ], [ "gasoline_lantern", 5 ], [ "lamp_oil", 5 ], [ "atomic_lamp", 3 ] ]
+    "items": [
+      [ "candle", 78 ],
+      [ "oil_lamp", 9 ],
+      [ "gasoline_lantern", 5 ],
+      [ "lamp_oil", 5 ],
+      [ "atomic_lamp", 3 ]
+    ]
   }
 ]

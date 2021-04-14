@@ -7,7 +7,7 @@
     "description": "The barrel of the OFG16k filled with atmospheric air, resulting in suboptimal muzzle velocity but far more reliable action, plus its gas loading and sealing mechanisms and emergency release. Remove from the OFG16k, load a canister and activate to fill it with hydrogen.",
     "weight": 3100,
     "volume": "2250 ml",
-    "price": 300000,
+    "price": "3000 USD",
     "to_hit": -1,
     "bash": 12,
     "material": [ "diamond", "superalloy", "steel" ],
@@ -43,7 +43,7 @@
     "name": "OFG16k hydrogen-filled barrel",
     "description": "The barrel of the OFG16k filled with pure hydrogen from an attached canister. The speed of sound is 3.8 times faster inside it, which drastically boosts muzzle velocity. Included with it are the gas loading and sealing mechanisms and emergency release. Activate to vent off all hydrogen and unseal it to the atmosphere.",
     "weight": 3283,
-    "price": 300000,
+    "price": "3000 USD",
     "//": "including hydrogen canister mass because 'NO_UNLOAD' flag does the same as 'IRREMOVABLE' in a tool that also can be attached as gun mod",
     "volume": "2250 ml",
     "to_hit": -1,
@@ -60,9 +60,9 @@
       "dispersion_modifier": -900,
       "damage_modifier": 83,
       "handling_modifier": -15,
-      "//": "More muzzle velocity = more recoil",
+      "//2": "More muzzle velocity = more recoil",
       "ammo_effects": [ "TRAIL", "INCENDIARY" ],
-      "//": "Gun mods can add ammo_effects, an interesting little feature for modding.",
+      "//3": "Gun mods can add ammo_effects, an interesting little feature for modding.",
       "range_modifier": 40
     },
     "use_action": {
@@ -71,11 +71,11 @@
       "menu_text": "Vent off hydrogen",
       "type": "transform"
     },
-    "//": "gunmods that consume charges and can be switched on/off after attached are not supported by the game code yet, thus this does nothing",
+    "//4": "gunmods that consume charges and can be switched on/off after attached are not supported by the game code yet, thus this does nothing",
     "initial_charges": 0,
     "max_charges": 0,
     "turns_per_charge": 200000,
-    "//": "not sure how long it should last, but for now it's not important at all for the reason mentioned above.",
+    "//5": "not sure how long it should last, but for now it's not important at all for the reason mentioned above.",
     "revert_to": "hydrogen_gun_atm_barrel",
     "revert_msg": "The OFG16k barrel ran out of hydrogen.",
     "looks_like": "barrel_big"

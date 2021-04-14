@@ -2,18 +2,42 @@ Secronom V1.9 - Axema Vales (author)
 
 https://discourse.cataclysmdda.org - CDDA official forums
 
-  *This README.txt is my changelog, so what is done will be recorded and released depending on accumulated progress.  
+  *This README.txt act as my changelog.
 
 
 
 	=>CURRENT UPDATES<= (#changes, +contents, ~rebalances, -fixes)
 	
---> V1.9 - Focuses on improving the secronom lab by adding NPCs and expanding the facility. Also some reworks to experimental mutation branch. <--
+--> V1.9 - Currently working on the hivemind and the flesh base. <--
 
 #  TILESET REWORKS (if possible)
 
 +  SECRONOM BUNKER (a small underground fortress that's connected to the lab)
 +  NPCS (they provide a subtle lore and few other features)
++  EXPERIMENTAL MUTATIONS (3 new mutation paths)
++  SECRONOM LAB (more rooms)
++  SECRONOM EXOSKELETONS (2 new power armors)
++  POWER ARMOR MODULES (module implants for power armors)
++  FLESH VESSEL EXPANSION (5 types of flesh vessels)
++  FLESH VESSEL MORPH/FORM (flesh vessel abilities)
++  FLESHED MILITARY BUNKERS (same old bunker, but it's infested by the flesh)
++  PATHOGEN FLESH VESSEL (can now form a new hivemind, AKA flesh camp overseer)
++  HIVEMIND NPC (a mini version of the flesh boss that can be augmented. Interactable for developing a flesh camp)
++  HIVEMIND SPAWNS (NPCs spawned by the hivemind. Has their own characteristics)
++  BIO-ORGANIC VEHICLE PARTS (a new set of flesh vehicle parts)
++  CRIMSON HORROR (fleshlings)
++  AMALGAMS (fleshmound offsprings)
++  SCENARIO/PROFESSION (a simple scenario/profession introducing the use of flesh vessel)
++  SPIDER (final upgrade path)
++  NOXIOUS EATER (new upgrade path)
+
+~  SHAPESHIFTER REWORKS (now much more deadly with improved abilities)
+~  FLESHED TER/FURN (almost all fleshed ter/furn counterparts now has fixed bash resistance)
+~  CITY ZED REBALANCES (minor adjustments to the stats of some city zeds, namely their damage output and skillsets)
+
+-  UNKNOWN RACES REWORK (removed the wandering portal "???". Unknown creatures now spawn in the wild)
+-  SADDLERS (now are butchered for tainted meat)
+-  CRIMSON HORRORS (now are immune to blood acid)
 
 
 
@@ -27,7 +51,7 @@ https://discourse.cataclysmdda.org - CDDA official forums
 
 +  WANDERING ABERRATION (shapeshifter)
 +  CRIMSON HORROR (veinstalk)
-+  EXPERIMENTAL MUTATIONS (a new mutation branch)
++  EXPERIMENTAL MUTATIONS (new, early mutation paths)
 +  FLESH ZOMBIES (complete expansion of flesh zombie variants for the flesh city. Land wildlife included)
 
 ~  SECRONOM LAB (now has a very rare, exclusive mutagen)

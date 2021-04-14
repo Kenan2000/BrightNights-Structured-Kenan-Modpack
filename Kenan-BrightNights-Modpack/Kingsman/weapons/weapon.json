@@ -8,7 +8,7 @@
     "description": "An umbrella that looks like it came straight out of a movie, it seems to be bulletproof.",
     "weight": 141,
     "volume": "1500 ml",
-    "price": 2400,
+    "price": "24 USD",
     "to_hit": 1,
     "bashing": 6,
     "cutting": 4,
@@ -16,13 +16,14 @@
     "ranged_damage": -1,
     "dispersion": 480,
     "durability": 6,
-    "clip_size" : 6,
+    "clip_size": 6,
     "loudness": -100,
     "material": [ "kevlar", "aluminum" ],
     "symbol": "/",
     "color": "dark_gray",
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "STAB", "RAIN_PROTECT", "SHEATH_SWORD", "NEVER_MISFIRES", "WHIP" ],
+    "flags": [ "STAB", "RAIN_PROTECT", "SHEATH_SWORD", "WHIP" ],
+    "ammo_effects": [ "NEVER_MISFIRES" ],
     "use_action": {
       "menu_text": "Close Umbrella",
       "type": "transform",
@@ -38,7 +39,7 @@
     "description": "An umbrella that looks like it came straight out of a movie.  It is closed.",
     "weight": 141,
     "volume": "250 ml",
-    "price": 2400,
+    "price": "24 USD",
     "to_hit": 1,
     "bashing": 6,
     "cutting": 4,
@@ -48,12 +49,7 @@
     "color": "dark_gray",
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "STAB", "SHEATH_SWORD", "WHIP", "UNARMED_WEAPON" ],
-    "use_action": {
-      "menu_text": "Open Umbrella",
-      "type": "transform",
-      "target": "umbrella_kingsman",
-      "msg": "You open up the umbrella."
-    }
+    "use_action": { "menu_text": "Open Umbrella", "type": "transform", "target": "umbrella_kingsman", "msg": "You open up the umbrella." }
   },
   {
     "id": "magnum_statesman",
@@ -64,7 +60,7 @@
     "symbol": "F",
     "weight": 3937,
     "volume": 12,
-    "price": 89689,
+    "price": "896 USD",
     "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
@@ -74,7 +70,15 @@
     "dispersion": 180,
     "durability": 8,
     "clip_size": 6,
-    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ], [ "stock", 1 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ]
+    ],
     "flags": [ "RELOAD_ONE" ]
   }
 ]

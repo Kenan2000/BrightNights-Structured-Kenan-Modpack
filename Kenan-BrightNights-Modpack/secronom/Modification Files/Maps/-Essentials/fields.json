@@ -263,36 +263,10 @@
     "dirty_transparency_cache": true,
     "percent_spread": 25,
     "immunity_data": { "body_part_env_resistance": [ [ "EYES", 10 ] ] },
+    "immune_mtypes": [ "mon_zombie_nix" ],
     "half_life": "2 seconds",
     "phase": "gas",
     "accelerated_decay": true,
-    "display_field": false
-  },
-  {
-    "//": "This field provides immunity to the gorepit's constant damage.",
-    "id": "fd_gorepit_center",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "gorepit orb",
-        "sym": "o",
-        "color": "pink",
-        "dangerous": true,
-        "effects": [
-          {
-            "effect_id": "secro_gorepit_dmg_immune",
-            "body_part": "TORSO",
-            "min_duration": "1 seconds",
-            "max_duration": "1 seconds"
-          }
-        ]
-      }
-    ],
-    "dirty_transparency_cache": true,
-    "priority": -1,
-    "half_life": "1 seconds",
-    "phase": "solid",
-    "display_items": false,
     "display_field": false
   },
   {
@@ -321,6 +295,7 @@
       }
     ],
     "immunity_data": { "body_part_env_resistance": [ [ "LEG_L", 25 ], [ "LEG_R", 25 ] ] },
+    "immune_mtypes": [ "mon_zombie_gorepit", "mon_zombie_gorepit_tent" ],
     "priority": 1,
     "half_life": "1 seconds",
     "phase": "solid",
@@ -400,7 +375,7 @@
         ]
       }
     ],
-    "immunity_data": { "traits": [ "ACIDPROOF" ] },
+    "immunity_data": { "traits": [ "ACIDPROOF", "SECRO_WEARING_FLESH_VESSEL" ] },
     "underwater_age_speedup": "2 minutes",
     "has_acid": true,
     "priority": 2,
@@ -492,7 +467,6 @@
     "display_field": false
   },
   {
-    "//": "This web doesn't break when a creature moves through it.",
     "id": "fd_mawy_web",
     "type": "field_type",
     "intensity_levels": [
@@ -500,43 +474,58 @@
         "name": "flesh strands",
         "sym": "}",
         "color": "pink",
-        "effects": [ { "effect_id": "secro_mawy_web", "body_part": "TORSO", "min_duration": "5 seconds", "max_duration": "10 seconds" } ]
+        "effects": [
+          {
+            "effect_id": "secro_mawy_web",
+            "body_part": "TORSO",
+            "min_duration": "5 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
+        ]
       },
       {
         "name": "flesh webs",
         "color": "light_red",
-        "effects": [ { "effect_id": "secro_mawy_web", "body_part": "TORSO", "min_duration": "10 seconds", "max_duration": "20 seconds" } ]
+        "effects": [
+          {
+            "effect_id": "secro_mawy_web",
+            "body_part": "TORSO",
+            "min_duration": "10 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
+        ]
       },
       {
         "name": "thick flesh webs",
         "transparent": false,
         "color": "red",
-        "effects": [ { "effect_id": "secro_mawy_web", "body_part": "TORSO", "min_duration": "20 seconds", "max_duration": "40 seconds" } ]
-      }
-    ],
-    "priority": 2,
-    "half_life": "3 seconds",
-    "phase": "solid",
-    "display_items": false,
-    "display_field": true
-  },
-  {
-    "id": "fd_mawy_web_immune",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
         "effects": [
-          { "effect_id": "secro_mawy_web_immune", "body_part": "TORSO", "min_duration": "1 seconds", "max_duration": "1 seconds" }
+          {
+            "effect_id": "secro_mawy_web",
+            "body_part": "TORSO",
+            "min_duration": "20 seconds",
+            "immune_in_vehicle": true,
+            "is_environmental": false
+          }
         ]
       }
     ],
-    "priority": -1,
-    "half_life": "1 seconds",
-    "phase": "gas",
+    "priority": 2,
+    "immune_mtypes": [ "mon_zombieworm_mawy" ],
+    "half_life": "30 seconds",
+    "bash": {
+      "str_min": 5,
+      "str_max": 15,
+      "sound_vol": 2,
+      "sound_fail_vol": 2,
+      "sound": "splash!",
+      "msg_success": "You brush aside some fleshy webbings."
+    },
+    "phase": "solid",
     "display_items": false,
-    "display_field": false
+    "display_field": true
   },
   {
     "id": "fd_revenant_trigger_immune",
@@ -558,7 +547,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -581,7 +570,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -996,30 +985,24 @@
     "half_life": "1 seconds",
     "phase": "gas",
     "immunity_data": { "body_part_env_resistance": [ [ "HEAD", 2 ] ] },
-    "display_items": true,
-    "display_field": false
-  },
-  {
-    "id": "fd_flesh_biome_immune",
-    "type": "field_type",
-    "intensity_levels": [
-      {
-        "name": "...",
-        "color": "black",
-        "effects": [
-          {
-            "effect_id": "secro_flesh_biome_immune",
-            "body_part": "TORSO",
-            "min_duration": "1 seconds",
-            "max_duration": "1 seconds"
-          }
-        ]
-      }
+    "immune_mtypes": [
+      "mon_sflesh_surface_spawner",
+      "mon_sflesh_tendril",
+      "mon_sflesh_jaw",
+      "mon_sflesh_entrance",
+      "mon_sflesh_sack",
+      "mon_sflesh_parasyte",
+      "mon_sflesh_vbeast",
+      "mon_sflesh_vrumbler",
+      "mon_sflesh_taken",
+      "mon_sflesh_taken_potent",
+      "mon_sflesh_flesh_wall",
+      "mon_sflesh_flesh_wall_city",
+      "mon_sflesh_flesh",
+      "mon_sflesh_flesh_city",
+      "mon_sflesh_flesh_weak"
     ],
-    "priority": -1,
-    "half_life": "1 seconds",
-    "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -1061,7 +1044,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -1178,7 +1161,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -1238,7 +1221,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -1261,7 +1244,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -1345,29 +1328,16 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
     "id": "fd_sflesh_gas",
     "type": "field_type",
     "intensity_levels": [
-      {
-        "name": "fumes",
-        "sym": "8",
-        "dangerous": true,
-        "translucency": 1,
-        "color": "light_red"
-      },
-      {
-        "translucency": 11,
-        "transparent": false,
-        "color": "red"
-      },
-      {
-        "name": "thick fumes",
-        "translucency": 0
-      }
+      { "name": "fumes", "sym": "8", "dangerous": true, "translucency": 1, "color": "light_red" },
+      { "translucency": 11, "transparent": false, "color": "red" },
+      { "name": "thick fumes", "translucency": 0 }
     ],
     "decay_amount_factor": 5,
     "gas_absorption_factor": 12,
@@ -1384,6 +1354,444 @@
     "looks_like": "fd_fog"
   },
   {
+    "id": "fd_sflesh_strands",
+    "looks_like": "fd_mawy_web",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "flesh strands",
+        "sym": "}",
+        "color": "light_red",
+        "effects": [
+          { "effect_id": "webbed", "intensity": 1, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+        ]
+      },
+      {
+        "name": "thick flesh strands",
+        "light_override": 2.0,
+        "transparent": false,
+        "effects": [
+          { "effect_id": "webbed", "intensity": 2, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+        ]
+      },
+      {
+        "name": "compact flesh strands",
+        "light_override": 3.7,
+        "color": "red",
+        "effects": [
+          { "effect_id": "webbed", "intensity": 3, "min_duration": "1 m", "immune_in_vehicle": true, "is_environmental": false }
+        ]
+      }
+    ],
+    "immune_mtypes": [ "mon_szombie_vessel", "mon_szombie_vessel_inactive" ],
+    "description_affix": "covered_in",
+    "decrease_intensity_on_contact": true,
+    "priority": 2,
+    "phase": "solid",
+    "display_items": false,
+    "bash": {
+      "str_min": 6,
+      "str_max": 18,
+      "sound_vol": 2,
+      "sound_fail_vol": 2,
+      "sound": "splash!",
+      "msg_success": "Flesh strands were torn apart."
+    },
+    "display_field": true
+  },
+  {
+    "id": "fd_carrion_alpha_stop",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effects": [ { "effect_id": "controlled", "body_part": "TORSO", "min_duration": "1 seconds", "max_duration": "1 seconds" } ]
+      }
+    ],
+    "immune_mtypes": [ "mon_carrion_alpha", "mon_carrion_alpha_rally", "mon_zombie_swarmer_alpha", "mon_zombie_swarmer_alpha_rally" ],
+    "priority": -1,
+    "half_life": "3 seconds",
+    "percent_spread": 50,
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_shifter_fog",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "black fog",
+        "sym": "8",
+        "color": "dark_gray",
+        "translucency": 1,
+        "light_override": 4,
+        "effects": [
+          {
+            "effect_id": "blind",
+            "body_part": "EYES",
+            "intensity": 1,
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds",
+            "immune_inside_vehicle": true
+          }
+        ]
+      },
+      { "name": "thick black fog", "transparent": false, "translucency": 10, "light_override": 3 },
+      { "name": "total darkness", "color": "black", "translucency": 0, "light_override": 2 }
+    ],
+    "immune_mtypes": [ "mon_shifter", "mon_shifter_illu" ],
+    "decay_amount_factor": 4,
+    "gas_absorption_factor": 10,
+    "dirty_transparency_cache": true,
+    "percent_spread": 90,
+    "outdoor_age_speedup": "10 turns",
+    "priority": 10,
+    "half_life": "2 minutes",
+    "phase": "gas",
+    "accelerated_decay": true,
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_fog"
+  },
+  {
+    "id": "fd_shifter_fog_trail",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "errant shadows",
+        "sym": "8",
+        "color": "dark_gray",
+        "translucency": 1,
+        "light_override": 2,
+        "effects": [
+          {
+            "effect_id": "blind",
+            "body_part": "EYES",
+            "intensity": 1,
+            "min_duration": "1 seconds",
+            "max_duration": "1 seconds",
+            "immune_inside_vehicle": true
+          }
+        ]
+      },
+      {  }
+    ],
+    "immune_mtypes": [ "mon_shifter", "mon_shifter_illu" ],
+    "priority": 9,
+    "half_life": "5 seconds",
+    "wandering_field": "fd_shifter_fog",
+    "accelerated_decay": true,
+    "gas_absorption_factor": 15,
+    "dirty_transparency_cache": true,
+    "phase": "gas",
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_fog"
+  },
+  {
+    "id": "fd_fleshknot_tent",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "writhing tentacles",
+        "sym": "y",
+        "color": "pink",
+        "effects": [
+          {
+            "effect_id": "eff_fleshknot_tent",
+            "body_part": "LEG_L",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "immune_inside_vehicle": true
+          },
+          {
+            "effect_id": "eff_fleshknot_tent",
+            "body_part": "LEG_R",
+            "intensity": 1,
+            "min_duration": "2 seconds",
+            "max_duration": "2 seconds",
+            "immune_inside_vehicle": true
+          }
+        ]
+      },
+      { "color": "light_red" },
+      { "name": "cluster of writhing tentacles", "color": "red" }
+    ],
+    "immune_mtypes": [ "mon_zombie_fleshknot_weak", "mon_zombie_fleshknot_mode", "mon_zombie_fleshknot_stro", "mon_zombie_fleshknot_vstro" ],
+    "half_life": "5 seconds",
+    "priority": 3,
+    "phase": "solid",
+    "display_items": true,
+    "display_field": true,
+    "bash": {
+      "str_min": 10,
+      "str_max": 20,
+      "sound_vol": 2,
+      "sound_fail_vol": 2,
+      "sound": "splash!",
+      "msg_success": "You bat away some tentacles."
+    }
+  },
+  {
+    "id": "fd_grubbyzed_goo",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "worm-infested goo",
+        "color": "yellow",
+        "monster_spawn_chance": 600,
+        "monster_spawn_count": 1,
+        "monster_spawn_radius": 1,
+        "monster_spawn_group": "GROUP_GRUBBYWORMZ"
+      },
+      { "color": "brown", "monster_spawn_chance": 300 },
+      { "name": "puddle of worm-infested goo", "monster_spawn_chance": 150 }
+    ],
+    "description_affix": "covered_in",
+    "decay_amount_factor": 2,
+    "underwater_age_speedup": "25 minutes",
+    "is_splattering": true,
+    "half_life": "20 seconds",
+    "phase": "liquid",
+    "accelerated_decay": true,
+    "display_field": true,
+    "looks_like": "fd_bile"
+  },
+  {
+    "id": "fd_grubbyzed_worm_limit",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "...",
+        "color": "black",
+        "effects": [
+          { "effect_id": "eff_grubbyworm_limit", "body_part": "TORSO", "min_duration": "1 seconds", "max_duration": "1 seconds" }
+        ]
+      }
+    ],
+    "priority": -1,
+    "half_life": "1 seconds",
+    "phase": "gas",
+    "display_items": true,
+    "display_field": false
+  },
+  {
+    "id": "fd_snatcher_snatch",
+    "type": "field_type",
+    "intensity_levels": [
+      {
+        "name": "snatcher tongue",
+        "sym": "l",
+        "color": "light_red",
+        "effects": [
+          {
+            "effect_id": "eff_snatcher_snatch",
+            "body_part": "TORSO",
+            "intensity": 2,
+            "min_duration": "10 seconds",
+            "max_duration": "10 seconds",
+            "immune_inside_vehicle": true,
+            "is_environmental": false,
+            "message": "You've been entangled by a tongue!",
+            "message_npc": "<npcname> have been entangled by a tongue!",
+            "message_type": "bad"
+          },
+          {
+            "effect_id": "stunned",
+            "body_part": "TORSO",
+            "intensity": 1,
+            "min_duration": "5 seconds",
+            "max_duration": "5 seconds",
+            "immune_inside_vehicle": true,
+            "is_environmental": false
+          }
+        ]
+      }
+    ],
+    "decrease_intensity_on_contact": true,
+    "immune_mtypes": [
+      "mon_zombie_bootlegsmoker",
+      "mon_zombie",
+      "mon_beekeeper",
+      "mon_zombie_cop",
+      "mon_zombie_fireman",
+      "mon_zombie_hazmat",
+      "mon_zombie_resort_dancer",
+      "mon_zombie_resort_bouncer",
+      "mon_zombie_resort_staff",
+      "mon_zombie_rot",
+      "mon_zombie_prisoner",
+      "mon_zombie_grabber",
+      "mon_zombie_runner",
+      "mon_zombie_shady",
+      "mon_zombie_shrieker",
+      "mon_zombie_swimmer",
+      "mon_zombie_technician",
+      "mon_zombie_labsecurity",
+      "mon_zombie_swat",
+      "mon_zombie_fat",
+      "mon_zombie_tough",
+      "mon_zombie_crawler",
+      "mon_skeleton",
+      "mon_skeleton_electric",
+      "mon_skeleton_hulk",
+      "mon_zombie_survivor",
+      "mon_zombie_biter",
+      "mon_zombie_brainless",
+      "mon_zombie_ears",
+      "mon_zombie_skull",
+      "mon_zombie_brute",
+      "mon_zombie_brute_grappler",
+      "mon_zombie_brute_ninja",
+      "mon_zombie_grappler",
+      "mon_zombie_hollow",
+      "mon_zombie_hulk",
+      "mon_zombie_hunter",
+      "mon_zombie_mancroc",
+      "mon_zombie_master",
+      "mon_zombie_necro",
+      "mon_zombie_predator",
+      "mon_zombie_screecher",
+      "mon_zombie_thorny",
+      "mon_zombie_smoker",
+      "mon_zombie_anklebiter",
+      "mon_zombie_child",
+      "mon_zombie_creepy",
+      "mon_zombie_shriekling",
+      "mon_zombie_snotgobbler",
+      "mon_zombie_sproglodyte",
+      "mon_zombie_waif",
+      "mon_zombie_brute_shocker",
+      "mon_zombie_electric",
+      "mon_zombie_nullfield",
+      "mon_zombie_static",
+      "mon_zombie_scientist",
+      "mon_zombie_dog",
+      "mon_dog_skeleton",
+      "mon_dog_zombie_cop",
+      "mon_dog_zombie_rot",
+      "mon_zolf",
+      "mon_zombear",
+      "mon_zombie_pig",
+      "mon_zombeaver",
+      "mon_zoose",
+      "mon_zougar",
+      "mon_zombie_soldier",
+      "mon_zombie_soldier_blackops_1",
+      "mon_zombie_soldier_blackops_2",
+      "mon_zombie_soldier_acid_1",
+      "mon_zombie_soldier_acid_2",
+      "mon_zombie_kevlar_1",
+      "mon_zombie_kevlar_2",
+      "mon_zombie_military_pilot",
+      "mon_zombie_bio_op",
+      "mon_zombie_survivor_elite",
+      "mon_zombie_acidic",
+      "mon_zombie_corrosive",
+      "mon_zombie_wretched",
+      "mon_zombie_unify",
+      "mon_zombie_unity",
+      "mon_zombie_hemo",
+      "mon_zombie_translucent",
+      "mon_zombie_pellucid",
+      "mon_zombie_titan",
+      "mon_zombie_blacktitan",
+      "mon_zombie_tendrils",
+      "mon_zombie_thicktendrils",
+      "mon_zombie_tendricles",
+      "mon_zombie_tentawraith",
+      "mon_zombie_swarmer_alpha",
+      "mon_zombie_swarmer_alpha_rally",
+      "mon_zombie_swarmer_weak",
+      "mon_zombie_swarmer_segway",
+      "mon_zombie_swarmer_moderate",
+      "mon_zombie_swarmer_strong",
+      "mon_zombie_swarmer_evo_hungry",
+      "mon_zombie_swarmer_evo_starving",
+      "mon_zombie_swarmer_evo_savage",
+      "mon_zombie_swarmer_evo_virulent",
+      "mon_zombie_spoder",
+      "mon_zombie_spoderhug",
+      "mon_zombie_spodertickle",
+      "mon_zombie_arachnia",
+      "mon_zombie_scourge",
+      "mon_zombie_defile",
+      "mon_zombie_leptiosa",
+      "mon_zombie_revenant",
+      "mon_zombie_revenant_forsaken",
+      "mon_zombie_revenant_allure",
+      "mon_zombie_mouth",
+      "mon_zombie_bellymouth",
+      "mon_zombie_omouth",
+      "mon_zombie_suctionmouth",
+      "mon_zombie_WALKINGPOTATO",
+      "mon_zombie_zawk",
+      "mon_zombie_zoth",
+      "mon_zombie_nightwail",
+      "mon_zombie_lick",
+      "mon_zombie_mlick",
+      "mon_zombie_xlick",
+      "mon_zombie_grubby",
+      "mon_zombie_slimy",
+      "mon_zombie_glut",
+      "mon_zombie_charger",
+      "mon_zombie_charger_spike",
+      "mon_zombie_charger_plate",
+      "mon_zombie_charger_vanguard",
+      "mon_zombie_blade",
+      "mon_zombie_sharpblade",
+      "mon_zombie_serratedblade",
+      "mon_zombie_razor",
+      "mon_zombie_nautilus",
+      "mon_zombie_disser",
+      "mon_zombie_jolt",
+      "mon_zombie_fake_ichorus",
+      "mon_zombie_ichorus",
+      "mon_zombie_fake_psyrus",
+      "mon_zombie_psyrus",
+      "mon_zombie_uruxis",
+      "mon_zombie_nocturne",
+      "mon_zombie_nix",
+      "mon_zombie_fleshmonger",
+      "mon_zombie_gorepit",
+      "mon_zombie_cordev",
+      "mon_zombie_fleshysnaky",
+      "mon_zombie_akin",
+      "mon_zombie_equinox",
+      "mon_zombie_relinquish",
+      "mon_zombie_relinquish_revived"
+    ],
+    "half_life": "3 turns",
+    "priority": 10,
+    "phase": "solid",
+    "display_items": false,
+    "display_field": true,
+    "bash": {
+      "str_min": 8,
+      "str_max": 24,
+      "sound_vol": 1,
+      "sound_fail_vol": 1,
+      "sound": "splat!",
+      "msg_success": "You shove off the tongue."
+    },
+    "looks_like": "fd_fleshknot_tent"
+  },
+  {
+    "id": "fd_snatcher_snatch_trail",
+    "type": "field_type",
+    "intensity_levels": [ { "name": "snatcher tongue", "sym": "i", "color": "pink" } ],
+    "half_life": "1 turns",
+    "decay_amount_factor": 5,
+    "priority": 11,
+    "phase": "solid",
+    "display_items": false,
+    "display_field": true,
+    "looks_like": "fd_gibs_flesh"
+  },
+  {
     "//": "Fields designed for all creatures.",
     "id": "fd_mon_down_immune",
     "type": "field_type",
@@ -1397,7 +1805,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   },
   {
@@ -1413,7 +1821,7 @@
     "priority": -1,
     "half_life": "1 seconds",
     "phase": "gas",
-    "display_items": false,
+    "display_items": true,
     "display_field": false
   }
 ]

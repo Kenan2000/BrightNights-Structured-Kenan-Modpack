@@ -1,0 +1,304 @@
+[
+  {
+    "abstract": "nanogear",
+    "type": "ARMOR",
+    "name": "nanotech gear",
+    "description": "You shouldn't see this - nanogear",
+    "symbol": "[",
+    "color": "light_gray",
+    "volume": "250 ml",
+    "weight": 1713,
+    "storage": "0 ml",
+    "price": "5000 USD",
+    "material": "nanite",
+    "flags": [ "ALLOWS_NATURAL_ATTACKS", "TRADER_AVOID", "OVERSIZE" ],
+    "bashing": 0,
+    "cutting": 0,
+    "to_hit": 0,
+    "warmth": 0,
+    "environmental_protection": 0,
+    "encumbrance": 0,
+    "coverage": 10,
+    "material_thickness": 1
+  },
+  {
+    "id": "nano_shield",
+    "type": "ARMOR",
+    "name": "nanotech shield",
+    "category": "armor",
+    "looks_like": "shield_scutum",
+    "description": "A large shield composed of a cluster of nanites, currently in passive mode, you can block attacks with it.  When not in use, it compresses itself into the handle.",
+    "weight": 569,
+    "volume": "1 L",
+    "price": "2500 USD",
+    "to_hit": 0,
+    "bashing": 10,
+    "material": "nanite",
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "ARM_EITHER", "HAND_EITHER" ],
+    "coverage": 90,
+    "encumbrance": 28,
+    "material_thickness": 4,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "RESTRICT_HANDS", "BLOCK_WHILE_WORN", "TRADER_AVOID" ],
+    "use_action": { "type": "transform", "target": "nano_shield_active", "active": false, "msg": "Shield switched to active mode." }
+  },
+  {
+    "id": "nano_shield_active",
+    "type": "ARMOR",
+    "name": "nanotech shield (active)",
+    "category": "armor",
+    "looks_like": "shield_scutum",
+    "description": "A large shield composed of a cluster of nanites, currently in active mode, it will automatically attempt to block attacks for you, allowing you to make use of your hand.  When not in use, it compresses itself into the handle.",
+    "weight": 569,
+    "volume": "500 ml",
+    "price": "2500 USD",
+    "to_hit": 0,
+    "bashing": 10,
+    "material": "nanite",
+    "symbol": "[",
+    "color": "light_gray",
+    "covers": [ "ARM_EITHER" ],
+    "coverage": 60,
+    "encumbrance": 15,
+    "material_thickness": 4,
+    "techniques": [ "WBLOCK_3" ],
+    "flags": [ "OVERSIZE", "BELTED", "BLOCK_WHILE_WORN", "TRADER_AVOID" ],
+    "use_action": { "type": "transform", "target": "nano_shield", "active": false, "msg": "Shield switched to passive mode." }
+  },
+  {
+    "type": "ARMOR",
+    "id": "nano_storage",
+    "name": "nanotech 'mini-shoggoth' storage",
+    "copy-from": "nanogear",
+    "looks_like": "slime_scrap",
+    "weight": 3157,
+    "covers": [ "TORSO" ],
+    "storage": "250 L",
+    "description": "A large blob of nanites with an AI, it actively branches out pseudopods to grasp items held near it and supports them as optimally as possible, including reaching down and forming 'legs' to support itself if needed.",
+    "artifact_data": { "effects_worn": [ "AEP_CARRY_MORE" ] },
+    "volume": "2 L",
+    "extend": { "flags": [ "BELTED" ] },
+    "coverage": 30
+  },
+  {
+    "type": "ARMOR",
+    "id": "nano_holster",
+    "name": "nanotech holster",
+    "copy-from": "nanogear",
+    "looks_like": "holster",
+    "covers": [ "LEG_EITHER" ],
+    "description": "A small blob of nanites with an AI, it actively branches out pseudopods to grasp guns held nearby it, and put them into the user's hands automatically as needed.",
+    "extend": { "flags": [ "BELTED" ] },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Store weapon",
+      "holster_msg": "You store your %s",
+      "max_volume": 18,
+      "min_volume": 0,
+      "multi": 2,
+      "max_weight": 5000,
+      "draw_cost": 0,
+      "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ]
+    }
+  },
+  {
+    "type": "ARMOR",
+    "id": "nano_sheath",
+    "name": "nanotech sheath",
+    "copy-from": "nanogear",
+    "looks_like": "sheath",
+    "covers": [ "LEG_EITHER" ],
+    "description": "A small blob of nanites with an AI, it actively branches out pseudopods to grasp blades held nearby it, and put them into the user's hands automatically as needed.",
+    "extend": { "flags": [ "BELTED" ] },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Store weapon",
+      "holster_msg": "You store your %s",
+      "max_volume": 18,
+      "min_volume": 0,
+      "multi": 2,
+      "max_weight": 5000,
+      "draw_cost": 0,
+      "flags": [ "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR" ]
+    }
+  },
+  {
+    "type": "ARMOR",
+    "id": "nano_mag_holder",
+    "name": "nanotech magazine holder",
+    "copy-from": "nanogear",
+    "looks_like": "slime_scrap",
+    "description": "A small blob of nanites with an AI, it stores magazines and assists in loading them as needed.",
+    "covers": [ "ARM_EITHER" ],
+    "extend": { "flags": [ "BELTED" ] },
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Store ammo",
+      "holster_msg": "You store your %s.",
+      "multi": 4,
+      "max_volume": 6,
+      "min_volume": 0,
+      "draw_cost": 0,
+      "flags": [ "MAG_COMPACT", "MAG_BULKY" ]
+    }
+  },
+  {
+    "type": "ARMOR",
+    "id": "nanosuit",
+    "name": "nanosuit",
+    "copy-from": "nanogear",
+    "weight": 9836,
+    "covers": [ "HEAD", "MOUTH", "EYES", "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "description": "A cluster of carefully programmed nanites designed to fully cover the body and defend against external threats.  Can be activated to produce heat.",
+    "looks_like": "rm13_armor_on",
+    "artifact_data": { "effects_worn": [ "AEP_STR_UP" ] },
+    "volume": "1500 ml",
+    "environmental_protection": 30,
+    "qualities": [ [ "GLARE", 2 ] ],
+    "extend": {
+      "flags": [
+        "ALARMCLOCK",
+        "BAROMETER",
+        "CLIMATE_CONTROL",
+        "ELECTRIC_IMMUNE",
+        "FIX_FARSIGHT",
+        "FIX_NEARSIGHT",
+        "GAS_PROOF",
+        "HOOD",
+        "HYGROMETER",
+        "POCKETS",
+        "RAD_PROOF",
+        "RAINPROOF",
+        "REBREATHER",
+        "SKINTIGHT",
+        "STURDY",
+        "SUN_GLASSES",
+        "SUPER_FANCY",
+        "SWIM_GOGGLES",
+        "THERMOMETER",
+        "VARSIZE",
+        "WATCH",
+        "WATER_FRIENDLY",
+        "WATERPROOF"
+      ]
+    },
+    "coverage": 100,
+    "material_thickness": 3,
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Cycle heating",
+        "target": "nanosuit_heated",
+        "active": false,
+        "msg": "Enabling nanosuit's heating mode."
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "nanosuit_heated",
+    "name": "nanosuit (heat+)",
+    "copy-from": "nanosuit",
+    "description": "A cluster of carefully programmed nanites designed to fully cover the body and defend against external threats.  Currently heating itself.",
+    "warmth": 50,
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Cycle heating",
+        "target": "nanosuit_heated_2",
+        "active": false,
+        "msg": "Increasing nanosuit's heating mode."
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "nanosuit_heated_2",
+    "copy-from": "nanosuit_heated",
+    "name": "nanosuit (heat++)",
+    "warmth": 100,
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Cycle heating",
+        "target": "nanosuit_heated_3",
+        "active": false,
+        "msg": "Increasing nanosuit's heating mode."
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "nanosuit_heated_3",
+    "copy-from": "nanosuit_heated",
+    "name": "nanosuit (heat+++)",
+    "warmth": 150,
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Cycle heating",
+        "target": "nanosuit_heated_4",
+        "active": false,
+        "msg": "Increasing nanosuit's heating mode."
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "nanosuit_heated_4",
+    "copy-from": "nanosuit_heated",
+    "name": "nanosuit (heat++++)",
+    "warmth": 200,
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Cycle heating",
+        "target": "nanosuit_heated_5",
+        "active": false,
+        "msg": "Increasing nanosuit's heating mode."
+      }
+    ]
+  },
+  {
+    "type": "ARMOR",
+    "id": "nanosuit_heated_5",
+    "copy-from": "nanosuit_heated",
+    "name": "nanosuit (heat+++++)",
+    "warmth": 250,
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Cycle heating",
+        "target": "nanosuit",
+        "active": false,
+        "msg": "Disabled nanosuit's heating mode."
+      }
+    ]
+  },
+  {
+    "id": "nano_container",
+    "type": "GENERIC",
+    "category": "container",
+    "symbol": ")",
+    "color": "light_gray",
+    "contains": "10 L",
+    "rigid": true,
+    "seals": true,
+    "watertight": true,
+    "name": "nanotech liquid compressor",
+    "description": "A heavily compressed liquid storage device, it is also capable of keeping its contents fresh and maintaining their temperature.",
+    "price": "2400 USD",
+    "weight": 2957,
+    "volume": 16,
+    "bashing": 0,
+    "cutting": 0,
+    "to_hit": 0,
+    "material": "nanite",
+    "armor_data": { "covers": [ "TORSO" ], "coverage": 10, "encumbrance": 4, "material_thickness": 1 },
+    "flags": [ "NONCONDUCTIVE", "TRADER_AVOID" ],
+    "preserves": true,
+    "insulation": 50
+  }
+]

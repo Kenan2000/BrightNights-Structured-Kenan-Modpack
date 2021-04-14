@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mauser_9mm",
+    "copy-from": "pistol_base",
+    "type": "GUN",
+    "name": { "str": "9mm Mauser" },
+    "description": "A Mauser M/96 in 9x19mm Parabellum. In excellent condition. Extremely accurate, if a relic of the Old World.",
+    "weight": "595 g",
+    "volume": "500 ml",
+    "price": "690 USD",
+    "to_hit": -2,
+    "bashing": 8,
+    "material": [ "plastic", "steel" ],
+    "color": "dark_gray",
+    "ammo": [ "9mm" ],
+    "ranged_damage": { "damage_type": "stab", "amount": -2 },
+    "dispersion": 240,
+    "durability": 8,
+    "clip_size": 7,
+	"magazines": [ [ "9mm", [ "p38mag" ] ], [ "9mm", [ "ppq9mag_10rd" ] ], [ "9mm", [ "ppq9mag_15rd" ] ] ],
+    "flags": [ "NEVER_JAMS" ]
+  }
+]

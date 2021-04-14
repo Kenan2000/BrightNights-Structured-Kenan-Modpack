@@ -70,7 +70,7 @@
   {
     "id": "secro_vector_smol_seeding",
     "type": "emit",
-    "note": "Very rare seeding for spores.",
+    "//": "Very rare seeding for spores.",
     "field": "fd_vector_seed",
     "intensity": 3,
     "qty": 1,
@@ -87,7 +87,7 @@
   {
     "id": "secro_vector_stream",
     "type": "emit",
-    "note": "Stream of haze for bloomers.",
+    "//": "Stream of haze for bloomers.",
     "field": "fd_vector_haze",
     "intensity": 2,
     "qty": 20,
@@ -96,7 +96,7 @@
   {
     "id": "secro_vector_seeding",
     "type": "emit",
-    "note": "Rare seeding for bloomers.",
+    "//": "Rare seeding for bloomers.",
     "field": "fd_vector_seed",
     "intensity": 3,
     "qty": 1,
@@ -105,7 +105,7 @@
   {
     "id": "secro_vector_tree_spread",
     "type": "emit",
-    "note": "Big explosion of haze for trees.",
+    "//": "Big explosion of haze for trees.",
     "field": "fd_vector_haze",
     "intensity": 2,
     "qty": 100,
@@ -114,7 +114,7 @@
   {
     "id": "secro_vector_tree_seeding",
     "type": "emit",
-    "note": "Large seeding for trees.",
+    "//": "Large seeding for trees.",
     "field": "fd_vector_seed",
     "intensity": 3,
     "qty": 5,
@@ -177,13 +177,6 @@
     "type": "emit",
     "field": "fd_nix_fear",
     "qty": 50,
-    "intensity": 1
-  },
-  {
-    "id": "emit_gorepit_main",
-    "type": "emit",
-    "field": "fd_gorepit_center",
-    "qty": 1,
     "intensity": 1
   },
   {
@@ -271,13 +264,6 @@
     "qty": 2,
     "intensity": 3,
     "chance": 10
-  },
-  {
-    "id": "emit_mawy_web_immunity",
-    "type": "emit",
-    "field": "fd_mawy_web_immune",
-    "qty": 1,
-    "intensity": 1
   },
   {
     "id": "emit_down_immunity",
@@ -368,7 +354,7 @@
     "id": "emit_flesh_tree_grab",
     "type": "emit",
     "field": "fd_flesh_tree_grab",
-    "note": "The flesh tree spreads its 'grabbing branches and stem' in 6 directions per turn",
+    "//": "The flesh tree spreads its 'grabbing branches and stem' in 6 directions per turn",
     "qty": 7,
     "intensity": 1
   },
@@ -429,13 +415,6 @@
     "type": "emit",
     "field": "fd_flesh_biome",
     "qty": 500,
-    "intensity": 1
-  },
-  {
-    "id": "emit_flesh_biome_immunity",
-    "type": "emit",
-    "field": "fd_flesh_biome_immune",
-    "qty": 1,
     "intensity": 1
   },
   {
@@ -548,5 +527,99 @@
     "qty": 20,
     "intensity": 3,
     "chance": 90
+  },
+  {
+    "id": "emit_carrion_alpha_stop",
+    "type": "emit",
+    "field": "fd_carrion_alpha_stop",
+    "qty": 25,
+    "intensity": 1
+  },
+  {
+    "id": "emit_swarmer_stop",
+    "type": "emit",
+    "field": "fd_carrion_alpha_stop",
+    "qty": 125,
+    "intensity": 1
+  },
+  {
+    "id": "emit_secromissile_stream",
+    "type": "emit",
+    "field": "fd_smoke",
+    "intensity": 3,
+    "qty": 1
+  },
+  {
+    "id": "emit_shifter_fog",
+    "type": "emit",
+    "field": "fd_shifter_fog",
+    "intensity": 2,
+    "qty": 18
+  },
+  {
+    "id": "emit_shifter_fog_smol",
+    "type": "emit",
+    "field": "fd_shifter_fog",
+    "intensity": 1,
+    "qty": 9
+  },
+  {
+    "id": "emit_fleshknot_tents_smol",
+    "type": "emit",
+    "field": "fd_fleshknot_tent",
+    "intensity": 1,
+    "qty": 3
+  },
+  {
+    "id": "emit_fleshknot_tents_med",
+    "type": "emit",
+    "field": "fd_fleshknot_tent",
+    "intensity": 1,
+    "qty": 6
+  },
+  {
+    "id": "emit_fleshknot_tents_big",
+    "type": "emit",
+    "field": "fd_fleshknot_tent",
+    "intensity": 1,
+    "qty": 9
+  },
+  {
+    "id": "emit_fleshknot_tents_vbig",
+    "type": "emit",
+    "field": "fd_fleshknot_tent",
+    "intensity": 1,
+    "qty": 15
+  },
+  {
+    "id": "emit_grubbyzed_worm_limit",
+    "type": "emit",
+    "field": "fd_grubbyzed_worm_limit",
+    "intensity": 1,
+    "qty": 1
+  },
+  {
+    "id": "emit_grubbyzed_goo_smol",
+    "type": "emit",
+    "field": "fd_grubbyzed_goo",
+    "intensity": 1,
+    "chance": 10,
+    "qty": 1
+  },
+  {
+    "id": "emit_grubbyzed_goo_med",
+    "type": "emit",
+    "field": "fd_grubbyzed_goo",
+    "intensity": 2,
+    "chance": 25,
+    "qty": 2
+  },
+  {
+    "id": "emit_grubbyzed_goo_big",
+    "type": "emit",
+    "field": "fd_grubbyzed_goo",
+    "intensity": 3,
+    "chance": 50,
+    "qty": 3
   }
 ]

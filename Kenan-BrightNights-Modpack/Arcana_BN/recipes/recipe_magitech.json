@@ -10,8 +10,8 @@
     "difficulty": 4,
     "time": "45 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 1 ], [ "surface_heat", 2 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 25 ] ],
@@ -32,8 +32,8 @@
     "difficulty": 4,
     "time": "1 h",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 75 ] ],
@@ -54,8 +54,8 @@
     "difficulty": 4,
     "time": "1 h 20 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 12 ], [ "surface_heat", 24 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 300 ] ],
@@ -76,8 +76,8 @@
     "difficulty": 4,
     "time": "1 h 45 m",
     "book_learn": [ [ "recipe_lab_arcana", 4 ], [ "book_syncretism", 4 ], [ "recipe_lab_elec", 5 ], [ "book_hexenhammer", 5 ] ],
-    "using": [ [ "blacksmithing_standard", 1 ] ],
-    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "using": [ [ "blacksmithing_standard", 25 ], [ "surface_heat", 50 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "essence_dull", 625 ] ],
@@ -320,6 +320,28 @@
     "flags": [ "SECRET" ]
   },
   {
+    "result": "displacement_surge_generator_item",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 7 ], [ "fabrication", 6 ] ],
+    "difficulty": 8,
+    "time": "30 m",
+    "book_learn": [ [ "recipe_lab_arcana", 8 ], [ "recipe_lab_elec", 9 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "essence_surge_generator_item", 1 ] ],
+      [ [ "teleporter", 1 ], [ "portal", 1 ], [ "bio_teleport", 1 ], [ "bio_probability_travel", 1 ] ],
+      [ [ "shadow_gem", 1 ] ],
+      [ [ "gold_small", 100 ] ],
+      [ [ "silver_glyph", 1 ] ],
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
     "type": "recipe",
     "result": "bio_essence_surge_cell",
     "category": "CC_ARCANA",
@@ -453,6 +475,74 @@
       [ [ "RAM", 4 ] ],
       [ [ "inflorescent_root", 1 ] ],
       [ [ "engraved_stone", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "arcana_mech_power_cell",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "cooking", 6 ], [ "electronics", 6 ] ],
+    "difficulty": 8,
+    "time": "80 m",
+    "book_learn": [ [ "arcana_mech_shem", 8 ] ],
+    "using": [ [ "surface_heat", 25 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SCREW", "level": 1 }, { "id": "CHEM", "level": 2 } ],
+    "components": [
+      [ [ "essence_pure", 10 ], [ "arcana_essence_any", 100, "LIST" ] ],
+      [ [ "salt", 300 ] ],
+      [ [ "copper", 180 ] ],
+      [ [ "lye_powder", 120 ] ],
+      [ [ "essence_surge_generator_item", 1 ] ],
+      [ [ "wire", 2 ] ],
+      [ [ "amplifier", 2 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "arcana_mech_shem_copy",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "fabrication", 7 ] ],
+    "difficulty": 9,
+    "time": "120 m",
+    "book_learn": [ [ "arcana_mech_shem", 9 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "CHISEL", "level": 2 } ],
+    "using": [ [ "surface_heat", 50 ], [ "arcana_essence_any", 2 ] ],
+    "components": [ [ [ "steel_plate", 1 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bot_mech_arcana",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "mechanics",
+    "skills_required": [ [ "electronics", 8 ], [ "mechanics", 8 ] ],
+    "difficulty": 10,
+    "book_learn": [ [ "arcana_mech_shem", 10 ] ],
+    "time": "6 h",
+    "using": [ [ "soldering_standard", 60 ], [ "welding_standard", 40 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "arcana_mech_shem_copy", 1 ] ],
+      [ [ "rift_focus_cannon", 1 ] ],
+      [ [ "essence_surge_generator_item", 1 ] ],
+      [ [ "bio_temporal_stimulation", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "memory_module", 1 ] ],
+      [ [ "pathfinding_module", 1 ] ],
+      [ [ "identification_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "drive_by_wire_controls", 1 ] ],
+      [ [ "power_supply", 20 ] ],
+      [ [ "storage_battery", 2 ] ],
+      [ [ "frame", 2 ] ],
+      [ [ "steel_plate", 15 ] ]
     ],
     "flags": [ "SECRET" ]
   }

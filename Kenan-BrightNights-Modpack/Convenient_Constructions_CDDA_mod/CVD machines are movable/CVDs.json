@@ -1,0 +1,90 @@
+[
+  {
+    "id": "Install_CVD_machine_and_terminal",
+    "type": "construction",
+    "description": "Install CVD machine and terminal",
+    "category": "FURN",
+    "difficulty": 5,
+    "time": 100,
+    "tools": [ [ [ "oxy_torch", 100 ], [ "welder", 100 ], [ "welder_crude", 100 ], [ "toolset", 100 ] ] ],
+    "qualities": [ [ { "id": "SCREW", "level": 1 } ], [ { "id": "WRENCH", "level": 1 } ] ],
+    "components": [
+      [ [ "aaf_cvd_module", 1 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "RAM", 1 ] ],
+      [ [ "cable", 10 ] ],
+      [ [ "small_lcd_screen", 1 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "circuit", 2 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "amplifier", 2 ] ],
+      [ [ "plastic_chunk", 5 ] ],
+      [ [ "scrap", 5 ] ],
+      [ [ "sheet_metal", 2 ], [ "steel_plate", 1 ] ]
+    ],
+    "post_terrain": "t_cvdmachine"
+  },
+  {
+    "id": "aaf_cvd_module",
+    "type": "TOOL",
+    "symbol": "&",
+    "color": "light_gray",
+    "name": "CVD Terminal Core",
+    "description": "A refabricated CVD machine, ready to be constructed.",
+    "price": "8000 USD",
+    "material": [ "steel", "plastic" ],
+    "weight": 12000,
+    "volume": 18,
+    "bashing": 10,
+    "category": "tools"
+  },
+  {
+    "type": "terrain",
+    "id": "t_cvdmachine",
+    "name": "CVD control panel",
+    "description": "A CVD control panel",
+    "symbol": "&",
+    "color": "cyan",
+    "move_cost": 0,
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE" ],
+    "examine_action": "cvdmachine",
+    "deconstruct": {
+      "ter_set": "t_concrete",
+      "items": [
+        { "item": "processor", "prob": 75 },
+        { "item": "RAM", "prob": 80 },
+        { "item": "power_supply", "prob": 70 },
+        { "item": "amplifier", "prob": 90 },
+        { "item": "steel_chunk", "count": [ 1, 4 ] },
+        { "item": "steel_lump", "prob": 60 },
+        { "item": "sheet_metal", "prob": 50 },
+        { "item": "plastic_chunk", "count": [ 2, 5 ] },
+        { "item": "circuit", "count": [ 1, 2 ] },
+        { "item": "small_lcd_screen", "prob": 50 },
+        { "item": "cable", "count": [ 2, 10 ] },
+        { "item": "steel_plate", "prob": 80 },
+        { "item": "aaf_cvd_module", "prob": 100 }
+      ]
+    },
+    "bash": {
+      "str_min": 8,
+      "str_max": 150,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_console_broken",
+      "items": [
+        { "item": "processor", "prob": 25 },
+        { "item": "RAM", "count": [ 0, 2 ], "prob": 50 },
+        { "item": "cable", "charges": [ 1, 2 ], "prob": 50 },
+        { "item": "small_lcd_screen", "prob": 25 },
+        { "item": "e_scrap", "count": [ 1, 4 ], "prob": 50 },
+        { "item": "circuit", "count": [ 0, 2 ], "prob": 50 },
+        { "item": "power_supply", "prob": 25 },
+        { "item": "amplifier", "prob": 25 },
+        { "item": "plastic_chunk", "count": [ 4, 10 ], "prob": 50 },
+        { "item": "scrap", "count": [ 2, 6 ], "prob": 50 },
+        { "item": "aaf_cvd_module", "prob": 60 }
+      ]
+    }
+  }
+]

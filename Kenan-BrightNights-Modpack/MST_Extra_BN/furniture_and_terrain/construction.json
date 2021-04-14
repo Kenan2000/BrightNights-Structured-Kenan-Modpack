@@ -161,6 +161,23 @@
   },
   {
     "type": "construction",
+    "id": "constr_mst_well_bucket",
+    "description": "Add Bucket And Pulley To Covered Well",
+    "category": "CONSTRUCT",
+    "required_skills": [ [ "fabrication", 4 ], [ "survival", 4 ] ],
+    "time": "240 m",
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "DIG", "level": 2 } ], [ { "id": "SAW_W", "level": 1 } ] ],
+    "components": [
+      [ [ "bucket", 1 ], [ "bucket_log", 1 ] ],
+      [ [ "rope_makeshift_30", 1 ], [ "rope_30", 1 ], [ "vine_30", 1 ] ],
+      [ [ "stick", 8 ], [ "2x4", 8 ] ],
+      [ [ "nail", 10 ] ]
+    ],
+    "pre_terrain": "t_covered_well",
+    "post_terrain": "t_covered_well_bucket"
+  },
+  {
+    "type": "construction",
     "id": "constr_mst_wood_windbreak",
     "description": "Build Wooden Windbreak",
     "category": "FURN",
@@ -189,7 +206,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_rack",
-    "description": "Build Wooden Rack",
+    "description": "Build Makeshift Wooden Rack",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "160 m",
@@ -205,7 +222,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_counter",
-    "description": "Build Counter",
+    "description": "Build Makeshift Counter",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "60 m",
@@ -221,7 +238,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_table",
-    "description": "Build Table",
+    "description": "Build Makeshift Table",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "60 m",
@@ -237,7 +254,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_chair",
-    "description": "Build Chair",
+    "description": "Build Makeshift Chair",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
     "time": "60 m",
@@ -253,7 +270,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_bench",
-    "description": "Build Bench",
+    "description": "Build Makeshift Bench",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
     "time": "60 m",
