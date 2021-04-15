@@ -1,5 +1,35 @@
 [
   {
+    "type": "recipe",
+    "result": "kawaii_amts_reciver",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "electronics",
+    "difficulty": 2,
+    "time": "25 m",
+    "autolearn": true,
+    "reversible": false,
+    "book_learn": [ [ "radio_book", 2 ], [ "textbook_anarch", 3 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "receiver", 1 ] ], [ [ "antenna", 1 ] ], [ [ "scrap", 5 ] ], [ [ "cable", 7 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "kawaii_amts_transmitter",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_TOOLS",
+    "skill_used": "electronics",
+    "difficulty": 2,
+    "time": "25 m",
+    "autolearn": true,
+    "reversible": false,
+    "book_learn": [ [ "radio_book", 2 ], [ "textbook_anarch", 3 ] ],
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [ [ [ "receiver", 1 ] ], [ [ "antenna", 1 ] ], [ [ "scrap", 5 ] ], [ [ "cable", 7 ] ] ]
+  },
+  {
     "result": "kawaii_amts_pac_t1_01",
     "type": "recipe",
     "category": "CC_OTHER",
@@ -7,7 +37,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "components": [ [ [ "kawaii_amts_pacsys", 1 ] ], [ [ "log", 3 ] ] ]
   },
@@ -19,7 +49,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "components": [ [ [ "kawaii_amts_pacsys", 1 ] ], [ [ "scrap", 30 ] ] ]
   },
@@ -31,7 +61,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "components": [ [ [ "kawaii_amts_pacsys", 1 ] ], [ [ "rag", 30 ] ] ]
   },
@@ -43,7 +73,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "components": [ [ [ "kawaii_amts_pacsys", 1 ] ], [ [ "log", 6 ] ] ]
   },
@@ -55,7 +85,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "components": [ [ [ "kawaii_amts_pacsys", 1 ] ], [ [ "scrap", 60 ] ] ]
   },
@@ -67,7 +97,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "components": [ [ [ "kawaii_amts_pacsys", 1 ] ], [ [ "rag", 60 ] ] ]
   },
@@ -79,7 +109,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "charges": 1000,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_TRANSMITTER", "level": 1 } ],
@@ -93,7 +123,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 10 ] ] ]
@@ -106,7 +136,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "charges": 250,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_TRANSMITTER", "level": 1 } ],
@@ -120,7 +150,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "charges": 500,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_TRANSMITTER", "level": 1 } ],
@@ -135,7 +165,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 50 ] ] ]
@@ -149,7 +179,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 100 ] ] ]
@@ -163,7 +193,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 200 ] ] ]
@@ -177,7 +207,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 150 ] ] ]
@@ -191,7 +221,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 200 ] ] ]
@@ -205,7 +235,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 300 ] ] ]
@@ -219,7 +249,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -233,7 +263,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 100 ] ] ]
@@ -247,7 +277,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 300 ] ] ]
@@ -261,7 +291,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 750 ] ] ]
@@ -275,7 +305,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -289,7 +319,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -303,7 +333,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -317,7 +347,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -331,7 +361,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -345,7 +375,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 3000 ] ] ]
@@ -359,7 +389,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1500 ] ] ]
@@ -373,7 +403,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 750 ] ] ]
@@ -387,7 +417,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -401,7 +431,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -415,7 +445,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -429,7 +459,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -443,7 +473,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -457,7 +487,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 750 ] ] ]
@@ -471,7 +501,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2500 ] ] ]
@@ -485,7 +515,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -499,7 +529,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -513,7 +543,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -527,7 +557,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 750 ] ] ]
@@ -541,7 +571,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -555,7 +585,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -569,7 +599,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 3000 ] ] ]
@@ -583,7 +613,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -597,7 +627,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2500 ] ] ]
@@ -611,7 +641,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -625,7 +655,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -639,7 +669,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 600 ] ] ]
@@ -653,7 +683,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -667,7 +697,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1000 ] ] ]
@@ -681,7 +711,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -695,7 +725,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 5000 ] ] ]
@@ -709,7 +739,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 5000 ] ] ]
@@ -723,7 +753,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 3000 ] ] ]
@@ -737,7 +767,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 200 ] ] ]
@@ -751,7 +781,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -765,7 +795,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 200 ] ] ]
@@ -779,7 +809,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 200 ] ] ]
@@ -793,7 +823,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 50 ] ] ]
@@ -807,7 +837,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 50 ] ] ]
@@ -821,7 +851,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier1", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 300 ] ] ]
@@ -835,7 +865,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -849,7 +879,7 @@
     "skill_used": "fabrication",
     "time": 100,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier2", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 500 ] ] ]
@@ -863,7 +893,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 200 ] ] ]
@@ -877,7 +907,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2500 ] ] ]
@@ -891,7 +921,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 3000 ] ] ]
@@ -905,7 +935,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1500 ] ] ]
@@ -919,7 +949,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
@@ -933,7 +963,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 3500 ] ] ]
@@ -947,7 +977,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 750 ] ] ]
@@ -961,7 +991,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 6000 ] ] ]
@@ -975,7 +1005,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 6000 ] ] ]
@@ -989,7 +1019,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 3500 ] ] ]
@@ -1003,7 +1033,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 4000 ] ] ]
@@ -1017,7 +1047,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2500 ] ] ]
@@ -1031,7 +1061,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 4500 ] ] ]
@@ -1045,7 +1075,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1500 ] ] ]
@@ -1059,7 +1089,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 1500 ] ] ]
@@ -1073,7 +1103,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 8500 ] ] ]
@@ -1087,7 +1117,7 @@
     "skill_used": "fabrication",
     "time": 1000,
     "reversible": false,
-    "autolearn": false,
+    "autolearn": true,
     "book_learn": [ [ "kawaii_book_pacsys_tier3", 0 ], [ "kawaii_book_pacsys_tier_kawaii", 0 ] ],
     "qualities": [ { "id": "AMTS_RECEIVER", "level": 1 } ],
     "components": [ [ [ "kawaii_amts_point", 2000 ] ] ]
