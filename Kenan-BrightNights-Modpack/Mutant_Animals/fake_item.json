@@ -59,7 +59,7 @@
     "durability": 10,
     "skill": "pistol",
     "range": 20,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "dispersion": 240,
     "clip_size": 10,
     "ammo" : "mucus_spit",

@@ -5,7 +5,7 @@
     "copy-from": "rifle_auto",
     "name": "IA2",
     "description": "The IA2 is a select fire assault rifle designed to replace the aging FAL, M16 A2, and HK33's that are in service with the brazilian military . It's covered in picatany rails and can support a wide range of attachments. The standard length assault rifle variant has a 17.2 inch barrel (440mm) and accepts any STANAG pattern magazines.",
-    "weight": 3500,
+    "weight": "3500 g",
     "volume": "2 L",
     "price": "300 USD",
     "to_hit": -1,
@@ -27,7 +27,8 @@
       [ "mechanism", 2 ],
       [ "muzzle", 1 ],
       [ "rail", 3 ],
-      [ "sight", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
@@ -37,7 +38,7 @@
     "type": "GUN",
     "name": "IA2 CQC",
     "description": "The IA2 is a select fire assault rifle designed to replace the aging FAL, M16 A2, and HK33's that are in service with the brazilian military . It's covered in picatany rails and can support a wide range of attachments. The CQC variant has a 10.3 inch barrel (260mm) and accepts any STANAG pattern magazines.",
-    "weight": 3100,
+    "weight": "3100 g",
     "volume": "1250 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -59,7 +60,8 @@
       [ "mechanism", 2 ],
       [ "muzzle", 1 ],
       [ "rail", 3 ],
-      [ "sight", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
@@ -69,7 +71,7 @@
     "type": "GUN",
     "name": "IA2 Carbine",
     "description": "The IA2 carbine is a select fire assault rifle designed to replace the aging FAL, M16 A2, and HK33's that are in service with the brazilian military . It's covered in picatany rails and can support a wide range of attachments. The carbine variant has a 14.5 inch barrel (370mm) and accepts any STANAG pattern magazines.",
-    "weight": 3400,
+    "weight": "3400 g",
     "volume": "1750 ml",
     "price": "300 USD",
     "to_hit": -1,
@@ -91,7 +93,8 @@
       [ "mechanism", 2 ],
       [ "muzzle", 1 ],
       [ "rail", 3 ],
-      [ "sight", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
@@ -101,7 +104,7 @@
     "type": "GUN",
     "name": "RDB",
     "description": "Unlike traditional bullpups, the RDB ejects the brass downwards out of the weapon, making the RDB is on of the few truly ambidexterous firearms on the market",
-    "weight": 3041,
+    "weight": "3041 g",
     "volume": "1250 ml",
     "price": "2500 USD",
     "to_hit": -1,
@@ -114,7 +117,7 @@
     "dispersion": 140,
     "durability": 5,
     "barrel_length": 1,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ] ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
   },
   {
@@ -122,7 +125,7 @@
     "type": "GUN",
     "name": "M-231",
     "description": "The m231 port firing weapon is a heavily modified M16 pattern rifle. It has no stock, no sights, a threaded hand guard to screw into the firing ports on US military armored vehicles, and a lucidcrously high rate of fire. It was never intened to leave the vehicle it was issued with.",
-    "weight": 3391,
+    "weight": "3391 g",
     "volume": "1250 ml",
     "price": "60 USD",
     "to_hit": -1,
@@ -136,7 +139,7 @@
     "durablilty": 5,
     "modes": [ [ "DEFAULT", "full auto", 30 ] ],
     "barrel_length": 1,
-    "valid_mod_locations": [ [ "barrel", 1 ], [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 2 ], [ "muzzle", 1 ] ],
+    "valid_mod_locations": [ [ "barrel", 1 ], [ "accessories", 4 ], [ "sling", 1 ], [ "grip", 1 ], [ "mechanism", 2 ], [ "muzzle", 1 ] ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
   },
   {
@@ -144,7 +147,7 @@
     "type": "GUN",
     "name": "XM-231",
     "description": "The xm231 port firing weapon is a heavily modified M16 pattern rifle. unlike the m231 the mx231 has a wire collapsing stock and rudamentary sights, but it still has the threaded hand guard to screw into the firing ports on US military armored vehicles, and a lucidcrously high rate of fire. It was never intened to leave the vehicle it was issued with.",
-    "weight": 3391,
+    "weight": "3391 g",
     "volume": "1250 ml",
     "price": "60 USD",
     "to_hit": -1,
@@ -158,7 +161,7 @@
     "durablilty": 5,
     "modes": [ [ "DEFAULT", "full auto", 30 ] ],
     "barrel_length": 1,
-    "valid_mod_locations": [ [ "barrel", 1 ], [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 2 ], [ "muzzle", 1 ] ],
+    "valid_mod_locations": [ [ "barrel", 1 ], [ "accessories", 4 ], [ "sling", 1 ], [ "grip", 1 ], [ "mechanism", 2 ], [ "muzzle", 1 ] ],
     "built_in_mods": [ "folding_stock" ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
   },
@@ -167,8 +170,8 @@
     "type": "GUN",
     "name": "XM-29 OICW",
     "description": "The XM-29 OICW is an expirimental rifle that was intended to replace the M-16 rifles currently in service with the US military. The OICW is a Selectable Assault Battle Rifle that consists of two parts. a 20x28mm HE module with a barrel length of 460 mm and a modified G36 with a barrel length of 250 mm. Despite increasing the available firepower of any given soldier it's insanely heavy and isn't great at engaging targets at longer ranges.",
-    "weight": 8200,
-    "volume": 12,
+    "weight": "8200 g",
+    "volume": "3 L",
     "price": "100000 USD",
     "to_hit": -1,
     "bashing": 15,
@@ -182,7 +185,7 @@
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 3 ] ],
     "barrel_length": 1,
     "built_in_mods": [ "xm29launcher", "oicwscope" ],
-    "valid_mod_locations": [ [ "muzzle", 1 ], [ "accessories", 4 ], [ "mechanism", 1 ] ],
+    "valid_mod_locations": [ [ "muzzle", 1 ], [ "accessories", 4 ], [ "mechanism", 1 ], [ "sling", 1 ] ],
     "magazines": [ [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ] ]
   },
   {
@@ -190,7 +193,7 @@
     "type": "GUN",
     "name": "M16a1",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -211,6 +214,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -223,7 +227,7 @@
     "type": "GUN",
     "name": "m16a1 (semi-auto)",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle is a civilian reproduction.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -244,6 +248,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -256,7 +261,7 @@
     "type": "GUN",
     "name": "M16a1 (burst)",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle has an a2 lower receiver giving it burst fire capabilities instead of full-auto.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -277,6 +282,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -289,7 +295,7 @@
     "type": "GUN",
     "name": "M16a1 (auto/burst)",
     "description": "The first generation of the M16. Introduced in vietnam as a replacement for the m14 this rifle suffered from many mechanical failures and was over all a very poor weapon. This rifle has an a3 lower receiver giving it burst fire and full-auto capabilities.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -310,6 +316,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -322,7 +329,7 @@
     "type": "GUN",
     "name": "M16a2",
     "description": "The second generation of the M16. Full-auto was phased out in favor of a 3 shot burst mode.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -343,6 +350,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -355,7 +363,7 @@
     "type": "GUN",
     "name": "M16a2 (semi-auto)",
     "description": "The second generation of the M16. This rifle is a civilian variant, as such it only has semi-auto capabilities.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -376,6 +384,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -388,7 +397,7 @@
     "type": "GUN",
     "name": "M16a2 (auto)",
     "description": "The second generation of the M16. This rifle has an a1 lower reciver giving full-auto capabilities instead of 3 shot burst.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -409,6 +418,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -421,7 +431,7 @@
     "type": "GUN",
     "name": "M16a2 (auto/burst)",
     "description": "The second generation of the M16. This rifle has an a3 lower reciver giving full-auto and 3 shot burst capabilities.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "200 USD",
     "to_hit": -1,
@@ -442,6 +452,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 4 ],
+      [ "sling", 1 ],
       [ "grip", 1 ]
     ],
     "magazines": [
@@ -454,7 +465,7 @@
     "type": "GUN",
     "name": "m16a3",
     "description": "the third generation of the M16 series of rifles. The a3 variants have an intigrated quad-rail and a detachable carry handle for mounting optics, as well as semi-auto, burst, and full-auto fire modes.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "900 USD",
     "to_hit": -1,
@@ -477,7 +488,8 @@
       [ "mechanism", 4 ],
       [ "grip", 1 ],
       [ "rail", 2 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "magazines": [
       [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ],
@@ -489,7 +501,7 @@
     "type": "GUN",
     "name": "m16a3 (auto)",
     "description": "the third generation of the M16 series of rifles. The a3 variants have an intigrated quad-rail and a detachable carry handle for mounting optics. This rifle has an a1 lower receiver and as such only has semi-auto and full-auto capabilities.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "900 USD",
     "to_hit": -1,
@@ -512,7 +524,8 @@
       [ "mechanism", 4 ],
       [ "grip", 1 ],
       [ "rail", 2 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "magazines": [
       [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ],
@@ -524,7 +537,7 @@
     "type": "GUN",
     "name": "m16a3 (burst)",
     "description": "the third generation of the M16 series of rifles. The a3 variants have an intigrated quad-rail and a detachable carry handle for mounting optics. This rifle has an a2 lower receiver and as such only has semi-auto and burst capabilities.",
-    "weight": 3977,
+    "weight": "3977 g",
     "volume": "1750 ml",
     "price": "900 USD",
     "to_hit": -1,
@@ -547,7 +560,8 @@
       [ "mechanism", 4 ],
       [ "grip", 1 ],
       [ "rail", 2 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "magazines": [
       [ "223", [ "stanag30", "stanag10", "stanag50", "survivor223mag" ] ],
@@ -561,7 +575,7 @@
     "name": "AR-15",
     "//": "This is assumed to be the standard model matching the (currently not in-game) M16.",
     "description": "This ubiquitous rifle is the forefather of M16 rifle series.  It is lightweight and accurate, but will malfunction if not properly maintained.  This one is a semi automatic civilian version.",
-    "weight": 2815,
+    "weight": "2815 g",
     "volume": "2 L",
     "price": "1250 USD",
     "to_hit": -1,
@@ -610,11 +624,7 @@
     "name": "STG-44 (5.56x45 full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 5.56x45 round. The lower receiver has been replaced with an original lower receiver.",
     "ammo": "223",
-    "magazines": [
-      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
-      [ "223", [ "stgmag223" ] ],
-      [ "300blk", [ "stgmag300blk" ] ]
-    ]
+    "magazines": [ [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ], [ "223", [ "stgmag223" ] ], [ "300blk", [ "stgmag300blk" ] ] ]
   },
   {
     "id": "HMG44_223_sbr_auto",
@@ -623,11 +633,7 @@
     "name": "STG-44 (5.56x45 SBR full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 5.56x45 round. The lower receiver has been replaced with an original lower receiver and it has also been cut down and converted into an SBR.",
     "ammo": "223",
-    "magazines": [
-      [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ],
-      [ "223", [ "stgmag223" ] ],
-      [ "300blk", [ "stgmag300blk" ] ]
-    ]
+    "magazines": [ [ "7.92x33k", [ "stg44magold", "stg44magnew" ] ], [ "223", [ "stgmag223" ] ], [ "300blk", [ "stgmag300blk" ] ] ]
   },
   {
     "id": "HMG44_223_smol_auto",

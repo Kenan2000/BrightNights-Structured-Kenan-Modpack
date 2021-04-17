@@ -89,7 +89,7 @@
     "to_hit": -2,
     "dispersion": 150,
     "sight_dispersion": 60,
-    "ranged_damage": 8,
+    "ranged_damage": { "damage_type": "stab", "amount": 8 },
     "aim_speed": 5,
     "recoil": 75,
     "durability": 10,
@@ -197,7 +197,7 @@
     "volume": "500 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "dispersion": 195,
     "sight_dispersion": 75,
     "aim_speed": 5,
@@ -236,7 +236,7 @@
     "volume": "750 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "stab", "amount": 4 },
     "dispersion": 155,
     "sight_dispersion": 85,
     "aim_speed": 5,
@@ -275,7 +275,7 @@
     "volume": "500 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 8,
+    "ranged_damage": { "damage_type": "stab", "amount": 8 },
     "dispersion": 135,
     "sight_dispersion": 70,
     "aim_speed": 5,
@@ -314,7 +314,7 @@
     "volume": "500 ml",
     "bashing": 8,
     "to_hit": -3,
-    "ranged_damage": 2,
+    "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": 1,
     "dispersion": 150,
     "sight_dispersion": 80,
@@ -353,7 +353,7 @@
     "volume": "500 ml",
     "bashing": 6,
     "to_hit": -1,
-    "ranged_damage": 3,
+    "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 2,
     "dispersion": 150,
     "sight_dispersion": 70,
@@ -392,7 +392,7 @@
     "volume": "250 ml",
     "bashing": 6,
     "to_hit": 1,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "range": 3,
     "dispersion": 115,
     "sight_dispersion": 60,
@@ -431,7 +431,7 @@
     "volume": "500 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 3,
+    "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 6,
     "dispersion": 160,
     "sight_dispersion": 65,
@@ -470,7 +470,7 @@
     "volume": "500 ml",
     "bashing": 12,
     "to_hit": -2,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "dispersion": 175,
     "sight_dispersion": 75,
     "aim_speed": 4,
@@ -510,7 +510,7 @@
     "volume": "750 ml",
     "bashing": 12,
     "to_hit": -2,
-    "ranged_damage": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "dispersion": 245,
     "sight_dispersion": 85,
     "aim_speed": 4,
@@ -550,7 +550,7 @@
     "volume": "750 ml",
     "bashing": 12,
     "to_hit": -2,
-    "ranged_damage": 2,
+    "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "dispersion": 205,
     "sight_dispersion": 75,
     "aim_speed": 5,
@@ -589,7 +589,7 @@
     "volume": "500 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 3,
+    "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "dispersion": 175,
     "sight_dispersion": 65,
     "aim_speed": 6,
@@ -628,7 +628,7 @@
     "volume": "500 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "dispersion": 225,
     "sight_dispersion": 85,
     "aim_speed": 6,
@@ -704,7 +704,7 @@
     "volume": "500 ml",
     "bashing": 8,
     "to_hit": -3,
-    "ranged_damage": 2,
+    "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": 1,
     "dispersion": 200,
     "sight_dispersion": 80,
@@ -743,7 +743,7 @@
     "volume": "500 ml",
     "bashing": 8,
     "to_hit": -3,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "stab", "amount": 4 },
     "range": 2,
     "dispersion": 190,
     "sight_dispersion": 80,
@@ -782,7 +782,7 @@
     "volume": "500 ml",
     "bashing": 8,
     "to_hit": -2,
-    "ranged_damage": 12,
+    "ranged_damage": { "damage_type": "stab", "amount": 12 },
     "dispersion": 335,
     "sight_dispersion": 90,
     "aim_speed": 3,
@@ -821,7 +821,7 @@
     "volume": "250 ml",
     "bashing": 8,
     "to_hit": -3,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "range": 2,
     "dispersion": 175,
     "sight_dispersion": 60,
@@ -860,7 +860,7 @@
     "volume": "250 ml",
     "bashing": 7,
     "to_hit": -1,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "range": 3,
     "dispersion": 165,
     "sight_dispersion": 60,
@@ -1002,7 +1002,7 @@
     "volume": "750 ml",
     "bashing": 9,
     "to_hit": -2,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 240,
     "sight_dispersion": 105,
     "aim_speed": 4,
@@ -1044,7 +1044,7 @@
     "volume": "2 L",
     "bashing": 9,
     "to_hit": -2,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 180,
     "sight_dispersion": 105,
     "aim_speed": 4,
@@ -1063,6 +1063,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1087,7 +1088,7 @@
     "to_hit": -3,
     "dispersion": 125,
     "sight_dispersion": 90,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "aim_speed": 4,
     "recoil": 25,
     "durability": 7,
@@ -1104,6 +1105,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1128,7 +1130,7 @@
     "to_hit": -3,
     "dispersion": 115,
     "sight_dispersion": 85,
-    "ranged_damage": 2,
+    "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "aim_speed": 4,
     "recoil": 20,
     "durability": 7,
@@ -1145,6 +1147,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1169,7 +1172,7 @@
     "to_hit": -1,
     "dispersion": 135,
     "sight_dispersion": 70,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "aim_speed": 4,
     "recoil": 100,
     "durability": 8,
@@ -1186,6 +1189,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1210,7 +1214,7 @@
     "to_hit": -3,
     "dispersion": 265,
     "sight_dispersion": 80,
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "aim_speed": 3,
     "recoil": 65,
     "durability": 5,
@@ -1227,6 +1231,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1249,7 +1254,7 @@
     "volume": "2 L",
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 130,
     "sight_dispersion": 95,
     "aim_speed": 4,
@@ -1268,6 +1273,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1309,6 +1315,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1350,6 +1357,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1391,6 +1399,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1432,6 +1441,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1474,6 +1484,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1516,6 +1527,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1557,6 +1569,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1598,6 +1611,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1620,7 +1634,7 @@
     "volume": 11,
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "dispersion": -10,
     "sight_dispersion": 40,
     "aim_speed": 4,
@@ -1639,6 +1653,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1661,7 +1676,7 @@
     "volume": "2500 ml",
     "bashing": 13,
     "to_hit": -1,
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "dispersion": 40,
     "sight_dispersion": 50,
     "aim_speed": 4,
@@ -1680,6 +1695,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1702,7 +1718,7 @@
     "volume": "2500 ml",
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "dispersion": -5,
     "sight_dispersion": 60,
     "aim_speed": 4,
@@ -1721,6 +1737,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1743,7 +1760,7 @@
     "volume": "1500 ml",
     "bashing": 7,
     "to_hit": 1,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": -25,
     "sight_dispersion": 50,
     "aim_speed": 5,
@@ -1762,6 +1779,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1784,7 +1802,7 @@
     "volume": "1250 ml",
     "bashing": 5,
     "to_hit": 2,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "dispersion": -25,
     "sight_dispersion": 50,
     "aim_speed": 3,
@@ -1804,6 +1822,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1826,7 +1845,7 @@
     "volume": "2500 ml",
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "stab", "amount": 4 },
     "dispersion": 20,
     "sight_dispersion": 50,
     "aim_speed": 4,
@@ -1846,6 +1865,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1867,7 +1887,7 @@
     "volume": "2250 ml",
     "bashing": 7,
     "to_hit": -1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 25,
     "dispersion": 20,
     "sight_dispersion": 70,
@@ -1885,6 +1905,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1906,7 +1927,7 @@
     "volume": 14,
     "bashing": 7,
     "to_hit": -1,
-    "ranged_damage": 9,
+    "ranged_damage": { "damage_type": "stab", "amount": 9 },
     "range": 55,
     "dispersion": 20,
     "sight_dispersion": 50,
@@ -1924,6 +1945,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1945,7 +1967,7 @@
     "volume": 13,
     "bashing": 7,
     "to_hit": -1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 45,
     "dispersion": 30,
     "sight_dispersion": 60,
@@ -1963,6 +1985,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -1984,7 +2007,7 @@
     "volume": 11,
     "bashing": 7,
     "to_hit": -1,
-    "ranged_damage": 8,
+    "ranged_damage": { "damage_type": "stab", "amount": 8 },
     "range": 45,
     "dispersion": 30,
     "sight_dispersion": 60,
@@ -2002,6 +2025,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2027,7 +2051,7 @@
     "to_hit": 1,
     "dispersion": -15,
     "sight_dispersion": 45,
-    "ranged_damage": 14,
+    "ranged_damage": { "damage_type": "stab", "amount": 14 },
     "aim_speed": 4,
     "recoil": 90,
     "durability": 10,
@@ -2044,6 +2068,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2079,7 +2104,8 @@
       [ "conversion", 1 ],
       [ "mechanism", 4 ],
       [ "muzzle", 1 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "magazines": [ [ "308", [ ".30820mag" ] ] ]
   },
@@ -2118,6 +2144,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2158,6 +2185,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2198,6 +2226,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2238,6 +2267,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2278,6 +2308,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2318,6 +2349,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2358,6 +2390,7 @@
       [ "muzzle", 1 ],
       [ "rail", 2 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 2 ]
     ],
@@ -2398,6 +2431,7 @@
       [ "muzzle", 1 ],
       [ "rail", 2 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 2 ]
     ],
@@ -2434,6 +2468,7 @@
       [ "conversion", 1 ],
       [ "mechanism", 4 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "muzzle", 1 ]
     ],
     "magazines": [ [ "45", [ "m1911mag", "m1911bigmag" ] ] ]
@@ -2471,6 +2506,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2493,7 +2529,7 @@
     "volume": "2 L",
     "bashing": 10,
     "to_hit": -1,
-    "ranged_damage": 3,
+    "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "dispersion": 10,
     "sight_dispersion": 60,
     "aim_speed": 4,
@@ -2512,6 +2548,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2534,7 +2571,7 @@
     "volume": "2250 ml",
     "bashing": 8,
     "to_hit": 1,
-    "ranged_damage": 3,
+    "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "dispersion": 10,
     "sight_dispersion": 55,
     "aim_speed": 5,
@@ -2553,6 +2590,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2575,7 +2613,7 @@
     "volume": "1750 ml",
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "dispersion": -25,
     "sight_dispersion": 55,
     "aim_speed": 4,
@@ -2594,6 +2632,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2634,6 +2673,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2674,6 +2714,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2714,6 +2755,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2737,7 +2779,7 @@
     "ammo": "shot",
     "dispersion": 65,
     "sight_dispersion": 80,
-    "ranged_damage": 2,
+    "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "aim_speed": 4,
     "recoil": 20,
     "durability": 9,
@@ -2755,6 +2797,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -2777,7 +2820,7 @@
     "volume": "1 L",
     "bashing": 10,
     "to_hit": -1,
-    "ranged_damage": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "dispersion": 200,
     "sight_dispersion": 80,
     "aim_speed": 4,
@@ -2833,7 +2876,7 @@
     "dispersion": 200,
     "sight_dispersion": 90,
     "aim_speed": 4,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "stab", "amount": 4 },
     "recoil": 70,
     "durability": 9,
     "clip_size": 6,
@@ -2857,7 +2900,7 @@
     "volume": "750 ml",
     "bashing": 10,
     "to_hit": -2,
-    "ranged_damage": 2,
+    "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "dispersion": 145,
     "sight_dispersion": 80,
     "aim_speed": 3,
@@ -2897,7 +2940,7 @@
     "bashing": 8,
     "to_hit": -1,
     "dispersion": 250,
-    "ranged_damage": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "sight_dispersion": 90,
     "aim_speed": 5,
     "recoil": 80,
@@ -2923,7 +2966,7 @@
     "volume": "2 L",
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "stab", "amount": 4 },
     "dispersion": 175,
     "sight_dispersion": 70,
     "aim_speed": 3,
@@ -2943,6 +2986,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -2982,6 +3026,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3008,7 +3053,7 @@
     "recoil": 65,
     "durability": 10,
     "barrel_length": 5,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ] ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "magazines": [ [ "762R", [ "7.62x54Rmag", "7.62x54Rmag2" ] ] ]
   },
   {
@@ -3033,7 +3078,7 @@
     "recoil": 95,
     "durability": 10,
     "barrel_length": 3,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ] ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "magazines": [ [ "762R", [ "7.62x54Rmag", "7.62x54Rmag2" ] ] ]
   },
   {
@@ -3053,7 +3098,7 @@
     "volume": "750 ml",
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": -10,
     "dispersion": 200,
     "sight_dispersion": 95,
@@ -3071,7 +3116,8 @@
       [ "magazine", 2 ],
       [ "mechanism", 4 ],
       [ "muzzle", 1 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ]
   },
   {
@@ -3091,7 +3137,7 @@
     "volume": "1500 ml",
     "bashing": 4,
     "to_hit": -2,
-    "ranged_damage": 8,
+    "ranged_damage": { "damage_type": "stab", "amount": 8 },
     "dispersion": 60,
     "sight_dispersion": 90,
     "aim_speed": 5,
@@ -3110,6 +3156,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3131,7 +3178,7 @@
     "volume": 12,
     "bashing": 13,
     "to_hit": -1,
-    "ranged_damage": 3,
+    "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "dispersion": 25,
     "sight_dispersion": 60,
     "aim_speed": 3,
@@ -3151,6 +3198,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3172,7 +3220,7 @@
     "volume": "2500 ml",
     "bashing": 16,
     "to_hit": 1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "dispersion": 75,
     "sight_dispersion": 70,
     "aim_speed": 4,
@@ -3191,6 +3239,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3232,6 +3281,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3273,6 +3323,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3314,6 +3365,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -3335,7 +3387,7 @@
     "volume": 16,
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": 4,
+    "ranged_damage": { "damage_type": "stab", "amount": 4 },
     "dispersion": 125,
     "sight_dispersion": 75,
     "aim_speed": 4,
@@ -3354,6 +3406,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ],
     "magazines": [ [ "3006", [ "jamisonmag_fg42mag" ] ] ]
@@ -3375,7 +3428,7 @@
     "volume": 18,
     "bashing": 14,
     "to_hit": -1,
-    "ranged_damage": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "dispersion": 125,
     "sight_dispersion": 85,
     "aim_speed": 3,
@@ -3394,6 +3447,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel", 1 ],
       [ "stock", 1 ]
     ],
@@ -3416,7 +3470,7 @@
     "volume": 12,
     "bashing": 12,
     "to_hit": -1,
-    "ranged_damage": -8,
+    "ranged_damage": { "damage_type": "stab", "amount": -8 },
     "dispersion": 160,
     "sight_dispersion": 75,
     "aim_speed": 4,
@@ -3435,6 +3489,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ],
     "magazines": [ [ "223", [ "stanag50", "stanag30", "belt223" ] ] ]
@@ -3456,7 +3511,7 @@
     "volume": 24,
     "bashing": 20,
     "to_hit": -4,
-    "ranged_damage": 9,
+    "ranged_damage": { "damage_type": "stab", "amount": 9 },
     "dispersion": 75,
     "sight_dispersion": 85,
     "aim_speed": 1,
@@ -3475,6 +3530,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ],
     "magazines": [ [ "3006", [ "lewiswhy" ] ] ]
@@ -3515,6 +3571,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -3538,7 +3595,7 @@
     "volume": 18,
     "bashing": 19,
     "to_hit": -5,
-    "ranged_damage": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "dispersion": 60,
     "sight_dispersion": 65,
     "aim_speed": 2,
@@ -3557,6 +3614,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -3579,7 +3637,7 @@
     "volume": 22,
     "bashing": 19,
     "to_hit": -5,
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "dispersion": 50,
     "sight_dispersion": 65,
     "aim_speed": 1,
@@ -3598,6 +3656,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -3620,7 +3679,7 @@
     "volume": 23,
     "bashing": 19,
     "to_hit": -5,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "dispersion": -10,
     "sight_dispersion": 90,
     "aim_speed": 4,
@@ -3640,6 +3699,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -3681,6 +3741,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -3703,7 +3764,7 @@
     "volume": 12,
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 2,
     "dispersion": 70,
     "sight_dispersion": 55,
@@ -3724,6 +3785,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ]
   },
@@ -3744,7 +3806,7 @@
     "volume": 12,
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 4,
     "dispersion": 50,
     "sight_dispersion": 50,
@@ -3765,6 +3827,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ]
   },
@@ -3785,7 +3848,7 @@
     "volume": 12,
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 7,
+    "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 2,
     "dispersion": 65,
     "sight_dispersion": 50,
@@ -3806,6 +3869,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ]
   },
@@ -3830,7 +3894,7 @@
     "clip_size": 5,
     "reload": 70,
     "barrel_length": 3,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ] ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "flags": [ "RELOAD_ONE" ]
   },
   {
@@ -3850,7 +3914,7 @@
     "volume": 12,
     "bashing": 8,
     "to_hit": -1,
-    "ranged_damage": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "range": 3,
     "dispersion": 75,
     "sight_dispersion": 55,
@@ -3871,6 +3935,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ]
     ]
   },
@@ -3891,12 +3956,12 @@
     "ammo": "flintlock",
     "skill": "rifle",
     "range": 12,
-    "ranged_damage": 10,
+    "ranged_damage": { "damage_type": "stab", "amount": 10 },
     "dispersion": 100,
     "durability": 6,
     "clip_size": 1,
     "reload": 60,
-    "valid_mod_locations": [ [ "accessories", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [ [ "accessories", 1 ], [ "underbarrel", 1 ], [ "sling", 1 ] ],
     "flags": [ "NEVER_JAMS", "DURABLE_MELEE" ]
   }
 ]

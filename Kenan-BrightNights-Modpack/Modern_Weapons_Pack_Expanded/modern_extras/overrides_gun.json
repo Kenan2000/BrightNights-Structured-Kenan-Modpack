@@ -13,7 +13,7 @@
     "type": "GUN",
     "name": "M249",
     "//": "effective against point target at 700 meters barrel length ~18in.",
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "dispersion": 140
   },
   {
@@ -135,6 +135,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -213,6 +214,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 2 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -344,7 +346,8 @@
       [ "mechanism", 4 ],
       [ "receiver", 1 ],
       [ "muzzle", 1 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "ammo": [ "308", "22", "223" ],
     "magazines": [
@@ -536,7 +539,8 @@
       [ "mechanism", 4 ],
       [ "receiver", 1 ],
       [ "muzzle", 1 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "magazines": [ [ "308", [ "m14mag", "m14smallmag", "308x_14mag50" ] ], [ "223", [ "stanag10", "223betacmag" ] ] ]
   },
@@ -556,6 +560,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -648,6 +653,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
@@ -690,7 +696,8 @@
       [ "receiver", 1 ],
       [ "muzzle", 1 ],
       [ "rail", 1 ],
-      [ "sights", 1 ]
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "ammo": [ "9mm", "22", "40", "45", "46", "57" ],
     "magazines": [
@@ -731,6 +738,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]

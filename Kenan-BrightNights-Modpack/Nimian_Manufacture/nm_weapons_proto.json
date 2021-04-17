@@ -16,7 +16,7 @@
     "volume": 20,
     "bashing": 6,
     "to_hit": -2,
-    "ranged_damage": { "damage_type": "stab", "amount": 40 },
+    "ranged_damage": { "damage_type": "electric", "amount": 40 },
     "dispersion": 160,
     "range": 15,
     "sight_dispersion": 75,
@@ -43,7 +43,7 @@
     "volume": "6 L",
     "bashing": 6,
     "to_hit": -2,
-    "ranged_damage": { "damage_type": "stab", "amount": 60 },
+    "ranged_damage": { "damage_type": "electric", "amount": 60 },
     "dispersion": 200,
     "range": 20,
     "sight_dispersion": 100,
@@ -80,6 +80,14 @@
     "clip_size": 3,
     "reload": 200,
     "loudness": -50,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "conversion", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "stock", 1 ] ]
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "conversion", 1 ],
+      [ "sling", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "stock", 1 ]
+    ]
   }
 ]

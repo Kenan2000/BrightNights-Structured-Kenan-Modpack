@@ -41,7 +41,7 @@
     "material": [ "superalloy", "steel", "plastic" ],
     "color": "dark_gray",
     "ammo": "556etc",
-    "ranged_damage": 1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "built_in_mods": "ocg_er555_barrel",
     "recoil": 0,
     "dispersion": 135,
@@ -58,6 +58,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
     "looks_like": "l_mbr_223",
@@ -132,6 +133,7 @@
       [ "muzzle", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],

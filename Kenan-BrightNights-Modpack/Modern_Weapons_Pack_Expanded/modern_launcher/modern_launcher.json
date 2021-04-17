@@ -5,7 +5,7 @@
     "type": "GUN",
     "name": "GL06 stand alone launcher",
     "description": "Brügger & Thomet GL06 grenade launcher is one of the most accurate launchers available.  It features vertical loading with a foldong buttstock and detachable forward grip.",
-    "weight": 2050,
+    "weight": "2050 g",
     "volume": "750 ml",
     "//": "Airsoft launcher as low as $99.00 (lol). Can't find a price on the internet, so I made it proportionate to other in-game launchers.",
     "price": "4500 USD",
@@ -20,8 +20,7 @@
     "reload": 150,
     "built_in_mods": [ "folding_stock" ],
     "default_mods": [ "grip" ],
-    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 2 ]
-    ]
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "sling", 1 ], [ "barrel", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 2 ] ]
   },
   {
     "id": "rgm40",
@@ -29,7 +28,7 @@
     "type": "GUN",
     "name": "RGM-40 Kastet",
     "description": "The RGM-40 Kastet light grenade launcher is intended to be used by law enforcement agencies for anti-riot control but can also be used to engage other targets.  It is muzzle-loaded, has a self-cocking trigger mechanism, an AK style pistol grip, and extendable buttstock.",
-    "weight": 2500,
+    "weight": "2500 g",
     "volume": "750 ml",
     "//": "Could not find a price on the internet, so I made it proportionate to other in-game launchers.",
     "price": "3000 USD",
@@ -42,7 +41,6 @@
     "durability": 9,
     "clip_size": 1,
     "reload": 150,
-    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "sights", 1 ], [ "stock", 1 ]
-    ]
-  } 
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "sling", 1 ], [ "barrel", 1 ], [ "sights", 1 ], [ "stock", 1 ] ]
+  }
 ]

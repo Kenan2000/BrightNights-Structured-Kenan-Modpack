@@ -6,7 +6,7 @@
     "type": "GUN",
     "name": "AR57 LEM",
     "description": "This short barrel rifle (6in Fluted Barrel) is a familiar AR style personal defense weapon.  It fires 5.7x28mm ammunition and takes a FN P90 magazine.  This one is a semi automatic Law Enforcement Model.",
-    "weight": 2400,
+    "weight": "2400 g",
     "volume": "1250 ml",
     "price": "1250 USD",
     "to_hit": -1,
@@ -20,12 +20,20 @@
     "durability": 7,
     "built_in_mods": [ "brass_catcher" ],
     "default_mods": [ "suppressor" ],
-    "valid_mod_locations": [ [ "accessories", 5 ], [ "barrel", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ] 
+    "valid_mod_locations": [
+      [ "accessories", 5 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "receiver", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
     ],
     "magazine_well": 2,
-    "magazines": [
-      [ "57", [ "fnp90mag" ] ]
-    ]
+    "magazines": [ [ "57", [ "fnp90mag" ] ] ]
   },
   {
     "id": "r93t2",
@@ -34,8 +42,8 @@
     "name": "R93 Tactical 2",
     "//": "This used to use the caliber conversion code to convert into .223 and .308 variants. See https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 .",
     "description": "The Blaser R93 Tactical 2 is a straight pull, bolt action sniper rifle. ",
-    "weight": 5400,
-    "volume": 11,
+    "weight": "5400 g",
+    "volume": "2750 ml",
     "price": "4495 USD",
     "to_hit": -1,
     "bashing": 12,
@@ -48,11 +56,7 @@
     "barrel_length": 3,
     "built_in_mods": [ "adjustable_stock" ],
     "magazine_well": 1,
-    "magazines": [
-      [ "300", [ "300r4mag" ] ],
-      [ "223", [ "223r5mag" ] ],
-      [ "308", [ "308r5mag" ] ]		
-    ],
+    "magazines": [ [ "300", [ "300r4mag" ] ], [ "223", [ "223r5mag" ] ], [ "308", [ "308r5mag" ] ] ],
     "flags": "NEVER_JAMS"
   },
   {
@@ -61,7 +65,7 @@
     "type": "GUN",
     "name": "CETME Ameli",
     "description": "The CETME Ameli light machine gun used by the Spanish military resembles the German MG3 but uses a roller delayed blowback action to reduce recoil as the bolt body travels back on the bolt spring.",
-    "weight": 5300,
+    "weight": "5300 g",
     "volume": "2500 ml",
     "price": "9000 USD",
     "to_hit": -1,
@@ -72,14 +76,22 @@
     "ammo": "223",
     "dispersion": 160,
     "durability": 7,
-    "reload": 400, 
+    "reload": 400,
     "modes": [ [ "DEFAULT", "auto", 15 ] ],
     "default_mods": [ "bipod" ],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ] 
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
     ],
-    "magazines": [
-      [ "223", [ "belt223" ] ]
-    ]
+    "magazines": [ [ "223", [ "belt223" ] ] ]
   },
   {
     "id": "m1_9",
@@ -87,30 +99,35 @@
     "type": "GUN",
     "name": "Chiappa M1-9",
     "description": "A replica of the standard M1 Carbine of WWII, the Italian semi-automatic, the Chiappa M1-9, is a blowback operated plinker and small game hunting rifle.",
-    "weight": 2700,
+    "weight": "2700 g",
     "volume": "2 L",
     "price": "540 USD",
     "to_hit": -1,
     "bashing": 10,
     "material": [ "steel", "wood" ],
-    "ammo": [ "9mm", "22" ],
+    "ammo": [ "9mm" ],
     "dispersion": 45,
     "durability": 8,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "sights", 1 ] 
-     ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "mechanism", 4 ],
+      [ "receiver", 1 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ]
+    ],
     "magazine_well": 1,
-    "magazines": [
-      [ "9mm", [ "m9mag", "m9bigmag", "nato9mag", "9mmbetacmag" ] ],
-      [ "22", [ "ruger1022bigmag", "ruger1022mag" ] ]
-    ]
-  },  
+    "magazines": [ [ "9mm", [ "m9mag", "m9bigmag", "nato9mag", "9mmbetacmag" ] ] ]
+  },
   {
     "id": "mdr",
     "copy-from": "rifle_auto",
     "type": "GUN",
     "name": "Desert Tech MDR",
     "description": "With a bullpup design, the Desert Tech Micro Dynamic Rifle is a gas operated, ambidextrous assault rifle.",
-    "weight": 3230,
+    "weight": "3230 g",
     "volume": "2 L",
     "price": "2350 USD",
     "to_hit": -1,
@@ -119,7 +136,7 @@
     "ammo": [ "223", "308" ],
     "dispersion": 25,
     "durability": 8,
-    "burst": 5,	
+    "burst": 5,
     "magazine_well": 1,
     "magazines": [
       [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
@@ -132,7 +149,7 @@
     "type": "GUN",
     "name": "Enfield L85A2",
     "description": "A bullpup assault rifle, the standard issue service rifle of the British Armed Forces, the Enfield L85A2, uses a short-stroke gas piston system and a rotating bolt.",
-    "weight": 3820,
+    "weight": "3820 g",
     "volume": "1500 ml",
     "price": "2750 USD",
     "to_hit": -1,
@@ -143,11 +160,9 @@
     "dispersion": 55,
     "durability": 8,
     "burst": 11,
-    "default_mods": [ "susat_scope", "grip" ],	
+    "default_mods": [ "susat_scope", "grip" ],
     "magazine_well": 1,
-    "magazines": [
-      [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ]
-    ]
+    "magazines": [ [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ] ]
   },
   {
     "id": "fad",
@@ -155,7 +170,7 @@
     "type": "GUN",
     "name": "FAD assault rifle",
     "description": "From Peru, the FAD assault rifle, (or Fusil Automático Doble,) is a compact infantry support weapon used by vehicle crews as back-up weapon.  It features a bullpup design with an integrated grenade launcher.",
-    "weight": 3600,
+    "weight": "3600 g",
     "volume": "2 L",
     "price": "2750 USD",
     "to_hit": -1,
@@ -165,15 +180,14 @@
     "dispersion": 45,
     "durability": 8,
     "burst": 5,
-    "built_in_mods": [ "m203" ],	
+    "built_in_mods": [ "m203" ],
     "magazine_well": 1,
-    "magazines": [
-      [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ]
-    ]
-  },  
+    "magazines": [ [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ] ]
+  },
   {
     "id": "fx_05",
-    "copy-from": "hk_g36", "//": "See modern_weapon_mod/override.json for more information on the hk_g36.",
+    "copy-from": "hk_g36",
+    "//": "See modern_weapon_mod/override.json for more information on the hk_g36.",
     "type": "GUN",
     "name": "FX-05 Xiuhcoatl",
     "description": "The Fire Serpent, a modern assault rifle of the Mexican Armed Forces, Fuerzas Armadas de Mexico.  Closely patterned after the German made HK G36.",
@@ -185,7 +199,7 @@
     "type": "GUN",
     "name": "Henry Lever Action",
     "description": "The Henry Lever Action has an octogon barrel with brass barrel bands and a brass receiver plate.  This beloved repeater has a home with many a hunter of venison.",
-    "weight": 3764,
+    "weight": "3764 g",
     "volume": "2250 ml",
     "price": "950 USD",
     "to_hit": -1,
@@ -199,7 +213,17 @@
     "dispersion": 30,
     "durability": 8,
     "clip_size": 7,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ]
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
     ],
     "flags": "RELOAD_ONE"
   },
@@ -209,7 +233,7 @@
     "type": "GUN",
     "name": "Galil assault rifle",
     "description": "Built by Israel Military Industries, the Galil is a gas operated/rotating bolt assault rifle whose design was greatly influenced by the Valmet Rk.62 and the AK-47.  It features an aluminum side folding stock and a diopter sight.",
-    "weight": 3950,
+    "weight": "3950 g",
     "volume": "2 L",
     "price": "1850 USD",
     "to_hit": -1,
@@ -220,19 +244,16 @@
     "durability": 9,
     "burst": 11,
     "barrel_length": 1,
-    "default_mods": [ "folding_stock", "peep_sight" ],	
+    "default_mods": [ "folding_stock", "peep_sight" ],
     "magazine_well": 1,
-    "magazines": [
-      [ "223", [ "223ak74mag35", "223ak74mag30" ] ],
-      [ "308", [ "308ak74mag25" ] ]
-    ]
-  },  
+    "magazines": [ [ "223", [ "223ak74mag35", "223ak74mag30" ] ], [ "308", [ "308ak74mag25" ] ] ]
+  },
   {
     "id": "marlin_1894",
     "type": "GUN",
     "name": "Marlin 1894",
     "description": "A lever action hunting rifle, the .44 Magnum caliber Marlin 1894 repeater is a perfect companion piece for your .44 Magnum sidearm.",
-    "weight": 2720,
+    "weight": "2720 g",
     "volume": "2250 ml",
     "price": "790 USD",
     "to_hit": -1,
@@ -247,10 +268,20 @@
     "dispersion": 75,
     "durability": 8,
     "clip_size": 10,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ]
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
     ],
     "flags": "RELOAD_ONE"
-  }, 
+  },
   {
     "id": "marlin_1894c",
     "//": "I realize that a .357 retool mod could produce this caliber rifle but that would produce a weapon more inferior than it ought to be.",
@@ -262,35 +293,41 @@
     "range": 4,
     "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "clip_size": 9
-  },  
+  },
   {
     "id": "marlin_336",
     "copy-from": "henry",
     "type": "GUN",
     "name": "Marlin 336",
     "description": "Combined with a pistol grip-type buttstock and a responsive trigger, the Marlin 336 is a very popular lever action rifle.",
-    "weight": 3180,
+    "weight": "3180 g",
     "price": "350 USD",
-    "relative": {
-      "dispersion": 20
-    }	
-  },  
+    "relative": { "dispersion": 20 }
+  },
   {
     "id": "464spx",
-    "copy-from": "henry",	
+    "copy-from": "henry",
     "type": "GUN",
     "name": "Mossberg 464 SPX",
     "description": "A centerfire repeating rifle, the Mossberg 464 SPX is a modern take on the classic lever-action rifle.",
-    "weight": 3175,
+    "weight": "3175 g",
     "price": "540 USD",
     "material": [ "steel", "plastic" ],
-    "relative": {
-    "ranged_damage": { "damage_type": "stab", "amount": 1 },
-    "dispersion": -20
-    },	
+    "relative": { "ranged_damage": { "damage_type": "stab", "amount": 1 }, "dispersion": -20 },
     "built_in_mods": [ "adjustable_stock" ],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ]
-    ],	
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
     "flags": [ "RELOAD_ONE", "NEVER_JAMS" ]
   },
   {
@@ -299,7 +336,7 @@
     "type": "GUN",
     "name": "Norinco Type 56-1",
     "description": "Manufactured by China North Industries Corporation, this assault rifle is a near copy of the Russian AKM.  This model has an integrated pig sticker bayonet, and a foldable stock.",
-    "weight": 3213,
+    "weight": "3213 g",
     "volume": "750 ml",
     "price": "950 USD",
     "default_mods": [ "folding_stock" ],
@@ -311,17 +348,17 @@
     "type": "GUN",
     "name": "Norinco Type 56-2",
     "description": "Manufactured by China North Industries Corporation, this assault rifle is a near copy of the Russian AKM.  This model has a foldable stock.",
-    "weight": 3600,
+    "weight": "3600 g",
     "volume": "1250 ml",
     "price": "950 USD",
     "default_mods": [ "folding_stock" ]
-  },  
+  },
   {
     "id": "ruger_m77",
     "type": "GUN",
     "name": "Ruger M77",
     "description": "A popular hunting rifle, the Ruger M77 features a Mauser-type controlled round feed extractor and an angled large screw which moves the action into the stock.",
-    "weight": 3265,
+    "weight": "3265 g",
     "volume": "2250 ml",
     "price": "650 USD",
     "to_hit": -1,
@@ -335,17 +372,27 @@
     "dispersion": 75,
     "durability": 8,
     "clip_size": 6,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ]
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ]
     ],
     "flags": "RELOAD_ONE"
-  },  
+  },
   {
     "id": "saiga_mk3",
     "copy-from": "rifle_semi",
     "type": "GUN",
     "name": "Saiga Mk3 carbine",
     "description": "This AK-74 style, semi-automatic carbine is gas operated with a dual lug rotary bolt.  Used for hunting, target shooting, and self-defence, it is noted for its reliability and accuracy.",
-    "weight": 3400,
+    "weight": "3400 g",
     "volume": "2 L",
     "price": "2350 USD",
     "to_hit": -1,
@@ -357,13 +404,24 @@
     "ranged_damage": { "damage_type": "stab", "amount": -1 },
     "dispersion": 15,
     "durability": 8,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], ["receiver", 1], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] 
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "receiver", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
     ],
     "magazine_well": 1,
     "magazines": [
       [ "223", [ "223ak74mag30", "223ak74mag10", "survivor223mag" ] ],
       [ "308", [ "308ak74mag25" ] ],
-      [ "762", [ "akmag30", "akmag10", "akmag20", "akmag40", "akdrum75" ] ]  
+      [ "762", [ "akmag30", "akmag10", "akmag20", "akmag40", "akdrum75" ] ]
     ]
   },
   {
@@ -372,12 +430,12 @@
     "type": "GUN",
     "name": "Serbu BFG-50 carbine",
     "description": "A single shot bolt action sniper/anti-materiel rifle with dual locking lugs.",
-    "weight": 7700,
-    "volume": 14,	
+    "weight": "7700 g",
+    "volume": "3500 ml",
     "price": "3075 USD",
     "to_hit": -1,
     "bashing": 12,
-    "material": [ "steel" ],	
+    "material": [ "steel" ],
     "symbol": "(",
     "color": "dark_gray",
     "ammo": "50",
@@ -390,18 +448,18 @@
     "barrel_length": 5,
     "default_mods": [ "muzzle_brake", "rifle_scope" ],
     "flags": [ "RELOAD_ONE", "NEVER_JAMS" ]
-  },  
+  },
   {
     "id": "bfg50a",
     "type": "GUN",
     "name": "Serbu BFG-50A",
     "description": "A semi-automatic sniper/anti-materiel rifle using a gas-operated rotary locking bolt with triangular head.",
-    "weight": 10400,
-    "volume": 17,	
+    "weight": "10400 g",
+    "volume": "4250 ml",
     "price": "7980 USD",
     "to_hit": -1,
     "bashing": 12,
-    "material": [ "aluminum", "steel" ],	
+    "material": [ "aluminum", "steel" ],
     "symbol": "(",
     "color": "dark_gray",
     "ammo": "50",
@@ -412,12 +470,22 @@
     "durability": 8,
     "barrel_length": 6,
     "default_mods": [ "muzzle_brake", "rifle_scope" ],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "magazine", 1 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ]
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "magazine", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
     ],
     "magazine_well": 1,
-    "magazines": [
-      [ "50", [ "m107a1mag" ] ]
-    ],
+    "magazines": [ [ "50", [ "m107a1mag" ] ] ],
     "flags": "NEVER_JAMS"
   },
   {
@@ -426,7 +494,7 @@
     "type": "GUN",
     "name": "Steyr SSG 69",
     "description": "The Steyr Scharfschützengewehr 69 is regarded as one of the most accurate sniper rifle in the world.  It is a bolt action with rear locking lugs.",
-    "weight": 4810,
+    "weight": "4810 g",
     "volume": "2250 ml",
     "price": "1300 USD",
     "to_hit": -1,
@@ -441,13 +509,17 @@
     "durability": 7,
     "barrel_length": 2,
     "default_mods": [ "rifle_scope" ],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ] 
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ]
     ],
     "magazine_well": 1,
-    "magazines": [
-      [ "308", [ "308steyrmag5", "308steyrmag10" ] ],
-      [ "223", [ "stanag10" ] ]
-    ]
+    "magazines": [ [ "308", [ "308steyrmag5", "308steyrmag10" ] ], [ "223", [ "stanag10" ] ] ]
   },
   {
     "id": "mtar21",
@@ -456,7 +528,7 @@
     "name": "Tavor MTAR-21",
     "//": "Rate of fire based on TAR-21.",
     "description": "The Israeli, Tavor MTAR-21 bullpup assault rifle has a long-stroke, gas operated piston system like that of an AK-47.  A reliable weapon, it has replaced the M-16 by Israeli Defence Forces and is used by military and police forces around the world.",
-    "weight": 2950,
+    "weight": "2950 g",
     "volume": "2 L",
     "price": "1850 USD",
     "to_hit": -1,
@@ -468,13 +540,24 @@
     "dispersion": 30,
     "durability": 9,
     "burst": 13,
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ]
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
     ],
     "magazine_well": 1,
     "magazines": [
       [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "9mm", [ "uzimag", "9mmbetacmag" ] ],
-      [ "762", [ "akmag30", "akmag10", "akmag20", "akmag40", "akdrum75" ] ]  
+      [ "762", [ "akmag30", "akmag10", "akmag20", "akmag40", "akdrum75" ] ]
     ]
   },
   {
@@ -484,9 +567,9 @@
     "type": "GUN",
     "name": "Walther WA 2000",
     "description": "The Walther WA 2000 is a semi-automatic bullpup sniper rifle operated with a short stroke gas piston and a rotating locking bolt.",
-    "weight": 6462,
+    "weight": "6462 g",
     "volume": "1500 ml",
-    "price": "75000 USD",
+    "price": "75000 usd",
     "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
@@ -498,12 +581,17 @@
     "dispersion": 0,
     "durability": 9,
     "default_mods": [ "muzzle_brake", "bipod", "rifle_scope" ],
-    "valid_mod_locations": [ [ "accessories", 4 ], [ "barrel", 1 ], [ "bore", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] 
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "underbarrel", 1 ]
     ],
     "magazine_well": 1,
-    "magazines": [
-      [ "300", [ "300r4mag" ] ],
-      [ "308", [ "308r5mag" ] ]
-    ]
+    "magazines": [ [ "300", [ "300r4mag" ] ], [ "308", [ "308r5mag" ] ] ]
   }
 ]

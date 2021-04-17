@@ -16,7 +16,7 @@
     "color": "light_gray",
     "ammo": "223",
     "range": -6,
-    "ranged_damage": -16,
+    "ranged_damage": { "damage_type": "stab", "amount": -16 },
     "dispersion": 480,
     "durability": 8,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "2 rd.", 2 ] ],

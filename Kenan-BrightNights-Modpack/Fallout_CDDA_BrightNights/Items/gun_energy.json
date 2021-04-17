@@ -15,7 +15,7 @@
     "ammo_effects": [ "LASER" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
+    "magazines": [
       [
         "battery",
         [
@@ -74,15 +74,10 @@
     "ammo_effects": [ "LASER" ],
     "flags": [ "FIRE_20", "NO_UNLOAD", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
+    "magazines": [
       [
         "battery",
-        [
-          "medium_battery_cell",
-          "medium_plus_battery_cell",
-          "medium_atomic_battery_cell",
-          "medium_disposable_cell"
-        ]
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
       ]
     ],
     "magazine_well": 1,
@@ -114,7 +109,7 @@
     "ammo_effects": [ "LASER" ],
     "flags": [ "FIRE_20", "NO_UNLOAD", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
+    "magazines": [
       [
         "battery",
         [
@@ -172,7 +167,7 @@
     "ammo_effects": [ "LASER" ],
     "flags": [ "FIRE_20", "NO_UNLOAD", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
+    "magazines": [
       [
         "battery",
         [
@@ -231,6 +226,7 @@
       [ "grip", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 1 ]
@@ -248,15 +244,10 @@
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "FIRE_20", "NO_UNLOAD", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
+    "magazines": [
       [
         "battery",
-        [
-          "medium_battery_cell",
-          "medium_plus_battery_cell",
-          "medium_atomic_battery_cell",
-          "medium_disposable_cell"
-        ]
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
       ]
     ],
     "magazine_well": 4,
@@ -278,6 +269,7 @@
       [ "grip", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 1 ]
@@ -295,16 +287,8 @@
     "ammo_effects": [ "LASER", "SHOT", "INCENDIARY" ],
     "flags": [ "FIRE_50", "NO_UNLOAD", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
-      [
-        "battery",
-        [
-          "heavy_battery_cell",
-          "heavy_plus_battery_cell",
-          "heavy_atomic_battery_cell",
-          "heavy_disposable_cell"
-        ]
-      ]
+    "magazines": [
+      [ "battery", [ "heavy_battery_cell", "heavy_plus_battery_cell", "heavy_atomic_battery_cell", "heavy_disposable_cell" ] ]
     ],
     "magazine_well": 1,
     "skill": "shotgun",
@@ -325,6 +309,7 @@
       [ "grip", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 1 ]
@@ -342,16 +327,8 @@
     "ammo_effects": [ "LASER", "INCENDIARY", "FIRE_20" ],
     "flags": [ "FIRE_20", "NO_UNLOAD", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
     "ammo": [ "battery" ],
-	"magazines": [
-      [
-        "battery",
-        [
-          "heavy_battery_cell",
-          "heavy_plus_battery_cell",
-          "heavy_atomic_battery_cell",
-          "heavy_disposable_cell"
-        ]
-      ]
+    "magazines": [
+      [ "battery", [ "heavy_battery_cell", "heavy_plus_battery_cell", "heavy_atomic_battery_cell", "heavy_disposable_cell" ] ]
     ],
     "magazine_well": 2,
     "skill": "rifle",
@@ -372,6 +349,7 @@
       [ "grip", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 1 ]
@@ -408,6 +386,7 @@
       [ "grip", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
       [ "mechanism", 1 ]
@@ -442,6 +421,7 @@
       [ "mechanism", 4 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -475,6 +455,7 @@
       [ "mechanism", 4 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ]
@@ -524,14 +505,7 @@
     "reload": 0,
     "loudness": 20,
     "use_action": "HAND_CRANK",
-	"magazines": [
-      [
-        "battery",
-        [
-          "lasermusket_battery_cell"
-        ]
-      ]
-    ],
+    "magazines": [ [ "battery", [ "lasermusket_battery_cell" ] ] ],
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "sling", 1 ],

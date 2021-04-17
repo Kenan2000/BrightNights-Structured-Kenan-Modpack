@@ -16,7 +16,7 @@
     "color": "dark_gray",
     "ammo": "50AE",
     "skill": "pistol",
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "dispersion": 500,
     "durability": 7,
     "valid_mod_locations": [
