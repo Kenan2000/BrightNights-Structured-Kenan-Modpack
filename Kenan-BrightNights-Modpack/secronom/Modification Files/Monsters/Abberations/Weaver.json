@@ -3,7 +3,7 @@
     "id": "mon_fleshweaver",
     "looks_like": "mon_kreck",
     "type": "MONSTER",
-    "name": "flesh weaver",
+    "name": { "str": "flesh weaver" },
     "description": "A large, sentient, beetle-like creature with broad set of claws and appendages, odd to its vile yet pacifistic nature. Merely a lonesome wanderer, and without demise, seeks to tend on an organism's flesh.",
     "default_faction": "fleshweaver",
     "species": [ "ABERRATION", "SECROSPEC" ],
@@ -30,7 +30,7 @@
     "armor_fire": 1,
     "vision_day": 24,
     "vision_night": 8,
-    "note": "As the description says, it helps... But with ASSIST and CHECK_UP special attack, it parrots with robotic voice, so not for now.",
+    "//": "As the description says, it helps... But with ASSIST and CHECK_UP special attack, it parrots with robotic voice, so not for now.",
     "special_attacks": [
       [ "PARROT_AT_DANGER", 10 ],
       {

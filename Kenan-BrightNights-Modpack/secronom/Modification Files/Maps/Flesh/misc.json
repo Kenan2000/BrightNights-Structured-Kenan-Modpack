@@ -1,8 +1,6 @@
 [
   {
-    "type": "mapgen",
-	"nested_mapgen_id": "mx_flesh_biome_extra_nested",
-	"method": "json",
+    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -45,12 +43,12 @@
           [ "t_secro_flesh", 250 ]
         ]
       }
-    }
+    },
+    "nested_mapgen_id": "mx_flesh_biome_extra_nested",
+    "type": "mapgen"
   },
   {
-    "type": "mapgen",
-	"nested_mapgen_id": "mx_flesh_biome_extra_nested",
-	"method": "json",
+    "method": "json",
     "object": {
       "rotation": [ 0, 3 ],
       "mapgensize": [ 24, 24 ],
@@ -93,7 +91,9 @@
           [ "t_secro_flesh", 250 ]
         ]
       }
-    }
+    },
+    "nested_mapgen_id": "mx_flesh_biome_extra_nested",
+    "type": "mapgen"
   },
   {
     "type": "mapgen",
