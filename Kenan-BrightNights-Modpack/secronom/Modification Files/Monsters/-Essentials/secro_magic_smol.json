@@ -2,7 +2,7 @@
   {
     "id": "mon_zombie_skittyweavy_flee",
     "type": "SPELL",
-    "name": "Flee",
+    "name": { "str": "Flee" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster then runs away, for no reason ofc.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION" ],
     "valid_targets": [ "self" ],
@@ -14,7 +14,7 @@
   {
     "id": "mon_zombie_skittyweavy_heal",
     "type": "SPELL",
-    "name": "Heal",
+    "name": { "str": "Heal" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ally" ],
@@ -107,7 +107,6 @@
       "mon_zombie_swimmer",
       "mon_zombie_technician",
       "mon_zombie_labsecurity",
-      "mon_zombie_swat",
       "mon_zombie_fat",
       "mon_zombie_tough",
       "mon_zombie_crawler",
@@ -179,7 +178,7 @@
   {
     "id": "mon_zombie_skittyweavy_dmg",
     "type": "SPELL",
-    "name": "Inject",
+    "name": { "str": "Inject" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ally" ],
@@ -193,7 +192,7 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_target",
-    "name": "a spell",
+    "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_dmg" },
@@ -209,7 +208,7 @@
   {
     "id": "mon_zombie_skittyweavy_repleshy_heal",
     "type": "SPELL",
-    "name": "Heal",
+    "name": { "str": "Heal" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ally" ],
@@ -231,7 +230,6 @@
       "mon_zombie_swimmer",
       "mon_zombie_technician",
       "mon_zombie_labsecurity",
-      "mon_zombie_swat",
       "mon_zombie_fat",
       "mon_zombie_tough",
       "mon_zombie_crawler",
@@ -374,7 +372,7 @@
   {
     "id": "mon_zombie_skittyweavy_repleshy_dmg",
     "type": "SPELL",
-    "name": "Inject",
+    "name": { "str": "Inject" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster injects the target, dealing minor stabbing damage.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
     "valid_targets": [ "hostile", "ally" ],
@@ -388,7 +386,7 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_repleshy_target",
-    "name": "a spell",
+    "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_repleshy_dmg" },
@@ -404,7 +402,7 @@
   {
     "id": "mon_zombie_skittyweavy_sickly_heal",
     "type": "SPELL",
-    "name": "Heal",
+    "name": { "str": "Heal" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'If the injected target is a zombie type, heal them afterwards. Also provides a buff.",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_TARGET", "RANDOM_DAMAGE", "RANDOM_DURATION" ],
     "valid_targets": [ "hostile", "ally" ],
@@ -426,7 +424,6 @@
       "mon_zombie_swimmer",
       "mon_zombie_technician",
       "mon_zombie_labsecurity",
-      "mon_zombie_swat",
       "mon_zombie_fat",
       "mon_zombie_tough",
       "mon_zombie_crawler",
@@ -569,7 +566,7 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_skittyweavy_sickly_target",
-    "name": "a spell",
+    "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [
       { "id": "mon_zombie_skittyweavy_dmg" },
@@ -586,7 +583,7 @@
   {
     "id": "mon_zombie_revenant_withdraw",
     "type": "SPELL",
-    "name": "Withdraw",
+    "name": { "str": "Withdraw" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster then takes distance from the target.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION" ],
     "valid_targets": [ "self" ],
@@ -598,7 +595,7 @@
   {
     "id": "mon_zombie_revenant_trigger",
     "type": "SPELL",
-    "name": "Trigger",
+    "name": { "str": "Trigger" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster unlocks the potential prowess of nearby monsters, increasing their combat abilities.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self", "ally" ],
@@ -612,7 +609,7 @@
   {
     "id": "mon_zombie_revenant_forsaken_dilute",
     "type": "SPELL",
-    "name": "Dilute",
+    "name": { "str": "Dilute" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster stares submissively at the target, inflicting negative combat bonuses.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "hostile" ],
@@ -626,7 +623,7 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_forsaken_target",
-    "name": "a spell",
+    "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [ { "id": "mon_zombie_revenant_forsaken_dilute" }, { "id": "mon_zombie_revenant_withdraw", "hit_self": true } ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
@@ -638,7 +635,7 @@
   {
     "id": "mon_zombie_revenant_allure_incite",
     "type": "SPELL",
-    "name": "Incite",
+    "name": { "str": "Incite" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster spreads its blob-stimulating goo through its fingers, causing the infected creature's blob to grow rapidly which increases the host's body mass, gaining combat bonuses, but makes them suffer from excessive growth.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self", "ally" ],
@@ -652,7 +649,7 @@
   {
     "type": "SPELL",
     "id": "mon_zombie_revenant_allure_target",
-    "name": "a spell",
+    "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [
       { "id": "mon_zombie_revenant_allure_incite", "hit_self": true },

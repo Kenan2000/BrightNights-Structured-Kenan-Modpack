@@ -8,7 +8,7 @@
     "material": [ "plastic", "polymer" ],
     "relative": {
       "bashing":       -2,
-      "ranged_damage": -6,
+      "ranged_damage": { "damage_type": "stab", "amount": -6 },
       "durability":    -4,
       "dispersion":   100
     },
@@ -38,7 +38,7 @@
     "material": [ "plastic", "polymer" ],
     "relative": {
       "bashing":       -2,
-      "ranged_damage": -6,
+      "ranged_damage": { "damage_type": "stab", "amount": -6 },
       "durability":    -4,
       "dispersion":    60
     },

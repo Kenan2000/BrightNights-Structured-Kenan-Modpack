@@ -16,7 +16,7 @@
     "ammo": [ "308", "300" ],
     "range": -25,
     "//1": "Like in the AKS-74U, the round remains lethal beyond the effective range but extremely unlikely to hit anything. This modifier doesn't matter much because the high dispersion makes firing it at long ranges wasteful.",
-    "ranged_damage": -5,
+    "ranged_damage": { "damage_type": "stab", "amount": -5 },
     "//2": "255 mm/10 in barrel",
     "dispersion": 300,
     "durability": 8,

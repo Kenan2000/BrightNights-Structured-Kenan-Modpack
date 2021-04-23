@@ -112,7 +112,7 @@
 		"ammo": "50",
 		"range": 45,
 		"reload": 200,
-		"ranged_damage": -3,
+		"ranged_damage": { "damage_type": "stab", "amount": -3 },
 		"dispersion": 95,
 		"durability": 7,
 		"barrel_length": 5,

@@ -35,8 +35,14 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "9mmBL9_type", [ "9mmBL9mag" ] ], [ "9mm", [ "9mmBL9mag" ] ], [ "45", [ "9mmBL9mag" ] ], [ "22", [ "9mmBL9mag" ] ], [ "380", [ "9mmBL9mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [
+      [ "9mmBL9_type", [ "9mmBL9mag" ] ],
+      [ "9mm", [ "9mmBL9mag" ] ],
+      [ "45", [ "9mmBL9mag" ] ],
+      [ "22", [ "9mmBL9mag" ] ],
+      [ "380", [ "9mmBL9mag" ] ]
+    ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_smg",
@@ -75,8 +81,14 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "9mmBL9smg_type", [ "9mmBL9smgmag" ] ], [ "9mm", [ "9mmBL9smgmag" ] ], [ "45", [ "9mmBL9smgmag" ] ], [ "22", [ "9mmBL9smgmag" ] ], [ "40", [ "9mmBL9smgmag" ] ] ],
-	"magazine_well": 1
+    "magazines": [
+      [ "9mmBL9smg_type", [ "9mmBL9smgmag" ] ],
+      [ "9mm", [ "9mmBL9smgmag" ] ],
+      [ "45", [ "9mmBL9smgmag" ] ],
+      [ "22", [ "9mmBL9smgmag" ] ],
+      [ "40", [ "9mmBL9smgmag" ] ]
+    ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_sniper",
@@ -114,8 +126,8 @@
       [ "stock mount", 1 ],
       [ "underbarrel mount", 1 ]
     ],
-	"magazines": [ [ "308BL9_type", [ "308BL9mag" ] ], [ "308", [ "308BL9mag" ] ], [ "3006", [ "308BL9mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "308BL9_type", [ "308BL9mag" ] ], [ "308", [ "308BL9mag" ] ], [ "3006", [ "308BL9mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_auto",
@@ -154,8 +166,8 @@
       [ "underbarrel mount", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "556BL9_type", [ "556223BL9mag" ] ], [ "223", [ "556223BL9mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "556BL9_type", [ "556223BL9mag" ] ], [ "223", [ "556223BL9mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_shotgun",
@@ -190,6 +202,7 @@
       [ "brass catcher", 1 ],
       [ "rail mount", 1 ],
       [ "sights mount", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel mount", 1 ]
     ],
     "clip_size": 8
@@ -261,8 +274,76 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "BL9spray_type", [ "tank_BL9" ] ] ],
-	"magazine_well": 8
+    "magazines": [ [ "BL9spray_type", [ "tank_BL9" ] ] ],
+    "magazine_well": 8
+  },
+  {
+    "id": "BL9_melting_sprayer",
+    "looks_like": "chemical_thrower",
+    "copy-from": "gun_base",
+    "type": "GUN",
+    "reload_noise": "slosh.",
+    "name": { "str": "BL9-infused melting sprayer" },
+    "description": "A bulky, BL9 melting sprayer that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
+    "weight": "4588 g",
+    "volume": "4250 ml",
+    "price": "100 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 9,
+    "material": [ "BL9", "steel" ],
+    "flags": [ "FIRE_20", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
+    "skill": "launcher",
+    "ammo": [ "BL9meltingspray_type" ],
+    "dispersion": 235,
+    "durability": 8,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "BL9meltingspray_type", [ "tankm_BL9" ] ] ],
+    "magazine_well": 8
+  },
+  {
+    "id": "BL9_railgun",
+    "looks_like": "hk_g80",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "green",
+    "name": { "str": "BL9-infused railgun" },
+    "description": "An experimental railgun propelling ferromagnetic projectile via alternating current that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
+    "price": "5800 USD",
+    "ammo": [ "railBL9_type", "12mm" ],
+    "material": [ "BL9", "steel" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
+    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
+    "skill": "rifle",
+    "weight": "4100 g",
+    "volume": "3 L",
+    "bashing": 8,
+    "to_hit": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1, "armor_penetration": 1 },
+    "range": 35,
+    "dispersion": 75,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "railBL9_type", [ "railBL9mag" ] ], [ "12mm", [ "railBL9mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_launcher",
@@ -298,8 +379,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "40mmBL9_type", [ "40BL9mag" ] ], [ "40x46mm", [ "40BL9mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "40mmBL9_type", [ "40BL9mag" ] ], [ "40x46mm", [ "40BL9mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_bow",
@@ -314,7 +395,7 @@
     "flags": [ "FIRE_TWOHAND", "STR_DRAW", "RELOAD_AND_SHOOT", "PRIMITIVE_RANGED_WEAPON" ],
     "skill": "archery",
     "min_strength": 9,
-    "ammo": [ "BL9arrow_type", "arrow" ],
+    "ammo": [ "BL9arrow_type" ],
     "weight": "907 g",
     "volume": "1500 ml",
     "price_postapoc": "35 USD",
@@ -322,7 +403,7 @@
     "to_hit": 1,
     "reload_noise_volume": 3,
     "loudness": 10,
-    "ranged_damage": { "damage_type": "stab", "amount": 34 },
+    "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 16,
     "dispersion": 625,
     "durability": 8,
@@ -343,13 +424,13 @@
     "flags": [ "FIRE_TWOHAND", "PRIMITIVE_RANGED_WEAPON" ],
     "skill": "rifle",
     "min_strength": 7,
-    "ammo": [ "BL9bolt_type", "bolt" ],
+    "ammo": [ "BL9bolt_type" ],
     "weight": "3000 g",
     "volume": "1750 ml",
     "price_postapoc": "60 USD",
     "bashing": 11,
     "to_hit": 1,
-    "ranged_damage": { "damage_type": "stab", "amount": 42 },
+    "ranged_damage": { "damage_type": "stab", "amount": 25 },
     "range": 14,
     "loudness": 12,
     "dispersion": 275,
@@ -404,8 +485,14 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "9mmBL9mk2_type", [ "9mmBL9mk2mag" ] ], [ "9mm", [ "9mmBL9mk2mag" ] ], [ "45", [ "9mmBL9mk2mag" ] ], [ "22", [ "9mmBL9mk2mag" ] ], [ "380", [ "9mmBL9mk2mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [
+      [ "9mmBL9mk2_type", [ "9mmBL9mk2mag" ] ],
+      [ "9mm", [ "9mmBL9mk2mag" ] ],
+      [ "45", [ "9mmBL9mk2mag" ] ],
+      [ "22", [ "9mmBL9mk2mag" ] ],
+      [ "380", [ "9mmBL9mk2mag" ] ]
+    ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_smg_mk2",
@@ -444,8 +531,14 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "9mmBL9smgmk2_type", [ "9mmBL9smgmk2mag" ] ], [ "9mm", [ "9mmBL9smgmk2mag" ] ], [ "45", [ "9mmBL9smgmk2mag" ] ], [ "22", [ "9mmBL9smgmk2mag" ] ], [ "40", [ "9mmBL9smgmk2mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [
+      [ "9mmBL9smgmk2_type", [ "9mmBL9smgmk2mag" ] ],
+      [ "9mm", [ "9mmBL9smgmk2mag" ] ],
+      [ "45", [ "9mmBL9smgmk2mag" ] ],
+      [ "22", [ "9mmBL9smgmk2mag" ] ],
+      [ "40", [ "9mmBL9smgmk2mag" ] ]
+    ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_sniper_mk2",
@@ -483,8 +576,8 @@
       [ "stock mount", 1 ],
       [ "underbarrel mount", 1 ]
     ],
-	"magazines": [ [ "308BL9mk2_type", [ "308BL9mk2mag" ] ], [ "308", [ "308BL9mk2mag" ] ], [ "3006", [ "308BL9mk2mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "308BL9mk2_type", [ "308BL9mk2mag" ] ], [ "308", [ "308BL9mk2mag" ] ], [ "3006", [ "308BL9mk2mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_auto_mk2",
@@ -523,8 +616,8 @@
       [ "underbarrel mount", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "556BL9mk2_type", [ "556223BL9mk2mag" ] ], [ "223", [ "556223BL9mk2mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "556BL9mk2_type", [ "556223BL9mk2mag" ] ], [ "223", [ "556223BL9mk2mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_shotgun_mk2",
@@ -559,6 +652,7 @@
       [ "brass catcher", 1 ],
       [ "rail mount", 1 ],
       [ "sights mount", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel mount", 1 ]
     ],
     "clip_size": 10
@@ -630,8 +724,76 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "BL9spraymk2_type", [ "tank_BL9_mk2" ] ] ],
-	"magazine_well": 8
+    "magazines": [ [ "BL9spraymk2_type", [ "tank_BL9_mk2" ] ] ],
+    "magazine_well": 8
+  },
+  {
+    "id": "BL9_melting_sprayer_mk2",
+    "looks_like": "chemical_thrower",
+    "copy-from": "gun_base",
+    "type": "GUN",
+    "reload_noise": "slosh.",
+    "name": { "str": "BL9-infused melting sprayer MK ii" },
+    "description": "A bulky, BL9 melting sprayer that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
+    "weight": "4588 g",
+    "volume": "4250 ml",
+    "price": "100 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 9,
+    "material": [ "BL9", "steel" ],
+    "flags": [ "FIRE_20", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
+    "skill": "launcher",
+    "ammo": [ "BL9meltingspraymk2_type" ],
+    "dispersion": 180,
+    "durability": 9,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "BL9meltingspraymk2_type", [ "tankm_BL9_mk2" ] ] ],
+    "magazine_well": 8
+  },
+  {
+    "id": "BL9_railgun_mk2",
+    "looks_like": "hk_g80",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "green",
+    "name": { "str": "BL9-infused railgun MK ii" },
+    "description": "An experimental railgun propelling ferromagnetic projectile via alternating current that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
+    "price": "5800 USD",
+    "ammo": [ "railBL9mk2_type", "12mm" ],
+    "material": [ "BL9", "steel" ],
+    "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
+    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
+    "skill": "rifle",
+    "weight": "4100 g",
+    "volume": "3 L",
+    "bashing": 8,
+    "to_hit": -1,
+    "ranged_damage": { "damage_type": "stab", "amount": 1, "armor_penetration": 1 },
+    "range": 45,
+    "dispersion": 55,
+    "durability": 9,
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 2 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "railBL9mk2_type", [ "railBL9mk2mag" ] ], [ "12mm", [ "railBL9mk2mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_launcher_mk2",
@@ -667,8 +829,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "40mmBL9mk2_type",  [ "40_BL9mk2mag" ] ], [ "40x46mm", [ "40_BL9mk2mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "40mmBL9mk2_type", [ "40_BL9mk2mag" ] ], [ "40x46mm", [ "40_BL9mk2mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_bow_mk2",
@@ -683,7 +845,7 @@
     "flags": [ "FIRE_TWOHAND", "STR_DRAW", "RELOAD_AND_SHOOT", "PRIMITIVE_RANGED_WEAPON" ],
     "skill": "archery",
     "min_strength": 9,
-    "ammo": [ "BL9arrowmk2_type", "arrow" ],
+    "ammo": [ "BL9arrowmk2_type" ],
     "weight": "907 g",
     "volume": "1500 ml",
     "price_postapoc": "35 USD",
@@ -691,7 +853,7 @@
     "to_hit": 1,
     "reload_noise_volume": 3,
     "loudness": 10,
-    "ranged_damage": { "damage_type": "stab", "amount": 34 },
+    "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 24,
     "dispersion": 440,
     "durability": 9,
@@ -712,13 +874,13 @@
     "flags": [ "FIRE_TWOHAND", "PRIMITIVE_RANGED_WEAPON" ],
     "skill": "rifle",
     "min_strength": 7,
-    "ammo": [ "BL9boltmk2_type", "bolt" ],
+    "ammo": [ "BL9boltmk2_type" ],
     "weight": "3000 g",
     "volume": "1750 ml",
     "price_postapoc": "60 USD",
     "bashing": 11,
     "to_hit": 1,
-    "ranged_damage": { "damage_type": "stab", "amount": 42 },
+    "ranged_damage": { "damage_type": "stab", "amount": 25 },
     "range": 21,
     "loudness": 12,
     "dispersion": 175,
@@ -746,7 +908,7 @@
     "name": { "str": "BL9-infused pistol MK iii" },
     "description": "A semi-automatic pistol with very ergonomic design that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
     "price": "5800 USD",
-    "ammo": [ "9mmBL9mk2_type", "9mm", "45", "22", "380" ],
+    "ammo": [ "9mmBL9mk3_type", "9mm", "45", "22", "380" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -773,8 +935,14 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "9mmBL9mk2_type", [ "9mmBL9mk3mag" ] ], [ "9mm", [ "9mmBL9mk3mag" ] ], [ "45", [ "9mmBL9mk3mag" ] ], [ "22", [ "9mmBL9mk3mag" ] ], [ "380", [ "9mmBL9mk3mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [
+      [ "9mmBL9mk3_type", [ "9mmBL9mk3mag" ] ],
+      [ "9mm", [ "9mmBL9mk3mag" ] ],
+      [ "45", [ "9mmBL9mk3mag" ] ],
+      [ "22", [ "9mmBL9mk3mag" ] ],
+      [ "380", [ "9mmBL9mk3mag" ] ]
+    ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_smg_mk3",
@@ -785,7 +953,7 @@
     "name": { "str": "BL9-infused submachine gun MK iii" },
     "description": "A fully automatic pistol caliber weapon with a very high rate of fire that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
     "price": "5800 USD",
-    "ammo": [ "9mmBL9smgmk2_type", "9mm", "45", "22", "40" ],
+    "ammo": [ "9mmBL9smgmk3_type", "9mm", "45", "22", "40" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -813,8 +981,14 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "9mmBL9smgmk2_type", [ "9mmBL9smgmk3mag" ] ], [ "9mm", [ "9mmBL9smgmk3mag" ] ], [ "45", [ "9mmBL9smgmk3mag" ] ], [ "22", [ "9mmBL9smgmk3mag" ] ], [ "40", [ "9mmBL9smgmk3mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [
+      [ "9mmBL9smgmk3_type", [ "9mmBL9smgmk3mag" ] ],
+      [ "9mm", [ "9mmBL9smgmk3mag" ] ],
+      [ "45", [ "9mmBL9smgmk3mag" ] ],
+      [ "22", [ "9mmBL9smgmk3mag" ] ],
+      [ "40", [ "9mmBL9smgmk3mag" ] ]
+    ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_sniper_mk3",
@@ -825,7 +999,7 @@
     "name": { "str": "BL9-infused sniper rifle MK iii" },
     "description": "A semi-automatic high quality sniper rifle that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
     "price": "5800 USD",
-    "ammo": [ "308BL9mk2_type", "308", "3006" ],
+    "ammo": [ "308BL9mk3_type", "308", "3006" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -852,8 +1026,8 @@
       [ "stock mount", 1 ],
       [ "underbarrel mount", 1 ]
     ],
-	"magazines": [ [ "308BL9mk2_type", [ "308BL9mk3mag" ] ], [ "308", [ "308BL9mk3mag" ] ], [ "3006", [ "308BL9mk3mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "308BL9mk3_type", [ "308BL9mk3mag" ] ], [ "308", [ "308BL9mk3mag" ] ], [ "3006", [ "308BL9mk3mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_auto_mk3",
@@ -864,7 +1038,7 @@
     "name": { "str": "BL9-infused automatic rifle MK iii" },
     "description": "A fully automatic sleek military automatic rifle that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
     "price": "5800 USD",
-    "ammo": [ "556BL9mk2_type", "223" ],
+    "ammo": [ "556BL9mk3_type", "223" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -892,8 +1066,8 @@
       [ "underbarrel mount", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "556BL9mk2_type", [ "556223BL9mk3mag" ] ], [ "223", [ "556223BL9mk3mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "556BL9mk3_type", [ "556223BL9mk3mag" ] ], [ "223", [ "556223BL9mk3mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_shotgun_mk3",
@@ -904,7 +1078,7 @@
     "name": { "str": "BL9-infused shotgun MK iii" },
     "description": "12-gauge Pump-action shotgun that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'shots'",
     "price": "5800 USD",
-    "ammo": [ "BL9shotmk2_type", "shot", "20x66mm" ],
+    "ammo": [ "BL9shotmk3_type", "shot", "20x66mm" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "SHOT", "TANGLE", "BEANBAG" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "RELOAD_ONE", "WATERPROOF_GUN" ],
@@ -928,6 +1102,7 @@
       [ "brass catcher", 1 ],
       [ "rail mount", 1 ],
       [ "sights mount", 1 ],
+      [ "sling", 1 ],
       [ "underbarrel mount", 1 ]
     ],
     "clip_size": 12
@@ -941,7 +1116,7 @@
     "name": { "str": "BL9-infused magnum MK iii" },
     "description": "A very high recoil, inaccurate even but quite deadly revolver that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
     "price": "5800 USD",
-    "ammo": [ "357magBL9mk2_type", "357mag", "38", "44" ],
+    "ammo": [ "357magBL9mk3_type", "357mag", "38", "44" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "RELOAD_ONE", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -987,7 +1162,7 @@
     "material": [ "BL9", "steel" ],
     "flags": [ "FIRE_20", "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
     "skill": "launcher",
-    "ammo": [ "BL9spraymk2_type" ],
+    "ammo": [ "BL9spraymk3_type" ],
     "dispersion": 145,
     "durability": 10,
     "valid_mod_locations": [
@@ -999,8 +1174,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "BL9spraymk2_type", [ "tank_BL9_mk3" ] ] ],
-	"magazine_well": 8
+    "magazines": [ [ "BL9spraymk3_type", [ "tank_BL9_mk3" ] ] ],
+    "magazine_well": 8
   },
   {
     "id": "BL9_launcher_mk3",
@@ -1009,7 +1184,7 @@
     "symbol": "(",
     "name": { "str": "BL9-infused launcher MK iii" },
     "description": "A high-quality modern grenade launcher with a well constructed magazine for the bomblets, it has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'fragments'",
-    "ammo": [ "40mmBL9mk2_type", "40x46mm" ],
+    "ammo": [ "40mmBL9mk3_type", "40x46mm" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -1036,8 +1211,8 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-	"magazines": [ [ "40mmBL9mk2_type", [ "40_BL9mk3mag" ] ], [ "40x46mm", [ "40_BL9mk3mag" ] ] ],
-	"magazine_well": 1
+    "magazines": [ [ "40mmBL9mk3_type", [ "40_BL9mk3mag" ] ], [ "40x46mm", [ "40_BL9mk3mag" ] ] ],
+    "magazine_well": 1
   },
   {
     "id": "BL9_bow_mk3",
@@ -1052,7 +1227,7 @@
     "flags": [ "FIRE_TWOHAND", "STR_DRAW", "RELOAD_AND_SHOOT", "PRIMITIVE_RANGED_WEAPON" ],
     "skill": "archery",
     "min_strength": 9,
-    "ammo": [ "BL9arrowmk2_type", "arrow" ],
+    "ammo": [ "BL9arrowmk3_type" ],
     "weight": "907 g",
     "volume": "1500 ml",
     "price_postapoc": "35 USD",
@@ -1060,7 +1235,7 @@
     "to_hit": 1,
     "reload_noise_volume": 3,
     "loudness": 10,
-    "ranged_damage": { "damage_type": "stab", "amount": 34 },
+    "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 32,
     "dispersion": 365,
     "durability": 10,
@@ -1081,13 +1256,13 @@
     "flags": [ "FIRE_TWOHAND", "PRIMITIVE_RANGED_WEAPON" ],
     "skill": "rifle",
     "min_strength": 7,
-    "ammo": [ "BL9boltmk2_type", "bolt" ],
+    "ammo": [ "BL9boltmk3_type" ],
     "weight": "3000 g",
     "volume": "1750 ml",
     "price_postapoc": "60 USD",
     "bashing": 11,
     "to_hit": 1,
-    "ranged_damage": { "damage_type": "stab", "amount": 42 },
+    "ranged_damage": { "damage_type": "stab", "amount": 25 },
     "range": 27,
     "loudness": 12,
     "dispersion": 145,

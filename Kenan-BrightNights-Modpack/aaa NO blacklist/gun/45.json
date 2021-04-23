@@ -4,9 +4,9 @@
     "type": "GUN",
     "name": "Hi-Point 45",
     "description": "For a handgun that's just a little over $200 it's exactly what you would expect. It's heavy and awkward to handle, but it works.",
-    "weight": 993,
+    "weight": "993 g",
     "volume": "750 ml",
-    "price": 600,
+    "price": "6 USD",
     "to_hit": -1,
     "bashing": 6,
     "material": [ "budget_steel", "plastic" ],
@@ -24,7 +24,7 @@
     "type": "GUN",
     "name": "Hi-Point 45 Carbine",
     "description": "The Hi-Point 45 carbine was designed to work in tandem with the Hi-Point 45 handgun. Both weapons use the same magazines.",
-    "weight": 2837,
+    "weight": "2837 g",
     "volume": "2 L",
     "price": "30 USD",
     "to_hit": -3,
@@ -37,7 +37,7 @@
     "dispersion": 420,
     "durability": 4,
     "barrel_length": 1,
-    "Valid_mod_locations": [ [ "accessories", 4 ], [ "sights", 1 ], [ "Mechanism", 2 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "sights", 1 ], [ "sling", 1 ], [ "mechanism", 2 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
     "magazines": [ [ "45", [ "hipoint45mag", "hipoint45magext" ] ] ]
   }
 ]

@@ -25,7 +25,7 @@
     "material": [ "steel", "superalloy" ],
     "color": "dark_gray",
     "ammo": "9mm",
-    "ranged_damage": 5,
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "range": 20,
     "dispersion": 140,
     "durability": 9,
@@ -57,6 +57,7 @@
       [ "magazine", 1 ],
       [ "rail", 1 ],
       [ "sights", 1 ],
+      [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
