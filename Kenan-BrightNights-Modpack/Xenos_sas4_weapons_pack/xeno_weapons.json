@@ -3,6 +3,7 @@
     "id": "z1_assault",
     "type": "GUN",
     "symbol": "(",
+    "reload_noise_volume": 10,	
     "color": "light_gray",
     "name": { "str": "Z-1 Assault", "str_pl": "Z-1 Assaults" },
     "description": "the Z-1 Assault is a balanced and 'powerful' assault rifle suitable for short and medium range engagements produced by <info>Z-Arm Tech</info>.\nthe Z-1 Assault uses <info>small caliber</info> ammunition, it is modeled after the M4 (most likely the Colt Commando variation) with a futuristic design. It has the word 'Z-1' right in front of its trigger. It has scratches and some duct tape wrapped over its stock, carry handle, grip and handguard, which proves this gun has been well used and is now in bad condition but still somewhat usable.\n\nThis weapon is <bad>poorly made</bad> and will <bad>easily malfunction</bad> and will <bad>not handle much if any beating</bad>\n\n<info>Xeno's SAS4 Weapons pack Modded Content</info>",
@@ -20,7 +21,7 @@
     "recoil": 100,
     "durability": 2,
     "reload": 350,
-    "loudness": 210,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -3 },
     "range": 4,
     "valid_mod_locations": [
@@ -39,6 +40,8 @@
   {
     "id": "z2_lmp",
     "type": "GUN",
+    "reload_noise_volume": 10,
+	"looks_like": "hk_mp5",	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Z-2 LMP", "str_pl": "Z-2 LMPs" },
@@ -57,7 +60,7 @@
     "recoil": 140,
     "durability": 2,
     "reload": 350,
-    "loudness": 210,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -6 },
     "range": 1,
     "valid_mod_locations": [
@@ -82,6 +85,7 @@
   {
     "id": "z5_heavy",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Z-5 Heavy", "str_pl": "Z-5 Heavy" },
@@ -100,7 +104,7 @@
     "recoil": 140,
     "durability": 2,
     "reload": 1550,
-    "loudness": 210,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -6 },
     "range": 1,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -110,6 +114,7 @@
   {
     "id": "z1_assault_fixed",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Fixed Z-1 Assault", "str_pl": "Fixed Z-1 Assaults" },
@@ -128,7 +133,7 @@
     "recoil": 90,
     "durability": 5,
     "reload": 300,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 7,
     "valid_mod_locations": [
@@ -147,6 +152,8 @@
   {
     "id": "z2_lmp_fixed",
     "type": "GUN",
+    "reload_noise_volume": 10,
+	"looks_like": "hk_mp5",	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Fixed Z-2 LMP", "str_pl": "Fixed Z-2 LMPs" },
@@ -165,7 +172,7 @@
     "recoil": 120,
     "durability": 5,
     "reload": 300,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": 3,
     "valid_mod_locations": [
@@ -190,6 +197,7 @@
   {
     "id": "z5_heavy_fixed",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Fixed Z-5 Heavy", "str_pl": "Fixed Z-5 Heavy" },
@@ -208,7 +216,7 @@
     "recoil": 120,
     "durability": 5,
     "reload": 1250,
-    "loudness": 180,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": 3,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -218,6 +226,7 @@
   {
     "id": "z1_assault_reinforced",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Reinforced Z-1 Assault", "str_pl": "Reinforced Z-1 Assaults" },
@@ -236,7 +245,7 @@
     "recoil": 110,
     "durability": 8,
     "reload": 200,
-    "loudness": 170,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 11,
     "valid_mod_locations": [
@@ -255,6 +264,8 @@
   {
     "id": "z2_lmp_reinforced",
     "type": "GUN",
+    "reload_noise_volume": 10,
+	"looks_like": "hk_mp5",	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Reinforced Z-2 LMP", "str_pl": "Reinforced Z-2 LMPs" },
@@ -273,7 +284,7 @@
     "recoil": 120,
     "durability": 8,
     "reload": 250,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 6,
     "valid_mod_locations": [
@@ -298,6 +309,7 @@
   {
     "id": "z5_heavy_reinforced",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "light_gray",
     "name": { "str": "Reinforced Z-5 Heavy", "str_pl": "Reinforced Z-5 Heavy" },
@@ -316,7 +328,7 @@
     "recoil": 130,
     "durability": 8,
     "reload": 1150,
-    "loudness": 180,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 8 },
     "range": 12,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -338,6 +350,7 @@
   {
     "id": "hvm_001",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "green",
     "name": { "str": "HVM 001", "str_pl": "HVM 001" },
@@ -358,13 +371,14 @@
     "reload": 135,
     "ranged_damage": { "damage_type": "stab", "amount": -7 },
     "range": -8,
-    "loudness": 180,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ] ],
     "magazines": [ [ "9mm", [ "25hvm" ] ], [ "9mm", [ "25hvmspeedloader" ] ] ]
   },
   {
     "id": "hvm_002",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "green",
     "name": { "str": "HVM 002", "str_pl": "HVM 002" },
@@ -383,7 +397,7 @@
     "recoil": 120,
     "durability": 6,
     "reload": 150,
-    "loudness": 210,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -10 },
     "range": -4,
     "valid_mod_locations": [
@@ -402,6 +416,7 @@
   {
     "id": "hvm_004",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "green",
     "name": { "str": "HVM 004", "str_pl": "HVM 004" },
@@ -420,7 +435,7 @@
     "recoil": 120,
     "durability": 6,
     "reload": 150,
-    "loudness": 210,
+    "loudness": 25,
     "clip_size": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -10 },
     "range": -5,
@@ -440,6 +455,7 @@
   {
     "id": "hvm_005_G",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "green",
     "name": { "str": "HVM 005 G-Class", "str_pl": "HVM 005 G-Class" },
@@ -458,7 +474,7 @@
     "recoil": 120,
     "durability": 6,
     "reload": 100,
-    "loudness": 210,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -12 },
     "range": 2,
     "valid_mod_locations": [
@@ -488,6 +504,7 @@
   {
     "id": "hvm_008",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "green",
     "name": { "str": "HVM 008", "str_pl": "HVM 008" },
@@ -506,7 +523,7 @@
     "recoil": 100,
     "durability": 6,
     "reload": 100,
-    "loudness": 300,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": -14 },
     "range": 2,
     "valid_mod_locations": [
@@ -533,6 +550,7 @@
   {
     "id": "ronson_45",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "blue",
     "name": { "str": "Ronson 45", "str_pl": "Ronson 45" },
@@ -553,13 +571,14 @@
     "reload": 135,
     "ranged_damage": { "damage_type": "stab", "amount": -7 },
     "range": -8,
-    "loudness": 180,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ] ],
     "magazines": [ [ "45", [ "10ronson45" ] ], [ "45", [ "15ronson45" ] ], [ "45", [ "20ronson45" ] ] ]
   },
   {
     "id": "ronson_50",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "blue",
     "name": { "str": "Ronson 50", "str_pl": "Ronson 50" },
@@ -580,7 +599,7 @@
     "reload": 1250,
     "ranged_damage": { "damage_type": "stab", "amount": -15 },
     "range": -20,
-    "loudness": 350,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "magazines": [ [ "50", [ "20ronson50" ] ], [ "50", [ "30ronson50" ] ], [ "50", [ "40ronson50" ] ] ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd", 3 ], [ "AUTO", "auto", 6 ] ]
@@ -588,6 +607,7 @@
   {
     "id": "ronson_55",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "blue",
     "name": { "str": "Ronson 55", "str_pl": "Ronson 55" },
@@ -608,7 +628,7 @@
     "reload": 1250,
     "ranged_damage": { "damage_type": "stab", "amount": -15 },
     "range": -20,
-    "loudness": 450,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "sling", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ] ],
     "magazines": [ [ "50", [ "20ronson50" ] ], [ "50", [ "30ronson50" ] ] ],
     "modes": [ [ "DEFAULT", "semi-auto", 2 ], [ "BURST", "3 rd", 6 ], [ "AUTO", "auto", 12 ] ]
@@ -616,6 +636,7 @@
   {
     "id": "ronson_65_a",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "blue",
     "name": { "str": "Ronson 65-a", "str_pl": "Ronson 65-a" },
@@ -636,7 +657,7 @@
     "reload": 200,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": 3,
-    "loudness": 120,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "sling", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ] ],
     "magazines": [
       [ "762", [ "20ronson762" ] ],
@@ -650,6 +671,7 @@
   {
     "id": "ronson_70",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "blue",
     "name": { "str": "Ronson 70", "str_pl": "Ronson 70" },
@@ -670,7 +692,7 @@
     "reload": 670,
     "ranged_damage": { "damage_type": "stab", "amount": 10 },
     "range": 35,
-    "loudness": 20,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "magazines": [
       [ "battery", [ "light_minus_battery_cell" ] ],
@@ -682,6 +704,7 @@
   {
     "id": "ronson_lbm",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "blue",
     "name": { "str": "Ronson LBM", "str_pl": "Ronson LBM" },
@@ -702,7 +725,7 @@
     "reload": 1500,
     "ranged_damage": { "damage_type": "stab", "amount": -20 },
     "range": -20,
-    "loudness": 20,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
     "magazines": [
       [ "50", [ "20ronson50" ] ],
@@ -717,6 +740,7 @@
   {
     "id": "ria_313",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 313", "str_pl": "RIA 313" },
@@ -737,13 +761,14 @@
     "reload": 90,
     "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "range": 0,
-    "loudness": 180,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ],
     "magazines": [ [ "9mm", [ "20ria9mm" ] ] ]
   },
   {
     "id": "ria_1010",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 1010", "str_pl": "RIA 1010" },
@@ -764,13 +789,14 @@
     "reload": 90,
     "ranged_damage": { "damage_type": "stab", "amount": 1 },
     "range": 0,
-    "loudness": 180,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ],
     "magazines": [ [ "44", [ "22ria44" ] ], [ "44", [ "35ria44bad" ] ], [ "44", [ "35ria44good" ] ] ]
   },
   {
     "id": "ria_7",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 7", "str_pl": "RIA 7" },
@@ -791,7 +817,7 @@
     "reload": 90,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": 2,
-    "loudness": 100,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "underbarrel", 1 ] ],
     "magazines": [ [ "57", [ "45ria57" ] ], [ "57", [ "2x45ria57" ] ], [ "57", [ "80ria57" ] ] ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 12 ], [ "BURST", "5 rd", 5 ] ]
@@ -799,6 +825,7 @@
   {
     "id": "ria_T7",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA T7", "str_pl": "RIA T7" },
@@ -819,7 +846,7 @@
     "reload": 90,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 3,
-    "loudness": 90,
+    "loudness": 25,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "underbarrel", 1 ] ],
     "magazines": [ [ "57", [ "45ria57" ] ], [ "57", [ "2x45ria57" ] ], [ "57", [ "80ria57" ] ] ],
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 12 ], [ "BURST", "5 rd", 5 ] ]
@@ -827,6 +854,7 @@
   {
     "id": "ria_20_para",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 20 Para", "str_pl": "RIA 20 Para" },
@@ -845,7 +873,7 @@
     "recoil": 120,
     "durability": 6,
     "reload": 100,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 3,
     "valid_mod_locations": [
@@ -864,6 +892,7 @@
   {
     "id": "ria_20_dsc",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 20 DSC", "str_pl": "RIA 20 DSC" },
@@ -882,7 +911,7 @@
     "recoil": 170,
     "durability": 6,
     "reload": 100,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 3,
     "valid_mod_locations": [
@@ -901,6 +930,7 @@
   {
     "id": "ria_20_striker",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 20 Striker", "str_pl": "RIA 20 Striker" },
@@ -919,7 +949,7 @@
     "recoil": 150,
     "durability": 6,
     "reload": 100,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 7 },
     "range": 5,
     "valid_mod_locations": [
@@ -938,6 +968,7 @@
   {
     "id": "ria_trident",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA Trident", "str_pl": "RIA Trident" },
@@ -956,7 +987,7 @@
     "recoil": 80,
     "durability": 6,
     "reload": 100,
-    "loudness": 190,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 5 },
     "range": 6,
     "valid_mod_locations": [
@@ -975,6 +1006,7 @@
   {
     "id": "ria_30_strikeforce",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 30 Strikeforce", "str_pl": "RIA 30 Strikeforce" },
@@ -993,7 +1025,7 @@
     "recoil": 180,
     "durability": 6,
     "reload": 80,
-    "loudness": 210,
+    "loudness": 25,
     "clip_size": 10,
     "ranged_damage": { "damage_type": "stab", "amount": 0 },
     "range": 0,
@@ -1013,6 +1045,7 @@
   {
     "id": "ria_40",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 40", "str_pl": "RIA 40" },
@@ -1031,7 +1064,7 @@
     "recoil": 150,
     "durability": 6,
     "reload": 700,
-    "loudness": 280,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 10 },
     "range": 5,
     "valid_mod_locations": [
@@ -1050,6 +1083,7 @@
   {
     "id": "ria_t40",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA T40", "str_pl": "RIA T40" },
@@ -1068,7 +1102,7 @@
     "recoil": 160,
     "durability": 7,
     "reload": 800,
-    "loudness": 320,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 18 },
     "range": 2,
     "valid_mod_locations": [
@@ -1087,6 +1121,7 @@
   {
     "id": "ria_45",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 45", "str_pl": "RIA 45" },
@@ -1105,7 +1140,7 @@
     "recoil": 150,
     "durability": 6,
     "reload": 500,
-    "loudness": 210,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 6 },
     "range": -1,
     "valid_mod_locations": [
@@ -1124,6 +1159,7 @@
   {
     "id": "ria_50",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "dark_gray",
     "name": { "str": "RIA 50", "str_pl": "RIA 50" },
@@ -1142,7 +1178,7 @@
     "recoil": 500,
     "durability": 6,
     "reload": 100,
-    "loudness": 300,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 0,
     "valid_mod_locations": [
@@ -1161,6 +1197,7 @@
   {
     "id": "cm_202",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 202", "str_pl": "CM 202" },
@@ -1179,7 +1216,7 @@
     "recoil": 50,
     "durability": 6,
     "reload": 100,
-    "loudness": 300,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 0 },
     "range": -20,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "grip", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "underbarrel", 1 ] ],
@@ -1189,6 +1226,7 @@
   {
     "id": "cm_205",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 205", "str_pl": "CM 205" },
@@ -1207,7 +1245,7 @@
     "recoil": 50,
     "durability": 6,
     "reload": 100,
-    "loudness": 300,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 2,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "underbarrel", 1 ] ],
@@ -1217,6 +1255,7 @@
   {
     "id": "cm_225",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 225", "str_pl": "CM 225" },
@@ -1235,7 +1274,7 @@
     "recoil": 50,
     "durability": 6,
     "reload": 100,
-    "loudness": 300,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 2,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "underbarrel", 1 ] ],
@@ -1245,6 +1284,7 @@
   {
     "id": "cm_307",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 307", "str_pl": "CM 307" },
@@ -1263,7 +1303,7 @@
     "recoil": 20,
     "durability": 6,
     "reload": 250,
-    "loudness": 200,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 0 },
     "range": -10,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "underbarrel", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -1273,6 +1313,7 @@
   {
     "id": "cm_330",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 330", "str_pl": "CM 330" },
@@ -1291,7 +1332,7 @@
     "recoil": 20,
     "durability": 6,
     "reload": 250,
-    "loudness": 200,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": -9,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "underbarrel", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -1301,6 +1342,7 @@
   {
     "id": "cm_351_sunflare",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 351 Sunflare", "str_pl": "CM 351 Sunflare" },
@@ -1319,7 +1361,7 @@
     "recoil": 20,
     "durability": 8,
     "reload": 250,
-    "loudness": 200,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "range": -9,
     "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "underbarrel", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -1329,6 +1371,7 @@
   {
     "id": "cm_gigavolt",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM Gigavolt", "str_pl": "CM Gigavolt" },
@@ -1347,7 +1390,7 @@
     "recoil": 80,
     "durability": 8,
     "reload": 1500,
-    "loudness": 200,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 12 },
     "range": 2,
     "valid_mod_locations": [
@@ -1365,6 +1408,7 @@
   {
     "id": "cm_401_planet_stormer",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 401 Planet Stormer", "str_pl": "CM 401 Planet Stormer" },
@@ -1383,7 +1427,7 @@
     "recoil": 80,
     "durability": 8,
     "reload": 200,
-    "loudness": 200,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 12 },
     "range": 2,
     "valid_mod_locations": [
@@ -1401,6 +1445,7 @@
   {
     "id": "cm_440_titan",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 440 Titan", "str_pl": "CM 440 Titam" },
@@ -1419,7 +1464,7 @@
     "recoil": 90,
     "durability": 8,
     "reload": 200,
-    "loudness": 200,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 12 },
     "range": 2,
     "valid_mod_locations": [
@@ -1437,6 +1482,7 @@
   {
     "id": "cm_451_starburst",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 451 Starburst", "str_pl": "CM 451 Starburst" },
@@ -1455,7 +1501,7 @@
     "recoil": 100,
     "durability": 8,
     "reload": 230,
-    "loudness": 250,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 15 },
     "range": 2,
     "valid_mod_locations": [
@@ -1479,6 +1525,7 @@
   {
     "id": "cm_sub_light_com2",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "Sub-Light COM2 (CM)", "str_pl": "Sub-Light COM2 (CM)" },
@@ -1497,7 +1544,7 @@
     "recoil": 300,
     "durability": 8,
     "reload": 10000,
-    "loudness": 500,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 80 },
     "range": 70,
     "valid_mod_locations": [
@@ -1515,6 +1562,7 @@
   {
     "id": "cm_505",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 505", "str_pl": "CM 505" },
@@ -1533,7 +1581,7 @@
     "recoil": 100,
     "durability": 8,
     "reload": 600,
-    "loudness": 320,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 6,
     "valid_mod_locations": [
@@ -1551,6 +1599,7 @@
   {
     "id": "cm_530_babycom",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "white",
     "name": { "str": "CM 530 BabyCOM", "str_pl": "CM 530 BabyCOM" },
@@ -1569,7 +1618,7 @@
     "recoil": 60,
     "durability": 8,
     "reload": 600,
-    "loudness": 320,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 3 },
     "range": 16,
     "valid_mod_locations": [
@@ -1587,6 +1636,7 @@
   {
     "id": "hotspot",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "red",
     "name": { "str": "Hotspot", "str_pl": "Hotspots" },
@@ -1605,7 +1655,7 @@
     "recoil": 0,
     "durability": 10,
     "reload": 100,
-    "loudness": 20,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 15 },
     "range": 50,
     "ranged_piercing": 100,
@@ -1635,6 +1685,7 @@
   {
     "id": "poison_claw",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "red",
     "name": { "str": "Poison Claw", "str_pl": "Poison Claws" },
@@ -1654,7 +1705,7 @@
     "reload": 90,
     "ranged_damage": { "damage_type": "stab", "amount": 35 },
     "range": 2,
-    "loudness": 180,
+    "loudness": 25,
     "ammo": "9mm",
     "valid_mod_locations": [ [ "barrel", 1 ], [ "muzzle", 1 ] ],
     "magazines": [ [ "9mm", [ "10rancor9mm" ] ], [ "9mm", [ "20rancor9mm" ] ], [ "9mm", [ "30rancor9mm" ] ] ]
@@ -1662,6 +1713,7 @@
   {
     "id": "mixmaster",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "red",
     "name": { "str": "Mixmaster", "str_pl": "Mixmasters" },
@@ -1680,7 +1732,7 @@
     "recoil": 120,
     "durability": 6,
     "reload": 100,
-    "loudness": 40,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 35 },
     "range": 20,
     "valid_mod_locations": [
@@ -1703,6 +1755,7 @@
   {
     "id": "hard_thorn",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "red",
     "name": { "str": "Hard Thorn", "str_pl": "Hard Thorns" },
@@ -1721,7 +1774,7 @@
     "recoil": 80,
     "durability": 6,
     "reload": 100,
-    "loudness": 180,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "range": 10,
     "valid_mod_locations": [ [ "accessories", 1 ], [ "barrel", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ] ],
@@ -1731,6 +1784,7 @@
   {
     "id": "heartburn",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "red",
     "name": { "str": "Heartburn", "str_pl": "Heartburns" },
@@ -1749,7 +1803,7 @@
     "recoil": 120,
     "durability": 6,
     "reload": 1200,
-    "loudness": 300,
+    "loudness": 25,
     "ranged_damage": { "damage_type": "stab", "amount": 40 },
     "range": 5,
     "valid_mod_locations": [
@@ -1768,6 +1822,7 @@
   {
     "id": "stripper",
     "type": "GUN",
+    "reload_noise_volume": 10,	
     "symbol": "(",
     "color": "red",
     "name": { "str": "Stripper", "str_pl": "Strippers" },
@@ -1786,7 +1841,7 @@
     "recoil": 30,
     "durability": 6,
     "reload": 20,
-    "loudness": 120,
+    "loudness": 25,
     "clip_size": 18,
     "ranged_damage": { "damage_type": "stab", "amount": 10 },
     "range": 3,
