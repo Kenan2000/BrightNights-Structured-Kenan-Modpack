@@ -34,5 +34,14 @@
     "dispersion": 25,
     "recoil": 250,
     "effects": [ "COOKOFF", "SHOT", "BEANBAG" ]
+  },
+  {
+    "id": "shot_410_reloaded",
+    "type": "AMMO",
+    "copy-from": "shot_410",
+    "name": { "str": "reloaded 410 shot", "str_pl": "reloaded 410 shot" },
+    "description": "A hand-reloaded small caliber shotgun shell full of damaging iron pellets.  The dimensions of the shell match .45 rounds closely enough to be interchangable, although it is both less accurate and less damaging than its larger cousins.",
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.8 }, "dispersion": 1.2 },
+    "extend": { "effects": [ "RECYCLED" ] }
   }
 ]  
