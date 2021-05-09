@@ -2613,32 +2613,6 @@
     "min_range": 5
   },
   {
-    "type": "SPELL",
-    "id": "mon_insect_saddler_brood_birth",
-    "name": { "str": "Birth" },
-    "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster gives a live birth to 2-5 baby saddlers. These saddlers are filled with hidden potentials, providing them the ability to grow so much faster into a full grown combat saddler once they sense danger around them.'",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "HOSTILE_SUMMON", "RANDOM_DAMAGE", "PERMANENT" ],
-    "valid_targets": [ "ground" ],
-    "min_damage": 2,
-    "max_damage": 5,
-    "min_aoe": 3,
-    "max_aoe": 3,
-    "effect": "summon",
-    "effect_str": "mon_insect_saddler_baby_potent"
-  },
-  {
-    "type": "SPELL",
-    "id": "mon_insect_saddler_brood_birth_target",
-    "name": { "str": "a spell" },
-    "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
-    "extra_effects": [ { "id": "mon_insect_saddler_brood_birth", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "valid_targets": [ "ally", "hostile", "ground" ],
-    "effect": "target_attack",
-    "min_range": 10,
-    "max_range": 10
-  },
-  {
     "id": "mon_insect_saddler_baby_potent_grow_null_note",
     "type": "SPELL",
     "name": { "str": "a note" },
