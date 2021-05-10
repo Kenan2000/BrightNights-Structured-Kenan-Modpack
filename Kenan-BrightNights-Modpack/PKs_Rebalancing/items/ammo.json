@@ -89,7 +89,7 @@
     "damage": { "damage_type": "stab", "amount": 1, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "power": 12, "distance_factor": 0.1, "shrapnel": 2 }
+    "explosion": { "damage": 12, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 1000, "armor_multiplier": 3 }, "range": 10 } }
   },
   {
     "id": "bomblet_frag",
@@ -108,7 +108,7 @@
     "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "power": 4, "distance_factor": 0.1, "shrapnel": 12 }
+    "explosion": { "damage": 4, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 6800, "armor_multiplier": 3 }, "range": 10 } }
   },
   {
     "id": "bomblet_fire",
@@ -130,7 +130,7 @@
     "emits": [ "emit_smoke_bomblet", "emit_fire_bomblet", "emit_fire_bomblet_small" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": { "type": "explosion", "explosion": { "power": 4, "distance_factor": 0.1 } }
+    "countdown_action": { "type": "explosion", "explosion": { "damage": 4, "radius": 3 } }
   },
   {
     "id": "bomblet_acid",
@@ -152,7 +152,7 @@
     "emits": [ "emit_tgas_bomblet", "emit_acid_bomblet" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": { "type": "explosion", "explosion": { "power": 4, "distance_factor": 0.1 } }
+    "countdown_action": { "type": "explosion", "explosion": { "damage": 4, "radius": 3 } }
   },
   {
     "id": "bomblet_stun",
@@ -190,7 +190,7 @@
     "initial_charges": 1,
     "max_charges": 1,
     "turns_per_charge": 1,
-    "use_action": { "type": "explosion", "emp_blast_radius": 1, "explosion": { "power": 1, "distance_factor": 0.2, "shrapnel": 1 } }
+    "use_action": { "type": "explosion", "emp_blast_radius": 1, "explosion": { "damage": 1, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 65, "armor_multiplier": 3 }, "range": 10 } } }
   },
   {
     "id": "acidbomb_large",
@@ -420,7 +420,7 @@
     "use_action": {
       "type": "explosion",
       "emp_blast_radius": 8,
-      "explosion": { "power": 120, "distance_factor": 0.4, "shrapnel": 4 },
+      "explosion": { "damage": 120, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 2400, "armor_multiplier": 3 }, "range": 10 } },
       "fields_type": "fd_plasma",
       "fields_radius": 2,
       "fields_min_intensity": 0,

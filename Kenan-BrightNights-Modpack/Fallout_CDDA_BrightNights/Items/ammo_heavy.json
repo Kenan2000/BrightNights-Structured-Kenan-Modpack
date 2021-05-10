@@ -226,8 +226,12 @@
     "count": 4,
     "dispersion": 30,
     "recoil": 225,
-    "explosion": { "power": 4675, "shrapnel": { "casing_mass": 4215, "fragment_mass": 1.0 } },
-    "effects": [ "COOKOFF", "EXPLOSIVE", "TRAIL" ]
+    "explosion": {
+      "damage": 4675,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 16000, "armor_multiplier": 3 }, "range": 15 }
+    },
+    "effects": [ "COOKOFF", "CUSTOM_EXPLOSION", "EXPLOSIVE", "TRAIL" ]
   },
   {
     "type": "AMMO",
@@ -246,8 +250,12 @@
     "count": 4,
     "dispersion": 30,
     "recoil": 225,
-    "explosion": { "power": 4675, "shrapnel": { "casing_mass": 4215, "fragment_mass": 1.0 } },
-    "effects": [ "COOKOFF", "EXPLOSIVE", "TRAIL" ]
+    "explosion": {
+      "damage": 4675,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 16000, "armor_multiplier": 3 }, "range": 15 }
+    },
+    "effects": [ "COOKOFF", "CUSTOM_EXPLOSION", "EXPLOSIVE", "TRAIL" ]
   },
   {
     "type": "AMMO",
@@ -270,7 +278,11 @@
     "count": 1,
     "effects": [ "CUSTOM_EXPLOSION", "TRAIL" ],
     "explode_in_fire": true,
-    "explosion": { "power": 10775, "shrapnel": { "casing_mass": 9975, "fragment_mass": 1.0 } }
+    "explosion": {
+      "damage": 10775,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 25000, "armor_multiplier": 3 }, "range": 15 }
+    }
   },
   {
     "id": "belt70mm",
@@ -314,7 +326,11 @@
     "count": 15,
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "power": 1560, "shrapnel": { "casing_mass": 1420, "fragment_mass": 1.0 } }
+    "explosion": {
+      "damage": 1560,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 3000, "armor_multiplier": 3 }, "range": 15 }
+    }
   },
   {
     "type": "AMMO",
@@ -337,7 +353,11 @@
     "count": 15,
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "power": 780, "shrapnel": { "casing_mass": 710, "fragment_mass": 1.0 } }
+    "explosion": {
+      "damage": 780,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 1600, "armor_multiplier": 3 }, "range": 15 }
+    }
   },
   {
     "type": "AMMO",
@@ -381,7 +401,11 @@
     "count": 1,
     "effects": [ "CUSTOM_EXPLOSION", "TRAIL" ],
     "explode_in_fire": true,
-    "explosion": { "power": 12475, "shrapnel": { "casing_mass": 11275, "fragment_mass": 1.0 } }
+    "explosion": {
+      "damage": 12475,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 32000, "armor_multiplier": 3 }, "range": 15 }
+    }
   },
   {
     "type": "AMMO",
@@ -404,7 +428,11 @@
     "count": 1,
     "effects": [ "CUSTOM_EXPLOSION", "TRAIL" ],
     "explode_in_fire": true,
-    "explosion": { "power": 9475, "shrapnel": { "casing_mass": 9275, "fragment_mass": 1.0 } }
+    "explosion": {
+      "damage": 9475,
+      "radius": 15,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 30000, "armor_multiplier": 3 }, "range": 15 }
+    }
   },
   {
     "type": "AMMO",

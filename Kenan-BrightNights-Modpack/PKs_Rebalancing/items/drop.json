@@ -1,10 +1,10 @@
 [
   {
-	"type": "COMESTIBLE",
+    "type": "COMESTIBLE",
     "id": "plant_sac",
     "name": { "str_sp": "fluid sac" },
-	"weight": 278,
-	"color": "light_green",
+    "weight": 278,
+    "color": "light_green",
     "description": "A fluid bladder from a plant based lifeform.  Not very nutritious, and may play host to microscopic germs.",
     "volume": "250 ml",
     "price": 0,
@@ -19,10 +19,10 @@
     "spoils_in": 168
   },
   {
-	"type": "COMESTIBLE",
+    "type": "COMESTIBLE",
     "id": "sac_empty",
     "name": { "str_sp": "empty fluid sac" },
-	"weight": 155,
+    "weight": 155,
     "color": "light_green",
     "description": "An empty fluid bladder.  Not very tasty, nutritious, or filling, but perhaps useful as kindling or in making a pouch.",
     "volume": "250 ml",
@@ -52,11 +52,11 @@
     "color": "light_green"
   },
   {
-	"type": "COMESTIBLE",
+    "type": "COMESTIBLE",
     "id": "megabear_skull_unclean",
     "name": { "str_sp": "juvenille megabear head" },
-	"weight": 7887,
-	"color": "dark_gray",
+    "weight": 7887,
+    "color": "dark_gray",
     "description": "An uncleaned elephant bear head.  It could be crafted into a snug bone helmet with some skill and patience, and eaten in times of desperation.",
     "volume": 18,
     "to_hit": -3,
@@ -74,7 +74,7 @@
   },
   {
     "id": "megabear_skull_picked",
-	"name": "picked megabear skull",
+    "name": "picked megabear skull",
     "type": "GENERIC",
     "description": "The remains of an elephant bear head.  Something was eating at it, but scraps of stubborn sinew do remain.",
     "weight": 3113,
@@ -88,7 +88,7 @@
   },
   {
     "id": "megabear_skull_clean",
-	"name": "juvenille megabear skull",
+    "name": "juvenille megabear skull",
     "type": "GENERIC",
     "description": "The cleaned skull of a juvenille elephant bear.  The perfect size for a helmet, with a little work.",
     "weight": 2843,
@@ -102,9 +102,9 @@
   },
   {
     "id": "broken_mechaspider",
-	"name": "destroyed arachnotron",
+    "name": "destroyed arachnotron",
     "type": "GENERIC",
-	"description": "A dead arachnotron.  But was it ever truly alive?",
+    "description": "A dead arachnotron.  But was it ever truly alive?",
     "category": "other",
     "weight": 18520,
     "volume": 340,
@@ -117,9 +117,9 @@
   },
   {
     "id": "arachnotron_guts",
-	"name": "demeated arachnotron",
+    "name": "demeated arachnotron",
     "type": "GENERIC",
-	"description": "A dead arachnotron, with the largest chunks of flesh quickly cut off.",
+    "description": "A dead arachnotron, with the largest chunks of flesh quickly cut off.",
     "category": "other",
     "weight": 16280,
     "volume": 328,
@@ -261,9 +261,9 @@
   },
   {
     "id": "jar_spider_steak_pickled",
-	"name": { "str": "sealed jar of pickled arachnotron fillets", "str_pl": "sealed jars of pickled arachnotron fillets" },
+    "name": { "str": "sealed jar of pickled arachnotron fillets", "str_pl": "sealed jars of pickled arachnotron fillets" },
     "type": "GENERIC",
-	"description": "A sealed jar of mechaspider flesh.  Use to open and eat to enjoy.",
+    "description": "A sealed jar of mechaspider flesh.  Use to open and eat to enjoy.",
     "category": "food",
     "weight": 590,
     "volume": "500 ml",
@@ -280,7 +280,7 @@
     }
   },
   {
-	"type": "COMESTIBLE",
+    "type": "COMESTIBLE",
     "id": "spider_steak_pickled",
     "name": { "str_sp": "pickled arachnotron flesh" },
     "name_plural": "pickled arachnotron flesh",
@@ -335,14 +335,14 @@
       "sound_volume": 0,
       "sound_msg": "glass shattering",
       "no_deactivate_msg": "Don't play with it, throw it.",
-      "explosion": { "power": 2 }
+      "explosion": { "damage": 2, "radius": 3 }
     }
   },
   {
     "id": "royal_jelly_sap",
-	"type": "COMESTIBLE",
-	"category": "drugs",
-	"name": { "str_sp": "mixed royal jelly" },
+    "type": "COMESTIBLE",
+    "category": "drugs",
+    "name": { "str_sp": "mixed royal jelly" },
     "name_plural": "mixed royal jellies",
     "//": "Didn't precisely exist pre-cataclysm, so tough to price.",
     "description": "A milky colored, sweet smelling jelly, mixed with some triffid sap to spread the alchemical properties of the jelly further.  While not useful for further crafting or cooking it can be used to heal afflictions.",
@@ -359,11 +359,7 @@
     "quench": 12,
     "healthy": 4,
     "fun": 5,
-    "use_action": {
-    "type": "consume_drug",
-    "activation_message": "...",
-    "effects": [ { "id": "cureall" } ] 
-	} 
+    "use_action": { "type": "consume_drug", "activation_message": "...", "effects": [ { "id": "cureall" } ] }
   },
   {
     "id": "fighter_sting_juice",
@@ -384,7 +380,7 @@
     "type": "COMESTIBLE",
     "id": "egg_wasp",
     "name": { "str_sp": "wasp egg" },
-	"weight": 60,
+    "weight": 60,
     "color": "white",
     "sub": "egg_reptile",
     "spoils_in": 672,
@@ -397,10 +393,10 @@
     "fun": -18
   },
   {
-	"id": "wasp_glue",
-	"name": "wasp glue",
+    "id": "wasp_glue",
+    "name": "wasp glue",
     "type": "GENERIC",
-	"description": "Glue made from a wasps saliva, some plant material, and whatever they've eaten.  Makes a fairly weak glue, but can be dried and processed into an adhesive with some effort.",
+    "description": "Glue made from a wasps saliva, some plant material, and whatever they've eaten.  Makes a fairly weak glue, but can be dried and processed into an adhesive with some effort.",
     "symbol": ",",
     "sub": "bone_glue",
     "color": "light_gray",
@@ -413,9 +409,9 @@
   },
   {
     "id": "wasp_glue_super",
-	"name": "wasp adhesive",
-	"type": "GENERIC",
-	"description": "Glue mixed with acid water and dried after being mixed with nitrates to firm it up.  Makes a strong glue that is capable of a wide range of uses.",
+    "name": "wasp adhesive",
+    "type": "GENERIC",
+    "description": "Glue mixed with acid water and dried after being mixed with nitrates to firm it up.  Makes a strong glue that is capable of a wide range of uses.",
     "symbol": ",",
     "sub": "superglue",
     "color": "dark_gray",

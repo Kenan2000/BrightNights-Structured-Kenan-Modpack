@@ -15,16 +15,14 @@
     "damage": 20,
     "recoil": 20,
     "explosion": {
-        "power" : 10000,
-        "distance_factor" : 0.3,
-        "fire" : true,
-        "shrapnel" : {
-            "casing_mass" : 50,
-            "fragment_mass" : 0.5,
-            "recovery" : 10,
-            "drop" : "scrap"
-        }
+      "damage": 10000,
+      "radius": 3,
+      "fire": true,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 6000, "armor_multiplier": 3 }, "range": 10 }
     },
     "effects": [ "CUSTOM_EXPLOSION", "COOKOFF", "FLASHBANG", "NAPALM" ]
   }
 ]
+
+
+
