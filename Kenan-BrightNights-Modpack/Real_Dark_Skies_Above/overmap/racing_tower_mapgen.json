@@ -409,7 +409,7 @@
         { "class": "guard", "x": 3, "y": 0 },
         { "class": "guard", "x": 0, "y": 3 }
       ],
-      "furniture": { "-": "f_camp_chair", "A": "f_metal_table", "B": "f_metal_table", "C": "f_metal_table", "D": "f_metal_table" },
+      "furniture": { "-": "f_camp_chair", "A": "f_table", "B": "f_table", "C": "f_table", "D": "f_table" },
       "items": {
         " ": { "item": "trash_junkyard", "chance": 1 },
         "A": { "item": "irradiated_food", "chance": 100, "repeat": [ 1, 2 ] },
@@ -624,7 +624,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "T": "f_metal_table" },
+      "furniture": { "C": "f_bench", "T": "f_table" },
       "items": { " ": { "item": "trash", "chance": 1 }, "T": { "item": "fast_food", "chance": 100, "repeat": [ 1, 2 ] } }
     }
   },
@@ -646,7 +646,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "T": "f_metal_table" },
+      "furniture": { "C": "f_bench", "T": "f_table" },
       "items": { " ": { "item": "trash", "chance": 1 }, "T": { "item": "barbecue", "chance": 100, "repeat": [ 2, 3 ] } }
     }
   },
@@ -668,7 +668,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "T": "f_metal_table" },
+      "furniture": { "C": "f_bench", "T": "f_table" },
       "items": { " ": { "item": "trash", "chance": 1 }, "T": { "item": "fast_food", "chance": 100, "repeat": [ 1, 2 ] } }
     }
   },
@@ -690,7 +690,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "T": "f_metal_table" },
+      "furniture": { "C": "f_bench", "T": "f_table" },
       "items": { " ": { "item": "trash", "chance": 1 }, "T": { "item": "barbecue", "chance": 100, "repeat": [ 1, 2 ] } }
     }
   },
@@ -712,7 +712,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_metal_table" },
+      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_table" },
       "items": { " ": { "item": "trash", "chance": 1 }, "T": { "item": "fast_food", "chance": 100, "repeat": [ 1, 2 ] } }
     }
   },
@@ -734,7 +734,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_metal_table", "X": "f_metal_table", "V": "f_trashcan" },
+      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_table", "X": "f_table", "V": "f_trashcan" },
       "items": {
         " ": { "item": "trash", "chance": 1 },
         "T": { "item": "barbecue", "chance": 60, "repeat": [ 1, 2 ] },
@@ -761,7 +761,7 @@
         "       "
       ],
       "terrain": { " ": "t_null" },
-      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_metal_table", "X": "f_metal_table" },
+      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_table", "X": "f_table" },
       "items": { " ": { "item": "trash", "chance": 1 }, "T": { "item": "fast_food", "chance": 60, "repeat": [ 1, 2 ] } },
       "place_loot": [ { "item": "television", "x": 3, "y": 3, "chance": 100 } ]
     }
@@ -952,7 +952,7 @@
         "%%%%%%%%%%%%%"
       ],
       "terrain": { " ": "t_null", "%": "t_ballistic_glass", "^": "t_ballistic_door_glass_c" },
-      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_metal_table", "X": "f_glass_cabinet" }
+      "furniture": { "C": "f_bench", "S": "f_stool", "T": "f_table", "X": "f_glass_cabinet" }
     }
   },
   {
