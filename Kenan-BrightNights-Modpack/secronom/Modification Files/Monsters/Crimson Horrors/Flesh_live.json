@@ -1057,5 +1057,32 @@
     "path_settings": { "max_dist": 10 },
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "WARM", "KEENNOSE" ]
+  },
+  {
+    "id": "mon_sflesh_taken_reindeer",
+    "type": "MONSTER",
+    "bodytype": "horse",
+    "looks_like": "mon_reindeer",
+    "name": { "str": "Reindeer" },
+    "default_faction": "secro_flesh",
+    "species": [ "SFLESH", "ABERRATION" ],
+    "emit_fields": [ "emit_sflesh_fleshling_maybe" ],
+    "color": "pink",
+    "description": "Also known as the Caribou, this deer is native to North America and parts of Eurasia, although usually friendly, they can be aggressive during mating season as well as when hungry, something seems off about this one and it seems more hostile than normal.",
+    "hp": 150,
+    "speed": 76,
+    "symbol": "R",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 8,
+    "melee_dice": 4,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "amount": 7, "damage_type": "bash" } ],
+    "armor_bash": 5,
+    "dodge": 4,
+    "vision_night": 5,
+    "death_function": [ "NORMAL" ],
+    "harvest": "mammal_large_leather",
+    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "WARM", "POISON", "NO_BREATHE" ]
   }
 ]
