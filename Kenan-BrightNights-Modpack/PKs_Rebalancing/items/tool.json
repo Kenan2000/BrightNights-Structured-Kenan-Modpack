@@ -278,7 +278,11 @@
       "sound_volume": 0,
       "sound_msg": "Tick.",
       "no_deactivate_msg": "There's a hole in this core; it's gonna blow!",
-      "explosion": { "power": 12, "distance_factor": 0.5, "shrapnel": 1 }
+      "explosion": {
+        "damage": 12,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "stab", "amount": 600, "armor_multiplier": 3 }, "range": 10 }
+      }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "CUSTOM_EXPLOSION" ]
   },
@@ -448,7 +452,7 @@
     "emits": [ "emit_sap_grenade" ],
     "countdown_interval": 2,
     "countdown_destroy": true,
-    "countdown_action": { "type": "explosion", "explosion": { "power": 2, "distance_factor": 0.2 } }
+    "countdown_action": { "type": "explosion", "explosion": { "damage": 2, "radius": 3 } }
   },
   {
     "id": "bot_robot_drone",

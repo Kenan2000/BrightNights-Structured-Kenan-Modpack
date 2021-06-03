@@ -115,7 +115,7 @@
     "coverage": 100,
     "encumbrance": 10,
     "max_encumbrance": 17,
-	"storage": "6500 ml",
+    "storage": "6500 ml",
     "warmth": 10,
     "material_thickness": 1,
     "environmental_protection": 2,
@@ -140,7 +140,7 @@
     "coverage": 85,
     "encumbrance": 12,
     "max_encumbrance": 20,
-	"storage": "10 L",
+    "storage": "10 L",
     "warmth": 15,
     "material_thickness": 1,
     "environmental_protection": 2,
@@ -194,13 +194,13 @@
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
   },
   {
-    "id": "BL9_bodyarmor",
+    "id": "BL9_survivorbodyarmor",
     "looks_like": "lsurvivor_armor",
     "repairs_like": "lsurvivor_armor",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "BL9-infused body armor" },
-    "description": "A body armor, modernized and infused with BL9, it is partially covered with almost sentient BL9 strengthening and hardening the armor acting as a kevlar or ceramic alternative",
+    "name": { "str": "BL9-infused survivor body armor" },
+    "description": "A survivor body armor, modernized and infused with BL9, it is partially covered with almost sentient BL9 strengthening and hardening the armor acting as a kevlar or ceramic alternative",
     "weight": "2535 g",
     "volume": "4440 ml",
     "price": "0 cent",
@@ -212,6 +212,202 @@
     "coverage": 90,
     "encumbrance": 15,
     "warmth": 0,
+    "material_thickness": 2,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+  },
+  {
+    "id": "BL9_hitech_survivorhelmet",
+    "looks_like": "helmet_survivor",
+    "repairs_like": "hood_lsurvivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor helmet" },
+    "description": "A highly experimental sleek and futuristic survivor helmet with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+2 int, +2 per</color>) and offer better environmental protection",
+    "weight": "885 g",
+    "volume": "1600 ml",
+    "price": "0 cent",
+    "to_hit": -1,
+    "bashing": 9,
+    "material": [ "BL9_hitech", "plastic" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "coverage": 100,
+    "encumbrance": 15,
+    "warmth": 10,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "INTELLIGENCE", "add": 2 }, { "value": "PERCEPTION", "add": 2 } ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 2,
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "VARSIZE", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
+  },
+  {
+    "id": "BL9_hitech_survivorpants",
+    "looks_like": "pants_survivor",
+    "repairs_like": "lsurvivor_pants",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor cargo pants" },
+    "description": "Highly experimental sleek and futuristic pair of survivor cargo pants with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 str, +2 dex</color>) and offer better environmental protection",
+    "weight": "1600 g",
+    "volume": "1800 ml",
+    "price": "0 cent",
+    "material": [ "BL9_hitech", "BL9_hitech_mid1" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "LEGS" ],
+    "coverage": 100,
+    "encumbrance": 8,
+    "max_encumbrance": 15,
+    "storage": "8 L",
+    "warmth": 10,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "DEXTERITY", "add": 2 } ]
+        }
+      ]
+    },
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+  },
+  {
+    "id": "BL9_hitech_survivorsuit",
+    "looks_like": "survivor_suit",
+    "repairs_like": "survivor_suit",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor suit" },
+    "description": "A highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 str, +1 dex, +1 int, +1 per, +10% to attack speed, +10% to action points</color>) and offer better environmental protection",
+    "weight": "1400 g",
+    "volume": "5500 ml",
+    "price": "0 cent",
+    "to_hit": -1,
+    "material": [ "BL9_hitech", "BL9_hitech_mid2" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "TORSO", "ARMS", "LEGS" ],
+    "coverage": 85,
+    "encumbrance": 8,
+    "max_encumbrance": 16,
+    "storage": "12500 ml",
+    "warmth": 15,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": 1 },
+            { "value": "DEXTERITY", "add": 1 },
+            { "value": "INTELLIGENCE", "add": 1 },
+            { "value": "PERCEPTION", "add": 1 },
+            { "value": "ATTACK_SPEED", "multiply": 0.1 },
+            { "value": "SPEED", "multiply": 0.1 }
+          ]
+        }
+      ]
+    },
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
+  },
+  {
+    "id": "BL9_hitech_survivorgloves",
+    "looks_like": "gloves_survivor",
+    "repairs_like": "gloves_survivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "pair of experimental BL9 survivor gloves" },
+    "description": "A highly experimental sleek and futuristic pair of survivor gloves with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 dex, +25% to attack speed</color>) and offer better environmental protection",
+    "weight": "185 g",
+    "volume": "400 ml",
+    "price": "0 cent",
+    "to_hit": 2,
+    "material": [ "BL9_hitech", "BL9_hitech_mid1" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "HANDS" ],
+    "coverage": 100,
+    "encumbrance": 8,
+    "warmth": 20,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "DEXTERITY", "add": 1 }, { "value": "ATTACK_SPEED", "multiply": 0.25 } ]
+        }
+      ]
+    },
+    "material_thickness": 1,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "BL9_hitech_survivorboots",
+    "looks_like": "boots_survivor",
+    "repairs_like": "boots_survivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "pair of BL9 experimental survivor boots" },
+    "description": "A highly experimental sleek and futuristic pair of survivor boots with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+25% to attack speed, +25% to action points</color>) and offer better environmental protection",
+    "weight": "900 g",
+    "volume": "1800 ml",
+    "price": "0 cent",
+    "to_hit": -1,
+    "bashing": 1,
+    "material": [ "BL9_hitech", "leather" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "FEET" ],
+    "coverage": 100,
+    "encumbrance": 8,
+    "warmth": 20,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ATTACK_SPEED", "multiply": 0.25 }, { "value": "SPEED", "multiply": 0.25 } ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "BL9_hitech_survivorbodyarmor",
+    "looks_like": "lsurvivor_armor",
+    "repairs_like": "lsurvivor_armor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor body armor" },
+    "description": "A highly experimental sleek and futuristic survivor body armor with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+2 str</color>) and offer better environmental protection",
+    "weight": "2300 g",
+    "volume": "3800 ml",
+    "price": "0 cent",
+    "to_hit": -1,
+    "material": [ "BL9_hitech", "plastic" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "TORSO" ],
+    "coverage": 90,
+    "encumbrance": 8,
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 2 } ] } ] },
     "material_thickness": 2,
     "environmental_protection": 2,
     "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
@@ -259,7 +455,7 @@
     "coverage": 100,
     "encumbrance": 12,
     "max_encumbrance": 23,
-	"storage": "10 L",
+    "storage": "10 L",
     "warmth": 15,
     "material_thickness": 2,
     "environmental_protection": 3,
@@ -284,7 +480,7 @@
     "coverage": 90,
     "encumbrance": 18,
     "max_encumbrance": 35,
-	"storage": "16 L",
+    "storage": "16 L",
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 3,
@@ -338,13 +534,13 @@
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
   },
   {
-    "id": "BL9_bodyarmor_mk2",
+    "id": "BL9_survivorbodyarmor_mk2",
     "looks_like": "dragonskin",
     "repairs_like": "dragonskin",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "BL9-infused body armor MK ii" },
-    "description": "A body armor, modernized and fully infused with BL9, it is entirely covered and reinforced with a very strong, evolved, perfectly sentient and durable version of BL9, multiple spiky vibrating protrusions emerge from the outer layer of it's thick tissue",
+    "name": { "str": "BL9-infused survivor body armor MK ii" },
+    "description": "A survivor body armor, modernized and fully infused with BL9, it is entirely covered and reinforced with a very strong, evolved, perfectly sentient and durable version of BL9, multiple spiky vibrating protrusions emerge from the outer layer of it's thick tissue",
     "weight": "3 kg",
     "volume": "5 L",
     "price": "0 cent",
@@ -356,6 +552,202 @@
     "coverage": 90,
     "encumbrance": 30,
     "warmth": 0,
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+  },
+  {
+    "id": "BL9_hitech_survivorhelmet_mk2",
+    "looks_like": "helmet_hsurvivor",
+    "repairs_like": "hood_survivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor helmet MK ii" },
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic survivor helmet with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+5 int, +5 per</color>) and offer better environmental protection",
+    "weight": "1500 g",
+    "volume": "2400 ml",
+    "price": "0 cent",
+    "to_hit": -1,
+    "bashing": 9,
+    "material": [ "BL9_hitech_mk2", "plastic" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "coverage": 100,
+    "encumbrance": 22,
+    "warmth": 15,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "INTELLIGENCE", "add": 5 }, { "value": "PERCEPTION", "add": 5 } ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "VARSIZE", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
+  },
+  {
+    "id": "BL9_hitech_survivorpants_mk2",
+    "looks_like": "bunker_pants",
+    "repairs_like": "pants_survivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor cargo pants MK ii" },
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor cargo pants with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 str, +5 dex</color>) and offer better environmental protection",
+    "weight": "1800 g",
+    "volume": "2400 ml",
+    "price": "0 cent",
+    "material": [ "BL9_hitech_mk2_mid1" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "LEGS" ],
+    "coverage": 100,
+    "encumbrance": 7,
+    "max_encumbrance": 18,
+    "storage": "14 L",
+    "warmth": 15,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "STRENGTH", "add": 3 }, { "value": "DEXTERITY", "add": 5 } ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+  },
+  {
+    "id": "BL9_hitech_survivorsuit_mk2",
+    "looks_like": "hsurvivor_suit",
+    "repairs_like": "hsurvivor_suit",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor suit MK ii" },
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 str, +3 dex, +3 int, +3 per, +25% to attack speed, +25% to action points</color>) and offer better environmental protection",
+    "weight": "1500 g",
+    "volume": "4 L",
+    "price": "0 cent",
+    "to_hit": -1,
+    "material": [ "BL9_hitech_mk2_mid2" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "TORSO", "ARMS", "LEGS" ],
+    "coverage": 90,
+    "encumbrance": 10,
+    "max_encumbrance": 25,
+    "storage": "22 L",
+    "warmth": 20,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [
+            { "value": "STRENGTH", "add": 3 },
+            { "value": "DEXTERITY", "add": 3 },
+            { "value": "INTELLIGENCE", "add": 3 },
+            { "value": "PERCEPTION", "add": 3 },
+            { "value": "ATTACK_SPEED", "multiply": 0.25 },
+            { "value": "SPEED", "multiply": 0.25 }
+          ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "VARSIZE", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
+  },
+  {
+    "id": "BL9_hitech_survivorgloves_mk2",
+    "looks_like": "gloves_hsurvivor",
+    "repairs_like": "gloves_hsurvivor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "Pair of BL9 experimental survivor gloves MK ii" },
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor gloves with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 dex, +60% to attack speed</color>) and offer better environmental protection",
+    "weight": "425 g",
+    "volume": "600 ml",
+    "price": "0 cent",
+    "to_hit": 2,
+    "material": [ "BL9_hitech_mk2_mid1" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "HANDS" ],
+    "coverage": 100,
+    "encumbrance": 15,
+    "warmth": 20,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "DEXTERITY", "add": 3 }, { "value": "ATTACK_SPEED", "multiply": 0.6 } ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "BL9_hitech_survivorboots_mk2",
+    "looks_like": "boots_combat",
+    "repairs_like": "boots_combat",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "Pair of BL9 experimental survivor boots MK ii" },
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor boots with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+60% to attack speed, +60% to action points</color>) and offer better environmental protection",
+    "weight": "1415 g",
+    "volume": "1680 ml",
+    "price": "0 cent",
+    "to_hit": -1,
+    "bashing": 1,
+    "material": [ "BL9_hitech_mk2", "plastic" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "FEET" ],
+    "coverage": 100,
+    "encumbrance": 18,
+    "warmth": 20,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ATTACK_SPEED", "multiply": 0.6 }, { "value": "SPEED", "multiply": 0.6 } ]
+        }
+      ]
+    },
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "BL9_hitech_survivorbodyarmor_mk2",
+    "looks_like": "dragonskin",
+    "repairs_like": "dragonskin",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "BL9 experimental survivor body armor MK ii" },
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic survivor body armor with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+5 str</color>) and offer better environmental protection",
+    "weight": "2500 g",
+    "volume": "4 L",
+    "price": "0 cent",
+    "to_hit": -1,
+    "material": [ "BL9_hitech_mk2", "plastic" ],
+    "symbol": "[",
+    "color": "red",
+    "covers": [ "TORSO" ],
+    "coverage": 90,
+    "encumbrance": 22,
+    "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 5 } ] } ] },
     "material_thickness": 2,
     "environmental_protection": 3,
     "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]

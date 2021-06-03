@@ -94,7 +94,11 @@
       "sound_volume": 0,
       "sound_msg": "Tick.",
       "no_deactivate_msg": "You try to turn it off, but it just turns right back on.",
-      "explosion": { "power": 20, "distance_factor": 0.2, "shrapnel": 40 }
+      "explosion": {
+        "damage": 20,
+        "radius": 5,
+        "fragment": { "impact": { "damage_type": "stab", "amount": 16800, "armor_multiplier": 3 }, "range": 10 }
+      }
     }
   }
 ]

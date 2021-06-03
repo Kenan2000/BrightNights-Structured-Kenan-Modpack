@@ -96,7 +96,11 @@
       "sound_volume": 1,
       "sound_msg": "You are so furious that even the earth begins to rumble...",
       "no_deactivate_msg": "This is an outrage! You're on the verge of exploding!",
-      "explosion": { "power": 30, "shrapnel": 20 }
+      "explosion": {
+        "damage": 20,
+        "radius": 5,
+        "fragment": { "impact": { "damage_type": "stab", "amount": 10000, "armor_multiplier": 3 }, "range": 10 }
+      }
     }
   },
   {

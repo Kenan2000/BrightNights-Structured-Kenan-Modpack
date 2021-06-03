@@ -139,7 +139,11 @@
     "range": 55,
     "damage": { "damage_type": "stab", "amount": 9, "armor_penetration": 15 },
     "effects": [ "NEVER_MISFIRES", "RECYCLED", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BEANBAG" ],
-    "explosion": { "power": 2, "distance_factor": 0.3, "shrapnel": 1 }
+    "explosion": {
+      "damage": 2,
+      "radius": 3,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 75, "armor_multiplier": 3 }, "range": 10 }
+    }
   },
   {
     "id": "cyber_rocket",
@@ -219,7 +223,7 @@
     "countdown_action": {
       "type": "explosion",
       "no_deactivate_msg": "A gout of flames erupts into existence!",
-      "explosion": { "power": 2, "distance_factor": 0.1 }
+      "explosion": { "damage": 3, "radius": 3 }
     }
   },
   {
@@ -255,11 +259,7 @@
     "emits": [ "emit_fvent_archvile", "emit_fvent_vile", "emit_radiation_plume" ],
     "countdown_interval": 5,
     "countdown_destroy": true,
-    "countdown_action": {
-      "type": "explosion",
-      "no_deactivate_msg": "A hellmouth is ripped forth!",
-      "explosion": { "power": 2, "distance_factor": 0.1 }
-    }
+    "countdown_action": { "type": "explosion", "no_deactivate_msg": "A hellmouth is ripped forth!", "explosion": { "damage": 2, "radius": 3 } }
   },
   {
     "id": "bomblet_archdemon",
@@ -317,7 +317,14 @@
     "material": [ "steel" ],
     "initial_charges": 2,
     "turns_per_charge": 1,
-    "use_action": { "type": "explosion", "explosion": { "power": 40, "distance_factor": 0.5, "shrapnel": 1 } },
+    "use_action": {
+      "type": "explosion",
+      "explosion": {
+        "damage": 40,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "stab", "amount": 105, "armor_multiplier": 3 }, "range": 10 }
+      }
+    },
     "flags": [ "LIGHT_15", "TRADER_AVOID", "NPC_THROW_NOW" ]
   }
 ]
