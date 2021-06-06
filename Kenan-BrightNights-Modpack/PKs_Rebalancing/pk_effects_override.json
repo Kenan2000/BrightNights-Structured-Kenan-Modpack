@@ -462,7 +462,8 @@
     "max_intensity": 3,
     "rating": "bad",
     "base_mods": { "speed_mod": [ -5 ], "str_mod": [ -1 ] },
-    "scaling_mods": { "speed_mod": [ -10 ], "str_mod": [ -1.5 ] }
+    "scaling_mods": { "speed_mod": [ -10 ], "str_mod": [ -1.5 ] },
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -478,7 +479,8 @@
     "max_intensity": 3,
     "rating": "bad",
     "base_mods": { "speed_mod": [ -5 ], "stamina_min": [ -1 ], "fatigue_tick": [ 30 ] },
-    "scaling_mods": { "speed_mod": [ -5 ], "stamina_min": [ -1 ], "fatigue_min": [ 0.5 ] }
+    "scaling_mods": { "speed_mod": [ -5 ], "stamina_min": [ -1 ], "fatigue_min": [ 0.5 ] },
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -494,7 +496,8 @@
     "max_intensity": 3,
     "rating": "bad",
     "base_mods": { "per_mod": [ -1 ] },
-    "scaling_mods": { "per_mod": [ -2 ], "int_mod": [ -1 ] }
+    "scaling_mods": { "per_mod": [ -2 ], "int_mod": [ -1 ] },
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -510,7 +513,8 @@
     "max_intensity": 3,
     "rating": "bad",
     "base_mods": { "stamina_min": [ -0.5 ], "hurt_chance": [ 125 ], "hurt_tick": [ 60 ] },
-    "scaling_mods": { "stamina_min": [ -0.5 ], "hurt_min": [ 1 ], "hurt_chance": [ -25 ] }
+    "scaling_mods": { "stamina_min": [ -0.5 ], "hurt_min": [ 1 ], "hurt_chance": [ -25 ] },
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -534,7 +538,8 @@
       "dex_mod": [ -1 ],
       "stamina_min": [ -1.25 ],
       "pain_chance": [ -30 ]
-    }
+    },
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -554,7 +559,8 @@
       "thirst_max": [ 2 ],
       "thirst_tick": [ 240 ],
       "thirst_chance": [ 3 ]
-    }
+    },
+    "permanent": true
   },
   {
     "type": "effect_type",
