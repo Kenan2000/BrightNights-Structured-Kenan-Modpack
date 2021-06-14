@@ -4,7 +4,7 @@
     "id": "arcology_palette",
     "terrain": {
       ".": "t_open_air",
-      ";": "t_concrete",
+      ";": "t_thconc_floor",
       ":": "t_sidewalk",
       "'": "t_pavement",
       "`": "t_pavement_y",
@@ -18,14 +18,15 @@
       "$": "t_junk_wall",
       "%": "t_rock_smooth",
       "^": "t_column",
-      "*": [ "t_dirt", "t_dirt", "t_dirt", "t_dirt", "t_dirt", "t_mud" ],
-      "m": [ "t_dirt", "t_mud", "t_mud", "t_mud", "t_mud", "t_mud" ],
-      "M": "t_mud",
+      "&": "t_grate",	  
+      "*": ["t_dirt", "t_dirt", "t_dirt", "t_dirt", "t_dirt","t_mud" ],
+      "m": ["t_dirt", "t_mud", "t_mud", "t_mud", "t_mud", "t_mud" ],
+      "M": "t_mud", 
       "-": "t_metal_railing",
       "=": "t_chainfence",
       "|": "t_chaingate_c",
       "_": "t_metal_flat_roof",
-      "+": "t_door_c",
+      "+": "t_door_metal_c",
       "<": "t_stairs_up",
       ">": "t_stairs_down",
       "{": "t_ladder_up",
@@ -42,10 +43,12 @@
       "E": "t_elevator_control_off",
       "f": "t_chainfence_h",
       "F": "t_chainfence_v",
+      "w": "t_floor_paper",
+      "W": "t_paper",
       "g": "t_wall_glass",
       "G": "t_ballistic_glass",
       "@": "t_door_metal_locked",
-      "c": "t_gates_mech_control",
+      "c": "t_gates_mech_control_lab",
       "P": "t_palisade_gate"
     },
     "furniture": {
@@ -59,7 +62,7 @@
       "s": "f_sandbag_half",
       "S": "f_sandbag_wall"
     },
-    "toilets": { "&": { "amount": [ 0, 50 ] } },
+    "toilets": { "Q": { "amount": [ 0, 50 ] } },
     "items": { "l": { "item": "drugdealer", "chance": 40 } }
   }
 ]
