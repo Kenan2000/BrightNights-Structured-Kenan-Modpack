@@ -33,7 +33,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -118,7 +117,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -165,7 +163,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -212,7 +209,7 @@
     "death_drops": "default_zombie_clothes",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_skeleton",
-    "flags": [ "SEES", "HEARS", "ABSORBS", "HARDTOSHOOT", "NO_BREATHE", "POISON", "STUN_IMMUNE", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "HARDTOSHOOT", "NO_BREATHE", "POISON", "STUN_IMMUNE", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_spitter",
@@ -257,7 +254,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -304,7 +300,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -352,7 +347,7 @@
     "death_drops": "default_zombie_clothes",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_skeleton_brute",
-    "flags": [ "SEES", "HEARS", "ABSORBS", "HARDTOSHOOT", "REVIVES", "NO_BREATHE", "POISON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "HARDTOSHOOT", "REVIVES", "NO_BREATHE", "POISON", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_skeleton_hulk",
@@ -395,7 +390,6 @@
     "flags": [
       "SEES",
       "HEARS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -453,7 +447,6 @@
     "flags": [
       "SEES",
       "HEARS",
-      "ABSORBS",
       "SMELLS",
       "WARM",
       "BASHES",
@@ -512,7 +505,6 @@
     "flags": [
       "SEES",
       "HEARS",
-      "ABSORBS",
       "SMELLS",
       "KEENNOSE",
       "STUMBLES",
@@ -560,7 +552,6 @@
     "burn_into": "mon_zombie_brainless",
     "flags": [
       "HEARS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -607,7 +598,6 @@
     "flags": [
       "HEARS",
       "GOODHEARING",
-      "ABSORBS",
       "SEES",
       "STUMBLES",
       "WARM",
@@ -657,7 +647,6 @@
     "flags": [
       "HEARS",
       "GOODHEARING",
-      "ABSORBS",
       "SEES",
       "STUMBLES",
       "WARM",
@@ -707,7 +696,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -757,7 +745,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -809,7 +796,6 @@
       "HEARS",
       "GOODHEARING",
       "SMELLS",
-      "ABSORBS",
       "WARM",
       "BASHES",
       "GROUP_BASH",
@@ -858,7 +844,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -903,7 +888,7 @@
     "special_attacks": [ [ "STRETCH_BITE", 10 ], [ "STRETCH_ATTACK", 5 ] ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_hollow",
-    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_hulk",
@@ -942,7 +927,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -999,7 +983,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "WARM",
       "BASHES",
       "POISON",
@@ -1059,7 +1042,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1113,7 +1095,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "WARM",
       "BASHES",
       "POISON",
@@ -1163,7 +1144,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1217,7 +1197,7 @@
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_predator",
-    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_screecher",
@@ -1255,7 +1235,6 @@
     "flags": [
       "SEES",
       "KEENNOSE",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1302,7 +1281,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "BASHES",
       "GROUP_BASH",
@@ -1349,7 +1327,6 @@
     "flags": [
       "SEES",
       "HEARS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1394,7 +1371,7 @@
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_anklebiter",
-    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_child",
@@ -1432,7 +1409,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1479,7 +1455,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1527,7 +1502,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "GUILT",
@@ -1570,7 +1544,7 @@
     "death_drops": { "subtype": "collection", "groups": [ [ "default_zombie_clothes", 100 ], [ "child_items", 65 ] ] },
     "death_function": [ "BOOMER" ],
     "burn_into": "mon_zombie_snotgobbler",
-    "flags": [ "SEES", "HEARS", "ABSORBS", "STUMBLES", "WARM", "GUILT", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "STUMBLES", "WARM", "GUILT", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_sproglodyte",
@@ -1608,7 +1582,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1657,7 +1630,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "GUILT",
@@ -1706,7 +1678,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1755,7 +1726,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1799,7 +1769,7 @@
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_nullfield",
-    "flags": [ "SEES", "HEARS", "ABSORBS", "WARM", "POISON", "ELECTRIC", "NO_BREATHE", "REVIVES", "ELECTRIC_FIELD", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "WARM", "POISON", "ELECTRIC", "NO_BREATHE", "REVIVES", "ELECTRIC_FIELD", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_static",
@@ -1836,7 +1806,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1886,7 +1855,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1936,7 +1904,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -1986,7 +1953,6 @@
       "SEES",
       "GOODHEARING",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -2036,7 +2002,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -2079,7 +2044,7 @@
     "death_drops": "default_zombie_items",
     "death_function": [ "GAS" ],
     "burn_into": "mon_zombie_gasbag",
-    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zombie_soldier",
@@ -2119,7 +2084,6 @@
       "HEARS",
       "SMELLS",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2173,7 +2137,6 @@
       "HEARS",
       "SMELLS",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2300,7 +2263,6 @@
       "HEARS",
       "SMELLS",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2352,7 +2314,6 @@
       "HEARS",
       "SMELLS",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2400,7 +2361,6 @@
       "HEARS",
       "SMELLS",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2452,7 +2412,6 @@
       "HEARS",
       "SMELLS",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2512,7 +2471,6 @@
       "SMELLS",
       "STUMBLES",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2579,7 +2537,6 @@
       "SMELLS",
       "STUMBLES",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2629,7 +2586,6 @@
       "SMELLS",
       "STUMBLES",
       "WARM",
-      "ABSORBS",
       "BASHES",
       "GROUP_BASH",
       "POISON",
@@ -2671,7 +2627,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_dog",
-    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_dog_skeleton",
@@ -2706,7 +2662,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 5 } ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_dog_skeleton",
-    "flags": [ "SEES", "HEARS", "ABSORBS", "NO_BREATHE", "HARDTOSHOOT", "REVIVES", "POISON", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "NO_BREATHE", "HARDTOSHOOT", "REVIVES", "POISON", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_dog_zombie_cop",
@@ -2745,7 +2701,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -2791,7 +2746,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -2838,7 +2792,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "KEENNOSE",
@@ -2886,7 +2839,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -2934,7 +2886,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "KEENNOSE",
@@ -2981,7 +2932,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "BASHES",
@@ -3024,7 +2974,7 @@
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zoose",
-    "flags": [ "SEES", "HEARS", "SMELLS", "ABSORBS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "FILTHY" ]
   },
   {
     "id": "mon_sflesh_zougar",
@@ -3063,7 +3013,6 @@
       "SEES",
       "HEARS",
       "SMELLS",
-      "ABSORBS",
       "STUMBLES",
       "WARM",
       "KEENNOSE",
