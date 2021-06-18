@@ -9,7 +9,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "quiver_javelin_prehistoric",
-    "entries": [ { "item": "javelin_stone", "charges": 4 } ]
+    "entries": [ { "item": "atlatl_dart_stone", "charges": 10 } ]
   },
   {
     "type": "profession",
@@ -82,7 +82,7 @@
         "entries": [
           { "item": "spear_stone", "custom-flags": [ "auto_wield" ] },
           { "item": "primitive_knife", "container-item": "sheath" },
-          { "item": "javelin_bag", "contents-group": "quiver_javelin_prehistoric" }
+          { "item": "quiver_atlatl", "contents-group": "quiver_javelin_prehistoric" }
         ]
       }
     }

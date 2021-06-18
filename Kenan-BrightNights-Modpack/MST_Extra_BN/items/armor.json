@@ -189,5 +189,29 @@
     "warmth": 80,
     "material_thickness": 4,
     "environmental_protection": 1
+  },
+  {
+    "id": "quiver_atlatl",
+    "copy-from": "quiver",
+    "type": "ARMOR",
+    "name": { "str": "atlatl dart quiver" },
+    "description": "A leather quiver worn at the waist, lengthened to hold atlatl darts.  Activate to store up to 10 darts.",
+    "weight": "400 g",
+    "volume": "1 L",
+    "coverage": 15,
+    "encumbrance": 5,
+    "use_action": { "type": "bandolier", "capacity": 10, "ammo": [ "atlatl" ], "draw_cost": 30 }
+  },
+  {
+    "id": "quiver_birchbark_atlatl",
+    "copy-from": "quiver_birchbark",
+    "type": "ARMOR",
+    "name": { "str": "birchbark atlatl dart quiver" },
+    "description": "A quiver woven from strips of birch bark, worn at the waist, lengthened to hold atlatl darts.  Activate to store up to 10 darts.",
+    "weight": "800 g",
+    "volume": "1 L",
+    "coverage": 15,
+    "encumbrance": 15,
+    "use_action": { "type": "bandolier", "capacity": 10, "ammo": [ "atlatl" ], "draw_cost": 30 }
   }
 ]
