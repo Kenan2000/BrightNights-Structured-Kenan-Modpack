@@ -18,11 +18,11 @@
       [ [ "sensor_module", 1 ] ],
       [ [ "targeting_module", 1 ] ],
       [ [ "self_monitoring_module", 1 ] ],
-      [ [ "solar_panel", 7 ] ]
+      [ [ "solar_panel", 3 ] ]
     ]
   },
   {
-    "result": "solar_array2",
+    "result": "reinforced_solar_array",
     "type": "recipe",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
@@ -40,11 +40,11 @@
       [ [ "sensor_module", 1 ] ],
       [ [ "targeting_module", 1 ] ],
       [ [ "self_monitoring_module", 1 ] ],
-      [ [ "solar_panel_v2", 7 ] ]
+      [ [ "reinforced_solar_panel", 3 ] ]
     ]
   },
   {
-    "result": "solar_array2r",
+    "result": "solar_array_v2",
     "type": "recipe",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
@@ -62,8 +62,49 @@
       [ [ "sensor_module", 1 ] ],
       [ [ "targeting_module", 1 ] ],
       [ [ "self_monitoring_module", 1 ] ],
-      [ [ "reinforced_solar_panel_v2", 7 ] ]
+      [ [ "solar_panel_v2", 3 ] ]
     ]
+  },
+  {
+    "result": "reinforced_solar_array_v2",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "difficulty": 8,
+    "skills_required": [ [ "mechanics", 5 ], [ "electronics", 8 ] ],
+    "time": "24 h",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 10 ], [ "soldering_standard", 15 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "pipe", 4 ], [ "rebar", 2 ] ],
+      [ [ "steel_chunk", 18 ], [ "steel_lump", 6 ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "sensor_module", 1 ] ],
+      [ [ "targeting_module", 1 ] ],
+      [ [ "self_monitoring_module", 1 ] ],
+      [ [ "reinforced_solar_panel_v2", 3 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "vehicle_shelving",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "skills_required": [ "mechanics", 4 ],
+    "difficulty": 4,
+    "time": "6 h",
+    "autolearn": true,
+    "using": [ [ "rope_natural", 4 ], [ "welding_standard", 15 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "HAMMER", "level": 2 },
+      { "id": "SAW_M", "level": 1 },
+      { "id": "WRENCH", "level": 1 }
+    ],
+    "components": [ [ [ "cargo_rack", 4 ] ], [ [ "pipe", 16 ] ], [ [ "sheet_metal", 4 ] ], [ [ "hinge", 10 ] ] ]
   },
   {
     "result": "tread1",
@@ -73,7 +114,7 @@
     "skill_used": "fabrication",
     "difficulty": 6,
     "skills_required": [ "mechanics", 6 ],
-    "time": 420000,
+    "time": "116 h 40 m",
     "autolearn": true,
     "using": [ [ "forging_standard", 10 ], [ "steel_standard", 10 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
@@ -88,7 +129,7 @@
     "skill_used": "fabrication",
     "difficulty": 7,
     "skills_required": [ "mechanics", 7 ],
-    "time": 520000,
+    "time": "144 h 26 m 40 s",
     "autolearn": true,
     "using": [ [ "forging_standard", 15 ], [ "steel_standard", 15 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
@@ -103,7 +144,7 @@
     "skill_used": "fabrication",
     "difficulty": 7,
     "skills_required": [ "mechanics", 7 ],
-    "time": 720000,
+    "time": "200 h",
     "autolearn": true,
     "using": [ [ "forging_standard", 20 ], [ "steel_standard", 20 ] ],
     "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CUT", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
@@ -111,14 +152,14 @@
     "components": [ [ [ "hard_plate", 10 ] ], [ [ "chain", 8 ] ] ]
   },
   {
-    "result": "turretframe",
+    "result": "turret_mount",
     "type": "recipe",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
     "skill_used": "fabrication",
     "difficulty": 5,
     "skills_required": [ [ "mechanics", 5 ], [ "electronics", 5 ] ],
-    "time": 9000,
+    "time": "2 h 30 m",
     "autolearn": true,
     "using": [ [ "welding_standard", 10 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
@@ -137,5 +178,89 @@
       [ [ "processor", 2 ] ],
       [ [ "RAM", 2 ] ]
     ]
+  },
+  {
+    "result": "afs_metal_rig",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "skills_required": [ "electronics", 3 ],
+    "difficulty": 4,
+    "time": 90000,
+    "decomp_learn": 3,
+    "reversible": true,
+    "book_learn": [ [ "textbook_mechanics", 6 ], [ "textbook_electronics", 8 ], [ "textbook_fabrication", 8 ], [ "welding_book", 5 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "WRENCH", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
+    "using": [ [ "welding_standard", 10 ], [ "soldering_standard", 25 ] ],
+    "components": [ [ [ "hdframe", 1 ] ], [ [ "welding_components", 1 ] ], [ [ "forge", 1 ] ], [ [ "kiln", 1 ] ], [ [ "cable", 10 ] ] ]
+  },
+  {
+    "result": "afs_kitchen_rig",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "fabrication",
+    "skills_required": [ "electronics", 3 ],
+    "difficulty": 4,
+    "time": 90000,
+    "decomp_learn": 3,
+    "reversible": true,
+    "book_learn": [ [ "textbook_fabrication", 3 ], [ "manual_fabrication", 3 ], [ "manual_electronics", 3 ], [ "manual_mechanics", 3 ] ],
+    "using": [ [ "welding_standard", 10 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
+    "components": [
+      [ [ "hdframe", 1 ] ],
+      [ [ "vac_sealer", 1 ], [ "makeshift_sealer", 1 ] ],
+      [ [ "dehydrator", 1 ] ],
+      [ [ "water_purifier", 1 ] ],
+      [ [ "food_processor", 1 ] ],
+      [ [ "press", 1 ] ],
+      [ [ "cable", 15 ] ],
+      [ [ "hotplate", 1 ] ],
+      [ [ "pot", 1 ], [ "pot_copper", 1 ] ],
+      [ [ "pan", 1 ] ],
+      [ [ "water_faucet", 2 ] ],
+      [ [ "chemistry_set", 1 ] ],
+      [ [ "electrolysis_kit", 1 ] ]
+    ]
+  },
+  {
+    "result": "afs_cooking_rig",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_VEHICLE",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "time": 60000,
+    "decomp_learn": 3,
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "welding_standard", 10 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "WRENCH", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [
+      [ [ "hdframe", 1 ] ],
+      [ [ "hotplate", 1 ] ],
+      [ [ "pot", 1 ], [ "pot_copper", 1 ] ],
+      [ [ "pan", 1 ] ],
+      [ [ "water_faucet", 2 ] ],
+      [ [ "cable", 10 ] ],
+      [ [ "chemistry_set", 1 ] ],
+      [ [ "electrolysis_kit", 1 ] ]
+    ]
+  },
+  {
+    "result": "space_anomaly",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "electronics",
+    "difficulty": 8,
+    "skills_required": [ [ "mechanics", 3 ], [ "electronics", 3 ] ],
+    "time": "40 h",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 6 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [ [ [ "cargo_rack", 1 ] ], [ [ "teleporter", 1 ] ], [ [ "portal", 1 ] ], [ [ "plut_cell", 5 ] ] ]
   }
 ]
