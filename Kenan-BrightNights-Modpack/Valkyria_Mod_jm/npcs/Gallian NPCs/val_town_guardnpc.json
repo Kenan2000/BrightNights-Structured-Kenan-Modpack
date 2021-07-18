@@ -26,7 +26,7 @@
     "id": "NC_VALGUARD_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "preserved_food", "repeat": [ 1, 3 ] },
+      { "group": "preserved_food", "count": [ 1, 3 ] },
       { "item": "gal792_b" },
       { "group": "val_rifleclip", "prob": 60 },
       { "group": "val_riflemag", "prob": 50 },
@@ -154,9 +154,9 @@
     "id": "NC_VALMERCH_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "preserved_food", "repeat": [ 1, 3 ] },
-      { "group": "dry_goods", "repeat": [ 1, 2 ] },
-      { "group": "foodintincan", "repeat": [ 1, 4 ] }
+      { "group": "preserved_food", "count": [ 1, 3 ] },
+      { "group": "dry_goods", "count": [ 1, 2 ] },
+      { "group": "foodintincan", "count": [ 1, 4 ] }
     ]
   },
   {
