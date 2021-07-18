@@ -3,36 +3,29 @@
     "id": "TALK_Merc_Town",
     "type": "talk_topic",
     "dynamic_line": {
-      "u_female": "Hello, Madam. Do you perhaps have any interests in my wares? Perhaps a nice dress or some cookware to help you in your domestic pursuits.",
-      "u_male": "Hello, Sir. Do you perhaps have any interest in my wares? A firearm or tonic for your health perhaps?"},
+      "u_male": [ "Hello, Sir. Do you perhaps have any interest in my wares? A firearm or tonic for your health perhaps?" ],
+      "no": [
+        "Hello, Madam. Do you perhaps have any interests in my wares? Perhaps a nice dress or some cookware to help you in your domestic pursuits."
+      ]
+    },
     "responses": [
-      {
-        "text": "So you're a merchant in this town? What can you tell me about it?",
-        "topic": "TALK_Merc_infotown"
-      },
-      {
-        "text": "Let me browse your wares.",
-        "effect": "start_trade",
-        "topic": "TALK_Merc_Town"
-      },
-      {
-        "text": "Goodbye, thank you for your time.",
-        "topic": "TALK_DONE"
-      }
-	  ]
-	},
+      { "text": "So you're a merchant in this town? What can you tell me about it?", "topic": "TALK_Merc_infotown" },
+      { "text": "Let me browse your wares.", "effect": "start_trade", "topic": "TALK_Merc_Town" },
+      { "text": "Goodbye, thank you for your time.", "topic": "TALK_DONE" }
+    ]
+  },
   {
     "id": "TALK_Merc_infotown",
     "type": "talk_topic",
     "dynamic_line": {
-      "u_female": "That's a good question, miss. This town has been around for some time, I don't really remember how long, but we first placed roots down here in the 19th century. There's a lot of fine domestic pursuits here for a member of the fairer sex such as yourself.",
-      "u_male": "That's a good question, sir. This town has been around for some time, I don't really remember how long, but we first placed roots down here in the 19th century. This is a place where an enterprising man such as yourself could become famous."},
-    "responses": [
-      {
-        "text": "Got it.",
-        "topic": "TALK_Merc_Town"
-      }
-    ]
+      "u_male": [
+        "That's a good question, sir. This town has been around for some time, I don't really remember how long, but we first placed roots down here in the 19th century. This is a place where an enterprising man such as yourself could become famous."
+      ],
+      "no": [
+        "That's a good question, miss. This town has been around for some time, I don't really remember how long, but we first placed roots down here in the 19th century. There's a lot of fine domestic pursuits here for a member of the fairer sex such as yourself."
+      ]
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_Merc_Town" } ]
   },
   {
     "id": "MISSION_GET_MERCH_ITEM",
@@ -44,11 +37,7 @@
     "value": 150000,
     "item": "sp_text_devices",
     "count": 3,
-    "end": {
-      "effect": [
-        { "u_buy_item": "sp_mechlockpick", "count": 2 },
-        { "u_buy_item": "flintlock_ammo", "count": 40 } ]
-    },
+    "end": { "effect": [ { "u_buy_item": "sp_mechlockpick", "count": 2 }, { "u_buy_item": "flintlock_ammo", "count": 40 } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_GET_MERCH_KILLCOUNT",
     "dialogue": {
@@ -72,16 +61,23 @@
     "value": 250000,
     "start": {
       "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 1, "random": true, "search_range": 6, "z": 0 },
-      "update_mapgen": { "place_monster": [ { "monster": "mon_sp_rcrim", "x": 11, "y": 11, "target": true }, { "monster": "mon_sp_mcrim", "x": 14, "y": 8 }, { "monster": "mon_sp_mcrim", "x": 5, "y": 4 } ] }
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_sp_rcrim", "x": 11, "y": 11, "target": true },
+          { "monster": "mon_sp_mcrim", "x": 14, "y": 8 },
+          { "monster": "mon_sp_mcrim", "x": 5, "y": 4 }
+        ]
+      }
     },
     "end": {
-    "effect": [
+      "effect": [
         { "u_buy_item": "sp_safecracker", "count": 1 },
         { "u_buy_item": "sp_eyegear", "count": 1 },
         { "u_buy_item": "sp_wool_jacket", "count": 1 },
         { "u_buy_item": "long_range_pistol", "count": 1 },
         { "u_buy_item": "sp_mechlockpick", "count": 2 },
-        { "u_buy_item": "flintlock_ammo", "count": 40 } ]
+        { "u_buy_item": "flintlock_ammo", "count": 40 }
+      ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_GET_MERCH_SCIENTISTKILL",
@@ -102,15 +98,21 @@
     "type": "mission_definition",
     "name": { "str": "Kill Mad Scientist" },
     "goal": "MGOAL_KILL_MONSTER",
-    "monster": "mon_sp_scientist",
     "difficulty": 5,
     "value": 250000,
     "start": {
       "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 8, "z": 0 },
-      "update_mapgen": { "place_monster": [ { "monster": "mon_sp_scientist", "x": 15, "y": 9, "target": true }, { "monster": "mon_sp_mechnid", "x": 14, "y": 8 }, { "monster": "mon_sp_mechnid", "x": 10, "y": 8 }, { "monster": "mon_sp_automaton", "x": 5, "y": 4 } ] }
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_sp_scientist", "x": 15, "y": 9, "target": true },
+          { "monster": "mon_sp_mechnid", "x": 14, "y": 8 },
+          { "monster": "mon_sp_mechnid", "x": 10, "y": 8 },
+          { "monster": "mon_sp_automaton", "x": 5, "y": 4 }
+        ]
+      }
     },
     "end": {
-    "effect": [
+      "effect": [
         { "u_buy_item": "am_riflecannon", "count": 1 },
         { "u_buy_item": "sp_vishelm", "count": 1 },
         { "u_buy_item": "highbore_pistol", "count": 1 },
@@ -120,7 +122,8 @@
         { "u_buy_item": "sp_large_ammo_acid", "count": 5 },
         { "u_buy_item": "sp_large_ammo_exp", "count": 5 },
         { "u_buy_item": "sp_large_shot", "count": 5 },
-        { "u_buy_item": "sp_large_ammo", "count": 25 } ]
+        { "u_buy_item": "sp_large_ammo", "count": 25 }
+      ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
