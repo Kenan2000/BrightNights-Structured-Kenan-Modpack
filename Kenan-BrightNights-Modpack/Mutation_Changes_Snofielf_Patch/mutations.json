@@ -58,7 +58,7 @@
     "id": "CHITIN3",
     "copy-from": "CHITIN3",
     "allow_soft_gear": true,
-    "armor": [ { "parts": "ALL", "bash": 14, "cut": 14, "acid": 2, "bullet": 2 } ],
+    "armor": [ { "parts": "ALL", "bash": 14, "cut": 14, "acid": 2 } ],
     "extend": { "category": [ "INSECT" ] }
   },
   {
@@ -106,7 +106,7 @@
       { "part": "TORSO", "ignored": 18 }
     ],
     "allow_soft_gear": true,
-    "armor": [ { "parts": "ALL", "bash": 14, "cut": 14, "acid": 2, "bullet": 2 } ]
+    "armor": [ { "parts": "ALL", "bash": 14, "cut": 14, "acid": 2 } ]
   },
   {
     "type": "mutation",
@@ -1669,7 +1669,7 @@
     "id": "SHELL",
     "copy-from": "SHELL",
     "extend": { "category": [ "TORTOISE" ] },
-    "armor": [ { "parts": "TORSO", "bash": 16, "cut": 16, "acid": 2, "bullet": 6 } ]
+    "armor": [ { "parts": "TORSO", "bash": 16, "cut": 16, "acid": 2 } ]
   },
   {
     "type": "mutation",
@@ -1678,7 +1678,7 @@
     "bodytemp_modifiers": [ 100, 500 ],
     "bodytemp_sleep": 500,
     "extend": { "threshreq": [ "THRESH_TORTOISE" ], "category": [ "TORTOISE" ] },
-    "armor": [ { "parts": "TORSO", "bash": 30, "cut": 30, "acid": 4, "bullet": 10 } ]
+    "armor": [ { "parts": "TORSO", "bash": 30, "cut": 30, "acid": 4 } ]
   },
   {
     "type": "mutation",

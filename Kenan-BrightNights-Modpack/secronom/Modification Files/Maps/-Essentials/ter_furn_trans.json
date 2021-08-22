@@ -4,14 +4,14 @@
     "id": "vectorize",
     "fail_message": "There's no organic terrain here to vectorize.",
     "terrain": [
-      { "result": "t_vector", "valid_flags": [ "DIGGABLE" ], "message": "The ground here has been vectorized." },
-      { "result": "t_shrub_vector", "valid_flags": [ "SHRUB" ], "message": "The shrubs here has been vectorized." },
+      { "result": "f_vector", "valid_flags": [ "DIGGABLE" ], "message": "The ground here has been vectorized." },
+      { "result": "f_shrub_vector", "valid_flags": [ "SHRUB" ], "message": "The shrubs here has been vectorized." },
       {
-        "result": "t_tree_vector_young",
+        "result": "f_tree_vector_young",
         "valid_flags": [ "YOUNG" ],
         "message": "The young trees here has been vectorized."
       },
-      { "result": "t_tree_vector", "valid_flags": [ "TREE" ], "message": "The trees here has been vectorized." }
+      { "result": "f_tree_vector", "valid_flags": [ "TREE" ], "message": "The trees here has been vectorized." }
     ],
     "furniture": [ { "result": "f_floral_vector", "valid_flags": [ "FLOWER" ], "message": "The flowers here has been vectorized." } ]
   },
@@ -20,8 +20,8 @@
     "id": "vectorize_weak",
     "fail_message": "There's no organic terrain here to vectorize.",
     "terrain": [
-      { "result": "t_vector", "valid_terrain": [ "t_dirt" ], "message": "The ground here has been vectorized." },
-      { "result": "t_shrub_vector", "valid_flags": [ "SHRUB" ], "message": "The shrubs here has been vectorized." }
+      { "result": "f_vector", "valid_terrain": [ "t_dirt" ], "message": "The ground here has been vectorized." },
+      { "result": "f_shrub_vector", "valid_flags": [ "SHRUB" ], "message": "The shrubs here has been vectorized." }
     ],
     "furniture": [ { "result": "f_floral_vector", "valid_flags": [ "FLOWER" ], "message": "The flowers here has been vectorized." } ]
   },

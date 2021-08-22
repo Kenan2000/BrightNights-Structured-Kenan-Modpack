@@ -89,10 +89,7 @@
     "explosion": {
       "damage" : 16,
       "radius": 3,
-      "shrapnel" : {
-        "casing_mass" : 2,
-        "fragment_mass" : 0.01
-      }
+      "fragment": { "impact": { "damage_type": "cut", "amount": 6, "armor_multiplier": 1 }, "range": 3 }
     },
     "flags": [ "TRADER_AVOID" ]
   },{
@@ -120,11 +117,7 @@
     "explosion": {
       "damage" : 240,
       "radius" : 3,
-      "shrapnel" : {
-        "casing_mass" : 250,
-        "fragment_mass" : 0.15
-      }
-    },
+      "fragment": { "impact": { "damage_type": "cut", "amount": 75, "armor_multiplier": 3 }, "range": 6 } },
     "flags": [ "TRADER_AVOID" ]
   }
 ]

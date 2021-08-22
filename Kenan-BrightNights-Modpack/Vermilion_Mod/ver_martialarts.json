@@ -2,9 +2,9 @@
   {
     "type": "martial_art",
     "id": "style_augsword",
-    "name": "Augmented Swordplay",
+    "name": { "str": "Augmented Swordplay" },
     "description": "You've poured through the technical binder and have become one with the high-frequency blade. Furthermore, you've learned how to block using bionic arms and legs.",
-	"initiate": [ "You steady your blade and become one with it.", "%s enters a steadied stance." ],
+    "initiate": [ "You steady your blade and become one with it.", "%s enters a steadied stance." ],
     "arm_block": 95,
     "leg_block": 95,
     "arm_block_with_bio_armor_arms": true,
@@ -25,8 +25,8 @@
         "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 10 } ],
         "throw_immune": true,
-		"bonus_dodges": 2,
-		"bonus_blocks": 2,
+        "bonus_dodges": 2,
+        "bonus_blocks": 2,
         "description": "A soul can't be cut."
       }
     ],
@@ -43,30 +43,15 @@
       {
         "id": "augsword_parry",
         "name": "Augmented Parry",
-        "description": "Parried and stunned the enemy. Next attack will deal increased damage.",
-        "skill_requirements": [ { "name": "melee", "level": 7 } ],
+        "description": "Parried the enemy. Next attack will deal increased damage.",
+        "skill_requirements": [ { "name": "melee", "level": 6 } ],
         "melee_allowed": true,
-        "mult_bonuses": [
-          {
-            "stat": "damage",
-            "type": "cut",
-            "scale": 1.2
-          }
-
-        ],
+        "mult_bonuses": [ { "stat": "damage", "type": "cut", "scale": 1.2 } ],
         "max_stacks": 1,
-        "stun_dur": 1,
         "buff_duration": 1
       }
     ],
-    "techniques": [
-		"augsword_ripper",
-		"augsword_shadow",
-		"augsword_zandatsu",
-		"augsword_legsweep"
-    ],
-    "weapons": [
-      "hf_blade"
-	]
-	}
+    "techniques": [ "augsword_ripper", "augsword_shadow", "augsword_zandatsu", "augsword_legsweep" ],
+    "weapons": [ "hf_blade" ]
+  }
 ]

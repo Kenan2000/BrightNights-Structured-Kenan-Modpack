@@ -350,7 +350,7 @@
     "ugliness": 8,
     "mixed_effect": true,
     "valid": false,
-    "description": "Sharp bones protrude through your skin, extending at random angles. In exchange of mobility and 10 encumberance to all body parts, they greatly protect you from harm.",
+    "description": "Sharp bones protrude through your skin, extending at random angles. In exchange of mobility and 10 encumbrance to all body parts, they greatly protect you from harm.",
     "types": [ "SKIN" ],
     "changes_to": [ "SECRO_TITAN2" ],
     "cancels": [ "SKIN_ROUGH", "CHITIN", "CHITIN_FUR", "SCALES" ],
@@ -395,7 +395,7 @@
     "ugliness": 5,
     "mixed_effect": true,
     "valid": false,
-    "description": "The bone outgrowths has extended further, and their angles has slightly adjusted. Underneath them are irregular bone plates that spread over your skin, expanding their coverage. Significantly improves your defensive capabilities, however, they harshly affect your mobility and increases encumberance by 15 caused by additional weight.",
+    "description": "The bone outgrowths has extended further, and their angles has slightly adjusted. Underneath them are irregular bone plates that spread over your skin, expanding their coverage. Significantly improves your defensive capabilities, however, they harshly affect your mobility and increases encumbrance by 15 caused by additional weight.",
     "types": [ "SKIN" ],
     "prereqs": [ "SECRO_TITAN" ],
     "changes_to": [ "SECRO_TITAN_OK", "SECRO_TITAN_NOTOK" ],
@@ -439,7 +439,7 @@
     "visibility": 10,
     "ugliness": 4,
     "valid": false,
-    "description": "Your bone outgrowths became an external layer of armor, which fits and excels at protecting your body while severely reducing the length of the spikes. The spikes have adjusted enough to reduce movement penalties and encumberance to 8, but permanently disables the ability to pierce the attackers.",
+    "description": "Your bone outgrowths became an external layer of armor, which fits and excels at protecting your body while severely reducing the length of the spikes. The spikes have adjusted enough to reduce movement penalties and encumbrance to 8, but permanently disables the ability to pierce the attackers.",
     "types": [ "SKIN" ],
     "prereqs": [ "SECRO_TITAN2" ],
     "encumbrance_always": [
@@ -481,7 +481,7 @@
     "visibility": 10,
     "ugliness": 10,
     "valid": false,
-    "description": "Your bone outgrowths have altered to a great extent - bone plates have swollen and the spikes grew unnecessary sets of smaller variations. Aside from its significantly improved defense that adds 12 physical resistance to all body parts, its weight and thickness are a hassle, permanently increasing encumberance by 20 and a greatly reduced mobility.",
+    "description": "Your bone outgrowths have altered to a great extent - bone plates have swollen and the spikes grew unnecessary sets of smaller variations. Aside from its significantly improved defense that adds 12 physical resistance to all body parts, its weight and thickness are a hassle, permanently increasing encumbrance by 20 and a greatly reduced mobility.",
     "types": [ "SKIN" ],
     "prereqs": [ "SECRO_TITAN2" ],
     "encumbrance_always": [
@@ -525,7 +525,7 @@
     "ugliness": 8,
     "mixed_effect": true,
     "valid": false,
-    "description": "You grew 2 additional pairs of arms sticking out from the sides of your torso close to the abdominal part. They seem to function as duplicates of normal ones, gaining 1 permanent dex and making them beneficial for crafting, combat and vaulting through objects, but increases torsal encumberance by 10 which triples when you wear a tight clothing.",
+    "description": "You grew 2 additional pairs of arms sticking out from the sides of your torso close to the abdominal part. They seem to function as duplicates of normal ones, gaining 1 permanent dex and making them beneficial for crafting, combat and vaulting through objects, but increases torsal encumbrance by 10 which triples when you wear a tight clothing.",
     "types": [ "HANDS" ],
     "changes_to": [ "SECRO_SPIDER_OK", "SECRO_SPIDER_NOTOK" ],
     "cancels": [
@@ -597,7 +597,7 @@
     "visibility": 6,
     "ugliness": 8,
     "valid": false,
-    "description": "Your extra limbs became twisted and malformed, which slightly affects the movements of your arms. They removed your permanent dex, increased your torsal encumberance by 15 and a drastic reduction to its basic modifiers.",
+    "description": "Your extra limbs became twisted and malformed, which slightly affects the movements of your arms. They removed your permanent dex, increased your torsal encumbrance by 15 and a drastic reduction to its basic modifiers.",
     "types": [ "HANDS" ],
     "prereqs": [ "SECRO_SPIDER_OK" ],
     "encumbrance_always": [ [ "TORSO", 15 ] ],
@@ -654,7 +654,7 @@
       {
         "attack_text_u": "You lick %s",
         "attack_text_npc": "%1$s licks %2$s",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "chance": 30,
         "strength_damage": { "damage_type": "bash", "amount": 0.3 }
       }
@@ -678,7 +678,7 @@
       {
         "attack_text_u": "You lick %s",
         "attack_text_npc": "%1$s licks %2$s",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "chance": 75,
         "strength_damage": { "damage_type": "bash", "amount": 0.5 }
       }
@@ -705,7 +705,7 @@
       {
         "attack_text_u": "You lick %s",
         "attack_text_npc": "%1$s licks %2$s",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "chance": 50,
         "strength_damage": { "damage_type": "bash", "amount": 0.5 }
       }
@@ -732,7 +732,7 @@
       {
         "attack_text_u": "You lick %s",
         "attack_text_npc": "%1$s licks %2$s",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "chance": 50,
         "strength_damage": { "damage_type": "bash", "amount": 0.8 }
       }
@@ -758,7 +758,7 @@
       {
         "attack_text_u": "You lick %s",
         "attack_text_npc": "%1$s licks %2$s",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "chance": 20,
         "strength_damage": { "damage_type": "bash", "amount": 0.3 }
       }
@@ -784,7 +784,7 @@
       {
         "attack_text_u": "You lick %s",
         "attack_text_npc": "%1$s licks %2$s",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "blocker_mutations": [ "SECRO_LICKER_ATK_THRESHOLD" ],
         "chance": 20,
         "strength_damage": { "damage_type": "cut", "amount": 0.5 }
@@ -792,7 +792,7 @@
       {
         "attack_text_u": "You lashed %s with your tongue",
         "attack_text_npc": "%1$s lashes %2$s with their tongue",
-        "body_part": [ "MOUTH" ],
+        "body_part": "mouth",
         "required_mutations": [ "SECRO_LICKER_ATK_THRESHOLD" ],
         "chance": 20,
         "strength_damage": { "damage_type": "cut", "amount": 0.85 }
@@ -946,10 +946,9 @@
     "visibility": 6,
     "ugliness": 8,
     "valid": false,
-    "description": "You have several eyesprouts scattered throughout your hair, and they are sometimes painful when covered by a headgear. Provides additional vision bonuses and increases your perception by 3, but increases head encumberance by 20.",
+    "description": "You have several eyesprouts scattered throughout your hair, and they are sometimes painful when covered by a headgear. Provides additional vision bonuses and increases your perception by 3, but increases head encumbrance by 20.",
     "prereqs": [ "SECRO_UNKNOWN_HAIR_START" ],
     "encumbrance_always": [ [ "HEAD", 20 ] ],
-    "map_memory_capacity_multiplier": 1.25,
     "overmap_sight": 2.5,
     "overmap_multiplier": 1.25,
     "passive_mods": { "per_mod": 3 },
@@ -963,7 +962,7 @@
     "visibility": 6,
     "ugliness": 6,
     "valid": false,
-    "description": "You've got a few, slender proboscides on your head. They twitch occasionally, and involuntarily, increasing head encumberance by 25.  If conditions are met, they can suck the lifeforce out of your victim... only if they're alive.",
+    "description": "You've got a few, slender proboscides on your head. They twitch occasionally, and involuntarily, increasing head encumbrance by 25.  If conditions are met, they can suck the lifeforce out of your victim... only if they're alive.",
     "prereqs": [ "SECRO_UNKNOWN_HAIR_START" ],
     "encumbrance_always": [ [ "HEAD", 25 ] ],
     "enchantments": [ "SECRO_UNKNOWN_HAIR_SUCK_ench" ],

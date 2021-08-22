@@ -5,9 +5,9 @@
 		"name": "<color_red>Ghost Hunter</color>",
 		"description": "Kill 10 Ghost Harvesters, 10 Ghost Trappers and 10 Ghost Seekers.",
 		"requirements": [
-		  { "event_statistic": "num_avatar_sierra_harvesters_kills", "is": ">=", "target": 10, "visible": "never" },
-		  { "event_statistic": "num_avatar_sierra_seekers_kills", "is": ">=", "target": 10, "visible": "never" },
-		  { "event_statistic": "num_avatar_sierra_trappers_kills", "is": ">=", "target": 10, "visible": "never" }
+		  { "event_statistic": "num_avatar_sierra_harvesters_kills", "is": ">=", "target": 10 },
+		  { "event_statistic": "num_avatar_sierra_seekers_kills", "is": ">=", "target": 10 },
+		  { "event_statistic": "num_avatar_sierra_trappers_kills", "is": ">=", "target": 10 }
 		]
 	},
 	{
@@ -16,7 +16,7 @@
 		"name": "<color_red>Fires in the sky</color>",
 		"hidden_by": [ "achievement_gala" ],
 		"description": "Trigger the Gala Event.",
-		"requirements": [ { "event_statistic": "num_avatar_gala_trait", "is": ">=", "target": 1, "visible": "never" } ]
+		"requirements": [ { "event_statistic": "num_avatar_gala_trait", "is": ">=", "target": 1 } ]
 	},
 	{
 		"id": "achievement_win",
@@ -24,7 +24,7 @@
 		"name": "<color_red>Treasure of the Old World</color>",
 		"hidden_by": [ "achievement_win" ],
 		"description": "Crack the Sierra Madre open.",
-		"requirements": [ { "event_statistic": "num_avatar_win_trait", "is": ">=", "target": 1, "visible": "never" } ]
+		"requirements": [ { "event_statistic": "num_avatar_win_trait", "is": ">=", "target": 1 } ]
 	},
 	{
 		"id": "achievement_stimpack",

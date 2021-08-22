@@ -102,10 +102,10 @@
     "id": "gallian_ammo_lancers",
     "subtype": "collection",
     "entries": [
-      { "item": "lancaar_ammo", "repeat": [ 5, 10 ] },
-      { "item": "lancaar_ammo_thermo", "repeat": [ 3, 6 ] },
-      { "item": "sh_bgrenade_shell", "repeat": [ 8, 15 ] },
-      { "item": "sh_bgrenade_ind", "repeat": [ 3, 6 ] }
+      { "item": "lancaar_ammo", "count": [ 5, 10 ] },
+      { "item": "lancaar_ammo_thermo", "count": [ 3, 6 ] },
+      { "item": "sh_bgrenade_shell", "count": [ 8, 15 ] },
+      { "item": "sh_bgrenade_ind", "count": [ 3, 6 ] }
     ]
   },
    {
@@ -183,7 +183,7 @@
     "id": "val_item_galgrenade",
     "subtype": "collection",
     "entries": [
-      { "item": "bt_grenade", "repeat": [ 1, 4 ] }
+      { "item": "bt_grenade", "count": [ 1, 4 ] }
     ]
   }
 ]

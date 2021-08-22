@@ -1,36 +1,38 @@
 [
   {
-    "type": "terrain",
-    "id": "t_vector",
+    "type": "furniture",
+    "id": "f_vector",
     "looks_like": "t_fungus",
     "name": "vector bed",
     "description": "Thick, light blue foliage lay low on the ground, writhing in harmony with the wind.",
     "symbol": ".",
     "light_emitted": 1,
     "color": "light_blue",
-    "move_cost": 3,
+    "move_cost_mod": 3,
+    "required_str": -1,
     "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "DIGGABLE", "NOCOLLIDE", "VECTOR", "EMITTER" ],
     "emissions": [ "secro_vector_small" ],
-    "bash": { "sound": "smash", "ter_set": "t_null", "str_min": 20, "str_max": 400, "str_min_supported": 50 }
+    "bash": { "sound": "smash", "furn_set": "f_null", "str_min": 20, "str_max": 400, "str_min_supported": 50 }
   },
   {
-    "type": "terrain",
-    "id": "t_shrub_vector",
+    "type": "furniture",
+    "id": "f_shrub_vector",
     "looks_like": "t_shrub_fungal",
     "name": "vector shrub",
     "description": "A vague reminiscence of a shrub, with large outgrowths of branches and leaves that blooms in vector dust.",
     "symbol": "#",
     "color": "blue",
-    "move_cost": 8,
+    "move_cost_mod": 8,
+    "required_str": -1,
     "emissions": [ "secro_vector_smol_seeding" ],
     "light_emitted": 3,
     "coverage": 40,
     "flags": [ "TRANSPARENT", "CONTAINER", "FLAMMABLE_ASH", "THIN_OBSTACLE", "PLACE_ITEM", "SHRUB", "VECTOR", "EMITTER", "SHORT" ],
-    "bash": { "str_min": 4, "str_max": 60, "sound": "crunch.", "sound_fail": "oof!", "ter_set": "t_vector" }
+    "bash": { "str_min": 4, "str_max": 60, "sound": "crunch.", "sound_fail": "oof!", "furn_set": "f_vector" }
   },
   {
-    "type": "terrain",
-    "id": "t_tree_vector_young",
+    "type": "furniture",
+    "id": "f_tree_vector_young",
     "looks_like": "t_tree_fungal_young",
     "name": "young vector tree",
     "description": "An immature tree, infested by vector dust.",
@@ -38,24 +40,26 @@
     "emissions": [ "secro_vector_smol_seeding" ],
     "color": "blue",
     "light_emitted": 3,
-    "move_cost": 4,
+    "move_cost_mod": 4,
+    "required_str": -1,
     "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "NOITEM", "VECTOR", "YOUNG", "EMITTER", "REDUCE_SCENT" ],
-    "bash": { "str_min": 4, "str_max": 50, "sound": "crunch!", "sound_fail": "oof!", "ter_set": "t_vector" }
+    "bash": { "str_min": 4, "str_max": 50, "sound": "crunch!", "sound_fail": "oof!", "furn_set": "f_vector" }
   },
   {
-    "type": "terrain",
-    "id": "t_tree_vector",
+    "type": "furniture",
+    "id": "f_tree_vector",
     "looks_like": "t_tree_fungal",
     "name": "vector tree",
     "description": "Infested by vector dust, this tree luminates the surroundings with its leaves, bark stripes and falling starlights.",
     "symbol": "7",
     "color": "light_blue",
     "light_emitted": 10,
-    "move_cost": 0,
+    "move_cost_mod": 0,
+    "required_str": -1,
     "coverage": 80,
     "emissions": [ "secro_vector_smol_seeding" ],
     "flags": [ "FLAMMABLE_ASH", "NOITEM", "VECTOR", "EMITTER", "TREE", "REDUCE_SCENT" ],
-    "bash": { "str_min": 40, "str_max": 180, "sound": "crunch!", "sound_fail": "oof!", "ter_set": "t_vector" }
+    "bash": { "str_min": 40, "str_max": 180, "sound": "crunch!", "sound_fail": "oof!", "furn_set": "f_vector" }
   },
   {
     "type": "furniture",

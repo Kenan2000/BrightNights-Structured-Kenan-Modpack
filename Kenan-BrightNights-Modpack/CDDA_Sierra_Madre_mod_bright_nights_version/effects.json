@@ -3,7 +3,6 @@
 		"type": "effect_type",
 		"id": "sierra_poison",
 		"rating": "bad",
-		"min_duration": "5 seconds",
 		"max_duration": "5 seconds",
 		"base_mods": {
 		  "hurt_min": [ 1 ],
@@ -22,7 +21,6 @@
 		"remove_message": "You've managed to get out of the concentrated gas pocket in time...",
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "5 seconds",
 		"max_duration": "5 seconds",
 		"base_mods": {
 		  "per_mod": [ -5 ],
@@ -38,14 +36,12 @@
 		  "health_max": [ -10 ],
 		  "health_chance": [5]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 toxic gas, high concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
 		"id": "sierra_cloud",
 		"rating": "bad",
-		"min_duration": "10 seconds",
 		"max_duration": "10 seconds",
 		"base_mods": {
 		  "hurt_min": [ 1 ],
@@ -63,7 +59,6 @@
 		"apply_message": "You've found yourself in the Sierra Madre. The red sky and the smell of copper and Old World gold indicate the contamination of the air by a lethal gas...",
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "10 seconds",
 		"max_duration": "10 seconds",
 		"base_mods": {
 		  "pain_min": [ 1 ],
@@ -76,8 +71,7 @@
 		  "health_max": [ -2 ],
 		  "health_chance": [45]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 toxic gas, low concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -87,7 +81,6 @@
 		"miss_messages": [ [ "Your throat burns!", 1 ], [ "You feel as if there was burning napalm inside your stomach!", 1 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "30 seconds",
 		"max_duration": "1 minute",
 		"base_mods": {
 		  "pain_min": [ 2 ],
@@ -97,8 +90,7 @@
 		  "hurt_max": [ 4 ],
 		  "hurt_chance": [5]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 liquified poison, low concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -108,7 +100,6 @@
 		"miss_messages": [ [ "Your throat burns!", 1 ], [ "You feel as if there was burning napalm inside your stomach!", 1 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "30 seconds",
 		"max_duration": "1 minute",
 		"base_mods": {
 		  "dex_mod": [ -1 ],
@@ -120,8 +111,7 @@
 		  "hurt_max": [ 5 ],
 		  "hurt_chance": [5]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 liquified poison, medium concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -131,7 +121,6 @@
 		"miss_messages": [ [ "Your throat burns!", 1 ], [ "You feel as if there was burning napalm inside your stomach!", 1 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "1 minute",
 		"max_duration": "2 minutes",
 		"base_mods": {
 		  "per_mod": [ -3 ],
@@ -145,8 +134,7 @@
 		  "hurt_max": [ 12 ],
 		  "hurt_chance": [2]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 liquified poison, high concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -156,7 +144,6 @@
 		"miss_messages": [ [ "You feel as if someone was gutting you alive!", 2 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "30 seconds",
 		"max_duration": "1 minute",
 		"base_mods": {
 		  "int_mod": [ -2 ],
@@ -168,8 +155,7 @@
 		  "hurt_max": [ 5 ],
 		  "hurt_chance": [5]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Traces of Z-43 toxins in the digestive system"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -179,7 +165,6 @@
 		"miss_messages": [ [ "You feel as if someone was gutting you alive!", 3 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "30 seconds",
 		"max_duration": "1 minute",
 		"base_mods": {
 		  "int_mod": [ -2 ],
@@ -191,8 +176,7 @@
 		  "hurt_max": [ 3 ],
 		  "hurt_chance": [5]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Traces of Z-43 toxins in the digestive system"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -202,13 +186,11 @@
 		"miss_messages": [ [ "You feel mysterious strength empowering your entire body, boosting its healing capability.", 10 ] ],
 		"rating": "good",
 		"main_parts_only": true,
-		"min_duration": "5 minutes",
 		"max_duration": "5 minutes",
 		"base_mods": {
 		  "str_mod": [ 3 ]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Traces of Z-43 toxins in the digestive system"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -218,7 +200,6 @@
 		"miss_messages": [ [ "You feel alive, so alive... It's beautiful.", 10 ] ],
 		"rating": "good",
 		"main_parts_only": true,
-		"min_duration": "5 minutes",
 		"max_duration": "5 minutes",
 		"removes_effects": [
 			"bleed",
@@ -230,15 +211,13 @@
 		  "dex_mod": [ 1 ],
 		  "per_mod": [ 1 ]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "STIM-RX35-A2 Big_Mt class 2 healing stimulant"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
 		"id": "stimpack_used2",
 		"rating": "good",
 		"main_parts_only": true,
-		"min_duration": "1 second",
 		"max_duration": "1 second",
 		"base_mods": {
 		  "fatigue_amount": [ -25 ],
@@ -253,14 +232,12 @@
 		"desc": [ "Your mind clears, your thought capacity increases, your vision sharpens. Now you see the truth..." ],
 		"rating": "good",
 		"main_parts_only": false,
-		"min_duration": "4 minutes",
 		"max_duration": "4 minutes",
 		"base_mods": {
 		  "int_mod": [ 2 ],
 		  "per_mod": [ 2 ]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Mentats stimulants"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -269,15 +246,13 @@
 		"desc": [ "Your pain is being washed away and you feel stronger and more immune." ],
 		"rating": "good",
 		"main_parts_only": false,
-		"min_duration": "4 minutes",
 		"max_duration": "4 minutes",
 		"base_mods": {
 		  "health_amount": [ 20 ],
 		  "pkill_tick": [ 12 ],
 		  "pkill_min": [ 1 ]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Med-X stimulants"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -342,9 +317,7 @@
 		"type": "effect_type",
 		"id": "collar_boom",
 		"rating": "bad",
-		"bp": "HEAD",
 		"apply_message": "The collar on your neck explodes, tearing your head apart!",
-		"min_duration": "5 seconds",
 		"max_duration": "5 seconds",
 		"base_mods": {
 		  "hurt_min": [ 999 ],
@@ -360,7 +333,6 @@
 		"miss_messages": [ [ "Your throat burns!", 1 ], [ "You feel as if there was burning napalm inside your stomach!", 1 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "30 seconds",
 		"max_duration": "1 minute",
 		"base_mods": {
 		  "pain_min": [ 2 ],
@@ -370,8 +342,7 @@
 		  "hurt_max": [ 5 ],
 		  "hurt_chance": [2]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 liquified poison, low concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -381,7 +352,6 @@
 		"miss_messages": [ [ "Your throat burns!", 1 ], [ "You feel as if there was burning napalm inside your stomach!", 1 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "30 seconds",
 		"max_duration": "1 minute",
 		"base_mods": {
 		  "dex_mod": [ -1 ],
@@ -393,8 +363,7 @@
 		  "hurt_max": [ 7 ],
 		  "hurt_chance": [2]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 liquified poison, medium concentration"
+		"show_in_info": true
 	},
 	{
 		"type": "effect_type",
@@ -404,7 +373,6 @@
 		"miss_messages": [ [ "Your throat burns!", 1 ], [ "You feel as if there was burning napalm inside your stomach!", 1 ] ],
 		"rating": "bad",
 		"main_parts_only": true,
-		"min_duration": "1 minute",
 		"max_duration": "2 minutes",
 		"base_mods": {
 		  "per_mod": [ -3 ],
@@ -418,7 +386,6 @@
 		  "hurt_max": [ 9 ],
 		  "hurt_chance": [2]
 		},
-		"show_in_info": true,
-		"blood_analysis_description": "Z-43 liquified poison, high concentration"
+		"show_in_info": true
 	}
 ]

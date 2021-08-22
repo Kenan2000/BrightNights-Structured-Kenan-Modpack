@@ -41,8 +41,7 @@
 	{
     "type" : "COMESTIBLE",
     "id" : "nuts_almond",
-    "name" : "almonds",
-    "name_plural" : "almonds",
+    "name" : { "str": "almonds", "str_pl": "almonds" },
     "weight" : 18,
     "color" : "brown",
     "container" : "bag_plastic",
@@ -61,8 +60,7 @@
 {
     "type" : "COMESTIBLE",
     "id" : "nuts_pecan",
-    "name" : "pecans",
-    "name_plural" : "pecans",
+    "name" : { "str": "pecans", "str_pl": "pecans" },
     "weight" : 22,
     "color" : "brown",
     "container" : "bag_plastic",
@@ -81,8 +79,7 @@
 {
     "type" : "COMESTIBLE",
     "id" : "nuts_walnut",
-    "name" : "walnuts",
-    "name_plural" : "walnuts",
+    "name" : { "str": "walnuts", "str_pl": "walnuts" },
     "weight" : 24,
     "color" : "brown",
     "container" : "bag_plastic",
@@ -101,8 +98,7 @@
 {
     "type" : "COMESTIBLE",
     "id" : "nuts_cashew",
-    "name" : "cashews",
-    "name_plural" : "cashews",
+    "name" : { "str": "cashews", "str_pl": "cashews" },
     "weight" : 20,
     "color" : "brown",
     "container" : "bag_plastic",
@@ -121,8 +117,7 @@
 {
     "type" : "COMESTIBLE",
     "id" : "nuts_peanut",
-    "name" : "peanuts",
-    "name_plural" : "peanuts",
+    "name" : { "str": "peanuts", "str_pl": "peanuts" },
     "weight" : 21,
     "color" : "brown",
     "container" : "bag_plastic",
@@ -140,8 +135,7 @@
 {
         "type" : "COMESTIBLE",
         "id" : "nut_milk",
-        "name" : "nut milk",
-		"name_plural" : "nut milks",
+        "name" : { "str": "nut milk", "str_pl": "nut milks" },
         "weight" : 184,
         "color" : "brown",
         "container" : "bottle_plastic",
@@ -160,8 +154,7 @@
 	{
         "type" : "COMESTIBLE",
         "id" : "nut_paste",
-        "name" : "nut paste",
-        "name_plural" : "nut pastes",
+        "name" : { "str": "nut paste", "str_pl": "nut pastes" },
         "weight" : 40,
         "color" : "brown",
         "comestible_type" : "OTHER",
@@ -179,8 +172,7 @@
 	{
 		"type": "COMESTIBLE",
 		"id" : "trail_mix",
-		"name" : "trail mix",
-		"name_plural" : "trail mixes",
+		"name" : { "str": "trail mix", "str_pl": "trail mixes" },
 		"weight" : 40,
 		"color" : "brown",
 		"comestible_type" : "FOOD",

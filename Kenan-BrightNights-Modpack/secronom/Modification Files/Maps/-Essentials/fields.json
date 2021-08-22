@@ -1380,7 +1380,6 @@
         "sym": "8",
         "color": "dark_gray",
         "translucency": 1,
-        "light_override": 4,
         "effects": [
           {
             "effect_id": "blind",
@@ -1392,8 +1391,8 @@
           }
         ]
       },
-      { "name": "thick black fog", "transparent": false, "translucency": 10, "light_override": 3 },
-      { "name": "total darkness", "color": "black", "translucency": 0, "light_override": 2 }
+      { "name": "thick black fog", "transparent": false, "translucency": 10 },
+      { "name": "total darkness", "color": "black", "translucency": 0 }
     ],
     "immune_mtypes": [ "mon_shifter", "mon_shifter_illu" ],
     "decay_amount_factor": 4,
@@ -1418,7 +1417,6 @@
         "sym": "8",
         "color": "dark_gray",
         "translucency": 1,
-        "light_override": 2,
         "effects": [
           {
             "effect_id": "blind",
@@ -1565,7 +1563,6 @@
         ]
       }
     ],
-    "decrease_intensity_on_contact": true,
     "immune_mtypes": [
       "mon_zombie_bootlegsmoker",
       "mon_zombie",
