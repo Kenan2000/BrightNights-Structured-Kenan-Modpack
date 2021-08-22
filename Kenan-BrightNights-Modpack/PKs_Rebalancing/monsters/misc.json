@@ -100,7 +100,6 @@
     "placate_triggers": [ "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 14, "into": "mon_rattlesnake_giant" },
-    "delete": { "upgrades": { "half_life": 182, "into_group": "GROUP_SNAKE_MUTANT" } },
     "flags": [ "SEES", "HEARS", "SMELLS", "HARDTOSHOOT", "SWIMS" ]
   },
   {
@@ -260,7 +259,7 @@
     "melee_dice": 1,
     "melee_dice_sides": 2,
     "melee_cut": 2,
-    "special_attacks": [ [ "wound_minor", 7 ], { "type": "bite", "cooldown": 5, "no_infection_chance": 18, "moves": 250 } ],
+    "special_attacks": [ [ "wound_minor", 7 ], { "type": "bite", "cooldown": 5, "no_infection_chance": 18 } ],
     "attack_effs": [
       { "id": "doom_unhealth", "duration": 1 },
       { "id": "rad_tenths", "duration": 3 },
@@ -289,7 +288,7 @@
     "armor_cut": 1,
     "vision_day": 25,
     "vision_night": 10,
-    "special_attacks": [ [ "wound_minor", 30 ], { "type": "bite", "cooldown": 5, "no_infection_chance": 8, "moves": 250 } ],
+    "special_attacks": [ [ "wound_minor", 30 ], { "type": "bite", "cooldown": 5, "no_infection_chance": 8 } ],
     "anger_triggers": [ "PLAYER_WEAK", "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],

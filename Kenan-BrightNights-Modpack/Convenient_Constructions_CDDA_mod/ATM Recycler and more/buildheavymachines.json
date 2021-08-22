@@ -83,8 +83,7 @@
   {
     "id": "gate_mech_control",
     "type": "gate",
-    "handle": "t_gates_mech_control",
-    "other_handles": [ "t_gates_control_concrete", "t_gates_control_brick" ],
+    "alias": [ "t_gates_control_concrete", "t_gates_control_brick" ],
     "door": "t_door_metal_locked",
     "floor": "t_floor",
     "walls": [
@@ -142,7 +141,6 @@
     "category": "tools"
   },
   {
-    "id": "Atm_module",
     "type": "recipe",
     "result": "aaf_atm_module",
     "category": "CC_ELECTRONIC",
@@ -184,7 +182,6 @@
     "category": "tools"
   },
   {
-    "id": "Recycler_module",
     "type": "recipe",
     "result": "aaf_recycler",
     "category": "CC_OTHER",

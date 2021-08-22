@@ -42,7 +42,6 @@
 			"need_charges": 1,
 	"need_charges_msg": "Not enough gasoline！" },
     "qualities": [ [ "HAMMER", 1 ] ]
-  }
   },
   {
     "id": "jet_hammer_on",
@@ -68,8 +67,7 @@
             "type": "transform",
             "msg": "The jet hammer fizzles and goes quiet.",
 	"target": "jet_hammer_off" },
-    "flags": [ "MESSY", "TRADER_AVOID", "POWERED" ]
-  }
+  "flags": [ "MESSY", "TRADER_AVOID", "POWERED" ] 
   },
    {
     "type": "GENERIC",

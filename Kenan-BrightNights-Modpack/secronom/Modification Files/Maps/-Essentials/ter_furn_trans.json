@@ -3,7 +3,8 @@
     "type": "ter_furn_transform",
     "id": "vectorize",
     "fail_message": "There's no organic terrain here to vectorize.",
-    "terrain": [
+    "furniture": [
+      { "result": "f_floral_vector", "valid_flags": [ "FLOWER" ], "message": "The flowers here has been vectorized." },
       { "result": "f_vector", "valid_flags": [ "DIGGABLE" ], "message": "The ground here has been vectorized." },
       { "result": "f_shrub_vector", "valid_flags": [ "SHRUB" ], "message": "The shrubs here has been vectorized." },
       {
@@ -12,18 +13,17 @@
         "message": "The young trees here has been vectorized."
       },
       { "result": "f_tree_vector", "valid_flags": [ "TREE" ], "message": "The trees here has been vectorized." }
-    ],
-    "furniture": [ { "result": "f_floral_vector", "valid_flags": [ "FLOWER" ], "message": "The flowers here has been vectorized." } ]
+    ]
   },
   {
     "type": "ter_furn_transform",
     "id": "vectorize_weak",
     "fail_message": "There's no organic terrain here to vectorize.",
-    "terrain": [
-      { "result": "f_vector", "valid_terrain": [ "t_dirt" ], "message": "The ground here has been vectorized." },
+    "furniture": [
+      { "result": "f_floral_vector", "valid_flags": [ "FLOWER" ], "message": "The flowers here has been vectorized." },
+      { "result": "f_vector", "valid_flags": [ "DIGGABLE" ], "message": "The ground here has been vectorized." },
       { "result": "f_shrub_vector", "valid_flags": [ "SHRUB" ], "message": "The shrubs here has been vectorized." }
-    ],
-    "furniture": [ { "result": "f_floral_vector", "valid_flags": [ "FLOWER" ], "message": "The flowers here has been vectorized." } ]
+    ]
   },
   {
     "type": "ter_furn_transform",
@@ -886,11 +886,7 @@
         "valid_flags": [ "WALL", "CONNECT_TO_WALL" ],
         "message": "The flesh spreads successfully."
       },
-      {
-        "result": "t_secro_flesh",
-        "valid_flags": [ "ROAD" ],
-        "message": "The flesh spreads successfully."
-      }
+      { "result": "t_secro_flesh", "valid_flags": [ "ROAD" ], "message": "The flesh spreads successfully." }
     ]
   },
   {

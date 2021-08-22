@@ -19,7 +19,7 @@
     "attack_effs": [ { "id": "rad_tenths", "duration": 10 } ],
     "vision_day": 5,
     "vision_night": 5,
-    "special_attacks": [ { "type": "bite", "cooldown": 10, "no_infection_chance": 12, "moves": 250 } ],
+    "special_attacks": [ { "type": "bite", "cooldown": 10, "no_infection_chance": 12 } ],
     "flags": [ "SEES", "HEARS", "SMELLS", "CAN_DIG", "LARVA" ]
   },
   {
@@ -204,7 +204,6 @@
       {
         "id": "hammer",
         "cooldown": 20,
-        "moves": 150,
         "damage_max_instance": [ { "damage_type": "bash", "amount": 9, "armor_multiplier": 0.85 }, { "damage_type": "biological", "amount": 1 } ]
       }
     ],
@@ -391,7 +390,6 @@
       [ "FEAR_PARALYZE", 40 ],
       {
         "id": "scratch",
-        "moves": 150,
         "cooldown": 20,
         "damage_max_instance": [
           { "damage_type": "cut", "amount": 14, "armor_multiplier": 0.8 },
@@ -757,7 +755,6 @@
       {
         "id": "slash",
         "cooldown": 30,
-        "moves": 200,
         "damage_max_instance": [ { "damage_type": "cut", "amount": 22, "armor_multiplier": 0.75 } ]
       },
       { "type": "leap", "cooldown": 10, "max_range": 3 },
@@ -857,7 +854,6 @@
       {
         "id": "hammer",
         "cooldown": 15,
-        "moves": 150,
         "damage_max_instance": [
           { "damage_type": "bash", "amount": 18, "armor_multiplier": 0.7 },
           { "damage_type": "cut", "amount": 8, "armor_multiplier": 0.7 }
@@ -1043,7 +1039,6 @@
     "default_faction": "mutant",
     "species": [ "HORROR" ],
     "diff": 22,
-    "size": "MEDIUM",
     "hp": 200,
     "speed": 60,
     "material": [ "flesh" ],

@@ -41,7 +41,7 @@
     "id": "TALK_MORLOCK_SHROOMER_REQUEST",
     "type": "talk_topic",
     "dynamic_line": "The Morlocks are always short on food since not much grows down here in the dark.  I got no surplus crops to sell.  But if you could get me some fertilizer, I'd help you kickstart your own shroom-room.  I'll swap you 12 seeds for each bag of commercial fertilizer you haul down here.  Not much, but it get will you started.",
-    "responses": [  { "text": "Got it.  Commercial fertilizer.", "topic": "TALK_MORLOCK_SHROOMER" } ]
+    "responses": [ { "text": "Got it.  Commercial fertilizer.", "topic": "TALK_MORLOCK_SHROOMER" } ]
   },
   {
     "id": "TALK_MORLOCK_SHROOMER_TRADE",
@@ -49,21 +49,19 @@
     "dynamic_line": "What shall we trade?",
     "responses": [
       {
-        "text": "I'd like to get some seeds, my good shroomer.", 
+        "text": "I'd like to get some seeds, my good shroomer.",
         "topic": "TALK_MORLOCK_SHROOMER_TRADE",
-        "condition": { "u_has_item": "fertilizer_commercial", "count": 1 },
+        "condition": { "u_has_item": "fertilizer_commercial" },
         "effect": [
           { "u_sell_item": "fertilizer_commercial", "count": 1 },
           { "u_buy_item": "seed_mushroom", "count": 12, "container": "wrapper" }
         ]
       },
       {
-        "text": "[$100] I'd like to buy some ~specialty~ mushrooms.", 
+        "text": "[$100] I'd like to buy some ~specialty~ mushrooms.",
         "topic": "TALK_MORLOCK_SHROOMER_TRADE",
         "condition": { "u_has_cash": 10000 },
-        "effect": [
-          { "u_buy_item": "dry_mushroom_glowing", "count": 10, "cost": 10000, "container": "wrapper" }
-        ]
+        "effect": [ { "u_buy_item": "dry_mushroom_glowing", "count": 10, "cost": 10000, "container": "wrapper" } ]
       },
       { "text": "Later, <name_g>.", "topic": "TALK_DONE" }
     ]

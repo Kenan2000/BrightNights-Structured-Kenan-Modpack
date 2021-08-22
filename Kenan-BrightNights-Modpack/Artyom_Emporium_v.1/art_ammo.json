@@ -107,7 +107,7 @@
     "type": "AMMO",
     "name": "7.62x54mmR API/Explosive",
     "description": "Originally used by Soviet Anti-Air weapons, then used by snipers to blow apart fascist light armour. Now used by you. Careful using it too close to yourself. ",
-    "ranged_damage": { "damage_type": "stab", "armor_penetration": 10 },
+    "damage": { "damage_type": "stab", "armor_penetration": 10 },
     "extend": { "effects": [ "INCENDIARY", "EXPLOSIVE_SMALL" ] }
   },
   {
