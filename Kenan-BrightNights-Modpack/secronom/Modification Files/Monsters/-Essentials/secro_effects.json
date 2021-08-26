@@ -119,19 +119,19 @@
   },
   {
     "type": "effect_type",
-    "id": "omi_curse",
-    "name": [ "Ominous Curse" ],
-    "apply_message": "You've been cursed!",
-    "desc": [ "A terrifying curse eats away your insanity!" ],
-    "decay_messages": [ [ "You withdraw from the curse!", "good" ] ],
-    "remove_message": "The curse lifts away!",
+    "id": "nightwail_shadow",
+    "name": [ "Enshrouded" ],
+    "apply_message": "You've been enshrouded in shadows!",
+    "desc": [ "Thick shadow lingers around your body." ],
+    "decay_messages": [ [ "The thick shadow disperses!", "good" ] ],
+    "remove_message": "The shadow vanishes away!",
     "int_add_val": 1,
     "max_intensity": 5,
     "int_decay_step": -3,
-    "int_decay_tick": 60,
-    "max_duration": 300,
+    "int_decay_tick": 45,
+    "max_duration": 180,
     "rating": "bad",
-    "scaling_mods": { "int_mod": [ -2 ] }
+    "scaling_mods": { "int_mod": [ -0.66 ], "dex_mod": [ -0.33 ], "speed_mod": [ -2 ] }
   },
   {
     "type": "effect_type",
@@ -1089,6 +1089,12 @@
     "id": "secro_flesh_transmit_attack",
     "removes_effects": [ "docile" ],
     "blocks_effects": [ "docile" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "mon_zombie_tentawraith_stunmore_YES",
+    "apply_message": "You've been constricted!",
+    "rating": "bad"
   },
   {
     "type": "effect_type",
