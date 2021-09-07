@@ -59,9 +59,9 @@
     "armor_cut": 1,
     "vision_day": 45,
     "vision_night": 4,
+    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "harvest": "zombie",
     "death_function": [ "NORMAL" ],
-    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "flags": [
       "SEES",
       "HEARS",
@@ -105,9 +105,9 @@
     "armor_cut": 2,
     "vision_day": 35,
     "vision_night": 20,
+    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "harvest": "zombie",
     "death_function": [ "NORMAL" ],
-    "upgrades": { "half_life": 16, "into_group": "GROUP_LYING_UPGRADEX" },
     "flags": [
       "SEES",
       "HEARS",
@@ -128,13 +128,13 @@
     "looks_like": "mon_darkman",
     "type": "MONSTER",
     "name": { "str": "nightinwail" },
-    "description": "Gigantic, flying shadow, reeks in despair and hatred. A creature filled with mystery, unknown to what it does.",
+    "description": "Misty black shadow that covers over a great distance. A shady winged creature is barely visible from beyond it.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_3", "HUMAN" ],
     "volume": "1452000 ml",
     "weight": "81500 g",
-    "hp": 440,
-    "speed": 30,
+    "hp": 370,
+    "speed": 65,
     "diff": 15,
     "material": [ "flesh" ],
     "symbol": "☫",
@@ -153,12 +153,12 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "mon_summon_nightwail_shadow" },
-        "cooldown": 38,
-        "monster_message": "<color_yellow>%1$s splits a chunk of its shadow!</color>"
+        "spell_data": { "id": "mon_zombie_nightwail_shroud" },
+        "cooldown": 19,
+        "monster_message": "<color_yellow>Chunks of shadow emerges from %1$s!</color>"
       }
     ],
-    "regenerates": 10,
+    "regenerates": 1,
     "regenerates_in_dark": true,
     "death_function": [ "DISAPPEAR" ],
     "flags": [
@@ -169,8 +169,6 @@
       "WARM",
       "POISON",
       "NO_BREATHE",
-      "REVIVES",
-      "FILTHY",
       "FLIES",
       "PACIFIST",
       "HARDTOSHOOT",
@@ -187,12 +185,12 @@
     "id": "mon_zombie_nightwail_shadow",
     "type": "MONSTER",
     "name": { "str": "shadow" },
-    "description": "This is an animate shadow-looking thing, like a cloud, but black. There's nothing to fear about its appearance, nothing at all.",
+    "description": "This is an animate shadow-looking thing. There's nothing to fear about its appearance, nothing at all.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],
     "volume": "750 ml",
     "weight": "1000 g",
-    "hp": 20,
+    "hp": 5,
     "speed": 105,
     "diff": 1,
     "symbol": "⬮",
@@ -210,9 +208,9 @@
     "special_attacks": [
       {
         "type": "spell",
-        "spell_data": { "id": "mon_zombie_nightwail_shadow_curse_target" },
-        "cooldown": 10,
-        "monster_message": "<color_yellow>%1$s curses %3$s!</color>"
+        "spell_data": { "id": "mon_zombie_nightwail_shadow_enshroud_target" },
+        "cooldown": 6,
+        "monster_message": "<color_magenta>%1$s explodes!</color>"
       }
     ],
     "death_function": [ "DISAPPEAR" ],
