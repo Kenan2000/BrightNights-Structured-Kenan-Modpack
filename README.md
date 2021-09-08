@@ -36,7 +36,7 @@ Example commit of mod removal: [603464b7d4ee27430b84f3625cc4644f4510fb53](https:
   * A: Feel free to submit your issue into the [issues tab](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/issues).
 
 # Links to the legendary tileset by SomeDeadGuy
-Legendary **UndeadPeople** tileset by SomeDeadGuy: https://github.com/SomeDeadGuy/UndeadPeopleTileset
+Legendary **UndeadPeople** tileset by SomeDeadGuy, while Theawesomeboophis is it's current maintainer: https://github.com/Theawesomeboophis/UndeadPeopleTileset
 
 # Links to other cool stuff
 1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack)
