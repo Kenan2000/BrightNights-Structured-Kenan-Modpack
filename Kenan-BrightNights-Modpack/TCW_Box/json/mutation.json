@@ -7,12 +7,12 @@
     "description": "The head made of bronze is the amount of iron.\r\n+5 head defense.\r\nUnlock Skill: Head Hammer",
     "starting_trait": true,
     "social_modifiers": { "intimidate": 2 },
-	"armor": [ { "parts": "HEAD", "cut": 5, "bash": 5 } ],
+	"armor": [ { "parts": "head", "cut": 5, "bash": 5 } ],
     "cancels": [ "GLASSJAW" ],
 	"attacks": {
       "attack_text_u": "You hit a mallet at% s",
       "attack_text_npc": "% 1 $ s hits a hammer against% 2 $ s",
-      "body_part": "HEAD",
+      "body_part": "head",
       "chance": 25,
       "strength_damage": { "damage_type": "bash", "amount": 4 }
     }
@@ -32,7 +32,7 @@
 	"player_display": true,
     "description": "The less hair, the more powerful.\r\nHead Defense +8.\r\nUnlock Skills: Head Hammer, Broken Offspring Legs, Slap in the Face",
     "social_modifiers": { "intimidate": -5 },
-	"armor": [ { "parts": "HEAD", "cut": 8, "bash": 8 } ],
+	"armor": [ { "parts": "head", "cut": 8, "bash": 8 } ],
 	"attacks": [
 	{
       "attack_text_u": "*Punch * you made a hammer to% s!",

@@ -9,10 +9,10 @@
         "color": "red",
         "dangerous": true,
         "effects": [
-          { "effect_id": "secro_blood_acid", "body_part": "LEG_R", "min_duration": "1 seconds", "max_duration": "1 seconds" },
+          { "effect_id": "secro_blood_acid", "body_part": "leg_r", "min_duration": "1 seconds", "max_duration": "1 seconds" },
           {
             "effect_id": "secro_blood_acid",
-            "body_part": "LEG_L",
+            "body_part": "leg_l",
             "min_duration": "1 seconds",
             "max_duration": "1 seconds"
           }
@@ -23,10 +23,10 @@
         "name": "pool of blood acid",
         "color": "light_red",
         "effects": [
-          { "effect_id": "secro_blood_acid", "body_part": "LEG_R", "min_duration": "1 seconds", "max_duration": "2 seconds" },
+          { "effect_id": "secro_blood_acid", "body_part": "leg_r", "min_duration": "1 seconds", "max_duration": "2 seconds" },
           {
             "effect_id": "secro_blood_acid",
-            "body_part": "LEG_L",
+            "body_part": "leg_l",
             "min_duration": "1 seconds",
             "max_duration": "2 seconds"
           }
@@ -202,7 +202,7 @@
     "effect": "target_attack",
     "extra_effects": [ { "id": "secro_power_armor_flesh_devour", "hit_self": true } ],
     "effect_str": "secro_power_armor_flesh_devouring_note",
-    "affected_body_parts": [ "TORSO" ],
+    "affected_body_parts": [ "torso" ],
     "min_duration": 500,
     "max_duration": 500
   },
@@ -216,7 +216,7 @@
     "valid_targets": [ "self" ],
     "effect": "target_attack",
     "effect_str": "secro_power_armor_flesh_devouring",
-    "affected_body_parts": [ "HEAD", "MOUTH", "EYES", "ARM_L", "ARM_R", "HAND_R", "HAND_L", "LEG_L", "FOOT_L", "FOOT_R" ],
+    "affected_body_parts": [ "head", "mouth", "eyes", "arm_l", "arm_r", "hand_r", "hand_l", "leg_l", "foot_l", "foot_r" ],
     "min_duration": 500,
     "max_duration": 500
   },
@@ -643,7 +643,7 @@
     "valid_targets": [ "self" ],
     "extra_effects": [ { "id": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst_random" } ],
     "effect_str": "secro_power_armor_flesh_morphed_jugg_bonespikes_skeletaloutburst_cost",
-    "affected_body_parts": [ "HEAD", "TORSO", "ARM_R", "ARM_L", "LEG_R", "LEG_L" ],
+    "affected_body_parts": [ "head", "torso", "arm_r", "arm_l", "leg_r", "leg_l" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1
@@ -723,7 +723,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "effect_str": "secro_power_armor_flesh_created_gun_bonerifle_cost",
-    "affected_body_parts": [ "HEAD" ],
+    "affected_body_parts": [ "head" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1
@@ -737,7 +737,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "effect_str": "secro_power_armor_flesh_created_gun_bonerifle_cost",
-    "affected_body_parts": [ "TORSO" ],
+    "affected_body_parts": [ "torso" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1
@@ -751,7 +751,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "effect_str": "secro_power_armor_flesh_created_gun_bonerifle_cost",
-    "affected_body_parts": [ "ARM_L" ],
+    "affected_body_parts": [ "arm_l" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1
@@ -765,7 +765,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "effect_str": "secro_power_armor_flesh_created_gun_bonerifle_cost",
-    "affected_body_parts": [ "ARM_R" ],
+    "affected_body_parts": [ "arm_r" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1
@@ -779,7 +779,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "effect_str": "secro_power_armor_flesh_created_gun_bonerifle_cost",
-    "affected_body_parts": [ "LEG_L" ],
+    "affected_body_parts": [ "leg_l" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1
@@ -793,7 +793,7 @@
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
     "valid_targets": [ "self" ],
     "effect_str": "secro_power_armor_flesh_created_gun_bonerifle_cost",
-    "affected_body_parts": [ "LEG_R" ],
+    "affected_body_parts": [ "leg_r" ],
     "effect": "target_attack",
     "min_duration": 1,
     "max_duration": 1

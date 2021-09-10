@@ -9,7 +9,7 @@
     "volume": "0 ml",
     "weight": "0 g",
     "coverage": 0,
-    "covers": [ "TORSO" ],
+    "covers": [ "torso" ],
     "price": "10000 USD",
     "flags": [ "TRADER_AVOID", "ONLY_ONE", "SEMITANGIBLE", "ALLOWS_NATURAL_ATTACKS" ]
   },
@@ -18,21 +18,21 @@
     "name": "APEX suit module (system)",
     "type": "ARMOR",
     "copy-from": "apex_module",
-    "covers": [ "TORSO" ]
+    "covers": [ "torso" ]
   },
   {
     "abstract": "apex_module_cortex",
     "name": "APEX suit module (cortex)",
     "type": "ARMOR",
     "copy-from": "apex_module",
-    "covers": [ "HEAD" ]
+    "covers": [ "head" ]
   },
   {
     "abstract": "apex_module_mobility",
     "name": "APEX suit module (mobility)",
     "type": "ARMOR",
     "copy-from": "apex_module",
-    "covers": [ "HEAD" ]
+    "covers": [ "head" ]
   },
   {
     "id": "apex_module_strength",

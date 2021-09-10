@@ -150,7 +150,7 @@
     "starting_trait": true,
     "valid": false,
     "extend": { "category": [ "CATTLE", "SLIME", "CHIMERA", "PLANT", "TROGLOBITE" ] },
-    "armor": [ { "parts": [ "FOOT_L", "FOOT_R" ], "bash": 1, "cut": 1 } ],
+    "armor": [ { "parts": [ "foot_l", "foot_r" ], "bash": 1, "cut": 1 } ],
     "hp_modifier_secondary": 0.05
   },
   {
@@ -735,7 +735,7 @@
     "ugliness": 4,
     "description": "You've grown a set of gills, running from your neck up behind your ears.  They allow you to breathe easily over and underwater.  Slightly increases wet benefits.",
     "cancels": [ "LUNGS", "LUNGS_2", "GILLS" ],
-    "wet_protection": [ { "part": "HEAD", "good": 2 } ],
+    "wet_protection": [ { "part": "head", "good": 2 } ],
     "stamina_regen_modifier": 0.25
   },
   {
@@ -880,7 +880,7 @@
     "visibility": 8,
     "ugliness": 1,
     "description": "Your fur's grown out significantly around your cheeks and neck.  It provides minor protection against attacks (head, mouth: +1 cut, +1 heat).",
-    "armor": [ { "parts": [ "HEAD", "MOUTH" ], "cut": 1, "heat": 1 } ]
+    "armor": [ { "parts": [ "head", "mouth" ], "cut": 1, "heat": 1 } ]
   },
   {
     "type": "mutation",
@@ -915,16 +915,16 @@
     "ugliness": 5,
     "description": "You've grown a chitin exoskeleton made of thick, stiff plates.  It provides excellent physical protection (all: +8 bash, +12 cut, +3 acid, +2 bio, +2 heat), but reduces your dexterity by 2 and encumbers all body parts but your eyes and mouth.  Greatly reduces wet effects.",
     "encumbrance_always": [
-      [ "TORSO", 15 ],
-      [ "HEAD", 15 ],
-      [ "ARM_L", 15 ],
-      [ "ARM_R", 15 ],
-      [ "HAND_L", 10 ],
-      [ "HAND_R", 10 ],
-      [ "LEG_L", 15 ],
-      [ "LEG_R", 15 ],
-      [ "FOOT_L", 10 ],
-      [ "FOOT_R", 10 ]
+      [ "torso", 15 ],
+      [ "head", 15 ],
+      [ "arm_l", 15 ],
+      [ "arm_r", 15 ],
+      [ "hand_l", 10 ],
+      [ "hand_r", 10 ],
+      [ "leg_l", 15 ],
+      [ "leg_r", 15 ],
+      [ "foot_l", 10 ],
+      [ "foot_r", 10 ]
     ],
     "passive_mods": { "dex_mod": -1 },
     "armor": [ { "parts": "ALL", "bash": 8, "cut": 12, "acid": 3, "biological": 2, "heat": 2 } ]
@@ -961,16 +961,16 @@
     "ugliness": 4,
     "description": "Your exoskeleton has hardened considerably--restricting movement, granted--and boasts a fine coat of hairs that put feline whiskers to shame (all: +6 bash, +10 cut, +4 acid, +2 electric, +2 bio, +2 heat).",
     "encumbrance_always": [
-      [ "TORSO", 13 ],
-      [ "HEAD", 13 ],
-      [ "ARM_L", 13 ],
-      [ "ARM_R", 13 ],
-      [ "HAND_L", 12 ],
-      [ "HAND_R", 12 ],
-      [ "LEG_L", 13 ],
-      [ "LEG_R", 13 ],
-      [ "FOOT_L", 12 ],
-      [ "FOOT_R", 12 ]
+      [ "torso", 13 ],
+      [ "head", 13 ],
+      [ "arm_l", 13 ],
+      [ "arm_r", 13 ],
+      [ "hand_l", 12 ],
+      [ "hand_r", 12 ],
+      [ "leg_l", 13 ],
+      [ "leg_r", 13 ],
+      [ "foot_l", 12 ],
+      [ "foot_r", 12 ]
     ],
     "armor": [ { "parts": "ALL", "bash": 6, "cut": 10, "acid": 4, "electric": 2, "biological": 2, "heat": 2 } ]
   },
@@ -1152,7 +1152,7 @@
     "points": 1,
     "visibility": 1,
     "description": "The bottoms of your feet are strongly padded (feet: +2 bash, +1 cut).  You receive no movement penalty for not wearing shoes, and even receive a 10% bonus when moving barefoot.",
-    "armor": [ { "parts": [ "FOOT_L", "FOOT_R" ], "bash": 2, "cut": 1 } ]
+    "armor": [ { "parts": [ "foot_l", "foot_r" ], "bash": 2, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -1164,7 +1164,7 @@
     "ugliness": 2,
     "mixed_effect": true,
     "description": "Your feet have fused into hooves.  This allows kicking attacks to do much more damage, provides natural armor (feet: +1 bash, +3 acid), and removes the need to wear shoes; however, you can not wear shoes of any kind.  Reduces wet effects.",
-    "armor": [ { "parts": [ "FOOT_L", "FOOT_R" ], "bash": 1, "acid": 3 } ]
+    "armor": [ { "parts": [ "foot_l", "foot_r" ], "bash": 1, "acid": 3 } ]
   },
   {
     "type": "mutation",
@@ -1252,7 +1252,7 @@
     "visibility": 4,
     "ugliness": 2,
     "description": "You have a pair of large, feathered wings (arms: +1 bash, +1 cut).  Your body is too heavy to be able to fly, but you can use them to slow your descent during a fall, and will not take falling damage under any circumstances.",
-    "armor": [ { "parts": [ "ARM_L", "ARM_R" ], "bash": 1, "cut": 1 } ]
+    "armor": [ { "parts": [ "arm_l", "arm_r" ], "bash": 1, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -1279,7 +1279,7 @@
     "mixed_effect": true,
     "description": "You have grown noticeably taller and broader (torso, arms: +2 bash).  Much of it is useful muscle mass (Strength +2), but you find it throws off your balance and you get in your own way (+10 torso and arm encumbrance).",
     "extend": { "category": [ "BEAST", "CHIMERA", "PLANT" ] },
-    "armor": [ { "parts": [ "TORSO", "ARM_L", "ARM_R" ], "bash": 2 } ],
+    "armor": [ { "parts": [ "torso", "arm_l", "arm_r" ], "bash": 2 } ],
     "hp_adjustment": -2,
     "metabolism_modifier": 0.2,
     "fatigue_modifier": 0.1
@@ -1293,7 +1293,7 @@
     "visibility": 1,
     "description": "You carry your rugged body with the dignity you deserve (torso, arms: +2 bash).  Strength +2.",
     "extend": { "threshreq": [ "THRESH_BEAST", "THRESH_PLANT" ], "category": [ "BEAST", "PLANT" ] },
-    "armor": [ { "parts": [ "TORSO", "ARM_L", "ARM_R" ], "bash": 2 } ],
+    "armor": [ { "parts": [ "torso", "arm_l", "arm_r" ], "bash": 2 } ],
     "hp_adjustment": -2,
     "metabolism_modifier": 0.2,
     "fatigue_modifier": 0.1
@@ -1312,16 +1312,16 @@
     "leads_to": [ "MUT_TOUGH" ],
     "category": [ "CHIMERA" ],
     "encumbrance_always": [
-      [ "HEAD", 5 ],
-      [ "MOUTH", 5 ],
-      [ "ARM_L", 5 ],
-      [ "ARM_R", 5 ],
-      [ "HAND_L", 5 ],
-      [ "HAND_R", 5 ],
-      [ "LEG_L", 5 ],
-      [ "LEG_R", 5 ],
-      [ "FOOT_L", 5 ],
-      [ "FOOT_R", 5 ]
+      [ "head", 5 ],
+      [ "mouth", 5 ],
+      [ "arm_l", 5 ],
+      [ "arm_r", 5 ],
+      [ "hand_l", 5 ],
+      [ "hand_r", 5 ],
+      [ "leg_l", 5 ],
+      [ "leg_r", 5 ],
+      [ "foot_l", 5 ],
+      [ "foot_r", 5 ]
     ],
     "passive_mods": { "str_mod": 3 },
     "armor": [ { "parts": "ALL", "bash": 3, "cut": 1 } ],
@@ -1684,7 +1684,7 @@
     "ugliness": 2,
     "bodytemp_modifiers": [ 10, 25 ],
     "description": "Your arms have grown vibrantly colored feathers.  They effectively waterproof your arms and take the edge off hits (arms: +1 bash, +1 cut), but really get in the way.  They're simply too small to help you in the air.",
-    "armor": [ { "parts": [ "ARM_L", "ARM_R" ], "bash": 1, "cut": 1 } ]
+    "armor": [ { "parts": [ "arm_l", "arm_r" ], "bash": 1, "cut": 1 } ]
   },
   {
     "type": "mutation",
@@ -1696,7 +1696,7 @@
     "ugliness": 4,
     "mixed_effect": true,
     "description": "Your arms have transformed into tentacles, resulting in a bonus of 1 to dexterity, permanent hand encumbrance of 25, and inability to wear gloves.  Somewhat decreases wet penalties.",
-    "encumbrance_always": [ [ "HAND_L", 25 ], [ "HAND_R", 25 ] ]
+    "encumbrance_always": [ [ "hand_l", 25 ], [ "hand_r", 25 ] ]
   },
   {
     "type": "mutation",
@@ -1707,7 +1707,7 @@
     "visibility": 8,
     "ugliness": 5,
     "description": "Your arms have transformed into four tentacles, resulting in a bonus of 1 to dexterity, permanent hand encumbrance of 25, and inability to wear gloves.  You can make up to 3 extra attacks with them.  Somewhat decreases wet penalties.",
-    "encumbrance_always": [ [ "HAND_L", 25 ], [ "HAND_R", 25 ] ]
+    "encumbrance_always": [ [ "hand_l", 25 ], [ "hand_r", 25 ] ]
   },
   {
     "type": "mutation",
@@ -1718,7 +1718,7 @@
     "visibility": 9,
     "ugliness": 6,
     "description": "Your arms have transformed into eight tentacles, resulting in a bonus of 1 to dexterity, permanent hand encumbrance of 25, and inability to wear gloves.  You can make up to 7 extra attacks with them.  Somewhat decreases wet penalties.",
-    "encumbrance_always": [ [ "HAND_L", 25 ], [ "HAND_R", 25 ] ]
+    "encumbrance_always": [ [ "hand_l", 25 ], [ "hand_r", 25 ] ]
   },
   {
     "type": "mutation",
@@ -1729,7 +1729,7 @@
     "visibility": 8,
     "ugliness": 3,
     "description": "You have grown a thick shell over your torso, providing excellent armor (torso: +10 bash, +14 cut).  You find you can use the empty space as 16 storage space, but cannot wear anything on your torso.  Somewhat reduces wet effects.",
-    "armor": [ { "parts": "TORSO", "bash": 10, "cut": 14 } ]
+    "armor": [ { "parts": "torso", "bash": 10, "cut": 14 } ]
   },
   {
     "type": "mutation",
@@ -1741,7 +1741,7 @@
     "ugliness": 3,
     "mixed_effect": true,
     "description": "Your protective shell (torso: +14 bash, +18 cut) has grown large enough to accommodate--if need be--your whole body.  Activate to pull your head and limbs into your shell, trading mobility and vision for warmth and shelter.",
-    "armor": [ { "parts": "TORSO", "bash": 14, "cut": 18 } ],
+    "armor": [ { "parts": "torso", "bash": 14, "cut": 18 } ],
     "active": true
   },
   {
