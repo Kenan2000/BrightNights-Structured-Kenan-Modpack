@@ -135,7 +135,7 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 2500, "radius": 2 }
+    "explosion": { "damage": 1250, "radius": 2 }
   },
   {
     "type": "AMMO",
@@ -218,7 +218,7 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 3000, "radius": 3 }
+    "explosion": { "damage": 2500, "radius": 3 }
   },
   {
     "type": "AMMO",
@@ -333,7 +333,7 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 2500, "radius": 5 }
+    "explosion": { "damage": 7500, "radius": 5 }
   },
   {
     "type": "AMMO",
@@ -355,13 +355,8 @@
     "recoil": 1050000,
     "count": 1,
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
-    "effects": [ "CUSTOM_EXPLOSION" ],
-    "explode_in_fire": true,
-    "explosion": {
-      "damage": 3000,
-      "radius": 6,
-      "fragment": { "impact": { "damage_type": "cut", "amount": 4000, "armor_multiplier": 3 }, "range": 24 }
-    }
+    "effects": [ "AMMO_155MM_FRAG" ],
+    "explode_in_fire": true
   },
   {
     "type": "AMMO",
