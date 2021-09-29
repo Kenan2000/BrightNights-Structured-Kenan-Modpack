@@ -1,0 +1,30 @@
+[
+  {
+    "id": "style_krav_maga",
+    "copy-from": "style_krav_maga",
+    "type": "martial_art",
+    "name": { "str": "Krav Maga" },
+    "extend": { "weapons": [ "nec_fiber" ] }
+  },
+  {
+    "id": "style_swordsmanship",
+    "copy-from": "style_swordsmanship",
+    "type": "martial_art",
+    "name": { "str": "Medieval Swordsmanship" },
+    "extend": { "weapons": [ "nec_jogiri" ] }
+  },
+  {
+    "id": "style_ninjutsu",
+    "copy-from": "style_ninjutsu",
+    "type": "martial_art",
+    "name": { "str": "Ninjutsu" },
+    "extend": { "weapons": [ "nec_fiber", "nec_fine_katana" ] }
+  },
+  {
+    "id": "style_niten",
+    "copy-from": "style_niten",
+    "type": "martial_art",
+    "name": { "str": "Niten Ichi-Ryu" },
+    "extend": { "weapons": [ "nec_fine_katana" ] }
+  }
+]
