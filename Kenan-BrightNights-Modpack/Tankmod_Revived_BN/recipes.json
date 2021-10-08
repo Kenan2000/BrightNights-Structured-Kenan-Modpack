@@ -13,7 +13,7 @@
     "charges": 1,
     "using": [ [ "bullet_forming", 5 ], [ "ammo_bullet", 30 ] ],
     "qualities": [ { "id": "WRENCH", "level": 1 } ],
-    "components": [ [ [ "25mm_casing", 1 ] ], [ [ "gunpowder", 80 ], [ "gunpowder_rifle", 80 ] ], [ [ "lgrifle_primer", 1 ] ] ]
+    "components": [ [ [ "25mm_casing", 1 ] ], [ [ "gunpowder", 80 ] ], [ [ "lgrifle_primer", 1 ] ] ]
   },
   {
     "result": "bp_25mm_slug",
@@ -60,16 +60,7 @@
     "using": [ [ "ammo_bullet", 2000 ] ],
     "qualities": [ { "id": "WRENCH", "level": 1 } ],
     "tools": [ [ [ "fire", -1 ], [ "toolset", 10 ] ], [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [
-      [ [ "105mm_casing", 1 ] ],
-      [ [ "electric_primer_120mm", 1 ] ],
-      [
-        [ "gunpowder_artillery", 6000 ],
-        [ "gunpowder", 6000 ],
-        [ "gunpowder_pistol", 6000 ],
-        [ "gunpowder_shotgun", 6000 ]
-      ]
-    ]
+    "components": [ [ [ "105mm_casing", 1 ] ], [ [ "electric_primer_120mm", 1 ] ], [ [ "gunpowder", 6000 ] ] ]
   },
   {
     "type": "recipe",
@@ -101,17 +92,7 @@
     "using": [ [ "ammo_bullet", 3000 ] ],
     "qualities": [ { "id": "WRENCH", "level": 1 } ],
     "tools": [ [ [ "fire", -1 ], [ "toolset", 10 ] ] ],
-    "components": [
-      [ [ "120mm_casing", 1 ] ],
-      [ [ "electric_primer_120mm", 1 ] ],
-      [
-        [ "gunpowder_artillery", 8000 ],
-        [ "gunpowder", 8000 ],
-        [ "gunpowder_pistol", 8000 ],
-        [ "gunpowder_shotgun", 8000 ]
-      ],
-      [ [ "paper", 5 ] ]
-    ]
+    "components": [ [ [ "120mm_casing", 1 ] ], [ [ "electric_primer_120mm", 1 ] ], [ [ "gunpowder", 8000 ] ], [ [ "paper", 5 ] ] ]
   },
   {
     "type": "recipe",
@@ -143,16 +124,7 @@
     "using": [ [ "ammo_bullet", 3000 ] ],
     "qualities": [ { "id": "WRENCH", "level": 1 } ],
     "tools": [ [ [ "fire", -1 ], [ "toolset", 10 ] ], [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [
-      [ [ "120mm_casing", 1 ] ],
-      [ [ "electric_primer_120mm", 1 ] ],
-      [
-        [ "gunpowder_artillery", 8000 ],
-        [ "gunpowder", 8000 ],
-        [ "gunpowder_pistol", 8000 ],
-        [ "gunpowder_shotgun", 8000 ]
-      ]
-    ]
+    "components": [ [ [ "120mm_casing", 1 ] ], [ [ "electric_primer_120mm", 1 ] ], [ [ "gunpowder", 8000 ] ] ]
   },
   {
     "type": "recipe",
@@ -183,16 +155,7 @@
     "book_learn": [ [ "textbook_launcher", 5 ], [ "textbook_anarch", 6 ] ],
     "using": [ [ "ammo_bullet", 7000 ] ],
     "tools": [ [ [ "fire", -1 ], [ "toolset", 20 ] ] ],
-    "components": [
-      [ [ "primer_155mm", 1 ] ],
-      [
-        [ "gunpowder_artillery", 12000 ],
-        [ "gunpowder", 12000 ],
-        [ "gunpowder_pistol", 12000 ],
-        [ "gunpowder_shotgun", 12000 ]
-      ],
-      [ [ "paper", 12 ] ]
-    ]
+    "components": [ [ [ "primer_155mm", 1 ] ], [ [ "gunpowder", 12000 ] ], [ [ "paper", 12 ] ] ]
   },
   {
     "type": "recipe",
@@ -222,16 +185,7 @@
     "book_learn": [ [ "textbook_launcher", 6 ], [ "textbook_anarch", 8 ] ],
     "using": [ [ "ammo_bullet", 7000 ] ],
     "tools": [ [ [ "fire", -1 ], [ "toolset", 20 ] ], [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [
-      [ [ "primer_155mm", 1 ] ],
-      [
-        [ "gunpowder_artillery", 12000 ],
-        [ "gunpowder", 12000 ],
-        [ "gunpowder_pistol", 12000 ],
-        [ "gunpowder_shotgun", 12000 ]
-      ],
-      [ [ "paper", 6 ] ]
-    ]
+    "components": [ [ [ "primer_155mm", 1 ] ], [ [ "gunpowder", 12000 ] ], [ [ "paper", 6 ] ] ]
   },
   {
     "type": "recipe",
@@ -261,17 +215,7 @@
     "book_learn": [ [ "textbook_atomic_lab", 7 ] ],
     "using": [ [ "welding_standard", 25 ] ],
     "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "SCREW_FINE", "level": 1 } ],
-    "components": [
-      [ [ "mininuke", 1 ] ],
-      [ [ "primer_155mm", 1 ] ],
-      [
-        [ "gunpowder_artillery", 12000 ],
-        [ "gunpowder", 12000 ],
-        [ "gunpowder_pistol", 12000 ],
-        [ "gunpowder_shotgun", 12000 ]
-      ],
-      [ [ "paper", 6 ] ]
-    ]
+    "components": [ [ [ "mininuke", 1 ] ], [ [ "primer_155mm", 1 ] ], [ [ "gunpowder", 12000 ] ], [ [ "paper", 6 ] ] ]
   },
   {
     "result": "electric_primer_120mm",
@@ -337,11 +281,7 @@
     "qualities": [ { "id": "SAW_M", "level": 2 }, { "id": "WRENCH", "level": 2 } ],
     "tools": [ [ [ "25mm_casing", -1 ] ], [ [ "cordless_drill", 100 ] ] ],
     "using": [ [ "blacksmithing_standard", 10 ], [ "welding_standard", 5 ], [ "steel_standard", 10 ] ],
-    "components": [
-      [ [ "frame", 1 ] ],
-      [ [ "hard_plate", 1 ] ],
-      [ [ "spring", 1 ] ]
-    ]
+    "components": [ [ [ "frame", 1 ] ], [ [ "hard_plate", 1 ] ], [ [ "spring", 1 ] ] ]
   },
   {
     "result": "tank_gun_crude",
@@ -356,11 +296,7 @@
     "qualities": [ { "id": "SAW_M", "level": 2 }, { "id": "WRENCH", "level": 2 } ],
     "tools": [ [ [ "25mm_casing", -1 ] ], [ [ "cordless_drill", 200 ] ] ],
     "using": [ [ "blacksmithing_standard", 900 ], [ "welding_standard", 25 ], [ "steel_standard", 900 ] ],
-    "components": [
-      [ [ "frame", 2 ] ],
-      [ [ "hard_plate", 2 ] ],
-      [ [ "cable", 5 ] ]
-    ]
+    "components": [ [ [ "frame", 2 ] ], [ [ "hard_plate", 2 ] ], [ [ "cable", 5 ] ] ]
   },
   {
     "result": "tank_gun_crude_105mm",
@@ -375,11 +311,7 @@
     "qualities": [ { "id": "SAW_M", "level": 2 }, { "id": "WRENCH", "level": 2 } ],
     "tools": [ [ [ "25mm_casing", -1 ] ], [ [ "cordless_drill", 200 ] ] ],
     "using": [ [ "blacksmithing_standard", 650 ], [ "welding_standard", 50 ], [ "steel_standard", 650 ] ],
-    "components": [
-      [ [ "frame", 2 ] ],
-      [ [ "hard_plate", 2 ] ],
-      [ [ "cable", 5 ] ]
-    ]
+    "components": [ [ [ "frame", 2 ] ], [ [ "hard_plate", 2 ] ], [ [ "cable", 5 ] ] ]
   },
   {
     "result": "howitzer_gun_crude",
@@ -394,11 +326,7 @@
     "qualities": [ { "id": "SAW_M", "level": 2 }, { "id": "WRENCH", "level": 2 } ],
     "tools": [ [ [ "25mm_casing", -1 ] ], [ [ "cordless_drill", 300 ] ] ],
     "using": [ [ "blacksmithing_standard", 1350 ], [ "welding_standard", 75 ], [ "steel_standard", 1350 ] ],
-    "components": [
-      [ [ "frame", 3 ] ],
-      [ [ "hard_plate", 3 ] ],
-      [ [ "spring", 1 ] ]
-    ]
+    "components": [ [ [ "frame", 3 ] ], [ [ "hard_plate", 3 ] ], [ [ "spring", 1 ] ] ]
   },
   {
     "result": "tread1",
