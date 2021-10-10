@@ -406,7 +406,6 @@
       "BLOCK_WIND",
       "WINDOW"
     ],
-    "curtain_transform": "window_sierra_no_curtains",
     "examine_action": "curtains",
     "close": "sierra_curtains"
 	},
@@ -452,7 +451,6 @@
       "BLOCK_WIND",
       "WINDOW"
     ],
-    "curtain_transform": "window_sierra_no_curtains",
     "open": "window_sierra",
     "examine_action": "curtains"
 	},
@@ -519,12 +517,12 @@
         "translucency": 25,
 		"transparent": false,
         "effects": [
-          { "effect_id": "sierra_poison", "intensity": 20, "body_part": "HEAD", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
+          { "effect_id": "sierra_poison", "intensity": 20, "body_part": "head", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
 		  { "effect_id": "sierra_poison_display", "intensity": 20, "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
-		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "LEG_R", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
-		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "LEG_L", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
-		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "ARM_L", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
-		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "ARM_R", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" }
+		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "leg_r", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
+		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "leg_l", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
+		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "arm_l", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" },
+		  { "effect_id": "sierra_poison", "intensity": 20, "body_part": "arm_r", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false, "message": "Sierra Madre toxic gas burns through your entire body", "message_type": "bad" }
         ]
       }
     ],
@@ -549,12 +547,12 @@
         "translucency": 0,
 		"transparent": true,
         "effects": [
-          { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "HEAD", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
+          { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "head", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
 		  { "effect_id": "sierra_cloud_display", "intensity": 10, "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
-		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "LEG_R", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
-		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "LEG_L", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
-		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "ARM_R", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
-		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "ARM_L", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false }
+		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "leg_r", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
+		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "leg_l", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
+		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "arm_r", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false },
+		  { "effect_id": "sierra_cloud", "intensity": 10, "body_part": "arm_l", "min_duration": "5 seconds", "max_duration": "5 seconds", "immune_inside_vehicle": false }
         ]
       }
     ],

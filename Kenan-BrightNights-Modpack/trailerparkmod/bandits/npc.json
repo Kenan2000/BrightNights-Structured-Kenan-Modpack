@@ -15,9 +15,7 @@
 		"mission" : 0,
 		"//7" : "Mission_offered is based on the enum mission_id in mission.h.  0=MISSION_NULL",
 		"chat" : "TALK_MUG",
-		"faction" : "corrupt_militia",
-		"//8" : "by_mood is hostile to faction when angry, otherwise neutral",
-		"by_mood" : ["nether","wildlife","zombie"]
+		"faction" : "corrupt_militia"
 	},
 	{
 		"type" : "npc",
@@ -27,8 +25,6 @@
 		"attitude" : 10,
 		"mission" : 0,
 		"chat" : "TALK_MUG",
-		"faction" : "corrupt_militia",
-		"by_mood" : ["wildlife","zombie"],
-		"neutral" : ["nether"]
+		"faction" : "corrupt_militia"
 	}
 ]

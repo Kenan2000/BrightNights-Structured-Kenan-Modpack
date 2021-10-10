@@ -2,11 +2,9 @@
   {
     "id": "TALK_SHARE_EQUIPMENT",
     "type": "talk_topic",
-    "category": "CATEGORY_EQUIP",
     "responses": [
       {
         "text": "I'm not asking anymore.  Give me your stuff or else!",
-        "topic": "TALK_MUG_NPC",
         "condition": { "not": { "u_has_any_trait": [ "PACIFIST","PROF_FED","PROF_PD_DET","PROF_SWAT","PROF_POLICE","PROF_CYBERCOP" ] } },
         "trial": { "type": "INTIMIDATE", "difficulty": 0, "mod": [ [ "BRAVERY", -3 ], [ "FEAR", 2 ] ] }, 
         "success": { "topic": "TALK_MUG_NPC", "opinion": { "trust":-10, "anger": 5, "value": -5, "fear": 2 } },

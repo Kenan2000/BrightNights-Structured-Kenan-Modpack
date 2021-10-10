@@ -9,7 +9,7 @@
     "volume": "2250 ml",
     "price": "3000 USD",
     "to_hit": -1,
-    "bash": 12,
+    "bashing": 12,
     "material": [ "diamond", "superalloy", "steel" ],
     "symbol": ":",
     "color": "dark_gray",
@@ -18,13 +18,10 @@
     "max_charges": 1,
     "gunmod_data": {
       "location": "barrel",
-      "volume": "2250 ml",
-      "integral_volume": 7,
       "mod_targets": [ "rifle" ],
       "dispersion_modifier": -855,
       "damage_modifier": 45,
-      "range_modifier": 40,
-      "durability_modifier": 7
+      "range_modifier": 40
     },
     "use_action": {
       "target": "hydrogen_gun_h_barrel",
@@ -47,15 +44,13 @@
     "//": "including hydrogen canister mass because 'NO_UNLOAD' flag does the same as 'IRREMOVABLE' in a tool that also can be attached as gun mod",
     "volume": "2250 ml",
     "to_hit": -1,
-    "bash": 12,
+    "bashing": 12,
     "material": [ "diamond", "superalloy", "steel" ],
     "symbol": ":",
     "color": "dark_gray",
     "ammo": "plasma",
     "gunmod_data": {
       "location": "barrel",
-      "volume": "2250 ml",
-      "integral_volume": 7,
       "mod_targets": [ "rifle" ],
       "dispersion_modifier": -900,
       "damage_modifier": 83,
@@ -142,7 +137,6 @@
     "damage_modifier": 1,
     "range_modifier": 0,
     "add_mod": [ [ "stock", 1 ] ],
-    "durability_modifier": 1,
     "flags": [ "IRREMOVABLE" ]
   },
   {

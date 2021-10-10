@@ -368,7 +368,7 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_coreexpand1", "origin_npc": true },
           { "npc_lose_effect": "secro_flesh_building_core1" },
-          { "npc_add_effect": "secro_flesh_built_core1", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_core1" }
         ]
       },
       {
@@ -380,7 +380,7 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_coreexpand2", "origin_npc": true },
           { "npc_lose_effect": "secro_flesh_building_core2" },
-          { "npc_add_effect": "secro_flesh_built_core2", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_core2" }
         ]
       },
       {
@@ -392,7 +392,7 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_coreexpand3", "origin_npc": true },
           { "npc_lose_effect": "secro_flesh_building_core3" },
-          { "npc_add_effect": "secro_flesh_built_core3", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_core3" }
         ]
       },
       {
@@ -405,7 +405,7 @@
           { "mapgen_update": "secro_fleshcamp_expandroom_top", "origin_npc": true },
           { "mapgen_update": "secro_fleshcamp_expandroom_north", "origin_npc": true, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_expandroom_top" },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_expandroom_top" }
         ]
       },
       {
@@ -420,8 +420,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_meatfarm_north", "origin_npc": true, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_meatfarm_top" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm_top", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm" },
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm_top" }
         ]
       },
       {
@@ -436,8 +436,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_splicer_north", "origin_npc": true, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_splicer_top" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer_top", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_splicer" },
+          { "npc_add_effect": "secro_flesh_built_room_splicer_top" }
         ]
       },
       {
@@ -452,8 +452,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_modifier_north", "origin_npc": true, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_modifier_top" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier_top", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_modifier" },
+          { "npc_add_effect": "secro_flesh_built_room_modifier_top" }
         ]
       },
       {
@@ -468,8 +468,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_hatchery_north", "origin_npc": true, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_hatchery_top" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery_top", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_hatchery" },
+          { "npc_add_effect": "secro_flesh_built_room_hatchery_top" }
         ]
       },
       {
@@ -484,8 +484,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_artifice_north", "origin_npc": true, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_artifice_top" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice_top", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_artifice" },
+          { "npc_add_effect": "secro_flesh_built_room_artifice_top" }
         ]
       },
       {
@@ -501,7 +501,7 @@
           { "mapgen_update": "secro_fleshcamp_expandroom_right", "origin_npc": true },
           { "mapgen_update": "secro_fleshcamp_expandroom_east", "origin_npc": true, "offset_x": 1 },
           { "npc_lose_effect": "secro_flesh_building_expandroom_right" },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_expandroom_right" }
         ]
       },
       {
@@ -516,8 +516,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_meatfarm_east", "origin_npc": true, "offset_x": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_meatfarm_right" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm_right", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm" },
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm_right" }
         ]
       },
       {
@@ -532,8 +532,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_splicer_east", "origin_npc": true, "offset_x": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_splicer_right" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer_right", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_splicer" },
+          { "npc_add_effect": "secro_flesh_built_room_splicer_right" }
         ]
       },
       {
@@ -548,8 +548,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_modifier_east", "origin_npc": true, "offset_x": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_modifier_right" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier_right", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_modifier" },
+          { "npc_add_effect": "secro_flesh_built_room_modifier_right" }
         ]
       },
       {
@@ -564,8 +564,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_hatchery_east", "origin_npc": true, "offset_x": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_hatchery_right" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery_right", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_hatchery" },
+          { "npc_add_effect": "secro_flesh_built_room_hatchery_right" }
         ]
       },
       {
@@ -580,8 +580,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_artifice_east", "origin_npc": true, "offset_x": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_artifice_right" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice_right", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_artifice" },
+          { "npc_add_effect": "secro_flesh_built_room_artifice_right" }
         ]
       },
       {
@@ -597,7 +597,7 @@
           { "mapgen_update": "secro_fleshcamp_expandroom_down", "origin_npc": true },
           { "mapgen_update": "secro_fleshcamp_expandroom_south", "origin_npc": true, "offset_y": 1 },
           { "npc_lose_effect": "secro_flesh_building_expandroom_down" },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_expandroom_down" }
         ]
       },
       {
@@ -612,8 +612,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_meatfarm_south", "origin_npc": true, "offset_y": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_meatfarm_down" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm_down", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm" },
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm_down" }
         ]
       },
       {
@@ -628,8 +628,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_splicer_south", "origin_npc": true, "offset_y": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_splicer_down" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer_down", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_splicer" },
+          { "npc_add_effect": "secro_flesh_built_room_splicer_down" }
         ]
       },
       {
@@ -644,8 +644,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_modifier_south", "origin_npc": true, "offset_y": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_modifier_down" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier_down", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_modifier" },
+          { "npc_add_effect": "secro_flesh_built_room_modifier_down" }
         ]
       },
       {
@@ -660,8 +660,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_hatchery_south", "origin_npc": true, "offset_y": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_hatchery_down" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery_down", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_hatchery" },
+          { "npc_add_effect": "secro_flesh_built_room_hatchery_down" }
         ]
       },
       {
@@ -676,8 +676,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_artifice_south", "origin_npc": true, "offset_y": 1 },
           { "npc_lose_effect": "secro_flesh_building_room_artifice_down" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice_down", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_artifice" },
+          { "npc_add_effect": "secro_flesh_built_room_artifice_down" }
         ]
       },
       {
@@ -693,7 +693,7 @@
           { "mapgen_update": "secro_fleshcamp_expandroom_left", "origin_npc": true },
           { "mapgen_update": "secro_fleshcamp_expandroom_west", "origin_npc": true, "offset_x": -1 },
           { "npc_lose_effect": "secro_flesh_building_expandroom_left" },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_expandroom_left" }
         ]
       },
       {
@@ -708,8 +708,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_meatfarm_west", "origin_npc": true, "offset_x": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_meatfarm_left" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_meatfarm_left", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm" },
+          { "npc_add_effect": "secro_flesh_built_room_meatfarm_left" }
         ]
       },
       {
@@ -724,8 +724,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_splicer_west", "origin_npc": true, "offset_x": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_splicer_left" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_splicer_left", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_splicer" },
+          { "npc_add_effect": "secro_flesh_built_room_splicer_left" }
         ]
       },
       {
@@ -740,8 +740,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_modifier_west", "origin_npc": true, "offset_x": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_modifier_left" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_modifier_left", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_modifier" },
+          { "npc_add_effect": "secro_flesh_built_room_modifier_left" }
         ]
       },
       {
@@ -756,8 +756,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_hatchery_west", "origin_npc": true, "offset_x": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_hatchery_left" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_hatchery_left", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_hatchery" },
+          { "npc_add_effect": "secro_flesh_built_room_hatchery_left" }
         ]
       },
       {
@@ -772,8 +772,8 @@
         "effect": [
           { "mapgen_update": "secro_fleshcamp_room_artifice_west", "origin_npc": true, "offset_x": -1 },
           { "npc_lose_effect": "secro_flesh_building_room_artifice_left" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_built_room_artifice_left", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_room_artifice" },
+          { "npc_add_effect": "secro_flesh_built_room_artifice_left" }
         ]
       },
       {
@@ -800,7 +800,7 @@
           { "mapgen_update": "secro_fleshcamp_build_wall1_ll", "origin_npc": true, "offset_x": -2 },
           { "mapgen_update": "secro_fleshcamp_build_wall1_llu", "origin_npc": true, "offset_x": -2, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_def_wall1" },
-          { "npc_add_effect": "secro_flesh_built_def_wall1", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_def_wall1" }
         ]
       },
       {
@@ -827,7 +827,7 @@
           { "mapgen_update": "secro_fleshcamp_build_wall2_ll", "origin_npc": true, "offset_x": -2 },
           { "mapgen_update": "secro_fleshcamp_build_wall2_llu", "origin_npc": true, "offset_x": -2, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_def_wall2" },
-          { "npc_add_effect": "secro_flesh_built_def_wall2", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_def_wall2" }
         ]
       },
       {
@@ -854,7 +854,7 @@
           { "mapgen_update": "secro_fleshcamp_build_wall3_ll", "origin_npc": true, "offset_x": -2 },
           { "mapgen_update": "secro_fleshcamp_build_wall3_llu", "origin_npc": true, "offset_x": -2, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_def_wall3" },
-          { "npc_add_effect": "secro_flesh_built_def_wall3", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_def_wall3" }
         ]
       },
       {
@@ -881,7 +881,7 @@
           { "mapgen_update": "secro_fleshcamp_build_wall4_ll", "origin_npc": true, "offset_x": -2 },
           { "mapgen_update": "secro_fleshcamp_build_wall4_llu", "origin_npc": true, "offset_x": -2, "offset_y": -1 },
           { "npc_lose_effect": "secro_flesh_building_def_wall4" },
-          { "npc_add_effect": "secro_flesh_built_def_wall4", "duration": "PERMANENT" }
+          { "npc_add_effect": "secro_flesh_built_def_wall4" }
         ]
       },
       {

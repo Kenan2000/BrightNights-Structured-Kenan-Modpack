@@ -69,7 +69,6 @@
         "gun_type": "nailgun",
         "fake_skills": [ [ "gun", 0 ], [ "pistol", 2 ] ],
         "fake_dex": 8,
-        "range": 3,
         "ranges": [ [ 0, 3, "DEFAULT" ] ]
       }
     ],
@@ -113,7 +112,6 @@
         "gun_type": "watercannon",
         "fake_skills": [ [ "gun", 2 ], [ "launcher", 2 ] ],
         "fake_dex": 8,
-        "range": 5,
         "ranges": [ [ 0, 5, "BURST" ] ]
       }
     ],
@@ -244,7 +242,7 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 2,
-    "melee_bash": 8,
+    "melee_cut": 8,
     "dodge": 2,
     "revert_to_itype": "bot_protectron_fisto_inactive",
     "armor_bash": 12,

@@ -1,18 +1,14 @@
 [
    {
       "type": "region_settings",
-      "id": "wastes",                      "//": "identifier, when region_map is in it will determine alternatives ('desert' etc)",
-      "house_basement_chance": 4,           "//1": "one_in(n) houses with basements",
-      "default_oter": "field",              "//2": "default oter_id (anything that isn't a house/road/etc) some become forests",
-      "default_groundcover": {              "//3": "biome settings for generic 'grass_or_dirt' (which is reproduced below",
-          "primary": "t_sand",             "//4": "default ter_id on ground",
-          "ratio": 5,                       "//5": "one_in(n) chance that it becomes...",
-          "secondary": "t_searth_test",            "//": "...this instead"
-      },
-      "field_coverage": {                   "//6": "biome settings for builtin field mapgen. The values below replicate results of hardcoded 'field' mapgen",
-          "percent_coverage": 0.9333,       "//7": "% of tiles that have a plant: one_in(120)",
-          "default_ter": "t_shrub",         "//8": "default plant",
-		  "//9": "% of plants/features that aren't default_ter",
+      "id": "wastes",                      "//1": "identifier, when region_map is in it will determine alternatives ('desert' etc)",
+      "house_basement_chance": 4,           "//2": "one_in(n) houses with basements",
+      "default_oter": "field",              "//3": "default oter_id (anything that isn't a house/road/etc) some become forests",
+      "default_groundcover": [ [ "t_sand", 5 ] ],              "//4": "biome settings for generic 'grass_or_dirt' (which is reproduced below",   "//5": "default ter_id on ground", "//6": "one_in(n) chance that it becomes...",  "//7": "...this instead",
+      "field_coverage": {                   "//8": "biome settings for builtin field mapgen. The values below replicate results of hardcoded 'field' mapgen",
+          "percent_coverage": 0.9333,       "//9": "% of tiles that have a plant: one_in(120)",
+          "default_ter": "t_shrub",         "//10": "default plant",
+		  "//11": "% of plants/features that aren't default_ter",
           "other": {                        
               "t_shrub_blueberry": 0.4166,
               "t_shrub_strawberry": 0.4166,
@@ -24,9 +20,9 @@
               "f_boulder_medium": 0.6666,
               "f_boulder_large": 0.3333
           },
-          "boost_chance": 0.833,            "//10": "% of fields with boosted plant growth",
-          "boosted_percent_coverage": 2.5,  "//11": "for the above: total percent coverage jumps to this amount",
-		  "//12": "...and the first non-default picked from this list...",
+          "boost_chance": 0.833,            "//12": "% of fields with boosted plant growth",
+          "boosted_percent_coverage": 2.5,  "//13": "for the above: total percent coverage jumps to this amount",
+		  "//14": "...and the first non-default picked from this list...",
           "boosted_other": {                
               "t_shrub_blueberry": 40.0,
               "t_shrub_strawberry": 30.0,
@@ -36,13 +32,13 @@
               "f_datura": 0.2,
               "f_dandelion": 6.6
           },
-          "boosted_other_percent": 50.0,    "//13": "...accounts for this % of total coverage"
+          "boosted_other_percent": 50.0,    "//15": "...accounts for this % of total coverage"
       },
-	  "//14": "mapping for weighted lists of extras",
+	  "//16": "mapping for weighted lists of extras",
       "map_extras": {                       
           "field": {
-              "chance": 90,                 "//15": "one in # chance of spawning an extra",
-			  "//16": "weighted list",
+              "chance": 90,                 "//17": "one in # chance of spawning an extra",
+			  "//18": "weighted list",
               "extras": {                   
                   "mx_helicopter": 40,
                   "mx_military": 8,
@@ -55,8 +51,8 @@
               }
           },
           "road": {
-              "chance": 75,                 "//17": "one in # chance of spawning an extra",
-			  "//18": "weighted list",
+              "chance": 75,                 "//19": "one in # chance of spawning an extra",
+			  "//20": "weighted list",
               "extras": {                   
                   "mx_helicopter": 40,
                   "mx_military": 25,
@@ -70,8 +66,8 @@
               }
           },
           "building": {
-              "chance": 90,                 "//19": "one in # chance of spawning an extra",
-			  "//20": "weighted list",
+              "chance": 90,                 "//21": "one in # chance of spawning an extra",
+			  "//22": "weighted list",
               "extras": {                   
                   "mx_military": 5,
                   "mx_science": 12,
@@ -81,8 +77,8 @@
               }
           },
           "subway": {
-              "chance": 75,                 "//21": "one in # chance of spawning an extra",
-			  "//22": "weighted list",
+              "chance": 75,                 "//23": "one in # chance of spawning an extra",
+			  "//24": "weighted list",
               "extras": {                   
                   "mx_military": 5,
                   "mx_science": 12,
@@ -90,22 +86,21 @@
               }
           }
       },
-      "num_forests": 5,                   "//23": "# of forest chunks",
-      "forest_size_min": 0,                "//24": "size range of forest chunk",
-      "forest_size_max": 5,                "//25": "note: 32400 tiles in omap, 250*minmax = 3750-10000 default_oters become forests",
-      "swamp_maxsize": 4,                   "//26": "SWAMPINESS // Affects the size of a swamp",
-      "swamp_river_influence": 5,           "//27": "voodoo magic sauce: more increases swampyness of forests around rivers",
-      "swamp_spread_chance": 8500,          "//28": "one_in(n) chance a swampy forest makes a swamp in a non-forest. Apparently.",
+      "num_forests": 5,                   "//25": "# of forest chunks",
+      "forest_size_min": 0,                "//26": "size range of forest chunk",
+      "forest_size_max": 5,                "//27": "note: 32400 tiles in omap, 250*minmax = 3750-10000 default_oters become forests",
+      "swamp_maxsize": 4,                   "//28": "SWAMPINESS // Affects the size of a swamp",
+      "swamp_river_influence": 5,           "//29": "voodoo magic sauce: more increases swampyness of forests around rivers",
+      "swamp_spread_chance": 8500,          "//30": "one_in(n) chance a swampy forest makes a swamp in a non-forest. Apparently.",
       "city": {
-          "type": "town",
-          "shop_radius": 60,                "//29": "determine radial frequency of shops / parks / houses for towns. tldr: less means more",
-          "park_radius": 130,               "//30": "this is not a cut and dry % but rather an inverse voodoo number; rng(0,99) > VOODOO * distance / citysize;",
-		  "//31": "weighted list for park overmap terrains",
+          "shop_radius": 60,                "//31": "determine radial frequency of shops / parks / houses for towns. tldr: less means more",
+          "park_radius": 130,               "//32": "this is not a cut and dry % but rather an inverse voodoo number; rng(0,99) > VOODOO * distance / citysize;",
+		  "//33": "weighted list for park overmap terrains",
           "parks": {                        
               "park": 4,
               "pool": 1
           },
-		  "//32": "weighted list of oterrains for commercial zoning",
+		  "//34": "weighted list of oterrains for commercial zoning",
           "shops": {                        
               "s_gas": 7,
               "s_pharm": 3,

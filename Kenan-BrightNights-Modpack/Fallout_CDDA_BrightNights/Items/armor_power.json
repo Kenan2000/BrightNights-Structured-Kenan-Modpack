@@ -13,7 +13,7 @@
     "material": [ "steel" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 30,
 	"storage": "2500 ml",
@@ -37,7 +37,7 @@
     "power_draw": 4000000,
     "revert_to": "power_armor_t51",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s armor disengages.", "target": "power_armor_t51" },
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ]
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ]
   },
   {
     "id": "power_armor_helmet_t51",
@@ -53,7 +53,7 @@
     "material": [ "steel" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 30,
     "warmth": 90,
@@ -77,7 +77,7 @@
     "material": [ "hardsteel", "steel" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 80,
 	"storage": "4 L",
@@ -100,7 +100,7 @@
     "power_draw": 4000000,
     "revert_to": "power_armor_t45",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s armor disengages.", "target": "power_armor_t45" },
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ]
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ]
   },
   {
     "id": "power_armor_helmet_t45",
@@ -116,7 +116,7 @@
     "material": [ "hardsteel", "steel" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 80,
     "warmth": 60,
@@ -140,7 +140,7 @@
     "material": [ "ceramic", "superalloy" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 30,
 	"storage": "2500 ml",
@@ -163,7 +163,7 @@
     "power_draw": 4000000,
     "revert_to": "power_armor_x01",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s armor disengages.", "target": "power_armor_x01" },
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ]
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ]
   },
   {
     "id": "power_armor_helmet_x01",
@@ -179,7 +179,7 @@
     "material": [ "ceramic", "superalloy" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 30,
     "warmth": 90,
@@ -233,7 +233,7 @@
     "power_draw": 15000,
     "revert_to": "power_armor_helmet_x01",
     "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "The %s flicks off.", "target": "power_armor_helmet_x01" },
-    "covers": [ "HEAD" ],
+    "covers": [ "head" ],
     "techniques": [ "WBLOCK_1" ],
     "magazine_well": 1
   }

@@ -12,7 +12,7 @@
         "armor_penetration": 10
       }
     ],
-    "body_parts": [ [ "TORSO", 1 ] ],
+    "body_parts": [ [ "torso", 1 ] ],
     "effects": [
       { "id": "stunned", "duration": 2, "chance": 75 },
       { "id": "parasite_poison", "duration": 10, "chance": 100 }
@@ -35,7 +35,7 @@
         "armor_penetration": 10
       }
     ],
-    "body_parts": [ [ "TORSO", 1 ] ],
+    "body_parts": [ [ "torso", 1 ] ],
     "effects": [
       { "id": "stunned", "duration": 2, "chance": 75 },
       { "id": "parasite_poison", "duration": 10, "chance": 100 }
@@ -59,9 +59,9 @@
         "armor_multiplier": 0.5
       }
     ],
-    "body_parts": [ [ "TORSO", 1 ] ],
+    "body_parts": [ [ "torso", 1 ] ],
     "effects": [
-      { "id": "bleed", "duration": 50, "bp": "TORSO", "chance": 100 },
+      { "id": "bleed", "duration": 50, "bp": "torso", "chance": 100 },
       { "id": "parasite_poison", "duration": 50, "chance":100 }
     ],
     "hit_dmg_u": "The %1$s tentacle impales your midsection with a white hot flash of pain!",
@@ -82,9 +82,9 @@
         "armor_multiplier": 0.8
       }
     ],
-    "body_parts": [ [ "TORSO", 1 ] ],
+    "body_parts": [ [ "torso", 1 ] ],
     "effects": [
-      { "id": "bleed", "duration": 5, "bp": "TORSO", "chance": 50 },
+      { "id": "bleed", "duration": 5, "bp": "torso", "chance": 50 },
       { "id": "parasite_poison", "duration": 5, "chance": 10 }
     ],
     "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your chest!",
@@ -105,9 +105,9 @@
         "armor_multiplier": 0.8
       }
     ],
-    "body_parts": [ [ "LEG_L", 1 ] ],
+    "body_parts": [ [ "leg_l", 1 ] ],
     "effects": [
-      { "id": "bleed", "duration": 5, "bp": "LEG_L", "chance": 50 },
+      { "id": "bleed", "duration": 5, "bp": "leg_l", "chance": 50 },
       { "id": "parasite_poison", "duration": 5, "chance": 10 }
     ],
     "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your leg!",
@@ -128,9 +128,9 @@
         "armor_multiplier": 0.8
       }
     ],
-    "body_parts": [ [ "LEG_R", 1 ] ],
+    "body_parts": [ [ "leg_r", 1 ] ],
     "effects": [
-      { "id": "bleed", "duration": 5, "bp": "LEG_R", "chance": 50 },
+      { "id": "bleed", "duration": 5, "bp": "leg_r", "chance": 50 },
       { "id": "parasite_poison", "duration": 5, "chance": 10 }
     ],
     "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your leg!",
@@ -151,9 +151,9 @@
         "armor_multiplier": 0.8
       }
     ],
-    "body_parts": [ [ "ARM_L", 1 ] ],
+    "body_parts": [ [ "arm_l", 1 ] ],
     "effects": [
-      { "id": "bleed", "duration": 5, "bp": "ARM_L", "chance": 50 },
+      { "id": "bleed", "duration": 5, "bp": "arm_l", "chance": 50 },
       { "id": "parasite_poison", "duration": 5, "chance": 10 }
     ],
     "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your arm!",
@@ -175,10 +175,10 @@
       }
     ],
 	"effects": [
-      { "id": "bleed", "duration": 5, "bp": "ARM_R", "chance": 50 },
+      { "id": "bleed", "duration": 5, "bp": "arm_r", "chance": 50 },
       { "id": "parasite_poison", "duration": 5, "chance": 10 }
     ],
-    "body_parts": [ [ "ARM_R", 1 ] ],
+    "body_parts": [ [ "arm_r", 1 ] ],
     "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your arm!",
     "hit_dmg_npc": "Moving in unatural ways, the %1$s tentacle slashes across <npcname>'s arm!",
     "no_dmg_msg_u": "The %1$s tentacle flicks swiftly across you, but fails to score any serious hit!",
@@ -197,9 +197,9 @@
         "armor_multiplier": 0.8
       }
     ],
-    "body_parts": [ [ "HEAD", 1 ] ],
+    "body_parts": [ [ "head", 1 ] ],
     "effects": [
-      { "id": "bleed", "duration": 5, "bp": "HEAD", "chance": 50 },
+      { "id": "bleed", "duration": 5, "bp": "head", "chance": 50 },
       { "id": "parasite_poison", "duration": 2, "chance": 10 }
     ],
     "hit_dmg_u": "Moving in unatural ways, the %1$s tentacle slashes across your head!",

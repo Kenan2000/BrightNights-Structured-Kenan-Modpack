@@ -64,7 +64,7 @@
         "mod_targets" : [ "rifle" ],
         "volume" : 1,
         "price" : 500000,
-		"ups_charges": -250,
+		"ups_charges_modifier": -250,
 		"flags": [ "RADIOACTIVE", "LEAK_ALWAYS" ]
     },
 	{
@@ -74,7 +74,7 @@
         "description" : "A container in the size of a can filled with incendiary powder and plutonium slurry that can be inserted into the S-01 Rail Accelerator mk2. Doing so will superheat the projectiles, causing the air they travel through to catch on fire while greatly improving their penetrative power.",
         "location": "battery",
         "weight" : 85,
-		"dispersion": 10,
+		"dispersion_modifier": 10,
         "color" : "red",
         "symbol" : ":",
         "material" : ["steel", "plastic"],
@@ -91,7 +91,7 @@
         "description" : "A container in the size of a can filled with magnesium powder, concentrated acid and plutonium slurry that can be inserted into the S-01 Rail Accelerator mk2. Doing so will charge the projectiles with electricity that will shock its targets.",
         "location": "battery",
         "weight" : 85,
-		"dispersion": 10,
+		"dispersion_modifier": 10,
         "color" : "light_blue",
         "symbol" : ":",
         "material" : ["steel", "plastic"],

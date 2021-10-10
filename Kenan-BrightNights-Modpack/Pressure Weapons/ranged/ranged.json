@@ -3,8 +3,7 @@
         "copy-from": "rifle_base",
         "id": "press_rifle",
         "type": "GUN",
-        "name": "pressure rifle",
-        "name-plural": "pressure rifles",
+        "name": { "str": "pressure rifle", "str_pl": "pressure rifles" },
         "description": "A crudely made pressure rifle. Properly named, uses built up air-pressure to fire a bolt at high speeds",
         "skill": "rifle",
         "weight": 400,
@@ -22,6 +21,6 @@
         "dispersion": 480,
         "durability": 6,
         "reload": 420,
-        "mods": ["improve_sights"]
+        "built_in_mods": ["improve_sights"]
     }
 ]

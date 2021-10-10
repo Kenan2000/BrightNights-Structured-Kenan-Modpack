@@ -32,8 +32,7 @@
 	{
 		"type": "COMESTIBLE",
 		"id": "willow_fibres",
-		"name": "raw willow fibre",
-		"name_plural": "raw willow fibres",
+		"name": { "str": "raw willow fibre", "str_pl": "raw willow fibres" },
 		"description": "The fibrous inner bark of willow, these have been boiled to loosen the fibres.",
 		"material": "veggy",
 		"weight": 105,
@@ -44,8 +43,7 @@
 	{
 		"type": "COMESTIBLE",
 		"id": "willow_reed",
-		"name": "willow reed",
-		"name_plural": "willow reeds",
+		"name": { "str": "willow reed", "str_pl": "willow reeds" },
 		"description": "A thin six foot willow stave. Useful for weaving into basketry or stripping for its bark.",
 		"material": "wood",
 		"flags": [ "TRADER_AVOID", "FIREWOOD" ],
@@ -57,8 +55,7 @@
 	{
 		"type": "COMESTIBLE",
 		"id": "willow_reed_bundle",
-		"name": "willow reed bundle",
-		"name_plural": "willow reed bundles",
+		"name": { "str": "willow reed bundle", "str_pl": "rillow reed bundles" },
 		"description": "A tied bundle of willow reeds, easier to transport",
 		"material": "wood",
 		"flags": [ "TRADER_AVOID", "FIREWOOD" ],

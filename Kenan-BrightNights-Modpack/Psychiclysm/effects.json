@@ -176,7 +176,8 @@
       "per_mod": [ -2, -1 ],
       "int_mod": [ -1, -1 ]
     },
-    "show_in_info": true
+    "show_in_info": true,
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -407,7 +408,6 @@
     "type": "effect_type",
     "id": "psychic_death",
     "name": [ "Fatal Brain Trauma"],
-    "bp": "HEAD",
     "desc": [ "Runaway psychic feedback is frying the synapses in your brain.  You have only moments to live." ],
     "show_in_info": true,
     "rating": "bad",

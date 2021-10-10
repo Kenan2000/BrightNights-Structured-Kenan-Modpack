@@ -137,111 +137,152 @@
     }
   },
   {
-    "abstract": "rack_blaze",
     "type": "vehicle_part",
-    "item": "metal_tank_little",
-    "location": "under",
-    "symbol": "O",
+    "id": "cargo_rack_extended",
+    "name": { "str": "cargo shelving" },
+    "symbol": "=",
+    "looks_like": "box",
+    "categories": [ "cargo" ],
+    "color": "light_gray",
     "broken_symbol": "#",
-    "color": "brown",
-    "broken_color": "blue",
-    "description": "This part is obsolete.  It should not be installed in a vehicle, and if it is installed, you can safely uninstall it.",
-    "durability": 150,
+    "broken_color": "dark_gray",
+    "durability": 250,
+    "size": 4000,
+    "item": "vehicle_shelving",
+    "location": "center",
     "requirements": {
-      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
-      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "45 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "120 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "120 m", "using": [ [ "welding_standard", 5 ] ] }
     },
-    "damage_modifier": 80
+    "flags": [ "OBSTACLE", "CARGO", "COVERED" ],
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 6, 16 ] },
+      { "item": "steel_chunk", "count": [ 6, 16 ] },
+      { "item": "scrap", "count": [ 6, 16 ] }
+    ],
+    "damage_reduction": { "all": 28 }
   },
   {
-    "id": "solar_array",
+    "id": "solar_array_part",
     "type": "vehicle_part",
-    "name": "solar array",
+    "name": { "str": "solar array" },
     "item": "solar_array",
     "location": "structure",
     "symbol": "#",
     "broken_symbol": "x",
+    "categories": [ "energy" ],
     "color": "yellow",
     "broken_color": "yellow",
-    "durability": 165,
-    "epower": 375,
+    "durability": 20,
+    "epower": 145,
     "damage_modifier": 10,
     "folded_volume": "10 L",
-    "description": "A dozen solar panels set on a chassis reaching several meters high.  It keeps the fragile panels safely away from any potential threats and improves efficiency due to being able track the sun.  Will recharge the vehicle's electrical power when exposed to the sun.",
+    "description": "A vertical array of three solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
     "breaks_into": [
-      { "item": "steel_lump", "count": [ 3, 6 ] },
-      { "item": "steel_chunk", "count": [ 6, 12 ] },
-      { "item": "scrap", "count": [ 8, 16 ] },
-      { "item": "solar_cell", "count": [ 7, 28 ] }
+      { "item": "steel_lump", "count": [ 2, 12 ] },
+      { "item": "steel_chunk", "count": [ 2, 12 ] },
+      { "item": "scrap", "count": [ 2, 12 ] },
+      { "item": "solar_cell", "count": [ 4, 12 ] }
     ],
     "requirements": {
       "install": { "skills": [ [ "mechanics", 6 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
-      "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "45 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 7 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "10 m" },
+      "repair": {
+        "skills": [ [ "electronics", 6 ] ],
+        "time": "150 m",
+        "using": [ [ "vehicle_screw", 1 ], [ "solar_panel", 3 ], [ "soldering_standard", 8 ] ]
+      }
     },
     "flags": [ "SOLAR_PANEL", "OBSTACLE", "INITIAL_PART", "PROTRUSION", "FOLDABLE", "EXTRA_DRAG" ]
   },
   {
-    "id": "solar_array2",
+    "id": "reinforced_solar_array_part",
     "type": "vehicle_part",
-    "name": "upgraded solar array",
-    "item": "solar_array2",
-    "location": "structure",
-    "symbol": "#",
-    "broken_symbol": "x",
-    "color": "yellow",
-    "broken_color": "yellow",
-    "durability": 165,
-    "epower": 750,
-    "damage_modifier": 10,
-    "folded_volume": "12 L",
-    "description": "A dozen upgraded solar panels set on a chassis reaching several meters high.  It keeps the fragile panels safely away from any potential threats and improves efficiency due to being able track the sun.  Will recharge the vehicle's electrical power when exposed to the sun.",
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 3, 6 ] },
-      { "item": "steel_chunk", "count": [ 6, 12 ] },
-      { "item": "scrap", "count": [ 8, 16 ] },
-      { "item": "solar_cell", "count": [ 14, 45 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 6 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
-      "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "45 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 7 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
-    },
-    "flags": [ "SOLAR_PANEL", "OBSTACLE", "INITIAL_PART", "PROTRUSION", "FOLDABLE", "EXTRA_DRAG" ]
-  },
-  {
-    "id": "solar_array2r",
-    "type": "vehicle_part",
-    "name": "upgraded reinforced solar array",
-    "item": "solar_array2r",
-    "location": "structure",
-    "symbol": "#",
-    "broken_symbol": "x",
+    "copy-from": "solar_array_part",
+    "name": { "str": "reinforced solar array" },
+    "item": "reinforced_solar_array",
+    "categories": [ "energy" ],
     "color": "light_blue",
     "broken_color": "light_gray",
-    "durability": 335,
-    "epower": 675,
-    "damage_modifier": 10,
-    "folded_volume": "15 L",
-    "description": "A dozen upgraded solar panels set on a chassis reaching several meters high.  It keeps the fragile panels safely away from any potential threats and improves efficiency due to being able track the sun.  Will recharge the vehicle's electrical power when exposed to the sun.",
+    "durability": 300,
+    "proportional": { "epower": 0.9 },
+    "folded_volume": "14 L",
+    "description": "A vertical array of three reinforced solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
     "breaks_into": [
-      { "item": "steel_lump", "count": [ 6, 11 ] },
-      { "item": "steel_chunk", "count": [ 12, 23 ] },
-      { "item": "scrap", "count": [ 16, 31 ] },
-      { "item": "solar_cell", "count": [ 14, 45 ] }
+      { "item": "steel_lump", "count": [ 2, 21 ] },
+      { "item": "steel_chunk", "count": [ 2, 21 ] },
+      { "item": "scrap", "count": [ 2, 21 ] },
+      { "item": "solar_cell", "count": [ 4, 12 ] }
     ],
     "requirements": {
       "install": { "skills": [ [ "mechanics", 8 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
-      "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 9 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "10 m" },
+      "repair": {
+        "skills": [ [ "electronics", 6 ] ],
+        "time": "150 m",
+        "using": [ [ "vehicle_screw", 1 ], [ "solar_panel", 3 ], [ "soldering_standard", 8 ] ]
+      }
+    },
+    "flags": [ "SOLAR_PANEL", "OBSTACLE", "INITIAL_PART", "PROTRUSION", "FOLDABLE", "EXTRA_DRAG" ]
+  },
+  {
+    "id": "solar_array_v2_part",
+    "type": "vehicle_part",
+    "categories": [ "energy" ],
+    "copy-from": "solar_array_part",
+    "name": { "str": "upgraded solar array" },
+    "item": "solar_array_v2",
+    "proportional": { "epower": 2.0 },
+    "folded_volume": "12 L",
+    "description": "A vertical array of three upgraded solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 2, 12 ] },
+      { "item": "steel_chunk", "count": [ 2, 12 ] },
+      { "item": "scrap", "count": [ 2, 12 ] },
+      { "item": "solar_cell", "count": [ 4, 18 ] }
+    ],
+    "requirements": {
+      "repair": {
+        "skills": [ [ "electronics", 6 ] ],
+        "time": "150 m",
+        "using": [ [ "vehicle_screw", 1 ], [ "solar_panel_v2", 3 ], [ "soldering_standard", 8 ] ]
+      }
+    },
+    "flags": [ "SOLAR_PANEL", "OBSTACLE", "INITIAL_PART", "PROTRUSION", "FOLDABLE", "EXTRA_DRAG" ]
+  },
+  {
+    "id": "reinforced_solar_array_v2_part",
+    "type": "vehicle_part",
+    "copy-from": "solar_array_v2_part",
+    "name": { "str": "upgraded reinforced solar array" },
+    "item": "reinforced_solar_array_v2",
+    "categories": [ "energy" ],
+    "color": "light_blue",
+    "broken_color": "light_gray",
+    "durability": 300,
+    "proportional": { "epower": 0.9 },
+    "folded_volume": "15 L",
+    "description": "A vertical array of three upgraded reinforced solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 2, 21 ] },
+      { "item": "steel_chunk", "count": [ 2, 21 ] },
+      { "item": "scrap", "count": [ 2, 21 ] },
+      { "item": "solar_cell", "count": [ 4, 18 ] }
+    ],
+    "requirements": {
+      "repair": {
+        "skills": [ [ "electronics", 6 ] ],
+        "time": "150 m",
+        "using": [ [ "vehicle_screw", 1 ], [ "solar_panel_v2", 3 ], [ "soldering_standard", 8 ] ]
+      }
     },
     "flags": [ "SOLAR_PANEL", "OBSTACLE", "INITIAL_PART", "PROTRUSION", "FOLDABLE", "EXTRA_DRAG" ]
   },
   {
     "id": "tread1",
     "type": "vehicle_part",
-    "name": "rubber treads",
+    "name": { "str": "rubber treads" },
     "item": "tread1",
     "location": "under",
     "symbol": "|",
@@ -258,20 +299,20 @@
       { "item": "plastic_chunk", "count": [ 50, 120 ] },
       { "item": "chain", "count": [ 1, 3 ] }
     ],
-    "rolling_resistance": 6,
+    "rolling_resistance": 3.5,
     "wheel_type": "treads",
     "contact_area": 900,
     "requirements": {
       "install": { "skills": [ [ "mechanics", 6 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 7 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
     "flags": [ "WHEEL", "VARIABLE_SIZE", "MULTISQUARE", "TRACKED" ]
   },
   {
     "id": "tread2",
     "type": "vehicle_part",
-    "name": "steel treads",
+    "name": { "str": "steel treads" },
     "item": "tread2",
     "location": "under",
     "symbol": "|",
@@ -287,27 +328,26 @@
       { "item": "scrap", "count": [ 50, 75 ] },
       { "item": "chain", "count": [ 3, 6 ] }
     ],
-    "rolling_resistance": 5,
+    "rolling_resistance": 3,
     "wheel_type": "treads",
     "contact_area": 2500,
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 8 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 8 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
     "flags": [ "WHEEL", "VARIABLE_SIZE", "MULTISQUARE", "TRACKED" ]
   },
   {
     "id": "tread3",
     "type": "vehicle_part",
-    "name": "tank treads",
+    "name": { "str": "tank treads" },
     "item": "tread3",
     "location": "under",
     "symbol": "|",
     "broken_symbol": "x",
     "color": "dark_gray",
     "broken_color": "light_gray",
-    "difficulty": 7,
     "durability": 5000,
     "damage_modifier": 50,
     "description": "A section of continuous track, the kind mounted on construction vehicles and military fighting vehicles.  It acts as a wheel, and the broad surface provides plenty of traction to move heavy vehicles off-road, but at the cost of speed due to the heavy weight.",
@@ -317,40 +357,15 @@
       { "item": "scrap", "count": [ 60, 120 ] },
       { "item": "chain", "count": [ 3, 4 ] }
     ],
-    "rolling_resistance": 5,
+    "rolling_resistance": 3,
     "wheel_type": "treads",
     "contact_area": 3600,
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 8 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "30 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 8 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
     "flags": [ "WHEEL", "VARIABLE_SIZE", "MULTISQUARE", "TRACKED" ]
-  },
-  {
-    "id": "turretframe",
-    "type": "vehicle_part",
-    "name": "turret chassis",
-    "item": "turretframe",
-    "symbol": "Y",
-    "broken_symbol": "#",
-    "color": "light_gray",
-    "broken_color": "light_gray",
-    "durability": 400,
-    "damage_modifier": 80,
-    "folded_volume": 25,
-    "description": "A rotating turret, capable of mounting a weapon system.  Install a suitable weapon on it as an automated weapon and the vehicle will be able to fire on hostile targets that get too close.",
-    "breaks_into": [
-      { "item": "scrap", "count": [ 10, 20 ] },
-      { "item": "steel_chunk", "count": [ 4, 10 ] },
-      { "item": "spring", "count": [ 2, 8 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
-    },
-    "flags": [ "TURRET_MOUNT" ]
   },
   {
     "id": "wiring",
