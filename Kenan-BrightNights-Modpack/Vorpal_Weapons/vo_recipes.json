@@ -46,6 +46,45 @@
     "components": [ [ [ "leather", 2 ] ] ]
   },
 {
+    "type": "recipe",
+    "result": "zweifire_off",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "mechanics",
+    "difficulty": 5,
+    "time": "30 m",
+    "reversible": true,
+    "decomp_learn": 4,
+    "book_learn": [ [ "welding_book", 8 ], [ "book_icef", 4 ] ],
+    "using": [ [ "welding_standard", 2 ] ],
+    "components": [
+      [ [ "leather", 5 ] ],
+      [ [ "pipe", 1 ] ],
+      [ [ "zweihander", 1 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "aux_pressurized_tank", 1 ] ]
+    ]
+},
+{
+    "type": "recipe",
+    "result": "shishkebab_off",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "mechanics",
+    "difficulty": 1,
+    "time": "10 m",
+    "reversible": true,
+    "decomp_learn": 3,
+    "book_learn": [ [ "welding_book", 8 ], [ "book_icef", 4 ] ],
+    "components": [
+      [ [ "leather", 5 ] ],
+      [ [ "pipe", 1 ] ],
+      [ [ "makeshift_machete", 1 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "aux_pressurized_tank", 1 ] ]
+    ]
+},
+{
   "type" : "recipe",
   "result": "boxing_gloves_vo",
   "category": "CC_WEAPON",
