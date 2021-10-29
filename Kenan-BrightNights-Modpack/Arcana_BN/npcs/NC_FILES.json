@@ -603,7 +603,7 @@
       { "item": "water_clean" },
       { "item": "matches" },
       { "item": "pockknife" },
-      { "group": "charged_cell_phone" }
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "cell_phone" }
     ]
   },
   {
@@ -779,7 +779,7 @@
       },
       {
         "distribution": [
-          { "item": "mana_gem", "prob": 25 },
+          { "item": "mana_gem_dull", "prob": 25 },
           { "item": "holy_symbol", "prob": 25 },
           { "item": "holy_symbol_wood", "prob": 25 },
           { "item": "bead_necklace", "prob": 15 },
@@ -865,8 +865,8 @@
       [ "surv_six_shooter", 10 ],
       [ "surv_hand_cannon", 10 ],
       [ "2_shot_special", 10 ],
-      [ "surv_carbine_223", 5 ],
       [ "ruger_mini", 5 ],
+      [ "knife_butcher", 10 ],
       [ "machete", 10 ],
       [ "blood_athame", 5 ],
       [ "ax", 10 ],
