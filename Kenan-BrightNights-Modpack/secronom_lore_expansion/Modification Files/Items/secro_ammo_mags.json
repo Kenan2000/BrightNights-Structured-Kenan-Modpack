@@ -122,8 +122,9 @@
     "material": [ "iron", "plastic" ],
     "symbol": "=",
     "color": "cyan",
-    "ammo_type": [ "battery" ],
-    "capacity": 2000,
+    "ammo": "battery",
+    "initial_charges": 1000,
+    "max_charges": 2000,
     "looks_like": "battery",
     "flags": [ "USE_UPS", "NO_SALVAGE", "NO_UNLOAD" ]
   },

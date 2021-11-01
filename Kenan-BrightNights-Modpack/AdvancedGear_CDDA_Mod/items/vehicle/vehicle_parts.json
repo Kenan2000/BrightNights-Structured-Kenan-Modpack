@@ -1,5 +1,20 @@
 [
   {
+    "id": "TRACKED",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
+    "id": "TOOL_NONE",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
+    "id": "NO_JACK",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
     "abstract": "nanovp",
     "type": "vehicle_part",
     "name": "nanotech vehicle part",
@@ -289,27 +304,6 @@
       "FAUCET",
       "NOINSTALL"
     ],
-    "tools": [
-      "anvil",
-      "can_sealer",
-      "crucible",
-      "mold_plastic",
-      "pastaextruder",
-      "polisher",
-      "press",
-      "puller",
-      "swage",
-      "tongs",
-      "hotplate",
-      "pot",
-      "welder",
-      "soldering_iron",
-      "vac_sealer",
-      "dehydrator",
-      "chemistry_set",
-      "forge",
-      "nanofactory_1"
-    ],
     "breaks_into": [ { "item": "nanofactory_1", "count": [ 1, 1 ] } ]
   },
   {
@@ -339,27 +333,6 @@
       "WATER_PURIFIER",
       "FAUCET",
       "NOINSTALL"
-    ],
-    "tools": [
-      "anvil",
-      "can_sealer",
-      "crucible",
-      "mold_plastic",
-      "pastaextruder",
-      "polisher",
-      "press",
-      "puller",
-      "swage",
-      "tongs",
-      "hotplate",
-      "pot",
-      "welder",
-      "soldering_iron",
-      "vac_sealer",
-      "dehydrator",
-      "chemistry_set",
-      "forge",
-      "nanofactory_2"
     ],
     "breaks_into": [ { "item": "nanofactory_2", "count": [ 1, 1 ] } ]
   },

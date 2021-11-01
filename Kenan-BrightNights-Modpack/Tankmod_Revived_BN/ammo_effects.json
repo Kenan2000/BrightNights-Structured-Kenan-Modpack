@@ -4,5 +4,12 @@
     "type": "ammo_effect",
     "aoe": { "field_type": "fd_fire", "intensity_min": 1, "intensity_max": 1, "size": 1, "radius": 1, "chance": 25 },
     "explosion": { "damage": 35, "radius": 1 }
+  },
+  {
+    "id": "AMMO_155MM_FRAG",
+    "type": "ammo_effect",
+    "explosion": { "fragment": { "impact": { "damage_type": "cut", "amount": 10000, "armor_multiplier": 3 }, "range": 8 } }
   }
+
+
 ]

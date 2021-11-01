@@ -45,16 +45,16 @@
     "changes_to": [ "VISCOUS" ],
     "category": [ "FISH", "SLIME", "TROGLOBITE", "CEPHALOPOD", "NECROMANTIC" ],
     "wet_protection": [
-      { "part": "HEAD", "neutral": 3, "good": 4 },
-      { "part": "LEG_L", "neutral": 7, "good": 14 },
-      { "part": "LEG_R", "neutral": 7, "good": 14 },
-      { "part": "FOOT_L", "neutral": 2, "good": 4 },
-      { "part": "FOOT_R", "neutral": 2, "good": 4 },
-      { "part": "ARM_L", "neutral": 7, "good": 12 },
-      { "part": "ARM_R", "neutral": 7, "good": 12 },
-      { "part": "HAND_L", "neutral": 2, "good": 3 },
-      { "part": "HAND_R", "neutral": 2, "good": 3 },
-      { "part": "TORSO", "neutral": 14, "good": 26 }
+      { "part": "head", "neutral": 3, "good": 4 },
+      { "part": "leg_l", "neutral": 7, "good": 14 },
+      { "part": "leg_r", "neutral": 7, "good": 14 },
+      { "part": "foot_l", "neutral": 2, "good": 4 },
+      { "part": "foot_r", "neutral": 2, "good": 4 },
+      { "part": "arm_l", "neutral": 7, "good": 12 },
+      { "part": "arm_r", "neutral": 7, "good": 12 },
+      { "part": "hand_l", "neutral": 2, "good": 3 },
+      { "part": "hand_r", "neutral": 2, "good": 3 },
+      { "part": "torso", "neutral": 14, "good": 26 }
     ]
   },
   {
@@ -217,7 +217,7 @@
     "prereqs": [ "TAIL_STUB" ],
     "changes_to": [ "TAIL_CLUB" ],
     "category": [ "LIZARD", "NECROMANTIC" ],
-    "restricts_gear": [ "LEG_L", "LEG_R" ],
+    "restricts_gear": [ "leg_l", "leg_r" ],
     "allow_soft_gear": true,
     "attacks": {
       "attack_text_u": "You whap %s with your tail",
@@ -358,7 +358,7 @@
     "visibility": 4,
     "ugliness": 5,
     "description": "You now have more than two legs. Another pair of legs are growing from your waist. You will not be able to equip usual leg protection, but you can move fast.",
-    "restricts_gear": [ "LEG_L", "LEG_R" ],
+    "restricts_gear": [ "leg_l", "leg_r" ],
     "passive_mods": { "dex_mod": 2 },
     "valid": false
   },
@@ -413,11 +413,11 @@
     "cancels": [ "BEAK", "BEAK_HUM", "BEAK_PECK", "PROBOSCIS", "MANDIBLES", "MUZZLE_LONG", "MUZZLE", "MINOTAUR" ],
     "description": "Your tongue is dripping with drool. You can not equip anything on your mouth, but they will be surprised when you attack them with your tongue.",
     "category": [ "NECROMANTIC" ],
-    "restricts_gear": [ "MOUTH" ],
+    "restricts_gear": [ "mouth" ],
     "attacks": {
       "attack_text_u": "You attack %s with your tongue.",
       "attack_text_npc": "%1$s attacks %2$s with their tongue.",
-      "body_part": "MOUTH",
+      "body_part": "mouth",
       "chance": 20,
       "base_damage": { "damage_type": "stab", "amount": 15 },
       "strength_damage": { "damage_type": "stab", "amount": 0.5 }
@@ -434,16 +434,16 @@
     "description": "Your body starts breaking apart. You become more encumbered and frail.",
     "category": [ "NECROMANTIC" ],
     "encumbrance_always": [
-      [ "TORSO", 3 ],
-      [ "HEAD", 3 ],
-      [ "ARM_L", 3 ],
-      [ "ARM_R", 3 ],
-      [ "HAND_L", 3 ],
-      [ "HAND_R", 3 ],
-      [ "LEG_L", 3 ],
-      [ "LEG_R", 3 ],
-      [ "FOOT_L", 3 ],
-      [ "FOOT_R", 3 ]
+      [ "torso", 3 ],
+      [ "head", 3 ],
+      [ "arm_l", 3 ],
+      [ "arm_r", 3 ],
+      [ "hand_l", 3 ],
+      [ "hand_r", 3 ],
+      [ "leg_l", 3 ],
+      [ "leg_r", 3 ],
+      [ "foot_l", 3 ],
+      [ "foot_r", 3 ]
     ],
     "armor": [ { "parts": "ALL", "bash": -3, "cut": -3 } ],
     "valid": false
@@ -462,12 +462,12 @@
     "cancels": [ "WINGS_BIRD", "WINGS_INSECT", "WINGS_BUTTERFLY" ],
     "category": [ "NECROMANTIC" ],
     "wet_protection": [
-      { "part": "ARM_L", "neutral": 5, "good": 10 },
-      { "part": "ARM_R", "neutral": 5, "good": 10 },
-      { "part": "TORSO", "neutral": 10, "good": 20 }
+      { "part": "arm_l", "neutral": 5, "good": 10 },
+      { "part": "arm_r", "neutral": 5, "good": 10 },
+      { "part": "torso", "neutral": 10, "good": 20 }
     ],
-    "encumbrance_always": [ [ "TORSO", 10 ] ],
-    "armor": [ { "parts": [ "TORSO", "ARM_L", "ARM_R" ], "bash": 14, "cut": 8 } ]
+    "encumbrance_always": [ [ "torso", 10 ] ],
+    "armor": [ { "parts": [ "torso", "arm_l", "arm_r" ], "bash": 14, "cut": 8 } ]
   },
   {
     "type": "mutation",
@@ -479,7 +479,7 @@
     "threshreq": [ "THRESH_NECROMANTIC" ],
     "category": [ "NECROMANTIC" ],
     "description": "There is another head on your shoulders. And here you thought you were doing well with just one. You can not see the other side of the face directly, but you can understand what you see over there. Intelligence + 5, Perception + 3",
-    "encumbrance_always": [ [ "HEAD", 5 ] ],
+    "encumbrance_always": [ [ "head", 5 ] ],
     "passive_mods": { "int_mod": 5, "per_mod": 3 }
   },
   {
@@ -495,16 +495,16 @@
     "prereqs": [ "NEC_FAILED" ],
     "category": [ "NECROMANTIC" ],
     "encumbrance_always": [
-      [ "TORSO", 9 ],
-      [ "HEAD", 5 ],
-      [ "ARM_L", 5 ],
-      [ "ARM_R", 7 ],
-      [ "HAND_L", 8 ],
-      [ "HAND_R", 5 ],
-      [ "LEG_L", 5 ],
-      [ "LEG_R", 6 ],
-      [ "FOOT_L", 5 ],
-      [ "FOOT_R", 5 ]
+      [ "torso", 9 ],
+      [ "head", 5 ],
+      [ "arm_l", 5 ],
+      [ "arm_r", 7 ],
+      [ "hand_l", 8 ],
+      [ "hand_r", 5 ],
+      [ "leg_l", 5 ],
+      [ "leg_r", 6 ],
+      [ "foot_l", 5 ],
+      [ "foot_r", 5 ]
     ],
     "armor": [ { "parts": "ALL", "bash": -6, "cut": -6 } ],
     "valid": false
@@ -521,16 +521,16 @@
     "threshreq": [ "THRESH_NECROMANTIC" ],
     "prereqs": [ "NEC_RUPTURE" ],
     "encumbrance_always": [
-      [ "TORSO", -10 ],
-      [ "HEAD", -10 ],
-      [ "ARM_L", -10 ],
-      [ "ARM_R", -10 ],
-      [ "HAND_L", -10 ],
-      [ "HAND_R", -10 ],
-      [ "LEG_L", -10 ],
-      [ "LEG_R", -10 ],
-      [ "FOOT_L", -10 ],
-      [ "FOOT_R", -10 ]
+      [ "torso", -10 ],
+      [ "head", -10 ],
+      [ "arm_l", -10 ],
+      [ "arm_r", -10 ],
+      [ "hand_l", -10 ],
+      [ "hand_r", -10 ],
+      [ "leg_l", -10 ],
+      [ "leg_r", -10 ],
+      [ "foot_l", -10 ],
+      [ "foot_r", -10 ]
     ],
     "armor": [ { "parts": "ALL", "bash": -2, "cut": -4 } ],
     "valid": false

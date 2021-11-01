@@ -59,7 +59,7 @@
     "material": [ "flesh" ],
     "color": "light_gray",
     "//": "As noted with wearable trinkets made from monsterparts, these are post-cata only.",
-    "price_postapoc": 250,
+    "price_postapoc": "250 cent",
     "use_action": {
       "type": "musical_instrument",
       "volume": 12,
@@ -82,7 +82,7 @@
     "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.",
     "weight": "38 g",
     "volume": "50 ml",
-    "price_postapoc": 200,
+    "price_postapoc": "2 USD",
     "material": [ "bone" ],
     "symbol": ",",
     "looks_like": "small_relic",
@@ -94,38 +94,26 @@
     "copy-from": "charm_bone",
     "type": "TOOL",
     "name": { "str": "sanctified bone charm" },
-    "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses.",
+    "description": "A small talisman made out of some form of otherworldly bone or ivory, carved with equally unearthly iconography.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will heavily damage and paralyze any creatures within 8 tiles, including allies if you're not careful.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 25 charges.",
     "price_postapoc": "20 USD",
-    "max_charges": 600,
-    "charges_per_use": 100,
+    "max_charges": 150,
+    "charges_per_use": 25,
     "flags": [ "MAGIC_FOCUS" ],
     "artifact_data": { "charge_type": "ARTC_TIME" },
-    "use_action": {
-      "type": "cast_spell",
-      "spell_id": "arcana_item_charm_bone_empowered",
-      "no_fail": true,
-      "need_wielding": true,
-      "level": 0
-    }
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_charm_bone_empowered", "no_fail": true, "level": 0 }
   },
   {
     "id": "stinger_flute_empowered",
     "copy-from": "stinger_flute",
     "type": "TOOL",
     "name": { "str": "quickened stinger flute" },
-    "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses.",
+    "description": "A polished flute with five finger holes, carved from the stinger of some exotic monstrosity.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will greatly reduce movecosts and enhance evasion.  Stamina and attack speed are unaffected, however.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 6 uses, each use takes 25 charges.",
     "price_postapoc": "25 USD",
-    "max_charges": 600,
-    "charges_per_use": 100,
+    "max_charges": 150,
+    "charges_per_use": 25,
     "flags": [ "MAGIC_FOCUS" ],
     "artifact_data": { "charge_type": "ARTC_TIME" },
-    "use_action": {
-      "type": "cast_spell",
-      "spell_id": "arcana_item_stinger_flute_empowered",
-      "no_fail": true,
-      "need_wielding": true,
-      "level": 0
-    }
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_stinger_flute_empowered", "no_fail": true, "level": 0 }
   },
   {
     "id": "offering_chalice",
@@ -249,16 +237,68 @@
     "category": "weapons",
     "copy-from": "warhammer",
     "name": { "str": "hammer of the hunter", "str_pl": "hammers of the hunter" },
-    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  Using it will channel consecrated essence into a stunning flash.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
+    "description": "A warhammer inlaid with silver, engraved with religious invocations in an archaic form of Latin.  Many magical items can be purified with this item.  It can be used to channel consecrated essence into a stunning flash, or place a rune that will release its stunning effect if something steps into it.  Though using it is a double-edged sword, it will have further effects on creatures of darkness.",
     "price": "800 USD",
     "price_postapoc": "45 USD",
     "material": [ "iron", "silver", "wood" ],
     "max_charges": 3,
     "charges_per_use": 3,
     "ammo": "essence_dull_type",
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_hexenhammer",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_hammerzeit",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "relative": { "weight": "360 g", "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE" ] }
+  },
+  {
+    "id": "lucern_hexenhammer",
+    "sub": "hexenhammer",
+    "type": "TOOL",
+    "category": "weapons",
+    "copy-from": "lucern_hammer",
+    "name": { "str": "luminous hammer" },
+    "description": "A mighty lucerne hammer, decorated with archaic Latin engravings and silver counterbalancing to make it more usable at close range.  Many magical items can be purified with this item.  Activating it can be used to create a powerful flash, capable of searing anyone in range.  Though the user will not take damage from it, they will still be blinded if lacking protection.  It could also be used to deploy a rune with a weaker stunning effect on whatever steps on it.",
+    "price": "1200 USD",
+    "price_postapoc": "120 USD",
+    "material": [ "wood", "steel", "silver" ],
+    "max_charges": 10,
+    "charges_per_use": 10,
+    "ammo": "essence_dull_type",
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_hexenhammer",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the hammer's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_hammerzeit_greater",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
+    "//": "Designed to be compatible with Via Gladium et Malleo, so the silver decoration is on the other end to shift the center of balance.  No damage bonus from the extra weight, but also no 0.7x melee damage from POLEARM flag.",
+    "relative": { "weight": "450 g", "to_hit": 1 },
+    "extend": { "flags": [ "NO_SALVAGE" ] },
+    "delete": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ] }
   },
   {
     "id": "spear_pestilence",
@@ -266,7 +306,7 @@
     "copy-from": "spear_steel",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will temporarily summon mutant vermin to aid you, and wielding it makes movement easier.",
+    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.  It can also be used to place a rune focused purely on summoning vermin when something steps on it.",
     "price": "1200 USD",
     "price_postapoc": "35 USD",
     "material": [ "steel", "wood", "chitin" ],
@@ -290,7 +330,23 @@
         }
       ]
     },
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_spear_pestilence",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the spear's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_pestilence",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "relative": { "weight": 540, "bashing": 2 },
     "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS" ] }
   },
@@ -794,7 +850,7 @@
     "id": "scroll_spell_sun",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (consecrate)", "str_pl": "pattern scrolls (consecrate)" },
+    "name": { "str": "Pattern Scroll (Consecrate)", "str_pl": "Pattern Scrolls (Consecrate)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
     "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
     "price_postapoc": "120 USD",
@@ -807,7 +863,7 @@
     "id": "scroll_spell_moon",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (ward against cold)", "str_pl": "pattern scrolls (ward against cold)" },
+    "name": { "str": "Pattern Scroll (Ward Against Cold)", "str_pl": "Pattern Scrolls (Ward Against Cold)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will protect against the cold, and all its side effects.\"",
     "price_postapoc": "90 USD",
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
@@ -819,8 +875,8 @@
     "id": "scroll_spell_artiface",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (sundering quake)", "str_pl": "pattern scrolls (sundering quake)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, though creatures will be left unharmed.\"",
+    "name": { "str": "Pattern Scroll (Sundering Quake)", "str_pl": "Pattern Scrolls (Sundering Quake)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring down structures and bury them in rubble, damaging creatures caught in the blast.\"",
     "price_postapoc": "100 USD",
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
     "countdown_interval": 1,
@@ -831,7 +887,7 @@
     "id": "scroll_spell_nature",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (elemental burst)", "str_pl": "pattern scrolls (elemental burst)" },
+    "name": { "str": "Pattern Scroll (Elemental Burst)", "str_pl": "Pattern Scrolls (Elemental Burst)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
     "price_postapoc": "100 USD",
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
@@ -843,7 +899,7 @@
     "id": "scroll_spell_destruction",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (summon centipedes)", "str_pl": "pattern scrolls (summon centipedes)" },
+    "name": { "str": "Pattern Scroll (Summon Centipedes)", "str_pl": "Pattern Scrolls (Summon Centipedes)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
     "price_postapoc": "80 USD",
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
@@ -855,8 +911,8 @@
     "id": "scroll_spell_subversion",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (eclipse)", "str_pl": "pattern scrolls (eclipse)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a temporary boost of raw power with which to stalk the night.\"",
+    "name": { "str": "Pattern Scroll (Eclipse)", "str_pl": "Pattern Scrolls (Eclipse)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will bring forth monsters and darkness, in exchange for a long-lasting adrenaline surge, life-draining ability, and night vision.\"",
     "price_postapoc": "120 USD",
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
     "countdown_interval": 1,
@@ -904,9 +960,9 @@
     "volume": "750 ml",
     "price": "400 USD",
     "price_postapoc": "60 USD",
-    "to_hit": 1,
-    "bashing": 10,
-    "cutting": 7,
+    "bashing": 15,
+    "cutting": 28,
+    "to_hit": -2,
     "thrown_damage": [ { "damage_type": "cold", "amount": 18 } ],
     "material": [ "steel", "wood" ],
     "symbol": ";",
@@ -925,9 +981,37 @@
       "sound_volume": 1,
       "sound_msg": "Drip.",
       "no_deactivate_msg": "You can't dispel the effect.  Might want to try throwing it instead.",
-      "explosion": { "damage": 1500, "radius": 3 }
+      "explosion": { "power": 1500, "distance_factor": 0.45 }
     },
     "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+  },
+  {
+    "id": "lichhook",
+    "copy-from": "khopesh",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "lichhook" },
+    "description": "A curved bronze blade, decorated with silver and honed to an unnaturally sharp edge.  Using it will channel blood essence into ensnaring a nearby enemy in venomous tendrils, poisoning them and freezing them in place momentarily.  Zombies and other creatures immune to poison will not suffer damage from it.  It can also place a rune that will trigger the same effect over a small area when something steps into it.",
+    "price": "720 USD",
+    "price_postapoc": "45 USD",
+    "bashing": 9,
+    "cutting": 29,
+    "max_charges": 8,
+    "charges_per_use": 2,
+    "ammo": "essence_blood_type",
+    "relative": { "weight": 230 },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_lichhook",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the lichhook's energy into a spell trap, waiting to be unleashed."
+      },
+      { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 }
+    ],
+    "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
   },
   {
     "id": "totem_elecresist",
@@ -941,7 +1025,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_lightning_ward", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_lightning_ward", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_cleric",
@@ -954,7 +1038,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_ward_against_evil", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_ward_against_evil", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_agile",
@@ -967,7 +1051,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_agility", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_agility", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_confusion",
@@ -980,7 +1064,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_confuse_monster", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_confuse_monster", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_strength",
@@ -993,7 +1077,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_might", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_might", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_clairvoyance",
@@ -1006,7 +1090,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_clairvoyance", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_clairvoyance", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_free_action",
@@ -1019,7 +1103,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_free_action", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_free_action", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_invis",
@@ -1033,7 +1117,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_serpentine_shield", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_serpentine_shield", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_plants",
@@ -1046,7 +1130,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_overgrowth", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_overgrowth", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_flamearmor",
@@ -1059,7 +1143,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_heat_ward", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_heat_ward", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_insight",
@@ -1072,7 +1156,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_insight", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_insight", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_clarity",
@@ -1085,7 +1169,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_clarity_blood", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_clarity_blood", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_lightning",
@@ -1098,7 +1182,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_shockstorm", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_shockstorm", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_heal",
@@ -1111,7 +1195,7 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_healing", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_healing", "no_fail": true, "level": 5 }
   },
   {
     "id": "totem_acidspray",
@@ -1124,13 +1208,13 @@
     "use_action": { "type": "countdown", "name": "Use magic seal", "message": "The magic seal flickers and radiates with energy." },
     "countdown_interval": 1,
     "countdown_destroy": true,
-    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_magic_conjure_acid", "no_fail": true, "level": 5 }
+    "countdown_action": { "type": "cast_spell", "spell_id": "arcana_seal_conjure_acid", "no_fail": true, "level": 5 }
   },
   {
     "id": "scroll_spell_agile",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (agility)", "str_pl": "pattern scrolls (agility)" },
+    "name": { "str": "Pattern Scroll (Agility)", "str_pl": "Pattern Scrolls (Agility)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
     "//": "Unlike divine pattern scrolls, basic pattern scrolls were rare but at least existed pre-cataclysm.",
     "price": "3000 USD",
@@ -1144,7 +1228,7 @@
     "id": "scroll_spell_clairvoyance",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (clairvoyance)", "str_pl": "pattern scrolls (clairvoyance)" },
+    "name": { "str": "Pattern Scroll (Clairvoyance)", "str_pl": "Pattern Scrolls (Clairvoyance)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
@@ -1157,7 +1241,7 @@
     "id": "scroll_spell_clarity",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (clarity of blood)", "str_pl": "pattern scrolls (clarity of blood)" },
+    "name": { "str": "Pattern Scroll (Clarity of Blood)", "str_pl": "Pattern Scrolls (Clarity of Blood)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against parasites and the Mycus.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
@@ -1170,7 +1254,7 @@
     "id": "scroll_spell_confusion",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (confuse monsters)", "str_pl": "pattern scrolls (confuse monsters)" },
+    "name": { "str": "Pattern Scroll (Confuse Monsters)", "str_pl": "Pattern Scrolls (Confuse Monsters)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will stun all hostiles in the area around you.\"",
     "price": "3000 USD",
     "price_postapoc": "70 USD",
@@ -1183,7 +1267,7 @@
     "id": "scroll_spell_acidspray",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (conjure acid)", "str_pl": "pattern scrolls (conjure acid)" },
+    "name": { "str": "Pattern Scroll (Conjure Acid)", "str_pl": "Pattern Scrolls (Conjure Acid)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
     "price": "3000 USD",
     "price_postapoc": "100 USD",
@@ -1196,7 +1280,7 @@
     "id": "scroll_spell_flame_armor",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (ward against heat)", "str_pl": "pattern scrolls (ward against heat)" },
+    "name": { "str": "Pattern Scroll (Ward Against Heat)", "str_pl": "Pattern Scrolls (Ward Against Heat)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
@@ -1209,7 +1293,7 @@
     "id": "scroll_spell_free_action",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (free action)", "str_pl": "pattern scrolls (free action)" },
+    "name": { "str": "Pattern Scroll (Free Action)", "str_pl": "Pattern Scrolls (Free Action)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant protection against paralytic effects and other hindrances.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
@@ -1222,7 +1306,7 @@
     "id": "scroll_spell_heal",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (healing)", "str_pl": "pattern scrolls (healing)" },
+    "name": { "str": "Pattern Scroll (Healing)", "str_pl": "Pattern Scrolls (Healing)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "price": "3000 USD",
     "price_postapoc": "120 USD",
@@ -1235,7 +1319,7 @@
     "id": "scroll_spell_insight",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (insight)", "str_pl": "pattern scrolls (insight)" },
+    "name": { "str": "Pattern Scroll (Insight)", "str_pl": "Pattern Scrolls (Insight)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to perception.\"",
     "price": "3000 USD",
     "price_postapoc": "110 USD",
@@ -1248,7 +1332,7 @@
     "id": "scroll_spell_elecresist",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (lightning ward)", "str_pl": "pattern scrolls (lightning ward)" },
+    "name": { "str": "Pattern Scroll (Lightning Ward)", "str_pl": "Pattern Scrolls (Lightning Ward)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
@@ -1261,7 +1345,7 @@
     "id": "scroll_spell_might",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (might)", "str_pl": "pattern scrolls (might)" },
+    "name": { "str": "Pattern Scroll (Might)", "str_pl": "Pattern Scrolls (Might)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a temporary boost to strength.\"",
     "price": "3000 USD",
     "price_postapoc": "110 USD",
@@ -1274,7 +1358,7 @@
     "id": "scroll_spell_plants",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (overgrowth)", "str_pl": "pattern scrolls (overgrowth)" },
+    "name": { "str": "Pattern Scroll (Overgrowth)", "str_pl": "Pattern Scrolls (Overgrowth)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
     "price": "3000 USD",
     "price_postapoc": "80 USD",
@@ -1288,7 +1372,7 @@
     "copy-from": "scroll_magic_base",
     "//": "ID retained to avoid breaking stuff.",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (shadowy shield)", "str_pl": "pattern scrolls (shadowy shield)" },
+    "name": { "str": "Pattern Scroll (Shadowy Shield)", "str_pl": "Pattern Scrolls (Shadowy Shield)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
     "price": "3000 USD",
     "price_postapoc": "80 USD",
@@ -1301,8 +1385,8 @@
     "id": "scroll_spell_lightning",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (shockstorm)", "str_pl": "pattern scrolls (shockstorm)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, harming any hostiles that are close enough.\"",
+    "name": { "str": "Pattern Scroll (Shockstorm)", "str_pl": "Pattern Scrolls (Shockstorm)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
     "price": "3000 USD",
     "price_postapoc": "100 USD",
     "use_action": { "type": "countdown", "name": "Unroll", "message": "You unroll the pattern scroll…" },
@@ -1314,7 +1398,7 @@
     "id": "scroll_spell_cleric",
     "copy-from": "scroll_magic_base",
     "type": "TOOL",
-    "name": { "str": "pattern scroll (ward against evil)", "str_pl": "pattern scrolls (ward against evil)" },
+    "name": { "str": "Pattern Scroll (Ward Against Evil)", "str_pl": "Pattern Scrolls (Ward Against Evil)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.  (( Remember to bind the \"spellcasting\" key! ))\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
@@ -1327,7 +1411,7 @@
     "id": "candle_warding",
     "type": "TOOL",
     "name": { "str": "candle of warding", "str_pl": "candles of warding" },
-    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is not indestructible, but it is tough.",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  It can be used to place a magical barrier, or used to project a faint light.  The barrier this item creates is tough and provides a source of fire.  Examining the barrier will let you retrieve the candle.",
     "weight": "100 g",
     "volume": "250 ml",
     "price": "80 USD",
@@ -1351,7 +1435,7 @@
     "id": "candle_warding_active",
     "type": "TOOL",
     "name": { "str": "candle of warding (on)", "str_pl": "candles of warding (on)" },
-    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a magical barrier, one that's tough but not indestructible.",
+    "description": "A candle with translucent wax, free of any impurities with a soothing aura about it.  Its wick is lit with a ghostly blue flame, projecting light without heat.  It can also be used to place a tough magical barrier, also providing a source of fire.  Examining the barrier will let you retrieve the candle.",
     "weight": "100 g",
     "volume": "250 ml",
     "price": "80 USD",
@@ -1371,6 +1455,31 @@
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
     "flags": [ "NO_SALVAGE", "LIGHT_12" ]
+  },
+  {
+    "id": "transmutation_crucible",
+    "type": "TOOL",
+    "name": { "str": "transmutation crucible" },
+    "description": "A small container made out of a polished, glassy material resembling stone.  A shimmer of precious metal occasionally appears within the surface, as though its internal structure flowed like liquid.  Deploying it will create a temporary workspace of shifting earth, providing a hard surface usable as an anvil as well as shifting stones that can assist in metalworking and alchemy.  It can be examined afterward to reclaim it.\n\nWhen deployed it provides the following:\n* Level 3 anvil quality.\n* Level 2 boiling quality.\n* Level 2 chemical making quality.\n* Level 1 containing quality.\n* Level 1 food cooking quality.\n* Additionally serves as a crucible.",
+    "weight": "1700 g",
+    "volume": "1500 ml",
+    "price": "6000 USD",
+    "price_postapoc": "25 USD",
+    "to_hit": -2,
+    "bashing": 10,
+    "material": [ "stone", "essencemat" ],
+    "symbol": ";",
+    "color": "brown",
+    "looks_like": "crucible",
+    "use_action": { "type": "deploy_furn", "furn_type": "f_transmutation_crucible_deployed" }
+  },
+  {
+    "id": "transmutation_crucible_deployed_fake",
+    "sub": "crucible_clay",
+    "type": "TOOL",
+    "copy-from": "fake_item",
+    "name": { "str": "deployed transmutation crucible" },
+    "qualities": [ [ "ANVIL", 3 ], [ "COOK", 1 ], [ "CHEM", 2 ], [ "BOIL", 2 ], [ "CONTAIN", 1 ] ]
   },
   {
     "id": "dimensional_warp_trap",
@@ -1471,7 +1580,7 @@
     "type": "TOOL",
     "id": "coalescent_converter",
     "name": { "str": "coalescent converter" },
-    "description": "A device modified from an exotic compact reactor, inverting its original function entirely.  Using a large surge of power by from any battery able to hold enough charge, it can generate crystallized essence.  The process is rather inefficient, and poses a high risk of damaging the fabric of reality.",
+    "description": "A device modified from an exotic compact reactor, inverting its original function entirely.  Using a large surge of power from any battery able to hold enough charge, it can generate crystallized essence.  The process is rather inefficient, and poses a high risk of damaging the fabric of reality.",
     "weight": "11 kg",
     "color": "light_cyan",
     "looks_like": "portal",
@@ -1503,10 +1612,29 @@
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_conversion", "no_fail": true, "level": 0 } ]
   },
   {
+    "type": "TOOL",
+    "id": "offering_chalice_coalescent",
+    "sub": "offering_chalice",
+    "name": { "str": "coalescent chalice" },
+    "description": "An exotic golden chalice, reinforced by an ornate lattice of steel and curious electronics.  A swirling, inky blackness resides inside it, resisting any attempt to pour it out.  Using it will focus your energy into it through a powerful ritual, converting it into crystallized essence.  Doing so will take 15 minutes and greatly exhaust you.  Overuse comes with the risk of lethal side effects.",
+    "weight": "3 kg",
+    "color": "yellow",
+    "looks_like": "offering_chalice",
+    "symbol": ":",
+    "material": [ "gold", "steel" ],
+    "flags": [ "ALLOWS_REMOTE_USE", "USE_PLAYER_ENERGY" ],
+    "volume": "2 L",
+    "bashing": 3,
+    "price": "3200 USD",
+    "price_postapoc": "35 USD",
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_coalescent_offering", "no_fail": true, "level": 0 } ]
+  },
+  {
     "id": "thermic_essence_cutter",
+    "sub": "oxy_torch",
     "type": "TOOL",
     "name": { "str": "thermic essence cutter" },
-    "description": "A small copper device that channels magical flame, focusing it into a white-hot pinprick of searing heat.  Too narrow in focus and short-ranged to be useful as a weapon, instead designed for cutting metal.  With a source of eye protection it can be used to destroy metal barriers.",
+    "description": "A small copper device that channels magical flame, focusing it into a white-hot pinprick of searing heat.  Too narrow in focus and short-ranged to be useful as a weapon, instead designed for metalworking.  With a source of eye protection it can be used to destroy metal barriers.",
     "weight": "2400 g",
     "volume": "1 L",
     "price": "600 USD",
@@ -1569,8 +1697,8 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "meteoric verge" },
-    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
-    "weight": "3935 g",
+    "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.  It can also be used to place a rune that will blast an area with lightning if something steps on it.",
+    "weight": "1585 g",
     "to_hit": 1,
     "volume": "2500 ml",
     "//": "Meteoric verge and moonstone scourge require items that did not exist pre-cataclysm.",
@@ -1600,13 +1728,23 @@
         }
       ]
     },
-    "use_action": {
-      "type": "cast_spell",
-      "spell_id": "arcana_item_meteoric_verge_bolt",
-      "no_fail": true,
-      "need_wielding": true,
-      "level": 0
-    },
+    "use_action": [
+      {
+        "type": "place_trap",
+        "allow_underwater": true,
+        "trap": "tr_arcana_item_lightning",
+        "moves": 90,
+        "practice": 0,
+        "done_message": "You focus a fragment of the verge's energy into a spell trap, waiting to be unleashed."
+      },
+      {
+        "type": "cast_spell",
+        "spell_id": "arcana_item_meteoric_verge_bolt",
+        "no_fail": true,
+        "need_wielding": true,
+        "level": 0
+      }
+    ],
     "flags": [ "STAB", "NO_SALVAGE", "MAGIC_FOCUS" ]
   },
   {
@@ -1628,7 +1766,6 @@
     "cutting": 21,
     "max_charges": 24,
     "ammo": "essence_blood_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 24 } } ],
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ACTIVE", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ] } ]
     },
@@ -1664,7 +1801,7 @@
     "type": "TOOL",
     "category": "weapons",
     "name": { "str": "moonstone fang" },
-    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it will sicken body and mind.  Invoking it will harden the body against cold.",
+    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it will sicken body and mind.  Activating it will additionally harden the body against cold, draining essence over time.",
     "weight": "160 g",
     "volume": "1500 ml",
     "//": "And the third shrine item, also post-cata only.",
@@ -1678,17 +1815,15 @@
     "repairs_like": "blood_athame",
     "color": "dark_gray",
     "max_charges": 8,
-    "charges_per_use": 1,
     "ammo": "essence_type",
     "techniques": [ "RAPID", "DEF_DISARM" ],
     "qualities": [ [ "BUTCHER", 6 ] ],
-    "artifact_data": { "effects_wielded": [ "AEP_SICK", "AEP_SCHIZO" ] },
     "relic_data": {
       "passive_effects": [
         {
           "has": "WIELD",
           "condition": "ALWAYS",
-          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 5 }, { "id": "arcana_react_moonstone_touch", "once_in": 10 } ],
           "hit_me_effect": [
             {
               "id": "arcana_react_shadowy_shield",
@@ -1697,15 +1832,37 @@
               "npc_message": "Wisps of shadow jump from %1$s to %2$s."
             }
           ]
-        }
+        },
+        { "has": "WIELD", "condition": "ACTIVE", "ench_effects": [ { "effect": "cold_ward_true", "intensity": 1 } ] }
       ]
     },
     "use_action": {
-      "type": "consume_drug",
-      "activation_message": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
-      "effects": [ { "id": "cold_ward_true", "duration": 300 } ]
+      "target": "moonstone_fang_on",
+      "msg": "The carvings in the stone glow blue for a brief moment, and an uncomfortable warmth spreads through your body.",
+      "active": true,
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "Essence shall draw out the fang's protective magic.",
+      "menu_text": "Activate ward against cold",
+      "type": "transform"
     },
     "flags": [ "STAB", "SHEATH_KNIFE" ]
+  },
+  {
+    "id": "moonstone_fang_on",
+    "type": "TOOL",
+    "copy-from": "moonstone_fang",
+    "repairs_like": "moonstone_fang",
+    "name": { "str": "moonstone fang (on)", "str_pl": "moonstone fangs (on)" },
+    "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  In addition to its life-draining strikes and blinding attackers, it is currently protecting you against the cold.  It can't be released until deactivated, however.",
+    "turns_per_charge": 300,
+    "revert_to": "moonstone_fang",
+    "use_action": {
+      "target": "moonstone_fang",
+      "msg": "The fang's unnatural glow fades, its protective magic with it.",
+      "type": "transform"
+    },
+    "extend": { "flags": [ "TRADER_AVOID", "NO_UNWIELD" ] }
   },
   {
     "id": "veilblade",
@@ -1794,7 +1951,8 @@
           "condition": "ACTIVE",
           "mutations": [ "ARCANA_BERSERK_EFFECT" ],
           "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
-          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ]
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
         }
       ]
     },
@@ -1838,7 +1996,18 @@
     "looks_like": "stormbringer",
     "repairs_like": "stormbringer",
     "color": "dark_gray",
-    "artifact_data": { "effects_wielded": [ "AEP_EVIL" ] },
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ACTIVE",
+          "mutations": [ "ARCANA_BERSERK_EFFECT" ],
+          "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ],
+          "hit_you_effect": [ { "id": "arcana_react_drain_life_improved" } ],
+          "intermittent_activation": { "effects": [ { "frequency": "10 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+        }
+      ]
+    },
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "VORPAL" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD" ]
   }

@@ -7,9 +7,9 @@
     "difficulty": 6,
     "value": 10000,
     "has_generic_rewards": false,
-    "start": { "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_scientist_mission1_progress" }, "follow_only" ] },
+    "start": { "effect": [ { "u_add_effect": "secro_scientist_mission1_progress" }, "follow_only" ] },
     "end": {
-      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_scientist_partake_mission1" }, "stop_following" ],
+      "effect": [ { "u_add_effect": "secro_scientist_partake_mission1" }, "stop_following" ],
       "update_mapgen": {
         "om_terrain": "SecronomSSLab_bowspecs",
         "place_zones": [
@@ -53,7 +53,7 @@
     "value": 10000,
     "has_generic_rewards": false,
     "origins": [ "ORIGIN_SECONDARY" ],
-    "start": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_scientist_mission2_progress" } },
+    "start": { "effect": { "u_add_effect": "secro_scientist_mission2_progress" } },
     "end": {
       "effect": [
         { "u_sell_item": "steel_chunk", "count": 4 },
@@ -68,10 +68,10 @@
         { "npc_consume_item": "power_supply", "count": 9 },
         { "npc_consume_item": "cable", "count": 5 },
         { "npc_consume_item": "broken_secro_laserturret" },
-        { "duration": "PERMANENT", "u_add_effect": "secro_scientist_partake_mission2" },
+        { "u_add_effect": "secro_scientist_partake_mission2" },
         { "npc_add_effect": "secro_scientist_repairing_laserturret", "duration": 3700 },
-        { "duration": "PERMANENT", "u_add_effect": "secro_scientist_repairing" },
-        { "duration": "PERMANENT", "u_add_effect": "secro_scientist_repair_laserturret" }
+        { "u_add_effect": "secro_scientist_repairing" },
+        { "u_add_effect": "secro_scientist_repair_laserturret" }
       ]
     },
     "dialogue": {
@@ -94,7 +94,7 @@
     "difficulty": 5,
     "value": 200000,
     "start": {
-      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission1_progress" }, "follow_only" ],
+      "effect": [ { "u_add_effect": "secro_guard_mission1_progress" }, "follow_only" ],
       "assign_mission_target": { "om_terrain": "SecronomSSLab_enigmaspecs", "reveal_radius": 1, "search_range": 10, "z": -2 },
       "update_mapgen": {
         "place_monster": [
@@ -104,7 +104,7 @@
         "place_nested": [ { "chunks": [ "secro_guard_mission1_opendadoor" ], "x": 0, "y": 0 } ]
       }
     },
-    "end": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_partake_mission1" } },
+    "end": { "effect": { "u_add_effect": "secro_guard_partake_mission1" } },
     "followup": "MISSION_SECRO_GUARD_HELP_SHAPESHIFTER",
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
@@ -132,7 +132,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
       "effect": [
-        { "duration": "PERMANENT", "u_add_effect": "secro_researcher_mission1_progress" },
+        { "u_add_effect": "secro_researcher_mission1_progress" },
         { "u_buy_item": "secro_missionkey_sampler_enigma" }
       ]
     },
@@ -142,7 +142,7 @@
         { "npc_consume_item": "secro_missionkey_sampler_enigma" },
         { "u_sell_item": "secro_sample_shifter" },
         { "npc_consume_item": "secro_sample_shifter" },
-        { "duration": "PERMANENT", "u_add_effect": "secro_researcher_partake_mission1" }
+        { "u_add_effect": "secro_researcher_partake_mission1" }
       ]
     },
     "dialogue": {
@@ -165,11 +165,11 @@
     "difficulty": 5,
     "value": 200000,
     "start": {
-      "effect": [ { "duration": "PERMANENT", "u_add_effect": "secro_guard_mission2_progress" }, "follow_only" ],
+      "effect": [ { "u_add_effect": "secro_guard_mission2_progress" }, "follow_only" ],
       "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 1, "search_range": 15, "z": 0 },
       "update_mapgen": { "place_monster": [ { "monster": "mon_shifter_zombie", "x": 11, "y": 11, "target": true } ] }
     },
-    "end": { "effect": { "duration": "PERMANENT", "u_add_effect": "secro_guard_partake_mission2" } },
+    "end": { "effect": { "u_add_effect": "secro_guard_partake_mission2" } },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "…",

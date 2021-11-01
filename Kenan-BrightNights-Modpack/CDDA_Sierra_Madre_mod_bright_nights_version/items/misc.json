@@ -35,7 +35,7 @@
 			  "menu_text": "Set the collar to explode",
 			  "type": "transform"
 		},
-		"covers": [ "HEAD" ],
+		"covers": [ "head" ],
 		"coverage": 10,
 		"encumbrance": 10,
 		"flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NO_TAKEOFF", "NPC_ACTIVATE" ]
@@ -65,7 +65,7 @@
 		  "no_deactivate_msg": "The collar is about to explode. While the blast won't be very strong since initially it's been designed to only blow the wearer's head off, it's still strongly encouraged to get away from it.",
 		  "explosion": { "damage": 10, "radius": 3, "fragment": { "impact": { "damage_type": "cut", "amount": 100, "armor_multiplier": 3 }, "range": 3 } }
 		},
-		"covers": [ "HEAD" ],
+		"covers": [ "head" ],
 		"coverage": 10,
 		"encumbrance": 10,
 		"flags": [ "TRADER_AVOID", "NO_TAKEOFF", "NPC_THROW_NOW" ]
@@ -196,7 +196,7 @@
 		"to_hit": -1,
 		"symbol": "[",
 		"color": "blue",
-		"covers": [ "LEG_R", "LEG_L", "TORSO", "ARM_L", "ARM_R", "HEAD", "HAND_L", "HAND_R", "FOOT_R", "FOOT_L" ],
+		"covers": [ "leg_r", "leg_l", "torso", "arm_l", "arm_r", "head", "hand_l", "hand_r", "foot_r", "foot_l" ],
 		"coverage": 65,
 		"encumbrance": 3,
 		"relic_data": { "passive_effects": [ { "id": "STAY_THERE" } ] },
@@ -212,7 +212,7 @@
 		"volume": "1001 ml",
 		"symbol": "~",
 		"color": "light_red",
-		"covers": [ "EYES", "MOUTH" ],
+		"covers": [ "eyes", "mouth" ],
 		"encumbrance": 18,
 		"relic_data": { "passive_effects": [ { "id": "STAY_THERE" } ] },
 		"storage": "2500 ml",
@@ -227,7 +227,7 @@
 		"volume": "1001 ml",
 		"symbol": "~",
 		"color": "light_red",
-		"covers": [ "EYES", "MOUTH" ],
+		"covers": [ "eyes", "mouth" ],
 		"encumbrance": 18,
 		"relic_data": { "passive_effects": [ { "id": "STAY_THERE" } ] },
 		"storage": "2500 ml",
@@ -250,7 +250,7 @@
 	},
 	{
 		"id": "sierra_map",
-		"category": "books",
+		"category": "maps",
 		"type": "GENERIC",
 		"symbol": ";",
 		"looks_like": "militarymap",

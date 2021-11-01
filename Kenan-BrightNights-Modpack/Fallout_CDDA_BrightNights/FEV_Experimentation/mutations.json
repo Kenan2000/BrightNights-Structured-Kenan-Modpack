@@ -97,8 +97,8 @@
       [ "fabrication", -1 ]
     ],
     "passive_mods": { "str_mod": 2 },
-    "encumbrance_always": [ [ "HAND_L", 10 ], [ "HAND_R", 10 ] ],
-    "restricts_gear": [ "HAND_L", "HAND_R" ],
+    "encumbrance_always": [ [ "hand_l", 10 ], [ "hand_r", 10 ] ],
+    "restricts_gear": [ "hand_l", "hand_r" ],
     "types": [ "HANDS" ],
     "prereqs": [ "PAWS" ],
     "cancels": [ "TALONS" ],

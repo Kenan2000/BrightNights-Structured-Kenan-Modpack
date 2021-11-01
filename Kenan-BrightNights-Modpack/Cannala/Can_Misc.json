@@ -23,8 +23,7 @@
   {
   "id": "SSRA_pack",
   "type": "GENERIC",
-  "name": "SSRA Pack",
-  "name_plural" : "SSRA Packs",
+  "name": { "str": "SSRA Pack", "str_pl": "SSRA Packs" },
   "category": "other",
   "description": "A cardboard box containing a genuine Cannalan SSRA and several magazines. Ammunition and accessories  available separately. Disassemble to unpack and enjoy.",
   "weight": 5551,
@@ -38,8 +37,7 @@
   {
   "id": "SSRA_Shot_pack",
   "type": "GENERIC",
-  "name": "QuickFire Shotgun Pack",
-  "name_plural" : "QuickFire Shotgun Packs",
+  "name": { "str": "QuickFire Shotgun Pack", "str_pl": "QuickFire Shotgun Packs" },
   "category": "other",
   "description": "A cardboard box containing a genuine Cannalan SSRA, several QFS magazines, and the parts required to convert the SSRA to a QFS. Ammunition and accessories  available separately. Disassemble to unpack and enjoy.",
   "weight": 5665,
@@ -53,8 +51,7 @@
   {
    "id": "SRC_Can",
   "type": "GENERIC",
-  "name": "M1926 SRC Can",
-  "name_plural" : "M1926 SRC Cans",
+  "name": { "str": "M1926 SRC Can", "str_pl": "M1926 SRC Cans" },
   "category": "other",
   "description": "A large metal can containing 1200 rounds of war surplus M1926 SRC ammunition. Disassemble to unpack and enjoy.",
   "weight": 15200,
@@ -64,7 +61,6 @@
   "to_hit": -4,
   "bashing": 5,
   "symbol": "}",
-  "color": "light_cyan",
-  "effects": [ "COOKOFF" ]
+  "color": "light_cyan"
   }
 ]

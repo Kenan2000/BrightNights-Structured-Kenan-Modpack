@@ -313,7 +313,7 @@
       [ [ "canister_empty", 1 ] ],
       [ [ "power_supply", 1 ] ],
       [ [ "cable", 30 ] ],
-      [ [ "mana_gem", 1 ] ],
+      [ [ "mana_gem_dull", 1 ], [ "mana_gem_blood", 1 ], [ "mana_gem", 1 ], [ "mana_gem_pure", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
       [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
@@ -363,7 +363,7 @@
       [ [ "bio_metabolics", 1 ] ],
       [ [ "cable", 60 ] ],
       [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
-      [ [ "mana_gem", 1 ] ],
+      [ [ "mana_gem_dull", 1 ], [ "mana_gem_blood", 1 ], [ "mana_gem", 1 ], [ "mana_gem_pure", 1 ] ],
       [ [ "iron_thorn", 1 ] ]
     ],
     "flags": [ "SECRET" ]
@@ -385,6 +385,28 @@
       [ [ "amplifier", 2 ] ],
       [ [ "cable", 50 ], [ "jumper_cable", 1 ] ],
       [ [ "offering_chalice", 1 ] ],
+      [ [ "engraved_stone", 1 ] ],
+      [ [ "blob_gem", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "offering_chalice_coalescent",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
+    "skill_used": "magic",
+    "skills_required": [ [ "electronics", 6 ], [ "fabrication", 5 ] ],
+    "difficulty": 8,
+    "time": "25 m",
+    "book_learn": [ [ "recipe_lab_arcana", 8 ], [ "book_sacrifice", 9 ], [ "book_syncretism", 9 ] ],
+    "using": [ [ "blacksmithing_standard", 25 ], [ "steel_tiny", 5 ] ],
+    "qualities": [ { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [
+      [ [ "offering_chalice", 1 ] ],
+      [ [ "amplifier", 2 ] ],
+      [ [ "cable", 50 ], [ "jumper_cable", 1 ] ],
       [ [ "engraved_stone", 1 ] ],
       [ [ "blob_gem", 1 ] ]
     ],
@@ -449,7 +471,7 @@
       [ [ "cable", 80 ] ],
       [ [ "plastic_chunk", 1 ] ],
       [ [ "copper", 100 ], [ "scrap_copper", 4 ] ],
-      [ [ "lens", 1 ], [ "lens_small", 2 ] ],
+      [ [ "lens", 1 ], [ "lens_small", 2 ], [ "monster_tear", 1 ] ],
       [ [ "flame_talisman", 1 ] ],
       [ [ "essence_blood", 3 ], [ "essence_dull", 30 ] ]
     ],
@@ -519,8 +541,8 @@
   {
     "type": "recipe",
     "result": "bot_mech_arcana",
-    "category": "CC_ELECTRONIC",
-    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_MAGITECH",
     "skill_used": "mechanics",
     "skills_required": [ [ "electronics", 8 ], [ "mechanics", 8 ] ],
     "difficulty": 10,

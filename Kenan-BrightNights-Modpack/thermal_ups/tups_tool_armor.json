@@ -18,7 +18,7 @@
       "target": "thermal_suit_ups_on",
       "active": true
     },
-    "covers": [ "TORSO", "ARMS", "LEGS" ],
+    "covers": [ "torso", "arms", "legs" ],
     "warmth": 10,
     "coverage": 100,
     "material_thickness": 1
@@ -54,7 +54,7 @@
       "target": "thermal_outfit_ups_on",
       "active": true
     },
-    "covers": [ "HEAD", "MOUTH", "TORSO", "ARMS", "LEGS", "HANDS", "FEET" ],
+    "covers": [ "head", "mouth", "torso", "arms", "legs", "hands", "feet" ],
     "warmth": 10,
     "coverage": 100,
     "material_thickness": 1
@@ -69,7 +69,7 @@
     "power_draw": 130000,
     "revert_to": "thermal_outfit_ups",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "Your %s deactivates.", "target": "thermal_outfit_ups" },
-    "covers": [ "HEAD", "MOUTH", "TORSO", "ARMS", "LEGS", "HANDS", "FEET" ],
+    "covers": [ "head", "mouth", "torso", "arms", "legs", "hands", "feet" ],
     "warmth": 100
   }
 ]

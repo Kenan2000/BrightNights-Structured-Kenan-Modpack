@@ -133,7 +133,7 @@
         "effect": [
           { "u_sell_item": "secro_flesh", "count": 25 },
           { "npc_consume_item": "secro_flesh", "count": 25 },
-          { "npc_add_effect": "secro_flesh_growing_meatfarm_low", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_growing_meatfarm_low" },
           { "npc_add_effect": "secro_flesh_growing_meatfarm", "duration": 14400 }
         ]
       },
@@ -144,7 +144,7 @@
         "effect": [
           { "u_sell_item": "secro_flesh", "count": 100 },
           { "npc_consume_item": "secro_flesh", "count": 100 },
-          { "npc_add_effect": "secro_flesh_growing_meatfarm_med", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_growing_meatfarm_med" },
           { "npc_add_effect": "secro_flesh_growing_meatfarm", "duration": 43200 }
         ]
       },
@@ -155,7 +155,7 @@
         "effect": [
           { "u_sell_item": "secro_flesh", "count": 325 },
           { "npc_consume_item": "secro_flesh", "count": 325 },
-          { "npc_add_effect": "secro_flesh_growing_meatfarm_high", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_growing_meatfarm_high" },
           { "npc_add_effect": "secro_flesh_growing_meatfarm", "duration": 129600 }
         ]
       },

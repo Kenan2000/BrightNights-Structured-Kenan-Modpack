@@ -5,13 +5,12 @@
     "category": "weapons",
     "name": { "str": "symbol of judgment", "str_pl": "symbols of judgment" },
     "description": "A golden band decorated with a trident motif, and inlaid with silver.  Just small enough to grasp the band in your palm, prongs between the fingers.  Holding it gives you the vague sense that this is a holy symbol, dedicated to something not of this world.  Firing it calls forth lightning.",
-    "weight": "3000 g",
-    "volume": "1250 ml",
+    "weight": "1100 g",
+    "volume": "750 ml",
     "price": "1500 USD",
     "price_postapoc": "100 USD",
-    "to_hit": -2,
-    "bashing": 12,
-    "cutting": 1,
+    "bashing": 8,
+    "cutting": 10,
     "material": [ "gold", "silver" ],
     "symbol": ",",
     "looks_like": "gold_bracelet",
@@ -24,7 +23,7 @@
     "durability": 10,
     "loudness": 150,
     "clip_size": 5,
-    "reload": 400,
+    "reload": 80,
     "relic_data": {
       "passive_effects": [
         {
@@ -42,7 +41,7 @@
       ]
     },
     "ammo_effects": [ "LIGHTNING", "LIGHTNING_JUDGMENT" ],
-    "flags": [ "STAB", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
+    "flags": [ "STAB", "UNARMED_WEAPON", "DURABLE_MELEE", "BELT_CLIP", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "MAGIC_FOCUS" ],
     "use_action": "MEDITATE"
   },
   {
@@ -69,7 +68,7 @@
     "durability": 10,
     "loudness": 100,
     "clip_size": 15,
-    "reload": 300,
+    "reload": 20,
     "modes": [ [ "DEFAULT", "single", 1 ], [ "BURST", "triple", 3 ] ],
     "ammo_effects": [ "FLAME", "STREAM", "INCENDIARY", "FLARE" ],
     "techniques": [ "WBLOCK_1", "RAPID" ],
@@ -97,7 +96,8 @@
       "NONCONDUCTIVE",
       "NO_SALVAGE",
       "MAGIC_FOCUS",
-      "USE_PLAYER_ENERGY"
+      "USE_PLAYER_ENERGY",
+      "PYROMANIAC_WEAPON"
     ]
   },
   {
@@ -105,7 +105,6 @@
     "type": "GUN",
     "category": "weapons",
     "name": { "str": "wraithslayer crossbow" },
-    "//": "Piercing does not display when using explicit damage blocks, but armor_multiplier will affect it.",
     "description": "A crossbow decorated with golden symbols, seemingly lacking a bowstring.  Instead it propels bright green bolts of energy with high armor penetration.",
     "weight": "2928 g",
     "volume": "1500 ml",
@@ -118,16 +117,71 @@
     "looks_like": "crossbow",
     "color": "green",
     "ammo": "essence_dull_type",
-    "skill": "magic",
-    "range": 20,
-    "ranged_damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 50 },
+    "skill": "rifle",
+    "range": 25,
+    "ranged_damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 40 },
     "dispersion": 150,
     "durability": 6,
     "clip_size": 20,
-    "reload": 75,
+    "reload": 3,
     "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
-    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE", "BELTED" ],
-    "armor_data": { "covers": [ "TORSO" ], "coverage": 5, "material_thickness": 1, "encumbrance": 15 }
+    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "valid_mod_locations": [ [ "sling", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ] ]
+  },
+  {
+    "id": "ethereal_hand_crossbow",
+    "type": "GUN",
+    "category": "weapons",
+    "name": { "str": "wraithslayer pistol crossbow" },
+    "description": "A pistol crossbow decorated with golden symbols and lacking a bowstring, instead propelling bright green bolts of energy with high armor penetration.  Nearly as effective as its full-sized counterpart, aside from reduced accuracy, range, and armor penetration.",
+    "weight": "1100 g",
+    "volume": "500 ml",
+    "price": "400 USD",
+    "price_postapoc": "60 USD",
+    "bashing": 6,
+    "material": [ "steel", "plastic", "gold" ],
+    "symbol": "(",
+    "looks_like": "hand_crossbow",
+    "color": "green",
+    "ammo": "essence_dull_type",
+    "skill": "pistol",
+    "range": 12,
+    "ranged_damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 20 },
+    "dispersion": 300,
+    "durability": 6,
+    "clip_size": 20,
+    "reload": 3,
+    "ammo_effects": [ "WIDE", "LASER", "BEANBAG", "BLINDS_EYES" ],
+    "flags": [ "FIRE_20", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "valid_mod_locations": [ [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ]
+  },
+  {
+    "id": "ethereal_huge_crossbow",
+    "type": "GUN",
+    "category": "weapons",
+    "name": { "str": "grand wraithslayer" },
+    "description": "A massive medieval crossbow converted to an arcane weapon, removing its winch and bowstring and richly decorated with esoteric religious iconography.  It uses a large amount of dull essence to fire extremely powerful piercing bolts of energy.  While not as slow to load as its mundane countertpart, charging it with dull essence does take longer than normal.",
+    "weight": "5670 g",
+    "volume": "4 L",
+    "price": "600 USD",
+    "price_postapoc": "120 USD",
+    "to_hit": -1,
+    "bashing": 22,
+    "material": [ "iron", "wood", "gold" ],
+    "symbol": "(",
+    "looks_like": "huge_crossbow",
+    "color": "green",
+    "ammo": "essence_dull_type",
+    "skill": "rifle",
+    "range": 50,
+    "ranged_damage": { "damage_type": "stab", "amount": 100, "armor_penetration": 80 },
+    "dispersion": 75,
+    "durability": 6,
+    "clip_size": 50,
+    "reload": 6,
+    "ammo_effects": [ "WIDE", "LASER", "LARGE_BEANBAG", "BLINDS_EYES" ],
+    "flags": [ "FIRE_50", "NEVER_JAMS", "PRIMITIVE_RANGED_WEAPON", "NO_SALVAGE" ],
+    "valid_mod_locations": [ [ "sling", 1 ] ]
   },
   {
     "id": "hand_of_armok",
@@ -158,9 +212,15 @@
     "reload": 200,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
     "ammo_effects": [ "NAPALM", "FIRE_CORRUPTION" ],
-    "artifact_data": { "effects_wielded": [ "AEP_EVIL" ] },
     "relic_data": {
-      "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 3 } ] } ]
+      "passive_effects": [
+        {
+          "has": "WIELD",
+          "condition": "ALWAYS",
+          "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 3 } ],
+          "intermittent_activation": { "effects": [ { "frequency": "25 minutes", "spell_effects": [ { "id": "arcana_react_evil_mimic" } ] } ] }
+        }
+      ]
     },
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
@@ -172,7 +232,8 @@
       "FIRE",
       "FLAMING",
       "PRIMITIVE_RANGED_WEAPON",
-      "USE_PLAYER_ENERGY"
+      "USE_PLAYER_ENERGY",
+      "PYROMANIAC_WEAPON"
     ]
   },
   {
@@ -200,7 +261,7 @@
     "durability": 10,
     "loudness": 75,
     "clip_size": 4,
-    "reload": 200,
+    "reload": 50,
     "relic_data": {
       "passive_effects": [
         {
@@ -255,7 +316,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "PLASMA", "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON" ]
   },
   {
     "id": "rift_focus_cannon",
@@ -265,7 +326,7 @@
     "symbol": "(",
     "color": "light_blue",
     "name": { "str": "rift focus cannon" },
-    "description": "A bulky, heavy-duty experimental rifle with peculiar golden inlays along the length of its body.  Exploit otherworldly energy to tear a rift in reality, focusing it into a highly-destructive beam.  While its impact creates an EMP effect, the beam is utterly useless against robotic targets, and some anomalous monsters may also be immune to it.  Consumes UPS power and crystallized essence to fire, and may leave lingering wounds in The Veil with each shot.",
+    "description": "A bulky, heavy-duty experimental rifle with peculiar golden inlays along the length of its body.  Exploits otherworldly energy to tear a rift in reality, focusing it into a highly-destructive beam.  While its impact creates an EMP effect, the beam is utterly useless against robotic targets, and some anomalous monsters may also be immune to it.  Consumes UPS power and crystallized essence to fire, and may leave lingering wounds in The Veil with each shot.",
     "price": "1800 USD",
     "price_postapoc": "80 USD",
     "material": [ "steel", "plastic" ],
@@ -359,9 +420,9 @@
     "material": [ "essencemat" ],
     "symbol": "(",
     "color": "red",
-    "skill": "launcher",
+    "skill": "magic",
     "range": 10,
-    "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 5 },
+    "ranged_damage": { "damage_type": "heat", "amount": 90, "armor_penetration": 30 },
     "dispersion": 300,
     "durability": 10,
     "loudness": 5,
@@ -387,7 +448,7 @@
     "durability": 10,
     "loudness": 9,
     "ammo_effects": [ "AMMO_ELECTROTHERMAL_LIGHTNING", "AMMO_ELECTROTHERMAL_FIRE_SMALL", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER" ]
+    "flags": [ "NEVER_JAMS", "TRADER_AVOID", "USES_BIONIC_POWER", "PYROMANIAC_WEAPON" ]
   },
   {
     "id": "bio_rift_focus_projector_gun",

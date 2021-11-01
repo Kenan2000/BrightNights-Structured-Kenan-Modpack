@@ -63,7 +63,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 600 },
           { "npc_consume_item": "meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall1", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall1" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -79,7 +79,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 1050 },
           { "npc_consume_item": "meat_tainted", "count": 1050 },
-          { "npc_add_effect": "secro_flesh_building_def_wall1", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall1" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -95,7 +95,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 600 },
           { "npc_consume_item": "mutant_meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall1", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall1" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -112,7 +112,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 600 },
           { "npc_consume_item": "meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall2", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall2" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -129,7 +129,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 1050 },
           { "npc_consume_item": "meat_tainted", "count": 1050 },
-          { "npc_add_effect": "secro_flesh_building_def_wall2", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall2" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -146,7 +146,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 600 },
           { "npc_consume_item": "mutant_meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall2", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall2" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -163,7 +163,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 600 },
           { "npc_consume_item": "meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall3", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall3" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -180,7 +180,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 1050 },
           { "npc_consume_item": "meat_tainted", "count": 1050 },
-          { "npc_add_effect": "secro_flesh_building_def_wall3", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall3" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -197,7 +197,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 600 },
           { "npc_consume_item": "mutant_meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall3", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall3" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -214,7 +214,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 600 },
           { "npc_consume_item": "meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall4", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall4" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -231,7 +231,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 1050 },
           { "npc_consume_item": "meat_tainted", "count": 1050 },
-          { "npc_add_effect": "secro_flesh_building_def_wall4", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall4" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -248,7 +248,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 600 },
           { "npc_consume_item": "mutant_meat", "count": 600 },
-          { "npc_add_effect": "secro_flesh_building_def_wall4", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_def_wall4" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -463,102 +463,102 @@
       {
         "text": "Build at coord \"a\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_a", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_a" }
       },
       {
         "text": "Build at coord \"b\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_b", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_b" }
       },
       {
         "text": "Build at coord \"c\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_c", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_c" }
       },
       {
         "text": "Build at coord \"d\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_d", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_d" }
       },
       {
         "text": "Build at coord \"e\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_e", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_e" }
       },
       {
         "text": "Build at coord \"f\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_f", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_f" }
       },
       {
         "text": "Build at coord \"g\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_g", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_g" }
       },
       {
         "text": "Build at coord \"h\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_h", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_h" }
       },
       {
         "text": "Build at coord \"i\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_i", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_i" }
       },
       {
         "text": "Build at coord \"j\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_j", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_j" }
       },
       {
         "text": "Build at coord \"k\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_k", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_k" }
       },
       {
         "text": "Build at coord \"l\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_l", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_l" }
       },
       {
         "text": "Build at coord \"m\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_m", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_m" }
       },
       {
         "text": "Build at coord \"n\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_n", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_n" }
       },
       {
         "text": "Build at coord \"o\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_o", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_o" }
       },
       {
         "text": "Build at coord \"p\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_p", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_p" }
       },
       {
         "text": "Build at coord \"q\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_q", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_q" }
       },
       {
         "text": "Build at coord \"r\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_r", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_r" }
       },
       {
         "text": "Build at coord \"s\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_s", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_s" }
       },
       {
         "text": "Build at coord \"t\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_t", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_t" }
       },
       { "text": "Nevermind...", "topic": "SECRO_FLESH_HIVEMIND_build" }
     ]
@@ -571,17 +571,17 @@
       {
         "text": "Build at far orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_far", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_far" }
       },
       {
         "text": "Build at mid orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mid", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mid" }
       },
       {
         "text": "Build at near orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_near", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_near" }
       }
     ]
   },
@@ -707,102 +707,102 @@
       {
         "text": "Build at coord \"a\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_a", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_a" }
       },
       {
         "text": "Build at coord \"b\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_b", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_b" }
       },
       {
         "text": "Build at coord \"c\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_c", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_c" }
       },
       {
         "text": "Build at coord \"d\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_d", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_d" }
       },
       {
         "text": "Build at coord \"e\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_e", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_e" }
       },
       {
         "text": "Build at coord \"f\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_f", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_f" }
       },
       {
         "text": "Build at coord \"g\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_g", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_g" }
       },
       {
         "text": "Build at coord \"h\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_h", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_h" }
       },
       {
         "text": "Build at coord \"i\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_i", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_i" }
       },
       {
         "text": "Build at coord \"j\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_j", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_j" }
       },
       {
         "text": "Build at coord \"k\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_k", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_k" }
       },
       {
         "text": "Build at coord \"l\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_l", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_l" }
       },
       {
         "text": "Build at coord \"m\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_m", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_m" }
       },
       {
         "text": "Build at coord \"n\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_n", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_n" }
       },
       {
         "text": "Build at coord \"o\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_o", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_o" }
       },
       {
         "text": "Build at coord \"p\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_p", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_p" }
       },
       {
         "text": "Build at coord \"q\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_q", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_q" }
       },
       {
         "text": "Build at coord \"r\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_r", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_r" }
       },
       {
         "text": "Build at coord \"s\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_s", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_s" }
       },
       {
         "text": "Build at coord \"t\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_t", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_t" }
       },
       { "text": "Nevermind...", "topic": "SECRO_FLESH_HIVEMIND_build" }
     ]
@@ -815,17 +815,17 @@
       {
         "text": "Build at far orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_far", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_far" }
       },
       {
         "text": "Build at mid orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_mid", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_mid" }
       },
       {
         "text": "Build at near orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_blade_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_near", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_blade_near" }
       }
     ]
   },
@@ -963,102 +963,102 @@
       {
         "text": "Build at coord \"a\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_a", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_a" }
       },
       {
         "text": "Build at coord \"b\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_b", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_b" }
       },
       {
         "text": "Build at coord \"c\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_c", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_c" }
       },
       {
         "text": "Build at coord \"d\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_d", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_d" }
       },
       {
         "text": "Build at coord \"e\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_e", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_e" }
       },
       {
         "text": "Build at coord \"f\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_f", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_f" }
       },
       {
         "text": "Build at coord \"g\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_g", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_g" }
       },
       {
         "text": "Build at coord \"h\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_h", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_h" }
       },
       {
         "text": "Build at coord \"i\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_i", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_i" }
       },
       {
         "text": "Build at coord \"j\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_j", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_j" }
       },
       {
         "text": "Build at coord \"k\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_k", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_k" }
       },
       {
         "text": "Build at coord \"l\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_l", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_l" }
       },
       {
         "text": "Build at coord \"m\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_m", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_m" }
       },
       {
         "text": "Build at coord \"n\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_n", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_n" }
       },
       {
         "text": "Build at coord \"o\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_o", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_o" }
       },
       {
         "text": "Build at coord \"p\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_p", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_p" }
       },
       {
         "text": "Build at coord \"q\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_q", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_q" }
       },
       {
         "text": "Build at coord \"r\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_r", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_r" }
       },
       {
         "text": "Build at coord \"s\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_s", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_s" }
       },
       {
         "text": "Build at coord \"t\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_t", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_t" }
       },
       { "text": "Nevermind...", "topic": "SECRO_FLESH_HIVEMIND_build" }
     ]
@@ -1071,17 +1071,17 @@
       {
         "text": "Build at far orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_far", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_far" }
       },
       {
         "text": "Build at mid orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_mid", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_mid" }
       },
       {
         "text": "Build at near orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_tendril_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_near", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_tendril_near" }
       }
     ]
   },
@@ -1219,102 +1219,102 @@
       {
         "text": "Build at coord \"a\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_a", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_a" }
       },
       {
         "text": "Build at coord \"b\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_b", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_b" }
       },
       {
         "text": "Build at coord \"c\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_c", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_c" }
       },
       {
         "text": "Build at coord \"d\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_d", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_d" }
       },
       {
         "text": "Build at coord \"e\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_e", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_e" }
       },
       {
         "text": "Build at coord \"f\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_f", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_f" }
       },
       {
         "text": "Build at coord \"g\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_g", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_g" }
       },
       {
         "text": "Build at coord \"h\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_h", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_h" }
       },
       {
         "text": "Build at coord \"i\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_i", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_i" }
       },
       {
         "text": "Build at coord \"j\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_j", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_j" }
       },
       {
         "text": "Build at coord \"k\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_k", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_k" }
       },
       {
         "text": "Build at coord \"l\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_l", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_l" }
       },
       {
         "text": "Build at coord \"m\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_m", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_m" }
       },
       {
         "text": "Build at coord \"n\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_n", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_n" }
       },
       {
         "text": "Build at coord \"o\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_o", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_o" }
       },
       {
         "text": "Build at coord \"p\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_p", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_p" }
       },
       {
         "text": "Build at coord \"q\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_q", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_q" }
       },
       {
         "text": "Build at coord \"r\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_r", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_r" }
       },
       {
         "text": "Build at coord \"s\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_s", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_s" }
       },
       {
         "text": "Build at coord \"t\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_t", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_t" }
       },
       { "text": "Nevermind...", "topic": "SECRO_FLESH_HIVEMIND_build" }
     ]
@@ -1327,17 +1327,17 @@
       {
         "text": "Build at far orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_far", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_far" }
       },
       {
         "text": "Build at mid orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_mid", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_mid" }
       },
       {
         "text": "Build at near orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_mouth_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_near", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_mouth_near" }
       }
     ]
   },
@@ -1475,102 +1475,102 @@
       {
         "text": "Build at coord \"a\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_a", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_a" }
       },
       {
         "text": "Build at coord \"b\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_b", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_b" }
       },
       {
         "text": "Build at coord \"c\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_c", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_c" }
       },
       {
         "text": "Build at coord \"d\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_d", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_d" }
       },
       {
         "text": "Build at coord \"e\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_e", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_e" }
       },
       {
         "text": "Build at coord \"f\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_f", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_f" }
       },
       {
         "text": "Build at coord \"g\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_g", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_g" }
       },
       {
         "text": "Build at coord \"h\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_h", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_h" }
       },
       {
         "text": "Build at coord \"i\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_i", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_i" }
       },
       {
         "text": "Build at coord \"j\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_j", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_j" }
       },
       {
         "text": "Build at coord \"k\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_k", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_k" }
       },
       {
         "text": "Build at coord \"l\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_l", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_l" }
       },
       {
         "text": "Build at coord \"m\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_m", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_m" }
       },
       {
         "text": "Build at coord \"n\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_n", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_n" }
       },
       {
         "text": "Build at coord \"o\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_o", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_o" }
       },
       {
         "text": "Build at coord \"p\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_p", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_p" }
       },
       {
         "text": "Build at coord \"q\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_q", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_q" }
       },
       {
         "text": "Build at coord \"r\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_r", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_r" }
       },
       {
         "text": "Build at coord \"s\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_s", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_s" }
       },
       {
         "text": "Build at coord \"t\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_t", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_t" }
       },
       { "text": "Nevermind...", "topic": "SECRO_FLESH_HIVEMIND_build" }
     ]
@@ -1583,17 +1583,17 @@
       {
         "text": "Build at far orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_far", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_far" }
       },
       {
         "text": "Build at mid orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_mid", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_mid" }
       },
       {
         "text": "Build at near orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_unify_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_near", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_unify_near" }
       }
     ]
   },
@@ -1731,102 +1731,102 @@
       {
         "text": "Build at coord \"a\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_a", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_a" }
       },
       {
         "text": "Build at coord \"b\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_b", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_b" }
       },
       {
         "text": "Build at coord \"c\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_c", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_c" }
       },
       {
         "text": "Build at coord \"d\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_d", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_d" }
       },
       {
         "text": "Build at coord \"e\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_e", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_e" }
       },
       {
         "text": "Build at coord \"f\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_f", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_f" }
       },
       {
         "text": "Build at coord \"g\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_g", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_g" }
       },
       {
         "text": "Build at coord \"h\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_h", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_h" }
       },
       {
         "text": "Build at coord \"i\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_i", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_i" }
       },
       {
         "text": "Build at coord \"j\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_j", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_j" }
       },
       {
         "text": "Build at coord \"k\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_k", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_k" }
       },
       {
         "text": "Build at coord \"l\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_l", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_l" }
       },
       {
         "text": "Build at coord \"m\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_m", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_m" }
       },
       {
         "text": "Build at coord \"n\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_n", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_n" }
       },
       {
         "text": "Build at coord \"o\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_o", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_o" }
       },
       {
         "text": "Build at coord \"p\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_p", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_p" }
       },
       {
         "text": "Build at coord \"q\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_q", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_q" }
       },
       {
         "text": "Build at coord \"r\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_r", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_r" }
       },
       {
         "text": "Build at coord \"s\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_s", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_s" }
       },
       {
         "text": "Build at coord \"t\"",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_t", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_t" }
       },
       { "text": "Nevermind...", "topic": "SECRO_FLESH_HIVEMIND_build" }
     ]
@@ -1839,17 +1839,17 @@
       {
         "text": "Build at far orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_far", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_far" }
       },
       {
         "text": "Build at mid orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_mid", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_mid" }
       },
       {
         "text": "Build at near orientation.",
         "topic": "SECRO_FLESH_HIVEMIND_build_defenses_turret_hravager_coord_orient",
-        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_near", "duration": "PERMANENT" }
+        "effect": { "npc_add_effect": "secro_flesh_building_def_turret_hravager_near" }
       }
     ]
   },

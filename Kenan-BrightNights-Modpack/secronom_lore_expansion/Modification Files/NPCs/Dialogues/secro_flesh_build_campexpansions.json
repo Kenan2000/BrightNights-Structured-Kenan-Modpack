@@ -202,7 +202,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 50 },
           { "npc_consume_item": "meat", "count": 50 },
-          { "npc_add_effect": "secro_flesh_building_core1", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core1" },
           { "npc_add_effect": "secro_flesh_building", "duration": 7200 }
         ]
       },
@@ -218,7 +218,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 88 },
           { "npc_consume_item": "meat_tainted", "count": 88 },
-          { "npc_add_effect": "secro_flesh_building_core1", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core1" },
           { "npc_add_effect": "secro_flesh_building", "duration": 7200 }
         ]
       },
@@ -234,7 +234,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 50 },
           { "npc_consume_item": "mutant_meat", "count": 50 },
-          { "npc_add_effect": "secro_flesh_building_core1", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core1" },
           { "npc_add_effect": "secro_flesh_building", "duration": 7200 }
         ]
       },
@@ -251,7 +251,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 150 },
           { "npc_consume_item": "meat", "count": 150 },
-          { "npc_add_effect": "secro_flesh_building_core2", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core2" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -268,7 +268,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 263 },
           { "npc_consume_item": "meat_tainted", "count": 263 },
-          { "npc_add_effect": "secro_flesh_building_core2", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core2" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -285,7 +285,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 150 },
           { "npc_consume_item": "mutant_meat", "count": 150 },
-          { "npc_add_effect": "secro_flesh_building_core2", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core2" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -302,7 +302,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 430 },
           { "npc_consume_item": "meat", "count": 430 },
-          { "npc_add_effect": "secro_flesh_building_core3", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core3" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -319,7 +319,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 753 },
           { "npc_consume_item": "meat_tainted", "count": 753 },
-          { "npc_add_effect": "secro_flesh_building_core3", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core3" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -336,7 +336,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 430 },
           { "npc_consume_item": "mutant_meat", "count": 430 },
-          { "npc_add_effect": "secro_flesh_building_core3", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_core3" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -353,7 +353,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 500 },
           { "npc_consume_item": "meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -370,7 +370,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 263 },
           { "npc_consume_item": "meat_tainted", "count": 263 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -387,7 +387,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 500 },
           { "npc_consume_item": "mutant_meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -408,8 +408,8 @@
           { "npc_consume_item": "meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -430,8 +430,8 @@
           { "npc_consume_item": "meat_tainted", "count": 438 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -452,8 +452,8 @@
           { "npc_consume_item": "mutant_meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -474,8 +474,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -496,8 +496,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -518,8 +518,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -541,8 +541,8 @@
           { "npc_consume_item": "meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -564,8 +564,8 @@
           { "npc_consume_item": "meat_tainted", "count": 656 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -587,8 +587,8 @@
           { "npc_consume_item": "mutant_meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -609,8 +609,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -631,8 +631,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -653,8 +653,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -675,8 +675,8 @@
           { "npc_consume_item": "meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -697,8 +697,8 @@
           { "npc_consume_item": "meat_tainted", "count": 1050 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -719,8 +719,8 @@
           { "npc_consume_item": "mutant_meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_top", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_top_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_top" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -737,7 +737,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 500 },
           { "npc_consume_item": "meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -754,7 +754,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 263 },
           { "npc_consume_item": "meat_tainted", "count": 263 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -771,7 +771,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 500 },
           { "npc_consume_item": "mutant_meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -792,8 +792,8 @@
           { "npc_consume_item": "meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -814,8 +814,8 @@
           { "npc_consume_item": "meat_tainted", "count": 438 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -836,8 +836,8 @@
           { "npc_consume_item": "mutant_meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -858,8 +858,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -880,8 +880,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -902,8 +902,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -925,8 +925,8 @@
           { "npc_consume_item": "meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -948,8 +948,8 @@
           { "npc_consume_item": "meat_tainted", "count": 656 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -971,8 +971,8 @@
           { "npc_consume_item": "mutant_meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -993,8 +993,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1015,8 +1015,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1037,8 +1037,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1059,8 +1059,8 @@
           { "npc_consume_item": "meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1081,8 +1081,8 @@
           { "npc_consume_item": "meat_tainted", "count": 1050 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1103,8 +1103,8 @@
           { "npc_consume_item": "mutant_meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_right", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_right_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_right" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1121,7 +1121,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 500 },
           { "npc_consume_item": "meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -1138,7 +1138,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 263 },
           { "npc_consume_item": "meat_tainted", "count": 263 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -1155,7 +1155,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 500 },
           { "npc_consume_item": "mutant_meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -1176,8 +1176,8 @@
           { "npc_consume_item": "meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -1198,8 +1198,8 @@
           { "npc_consume_item": "meat_tainted", "count": 438 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -1220,8 +1220,8 @@
           { "npc_consume_item": "mutant_meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -1242,8 +1242,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1264,8 +1264,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1286,8 +1286,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1309,8 +1309,8 @@
           { "npc_consume_item": "meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -1332,8 +1332,8 @@
           { "npc_consume_item": "meat_tainted", "count": 656 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -1355,8 +1355,8 @@
           { "npc_consume_item": "mutant_meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -1377,8 +1377,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1399,8 +1399,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1421,8 +1421,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1443,8 +1443,8 @@
           { "npc_consume_item": "meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1465,8 +1465,8 @@
           { "npc_consume_item": "meat_tainted", "count": 1050 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1487,8 +1487,8 @@
           { "npc_consume_item": "mutant_meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_down", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_down_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_down" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1505,7 +1505,7 @@
         "effect": [
           { "u_sell_item": "meat", "count": 500 },
           { "npc_consume_item": "meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -1522,7 +1522,7 @@
         "effect": [
           { "u_sell_item": "meat_tainted", "count": 263 },
           { "npc_consume_item": "meat_tainted", "count": 263 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -1539,7 +1539,7 @@
         "effect": [
           { "u_sell_item": "mutant_meat", "count": 500 },
           { "npc_consume_item": "mutant_meat", "count": 500 },
-          { "npc_add_effect": "secro_flesh_building_expandroom_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_building_expandroom_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 28800 }
         ]
       },
@@ -1560,8 +1560,8 @@
           { "npc_consume_item": "meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -1582,8 +1582,8 @@
           { "npc_consume_item": "meat_tainted", "count": 438 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -1604,8 +1604,8 @@
           { "npc_consume_item": "mutant_meat", "count": 250 },
           { "u_sell_item": "secro_flesh", "count": 50 },
           { "npc_consume_item": "secro_flesh", "count": 50 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_meatfarm_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_meatfarm_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 86400 }
         ]
       },
@@ -1626,8 +1626,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1648,8 +1648,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1670,8 +1670,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 200 },
           { "npc_consume_item": "secro_flesh", "count": 200 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_splicer_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_splicer_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1693,8 +1693,8 @@
           { "npc_consume_item": "meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -1716,8 +1716,8 @@
           { "npc_consume_item": "meat_tainted", "count": 656 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -1739,8 +1739,8 @@
           { "npc_consume_item": "mutant_meat", "count": 375 },
           { "u_sell_item": "secro_flesh", "count": 375 },
           { "npc_consume_item": "secro_flesh", "count": 375 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_modifier_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_modifier_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 172800 }
         ]
       },
@@ -1761,8 +1761,8 @@
           { "npc_consume_item": "meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1783,8 +1783,8 @@
           { "npc_consume_item": "meat_tainted", "count": 525 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1805,8 +1805,8 @@
           { "npc_consume_item": "mutant_meat", "count": 300 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_hatchery_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_hatchery_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 129600 }
         ]
       },
@@ -1827,8 +1827,8 @@
           { "npc_consume_item": "meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1849,8 +1849,8 @@
           { "npc_consume_item": "meat_tainted", "count": 1050 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },
@@ -1871,8 +1871,8 @@
           { "npc_consume_item": "mutant_meat", "count": 600 },
           { "u_sell_item": "secro_flesh", "count": 400 },
           { "npc_consume_item": "secro_flesh", "count": 400 },
-          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken", "duration": "PERMANENT" },
-          { "npc_add_effect": "secro_flesh_building_room_artifice_left", "duration": "PERMANENT" },
+          { "npc_add_effect": "secro_flesh_built_expandroom_left_taken" },
+          { "npc_add_effect": "secro_flesh_building_room_artifice_left" },
           { "npc_add_effect": "secro_flesh_building", "duration": 216000 }
         ]
       },

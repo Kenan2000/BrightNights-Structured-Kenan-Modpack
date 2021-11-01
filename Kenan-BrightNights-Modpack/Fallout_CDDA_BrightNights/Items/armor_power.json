@@ -2,7 +2,6 @@
   {
     "id": "power_armor_t51",
     "type": "TOOL_ARMOR",
-    "category": "armor",
     "name": { "str": "T-51 power armor" },
     "description": "The T-51b powered infantry armor is designed with the latest passive defense features for both civilian and military disturbances. It requires power.",
     "weight": "15 kg",
@@ -13,7 +12,7 @@
     "material": [ "steel" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 30,
 	"storage": "2500 ml",
@@ -37,12 +36,11 @@
     "power_draw": 4000000,
     "revert_to": "power_armor_t51",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s armor disengages.", "target": "power_armor_t51" },
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ]
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ]
   },
   {
     "id": "power_armor_helmet_t51",
     "type": "ARMOR",
-    "category": "armor",
     "name": { "str": "T-51b power helmet" },
     "description": "A basic helmet, designed for use with the the T-51b Power Helmet.  Offers excellent protection from both attacks and environmental hazards.  Like all DoubleTech power armor, the control and climate-regulation systems require direct skin contact.",
     "weight": "4 kg",
@@ -53,7 +51,7 @@
     "material": [ "steel" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 30,
     "warmth": 90,
@@ -66,7 +64,6 @@
   {
     "id": "power_armor_t45",
     "type": "TOOL_ARMOR",
-    "category": "armor",
     "name": { "str": "T-45 Power armor" },
     "description": "A suit of T-45D power armor, T-51's weaker cousin, T-45 is bulky, but still effective.",
     "weight": "17 kg",
@@ -77,7 +74,7 @@
     "material": [ "hardsteel", "steel" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 80,
 	"storage": "4 L",
@@ -100,12 +97,11 @@
     "power_draw": 4000000,
     "revert_to": "power_armor_t45",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s armor disengages.", "target": "power_armor_t45" },
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ]
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ]
   },
   {
     "id": "power_armor_helmet_t45",
     "type": "TOOL_ARMOR",
-    "category": "armor",
     "name": { "str": "T-45 power helmet" },
     "description": "A T-45 power helmet. Bulky, but it works",
     "weight": "5 kg",
@@ -116,7 +112,7 @@
     "material": [ "hardsteel", "steel" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 80,
     "warmth": 60,
@@ -129,7 +125,6 @@
   {
     "id": "power_armor_x01",
     "type": "TOOL_ARMOR",
-    "category": "armor",
     "name": { "str": "Enclave X-01 Power Armor" },
     "description": "One of the enclave's myriad of power armor models, the X-01 is the first model, used by the Enclave elite",
     "weight": "20 kg",
@@ -140,7 +135,7 @@
     "material": [ "ceramic", "superalloy" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 30,
 	"storage": "2500 ml",
@@ -163,12 +158,11 @@
     "power_draw": 4000000,
     "revert_to": "power_armor_x01",
     "use_action": { "type": "transform", "menu_text": "Turn off", "msg": "The %s armor disengages.", "target": "power_armor_x01" },
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ]
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ]
   },
   {
     "id": "power_armor_helmet_x01",
     "type": "TOOL_ARMOR",
-    "category": "armor",
     "name": { "str": "enclave X-01 power helmet" },
     "description": "An enclave power armor helmet. The eyes can have a menacing glow to them. The eye-glow is powered by conventional batteries.",
     "weight": "6 kg",
@@ -179,7 +173,7 @@
     "material": [ "ceramic", "superalloy" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 30,
     "warmth": 90,
@@ -233,7 +227,7 @@
     "power_draw": 15000,
     "revert_to": "power_armor_helmet_x01",
     "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "The %s flicks off.", "target": "power_armor_helmet_x01" },
-    "covers": [ "HEAD" ],
+    "covers": [ "head" ],
     "techniques": [ "WBLOCK_1" ],
     "magazine_well": 1
   }

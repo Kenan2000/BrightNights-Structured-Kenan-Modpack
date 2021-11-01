@@ -135,7 +135,7 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 2500, "radius": 2 }
+    "explosion": { "damage": 1250, "radius": 2 }
   },
   {
     "type": "AMMO",
@@ -218,7 +218,7 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 3000, "radius": 3 }
+    "explosion": { "damage": 2500, "radius": 3 }
   },
   {
     "type": "AMMO",
@@ -333,7 +333,7 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "effects": [ "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 2500, "radius": 5 }
+    "explosion": { "damage": 7500, "radius": 5 }
   },
   {
     "type": "AMMO",
@@ -355,13 +355,8 @@
     "recoil": 1050000,
     "count": 1,
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
-    "effects": [ "CUSTOM_EXPLOSION" ],
-    "explode_in_fire": true,
-    "explosion": {
-      "damage": 3000,
-      "radius": 6,
-      "fragment": { "impact": { "damage_type": "cut", "amount": 4000, "armor_multiplier": 3 }, "range": 24 }
-    }
+    "effects": [ "AMMO_155MM_FRAG" ],
+    "explode_in_fire": true
   },
   {
     "type": "AMMO",
@@ -816,7 +811,7 @@
     "clip_size": 2,
     "reload": 1200,
     "ups_charges": 75,
-    "flags": [ "MOUNTED_GUN", "NEVER_JAMS", "NO_RELOAD", "RELOAD_EJECT", "RELOAD_ONE" ]
+    "flags": [ "MOUNTED_GUN", "NEVER_JAMS", "NO_RELOAD", "RELOAD_EJECT", "RELOAD_ONE", "PYROMANIAC_WEAPON" ]
   },
   {
     "type": "BOOK",
@@ -880,12 +875,13 @@
     "category": "veh_parts",
     "name": { "str": "Rubber Caterpillar Track" },
     "description": "A short, interlocking set of hard rubber tracks reinforced by stiff wire held in place by a set of smaller wheels.  Similar with what you might see used on light construction vehicles.  It's significantly stronger than regular tires due to not being at risk of bursting; but is quite heavy.",
-    "weight": "32368 g",
+    "weight": "27216 g",
     "volume": "50 L",
     "price": "255 USD",
+    "price_postapoc": "8 USD",
     "to_hit": -3,
     "bashing": 30,
-    "material": [ "plastic", "steel" ],
+    "material": [ "rubber", "plastic", "steel" ],
     "symbol": "]",
     "color": "white",
     "diameter": 30,
@@ -897,9 +893,10 @@
     "category": "veh_parts",
     "name": { "str": "Steel Caterpillar Track" },
     "description": "A short, interlocking set of shaped steel tracks held in place by a set of smaller wheels.  Similar with what you might see used on large construction vehicles.  It's significantly stronger than regular tires due to not being at risk of bursting; but is very heavy.",
-    "weight": "95968 g",
-    "volume": "75 L",
+    "weight": "63503 g",
+    "volume": "60 L",
     "price": "455 USD",
+    "price_postapoc": "10 USD",
     "to_hit": -3,
     "bashing": 30,
     "material": [ "steel" ],
@@ -915,8 +912,9 @@
     "name": { "str": "Reinforced Caterpillar Track" },
     "description": "A short, interlocking set of shaped steel tracks held in place by a set of smaller wheels.  Similar with what you might see used on APCs and armored vehicles.  It's significantly stronger than regular tires due to not being at risk of bursting; but is extremely heavy.",
     "weight": "287824 g",
-    "volume": "87500 ml",
+    "volume": "80 L",
     "price": "755 USD",
+    "price_postapoc": "12 USD",
     "to_hit": -3,
     "bashing": 30,
     "material": [ "hardsteel", "steel" ],

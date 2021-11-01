@@ -1,5 +1,84 @@
 [
   {
+    "id": "space_anomaly",
+    "type": "GENERIC",
+    "category": "veh_parts",
+    "name": { "str": "stabilized portal" },
+    "description": "As you gaze into the seemingly infinite depths of this portable hole in reality, a phrase from a time forever gone echoes in your mind.  \"There are two things that are infinite: the universe and human kleptomania.\"",
+    "weight": "22813 g",
+    "volume": "50 L",
+    "price": "15 kUSD",
+    "to_hit": -4,
+    "bashing": 2,
+    "material": [ "steel", "plastic" ],
+    "symbol": "]",
+    "color": "cyan"
+  },
+  {
+    "id": "vehicle_shelving",
+    "type": "GENERIC",
+    "name": { "str": "vehicle shelving" },
+    "description": "Several heavy frames retrofitted to be installed together which are outfitted with tie-downs and attachment points gallore for carrying an extended amount of cargo.",
+    "weight": "350000 g",
+    "to_hit": -4,
+    "color": "cyan",
+    "symbol": "]",
+    "material": [ "steel", "plastic" ],
+    "volume": "200 L",
+    "bashing": 2,
+    "category": "veh_parts",
+    "price": "800 USD",
+    "price_postapoc": "10 USD"
+  },
+  {
+    "id": "afs_fridge",
+    "category": "veh_parts",
+    "type": "GENERIC",
+    "name": { "str": "vehicle refrigerator" },
+    "description": "A household refrigerator with impressive capacity.  Its power connection has been refurbished, and it can be mounted onto a vehicle to draw from its power.",
+    "symbol": "{",
+    "color": "white",
+    "weight": "142882 g",
+    "volume": "300 L",
+    "price": "400 USD",
+    "price_postapoc": "100 USD",
+    "material": [ "steel" ],
+    "to_hit": -4,
+    "bashing": 8,
+    "flags": [ "DURABLE_MELEE" ],
+    "looks_like": "minifridge"
+  },
+  {
+    "id": "afs_freezer",
+    "category": "veh_parts",
+    "type": "GENERIC",
+    "name": { "str": "vehicle freezer" },
+    "copy-from": "afs_fridge",
+    "description": "This refurbished refrigerator has been stripped of much of its internal components and converted to run at a much lower temperature, causing it to serve as a freezer for more power.  Like its predecessor, it runs on vehicle power.",
+    "color": "light_blue"
+  },
+  {
+    "type": "GENERIC",
+    "id": "afs_metal_rig",
+    "copy-from": "vehicle_rig",
+    "name": { "str": "MetalMaster forge buddy", "str_pl": "MetalMaster forge buddies" },
+    "description": "From the makers of the best-selling* FOODCO kitchen buddy comes the MetalMaster forge buddy, for all your metalworking, firing, and welding needs!  It's just as clunky and awkward as the thing it's spinning off, and still requires a vehicle battery to function."
+  },
+  {
+    "type": "GENERIC",
+    "id": "afs_kitchen_rig",
+    "copy-from": "vehicle_rig",
+    "name": { "str": "KitchenMaster cooking buddy", "str_pl": "KitchenMaster cooking buddies" },
+    "description": "Because it *clearly* needed one, this large all-in-one station provides the functions of FOODCO's kitchen buddy, now with complementary fume hoods and chemistry materials.  Why a chef would need a chemical rig is anyone's guess, but you can mount it on a vehicle to make use of it."
+  },
+  {
+    "type": "GENERIC",
+    "id": "afs_cooking_rig",
+    "copy-from": "vehicle_rig",
+    "name": { "str": "cooking rig" },
+    "description": "Skillet, pot, hotplate, and chemistry set; everything you need to cook food and chemicals.  Includes proper fume vents and a separator, so you don't contaminate your food with toxic chemicals."
+  },
+  {
     "id": "steam_triple_large",
     "copy-from": "engine_steam",
     "type": "ENGINE",
@@ -7,9 +86,6 @@
     "description": "A large steam engine.  An integrated boiler burns coal to heat water into steam, driving a reciprocating shaft.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "280 kg",
     "volume": "95 L",
-    "epower": 0,
-    "power": 242450,
-    "energy_consumption": 484890,
     "price": "14000 USD",
     "price_postapoc": 2800000
   },
@@ -21,9 +97,6 @@
     "description": "A huge steam engine.  An integrated boiler burns coal to heat water into steam, driving a reciprocating shaft.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "835 kg",
     "volume": "175 L",
-    "epower": 0,
-    "power": 447600,
-    "energy_consumption": 895200,
     "price": "25650 USD",
     "price_postapoc": 5130000
   },
@@ -36,8 +109,6 @@
     "weight": "80 kg",
     "volume": "18750 ml",
     "//": "Steam turbine efficiency sucks - ideally 47% efficient with reheat cycles, versus 55% for a modern gas engine.  Going with 33% efficieny for easy math",
-    "power": 93250,
-    "energy_consumption": 279750,
     "price": "2550 USD",
     "price_postapoc": 510000
   },
@@ -49,8 +120,6 @@
     "description": "A medium sized steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "120 kg",
     "volume": "27500 ml",
-    "power": 149200,
-    "energy_consumption": 347700,
     "price": "3800 USD",
     "price_postapoc": 760000
   },
@@ -62,8 +131,6 @@
     "description": "A large steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "190 kg",
     "volume": "45 L",
-    "power": 242450,
-    "energy_consumption": 727350,
     "price": "5950 USD",
     "price_postapoc": 1190000
   },
@@ -75,8 +142,6 @@
     "description": "A huge steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "345 kg",
     "volume": "81250 ml",
-    "power": 447600,
-    "energy_consumption": 1342800,
     "price": "10600 USD",
     "price_postapoc": 2120000
   },
@@ -84,11 +149,12 @@
     "id": "solar_array",
     "type": "GENERIC",
     "category": "veh_parts",
-    "name": "solar array",
-    "description": "A dozen solar panels set on a chassis reaching several meters high.  It keeps the fragile panels safely away from any potential threats and improves efficiency due to being able track the sun.  However, this comes at the cost of being prohibitively heavy.",
-    "weight": "265400 g",
-    "volume": "62500 ml",
+    "name": { "str": "solar array" },
+    "description": "A vertical array of three solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+    "weight": "50000 g",
+    "volume": "10000 ml",
     "price": "1200 USD",
+    "price_postapoc": "10 USD",
     "to_hit": -4,
     "bashing": 1,
     "material": [ "glass" ],
@@ -96,34 +162,33 @@
     "color": "yellow"
   },
   {
-    "id": "solar_array2",
+    "id": "reinforced_solar_array",
     "type": "GENERIC",
-    "category": "veh_parts",
-    "name": "upgraded solar array",
-    "description": "A dozen upgraded solar panels set on a chassis reaching several meters high.  It keeps the fragile panels safely away from any potential threats and improves efficiency due to being able to track the sun.  However, this comes at the cost of being prohibitively heavy and obstructive.",
-    "weight": "319328 g",
-    "volume": "62500 ml",
-    "price": "1500 USD",
-    "to_hit": -4,
-    "bashing": 1,
-    "material": [ "glass" ],
-    "symbol": "]",
-    "color": "yellow"
-  },
-  {
-    "id": "solar_array2r",
-    "type": "GENERIC",
-    "category": "veh_parts",
-    "name": "upgraded reinforced solar array",
-    "description": "A dozen upgraded reinforced solar panels set on a chassis reaching several meters high.  It keeps the fragile panels safely away from any potential threats and improves efficiency due to being able to track the sun.  However, this comes at the cost of being prohibitively heavy and obstructive.",
-    "weight": "382736 g",
-    "volume": "80500 ml",
-    "price": "1500 USD",
-    "to_hit": -4,
-    "bashing": 1,
+    "copy-from": "solar_array",
+    "name": { "str": "reinforced solar array" },
+    "description": "A vertical array of three reinforced solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+    "weight": "80459 g",
+    "volume": "20500 ml",
     "material": [ "glass", "steel" ],
-    "symbol": "]",
     "color": "light_blue"
+  },
+  {
+    "id": "solar_array_v2",
+    "type": "GENERIC",
+    "copy-from": "solar_array",
+    "name": { "str": "upgraded solar array" },
+    "description": "A vertical array of three upgraded solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+    "weight": "63482 g",
+    "volume": "14500 ml"
+  },
+  {
+    "id": "reinforced_solar_array_v2",
+    "type": "GENERIC",
+    "copy-from": "reinforced_solar_array",
+    "name": { "str": "upgraded reinforced solar array" },
+    "description": "A vertical array of three upgraded reinforced solar panels set on a chassis rising above one another on a metal pole with rudimentary tracking and motors.  Due to the flimsy nature of the hydraulics and high surface area profile to maximize sunlight, they can't really be installed onto an existing vehicle.  Requires a jumper cable or similar to pull power from.",
+    "weight": "95186 g",
+    "volume": "23500 ml"
   },
   {
     "id": "tread1",
@@ -175,21 +240,5 @@
     "color": "white",
     "diameter": 60,
     "width": 30
-  },
-  {
-    "id": "turretframe",
-    "type": "GENERIC",
-    "category": "veh_parts",
-    "name": { "str": "turret chassis", "str_pl": "turret chassis" },
-    "description": "A frame capable of rotating a full 360 degrees, capable of mounting multiple weapon systems either welded directly onto it or secured via the straps.  It comes with a easily modified container for ammunition storage, a rudimentary ammo feed system for easy access, and a section for a movement system.  It is controlled by a targeting AI that can adapt to the usage of whatever weapon that has been loading, with proper programming.",
-    "weight": "38604 g",
-    "volume": "20 L",
-    "price": "80 USD",
-    "to_hit": -3,
-    "bashing": 15,
-    "material": [ "steel" ],
-    "symbol": "]",
-    "color": "light_gray",
-    "techniques": [ "DEF_DISARM" ]
   }
 ]

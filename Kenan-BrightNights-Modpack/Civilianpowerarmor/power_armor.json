@@ -2,7 +2,6 @@
   {
     "id": "Civilian_depower_armor",
     "type": "ARMOR",
-    "category": "armor",
     "name": "Commercial Depowered armor",
     "//": "These much Less Durable Suits Of Power Armor Were Made For Public Use.",
     "description": "The DoubleTech civilian Power Armor,: A heavy suit of basic power armor that has been modified for civilian use, And Has Been Made For Storage, This suit has had its servos and cooling system stripped out, meaning it no longer requires power.",
@@ -15,7 +14,7 @@
     "material": [ "steel" ],
     "symbol": "[",
     "color": "light_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 90,
     "encumbrance": 35,
     "storage": "5000 ml",
@@ -27,7 +26,6 @@
   {
     "id": "power_armor_Civilian",
     "type": "ARMOR",
-    "category": "armor",
     "name": "Commercial power armor",
     "description": "A suit of DoubleTech Power Armor, Mk. I-C.  This model Is Made For Commercial Use, This Model Was Very Common To See On Rich Members Of society. Like all DoubleTech power armor, the control and climate-regulation systems require direct skin contact.",
     "weight": "8000 g",
@@ -39,7 +37,7 @@
     "material": [ "steel", "plastic" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 95,
     "encumbrance": 35,
     "storage": "25 L",

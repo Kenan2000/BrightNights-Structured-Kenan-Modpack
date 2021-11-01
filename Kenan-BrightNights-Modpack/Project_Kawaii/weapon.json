@@ -15,7 +15,7 @@
       "volume" : 10,
       "bashing" : 6,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 20
@@ -44,7 +44,7 @@
       "volume" : 12,
       "bashing" : 8,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 20
@@ -73,7 +73,7 @@
       "volume" : 12,
       "bashing" : 11,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 10
@@ -103,7 +103,7 @@
       "volume" : 14,
       "bashing" : 15,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 10
@@ -136,7 +136,7 @@
       "bashing" : 35,
       "cutting" : 15,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 10
@@ -165,11 +165,12 @@
       "bashing" : 15,
       "cutting" : 35,
       "to_hit" : 5,
-      "durability" : 10,
       "use_action": {
       "type": "transform",
       "msg": "The Shelia expands into its bow form.",
       "target": "kawaii_shelia_on",
+	   "active": false,
+      "moves": 200,
       "menu_text": "Transform weapon"
      }
    },
@@ -190,7 +191,7 @@
       "volume" : 7,
       "bashing" : 15,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 10
@@ -207,6 +208,8 @@
       "type": "transform",
       "msg": "The Shelia folds back into its blade form.",
       "target": "kawaii_shelia_off",
+	   "active": false,
+      "moves": 200,
       "menu_text": "Transform weapon"
      }
    },
@@ -227,7 +230,7 @@
       "volume" : 6,
       "bashing" : 15,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 10,
          "material_thickness" : 3,
          "encumbrance" : 10
@@ -259,7 +262,7 @@
       "bashing" : 10,
       "to_hit" : 3,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 10
@@ -289,7 +292,7 @@
       "bashing" : 1,
       "to_hit" : 1,
       "armor_data" : {
-         "covers" : ["TORSO"],
+         "covers" : ["torso"],
          "coverage" : 5,
          "material_thickness" : 1,
          "encumbrance" : 20
@@ -321,6 +324,8 @@
       "type": "transform",
       "msg": "You store Rosa and focus on attack",
       "target": "kawaii_rita_and_rosa_off",
+	   "active": false,
+      "moves": 200,
       "menu_text": "Switch to attack mode"
      }
    },
@@ -344,6 +349,8 @@
       "type": "transform",
       "msg": "You equip Rosa and concentrate on defence",
       "target": "kawaii_rita_and_rosa",
+	   "active": false,
+      "moves": 200,
       "menu_text": "Switch to defence mode"
      }
    },
@@ -367,6 +374,8 @@
       "type": "transform",
       "msg": "You attach the two blades together to form a single polearm.",
       "target": "kawaii_crystal_tr",
+	   "active": false,
+      "moves": 200,
       "menu_text": "Switch to polearm form"
      }
    },
@@ -390,6 +399,8 @@
       "type": "transform",
       "msg": "You seperate the polarm into two blades",
       "target": "kawaii_crystal_td",
+	   "active": false,
+      "moves": 200,
       "menu_text": "Switch to twin blade form"
      }
    },

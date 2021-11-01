@@ -253,7 +253,7 @@
     "time": "16 m",
     "reversible": false,
     "autolearn": true,
-    "note": "the cooking oil isn't supposed to be expended since you can recycle it after frying the fish",
+    "//": "the cooking oil isn't supposed to be expended since you can recycle it after frying the fish",
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "COOK", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 8, "LIST" ], [ "char_smoker", 8 ] ], [ [ "cooking_oil", -1 ], [ "tallow", -1 ], [ "lard", -1 ] ] ],
     "components": [
@@ -402,6 +402,66 @@
   },
   {
     "type": "recipe",
+    "result": "firemachete_off",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "mechanics",
+    "difficulty": 4,
+    "time": "20 m",
+    "reversible": true,
+    "decomp_learn": 4,
+    "book_learn": [ [ "welding_book", 8 ], [ "book_icef", 4 ] ],
+    "using": [ [ "welding_standard", 2 ] ],
+    "components": [
+      [ [ "leather", 5 ] ],
+      [ [ "pipe", 1 ] ],
+      [ [ "machete", 1 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "aux_pressurized_tank", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "broadfire_off",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "mechanics",
+    "difficulty": 5,
+    "time": "30 m",
+    "reversible": true,
+    "decomp_learn": 4,
+    "book_learn": [ [ "welding_book", 8 ], [ "book_icef", 4 ] ],
+    "using": [ [ "welding_standard", 2 ] ],
+    "components": [
+      [ [ "leather", 5 ] ],
+      [ [ "pipe", 1 ] ],
+      [ [ "broadsword", 1 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "aux_pressurized_tank", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "firekatana_off",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_CUTTING",
+    "skill_used": "mechanics",
+    "difficulty": 5,
+    "time": "30 m",
+    "reversible": true,
+    "decomp_learn": 4,
+    "book_learn": [ [ "welding_book", 8 ], [ "book_icef", 4 ] ],
+    "using": [ [ "welding_standard", 2 ] ],
+    "components": [
+      [ [ "leather", 5 ] ],
+      [ [ "pipe", 1 ] ],
+      [ [ "katana", 1 ] ],
+      [ [ "pilot_light", 1 ] ],
+      [ [ "aux_pressurized_tank", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
     "result": "bot_manhack_fire",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_OTHER",
@@ -427,7 +487,7 @@
   {
     "type": "recipe",
     "result": "bomblet_launcher_single",
-    "note": "standalone_weapon",
+    "//": "standalone_weapon",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "mechanics",
@@ -442,7 +502,7 @@
   {
     "type": "recipe",
     "result": "bomblet_launcher_double",
-    "note": "standalone_weapon",
+    "//": "standalone_weapon",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_RANGED",
     "skill_used": "mechanics",
@@ -472,7 +532,7 @@
   {
     "type": "recipe",
     "result": "bomblet_undermod",
-    "note": "underbarrel_mount",
+    "//": "underbarrel_mount",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_MODS",
     "skill_used": "mechanics",
@@ -498,7 +558,7 @@
   {
     "type": "recipe",
     "result": "bomblet_explosive",
-    "note": "crafted explosive bomblets",
+    "//": "crafted explosive bomblets",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_BULLETS",
     "skill_used": "fabrication",
@@ -536,7 +596,7 @@
   {
     "type": "recipe",
     "result": "bomblet_frag",
-    "note": "crafted frag bomblets",
+    "//": "crafted frag bomblets",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_BULLETS",
     "skill_used": "fabrication",
@@ -574,7 +634,7 @@
   {
     "type": "recipe",
     "result": "bomblet_fire",
-    "note": "crafted fire bomblets",
+    "//": "crafted fire bomblets",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_BULLETS",
     "skill_used": "fabrication",
@@ -613,7 +673,7 @@
   {
     "type": "recipe",
     "result": "bomblet_acid",
-    "note": "crafted acid bomblets",
+    "//": "crafted acid bomblets",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_BULLETS",
     "skill_used": "fabrication",
@@ -644,7 +704,7 @@
   {
     "type": "recipe",
     "result": "bomblet_stun",
-    "note": "crafted stun bomblets",
+    "//": "crafted stun bomblets",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_BULLETS",
     "skill_used": "fabrication",
@@ -676,7 +736,7 @@
   {
     "type": "recipe",
     "result": "bomblet_casing",
-    "note": "crafted bomblet cases",
+    "//": "crafted bomblet cases",
     "category": "CC_AMMO",
     "subcategory": "CSC_AMMO_COMPONENTS",
     "skill_used": "fabrication",

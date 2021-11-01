@@ -1,20 +1,10 @@
 [
   {
-    "type": "recipe_category",
-    "id": "CC_SECRONOM",
-    "recipe_subcategories": [
-      "CSC_ALL",
-      "CSC_SECRONOM_FLESH",
-      "CSC_SECRONOM_FLESH ARMOR",
-      "CSC_SECRONOM_FLESH ALTERATION"
-    ]
-  },
-  {
     "//": "We're basically combining meat with slime.",
     "result": "secro_flesh",
     "type": "recipe",
-    "category": "CC_SECRONOM",
-    "subcategory": "CSC_SECRONOM_FLESH",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
     "skill_used": "cooking",
     "difficulty": 1,
     "skills_required": [ "cooking", 1 ],
@@ -34,8 +24,8 @@
   {
     "result": "secro_flesh_large",
     "type": "recipe",
-    "category": "CC_SECRONOM",
-    "subcategory": "CSC_SECRONOM_FLESH",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_OTHER",
     "skill_used": "cooking",
     "difficulty": 1,
     "skills_required": [ "cooking", 1 ],

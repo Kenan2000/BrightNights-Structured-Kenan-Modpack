@@ -2,7 +2,6 @@
   {
     "id": "XEAS_mask",
     "type": "TOOL_ARMOR",
-    "category": "armor",
     "name": "xeas mask",
     "description": "A experimental, mix multilayer reinforced gas mask. Provides excellent protection from smoke, teargas, and claws. It must be prepared before use.",
     "weight": "800 g",
@@ -16,7 +15,7 @@
     "material": [ "acidchitin", "diamond" ],
     "symbol": "[",
     "color": "light_cyan",
-    "covers": [ "EYES", "MOUTH" ],
+    "covers": [ "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 20,
     "warmth": 15,

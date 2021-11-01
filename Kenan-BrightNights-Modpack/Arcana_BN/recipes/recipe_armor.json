@@ -2,20 +2,31 @@
   {
     "result": "gloves_plate",
     "type": "recipe",
+    "id_suffix": "arcana",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_ARMOR",
-    "skill_used": "fabrication",
+    "skill_used": "magic",
     "difficulty": 5,
-    "time": "5 h 15 m",
-    "skills_required": [ "magic", 6 ],
+    "time": "3 h 30 m",
+    "skills_required": [ "fabrication", 4 ],
     "book_learn": [ [ "book_sacrifice", 5 ] ],
-    "using": [
-      [ "forging_standard", 12 ],
-      [ "steel_standard", 6 ],
-      [ "arcana_forging_tools_standard", 1 ],
-      [ "arcana_essence_any", 1 ]
-    ],
+    "using": [ [ "steel_standard", 6 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
     "components": [ [ [ "fur", 10 ], [ "tanned_pelt", 2 ], [ "leather", 10 ], [ "tanned_hide", 2 ] ] ],
+    "flags": [ "BLIND_EASY", "SECRET" ]
+  },
+  {
+    "result": "chainmail_hauberk",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "5 h",
+    "skills_required": [ "fabrication", 5 ],
+    "book_learn": [ [ "book_hexenhammer", 6 ], [ "book_syncretism", 6 ] ],
+    "using": [ [ "steel_standard", 7 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "components": [ [ [ "rag", 16 ] ], [ [ "gambeson", 1 ] ] ],
     "flags": [ "BLIND_EASY", "SECRET" ]
   },
   {
@@ -73,11 +84,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
-    "components": [
-      [ [ "triffid_garland", 1 ] ],
-      [ [ "water_talisman", 1 ] ],
-      [ [ "earth_talisman", 1 ] ]
-    ],
+    "components": [ [ [ "triffid_garland", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
@@ -93,11 +100,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
-    "components": [
-      [ [ "amulet_exotic", 1 ] ],
-      [ [ "flame_talisman", 1 ] ],
-      [ [ "air_talisman", 1 ] ]
-    ],
+    "components": [ [ [ "amulet_exotic", 1 ] ], [ [ "flame_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
   },
@@ -113,13 +116,40 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
-    "components": [
-      [ [ "brooch_iridescent", 1 ] ],
-      [ [ "earth_talisman", 1 ] ],
-      [ [ "air_talisman", 1 ] ]
-    ],
+    "components": [ [ [ "brooch_iridescent", 1 ] ], [ [ "earth_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+  },
+  {
+    "type": "recipe",
+    "result": "mana_gem_dull",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "skills_required": [ "fabrication", 3 ],
+    "time": "30 m",
+    "autolearn": true,
+    "book_learn": [ [ "book_hexenhammer", 2 ], [ "book_syncretism", 1 ] ],
+    "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
+    "components": [
+      [ [ "monster_tear", 1 ], [ "sapphire", 1 ], [ "aquamarine", 1 ], [ "blue_topaz", 1 ] ],
+      [ [ "copper", 100 ], [ "scrap_copper", 4 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "mana_gem_blood",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 3 ],
+    "time": "30 m",
+    "autolearn": true,
+    "book_learn": [ [ "book_bloodmagic", 3 ], [ "book_sacrifice", 3 ], [ "book_syncretism", 2 ] ],
+    "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
+    "components": [ [ [ "blob_gem", 1 ], [ "peridot", 1 ], [ "citrine", 1 ], [ "alexandrite", 1 ] ], [ [ "silver_small", 100 ] ] ]
   },
   {
     "type": "recipe",
@@ -131,25 +161,26 @@
     "skills_required": [ "fabrication", 3 ],
     "time": "30 m",
     "autolearn": true,
-    "book_learn": [
-      [ "book_magicfordummies", 4 ],
-      [ "book_bloodmagic", 3 ],
-      [ "book_hexenhammer", 3 ],
-      [ "book_sacrifice", 3 ],
-      [ "book_syncretism", 2 ]
-    ],
+    "book_learn": [ [ "book_hexenhammer", 4 ], [ "book_bloodmagic", 4 ], [ "book_sacrifice", 4 ], [ "book_syncretism", 3 ] ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
     "components": [
-      [
-        [ "amethyst", 1 ],
-        [ "aquamarine", 1 ],
-        [ "blue_topaz", 1 ],
-        [ "sapphire", 1 ],
-        [ "monster_tear", 1 ],
-        [ "blob_gem", 1 ]
-      ],
-      [ [ "copper", 100 ], [ "silver_small", 100 ], [ "gold_small", 100 ] ]
+      [ [ "vortex_shard", 1 ], [ "amethyst", 1 ], [ "tourmaline", 1 ], [ "garnet", 1 ] ],
+      [ [ "gold_small", 100 ], [ "CF_golden_scale", 20 ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "result": "mana_gem_pure",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "skills_required": [ "fabrication", 3 ],
+    "time": "30 m",
+    "autolearn": true,
+    "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 4 ] ],
+    "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ], [ "cordage_short", 3 ], [ "arcana_essence_any", 3 ] ],
+    "components": [ [ [ "shadow_gem", 1 ], [ "diamond", 1 ], [ "opal", 1 ], [ "pearl", 1 ] ], [ [ "platinum_small", 100 ] ] ]
   },
   {
     "result": "gilded_aegis",
@@ -177,7 +208,7 @@
     "skills_required": [ "tailor", 3 ],
     "time": "25 m",
     "book_learn": [ [ "book_hexenhammer", 6 ] ],
-    "using": [ [ "filament", 9 ], [ "steel_tiny", 2 ] ],
+    "using": [ [ "filament", 10 ] ],
     "qualities": [
       { "id": "HAMMER", "level": 3 },
       { "id": "CUT", "level": 1 },
@@ -189,6 +220,32 @@
       [ [ "steel_chunk", 2 ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
       [ [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ],
+      [ [ "essence_dull", 30 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "somen_clairvoyance_xl",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "skills_required": [ "tailor", 4 ],
+    "time": "20 m",
+    "book_learn": [ [ "book_hexenhammer", 8 ], [ "book_syncretism", 7 ] ],
+    "using": [ [ "filament", 5 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3 },
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 },
+      { "id": "ANVIL", "level": 1 }
+    ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [
+      [ [ "steel_chunk", 1 ], [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
+      [ [ "leather", 1 ], [ "fur", 1 ] ],
+      [ [ "copper", 15 ], [ "silver_small", 15 ], [ "gold_small", 15 ], [ "CF_golden_scale", 3 ] ],
       [ [ "essence_dull", 30 ] ]
     ],
     "flags": [ "SECRET" ]
@@ -268,6 +325,22 @@
     "flags": [ "SECRET" ]
   },
   {
+    "result": "gauntlets_necro_xl",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "byproducts": [ [ "scrap", 40 ] ],
+    "skill_used": "magic",
+    "difficulty": 7,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "30 m",
+    "book_learn": [ [ "book_sacrifice", 8 ], [ "book_syncretism", 7 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6, "LIST" ] ] ],
+    "components": [ [ [ "gloves_plate", 1 ] ], [ [ "silver_small", 50 ] ], [ [ "essence", 4 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
     "result": "robe_shadow",
     "type": "recipe",
     "category": "CC_ARCANA",
@@ -285,6 +358,42 @@
       [ [ "fur", 4 ], [ "feather", 400 ] ],
       [ [ "charcoal", 30 ] ],
       [ [ "essence", 7 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "robe_shadow_xl",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "byproducts": [ [ "rag", 5 ] ],
+    "skill_used": "magic",
+    "difficulty": 8,
+    "skills_required": [ "tailor", 6 ],
+    "time": "60 m",
+    "book_learn": [ [ "book_sacrifice", 9 ], [ "book_syncretism", 8 ] ],
+    "using": [ [ "filament", 15 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 } ],
+    "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
+    "components": [ [ [ "cloak", 1 ] ], [ [ "fur", 4 ], [ "feather", 400 ] ], [ [ "charcoal", 20 ] ], [ [ "essence", 7 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "cyclopean_mirror",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "skills_required": [ "fabrication", 5 ],
+    "time": "40 m",
+    "book_learn": [ [ "book_sacrifice", 7 ] ],
+    "using": [ [ "forging_standard", 5 ], [ "bronzesmithing_tools", 5 ], [ "steel_standard", 5 ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "components": [
+      [ [ "silver_small", 80 ], [ "scrap_bronze", 2 ] ],
+      [ [ "blob_gem", 1 ], [ "iridescent_plate", 1 ], [ "engraved_stone", 1 ], [ "shadow_gem", 1 ] ],
+      [ [ "essence", 6 ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -314,7 +423,7 @@
       [ [ "ragpouch", 1 ] ],
       [ [ "copper", 50 ], [ "scrap_copper", 2 ] ],
       [ [ "rag", 2 ], [ "felt_patch", 2 ], [ "leather", 2 ], [ "fur", 2 ] ],
-      [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 10 ] ]
+      [ [ "water_talisman", 1 ], [ "vortex_stone", 1 ], [ "vortex_shard", 1 ] ]
     ],
     "flags": [ "SECRET" ]
   },

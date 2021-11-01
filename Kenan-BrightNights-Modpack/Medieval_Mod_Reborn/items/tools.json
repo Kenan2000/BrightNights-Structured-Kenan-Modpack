@@ -16,6 +16,25 @@
     "color": "dark_gray"
   },
   {
+    "id": "poleaxe",
+    "type": "GENERIC",
+    "name": { "str": "poleaxe" },
+    "description": "This is a polearm with an axe head, a small hammer on the back, and a short dagger-like spike on top.  It's less heavy than most polearms and has a smaller head, making it slightly quicker.",
+    "weight": "2200 g",
+    "volume": "3000 ml",
+    "price_postapoc": "50 USD",
+    "price": "400 USD",
+    "to_hit": 1,
+    "bashing": 28,
+    "cutting": 31,
+    "material": [ "wood", "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL" ],
+    "qualities": [ [ "COOK", 1 ] ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "POLEARM", "SHEATH_SPEAR", "ALWAYS_TWOHAND" ]
+  },
+  {
     "id": "sword_gladius",
     "type": "TOOL",
     "category": "weapons",

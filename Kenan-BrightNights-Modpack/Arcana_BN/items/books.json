@@ -6,16 +6,16 @@
     "description": "A series of handwritten notes by a student of some esoteric order.  At first the subject seems to be simple religious rituals, but it soon delves into more ...anomalous practices.\n\"In time, my eyes will be opened.  They called it The Gift, but all who draw breath can partake of it.  There is no innate talent, no quirk of bloodline, only discipline and patience...\"",
     "weight": "454 g",
     "volume": "500 ml",
-    "//": "Pre-apocalypse price is estimated by maximum arcana skill the book can reach, post-apoc price is a depreciation derived from minimum arcana needed to learn from it. then further reduced to a tenth.",
-    "price": "50 USD",
-    "price_postapoc": 500,
+    "//": "Pre-apocalypse price is estimated by maximum arcana skill the book can reach, post-apoc price is a depreciation derived from minimum arcana needed to learn from it, then further reduced to a tenth.",
+    "price": "100 USD",
+    "price_postapoc": "10 USD",
     "material": [ "paper" ],
     "symbol": "?",
     "looks_like": "recipe_creepy",
     "color": "light_gray",
     "skill": "magic",
     "required_level": 0,
-    "max_level": 1,
+    "max_level": 2,
     "intelligence": 8,
     "time": "10 m",
     "fun": -1
@@ -76,8 +76,8 @@
     "looks_like": "textbook_chemistry",
     "color": "red",
     "skill": "magic",
-    "required_level": 3,
-    "max_level": 6,
+    "required_level": 2,
+    "max_level": 7,
     "intelligence": 10,
     "time": "20 m",
     "fun": -4
@@ -96,8 +96,8 @@
     "looks_like": "holybook_bible2",
     "color": "light_blue",
     "skill": "magic",
-    "required_level": 4,
-    "max_level": 7,
+    "required_level": 3,
+    "max_level": 8,
     "intelligence": 9,
     "time": "20 m",
     "fun": -1,
@@ -117,8 +117,8 @@
     "looks_like": "holybook_bible1",
     "color": "blue",
     "skill": "magic",
-    "required_level": 5,
-    "max_level": 8,
+    "required_level": 4,
+    "max_level": 9,
     "intelligence": 10,
     "time": "30 m",
     "fun": -3,
@@ -241,6 +241,30 @@
     "snippet_category": "note_flame_tenet"
   },
   {
+    "id": "note_sanguine_hint",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "blood-stained note" },
+    "description": "An scrap of paper marred by old, dried blood.",
+    "snippet_category": "note_sanguine_hint"
+  },
+  {
+    "id": "note_chalice_hint",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "strange note" },
+    "description": "A sheet of paper, with peculiar writing on it.",
+    "snippet_category": "note_chalice_hint"
+  },
+  {
+    "id": "note_flame_hint",
+    "copy-from": "arcana_note_base",
+    "type": "GENERIC",
+    "name": { "str": "singed note" },
+    "description": "A piece of paper with writing on it, edges scorched as if it was hastily rescued from the fireplace.",
+    "snippet_category": "note_flame_hint"
+  },
+  {
     "id": "note_starry_missive",
     "copy-from": "arcana_note_base",
     "type": "GENERIC",
@@ -259,7 +283,7 @@
   {
     "id": "arcanemap",
     "type": "GENERIC",
-    "category": "books",
+    "category": "maps",
     "name": { "str": "strange map" },
     "description": "This is a hand-drawn map of the local area.  Whoever created this has marked several places seemingly in the middle of nowhere.  Using it will mark these strange locations on your map.",
     "weight": "30 g",
@@ -289,7 +313,7 @@
         "shrine_anomaly_2",
         "shrine_anomaly_3"
       ],
-      "message": "You add strange temples, ruined shrines, curious structures, impact sites, peculiar shrines, and strange groves to your map."
+      "message": "You add strange temples, ruined shrines, curious structures, impact sites, sanguine ruins, and strange groves to your map."
     }
   },
   {
@@ -301,8 +325,8 @@
     "weight": "60 g",
     "volume": "100ml",
     "//": "All reference notes are post-cataclysm, and only useful to people already intimately familiar with the base book.",
-    "price_postapoc": 150,
-    "description": "An assortment of neatly-folded papers filled with esoteric chemical formulae and historical footnotes, some of which seem to be excerpts from old texts in Greek, Latin, Arabic, and even Chinese.  It details the findings and practices of an experienced alchemist, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "150 cent",
+    "description": "An assortment of neatly-folded papers filled with esoteric chemical formulae and historical footnotes, some of which seem to be excerpts from old texts in Greek, Latin, Arabic, and even Chinese.  It details the findings and practices of an experienced alchemist.  It can be used instead of History of Alchemy for recipes that require the book as a reference tool."
   },
   {
     "id": "index_scrollcraft",
@@ -312,8 +336,8 @@
     "name": { "str": "scribe's reference notes", "str_pl": "sets of scribe's reference notes" },
     "weight": "60 g",
     "volume": "100ml",
-    "price_postapoc": 200,
-    "description": "A handful of rolled up papers, filled with quotations and crude sketches of strange religious scenery.  It details the studies of an experienced scribe well-versed in knowledge disguised as exotic religious poetry, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "2 USD",
+    "description": "A handful of rolled up papers, filled with quotations and crude sketches of strange religious scenery.  It details the studies of an experienced scribe well-versed in knowledge disguised as exotic religious poetry.  It can be used instead of The Six Pillars for recipes that require the book as a reference tool."
   },
   {
     "id": "index_bloodmagic",
@@ -323,8 +347,8 @@
     "name": { "str": "sanguinist's reference notes", "str_pl": "sets of sanguinist's reference notes" },
     "weight": "60 g",
     "volume": "100ml",
-    "price_postapoc": 210,
-    "description": "A dog-eared, ragged collection of papers, filled with outlines of morbid rituals and macabre references on matters of blood.  It details the studies of an experienced blood mage, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "210 cent",
+    "description": "A dog-eared, ragged collection of papers, filled with outlines of morbid rituals and macabre references on matters of blood.  It details the studies of an experienced blood mage.  It can be used instead of Sanguine Codex for recipes that require the book as a reference tool."
   },
   {
     "id": "index_hexenhammer",
@@ -334,8 +358,8 @@
     "name": { "str": "Cleansing Flame reference notes", "str_pl": "sets of Cleansing Flame reference notes" },
     "weight": "60 g",
     "volume": "100ml",
-    "price_postapoc": 210,
-    "description": "A carefully-gathered collection of papers outlining sacred rites and vital practices, mixing various religious practices attested to a order dedicated protecting humanity from dangerous magic.  It details the studies of an experienced mage hunter, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "210 cent",
+    "description": "A carefully-gathered collection of papers outlining sacred rites and vital practices, mixing various religious practices attested to a order dedicated protecting humanity from dangerous magic.  It details the studies of an experienced mage hunter.  It can be used instead of The Cleansing Flame for recipes that require the book as a reference tool."
   },
   {
     "id": "index_sacrifice",
@@ -345,8 +369,8 @@
     "name": { "str": "occult reference notes", "str_pl": "sets of occult reference notes" },
     "weight": "60 g",
     "volume": "100ml",
-    "price_postapoc": 200,
-    "description": "A carefully-preserved assortment of papers, mostly filled with hymns to an otherworldly god and other unusual quotations.  On further reading it becomes evident that each song and passage holds ritual purpose, detailing the studies of an experienced scholar of this unearthly faith, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "2 USD",
+    "description": "A carefully-preserved assortment of papers, mostly filled with hymns to an otherworldly god and other unusual quotations.  On further reading it becomes evident that each song and passage holds ritual purpose, detailing the studies of an experienced scholar of this unearthly faith.  It can be used instead of Oaths to the Chalice for recipes that require the book as a reference tool."
   },
   {
     "id": "index_syncretism",
@@ -356,8 +380,8 @@
     "name": { "str": "arcane reference notes", "str_pl": "sets of arcane reference notes" },
     "weight": "60 g",
     "volume": "100ml",
-    "price_postapoc": 270,
-    "description": "A mish-mash of papers filled with all manner of strange rituals seemingly from various contradictory sources. Whoever wrote this collection was a student of a well-traveled arcanist, filling their own research with essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "270 cent",
+    "description": "A mish-mash of papers filled with all manner of strange rituals seemingly from various contradictory sources. Whoever wrote this collection was a student of a well-traveled arcanist, filling their own research with essential information and reminders for the presumably well-learned author's benefit.  It can be used instead of A Story in Shadow for recipes that require the book as a reference tool."
   },
   {
     "id": "index_summoning",
@@ -367,8 +391,8 @@
     "name": { "str": "summoner's reference notes", "str_pl": "sets of summoner's reference notes" },
     "weight": "60 g",
     "volume": "100ml",
-    "price_postapoc": 200,
-    "description": "A neatly-ordered collection of papers, filled with strange symbols and rambling writing.  At several points the text is interrupted by detailed sketches of disturbing otherworldly horrors.  It details the findings of an experienced summoner, containing nothing but essential information and reminders for the presumably well-learned author's benefit."
+    "price_postapoc": "2 USD",
+    "description": "A neatly-ordered collection of papers, filled with strange symbols and rambling writing.  At several points the text is interrupted by detailed sketches of disturbing otherworldly horrors.  It details the findings of an experienced summoner.  It can be used instead of To Master the Unknown for recipes that require the book as a reference tool."
   },
   {
     "id": "cf_rep_trade_arrangement",
@@ -396,6 +420,17 @@
     "book_data": { "martial_art": "style_cleansingflame" }
   },
   {
+    "id": "manual_shrike",
+    "copy-from": "book_martial",
+    "type": "GENERIC",
+    "name": { "str": "The Path of Scourging Claws", "str_pl": "copies of The Scourging Claws" },
+    "description": "A handwritten copy of a codex detailing the methods of fighting used by the hunters of hunters, elite assassins from an order of blood mages.",
+    "price": "2000 USD",
+    "price_postapoc": "200 USD",
+    "looks_like": "manual_silat",
+    "book_data": { "martial_art": "style_shrike" }
+  },
+  {
     "id": "offering_mission_notes",
     "copy-from": "arcana_note_base",
     "type": "GENERIC",
@@ -405,7 +440,7 @@
     "color": "brown",
     "looks_like": "ceramic_armor",
     "price": "1000 USD",
-    "price_postapoc": 0,
+    "price_postapoc": "0 cent",
     "name": { "str": "inscribed clay tablet" },
     "description": "A small clay tablet, inscribed with discourses on otherworldly matters in eccentric writing.  Much of it is near-illegible and pertains more to philosophy than any practical matters, but the right person might be able to gleam something useful out of it.",
     "flags": [ "NO_SALVAGE", "TRADER_AVOID", "MAGIC_FOCUS" ]

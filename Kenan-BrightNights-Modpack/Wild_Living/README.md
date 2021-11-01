@@ -39,7 +39,7 @@ Combining Turpentine and Oil with a bit of Charcoal, you can make waterproofed c
 ## Clothing
 
 ### Fur Backpack
-A fairly sizable backpack (20L) that includes a tool loop for an stone axe or similar, albeit with a higher encumberance.
+A fairly sizable backpack (20L) that includes a tool loop for an stone axe or similar, albeit with a higher encumbrance.
 
 ### Fur Pelt Tanning
 For the survivor down on their luck for finding a source of salt, fur pelts can be tanned with eggs or slurried brain, Get yourself warm and toasty with fur clothing.

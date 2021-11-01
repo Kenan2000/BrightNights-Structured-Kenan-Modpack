@@ -47,14 +47,14 @@
     "copy-from": "bikini_top_fur",
     "type": "ARMOR",
     "name": { "str": "fur bikini top" },
-    "extend": { "flags": [ "FANCY" ] }
+    "extend": { "flags": [ "FANCY", "WATER_FRIENDLY" ] }
   },
   {
     "id": "bikini_top_leather",
     "copy-from": "bikini_top_leather",
     "type": "ARMOR",
     "name": { "str": "leather bikini top" },
-    "extend": { "flags": [ "FANCY" ] }
+    "extend": { "flags": [ "FANCY", "WATER_FRIENDLY" ] }
   },
   {
     "id": "wetsuit_spring",
@@ -95,6 +95,7 @@
     "weight": "2268 g",
     "volume": "1500 ml",
     "price": "10 USD",
+    "price_postapoc": "5 USD",
     "to_hit": -4,
     "bashing": 10,
     "material": [ "steel", "plastic" ],

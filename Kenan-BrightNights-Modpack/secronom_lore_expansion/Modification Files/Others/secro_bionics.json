@@ -18,11 +18,8 @@
       "bio_secro_fv_morph_spit_smol_alt",
       "bio_secro_fv_morph_bonelance",
       "bio_secro_fv_morph_powerlegs",
-      "bio_secro_fv_extra_biolight",
-      "bio_secro_fv_extra_nightvision",
       "bio_secro_fv_extra_shockresist"
-    ],
-    "installation_requirement": "req_bio_secro_fv"
+    ]
   },
   {
     "id": "bio_secro_fv_link",
@@ -186,27 +183,6 @@
     "time": 1,
     "enchantments": [ "ench_bio_secro_fv_morph_powerlegs" ],
     "flags": [ "BIONIC_TOGGLED" ]
-  },
-  {
-    "id": "bio_secro_fv_extra_biolight",
-    "type": "bionic",
-    "name": { "str": "Bioluminescent Frond" },
-    "description": "Creates small, oddly-shaped and short-lived frond emitting strong light.",
-    "included": true,
-    "act_cost": "10 kJ",
-    "spell_on_activation": { "id": "secro_power_armor_flesh_biolight_give" }
-  },
-  {
-    "id": "bio_secro_fv_extra_nightvision",
-    "type": "bionic",
-    "name": { "str": "Artificial Night Vision" },
-    "description": "Increases your vision through dark areas by generating dim, bioluminescent light around your cornea.",
-    "included": true,
-    "flags": [ "BIONIC_TOGGLED" ],
-    "active_flags": [ "NIGHT_VISION" ],
-    "act_cost": "2 kJ",
-    "react_cost": "75 J",
-    "time": 3
   },
   {
     "id": "bio_secro_fv_extra_shockresist",

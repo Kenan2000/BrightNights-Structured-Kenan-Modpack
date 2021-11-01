@@ -2,7 +2,6 @@
   {
     "id": "power_armor_mutant",
     "type": "ARMOR",
-    "category": "armor",
     "name": "mutant power armor",
     "description": "A modified suit of DoubleTech Power Armor, Mk. II-H.Designed to be used with mutated anatomy in the _REDACTED_ project,it stayed a proof of concept since the _REDACTED_ lifecycle was too short.",
     "weight": 29009,
@@ -13,7 +12,7 @@
     "material": [ "hardsteel", "steel" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "TORSO", "ARMS", "HANDS", "LEGS", "FEET" ],
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
     "encumbrance": 60,
     "storage": "4 L",
@@ -30,7 +29,6 @@
   {
     "id": "power_armor_helmet_mutant",
     "type": "ARMOR",
-    "category": "armor",
     "name": "heavy power armor helmet",
     "description": "A power armor helmet designed for use with the modified DoubleTech Power Armor, Mk. II-H.Like its accompanying suit, it was never mass produced since the lifespan of _REDACTED_ soldiers was too short, so only the blueprints remained .",
     "weight": 5442,
@@ -41,7 +39,7 @@
     "material": [ "hardsteel", "steel" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "HEAD", "EYES", "MOUTH" ],
+    "covers": [ "head", "eyes", "mouth" ],
     "coverage": 100,
     "encumbrance": 60,
     "warmth": 60,

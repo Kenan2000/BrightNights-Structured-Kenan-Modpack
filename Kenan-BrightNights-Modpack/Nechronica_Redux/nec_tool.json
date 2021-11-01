@@ -72,7 +72,7 @@
     "color": "light_gray",
     "techniques": [ "RAPID", "WBLOCK_2", "IMPALE", "PRECISE" ],
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
-    "effects_carried": [ "AEP_DEX_UP" ],
+    "artifact_data": { "effects_carried": [ "AEP_DEX_UP" ] },
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD" ],
     "looks_like": "katana"
   },
@@ -172,7 +172,7 @@
     "color": "dark_gray",
     "symbol": "{",
     "material": [ "steel" ],
-    "armor_data": { "covers": [ "ARMS" ], "coverage": 25, "material_thickness": 2, "encumbrance": 3 },
+    "armor_data": { "covers": [ "arms" ], "coverage": 25, "material_thickness": 2, "encumbrance": 3 },
     "volume": "250 ml",
     "bashing": 4,
     "cutting": 17,

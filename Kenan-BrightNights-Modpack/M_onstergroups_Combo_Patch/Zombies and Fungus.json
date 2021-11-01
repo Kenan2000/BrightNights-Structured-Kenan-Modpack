@@ -2,7 +2,7 @@
   {
     "type":"monstergroup",
     "name": "GROUP_ZOMBIE",
-    "_comment": "Poracomp+Nechronica+Bandit+PK+Dinomod",
+    "//1": "Poracomp+Nechronica+Bandit+PK+Dinomod",
     "override": true,
     "auto_total": true,
     "default": "mon_null",
@@ -193,12 +193,12 @@
     ],
     "replace_monster_group": true,
     "new_monster_group_id": "GROUP_ZOMBIE_MID",
-    "replacement_time": 14, "//": "(replacement_time * difficulty)DAYS *(SEASON_LENGTH / 14)"
+    "replacement_time": 14, "//2": "(replacement_time * difficulty)DAYS *(SEASON_LENGTH / 14)"
   },{
     "type":"monstergroup",
     "name": "GROUP_ZOMBIE_MID",
-    "//": "PKs Mid spawn list.  After the threshold for the formula in Group_Zom is reached, this list should start to take over.",
-    "_comment": "Porawep+Nechronica+Bandit+(Cata++)+PK+Dinomod",
+    "//1": "PKs Mid spawn list.  After the threshold for the formula in Group_Zom is reached, this list should start to take over.",
+    "//2": "Porawep+Nechronica+Bandit+(Cata++)+PK+Dinomod",
     "default": "mon_zombie_pk",
     "monsters": [
       { "monster" : "mon_MutEx_zombie_brute", "freq" : 15, "cost_multiplier": 20, "pack_size": [2,5] },
@@ -383,7 +383,7 @@
   },{
     "type":"monstergroup",
     "name" : "GROUP_MAYBE_ZOMBIE",
-    "_comment": "Vampstuff+Bandit+PK+Dinomod",
+    "//": "Vampstuff+Bandit+PK+Dinomod",
     "override": true,
     "auto_total": true,
     "default": "mon_null",
@@ -452,7 +452,7 @@
 
     "type":"monstergroup",
     "name": "GROUP_FUNGI",
-    "_comment": "(Cata++)+PK",
+    "//": "(Cata++)+PK",
     "override": true,
     "auto_total": true,
     "default": "mon_fungus_boil",
@@ -495,7 +495,7 @@
   },{
     "type":"monstergroup",
     "name": "GROUP_FUNGI_TOWER",
-    "_comment": "(Cata++)+PK",
+    "//": "(Cata++)+PK",
     "override": true,
     "auto_total": true,
     "default": "mon_fungal_tendril",
@@ -535,7 +535,7 @@
   },{
     "type":"monstergroup",
     "name": "GROUP_FUNGI_FLOWERS",
-    "_comment": "(Cata++)+PK",
+    "//": "(Cata++)+PK",
     "override": true,
     "auto_total": true,
     "default": "mon_fungal_blossom",

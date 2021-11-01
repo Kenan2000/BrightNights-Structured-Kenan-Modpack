@@ -1,5 +1,30 @@
 [
   {
+    "id": "REVERSIBLE",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
+    "id": "TOOL_NONE",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
+    "id": "TOOL_SCREWDRIVER",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
+    "id": "TOOL_WRENCH",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
+    "id": "NAILABLE",
+    "type": "json_flag",
+    "context": [ "vehicle_part" ]
+  },
+  {
     "id": "storage_battery_removable",
     "copy-from": "storage_battery",
     "type": "vehicle_part",
@@ -151,9 +176,7 @@
     "default_ammo": "battery",
     "difficulty": 6,
     "durability": 250,
-    "range": 5,
     "damage_modifier": 80,
-    "ups_charges": 5,
     "breaks_into": [ { "item": "shockcannon_ups", "prob": 25 } ],
     "flags": [ "TURRET" ]
   },
@@ -168,7 +191,6 @@
     "color": "light_green",
     "broken_color": "dark_gray",
     "durability": 350,
-    "range": 25,
     "breaks_into": [ { "item": "BFG", "prob": 65 } ],
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ], [ "electronics", 7 ] ], "time": 10000 },
