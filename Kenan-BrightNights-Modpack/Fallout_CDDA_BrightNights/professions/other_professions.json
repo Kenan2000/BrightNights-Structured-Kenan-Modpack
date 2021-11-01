@@ -21,9 +21,10 @@
           "boots",
           "bandana",
           "jacket_leather",
-          "wristwatch"
+          "wristwatch",
+          "smart_phone"		  
         ],
-        "entries": [ { "group": "charged_cell_phone" }, { "item": "sheath", "contents-item": "knife_trench" } ]
+        "entries": [ { "item": "sheath", "contents-item": "knife_trench" } ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "boy_shorts" ]
@@ -40,8 +41,7 @@
     "skills": [ { "level": 1, "name": "driving" }, { "level": 4, "name": "mechanics" }, { "level": 1, "name": "speech" } ],
     "items": {
       "both": {
-        "items": [ "jeans", "tank_top", "chaps_leather", "socks", "toolbox", "boots", "bandana", "jacket_leather_atomcat", "wristwatch" ],
-        "entries": [ { "group": "charged_cell_phone" } ]
+        "items": [ "jeans", "tank_top", "chaps_leather", "socks", "toolbox", "boots", "bandana", "jacket_leather_atomcat", "wristwatch", "smart_phone" ]
       },
       "male": [ "boxer_shorts" ],
       "female": [ "bra", "boy_shorts" ]
@@ -123,10 +123,10 @@
           "knit_scarf",
           "tricorne",
           "hatchet",
-          "hardtack"
+          "hardtack",
+          "smart_phone"		  
         ],
         "entries": [
-          { "group": "charged_cell_phone" },
           { "item": "musket_laser", "ammo-item": "battery", "charges": 20, "contents-item": "shoulder_strap" }
         ]
       }
