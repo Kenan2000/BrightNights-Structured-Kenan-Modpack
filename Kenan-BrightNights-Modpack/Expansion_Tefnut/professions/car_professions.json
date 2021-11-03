@@ -9,10 +9,20 @@
     "vehicle": "apc_hobo",
     "items": {
       "both": {
-        "items": [ "slingpack", "tank_top", "jeans", "socks", "boots_steel", "duct_tape", "screwdriver", "wristwatch", "mag_cars" ],
+        "items": [
+          "slingpack",
+          "tank_top",
+          "jeans",
+          "socks",
+          "boots_steel",
+          "duct_tape",
+          "screwdriver",
+          "wristwatch",
+          "smart_phone",
+          "mag_cars"
+        ],
         "entries": [
           { "item": "goggles_welding", "custom-flags": [ "no_auto_equip" ] },
-          { "group": "charged_cell_phone" },
           { "item": "wrench", "container-item": "tool_belt" },
           { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "welder" }
         ]
@@ -21,7 +31,4 @@
       "female": [ "bra", "boy_shorts" ]
     }
   }
-
-
-
 ]
