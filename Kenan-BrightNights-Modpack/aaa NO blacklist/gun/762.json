@@ -140,7 +140,10 @@
     "type": "GUN",
     "name": "STG-44 (7.62x39)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 7.62x39 round.",
-    "ammo": "762"
+    "ammo": "762",
+    "magazines": [
+      [ "762", [ "stgmag762" ] ]
+    ]	
   },
   {
     "id": "HMG44_762_sbr",
@@ -156,7 +159,10 @@
     "type": "GUN",
     "name": "STG-44 (7.62x39 pistol)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 7.62x39 round. The stock has been cut off and barrel sawed down to make for a very compact firearm",
-    "ammo": "762"
+    "ammo": "762",
+    "magazines": [
+      [ "762", [ "stgmag762" ] ]
+    ]	
   },
   {
     "id": "HMG44_762_auto",
@@ -164,7 +170,10 @@
     "type": "GUN",
     "name": "STG-44 (7.62x39 full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 7.62x39 round. The lower receiver has been replaced with an original lower receiver",
-    "ammo": "762"
+    "ammo": "762",
+    "magazines": [
+      [ "762", [ "stgmag762" ] ]
+    ]	
   },
   {
     "id": "HMG44_762_sbr_auto",
@@ -180,6 +189,9 @@
     "type": "GUN",
     "name": "STG-44 (7.62x39 pistol full-auto)",
     "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle chambered in a the more common 7.62x39 round. The stock has been cut off and barrel sawed down to make for a very compact firearm. The lower receiver has been replaced with an original lower receiver",
-    "ammo": "762"
+    "ammo": "762",
+    "magazines": [
+      [ "762", [ "stgmag762" ] ]
+    ]	
   }
 ]
