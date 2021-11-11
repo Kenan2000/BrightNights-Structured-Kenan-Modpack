@@ -12,17 +12,12 @@
     "material": [ "plastic", "steel" ],
     "symbol": "(",
     "color": "dark_gray",
-    "ammo": "223",
+    "ammo": [ "223" ],
     "ranged_damage": { "damage_type": "stab", "amount": 2 },
     "dispersion": 130,
     "durability": 8,
     "min_cycle_recoil": 1300,
-    "modes": [
-      [ "DEFAULT", "semi-auto", 1 ],
-      [ "AUTO", "auto", 4 ]
-    ],
-    "magazines": [
-      [ "223", [ "stanag30", "stanag50", "survivor223mag" ] ]
-    ]
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 4 ] ],
+    "magazines": [ [ "223", [ "stanag30", "stanag50", "survivor223mag" ] ] ]
   }
 ]
