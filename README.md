@@ -13,7 +13,7 @@ Kenan's **personal** structured modpack (**IMPORTANT TO READ Modpack INSTALLATIO
 
 **3. Unpack contents of the downloaded .zip archive into new folder; results should be looking** [**like this**](https://i.imgur.com/UfvpOyV.png)
 
-**4. Copy mods that you want to play with (try to NOT enable ALL mods at the same time unless you really want to play with all mods) from these folders that are specified here (`BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Mods` **ALONG WITH** `BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Mods`) and paste them into `cdda/data/mods` directory as shown in the** [**picture**](https://i.imgur.com/iDJyZYh.png)
+**4. Copy mods that you want to play with (try to NOT enable ALL mods at the same time unless you really want to play with all mods) from these folders that are specified here (`BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods` **ALONG WITH** `BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods`) and paste them into `cdda/data/mods` directory as shown in the** [**picture**](https://i.imgur.com/iDJyZYh.png)
 
 **5. Overwrite and replace all of the files if you get a prompt**
 
