@@ -1,5 +1,5 @@
-# Bright-Nights-Kenan-Mod-Pack
-Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolcthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
+# BrightNights-Structured-Kenan-Modpack
+Kenan's **personal** structured modpack (**IMPORTANT TO READ Modpack INSTALLATION Guide, try to NOT enable ALL mods at the same time unless you really want to play with all mods**) for **LATEST** Cataclysm - Bright Nights versions by Coolcthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
 
 **original modpack creator is Chromosome Kun! - without his help, this would not exist** 
 
@@ -7,12 +7,17 @@ Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolct
 
 # Modpack INSTALLATION Guide
 
-1. Download and install latest release of Cataclysm fork by **Coolcthulhu/BroadFlatNails** - [*Bright Nights*](https://github.com/cataclysmbnteam/Cataclysm-BN/releases)
-2. Download current modpack by clicking Code - Download ZIP, or clicking [**here**](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/archive/master.zip)
-3. Unpack contents of the downloaded .zip archive into new folder; results should be looking [**like this**](https://i.imgur.com/UfvpOyV.png)
-4. Copy contents of this folder and paste into `cdda/data/mods` directory as shown in the [**picture**](https://i.imgur.com/iDJyZYh.png)
-5. Overwrite and replace all the files if you get a prompt
-6. Enjoy the mods!
+**1. Download and install latest release of Cataclysm fork by **Coolcthulhu/BroadFlatNails** - [*Bright Nights*](https://github.com/cataclysmbnteam/Cataclysm-BN/releases)**
+
+**2. Download current modpack by clicking Code - Download ZIP, or clicking [**here**](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/archive/master.zip)**
+
+**3. Unpack contents of the downloaded .zip archive into new folder; results should be looking** [**like this**](https://i.imgur.com/UfvpOyV.png)
+
+**4. Copy mods that you want to play with (try to NOT enable ALL mods at the same time unless you really want to play with all mods) from these folders that are specified here (`BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Mods` **ALONG WITH** `BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Mods`) and paste them into `cdda/data/mods` directory as shown in the** [**picture**](https://i.imgur.com/iDJyZYh.png)
+
+**5. Overwrite and replace all of the files if you get a prompt**
+
+**6. Enjoy the mods!**
 
 # Modpack UPDATE Guide
 
@@ -28,9 +33,9 @@ Kenan's personal modpack for **LATEST** Bright Nights versions of CDDA by Coolct
 * Q: After updating my save file no longer loading!
   * A: It is rare, but will happen when some mod that've been used in your save has new ID and/or name, or you're trying to load the mod that is no longer used/merged with other one. You can fix it by reading `debug.log` to view what's mod should be changed, then go to `cdda\save\world_name\mods.json` and replace target mod ID with the new one, or delete it's entry from this file if there is no replacement. Also, you can read latest commits to see what is happening, if you want
 
-Example commit of mod ID change: [c72f700f2fe35e2e5bd32995917746b47edb428e](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/commit/c72f700f2fe35e2e5bd32995917746b47edb428e)
+Example commit of mod ID change: [c72f700f2fe35e2e5bd32995917746b47edb428e](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/commit/c72f700f2fe35e2e5bd32995917746b47edb428e)
 
-Example commit of mod removal: [603464b7d4ee27430b84f3625cc4644f4510fb53](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/commit/603464b7d4ee27430b84f3625cc4644f4510fb53)
+Example commit of mod removal: [603464b7d4ee27430b84f3625cc4644f4510fb53](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/commit/603464b7d4ee27430b84f3625cc4644f4510fb53)
 
 * Q: I have some other issues to report!
   * A: Feel free to submit your issue into the [issues tab](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/issues).
