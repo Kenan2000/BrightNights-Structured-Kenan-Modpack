@@ -38,7 +38,7 @@ Example commit of mod ID change: [c72f700f2fe35e2e5bd32995917746b47edb428e](http
 Example commit of mod removal: [603464b7d4ee27430b84f3625cc4644f4510fb53](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/commit/603464b7d4ee27430b84f3625cc4644f4510fb53)
 
 * Q: I have some other issues to report!
-  * A: Feel free to submit your issue into the [issues tab](https://github.com/Kenan2000/Bright-Nights-Kenan-Mod-Pack/issues).
+  * A: Feel free to submit your issue into the [issues tab](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/issues).
 
 # Links to the legendary tileset by SomeDeadGuy
 Legendary **UndeadPeople** tileset by SomeDeadGuy, while Theawesomeboophis is it's current maintainer: https://github.com/Theawesomeboophis/UndeadPeopleTileset
@@ -47,3 +47,9 @@ Legendary **UndeadPeople** tileset by SomeDeadGuy, while Theawesomeboophis is it
 1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack)
 2. Updated and even more awesome Otopack soundpack maintained by me: https://github.com/Kenan2000/Otopack-Mods-Updates
 3. CO.AG MusicPack Redux: https://discourse.cataclysmdda.org/t/musicpack-co-ag-musicpack-redux-11-dec-2019/18992
+
+## Link to my CDDA/Bright Nights modding server 
+
+**https://discord.gg/sg5cM89Veb**
+
+
