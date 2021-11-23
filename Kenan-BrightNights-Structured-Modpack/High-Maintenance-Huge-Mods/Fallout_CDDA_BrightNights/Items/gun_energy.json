@@ -404,7 +404,7 @@
     "ranged_damage": { "damage_type": "heat", "amount": 50, "armor_penetration": 20 },
     "dispersion": 60,
     "durability": 8,
-    "burst": 5,
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 5 ] ],
     "reload": 700,
     "valid_mod_locations": [
       [ "accessories", 4 ],
@@ -438,7 +438,7 @@
     "ranged_damage": { "damage_type": "heat", "amount": 25, "armor_penetration": 12 },
     "dispersion": 60,
     "durability": 8,
-    "burst": 5,
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 5 ] ],
     "reload": 700,
     "valid_mod_locations": [
       [ "accessories", 4 ],

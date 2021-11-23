@@ -18,7 +18,7 @@
     "to_hit": -3,
     "dispersion": 300,
     "durability": 5,
-    "burst": 1,
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 1 ] ],
     "clip_size": 1,
     "reload": 800,
     "loudness": 200
@@ -42,7 +42,7 @@
     "to_hit": -5,
     "dispersion": 400,
     "durability": 5,
-    "burst": 3,
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 3 ] ],
     "clip_size": 3,
     "reload": 1600,
     "loudness": 200

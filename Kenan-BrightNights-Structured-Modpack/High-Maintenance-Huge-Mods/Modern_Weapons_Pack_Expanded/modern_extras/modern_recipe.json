@@ -1,6 +1,6 @@
 [
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "neck_strap",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_MODS",
@@ -9,18 +9,12 @@
     "time": 1000,
     "reversible": false,
     "autolearn": true,
-    "qualities":[
-      { "id":"CUT","level":1,"amount":1 }
-    ],
-    "components": [
-      [	[ "rope_6", 1 ] ],
-      [ [ "rag", 3 ] ],
-      [ [ "string_36", 6 ] ]
-    ]
+    "qualities": [ { "id": "CUT", "level": 1, "amount": 1 } ],
+    "components": [ [ [ "rope_6", 1 ] ], [ [ "rag", 3 ] ], [ [ "string_36", 6 ] ] ]
   },
   {
     "result": "peep_sight",
-    "type" : "recipe",
+    "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_MODS",
     "skill_used": "fabrication",
@@ -28,48 +22,35 @@
     "skills_required": [ [ "gun", 3 ] ],
     "time": 30000,
     "book_learn": [
-       [ "mag_guns", 3 ], [ "mag_shotgun", 3 ], [ "mag_smg", 3 ], [ "mag_rifle", 3 ],
-       [ "manual_gun", 3 ], [ "manual_shotgun", 3 ], [ "manual_smg", 3 ] , [ "manual_rifle", 3 ]
+      [ "mag_guns", 3 ],
+      [ "mag_shotgun", 3 ],
+      [ "mag_smg", 3 ],
+      [ "mag_rifle", 3 ],
+      [ "manual_gun", 3 ],
+      [ "manual_shotgun", 3 ],
+      [ "manual_smg", 3 ],
+      [ "manual_rifle", 3 ]
     ],
-    "qualities": [
-      { "id":"HAMMER_FINE", "level": 1 },
-      { "id":"SAW_M_FINE", "level": 1 }
-    ],
-    "tools": [
-      [ [ "large_repairkit", 10 ], [ "small_repairkit", 30 ] ],
-      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ]
-    ],
-    "components": [
-      [ [ "scrap", 1 ] ],
-      [ [ "steel_chunk", 1 ] ]
-    ]
+    "qualities": [ { "id": "HAMMER_FINE", "level": 1 }, { "id": "SAW_M_FINE", "level": 1 } ],
+    "tools": [ [ [ "large_repairkit", 10 ], [ "small_repairkit", 30 ] ], [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "steel_chunk", 1 ] ] ]
   },
   {
     "result": "survivor_bipod",
-    "type" : "recipe",
+    "type": "recipe",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_MODS",
     "skill_used": "fabrication",
     "difficulty": 2,
     "skills_required": [ [ "gun", 3 ] ],
     "time": 30000,
-    "book_learn": [
-      [ "pocket_survival", 2 ]
-    ],
-    "qualities": [
-      { "id":"HAMMER_FINE", "level": 1 },
-      { "id":"SAW_M_FINE", "level": 1 }
-    ],
-    "tools": [
-      [ [ "welder_crude", 15 ] ]
-    ],
-    "components": [
-      [ [ "scrap", 1 ] ],
-      [ [ "sheet_metal", 1 ] ]
-    ]
+    "book_learn": [ [ "pocket_survival", 2 ] ],
+    "qualities": [ { "id": "HAMMER_FINE", "level": 1 }, { "id": "SAW_M_FINE", "level": 1 } ],
+    "tools": [ [ [ "welder_crude", 15 ] ] ],
+    "components": [ [ [ "scrap", 1 ] ], [ [ "sheet_metal", 1 ] ] ]
   },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "automagPack",
     "id_suffix": "uncraft",
     "category": "CC_NONCRAFT",
@@ -88,7 +69,7 @@
     ]
   },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "coonan357Pack",
     "id_suffix": "uncraft",
     "category": "CC_NONCRAFT",
@@ -97,15 +78,10 @@
     "time": 500,
     "reversible": true,
     "autolearn": false,
-    "components": [
-      [ [ "coonan357", 1 ] ],
-      [ [ "357_mag", 2 ] ],
-      [ [ "improve_sights", 1 ] ],
-      [ [ "manual_gun", 1 ] ]
-    ]
-  },  
+    "components": [ [ [ "coonan357", 1 ] ], [ [ "357_mag", 2 ] ], [ [ "improve_sights", 1 ] ], [ [ "manual_gun", 1 ] ] ]
+  },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "r93t2Pack",
     "id_suffix": "uncraft",
     "category": "CC_NONCRAFT",
@@ -124,7 +100,7 @@
     ]
   },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "m45a1Pack",
     "id_suffix": "uncraft",
     "category": "CC_NONCRAFT",
@@ -142,7 +118,7 @@
     ]
   },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "strike_onePack",
     "id_suffix": "uncraft",
     "category": "CC_NONCRAFT",
@@ -158,9 +134,9 @@
       [ [ "battery", 300 ] ],
       [ [ "manual_gun", 1 ] ]
     ]
-  },  
+  },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "result": "cbj_msPack",
     "id_suffix": "uncraft",
     "category": "CC_NONCRAFT",
@@ -169,15 +145,10 @@
     "time": 500,
     "reversible": true,
     "autolearn": false,
-    "components": [
-      [ [ "cbj_ms", 1 ] ],
-      [ [ "nato9mag", 3 ] ],
-      [ [ "9mmcbjmag", 1 ] ],
-      [ [ "survivor_bipod", 1 ] ]
-    ]
-  },  
+    "components": [ [ [ "cbj_ms", 1 ] ], [ [ "nato9mag", 3 ] ], [ [ "9mmcbjmag", 1 ] ], [ [ "survivor_bipod", 1 ] ] ]
+  },
   {
-    "type" : "recipe",
+    "type": "recipe",
     "//": "Original deconstruction recipe gave an autofire conversion gunmod from coregame.  See https://github.com/CleverRaven/Cataclysm-DDA/pull/22534 and https://github.com/CleverRaven/Cataclysm-DDA/issues/20980 .",
     "result": "vd01Pack",
     "id_suffix": "uncraft",
@@ -194,5 +165,5 @@
       [ [ "battery", 300 ] ],
       [ [ "pistol_stock", 1 ] ]
     ]
-  }  
+  }
 ]

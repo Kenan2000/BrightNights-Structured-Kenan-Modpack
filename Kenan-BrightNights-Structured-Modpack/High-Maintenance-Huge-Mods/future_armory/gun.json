@@ -187,7 +187,7 @@
 	"ranged_damage": { "damage_type": "stab", "amount": 20 },
 	"dispersion": 280,
 	"durability": 8,
-	"burst": 5,
+	"modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 5 ] ],
 	"loudness": 20,
 	"flags": [ "NEVER_JAMS" ],
 	"magazines": [ [ "shot", [ "pancormag" ] ] ]
@@ -211,7 +211,7 @@
 	"ranged_damage": { "damage_type": "stab", "amount": 10 },
 	"dispersion": 80,
 	"durability": 9,
-	"burst": 10,
+	"modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 10 ] ],
 	"loudness": 10,
 	"flags": [ "NEVER_JAMS" ],
 	"magazines": [ [ "9mm", [ "armgunmag" ] ] ],
