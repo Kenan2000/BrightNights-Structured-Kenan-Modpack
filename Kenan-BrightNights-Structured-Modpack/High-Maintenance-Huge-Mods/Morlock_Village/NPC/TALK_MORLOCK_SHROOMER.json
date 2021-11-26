@@ -58,10 +58,13 @@
         ]
       },
       {
-        "text": "[$100] I'd like to buy some ~specialty~ mushrooms.",
+        "text": "[74 Merch] I'd like to buy some ~specialty~ mushrooms.",
         "topic": "TALK_MORLOCK_SHROOMER_TRADE",
-        "condition": { "u_has_cash": 10000 },
-        "effect": [ { "u_buy_item": "dry_mushroom_glowing", "count": 10, "cost": 10000, "container": "wrapper" } ]
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 74 } },
+        "effect": [
+          { "u_buy_item": "dry_mushroom_glowing", "count": 10, "container": "wrapper" },
+          { "u_consume_item": "FMCNote", "count": 74 }
+        ]
       },
       { "text": "Later, <name_g>.", "topic": "TALK_DONE" }
     ]

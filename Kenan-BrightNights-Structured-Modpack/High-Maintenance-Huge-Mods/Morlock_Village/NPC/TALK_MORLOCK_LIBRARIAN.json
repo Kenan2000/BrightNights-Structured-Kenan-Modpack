@@ -41,88 +41,88 @@
     "dynamic_line": "I often search for rare books.  I can sell you a specific book, but it will take several days for my field agents to locate it.  And then there's the price-- I charge for my time, not the value of the book.  It will be $10,000 paid up front.  If you're still interested, we can make a deal.",
     "responses": [
       {
-        "text": "[$10k] I want to locate a book on glass-blowing.",
+        "text": "[4k Merch] I want to locate a book on glass-blowing.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "u_has_cash": 1000000 },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 4000 } },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_glassblowing", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$10k] A robot-hacking manual is my first priority.",
+        "text": "[4k Merch] A robot-hacking manual is my first priority.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "u_has_cash": 1000000 },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 4000 } },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_robots", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$10k] I need info on crafting katanas. Lots of 'em.",
+        "text": "[4k Merch] I need info on crafting katanas. Lots of 'em.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "u_has_cash": 1000000 },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 4000 } },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_weapeast", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$10k] I would literally kill a man for a sushi cookbook.",
+        "text": "[4k Merch] I would literally kill a man for a sushi cookbook.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "u_has_cash": 1000000 },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 4000 } },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_sushi", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$10k] I have a burning passion for chemical warfare.",
+        "text": "[4k Merch] I have a burning passion for chemical warfare.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "u_has_cash": 1000000 },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 4000 } },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_gaswarfare", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$10k+CANNIBAL] For no particular reason, I would like a human cookbook.",
+        "text": "[4k Merch+CANNIBAL] For no particular reason, I would like a human cookbook.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "and": [ { "u_has_cash": 1000000 }, { "u_has_trait_flag": "CANNIBAL" } ] },
+        "condition": { "and": [ { "u_has_items": { "item": "FMCNote", "count": 4000 } }, { "u_has_trait_flag": "CANNIBAL" } ] },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_cookhuman", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$10k] I would like anything you can find on fake fur.",
+        "text": "[4k Merch] I would like anything you can find on fake fur.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "and": [ { "u_has_cash": 1000000 } ] },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 4000 } },
         "effect": [
-          { "u_spend_cash": 1000000 },
+          { "u_consume_item": "FMCNote", "count": 4000 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_fauxfur", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
         ]
       },
       {
-        "text": "[$1k] I, like you, also hope to preserve human civilization.  I'm collecting every back issue of Playboy and I will pay ANY price to make that dream a reality.",
+        "text": "[400 Merch] I, like you, also hope to preserve human civilization.  I'm collecting every back issue of Playboy and I will pay ANY price to make that dream a reality.",
         "topic": "TALK_MORLOCK_LIBRARIAN_DEAL",
-        "condition": { "u_has_cash": 100000 },
+        "condition": { "u_has_items": { "item": "FMCNote", "count": 400 } },
         "effect": [
-          { "u_spend_cash": 100000 },
+          { "u_consume_item": "FMCNote", "count": 400 },
           { "npc_add_effect": "bookhunter_searching", "duration": 43200 },
           { "npc_add_effect": "bookhunter_playboy", "duration": 1008000 },
           { "npc_add_effect": "bookhunter_hasbook", "duration": 1008000 }
@@ -131,7 +131,7 @@
       {
         "text": "I'm a little short on funds right now.  Maybe later..",
         "topic": "TALK_DONE",
-        "condition": { "not": { "u_has_cash": 1000000 } }
+        "condition": { "not": { "u_has_items": { "item": "FMCNote", "count": 4000 } } }
       },
       { "text": "Nevermind.", "topic": "TALK_DONE" }
     ]
