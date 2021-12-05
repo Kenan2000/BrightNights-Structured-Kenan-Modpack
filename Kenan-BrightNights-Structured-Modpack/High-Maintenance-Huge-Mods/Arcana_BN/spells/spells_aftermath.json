@@ -381,7 +381,6 @@
     "field_intensity_increment": 0.2,
     "field_intensity_variance": 0.5
   },
-
   {
     "id": "arcana_aftermath_conjure_miasma_spike",
     "type": "SPELL",
@@ -408,7 +407,6 @@
     "max_duration": 25000,
     "duration_increment": 1000
   },
-
   {
     "id": "arcana_aftermath_conjure_miasma_nuke",
     "type": "SPELL",
@@ -1976,22 +1974,6 @@
     "damage_increment": 8,
     "valid_targets": [ "ground" ],
     "effect": "noise"
-  },
-  {
-    "id": "arcana_aftermath_suppression_buff",
-    "type": "SPELL",
-    "name": { "str": "Suppression Buff" },
-    "description": "This exists to grant the long-term status effect to Suppression.",
-    "sprite": "fd_veil_light",
-    "valid_targets": [ "self" ],
-    "message": "",
-    "flags": [ "SILENT" ],
-    "effect_str": "arcana_suppression",
-    "max_level": 5,
-    "effect": "target_attack",
-    "min_duration": 360000,
-    "max_duration": 720000,
-    "duration_increment": 180000
   },
   {
     "id": "arcana_aftermath_surge_adrenaline_timewarp",
