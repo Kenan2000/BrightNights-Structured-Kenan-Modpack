@@ -1,0 +1,21 @@
+[
+  {
+    "id": "TALK_reich_off_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello, Why do you think you're important enough to talk to me, woman?",
+      "no": "Hello, Why do you think you're important enough to talk to me."
+    },
+    "responses": [
+      { "text": "So you're an officer in the Reich? What's that like", "topic": "TALK_reich_off_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_reich_off_go",
+    "type": "talk_topic",
+    "dynamic_line": "My task weighs heavily upon me at all times, the war with the Reds, that is. Managing the stations and the war at the same time can be taxing, even for us Reich specimens. But I trust that we will win this war in the end.",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+]

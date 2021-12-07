@@ -1,0 +1,531 @@
+[
+  {
+    "type": "recipe",
+    "result": "dep_gkb_utbot_m",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 4 ] ],
+    "difficulty": 5,
+    "time": "260 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 5 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "dep_gkb_utbot", 1 ] ],
+      [ [ "motor_small", 2 ], [ "motor", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 8 ], [ "steel_lump", 4 ] ],
+      [ [ "pipe", 2 ] ],
+      [ [ "sheet_metal_small", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_utbot_g",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 4 ], [ "gun", 3 ] ],
+    "difficulty": 5,
+    "time": "260 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 5 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "dep_gkb_utbot", 1 ] ],
+      [ [ "motor_small", 2 ], [ "motor", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "45_jhp", 100 ], [ "45_acp", 100 ], [ "45_super", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 8 ], [ "steel_lump", 4 ] ],
+      [ [ "pipe", 2 ] ],
+      [ [ "sheet_metal_small", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "broken_gkb_utbot",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "computer", 3 ] ],
+    "difficulty": 4,
+    "time": "150 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "dep_gkb_utbot", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_utbot_m",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "computer", 3 ] ],
+    "difficulty": 4,
+    "time": "150 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_utbot_m", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_utbot_g",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "computer", 3 ] ],
+    "difficulty": 4,
+    "time": "150 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_utbot_g", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "gkb_simple_bento",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_VEGGI",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "book_learn": [ [ "cookbook_sushi", 2 ], [ "cookbook_daintydishes", 3, "Sticky Rice Hedgerows" ] ],
+    "time": "8 m",
+    "charges": 1,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
+    "components": [
+      [ [ "sushi_rice", 1 ] ],
+      [
+        [ "irradiated_strawberries", 1 ],
+        [ "strawberries", 1 ],
+        [ "irradiated_blueberries", 1 ],
+        [ "blueberries", 1 ],
+        [ "irradiated_cherries", 1 ],
+        [ "cherries", 1 ],
+        [ "irradiated_plums", 1 ],
+        [ "plums", 1 ],
+        [ "irradiated_grapes", 1 ],
+        [ "grapes", 1 ],
+        [ "irradiated_cranberries", 1 ],
+        [ "cranberries", 1 ],
+        [ "irradiated_raspberries", 1 ],
+        [ "raspberries", 1 ],
+        [ "irradiated_blackberries", 1 ],
+        [ "blackberries", 1 ],
+        [ "irradiated_pomegranate", 1 ],
+        [ "pomegranate", 1 ],
+        [ "dry_fruit", 1 ]
+      ],
+      [ [ "soysauce", 1 ], [ "horseradish", 1 ], [ "salt", 1 ], [ "seasoning_salt", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "gkb_medium_bento",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "book_learn": [ [ "cookbook_sushi", 2 ], [ "cookbook_daintydishes", 3, "Sticky Rice Hedgerows" ] ],
+    "time": "12 m",
+    "charges": 1,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 }, { "id": "COOK", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 7, "LIST" ] ] ],
+    "components": [
+      [ [ "sushi_rice", 1 ] ],
+      [ [ "meat_red", 1, "LIST" ] ],
+      [
+        [ "irradiated_strawberries", 1 ],
+        [ "strawberries", 1 ],
+        [ "irradiated_blueberries", 1 ],
+        [ "blueberries", 1 ],
+        [ "irradiated_cherries", 1 ],
+        [ "cherries", 1 ],
+        [ "irradiated_plums", 1 ],
+        [ "plums", 1 ],
+        [ "irradiated_grapes", 1 ],
+        [ "grapes", 1 ],
+        [ "irradiated_cranberries", 1 ],
+        [ "cranberries", 1 ],
+        [ "irradiated_raspberries", 1 ],
+        [ "raspberries", 1 ],
+        [ "irradiated_blackberries", 1 ],
+        [ "blackberries", 1 ],
+        [ "irradiated_pomegranate", 1 ],
+        [ "pomegranate", 1 ],
+        [ "dry_fruit", 1 ]
+      ],
+      [ [ "soysauce", 1 ], [ "horseradish", 1 ], [ "salt", 1 ], [ "seasoning_salt", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "gkb_deluxe_bento",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "book_learn": [ [ "cookbook_sushi", 2 ], [ "cookbook_daintydishes", 3, "Sticky Rice Hedgerows" ] ],
+    "time": "15 m",
+    "charges": 1,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 }, { "id": "COOK", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 7, "LIST" ] ] ],
+    "components": [
+      [ [ "sushi_rice", 1 ] ],
+      [ [ "meat_red", 1, "LIST" ] ],
+      [
+        [ "cucumber", 1 ],
+        [ "irradiated_cucumber", 1 ],
+        [ "carrot", 6 ],
+        [ "irradiated_carrot", 6 ],
+        [ "celery", 3 ],
+        [ "irradiated_celery", 3 ],
+        [ "veggy_wild", 3 ],
+        [ "veggy", 3 ],
+        [ "rehydrated_veggy", 3 ]
+      ],
+      [
+        [ "irradiated_strawberries", 1 ],
+        [ "strawberries", 1 ],
+        [ "irradiated_blueberries", 1 ],
+        [ "blueberries", 1 ],
+        [ "irradiated_cherries", 1 ],
+        [ "cherries", 1 ],
+        [ "irradiated_plums", 1 ],
+        [ "plums", 1 ],
+        [ "irradiated_grapes", 1 ],
+        [ "grapes", 1 ],
+        [ "irradiated_cranberries", 1 ],
+        [ "cranberries", 1 ],
+        [ "irradiated_raspberries", 1 ],
+        [ "raspberries", 1 ],
+        [ "irradiated_blackberries", 1 ],
+        [ "blackberries", 1 ],
+        [ "irradiated_pomegranate", 1 ],
+        [ "pomegranate", 1 ],
+        [ "dry_fruit", 1 ]
+      ],
+      [ [ "soysauce", 1 ], [ "horseradish", 1 ], [ "salt", 1 ], [ "seasoning_salt", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "gkb_meat_bento",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_MEAT",
+    "skill_used": "cooking",
+    "difficulty": 2,
+    "book_learn": [ [ "cookbook_sushi", 2 ], [ "cookbook_daintydishes", 3, "Sticky Rice Hedgerows" ] ],
+    "time": "15 m",
+    "charges": 1,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 }, { "id": "COOK", "level": 1 } ],
+    "tools": [ [ [ "surface_heat", 7, "LIST" ] ] ],
+    "components": [ [ [ "meat_red", 2, "LIST" ] ], [ [ "soysauce", 1 ], [ "horseradish", 1 ], [ "salt", 1 ], [ "seasoning_salt", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_clib_a",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "210 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_clib_a", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_clib_d",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "time": "210 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_clib_d", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_clib_e",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "time": "210 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_clib_e", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_clib_f",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 5 ], [ "computer", 7 ] ],
+    "difficulty": 8,
+    "time": "210 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_clib_f", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_clib_a_up",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "210 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_clib_a_up", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "dep_gkb_clib_a_uc",
+    "id_suffix": "repair",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "skills_required": [ [ "mechanics", 4 ], [ "computer", 5 ] ],
+    "difficulty": 6,
+    "time": "210 m",
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_robots", 4 ] ],
+    "qualities": [
+      { "id": "HAMMER", "level": 3, "amount": 1 },
+      { "id": "SCREW", "level": 1, "amount": 1 },
+      { "id": "WRENCH", "level": 1, "amount": 1 },
+      { "id": "SAW_M", "level": 1, "amount": 1 }
+    ],
+    "tools": [
+      [ [ "eink_tablet_pc", 10 ], [ "electrohack", 10 ] ],
+      [ [ "soldering_iron", 15 ], [ "toolset", 15 ] ],
+      [ [ "goggles_welding", -1 ] ],
+      [ [ "welder", 100 ], [ "welder_crude", 150 ], [ "toolset", 150 ], [ "oxy_torch", 10 ] ]
+    ],
+    "components": [
+      [ [ "broken_gkb_clib_a_uc", 1 ] ],
+      [ [ "cable", 100 ] ],
+      [ [ "circuit", 1 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "RAM", 2 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "steel_chunk", 2 ], [ "steel_lump", 1 ] ]
+    ]
+  }
+]

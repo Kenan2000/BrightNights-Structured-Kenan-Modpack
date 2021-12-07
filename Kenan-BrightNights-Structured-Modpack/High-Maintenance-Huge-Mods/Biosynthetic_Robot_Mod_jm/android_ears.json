@@ -1,0 +1,16 @@
+[
+  {
+    "type": "mutation",
+    "id": "mut_gkb_ears",
+    "name": { "str": "Bio-Synthetic" },
+    "points": 0,
+    "description": "You are a bio-synthetic android designed by Chi industries on the eve of the Cataclysm, very few were made.",
+    "starting_trait": true,
+    "armor": [ { "parts": "ALL", "physical": 7 } ],
+    "passive_mods": { "dex_mod": 1, "str_mod": 4, "per_mod": 2 }
+  },
+  {
+    "type": "overlay_order",
+    "overlay_ordering": [ { "id": [ "mut_gkb_ears" ], "order": 1700 } ]
+  }
+]

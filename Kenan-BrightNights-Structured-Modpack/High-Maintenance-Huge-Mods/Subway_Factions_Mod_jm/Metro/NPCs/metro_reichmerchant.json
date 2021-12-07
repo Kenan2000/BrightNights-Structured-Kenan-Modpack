@@ -1,0 +1,93 @@
+[
+  {
+    "type": "npc",
+    "id": "metro_gunreich_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Reich Merchant",
+    "class": "NC_RECGUN_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_RECGUN_Town",
+    "faction": "fac_metreich"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_RECGUN_SHOPKEEP",
+    "name": { "str": "Reich Merchant" },
+    "job_description": "I'm a merchant.",
+    "traits": [ { "group": "Skin_Fair" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_RECGUN_worn",
+    "weapon_override": "NC_RECGUN_weapon",
+    "shopkeeper_item_group": "NC_RECGUN_SHOPKEEP_misc",
+    "carry_override": "NC_RECGUN_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_RECGUN_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "group": "metro_item_firearms_loot", "prob": 80, "repeat": [ 2, 4 ] },
+      { "group": "metro_ammo_pistol_item", "prob": 80, "repeat": [ 1, 4 ] },
+      { "group": "metro_pistolmag_item", "prob": 80, "repeat": [ 1, 4 ] },
+      { "group": "metro_ammo_rifle_item", "prob": 80, "repeat": [ 2, 5 ] },
+      { "group": "metro_riflemag_item", "prob": 80, "repeat": [ 1, 3 ] },
+      { "group": "metro_item_nsmarmor", "prob": 80, "repeat": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_RECGUN_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "metro_lolife_pistol", "prob": 40, "charges": 8 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_RECGUN_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants" },
+      { "item": "metro_nsmvest" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "id": "TALK_RECGUN_Town",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Do you want anything from me? I'm a bit busy being at the moment.",
+      "no": "Do you want anything from me? I'm a bit busy being at the moment."
+    },
+    "responses": [
+      { "text": "What is it like being a doctor in this metro?", "topic": "TALK_RECGUN_infotown" },
+      { "text": "Do you have anything for me to buy?", "effect": "start_trade", "topic": "TALK_RECGUN_Town" },
+      { "text": "Goodbye, thank you for your time.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_RECGUN_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Resources are tight, but we're better equipped than the reds. That much I can say with certainty.",
+      "no": "Resources are tight, but we're better equipped than the reds. That much I can say with certainty."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_RECGUN_Town" } ]
+  }
+]

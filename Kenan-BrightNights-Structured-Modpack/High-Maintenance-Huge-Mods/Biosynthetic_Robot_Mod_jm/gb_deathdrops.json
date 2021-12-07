@@ -1,0 +1,140 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "smkthree_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 5 ] },
+      { "item": "556", "prob": 80, "repeat": [ 2, 4 ] },
+      { "item": "m249", "prob": 65, "damage": [ 0, 3 ] },
+      { "item": "ammolink223", "prob": 80, "count": [ 15, 45 ] },
+      { "item": "556_incendiary", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "incintank_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 4 ] },
+      { "item": "gelled_gasoline", "prob": 40, "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "newtm_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 1, 2 ] },
+      { "item": "9mm", "prob": 80, "repeat": [ 1, 4 ] },
+      { "item": "9mmP", "prob": 10 },
+      { "item": "9mmP2", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pgynoid_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 1, 2 ] },
+      { "group": "guns_pistol_common", "prob": 70, "damage": [ 0, 3 ] },
+      { "group": "mags_pistol_common", "prob": 70, "damage": [ 0, 3 ], "count": [ 2, 4 ] },
+      { "item": "9mm", "prob": 80, "repeat": [ 1, 5 ] },
+      { "item": "9mmP", "prob": 10 },
+      { "item": "9mmP2", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pgswat_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 1, 2 ] },
+      { "group": "pg_shots", "prob": 80, "damage": [ 0, 3 ] },
+      { "group": "ammo_shotgun_common", "prob": 80, "repeat": [ 1, 2 ] },
+      { "group": "ammo_shotgun_rare", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "pg_shots",
+    "entries": [
+      { "group": "guns_shotgun_common", "prob": 60, "damage": [ 0, 3 ] },
+      { "group": "guns_shotgun_rare", "prob": 20, "damage": [ 0, 3 ] },
+      { "group": "guns_shotgun_obscure", "prob": 10, "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "n_gynoid_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 5 ] },
+      { "group": "hospital_medical_items", "prob": 65, "repeat": [ 2, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "n_gynoid_upg_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 5 ] },
+      { "group": "hospital_medical_items", "prob": 65, "repeat": [ 2, 4 ] },
+      { "group": "bionics", "prob": 15 },
+      { "group": "mut_lab", "prob": 45 },
+      { "group": "surgery", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "n_zhuazi_e_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 5 ] },
+      { "item": "c4", "prob": 85 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "n_zhuazi_r_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 5 ] },
+      { "item": "556", "prob": 80, "repeat": [ 2, 4 ] },
+      { "item": "ammolink223", "prob": 80, "count": [ 15, 45 ] },
+      { "item": "556_incendiary", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "n_hisbota_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 2, 5 ] },
+      { "item": "helmet_barbute", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "armguard_lightplate", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "cuirass_lightplate", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "chainmail_arms", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "chainmail_legs", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "legguard_lightplate", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "longsword_inferior", "prob": 80, "damage": [ 1, 3 ] },
+      { "item": "arming_sword_inferior", "prob": 80, "damage": [ 1, 3 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "pgdawbot_drops",
+    "entries": [
+      { "group": "robots", "prob": 90, "count": [ 1, 2 ] },
+      { "group": "dining", "prob": 80, "repeat": [ 1, 2 ] },
+      { "group": "softdrinks_canned", "prob": 80, "repeat": [ 1, 2 ] },
+      { "group": "preserved_food", "prob": 10 },
+      { "group": "ketchup_sealed_rng", "prob": 10 },
+      { "group": "condiments", "prob": 10 },
+      { "group": "produce", "prob": 10 },
+      { "group": "fridgesnacks", "prob": 90, "count": [ 3, 6 ] }
+    ]
+  }
+]

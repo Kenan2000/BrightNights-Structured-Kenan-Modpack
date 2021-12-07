@@ -1,0 +1,392 @@
+[
+  {
+    "type": "npc",
+    "id": "gkb_gun_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Scrapper Gun Merchant",
+    "gender": "male",
+    "class": "NC_GKBGUN_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_GKBGUN_Town",
+    "mission_offered": "MISSION_GKB_GUN_C_ITEM",
+    "faction": "fac_scrapperbots"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_GKBGUN_SHOPKEEP",
+    "name": { "str": "Scrapper Gun Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_GKBGUN_worn",
+    "weapon_override": "NC_GKBGUN_weapon",
+    "shopkeeper_item_group": "NC_GKBGUN_SHOPKEEP_misc",
+    "carry_override": "NC_GKBGUN_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBGUN_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "group": "guns_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_milspec", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_rare", "count": [ 4, 9 ] },
+      { "group": "mags_smg_common", "count": [ 6, 8 ] },
+      { "group": "mags_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "ammo_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_shotgun_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "guns_smg_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_milspec", "count": [ 6, 8 ] },
+      { "group": "guns_shotgun_common", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBGUN_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBGUN_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants_cargo" },
+      { "item": "jacket_army" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBGUN_carry",
+    "subtype": "collection",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBGUN_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "guns_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_milspec", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_rare", "count": [ 4, 9 ] },
+      { "group": "mags_smg_common", "count": [ 6, 8 ] },
+      { "group": "mags_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "ammo_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_shotgun_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "guns_smg_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_milspec", "count": [ 6, 8 ] },
+      { "group": "guns_shotgun_common", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "id": "TALK_GKBGUN_Town",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you buying, what are you selling?",
+      "no": "What are you buying, what are you selling?"
+    },
+    "responses": [
+      { "text": "What is it like being a gun merchant around here?", "topic": "TALK_GKBGUN_infotown" },
+      { "text": "Would you be willing to let me buy anything?", "effect": "start_trade", "topic": "TALK_GKBGUN_Town" },
+      { "text": "Do you have a task for me?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_GKBGUN_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's alright, It's a constant problem you know, deciding between whether or not you want to hoard ammo or use it on enemies in front of you.",
+      "no": "It's alright, It's a constant problem you know, deciding between whether or not you want to hoard ammo or use it on enemies in front of you."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_GKBGUN_Town" } ]
+  },
+  {
+    "id": "MISSION_GKB_GUN_A_ITEM",
+    "type": "mission_definition",
+    "name": "Retrieve the esoteric electronic device from the bandit.",
+    "description": "Retrieve the esoteric electronic device from the bandit.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "value": 150000,
+    "item": "gkb_rare_electronicpart",
+    "count": 1,
+    "start": {
+      "assign_mission_target": { "om_terrain": "road", "reveal_radius": 2, "random": true, "search_range": 25 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "          @             ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": { "@": "t_grass", "b": "t_dirt", "N": "t_wall_log" },
+        "item": { "@": { "item": "gkb_rare_electronicpart", "chance": 100 } },
+        "place_npcs": [ { "class": "bandit", "x": 9, "y": 9 } ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "223", "count": 30 },
+        { "u_buy_item": "9mm", "count": 60 },
+        { "u_buy_item": "9mmP2", "count": 10 },
+        { "u_buy_item": "45_acp", "count": 25 },
+        { "u_buy_item": "9mmP2", "count": 10 },
+        { "u_buy_item": "90two", "count": 1 },
+        { "u_buy_item": "m9mag", "count": 1 },
+        { "u_buy_item": "m9mag", "count": 1 },
+        { "u_buy_item": "kevlar", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GKB_GUN_B_ITEM",
+    "dialogue": {
+      "describe": "I'm glad you were willing to help on such short notice. A few days ago, a thief managed to get into our storage and take a rare electronic device. I don't want to bore you with the details, but I need you to get it back. You don't necessarily need to kill the guy that took it.",
+      "offer": "I'm glad you were willing to help on such short notice. A few days ago, a thief managed to get into our storage and take a rare electronic device. I don't want to bore you with the details, but I need you to get it back. You don't necessarily need to kill the guy that took it.",
+      "accepted": "Please come back quickly.",
+      "rejected": "Fair enough, don't come back asking for missions then.",
+      "advice": "Never underestimate fighting other people, they always have more health than you realize.",
+      "inquire": "Have you found the part yet?",
+      "success": "Great work, I might have more tasks for you in the future",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  },
+  {
+    "id": "MISSION_GKB_GUN_B_ITEM",
+    "type": "mission_definition",
+    "name": "Kill the road bandits.",
+    "description": "Kill the road bandits.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 3,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "road", "reveal_radius": 2, "random": true, "search_range": 25 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": { "@": "t_grass", "b": "t_dirt", "N": "t_wall_log" },
+        "item": { "@": { "item": "gkb_rare_electronicpart", "chance": 100 } },
+        "place_npcs": [
+          { "class": "bandit", "x": 9, "y": 9, "target": true },
+          { "class": "bandit", "x": 15, "y": 4 },
+          { "class": "bandit", "x": 17, "y": 14 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "22_lr", "count": 200 },
+        { "u_buy_item": "marlin_9a", "count": 1 },
+        { "u_buy_item": "sig_mosquito", "count": 1 },
+        { "u_buy_item": "mosquitomag", "count": 1 },
+        { "u_buy_item": "mosquitomag", "count": 1 },
+        { "u_buy_item": "223", "count": 60 },
+        { "u_buy_item": "reloaded_556", "count": 30 },
+        { "u_buy_item": "ar15", "count": 1 },
+        { "u_buy_item": "stanag20", "count": 1 },
+        { "u_buy_item": "stanag20", "count": 1 },
+        { "u_buy_item": "stanag5", "count": 1 },
+        { "u_buy_item": "stanag30", "count": 1 },
+        { "u_buy_item": "stanag30", "count": 1 },
+        { "u_buy_item": "helmet_army", "count": 1 },
+        { "u_buy_item": "modularvest", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GKB_GUN_C_ITEM",
+    "dialogue": {
+      "describe": "The local bandits have gotten ornery since you retrieve the device for us, and they're spoiling for a fight. Make an example of these people so they don't harass us again.",
+      "offer": "The local bandits have gotten ornery since you retrieve the device for us, and they're spoiling for a fight. Make an example of these people so they don't harass us again.",
+      "accepted": "Make sure to kill them quickly and without incident.",
+      "rejected": "Fair enough, don't come back asking for missions then.",
+      "advice": "Never underestimate fighting other people, they always have more health than you realize.",
+      "inquire": "Have you found the part yet?",
+      "success": "Great work, I might have more tasks for you in the future",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  },
+  {
+    "id": "MISSION_GKB_GUN_C_ITEM",
+    "type": "mission_definition",
+    "name": "Attack the bandit fort.",
+    "description": "Attack the bandit fort.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 3,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "bandit_garage_1",
+        "om_special": "bandit_garage",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 35
+      },
+      "update_mapgen": {
+        "terrain": { "@": "t_grass", "b": "t_wall_log", "M": "t_dirt" },
+        "place_npcs": [ { "class": "bandit", "x": 1, "y": 1, "target": true } ],
+        "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+        "place_loot": [
+          { "group": "stash_food", "x": 18, "y": 7, "chance": 80, "repeat": [ 3, 8 ] },
+          { "group": "stash_drugs", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 30 },
+          { "group": "ammo_pistol_common", "x": 18, "y": 7, "repeat": [ 1, 7 ], "chance": 75 },
+          { "group": "ammo_pistol_rare", "x": 18, "y": 7, "repeat": [ 1, 3 ], "chance": 75 },
+          { "group": "ammo_rifle_common", "x": 18, "y": 7, "repeat": [ 1, 4 ], "chance": 75 },
+          { "group": "ammo_rifle_rare", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 50 },
+          { "group": "guns_pistol_common", "x": 18, "y": 7, "repeat": [ 1, 4 ], "chance": 75 },
+          { "group": "guns_pistol_obscure", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 30 },
+          { "group": "guns_smg_common", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 40 },
+          { "group": "guns_rifle_common", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 55 },
+          { "group": "guns_rifle_rare", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+          { "group": "gear_survival", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "allclothes", "x": 18, "y": 7, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "stash_food", "x": 20, "y": 17, "chance": 80, "repeat": [ 3, 8 ] },
+          { "group": "stash_drugs", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 30 },
+          { "group": "ammo_pistol_common", "x": 20, "y": 17, "repeat": [ 3, 8 ], "chance": 75 },
+          { "group": "ammo_pistol_rare", "x": 20, "y": 17, "repeat": [ 1, 4 ], "chance": 75 },
+          { "group": "ammo_rifle_common", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "ammo_rifle_rare", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 30 },
+          { "group": "guns_pistol_common", "x": 20, "y": 17, "repeat": [ 1, 3 ], "chance": 65 },
+          { "group": "guns_pistol_obscure", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 20 },
+          { "group": "guns_smg_common", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "guns_rifle_common", "x": 20, "y": 17, "repeat": [ 1, 3 ], "chance": 75 },
+          { "group": "guns_rifle_rare", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 15 },
+          { "group": "gear_survival", "x": 20, "y": 17, "repeat": [ 1, 7 ], "chance": 75 },
+          { "group": "allclothes", "x": 20, "y": 17, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "stash_food", "x": 20, "y": 16, "chance": 80, "repeat": [ 3, 8 ] },
+          { "group": "stash_drugs", "x": 20, "y": 16, "repeat": [ 1, 2 ], "chance": 90 },
+          { "group": "ammo_pistol_common", "x": 20, "y": 16, "repeat": [ 1, 9 ], "chance": 75 },
+          { "group": "ammo_pistol_rare", "x": 20, "y": 16, "repeat": [ 1, 6 ], "chance": 50 },
+          { "group": "ammo_rifle_common", "x": 20, "y": 16, "repeat": [ 1, 4 ], "chance": 75 },
+          { "group": "ammo_rifle_rare", "x": 20, "y": 16, "repeat": [ 1, 4 ], "chance": 20 },
+          { "group": "guns_pistol_common", "x": 20, "y": 16, "repeat": [ 1, 4 ], "chance": 60 },
+          { "group": "guns_pistol_obscure", "x": 20, "y": 16, "repeat": [ 1, 4 ], "chance": 40 },
+          { "group": "guns_smg_common", "x": 20, "y": 16, "repeat": [ 1, 2 ], "chance": 40 },
+          { "group": "guns_rifle_common", "x": 20, "y": 16, "repeat": [ 1, 7 ], "chance": 75 },
+          { "group": "guns_rifle_rare", "x": 20, "y": 16, "repeat": [ 1, 2 ], "chance": 25 },
+          { "group": "gear_survival", "x": 20, "y": 16, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "allclothes", "x": 20, "y": 16, "repeat": [ 1, 2 ], "chance": 75 },
+          { "group": "stash_food", "x": 19, "y": 9, "chance": 80, "repeat": [ 3, 8 ] },
+          { "group": "stash_drugs", "x": 19, "y": 9, "repeat": [ 1, 2 ], "chance": 90 },
+          { "group": "ammo_pistol_common", "x": 19, "y": 9, "repeat": [ 5, 10 ], "chance": 75 },
+          { "group": "ammo_pistol_rare", "x": 19, "y": 9, "repeat": [ 2, 4 ], "chance": 75 },
+          { "group": "ammo_rifle_common", "x": 19, "y": 9, "repeat": [ 2, 7 ], "chance": 55 },
+          { "group": "ammo_rifle_rare", "x": 19, "y": 9, "repeat": [ 2, 7 ], "chance": 40 },
+          { "group": "guns_pistol_common", "x": 19, "y": 9, "repeat": [ 1, 3 ], "chance": 75 },
+          { "group": "guns_pistol_obscure", "x": 19, "y": 9, "repeat": [ 1, 2 ], "chance": 45 },
+          { "group": "guns_smg_common", "x": 19, "y": 9, "repeat": [ 1, 2 ], "chance": 15 },
+          { "group": "guns_rifle_common", "x": 19, "y": 9, "repeat": [ 1, 4 ], "chance": 55 },
+          { "group": "guns_rifle_rare", "x": 19, "y": 9, "repeat": [ 1, 2 ], "chance": 45 },
+          { "group": "gear_survival", "x": 19, "y": 9, "repeat": [ 1, 4 ], "chance": 75 },
+          { "group": "allclothes", "x": 19, "y": 9, "repeat": [ 1, 2 ], "chance": 75 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "goggles_ir", "count": 1 },
+        { "u_buy_item": "tac_fullhelmet", "count": 1 },
+        { "u_buy_item": "duster_survivor", "count": 1 },
+        { "u_buy_item": "223", "count": 150 },
+        { "u_buy_item": "556", "count": 30 },
+        { "u_buy_item": "fn_fal", "count": 1 },
+        { "u_buy_item": "falmag", "count": 1 },
+        { "u_buy_item": "falmag", "count": 1 },
+        { "u_buy_item": "falmag", "count": 1 },
+        { "u_buy_item": "falmag", "count": 1 },
+        { "u_buy_item": "308", "count": 30 },
+        { "u_buy_item": "762_51", "count": 120 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "This is the final task I will give you. It seems like your exploits have inflamed the anger of the bandits even more, they've set up a log fort nearby. I want you to take care of them for us.",
+      "offer": "This is the final task I will give you. It seems like your exploits have inflamed the anger of the bandits even more, they've set up a log fort nearby. I want you to take care of them for us.",
+      "accepted": "Make sure to kill them quickly and without incident.",
+      "rejected": "Fair enough, don't come back asking for missions then.",
+      "advice": "Never underestimate fighting other people, they always have more health than you realize. I think there are at least four or five bandits there. Please be careful, landmines might be present.",
+      "inquire": "Have you found the part yet?",
+      "success": "Amazing work, I didn't think you would make it back.",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  }
+]

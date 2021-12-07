@@ -1,0 +1,116 @@
+[
+  {
+    "type": "npc",
+    "id": "metro_reichsoldier_fol",
+    "name_suffix": "Reich Soldier",
+    "class": "metro_reichsoldier_npc_fol",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_REICHFAC",
+    "faction": "fac_metreich"
+  },
+  {
+    "type": "npc_class",
+    "id": "metro_reichsoldier_npc_fol",
+    "name": { "str": "Reich Soldier" },
+    "job_description": "Protects the station from assailants",
+    "traits": [ { "group": "Skin_Fair" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_REICHS_worn",
+    "carry_override": "NC_REICHS_carry",
+    "weapon_override": "NC_REICHS_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REICHS_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "ak74", "prob": 30, "charges": 30 },
+      { "item": "an94", "prob": 10, "charges": 30 },
+      { "item": "metro_bastard", "prob": 10, "charges": 10 },
+      { "item": "metro_kalashtwen", "prob": 10, "charges": 40 },
+      { "item": "metro_shambler", "prob": 10, "charges": 6 },
+      { "item": "metro_lolife_pistol", "prob": 10, "charges": 8 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REICHS_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "reich_hats", "prob": 60 },
+      { "group": "reich_torso" },
+      { "group": "reich_legs" },
+      { "group": "reich_bags", "prob": 60 },
+      { "item": "boots" },
+      { "item": "ammo_pouch", "prob": 50 },
+      { "item": "mask_gas", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "reich_hats",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "helmet_army", "prob": 20 },
+      { "item": "metro_nsmhelmet", "prob": 30 },
+      { "item": "metro_nsmhat", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "reich_torso",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jacket_army", "prob": 5 },
+      { "item": "winter_jacket_army", "prob": 5 },
+      { "item": "metro_nsmvest", "prob": 25 },
+      { "item": "metro_nsmjacket", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "reich_legs",
+    "subtype": "distribution",
+    "entries": [ { "item": "pants_army", "prob": 35 }, { "item": "pants", "prob": 5 }, { "item": "pants_cargo", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "reich_bags",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "backpack", "prob": 35 },
+      { "item": "backpack_tactical_large", "prob": 5 },
+      { "item": "slingpack", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REICHS_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "cannedfood", "repeat": [ 1, 2 ] },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 6 ] },
+      { "item": "545", "prob": 75, "repeat": [ 1, 2 ] },
+      { "item": "545_ap", "prob": 50 },
+      { "item": "reloaded_545", "prob": 30 },
+      { "item": "44fmj", "prob": 15 },
+      { "item": "ak74mag", "ammo-item": "545", "charges": 30, "prob": 20 },
+      { "item": "rpk74mag", "ammo-item": "545", "charges": 45, "prob": 20 },
+      { "item": "metro_basmag", "ammo-item": "545", "charges": 30, "prob": 30 },
+      { "item": "metro_kalmag", "ammo-item": "545", "charges": 40, "prob": 20 }
+    ]
+  }
+]

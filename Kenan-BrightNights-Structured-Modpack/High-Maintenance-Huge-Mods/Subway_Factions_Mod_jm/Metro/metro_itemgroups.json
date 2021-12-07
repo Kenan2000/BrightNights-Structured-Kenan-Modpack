@@ -1,0 +1,86 @@
+[
+  {
+    "type": "item_group",
+    "id": "metro_item_firearms_loot",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "metro_lolife_pistol", "prob": 20, "charges": 8 },
+      { "item": "metro_bastard", "prob": 15, "charges": 30 },
+      { "item": "metro_kalashtwen", "prob": 15, "charges": 40 },
+      { "item": "metro_shambler", "prob": 10, "charges": 6 },
+      { "item": "ak74", "prob": 15, "charges": 30 },
+      { "item": "an94", "prob": 2, "charges": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_ammo_pistol_item",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "44magnum", "prob": 60 },
+      { "item": "44fmj", "prob": 20 },
+      { "item": "reloaded_44fmj", "prob": 20 },
+      { "item": "reloaded_44magnum", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_pistolmag_item",
+    "subtype": "collection",
+    "entries": [
+      { "item": "metro_lolifemag", "prob": 50, "ammo-item": "44magnum", "charges": 8 },
+      { "item": "metro_lolifemag", "prob": 30, "ammo-item": "reloaded_44fmj", "charges": 8 },
+      { "item": "metro_lolifebigmag", "prob": 20, "ammo-item": "sgs5_b", "44fmj": 40 },
+      { "item": "metro_lolifebigmag", "prob": 20, "ammo-item": "sgs5_b", "reloaded_44magnum": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_ammo_rifle_item",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "545", "prob": 60 },
+      { "item": "545_ap", "prob": 20 },
+      { "item": "reloaded_545", "prob": 40 },
+      { "item": "reloaded_545_ap", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_riflemag_item",
+    "subtype": "collection",
+    "entries": [
+      { "item": "metro_basmag", "ammo-item": "545", "charges": 30, "prob": 60 },
+      { "item": "ak74mag", "ammo-item": "545", "charges": 30, "prob": 40 },
+      { "item": "rpk74mag", "ammo-item": "545", "charges": 45, "prob": 40 },
+      { "item": "metro_kalmag", "ammo-item": "545", "charges": 25, "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_item_redarmor",
+    "subtype": "collection",
+    "entries": [
+      { "item": "metro_redhat", "prob": 25 },
+      { "item": "metro_red_offcoat", "prob": 75 },
+      { "item": "metro_redvest", "prob": 75 },
+      { "item": "metro_redfur", "prob": 10 },
+      { "item": "jacket_army", "prob": 30 },
+      { "item": "pants_army", "prob": 35 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "metro_item_nsmarmor",
+    "subtype": "collection",
+    "entries": [
+      { "item": "metro_nsmhat", "prob": 75 },
+      { "item": "metro_nsmjacket", "prob": 75 },
+      { "item": "metro_nsmvest", "prob": 75 },
+      { "item": "metro_nsm_armor", "prob": 10 },
+      { "item": "metro_nsmhelmet", "prob": 40 },
+      { "item": "jacket_army", "prob": 30 },
+      { "item": "pants_army", "prob": 35 }
+    ]
+  }
+]

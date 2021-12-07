@@ -1,0 +1,46 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "Contested Station",
+    "overmaps": [ { "point": [ 0, 0, -2 ], "overmap": "MGS_STATION1_south" } ],
+    "locations": [ "subterranean" ],
+    "occurrences": [ 5, 45 ],
+    "connections": [
+      { "point": [ 0, 1, -2 ], "terrain": "subway" },
+      { "point": [ 1, 1, -2 ], "terrain": "subway" },
+      { "point": [ -1, 1, -2 ], "terrain": "subway" }
+    ],
+    "city_distance": [ 1, 9 ],
+    "city_sizes": [ 5, 20 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Red Line station",
+    "overmaps": [ { "point": [ 0, 0, -2 ], "overmap": "METRO_REDLINES_1_south" } ],
+    "rotate": true,
+    "locations": [ "subterranean" ],
+    "occurrences": [ 5, 45 ],
+    "connections": [
+      { "point": [ 0, 1, -2 ], "terrain": "subway" },
+      { "point": [ 1, 1, -2 ], "terrain": "subway" },
+      { "point": [ -1, 1, -2 ], "terrain": "subway" }
+    ],
+    "city_distance": [ 1, 9 ],
+    "city_sizes": [ 5, 20 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Reich Station",
+    "overmaps": [ { "point": [ 0, 0, -2 ], "overmap": "METRO_NSMS1_south" } ],
+    "rotate": true,
+    "locations": [ "subterranean" ],
+    "occurrences": [ 5, 45 ],
+    "connections": [
+      { "point": [ 0, 1, -2 ], "terrain": "subway" },
+      { "point": [ 1, 1, -2 ], "terrain": "subway" },
+      { "point": [ -1, 1, -2 ], "terrain": "subway" }
+    ],
+    "city_distance": [ 1, 9 ],
+    "city_sizes": [ 5, 20 ]
+  }
+]

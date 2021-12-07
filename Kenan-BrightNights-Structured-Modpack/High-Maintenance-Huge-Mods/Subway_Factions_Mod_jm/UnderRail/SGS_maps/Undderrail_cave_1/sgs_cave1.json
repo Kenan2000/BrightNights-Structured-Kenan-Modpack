@@ -1,0 +1,89 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "SGS_CAVE1" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "WWWWW,,,,,,,,,,,WWWWWWWW",
+        "WWWW,,,,,,,,,,,,,,,WWWWW",
+        "WW,,,,,,,,,,,,,,,,,,WWWW",
+        "W,,,,,,,,,,,,,,,,,,WWWWW",
+        "W,,,,,,,,,,,,,,,,,,,WWWW",
+        "W,,,,,,,,,,,,,,,,,,,,WWW",
+        "WW,,,,,,,,,,,,,,,,,,,,WW",
+        "WWW,,,,,,,,,,,,,,,,,,,WW",
+        "WW,,,,,,,,,,,,,,,,,,,,WW",
+        "WWWW,,,,,,,,,,,,,,,,,,WW",
+        "WWWWW,,,,,,,,,,,,,,,,,WW",
+        "WWW,,,,,,,,,,,,,,,,,,,WW",
+        "WWWW,,,,,,,,,,,,,,,,,,WW",
+        "WWW,,,,,,,,,,,,,,,,,,WWW",
+        "WWWW,,,,,,,,,,,,,,,,,WWW",
+        "WWW,,,,,,,,,,,,,,,,,,,WW",
+        "WW,,,,,,,,,,,,,,,,,,,,WW",
+        "WW,,,,,,,,,,,,,,,,,,,WWW",
+        "WW,,,,,,,,,,,,,,,,,,,WWW",
+        "WW,,,,,,,,,,,,,,,,,,,WWW",
+        "WW,,,,,,,,,,,,,,,,,,WWWW",
+        "WW,,,,,,,,,,,,,,,,,,,,WW",
+        "WWWWW,,,,,,,,WWWW,,,,WWW",
+        "WWWWWWWWWWWWWWWWWWWWWWWW"
+      ],
+      "palettes": [ "SGS_CAVE1" ],
+      "place_nested": [
+        {
+          "chunks": [
+            [ "sgs_cavechunk1u", 15 ],
+            [ "sgs_cavechunk2u", 10 ],
+            [ "sgs_cavechunk3u", 10 ],
+            [ "sgs_cavechunk4u", 15 ],
+            [ "sgs_cavechunk5u", 25 ],
+            [ "sgs_cavechunk6u", 25 ]
+          ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "chunks": [
+            [ "sgs_cavechunk1u", 15 ],
+            [ "sgs_cavechunk2u", 10 ],
+            [ "sgs_cavechunk3u", 10 ],
+            [ "sgs_cavechunk4u", 5 ],
+            [ "sgs_cavechunk5u", 30 ],
+            [ "sgs_cavechunk6u", 30 ]
+          ],
+          "x": 12,
+          "y": 0
+        },
+        {
+          "chunks": [
+            [ "sgs_cavechunk1u", 15 ],
+            [ "sgs_cavechunk2u", 10 ],
+            [ "sgs_cavechunk3u", 5 ],
+            [ "sgs_cavechunk4u", 10 ],
+            [ "sgs_cavechunk5u", 30 ],
+            [ "sgs_cavechunk6u", 30 ]
+          ],
+          "x": 0,
+          "y": 12
+        },
+        {
+          "chunks": [
+            [ "sgs_cavechunk1u", 15 ],
+            [ "sgs_cavechunk2u", 10 ],
+            [ "sgs_cavechunk3u", 10 ],
+            [ "sgs_cavechunk4u", 15 ],
+            [ "sgs_cavechunk5u", 25 ],
+            [ "sgs_cavechunk6u", 25 ]
+          ],
+          "x": 12,
+          "y": 12
+        }
+      ],
+      "terrain": { ",": "t_rock_floor_no_roof" }
+    }
+  }
+]

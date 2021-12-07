@@ -1,0 +1,17 @@
+[
+  {
+    "id": "TALK_metro_reichsoldier_start",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "Hello, Miss, What do you want from me?", "no": "Hello, what do you want from me?" },
+    "responses": [
+      { "text": "How do you serve as a soldier of the Reich?", "topic": "TALK_metro_reichsoldier_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_metro_reichsoldier_go",
+    "type": "talk_topic",
+    "dynamic_line": "There is no higher honor than to serve as a soldier of the Reich against the hated reds. Our enemies are many, but they are all beneath us. Soon, all the stations of the metro will be within our grasp, just you wait!",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+]

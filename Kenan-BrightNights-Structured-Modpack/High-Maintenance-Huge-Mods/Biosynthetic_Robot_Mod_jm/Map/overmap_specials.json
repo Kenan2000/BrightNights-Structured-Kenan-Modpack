@@ -1,0 +1,70 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "Automated Compliance Center",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "GKB_COMPCENTER1_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "GKB_COMPCENTER1_roof_south" }
+    ],
+    "locations": [ "land" ],
+    "occurrences": [ 5, 35 ],
+    "connections": [ { "point": [ 0, 1, 0 ], "terrain": "road", "existing": true } ]
+  },
+  {
+    "type": "city_building",
+    "id": "GKB_CHISTORE1",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "GKB_CHISTORE1_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "GKB_CHISTORE2_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "GKB_CHISTORE1_roof_north" }
+    ],
+    "locations": [ "land" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Chinese Drone Pod",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "GKB_CHINPOD_1_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "GKB_CHINPOD_1_roof_south" }
+    ],
+    "locations": [ "field" ],
+    "occurrences": [ 4, 35 ]
+  },
+  {
+    "type": "city_building",
+    "id": "dawson_store",
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "s_dawson_south" }, { "point": [ 0, 0, 1 ], "overmap": "s_dawson_roof_south" } ],
+    "locations": [ "land" ],
+    "occurrences": [ 4, 9 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Scrapper Base",
+    "overmaps": [
+      { "point": [ 1, 0, 0 ], "overmap": "GKB_SCRAPBASE1_1_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "GKB_SCRAPBASE1_roof_1_north" },
+      { "point": [ 0, 0, 0 ], "overmap": "GKB_SCRAPBASE1_2_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "GKB_SCRAPBASE1_roof_2_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "GKB_SCRAPBASE1_3_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "GKB_SCRAPBASE1_roof_3_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "GKB_SCRAPBASE1_4_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "GKB_SCRAPBASE1_roof_4_north" }
+    ],
+    "locations": [ "land" ],
+    "occurrences": [ 1, 5 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "XEDRA Black Site",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "GKB_BLACKSITE1_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "GKB_BLACKSITE2_south" },
+      { "point": [ 0, 0, 2 ], "overmap": "GKB_BLACKSITE3_south" },
+      { "point": [ 0, 0, 3 ], "overmap": "GKB_BLACKSITE4_south" },
+      { "point": [ 0, 0, 4 ], "overmap": "GKB_BLACKSITE5_south" },
+      { "point": [ 0, 0, 5 ], "overmap": "GKB_BLACKSITE6_south" }
+    ],
+    "locations": [ "land" ],
+    "occurrences": [ 5, 40 ]
+  }
+]

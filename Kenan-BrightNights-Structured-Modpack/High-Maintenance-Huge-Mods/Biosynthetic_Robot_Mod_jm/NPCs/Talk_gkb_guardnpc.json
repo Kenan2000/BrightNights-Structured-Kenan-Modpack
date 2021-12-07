@@ -1,0 +1,31 @@
+[
+  {
+    "id": "TALK_gkb_scrapper_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you doing around here, what do you want from me?",
+      "no": "What are you doing around here, what do you want from me?"
+    },
+    "responses": [
+      { "text": "So you're a scrapper, what's this place about anyway?", "topic": "TALK_gkb_scrapper_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_gkb_scrapper_go",
+    "type": "talk_topic",
+    "dynamic_line": "It's a mixed bag, really. Sure, it's a lot easier to procure supplies and precious tech, but at the same time I'd much rather deal with regular people than whatever exist out there now.",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+
+
+
+
+
+
+
+
+
+
+]

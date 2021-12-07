@@ -1,0 +1,17 @@
+[
+  {
+    "id": "TALK_reich_civ_start",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "Hello, What do you want from me?", "no": "Hello, what do you want from me?" },
+    "responses": [
+      { "text": "What's it like living in the Reich?", "topic": "TALK_reich_civ_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_reich_civ_go",
+    "type": "talk_topic",
+    "dynamic_line": "Unlike most of the metro, things are pretty clean here. The rules are a bit too harsh at times though, and I'm often a bit fearful of the officers around here. It's hard to parse fact from fiction when it comes to this war with the reds.",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+]

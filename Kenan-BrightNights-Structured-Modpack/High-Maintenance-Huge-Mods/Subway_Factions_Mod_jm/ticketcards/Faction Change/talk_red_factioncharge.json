@@ -1,0 +1,50 @@
+[
+  {
+    "id": "TALK_RED_TICK_FAC",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello lady, I am a stopgap to allow the user to change their faction at the start of the game. Otherwise it would be impossible to play for the Red Line Profession Start.",
+      "no": "Hello sir, I am a stopgap to allow the user to change their faction at the start of the game. Otherwise it would be impossible to play for the Red Line Profession Start."
+    },
+    "responses": [
+      {
+        "text": "Decrease the Reich's reputation with me.",
+        "topic": "TALK_RED_TICKETFAC_E1",
+        "effect": [ { "npc_change_faction": "fac_metreich" } ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_RED_TICKETFAC_E1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I have decreased your relationship with the 4th Reich by 75 points.",
+      "no": "I have decreased your relationship with the 4th Reich by 75 points."
+    },
+    "responses": [
+      {
+        "text": "Now change my relationship with South Gate Station.",
+        "effect": [ { "u_faction_rep": -75 }, { "npc_change_faction": "fac_southgate" } ],
+        "topic": "TALK_RED_TICKETFAC_G1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_RED_TICKETFAC_G1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I have decreased your relationship with South Gate Station by 75 points.",
+      "no": "I have decreased your relationship with South Gate Station by 75 points."
+    },
+    "responses": [ { "text": "Proceed.", "effect": [ { "u_faction_rep": -75 } ], "topic": "TALK_RED_TICKETDEATH" } ]
+  },
+  {
+    "id": "TALK_RED_TICKETDEATH",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "The process is complete.", "no": "The process is complete." },
+    "responses": [ { "text": "Now go away", "effect": "npc_die", "topic": "TALK_DONE" } ]
+  }
+]

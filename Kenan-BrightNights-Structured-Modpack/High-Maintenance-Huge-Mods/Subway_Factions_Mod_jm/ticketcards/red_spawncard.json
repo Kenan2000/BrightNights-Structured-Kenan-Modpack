@@ -1,0 +1,112 @@
+[
+  {
+    "type": "npc",
+    "id": "metro_redguard_fol",
+    "name_suffix": "Red Line Soldier",
+    "class": "metro_redguard_npc_fol",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_REDFAC",
+    "faction": "fac_metred"
+  },
+  {
+    "type": "npc_class",
+    "id": "metro_redguard_npc_fol",
+    "name": { "str": "Red Line Soldier" },
+    "job_description": "Protects the station from assailants",
+    "traits": [ { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_REDGUARD_worn",
+    "carry_override": "NC_REDGUARD_carry",
+    "weapon_override": "NC_REDGUARD_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDGUARD_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "ak74", "prob": 25, "charges": 30 },
+      { "item": "an94", "prob": 5, "charges": 30 },
+      { "item": "metro_bastard", "prob": 30, "charges": 10 },
+      { "item": "metro_kalashtwen", "prob": 5, "charges": 40 },
+      { "item": "metro_shambler", "prob": 15, "charges": 6 },
+      { "item": "metro_lolife_pistol", "prob": 10, "charges": 8 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDGUARD_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "redguard_hats", "prob": 60 },
+      { "group": "redguard_torso" },
+      { "group": "redguard_legs" },
+      { "group": "redguard_bags", "prob": 60 },
+      { "item": "boots" },
+      { "item": "ammo_pouch", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "redguard_hats",
+    "subtype": "distribution",
+    "entries": [ { "item": "helmet_army", "prob": 25 }, { "item": "metro_redhat", "prob": 5 }, { "item": "metro_redfur", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "redguard_torso",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jacket_army", "prob": 5 },
+      { "item": "winter_jacket_army", "prob": 5 },
+      { "item": "metro_redvest", "prob": 25 },
+      { "item": "metro_red_offcoat", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "redguard_legs",
+    "subtype": "distribution",
+    "entries": [ { "item": "pants_army", "prob": 35 }, { "item": "pants_cargo", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "redguard_bags",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "backpack", "prob": 35 },
+      { "item": "backpack_tactical_large", "prob": 5 },
+      { "item": "slingpack", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDGUARD_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "preserved_food", "repeat": [ 1, 2 ] },
+      { "group": "alcohol", "repeat": [ 1, 2 ], "prob": 55 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 6 ] },
+      { "item": "545", "prob": 75, "repeat": [ 1, 2 ] },
+      { "item": "545_ap", "prob": 50 },
+      { "item": "reloaded_545", "prob": 30 },
+      { "item": "44fmj", "prob": 15 },
+      { "item": "ak74mag", "ammo-item": "545", "charges": 30, "prob": 20 },
+      { "item": "rpk74mag", "ammo-item": "545", "charges": 45, "prob": 20 },
+      { "item": "metro_basmag", "ammo-item": "545", "charges": 30, "prob": 30 },
+      { "item": "metro_kalmag", "ammo-item": "545", "charges": 40, "prob": 20 }
+    ]
+  }
+]

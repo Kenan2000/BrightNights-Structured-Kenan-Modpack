@@ -1,0 +1,79 @@
+[
+  {
+    "type": "npc",
+    "id": "npc_gkb_maid",
+    "name_suffix": "Synthetic Maid",
+    "class": "npc_gkb_maid_fo",
+    "gender": "female",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_GKB_MAID",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc_class",
+    "id": "npc_gkb_maid_fo",
+    "name": { "str": "Synthetic Maid" },
+    "job_description": "A bio-synthetic maid.",
+    "traits": [ { "trait": "hair_brown_long" }, { "trait": "mut_gkb_ears" }, { "trait": "SKIN_LIGHT" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ 0, 2 ] },
+    "worn_override": "NC_GKBFOLLOWER_worn",
+    "carry_override": "NC_GKBFOLLOWER_carry",
+    "weapon_override": "NC_GKBFOLLOWER_weapon",
+    "skills": [ { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBFOLLOWER_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBFOLLOWER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "panties" },
+      { "item": "bra" },
+      { "item": "stockings" },
+      { "item": "maid_dress" },
+      { "item": "maid_hat" },
+      { "item": "dress_shoes" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBFOLLOWER_carry",
+    "subtype": "collection",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "TOOL",
+    "category": "other",
+    "id": "gkb_synthmaid",
+    "name": { "str": "Chi Industries Synthetic Maid" },
+    "description": "A single-use item containing a synthetic maid for the user.",
+    "symbol": "m",
+    "color": "pink",
+    "price": "1 USD",
+    "price_postapoc": 0,
+    "material": [ "steel" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "max_charges": 0,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "ammo": [ "NULL" ],
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "npc_gkb_maid",
+      "summon_msg": "Upon cracking the lid on the hermetically sealed case, the maid begins to activate! She clambers out of the box, ready to be activated at your command.",
+      "place_randomly": false
+    }
+  }
+]

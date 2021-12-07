@@ -1,0 +1,417 @@
+[
+  {
+    "type": "profession",
+    "id": "sgs_civilian_p",
+    "name": { "str": "South Gate Civilian" },
+    "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you.",
+    "points": 0,
+    "skills": [  ],
+    "items": {
+      "both": { "entries": [ { "group": "charged_cell_phone" }, { "item": "sgs_idticketcard" }, { "group": "charged_flashlight" } ] },
+      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "wristwatch", "hoodie", "socks" ],
+      "female": [ "bra", "panties", "hoodie", "pants", "boots", "tshirt", "wristwatch", "socks" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "red_civilian_p",
+    "name": { "str": "Red Line Civilian" },
+    "description": "You are one of the citizens of the Red Line, a network of communist aligned stations in the New England Subway.",
+    "points": 0,
+    "skills": [  ],
+    "items": {
+      "both": { "entries": [ { "group": "charged_cell_phone" }, { "item": "red_idticketcard" }, { "group": "charged_flashlight" } ] },
+      "male": [ "boxer_shorts", "pants_army", "boots", "tshirt", "wristwatch", "coat_winter", "metro_redfur", "socks" ],
+      "female": [ "bra", "panties", "tshirt", "coat_winter", "pants_army", "boots", "wristwatch", "metro_redfur", "socks" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "reich_civilian_p",
+    "name": { "str": "Reich Civilian" },
+    "description": "You are one of the citizens of the 4th Reich, a network of national socialist aligned stations in the New England Subway.",
+    "points": 0,
+    "skills": [  ],
+    "items": {
+      "both": {
+        "entries": [ { "group": "charged_cell_phone" }, { "item": "reich_idticketcard" }, { "group": "charged_flashlight" } ]
+      },
+      "male": [ "boxer_shorts", "pants_army", "boots", "tshirt", "wristwatch", "sweater", "socks" ],
+      "female": [ "bra", "panties", "tshirt", "sweater", "boots", "wristwatch", "skirt", "socks" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_guard_p",
+    "name": { "str": "South Gate Guard" },
+    "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you, and you soon enlisted as a guard defending the frontiers of SGS against the hidden terrors of the Underrail.",
+    "points": 3,
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "charged_cell_phone" },
+          { "item": "sgs_idticketcard" },
+          { "group": "charged_flashlight" },
+          { "item": "sgs5mag", "ammo-item": "sgs5_b", "charges": 20 },
+          { "item": "sgs5mag", "ammo-item": "sgs5_b", "charges": 20 },
+          { "item": "sgs5mag", "ammo-item": "sgs5_b", "charges": 20 },
+          { "item": "sgs_hawker", "ammo-item": "sgs5_b", "charges": 20, "container-item": "holster" }
+        ]
+      },
+      "male": [ "boxer_shorts", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack" ],
+      "female": [ "bra", "panties", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_soldier_p",
+    "name": { "str": "South Gate Soldier" },
+    "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. After becoming a guard, you worked your up through the ranks of SGS until you became a soldier.",
+    "points": 5,
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "rifle" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "charged_cell_phone" },
+          { "group": "charged_flashlight" },
+          { "item": "sgs_idticketcard" },
+          { "item": "sgs_hawker", "ammo-item": "sgs5_b", "charges": 20, "container-item": "holster" },
+          { "item": "sgs_hornmag_30rd", "ammo-item": "556", "charges": 30 },
+          { "item": "sgs_hornmag_30rd", "ammo-item": "556", "charges": 30 },
+          { "item": "sgs_hornmag_30rd", "ammo-item": "556", "charges": 30 },
+          { "item": "sgs_hornet", "ammo-item": "556", "charges": 30 }
+        ]
+      },
+      "male": [ "boxer_shorts", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "helmet_army" ],
+      "female": [ "bra", "panties", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "helmet_army" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_heavy_p",
+    "name": { "str": "South Gate Heavy Soldier" },
+    "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. After becoming a guard, you worked your up through the ranks of SGS until you became a heavy trooper.",
+    "points": 7,
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 4, "name": "rifle" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "charged_cell_phone" },
+          { "group": "charged_flashlight" },
+          { "item": "sgs_idticketcard" },
+          { "item": "sgs_hawker", "ammo-item": "sgs5_b", "charges": 20, "container-item": "holster" },
+          { "item": "sgs_marmag_30rd", "ammo-item": "sgs86_b", "charges": 25 },
+          { "item": "sgs_marmag_30rd", "ammo-item": "sgs86_b", "charges": 25 },
+          { "item": "sgs_marmag_30rd", "ammo-item": "sgs86_b", "charges": 25 },
+          { "item": "sgs_marauder", "ammo-item": "sgs86_b", "charges": 25 }
+        ]
+      },
+      "male": [ "boxer_shorts", "sgs_metal_armor", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "sgs_metal_helmet" ],
+      "female": [ "bra", "panties", "sgs_metal_armor", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "sgs_metal_helmet" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_crossbow_p",
+    "name": { "str": "South Gate Junker" },
+    "description": "You were never content to just stay within the protective embrace of South Gate. You saw other citizens as being too cowardly, too afraid, too soft. You decided to buck their trend, traipsing throughout the underrail to make a name for yourself.",
+    "points": 4,
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 1, "name": "archery" },
+      { "level": 2, "name": "rifle" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "survival" },
+      { "level": 2, "name": "electronics" },
+      { "level": 2, "name": "fabrication" },
+      { "level": 1, "name": "computer" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "charged_cell_phone" },
+          { "group": "charged_flashlight" },
+          { "item": "sgs_idticketcard" },
+          { "item": "bolt_metal", "charges": 20 },
+          { "item": "sgs_zephyr", "charges": 1, "contents-item": "shoulder_strap" }
+        ]
+      },
+      "male": [ "boxer_shorts", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ],
+      "female": [ "bra", "panties", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_aug_p",
+    "name": { "str": "South Gate Stalker" },
+    "description": "You were never content to just stay within the protective embrace of South Gate. You saw other citizens as being too cowardly, too afraid, too soft. You were uniquely talented as a stalker, finding rare and valuable equipment in the Underrail.",
+    "points": 7,
+    "CBMs": [ "bio_targeting", "bio_fingerhack", "bio_climate", "bio_infrared", "bio_power_storage" ],
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "archery" },
+      { "level": 3, "name": "smg" },
+      { "level": 2, "name": "rifle" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 1, "name": "melee" },
+      { "level": 1, "name": "survival" },
+      { "level": 2, "name": "electronics" },
+      { "level": 2, "name": "fabrication" },
+      { "level": 1, "name": "computer" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "charged_cell_phone" },
+          { "group": "charged_flashlight" },
+          { "item": "sgs_idticketcard" },
+          { "item": "sgs_jackrabbit", "ammo-item": "sgs5_b", "charges": 30, "container-item": "holster" },
+          { "item": "bolt_metal", "charges": 20 },
+          { "item": "sgs_zephyr", "charges": 1, "contents-item": "shoulder_strap" },
+          { "item": "sgs_jackrabbit_mag", "ammo-item": "sgs5_b", "charges": 30 },
+          { "item": "sgs_jackrabbit_mag", "ammo-item": "sgs5_b", "charges": 30 }
+        ]
+      },
+      "male": [ "boxer_shorts", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ],
+      "female": [ "bra", "panties", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_tech_p",
+    "name": { "str": "South Gate Technician" },
+    "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you. You had a natural aptitude for various mechanical and life support systems for South Gate Station, and took up training as a technician.",
+    "points": 3,
+    "skills": [
+      { "level": 2, "name": "electronics" },
+      { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "fabrication" },
+      { "level": 1, "name": "computer" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "goggles_welding", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "wrench", "container-item": "tool_belt" },
+          { "group": "charged_cell_phone" },
+          { "item": "sgs_idticketcard" },
+          { "group": "charged_flashlight" }
+        ]
+      },
+      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "wristwatch", "hoodie", "socks", "multitool", "slingpack", "gloves_work" ],
+      "female": [
+        "bra",
+        "panties",
+        "hoodie",
+        "pants",
+        "boots",
+        "tshirt",
+        "wristwatch",
+        "socks",
+        "multitool",
+        "slingpack",
+        "gloves_work"
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "sgs_computer_p",
+    "name": { "str": "South Gate Computer Technician" },
+    "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you. After witnessing line upon line of code in the various consoles of SGS, you began to see a rythm to the apparently madness of programming. You became a well-respected member of South Gate Station's IT department.",
+    "points": 3,
+    "skills": [ { "level": 2, "name": "electronics" }, { "level": 4, "name": "computer" } ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "eink_tablet_pc" },
+          { "item": "sgs_idticketcard" },
+          { "group": "charged_cell_phone" },
+          { "group": "charged_flashlight" }
+        ]
+      },
+      "male": [
+        "boxer_shorts",
+        "pants",
+        "boots",
+        "tshirt",
+        "wristwatch",
+        "hoodie",
+        "socks",
+        "multitool",
+        "slingpack",
+        "soldering_iron"
+      ],
+      "female": [
+        "bra",
+        "panties",
+        "hoodie",
+        "pants",
+        "boots",
+        "tshirt",
+        "wristwatch",
+        "socks",
+        "multitool",
+        "slingpack",
+        "soldering_iron"
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "met_redsoldier_p",
+    "name": { "str": "Red Line Soldier" },
+    "description": "You are one of the soldiers of the Red Line, a network of communist aligned stations in the New England Subway.",
+    "points": 4,
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "rifle" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "red_idticketcard" },
+          { "group": "charged_flashlight" },
+          { "item": "reloaded_545", "charges": 20 },
+          { "item": "reloaded_44fmj", "charges": 20 },
+          { "item": "metro_bastard", "ammo-item": "reloaded_545", "charges": 30 },
+          { "item": "metro_lolife_pistol", "ammo-item": "reloaded_44fmj", "charges": 8, "container-item": "holster" },
+          { "item": "metro_basmag", "ammo-item": "545", "charges": 30 },
+          { "item": "metro_basmag", "ammo-item": "reloaded_545", "charges": 30 }
+        ]
+      },
+      "male": [ "boxer_shorts", "socks", "boots", "metro_redvest", "wristwatch", "pants_army", "backpack", "metro_redfur" ],
+      "female": [ "bra", "panties", "socks", "boots", "metro_redvest", "wristwatch", "pants_army", "backpack", "metro_redfur" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "met_reichsoldier_p",
+    "name": { "str": "Reich Soldier" },
+    "description": "You are one of the soldiers of the 4th Reich, a network of national socialist aligned stations in the New England Subway.",
+    "points": 5,
+    "skills": [
+      { "level": 3, "name": "gun" },
+      { "level": 3, "name": "rifle" },
+      { "level": 1, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "dodge" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "charged_flashlight" },
+          { "item": "reich_idticketcard" },
+          { "item": "reloaded_545", "charges": 20 },
+          { "item": "reloaded_44fmj", "charges": 20 },
+          { "item": "ak74", "ammo-item": "reloaded_545", "charges": 30 },
+          { "item": "metro_lolife_pistol", "ammo-item": "reloaded_44fmj", "charges": 8, "container-item": "holster" },
+          { "item": "ak74mag", "ammo-item": "545", "charges": 30 },
+          { "item": "ak74mag", "ammo-item": "reloaded_545", "charges": 30 }
+        ]
+      },
+      "male": [ "boxer_shorts", "socks", "boots", "metro_nsmvest", "wristwatch", "pants_army", "backpack", "metro_nsmhelmet" ],
+      "female": [ "bra", "panties", "socks", "boots", "metro_nsmvest", "wristwatch", "pants_army", "backpack", "metro_nsmhelmet" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "met_reichofficer_p",
+    "name": { "str": "Reich Officer" },
+    "description": "You are one of the officers of the 4th Reich, a network of national socialist aligned stations in the New England Subway.",
+    "points": 5,
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "speech" },
+      { "level": 2, "name": "barter" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "group": "charged_flashlight" },
+          { "item": "reich_idticketcard" },
+          { "item": "44fmj", "charges": 20 },
+          { "item": "metro_reich_card" },
+          { "item": "metro_reich_card" },
+          { "item": "metro_lolife_pistol", "ammo-item": "reloaded_44fmj", "charges": 8, "container-item": "holster" },
+          { "item": "metro_lolifemag", "ammo-item": "reloaded_44fmj", "charges": 8 },
+          { "item": "metro_lolifemag", "ammo-item": "reloaded_44fmj", "charges": 8 }
+        ]
+      },
+      "male": [ "boxer_shorts", "socks", "dress_shoes", "metro_nsmjacket", "wristwatch", "pants", "backpack", "metro_nsmhat" ],
+      "female": [ "bra", "panties", "stockings", "dress_shoes", "metro_nsmjacket", "wristwatch", "skirt", "backpack", "metro_nsmhat" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "met_redofficer_p",
+    "name": { "str": "Red Line Officer" },
+    "description": "You are one of the officers of the Red Line, a network of communist aligned stations in the New England Subway.",
+    "points": 5,
+    "skills": [
+      { "level": 2, "name": "gun" },
+      { "level": 2, "name": "pistol" },
+      { "level": 1, "name": "firstaid" },
+      { "level": 2, "name": "speech" },
+      { "level": 2, "name": "barter" },
+      { "level": 1, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "red_idticketcard" },
+          { "group": "charged_flashlight" },
+          { "item": "44fmj", "charges": 20 },
+          { "item": "metro_red_card" },
+          { "item": "metro_red_card" },
+          { "item": "metro_lolife_pistol", "ammo-item": "reloaded_44fmj", "charges": 8, "container-item": "holster" },
+          { "item": "metro_lolifemag", "ammo-item": "reloaded_44fmj", "charges": 8 },
+          { "item": "metro_lolifemag", "ammo-item": "reloaded_44fmj", "charges": 8 }
+        ]
+      },
+      "male": [ "boxer_shorts", "socks", "boots", "metro_red_offcoat", "wristwatch", "pants_army", "backpack", "metro_redhat" ],
+      "female": [ "bra", "panties", "socks", "boots", "metro_red_offcoat", "wristwatch", "pants_army", "backpack", "metro_redhat" ]
+    }
+  }
+]

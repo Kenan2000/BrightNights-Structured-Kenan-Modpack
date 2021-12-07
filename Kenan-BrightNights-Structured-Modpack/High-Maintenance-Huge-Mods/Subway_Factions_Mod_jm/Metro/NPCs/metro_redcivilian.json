@@ -1,0 +1,85 @@
+[
+  {
+    "type": "npc",
+    "id": "metro_redcivilian",
+    "name_suffix": "Red Line Civilian",
+    "class": "metro_redciv",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_red_civ_start",
+    "faction": "fac_metred"
+  },
+  {
+    "type": "npc_class",
+    "id": "metro_redciv",
+    "name": { "str": "Red Line Civilian" },
+    "job_description": "A typical citizen of the Red Line.",
+    "traits": [ { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_REDCIV_worn",
+    "carry_override": "NC_REDSCIV_carry",
+    "weapon_override": "NC_REDCIV_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 2, 1 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDCIV_weapon",
+    "subtype": "collection",
+    "entries": [ { "item": "metro_lolife_pistol", "prob": 25, "charges": 8 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDCIV_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "metro_redfur", "prob": 35 },
+      { "group": "red_nshirts" },
+      { "group": "red_npants" },
+      { "group": "red_shoes" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDSCIV_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "preserved_food", "repeat": [ 1, 2 ], "prob": 35 },
+      { "group": "alcohol", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "drugs_heal_simple", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "red_nshirts",
+    "items": [
+      [ "hoodie", 20 ],
+      [ "longshirt", 35 ],
+      [ "coat_winter", 35 ],
+      [ "sweatshirt", 10 ],
+      [ "tshirt", 45 ],
+      [ "ski_jacket", 10 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "red_npants",
+    "items": [ [ "jeans", 25 ], [ "pants_cargo", 35 ], [ "pants_army", 25 ], [ "shorts_cargo", 35 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "red_shoes",
+    "items": [ [ "boots", 25 ], [ "sneakers", 75 ] ]
+  }
+]

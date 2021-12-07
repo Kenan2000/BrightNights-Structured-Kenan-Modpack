@@ -1,0 +1,61 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "MGS_STATION1" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "WWWW,,,,,,,,,,,,,,,,WWWW",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "W,,,,,,,,,,,,,,,,,,,,,,W",
+        "WWWWWWWWWWWWWWWWWWWWWWWW"
+      ],
+      "palettes": [ "MGS_STATIONPAL" ],
+      "place_nested": [
+        {
+          "chunks": [ [ "met_cavechunk1u", 25 ], [ "met_cavechunk2u", 25 ], [ "met_cavechunk3u", 25 ], [ "met_cavechunk4u", 25 ] ],
+          "x": 0,
+          "y": 0
+        },
+        {
+          "chunks": [ [ "met_cavechunk1u", 25 ], [ "met_cavechunk2u", 25 ], [ "met_cavechunk3u", 25 ], [ "met_cavechunk4u", 25 ] ],
+          "x": 12,
+          "y": 0
+        },
+        {
+          "chunks": [ [ "met_cavechunk1u", 25 ], [ "met_cavechunk2u", 25 ], [ "met_cavechunk3u", 25 ], [ "met_cavechunk4u", 25 ] ],
+          "x": 0,
+          "y": 12
+        },
+        {
+          "chunks": [ [ "met_cavechunk1u", 25 ], [ "met_cavechunk2u", 25 ], [ "met_cavechunk3u", 25 ], [ "met_cavechunk4u", 25 ] ],
+          "x": 12,
+          "y": 12
+        }
+      ],
+      "terrain": { ",": "t_concrete" }
+    }
+  }
+]

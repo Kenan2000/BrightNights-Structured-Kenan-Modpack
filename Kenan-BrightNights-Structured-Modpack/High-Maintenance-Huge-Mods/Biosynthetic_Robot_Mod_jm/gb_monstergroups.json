@@ -1,0 +1,327 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_CHINESE_DRONES",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_clib_a", "freq": 100, "cost_multiplier": 1, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_gkb_clib_b", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_gkb_clib_c", "freq": 25, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_d", "freq": 30, "cost_multiplier": 3 },
+      { "monster": "mon_gkb_clib_e", "freq": 50, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_clib_f", "freq": 20, "cost_multiplier": 2 },
+      { "monster": "mon_gkb_zx_19", "freq": 40, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gb_chipupa", "freq": 1, "cost_multiplier": 20, "starts": 150 },
+      { "monster": "mon_gb_chipupa", "freq": 1, "cost_multiplier": 20, "starts": 300 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_CHINESE_DRONES_UPGRADE",
+    "default": "mon_gkb_clib_a_uc",
+    "//": "Masters pick from here when upgrading; no dogs, bionics, or profession-types",
+    "monsters": [
+      { "monster": "mon_gkb_clib_b", "freq": 10, "cost_multiplier": 5 },
+      { "monster": "mon_gkb_clib_c", "freq": 15, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_d", "freq": 25, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_e", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_f", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_gkb_clib_a_uc", "freq": 20, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_LIGHT_GKBGROUP",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 65, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt", "freq": 15, "cost_multiplier": 15, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_p", "freq": 25, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 10, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk2", "freq": 5, "cost_multiplier": 25, "starts": 150 },
+      { "monster": "mon_gkb_mk1", "freq": 25, "cost_multiplier": 20 },
+      { "monster": "mon_gb_polflyer", "freq": 20, "cost_multiplier": 3 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MEDIUM_GKBGROUP",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 65, "cost_multiplier": 1, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_p", "freq": 45, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_m", "freq": 15, "cost_multiplier": 4 },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_mk2", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_gkb_mk1", "freq": 25, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_mk3", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_gb_pdw", "freq": 15, "cost_multiplier": 2 },
+      { "monster": "mon_gb_brs", "freq": 20, "cost_multiplier": 4 },
+      { "monster": "mon_gb_inctank", "freq": 15, "cost_multiplier": 5 },
+      { "monster": "mon_gb_polflyer", "freq": 30, "cost_multiplier": 3 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_XEDRA_BOTS",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_xedra_newt", "freq": 65, "cost_multiplier": 1, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_m", "freq": 35, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_e", "freq": 25, "cost_multiplier": 3 },
+      { "monster": "mon_skitterbot", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_mk2", "freq": 35, "cost_multiplier": 5 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_POLICE",
+    "//": "+30% cops",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_gkb_newt_p", "freq": 40, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt_m", "freq": 10, "cost_multiplier": 3, "starts": 30 },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 2, "starts": 30 },
+      { "monster": "mon_gkb_pbota", "freq": 65, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_pbotb", "freq": 65, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_mk1", "freq": 20, "cost_multiplier": 2 },
+      { "monster": "mon_gb_polflyer", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_gb_polflyer", "freq": 7, "cost_multiplier": 2, "starts": 20 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_COMPLIANCE_CYBORGS",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_broken_cyborg", "freq": 100, "cost_multiplier": 1, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_prototype_cyborg", "freq": 10, "cost_multiplier": 2 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_DAWSON_BOTS",
+    "default": "mon_gkb_dawbot",
+    "monsters": [ { "monster": "mon_gkb_dawbot", "freq": 100, "cost_multiplier": 1, "pack_size": [ 1, 4 ] } ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_compbot", "freq": 2, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_gymaid", "freq": 3, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_newt", "freq": 5, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_newt", "freq": 1, "cost_multiplier": 5, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_e", "freq": 5, "cost_multiplier": 20, "starts": 100 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_COP",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_pbota", "freq": 50, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_pbotb", "freq": 50, "cost_multiplier": 1, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOSPITAL",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_nursebot_a", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_nursebot_b", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PHARM",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_nursebot_a", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_nursebot_b", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "name": "GROUP_MIL_STRONG",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_gkb_mk2", "freq": 20, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk3", "freq": 15, "cost_multiplier": 15, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gb_pdw", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gb_inctank", "freq": 15, "cost_multiplier": 10 },
+      { "monster": "mon_gkb_newt", "freq": 25, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt_m", "freq": 30, "cost_multiplier": 1, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "name": "GROUP_MIL_BASE",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_gkb_mk2", "freq": 20, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk3", "freq": 15, "cost_multiplier": 15 },
+      { "monster": "mon_gb_pdw", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gb_inctank", "freq": 15, "cost_multiplier": 10 },
+      { "monster": "mon_gkb_newt", "freq": 25, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt_m", "freq": 30, "cost_multiplier": 1, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MAYBE_MIL",
+    "monsters": [
+      { "monster": "mon_gkb_mk2", "freq": 20, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk3", "freq": 15, "cost_multiplier": 15 },
+      { "monster": "mon_gb_pdw", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gb_inctank", "freq": 15, "cost_multiplier": 10 },
+      { "monster": "mon_gkb_newt", "freq": 25, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt_m", "freq": 30, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_clib_a", "freq": 14, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_clib_a_up", "freq": 13, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a_up", "freq": 4, "cost_multiplier": 10, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_zx_19", "freq": 6, "cost_multiplier": 5, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE_COP",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_pbota", "freq": 50, "cost_multiplier": 1, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_pbotb", "freq": 50, "cost_multiplier": 1, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_newt_p", "freq": 50, "cost_multiplier": 1, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "name": "GROUP_HOTEL_POOL",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_compbot", "freq": 2, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_gymaid", "freq": 3, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "name": "GROUP_HOTEL_GYM",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_compbot", "freq": 2, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_gymaid", "freq": 3, "cost_multiplier": 1 }
+    ]
+  },
+  {
+    "name": "GROUP_MALL",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_compbot", "freq": 2, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_gymaid", "freq": 3, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_storebot", "freq": 3, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_newt", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_gkb_dawbot", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 3, "starts": 100, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PUBLICWORKERS",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 10, "cost_multiplier": 1 },
+      { "monster": "mon_gb_brs", "freq": 10, "cost_multiplier": 20, "starts": 10 },
+      { "monster": "mon_gkb_clib_a", "freq": 6, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a", "freq": 4, "cost_multiplier": 3, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_a_up", "freq": 4, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a_up", "freq": 2, "cost_multiplier": 10, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_zx_19", "freq": 6, "cost_multiplier": 5, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ELECTRO",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 15, "cost_multiplier": 1 },
+      { "monster": "mon_gb_brs", "freq": 20, "cost_multiplier": 20, "starts": 35 },
+      { "monster": "mon_gkb_clib_a", "freq": 14, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_clib_a_up", "freq": 7, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a_up", "freq": 5, "cost_multiplier": 10, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_gkb_zx_19", "freq": 6, "cost_multiplier": 5, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "name": "GROUP_PARK_SCENIC",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 13, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gb_brs", "freq": 7, "cost_multiplier": 25, "starts": 40 },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 3, "starts": 100, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk1", "freq": 5, "cost_multiplier": 25, "starts": 20 }
+    ]
+  },
+  {
+    "name": "GROUP_PARK_PLAYGROUND",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 23, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gb_brs", "freq": 7, "cost_multiplier": 25, "starts": 40 },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 3, "starts": 100, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk1", "freq": 15, "cost_multiplier": 25, "starts": 20 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 13, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_newt", "freq": 4, "cost_multiplier": 15, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_gb_brs", "freq": 4, "cost_multiplier": 25, "starts": 40 },
+      { "monster": "mon_gkb_newt_e", "freq": 10, "cost_multiplier": 3, "starts": 100, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk1", "freq": 8, "cost_multiplier": 25, "starts": 20 },
+      { "monster": "mon_gkb_clib_a", "freq": 6, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a", "freq": 4, "cost_multiplier": 3, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_a_up", "freq": 6, "cost_multiplier": 3 },
+      { "monster": "mon_gkb_clib_a_up", "freq": 2, "cost_multiplier": 10, "pack_size": [ 1, 3 ], "starts": 30 },
+      { "monster": "mon_gkb_zx_19", "freq": 3, "cost_multiplier": 2, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SMALL_STATION",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_gb_brs", "freq": 10, "cost_multiplier": 20, "starts": 35 },
+      { "monster": "mon_gkb_clib_a", "freq": 3, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a", "freq": 3, "cost_multiplier": 3, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_c", "freq": 5, "cost_multiplier": 10, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_d", "freq": 10, "cost_multiplier": 7, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_clib_e", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_f", "freq": 8, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_zx_19", "freq": 5, "cost_multiplier": 4, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_mk1", "freq": 5, "cost_multiplier": 25, "starts": 30 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_LARGE_STATION",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_gkb_newt", "freq": 20, "cost_multiplier": 1 },
+      { "monster": "mon_gb_brs", "freq": 10, "cost_multiplier": 20, "starts": 35 },
+      { "monster": "mon_gkb_clib_a", "freq": 3, "cost_multiplier": 1 },
+      { "monster": "mon_gkb_clib_a", "freq": 4, "cost_multiplier": 3, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_c", "freq": 5, "cost_multiplier": 10, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_d", "freq": 10, "cost_multiplier": 7, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_clib_e", "freq": 10, "cost_multiplier": 5, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_clib_f", "freq": 8, "cost_multiplier": 5, "pack_size": [ 1, 2 ], "starts": 30 },
+      { "monster": "mon_gkb_zx_19", "freq": 12, "cost_multiplier": 4, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_gkb_mk1", "freq": 5, "cost_multiplier": 25, "starts": 30 }
+    ]
+  }
+]

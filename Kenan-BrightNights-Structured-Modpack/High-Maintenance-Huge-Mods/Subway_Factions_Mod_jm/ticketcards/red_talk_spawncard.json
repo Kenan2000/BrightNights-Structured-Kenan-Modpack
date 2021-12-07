@@ -1,0 +1,44 @@
+[
+  {
+    "id": "TALK_REDFAC",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello comrade officer, I am ready to join you on your journey!",
+      "no": "Hello comrade officer, I am ready to join you on your journey!"
+    },
+    "responses": [
+      {
+        "text": "Want to travel with me?",
+        "topic": "TALK_AGREE_FOLLOW",
+        "effect": "follow",
+        "condition": { "not": "npc_following" }
+      }
+    ]
+  },
+  {
+    "type": "TOOL",
+    "category": "other",
+    "id": "metro_red_card",
+    "name": { "str": "Red Line Officer Card" },
+    "description": "A single-use card that summons a Red Line Soldier for the user.",
+    "weight": "1 g",
+    "symbol": "C",
+    "color": "white",
+    "price": "1 USD",
+    "price_postapoc": "0 USD",
+    "material": [ "steel" ],
+    "volume": "1 ml",
+    "max_charges": 0,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "ammo": [ "NULL" ],
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "metro_redguard_fol",
+      "summon_msg": "A Red Line soldier has appeared before you, ready to fight the fascists!",
+      "place_randomly": false
+    }
+  }
+]

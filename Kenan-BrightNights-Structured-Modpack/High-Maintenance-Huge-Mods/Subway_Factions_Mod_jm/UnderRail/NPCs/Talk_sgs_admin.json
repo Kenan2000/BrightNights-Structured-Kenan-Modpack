@@ -1,0 +1,136 @@
+[
+  {
+    "id": "TALK_sgs_admin_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Can't you see that I'm busy? whatever you wan't make sure it's important.",
+      "no": "Can't you see that I'm busy? whatever you wan't make sure it's important."
+    },
+    "responses": [
+      { "text": "How do you perform the job of being a councilor for South Gate station??", "topic": "TALK_sgs_adm_go" },
+      { "text": "Do you have a task for me?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_sgs_adm_go",
+    "type": "talk_topic",
+    "dynamic_line": "South Gate Station is led primarily by councilors. We are a small number of people that comprise the ruling council of South Gate Station. Without our guidance, the administration, engineering, life support, trade and security of the entire SGS complex would probably fall into disarray.",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "MISSION_SGS_ADMINKILL",
+    "type": "mission_definition",
+    "name": { "str": "Deal with the infestation" },
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "subway", "reveal_radius": 1, "random": true, "search_range": 6, "z": -2 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_sgs_psi_beetle", "x": 11, "y": 11, "target": true },
+          { "monster": "mon_sgs_psi_beetle", "x": 14, "y": 8 },
+          { "monster": "mon_metro_nosalis", "x": 5, "y": 4 },
+          { "monster": "mon_metro_nosalis", "x": 6, "y": 6 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "sgs_credit", "count": 3 },
+        { "u_buy_item": "sgs_hawker", "count": 1 },
+        { "u_buy_item": "sgs5_b", "count": 30 },
+        { "u_buy_item": "sgs5mag", "count": 3 },
+        { "u_buy_item": "sgs5_w", "count": 40 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_SGS_ADMINBANKILL",
+    "dialogue": {
+      "describe": "I know you're a bit new to the Underrail, but an infestation has come to our attention near South Gate Station, and I want you to deal with it.",
+      "offer": "I know you're a bit new to the Underrail, but an infestation has come to our attention near South Gate Station, and I want you to deal with it.",
+      "accepted": "Get to it, you know how infestations can get if we don't act quickly.",
+      "rejected": "Hm, I guess I'll just get one of the guards to deal with them!",
+      "advice": "Remember, Psibugs can induce a state of fear in their targets, please be careful.",
+      "inquire": "Has the infestation been dealt with?",
+      "success": "Great work, you've done South Great Station a great service.",
+      "success_lie": "I'm not entirely sure if you're telling the truth, but alright.",
+      "failure": "So the infestation isn't being dealt with?"
+    }
+  },
+  {
+    "id": "MISSION_SGS_ADMINBANKILL",
+    "type": "mission_definition",
+    "name": { "str": "Kill Underrail Bandits" },
+    "description": "A group of bandits have taken up a position near South Gate Station, find them and kill them for us.",
+    "goal": "MGOAL_ASSASSINATE",
+    "difficulty": 5,
+    "value": 50000,
+    "end": {
+      "effect": [
+        { "u_buy_item": "sgs_jacket", "count": 1 },
+        { "u_buy_item": "sgs_secvest", "count": 1 },
+        { "u_buy_item": "sgs_marauder", "count": 1 },
+        { "u_buy_item": "sgs_marmag_30rd" },
+        { "u_buy_item": "sgs_marmag_30rd" },
+        { "u_buy_item": "sgs86_b", "count": 20 },
+        { "u_buy_item": "sgs86_b", "count": 60 }
+      ]
+    },
+    "start": {
+      "assign_mission_target": { "om_terrain": "subway", "reveal_radius": 2, "random": true, "search_range": 6, "z": -2 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": { "@": "t_grass", "b": "t_dirt", "M": "t_dirt" },
+        "place_nested": [
+          { "chunks": [ [ "sgsban_spawn", 30 ], [ "null", 70 ] ], "x": 5, "y": 16 },
+          { "chunks": [ [ "sgsban_spawn", 30 ], [ "null", 70 ] ], "x": 14, "y": 16 }
+        ],
+        "place_npcs": [
+          { "class": "sgs_bandit", "x": 12, "y": 12, "target": true },
+          { "class": "sgs_bandit", "x": 9, "y": 9 },
+          { "class": "sgs_bandit", "x": 3, "y": 9 }
+        ]
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need your help again, some bandits have set up camp near our station, and extoring local travellers for their property. We need you to deal with it.",
+      "offer": "I need your help again, some bandits have set up camp near our station, and extoring local travellers for their property. We need you to deal with it.",
+      "accepted": "Be sure to kill those people as soon as possible.",
+      "rejected": "Laziness of your caliber is rare, perhaps you're no better than the scum out on the Underrail.",
+      "advice": "Don't underestimate these people, they're more robust than you think.",
+      "inquire": "Are they dead yet?",
+      "success": "South Gate Station is made safer by your efforts. Here, take these items as a reward",
+      "success_lie": "What good does this do us?",
+      "failure": "Alright, at least you tried."
+    }
+  }
+]

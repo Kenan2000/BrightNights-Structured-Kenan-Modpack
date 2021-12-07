@@ -1,0 +1,109 @@
+[
+  {
+    "type": "palette",
+    "id": "SGS_STPALA",
+    "terrain": {
+      "G": "t_concrete",
+      "*": "t_sgs_lamp_c",
+      "S": "t_concrete",
+      "W": "t_concrete_wall",
+      "w": "t_laminated_glass",
+      "D": "t_door_metal_c",
+      "g": "t_floor_blue",
+      "d": "t_door_metal_pickable",
+      "T": "t_linoleum_gray",
+      "t": "t_linoleum_gray",
+      "C": "t_linoleum_gray",
+      "c": "t_linoleum_gray",
+      "M": "t_linoleum_gray",
+      "m": "t_linoleum_gray",
+      "V": "t_linoleum_gray",
+      "B": "t_linoleum_gray",
+      "b": "t_linoleum_gray",
+      "N": "t_linoleum_gray",
+      "n": "t_generator_broken",
+      "Z": "t_machinery_electronic",
+      "z": "t_console",
+      "1": "t_concrete",
+      "2": "t_concrete",
+      "3": "t_floor_blue",
+      "X": "t_linoleum_gray",
+      "4": "t_concrete",
+      "5": "t_concrete",
+      "6": "t_concrete",
+      "R": "t_concrete",
+      "r": "t_concrete",
+      "Q": "t_concrete",
+      "q": "t_concrete",
+      "E": "t_concrete"
+    },
+    "furniture": {
+      "S": "f_sandbag_half",
+      "t": "f_table",
+      "C": "f_bench",
+      "c": "f_rack",
+      "M": "f_rack",
+      "m": "f_bed",
+      "V": "f_IV_pole",
+      "B": "f_toilet",
+      "b": "f_sink",
+      "N": "f_rack",
+      "1": "f_rack",
+      "2": "f_rack",
+      "3": "f_locker",
+      "X": "f_bed",
+      "4": "f_locker",
+      "5": "f_locker",
+      "6": "f_locker",
+      "R": "f_desk",
+      "r": "f_armchair",
+      "Q": "f_armchair",
+      "q": "f_water_heater",
+      "E": "f_vending_c"
+    },
+    "items": {
+      "t": [ { "item": "kitchen", "chance": 35 }, { "item": "dining", "chance": 25 }, { "item": "preserved_food", "chance": 30 } ],
+      "c": [
+        { "item": "cannedfood", "chance": 74, "repeat": [ 1, 3 ] },
+        { "item": "preserved_food", "chance": 67, "repeat": [ 5, 10 ] },
+        { "item": "dining", "chance": 36, "repeat": [ 1, 2 ] }
+      ],
+      "M": [
+        { "item": "hospital_medical_items", "chance": 75, "repeat": [ 2, 4 ] },
+        { "item": "infantry_medical_gear", "chance": 55, "repeat": [ 2, 4 ] },
+        { "item": "mil_base_iv", "chance": 41 }
+      ],
+      "N": { "item": "cleaning", "chance": 36 },
+      "1": { "item": "supplies_mechanics", "chance": 45, "repeat": [ 2, 3 ] },
+      "2": { "item": "supplies_electronics", "chance": 76, "repeat": [ 2, 3 ] },
+      "3": [
+        { "item": "sgs_item_firearms_loot", "chance": 25 },
+        { "item": "sgs_ammo_pistol_item", "chance": 35, "repeat": [ 1, 2 ] },
+        { "item": "shirts_unisex", "chance": 45 },
+        { "item": "plumbing_clothing", "chance": 19 },
+        { "item": "pants", "chance": 45 },
+        { "item": "bags", "chance": 19 },
+        { "item": "sgs_credits", "chance": 40 },
+        { "item": "electronics", "chance": 20, "repeat": [ 1, 2 ] }
+      ],
+      "4": [
+        { "item": "sgs_item_firearms_loot", "chance": 75, "repeat": [ 1, 3 ] },
+        { "item": "grenades", "chance": 50, "repeat": [ 1, 2 ] }
+      ],
+      "5": [
+        { "item": "clothing_military", "chance": 65, "repeat": [ 1, 3 ] },
+        { "item": "sgs_item_armor", "chance": 70, "repeat": [ 2, 4 ] }
+      ],
+      "6": [
+        { "item": "sgs_ammo_pistol_item", "chance": 80, "repeat": [ 5, 13 ] },
+        { "item": "sgs_ammo_rifle_item", "chance": 80, "repeat": [ 6, 13 ] }
+      ],
+      "R": { "item": "book_military", "chance": 24 },
+      "Q": [
+        { "item": "hardware_books", "chance": 23, "repeat": [ 2, 3 ] },
+        { "item": "light_reading", "chance": 60, "repeat": [ 2, 3 ] },
+        { "item": "SUS_business_bookcase", "chance": 15, "repeat": [ 2, 3 ] }
+      ]
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "type": "scenario",
+    "id": "sgs_station_start",
+    "name": "South Gate Resident",
+    "points": 0,
+    "description": "Somehow, you stumbled upon South Gate Station, a safe haven in the Underrail beneath New England.",
+    "allowed_locs": [ "sgstown" ],
+    "start_name": "South Gate Station",
+    "professions": [
+      "sgs_civilian_p",
+      "sgs_guard_p",
+      "sgs_soldier_p",
+      "sgs_heavy_p",
+      "sgs_crossbow_p",
+      "sgs_aug_p",
+      "sgs_tech_p",
+      "sgs_computer_p"
+    ]
+  },
+  {
+    "type": "scenario",
+    "id": "sgs_red_start",
+    "name": "Red Line Resident",
+    "points": 0,
+    "description": "You managed to find a Red Line station in the New England subway system.",
+    "allowed_locs": [ "met_redline" ],
+    "start_name": "Red Line Station",
+    "professions": [ "red_civilian_p", "met_redsoldier_p", "met_redofficer_p" ]
+  },
+  {
+    "type": "scenario",
+    "id": "sgs_reich_start",
+    "name": "4th Reich Resident",
+    "points": 0,
+    "description": "You managed to find a 4th Reich station in the New England subway system.",
+    "allowed_locs": [ "met_reichstation" ],
+    "start_name": "4th Reich Station",
+    "professions": [ "reich_civilian_p", "met_reichsoldier_p", "met_reichofficer_p" ]
+  }
+]

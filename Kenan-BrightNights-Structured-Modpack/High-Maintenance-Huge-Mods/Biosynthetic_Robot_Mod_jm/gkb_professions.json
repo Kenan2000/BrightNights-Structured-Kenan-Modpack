@@ -1,0 +1,164 @@
+[
+  {
+    "type": "profession",
+    "id": "gkb_chi_salesman",
+    "name": { "male": "Chi Industries Salesman", "female": "Chi Industries Saleswoman" },
+    "description": "Before the cataclysm you were a sales representaive for the Japanese robotics company, Chi industries. Working in the sales division of a Chi Industries office outside of Boston was of great interest to you, but any communication from the corporate leadership went mysteriously silent in Tokyo days before civil order collapsed.",
+    "points": 0,
+    "skills": [ { "level": 2, "name": "speech" }, { "level": 1, "name": "barter" } ],
+    "items": {
+      "both": { "entries": [ { "item": "cash_card", "charges": 5000 }, { "group": "charged_cell_phone" } ] },
+      "male": [ "briefs", "socks", "pants", "dress_shirt", "blazer", "dress_shoes" ],
+      "female": [ "bra", "panties", "stockings", "skirt", "heels", "dress_shirt" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "gkb_chi_employee",
+    "name": { "male": "Chi Industries Employee", "female": "Chi Industries Employee" },
+    "description": "Before the cataclysm you were a low level employee for the Japanese robotics company, Chi industries. Working as an employee at a local branch allowed you to learn a bit about the inner workings of the famed company's consumer products and gynoids. Hopefully it comes in handy during the cataclysm.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "electronics" }, { "level": 1, "name": "computer" } ],
+    "items": {
+      "both": { "entries": [ { "group": "charged_cell_phone" } ] },
+      "male": [ "briefs", "socks", "lowtops", "shorts", "dress_shirt", "multitool", "fanny" ],
+      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "dress_shirt", "multitool", "fanny" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "gkb_chi_enthusiast",
+    "name": { "male": "Chi Industries Enthusiast", "female": "Chi Industries Enthusiast" },
+    "description": "Before the cataclysm you were a fan of the products of Chi Industries, the famed Japanese robotics company. You acquired a great deal of their products before the cataclysm.",
+    "points": 2,
+    "skills": [ { "level": 2, "name": "electronics" }, { "level": 1, "name": "computer" } ],
+    "items": {
+      "both": { "entries": [ { "group": "charged_cell_phone" } ] },
+      "male": [ "briefs", "socks", "lowtops", "shorts", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ],
+      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "gkb_chi_aug_enthusiast",
+    "name": { "male": "Augmented Chi Industries Enthusiast", "female": "Augmented Chi Industries Enthusiast" },
+    "description": "Before the cataclysm you were a fan of the products of Chi Industries, the famed Japanese robotics company. You acquired a great deal of their products before the cataclysm, and even augmented yourself somewhat to mirror the androids you held in high esteem.",
+    "points": 4,
+    "CBMs": [ "bio_batteries", "bio_power_storage", "bio_watch", "bio_alarm", "bio_lighter" ],
+    "skills": [ { "level": 2, "name": "electronics" }, { "level": 1, "name": "computer" } ],
+    "items": {
+      "both": { "entries": [ { "group": "charged_cell_phone" } ] },
+      "male": [ "briefs", "socks", "lowtops", "shorts", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ],
+      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "gkb_chi_operative",
+    "name": { "male": "Chi Industries Operative", "female": "Chi Industries Operative" },
+    "description": "You used your background in the security industry to get a job as a high-level security operative working for the more shadowy interests of famed Japanese android concern, Chi Industries. You were given a somewhat extensive suite of augmentations, hopefully those can help you against the new threats that this world has to offer.",
+    "points": 6,
+    "CBMs": [
+      "bio_targeting",
+      "bio_fingerhack",
+      "bio_lockpick",
+      "bio_purifier",
+      "bio_adrenaline",
+      "bio_night_vision",
+      "bio_metabolics",
+      "bio_power_storage_mkII"
+    ],
+    "skills": [
+      { "level": 1, "name": "gun" },
+      { "level": 2, "name": "computer" },
+      { "level": 1, "name": "electronics" },
+      { "level": 2, "name": "melee" },
+      { "level": 1, "name": "rifle" },
+      { "level": 1, "name": "stabbing" },
+      { "level": 1, "name": "dodge" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "charged_cell_phone" },
+          { "item": "knife_combat", "container-item": "sheath" },
+          { "item": "chestrig", "contents-group": "army_mags_mp5" },
+          { "item": "9mm", "charges": 25 },
+          {
+            "item": "hk_mp5",
+            "ammo-item": "9mm",
+            "charges": 30,
+            "contents-item": [ "shoulder_strap", "suppressor", "holo_sight" ]
+          }
+        ]
+      },
+      "male": [ "briefs", "socks", "boots", "dress_shirt", "kevlar", "slingpack", "multitool", "gkb_chi_powarmor_helmet" ],
+      "female": [
+        "bra",
+        "panties",
+        "stockings",
+        "skirt",
+        "boots",
+        "dress_shirt",
+        "kevlar",
+        "slingpack",
+        "multitool",
+        "gkb_chi_powarmor_helmet"
+      ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "gkb_scrap_scav",
+    "name": { "male": "Scrapper Scav", "female": "Scrapper Scav" },
+    "description": "You were a pretty normal person before the cataclysm, but all that changed when your basic hiearchy of needs changed from dealing with paychecks and internet to scrounging for food. You began to learn the ropes of foraging through the unsafe wilds of what were once nice neighboorhods, and eventually came within the protective aegis of a scrapper community.",
+    "points": 4,
+    "skills": [
+      { "level": 2, "name": "electronics" },
+      { "level": 1, "name": "cooking" },
+      { "level": 2, "name": "mechanics" },
+      { "level": 2, "name": "fabrication" },
+      { "level": 2, "name": "survival" }
+    ],
+    "items": {
+      "both": {
+        "entries": [
+          { "group": "charged_cell_phone" },
+          { "item": "22_lr", "charges": 25 },
+          { "item": "22_ratshot", "charges": 8 },
+          { "item": "bp_22_lr", "charges": 16 },
+          { "item": "moss_brownie", "ammo-item": "22_lr", "charges": 4 }
+        ]
+      },
+      "male": [
+        "briefs",
+        "socks",
+        "sneakers",
+        "pants_cargo",
+        "tshirt",
+        "hoodie",
+        "multitool",
+        "knife_folding",
+        "slingpack",
+        "oil_cooker",
+        "hat_cotton",
+        "matches"
+      ],
+      "female": [
+        "bra",
+        "panties",
+        "socks",
+        "pants_cargo",
+        "sneakers",
+        "tshirt",
+        "hoodie",
+        "multitool",
+        "knife_folding",
+        "slingpack",
+        "oil_cooker",
+        "hat_cotton",
+        "matches"
+      ]
+    }
+  }
+]

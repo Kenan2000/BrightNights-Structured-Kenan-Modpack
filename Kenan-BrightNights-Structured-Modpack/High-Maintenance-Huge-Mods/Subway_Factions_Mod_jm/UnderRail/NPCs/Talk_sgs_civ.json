@@ -1,0 +1,17 @@
+[
+  {
+    "id": "TALK_sgs_civ_start",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "Hello, What do you want from me?", "no": "Hello, what do you want from me?" },
+    "responses": [
+      { "text": "What's it like living as member of South Gate Station?", "topic": "TALK_sgs_civ_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_sgs_civ_go",
+    "type": "talk_topic",
+    "dynamic_line": "What is there to say really? It's far better than getting mauled to death by whatever exists outside or on the surface world. Food is somewhat plentiful, and things are clean.",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "GKB_COMPCENTER1" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "FFFFFFFFaaaaaaaaFFFFFFFF",
+        "FaaAaaaFaaAaaAaaFaaaAaaF",
+        "FaaAaaaFaaAaaAaaFaaaAaaF",
+        "FaaAaaaaaaAaaAaaaaaOAaaF",
+        "FaaaaaaaaaAaaAaaaaaaaaaF",
+        "FaaaaaaaaaAaaAaaaaaaaaaF",
+        "FaaWWQQQWWWWQQWWDWDWWaaF",
+        "FaaWRRERREWeeeeeIIIoWaaF",
+        "FaaQrTErTEDIIIIIIIIeWaaF",
+        "FaaQEEEEEEWPIieeIII5WaaF",
+        "FaaQRRERR1WeIeWWWWXWWaaF",
+        "FaaQrTErT1WeIeWEEqEEWaaF",
+        "FaaQEEEEE1WeIeWNEDE2WaaF",
+        "FaaQRRERR1WPIeWwwwE2WaaF",
+        "FaaQrTErTEDIIeWEEqEeWaaF",
+        "FaaWyyEEYYWeIeWNEDE3WaaF",
+        "FaaWWWWWWWWeIeWwwwE3WaaF",
+        "FaaWUEEWeeeiIeWEEDEEWaaF",
+        "FaaWEEEDIIIIIeWNEwwdWaaF",
+        "FaaWEEuWeeeeeeWwww4EWaaF",
+        "FaaWWWWWWWWWQQWWWWBbWaaF",
+        "FaaSSaaaaaaaaaaaaWWWWaaF",
+        "FaaaaaaaaaaaaaaaaaaaaaaF",
+        "FFFFFFFFFFFFFFFFFFFFFFFF"
+      ],
+      "palettes": [ "GKB_COMPPAL" ],
+      "terrain": { ",": "t_region_groundcover", "X": "t_door_metal_locked" },
+      "place_monsters": [ { "monster": "GROUP_MEDIUM_GKBGROUP", "x": [ 1, 22 ], "y": [ 1, 5 ], "density": 0.55 } ],
+      "place_monster": [
+        { "monster": "mon_broken_cyborg", "x": 16, "y": 12 },
+        { "monster": "mon_broken_cyborg", "x": 16, "y": 15 },
+        { "monster": "mon_broken_cyborg", "x": 16, "y": 18, "chance": 75 },
+        { "monster": "mon_prototype_cyborg", "x": 18, "y": 16, "chance": 75 },
+        { "monster": "mon_gkb_pbota", "x": 11, "y": 12, "chance": 75 },
+        { "monster": "mon_gkb_pbota", "x": 6, "y": 12, "chance": 75 },
+        { "monster": "mon_gkb_pbotb", "x": 10, "y": 19, "chance": 75 }
+      ],
+      "computers": {
+        "5": {
+          "name": "Secure Compliance Storage Access",
+          "security": 2,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "shutdown" }, { "action": "alarm" } ]
+        }
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "GKB_COMPCENTER1_roof",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                   .    ",
+        "                        ",
+        "                        ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..................   ",
+        "   ..            ....   ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { ".": "t_flat_roof" }
+    }
+  }
+
+
+
+]

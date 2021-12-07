@@ -1,0 +1,21 @@
+[
+  {
+    "id": "TALK_sgs_bandit_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What do you want, why are you speaking to me anyway, girl?",
+      "no": "What do you want, why are you speaking to me anyway?"
+    },
+    "responses": [
+      { "text": "What's it like being a ruthless bandit, do you get the kill people often?", "topic": "TALK_sgs_bandit_go" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_sgs_bandit_go",
+    "type": "talk_topic",
+    "dynamic_line": "Killing people? Have you been watching too many video tapes or something? The criminal life isn't easy, friend, most of us barely get by. Sure, assaulting random people for their stuff can be fun, but we're more than just that.",
+    "responses": [ { "text": "I see.", "topic": "TALK_DONE" } ]
+  }
+]

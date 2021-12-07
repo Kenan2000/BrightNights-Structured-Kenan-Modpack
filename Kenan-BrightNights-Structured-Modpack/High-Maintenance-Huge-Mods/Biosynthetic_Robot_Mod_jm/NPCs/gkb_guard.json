@@ -1,0 +1,34 @@
+[
+  {
+    "type": "npc",
+    "id": "gkb_scrapper",
+    "name_suffix": "Scrapper",
+    "class": "gkb_scrapper_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_gkb_scrapper_start",
+    "faction": "fac_scrapperbots"
+  },
+  {
+    "type": "npc_class",
+    "id": "gkb_scrapper_npc",
+    "name": { "str": "Scrapper" },
+    "job_description": "Is a member of the Scrappers.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } }
+    ]
+  }
+]

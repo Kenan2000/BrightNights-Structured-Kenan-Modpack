@@ -1,0 +1,27 @@
+[
+  {
+    "id": "TALK_sgs_pipe_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Heya, Missy what's a girl like you doing around here? *burps*",
+      "no": "Howdy partner, what are you doing moseying?"
+    },
+    "responses": [
+      { "text": "What's your deal anyway, buddy?", "topic": "TALK_sgs_pipe_go" },
+      {
+        "text": "Want to travel with me?",
+        "topic": "TALK_AGREE_FOLLOW",
+        "effect": "follow",
+        "condition": { "not": "npc_following" }
+      },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_sgs_pipe_go",
+    "type": "talk_topic",
+    "dynamic_line": "MY deal? What's YOUR deal? You walk up to me and start asking inane questions to every person you meet and you think we're always going to be kind to you? How about some manners you cave hopper-brained imbecile.",
+    "responses": [ { "text": "Okay, jeez.", "topic": "TALK_DONE" } ]
+  }
+]

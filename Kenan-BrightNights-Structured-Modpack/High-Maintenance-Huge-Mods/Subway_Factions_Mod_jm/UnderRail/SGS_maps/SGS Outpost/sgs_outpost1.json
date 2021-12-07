@@ -1,0 +1,60 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "SGS_STATIONPOST1" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "WWWWWWWWWGGGGGWWWWWWWWWW",
+        "W*QQGGG*WGGGGGW3ggggDG*W",
+        "WQGGGzRGW*GGG*WzgXX*WGGW",
+        "WQGGGGRGwGGGGGWWWWWWWGGW",
+        "W3GGGrRGwGGGGGW3ggggDGGW",
+        "W3GGGGRGwGGGGGWzgXX*WGGW",
+        "W3GGGGGGWSSGSSWWWWWWWGGW",
+        "WQGGGGGGWGSGSGW333ggDGGW",
+        "WQGGGGGGWGGGGGWgggggWGGW",
+        "W*GGGGG*WWWDWWWzgXX*WGGW",
+        "WWWWWDWWW*GGGGWWWWWWWWDW",
+        "W*G11G11WGGGGGWGEGqGqGGW",
+        "WGGGGGGGDGGGGGDGGGGGGGGW",
+        "WnGZZGGGWGGGGGWGGGGGGGGW",
+        "WGGGGGGzWGGGG*WGGGGGG*GW",
+        "WnGZZGGGWWWDWWWWWWDWWWWW",
+        "WGGGGGGzW*TTccWMMMTW*NbW",
+        "W*22zGz*WcTTTcWVTTTWTTTW",
+        "WWWWWWWWWcTTTcWmm*TWBNTW",
+        "W4444466WTTTTTWWWWDWWWDW",
+        "WGGGGGGGdTCCCTTTTTTTTTTW",
+        "W*GGGGGGWTtttTCtttCCtt*W",
+        "W5555566W*tttTCtttCCtttW",
+        "WWWWWWWWWWWWWWWWWWWWWWWW"
+      ],
+      "palettes": [ "SGS_STPALA" ],
+      "faction_owner": [ { "id": "fac_southgate", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "place_nested": [
+        { "chunks": [ [ "sgsguard_spawn", 80 ], [ "null", 20 ] ], "x": 9, "y": 7 },
+        { "chunks": [ [ "sgsguard_spawn", 80 ], [ "null", 20 ] ], "x": 13, "y": 7 },
+        { "chunks": [ [ "sgsguard_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 7 },
+        { "chunks": [ [ "sgsguard_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 0 },
+        { "chunks": [ [ "sgsguard_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 14 },
+        { "chunks": [ [ "sgsguard_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 20 },
+        { "chunks": [ [ "sgsguard_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 20 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 13 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 11 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 2, "y": 14 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 3 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 2 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 5 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 5 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 21 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 20 },
+        { "chunks": [ [ "sgsdoc_spawn", 60 ], [ "null", 40 ] ], "x": 17, "y": 17 },
+        { "chunks": [ [ "sgsciv_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 21 }
+      ],
+      "terrain": { ",": "t_region_groundcover" }
+    }
+  }
+]

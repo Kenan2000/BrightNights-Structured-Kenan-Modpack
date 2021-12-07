@@ -1,0 +1,19 @@
+[
+  {
+    "id": "TALK_GKB_MAID",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello, you are now the proud owner of a Chi Industries bio-synthetic unit, please activate me at the soonest possible convenience.",
+      "no": "Hello, you are now the proud owner of a Chi Industries bio-synthetic unit, please activate me at the soonest possible convenience."
+    },
+    "responses": [
+      {
+        "text": "please travel with me?",
+        "topic": "TALK_AGREE_FOLLOW",
+        "effect": "follow",
+        "condition": { "not": "npc_following" }
+      }
+    ]
+  }
+]

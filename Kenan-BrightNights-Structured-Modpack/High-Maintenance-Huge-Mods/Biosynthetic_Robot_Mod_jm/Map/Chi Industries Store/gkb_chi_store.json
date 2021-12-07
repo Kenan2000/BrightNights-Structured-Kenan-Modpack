@@ -1,0 +1,128 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "GKB_CHISTORE1" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "QQQQQQQQQQQQQQQQQQQQQQQQ",
+        "QQQQQQQQQQQQQQQQQQQQQQQQ",
+        "QQQQQQQQQQQQQQQQQQQQQQQQ",
+        "qqWRRRRWRWrWrWRWWRRRRWqq",
+        "qqWTTTTEEOOOOOEEETTTTWqq",
+        "qqRTEEEEEO333OEEEEEETRqq",
+        "qqRTEE11DO3T3ODE11EETRqq",
+        "qqREEET1EO3T3OEE1TIEERqq",
+        "qqW4EET1EO333OEE1TEEiWqq",
+        "qWW4EET1DOEEEODE1TIEEWqq",
+        "qW1EEE11EO222OOO11EEiWqq",
+        "qW1EEEEOOO2ddddrdddddWqq",
+        "qW111EEOE22dHEEOEEEEHWqq",
+        "qWdddddrddddEOOOOOOOOWqq",
+        "qWH44EEOgggdDOEEEEOEHWqq",
+        "qWEEEEEOEEgdEOEwwwrwwWqq",
+        "qW33333OEEEdEO4wooOP5WUq",
+        "qWEEEEEOOOOrOOEwAOOO<WUq",
+        "qRE3333EEEGdEOEwooOO5Rqq",
+        "qREEEEEEEEGdEOErOOOOORqq",
+        "qRE3333EEEGdEOEwOOOsORqq",
+        "qWEEEEEFFffdEOEwuDASSWqq",
+        "qWWRRRRWWWWWWyWWWRRRRWqq",
+        "qqqqqqqqqqqqqqqqqqqqqqqq"
+      ],
+      "palettes": [ "GKB_CHISTOREPAL" ],
+      "terrain": { ",": "t_region_groundcover" },
+      "place_item": [
+        { "item": "textbook_robots", "x": 19, "y": 21, "chance": 10 },
+        { "item": "textbook_robots", "x": 20, "y": 21, "chance": 15 }
+      ],
+      "place_monsters": [ { "monster": "GROUP_LIGHT_GKBGROUP", "x": [ 0, 0 ], "y": [ 23, 2 ], "density": 1.3 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "GKB_CHISTORE2" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJhhhhhhhhhhJJJJJJJJJJJJ",
+        "Jhh77ROjOjOhJJJJJJJJJJJJ",
+        "Jh6jjROjOjOhJJhhhhhhhhJJ",
+        "Jh8jjROjOjjhhhhnjjjjjhJJ",
+        "Jh8jjrOjOjjjjjNjjjjj>hJJ",
+        "Jh8jjROjOjjhhhhjjjjjjhJJ",
+        "Jh6jjROjOjOhJJhjjjjjjhJJ",
+        "Jhh77ROjOjOhJJhhhhhhhhJJ",
+        "JJhhhhhhhhhhJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ",
+        "JJJJJJJJJJJJJJJJJJJJJJJJ"
+      ],
+      "palettes": [ "GKB_CHISTOREPAL" ],
+      "place_monster": [ { "monster": "mon_turret_light", "x": 7, "y": 14 }, { "monster": "mon_turret_light", "x": 7, "y": 20 } ],
+      "computers": {
+        "n": {
+          "name": "Chi Industries Special Storage Access >//<",
+          "security": 4,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+      },
+      "terrain": { ",": "t_region_groundcover", "N": "t_door_metal_locked" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": "GKB_CHISTORE1_roof",
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "  ....................  ",
+        "  ....................  ",
+        "  ....................  ",
+        "  ....................  ",
+        "  ....................  ",
+        "  ....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        " .....................  ",
+        "                        "
+      ],
+      "terrain": { ".": "t_flat_roof" }
+    }
+  }
+
+
+]

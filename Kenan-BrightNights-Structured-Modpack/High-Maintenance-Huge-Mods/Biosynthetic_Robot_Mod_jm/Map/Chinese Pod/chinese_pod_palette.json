@@ -1,0 +1,39 @@
+[
+  {
+    "type": "palette",
+    "id": "GKB_CHINPAL",
+    "terrain": {
+      "W": "t_junk_wall",
+      "w": "t_wall_metal",
+      "d": "t_dirtmound",
+      "1": "t_dirtmound",
+      "2": "t_dirtmound",
+      "3": "t_dirtmound",
+      "f": "t_metal_floor"
+    },
+    "furniture": { "1": "f_crate_o", "2": "f_crate_o", "3": "f_crate_o" },
+    "items": {
+      "1": [
+        { "item": "electronics", "chance": 85, "repeat": [ 1, 6 ] },
+        { "item": "supplies_electronics", "chance": 85, "repeat": [ 2, 5 ] },
+        { "item": "chem_lab", "chance": 75, "repeat": [ 1, 4 ] },
+        { "item": "mutagens", "chance": 20, "repeat": [ 1, 4 ] },
+        { "item": "supplies_reagents_lab", "chance": 75, "repeat": [ 1, 4 ] },
+        { "item": "supplies_fuel", "chance": 75, "repeat": [ 1, 4 ] },
+        { "item": "supplies_metal", "chance": 75, "repeat": [ 4, 8 ] }
+      ],
+      "2": [
+        { "item": "ammo_milspec", "chance": 85, "repeat": [ 3, 6 ] },
+        { "item": "ammo_common", "chance": 85, "repeat": [ 2, 5 ] },
+        { "item": "grenades", "chance": 75, "repeat": [ 1, 4 ] }
+      ],
+      "3": [
+        { "item": "gkb_chinese_armor", "chance": 70, "repeat": [ 1, 2 ] },
+        { "item": "gkb_chinese_power_armor", "chance": 9 },
+        { "item": "clothing_military", "chance": 85, "repeat": [ 2, 5 ] },
+        { "item": "mil_accessories", "chance": 75, "repeat": [ 1, 4 ] },
+        { "item": "hospital_medical_items", "chance": 75, "repeat": [ 2, 6 ] }
+      ]
+    }
+  }
+]

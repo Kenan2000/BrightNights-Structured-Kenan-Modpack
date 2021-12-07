@@ -1,0 +1,68 @@
+[
+  {
+    "type": "item_group",
+    "id": "gkb_chinese_armor",
+    "subtype": "distribution",
+    "entries": [ { "item": "gkb_chinese_suit", "prob": 75 }, { "item": "gkb_chinese_stealthsuit", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "gkb_bento_boxes",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "gkb_simple_bento", "prob": 35 },
+      { "item": "gkb_medium_bento", "prob": 75 },
+      { "item": "gkb_deluxe_bento", "prob": 20 },
+      { "item": "gkb_meat_bento", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gkb_chinese_power_armor",
+    "subtype": "collection",
+    "entries": [ { "item": "gkb_chinese_armor", "prob": 95 }, { "item": "gkb_chinese_armor_helmet", "prob": 95 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "gkb_chi_loot",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "chi_digisword_off", "prob": 75 },
+      { "item": "gkb_chi_chargelance", "prob": 75 },
+      { "item": "chi_digibow", "prob": 75 },
+      { "item": "gkb_chi_powarmor", "prob": 75 },
+      { "item": "gkb_chi_powarmor_helmet", "prob": 75 },
+      { "item": "gkb_synthmaid", "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gkb_bot_display",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dep_gkb_utbot_box", "prob": 55 },
+      { "item": "dep_gkb_gymaid_box", "prob": 75 },
+      { "item": "dep_gkb_pbota_box", "prob": 30 },
+      { "item": "dep_gkb_compbot_box", "prob": 25 },
+      { "item": "dep_gkb_comocon_box", "prob": 35 },
+      { "item": "dep_gkb_newt_box", "prob": 35 },
+      { "item": "dep_gkb_nursebot_a_box", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gkb_xedra_loot",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "gkb_xedra_magnum", "prob": 25 },
+      { "item": "gkb_xedra_ar", "prob": 35 },
+      { "group": "gkb_xedra_pa", "prob": 7 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "gkb_xedra_pa",
+    "subtype": "collection",
+    "entries": [ { "item": "gkb_xedra_exsuit_helmet" }, { "item": "gkb_xedra_exsuit" } ]
+  }
+]

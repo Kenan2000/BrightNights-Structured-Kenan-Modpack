@@ -1,0 +1,69 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "weight": 1000,
+    "om_terrain": [ "METRO_REDLINES_1" ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        "bbbb,,,,,,,,,,,,,,,,bbbb",
+        "b,,,,,,BBB,,,,BBB,*,,,,b",
+        ",*,,,,,,,,,*,,,,,,,,,,,,",
+        "WWWWWW,BBB,,,,BBB,WWWWWW",
+        "W1222W,,,,,,,,,,,,WsFFLW",
+        "W1fffWWWWWWDWWDWWWWWWF5W",
+        "W1ff3W44W,,,GG,,,WffWFMW",
+        "W1fL3W4tW,,,GG,,,DffDFMW",
+        "WWDWWW4,WLF,GG,,,WffWF5W",
+        "W,,4444,WWWWWWWWWWffWDWW",
+        "W,tt,,ttWTTg6g6g6WffKffW",
+        "W,TTffTTWTt,,,,,,dffffKW",
+        "W,TTffTTWL,g6g6g6WJfffkW",
+        "W,ttffttWWWWWWWWWWffffKW",
+        "W,TTffTTW7g6g,,77WJfffkW",
+        "W,TTffTTW,,,,,t,,dffff*W",
+        "W,ttffttWLg6gTT,,WfffjfW",
+        "W,,,,,*,WWWWWWWWWWWWdWWW",
+        "WS,7WWWWWCCCGG,,,*,,,,,W",
+        "WS,777WP,,,,GG,,,,,,,,,W",
+        "WS,,,,D,,,,,GGWWWWWWDWWW",
+        "W,,,YyWccc,,GGWLpppppp8W",
+        "WL44WWWcccF*GGWVVvVVv88W",
+        "WWWWWWWWWWWWWWWWWWWWWWWW"
+      ],
+      "palettes": [ "METRO_REDPAL" ],
+      "faction_owner": [ { "id": "fac_metred", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "place_nested": [
+        { "chunks": [ [ "redguard_spawn", 80 ], [ "null", 20 ] ], "x": 1, "y": 1 },
+        { "chunks": [ [ "redguard_spawn", 80 ], [ "null", 20 ] ], "x": 22, "y": 1 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 3 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 6 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 2, "y": 13 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 16 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 14 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 15 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 11 },
+        { "chunks": [ [ "redguard_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 0 },
+        { "chunks": [ [ "redguard_spawn", 90 ], [ "null", 10 ] ], "x": 3, "y": 6 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 17 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 19 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 3 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 7 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 13 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 4 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 18 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 19 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 18, "y": 9 },
+        { "chunks": [ [ "redciv_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 12 },
+        { "chunks": [ [ "redmer_spawn", 90 ], [ "null", 10 ] ], "x": 1, "y": 17 }
+      ],
+      "place_item": [
+        { "item": "metro_redflag", "x": 11, "y": 8 },
+        { "item": "metro_redflag", "x": 12, "y": 4 },
+        { "item": "metro_redflag", "x": 14, "y": 8 }
+      ],
+      "terrain": { ",": "t_concrete" }
+    }
+  }
+]

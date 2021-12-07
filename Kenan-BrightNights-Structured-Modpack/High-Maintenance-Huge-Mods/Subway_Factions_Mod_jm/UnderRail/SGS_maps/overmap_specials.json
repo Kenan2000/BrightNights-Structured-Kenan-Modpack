@@ -1,0 +1,56 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "South Gate Station",
+    "overmaps": [
+      { "point": [ 1, 0, -2 ], "overmap": "SGS_BSTATION1_1_north" },
+      { "point": [ 0, 0, -2 ], "overmap": "SGS_BSTATION1_2_north" },
+      { "point": [ -1, 0, -2 ], "overmap": "SGS_BSTATION1_3_north" },
+      { "point": [ 1, 1, -2 ], "overmap": "SGS_BSTATION1_4_north" },
+      { "point": [ 0, 1, -2 ], "overmap": "SGS_BSTATION1_5_north" },
+      { "point": [ -1, 1, -2 ], "overmap": "SGS_BSTATION1_6_north" },
+      { "point": [ 1, 2, -2 ], "overmap": "SGS_BSTATION1_7_north" },
+      { "point": [ 0, 2, -2 ], "overmap": "SGS_BSTATION1_8_north" },
+      { "point": [ -1, 2, -2 ], "overmap": "SGS_BSTATION1_9_north" }
+    ],
+    "rotate": true,
+    "locations": [ "subterranean" ],
+    "occurrences": [ 2, 5 ],
+    "connections": [
+      { "point": [ 1, -1, -2 ], "terrain": "subway", "existing": true },
+      { "point": [ 0, -1, -2 ], "terrain": "subway", "existing": true },
+      { "point": [ -2, -1, -2 ], "terrain": "subway", "existing": true }
+    ],
+    "city_distance": [ 1, 9 ],
+    "city_sizes": [ 5, 20 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "South Gate Outpost",
+    "overmaps": [ { "point": [ 0, 0, -2 ], "overmap": "SGS_STATIONPOST1_south" } ],
+    "rotate": true,
+    "locations": [ "subterranean" ],
+    "occurrences": [ 5, 45 ],
+    "connections": [
+      { "point": [ 0, 1, -2 ], "terrain": "subway" },
+      { "point": [ 1, 1, -2 ], "terrain": "subway" },
+      { "point": [ -1, 1, -2 ], "terrain": "subway" }
+    ],
+    "city_distance": [ 1, 9 ],
+    "city_sizes": [ 5, 20 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Underrail Cave",
+    "overmaps": [ { "point": [ 0, 0, -2 ], "overmap": "SGS_CAVE1_south" } ],
+    "locations": [ "subterranean" ],
+    "occurrences": [ 5, 45 ],
+    "connections": [
+      { "point": [ 0, 1, -2 ], "terrain": "subway" },
+      { "point": [ 1, 1, -2 ], "terrain": "subway" },
+      { "point": [ -1, 1, -2 ], "terrain": "subway" }
+    ],
+    "city_distance": [ 1, 9 ],
+    "city_sizes": [ 5, 20 ]
+  }
+]

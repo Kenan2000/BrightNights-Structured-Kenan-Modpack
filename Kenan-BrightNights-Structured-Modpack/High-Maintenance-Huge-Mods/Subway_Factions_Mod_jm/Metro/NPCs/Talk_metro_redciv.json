@@ -1,0 +1,17 @@
+[
+  {
+    "id": "TALK_red_civ_start",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "Hello, What do you want from me?", "no": "Hello, what do you want from me?" },
+    "responses": [
+      { "text": "What's it like living as member of the Red Line?", "topic": "TALK_red_civ_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_red_civ_go",
+    "type": "talk_topic",
+    "dynamic_line": "Things can get pretty rough at times. I don't know what's worse, the nosalises that threaten us outside the metro, or the commissars breathing down our necks. I guess it's better than being dead, though.",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "type": "npc",
+    "id": "sgs_administrator",
+    "name_suffix": "South Gate Councilor",
+    "class": "sgs_admn_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_sgs_admin_start",
+    "faction": "fac_southgate",
+    "mission_offered": "MISSION_SGS_ADMINKILL"
+  },
+  {
+    "type": "npc_class",
+    "id": "sgs_admn_npc",
+    "name": { "str": "South Gate Councilor" },
+    "job_description": "A councilor of South gate station.",
+    "traits": [ { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_SGSADM_worn",
+    "carry_override": "NC_SSGADM_carry",
+    "weapon_override": "NC_SSGADM_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SSGADM_weapon",
+    "subtype": "collection",
+    "entries": [ { "item": "sgs_hawker", "charges": 20 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SGSADM_worn",
+    "subtype": "collection",
+    "entries": [ { "group": "sgs_adm_nshirts" }, { "group": "sgs_adm_npants" }, { "group": "sgs_adm_shoes" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SSGADM_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "preserved_food", "repeat": [ 1, 2 ], "prob": 35 },
+      { "group": "drugs_heal_simple", "prob": 20 },
+      { "group": "sgs_credits", "prob": 80, "repeat": [ 1, 4 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "sgs_adm_nshirts",
+    "items": [ [ "longshirt", 35 ], [ "sweater", 45 ], [ "tshirt", 45 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "sgs_adm_npants",
+    "items": [ [ "pants_cargo", 25 ], [ "pants", 75 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "sgs_adm_shoes",
+    "items": [ [ "boots", 50 ], [ "dress_shoes", 50 ] ]
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgs_cavechunk1u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "            ",
+        "        W   ",
+        "            ",
+        "   WW       ",
+        "    W    *  ",
+        "     W      ",
+        "        W   ",
+        "   W        ",
+        "            ",
+        "      WW    ",
+        "      WW    "
+      ],
+      "furniture": { "b": "f_sandbag_half" },
+      "place_monsters": [ { "monster": "GROUP_SGS_CAVE_MOB", "x": [ 1, 11 ], "y": [ 1, 11 ], "density": 0.35 } ],
+      "terrain": {
+        "W": "t_rock",
+        "*": "t_sgs_mushroom",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_pine",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgs_cavechunk2u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "       MW   ",
+        "            ",
+        "         WWW",
+        "  *      WW ",
+        "    f   f WW",
+        "          W ",
+        "    MM      ",
+        "   M*M  f   ",
+        "    MMM  W  ",
+        "    WMM     ",
+        "  WWWW      ",
+        "   WW       "
+      ],
+      "furniture": { "b": "f_sandbag_half" },
+      "place_monsters": [ { "monster": "GROUP_SGS_CAVE_MOB", "x": [ 1, 11 ], "y": [ 1, 11 ], "density": 0.35 } ],
+      "terrain": {
+        "W": "t_rock",
+        "*": "t_sgs_mushroom",
+        "M": "t_rock_floor",
+        "f": "t_fern",
+        "D": "t_tree",
+        "d": "t_tree_pine",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgs_cavechunk3u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "            ",
+        "            ",
+        "     MM     ",
+        "    MWWM    ",
+        "   MWWWWM   ",
+        "    MWWWM   ",
+        "     MWM    ",
+        "      M     ",
+        "            ",
+        "            ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half" },
+      "place_monsters": [ { "monster": "GROUP_SGS_CAVE_MOB", "x": [ 1, 11 ], "y": [ 1, 11 ], "density": 0.35 } ],
+      "terrain": {
+        "W": "t_rock",
+        "*": "t_sgs_mushroom",
+        "M": "t_rock_floor",
+        "f": "t_fern",
+        "D": "t_tree",
+        "d": "t_tree_pine",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgs_cavechunk4u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "   W        ",
+        "     W      ",
+        "            ",
+        "    WWWWW   ",
+        "  WWMMMMMM  ",
+        "  WMM*WWW   ",
+        " WMMMWW     ",
+        "  MMW       ",
+        "            ",
+        "  WMMMMMW   ",
+        "    MMWM    ",
+        "      M     "
+      ],
+      "furniture": { "b": "f_sandbag_half" },
+      "place_monsters": [ { "monster": "GROUP_SGS_CAVE_MOB", "x": [ 1, 11 ], "y": [ 1, 11 ], "density": 0.35 } ],
+      "terrain": {
+        "W": "t_rock",
+        "*": "t_sgs_mushroom",
+        "M": "t_rock_floor",
+        "f": "t_fern",
+        "D": "t_tree",
+        "d": "t_tree_pine",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgs_cavechunk5u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "            ",
+        "            ",
+        "            ",
+        "   mwmAmwm  ",
+        "   mFFFFCm  ",
+        "   mFFFFcm  ",
+        "   mbbFF*m  ",
+        "   mwmmmwm  ",
+        "            ",
+        "            ",
+        "            "
+      ],
+      "furniture": { "b": "f_locker", "c": "f_desk", "C": "f_chair" },
+      "place_loot": [
+        { "group": "sgs_item_firearms_loot", "x": 4, "y": 7, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 4, "y": 7, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 4, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 4, "y": 7, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 4, "y": 7, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 4, "y": 7, "chance": 25 },
+        { "group": "stash_drugs", "x": 4, "y": 7, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 4, "y": 7, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 4, "y": 7, "chance": 10 },
+        { "group": "gear_medical", "x": 4, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 4, "y": 7, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_firearms_loot", "x": 5, "y": 7, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 5, "y": 7, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 5, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 5, "y": 7, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 5, "y": 7, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 5, "y": 7, "chance": 25 },
+        { "group": "stash_drugs", "x": 5, "y": 7, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 5, "y": 7, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 5, "y": 7, "chance": 10 },
+        { "group": "gear_medical", "x": 5, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 5, "y": 7, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_meleedrop", "x": 5, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_meleedrop", "x": 4, "y": 7, "repeat": [ 1, 2 ], "chance": 25 }
+      ],
+      "place_npcs": [ { "class": "sgs_bandit", "x": 5, "y": 6 } ],
+      "terrain": {
+        "W": "t_rock",
+        "*": "t_utility_light",
+        "M": "t_rock_floor",
+        "m": "t_wall_metal",
+        "F": "t_concrete",
+        "w": "t_window",
+        "A": "t_door_metal_c_peep",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgs_cavechunk6u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "       MM   ",
+        "     MMMMW  ",
+        "       MWW  ",
+        "            ",
+        "  MWW  MM   ",
+        "  WMM       ",
+        "  WM     S  ",
+        "      B     ",
+        "      B *   ",
+        "  WW   b    ",
+        "   W        "
+      ],
+      "furniture": { "B": "f_bed_frame", "b": "f_crate_o", "S": "f_woodstove" },
+      "place_loot": [
+        { "group": "sgs_item_firearms_loot", "x": 7, "y": 10, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 7, "y": 10, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 7, "y": 10, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 7, "y": 10, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 7, "y": 10, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 7, "y": 10, "chance": 25 },
+        { "group": "stash_drugs", "x": 7, "y": 10, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 7, "y": 10, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 7, "y": 10, "chance": 10 },
+        { "group": "gear_medical", "x": 7, "y": 10, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 7, "y": 10, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_meleedrop", "x": 7, "y": 10, "repeat": [ 1, 2 ], "chance": 25 }
+      ],
+      "place_npcs": [ { "class": "sgs_bandit", "x": 7, "y": 9 } ],
+      "terrain": {
+        "W": "t_rock",
+        "*": "t_sgs_lbarrel_r",
+        "M": "t_rock_floor",
+        "m": "t_wall_metal",
+        "F": "t_concrete",
+        "w": "t_window",
+        "A": "t_door_metal_c_peep",
+        "a": "t_pit_shallow",
+        "e": "t_shrub"
+      }
+    }
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "type": "item_group",
+    "id": "sgs_item_firearms_loot",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs_hornet", "prob": 25, "charges": 30 },
+      { "item": "sgs_marauder", "prob": 15, "charges": 25 },
+      { "item": "sgs_spearhead", "prob": 15, "charges": 10 },
+      { "item": "sgs_hawker", "prob": 30, "charges": 20 },
+      { "item": "sgs_laspistol", "prob": 10, "charges": 1000 },
+      { "item": "sgs_acid_pistol", "prob": 2, "charges": 5 },
+      { "item": "sgs_jackrabbit", "prob": 10, "charges": 30 },
+      { "item": "sgs_steelcat", "prob": 10, "charges": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_item_pistolsmg_loot",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs_hawker", "prob": 30, "charges": 20 },
+      { "item": "sgs_laspistol", "prob": 10, "charges": 1000 },
+      { "item": "sgs_acid_pistol", "prob": 2, "charges": 5 },
+      { "item": "sgs_jackrabbit", "prob": 10, "charges": 30 },
+      { "item": "sgs_steelcat", "prob": 10, "charges": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_item_rifle_loot",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs_hornet", "prob": 25, "charges": 30 },
+      { "item": "sgs_marauder", "prob": 15, "charges": 25 },
+      { "item": "sgs_spearhead", "prob": 15, "charges": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_ammo_pistol_item",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs5_b", "prob": 60 },
+      { "item": "sgs5_jhp", "prob": 20 },
+      { "item": "sgs5_w", "prob": 20 },
+      { "item": "reloaded_sgs5_b", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_pistolmag_item",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sgs5mag", "ammo-item": "sgs5_b", "charges": 20 },
+      { "item": "sgs5mag", "ammo-item": "sgs5_b", "charges": 20 },
+      { "item": "sgs5bigmag", "prob": 50, "ammo-item": "sgs5_b", "charges": 28 },
+      { "item": "sgs5bigmag", "prob": 50, "ammo-item": "sgs5_b", "charges": 28 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_ammo_rifle_item",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs86_b", "prob": 60 },
+      { "item": "sgs86_w", "prob": 20 },
+      { "item": "sgs86_jhp", "prob": 20 },
+      { "item": "reloaded_sgs86_b", "prob": 10 },
+      { "item": "556", "prob": 20 },
+      { "item": "308", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_riflemag_item",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sgs_hornmag_30rd", "ammo-item": "556", "charges": 30 },
+      { "item": "sgs_marmag_30rd", "ammo-item": "sgs86_b", "charges": 25 },
+      { "item": "sgs_spearmag", "prob": 50, "ammo-item": "308", "charges": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_item_smgs",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs_jackrabbit_mag", "ammo-item": "sgs5_b", "prob": 35, "charges": 30 },
+      { "item": "steelcatmag", "ammo-item": "sgs86_b", "prob": 15, "charges": 30 },
+      { "item": "steelcatbigmag", "ammo-item": "sgs86_w", "prob": 15, "charges": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_item_armor",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sgs_jacket", "prob": 75 },
+      { "item": "sgs_leatherjacket", "prob": 75 },
+      { "item": "sgs_secvest", "prob": 75 },
+      { "item": "sgs_metal_armor", "prob": 10 },
+      { "item": "sgs_metal_helmet", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_item_crossbow_loot",
+    "subtype": "distribution",
+    "entries": [ { "item": "sgs_zephyr", "prob": 25, "charges": 1 }, { "item": "sgs_cyclon", "prob": 15, "charges": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_credits",
+    "subtype": "collection",
+    "entries": [
+      { "item": "sgs_credit", "prob": 25 },
+      { "item": "sgs_credit", "prob": 25 },
+      { "item": "sgs_credit", "prob": 10 },
+      { "item": "sgs_credit", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_item_meleedrop",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sgs_shocksledge", "prob": 35, "charges": 500 },
+      { "item": "sgs_knife_combat", "prob": 15, "charges": 500 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_lockerloot",
+    "subtype": "collection",
+    "entries": [
+      { "group": "sgs_item_firearms_loot", "chance": 5 },
+      { "group": "sgs_ammo_pistol_item", "chance": 5 },
+      { "group": "sgs_ammo_rifle_item", "chance": 5 },
+      { "group": "sgs_item_armor", "repeat": [ 1, 2 ], "chance": 5 },
+      { "group": "sgs_credits", "repeat": [ 3, 5 ], "chance": 30 },
+      { "group": "sgs_item_crossbow_loot", "chance": 5 },
+      { "group": "hospital_medical_items", "repeat": [ 1, 2 ], "chance": 15 },
+      { "group": "stash_food", "repeat": [ 2, 4 ], "chance": 30 },
+      { "group": "swat_gear", "chance": 10 },
+      { "group": "gear_medical", "repeat": [ 1, 2 ], "chance": 25 },
+      { "group": "livingroom", "repeat": [ 1, 4 ], "chance": 35 },
+      { "group": "sgs_item_meleedrop", "repeat": [ 1, 2 ], "chance": 15 },
+      { "group": "light_reading", "chance": 10 },
+      { "group": "textbooks_school", "chance": 10 },
+      { "group": "file_room", "chance": 10 },
+      { "group": "allclothes", "chance": 25, "repeat": [ 3, 7 ] },
+      { "group": "dresser", "chance": 10, "repeat": [ 2, 5 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "sgs_bolts_item",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bolt_metal", "repeat": [ 35, 70 ], "chance": 65 },
+      { "item": "bolt_steel", "repeat": [ 25, 70 ], "chance": 45 },
+      { "item": "bolt_steel_bodkin", "repeat": [ 15, 45 ], "chance": 35 },
+      { "item": "bolt_cf", "repeat": [ 2, 10 ], "chance": 25 }
+    ]
+  }
+]

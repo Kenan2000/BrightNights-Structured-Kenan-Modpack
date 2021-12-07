@@ -1,0 +1,237 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "met_cavechunk1u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "   WWAWWW   ",
+        "   WFFFbW   ",
+        "   TFFFbW   ",
+        "   WDFFbWWW ",
+        "   AFFFFF*W ",
+        "   WDFaaFFT ",
+        "   TFFCCFbW ",
+        "   WWTWWTWW ",
+        "            ",
+        "            ",
+        "            "
+      ],
+      "furniture": { "b": "f_locker", "c": "f_desk", "C": "f_chair" },
+      "place_loot": [
+        { "group": "sgs_item_firearms_loot", "x": 7, "y": 2, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 7, "y": 2, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 7, "y": 2, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 7, "y": 3, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 7, "y": 3, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 7, "y": 3, "chance": 25 },
+        { "group": "stash_drugs", "x": 7, "y": 3, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 7, "y": 2, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 7, "y": 2, "chance": 10 },
+        { "group": "gear_medical", "x": 7, "y": 3, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 7, "y": 4, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_firearms_loot", "x": 7, "y": 4, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 7, "y": 4, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 7, "y": 4, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 7, "y": 4, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 7, "y": 4, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 7, "y": 4, "chance": 25 },
+        { "group": "stash_drugs", "x": 7, "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 9, "y": 7, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 9, "y": 7, "chance": 10 },
+        { "group": "gear_medical", "x": 9, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 9, "y": 7, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_meleedrop", "x": 9, "y": 7, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_meleedrop", "x": 9, "y": 7, "repeat": [ 1, 2 ], "chance": 25 }
+      ],
+      "place_npcs": [ { "class": "sgs_guard", "x": 5, "y": 5 }, { "class": "sgs_guard", "x": 1, "y": 9 } ],
+      "terrain": {
+        "W": "t_concrete_wall",
+        "w": "t_wall_metal",
+        "F": "t_metal_floor",
+        "*": "t_utility_light",
+        "T": "t_window",
+        "A": "t_door_metal_c_peep",
+        "D": "t_machinery_old",
+        "d": "t_tree_pine",
+        "a": "t_console",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "met_cavechunk2u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "         *  ",
+        "  WWWWW     ",
+        "   BB W     ",
+        " S   cW     ",
+        "  WWWWW     ",
+        "            ",
+        "   *  aa    ",
+        "      aa    ",
+        "      aa    ",
+        "      aa    ",
+        "            "
+      ],
+      "furniture": { "B": "f_bed_frame", "c": "f_crate_o", "S": "f_woodstove" },
+      "place_loot": [
+        { "group": "sgs_item_firearms_loot", "x": 5, "y": 4, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 5, "y": 4, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 5, "y": 4, "chance": 25 },
+        { "group": "stash_drugs", "x": 5, "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 5, "y": 4, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 5, "y": 4, "chance": 10 },
+        { "group": "gear_medical", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_firearms_loot", "x": 5, "y": 4, "chance": 40 },
+        { "group": "sgs_ammo_pistol_item", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "sgs_ammo_rifle_item", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_armor", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "sgs_credits", "x": 5, "y": 4, "repeat": [ 1, 5 ], "chance": 45 },
+        { "group": "sgs_item_crossbow_loot", "x": 5, "y": 4, "chance": 25 },
+        { "group": "stash_drugs", "x": 5, "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 5, "y": 4, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 5, "y": 4, "chance": 10 },
+        { "group": "gear_medical", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 15 },
+        { "group": "sgs_item_meleedrop", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "sgs_item_meleedrop", "x": 5, "y": 4, "repeat": [ 1, 2 ], "chance": 25 }
+      ],
+      "place_npcs": [
+        { "class": "sgs_bandit", "x": 5, "y": 0 },
+        { "class": "sgs_bandit", "x": 3, "y": 4 },
+        { "class": "sgs_bandit", "x": 5, "y": 11 }
+      ],
+      "terrain": {
+        "W": "t_junk_wall",
+        "w": "t_wall_metal",
+        "F": "t_metal_floor",
+        "*": "t_sgs_lbarrel_c",
+        "T": "t_window",
+        "A": "t_door_metal_c_peep",
+        "D": "t_machinery_old",
+        "d": "t_tree_pine",
+        "a": "t_grate",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "met_cavechunk3u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "     #####  ",
+        "    #       ",
+        " #        # ",
+        " #   *    # ",
+        " #         #",
+        " #       #  ",
+        "# WWTWWAW#  ",
+        "# W  sS T # ",
+        "  Wc* s W # ",
+        "  WWTWWWW   ",
+        " #####      "
+      ],
+      "furniture": { "B": "f_bed_frame", "c": "f_crate_o", "S": "f_woodstove", "s": "f_logstool" },
+      "place_loot": [
+        { "group": "metro_item_firearms_loot", "x": 3, "y": 9, "chance": 40, "repeat": [ 1, 3 ] },
+        { "group": "metro_ammo_pistol_item", "x": 3, "y": 9, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "metro_ammo_rifle_item", "x": 3, "y": 9, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "metro_item_redarmor", "x": 3, "y": 9, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "stash_drugs", "x": 3, "y": 9, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 3, "y": 9, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 3, "y": 9, "chance": 10 },
+        { "group": "gear_medical", "x": 3, "y": 9, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 3, "y": 9, "repeat": [ 1, 2 ], "chance": 15 }
+      ],
+      "place_npcs": [
+        { "class": "metro_redguard", "x": 3, "y": 4 },
+        { "class": "metro_redguard", "x": 4, "y": 8 },
+        { "class": "metro_redguard", "x": 7, "y": 5 },
+        { "class": "metro_redguard", "x": 10, "y": 11 }
+      ],
+      "terrain": {
+        "W": "t_junk_wall",
+        "w": "t_wall_metal",
+        "F": "t_metal_floor",
+        "*": "t_sgs_lbarrel_c",
+        "T": "t_window_bars",
+        "A": "t_door_makeshift_c",
+        "D": "t_machinery_old",
+        "d": "t_tree_pine",
+        "a": "t_grate",
+        "#": "t_fence_barbed",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "met_cavechunk4u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        " aaa    aaa ",
+        "*adaBBBBada ",
+        " aaa    aaa ",
+        " wwwww www  ",
+        " w          ",
+        "     *cccw  ",
+        " ww wwwwww B",
+        "         * B",
+        " aaa    aaa ",
+        " adaBBBBada ",
+        " aaa    aaa ",
+        "            "
+      ],
+      "furniture": { "B": "f_sandbag_half", "c": "f_rack", "S": "f_woodstove", "s": "f_logstool" },
+      "place_loot": [
+        { "group": "metro_item_firearms_loot", "x": 6, "y": 5, "chance": 40, "repeat": [ 1, 3 ] },
+        { "group": "metro_ammo_pistol_item", "x": 6, "y": 5, "repeat": [ 1, 2 ], "chance": 30 },
+        { "group": "metro_ammo_rifle_item", "x": 6, "y": 5, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "metro_item_nsmarmor", "x": 7, "y": 5, "repeat": [ 1, 2 ], "chance": 35 },
+        { "group": "stash_drugs", "x": 7, "y": 5, "repeat": [ 1, 3 ], "chance": 35 },
+        { "group": "stash_food", "x": 7, "y": 5, "repeat": [ 2, 4 ], "chance": 65 },
+        { "group": "swat_gear", "x": 8, "y": 5, "chance": 10 },
+        { "group": "gear_medical", "x": 8, "y": 5, "repeat": [ 1, 2 ], "chance": 25 },
+        { "group": "livingroom", "x": 8, "y": 5, "repeat": [ 1, 2 ], "chance": 15 }
+      ],
+      "place_npcs": [
+        { "class": "metro_reichheavy", "x": 5, "y": 2 },
+        { "class": "metro_reichsoldier", "x": 3, "y": 5 },
+        { "class": "metro_reichsoldier", "x": 5, "y": 8 }
+      ],
+      "terrain": {
+        "W": "t_junk_wall",
+        "w": "t_wall_metal",
+        "F": "t_metal_floor",
+        "*": "t_utility_light",
+        "T": "t_window_bars",
+        "A": "t_door_makeshift_c",
+        "D": "t_machinery_old",
+        "d": "t_concrete_wall",
+        "a": "t_grate",
+        "#": "t_fence_barbed",
+        "B": "t_mud"
+      }
+    }
+  }
+]

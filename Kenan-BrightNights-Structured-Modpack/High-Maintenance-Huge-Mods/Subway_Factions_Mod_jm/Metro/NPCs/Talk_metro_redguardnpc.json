@@ -1,0 +1,17 @@
+[
+  {
+    "id": "TALK_metro_redguard_start",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "Hello, Miss, What do you want from me?", "no": "Hello, what do you want from me?" },
+    "responses": [
+      { "text": "How do you serve as a soldier of the Red line?", "topic": "TALK_metro_redguard_go" },
+      { "text": "Goodbye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_metro_redguard_go",
+    "type": "talk_topic",
+    "dynamic_line": "It's a duty I take with the utmost importance, there is no duty as solemn or as important as being a standard bearer of the proletarian revolution. Those Reich fascists and South Gate dogs will soon be welcomed into our fold, with blood if need be!",
+    "responses": [ { "text": "Thanks for the info.", "topic": "TALK_DONE" } ]
+  }
+]

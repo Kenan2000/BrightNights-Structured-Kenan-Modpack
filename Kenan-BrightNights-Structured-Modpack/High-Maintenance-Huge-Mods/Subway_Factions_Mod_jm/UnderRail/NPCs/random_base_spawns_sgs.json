@@ -1,0 +1,26 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgsguard_spawn",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "sgs_guard", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgsciv_spawn",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "sgs_civilian", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgsdoc_spawn",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "sgs_doc_merchant", "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "sgsban_spawn",
+    "object": { "mapgensize": [ 1, 1 ], "place_npcs": [ { "class": "sgs_bandit", "x": 0, "y": 0 } ] }
+  }
+]

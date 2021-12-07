@@ -1,0 +1,89 @@
+[
+  {
+    "type": "palette",
+    "id": "GKB_COMPPAL",
+    "terrain": {
+      "F": "t_chainfence",
+      "f": "t_chaingate_c",
+      "A": "t_pavement_y",
+      "a": "t_pavement",
+      "W": "t_wall",
+      "w": "t_wall_metal",
+      "Q": "t_laminated_glass",
+      "q": "t_window_bars",
+      "D": "t_door_metal_c",
+      "d": "t_door_glass_green_c",
+      "E": "t_linoleum_white",
+      "e": "t_concrete",
+      "R": "t_linoleum_white",
+      "r": "t_linoleum_white",
+      "T": "t_console",
+      "t": "t_linoleum_white",
+      "Y": "t_linoleum_white",
+      "y": "t_linoleum_white",
+      "1": "t_linoleum_white",
+      "U": "t_linoleum_white",
+      "u": "t_linoleum_white",
+      "I": "t_floor_blue",
+      "i": "t_concrete",
+      "O": "t_radio_tower",
+      "o": "t_radio_controls",
+      "P": "t_linoleum_white",
+      "p": "t_linoleum_white",
+      "2": "t_linoleum_white",
+      "3": "t_linoleum_white",
+      "4": "t_linoleum_white",
+      "B": "t_linoleum_white",
+      "b": "t_linoleum_white",
+      "S": "t_linoleum_white",
+      "N": "t_linoleum_white"
+    },
+    "furniture": {
+      "R": "f_table",
+      "r": "f_armchair",
+      "t": "f_armchair",
+      "Y": "f_shredder",
+      "y": "f_server",
+      "1": "f_filing_cabinet",
+      "U": "f_toilet",
+      "u": "f_sink",
+      "i": "f_trashcan",
+      "P": "f_air_conditioner",
+      "p": "f_autodoc",
+      "2": "f_locker",
+      "3": "f_locker",
+      "4": "f_glass_cabinet",
+      "B": "f_autodoc",
+      "b": "f_autodoc_couch",
+      "S": "f_dumpster",
+      "N": "f_bunkbed"
+    },
+    "items": {
+      "1": [
+        { "item": "office_paper", "chance": 15, "repeat": [ 1, 2 ] },
+        { "item": "office_supplies", "chance": 75, "repeat": [ 2, 4 ] },
+        { "item": "file_room", "chance": 75, "repeat": [ 2, 4 ] }
+      ],
+      "i": { "item": "trash", "chance": 77, "repeat": [ 3, 5 ] },
+      "R": { "item": "office_mess", "chance": 18 },
+      "2": [
+        { "item": "ammo_pistol_common", "chance": 70, "repeat": [ 5, 7 ] },
+        { "item": "mags_cop", "chance": 70, "repeat": [ 5, 7 ] },
+        { "item": "mags_pistol_common", "chance": 65, "repeat": [ 5, 7 ] },
+        { "item": "guns_pistol_common", "chance": 75, "repeat": [ 2, 5 ] },
+        { "item": "guns_rifle_rare", "chance": 15 }
+      ],
+      "3": [
+        { "item": "supplies_electronics", "chance": 75 },
+        { "item": "consumer_electronics", "chance": 75 },
+        { "item": "supplies_electronics", "chance": 75 }
+      ],
+      "4": [
+        { "item": "hospital_medical_items", "chance": 65, "repeat": [ 7, 14 ] },
+        { "item": "mutagens", "chance": 35, "repeat": [ 2, 3 ] },
+        { "item": "bionics", "chance": 35, "repeat": [ 2, 4 ] }
+      ],
+      "S": { "item": "trash", "chance": 82, "repeat": [ 7, 14 ] }
+    }
+  }
+]

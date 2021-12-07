@@ -1,0 +1,184 @@
+[
+  {
+    "type": "npc",
+    "id": "gkb_doc_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Scrapper Doctor",
+    "class": "NC_GKBDOC_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_GKBDOC_Town",
+    "faction": "fac_scrapperbots",
+    "mission_offered": "MISSION_GKB_DOC_A_ITEM"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_GKBDOC_SHOPKEEP",
+    "name": { "str": "Scrapper Doctor" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_GKBDOC_worn",
+    "weapon_override": "NC_GKBDOC_weapon",
+    "shopkeeper_item_group": "NC_GKBDOC_SHOPKEEP_misc",
+    "carry_override": "NC_GKBDOC_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBDOC_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [ { "group": "infantry_medical_gear", "count": [ 4, 9 ] }, { "group": "hospital_medical_items", "count": [ 6, 8 ] } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBDOC_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "scalpel" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBDOC_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "coat_lab" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBDOC_carry",
+    "subtype": "collection",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBDOC_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "infantry_medical_gear", "prob": 80, "repeat": [ 4, 10 ] },
+      { "group": "hospital_medical_items", "prob": 80, "repeat": [ 6, 15 ] }
+    ]
+  },
+  {
+    "id": "TALK_GKBDOC_Town",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Do you want anything from me? I'm a bit busy being at the moment.",
+      "no": "Do you want anything from me? I'm a bit busy being at the moment."
+    },
+    "responses": [
+      { "text": "What is it like being a doctor in this station?", "topic": "TALK_GKBDOC_infotown" },
+      { "text": "Do you have any medical items for me?", "effect": "start_trade", "topic": "TALK_GKBDOC_Town" },
+      { "text": "Do you have a task for me?", "topic": "TALK_MISSION_LIST" },
+      { "text": "Goodbye, thank you for your time.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_GKBDOC_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Truth be told, I'm not really a doctor! I wasn't done with my residency down in Boston before the cataclysm happened. I don't think most people mind my lack of credentials anymore, though.",
+      "no": "Truth be told, I'm not really a doctor! I wasn't done with my residency down in Boston before the cataclysm happened. I don't think most people mind my lack of credentials anymore, though."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_GKBDOC_Town" } ]
+  },
+  {
+    "id": "MISSION_GKB_DOC_A_ITEM",
+    "type": "mission_definition",
+    "name": "Retrieve an anesthesia kit.",
+    "description": "Retrieve an anesthesia kit.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 1,
+    "value": 150000,
+    "item": "anesthetic_kit",
+    "count": 1,
+    "end": {
+      "effect": [
+        { "u_buy_item": "1st_aid", "count": 2 },
+        { "u_buy_item": "bfipowder", "count": 2 },
+        { "u_buy_item": "antifungal", "count": 2 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GKB_DOC_B_ITEM",
+    "dialogue": {
+      "describe": "I would like you to find an anesthesia kit for me. In the event that I have to do any invasive surgeries on people, perhaps even you, it would better for everyone if you weren't awake when I was doing it.",
+      "offer": "I would like you to find an anesthesia kit for me. In the event that I have to do any invasive surgeries on people, perhaps even you, it would better for everyone if you weren't awake when I was doing it.",
+      "accepted": "Thanks for accepting my offer.",
+      "rejected": "That's unfortunate.",
+      "advice": "Anesthesia kits can be found in hospitals, I think.",
+      "inquire": "Have you found what I requested yet?",
+      "success": "Great work, I'll become a master chef in no time.",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Well, you did what you could. It's just that food will be as bland as ever."
+    }
+  },
+  {
+    "id": "MISSION_GKB_DOC_B_ITEM",
+    "type": "mission_definition",
+    "name": "Defeat the Dawson robots.",
+    "description": "Defeat the Dawson robots.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster": "mon_gkb_nursebot_a",
+    "difficulty": 3,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "road", "reveal_radius": 2, "random": true, "search_range": 17 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_gkb_nursebot_a", "x": 10, "y": 10, "target": true },
+          { "monster": "mon_gkb_nursebot_a", "x": 2, "y": 10 },
+          { "monster": "mon_gkb_nursebot_a", "x": 10, "y": 2 },
+          { "monster": "mon_gkb_nursebot_a", "x": 2, "y": 2 },
+          { "monster": "mon_gkb_nursebot_b", "x": 4, "y": 18 },
+          { "monster": "mon_gkb_nursebot_b", "x": 17, "y": 5 },
+          { "monster": "mon_gkb_nursebot_b", "x": 14, "y": 9 },
+          { "monster": "mon_gkb_nursebot_b", "x": 17, "y": 17 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "mutagen", "container": "flask_glass", "count": 1 },
+        { "u_buy_item": "mutagen", "container": "flask_glass", "count": 1 },
+        { "u_buy_item": "bio_power_storage", "count": 1 },
+        { "u_buy_item": "1st_aid", "count": 5 },
+        { "u_buy_item": "anesthetic_kit", "count": 1 },
+        { "u_buy_item": "vaccine_shot", "count": 3 },
+        { "u_buy_item": "disinfectant", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Even worse news, some of the bionics that we scavenged from a nearby hospital were apparently outfitted with transponders. I'm sure you can guess what you have to do now. Just go and kill the robots for me before they come here, will you?",
+      "offer": "Even worse news, some of the bionics that we scavenged from a nearby hospital were apparently outfitted with transponders. I'm sure you can guess what you have to do now. Just go and kill the robots for me before they come here, will you?",
+      "accepted": "Thanks for accepting my offer, what a strange turn of events.",
+      "rejected": "Why ask about a task and then reject it?",
+      "advice": "Be careful, those nurse gynoids can cut you to ribbons very quickly.",
+      "inquire": "Have you found the part yet?",
+      "success": "Great work, I might have more tasks for you in the future",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  }
+]

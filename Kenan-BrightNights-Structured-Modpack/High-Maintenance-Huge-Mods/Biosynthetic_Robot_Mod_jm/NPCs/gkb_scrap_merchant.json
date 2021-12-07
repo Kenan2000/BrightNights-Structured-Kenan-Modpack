@@ -1,0 +1,321 @@
+[
+  {
+    "type": "npc",
+    "id": "gkb_scrap_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Scrapper Parts Merchant",
+    "gender": "male",
+    "class": "NC_GKBSCRAP_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_GKBSCRAP_Town",
+    "mission_offered": "MISSION_GKB_SCRAP_A_ITEM",
+    "faction": "fac_scrapperbots"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_GKBSCRAP_SHOPKEEP",
+    "name": { "str": "Scrapper Parts Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_GKBSCRAP_worn",
+    "weapon_override": "NC_GKBSCRAP_weapon",
+    "shopkeeper_item_group": "NC_GKBSCRAP_SHOPKEEP_misc",
+    "carry_override": "NC_GKBSCRAP_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBSCRAP_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "group": "supplies_mechanics", "count": [ 4, 9 ] },
+      { "group": "supplies_electronics", "count": [ 4, 9 ] },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBSCRAP_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBSCRAP_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants_cargo" },
+      { "item": "jacket_army" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBSCRAP_carry",
+    "subtype": "collection",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_GKBSCRAP_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "supplies_mechanics", "count": [ 4, 9 ] },
+      { "group": "supplies_electronics", "count": [ 4, 9 ] },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_GKBSCRAP_Town",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you buying, what are you selling?",
+      "no": "What are you buying, what are you selling?"
+    },
+    "responses": [
+      { "text": "What is it like being a scrap merchant around here?", "topic": "TALK_GKBSCRAP_infotown" },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_GKBSCRAP_Town"
+      },
+      { "text": "Do you have a task for me?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_GKBSCRAP_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's a veritable scavenger's paradise out there! Seemingly any house you can go to is a surprise of riches, you never know what you can find even from the most basic consumer electronic.",
+      "no": "It's a veritable scavenger's paradise out there! Seemingly any house you can go to is a surprise of riches, you never know what you can find even from the most basic consumer electronic."
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_GKBSCRAP_Town" } ]
+  },
+  {
+    "id": "MISSION_GKB_SCRAP_A_ITEM",
+    "type": "mission_definition",
+    "name": "Retrieve the esoteric electronic device.",
+    "description": "Retrieve the esoteric electronic device.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "value": 150000,
+    "item": "gkb_rare_electronicpart",
+    "count": 1,
+    "start": {
+      "assign_mission_target": { "om_terrain": "road", "reveal_radius": 2, "random": true, "search_range": 25 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "     M                  ",
+          "            M           ",
+          "                        ",
+          "                        ",
+          "          @     M       ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "  M       M             ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": { "@": "t_grass", "b": "t_dirt", "M": "t_dirt" },
+        "item": { "@": { "item": "gkb_rare_electronicpart", "chance": 100 } },
+        "monster": { "M": { "monster": "mon_gkb_newt" } }
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "light_plus_battery_cell", "count": 1 },
+        { "u_buy_item": "medium_battery_cell", "count": 1 },
+        { "u_buy_item": "welder_crude", "count": 1 },
+        { "u_buy_item": "multitool", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GKB_SCRAP_B_ITEM",
+    "dialogue": {
+      "describe": "I'm not really sure if I trust you or not yet, how about you find an object for me? Some scouts have found a rare electronic device, unfortunately it's been surrounded by harmful robots. Would you consider getting it for me?",
+      "offer": "I'm not really sure if I trust you or not yet, how about you find an object for me? Some scouts have found a rare electronic device, unfortunately it's been surrounded by harmful robots. Would you consider getting it for me?",
+      "accepted": "Thanks for accepting my offer, now go out there and get it!",
+      "rejected": "Why ask about a task and then reject it?",
+      "advice": "Be careful, Newts can be pretty hard to shoot, don't underestimate them.",
+      "inquire": "Have you found the part yet?",
+      "success": "Great work, I might have more tasks for you in the future",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  },
+  {
+    "id": "MISSION_GKB_SCRAP_B_ITEM",
+    "type": "mission_definition",
+    "name": "Eliminate the Chinese Robots.",
+    "description": "Eliminate the Chinese Robots.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster": "mon_gkb_clib_d",
+    "difficulty": 3,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 2, "random": true, "search_range": 27 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_gkb_clib_d", "x": 10, "y": 10, "target": true },
+          { "monster": "mon_gkb_clib_a", "x": 2, "y": 10 },
+          { "monster": "mon_gkb_clib_a", "x": 10, "y": 2 },
+          { "monster": "mon_gkb_clib_a", "x": 2, "y": 2 },
+          { "monster": "mon_gkb_clib_a", "x": 4, "y": 18 },
+          { "monster": "mon_gkb_clib_a", "x": 17, "y": 5 },
+          { "monster": "mon_gkb_zx_19", "x": 17, "y": 17, "chance": 50 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "dep_gkb_utbot", "count": 1 },
+        { "u_buy_item": "medium_battery_cell", "count": 1 },
+        { "u_buy_item": "medium_battery_cell", "count": 1 },
+        { "u_buy_item": "eink_tablet_pc", "count": 1 },
+        { "u_buy_item": "electrohack", "count": 1 },
+        { "u_buy_item": "electrohack", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GKB_SCRAP_C_ITEM",
+    "dialogue": {
+      "describe": "Alright, this one's a bit more difficult, We've caught wind of a group of robots that have appeared near our little town. We think they're Chinese, I guess they were launched over during the cataclysm or something. Would you kill them for us?",
+      "offer": "Alright, this one's a bit more difficult, We've caught wind of a group of robots that have appeared near our little town. We think they're Chinese, I guess they were launched over during the cataclysm or something. Would you kill them for us?",
+      "accepted": "Thanks for accepting my offer, now go out there and get it!",
+      "rejected": "Why ask about a task and then reject it?",
+      "advice": "Be careful, some of the Zhuazi drones can shoot out bolts of lightning.",
+      "inquire": "Are the drones gone yet?",
+      "success": "Great work, I might have more tasks for you in the future",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  },
+  {
+    "id": "MISSION_GKB_SCRAP_C_ITEM",
+    "type": "mission_definition",
+    "name": "Eliminate the Salamanders.",
+    "description": "Eliminate the Salamanders.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster": "mon_gkb_mk2",
+    "difficulty": 3,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 2, "random": true, "search_range": 29 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_gkb_mk2", "x": 10, "y": 10, "target": true },
+          { "monster": "mon_gkb_mk2", "x": 2, "y": 10 },
+          { "monster": "mon_gkb_mk2", "x": 10, "y": 2 },
+          { "monster": "mon_gb_brs", "x": 17, "y": 17, "chance": 50 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "UPS_off", "count": 1 },
+        { "u_buy_item": "laptop", "count": 1 },
+        { "u_buy_item": "geiger_off", "count": 1 },
+        { "u_buy_item": "eink_tablet_pc", "count": 1 },
+        { "u_buy_item": "computer_science", "count": 1 },
+        { "u_buy_item": "SICP", "count": 1 },
+        { "u_buy_item": "advanced_electronics", "count": 1 },
+        { "u_buy_item": "electrohack", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_GKB_SCRAP_D_ITEM",
+    "dialogue": {
+      "describe": "You have proven your worth as a fighter, so I request an even more difficult task from you now. A few Salamanders have been stalking us from a nearby forest. Their movements are a bit unnatural, usually Salamanders just stand in the open as a form of intimidation. I feel like somebody, or something, is compelling them to do this. Please kill these horrid synthetics for us.",
+      "offer": "You have proven your worth as a fighter, so I request an even more difficult task from you now. A few Salamanders have been stalking us from a nearby forest. Their movements are a bit unnatural, usually Salamanders just stand in the open as a form of intimidation. I feel like somebody, or something, is compelling them to do this. Please kill these horrid synthetics for us.",
+      "accepted": "Let's hope you make it back alive.",
+      "rejected": "Pretty understandable, I wouldn't want to stare down a few Salamanders myself either.",
+      "advice": "Try to avoid getting within melee range of those Salamanders, their legs can send you flying.",
+      "inquire": "Are the Salamanders dead yet?",
+      "success": "To be frank, I thought you would die, thanks for killing those beasts for us.",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  },
+  {
+    "id": "MISSION_GKB_SCRAP_D_ITEM",
+    "type": "mission_definition",
+    "name": "Eliminate the military patrol.",
+    "description": "Eliminate the military patrol.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "monster": "mon_gkb_mk3",
+    "difficulty": 3,
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 2, "random": true, "search_range": 20 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_gkb_mk3", "x": 10, "y": 10, "target": true },
+          { "monster": "mon_gkb_mk3", "x": 2, "y": 10 },
+          { "monster": "mon_gkb_newt_m", "x": 8, "y": 4 },
+          { "monster": "mon_gkb_newt_m", "x": 3, "y": 2 },
+          { "monster": "mon_gkb_newt_m", "x": 4, "y": 18 },
+          { "monster": "mon_gkb_mk2", "x": 23, "y": 20, "chance": 50 }
+        ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "gkb_synthmaid", "count": 1 },
+        { "u_buy_item": "v29", "count": 1 },
+        { "u_buy_item": "chemistry_set", "count": 1 },
+        { "u_buy_item": "bio_power_storage_mkII", "count": 1 },
+        { "u_buy_item": "welder", "count": 1 },
+        { "u_buy_item": "medium_atomic_battery_cell", "count": 1 },
+        { "u_buy_item": "light_atomic_battery_cell", "count": 1 }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Okay, I think this will be the last task I entrust you with, not because I doubt you, it's just that I think nothing can really top this. A scout has detected a patrol of military bio-synthetics moving towards our base. It's imperative that you take them out for us.",
+      "offer": "Okay, I think this will be the last task I entrust you with, not because I doubt you, it's just that I think nothing can really top this. A scout has detected a patrol of military bio-synthetics moving towards our base. It's imperative that you take them out for us.",
+      "accepted": "I entrust our safety to you, and you alone. Good luck!",
+      "rejected": "That's unfortunate, but so be it.",
+      "advice": "The military variants of the Newts and Salamanders often come equipped with firearms, try to close the distance as soon as possible or snipe them from a long distance.",
+      "inquire": "Are they dead dead yet?",
+      "success": "This is amazing news! I think I owe you a particular gift. We found it at a Chi Industries store some time ago, and never knew what to do with it.",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  }
+]
