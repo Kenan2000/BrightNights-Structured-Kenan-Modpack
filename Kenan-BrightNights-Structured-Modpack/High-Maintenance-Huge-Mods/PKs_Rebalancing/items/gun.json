@@ -145,7 +145,7 @@
     "reload": 100,
     "valid_mod_locations": [ [ "accessories", 4 ], [ "sling", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "DRAW_AS_LINE" ],
-    "magazine_well": 2,
+    "magazine_well": "500 ml",
     "magazines": [ [ "bomblet", [ "brute_shot_mag" ] ] ],
     "techniques": [ "WIDE", "BRUTAL", "heavy_blow" ]
   },
@@ -157,7 +157,7 @@
     "weight": "972 g",
     "volume": "750 ml",
     "price": "900 USD",
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": ":",
     "color": "i_magenta",
     "location": "underbarrel",

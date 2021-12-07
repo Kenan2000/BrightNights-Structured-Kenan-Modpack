@@ -3,7 +3,7 @@
     "id": "six12",
     "copy-from": "shotgun_base",
     "type": "GUN",
-    "name": "Crye Six12",
+    "name": { "str": "Crye Six12" },
     "description": "A double action, bullpup, shotgun semi-automatic with a removable revolver cylinder.",
     "weight": "3150 g",
     "volume": "2 L",
@@ -17,7 +17,7 @@
     "reload": 100,
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "muzzle", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ] 
     ],
-    "magazine_well": 5,
+    "magazine_well": "1250 ml",
     "magazines": [
       [ "shot", [ "six12mag" ] ]
     ],
@@ -37,7 +37,7 @@
     "id": "st_12",
     "copy-from": "shotgun_pump",
     "type": "GUN",
-    "name": "Taurus ST 12",
+    "name": { "str": "Taurus ST 12" },
     "description": "A light weight, tactical pump action shotgun for law enforcement and military users.",
     "weight": "2900 g",
     "volume": "2500 ml",
@@ -57,7 +57,7 @@
     "//": "See /data/json/items/gun/shot.json - ksg.",    
     "copy-from": "ksg",
     "type": "GUN",
-    "name": "UTAS UTS-15",
+    "name": { "str": "UTAS UTS-15" },
     "description": "A weapon built in Turkey, the UTAS Urban Tactical Shotgun is a bullpup, pump action shotgun with dual tube magazines similar to the Kel-Tec KSG.",
     "weight": "2800 g",
     "price": "780 USD",

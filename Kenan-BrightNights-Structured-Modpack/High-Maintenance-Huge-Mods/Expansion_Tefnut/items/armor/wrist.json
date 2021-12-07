@@ -27,7 +27,7 @@
     "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE" ],
     "coverage": 15,
     "symbol": "[",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "magazines": [ [ "battery", [ "light_minus_battery_cell", "light_minus_atomic_battery_cell", "light_minus_disposable_cell", "light_battery_cell","light_atomic_battery_cell", "light_disposable_cell" ] ] ]
   },
   
@@ -78,7 +78,7 @@
     "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ],
     "coverage": 15,
     "symbol": "[",
-    "ammo": "battery"
+    "ammo": [ "battery" ]
 
   },
   
@@ -92,7 +92,7 @@
     "revert_to": "wrist_comp_budget",
     "use_action": ["MP3_ON" ],
     "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ],
-    "magazine_well": 1
+    "magazine_well": "250 ml"
   },
   {
     "id": "wrist_comp_budget_flashlight",

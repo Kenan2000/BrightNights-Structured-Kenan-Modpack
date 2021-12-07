@@ -297,10 +297,10 @@
     "material": [ "plastic", "superalloy" ],
     "symbol": "s",
     "color": "light_cyan",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "charges_per_use": 500,
     "magazines": [ [ "battery", [ "light_minus_atomic_battery_cell" ] ] ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "use_action": { "type": "cast_spell", "spell_id": "stealth_effect", "no_fail": true, "level": 0 },
     "flags": [ "NO_RELOAD", "NO_UNLOAD" ]
   },
@@ -318,10 +318,10 @@
     "material": [ "plastic", "superalloy" ],
     "symbol": "H",
     "color": "light_cyan",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "charges_per_use": 500,
     "magazines": [ [ "battery", [ "light_minus_atomic_battery_cell" ] ] ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "use_action": { "type": "cast_spell", "spell_id": "holo_friendly", "no_fail": true, "level": 0 },
     "flags": [ "NO_RELOAD", "NO_UNLOAD" ]
   }

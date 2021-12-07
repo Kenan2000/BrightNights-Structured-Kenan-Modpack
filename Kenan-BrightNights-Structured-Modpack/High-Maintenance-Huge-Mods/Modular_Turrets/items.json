@@ -14,7 +14,7 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ",",
     "color": "green",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "magazines": [
       [
         "battery",
@@ -29,7 +29,7 @@
         ]
       ]
     ],
-    "magazine_well": 1
+    "magazine_well": "250 ml"
   },
   {
     "id": "bot_chickenbot",
@@ -119,7 +119,7 @@
     "volume": "2 L",
     "price": "10 USD",
     "price_postapoc": "10 USD",
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": ";",
     "looks_like": "power_supply",
     "color": "light_gray"
@@ -680,7 +680,7 @@
     "price": "10 USD",
     "to_hit": -3,
     "bashing": 1,
-    "material": "glass",
+    "material": [ "glass" ],
     "symbol": ";",
     "color": "white",
     "flags": [ "NONCONDUCTIVE", "FRAGILE_MELEE" ],

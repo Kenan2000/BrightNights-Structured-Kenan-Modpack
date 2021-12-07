@@ -5,7 +5,7 @@
     "category": "spare_parts",
     "name": { "str": "large artillery casing" },
     "stackable": true,
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": "=",
     "color": "green",
     "damage_states": [ 0, 0 ]
@@ -461,7 +461,7 @@
     "name": { "str_sp": "105mm canister" },
     "color": "dark_gray",
     "description": "A canister from a spent 105mm shell, now an expensive paperweight.",
-    "material": "steel",
+    "material": [ "steel" ],
     "volume": "5 L",
     "weight": "700 g"
   },
@@ -472,7 +472,7 @@
     "name": { "str_sp": "120mm case base" },
     "color": "dark_gray",
     "description": "The steel case base from a spent 120mm shell.  With combustible case walls forming the bulk of the casing itself, what's left is now an expensive paperweight.",
-    "material": "steel",
+    "material": [ "steel" ],
     "volume": "1 L",
     "weight": "300 g"
   },
@@ -483,7 +483,7 @@
     "name": { "str_sp": "makeshift 120mm canister" },
     "color": "dark_gray",
     "description": "A spent 120mm case base converted into an improved casing, by welding new case walls of appropriate dimensions to the base.  Hopefully the welds are good, or else it might be a better fit for a pipe bomb instead.",
-    "material": "steel",
+    "material": [ "steel" ],
     "volume": "6 L",
     "weight": "900 g"
   },
@@ -802,7 +802,7 @@
     "price_postapoc": "50 USD",
     "to_hit": -6,
     "bashing": 12,
-    "material": "steel",
+    "material": [ "steel" ],
     "ammo": [ "atgm" ],
     "skill": "launcher",
     "range": 15,

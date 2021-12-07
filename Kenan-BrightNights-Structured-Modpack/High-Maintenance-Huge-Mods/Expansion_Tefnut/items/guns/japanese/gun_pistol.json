@@ -40,7 +40,7 @@
     "ammo": "8x22mm",
     "dispersion": 480,
     "durability": 7,
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "8x22mm", [ "nambumag" ] ] ]
   },
 
@@ -57,7 +57,7 @@
     "price_postapoc": "25 USD",
     "to_hit": -2,
     "bashing": 8,
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": "(",
     "color": "dark_gray",
     "ammo": "8x22mm",
@@ -81,7 +81,7 @@
       [ "underbarrel", 1 ]
     ],
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "8x22mm", [ "type2mag", "type2extmag" ] ] ]
   }
 

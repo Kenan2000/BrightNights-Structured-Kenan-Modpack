@@ -14,7 +14,7 @@
     "material": [ "steel", "plastic" ],
     "symbol": "/",
     "color": "red",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "charges_per_use": 5,
     "techniques": [ "WBLOCK_1" ],
     "use_action": {
@@ -41,7 +41,7 @@
         ]
       ]
     ],
-    "magazine_well": 1
+    "magazine_well": "250 ml"
   },
   {
     "id": "vibroblade_on",
@@ -72,6 +72,6 @@
         ]
       ]
     ],
-    "magazine_well": 1
+    "magazine_well": "250 ml"
   }
 ]

@@ -12,7 +12,7 @@
     "price_postapoc": "120 USD",
     "to_hit": -1,
     "bashing": 12,
-    "material": "steel",
+    "material": [ "steel" ],
     "ammo": "55_boys",
     "range": 100,
     "ranged_damage": { "damage_type": "stab", "amount": 1 },
@@ -20,7 +20,7 @@
     "durability": 8,
     "barrel_length": "1250 ml",
     "default_mods": [ "bipod", "muzzle_brake" ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "55_boys", [ "boysmag" ] ] ],
     "flags": [ "NEVER_JAMS" ]
   }

@@ -12,7 +12,7 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "yellow",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "initial_charges": 50,
     "max_charges": 50,
     "charges_per_use": 10,
@@ -61,7 +61,7 @@
       [ "heavy_battery_cell", "heavy_plus_battery_cell", "heavy_atomic_battery_cell", "heavy_disposable_cell" ]
     ]
   ],
-  "magazine_well": 4
+  "magazine_well": "1 L"
   },
   {
     "id": "lathe",
@@ -73,10 +73,10 @@
     "to_hit": -6,
     "weight": "40 kg",
     "volume": "72 L",
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": ";",
     "color": "green",
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "flags": [ "ALLOWS_REMOTE_USE" ],
     "magazines": [
       [
@@ -84,6 +84,6 @@
         [ "heavy_battery_cell", "heavy_plus_battery_cell", "heavy_atomic_battery_cell", "heavy_disposable_cell" ]
       ]
     ],
-    "magazine_well": 4
+    "magazine_well": "1 L"
   }
 ]

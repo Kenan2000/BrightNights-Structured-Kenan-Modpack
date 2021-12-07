@@ -2,7 +2,7 @@
   {
     "type": "COMESTIBLE",
     "id": "feces_roach",
-    "name": "bug dirt",
+    "name": { "str": "bug dirt" },
     "copy-from": "feces_bird",
     "description": "Large black pellets of rotting material."
   },
@@ -10,7 +10,7 @@
     "type": "COMESTIBLE",
     "id": "acid_free",
     "name": { "str": "concentrated acid", "str_pl": "concentrated acid" },
-    "weight": 250,
+    "weight": "250 g",
     "color": "green",
     "flags": [ "ACID" ],
     "use_action": "BLECH",

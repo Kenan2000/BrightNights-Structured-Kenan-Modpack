@@ -22,7 +22,7 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ] ],
     "reload": 400,
     "modes": [ [ "DEFAULT", "low auto", 50 ], [ "AUTO", "high auto", 100 ] ],
-	"magazines": [ [ "47mm", [ "47mmminigunmag" ] ] ],
+    "magazines": [ [ "47mm", [ "47mmminigunmag" ] ] ],
     "flags": [ "NEVER_JAMS", "MOUNTED_GUN" ]
   },
   {
@@ -48,7 +48,7 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ] ],
     "reload": 400,
     "modes": [ [ "DEFAULT", "low auto", 25 ], [ "AUTO", "high auto", 50 ] ],
-	"magazines": [ [ "5mm", [ "5mmminigunmag" ] ] ],
+    "magazines": [ [ "5mm", [ "5mmminigunmag" ] ] ],
     "flags": [ "NEVER_JAMS", "MOUNTED_GUN" ]
   },
   {
@@ -74,7 +74,7 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ] ],
     "reload": 400,
     "modes": [ [ "DEFAULT", "low auto", 50 ], [ "AUTO", "high auto", 100 ] ],
-	"magazines": [ [ "5mm", [ "5mmminigunmag" ] ] ],
+    "magazines": [ [ "5mm", [ "5mmminigunmag" ] ] ],
     "flags": [ "NEVER_JAMS", "MOUNTED_GUN" ]
   },
   {
@@ -124,7 +124,7 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ] ],
     "reload": 400,
     "modes": [ [ "DEFAULT", "low auto", 3 ], [ "AUTO", "high auto", 10, "NPC_AVOID" ] ],
-	"magazines": [ [ "25mm", [ "25mmdrummag" ] ], [ "25mm", [ "25mmdrummagxl" ] ] ],
+    "magazines": [ [ "25mm", [ "25mmdrummag" ] ], [ "25mm", [ "25mmdrummagxl" ] ] ],
     "flags": [ "MOUNTED_GUN" ]
   },
   {
@@ -146,7 +146,7 @@
     "durability": 9,
     "clip_size": 6,
     "reload": 150,
-	"magazines": [ [ "25mm", [ "25mmdrummag" ] ], [ "25mm", [ "25mmdrummagxl" ] ] ]
+    "magazines": [ [ "25mm", [ "25mmdrummag" ] ], [ "25mm", [ "25mmdrummagxl" ] ] ]
   },
   {
     "id": "broadsider",
@@ -219,8 +219,8 @@
     "durability": 10,
     "barrel_length": "1500 ml",
     "default_mods": [ "bipod", "rifle_scope", "muzzle_brake" ],
-    "magazine_well": 1,
-	"magazines": [ [ "50", [ "amr50mag" ] ] ],
+    "magazine_well": "250 ml",
+    "magazines": [ [ "50", [ "amr50mag" ] ] ],
     "flags": [ "NEVER_JAMS" ]
   },
   {
@@ -247,7 +247,7 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 5 ] ],
     "reload": 700,
     "loudness": 175,
-	"magazines": [ [ "70mm", [ "belt70mm" ] ] ]
+    "magazines": [ [ "70mm", [ "belt70mm" ] ] ]
   },
   {
     "id": "tank_gun_dual",

@@ -4,7 +4,7 @@
     "//": "The AR57 uses an empty STANAG 30 rd mag for a brass catcher.  I cannot create a special gunmod to accurately represent this because the functionality of the brass_catcher is hard coded - src/ranged.cpp line:1552",
     "copy-from": "rifle_auto",
     "type": "GUN",
-    "name": "AR57 LEM",
+    "name": { "str": "AR57 LEM" },
     "description": "This short barrel rifle (6in Fluted Barrel) is a familiar AR style personal defense weapon.  It fires 5.7x28mm ammunition and takes a FN P90 magazine.  This one is a semi automatic Law Enforcement Model.",
     "weight": "2400 g",
     "volume": "1250 ml",
@@ -32,14 +32,14 @@
       [ "sling", 1 ],
       [ "stock", 1 ]
     ],
-    "magazine_well": 2,
+    "magazine_well": "500 ml",
     "magazines": [ [ "57", [ "fnp90mag" ] ] ]
   },
   {
     "id": "r93t2",
     "copy-from": "rifle_manual",
     "type": "GUN",
-    "name": "R93 Tactical 2",
+    "name": { "str": "R93 Tactical 2" },
     "//": "This used to use the caliber conversion code to convert into .223 and .308 variants. See https://github.com/CleverRaven/Cataclysm-DDA/pull/23078 .",
     "description": "The Blaser R93 Tactical 2 is a straight pull, bolt action sniper rifle. ",
     "weight": "5400 g",
@@ -55,7 +55,7 @@
     "durability": 8,
     "barrel_length": 3,
     "built_in_mods": [ "adjustable_stock" ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "300", [ "300r4mag" ] ], [ "223", [ "223r5mag" ] ], [ "308", [ "308r5mag" ] ] ],
     "flags": "NEVER_JAMS"
   },
@@ -63,7 +63,7 @@
     "id": "ameli",
     "copy-from": "rifle_auto",
     "type": "GUN",
-    "name": "CETME Ameli",
+    "name": { "str": "CETME Ameli" },
     "description": "The CETME Ameli light machine gun used by the Spanish military resembles the German MG3 but uses a roller delayed blowback action to reduce recoil as the bolt body travels back on the bolt spring.",
     "weight": "5300 g",
     "volume": "2500 ml",
@@ -97,7 +97,7 @@
     "id": "m1_9",
     "copy-from": "rifle_semi",
     "type": "GUN",
-    "name": "Chiappa M1-9",
+    "name": { "str": "Chiappa M1-9" },
     "description": "A replica of the standard M1 Carbine of WWII, the Italian semi-automatic, the Chiappa M1-9, is a blowback operated plinker and small game hunting rifle.",
     "weight": "2700 g",
     "volume": "2 L",
@@ -118,14 +118,14 @@
       [ "sights", 1 ],
       [ "sling", 1 ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "9mm", [ "m9mag", "m9bigmag", "nato9mag", "9mmbetacmag" ] ] ]
   },
   {
     "id": "mdr",
     "copy-from": "rifle_auto",
     "type": "GUN",
-    "name": "Desert Tech MDR",
+    "name": { "str": "Desert Tech MDR" },
     "description": "With a bullpup design, the Desert Tech Micro Dynamic Rifle is a gas operated, ambidextrous assault rifle.",
     "weight": "3230 g",
     "volume": "2 L",
@@ -137,7 +137,7 @@
     "dispersion": 25,
     "durability": 8,
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 5 ] ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [
       [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "308", [ "g3mag", "g3bigmag", "308betacmag" ] ]
@@ -147,7 +147,7 @@
     "id": "enfield_l85a2",
     "copy-from": "rifle_auto",
     "type": "GUN",
-    "name": "Enfield L85A2",
+    "name": { "str": "Enfield L85A2" },
     "description": "A bullpup assault rifle, the standard issue service rifle of the British Armed Forces, the Enfield L85A2, uses a short-stroke gas piston system and a rotating bolt.",
     "weight": "3820 g",
     "volume": "1500 ml",
@@ -161,14 +161,14 @@
     "durability": 8,
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 11 ] ],
     "default_mods": [ "susat_scope", "grip" ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ] ]
   },
   {
     "id": "fad",
     "copy-from": "rifle_auto",
     "type": "GUN",
-    "name": "FAD assault rifle",
+    "name": { "str": "FAD assault rifle" },
     "description": "From Peru, the FAD assault rifle, (or Fusil Automático Doble,) is a compact infantry support weapon used by vehicle crews as back-up weapon.  It features a bullpup design with an integrated grenade launcher.",
     "weight": "3600 g",
     "volume": "2 L",
@@ -181,7 +181,7 @@
     "durability": 8,
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 5 ] ],
     "built_in_mods": [ "m203" ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ] ]
   },
   {
@@ -245,7 +245,7 @@
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "auto", 11 ] ],
     "barrel_length": 1,
     "default_mods": [ "folding_stock", "peep_sight" ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "223", [ "223ak74mag35", "223ak74mag30" ] ], [ "308", [ "308ak74mag25" ] ] ]
   },
   {
@@ -417,7 +417,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [
       [ "223", [ "223ak74mag30", "223ak74mag10", "survivor223mag" ] ],
       [ "308", [ "308ak74mag25" ] ],
@@ -488,7 +488,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "50", [ "m107a1mag" ] ] ],
     "flags": [ "NEVER_JAMS" ]
   },
@@ -522,7 +522,7 @@
       [ "sights", 1 ],
       [ "sling", 1 ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "308", [ "308steyrmag5", "308steyrmag10" ] ], [ "223", [ "stanag10" ] ] ]
   },
   {
@@ -557,7 +557,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [
       [ "223", [ "transmag", "stanag30", "stanag10", "stanag50", "223betacmag", "survivor223mag" ] ],
       [ "9mm", [ "uzimag", "9mmbetacmag" ] ],
@@ -595,7 +595,7 @@
       [ "sling", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "magazines": [ [ "300", [ "300r4mag" ] ], [ "308", [ "308r5mag" ] ] ]
   }
 ]

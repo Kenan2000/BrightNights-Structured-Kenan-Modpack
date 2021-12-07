@@ -178,9 +178,7 @@
     "material": [ "veggy" ],
     "volume": "250 ml",
     "fun": -10,
-    "flags": [ "SMOKABLE" ],
-    "rot_spawn": "GROUP_ROTTING_PLANT",
-    "rot_spawn_chance": 5
+    "flags": [ "SMOKABLE" ]
   },
   {
     "type": "COMESTIBLE",
@@ -198,9 +196,7 @@
     "volume": "250 ml",
     "stack_size": 4,
     "charges": 2,
-    "fun": -12,
-    "rot_spawn": "GROUP_ROTTING_PLANT",
-    "rot_spawn_chance": 2
+    "fun": -12
   },
   {
     "type": "COMESTIBLE",
@@ -272,7 +268,6 @@
     "volume": "1 L",
     "charges": 6,
     "flags": [ "EATEN_HOT" ],
-    "fun": 20,
-    "rot_spawn": "GROUP_ROTTING_PLANT"
+    "fun": 20
   }
 ]

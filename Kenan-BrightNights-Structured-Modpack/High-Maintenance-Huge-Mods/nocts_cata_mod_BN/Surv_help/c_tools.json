@@ -643,7 +643,7 @@
     "volume": "500 ml",
     "bashing": 1,
     "to_hit": -1,
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "charges_per_use": 250,
     "max_charges": 250,
     "use_action": { "type": "cast_spell", "spell_id": "c_topographical_scan", "no_fail": true, "level": 0 },

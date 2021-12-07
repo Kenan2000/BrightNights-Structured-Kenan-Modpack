@@ -20,7 +20,7 @@
     "power_armor": true,
     "material_thickness": 15,
     "environmental_protection": 15,
-    "ammo": "battery",
+    "ammo": [ "battery" ],
     "use_action": { "type": "transform", "msg": "The %s engages.", "target": "power_armor_t51_on", "active": true },
     "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
   },
@@ -202,7 +202,7 @@
         ]
       ]
     ],
-    "magazine_well": 1,
+    "magazine_well": "250 ml",
     "flags": [ "WATCH", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "THERMOMETER", "SUN_GLASSES" ]
   },
   {
@@ -229,6 +229,6 @@
     "use_action": { "menu_text": "Turn off", "type": "transform", "msg": "The %s flicks off.", "target": "power_armor_helmet_x01" },
     "covers": [ "head" ],
     "techniques": [ "WBLOCK_1" ],
-    "magazine_well": 1
+    "magazine_well": "250 ml"
   }
 ]

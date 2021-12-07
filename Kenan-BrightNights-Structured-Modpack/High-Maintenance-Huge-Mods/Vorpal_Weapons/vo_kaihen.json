@@ -1,119 +1,112 @@
 [
-    {
-	    "copy-from": "survivor_belt_notools",
-        "type" : "ARMOR",
-        "id" : "survivor_belt_notools",
-        "name" : "survivor belt",
-	    "encumbrance": 1,
-        "use_action": {
-            "type": "holster",
-            "holster_prompt": "Sheath blade",
-            "holster_msg": "You sheath your %s",
-            "draw_cost": 3,
-            "max_volume": 5,
-            "flags": ["SHEATH_KNIFE", "SHEATH_SWORD", "BELT_CLIP"]
-        }
-    },
+  {
+    "copy-from": "survivor_belt_notools",
+    "type": "ARMOR",
+    "id": "survivor_belt_notools",
+    "name": { "str": "survivor belt" },
+    "encumbrance": 1,
+    "use_action": {
+      "type": "holster",
+      "holster_prompt": "Sheath blade",
+      "holster_msg": "You sheath your %s",
+      "draw_cost": 3,
+      "max_volume": 5,
+      "flags": [ "SHEATH_KNIFE", "SHEATH_SWORD", "BELT_CLIP" ]
+    }
+  },
   {
     "copy-from": "noise_emitter_on",
     "id": "noise_emitter_on",
     "type": "TOOL",
-    "name": "noise emitter (on)",
+    "name": { "str": "noise emitter (on)" },
     "turns_per_charge": 4
   },
-    {
-	    "copy-from": "q_staff",
-        "id": "q_staff",
-        "name": "quarterstaff",
-        "type":"GENERIC",
-	    "extend": {
-	      "flags": [ "REACH_ATTACK" ]
-	    }
-    },
-    {
-	    "copy-from": "i_staff",
-        "type":"GENERIC",
-        "id": "i_staff",
-        "name": "ironshod quarterstaff",
-	    "extend": {
-	      "flags": [ "REACH_ATTACK" ]
-	    }
-    },
+  {
+    "copy-from": "q_staff",
+    "id": "q_staff",
+    "name": { "str": "quarterstaff" },
+    "type": "GENERIC",
+    "extend": { "flags": [ "REACH_ATTACK" ] }
+  },
+  {
+    "copy-from": "i_staff",
+    "type": "GENERIC",
+    "id": "i_staff",
+    "name": { "str": "ironshod quarterstaff" },
+    "extend": { "flags": [ "REACH_ATTACK" ] }
+  },
   {
     "copy-from": "shock_staff",
     "id": "shock_staff",
-    "type":"TOOL",
-    "name": "powered quarterstaff",
-    "extend": {
-      "flags": [ "REACH_ATTACK" ]
-    }
-  },{
-	    "copy-from": "headgear",
-        "type" : "ARMOR",
-        "id" : "headgear",
-        "name" : "headgear",
-    "extend": {
-      "flags": [ "ALLOWS_NATURAL_ATTACKS" ]
-    }
-    },
+    "type": "TOOL",
+    "name": { "str": "powered quarterstaff" },
+    "extend": { "flags": [ "REACH_ATTACK" ] }
+  },
+  {
+    "copy-from": "headgear",
+    "type": "ARMOR",
+    "id": "headgear",
+    "name": { "str": "headgear" },
+    "extend": { "flags": [ "ALLOWS_NATURAL_ATTACKS" ] }
+  },
   {
     "id": "lobotomizer",
     "type": "TOOL",
     "symbol": "/",
     "color": "dark_gray",
-    "name": "lobotomizer",
+    "name": { "str": "lobotomizer" },
     "description": "This is a hand-forged collapsible tool that has two axe heads and sharp shovel-like tip on one end.  It can be used as a shovel, or you could chop some zombies with it instead.",
     "price": "250 USD",
-    "material": ["steel"],
-    "weight": 2722,
+    "material": [ "steel" ],
+    "weight": "2722 g",
     "volume": "1750 ml",
     "bashing": 13,
     "cutting": 26,
     "techniques": [ "BRUTAL" ],
     "to_hit": -1,
-    "qualities": [["DIG", 2], ["AXE", 2], ["CUT", 1], ["BUTCHER", -11]]
+    "qualities": [ [ "DIG", 2 ], [ "AXE", 2 ], [ "CUT", 1 ], [ "BUTCHER", -11 ] ]
   },
   {
     "copy-from": "diveknife",
     "id": "diveknife",
     "type": "TOOL",
     "name": { "str": "dive knife", "str_pl": "dive knives" },
-    "use_action": ["CROWBAR"]
+    "use_action": [ "CROWBAR" ]
   },
-    {
-	    "copy-from": "halberd",
-        "id": "halberd",
-        "type": "GENERIC",
-        "name": "halberd",
-        "techniques": ["SWEEP"]
+  {
+    "copy-from": "halberd",
+    "id": "halberd",
+    "type": "GENERIC",
+    "name": { "str": "halberd" },
+    "techniques": [ "SWEEP" ]
   },
-    {
-	    "copy-from": "naginata",
-        "id": "naginata",
-        "type": "GENERIC",
-        "name": "naginata",
-        "techniques": ["SWEEP","RAPID"]
+  {
+    "copy-from": "naginata",
+    "id": "naginata",
+    "type": "GENERIC",
+    "name": { "str": "naginata" },
+    "techniques": [ "SWEEP", "RAPID" ]
   },
-    {
-	    "copy-from": "glaive",
-        "id": "glaive",
-        "type": "GENERIC",
-        "name": "glaive",
-        "techniques": ["BRUTAL"]
+  {
+    "copy-from": "glaive",
+    "id": "glaive",
+    "type": "GENERIC",
+    "name": { "str": "glaive" },
+    "techniques": [ "BRUTAL" ]
   },
   {
     "copy-from": "battleaxe",
     "id": "battleaxe",
     "type": "TOOL",
-    "name": "battle axe",
-    "techniques": ["BRUTAL","WBLOCK_1"]
+    "name": { "str": "battle axe" },
+    "techniques": [ "BRUTAL", "WBLOCK_1" ]
   },
   {
     "copy-from": "broadsword",
     "id": "broadsword",
     "type": "TOOL",
-    "name": "broadsword",
-    "techniques": "SWEEP",
+    "name": { "str": "broadsword" },
+    "techniques": [ "SWEEP" ],
     "bashing": 12,
     "cutting": 31
   },
@@ -129,10 +122,10 @@
     "price": "1600 USD",
     "bashing": 17,
     "cutting": 40,
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": "/",
     "color": "light_gray",
-    "ammo": "gasoline",
+    "ammo": [ "gasoline" ],
     "charges_per_use": 1,
     "max_charges": 50,
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
@@ -159,10 +152,10 @@
     "price": "1600 USD",
     "bashing": 17,
     "cutting": 40,
-    "material": "steel",
+    "material": [ "steel" ],
     "symbol": "/",
     "color": "red",
-    "ammo": "gasoline",
+    "ammo": [ "gasoline" ],
     "max_charges": 50,
     "turns_per_charge": 30,
     "revert_to": "zweifire_off",
@@ -194,7 +187,7 @@
     "material": [ "steel", "plastic" ],
     "symbol": "/",
     "color": "light_gray",
-    "ammo": "gasoline",
+    "ammo": [ "gasoline" ],
     "charges_per_use": 1,
     "max_charges": 50,
     "use_action": {
@@ -241,7 +234,7 @@
     "copy-from": "katana",
     "id": "katana",
     "type": "TOOL",
-    "name": "katana",
+    "name": { "str": "katana" },
     "bashing": 4,
     "cutting": 35
   },
@@ -250,54 +243,51 @@
     "id": "torch_lit",
     "type": "TOOL",
     "name": { "str": "torch (lit)", "str_pl": "torches (lit)" },
-    "techniques" : ["WIDE"]
+    "techniques": [ "WIDE" ]
   },
-    {
+  {
     "copy-from": "bagh_nakha",
-        "type":"GENERIC",
-        "id" : "bagh_nakha",
-        "name" : { "str": "tiger claws", "str_pl": "tiger claws" },
-        "techniques" : ["RAPID", "GRAB", "VORPAL"],
-        "bashing" : 1,
-        "cutting" : 6,
-        "flags" : ["UNARMED_WEAPON", "DURABLE_MELEE"]
-    },
+    "type": "GENERIC",
+    "id": "bagh_nakha",
+    "name": { "str": "tiger claws", "str_pl": "tiger claws" },
+    "techniques": [ "RAPID", "GRAB", "VORPAL" ],
+    "bashing": 1,
+    "cutting": 6,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+  },
   {
     "copy-from": "bio_claws_weapon",
-    "type":"GENERIC",
-    "id" : "bio_claws_weapon",
-    "name" : { "str": "bionic claws", "str_pl": "bionic claws" },
-    "techniques" : ["WBLOCK_2"],
-    "bashing" : 18,
-    "cutting" : 12
+    "type": "GENERIC",
+    "id": "bio_claws_weapon",
+    "name": { "str": "bionic claws", "str_pl": "bionic claws" },
+    "techniques": [ "WBLOCK_2" ],
+    "bashing": 18,
+    "cutting": 12
   },
   {
     "copy-from": "bio_blade_weapon",
-    "type":"GENERIC",
-    "id" : "bio_blade_weapon",
-    "name" : "monomolecular blade",
-    "techniques" : ["RAPID"],
-    "cutting" : 36
- },
-    {
+    "type": "GENERIC",
+    "id": "bio_blade_weapon",
+    "name": { "str": "monomolecular blade" },
+    "techniques": [ "RAPID" ],
+    "cutting": 36
+  },
+  {
     "copy-from": "tinfoil_hat",
-        "type" : "ARMOR",
-        "id" : "tinfoil_hat",
-        "category" : "armor",
-        "name" : "tinfoil hat",
-	    "artifact_data" : {
-	      "effects_worn": ["AEP_PSYSHIELD","AEP_SCHIZO"]
-    }
-    },
-   {
+    "type": "ARMOR",
+    "id": "tinfoil_hat",
+    "name": { "str": "tinfoil hat" },
+    "artifact_data": { "effects_worn": [ "AEP_PSYSHIELD", "AEP_SCHIZO" ] }
+  },
+  {
     "copy-from": "rollerskates",
-        "type" : "ARMOR",
-        "id" : "rollerskates",
-        "name" : { "str": "pair of rollerskates", "str_pl": "pairs of rollerskates" },
-        "volume" : 12,
-        "warmth" : 0,
-        "encumbrance" : 25,
-        "flags" : ["VARSIZE", "WATERPROOF", "BELTED"],
-        "coverage" : 10
-    }
+    "type": "ARMOR",
+    "id": "rollerskates",
+    "name": { "str": "pair of rollerskates", "str_pl": "pairs of rollerskates" },
+    "volume": "3 L",
+    "warmth": "0 g",
+    "encumbrance": 25,
+    "flags": [ "VARSIZE", "WATERPROOF", "BELTED" ],
+    "coverage": 10
+  }
 ]
