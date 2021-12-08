@@ -21,7 +21,7 @@
     "material_thickness": 5,
     "environmental_protection": 3,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "helmet_xlsurvivor",
@@ -44,7 +44,7 @@
     "material_thickness": 4,
     "environmental_protection": 3,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "OVERSIZE", "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "helmet_hsurvivor",
@@ -67,7 +67,7 @@
     "material_thickness": 6,
     "environmental_protection": 5,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_survivorhelmet",
@@ -91,7 +91,7 @@
     "material_thickness": 2,
     "environmental_protection": 2,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
   },
   {
     "id": "BL9_survivorpants",
@@ -114,7 +114,7 @@
     "warmth": 10,
     "material_thickness": 1,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "STURDY", "WATERPROOF" ]
   },
   {
     "id": "BL9_survivorsuit",
@@ -138,7 +138,7 @@
     "warmth": 15,
     "material_thickness": 1,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
   },
   {
     "id": "BL9_survivorgloves",
@@ -160,7 +160,7 @@
     "warmth": 20,
     "material_thickness": 1,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_survivorboots",
@@ -183,7 +183,7 @@
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_survivorbodyarmor",
@@ -205,7 +205,7 @@
     "warmth": 0,
     "material_thickness": 2,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   },
   {
     "id": "BL9_hitech_survivorhelmet",
@@ -238,7 +238,7 @@
     "material_thickness": 2,
     "environmental_protection": 2,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
   },
   {
     "id": "BL9_hitech_survivorpants",
@@ -270,7 +270,7 @@
     },
     "material_thickness": 1,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "STURDY", "WATERPROOF" ]
   },
   {
     "id": "BL9_hitech_survivorsuit",
@@ -310,7 +310,7 @@
     },
     "material_thickness": 1,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
   },
   {
     "id": "BL9_hitech_survivorgloves",
@@ -341,7 +341,7 @@
     },
     "material_thickness": 1,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_hitech_survivorboots",
@@ -373,7 +373,7 @@
     },
     "material_thickness": 2,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_hitech_survivorbodyarmor",
@@ -395,7 +395,7 @@
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 2 } ] } ] },
     "material_thickness": 2,
     "environmental_protection": 2,
-    "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   },
   {
     "id": "BL9_survivorhelmet_mk2",
@@ -419,7 +419,7 @@
     "material_thickness": 2,
     "environmental_protection": 3,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
   },
   {
     "id": "BL9_survivorpants_mk2",
@@ -442,7 +442,7 @@
     "warmth": 15,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "STURDY", "WATERPROOF" ]
   },
   {
     "id": "BL9_survivorsuit_mk2",
@@ -466,7 +466,7 @@
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
   },
   {
     "id": "BL9_survivorgloves_mk2",
@@ -488,7 +488,7 @@
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_survivorboots_mk2",
@@ -511,7 +511,7 @@
     "warmth": 20,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_survivorbodyarmor_mk2",
@@ -533,7 +533,7 @@
     "warmth": 0,
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   },
   {
     "id": "BL9_hitech_survivorhelmet_mk2",
@@ -566,7 +566,7 @@
     "material_thickness": 2,
     "environmental_protection": 3,
     "techniques": [ "WBLOCK_1" ],
-    "flags": [ "VARSIZE", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "SUN_GLASSES", "WATERPROOF", "STURDY", "OUTER" ]
   },
   {
     "id": "BL9_hitech_survivorpants_mk2",
@@ -598,7 +598,7 @@
     },
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "POCKETS", "STURDY", "WATERPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "STURDY", "WATERPROOF" ]
   },
   {
     "id": "BL9_hitech_survivorsuit_mk2",
@@ -638,7 +638,7 @@
     },
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
+    "flags": [ "VARSIZE", "FIT", "POCKETS", "HOOD", "STURDY", "WATERPROOF", "RAINPROOF" ]
   },
   {
     "id": "BL9_hitech_survivorgloves_mk2",
@@ -669,7 +669,7 @@
     },
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_hitech_survivorboots_mk2",
@@ -701,7 +701,7 @@
     },
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "WATERPROOF", "STURDY" ]
+    "flags": [ "VARSIZE", "FIT", "WATERPROOF", "STURDY" ]
   },
   {
     "id": "BL9_hitech_survivorbodyarmor_mk2",
@@ -723,6 +723,6 @@
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "STRENGTH", "add": 5 } ] } ] },
     "material_thickness": 2,
     "environmental_protection": 3,
-    "flags": [ "VARSIZE", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
+    "flags": [ "VARSIZE", "FIT", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   }
 ]

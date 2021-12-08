@@ -93,6 +93,7 @@
       "ATTACKMON",
       "NO_BREATHE",
       "REVIVES",
+      "PATH_AVOID_DANGER_1",
       "PUSH_MON",
       "PUSH_VEH",
       "FILTHY"
@@ -155,7 +156,19 @@
     ],
     "death_drops": "BL9_Drops_Clawer",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "NO_BREATHE", "REVIVES", "PUSH_MON", "FILTHY" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "POISON",
+      "NO_BREATHE",
+      "REVIVES",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON",
+      "FILTHY"
+    ]
   },
   {
     "id": "mon_BL9_assassin",
@@ -241,6 +254,7 @@
       "NO_BREATHE",
       "BONES",
       "NIGHT_INVISIBILITY",
+      "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
@@ -363,6 +377,7 @@
       "NO_BREATHE",
       "BONES",
       "NIGHT_INVISIBILITY",
+      "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
@@ -420,7 +435,20 @@
         "miss_msg_npc": "The %s swings it's limb at <npcname>, but they dodge!"
       }
     ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "GRABS", "PUSH_MON" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "BONES",
+      "GRABS",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
   },
   {
     "id": "mon_BL9_regen_spiky",
@@ -492,7 +520,20 @@
         "miss_msg_npc": "The %s impales <npcname>, but they dodge!"
       }
     ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "GRABS", "PUSH_MON" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "BONES",
+      "GRABS",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
   },
   {
     "id": "mon_BL9_chimera",
@@ -559,6 +600,7 @@
       "NO_BREATHE",
       "BONES",
       "NIGHT_INVISIBILITY",
+      "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
@@ -627,6 +669,7 @@
       "NO_BREATHE",
       "BONES",
       "NIGHT_INVISIBILITY",
+      "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
@@ -695,6 +738,7 @@
       "NO_BREATHE",
       "BONES",
       "NIGHT_INVISIBILITY",
+      "PATH_AVOID_DANGER_1",
       "PUSH_MON"
     ]
   },
@@ -767,6 +811,18 @@
         "monster_message": "<color_light_red>%1$s's head stretches then crunches at %3$s!</color>"
       }
     ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "PUSH_MON" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "NO_BREATHE",
+      "BONES",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ]
   }
 ]
