@@ -18,7 +18,7 @@
 		"ammo_type": "microfusion",
 		"casing": "micro_spent",
 		"range": 50,
-		"damage": { "damage_type": "cut", "amount": 80, "armor_penetration": 30 },
+		"damage": { "damage_type": "heat", "amount": 80, "armor_penetration": 30 },
 		"dispersion": 25,
 		"recoil": 1700,
 		"effects": [ "NEVER_MISFIRES", "COOKOFF", "PLASMA_BUBBLE", "LIGHTNING" ]
@@ -42,7 +42,7 @@
 		"ammo_type": "microfusion",
 		"casing": "micro_spent",
 		"range": 50,
-		"damage": { "damage_type": "cut", "amount": 100, "armor_penetration": 32 },
+		"damage": { "damage_type": "heat", "amount": 100, "armor_penetration": 32 },
 		"dispersion": 35,
 		"recoil": 2000,
 		"effects": [ "RECYCLED", "COOKOFF", "PLASMA_BUBBLE", "LIGHTNING" ]
@@ -66,7 +66,7 @@
 		"ammo_type": "laser_cell",
 		"casing": "energy_spent",
 		"range": 50,
-		"damage": { "damage_type": "cut", "amount": 30, "armor_penetration": 25 },
+		"damage": { "damage_type": "heat", "amount": 30, "armor_penetration": 25 },
 		"dispersion": 10,
 		"recoil": 0,
 		"effects": [ "NEVER_MISFIRES", "LASER", "DRAW_AS_LINE", "BLINDS_EYES", "NOGIB" ]
@@ -90,7 +90,7 @@
 		"ammo_type": "laser_cell",
 		"casing": "energy_spent",
 		"range": 50,
-		"damage": { "damage_type": "cut", "amount": 40, "armor_penetration": 30 },
+		"damage": { "damage_type": "heat", "amount": 40, "armor_penetration": 30 },
 		"dispersion": 20,
 		"recoil": 0,
 		"effects": [ "RECYCLED", "LASER", "DRAW_AS_LINE", "BLINDS_EYES", "NOGIB" ]
@@ -156,7 +156,7 @@
 		"ammo_type": "gauss_microfusion",
 		"casing": "micro_spent",
 		"range": 50,
-		"damage": { "damage_type": "cut", "amount": 110, "armor_penetration": 30 },
+		"damage": { "damage_type": "heat", "amount": 110, "armor_penetration": 30 },
 		"dispersion": 30,
 		"recoil": 2000,
 		"effects": [ "NEVER_MISFIRES", "COOKOFF", "PLASMA_BUBBLE", "LIGHTNING" ]
@@ -180,7 +180,7 @@
 		"ammo_type": "gauss_microfusion",
 		"casing": "micro_spent",
 		"range": 50,
-		"damage": { "damage_type": "cut", "amount": 130, "armor_penetration": 32 },
+		"damage": { "damage_type": "heat", "amount": 130, "armor_penetration": 32 },
 		"dispersion": 40,
 		"recoil": 2300,
 		"effects": [ "RECYCLED", "COOKOFF", "PLASMA_BUBBLE", "LIGHTNING" ]
