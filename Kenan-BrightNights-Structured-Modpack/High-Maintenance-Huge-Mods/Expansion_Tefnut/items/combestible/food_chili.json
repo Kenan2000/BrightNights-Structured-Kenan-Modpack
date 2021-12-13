@@ -68,7 +68,7 @@
     {
     "type": "COMESTIBLE",
     "id": "chiliburger",
-    "name": "chili burger",
+    "name": { "str": "chili burger" },
     "conditional_names": [
       { "type": "FLAG", "condition": "CANNIBALISM", "name": { "str": "chump %s", "str_pl": "chump %s" } },
       { "type": "COMPONENT_ID", "condition": "mutant", "name": { "str": "chilling burger", "str_pl": "chilling burgers" } }
