@@ -2,7 +2,7 @@
   {
     "type": "profession",
     "id": "sgs_civilian_p",
-    "name": { "str": "South Gate Civilian" },
+    "name": { "male": "South Gate Civilian", "female": "South Gate Civilian" },
     "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you.",
     "points": 0,
     "skills": [  ],
@@ -15,7 +15,7 @@
   {
     "type": "profession",
     "id": "red_civilian_p",
-    "name": { "str": "Red Line Civilian" },
+    "name": { "male": "Red Line Civilian", "female": "Red Line Civilian" },
     "description": "You are one of the citizens of the Red Line, a network of communist aligned stations in the New England Subway.",
     "points": 0,
     "skills": [  ],
@@ -28,7 +28,7 @@
   {
     "type": "profession",
     "id": "reich_civilian_p",
-    "name": { "str": "Reich Civilian" },
+    "name": { "male": "Reich Civilian", "female": "Reich Civilian" },
     "description": "You are one of the citizens of the 4th Reich, a network of national socialist aligned stations in the New England Subway.",
     "points": 0,
     "skills": [  ],
@@ -43,7 +43,7 @@
   {
     "type": "profession",
     "id": "sgs_guard_p",
-    "name": { "str": "South Gate Guard" },
+    "name": { "male": "South Gate Guard", "female": "South Gate Guard" },
     "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you, and you soon enlisted as a guard defending the frontiers of SGS against the hidden terrors of the Underrail.",
     "points": 3,
     "skills": [
@@ -73,7 +73,7 @@
   {
     "type": "profession",
     "id": "sgs_soldier_p",
-    "name": { "str": "South Gate Soldier" },
+    "name": { "male": "South Gate Soldier", "female": "South Gate Soldier" },
     "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. After becoming a guard, you worked your up through the ranks of SGS until you became a soldier.",
     "points": 5,
     "skills": [
@@ -106,7 +106,7 @@
   {
     "type": "profession",
     "id": "sgs_heavy_p",
-    "name": { "str": "South Gate Heavy Soldier" },
+    "name": { "male": "South Gate Heavy Soldier", "female": "South Gate Heavy Soldier" },
     "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. After becoming a guard, you worked your up through the ranks of SGS until you became a heavy trooper.",
     "points": 7,
     "skills": [
@@ -139,7 +139,7 @@
   {
     "type": "profession",
     "id": "sgs_crossbow_p",
-    "name": { "str": "South Gate Junker" },
+    "name": { "male": "South Gate Junker", "female": "South Gate Junker" },
     "description": "You were never content to just stay within the protective embrace of South Gate. You saw other citizens as being too cowardly, too afraid, too soft. You decided to buck their trend, traipsing throughout the underrail to make a name for yourself.",
     "points": 4,
     "skills": [
@@ -170,7 +170,7 @@
   {
     "type": "profession",
     "id": "sgs_aug_p",
-    "name": { "str": "South Gate Stalker" },
+    "name": { "male": "South Gate Stalker", "female": "South Gate Stalker" },
     "description": "You were never content to just stay within the protective embrace of South Gate. You saw other citizens as being too cowardly, too afraid, too soft. You were uniquely talented as a stalker, finding rare and valuable equipment in the Underrail.",
     "points": 7,
     "CBMs": [ "bio_targeting", "bio_fingerhack", "bio_climate", "bio_infrared", "bio_power_storage" ],
@@ -206,7 +206,7 @@
   {
     "type": "profession",
     "id": "sgs_tech_p",
-    "name": { "str": "South Gate Technician" },
+    "name": { "male": "South Gate Technician", "female": "South Gate Technician" },
     "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you. You had a natural aptitude for various mechanical and life support systems for South Gate Station, and took up training as a technician.",
     "points": 3,
     "skills": [
@@ -244,7 +244,7 @@
   {
     "type": "profession",
     "id": "sgs_computer_p",
-    "name": { "str": "South Gate Computer Technician" },
+    "name": { "male": "South Gate Computer Technician", "female": "South Gate Computer Technician" },
     "description": "Seeking refuge away from the maelstrom of pain that is the New England surface world, you decided to gain citizenship as a member of South Gate Station. Amazingly, they actually accepted you. After witnessing line upon line of code in the various consoles of SGS, you began to see a rythm to the apparently madness of programming. You became a well-respected member of South Gate Station's IT department.",
     "points": 3,
     "skills": [ { "level": 2, "name": "electronics" }, { "level": 4, "name": "computer" } ],
@@ -287,7 +287,7 @@
   {
     "type": "profession",
     "id": "met_redsoldier_p",
-    "name": { "str": "Red Line Soldier" },
+    "name": { "male": "Red Line Soldier", "female": "Red Line Soldier" },
     "description": "You are one of the soldiers of the Red Line, a network of communist aligned stations in the New England Subway.",
     "points": 4,
     "skills": [
@@ -320,7 +320,7 @@
   {
     "type": "profession",
     "id": "met_reichsoldier_p",
-    "name": { "str": "Reich Soldier" },
+    "name": { "male": "Reich Soldier", "female": "Reich Soldier" },
     "description": "You are one of the soldiers of the 4th Reich, a network of national socialist aligned stations in the New England Subway.",
     "points": 5,
     "skills": [
@@ -353,7 +353,7 @@
   {
     "type": "profession",
     "id": "met_reichofficer_p",
-    "name": { "str": "Reich Officer" },
+    "name": { "male": "Reich Officer", "female": "Reich Officer" },
     "description": "You are one of the officers of the 4th Reich, a network of national socialist aligned stations in the New England Subway.",
     "points": 5,
     "skills": [
@@ -385,7 +385,7 @@
   {
     "type": "profession",
     "id": "met_redofficer_p",
-    "name": { "str": "Red Line Officer" },
+    "name": { "male": "Red Line Officer", "female": "Red Line Officer" },
     "description": "You are one of the officers of the Red Line, a network of communist aligned stations in the New England Subway.",
     "points": 5,
     "skills": [
