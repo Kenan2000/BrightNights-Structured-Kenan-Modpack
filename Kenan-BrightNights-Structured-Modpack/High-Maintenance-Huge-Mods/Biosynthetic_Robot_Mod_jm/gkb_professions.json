@@ -7,7 +7,7 @@
     "points": 0,
     "skills": [ { "level": 2, "name": "speech" }, { "level": 1, "name": "barter" } ],
     "items": {
-      "both": { "entries": [ { "item": "cash_card", "charges": 5000 }, { "group": "charged_cell_phone" } ] },
+      "both": { "items": [ "smart_phone" ], "entries": [ { "item": "cash_card", "charges": 5000 } ] },
       "male": [ "briefs", "socks", "pants", "dress_shirt", "blazer", "dress_shoes" ],
       "female": [ "bra", "panties", "stockings", "skirt", "heels", "dress_shirt" ]
     }
@@ -20,9 +20,9 @@
     "points": 1,
     "skills": [ { "level": 2, "name": "electronics" }, { "level": 1, "name": "computer" } ],
     "items": {
-      "both": { "entries": [ { "group": "charged_cell_phone" } ] },
-      "male": [ "briefs", "socks", "lowtops", "shorts", "dress_shirt", "multitool", "fanny" ],
-      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "dress_shirt", "multitool", "fanny" ]
+      "both": { "items": [ "multitool", "fanny", "smart_phone" ] },
+      "male": [ "briefs", "socks", "lowtops", "shorts", "dress_shirt" ],
+      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "dress_shirt" ]
     }
   },
   {
@@ -33,9 +33,9 @@
     "points": 2,
     "skills": [ { "level": 2, "name": "electronics" }, { "level": 1, "name": "computer" } ],
     "items": {
-      "both": { "entries": [ { "group": "charged_cell_phone" } ] },
-      "male": [ "briefs", "socks", "lowtops", "shorts", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ],
-      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ]
+      "both": { "items": [ "multitool", "dep_gkb_utbot_box", "smart_phone" ] },
+      "male": [ "briefs", "socks", "lowtops", "shorts", "tshirt", "hoodie" ],
+      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "tshirt", "hoodie" ]
     }
   },
   {
@@ -47,9 +47,9 @@
     "CBMs": [ "bio_batteries", "bio_power_storage", "bio_watch", "bio_alarm", "bio_lighter" ],
     "skills": [ { "level": 2, "name": "electronics" }, { "level": 1, "name": "computer" } ],
     "items": {
-      "both": { "entries": [ { "group": "charged_cell_phone" } ] },
-      "male": [ "briefs", "socks", "lowtops", "shorts", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ],
-      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "tshirt", "hoodie", "multitool", "dep_gkb_utbot_box" ]
+      "both": { "items": [ "multitool", "dep_gkb_utbot_box", "smart_phone" ] },
+      "male": [ "briefs", "socks", "lowtops", "shorts", "tshirt", "hoodie" ],
+      "female": [ "bra", "panties", "socks", "skirt", "lowtops", "tshirt", "hoodie" ]
     }
   },
   {
@@ -79,8 +79,8 @@
     ],
     "items": {
       "both": {
+        "items": [ "kevlar", "slingpack", "multitool", "gkb_chi_powarmor_helmet", "smart_phone" ],
         "entries": [
-          { "group": "charged_cell_phone" },
           { "item": "knife_combat", "container-item": "sheath" },
           { "item": "chestrig", "contents-group": "army_mags_mp5" },
           { "item": "9mm", "charges": 25 },
@@ -92,19 +92,8 @@
           }
         ]
       },
-      "male": [ "briefs", "socks", "boots", "dress_shirt", "kevlar", "slingpack", "multitool", "gkb_chi_powarmor_helmet" ],
-      "female": [
-        "bra",
-        "panties",
-        "stockings",
-        "skirt",
-        "boots",
-        "dress_shirt",
-        "kevlar",
-        "slingpack",
-        "multitool",
-        "gkb_chi_powarmor_helmet"
-      ]
+      "male": [ "briefs", "socks", "boots", "dress_shirt" ],
+      "female": [ "bra", "panties", "stockings", "skirt", "boots", "dress_shirt" ]
     }
   },
   {
@@ -122,43 +111,16 @@
     ],
     "items": {
       "both": {
+        "items": [ "multitool", "knife_folding", "slingpack", "oil_cooker", "matches", "smart_phone" ],
         "entries": [
-          { "group": "charged_cell_phone" },
           { "item": "22_lr", "charges": 25 },
           { "item": "22_ratshot", "charges": 8 },
           { "item": "bp_22_lr", "charges": 16 },
           { "item": "moss_brownie", "ammo-item": "22_lr", "charges": 4 }
         ]
       },
-      "male": [
-        "briefs",
-        "socks",
-        "sneakers",
-        "pants_cargo",
-        "tshirt",
-        "hoodie",
-        "multitool",
-        "knife_folding",
-        "slingpack",
-        "oil_cooker",
-        "hat_cotton",
-        "matches"
-      ],
-      "female": [
-        "bra",
-        "panties",
-        "socks",
-        "pants_cargo",
-        "sneakers",
-        "tshirt",
-        "hoodie",
-        "multitool",
-        "knife_folding",
-        "slingpack",
-        "oil_cooker",
-        "hat_cotton",
-        "matches"
-      ]
+      "male": [ "briefs", "socks", "sneakers", "pants_cargo", "tshirt", "hoodie", "hat_cotton" ],
+      "female": [ "bra", "panties", "socks", "pants_cargo", "sneakers", "tshirt", "hoodie", "hat_cotton" ]
     }
   }
 ]

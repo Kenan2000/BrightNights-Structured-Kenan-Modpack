@@ -7,9 +7,12 @@
     "points": 0,
     "skills": [  ],
     "items": {
-      "both": { "entries": [ { "group": "charged_cell_phone" }, { "item": "sgs_idticketcard" }, { "group": "charged_flashlight" } ] },
-      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "wristwatch", "hoodie", "socks" ],
-      "female": [ "bra", "panties", "hoodie", "pants", "boots", "tshirt", "wristwatch", "socks" ]
+      "both": {
+        "items": [ "wristwatch", "smart_phone" ],
+        "entries": [ { "item": "sgs_idticketcard" }, { "group": "charged_flashlight" } ]
+      },
+      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "hoodie", "socks" ],
+      "female": [ "bra", "panties", "hoodie", "pants", "boots", "tshirt", "socks" ]
     }
   },
   {
@@ -20,9 +23,12 @@
     "points": 0,
     "skills": [  ],
     "items": {
-      "both": { "entries": [ { "group": "charged_cell_phone" }, { "item": "red_idticketcard" }, { "group": "charged_flashlight" } ] },
-      "male": [ "boxer_shorts", "pants_army", "boots", "tshirt", "wristwatch", "coat_winter", "metro_redfur", "socks" ],
-      "female": [ "bra", "panties", "tshirt", "coat_winter", "pants_army", "boots", "wristwatch", "metro_redfur", "socks" ]
+      "both": {
+        "items": [ "wristwatch", "smart_phone" ],
+        "entries": [ { "item": "red_idticketcard" }, { "group": "charged_flashlight" } ]
+      },
+      "male": [ "boxer_shorts", "pants_army", "boots", "tshirt", "coat_winter", "metro_redfur", "socks" ],
+      "female": [ "bra", "panties", "tshirt", "coat_winter", "pants_army", "boots", "metro_redfur", "socks" ]
     }
   },
   {
@@ -34,10 +40,11 @@
     "skills": [  ],
     "items": {
       "both": {
-        "entries": [ { "group": "charged_cell_phone" }, { "item": "reich_idticketcard" }, { "group": "charged_flashlight" } ]
+        "items": [ "wristwatch", "smart_phone" ],
+        "entries": [ { "item": "reich_idticketcard" }, { "group": "charged_flashlight" } ]
       },
-      "male": [ "boxer_shorts", "pants_army", "boots", "tshirt", "wristwatch", "sweater", "socks" ],
-      "female": [ "bra", "panties", "tshirt", "sweater", "boots", "wristwatch", "skirt", "socks" ]
+      "male": [ "boxer_shorts", "pants_army", "boots", "tshirt", "sweater", "socks" ],
+      "female": [ "bra", "panties", "tshirt", "sweater", "boots", "skirt", "socks" ]
     }
   },
   {
@@ -55,9 +62,9 @@
     ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "smart_phone" ],
         "entries": [
           { "item": "knife_combat", "container-item": "sheath" },
-          { "group": "charged_cell_phone" },
           { "item": "sgs_idticketcard" },
           { "group": "charged_flashlight" },
           { "item": "sgs5mag", "ammo-item": "sgs5_b", "charges": 20 },
@@ -66,8 +73,8 @@
           { "item": "sgs_hawker", "ammo-item": "sgs5_b", "charges": 20, "container-item": "holster" }
         ]
       },
-      "male": [ "boxer_shorts", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack" ],
-      "female": [ "bra", "panties", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack" ]
+      "male": [ "boxer_shorts", "sgs_jacket", "socks", "boots", "sgs_secvest" ],
+      "female": [ "bra", "panties", "sgs_jacket", "socks", "boots", "sgs_secvest" ]
     }
   },
   {
@@ -87,9 +94,9 @@
     ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "helmet_army", "smart_phone" ],
         "entries": [
           { "item": "knife_combat", "container-item": "sheath" },
-          { "group": "charged_cell_phone" },
           { "group": "charged_flashlight" },
           { "item": "sgs_idticketcard" },
           { "item": "sgs_hawker", "ammo-item": "sgs5_b", "charges": 20, "container-item": "holster" },
@@ -99,8 +106,8 @@
           { "item": "sgs_hornet", "ammo-item": "556", "charges": 30 }
         ]
       },
-      "male": [ "boxer_shorts", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "helmet_army" ],
-      "female": [ "bra", "panties", "sgs_jacket", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "helmet_army" ]
+      "male": [ "boxer_shorts", "sgs_jacket", "socks", "boots", "sgs_secvest" ],
+      "female": [ "bra", "panties", "sgs_jacket", "socks", "boots", "sgs_secvest" ]
     }
   },
   {
@@ -120,9 +127,9 @@
     ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "sgs_metal_helmet", "smart_phone" ],
         "entries": [
           { "item": "knife_combat", "container-item": "sheath" },
-          { "group": "charged_cell_phone" },
           { "group": "charged_flashlight" },
           { "item": "sgs_idticketcard" },
           { "item": "sgs_hawker", "ammo-item": "sgs5_b", "charges": 20, "container-item": "holster" },
@@ -132,8 +139,8 @@
           { "item": "sgs_marauder", "ammo-item": "sgs86_b", "charges": 25 }
         ]
       },
-      "male": [ "boxer_shorts", "sgs_metal_armor", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "sgs_metal_helmet" ],
-      "female": [ "bra", "panties", "sgs_metal_armor", "socks", "boots", "sgs_secvest", "wristwatch", "slingpack", "sgs_metal_helmet" ]
+      "male": [ "boxer_shorts", "sgs_metal_armor", "socks", "boots", "sgs_secvest" ],
+      "female": [ "bra", "panties", "sgs_metal_armor", "socks", "boots", "sgs_secvest" ]
     }
   },
   {
@@ -155,16 +162,16 @@
     ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "multitool", "smart_phone" ],
         "entries": [
-          { "group": "charged_cell_phone" },
           { "group": "charged_flashlight" },
           { "item": "sgs_idticketcard" },
           { "item": "bolt_metal", "charges": 20 },
           { "item": "sgs_zephyr", "charges": 1, "contents-item": "shoulder_strap" }
         ]
       },
-      "male": [ "boxer_shorts", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ],
-      "female": [ "bra", "panties", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ]
+      "male": [ "boxer_shorts", "sgs_leatherjacket", "socks", "boots", "pants_cargo" ],
+      "female": [ "bra", "panties", "sgs_leatherjacket", "socks", "boots", "pants_cargo" ]
     }
   },
   {
@@ -188,8 +195,8 @@
     ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "multitool", "smart_phone" ],
         "entries": [
-          { "group": "charged_cell_phone" },
           { "group": "charged_flashlight" },
           { "item": "sgs_idticketcard" },
           { "item": "sgs_jackrabbit", "ammo-item": "sgs5_b", "charges": 30, "container-item": "holster" },
@@ -199,8 +206,8 @@
           { "item": "sgs_jackrabbit_mag", "ammo-item": "sgs5_b", "charges": 30 }
         ]
       },
-      "male": [ "boxer_shorts", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ],
-      "female": [ "bra", "panties", "sgs_leatherjacket", "socks", "boots", "wristwatch", "slingpack", "multitool", "pants_cargo" ]
+      "male": [ "boxer_shorts", "sgs_leatherjacket", "socks", "boots", "pants_cargo" ],
+      "female": [ "bra", "panties", "sgs_leatherjacket", "socks", "boots", "pants_cargo" ]
     }
   },
   {
@@ -217,28 +224,16 @@
     ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "multitool", "smart_phone" ],
         "entries": [
           { "item": "goggles_welding", "custom-flags": [ "no_auto_equip" ] },
           { "item": "wrench", "container-item": "tool_belt" },
-          { "group": "charged_cell_phone" },
           { "item": "sgs_idticketcard" },
           { "group": "charged_flashlight" }
         ]
       },
-      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "wristwatch", "hoodie", "socks", "multitool", "slingpack", "gloves_work" ],
-      "female": [
-        "bra",
-        "panties",
-        "hoodie",
-        "pants",
-        "boots",
-        "tshirt",
-        "wristwatch",
-        "socks",
-        "multitool",
-        "slingpack",
-        "gloves_work"
-      ]
+      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "hoodie", "socks", "gloves_work" ],
+      "female": [ "bra", "panties", "hoodie", "pants", "boots", "tshirt", "socks", "gloves_work" ]
     }
   },
   {
@@ -250,38 +245,15 @@
     "skills": [ { "level": 2, "name": "electronics" }, { "level": 4, "name": "computer" } ],
     "items": {
       "both": {
+        "items": [ "wristwatch", "slingpack", "multitool", "soldering_iron", "smart_phone" ],
         "entries": [
           { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "eink_tablet_pc" },
           { "item": "sgs_idticketcard" },
-          { "group": "charged_cell_phone" },
           { "group": "charged_flashlight" }
         ]
       },
-      "male": [
-        "boxer_shorts",
-        "pants",
-        "boots",
-        "tshirt",
-        "wristwatch",
-        "hoodie",
-        "socks",
-        "multitool",
-        "slingpack",
-        "soldering_iron"
-      ],
-      "female": [
-        "bra",
-        "panties",
-        "hoodie",
-        "pants",
-        "boots",
-        "tshirt",
-        "wristwatch",
-        "socks",
-        "multitool",
-        "slingpack",
-        "soldering_iron"
-      ]
+      "male": [ "boxer_shorts", "pants", "boots", "tshirt", "hoodie", "socks" ],
+      "female": [ "bra", "panties", "hoodie", "pants", "boots", "tshirt", "socks" ]
     }
   },
   {
