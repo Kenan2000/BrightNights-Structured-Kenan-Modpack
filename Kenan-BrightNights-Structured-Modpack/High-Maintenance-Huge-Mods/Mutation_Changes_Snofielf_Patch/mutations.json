@@ -238,7 +238,6 @@
     "prereqs": [ "FEATHERS" ],
     "prereqs2": [ "TALONS" ],
     "restricts_gear": [ "foot_l", "foot_r" ],
-    "destroys_gear": true,
     "armor": [ { "parts": [ "foot_l", "foot_r", "leg_l", "leg_r", "hand_r", "hand_l", "arm_l", "arm_r" ], "cut": 2, "bash": 2 } ],
     "passive_mods": { "dex_mod": 3 },
     "attacks": {
@@ -633,7 +632,6 @@
     "leads_to": [ "CHIMERA_BODY" ],
     "wet_protection": [ { "part": "foot_r", "neutral": 10 } ],
     "restricts_gear": [ "foot_l", "foot_r" ],
-    "destroys_gear": true,
     "armor": [ { "parts": [ "foot_l", "foot_r" ], "bash": 6, "cut": 6 } ],
     "attacks": [
       {
