@@ -39,12 +39,12 @@
     "id": "NC_REDMGUN_SHOPKEEP_misc",
     "subtype": "collection",
     "items": [
-      { "group": "metro_item_firearms_loot", "prob": 80, "repeat": [ 2, 4 ] },
-      { "group": "metro_ammo_pistol_item", "prob": 80, "repeat": [ 1, 4 ] },
-      { "group": "metro_pistolmag_item", "prob": 80, "repeat": [ 1, 4 ] },
-      { "group": "metro_ammo_rifle_item", "prob": 80, "repeat": [ 2, 5 ] },
-      { "group": "metro_riflemag_item", "prob": 80, "repeat": [ 1, 3 ] },
-      { "group": "metro_item_redarmor", "prob": 80, "repeat": [ 1, 2 ] }
+      { "group": "metro_item_firearms_loot", "prob": 80, "count": [ 2, 4 ] },
+      { "group": "metro_ammo_pistol_item", "prob": 80, "count": [ 1, 4 ] },
+      { "group": "metro_pistolmag_item", "prob": 80, "count": [ 1, 4 ] },
+      { "group": "metro_ammo_rifle_item", "prob": 80, "count": [ 2, 5 ] },
+      { "group": "metro_riflemag_item", "prob": 80, "count": [ 1, 3 ] },
+      { "group": "metro_item_redarmor", "prob": 80, "count": [ 1, 2 ] }
     ]
   },
   {

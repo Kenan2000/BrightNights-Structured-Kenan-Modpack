@@ -101,9 +101,9 @@
     "id": "NC_REICHS_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "cannedfood", "repeat": [ 1, 2 ] },
-      { "group": "drugs_heal_simple", "repeat": [ 1, 6 ] },
-      { "item": "545", "prob": 75, "repeat": [ 1, 2 ] },
+      { "group": "cannedfood", "count": [ 1, 2 ] },
+      { "group": "drugs_heal_simple", "count": [ 1, 6 ] },
+      { "item": "545", "prob": 75, "count": [ 1, 2 ] },
       { "item": "545_ap", "prob": 50 },
       { "item": "reloaded_545", "prob": 30 },
       { "item": "44fmj", "prob": 15 },
