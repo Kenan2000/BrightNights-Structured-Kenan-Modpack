@@ -175,13 +175,13 @@
     "//": "explosives/incendiaries for adv weapon caches",
     "subtype": "distribution",
     "entries": [
-      { "item": "bot_grenade_hack", "prob": 100, "count-min": 1, "count-max": 2 },
-      { "item": "bot_manhack", "prob": 100, "count-min": 1, "count-max": 2 },
+      { "item": "bot_grenade_hack", "prob": 100, "count": [ 1, 2 ] },
+      { "item": "bot_manhack", "prob": 100, "count": [ 1, 2 ] },
       { "item": "bot_c4_hack", "prob": 100 },
-      { "item": "grenade", "prob": 100, "count-min": 1, "count-max": 3 },
-      { "item": "EMPbomb", "prob": 100, "count-min": 1, "count-max": 2 },
-      { "item": "tool_black_powder_charge", "prob": 100, "count-min": 1, "count-max": 3 },
-      { "item": "molotov", "prob": 100, "count-min": 1, "count-max": 3 }
+      { "item": "grenade", "prob": 100, "count": [ 1, 3 ] },
+      { "item": "EMPbomb", "prob": 100, "count": [ 1, 2 ] },
+      { "item": "tool_black_powder_charge", "prob": 100, "count": [ 1, 3 ] },
+      { "item": "molotov", "prob": 100, "count": [ 1, 3 ] }
     ]
   },
   {

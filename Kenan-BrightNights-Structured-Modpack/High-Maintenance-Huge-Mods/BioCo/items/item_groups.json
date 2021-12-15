@@ -25,9 +25,9 @@
     "id": "BioCo_Components",
     "subtype": "collection",
     "items": [
-      { "item": "Pristine_Bionic_Components", "count-min": 1, "count-max": 3, "prob": 25 },
-      { "item": "BioCo_Crude_Chemical_Precursor", "count-min": 1, "count-max": 3, "prob": 25 },
-      { "item": "BioCo_Chemical_Precursor", "count-min": 1, "count-max": 2, "prob": 5 },
+      { "item": "Pristine_Bionic_Components", "count": [ 1, 3 ], "prob": 25 },
+      { "item": "BioCo_Crude_Chemical_Precursor", "count": [ 1, 3 ], "prob": 25 },
+      { "item": "BioCo_Chemical_Precursor", "count": [ 1, 2 ], "prob": 5 },
       { "item": "BioCo_Fine_Chemical_Precursor", "prob": 1 }
     ]
   },

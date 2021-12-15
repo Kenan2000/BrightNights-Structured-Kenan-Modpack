@@ -134,23 +134,23 @@
     "id": "sgs_lockerloot",
     "subtype": "collection",
     "entries": [
-      { "group": "sgs_item_firearms_loot", "chance": 5 },
-      { "group": "sgs_ammo_pistol_item", "chance": 5 },
-      { "group": "sgs_ammo_rifle_item", "chance": 5 },
-      { "group": "sgs_item_armor", "count": [ 1, 2 ], "chance": 5 },
-      { "group": "sgs_credits", "count": [ 3, 5 ], "chance": 30 },
-      { "group": "sgs_item_crossbow_loot", "chance": 5 },
-      { "group": "hospital_medical_items", "count": [ 1, 2 ], "chance": 15 },
-      { "group": "stash_food", "count": [ 2, 4 ], "chance": 30 },
-      { "group": "swat_gear", "chance": 10 },
-      { "group": "gear_medical", "count": [ 1, 2 ], "chance": 25 },
-      { "group": "livingroom", "count": [ 1, 4 ], "chance": 35 },
-      { "group": "sgs_item_meleedrop", "count": [ 1, 2 ], "chance": 15 },
-      { "group": "light_reading", "chance": 10 },
-      { "group": "textbooks_school", "chance": 10 },
-      { "group": "file_room", "chance": 10 },
-      { "group": "allclothes", "chance": 25, "count": [ 3, 7 ] },
-      { "group": "dresser", "chance": 10, "count": [ 2, 5 ] }
+      { "group": "sgs_item_firearms_loot", "prob": 5 },
+      { "group": "sgs_ammo_pistol_item", "prob": 5 },
+      { "group": "sgs_ammo_rifle_item", "prob": 5 },
+      { "group": "sgs_item_armor", "count": [ 1, 2 ], "prob": 5 },
+      { "group": "sgs_credits", "count": [ 3, 5 ], "prob": 30 },
+      { "group": "sgs_item_crossbow_loot", "prob": 5 },
+      { "group": "hospital_medical_items", "count": [ 1, 2 ], "prob": 15 },
+      { "group": "stash_food", "count": [ 2, 4 ], "prob": 30 },
+      { "group": "swat_gear", "prob": 10 },
+      { "group": "gear_medical", "count": [ 1, 2 ], "prob": 25 },
+      { "group": "livingroom", "count": [ 1, 4 ], "prob": 35 },
+      { "group": "sgs_item_meleedrop", "count": [ 1, 2 ], "prob": 15 },
+      { "group": "light_reading", "prob": 10 },
+      { "group": "textbooks_school", "prob": 10 },
+      { "group": "file_room", "prob": 10 },
+      { "group": "allclothes", "prob": 25, "count": [ 3, 7 ] },
+      { "group": "dresser", "prob": 10, "count": [ 2, 5 ] }
     ]
   },
   {
@@ -158,10 +158,10 @@
     "id": "sgs_bolts_item",
     "subtype": "collection",
     "entries": [
-      { "item": "bolt_metal", "count": [ 35, 70 ], "chance": 65 },
-      { "item": "bolt_steel", "count": [ 25, 70 ], "chance": 45 },
-      { "item": "bolt_steel_bodkin", "count": [ 15, 45 ], "chance": 35 },
-      { "item": "bolt_cf", "count": [ 2, 10 ], "chance": 25 }
+      { "item": "bolt_metal", "count": [ 35, 70 ], "prob": 65 },
+      { "item": "bolt_steel", "count": [ 25, 70 ], "prob": 45 },
+      { "item": "bolt_steel_bodkin", "count": [ 15, 45 ], "prob": 35 },
+      { "item": "bolt_cf", "count": [ 2, 10 ], "prob": 25 }
     ]
   }
 ]

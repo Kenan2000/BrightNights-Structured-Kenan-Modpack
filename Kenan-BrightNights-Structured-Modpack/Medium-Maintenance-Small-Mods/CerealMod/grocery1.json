@@ -144,7 +144,7 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-      { "item": "egg_bird", "prob": 65, "count-min": 6, "count-max": 12 },
+      { "item": "egg_bird", "prob": 65, "count": [ 6, 12 ] },
       { "item": "milk", "prob": 80 },
       { "item": "cheese", "prob": 60 },
       { "item": "yoghurt", "prob": 40 },

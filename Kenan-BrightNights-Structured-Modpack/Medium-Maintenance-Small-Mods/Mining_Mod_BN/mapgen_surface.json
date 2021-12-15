@@ -9,7 +9,7 @@
     "id": "rubble_fake",
     "type": "item_group",
     "//": "Unable to both randomly placed rubble and ensure rocks spawn underneath.",
-    "items": [ { "item": "rock", "prob": 100, "count-min": 1, "count-max": 3 } ]
+    "items": [ { "item": "rock", "prob": 100, "count": [ 1, 3 ] } ]
   },
   {
     "type": "mapgen",
