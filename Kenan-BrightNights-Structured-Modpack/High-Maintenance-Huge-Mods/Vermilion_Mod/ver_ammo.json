@@ -1,10 +1,10 @@
-  [
+[
   {
     "id": "145x114mm",
     "type": "AMMO",
     "name": { "str": "14.5x114mm", "str_pl": "14.5x114mm" },
     "description": "A large proprietary cartridge for the PTRS-41 anti-tank rifle. Packs a hell of a punch, but it has limited use.",
-    "weight": 120,
+    "weight": "120 g",
     "volume": "250 ml",
     "price": "25 USD",
     "material": [ "brass", "powder" ],
@@ -24,26 +24,26 @@
     "id": "reloaded_145x114mm",
     "copy-from": "145x114mm",
     "type": "AMMO",
-    "name": "reloaded 14.5x114mm",
+    "name": { "str": "reloaded 14.5x114mm" },
     "description": "A large proprietary cartridge for the PTRS-41 anti-tank rifle. Packs a hell of a punch, but it has limited use. This one has been hand-reloaded.",
     "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
-   {
+  {
     "id": "145x114mm_casing",
     "copy-from": "casing",
     "type": "GENERIC",
-    "name": "14.5x114mm casing",
+    "name": { "str": "14.5x114mm casing" },
     "description": "A large, empty casing from a 14.5x114mm round.",
-    "weight": 19,
-    "volume": "12ml"
+    "weight": "17 g",
+    "volume": "12 ml"
   },
   {
     "id": "e_rail",
     "type": "AMMO",
-    "name": "explosive rail",
+    "name": { "str": "explosive rail" },
     "description": "A short piece of ferromagnetic rebar which has been straightened. A small, crude RDX-filled warhead has been installed on the tip, causing a small explosion on impact. Could be used as a projectile by a sufficiently powerful electromagnetic weapon.",
-    "weight": 812,
+    "weight": "810 g",
     "volume": "250 ml",
     "price": "15 USD",
     "to_hit": -2,
@@ -57,10 +57,7 @@
     "damage": { "damage_type": "stab", "amount": 85, "armor_penetration": 5 },
     "dispersion": 205,
     "effects": [ "RECYCLED", "CUSTOM_EXPLOSION" ],
-	"explode_in_fire" : true,
-        "explosion" : {
-            "power": 11,
-            "distance_factor": 0.3
+    "explode_in_fire": true,
+    "explosion": { "power": 11, "distance_factor": 0.3 }
   }
-  }
-  ]
+]
