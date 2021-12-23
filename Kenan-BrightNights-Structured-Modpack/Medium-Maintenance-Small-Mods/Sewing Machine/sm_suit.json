@@ -35,7 +35,7 @@
     "category": "CC_ARMOR",
     "components": [
       [ [ "bone", 40 ], [ "bone_human", 40 ], [ "bone_tainted", 80 ] ],
-      [ [ "leather", 12 ], [ "tanned_hide", 2 ], [ "fur", 12 ], [ "tanned_pelt", 2 ] ]
+      [ [ "leather", 12 ], [ "fur", 12 ] ]
     ],
     "difficulty": 6,
     "id_suffix": "sm",
@@ -50,7 +50,7 @@
   {
     "autolearn": true,
     "category": "CC_ARMOR",
-    "components": [ [ [ "fur", 48 ], [ "tanned_pelt", 8 ] ] ],
+    "components": [ [ [ "fur", 48 ] ] ],
     "difficulty": 5,
     "id_suffix": "sm",
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 } ],
@@ -65,7 +65,7 @@
     "//": "Whilst the trenchcoat needs 6 skill this'll need at least 4.",
     "autolearn": true,
     "category": "CC_ARMOR",
-    "components": [ [ [ "leather", 30 ], [ "tanned_hide", 5 ], [ "fur", 30 ], [ "tanned_pelt", 5 ] ] ],
+    "components": [ [ [ "leather", 30 ], [ "fur", 30 ] ] ],
     "difficulty": 5,
     "id_suffix": "sm",
     "qualities": [ { "id": "CUT", "level": 2 }, { "id": "SEW", "level": 2 } ],
@@ -85,7 +85,7 @@
       [ [ "ragpouch", 1 ], [ "leather_pouch", 1 ], [ "dump_pouch", 1 ], [ "fanny", 1 ] ],
       [ [ "tool_belt", 1 ], [ "legrig", 1 ] ],
       [ [ "pants_cargo", 1 ], [ "pants_army", 1 ] ],
-      [ [ "leather", 24 ], [ "tanned_hide", 4 ] ]
+      [ [ "leather", 24 ] ]
     ],
     "difficulty": 5,
     "id_suffix": "sm",
@@ -154,7 +154,7 @@
     "autolearn": true,
     "book_learn": [ [ "textbook_survival", 1 ], [ "survival_book", 1 ] ],
     "category": "CC_ARMOR",
-    "components": [ [ [ "fur", 15 ], [ "tanned_pelt", 3 ] ] ],
+    "components": [ [ [ "fur", 15 ] ] ],
     "difficulty": 2,
     "id_suffix": "sm",
     "qualities": [ { "id": "SEW", "level": 2 } ],
@@ -170,7 +170,7 @@
   {
     "autolearn": true,
     "category": "CC_ARMOR",
-    "components": [ [ [ "leather", 20 ], [ "tanned_hide", 3 ] ] ],
+    "components": [ [ [ "leather", 20 ] ] ],
     "difficulty": 3,
     "id_suffix": "sm",
     "qualities": [ { "id": "SEW", "level": 2 } ],
@@ -304,7 +304,7 @@
     "category": "CC_ARMOR",
     "components": [
       [ [ "rag", 20 ] ],
-      [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
+      [ [ "leather", 20 ] ],
       [ [ "steel_chunk", 4 ], [ "scrap", 12 ] ],
       [ [ "coat_rain", 1 ] ],
       [
@@ -412,7 +412,7 @@
     "category": "CC_ARMOR",
     "components": [
       [ [ "rag", 20 ] ],
-      [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
+      [ [ "leather", 20 ] ],
       [ [ "coat_rain", 1 ] ],
       [
         [ "chestrig", 1 ],
@@ -560,8 +560,8 @@
     "category": "CC_ARMOR",
     "components": [
       [ [ "rag", 10 ] ],
-      [ [ "leather", 20 ], [ "tanned_hide", 4 ] ],
-      [ [ "fur", 20 ], [ "tanned_pelt", 3 ] ],
+      [ [ "leather", 20 ] ],
+      [ [ "fur", 20 ] ],
       [ [ "coat_rain", 1 ] ],
       [
         [ "chestrig", 1 ],
@@ -594,7 +594,7 @@
     "category": "CC_ARMOR",
     "components": [
       [ [ "rag", 30 ] ],
-      [ [ "leather", 40 ], [ "tanned_hide", 7 ] ],
+      [ [ "leather", 40 ] ],
       [ [ "scrap", 8 ] ],
       [ [ "coat_rain", 2 ] ],
       [

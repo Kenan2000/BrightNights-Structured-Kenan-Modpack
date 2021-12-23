@@ -1,29 +1,5 @@
 [
   {
-    "id": "veggy_tainted_tanning_hide",
-    "type": "TOOL",
-    "category": "spare_parts",
-    "name": { "str": "mushroom skin (tanned)", "str_pl": "mushroom skins (tanned)" },
-    "description": "We applied chemical treatment to leather-like fibers so that they could be used as materials. By using it, the skin can be expanded and used for other purposes.",
-    "weight": 400,
-    "volume": "1 L",
-    "price": 0,
-    "to_hit": -2,
-    "material": [ "veggy", "leather" ],
-    "symbol": ",",
-    "color": "brown",
-    "use_action": {
-      "target": "tanned_hide",
-      "msg": "I've made up my mind to feel good. This would work just like animal leather.",
-      "moves": 150,
-      "type": "delayed_transform",
-      "transform_age": 28800,
-      "not_ready_msg": "The skin is not finished yet.",
-      "//": "2 days"
-    },
-    "flags": [ "NO_SALVAGE" ]
-  },
-  {
     "id": "sphagnum_mushroom",
     "type": "COMESTIBLE",
     "comestible_type": "MED",

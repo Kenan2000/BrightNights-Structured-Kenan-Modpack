@@ -1,32 +1,6 @@
 [
   {
     "type": "recipe",
-    "result": "veggy_tainted_tanning_hide",
-    "category": "CC_OTHER",
-    "subcategory": "CSC_OTHER_MATERIALS",
-    "skill_used": "survival",
-    "skills_required": [ "cooking", 2 ],
-    "difficulty": 3,
-    "time": 48000,
-    "batch_time_factors": [ 83, 3 ],
-    "autolearn": true,
-    "qualities": [
-      { "id": "CUT", "level": 1 },
-      { "id": "COOK", "level": 2 },
-      { "id": "BOIL", "level": 1 },
-      { "id": "CONTAIN", "level": 1 }
-    ],
-    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
-    "components": [
-      [ [ "water_clean", 2 ], [ "water", 2 ], [ "plant_sac", 2 ] ],
-      [ [ "tanbark", 1 ], [ "acorns", 2 ], [ "hops", 2 ], [ "pine_bough", 6 ], [ "plant_sac", 4 ] ],
-      [ [ "salt_water", 2 ], [ "saline", 10 ], [ "salt", 10 ], [ "veggy_juice_tainted", 5 ] ],
-      [ [ "tallow", 1 ], [ "tallow_tainted", 1 ], [ "lard", 1 ], [ "plant_sac", 2 ] ],
-      [ [ "plant_sac", 10 ], [ "veggy_tainted", 10 ] ]
-    ]
-  },
-  {
-    "type": "recipe",
     "result": "mushroom_stick",
     "category": "CC_WEAPON",
     "subcategory": "CSC_WEAPON_BASHING",

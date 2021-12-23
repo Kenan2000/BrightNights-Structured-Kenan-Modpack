@@ -39,7 +39,7 @@
     "time": 48000,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "manual_tailor", 5 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 20 ] ],
-    "components": [ [ [ "leather", 20 ], [ "tanned_hide", 3 ] ] ]
+    "components": [ [ [ "leather", 20 ] ] ]
   },
   {
     "result": "jumpsuit_xlleather",
@@ -51,7 +51,7 @@
     "time": 86000,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "manual_tailor", 5 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 40 ] ],
-    "components": [ [ [ "leather", 30 ], [ "tanned_hide", 5 ] ] ]
+    "components": [ [ [ "leather", 30 ] ] ]
   },
   {
     "result": "jumpsuit_xlleather",
@@ -102,7 +102,7 @@
     "time": 54000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 30 ] ],
-    "components": [ [ [ "leather", 22 ], [ "tanned_hide", 4 ], [ "fur", 22 ], [ "tanned_pelt", 4 ] ] ]
+    "components": [ [ [ "leather", 22 ], [ "fur", 22 ] ] ]
   },
   {
     "result": "gauntlets_xllarmor",
@@ -114,7 +114,7 @@
     "time": 63000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 25 ] ],
-    "components": [ [ [ "leather", 13 ], [ "tanned_hide", 2 ], [ "fur", 13 ], [ "tanned_pelt", 2 ] ] ]
+    "components": [ [ [ "leather", 14 ], [ "fur", 14 ] ] ]
   },
   {
     "result": "gloves_xlleather",
@@ -139,7 +139,7 @@
     "time": 64500,
     "autolearn": true,
     "using": [ [ "sewing_standard", 39 ] ],
-    "components": [ [ [ "leather", 34 ], [ "tanned_hide", 6 ], [ "fur", 34 ], [ "tanned_pelt", 6 ] ] ]
+    "components": [ [ [ "leather", 34 ], [ "fur", 34 ] ] ]
   },
   {
     "result": "armor_xlscrapsuit",
@@ -183,7 +183,7 @@
     "using": [ [ "cordage", 7 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 } ],
     "components": [
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ],
+      [ [ "fur", 11 ], [ "leather", 11 ] ],
       [ [ "steel_chunk", 7 ], [ "scrap", 22 ] ]
     ]
   },
@@ -389,7 +389,7 @@
     "autolearn": true,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 68 ] ],
-    "components": [ [ [ "leather", 32 ], [ "tanned_hide", 5 ] ] ]
+    "components": [ [ [ "leather", 32 ] ] ]
   },
   {
     "result": "trenchcoat_xl",
@@ -414,7 +414,7 @@
     "autolearn": true,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 81 ] ],
-    "components": [ [ [ "leather", 40 ], [ "tanned_hide", 7 ] ] ]
+    "components": [ [ [ "leather", 40 ] ] ]
   },
   {
     "result": "duster_xl",
@@ -439,7 +439,7 @@
     "autolearn": true,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 108 ] ],
-    "components": [ [ [ "leather", 52 ], [ "tanned_hide", 9 ] ] ]
+    "components": [ [ [ "leather", 52 ] ] ]
   },
   {
     "result": "sleeveless_duster_xl",
@@ -481,7 +481,7 @@
     "autolearn": true,
     "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
     "using": [ [ "sewing_standard", 90 ] ],
-    "components": [ [ [ "leather", 45 ], [ "tanned_hide", 8 ] ] ]
+    "components": [ [ [ "leather", 45 ] ] ]
   },
   {
     "result": "sleeveless_duster_xlleather",
@@ -543,7 +543,7 @@
     ],
     "components": [
       [ [ "steel_lump", 36 ], [ "steel_chunk", 144 ] ],
-      [ [ "fur", 36 ], [ "tanned_pelt", 5 ], [ "leather", 36 ], [ "tanned_hide", 5 ] ]
+      [ [ "fur", 36 ], [ "leather", 36 ] ]
     ]
   },
   {
@@ -575,7 +575,7 @@
       [ [ "forge", 315 ], [ "oxy_torch", 60 ] ],
       [ [ "forge", 315 ], [ "oxy_torch", 60 ] ]
     ],
-    "components": [ [ [ "fur", 21 ], [ "tanned_pelt", 4 ], [ "leather", 21 ], [ "tanned_hide", 4 ] ] ]
+    "components": [ [ [ "fur", 21 ], [ "leather", 21 ] ] ]
   },
   {
     "result": "helmet_xlbarbute",
@@ -628,7 +628,7 @@
     ],
     "components": [
       [ [ "steel_lump", 29 ], [ "steel_chunk", 115 ] ],
-      [ [ "fur", 50 ], [ "tanned_pelt", 11 ], [ "leather", 50 ], [ "tanned_hide", 11 ] ],
+      [ [ "fur", 50 ], [ "leather", 50 ] ],
       [ [ "rag", 18 ] ]
     ]
   },
@@ -644,7 +644,7 @@
     "using": [ [ "forging_standard", 49 ], [ "steel_standard", 26 ] ],
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
     "tools": [ [ [ "tongs", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [ [ [ "fur", 30 ], [ "tanned_pelt", 4 ], [ "leather", 30 ], [ "tanned_hide", 4 ] ], [ [ "rag", 9 ] ] ]
+    "components": [ [ [ "fur", 30 ], [ "leather", 30 ] ], [ [ "rag", 9 ] ] ]
   },
   {
     "result": "armor_xllightplate_faraday",
@@ -677,7 +677,7 @@
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 180 ], [ "oxy_torch", 36 ] ] ],
     "components": [
       [ [ "steel_lump", 11 ], [ "steel_chunk", 43 ] ],
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ]
+      [ [ "fur", 11 ], [ "leather", 11 ] ]
     ]
   },
   {
@@ -693,7 +693,7 @@
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 270 ], [ "oxy_torch", 50 ] ] ],
     "components": [
       [ [ "steel_lump", 14 ], [ "steel_chunk", 58 ] ],
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ]
+      [ [ "fur", 11 ], [ "leather", 11 ] ]
     ]
   },
   {
@@ -709,7 +709,7 @@
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 270 ], [ "oxy_torch", 50 ] ] ],
     "components": [
       [ [ "steel_lump", 13 ], [ "steel_chunk", 50 ] ],
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ]
+      [ [ "fur", 11 ], [ "leather", 11 ] ]
     ]
   },
   {
@@ -755,7 +755,7 @@
       [ [ "link_sheet", 5 ] ],
       [ [ "chain_link", 135 ] ],
       [ [ "wire", 2 ] ],
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ]
+      [ [ "fur", 11 ], [ "leather", 11 ] ]
     ]
   },
   {
@@ -784,7 +784,7 @@
       [ [ "link_sheet", 7 ] ],
       [ [ "chain_link", 180 ] ],
       [ [ "wire", 2 ] ],
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ]
+      [ [ "fur", 11 ], [ "leather", 11 ] ]
     ]
   },
   {
@@ -801,7 +801,7 @@
       [ [ "link_sheet", 13 ] ],
       [ [ "chain_link", 315 ] ],
       [ [ "wire", 2 ] ],
-      [ [ "fur", 11 ], [ "tanned_pelt", 2 ], [ "leather", 11 ], [ "tanned_hide", 2 ] ]
+      [ [ "fur", 11 ], [ "leather", 11 ] ]
     ]
   },
   {
@@ -814,7 +814,7 @@
     "time": 65000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 19 ] ],
-    "components": [ [ [ "leather", 19 ], [ "tanned_hide", 4 ] ] ]
+    "components": [ [ [ "leather", 19 ] ] ]
   },
   {
     "result": "boots_xllarmor",
@@ -826,7 +826,7 @@
     "time": 74000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 44 ] ],
-    "components": [ [ [ "leather", 33 ], [ "tanned_hide", 6 ], [ "fur", 33 ], [ "tanned_pelt", 6 ] ] ]
+    "components": [ [ [ "leather", 33 ], [ "fur", 33 ] ] ]
   },
   {
     "result": "boots_xlplate",
@@ -841,7 +841,7 @@
     "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ], [ [ "forge", 460 ], [ "oxy_torch", 90 ] ] ],
     "components": [
       [ [ "steel_lump", 15 ], [ "steel_chunk", 60 ], [ "scrap", 180 ] ],
-      [ [ "fur", 30 ], [ "tanned_pelt", 5 ], [ "leather", 30 ], [ "tanned_hide", 5 ] ]
+      [ [ "fur", 30 ], [ "leather", 30 ] ]
     ]
   },
   {
@@ -892,7 +892,7 @@
     "time": 90000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 36 ] ],
-    "components": [ [ [ "leather", 36 ], [ "tanned_hide", 5 ] ], [ [ "scrap", 11 ] ] ]
+    "components": [ [ [ "leather", 36 ] ], [ [ "scrap", 11 ] ] ]
   },
   {
     "result": "duffelbag_xl",
@@ -904,7 +904,7 @@
     "time": 144000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 54 ] ],
-    "components": [ [ [ "rag", 72 ], [ "fur", 58 ], [ "tanned_pelt", 11 ], [ "leather", 43 ], [ "tanned_hide", 11 ] ] ]
+    "components": [ [ [ "rag", 72 ], [ "fur", 58 ], [ "leather", 43 ] ] ]
   },
   {
     "result": "tool_xlbelt",
@@ -916,7 +916,7 @@
     "time": 29000,
     "autolearn": true,
     "using": [ [ "sewing_standard", 14 ] ],
-    "components": [ [ [ "leather", 11 ], [ "tanned_hide", 2 ], [ "leather_belt", 2 ] ], [ [ "leather_pouch", 6 ] ] ]
+    "components": [ [ [ "leather", 11 ], [ "leather_belt", 2 ] ], [ [ "leather_pouch", 6 ] ] ]
   },
   {
     "result": "chestrig_xl",
