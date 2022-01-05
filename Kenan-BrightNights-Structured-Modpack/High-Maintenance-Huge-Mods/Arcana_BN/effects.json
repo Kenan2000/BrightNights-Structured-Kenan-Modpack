@@ -126,7 +126,7 @@
     "resist_effects": [ "talisman_warding" ],
     "desc": [ "Not immortality, but it still feels nice." ],
     "remove_message": "The healing effect fades.",
-    "removes_effects": [ "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
+    "removes_effects": [ "poison", "badpoison", "infected", "fungus", "bleed", "common_cold", "flu", "tetanus" ],
     "decay_messages": [ [ "The soothing effect of your potion is starting to fade.", "bad" ] ],
     "rating": "good",
     "max_duration": "30 m",
@@ -327,10 +327,10 @@
     "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
-    "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
+    "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus or mutagenic toxins." ],
     "remove_message": "The soothing sensation coursing through your veins fades, as the protective magic dissipates.",
     "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
-    "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts" ],
+    "removes_effects": [ "spores", "fungus", "dermatik", "formication", "tapeworm", "bloodworms", "brainworms", "paincysts", "mutating" ],
     "decay_messages": [ [ "Your clarity of blood spell is waning.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
@@ -560,7 +560,7 @@
     "id": "dragonblood_clarity",
     "name": [ "Revenant Blood" ],
     "desc": [
-      "Immunity to food poisoning, parasites, and fungus.  Increased hunger and thirst gain, with positive metabolic effects."
+      "Immunity to food poisoning, parasites, fungus, and mutagenic toxins.  Increased hunger and thirst gain, with positive metabolic effects."
     ],
     "resist_effects": [ "talisman_warding" ],
     "remove_message": "The protective effect of your sanguine mark fades, leaving a momentary itch in your veins.",
@@ -569,13 +569,16 @@
       "poison",
       "badpoison",
       "foodpoison",
+      "dermatik",
+      "formication",
       "bloodworms",
       "paincysts",
       "brainworms",
       "tapeworm",
       "spores",
       "fungus",
-      "bloated"
+      "bloated",
+      "mutating"
     ],
     "decay_messages": [ [ "The protective magic flowing through your blood is starting to wane.", "bad" ] ],
     "rating": "good",
@@ -940,7 +943,7 @@
     "id": "arcana_scroll_nature_effect",
     "//": "Explicitly punish Mycus players who will be immune to mutation, that's what you get for channeling a rival interloper's nature magic.",
     "resist_traits": [ "THRESH_MARLOSS", "THRESH_MYCUS" ],
-    "blocks_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
+    "removes_effects": [ "blind", "deaf", "infected", "bite", "bleed", "poison", "badpoison", "spores", "fungus" ],
     "rating": "good",
     "base_mods": {
       "rad_min": [ -25, 25 ],
