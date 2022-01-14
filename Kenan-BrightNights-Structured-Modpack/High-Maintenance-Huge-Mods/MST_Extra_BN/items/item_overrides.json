@@ -1,12 +1,5 @@
 [
   {
-    "id": "char_purifier",
-    "copy-from": "char_purifier",
-    "type": "TOOL",
-    "name": { "str": "charcoal water purifier" },
-    "sub": "water_purifier"
-  },
-  {
     "id": "hobo_stove",
     "copy-from": "hobo_stove",
     "type": "TOOL",
@@ -77,28 +70,6 @@
     "extend": { "effects": [ "NEVER_MISFIRES", "NON-FOULING" ] }
   },
   {
-    "id": "golf_ball",
-    "copy-from": "golf_ball",
-    "type": "AMMO",
-    "name": { "str": "golf ball" },
-    "ammo_type": "rock",
-    "damage": { "damage_type": "stab", "amount": 3 },
-    "range": 12,
-    "dispersion": 14,
-    "extend": { "effects": [ "NEVER_MISFIRES", "NON-FOULING", "RECOVER_60" ] }
-  },
-  {
-    "id": "pool_ball",
-    "copy-from": "pool_ball",
-    "type": "AMMO",
-    "name": { "str": "pool ball" },
-    "ammo_type": "rock",
-    "damage": { "damage_type": "stab", "amount": 6 },
-    "range": 12,
-    "dispersion": 14,
-    "extend": { "effects": [ "NEVER_MISFIRES", "NON-FOULING", "RECOVER_60" ] }
-  },
-  {
     "id": "baseball",
     "copy-from": "baseball",
     "type": "AMMO",
@@ -108,17 +79,6 @@
     "range": 14,
     "dispersion": 14,
     "extend": { "effects": [ "NEVER_MISFIRES", "NON-FOULING", "RECOVER_60" ] }
-  },
-  {
-    "id": "magic_8_ball",
-    "copy-from": "magic_8_ball",
-    "type": "AMMO",
-    "name": { "str": "Magic 8-Ball" },
-    "ammo_type": "rock",
-    "damage": { "damage_type": "stab", "amount": 4 },
-    "range": 10,
-    "dispersion": 14,
-    "extend": { "effects": [ "NEVER_MISFIRES", "NON-FOULING", "RECOVER_2" ] }
   },
   {
     "id": "tinderbox_on",

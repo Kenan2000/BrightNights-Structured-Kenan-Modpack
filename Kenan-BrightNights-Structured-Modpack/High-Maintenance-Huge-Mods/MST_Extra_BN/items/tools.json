@@ -145,42 +145,6 @@
     }
   },
   {
-    "id": "tanning_hide_small",
-    "copy-from": "tanning_hide",
-    "type": "TOOL",
-    "name": { "str": "scrap of tanning leather", "str_pl": "scraps of tanning leather" },
-    "description": "A small piece of treated animal hide, undergoing the chemical processes required to become leather.  You will be able to activate it to unroll and make use of it when it is done.",
-    "weight": "80 g",
-    "volume": "200 ml",
-    "use_action": {
-      "target": "leather",
-      "msg": "You carefully unfold the tanning leather scrap and shake it clean.",
-      "moves": 150,
-      "type": "delayed_transform",
-      "transform_age": 5760,
-      "not_ready_msg": "The scrap of tanning leather isn't done yet.",
-      "//": "Should be 9.6 hours, but I suspect the timing hasn't been updated yet."
-    }
-  },
-  {
-    "id": "tanning_pelt_small",
-    "copy-from": "tanning_pelt",
-    "type": "TOOL",
-    "name": { "str": "scrap of tanning fur", "str_pl": "scraps of tanning fur" },
-    "description": "A small piece of treated animal pelt, undergoing the chemical processes required to become fur.  You will be able to activate it to unroll and make use of it when it is done.",
-    "weight": "80 g",
-    "volume": "200 ml",
-    "use_action": {
-      "target": "fur",
-      "msg": "You carefully unfold the tanning fur scrap and shake it clean.",
-      "moves": 150,
-      "type": "delayed_transform",
-      "transform_age": 5760,
-      "not_ready_msg": "The scrap of tanning fur isn't done yet.",
-      "//": "Should be 9.6 hours, but I suspect the timing hasn't been updated yet."
-    }
-  },
-  {
     "id": "oil_lamp_clay",
     "copy-from": "oil_lamp",
     "sub": "oil_lamp",
