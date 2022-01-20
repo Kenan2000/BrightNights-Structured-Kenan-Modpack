@@ -12,7 +12,8 @@
         "locations" : [ "wilderness" ], "//":"what special locations does it spawn",
         "city_distance" : [5, -1], "//1":"how far from a city it should be",
         "city_sizes" : [1, 16], "//2":"what city sizes should it spawn in",
-        "occurrences" : [0, 3], "//3":"how many per overmap"
+        "occurrences" : [0, 3], "//3":"how many per overmap",
+        "flags" : [ "ELECTRIC_GRID" ]
     },
     {
         "type" : "overmap_special",
@@ -30,7 +31,8 @@
         "locations" : [ "forest" ], "//":"what special locations does it spawn",
         "city_distance" : [-1, 15], "//1":"how far from a city it should be",
         "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
-        "occurrences" : [0, 2], "//3":"how many per overmap"
+        "occurrences" : [0, 2], "//3":"how many per overmap",
+        "flags" : [ "ELECTRIC_GRID" ]
     },
     {
         "type" : "overmap_special",
@@ -42,6 +44,7 @@
         "locations" : [ "forest" ], "//":"what special locations does it spawn",
         "city_distance" : [5, -1], "//1":"how far from a city it should be",
         "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
-        "occurrences" : [0, 2], "//3":"how many per overmap"
+        "occurrences" : [0, 2], "//3":"how many per overmap",
+        "flags" : [ "ELECTRIC_GRID" ]
     }
 ]

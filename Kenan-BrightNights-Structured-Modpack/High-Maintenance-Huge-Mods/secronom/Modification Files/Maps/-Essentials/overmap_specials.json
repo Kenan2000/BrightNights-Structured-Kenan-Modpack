@@ -428,6 +428,7 @@
     "id": "Flesh City 1",
     "locations": [ "field" ],
     "occurrences": [ 0, 1 ],
+    "flags": [ "ELECTRIC_GRID" ],
     "spawns": { "group": "GROUP_FLESH_CITY", "population": [ 750, 1250 ], "radius": [ 2, 5 ] },
     "rotate": false,
     "//": "Flesh City overmap specials must not rotate, otherwise a horrible bug will appear (i.e jumbled road symbols but correct layouts).",
@@ -491,6 +492,7 @@
     "id": "Flesh City 2",
     "locations": [ "field" ],
     "occurrences": [ 0, 1 ],
+    "flags": [ "ELECTRIC_GRID" ],
     "spawns": { "group": "GROUP_FLESH_CITY", "population": [ 750, 1250 ], "radius": [ 2, 5 ] },
     "rotate": false,
     "overmaps": [

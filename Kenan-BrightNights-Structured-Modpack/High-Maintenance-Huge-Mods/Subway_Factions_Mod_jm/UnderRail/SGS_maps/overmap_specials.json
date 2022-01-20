@@ -16,6 +16,7 @@
     "rotate": true,
     "locations": [ "subterranean" ],
     "occurrences": [ 2, 5 ],
+    "flags": [ "ELECTRIC_GRID" ], 
     "connections": [
       { "point": [ 1, -1, -2 ], "terrain": "subway", "existing": true },
       { "point": [ 0, -1, -2 ], "terrain": "subway", "existing": true },
@@ -31,6 +32,7 @@
     "rotate": true,
     "locations": [ "subterranean" ],
     "occurrences": [ 5, 45 ],
+    "flags": [ "ELECTRIC_GRID" ], 
     "connections": [
       { "point": [ 0, 1, -2 ], "terrain": "subway" },
       { "point": [ 1, 1, -2 ], "terrain": "subway" },

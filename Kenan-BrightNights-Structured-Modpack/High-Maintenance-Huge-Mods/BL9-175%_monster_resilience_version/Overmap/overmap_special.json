@@ -3,12 +3,14 @@
     "type": "city_building",
     "id": "BL9_library",
     "locations": [ "land" ],
+    "flags": [ "ELECTRIC_GRID" ],
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "BL9_library_north" }, { "point": [ 0, 0, 1 ], "overmap": "BL9_library_roof_north" } ]
   },
   {
     "type": "city_building",
     "id": "BL9_bookstore",
     "locations": [ "land" ],
+    "flags": [ "ELECTRIC_GRID" ],
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "BL9_bookstore_north" },
       { "point": [ 0, 0, 1 ], "overmap": "BL9_bookstore_roof_north" }
@@ -316,7 +318,8 @@
     ],
     "locations": [ "water" ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",
@@ -376,7 +379,8 @@
     "rotate": false,
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",
@@ -496,7 +500,8 @@
     "rotate": false,
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",
@@ -676,7 +681,8 @@
     "rotate": false,
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",
@@ -736,7 +742,8 @@
     "rotate": false,
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",
@@ -796,7 +803,8 @@
     "rotate": false,
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",
@@ -856,6 +864,7 @@
     "rotate": false,
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 1, 2 ]
+    "occurrences": [ 1, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
   }
 ]
