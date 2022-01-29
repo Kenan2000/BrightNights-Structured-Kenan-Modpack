@@ -3031,6 +3031,21 @@
   },
   {
     "type": "recipe",
+    "result": "target_iv_mutagen_webbridge",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "skills_required": [ "firstaid", 8 ],
+    "difficulty": 10,
+    "time": "8 h",
+    "batch_time_factors": [ 20, 5 ],
+    "autolearn": true,
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "iv_mutagen_spider", 4 ] ], [ [ "iv_purifier", 1 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
     "result": "target_iv_mutagen_whiskers",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_MUTAGEN",
