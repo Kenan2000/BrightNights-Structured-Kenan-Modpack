@@ -1808,6 +1808,15 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "WEB_ROPE" }
 	},
 	{
+    "id": "target_iv_mutagen_webbridge",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Arachnitect serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to use webs to spin suspended walkways between ledges to span small gaps",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "WEB_BRIDGE" }
+	},
+	{
     "id": "target_iv_mutagen_whiskers",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
