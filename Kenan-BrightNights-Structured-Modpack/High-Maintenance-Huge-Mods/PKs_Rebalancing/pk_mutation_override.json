@@ -597,17 +597,6 @@
   },
   {
     "type": "mutation",
-    "id": "CEPH_VISION",
-    "copy-from": "CEPH_VISION",
-    "name": { "str": "Cephalopod Vision" },
-    "points": 3,
-    "description": "Your brain has caught up with your eyes.  You can see much better in the dark, but sunlight seems much brighter now.  Activate to toggle NV-visible areas on or off.",
-    "cancels": [ "20_15", "LIZ_IR", "FEL_NV", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3", "ELFA_NV", "ELFA_FNV" ],
-    "active": true,
-    "starts_active": true
-  },
-  {
-    "type": "mutation",
     "id": "ELFAEYES",
     "copy-from": "ELFAEYES",
     "name": { "str": "Fey Eyes" },
@@ -619,28 +608,6 @@
   },
   {
     "type": "mutation",
-    "id": "ELFA_NV",
-    "copy-from": "ELFA_NV",
-    "name": { "str": "Fey Vision" },
-    "points": 3,
-    "description": "The shadows don't seem as dark now.  Activate to toggle NV-visible areas on or off.",
-    "cancels": [ "20_15", "LIZ_IR", "FEL_NV", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3" ],
-    "active": true,
-    "starts_active": true
-  },
-  {
-    "type": "mutation",
-    "id": "ELFA_FNV",
-    "copy-from": "ELFA_FNV",
-    "name": { "str": "Fey Nightsight" },
-    "points": 5,
-    "description": "You have great low-light vision now, but it doesn't allow you to perform fine tasks such as crafting and reading in darkness.  Activate to toggle NV-visible areas on or off.",
-    "cancels": [ "20_15", "LIZ_IR", "FEL_NV", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3" ],
-    "active": true,
-    "starts_active": true
-  },
-  {
-    "type": "mutation",
     "id": "FEL_EYE",
     "copy-from": "FEL_EYE",
     "name": { "str": "Feline Eyes" },
@@ -649,39 +616,6 @@
     "ugliness": -1,
     "description": "Your eyes have mutated; now you have slit pupils, and they glitter in the light, much like a cat's.  This is visually striking, but it isn't helping you see at night.",
     "cancels": [ "20_15", "ELFAEYES", "LIZ_EYE", "BIRD_EYE", "URSINE_EYE", "COMPOUND_EYES" ]
-  },
-  {
-    "type": "mutation",
-    "id": "FEL_NV",
-    "copy-from": "FEL_NV",
-    "name": { "str": "Feline Vision" },
-    "points": 4,
-    "description": "Your optic nerves and brain caught up with your eyes.  Now you can see pretty well at night.  Activate to toggle NV-visible areas on or off.",
-    "cancels": [ "20_15", "ELFA_NV", "ELFA_FNV", "LIZ_IR", "NIGHTVISION", "NIGHTVISION2", "NIGHTVISION3" ],
-    "active": true,
-    "starts_active": true
-  },
-  {
-    "type": "mutation",
-    "id": "URSINE_EYE",
-    "copy-from": "URSINE_EYE",
-    "name": { "str": "Ursine Vision" },
-    "points": 1,
-    "description": "Your visual processing has shifted: though you can see better in the dark, you're nearsighted in the light.  Maybe glasses would help.  Activate to toggle NV-visible areas on or off.",
-    "cancels": [
-      "20_15",
-      "ELFAEYES",
-      "LIZ_EYE",
-      "BIRD_EYE",
-      "FEL_EYE",
-      "COMPOUND_EYES",
-      "NIGHTVISION",
-      "NIGHTVISION2",
-      "NIGHTVISION3",
-      "MYOPIC"
-    ],
-    "active": true,
-    "starts_active": true
   },
   {
     "type": "mutation",

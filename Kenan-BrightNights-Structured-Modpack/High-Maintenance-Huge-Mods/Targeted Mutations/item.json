@@ -638,15 +638,6 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "CEPH_EYES" }
 	},
 	{
-    "id": "target_iv_mutagen_cephvision",
-    "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
-    "name": "Cephalopod vision serum",
-    "description": "A special mutagenic serum designed to give you a single mutation. Grants cephalopodic vision, allowing you to see in the dark but sunlight might be a bit too bright most of the time.",
-    "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "CEPH_VISION" }
-	},
-	{
     "id": "target_iv_mutagen_elfaeyes",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -656,24 +647,6 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "ELFAEYES" }
 	},
 	{
-    "id": "target_iv_mutagen_elfanv",
-    "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
-    "name": "Fey vision serum",
-    "description": "A special mutagenic serum designed to give you a single mutation. Makes your eyes sensitive to picking up light in low-light situations, also changes the irisses of your eyes into shade-shifting green chromatophores.",
-    "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "ELFA_NV" }
-	},
-	{
-    "id": "target_iv_mutagen_elfafnv",
-    "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
-    "name": "Fey nightsight serum",
-    "description": "A special mutagenic serum designed to give you a single mutation. Further improves the nightvision-enabling capabilities of the fey vision serum, side effects still apply.",
-    "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "ELFA_FNV" }
-	},
-	{
     "id": "target_iv_mutagen_feleye",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -681,24 +654,6 @@
     "description": "A special mutagenic serum designed to give you a single mutation. Mutates your eyes into those of a cat. Nightvision not included.",
     "color": "light_gray",
     "use_action": { "type": "mutagen_iv", "mutation_category": "FEL_EYE" }
-	},
-	{
-    "id": "target_iv_mutagen_felnv",
-    "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
-    "name": "Feline nightvision serum",
-    "description": "A special mutagenic serum designed to give you a single mutation. Gives you the same amount of nightvision as a feline. Side effects may  like optical structural changes may apply.",
-    "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "FEL_NV" }
-	},
-	{
-    "id": "target_iv_mutagen_ursineeye",
-    "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
-    "name": "Ursine vision serum",
-    "description": "A special mutagenic serum designed to give you a single mutation. Gives you nightvision at the cost of nearsightedness in the light.",
-    "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "URSINE_EYE" }
 	},
 	{
     "id": "target_iv_mutagen_birdeye",
