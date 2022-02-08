@@ -233,7 +233,7 @@
     "description": "Your wounds heal themselves quicker than usual.  You heal 50% faster whilst asleep and 20% faster whilst awake.  Your broken limbs also heal twice as fast.",
     "starting_trait": true,
     "types": [ "HEALING" ],
-    "changes_to": [ "FASTHEALER2", "REGEN_LIZ" ],
+    "changes_to": [ "FASTHEALER2" ],
     "category": [ "MEDICAL", "FASTHEALER" ],
     "healing_awake": 0.2,
     "healing_resting": 0.5,
@@ -865,7 +865,7 @@
     "description": "Without glasses, your seeing radius is severely reduced!  However, you are guaranteed to start with a pair of glasses.",
     "starting_trait": true,
     "cancels": [ "URSINE_EYE", "EAGLEEYED" ],
-    "category": [ "BEAST", "TROGLOBITE" ]
+    "category": [ "BEAST", "TROGLOBITE", "URSINE" ]
   },
   {
     "type": "mutation",
