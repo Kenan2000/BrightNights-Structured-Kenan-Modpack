@@ -262,7 +262,7 @@
         "############&&##################################################################################"
       ],
       "palettes": [ "arcology_palette" ],
-      "terrain": { "X": "t_paper" },
+      "terrain": { "X": "t_paper", "N": "t_machinery_heavy", "n": "t_machinery_light" },
       "place_fields": [
         { "field": "fd_web", "x": [ 72, 84 ], "y": [ 4, 16 ], "repeat": 95 },
         { "field": "fd_web", "x": [ 72, 91 ], "y": [ 3, 23 ], "repeat": 85 },
@@ -284,7 +284,6 @@
       ],
       "liquids": { "T": { "liquid": "water_sewage", "amount": [ 1, 25 ] }, "t": { "liquid": "water_sewage", "amount": [ 2, 5 ] } },
       "furniture": { "V": "f_vending_o", "T": "f_standing_tank", "Y": "f_washer", "y": "f_dryer" },
-      "terrain": { "N": "t_machinery_heavy", "n": "t_machinery_light" },
       "place_nested": [
         { "chunks": [ "racing_tower_4x4_store" ], "x": 3, "y": 7 },
         { "chunks": [ "racing_tower_4x4_store" ], "x": 89, "y": 84 },
