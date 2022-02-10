@@ -1,5 +1,6 @@
 [
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "mon_dkz_glowdrone",
     "type": "MONSTER",
     "name": { "str": "xenoid reconnaissance drone" },
@@ -43,8 +44,7 @@
         "monster_message": "<color_white>%1$s blinds %3$s with its integrated camera!</color>"
       }
     ],
-    "path_settings": { "max_dist": 5 },
-    "death_drops": "dkz_elecscrap_misc",
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 1 },
     "death_function": [ "BROKEN" ],
     "flags": [
       "SEES",
@@ -61,6 +61,7 @@
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "mon_dkz_scidrone",
     "type": "MONSTER",
     "name": { "str": "xenoid seeker drone" },
@@ -111,9 +112,8 @@
         "monster_message": "<color_white>%1$s blinds %3$s with its integrated camera!</color>"
       }
     ],
-    "path_settings": { "max_dist": 5 },
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 1 },
     "anger_triggers": [ "HURT", "PLAYER_WEAK", "STALK" ],
-    "death_drops": "dkz_elecscrap_misc",
     "death_function": [ "BROKEN" ],
     "flags": [
       "SEES",
@@ -132,6 +132,7 @@
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_ranger",
     "type": "MONSTER",
     "name": { "str": "xenoid ranger" },
@@ -183,7 +184,7 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_ranger",
-    "path_settings": { "max_dist": 20 },
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 10 },
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 30, "into_group": "DKZ_GROUP_RANGER_UPGRADE" },
@@ -197,7 +198,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "FIREPROOF",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
@@ -206,6 +207,7 @@
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_hunter",
     "type": "MONSTER",
     "name": { "str": "xenoid hunter" },
@@ -257,7 +259,7 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_hunter",
-    "path_settings": { "max_dist": 20 },
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 12 },
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "death_function": [ "NORMAL" ],
     "flags": [
@@ -271,7 +273,7 @@
       "BASHES",
       "GROUP_BASH",
       "HUMAN",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "FIREPROOF",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
@@ -280,6 +282,7 @@
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_enforcer",
     "type": "MONSTER",
     "name": { "str": "xenoid enforcer" },
@@ -333,8 +336,8 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_enforcer",
-    "path_settings": { "max_dist": 5 },
     "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 10 },
     "upgrades": { "half_life": 30, "into_group": "DKZ_GROUP_ENFORCER_UPGRADE" },
     "flags": [
       "SEES",
@@ -348,13 +351,14 @@
       "GROUP_BASH",
       "FIREPROOF",
       "HUMAN",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
       "CAN_OPEN_DOORS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_oppressor",
     "type": "MONSTER",
     "name": { "str": "xenoid oppressor" },
@@ -408,8 +412,8 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_oppressor",
-    "path_settings": { "max_dist": 5 },
     "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 10 },
     "flags": [
       "SEES",
       "SMELLS",
@@ -423,13 +427,14 @@
       "GROUP_BASH",
       "FIREPROOF",
       "HUMAN",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
       "CAN_OPEN_DOORS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_fumigator",
     "type": "MONSTER",
     "name": { "str": "xenoid fumigator" },
@@ -481,7 +486,86 @@
       }
     ],
     "death_drops": "dkz_xenoid_fumigator",
-    "path_settings": { "max_dist": 5 },
+    "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 10 },
+    "upgrades": { "half_life": 30, "into_group": "DKZ_GROUP_FUMIGATOR_UPGRADE" },
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "GOODHEARING",
+      "NO_BREATHE",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "GROUP_BASH",
+      "FIREPROOF",
+      "HUMAN",
+      "PATH_AVOID_DANGER_1",
+      "PRIORITIZE_TARGETS",
+      "CLIMBS",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "dkz_xenoid_berserker",
+    "type": "MONSTER",
+    "name": { "str": "xenoid berserker" },
+    "description": "A human-sized soldier clad in light grey armor, wielding long silver sword in one hand and shock batton in the other.  The casual ease with which it juggles the two weapons weapons demonstrates its familiarity with and willingness to use them.",
+    "default_faction": "xenoid",
+    "bodytype": "human",
+    "categories": [ "ALIEN" ],
+    "species": [ "ALIEN", "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 150,
+    "speed": 125,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 90,
+    "melee_skill": 9,
+    "melee_dice": 2,
+    "melee_dice_sides": 5,
+    "melee_damage": [ { "damage_type": "electric", "amount": 8 } ],
+    "melee_cut": 0,
+    "dodge": 8,
+    "vision_day": 30,
+    "vision_night": 7,
+    "armor_bash": 5,
+    "armor_stab": 7,
+    "armor_cut": 5,
+    "harvest": "dkz_mhuman_chipped",
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      [ "TAZER", 5 ],
+      { "id": "knockdown" },
+      { "id": "knife_slash" },
+      { "id": "heavyslash" },
+      {
+        "type": "spell",
+        "spell_data": { "id": "dkz_monspell_panic" },
+        "cooldown": 4,
+        "monster_message": "<color_pink>The %1$s gesticulates at %3$s and a pulse of fear-inducing psionic energy ripples through the air!</color>"
+      },
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "move_cost": 300,
+        "gun_type": "dkz_mon_flechette",
+        "fake_skills": [ [ "gun", 7 ] ],
+        "fake_dex": 13,
+        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": false
+      }
+    ],
+    "death_drops": "dkz_mon_xenoid_oppressor",
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 10 },
     "death_function": [ "NORMAL" ],
     "flags": [
       "SEES",
@@ -496,13 +580,87 @@
       "GROUP_BASH",
       "FIREPROOF",
       "HUMAN",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
       "CAN_OPEN_DOORS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "dkz_xenoid_purifier",
+    "type": "MONSTER",
+    "name": { "str": "xenoid purifier" },
+    "description": "A human-sized soldier wearing laser etched blue plate armor, an evil-looking mask, and long gun with a strange nozzle on the end.  Light blue fumes drip from the nozzle and quickly dissipate.  Its haunting gaze makes your eyes ache.",
+    "default_faction": "xenoid",
+    "bodytype": "human",
+    "categories": [ "ALIEN" ],
+    "species": [ "ALIEN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 180,
+    "speed": 90,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "light_blue",
+    "aggression": 95,
+    "morale": 100,
+    "vision_day": 30,
+    "vision_night": 7,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 4,
+    "armor_bash": 13,
+    "armor_stab": 19,
+    "armor_cut": 13,
+    "emit_fields": [ { "emit_id": "emit_relax_gas", "delay": "1 s" } ],
+    "harvest": "dkz_mhuman_chipped",
+    "special_attacks": [
+      [ "PARROT", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "dkz_monspell_halluc" },
+        "cooldown": 2,
+        "monster_message": "<color_pink>%1$s gesticulates at %3$s and a pulse of mind-bending psionic energy ripples through the air!</color>"
+      },
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "move_cost": 500,
+        "gun_type": "dkz_mon_gasgun",
+        "ranges": [ [ 2, 9, "DEFAULT" ] ],
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "laser_lock": false,
+        "targeting_cost": 300,
+        "description": "<color_light_green>The %1$s fires a stream of blue hazy gas!</color>"
+      }
+    ],
+    "death_drops": "dkz_xenoid_fumigator",
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 10 },
+    "death_function": [ "NORMAL" ],
+    "flags": [
+      "SEES",
+      "SMELLS",
+      "KEENNOSE",
+      "HEARS",
+      "GOODHEARING",
+      "NO_BREATHE",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "GROUP_BASH",
+      "FIREPROOF",
+      "HUMAN",
+      "PATH_AVOID_DANGER_1",
+      "PRIORITIZE_TARGETS",
+      "CLIMBS",
+      "CAN_OPEN_DOORS"
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_pyro",
     "type": "MONSTER",
     "name": { "str": "xenoid incinerator" },
@@ -556,8 +714,8 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_pyro",
-    "path_settings": { "max_dist": 15 },
-    "death_function": [ "FIREBALL", "NORMAL" ],
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 15 },
+    "death_function": [ "CONFLAGRATION" ],
     "flags": [
       "SEES",
       "SMELLS",
@@ -571,12 +729,13 @@
       "GROUP_BASH",
       "FIREPROOF",
       "ACIDPROOF",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CAN_OPEN_DOORS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_knight",
     "type": "MONSTER",
     "name": { "str": "xenoid knight" },
@@ -630,8 +789,8 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_knight",
-    "path_settings": { "max_dist": 10 },
     "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 15 },
     "upgrades": { "half_life": 30, "into_group": "DKZ_GROUP_KNIGHT_UPGRADE" },
     "flags": [
       "SEES",
@@ -645,12 +804,13 @@
       "GROUP_BASH",
       "FIREPROOF",
       "ACIDPROOF",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CAN_OPEN_DOORS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "dkz_xenoid_templar",
     "type": "MONSTER",
     "name": { "str": "xenoid templar" },
@@ -704,8 +864,8 @@
       }
     ],
     "death_drops": "dkz_mon_xenoid_templar",
-    "path_settings": { "max_dist": 10 },
     "death_function": [ "NORMAL" ],
+    "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 15 },
     "flags": [
       "SEES",
       "SMELLS",
@@ -719,12 +879,13 @@
       "GROUP_BASH",
       "FIREPROOF",
       "ACIDPROOF",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CAN_OPEN_DOORS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "mon_dkz_emissary",
     "type": "MONSTER",
     "name": { "str": "xenoid emissary", "str_pl": "xenoid emissaries" },
@@ -754,7 +915,14 @@
     "vision_day": 50,
     "vision_night": 12,
     "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
-    "path_settings": { "max_dist": 30 },
+    "path_settings": {
+      "max_dist": 45,
+      "max_length": 15,
+      "avoid_traps": true,
+      "avoid_sharp": true,
+      "allow_open_doors": true,
+      "bash_strength": 100
+    },
     "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
     "anger_triggers": [ "HURT", "PLAYER_WEAK", "STALK" ],
     "fear_triggers": [ "HURT" ],
@@ -795,11 +963,12 @@
       "GROUP_MORALE",
       "PUSH_MON",
       "PUSH_VEH",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "mon_dkz_emissary_plague",
     "type": "MONSTER",
     "name": { "str": "xenoid emissary of pestilence", "str_pl": "xenoid emissaries of pestilence" },
@@ -828,13 +997,21 @@
     "armor_acid": 15,
     "vision_day": 50,
     "vision_night": 12,
-    "path_settings": { "max_dist": 30 },
+    "path_settings": {
+      "max_dist": 45,
+      "max_length": 15,
+      "avoid_traps": true,
+      "avoid_sharp": true,
+      "allow_open_doors": true,
+      "bash_strength": 100
+    },
     "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
     "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "PARROT", 20 ],
-      [ "TAZER", 20 ],
+      [ "PARROT", 5 ],
+      [ "IMPALE", 20 ],
+      [ "TAZER", 30 ],
       [ "SMASH", 30 ],
       [ "LONGSWIPE", 20 ],
       {
@@ -869,11 +1046,12 @@
       "GROUP_MORALE",
       "PUSH_MON",
       "PUSH_VEH",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "mon_dkz_emissary_war",
     "type": "MONSTER",
     "name": { "str": "xenoid emissary of war", "str_pl": "xenoid emissaries of war" },
@@ -902,12 +1080,20 @@
     "armor_acid": 25,
     "vision_day": 50,
     "vision_night": 12,
-    "path_settings": { "max_dist": 30 },
+    "path_settings": {
+      "max_dist": 45,
+      "max_length": 15,
+      "avoid_traps": true,
+      "avoid_sharp": true,
+      "allow_open_doors": true,
+      "bash_strength": 100
+    },
     "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
     "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "PARROT", 20 ],
+      [ "PARROT", 5 ],
+      [ "IMPALE", 20 ],
       [ "TAZER", 20 ],
       [ "SMASH", 30 ],
       [ "LONGSWIPE", 20 ],
@@ -945,11 +1131,12 @@
       "GROUP_MORALE",
       "PUSH_MON",
       "PUSH_VEH",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS"
     ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "mon_dkz_emissary_flame",
     "type": "MONSTER",
     "name": { "str": "xenoid emissary of flame", "str_pl": "xenoid emissaries of flame" },
@@ -978,11 +1165,19 @@
     "armor_acid": 15,
     "vision_day": 50,
     "vision_night": 12,
-    "path_settings": { "max_dist": 30 },
+    "path_settings": {
+      "max_dist": 45,
+      "max_length": 15,
+      "avoid_traps": true,
+      "avoid_sharp": true,
+      "allow_open_doors": true,
+      "bash_strength": 100
+    },
     "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
-      [ "PARROT", 20 ],
+      [ "PARROT", 5 ],
+      [ "IMPALE", 20 ],
       [ "TAZER", 20 ],
       [ "SMASH", 30 ],
       [ "LONGSWIPE", 20 ],
@@ -1017,7 +1212,7 @@
       "GROUP_MORALE",
       "PUSH_MON",
       "PUSH_VEH",
-      "PATH_AVOID_DANGER_2",
+      "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS"
     ]
   },

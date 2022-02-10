@@ -70,9 +70,9 @@
     "no_dmg_msg_npc": "The %1$s tries to cut <npcname>, but fails to penetrate your armor."
   },
   {
+    "id": "knockdown",
     "type": "monster_attack",
     "attack_type": "melee",
-    "id": "knockdown",
     "effects": [ { "id": "downed", "duration": 3 } ],
     "cooldown": 20,
     "move_cost": 200,
@@ -84,9 +84,9 @@
     "no_dmg_msg_npc": "The %1$s tries to sweep <npcname> to the ground, but can't get through the armor."
   },
   {
+    "id": "shieldbash",
     "type": "monster_attack",
     "attack_type": "melee",
-    "id": "shieldbash",
     "effects": [ { "id": "stunned", "duration": 3 } ],
     "cooldown": 35,
     "move_cost": 200,
