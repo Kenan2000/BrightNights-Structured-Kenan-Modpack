@@ -1,0 +1,354 @@
+[
+  {
+    "result": "armor_straps_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "28 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 52 ] ],
+    "components": [ [ [ "leather_brahmin", 15 ], [ "tanned_hide_brahmin", 2 ] ] ]
+  },
+  
+  
+  {
+    "result": "armor_blarmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "cooking",
+    "difficulty": 3,
+    "skills_required": [ "tailor", 3 ],
+    "time": "1 h",
+    "book_learn": [
+      [ "textbook_tailor", 4 ],
+      [ "tailor_portfolio", 5 ],
+      [ "textbook_survival", 3 ],
+      [ "trappers_companion", 3 ],
+      [ "survival_book", 3 ],
+      [ "textbook_armwest", 6 ],
+      [ "textbook_armschina", 6 ]
+    ],
+    "using": [ [ "sewing_standard", 4 ] ],
+    "qualities": [ { "id": "COOK", "level": 3 } ],
+    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
+    "components": [
+      [ [ "water", 10 ], [ "water_clean", 10 ] ],
+      [ [ "wax", 2 ], [ "any_tallow", 8, "LIST" ], [ "vinegar", 10 ], [ "pine_bough", 20 ] ],
+      [ [ "salt", 50 ] ],
+      [ [ "armor_larmor_brahmin", 1 ] ],
+      [ [ "armguard_larmor_brahmin", 1 ] ]
+    ]
+  },
+  
+
+  {
+    "result": "armor_larmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "28 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 52 ] ],
+    "components": [ [ [ "leather_brahmin", 30 ], [ "tanned_hide_brahmin", 5 ] ] ]
+  },
+  
+  
+  {
+    "result": "boots_larmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "40 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 24 ] ],
+    "components": [ [ [ "leather_brahmin", 18 ], [ "tanned_hide_brahmin", 3 ] ] ]
+  },
+  
+  
+  {
+    "result": "armguard_larmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "720 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 24 ] ],
+    "components": [ [ [ "leather_brahmin", 18 ], [ "tanned_hide_brahmin", 3 ] ] ]
+  },
+  
+  
+  {
+    "result": "vambrace_larmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "360 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 24 ] ],
+    "components": [ [ [ "leather_brahmin", 9 ], [ "tanned_hide_brahmin", 2 ] ] ]
+  },
+  
+  
+  {
+    "result": "gauntlets_larmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HANDS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 12 ] ],
+    "components": [ [ [ "leather_brahmin", 6 ], [ "tanned_hide_brahmin", 1 ] ] ]
+  },
+  
+  {
+    "result": "helmet_larmor_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 18 ] ],
+    "components": [ [ [ "leather_brahmin", 16 ], [ "tanned_hide_brahmin", 3 ] ] ]
+  },
+  
+  {
+    "result": "cloak_leather_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "25 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 18 ] ],
+    "components": [ [ [ "leather_brahmin", 20 ], [ "tanned_hide_brahmin", 3 ] ] ]
+  },
+
+  {
+    "result": "jacket_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "2 h 30 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 4 ], [ "manual_tailor", 3 ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [ [ [ "leather_brahmin", 18 ], [ "tanned_hide_brahmin", 3 ] ] ]
+  },
+
+
+  {
+    "result": "jacket_brahmin_khan",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "2 h 30 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 4 ], [ "manual_tailor", 3 ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [ [ [ "leather_brahmin", 9 ], [ "tanned_hide_brahmin", 2 ] ] ]
+  },
+
+  {
+    "result": "trenchcoat_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "time": "3 h 20 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
+    "using": [ [ "sewing_standard", 45 ] ],
+    "components": [ [ [ "leather_brahmin", 22 ], [ "tanned_hide_brahmin", 4 ] ] ]
+  },
+  
+  {
+    "result": "XL_holster_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "skills_required": [ "gun", 1 ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 9 ], [ "tanned_hide_brahmin", 1 ] ], [ [ "scrap", 3 ] ], [ [ "filament", 20, "LIST" ] ] ]
+  },
+  
+  {
+    "result": "ammo_satchel_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "gun", 1 ],
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 8 ] ], [ [ "filament", 10, "LIST" ] ] ]
+  },
+  
+  {
+    "result": "back_holster_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "gun", 1 ],
+    "time": "18 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 6 ], [ "tanned_hide_brahmin", 1 ] ], [ [ "filament", 30, "LIST" ] ] ]
+  },
+  
+  {
+    "result": "bootstrap_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "pistol", 1 ],
+    "time": "1 h 15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 3 ] ], [ [ "filament", 5, "LIST" ] ] ]
+  },
+  
+  
+  {
+    "result": "holster_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "pistol", 1 ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 6 ], [ "tanned_hide_brahmin", 1 ] ], [ [ "filament", 10, "LIST" ] ] ]
+  },
+  
+  
+  {
+    "result": "sholster_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "pistol", 1 ],
+    "time": "15 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 6 ], [ "tanned_hide_brahmin", 1 ] ], [ [ "filament", 20, "LIST" ] ] ]
+  },
+  
+  {
+    "result": "ammo_pouch_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "skills_required": [ "survival", 1 ],
+    "time": "10 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "components": [ [ [ "leather_brahmin", 6 ], [ "tanned_hide_brahmin", 1 ] ], [ [ "filament", 10, "LIST" ] ] ]
+  },
+  
+  {
+    "result": "bandolier_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 10 ] ],
+    "components": [ [ [ "leather_brahmin", 8 ] ] ]
+  },
+  
+  {
+    "result": "bandolier_brahmin_belt",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ [ "gun", 1 ], [ "rifle", 1 ] ],
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 10 ] ],
+    "components": [ [ [ "leather_brahmin", 8 ] ] ]
+  },
+  
+  {
+    "result": "backpack_leather_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "50 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 20 ] ],
+    "components": [ [ [ "leather_brahmin", 20 ], [ "tanned_hide_brahmin", 3 ] ], [ [ "scrap", 6 ] ] ]
+  },
+  
+  {
+    "result": "duffelbag_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "1 h 20 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [ [ [ "leather_brahmin", 40 ], [ "tanned_hide_brahmin", 6 ] ] ]
+  },
+
+  {
+    "result": "backpack_caravan_brahmin",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_STORAGE",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "3 h",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 100 ] ],
+    "components": [ [ [ "leather_brahmin", 60 ], [ "tanned_hide_brahmin", 10 ] ], [ [ "cordage", 1, "LIST" ] ] ]
+  }
+  
+  
+]

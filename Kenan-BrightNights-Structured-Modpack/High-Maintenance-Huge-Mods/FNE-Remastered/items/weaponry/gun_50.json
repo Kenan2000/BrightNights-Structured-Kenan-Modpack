@@ -1,0 +1,68 @@
+[
+    {
+    "id": "huntingrifle_50",
+    "copy-from": "rifle_manual",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "name": { "str_sp": "Makeshift Hunting Rifle: .50" },
+    "description": "A handmade bolt-action hunting rifle chambered in .50 BMG. Popular among preppers due to ease of production, and packing a massive punch, this should be able to put down almost any creature in the wasteland.",
+    "weight": "2993 g",
+    "volume": "3 L",
+    "price": 53000,
+    "price_postapoc": 4250,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": "50",
+    "dispersion": 90,
+    "durability": 7,
+    "handling": 50,
+    "blackpowder_tolerance": 24,
+    "clip_size": 5,
+    "barrel_length": "750 ml",
+    "flags": [ "RELOAD_ONE", "NEVER_JAMS" ]
+  },
+  
+  
+  {
+    "id": "m2browning_portable",
+    "copy-from": "gun_base",
+    "looks_like": "m2browning",
+    "type": "GUN",
+    "name": { "str_sp": "M2PA machine gun" },
+    "description": "A modernization of the M2HB Browning Machine Gun, lightened and rebalanced for use by power-armored troops. It may be hard to use outside of power armor, but it looks too cool not to try.",
+    "weight": "29000 g",
+    "volume": "4 L",
+    "price": 1800000,
+    "price_postapoc": 10000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": "steel",
+    "ammo": "50",
+    "skill": "rifle",
+    "range": 110,
+    "dispersion": 250,
+    "durability": 8,
+    "handling": 40,
+    "reload": 400,
+    "barrel_length": "1250 ml",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "magazines": [ [ "50", [ "belt50" ] ] ]
+  }
+
+
+]

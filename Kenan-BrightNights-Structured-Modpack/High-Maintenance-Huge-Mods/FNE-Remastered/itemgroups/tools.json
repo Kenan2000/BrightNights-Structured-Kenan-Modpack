@@ -1,0 +1,140 @@
+[
+  {
+    "type": "item_group",
+    "id": "ammo_light_batteries",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "small_energy_cell", "prob": 25, "charges-min": 0, "charges-max": 500 },
+      { "item": "small_energy_cell_bulk", "prob": 50, "charges-min": 0, "charges-max": 300 },
+      { "item": "small_energy_cell_oc", "prob": 9, "charges-min": 0, "charges-max": 1000 },
+      { "item": "small_energy_cell_mc", "prob": 5, "charges-min": 0, "charges-max": 2500 },
+	  { "item": "electron_charge_pack", "prob": 15, "charges-min": 0, "charges-max": 1000 },
+      { "item": "electron_charge_pack_bulk", "prob": 25, "charges-min": 0, "charges-max": 600 },
+      { "item": "electron_charge_pack_oc", "prob": 3, "charges-min": 0, "charges-max": 2000 },
+      { "item": "electron_charge_pack_mc", "prob": 1, "charges-min": 0, "charges-max": 5000 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_light_batteries_full",
+    "items": [
+      { "item": "small_energy_cell", "prob": 25, "charges-min": 500, "charges-max": 500 },
+      { "item": "small_energy_cell_bulk", "prob": 50, "charges-min": 300, "charges-max": 300 },
+      { "item": "small_energy_cell_oc", "prob": 9, "charges-min": 1000, "charges-max": 1000 },
+      { "item": "small_energy_cell_mc", "prob": 5, "charges-min": 2500, "charges-max": 2500 },
+	  { "item": "electron_charge_pack", "prob": 15, "charges-min": 1000, "charges-max": 1000 },
+      { "item": "electron_charge_pack_bulk", "prob": 25, "charges-min": 600, "charges-max": 600 },
+      { "item": "electron_charge_pack_oc", "prob": 3, "charges-min": 2000, "charges-max": 2000 },
+      { "item": "electron_charge_pack_mc", "prob": 1, "charges-min": 5000, "charges-max": 5000 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_medium_batteries",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "electron_charge_pack", "prob": 25, "charges-min": 0, "charges-max": 1000 },
+      { "item": "electron_charge_pack_bulk", "prob": 50, "charges-min": 0, "charges-max": 600 },
+      { "item": "electron_charge_pack_oc", "prob": 9, "charges-min": 0, "charges-max": 2000 },
+      { "item": "electron_charge_pack_mc", "prob": 5, "charges-min": 0, "charges-max": 5000 },
+	  { "item": "micro_fusion_cell", "prob": 15, "charges-min": 0, "charges-max": 5000 },
+      { "item": "micro_fusion_cell_bulk", "prob": 25, "charges-min": 0, "charges-max": 3000 },
+      { "item": "micro_fusion_cell_oc", "prob": 3, "charges-min": 0, "charges-max": 10000 },
+      { "item": "micro_fusion_cell_mc", "prob": 1, "charges-min": 0, "charges-max": 25000 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_medium_batteries_full",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "electron_charge_pack", "prob": 25, "charges-min": 1000, "charges-max": 1000 },
+      { "item": "electron_charge_pack_bulk", "prob": 50, "charges-min": 600, "charges-max": 600 },
+      { "item": "electron_charge_pack_oc", "prob": 9, "charges-min": 2000, "charges-max": 2000 },
+      { "item": "electron_charge_pack_mc", "prob": 5, "charges-min": 5000, "charges-max": 5000 },
+	  { "item": "micro_fusion_cell", "prob": 15, "charges-min": 5000, "charges-max": 5000 },
+      { "item": "micro_fusion_cell_bulk", "prob": 25, "charges-min": 3000, "charges-max": 3000 },
+      { "item": "micro_fusion_cell_oc", "prob": 3, "charges-min": 10000, "charges-max": 10000 },
+      { "item": "micro_fusion_cell_mc", "prob": 1, "charges-min": 25000, "charges-max": 25000 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_heavy_batteries",
+    "subtype": "distribution",
+    "entries": [
+	  { "item": "micro_fusion_cell", "prob": 25, "charges-min": 0, "charges-max": 5000 },
+      { "item": "micro_fusion_cell_bulk", "prob": 50, "charges-min": 0, "charges-max": 3000 },
+      { "item": "micro_fusion_cell_oc", "prob": 9, "charges-min": 0, "charges-max": 10000 },
+      { "item": "micro_fusion_cell_mc", "prob": 5, "charges-min": 0, "charges-max": 25000 },
+	  { "item": "fission_battery", "prob": 5, "charges-min": 0, "charges-max": 40000 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_heavy_batteries_full",
+    "subtype": "distribution",
+    "entries": [
+	  { "item": "micro_fusion_cell", "prob": 25, "charges-min": 5000, "charges-max": 5000 },
+      { "item": "micro_fusion_cell_bulk", "prob": 50, "charges-min": 3000, "charges-max": 3000 },
+      { "item": "micro_fusion_cell_oc", "prob": 9, "charges-min": 10000, "charges-max": 10000 },
+      { "item": "micro_fusion_cell_mc", "prob": 5, "charges-min": 25000, "charges-max": 25000 },
+	  { "item": "fission_battery", "prob": 5, "charges-min": 40000, "charges-max": 40000 }
+    ]
+  },
+  
+  
+  
+    {
+    "id": "tools_earthworking",
+    "type": "item_group",
+    "//": "Portable tools for earthworking or farming",
+    "items": [
+      [ "ripper_off", 10 ]
+    ]
+  },
+  
+    {
+    "id": "power_tools",
+    "type": "item_group",
+    "items": [
+      [ "ripper_off", 1 ]
+    ]
+  },
+  {
+    "id": "tools_tree_cutting",
+    "type": "item_group",
+    "//": "Axes and saws.",
+    "items": [
+      [ "ripper_off", 1 ]
+    ]
+  },
+  
+  
+  
+    {
+    "type": "item_group",
+    "id": "electronics",
+    "items": [
+      [ "small_energy_cell_mod", 30 ],
+	  [ "electron_charge_pack_mod", 15 ],
+	  [ "micro_fusion_cell_mod", 50 ],
+	  [ "fission_battery_mod", 50 ],
+	  [ "fusion_core_mod", 50 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "ammo": 25,
+    "magazine": 100,
+    "id": "consumer_electronics",
+    "items": [
+      [ "small_energy_cell_mod", 50 ],	  
+	  [ "electron_charge_pack_mod", 25 ],
+	  [ "micro_fusion_cell_mod", 5 ]
+    ]
+  }
+  
+
+
+]

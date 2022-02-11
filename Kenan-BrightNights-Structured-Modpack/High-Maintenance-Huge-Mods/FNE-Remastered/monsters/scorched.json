@@ -1,0 +1,380 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "scorched",
+    "friendly": [ "scorchbeast", "scorched_animal" ]
+  },
+  
+  {
+    "type": "MONSTER_FACTION",
+    "name": "scorchbeast",
+    "friendly": [ "scorched", "scorched_animal" ]
+  },
+  
+  {
+    "type": "MONSTER_FACTION",
+    "name": "scorched_animal",
+    "friendly": [ "scorchbeast", "scorched" ]
+  },
+  
+  {
+    "id": "mon_scorched_basic",
+    "type": "MONSTER",
+    "name": { "str": "scorched" },
+    "description": "What seems to have once been a human, covered in burns and strange, crystalline growths. It is full of rage.",
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "default_zombie_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  
+  {
+    "id": "mon_scorched_cop",
+    "type": "MONSTER",
+    "name": { "str": "scorched cop" },
+    "description": "What seems to have once been a police officer, now succumbed to the Scorched plague. It seems to have lost its skills, as well as its morality, but its still dangerous.",
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie_cop",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "mon_zombie_cop_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  
+  {
+    "id": "mon_scorched_swat",
+    "type": "MONSTER",
+    "name": { "str": "scorched SWAT" },
+    "description": "What seems to have once been the elite of the police, now reduced to a shambling scorched. Its armor might protect it, but its gun doesnt seem to be working.",
+	
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie_swat",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+	
+	"armor_bash": 10,
+    "armor_cut": 16,
+	
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "mon_zombie_swat_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  
+  {
+    "id": "mon_scorched_fireman",
+    "type": "MONSTER",
+    "name": { "str": "scorched firefighter" },
+    "description": "Once a firefighter, likely trying to maintain peace amid the end of the world, this Scorch plague victim now only seeks to kill and infect. Still clad in firefighter gear, you may find something useful on the body.",
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie_fireman",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "yellow",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "mon_zombie_fireman_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  
+  {
+    "id": "mon_scorched_hazmat",
+    "type": "MONSTER",
+    "name": { "str": "scorched hazmat" },
+    "description": "Clad in hazmat gear, it seems to have failed to protect them against the plague.",
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie_hazmat",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "mon_zombie_hazmat_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  
+  {
+    "id": "mon_scorched_soldier",
+    "type": "MONSTER",
+    "name": { "str": "scorched soldier" },
+    "description": "This scorched appears to have been a pre-war soldier. Their gun seems to be jammed, and they appear unable to fix it.",
+	
+	
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie_soldier",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "green",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 3,
+    "melee_cut": 0,
+	
+	"armor_bash": 12,
+    "armor_cut": 25,
+	
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "mon_zombie_soldier_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  },
+  
+  {
+    "id": "mon_scorched_survivor",
+    "type": "MONSTER",
+    "name": { "str": "scorched survivor" },
+    "description": "The human figure before you is clad in makeshift armor and weaponry, though not gear you can pin to any faction. It seems clear; before the Scorched plague got to them, they were a pretty successful survivor.",
+    "default_faction": "scorched",
+	
+	"looks_like": "mon_zombie_survivor",
+	
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "hp": 90,
+    "speed": 60,
+    "material": [ "flesh" ],
+    "symbol": "@",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+	
+    "melee_skill": 6,
+    "melee_dice": 4,
+    "melee_dice_sides": 6,
+    "melee_cut": 0,
+    "dodge": 1,
+    "armor_bash": 7,
+    "armor_cut": 7,
+    "armor_acid": 4,
+	
+    "vision_night": 3,
+    "harvest": "scorched",
+    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "GRAB", 7 ], [ "scratch", 20 ] ],
+    "death_drops": "mon_zombie_survivor_death_drops",
+    "death_function": [ "NORMAL" ],
+	
+	"//": "This is where the upgrade path once was; re-add later. Scorched will have evolution split between becoming more dangerous, and potentially being petrified into those statues you see througout appalachia.",
+	
+	
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "STUMBLES",
+      "WARM",
+      "BASHES",
+      "GROUP_BASH",
+      "POISON",
+      "BLEED",
+      "NO_BREATHE",
+      "PUSH_MON",
+      "FILTHY"
+    ]
+  }
+
+]

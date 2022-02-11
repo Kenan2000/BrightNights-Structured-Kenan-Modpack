@@ -1,0 +1,82 @@
+[
+  {
+    "id": "armor_straps_rat",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "rat leather straps" },
+    "description": "All kinds of bandoliers and pads, made out of rat leather. For when you need to carry stuff but cant afford good leather.",
+    "weight": "2108 g",
+    "volume": "9500 ml",
+    "price": 26000,
+    "price_postapoc": 3000,
+    "to_hit": -5,
+    "bashing": 2,
+    "material": [ "leather_rat" ],
+    "symbol": "[",
+    "looks_like": "armor_larmor",
+    "color": "brown",
+    "covers": [ "legs", "torso", "arms" ],
+    "coverage": 45,
+    "encumbrance": 2,
+    "storage": "10 L",
+    "warmth": 1,
+    "material_thickness": 5,
+    "flags": [ "VARSIZE", "POCKETS", "STURDY", "OVERSIZE", "OUTER" ]
+  },
+  
+  {
+    "id": "jacket_rat",
+    "type": "ARMOR",
+    "name": { "str": "rat leather jacket" },
+    "description": "A jacket made from rat leather. Lightweight, it provides little protection.",
+    "weight": "1450 g",
+    "volume": "4500 ml",
+    "price": 17900,
+    "price_postapoc": 500,
+    "to_hit": 1,
+    "material": [ "leather_rat" ],
+    "symbol": "[",
+    "looks_like": "jacket_leather",
+    "color": "dark_gray",
+    "covers": [ "torso", "arms" ],
+    "coverage": 90,
+    "encumbrance": 5,
+    "storage": "1 L",
+    "warmth": 3,
+    "material_thickness": 3,
+    "environmental_protection": 1,
+    "valid_mods": [ "steel_padded" ],
+    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
+  },
+
+
+ 
+  
+    {
+    "id": "cloak_leather_rat",
+    "type": "ARMOR",
+    "name": { "str": "rat leather cloak" },
+    "description": "A light rat leather cloak meant to be thrown over your body.  Provides minimal protection, but great for you summer albinos!",
+    "weight": "2060 g",
+    "volume": "3500 ml",
+    "price": 24500,
+    "price_postapoc": 1000,
+    "to_hit": -1,
+    "material": [ "leather_rat" ],
+    "symbol": "[",
+    "looks_like": "cloak",
+    "color": "dark_gray",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 65,
+    "encumbrance": 2,
+    "warmth": 4,
+    "material_thickness": 2,
+    "environmental_protection": 3,
+    "flags": [ "OVERSIZE", "HOOD", "OUTER", "WATERPROOF", "RAINPROOF" ]
+  }
+  
+  
+    
+
+
+]

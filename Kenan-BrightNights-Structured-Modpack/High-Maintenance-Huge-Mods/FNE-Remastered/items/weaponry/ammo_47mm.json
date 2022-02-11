@@ -1,0 +1,82 @@
+[
+  {
+    "id": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str_sp": "4.73x33mm caseless" },
+    "description": "H&K 4.73x33mm caseless rounds.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "weight": "12 g",
+    "volume": "250 ml",
+    "price": 225,
+    "price_postapoc": 8000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "plastic", "powder" ],
+    "symbol": "=",
+    "color": "pink",
+    "count": 40,
+    "stack_size": 40,
+    "ammo_type": "47mm",
+    "range": 42,
+    "damage": { "damage_type": "stab", "amount": 38, "armor_penetration": 16 },
+    "dispersion": 75,
+    "recoil": 2200,
+    "effects": [ "NEVER_MISFIRES" ]
+  },
+  
+    {
+    "id": "47mm_bootleg",
+    "copy-from": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str": "bootleg 4.73x33mm caseless" },
+    "description": "Bootleg duplicates of H&K 4.73x33mm caseless rounds.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  {
+    "id": "47mm_civilian",
+    "copy-from": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str": "4.73x33mm sporting" },
+    "description": "H&K 4.73x33mm caseless rounds, light sporting load sold for civilian use.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] },
+    "proportional": { "price": 0.8, "damage": { "damage_type": "stab", "amount": 0.5 }, "dispersion": 1.2, "recoil": 0.5 }
+  },
+  {
+    "id": "47mm_fmj",
+    "copy-from": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str": "4.73x33mm FMJ" },
+    "description": "H&K 4.73x33mm caseless rounds, full metal jacket.  Military grade ammunition for caseless firearms.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "relative": { "damage": { "damage_type": "stab", "amount": -5, "armor_penetration": 10 } }
+  },
+  {
+    "id": "47mm_hvp",
+    "copy-from": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str": "4.73x33mm HVP" },
+    "description": "H&K 4.73x33mm caseless rounds, saboted high-velocity penetrator type.  Advanced military grade, armor-piercing ammunition that fires a single depleted uranium flechette.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "price": 2500,
+    "price_postapoc": 50000,
+    "count": 20,
+    "relative": { "damage": { "damage_type": "stab", "amount": 5, "armor_penetration": 20 } }
+  },
+  {
+    "id": "47mm_inc",
+    "copy-from": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str": "4.73x33mm tracer" },
+    "description": "H&K 4.73x33mm caseless rounds with tracers to help keep the weapon they are fired from on target at the risk of igniting flammable substances.  Military grade ammunition for caseless firearms.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "count": 20,
+    "proportional": { "dispersion": 0.8 },
+    "extend": { "effects": [ "INCENDIARY" ] }
+  },
+  {
+    "id": "47mm_jhp",
+    "copy-from": "47mm_caseless",
+    "type": "AMMO",
+    "name": { "str": "4.73x33mm JHP" },
+    "description": "H&K 4.73x33mm caseless rounds, jacketed hollowpoint.  Military grade ammunition for caseless firearms.  Being caseless rounds, these cannot be disassembled or reloaded.",
+    "relative": { "damage": { "damage_type": "stab", "amount": 5, "armor_penetration": -10 } }
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "type": "material",
+    "ident": "leather_brahmin",
+    "name": "Brahmin Leather",
+    "density": 6,
+    "specific_heat_liquid": 1.5,
+    "specific_heat_solid": 1.5,
+    "latent_heat": 273,
+    "soft": true,
+    "reinforces": true,
+    "bash_resist": 3,
+    "cut_resist": 3,
+    "acid_resist": 4,
+    "fire_resist": 2,
+    "elec_resist": 2,
+    "chip_resist": 10,
+    "repaired_with": "leather_brahmin",
+    "salvaged_into": "leather_brahmin",
+    "dmg_adj": [ "scratched", "cut", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "sliced",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 1, "smoke": 3, "burn": 2, "volume_per_turn": "500 ml" },
+      { "fuel": 1, "smoke": 3, "burn": 2 }
+    ]
+  },
+  
+  
+    {
+    "type": "material",
+    "ident": "leather_rat",
+    "name": "Rat Leather",
+    "density": 6,
+    "specific_heat_liquid": 1.5,
+    "specific_heat_solid": 1.5,
+    "latent_heat": 273,
+    "soft": true,
+    "reinforces": true,
+    "bash_resist": 1,
+    "cut_resist": 1,
+    "acid_resist": 4,
+    "fire_resist": 2,
+    "elec_resist": 2,
+    "chip_resist": 10,
+    "repaired_with": "leather_rat",
+    "salvaged_into": "leather_rat",
+    "dmg_adj": [ "scratched", "cut", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "sliced",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 1, "smoke": 3, "burn": 2, "volume_per_turn": "500 ml" },
+      { "fuel": 1, "smoke": 3, "burn": 2 }
+    ]
+  },
+
+
+
+  {
+    "type": "material",
+    "ident": "leather_deathclaw",
+    "name": "Deathclaw Leather",
+    "density": 6,
+    "specific_heat_liquid": 1.5,
+    "specific_heat_solid": 1.5,
+    "latent_heat": 273,
+    "soft": true,
+    "reinforces": true,
+    "bash_resist": 5,
+    "cut_resist": 5,
+    "acid_resist": 4,
+    "fire_resist": 2,
+    "elec_resist": 2,
+    "chip_resist": 10,
+    "repaired_with": "leather_deathclaw",
+    "salvaged_into": "leather_deathclaw",
+    "dmg_adj": [ "scratched", "cut", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "sliced",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 1, "smoke": 3, "burn": 2, "volume_per_turn": "500 ml" },
+      { "fuel": 1, "smoke": 3, "burn": 2 }
+    ]
+  },
+
+
+  {
+    "type": "material",
+    "ident": "chitin_mantis",
+    "name": "Mantis Chitin",
+    "density": 10,
+    "specific_heat_liquid": 4.186,
+    "specific_heat_solid": 2.108,
+    "latent_heat": 333,
+    "bash_resist": 4,
+    "cut_resist": 3,
+    "acid_resist": 6,
+    "fire_resist": 2,
+    "elec_resist": 2,
+    "chip_resist": 10,
+    "repaired_with": "chitin_piece",
+    "salvaged_into": "chitin_piece",
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "chipped",
+    "burn_data": [
+      { "fuel": 0, "smoke": 1, "burn": 1, "volume_per_turn": "1250 ml" },
+      { "fuel": 1, "smoke": 3, "burn": 1 },
+      { "fuel": 1, "smoke": 5, "burn": 5 }
+    ]
+  },
+
+
+  {
+    "type": "material",
+    "ident": "chitin_scorpion",
+    "name": "Radscorpion Chitin",
+    "density": 10,
+    "specific_heat_liquid": 4.186,
+    "specific_heat_solid": 2.108,
+    "latent_heat": 333,
+    "bash_resist": 4,
+    "cut_resist": 4,
+    "acid_resist": 8,
+    "fire_resist": 4,
+    "elec_resist": 2,
+    "chip_resist": 10,
+    "repaired_with": "chitin_piece",
+    "salvaged_into": "chitin_piece",
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "chipped",
+    "burn_data": [
+      { "fuel": 0, "smoke": 1, "burn": 1, "volume_per_turn": "1250 ml" },
+      { "fuel": 1, "smoke": 3, "burn": 1 },
+      { "fuel": 1, "smoke": 5, "burn": 5 }
+    ]
+  },
+  
+  
+  
+    {
+    "type": "material",
+    "ident": "vault_cloth",
+    "name": "Vault-Tec Nanofabric",
+    "density": 4,
+    "specific_heat_liquid": 1.2,
+    "specific_heat_solid": 1.2,
+    "latent_heat": 273,
+    "soft": true,
+	"reinforces": true,
+    "bash_resist": 1,
+    "cut_resist": 1,
+    "acid_resist": 10,
+    "fire_resist": 20,
+    "elec_resist": 10,
+    "chip_resist": 8,
+    "repaired_with": "nomex",
+    "salvaged_into": "nomex",
+    "dmg_adj": [ "ripped", "torn", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "cut",
+    "burn_products": [ [ "nomex", 1 ] ],
+    "burn_data": [ { "immune": true }, { "immune": true }, { "immune": true } ]
+  },
+  
+  {
+    "type": "material",
+    "id": "ultracite",
+    "name": "Ultracite",
+    "density": 14,
+    "specific_heat_liquid": 0.2,
+    "specific_heat_solid": 0.2,
+    "latent_heat": 100,
+    "reinforces": true,
+    "bash_resist": 3,
+    "cut_resist": 4,
+    "acid_resist": 10,
+    "fire_resist": 3,
+    "elec_resist": 4,
+    "chip_resist": 0,
+    "repaired_with": "ultracite_shard",
+    "salvaged_into": "ultracite_shard",
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "scratched",
+    "burn_data": [
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 0 },
+      { "fuel": 0, "smoke": 0, "burn": 1000, "volume_per_turn": "5000 ml", "//": "More like shattering than melting" }
+    ],
+    "burn_products": [ [ "ultracite_shard", 1 ] ]
+  }
+  
+  
+]

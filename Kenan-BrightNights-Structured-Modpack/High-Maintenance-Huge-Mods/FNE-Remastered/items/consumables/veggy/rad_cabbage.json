@@ -1,0 +1,130 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "radcabbage",
+    "name": "rad cabbage",
+    "weight": "119 g",
+    "color": "green",
+    "spoils_in": "9 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+    "calories": 40,
+    "description": "A raw rad-cabbage. One of the few crops that could reasonably survive nuclear fallout, and one of the first crops to be grown by post-war civilizations.",
+    "price": 600,
+    "price_postapoc": 50,
+    "material": "veggy",
+    "flags": [ "TRADER_AVOID", "SMOKABLE", "RAW" ],
+    "smoking_result": "dry_radcabbage",
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 16 ], [ "vitC", 36 ], [ "calcium", 4 ], [ "iron", 4 ] ]
+  },
+  
+   {
+    "type": "COMESTIBLE",
+    "id": "radcabbage_cooked",
+    "name": "cooked rad-cabbage",
+    "weight": "119 g",
+    "color": "green",
+    "spoils_in": "3 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+    "calories": 40,
+    "description": "A freshly cooked chunk of rad-cabbage, tasty and nutritious.",
+    "price": 700,
+    "price_postapoc": 50,
+    "material": "veggy",
+    "flags": [ "TRADER_AVOID", "EATEN_HOT" ],
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 16 ], [ "vitC", 36 ], [ "calcium", 4 ], [ "iron", 4 ] ]
+  },
+
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_radcabbage",
+    "name": "dehydrated rad-cabbage",
+    "copy-from": "radcabbage",
+    "proportional": { "weight": 0.5 },
+    "color": "green",
+    "spoils_in": "364 days",
+    "quench": -3,
+    "description": "Dehydrated strips of rad-cabbage. Delicious and nutritious, and long lasting. A staple from Shady Sands",
+    "price": 900,
+    "price_postapoc": 100,
+    "material": "veggy",
+    "primary_material": "dried_vegetable",
+    "volume": "250 ml",
+    "flags": [ "EDIBLE_FROZEN" ],
+    "charges": 2
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "radcabbage_canned",
+    "name": { "str": "canned rad-cabbage", "str_pl": "canned rad-cabbages" },
+    "weight": "259 g",
+    "color": "green",
+    "spoils_in": "3 days",
+    "container": "can_food",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+	"fun": -1,
+    "calories": 93,
+    "description": "This mushy pile of cabbage was boiled and canned in an earlier life.  Utterly unappealing, and very oderous, but it lasts basically forever until you open the can.",
+    "price": 250,
+    "price_postapoc": 150,
+    "material": "veggy",
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 73 ], [ "vitC", 11 ], [ "calcium", 5 ], [ "iron", 9 ] ]
+  },
+
+  {
+    "type": "COMESTIBLE",
+    "id": "radcabbage_pickled",
+    "name": { "str": "pickled rad-cabbage", "str_pl": "pickled rad-cabbage" },
+    "copy-from": "radcabbage",
+    "color": "light_green",
+    "spoils_in": "21 days",
+    "container": "jar_glass_sealed",
+    "description": "This is a serving of crisply brined and canned radcabbage.  Tasty and nutritious, while still crunchy! It should last for a long time, even when you invariably break the seal you put on the jar.",
+    "price": 250,
+    "fun": 7
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "radcabbage_salted",
+    "name": "salted rad-cabbage",
+    "weight": "192 g",
+    "color": "green",
+    "spoils_in": "3 days",
+    "container": "plastic_bag_vac",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -5,
+    "healthy": 1,
+    "calories": 80,
+    "description": "rad-cabbage pickled in a salt bath.  Goes well with brahmin burgers.",
+    "price": 500,
+    "price_postapoc": 100,
+    "material": "veggy",
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 46 ], [ "vitC", 7 ], [ "calcium", 5 ], [ "iron", 9 ] ]
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "seed_radcabbage",
+    "copy-from": "seed",
+    "price": 50,
+    "name": { "str_sp": "rad-cabbage seeds" },
+    "color": "light_gray",
+    "description": "Some rad-cabbage seeds. Takes 6 days to grow.",
+    "seed_data": { "plant_name": "rad-cabbage", "fruit": "radcabbage", "byproducts": [ "withered" ], "grow": "6 days" }
+  }
+
+
+
+]

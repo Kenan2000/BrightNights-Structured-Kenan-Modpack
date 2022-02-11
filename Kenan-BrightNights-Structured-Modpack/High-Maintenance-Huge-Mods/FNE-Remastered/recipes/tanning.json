@@ -1,0 +1,137 @@
+[
+  {
+    "type": "recipe",
+    "result": "cured_hide_brahmin",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 1 ],
+    "difficulty": 1,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "salt_water", 1 ], [ "saline", 2 ], [ "salt", 2 ] ],
+      [ [ "raw_leather_brahmin", 1 ] ]
+    ]
+  },
+
+  {
+    "type": "recipe",
+    "result": "tanning_hide_brahmin",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 2 ],
+    "difficulty": 3,
+    "time": "48 m",
+    "batch_time_factors": [ 20, 10 ],
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "COOK", "level": 2 },
+      { "id": "BOIL", "level": 1 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
+    "components": [
+      [ [ "water_clean", 2 ], [ "water", 2 ] ],
+      [ [ "tanbark", 1 ], [ "acorns", 2 ], [ "hops", 2 ], [ "pine_bough", 6 ] ],
+      [ [ "salt_water", 2 ], [ "saline", 10 ], [ "salt", 10 ] ],
+      [ [ "edible_tallow_lard", 1, "LIST" ], [ "tallow_tainted", 1 ] ],
+      [ [ "cured_hide_brahmin", 6 ] ]
+    ]
+  },
+  
+  
+    {
+    "type": "recipe",
+    "result": "cured_hide_rat",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 1 ],
+    "difficulty": 1,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "salt_water", 1 ], [ "saline", 2 ], [ "salt", 2 ] ],
+      [ [ "raw_leather_rat", 1 ] ]
+    ]
+  },
+
+  {
+    "type": "recipe",
+    "result": "tanning_hide_rat",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 2 ],
+    "difficulty": 3,
+    "time": "48 m",
+    "batch_time_factors": [ 20, 10 ],
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "COOK", "level": 2 },
+      { "id": "BOIL", "level": 1 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
+    "components": [
+      [ [ "water_clean", 2 ], [ "water", 2 ] ],
+      [ [ "tanbark", 1 ], [ "acorns", 2 ], [ "hops", 2 ], [ "pine_bough", 6 ] ],
+      [ [ "salt_water", 2 ], [ "saline", 10 ], [ "salt", 10 ] ],
+      [ [ "edible_tallow_lard", 1, "LIST" ], [ "tallow_tainted", 1 ] ],
+      [ [ "cured_hide_rat", 6 ] ]
+    ]
+  },
+
+
+
+
+  {
+    "type": "recipe",
+    "result": "cured_hide_deathclaw",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 1 ],
+    "difficulty": 1,
+    "time": "5 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "salt_water", 1 ], [ "saline", 2 ], [ "salt", 2 ] ],
+      [ [ "raw_leather_deathclaw", 1 ] ]
+    ]
+  },
+
+  {
+    "type": "recipe",
+    "result": "tanning_hide_deathclaw",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "survival",
+    "skills_required": [ "cooking", 2 ],
+    "difficulty": 3,
+    "time": "48 m",
+    "batch_time_factors": [ 20, 10 ],
+    "autolearn": true,
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "COOK", "level": 2 },
+      { "id": "BOIL", "level": 1 },
+      { "id": "CONTAIN", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 20, "LIST" ] ] ],
+    "components": [
+      [ [ "water_clean", 2 ], [ "water", 2 ] ],
+      [ [ "tanbark", 1 ], [ "acorns", 2 ], [ "hops", 2 ], [ "pine_bough", 6 ] ],
+      [ [ "salt_water", 2 ], [ "saline", 10 ], [ "salt", 10 ] ],
+      [ [ "edible_tallow_lard", 1, "LIST" ], [ "tallow_tainted", 1 ] ],
+      [ [ "cured_hide_deathclaw", 6 ] ]
+    ]
+  }
+]

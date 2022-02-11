@@ -1,0 +1,61 @@
+[
+
+  {
+    "id": "pipemag38_small",
+    "looks_like": "mp5mag",
+    "type": "MAGAZINE",
+    "name": { "str": ".38 pipe gun mag" },
+    "description": "A makeshift .38 magazine for pipe pistols and rifles.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": 4000,
+    "price_postapoc": 100,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "38",
+    "capacity": 12,
+    "reliability": 6,
+    "reload_time": 160,
+    "flags": [ "MAG_COMPACT" ]
+  },
+
+  {
+    "id": "pipemag38_large",
+    "looks_like": "mp5mag",
+    "type": "MAGAZINE",
+    "name": { "str": ".38 pipe gun expanded magazine" },
+    "description": "An expanded makeshift .38 magazine for pipe pistols and rifles.",
+    "weight": "255 g",
+    "volume": "500 ml",
+    "price": 4000,
+    "price_postapoc": 100,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "38",
+    "capacity": 24,
+    "reliability": 4,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+  {
+    "id": "pipemag38_drum",
+    "looks_like": "mp5mag",
+    "type": "MAGAZINE",
+    "name": { "str": ".38 pipe gun drum" },
+    "description": "A makeshift .38 drum for pipe pistols and rifles.",
+    "weight": "255 g",
+    "volume": "500 ml",
+    "price": 4000,
+    "price_postapoc": 100,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "38",
+    "capacity": 48,
+    "reliability": 2,
+    "flags": [ "MAG_COMPACT" ]
+  }
+
+]

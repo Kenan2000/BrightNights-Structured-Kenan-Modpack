@@ -1,0 +1,78 @@
+[
+  {
+    "id": "small_energy_cell_mod",
+    "copy-from": "mod_battery",
+    "type": "TOOLMOD",
+    "category": "spare_parts",
+    "name": { "str": "Small Energy Cell mod" },
+    "description": "A battery compartment mod that allows using Small Energy Cells in regular tools.",
+    "color": "light_green",
+    "acceptable_ammo": [ "battery" ],
+    "magazine_adaptor": [ [ "battery", [ "small_energy_cell", "small_energy_cell_bulk", "small_energy_cell_oc", "small_energy_cell_mc" ] ] ]
+  },
+
+
+  {
+    "id": "electron_charge_pack_mod",
+    "copy-from": "mod_battery",
+    "type": "TOOLMOD",
+    "category": "spare_parts",
+    "name": { "str": "Electron Charge Pack mod" },
+    "description": "A battery compartment mod that allows using Electron Charge Packs in regular tools.",
+    "color": "light_green",
+    "acceptable_ammo": [ "battery" ],
+    "magazine_adaptor": [ [ "battery", [ "electron_charge_pack", "electron_charge_pack_bulk", "electron_charge_pack_oc", "electron_charge_pack_mc" ] ] ]
+  },
+  
+  {
+    "id": "micro_fusion_cell_mod",
+    "copy-from": "mod_battery",
+    "type": "TOOLMOD",
+    "category": "spare_parts",
+    "name": { "str": "Micro Fusion Cell mod" },
+    "description": "A battery compartment mod that allows using Micro Fusion Cells in regular tools.",
+    "color": "light_green",
+    "acceptable_ammo": [ "battery" ],
+    "magazine_adaptor": [ [ "battery", [ "micro_fusion_cell", "micro_fusion_cell_bulk", "micro_fusion_cell_oc", "micro_fusion_cell_mc" ] ] ]
+  },
+  
+    {
+    "id": "fission_battery_mod",
+    "copy-from": "mod_battery",
+    "type": "TOOLMOD",
+    "category": "spare_parts",
+    "name": { "str": "Fission Battery mod" },
+    "description": "A battery compartment mod that allows using Fission Batteries in regular tools.",
+    "color": "light_green",
+    "acceptable_ammo": [ "battery" ],
+    "magazine_adaptor": [ [ "battery", [ "fission_battery" ] ] ]
+  },
+  
+  
+      {
+    "id": "fusion_core_mod",
+    "copy-from": "mod_battery",
+    "type": "TOOLMOD",
+    "category": "spare_parts",
+    "name": { "str": "Fusion Core mod" },
+    "description": "A battery compartment mod that allows using Fusion Cores in regular tools.",
+    "color": "light_green",
+    "acceptable_ammo": [ "battery" ],
+    "magazine_adaptor": [ [ "battery", [ "fusion_core" ] ] ]
+  },
+  
+  
+  {
+    "id": "alien_power_mod",
+    "copy-from": "mod_battery",
+    "type": "TOOLMOD",
+    "category": "spare_parts",
+    "name": { "str": "Alien Power mod" },
+    "description": "A mysterious adapter that allows you to power your tools using Alien Power Cells and Modules.",
+    "color": "light_green",
+    "acceptable_ammo": [ "battery" ],
+    "magazine_adaptor": [ [ "battery", [ "alien_power_module", "alien_power_cell" ] ] ]
+  }
+
+
+]

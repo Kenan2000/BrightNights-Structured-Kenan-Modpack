@@ -1,0 +1,180 @@
+[
+
+  {
+    "id": "5mm_casing",
+    "copy-from": "casing",
+    "type": "GENERIC",
+    "name": { "str": "5mm casing" },
+    "description": "An empty casing from a 5mm round.",
+    "weight": "5 g",
+    "volume": "5ml"
+  },
+
+  {
+    "id": "ammolink5mm",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": "5mm ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "belt5mm" }
+  },
+
+  {
+    "id": "5mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "5mm JHP" },
+    "description": "5mm M134 Jacketed Hollow Point rounds. Originally designed for assault rifles, the intermediate 5mm was all but phased out for the superior, beloved 5.56 round in most situations. However, the advent of power armored troopers, using miniguns, gave the round a new life due to its lower recoil for negligible loss of power. It also saw heavy use in paratrooper carbines for their light weight.",
+    "weight": "12 g",
+    "volume": "250 ml",
+    "price": 140,
+    "price_postapoc": 450,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "yellow",
+    "count": 60,
+    "stack_size": 60,
+    "ammo_type": "5mm",
+    "casing": "5mm_casing",
+    "range": 36,
+    "damage": { "damage_type": "stab", "amount": 40, "armor_penetration": 2 },
+    "dispersion": 30,
+    "recoil": 1000,
+    "effects": [ "COOKOFF", "NEVER_MISFIRES" ]
+  },
+
+  {
+    "id": "5mm_fmj",
+    "copy-from": "5mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "5mm FMJ" },
+    "description": "5mm M134 Full Metal Jacket rounds. Originally designed for assault rifles, the intermediate 5mm was all but phased out for the superior, beloved 5.56 round in most situations. However, the advent of power armored troopers, using miniguns, gave the round a new life due to its lower recoil for negligible loss of power. It also saw heavy use in paratrooper carbines for their light weight.",
+    "price": 145,
+    "price_postapoc": 450,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "relative": { "damage": { "damage_type": "stab", "amount": -2, "armor_penetration": 6 } }
+  },
+
+  {
+    "id": "5mm_ap",
+    "copy-from": "5mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "5mm AP" },
+    "description": "5mm M134 Armor Piercing rounds. Originally designed for assault rifles, the intermediate 5mm was all but phased out for the superior, beloved 5.56 round in most situations. However, the advent of power armored troopers, using miniguns, gave the round a new life due to its lower recoil for negligible loss of power. It also saw heavy use in paratrooper carbines for their light weight.",
+    "price": 145,
+    "price_postapoc": 450,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "relative": { "damage": { "damage_type": "stab", "amount": -6, "armor_penetration": 12 } }
+  },
+  
+    {
+    "id": "5mm_incendiary",
+    "copy-from": "5mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "5mm tracer" },
+    "description": "5mm M134 Tracer rounds. Originally designed for assault rifles, the intermediate 5mm was all but phased out for the superior, beloved 5.56 round in most situations. However, the advent of power armored troopers, using miniguns, gave the round a new life due to its lower recoil for negligible loss of power. It also saw heavy use in paratrooper carbines for their light weight.",
+    "extend": { "effects": [ "INCENDIARY" ] }
+  },
+  
+    {
+    "id": "bp_5mm_jhp",
+    "copy-from": "5mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "5mm JHP, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "bp_5mm_fmj",
+    "copy-from": "5mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "5mm FMJ, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "bp_5mm_ap",
+    "copy-from": "5mm_ap",
+    "type": "AMMO",
+    "name": { "str": "5mm AP, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "bp_5mm_incendiary",
+    "copy-from": "5mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "5mm Tracer, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  
+    {
+    "id": "reloaded_5mm_jhp",
+    "copy-from": "5mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "5mm JHP, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  
+      {
+    "id": "reloaded_5mm_fmj",
+    "copy-from": "5mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "5mm FMJ, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+
+
+    {
+    "id": "reloaded_5mm_ap",
+    "copy-from": "5mm_ap",
+    "type": "AMMO",
+    "name": { "str": "5mm AP, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "reloaded_5mm_incendiary",
+    "copy-from": "5mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "5mm Tracer, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  }
+]

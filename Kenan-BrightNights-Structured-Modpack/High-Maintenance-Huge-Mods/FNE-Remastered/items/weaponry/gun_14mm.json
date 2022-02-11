@@ -1,0 +1,171 @@
+[
+  {
+    "id": "sigsauer_14mm",
+    "looks_like": "glock_17",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str_sp": "SIG-Sauer 14mm Pistol" },
+    "description": "A Sig-Sauer 14mm Auto Pistol, also known as the 'Lil' Devil'. Large, singleshot handgun. Excellent craftsmanship, high price.",
+    "weight": "1700 g",
+    "volume": "750 ml",
+    "price": 87500,
+    "price_postapoc": 2750,
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "light_gray",
+    "ammo": [ "14mm", "127mm" ],
+    "skill": "pistol",
+    "ranged_damage": { "damage_type": "stab", "amount": -1 },
+    "dispersion": 480,
+    "durability": 7,
+    "min_cycle_recoil": 1413,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "bore", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
+    "magazine_well": 1,
+    "magazines": [ [ "14mm", [ "14mmpistolmag" ] ], [ "127mm", [ "14mmpistolmag" ] ] ]
+  },
+  
+  
+  
+  
+    {
+    "id": "smg_14mm",
+    "copy-from": "smg_base",
+    "looks_like": "hk_mp5",
+    "type": "GUN",
+    "name": { "str_sp": "SIG-Sauer 14mm SMG" },
+    "description": "A SIG-Sauer 14mm SMG. Rare, valuable, and durable. The magazine loads from the top, with the sights on it, so sadly, it is incompatible with upgraded optics.",
+    "weight": "3274 g",
+    "volume": "1750 ml",
+    "price": 80000,
+    "price_postapoc": 1500,
+    "to_hit": -1,
+    "bashing": 10,
+    "material": "steel",
+    "color": "dark_gray",
+    "ammo": [ "14mm", "127mm" ],
+    "ranged_damage": { "damage_type": "stab", "amount": -4 },
+    "dispersion": 590,
+    "durability": 8,
+    "blackpowder_tolerance": 24,
+    "min_cycle_recoil": 425,
+    "modes": [ [ "DEFAULT", "burst", 5 ] ],
+    "barrel_length": "250 ml",
+    "valid_mod_locations": [
+      [ "accessories", 3 ],
+      [ "barrel", 1 ],
+      [ "brass catcher", 1 ],
+      [ "grip", 1 ],
+      [ "magazine", 1 ],
+      [ "muzzle", 1 ],
+      [ "rail", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazines": [ [ "14mm", [ "14mmsmgmag", "14mmsmgbigmag" ] ], [ "127mm", [ "14mmsmgmag", "14mmsmgbigmag" ] ] ]
+  },
+  
+  
+    {
+    "id": "rifle_survivalist",
+    "copy-from": "rifle_semi",
+    "type": "GUN",
+    "name": { "str": "14mm Service Rifle" },
+    "description": "A variant of the ubiquitous NVA SR-223 Service Rifle, rechambered for 14mm. Semi auto only.",
+    "weight": "3500 g",
+    "volume": "2 L",
+    "price": 125000,
+    "price_postapoc": 4000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "dark_gray",
+    "ammo": [ "14mm", "127mm" ],
+    "dispersion": 150,
+    "durability": 7,
+    "min_cycle_recoil": 1350,
+    "magazines": [
+      [
+        "14mm",
+        [
+          "14mmriflemag10",
+		  "14mmriflemag20",
+		  "14mmriflemag30",
+		  "14mmriflemag60",
+		  "14mmriflemag90"
+
+        ]
+      ],
+      [
+        "127mm",
+        [
+          "14mmriflemag10",
+		  "14mmriflemag20",
+		  "14mmriflemag30",
+		  "14mmriflemag60",
+		  "14mmriflemag90"
+
+        ]
+      ]
+    ]
+  },
+  
+  
+    {
+    "id": "rifle_14mm",
+    "copy-from": "gun_base",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "name": { "str": "pipe rifle: 14mm", "str_pl": "pipe rifles: 14mm" },
+    "description": "A homemade rifle.  It is simply a pipe attached to a stock, with a hammer to strike the single round it holds.",
+    "weight": "4080 g",
+    "volume": "3 L",
+    "price": 110000,
+    "price_postapoc": 500,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "steel", "wood" ],
+    "symbol": "(",
+    "color": "brown",
+    "ammo": [ "14mm", "127mm" ],
+    "skill": "rifle",
+    "ranged_damage": { "damage_type": "stab", "amount": -2 },
+    "dispersion": 550,
+    "durability": 6,
+    "blackpowder_tolerance": 60,
+    "loudness": 25,
+    "clip_size": 1,
+    "reload": 200,
+    "barrel_length": "1000 ml",
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "muzzle", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "grip mount", 1 ],
+      [ "rail mount", 1 ],
+      [ "sights mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ],
+    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
+    "flags": [ "RELOAD_EJECT" ]
+  }
+
+
+]

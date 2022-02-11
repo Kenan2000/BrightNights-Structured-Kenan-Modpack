@@ -1,0 +1,88 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "mallet_commie",
+    "name": { "str": "Commie Whacker" },
+    "description": "A toy hammer made of plastic and cloth. Basically worthless as a weapon.",
+    "weight": "450 g",
+    "to_hit": 2,
+    "color": "yellow",
+    "symbol": "/",
+    "price_postapoc": "50 cent",
+    "material": [ "plastic", "cotton" ],
+    "flags": [ "FRAGILE_MELEE" ],
+	"bashing": 2,
+    "volume": "2250 ml",
+    "price": "5 USD"
+  },
+
+  {
+    "type": "GENERIC",
+    "id": "ski_wood",
+    "symbol": "/",
+    "color": "brown",
+    "name": { "str": "wooden ski" },
+    "description": "A hunk of wood carved in a way to allow someone to rapidly slide down snowy hills. its good for little more than firewood now.",
+    "material": "wood",
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "TRADER_AVOID", "FIREWOOD" ],
+    "weight": "800 g",
+    "volume": "1250 ml",
+    "bashing": 14,
+    "to_hit": -1,
+    "category": "spare_parts"
+  },
+  
+  {
+    "type": "GENERIC",
+    "id": "ski_fiberglass",
+    "symbol": "/",
+    "color": "blue",
+    "name": { "str": "fiberglass ski" },
+    "description": "A sturdy, heavy stick.  Makes a decent melee weapon.",
+    "material": "plastic",
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "TRADER_AVOID", "FIREWOOD" ],
+    "weight": "800 g",
+    "volume": "1250 ml",
+    "bashing": 14,
+    "to_hit": -1,
+    "category": "spare_parts"
+  },
+  
+  {
+    "type": "GENERIC",
+    "id": "pin_rolling",
+    "symbol": "/",
+    "color": "brown",
+    "name": { "str": "rolling pin" },
+    "description": "A rounded wooden implement, made for rolling dough, or issuing corporal punishment to unruly children and husbands.",
+    "material": "wood",
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "TRADER_AVOID", "FIREWOOD" ],
+    "weight": "850 g",
+    "volume": "625 ml",
+    "bashing": 7,
+    "to_hit": -1,
+    "category": "spare_parts"
+  },
+  
+  {
+    "type": "GENERIC",
+    "id": "pin_rolling_aluminum",
+    "symbol": "/",
+    "color": "white",
+    "name": { "str": "aluminum rolling pin" },
+    "description": "A rounded metal implement, made for rolling dough, or issuing corporal punishment to unruly children and husbands.",
+    "material": "aluminum",
+    "techniques": [ "WBLOCK_1" ],
+    "flags": [ "TRADER_AVOID" ],
+    "weight": "850 g",
+    "volume": "625 ml",
+    "bashing": 14,
+    "to_hit": -1,
+    "category": "spare_parts"
+  }
+  
+  
+]

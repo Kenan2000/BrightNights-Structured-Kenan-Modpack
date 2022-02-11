@@ -1,0 +1,44 @@
+[
+  {
+    "type": "item_group",
+    "id": "science",
+
+    "items": [
+      [ "ultracite_shard", 5 ],
+      [ "flux_stable", 5 ],
+      [ "recipe_ultracite", 1 ]
+      
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "chem_lab",
+    "items": [
+      [ "ultracite_shard", 5 ],
+      [ "flux_stable", 5 ],
+      [ "recipe_ultracite", 1 ]
+      
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "books_bank_vault",
+    "items": [
+      [ "recipe_ultracite", 10 ]
+    ]
+  },
+  
+  {
+    "type": "item_group",
+    "id": "book_gunmags",
+    "//": "Magazines about guns",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "mag_guns_fallout", "prob": 50 }
+    ]
+  }
+
+
+]

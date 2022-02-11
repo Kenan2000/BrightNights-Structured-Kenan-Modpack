@@ -1,0 +1,260 @@
+[
+  {
+    "id": "14mm_casing",
+    "copy-from": "casing",
+    "looks_like": "500_casing",
+    "type": "GENERIC",
+    "name": { "str": "14mm casing" },
+    "description": "An empty casing from a 14mm round.",
+    "weight": "7 g",
+    "volume": "10ml"
+  }, 
+
+ {
+    "id": "14mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "14mm JHP" },
+    "description": "14mm Jacketed Hollow Point ammunition, made big Sig Sauer. An import from europe, these are increasingly rare.",
+    "weight": "15 g",
+    "volume": "250 ml",
+    "price": 200,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "steel", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 20,
+    "stack_size": 10,
+    "ammo_type": "14mm",
+    "casing": "14mm_casing",
+    "range": 24,
+    "damage": { "damage_type": "stab", "amount": 55, "armor_penetration": 4 },
+    "dispersion": 30,
+    "recoil": 3000,
+    "effects": [ "COOKOFF" ]
+  },
+  
+   {
+    "id": "14mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "14mm FMJ" },
+    "description": "14mm Full Metal Jacket ammunition, made big Sig Sauer. An import from europe, these are increasingly rare.",
+    "weight": "15 g",
+    "volume": "250 ml",
+    "price": 200,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "steel", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 20,
+    "stack_size": 10,
+    "ammo_type": "14mm",
+    "casing": "14mm_casing",
+    "range": 24,
+    "damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 8 },
+    "dispersion": 30,
+    "recoil": 3000,
+    "effects": [ "COOKOFF" ]
+  },
+
+ {
+    "id": "14mm_ap",
+    "type": "AMMO",
+    "name": { "str": "14mm AP" },
+    "description": "14mm Armor Piercing ammunition, made big Sig Sauer. An import from europe, these are increasingly rare. ",
+    "weight": "15 g",
+    "volume": "250 ml",
+    "price": 200,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "steel", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 20,
+    "stack_size": 10,
+    "ammo_type": "14mm",
+    "casing": "14mm_casing",
+    "range": 24,
+    "damage": { "damage_type": "stab", "amount": 45, "armor_penetration": 12 },
+    "dispersion": 30,
+    "recoil": 3000,
+    "effects": [ "COOKOFF" ]
+  },
+  
+  
+   {
+    "id": "14mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "14mm Tracer" },
+    "description": "14mm Tracer ammunition, made big Sig Sauer. An import from europe, these are increasingly rare.",
+    "weight": "15 g",
+    "volume": "250 ml",
+    "price": 200,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "steel", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 20,
+    "stack_size": 10,
+    "ammo_type": "14mm",
+    "casing": "14mm_casing",
+    "range": 24,
+    "damage": { "damage_type": "stab", "amount": 55, "armor_penetration": 6 },
+    "dispersion": 30,
+    "recoil": 3000,
+    "effects": [ "COOKOFF", "INCENDIARY"	]
+  },
+
+ {
+    "id": "14mm_explosive",
+    "type": "AMMO",
+    "name": { "str": "14mm Explosive" },
+    "description": "14mm Explosive ammunition, made big Sig Sauer. An import from europe, these are increasingly rare. Being explosive ammo, these are REALLY hard to re-create, though not impossible.",
+    "weight": "15 g",
+    "volume": "250 ml",
+    "price": 200,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "steel", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 20,
+    "stack_size": 10,
+    "ammo_type": "14mm",
+    "casing": "14mm_casing",
+    "range": 24,
+    "damage": { "damage_type": "stab", "amount": 55, "armor_penetration": 6 },
+    "dispersion": 30,
+    "recoil": 3000,
+    "effects": [ "COOKOFF", "EXPLOSIVE_RAUFOSS" ]
+  },
+  
+    {
+    "id": "bp_14mm_jhp",
+    "copy-from": "14mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "14mm JHP, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.76, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  
+      {
+    "id": "bp_14mm_fmj",
+    "copy-from": "14mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "14mm FMJ, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.76, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  
+      {
+    "id": "bp_14mm_ap",
+    "copy-from": "14mm_ap",
+    "type": "AMMO",
+    "name": { "str": "14mm AP, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.76, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "bp_14mm_incendiary",
+    "copy-from": "14mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "14mm Tracer, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.76, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+        {
+    "id": "bp_14mm_explosive",
+    "copy-from": "14mm_explosive",
+    "type": "AMMO",
+    "name": { "str": "14mm Explosive, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.76, "armor_penetration": 0.5 },
+      "recoil": 0.76,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  {
+    "id": "reloaded_14mm_jhp",
+    "copy-from": "14mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "14mm JHP, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "reloaded_14mm_fmj",
+    "copy-from": "14mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "14mm FMJ, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "reloaded_14mm_ap",
+    "copy-from": "14mm_ap",
+    "type": "AMMO",
+    "name": { "str": "14mm AP, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "reloaded_14mm_incendiary",
+    "copy-from": "14mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "14mm Tracer, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+  {
+    "id": "reloaded_14mm_explosive",
+    "copy-from": "14mm_explosive",
+    "type": "AMMO",
+    "name": { "str": "14mm Explosive, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  }
+]

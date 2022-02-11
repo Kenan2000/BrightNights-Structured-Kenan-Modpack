@@ -1,0 +1,142 @@
+[
+{
+    "result": "duster_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "time": "3 h 20 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
+    "using": [ [ "sewing_standard", 60 ] ],
+    "components": [ [ [ "leather_deathclaw", 29 ], [ "tanned_hide_deathclaw", 5 ] ] ]
+  },
+
+{
+    "result": "sleeveless_duster_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "//": "The general guideline for sleeveless dusters is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "time": "3 h 20 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 4 ], [ "tailor_portfolio", 4 ] ],
+    "using": [ [ "sewing_standard", 50 ] ],
+    "components": [ [ [ "leather_deathclaw", 25 ], [ "tanned_hide_deathclaw", 4 ] ] ]
+  },
+  
+  {
+    "result": "sleeveless_duster_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "//": "The general guideline for sleeveless dusters is the components, volume, weight, time to craft, and value are 15% lower (rounded down) than the original.  Making it from an original takes 50% the time.",
+    "skill_used": "tailor",
+    "time": "6 m",
+    "autolearn": true,
+    "byproducts": [ [ "leather", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "flags": [ "NO_RESIZE" ],
+    "components": [ [ [ "duster_deathclaw", 1 ] ] ]
+  },
+  
+  {
+    "result": "armor_larmor_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "28 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 52 ] ],
+    "components": [ [ [ "leather_deathclaw", 30 ], [ "tanned_hide_deathclaw", 5 ] ] ]
+  },
+  
+  
+    {
+    "result": "boots_larmor_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "40 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 24 ] ],
+    "components": [ [ [ "leather_deathclaw", 18 ], [ "tanned_hide_deathclaw", 3 ] ] ]
+  },
+  
+  
+    {
+    "result": "armguard_larmor_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": "720 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 24 ] ],
+    "components": [ [ [ "leather_deathclaw", 18 ], [ "tanned_hide_deathclaw", 3 ] ] ]
+  },
+  
+  
+    {
+    "result": "vambrace_larmor_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "360 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 24 ] ],
+    "components": [ [ [ "leather_deathclaw", 9 ], [ "tanned_hide_deathclaw", 2 ] ] ]
+  },
+  
+  
+  {
+    "result": "gauntlets_larmor_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HANDS",
+    "skill_used": "tailor",
+    "difficulty": 2,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 12 ] ],
+    "components": [ [ [ "leather_deathclaw", 6 ], [ "tanned_hide_deathclaw", 1 ] ] ]
+  },
+  
+  {
+    "result": "helmet_larmor_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": "30 m",
+    "autolearn": true,
+    "using": [ [ "sewing_standard", 18 ] ],
+    "components": [ [ [ "leather_deathclaw", 16 ], [ "tanned_hide_deathclaw", 3 ] ] ]
+  },
+  
+  {
+    "result": "jacket_deathclaw",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": "2 h 30 m",
+    "autolearn": true,
+    "book_learn": [ [ "textbook_tailor", 4 ], [ "manual_tailor", 3 ] ],
+    "using": [ [ "sewing_standard", 30 ] ],
+    "components": [ [ [ "leather_deathclaw", 18 ], [ "tanned_hide_deathclaw", 3 ] ] ]
+  }
+
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "wattz_1000",
+    "type": "GUN",
+    "color": "light_red",
+    "symbol": "{",
+    "name": { "str": "Wattz 1000 laser pistol" },
+    "description": "A Wattz 1000 laser pistol. A popular laser gun, used by civilians, police, and even by the army for a minute, until the AEP came to the stage, outclassing it in key ways. Regardless of downsides, its a popular sidearm among more technophilic individuals.",
+    "price": 42400,
+    "material": [ "steel", "wood" ],
+    "weight": "1814 g",
+    "volume": "1 L",
+    "bashing": 3,
+    "to_hit": -1,
+    "ammo_effects": [ "LASER" ],
+    "flags": [ "FIRE_100", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "magazine_well": "50 ml",
+    "magazines": [
+      [
+        "battery",
+        [
+          "small_energy_cell", 
+		  "small_energy_cell_bulk", 
+		  "small_energy_cell_oc", 
+		  "small_energy_cell_mc"
+        ]
+      ]
+    ],
+    "skill": "pistol",
+    "ranged_damage": { "damage_type": "stab", "amount": 16, "armor_penetration": 10 },
+    "range": 35,
+    "dispersion": 120,
+    "recoil": 1,
+    "durability": 5,
+    "reload": 300,
+    "loudness": 12,
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ] ]
+  },
+  
+  
+    {
+    "id": "wattz_1000_magneto",
+    "type": "GUN",
+    "color": "light_red",
+    "symbol": "{",
+    "name": { "str": "Wattz 1000 magneto laser pistol" },
+    "description": "A Wattz 1000 laser pistol. A popular laser gun, used by civilians, police, and even by the army for a minute, until the AEP came to the stage, outclassing it in key ways. Regardless of downsides, its a popular sidearm among more technophilic individuals. Modified with a Magneto Kit, power efficiency has been massively increased.",
+    "price": 42400,
+    "material": [ "steel", "plastic" ],
+    "weight": "1814 g",
+    "volume": "1 L",
+    "bashing": 3,
+    "to_hit": -1,
+    "ammo_effects": [ "LASER" ],
+    "flags": [ "FIRE_50", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "magazine_well": "50 ml",
+    "magazines": [
+      [
+        "battery",
+        [
+          "small_energy_cell", 
+		  "small_energy_cell_bulk", 
+		  "small_energy_cell_oc", 
+		  "small_energy_cell_mc"
+        ]
+      ]
+    ],
+    "skill": "pistol",
+    "ranged_damage": { "damage_type":  "stab", "amount": 16, "armor_penetration": 10 },
+    "range": 35,
+    "dispersion": 120,
+    "recoil": 1,
+    "durability": 5,
+    "reload": 300,
+    "loudness": 12,
+    "valid_mod_locations": [ [ "accessories", 2 ], [ "barrel", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ] ]
+  },
+  
+  
+  {
+    "id": "wattz_2000",
+    "type": "GUN",
+    "color": "light_red",
+    "symbol": "{",
+    "name": { "str": "Wattz 2000 Laser Rifle" },
+    "description": "A Wattz 2000 Laser Rifle. While initially proposed for the U.S. army, they declined it for the AER, leading the Wattz 2000 to be a weapon more commonly used by civilians as a sporting laser.",
+    "price": 87100,
+    "material": [ "steel", "plastic" ],
+    "weight": "5360 g",
+    "volume": "3 L",
+    "bashing": 8,
+    "to_hit": -1,
+    "ammo_effects": [ "LASER" ],
+    "flags": [ "FIRE_100", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "magazine_well": "300 ml",
+    "magazines": [ [ "battery", [ "micro_fusion_cell", "micro_fusion_cell_bulk", "micro_fusion_cell_oc", "micro_fusion_cell_mc" ] ] ],
+    "skill": "rifle",
+    "ranged_damage": { "damage_type":  "stab", "amount": 40, "armor_penetration": 10 },
+    "range": 45,
+    "dispersion": 100,
+    "recoil": 1,
+    "durability": 5,
+    "reload": 600,
+    "loudness": 14,
+    "valid_mod_locations": [
+      [ "accessories", 3 ],
+      [ "sling", 1 ],
+      [ "grip", 1 ],
+      [ "barrel", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ]
+  },
+  
+  
+    {
+    "id": "hk_l30",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "dark_gray",
+    "name": { "str": "H&K L30 Gatling Laser" },
+    "description": "An H&K L30 Gatling Laser. Designed specifically for military use, these behemoths of weapons were in the prototype stage at the beginning of the War. Multiple barrels allow longer firing before overheating. Powered by Micro Fusion Cells.",
+    "price": 1800000,
+    "material": [ "superalloy", "steel" ],
+    "ammo_effects": [ "LASER" ],
+    "flags": [ "ALWAYS_TWOHAND", "NEVER_JAMS", "FIRE_100", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "ammo": "battery",
+    "skill": "rifle",
+    "weight": "10886 g",
+    "volume": "6 L",
+    "bashing": 12,
+    "to_hit": -2,
+    "ranged_damage": { "damage_type": "stab", "amount": 30, "armor_penetration": 10 },
+    "range": 40,
+    "dispersion": 10,
+    "recoil": 1,
+    "loudness": 14,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "burst", 10 ] ],
+    "reload": 500,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "sling", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "magazine_well": "600 ml",
+    "magazines": [ [ "battery", [ "micro_fusion_cell", "micro_fusion_cell_bulk", "micro_fusion_cell_oc", "micro_fusion_cell_mc" ] ] ]
+  }
+
+
+]

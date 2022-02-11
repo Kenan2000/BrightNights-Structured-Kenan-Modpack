@@ -1,0 +1,34 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SCORCHED",
+    "default": "mon_scorched_basic",
+    "monsters": [
+      { "monster": "mon_scorched_basic", "freq": 1, "cost_multiplier": 7, "pack_size": [ 1, 15 ] },
+      { "monster": "mon_scorched_soldier", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_scorched_cop", "freq": 20, "cost_multiplier": 3 },
+      { "monster": "mon_scorched_swat", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_scorched_hazmat", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_scorched_fireman", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_scorched_survivor", "freq": 1, "cost_multiplier": 25 }
+	  
+    ]
+  },
+  
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE",
+    "monsters": [
+      { "monster": "mon_scorched_basic", "freq": 1, "cost_multiplier": 7, "pack_size": [ 1, 15 ] },
+      { "monster": "mon_scorched_soldier", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_scorched_cop", "freq": 20, "cost_multiplier": 3 },
+      { "monster": "mon_scorched_swat", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_scorched_hazmat", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_scorched_fireman", "freq": 10, "cost_multiplier": 2 },
+      { "monster": "mon_scorched_survivor", "freq": 1, "cost_multiplier": 25 }
+	  
+    ]
+  }
+
+
+]

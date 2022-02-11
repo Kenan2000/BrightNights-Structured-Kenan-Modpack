@@ -1,0 +1,32 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_ultracite_ore",
+    "looks_like": "f_boulder_large",
+    "name": "spiky, glowing boulder",
+    "description": "Something about this boulder doesn't look right.",
+    "symbol": "O",
+    "color": "green",
+    "move_cost_mod": -1,
+    "coverage": 65,
+    "required_str": 32,
+    "flags": [ "NOITEM", "MINEABLE", "BASHABLE", "BLOCK_WIND" ],
+    "bash": {
+      "str_min": 64,
+      "str_max": 160,
+      "sound": "smash!",
+      "sound_fail": "thump.",
+      "items": [
+        { "item": "rock", "count": [ 10, 22 ] },
+        { "item": "sharp_rock", "count": [ 3, 7 ] },
+        { "item": "material_limestone", "charges": [ 2, 5 ], "prob": 30 },
+        { "item": "material_rocksalt", "count": [ 0, 1 ], "prob": 10 },
+        { "item": "material_rhodonite", "count": [ 0, 1 ], "prob": 1 },
+        { "item": "material_zincite", "count": [ 0, 5 ], "prob": 2 },
+        { "item": "ultracite_shard", "count": [ 4, 20 ] }
+      ]
+    }
+  }
+
+
+]

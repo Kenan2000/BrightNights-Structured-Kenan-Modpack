@@ -1,0 +1,70 @@
+[
+  {
+    "id": "revolver_hunting",
+    "copy-from": "pistol_revolver",
+    "looks_like": "bfr",
+    "type": "GUN",
+    "name": { "str": "NVA BFR" },
+    "description": "The New Vegas Armory Big Fuckin' Revolver. Chambered in .45-70 govt. rounds, this chunky behemoth of a revolver will ensure it's wielder won't be the 21st to take a slip.",
+    "weight": "1950 g",
+    "volume": "1 L",
+    "price": 105000,
+    "price_postapoc": 2750,
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [ "steel", "plastic" ],
+    "color": "dark_gray",
+    "symbol": "(",
+    "ammo": [ "4570" ],
+	"default_mods": [ "pistol_scope" ],
+    "ranged_damage": { "damage_type": "stab", "amount": -5 },
+    "dispersion": 180,
+    "durability": 8,
+    "clip_size": 5,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "rail mount", 1 ],
+      [ "stock mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ]
+  },
+  
+  {
+    "id": "revolver_ranger",
+    "copy-from": "pistol_revolver",
+    "looks_like": "bfr",
+    "type": "GUN",
+    "name": { "str": "Ranger Sequoia" },
+    "description": "The New Vegas Armory Big Fuckin' Revolver. Chambered in .45-70 govt. rounds, this chunky behemoth of a revolver can take out just about anything in the wasteland. This variant is the black Ranger Sequoia, given to veteran NCR rangers after 20 years of service. A beloved prize gun of its wielders, the barrel is engraved with the phrases 'Against all tyrants' and 'For Honorable Service.', while the grip has an engraving of a bear, and a brass plate on the bottom, engraved with the phrase '20 years of service'.",
+    "weight": "1950 g",
+    "volume": "1 L",
+    "price": 105000,
+    "price_postapoc": 2750,
+    "to_hit": -2,
+    "bashing": 12,
+    "material": [ "steel", "plastic" ],
+    "color": "dark_gray",
+    "symbol": "(",
+    "ammo": [ "4570" ],
+    "ranged_damage": { "damage_type": "stab", "amount": 5 },
+    "dispersion": 180,
+    "durability": 8,
+    "clip_size": 5,
+    "valid_mod_locations": [
+      [ "accessories", 2 ],
+      [ "barrel", 1 ],
+      [ "grip", 1 ],
+      [ "mechanism", 4 ],
+      [ "sights", 1 ],
+      [ "rail mount", 1 ],
+      [ "stock mount", 1 ],
+      [ "underbarrel mount", 1 ]
+    ]
+  }
+
+
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "DUMP_ANIMALS",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_rat_pig", "freq": 100, "cost_multiplier": 1 },
+      { "monster": "mon_rat_piglet", "freq": 100, "cost_multiplier": 1 }
+    ]
+  },
+
+{
+    "type": "monstergroup",
+    "name": "GROUP_PEST",
+    "default": "mon_crow",
+    "is_animal": true,
+    "monsters": [
+      {
+        "monster": "mon_bat",
+        "freq": 20,
+        "cost_multiplier": 0,
+        "pack_size": [ 6, 12 ],
+        "conditions": [ "DAWN", "DUSK", "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
+      },
+      { "monster": "mon_rat_pig", "freq": 30, "cost_multiplier": 1, "pack_size": [ 4, 8 ] },
+      { "monster": "mon_rat_piglet", "freq": 30, "cost_multiplier": 1, "pack_size": [ 4, 8 ] }
+
+    ]
+  },
+  
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SEWER",
+    "default": "mon_sewer_rat",
+    "is_animal": true,
+    "monsters": [
+      { "monster": "mon_rat_cave", "freq": 100, "cost_multiplier": 0, "pack_size": [ 3, 12 ] },
+      { "monster": "mon_rat_pig", "freq": 40, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+	  { "monster": "mon_rat_piglet", "freq": 40, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_molerat_lesser", "freq": 25, "cost_multiplier": 3 },
+	  { "monster": "mon_molerat_greater", "freq": 25, "cost_multiplier": 3 },
+	  { "monster": "mon_molerat_king", "freq": 1, "cost_multiplier": 30 }
+    ]
+  },
+  
+    {
+    "type": "monstergroup",
+    "name": "GROUP_CAVE",
+    "default": "mon_null",
+    "is_animal": true,
+    "monsters": [
+      { "monster": "mon_rat_cave", "freq": 100, "cost_multiplier": 0, "pack_size": [ 3, 12 ] },
+      { "monster": "mon_rat_pig", "freq": 40, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+	  { "monster": "mon_rat_piglet", "freq": 40, "cost_multiplier": 2, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_molerat_lesser", "freq": 25, "cost_multiplier": 3 },
+	  { "monster": "mon_molerat_greater", "freq": 25, "cost_multiplier": 3 },
+	  { "monster": "mon_molerat_king", "freq": 1, "cost_multiplier": 30 }
+    ]
+  },
+  
+    {
+    "type": "monstergroup",
+    "name": "GROUP_FOREST",
+    "default": "mon_null",
+    "is_animal": true,
+    "monsters": [
+ 
+      { "monster": "mon_rat_pig", "freq": 2, "cost_multiplier": 3 },
+	  { "monster": "mon_rat_pig", "freq": 1, "cost_multiplier": 10 },
+      { "monster": "mon_rat_pig", "freq": 2, "cost_multiplier": 10, "starts": 72 },
+      { "monster": "mon_rat_pig", "freq": 3, "cost_multiplier": 10, "starts": 168 },
+      { "monster": "mon_rat_pig", "freq": 4, "cost_multiplier": 10, "starts": 672 },
+      { "monster": "mon_rat_pig", "freq": 5, "cost_multiplier": 10, "starts": 2160 }
+
+    ]
+  }
+  
+]

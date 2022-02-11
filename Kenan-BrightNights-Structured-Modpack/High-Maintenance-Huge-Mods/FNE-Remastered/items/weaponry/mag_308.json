@@ -1,0 +1,83 @@
+[
+  {
+    "id": "308falloutmag_small",
+    "looks_like": "stanag5",
+    "type": "MAGAZINE",
+    "name": { "str": ".308 rifle compact magazine" },
+    "description": "A compact magazine for the DKS-501 and similar rifles, carrying 5 shots..",
+    "weight": "60 g",
+    "volume": "250 ml",
+    "price": 2900,
+    "price_postapoc": 100,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 5,
+    "reliability": 10,
+    "reload_time": 50,
+    "flags": [ "MAG_COMPACT" ]
+  },
+
+  {
+    "id": "308falloutmag_medium",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": ".308 rifle magazine" },
+    "description": "An aftermarket 10-round steel box magazine for the DKS-501 and similar rifles.",
+    "weight": "140 g",
+    "volume": "250 ml",
+    "price": 1700,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 10,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+
+
+  {
+    "id": "308falloutmag_large",
+    "looks_like": "stanag30",
+    "type": "MAGAZINE",
+    "name": { "str": ".308 rifle magazine" },
+    "description": "A military issue 20-round steel box magazine for the DKS-501 and similar rifles.",
+    "weight": "280 g",
+    "volume": "500 ml",
+    "price": 1700,
+    "price_postapoc": 250,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 20,
+    "reliability": 9,
+    "flags": [ "MAG_COMPACT" ]
+  },
+  
+  {
+    "id": "mg42mag_fallout",
+    "looks_like": "stanag50",
+    "type": "MAGAZINE",
+    "name": { "str": "MG42 drum magazine, .308" },
+    "description": "A 75-round drum magazine for the MG42 Light Machine Gun.",
+    "weight": "800 g",
+    "volume": "2 L",
+    "price": 8900,
+    "price_postapoc": 750,
+    "material": "steel",
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": "308",
+    "capacity": 75,
+    "reliability": 7,
+    "reload_time": 160,
+    "flags": [ "MAG_BULKY" ]
+  }
+
+
+
+]

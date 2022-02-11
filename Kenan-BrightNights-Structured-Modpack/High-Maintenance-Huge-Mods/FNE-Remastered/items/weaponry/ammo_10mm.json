@@ -1,0 +1,209 @@
+[
+  {
+    "id": "ammolink10mm",
+    "copy-from": "ammolink",
+    "type": "GENERIC",
+    "name": { "str": "10mm ammo belt linkage" },
+    "use_action": { "type": "ammobelt", "belt": "belt10mm" }
+  },
+
+  {
+    "id": "10mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "10mm Auto JHP" },
+    "description": "10mm Jacketed Hollow Point rounds. The 10mm Auto cartridge was primarly adopted by the Bureau of Alcohol, Drugs, Tobacco, Firearms, and Lasers, and similar law enforcement agencies, as well as civilian use, and heavy use in private security forces such as in Vault-Tec's namesake bunkers. The recoil is pretty heavy, given the size of these rounds, but the damage is well worth it.",
+    "weight": "8 g",
+    "volume": "250 ml",
+    "price": 140,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 50,
+    "stack_size": 50,
+    "ammo_type": "10mm",
+    "casing": "10mm_casing",
+    "range": 16,
+    "damage": { "damage_type": "stab", "amount": 34, "armor_penetration": 2 },
+    "dispersion": 30,
+    "recoil": 900,
+    "effects": [ "COOKOFF" ]
+  },
+
+
+  {
+    "id": "10mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "10mm Auto FMJ" },
+    "description": "10mm Full Metal Jacket rounds. The 10mm Auto cartridge was primarly adopted by the Bureau of Alcohol, Drugs, Tobacco, Firearms, and Lasers, and similar law enforcement agencies, as well as civilian use, and heavy use in private security forces such as in Vault-Tec's namesake bunkers. The recoil is pretty heavy, given the size of these rounds, but the damage is well worth it. ",
+    "weight": "8 g",
+    "volume": "250 ml",
+    "price": 140,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 50,
+    "stack_size": 50,
+    "ammo_type": "10mm",
+    "casing": "10mm_casing",
+    "range": 16,
+    "damage": { "damage_type": "stab", "amount": 30, "armor_penetration": 4 },
+    "dispersion": 30,
+    "recoil": 900,
+    "effects": [ "COOKOFF" ]
+  },
+  
+  
+  {
+    "id": "10mm_AP",
+    "type": "AMMO",
+    "name": { "str": "10mm Auto AP" },
+    "description": "10mm Armor Piercing rounds. The 10mm Auto cartridge was primarly adopted by the Bureau of Alcohol, Drugs, Tobacco, Firearms, and Lasers, and similar law enforcement agencies, as well as civilian use, and heavy use in private security forces such as in Vault-Tec's namesake bunkers. The recoil is pretty heavy, given the size of these rounds, but the damage is well worth it. ",
+    "weight": "8 g",
+    "volume": "250 ml",
+    "price": 140,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 50,
+    "stack_size": 50,
+    "ammo_type": "10mm",
+    "casing": "10mm_casing",
+    "range": 16,
+    "damage": { "damage_type": "stab", "amount": 24, "armor_penetration": 8 },
+    "dispersion": 30,
+    "recoil": 900,
+    "effects": [ "COOKOFF" ]
+  },
+  
+    {
+    "id": "10mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "10mm Auto Zhu-Rong" },
+    "description": "10mm Incendiary rounds. The 10mm Auto cartridge was primarly adopted by the Bureau of Alcohol, Drugs, Tobacco, Firearms, and Lasers, and similar law enforcement agencies, as well as civilian use, and heavy use in private security forces such as in Vault-Tec's namesake bunkers. The recoil is pretty heavy, given the size of these rounds, but the damage is well worth it. The Zhu-Rong incendiary round is unofficial Chinese munitions; much less reliable.",
+    "weight": "8 g",
+    "volume": "250 ml",
+    "price": 140,
+    "price_postapoc": 1000,
+    "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
+    "material": [ "brass", "powder" ],
+    "symbol": "=",
+    "color": "light_gray",
+    "count": 50,
+    "stack_size": 50,
+    "ammo_type": "10mm",
+    "casing": "10mm_casing",
+    "range": 16,
+    "damage": { "damage_type": "stab", "amount": 34, "armor_penetration": 2 },
+    "dispersion": 50,
+    "recoil": 900,
+    "effects": [ "COOKOFF", "INCENDIARY" ]
+  },
+
+
+  {
+    "id": "bp_10mm_jhp",
+    "copy-from": "10mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "10mm JHP, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "bp_10mm_fmj",
+    "copy-from": "10mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "10mm FMJ, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "bp_10mm_AP",
+    "copy-from": "10mm_AP",
+    "type": "AMMO",
+    "name": { "str": "10mm AP, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "bp_10mm_incendiary",
+    "copy-from": "10mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "10mm Zhu-Rong, black powder" },
+    "proportional": {
+      "price": 0.3,
+      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "recoil": 0.57,
+      "dispersion": 1.2
+    },
+    "extend": { "effects": [ "RECYCLED", "BLACKPOWDER", "MUZZLE_SMOKE" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+    {
+    "id": "reloaded_10mm_jhp",
+    "copy-from": "10mm_jhp",
+    "type": "AMMO",
+    "name": { "str": "10mm JHP, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "reloaded_10mm_fmj",
+    "copy-from": "10mm_fmj",
+    "type": "AMMO",
+    "name": { "str": "10mm FMJ, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "reloaded_10mm_AP",
+    "copy-from": "10mm_AP",
+    "type": "AMMO",
+    "name": { "str": "10mm AP, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  },
+  
+      {
+    "id": "reloaded_10mm_incendiary",
+    "copy-from": "10mm_incendiary",
+    "type": "AMMO",
+    "name": { "str": "10mm Zhu-Rong, reloaded" },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "extend": { "effects": [ "RECYCLED" ] },
+    "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
+  }
+  
+]

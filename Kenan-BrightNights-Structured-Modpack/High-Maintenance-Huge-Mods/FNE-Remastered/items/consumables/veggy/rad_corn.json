@@ -1,0 +1,130 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "id": "radcorn",
+    "name": "rad-corn",
+    "weight": "119 g",
+    "color": "yellow",
+    "spoils_in": "14 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+    "calories": 60,
+    "description": "A raw cob of rad-corn. One of the few crops that could reasonably survive nuclear fallout, and one of the first crops to be grown by post-war civilizations.",
+    "price": 600,
+    "price_postapoc": 50,
+    "material": "veggy",
+    "flags": [ "TRADER_AVOID", "SMOKABLE", "RAW" ],
+    "smoking_result": "dry_radcorn",
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 24 ], [ "vitC", 54 ], [ "calcium", 6 ], [ "iron", 6 ] ]
+  },
+  
+   {
+    "type": "COMESTIBLE",
+    "id": "radcorn_cooked",
+    "name": "grilled rad-corn",
+    "weight": "119 g",
+    "color": "yellow",
+    "spoils_in": "5 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+    "calories": 60,
+    "description": "A freshly cooked cob of rad-corn, tasty and nutritious.",
+    "price": 700,
+    "price_postapoc": 50,
+    "material": "veggy",
+    "flags": [ "TRADER_AVOID", "EATEN_HOT" ],
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 24 ], [ "vitC", 54 ], [ "calcium", 6 ], [ "iron", 6 ] ]
+  },
+
+  {
+    "type": "COMESTIBLE",
+    "id": "dry_radcorn",
+    "name": "dehydrated rad-corn",
+    "copy-from": "radcorn",
+    "proportional": { "weight": 0.5 },
+    "color": "yellow",
+    "spoils_in": "596 days",
+    "quench": -3,
+    "description": "Dehydrated kernels of rad-corn. Delicious and nutritious, and long lasting. A staple across the wasteland.",
+    "price": 900,
+    "price_postapoc": 100,
+    "material": "veggy",
+    "primary_material": "dried_vegetable",
+    "volume": "250 ml",
+    "flags": [ "EDIBLE_FROZEN" ],
+    "charges": 2
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "radcorn_canned",
+    "name": "canned rad-corn",
+    "weight": "259 g",
+    "color": "green",
+    "spoils_in": "5 days",
+    "container": "can_food",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 1,
+	"fun": -1,
+    "calories": 93,
+    "description": "Canned kernels of rad-corn. Delicious and nutritious, a great side to go with brahmin steak.",
+    "price": 250,
+    "price_postapoc": 150,
+    "material": "veggy",
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 111 ], [ "vitC", 17 ], [ "calcium", 8 ], [ "iron", 14 ] ]
+  },
+
+  {
+    "type": "COMESTIBLE",
+    "id": "radcorn_pickled",
+    "name": { "str": "pickled rad-corn", "str_pl": "pickled rad-corn" },
+    "copy-from": "radcorn",
+    "color": "light_green",
+    "spoils_in": "32 days",
+    "container": "jar_glass_sealed",
+    "description": "This is a serving of crisply brined and canned rad-corn.  Tasty and nutritious! It should last for a long time, even when you invariably break the seal you put on the jar.",
+    "price": 250,
+    "fun": 7
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "radcorn_salted",
+    "name": "salted rad-corn",
+    "weight": "192 g",
+    "color": "green",
+    "spoils_in": "5 days",
+    "container": "plastic_bag_vac",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "quench": -5,
+    "healthy": 1,
+    "calories": 80,
+    "description": "rad-corn pickled in a salt bath. Will last for a really long time.",
+    "price": 500,
+    "price_postapoc": 100,
+    "material": "veggy",
+    "volume": "250 ml",
+    "vitamins": [ [ "vitA", 69 ], [ "vitC", 11 ], [ "calcium", 7 ], [ "iron", 14 ] ]
+  },
+  
+  {
+    "type": "COMESTIBLE",
+    "id": "seed_radcorn",
+    "copy-from": "seed",
+    "price": 50,
+    "name": { "str_sp": "rad-corn seeds" },
+    "color": "light_gray",
+    "description": "Some rad-corn seeds. Takes 9 days to grow.",
+    "seed_data": { "plant_name": "rad-corn", "fruit": "radcorn", "byproducts": [ "withered" ], "grow": "9 days" }
+  }
+
+
+
+]
