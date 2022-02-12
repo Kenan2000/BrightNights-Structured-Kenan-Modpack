@@ -132,6 +132,21 @@
     },
     "responses": [
       {
+        "text": "[MISSION] Sir!  Latest mission is Foxtrot Uniform Charlie Kilo.  Sir!",
+        "effect": [
+          { "u_add_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "u_add_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" }
+        ],
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "opinion": { "trust": 3, "value": -1 },
+        "topic": "TALK_CHAD_ERIKSON_RENDEZVOUS_TO_BASE"
+      },
+      {
         "text": "Hey, Chad.  How did you end up in charge here?",
         "effect": { "u_add_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
         "opinion": { "trust": -1, "value": -1 },
@@ -232,18 +247,6 @@
         "text": "[RP]  I want change how I fight against the xenoid invaders.",
         "condition": { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
         "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_JOINING_MAQUIS"
-      },
-      {
-        "text": "[MISSION] Sir!  Latest mission is Foxtrot Uniform Charlie Kilo.  Sir!",
-        "effect": { "u_add_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
-        "condition": {
-          "and": [
-            { "not": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
-            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" }
-          ]
-        },
-        "opinion": { "trust": 3, "value": -1 },
-        "topic": "TALK_CHAD_ERIKSON_RENDEZVOUS_TO_BASE"
       },
       {
         "text": "[MISSION] Your nephew Randy wanted me to see how you are doing.",
