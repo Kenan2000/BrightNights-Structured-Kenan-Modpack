@@ -1,0 +1,167 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_FELIX_FOX",
+    "class": "NC_MAQUIS_FELIX_FOX",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_MAQUIS_FELIX_FOX_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_FELIX_FOX",
+    "name": { "str": "MAQUIS" },
+    "job_description": "I'm here to keep the logistics of the resistance moving forward.",
+    "common": false,
+    "traits": [
+      { "trait": "DKZ_LEADER", "prob": 100 },
+      { "trait": "FACIAL_HAIR_ROYALE", "prob": 100 },
+      { "trait": "SKIN_DARK", "prob": 100 },
+      { "trait": "HAIR_BALD", "prob": 100 },
+      { "trait": "STYLISH", "prob": 100 } 
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 6, 7 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 5, 6 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_FELIX_FOX_worn",
+    "carry_override": "NC_MAQUIS_FELIX_FOX_carried",
+    "weapon_override": "NC_MAQUIS_FELIX_FOX_weapon",
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ -3, -2 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 1, 2 ] }
+  },
+  {
+    "id": "NC_MAQUIS_FELIX_FOX_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "rm103a_pistol" } ]
+  },
+  {
+    "id": "NC_MAQUIS_FELIX_FOX_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_shorts" },
+      { "item": "socks" },
+      { "item": "boots_hiking" },
+      { "item": "postman_shirt" },
+      { "item": "postman_hat" },
+      { "item": "wearable_atomic_light" },
+      { "item": "backpack" },
+      { "item": "badge_deputy" },
+      {
+        "item": "light_minus_battery_cell",
+        "ammo-item": "battery",
+        "charges": 150,
+        "container-item": "dkz_zenture_industries_premium_zwatch"
+      }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_FELIX_FOX_carried",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "8x40_10_mag", "charges-min": 7, "count": 2 },
+      { "item": "8mm_caseless", "count": 3 },
+      { "item": "multitool" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": [ "What do you require citizen?.", "I'm kind of busy right now." ],
+    "responses": [
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_FELIX_FOX_DOING" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "opinion": { "trust": 2, "value": 2 },
+        "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": { "and": [ { "not": "has_many_assigned_mission" }, { "not": "has_assigned_mission" } ] },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "Chad is back his usual office on the seventh floor of Barter Tower." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "MrEriksonExists",
+      "type": "knowledge",
+      "context": "flag",
+      "value": "yes",
+      "yes": "Mr. Erikson is always coming and going, he's got an office upstairs somewhere.",
+      "no": "The Maquis don't just let any random survivor walk into a heavily armed base and speak to the commander of the local cell, you need to demonstrate that you are really with us.  Try talking to people around and see if anyone needs help or if you're up for a combat mission, I might find someone to talk you out on patrol."
+    },
+    "responses": [
+      {
+        "text": "I've been helping everyone around here, I want to meet the man in charge.",
+        "topic": "TALK_MISSION_INQUIRE",
+        "condition": { "u_compare_var": "maquis_morale", "type": "counter", "context": "refugee_center", "op": ">", "value": 10 }
+      },
+      { "text": "Ok, Thanks.", "topic": "TALK_NONE" },
+      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Just moving freight around to keep the resistance moving.",
+      "Amateurs study tactics, experts study logistics.",
+      "This entire tower might be one of the last good places left in New England, let alone the world.  Its kind of awesome when you think about it."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_FELIX_FOX_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_TRADE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "No.  I can not sell anything, all goods are all spoken for.",
+      "I do not have anything for sale.  Don't ask again.",
+      "Then you should go find one of the many merchants around the tower.  They are scattered around all over."
+    ],
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE", "opinion": { "trust": -1, "value": -1 } } ]
+  }
+]

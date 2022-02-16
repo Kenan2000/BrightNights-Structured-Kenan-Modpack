@@ -7,7 +7,6 @@
     "mission": 7,
     "gender": "female",
     "chat": "TALK_MAQUIS_FELINE_MUTANT_ROOT",
-    "mission_offered": "DKZ_MAQUIS_FELINE_MUTANT_FIND_CAT",
     "faction": "maquis"
   },
   {
@@ -263,44 +262,5 @@
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_FELINE_MUTANT_ROOT" },
       { "text": "Well, bye.", "topic": "TALK_DONE" }
     ]
-  },
-  {
-    "//": "-----------------------------------------------------------------------------------------------------------------------",
-    "id": "DKZ_MAQUIS_FELINE_MUTANT_FIND_CAT",
-    "type": "mission_definition",
-    "name": { "str": "Find and capture a cat" },
-    "goal": "MGOAL_FIND_MONSTER",
-    "difficulty": 4,
-    "value": 100000,
-    "origins": [ "ORIGIN_SECONDARY" ],
-    "has_generic_rewards": false,
-    "start": {
-      "assign_mission_target": { "om_terrain": "derelict_property", "reveal_radius": 1, "random": true, "search_range": 120 },
-      "update_mapgen": {
-        "place_monster": [
-          { "monster": "mon_cat_mutant_prism", "x": 22, "y": 22, "target": true },
-          { "monster": "dkz_xenoid_templar", "pack_size": [ 2, 2 ], "x": 1, "y": 1 }
-        ]
-      }
-    },
-    "end": {
-      "opinion": { "trust": 4, "value": 10 },
-      "effect": [
-        { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 11 },
-        { "npc_add_var": "Maquis_Feline_Mutant_Mission1", "type": "mission", "context": "flag", "value": "yes" },
-        { "u_add_var": "Pretty_Kitty_Found", "type": "mission", "context": "flag", "value": "yes" }
-      ]
-    },
-    "dialogue": {
-      "describe": "I need you to find a cat.",
-      "offer": "The last time I was out on patrol, I saw some weird cats out by a vacant propery, their fur looked like it was shifting colors, like an iridescent beetle.  However, I was wounded and had to return quickly and sadly wasn't able to follow up on the cats, would you investigate and find them for me please?",
-      "accepted": "Thank you!  I don't have anything to catch the cat with, but you could probably find a pet carrier, maybe even build a chicken cage and use that?",
-      "rejected": "Oh well, I'm sure a random mutant cat will survive the cataclysm.",
-      "advice": "A cat must be friendly to you in order to accept going into confinement.  If you're having problems catching the cat, try befriending it with food.",
-      "inquire": "Have you found the cat?",
-      "success": "Thank you so much!  This cat is going to be named Lucky because she is the luckiest cat to be alive, especially considering she is pregnant.",
-      "success_lie": "What?!  You're lying, I can tell!  Did you even bring a cage?",
-      "failure": "Oh no!  I guess they are too much for you…"
-    }
   }
 ]

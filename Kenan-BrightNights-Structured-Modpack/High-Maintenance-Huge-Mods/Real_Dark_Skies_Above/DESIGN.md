@@ -1,21 +1,21 @@
-# The Real Dark Skies Above
+# Real Dark Skies
 
 This document is intended to not only guide new potential contributors, but also help get my own thoughts on how the game will progress in text. Assume spoilers beyond this point!
 
 # Contributing
 
-You can also contact me, '@Zlorthishen'.  I have a few ideas for directions for this mod which aren't listed in this file. Expect a free season pass DLC named "Peach Trees" soon™.
+You can also contact me, '@Zlorthishen'.  I have a few ideas for directions for this mod which aren't listed in this file.
 
 # Summary of Intent and Content
 
-Mechanically, Real Dark Skies Above, aka Dark Skies is a project to demonstrate how you can push the game engine to present different stories while not blacklisting anyone or anything. Unlike the base game, in Dark Skies a basic narrative arc is assumed, but not required: the player cant find a way to make occupation of Earth too costly for the aliens to continue and die trying, or play the game however they want and still die trying.
+Mechanically, Real Dark Skies, aka RDS is a project to demonstrate how you can push the game engine to present different stories while not blacklisting anyone or anything. Unlike the base game, in Dark Skies a basic narrative arc is assumed, but not required: the player cant find a way to make occupation of Earth too costly for the aliens to continue and die trying, or play the game however they want and still die trying.
 
-In short, Dark Skies is a science fiction/science fantasy story focused around an ongoing alien invasion and the survival of those left in one of the hot-sites: the New England Exclusion Zone, Whilst at the same time functioning as a complementary mod which functions in harmony with any and all other community mods, specifically the UndeadPeople TileSet **Legacy dark skies above Mod is Specifically Prohibited.**
+In short, Real Dark Skies is a science fiction/science fantasy story focused around an ongoing alien invasion and the survival of those left in one of the hot-sites: the New England Exclusion Zone, Whilst at the same time functioning as a complementary mod which functions in harmony with any and all other community mods, specifically the UndeadPeople TileSet **Legacy dark skies above Mod is Specifically Prohibited.**
 
 
 ## The World
 
-The Earth presented in Dark Skies is a little closer to our current technology level (things you'd reasonably find in the 21st century). It is still "some time in the near future", and some of the advancements in technology reflect this. The effects of climate change are already starting to increase the severity and frequency of natural disasters, numerous infectious diseases of East Asian origin rage unchecked while tensions between local, regional and national leaders are starting to grow due to global economic depression. As if things couldn't get any worse, astronomical institutions across the globe one day detected a peculiar gravitational anomaly just outside the Moon's orbit, initially considered a quaint discovery before alien spacecraft begin to spill from it...
+The Earth presented in Real Dark Skies is a little closer to our current technology level (things you'd reasonably find in the 21st century). It is still "some time in the near future", and some of the advancements in technology reflect this. The effects of climate change are already starting to increase the severity and frequency of natural disasters, numerous infectious diseases of East Asian origin rage unchecked while tensions between local, regional and national leaders are starting to grow due to global economic depression. As if things couldn't get any worse, astronomical institutions across the globe one day detected a peculiar gravitational anomaly just outside the Moon's orbit, initially considered a quaint discovery before alien spacecraft begin to spill from it...
 
 ## The Arrival and The XENOIDS
 
@@ -25,7 +25,7 @@ In truth, the aliens themselves are a part of a omnipresent artificial intellige
 
 Being an artificial intelligence unconcerned with cordial contact, the aliens have never identified themselves. Where American government institutions are concerned, "novel opposing force" or simply "NOPFOR" is sufficient in referring to its new extra-dimensional enemy. 
 
-## Alien Technology
+## Alien Technology - WORK IN PROGRESS
 
 Alien technology freshly looted off of a corpse or stripped from a machine is not usable by humans, but there are ways around this. Alien tech usable by humans is broadly split into two categories: "homebrew" and "cracked". These categories are pretty much purely for contributors and have no real place in game.
 
@@ -41,7 +41,7 @@ The player is a survivor of the chaos of the initial invasion and remains in the
 
 ## The Resistance and the Narrative
 
-Small pockets of resistance have sprung up, groups of both civilians working alone and those who volunteered to help the military. They are hard to find, as any compound of significant size inevitably attracts bombardment. Most are part of a larger overall network that the player can join and do missions for that has contacts with the military, though there are some isolated groups with differing ideologies. Ideally these will only appear after a few months and gradually build up, though the game doesn't quite work like this (yet) and will likely require some dirty tricks using NPC quests. 
+Small pockets of resistance have sprung up, groups of both civilians working alone and those who volunteered to help the military. They are hard to find, as any compound of significant size inevitably attracts attention. Most are part of a larger overall network that the player can join and do missions for that has contacts with the military, though there are some isolated groups with differing ideologies. Ideally these will only appear after a few months and gradually build up, though the game doesn't quite work like this (yet) and will likely require some dirty tricks using NPC quests. 
 
 Ultimately, the story will revolve around the player discovering that the invasion is commanded by a central construct that is currently on a ship in orbit, finding a way to reach the ship, and having a final showdown. If successful, they will at least buy humanity enough time to figure out a response to any future attacks. This task is made much easier by working with rebel forces, however it should be technically possible to do without... *technically*.
 
