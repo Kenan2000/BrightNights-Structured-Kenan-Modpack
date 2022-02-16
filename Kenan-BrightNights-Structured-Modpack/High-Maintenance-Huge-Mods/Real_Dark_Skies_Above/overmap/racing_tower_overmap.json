@@ -218,7 +218,7 @@
       { "point": [ 1, -1, -2 ], "overmap": "subway_ns" },
       { "point": [ 1, 4, -2 ], "overmap": "subway_ns" }
     ],
-    "rotate": true,
+    "rotate": false,
     "locations": [ "land" ],
     "city_distance": [ 2, 5 ],
     "city_sizes": [ 8, 16 ],
@@ -236,5 +236,41 @@
     ],
     "occurrences": [ 1, 2 ],
     "flags": [ "URBAN", "UNIQUE", "SAFE_AT_WORLDGEN" ]
+  },
+{
+    "type": "overmap_special",
+    "id": "horse_farm_sky_marshal",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "horse_farm_sky_marshal_1_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "horse_farm_sky_marshal_2_north" },
+      { "point": [ 2, 0, 0 ], "overmap": "horse_farm_sky_marshal_3_north" },
+      { "point": [ 3, 0, 0 ], "overmap": "horse_farm_sky_marshal_4_north" },
+      { "point": [ 3, 0, 1 ], "overmap": "horse_farm_sky_marshal_4_roof_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "horse_farm_sky_marshal_5_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "horse_farm_sky_marshal_6_north" },
+      { "point": [ 2, 1, 0 ], "overmap": "horse_farm_sky_marshal_7_north" },
+      { "point": [ 2, 1, 1 ], "overmap": "horse_farm_sky_marshal_7_hayloft_north" },
+      { "point": [ 2, 1, 2 ], "overmap": "horse_farm_sky_marshal_7_roof_north" },
+      { "point": [ 3, 1, 0 ], "overmap": "horse_farm_sky_marshal_8_north" },
+      { "point": [ 0, 2, 0 ], "overmap": "horse_farm_sky_marshal_9_north" },
+      { "point": [ 0, 2, 1 ], "overmap": "horse_farm_sky_marshal_9_roof_north" },
+      { "point": [ 1, 2, 0 ], "overmap": "horse_farm_sky_marshal_10_north" },
+      { "point": [ 1, 2, 1 ], "overmap": "horse_farm_sky_marshal_10_roof_north" },
+      { "point": [ 2, 2, 0 ], "overmap": "horse_farm_sky_marshal_11_north" },
+      { "point": [ 3, 2, 0 ], "overmap": "horse_farm_sky_marshal_12_north" },
+      { "point": [ 0, 3, 0 ], "overmap": "horse_farm_sky_marshal_13_north" },
+      { "point": [ 0, 3, 1 ], "overmap": "horse_farm_sky_marshal_13_2ndfloor_north" },
+      { "point": [ 0, 3, 2 ], "overmap": "horse_farm_sky_marshal_13_roof_north" },
+      { "point": [ 1, 3, 0 ], "overmap": "horse_farm_sky_marshal_14_north" },
+      { "point": [ 2, 3, 0 ], "overmap": "horse_farm_sky_marshal_15_north" },
+      { "point": [ 3, 3, 0 ], "overmap": "horse_farm_sky_marshal_16_north" }
+    ],
+    "connections": [ { "point": [ 1, 4, 0 ], "terrain": "road", "connection": "local_road", "from": [ 1, 3, 0 ] } ],
+    "locations": [ "field" ],
+    "city_distance": [ 5, 40 ],
+    "city_sizes": [ 1, -1 ],
+    "occurrences": [ 0, 3 ],
+    "flags": [ "CLASSIC", "FARM", "UNIQUE" ]
   }
+  
 ]
