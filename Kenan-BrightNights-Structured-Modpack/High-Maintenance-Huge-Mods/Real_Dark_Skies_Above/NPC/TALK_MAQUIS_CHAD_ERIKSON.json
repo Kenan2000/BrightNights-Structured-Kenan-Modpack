@@ -197,7 +197,7 @@
     "id": "TALK_CHAD_ERIKSON_BACKGROUND",
     "type": "talk_topic",
     "dynamic_line": [
-      "It was a three letter acronym United States Federal government agency, I won't mention which one, but that doesn't matter much now.  Lets just say that I still have some useful combat and espionage skills that happened to be very useful for an alien invasion."
+      "I worked for a three letter acronym United States Federal government agency, I won't mention which one, but that doesn't matter much now.  Lets just say that I still have some useful combat and espionage skills that happened to be very useful for an alien invasion."
     ],
     "responses": [
       { "text": "Ok, I had some questions.", "topic": "TALK_NONE" },
@@ -297,27 +297,57 @@
     "responses": [
       {
         "text": "I just want to kill aliens.  The most direct way possible.",
-        "effect": { "u_add_trait": "DKZ_COMBAT" },
+        "effect": [
+          { "u_add_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "I want to help lead the fight against the xenoids.",
-        "effect": { "u_add_trait": "DKZ_LEADER" },
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_add_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "I want to provide medical support and heal people.",
-        "effect": { "u_add_trait": "DKZ_MEDIC" },
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_add_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "I want to study the aliens to better defeat them.",
-        "effect": { "u_add_trait": "DKZ_SCIENTIST" },
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_add_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
         "topic": "TALK_DONE"
       },
       {
         "text": "I want to engineer better technology to kill xenoids.",
-        "effect": { "u_add_trait": "DKZ_TECH" },
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_add_trait": "DKZ_TECH" }
+        ],
         "topic": "TALK_DONE"
       },
       { "text": "I have something else to ask you first.", "topic": "TALK_NONE" },
