@@ -132,7 +132,7 @@
     "copy-from": "FEYHEARING",
     "name": { "str": "Fey Hearing" },
     "points": 2,
-    "description": "Your not sure the shape of your ears are helping, but regardless you have become very sensitive to sounds.",
+    "description": "You're not sure the shape of your ears is helping you any; regardless, you have become very sensitive to sounds.",
     "prereqs": [ "GOODHEARING" ],
     "prereqs2": [ "ELFA_EARS" ],
     "threshreq": [ "THRESH_ELFA" ],
@@ -171,7 +171,7 @@
     "description": "You're skilled at clearing obstacles; terrain like railings or counters are as easy for you to move on as solid ground.",
     "starting_trait": true,
     "valid": false,
-    "cancels": [ "BADKNEES" ],
+    "cancels": [ "BADKNEES", "FELINE_FLEXIBILITY" ],
     "movecost_obstacle_modifier": 0.5
   },
   {
@@ -233,7 +233,7 @@
     "description": "Your wounds heal themselves quicker than usual.  You heal 50% faster whilst asleep and 20% faster whilst awake.  Your broken limbs also heal twice as fast.",
     "starting_trait": true,
     "types": [ "HEALING" ],
-    "changes_to": [ "FASTHEALER2" ],
+    "changes_to": [ "FASTHEALER2", "REGEN_LIZ" ],
     "category": [ "MEDICAL", "FASTHEALER" ],
     "healing_awake": 0.2,
     "healing_resting": 0.5,
