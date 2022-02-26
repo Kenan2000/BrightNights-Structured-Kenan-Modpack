@@ -255,10 +255,13 @@
     "id": "REGEN",
     "name": "Regeneration",
     "points": 6,
-    "description": "Your flesh regenerates from wounds incredibly quickly.",
+    "description": "Your flesh regenerates from wounds incredibly quickly.  You heal 150% faster whilst asleep and 200% faster whilst awake.  Your broken limbs also heal 16 times faster than usual.",
     "types": [ "HEALING" ],
     "prereqs": [ "FASTHEALER2" ],
-    "category": [ "SLIME", "TROGLOBITE", "NECROMANTIC" ]
+    "category": [ "SLIME", "TROGLOBITE", "NECROMANTIC" ],
+    "healing_awake": 2.0,
+    "healing_resting": 1.5,
+    "mending_modifier": 16.0
   },
   {
     "type": "mutation",
@@ -332,7 +335,7 @@
     "points": 1,
     "visibility": 2,
     "ugliness": 7,
-    "description": "A new eye came out of your body. The field of view broadens, but the appearance is disgusting. Perception + 2",
+    "description": "A new eye came out of your body. The field of view broadens, but the appearance is disgusting. +2 Perception",
     "category": [ "NECROMANTIC" ],
     "valid": false,
     "passive_mods": { "per_mod": 2 }
@@ -478,7 +481,7 @@
     "ugliness": 10,
     "threshreq": [ "THRESH_NECROMANTIC" ],
     "category": [ "NECROMANTIC" ],
-    "description": "There is another head on your shoulders. And here you thought you were doing well with just one. You can not see the other side of the face directly, but you can understand what you see over there. Intelligence + 5, Perception + 3",
+    "description": "There is another head on your shoulders. And here you thought you were doing well with just one. You can not see the other side of the face directly, but you can understand what you see over there. +5 Intelligence, +3 Perception",
     "encumbrance_always": [ [ "head", 5 ] ],
     "passive_mods": { "int_mod": 5, "per_mod": 3 }
   },

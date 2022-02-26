@@ -625,7 +625,7 @@
     "name": { "str": "Avian Eyes" },
     "points": 5,
     "visibility": 1,
-    "description": "Your vision has become particularly acute: you suspect you could pick out zombies much farther away.  Perception +4.",
+    "description": "Your vision has become particularly acute: you suspect you could pick out zombies much farther away.  +4 Perception.",
     "cancels": [ "20_15", "ELFAEYES", "FEL_EYE", "LIZ_EYE", "URSINE_EYE", "COMPOUND_EYES" ]
   },
   {
@@ -737,6 +737,7 @@
     "copy-from": "LIGHT_BONES",
     "name": { "str": "Light Bones" },
     "points": 2,
+    "mixed_effect": true,
     "description": "Your bones are very light.  This enables you to move and attack 10% faster, but also reduces your carrying weight by 20% and makes bashing attacks hurt a little more.",
     "metabolism_modifier": -0.1
   },
@@ -894,7 +895,7 @@
     "points": 5,
     "visibility": 10,
     "ugliness": 4,
-    "description": "Your exoskeleton has hardened considerably--restricting movement, granted--and boasts a fine coat of hairs that put feline whiskers to shame (all: +6 bash, +10 cut, +4 acid, +2 electric, +2 bio, +2 heat).",
+    "description": "Your exoskeleton has hardened considerably, imposing a further -1 to Dexterity, granted--and boasts a fine coat of hairs that put feline whiskers to shame (all: +6 bash, +10 cut, +4 acid, +2 electric, +2 bio, +2 heat).",
     "encumbrance_always": [
       [ "torso", 13 ],
       [ "head", 13 ],
@@ -1109,7 +1110,7 @@
     "points": 0,
     "visibility": 3,
     "ugliness": 2,
-    "description": "Your frame has adapted for life in confined spaces.  You seem a little shorter and bulkier, trading muscle mass for mobility.  +3 Strength, -2 Dexterity.",
+    "description": "Your frame has adapted for life in confined spaces.  You seem a little shorter and bulkier, trading mobility for muscle mass.  +3 Strength, -2 Dexterity.",
     "passive_mods": { "str_mod": 3, "dex_mod": -2 }
   },
   {
@@ -1304,7 +1305,7 @@
     "copy-from": "STR_UP",
     "name": { "str": "Strong" },
     "points": 1,
-    "description": "Your muscles are a little stronger.  Strength + 1",
+    "description": "Your muscles are a little stronger.  +1 Strength",
     "metabolism_modifier": 0.04,
     "thirst_modifier": 0.04
   },
@@ -1314,7 +1315,7 @@
     "copy-from": "STR_UP_2",
     "name": { "str": "Very Strong" },
     "points": 2,
-    "description": "Your muscles are stronger.  Strength + 2",
+    "description": "Your muscles are stronger.  +2 Strength",
     "metabolism_modifier": 0.05,
     "thirst_modifier": 0.05
   },
@@ -1325,7 +1326,7 @@
     "name": { "str": "Extremely Strong" },
     "points": 4,
     "visibility": 1,
-    "description": "Your muscles are much stronger.  Strength + 4",
+    "description": "Your muscles are much stronger.  +4 Strength",
     "metabolism_modifier": 0.08,
     "thirst_modifier": 0.08
   },
@@ -1337,7 +1338,7 @@
     "points": 7,
     "visibility": 2,
     "ugliness": 2,
-    "description": "Your muscles are noticeably bulging.  Strength + 7",
+    "description": "Your muscles are noticeably bulging.  +7 Strength",
     "metabolism_modifier": 0.1,
     "thirst_modifier": 0.1
   },
@@ -1358,7 +1359,7 @@
     "copy-from": "DEX_UP",
     "name": { "str": "Dextrous" },
     "points": 1,
-    "description": "You are a little nimbler.  Dexterity + 1",
+    "description": "You are a little nimbler.  +1 Dexterity",
     "extend": { "category": [ "LUPINE" ] }
   },
   {
@@ -1367,7 +1368,7 @@
     "copy-from": "DEX_UP_3",
     "name": { "str": "Extremely Dextrous" },
     "points": 3,
-    "description": "You are nimble and quick.  Dexterity + 4",
+    "description": "You are nimble and quick.  +4 Dexterity",
     "extend": { "category": [ "RAPTOR" ] }
   },
   {

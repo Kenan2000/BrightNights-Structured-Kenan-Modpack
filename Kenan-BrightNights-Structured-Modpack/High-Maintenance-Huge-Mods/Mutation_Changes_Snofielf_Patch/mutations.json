@@ -3,7 +3,7 @@
     "type": "mutation",
     "id": "SKIN_ROUGH",
     "copy-from": "SKIN_ROUGH",
-    "changes_to": [ "SNAKE_SKIN", "AVIAN_SKIN", "BEAST_SKIN", "CHITIN", "PLANTSKIN" ]
+    "changes_to": [ "SNAKE_SKIN", "AVIAN_SKIN", "BEAST_SKIN", "CHITIN", "PLANTSKIN", "PATCHSKIN1" ]
   },
   {
     "type": "mutation",
@@ -1091,7 +1091,7 @@
     "id": "INT_RAT",
     "name": { "str": "Ratty Smarts" },
     "points": 3,
-    "description": "You bet that you could solve any maze or problem faster than those other 'survivors'.  Intelligence + 3",
+    "description": "You bet that you could solve any maze or problem faster than those other 'survivors'.  +3 Intelligence",
     "prereqs": [ "INT_UP_2" ],
     "category": [ "RAT" ],
     "cancels": [ "INT_UP_3", "INT_UP_4" ],
@@ -1120,7 +1120,7 @@
     "id": "DEX_RAT",
     "name": { "str": "Ratty Finesse" },
     "points": 3,
-    "description": "Now the cataclysm is here it's better to be quick than slow.  Dexterity + 3",
+    "description": "Now the cataclysm is here it's better to be quick than slow.  +3 Dexterity",
     "prereqs": [ "DEX_UP_2" ],
     "category": [ "RAT" ],
     "cancels": [ "DEX_UP_3", "DEX_UP_4" ],
