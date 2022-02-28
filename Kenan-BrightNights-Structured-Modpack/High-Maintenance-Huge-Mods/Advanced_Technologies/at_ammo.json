@@ -130,7 +130,7 @@
     "range": 20,
     "dispersion": 60,
     "recoil": 5600,
-    "effects": [ "NEVER_MISFIRES", "EXPLOSIVE_20x66", "FLARE" ]
+    "effects": [ "NEVER_MISFIRES", "EXPLOSIVE_TINY", "FLARE" ]
   },
   {
     "type": "AMMO",
@@ -290,7 +290,7 @@
     "range": 30,
     "dispersion": 10,
     "recoil": 20000,
-    "effects": [ "EXPLOSIVE_m433", "NEVER_MISFIRES" ]
+    "effects": [ "EXPLOSIVE_TINY", "FRAG", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",
@@ -310,7 +310,7 @@
     "range": 30,
     "dispersion": 60,
     "recoil": 3000,
-    "effects": [ "EXPLOSIVE_m430a1", "NEVER_MISFIRES" ]
+    "effects": [ "EXPLOSIVE_SMALL", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",
@@ -330,7 +330,7 @@
     "range": 30,
     "dispersion": 60,
     "recoil": 24000,
-    "effects": [ "EXPLOSIVE_66mmHEAT", "NEVER_MISFIRES" ]
+    "effects": [ "EXPLOSIVE_BIG", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",
@@ -350,7 +350,7 @@
     "range": 30,
     "dispersion": 30,
     "recoil": 60000,
-    "effects": [ "MUZZLE_SMOKE", "EXPLOSIVE_ATGMHEAT", "TRAIL", "NEVER_MISFIRES" ]
+    "effects": [ "MUZZLE_SMOKE", "EXPLOSIVE_HUGE", "TRAIL", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",
@@ -370,7 +370,7 @@
     "range": 30,
     "dispersion": 30,
     "recoil": 60000,
-    "effects": [ "MUZZLE_SMOKE", "EXPLOSIVE_ATGMHEAT", "MININUKE_MOD", "LIGHTNING", "PLASMA", "STREAM_BIG", "NEVER_MISFIRES" ]
+    "effects": [ "MUZZLE_SMOKE", "EXPLOSIVE_HUGE", "MININUKE_MOD", "LIGHTNING", "PLASMA", "STREAM_BIG", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",

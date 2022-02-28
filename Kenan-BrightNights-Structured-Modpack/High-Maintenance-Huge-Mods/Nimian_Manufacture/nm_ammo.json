@@ -85,6 +85,7 @@
     "bashing": 1,
     "cutting": 0,
     "to_hit": 0,
+    "drop": "gasbomb_act",
     "ammo_type": "32mm",
     "casing": "32mm_casing",
     "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 0 },
@@ -93,7 +94,7 @@
     "recoil": 200,
     "count": 5,
     "stack_size": 5,
-    "effects": [ "COOKOFF", "TEARGAS", "NEVER_MISFIRES" ]
+    "effects": [ "COOKOFF", "NEVER_MISFIRES" ]
   },
   {
     "type": "AMMO",

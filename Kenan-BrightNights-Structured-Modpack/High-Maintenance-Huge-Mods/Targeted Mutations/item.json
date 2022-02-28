@@ -333,6 +333,24 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "POISRESIST" }
 	},
 	{
+    "id": "target_iv_mutagen_bovinebulk",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Sheer bulk serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes you develop a very robust build.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BOVINE_BULK" }
+	},
+	{
+    "id": "target_iv_mutagen_bovinebulk2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Immense bulk serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes you develop an incredibly robust build to such extent that you would not be allowed to compete in pre-Cataclysm sports.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "BOVINE_BULK2" }
+	},
+	{
     "id": "target_iv_mutagen_toughfeet",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -890,6 +908,33 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "LYNX_FUR" }
 	},
 	{
+    "id": "target_iv_mutagen_patchskin1",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Patchwork skin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes your skin mutate into an amalgamation of fur and scales.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PATCHSKIN1" }
+	},
+	{
+    "id": "target_iv_mutagen_patchskin1",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Patchwork skin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes your skin mutate into an amalgamation of fur and scales.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PATCHSKIN1" }
+	},
+	{
+    "id": "target_iv_mutagen_patchskin2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Thickened patchwork skin serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes your skin mutate into an amalgamation of thickened fur and scales.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PATCHSKIN2" }
+	},
+	{
     "id": "target_iv_mutagen_chitin",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -1124,6 +1169,15 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "INK_GLANDS" }
 	},
 	{
+    "id": "target_iv_mutagen_insectreservoir",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Bulging reservoir serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes you develop a reservoir of fluids that buldges out of your abdomen allowing you to adapt to containing extra liquids.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INSECT_RESERVOIR" }
+	},
+	{
     "id": "target_iv_mutagen_talons",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -1257,6 +1311,15 @@
     "description": "A special mutagenic serum designed to give you a single mutation. Gives you insect-like compound eyes.",
     "color": "light_gray",
     "use_action": { "type": "mutagen_iv", "mutation_category": "COMPOUND_EYES" }
+	},
+	{
+    "id": "target_iv_mutagen_stronglegs",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Strong legs serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one makes your legs gain muscle mass to propel you across any terrain, and help carry a bit more.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "STRONG_LEGS" }
 	},
 	{
     "id": "target_iv_mutagen_raptalons",
@@ -2132,6 +2195,24 @@
     "use_action": { "type": "mutagen_iv", "mutation_category": "VOMITOUS" }
 	},
 	{
+    "id": "target_iv_mutagen_persistencehunter",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Persistence hunter serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to pursue prey for miles at a variety of paces until they stop from exhaustion.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PERSISTENCE_HUNTER" }
+	},
+	{
+    "id": "target_iv_mutagen_persistencehunter2",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Extreme persistence hunter serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. Allows you to pursue prey for days until they literally die from exhaustion.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "PERSISTENCE_HUNTER2" }
+	},
+	{
     "id": "target_iv_mutagen_hunger",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
@@ -2481,6 +2562,15 @@
     "description": "A special mutagenic serum designed to give you a single mutation. Give your lower tentacles some suckers to keep you in place.",
     "color": "light_gray",
     "use_action": { "type": "mutagen_iv", "mutation_category": "LEG_TENT_BRACE" }
+	},
+	{
+    "id": "target_iv_mutagen_felineflexibility",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "Feline flexibility serum",
+    "description": "A special mutagenic serum designed to give you a single mutation. This one changes your muscles, joints, and the movement center of your brain internally somewhat, allowing you to traverse obstacles with ease, it also helps you avoid attacks a bit more easily.",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "FELINE_FLEXIBILITY" }
 	},
 	{
     "id": "target_iv_mutagen_acidproof",
