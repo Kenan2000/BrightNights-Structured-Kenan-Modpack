@@ -15,7 +15,6 @@
     "job_description": "I'm just living my life as a subterranean mutant, shepherding my mutant flock.",
     "common": false,
     "traits": [
-      { "trait": "DKZ_COMBAT", "prob": 100 },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
       { "trait": "STR_UP_3", "prob": 100 },
@@ -249,6 +248,11 @@
       "no": [ "We don't bother anyone down here and expect the same from others.", "What brings you down here, scavenger." ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },	
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_TROG_MUTANT_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_TROG_MUTANT_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_TROG_MUTANT_UPSTAIRS" },

@@ -56,9 +56,10 @@
       { "item": "boxer_shorts" },
       { "item": "socks" },
       { "item": "boots_hiking" },
-      { "item": "postman_shirt" },
-      { "item": "postman_hat" },
-      { "item": "wearable_atomic_light" },
+      { "item": "jeans_red" },
+      { "item": "tshirt_tour" },
+      { "item": "jacket_leather_red" },
+      { "item": "pickelhaube" },
       { "item": "backpack" },
       { "item": "badge_deputy" },
       {
@@ -83,7 +84,7 @@
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_FELIX_FOX_ROOT",
     "type": "talk_topic",
-    "dynamic_line": [ "What do you require citizen?.", "I'm kind of busy right now." ],
+    "dynamic_line": [ "what's up dude?.", "Hey how's it going man?." ],
     "responses": [
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_FELIX_FOX_DOING" },
@@ -96,13 +97,7 @@
             { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
           ]
         },
-        "opinion": { "trust": 2, "value": 2 },
         "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
-      },
-      {
-        "text": "Is there anything I can do to help you out?",
-        "condition": { "and": [ { "not": "has_many_assigned_mission" }, { "not": "has_assigned_mission" } ] },
-        "topic": "TALK_MISSION_LIST"
       },
       { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "See you later.", "topic": "TALK_DONE" }
@@ -112,7 +107,7 @@
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER",
     "type": "talk_topic",
-    "dynamic_line": [ "Chad is back his usual office on the seventh floor of Barter Tower." ],
+    "dynamic_line": [ "Ha, the spooky Chad is back his usual office on the seventh floor of Barter Tower.  The Princess is in another castle!" ],
     "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
   },
   {
@@ -124,10 +119,15 @@
       "type": "knowledge",
       "context": "flag",
       "value": "yes",
-      "yes": "Mr. Erikson is always coming and going, he's got an office upstairs somewhere.",
-      "no": "The Maquis don't just let any random survivor walk into a heavily armed base and speak to the commander of the local cell, you need to demonstrate that you are really with us.  Try talking to people around and see if anyone needs help or if you're up for a combat mission, I might find someone to talk you out on patrol."
+      "yes": "Mr. Erikson is back at his office.",
+      "no": "Mr. Erikson is probably back at his office."
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       {
         "text": "I've been helping everyone around here, I want to meet the man in charge.",
         "topic": "TALK_MISSION_INQUIRE",
@@ -142,9 +142,8 @@
     "id": "TALK_MAQUIS_FELIX_FOX_DOING",
     "type": "talk_topic",
     "dynamic_line": [
-      "Just moving freight around to keep the resistance moving.",
-      "Amateurs study tactics, experts study logistics.",
-      "This entire tower might be one of the last good places left in New England, let alone the world.  Its kind of awesome when you think about it."
+      "Protecting my homestead from zombies, aliens and Canadians.  Or at least two of those!",
+      "I'm keeping my little territory here sovereign!"
     ],
     "responses": [
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
@@ -158,10 +157,9 @@
     "id": "TALK_MAQUIS_FELIX_FOX_TRADE",
     "type": "talk_topic",
     "dynamic_line": [
-      "No.  I can not sell anything, all goods are all spoken for.",
-      "I do not have anything for sale.  Don't ask again.",
-      "Then you should go find one of the many merchants around the tower.  They are scattered around all over."
+      "No. I'm good, I have everything I need.",
+      "I do not have anything for sale, man.  There a merchant around somewhere."
     ],
-    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE", "opinion": { "trust": -1, "value": -1 } } ]
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE" } ]
   }
 ]

@@ -16,7 +16,6 @@
     "job_description": "I'm here to install and maintain cybernetic devices.",
     "common": false,
     "traits": [
-      { "distribution": [ { "trait": "DKZ_SCIENTIST", "prob": 10 }, { "trait": "DKZ_MEDIC", "prob": 90 } ] },
       { "trait": "PROF_AUTODOC", "prob": 100 },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
@@ -325,6 +324,11 @@
       "no": [ "Welcome…" ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },	
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_TRADE" },
       { "text": "I need some bionic work done.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_INSTALL_BIONICS" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_DOING" },

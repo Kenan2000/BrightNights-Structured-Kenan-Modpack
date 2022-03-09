@@ -16,7 +16,6 @@
     "job_description": "I'm here to salvage pre-cataclysm vehicles to make my own kill-dozer.",
     "common": false,
     "traits": [
-      { "trait": "DKZ_SCIENTIST", "prob": 100 },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
       { "trait": "WAKEFUL", "prob": 75 },
@@ -318,6 +317,11 @@
       "no": [ "Welcome…" ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },	
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_SCIENTIST_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_SCIENTIST_DOING" },
       { "text": "What is downstairs?", "topic": "TALK_MAQUIS_SCIENTIST_DOWNSTAIRS" },

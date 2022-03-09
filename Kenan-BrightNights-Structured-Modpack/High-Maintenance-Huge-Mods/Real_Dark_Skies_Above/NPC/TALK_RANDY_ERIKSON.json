@@ -492,6 +492,7 @@
     "value": 0,
     "item": "software_useless",
     "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_CHECK_UP_ON_BIG_BROTHER",	
     "dialogue": {
       "describe": "I some old hobby software.",
       "offer": "I need another old piece of software, not sure what it was but I'll know it when I see it..",
@@ -528,9 +529,9 @@
         "om_special": "arcology_racing",
         "reveal_radius": 7,
         "search_range": 500,
-        "z": 0,
+        "z": 7,
         "random": true,
-        "min_distance": 90
+        "min_distance": 95
       },
       "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 3, "y": 3, "target": true } ] },
       "effect": [ { "u_add_var": "MrEriksonExists", "type": "knowledge", "context": "flag", "value": "yes" } ]
