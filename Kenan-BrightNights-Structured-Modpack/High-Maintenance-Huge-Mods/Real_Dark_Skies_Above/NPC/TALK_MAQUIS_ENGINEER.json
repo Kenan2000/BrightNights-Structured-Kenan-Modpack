@@ -15,11 +15,7 @@
     "name": { "str": "MAQUIS" },
     "job_description": "I'm here to find stuff to scavenge machines and electronics and build something with them.",
     "common": false,
-    "traits": [
-      { "group": "DKZ_starting_traits" },
-      { "group": "Appearance_demographics" },
-      { "trait": "ROBUST", "prob": 40 }
-    ],
+    "traits": [ { "group": "DKZ_starting_traits" }, { "group": "Appearance_demographics" }, { "trait": "ROBUST", "prob": 40 } ],
     "skills": [
       { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
       { "skill": "computer", "bonus": { "rng": [ 4, 8 ] } },
@@ -303,7 +299,7 @@
         "text": "Lets set a combat strategy…",
         "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
-      },	
+      },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_ENGINEER_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_ENGINEER_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_ENGINEER_UPSTAIRS" },
