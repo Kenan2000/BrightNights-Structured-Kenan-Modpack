@@ -15,11 +15,7 @@
     "name": { "str": "MAQUIS" },
     "job_description": "I'm here to kick ass and chew bubblegum.",
     "common": false,
-    "traits": [
-      { "group": "DKZ_starting_traits" },
-      { "group": "Appearance_demographics" },
-      { "trait": "ROBUST", "prob": 90 }
-    ],
+    "traits": [ { "group": "DKZ_starting_traits" }, { "group": "Appearance_demographics" }, { "trait": "ROBUST", "prob": 90 } ],
     "skills": [
       { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
       { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
