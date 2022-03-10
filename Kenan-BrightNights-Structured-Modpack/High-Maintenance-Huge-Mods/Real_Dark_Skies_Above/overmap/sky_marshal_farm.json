@@ -183,30 +183,10 @@
     "type": "mapgen",
     "method": "json",
     "om_terrain": [
-      [ 
-	    "sky_marshal_farm_1",
-	    "sky_marshal_farm_2",
-		"sky_marshal_farm_3",
-		"sky_marshal_farm_4" 
-	  ],
-      [
-        "sky_marshal_farm_5",
-        "sky_marshal_farm_6",
-        "sky_marshal_farm_7",
-        "sky_marshal_farm_8"
-      ],
-      [
-        "sky_marshal_farm_9",
-        "sky_marshal_farm_10",
-        "sky_marshal_farm_11",
-        "sky_marshal_farm_12"
-      ],
-      [
-        "sky_marshal_farm_13",
-        "sky_marshal_farm_14",
-        "sky_marshal_farm_15",
-        "sky_marshal_farm_16"
-      ]
+      [ "sky_marshal_farm_1", "sky_marshal_farm_2", "sky_marshal_farm_3", "sky_marshal_farm_4" ],
+      [ "sky_marshal_farm_5", "sky_marshal_farm_6", "sky_marshal_farm_7", "sky_marshal_farm_8" ],
+      [ "sky_marshal_farm_9", "sky_marshal_farm_10", "sky_marshal_farm_11", "sky_marshal_farm_12" ],
+      [ "sky_marshal_farm_13", "sky_marshal_farm_14", "sky_marshal_farm_15", "sky_marshal_farm_16" ]
     ],
     "object": {
       "faction_owner": [
@@ -587,7 +567,7 @@
       }
     }
   },
-{
+  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": "sky_marshal_farm_13_basement",
@@ -675,7 +655,7 @@
         "b": [ { "item": "home_hw", "chance": 60 }, { "item": "mechanics", "chance": 30 } ]
       }
     }
-  },  
+  },
   {
     "type": "mapgen",
     "method": "json",
