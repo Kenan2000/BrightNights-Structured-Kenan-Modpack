@@ -40,13 +40,13 @@
       { "x": 2, "y": 2, "part": "frame_ne" },
       { "x": 1, "y": 3, "part": "frame_ne" },
       { "x": 1, "y": -1, "part": "frame_nw" },
-      { "x": 2, "y": 0, "part": "headlight_reinforced" },	  
-      { "x": 2, "y": 1, "part": "chimes" },	  
+      { "x": 2, "y": 0, "part": "headlight_reinforced" },
+      { "x": 2, "y": 1, "part": "chimes" },
       { "x": 2, "y": 2, "part": "headlight_reinforced" },
       { "x": 1, "y": -1, "part": "light_red" },
       { "x": 1, "y": 3, "part": "light_blue" },
       { "x": 0, "y": -2, "part": "wing_mirror_left" },
-      { "x": 0, "y": 4, "part": "wing_mirror_right" },	  
+      { "x": 0, "y": 4, "part": "wing_mirror_right" },
       { "x": 0, "y": 0, "part": "reclining_seat" },
       { "x": 0, "y": 2, "part": "reclining_seat" },
       { "x": 0, "y": 0, "part": "controls" },
@@ -56,11 +56,11 @@
       { "x": -1, "y": -1, "part": "door_sliding" },
       { "x": -1, "y": 3, "part": "door_sliding" },
       { "x": -2, "y": 1, "part": "trunk_floor" },
-      { "x": -2, "y": 1, "part": "aisle_lights" },  
+      { "x": -2, "y": 1, "part": "aisle_lights" },
       { "x": -1, "y": 1, "part": "reclining_seat_leather" },
       { "x": -1, "y": 1, "part": "controls" },
       { "x": -1, "y": 1, "part": "dashboard" },
-      { "x": -1, "y": 1, "part": "seatbelt" },	  
+      { "x": -1, "y": 1, "part": "seatbelt" },
       { "x": 0, "y": 1, "part": "storage_battery" },
       { "x": 0, "y": 0, "part": "roof" },
       { "x": 0, "y": 1, "part": "roof" },
@@ -84,16 +84,16 @@
       { "x": 2, "y": 1, "part": "halfboard_horizontal" },
       { "x": 2, "y": 2, "part": "halfboard_ne" },
       { "x": 1, "y": 3, "part": "halfboard_ne" },
-      { "x": 1, "y": -1, "part": "halfboard_nw" },  
-      { "x": 0, "y": 1, "part": "veh_table" },	  
-      { "x": 0, "y": 1, "part": "towel_hanger" },	  
-      { "x": 0, "y": 1, "part": "water_purifier" },	  
-      { "x": 0, "y": 1, "part": "water_faucet" },	   
+      { "x": 1, "y": -1, "part": "halfboard_nw" },
+      { "x": 0, "y": 1, "part": "veh_table" },
+      { "x": 0, "y": 1, "part": "towel_hanger" },
+      { "x": 0, "y": 1, "part": "water_purifier" },
+      { "x": 0, "y": 1, "part": "water_faucet" },
       { "x": -2, "y": -1, "part": "door_sliding" },
       { "x": -2, "y": 3, "part": "door_sliding" },
       { "x": -2, "y": 2, "part": "trunk_floor" },
       { "x": -2, "y": 0, "part": "trunk_floor" },
-      { "x": -3, "y": 1, "part": "minifreezer" },	  
+      { "x": -3, "y": 1, "part": "minifreezer" },
       { "x": -4, "y": 0, "part": "stowboard_sw" },
       { "x": -4, "y": 1, "part": "board_horizontal" },
       { "x": -4, "y": 2, "part": "stowboard_se" },
@@ -130,9 +130,7 @@
       { "x": -3, "y": 3, "part": "roof" },
       { "x": -1, "y": 3, "part": "roof" }
     ],
-    "items": [
-      { "x": -1, "y": 0, "chance": 100, "items": [ "1st_aid" ] }
-    ]
+    "items": [ { "x": -1, "y": 0, "chance": 100, "items": [ "1st_aid" ] } ]
   },
   {
     "id": "surv_blackhawk",
@@ -340,5 +338,5 @@
       { "x": 0, "y": 2, "chance": 7, "items": [ "pockknife" ] },
       { "x": 0, "y": 2, "chance": 5, "items": [ "box_cigarette" ] }
     ]
-  }  
+  }
 ]
