@@ -15,7 +15,6 @@
     "job_description": "I'm here to provide combat overwatch and accumulate headshots.",
     "common": false,
     "traits": [
-      { "trait": "DKZ_COMBAT", "prob": 100 },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
       { "trait": "WAKEFUL", "prob": 50 },
@@ -287,6 +286,11 @@
     "type": "talk_topic",
     "dynamic_line": [ "Don't distract me while I'm aiming.", "I'm kind of busy right now." ],
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_SNIPER_TRADE" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_SNIPER_DOING" },
       { "text": "Why are you upstairs?", "topic": "TALK_MAQUIS_SNIPER_UPSTAIRS" },

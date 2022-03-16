@@ -15,12 +15,7 @@
     "name": { "str": "MAQUIS" },
     "job_description": "I'm here to kick ass and chew bubblegum.",
     "common": false,
-    "traits": [
-      { "trait": "DKZ_COMBAT", "prob": 100 },
-      { "group": "DKZ_starting_traits" },
-      { "group": "Appearance_demographics" },
-      { "trait": "ROBUST", "prob": 90 }
-    ],
+    "traits": [ { "group": "DKZ_starting_traits" }, { "group": "Appearance_demographics" }, { "trait": "ROBUST", "prob": 90 } ],
     "skills": [
       { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
       { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
@@ -89,7 +84,6 @@
     "id": "NC_MAQUIS_ATHLETIC_pants_male",
     "subtype": "distribution",
     "entries": [
-      { "item": "b_shorts", "prob": 70 },
       { "item": "jeans", "prob": 20 },
       { "item": "pants", "prob": 20 },
       { "item": "pants_leather", "prob": 20 },
@@ -103,14 +97,11 @@
     "id": "NC_MAQUIS_ATHLETIC_pants_female",
     "subtype": "distribution",
     "entries": [
-      { "item": "b_shorts", "prob": 30 },
       { "item": "jeans", "prob": 20 },
       { "item": "pants", "prob": 20 },
       { "item": "pants_leather", "prob": 20 },
       { "item": "pants_cargo", "prob": 20 },
-      { "item": "leggings", "prob": 70 },
       { "item": "skirt", "prob": 50 },
-      { "item": "postman_shorts", "prob": 10 },
       { "item": "technician_pants_gray", "prob": 10 }
     ]
   },
@@ -123,7 +114,6 @@
       { "item": "flag_shirt", "prob": 15 },
       { "item": "jersey", "prob": 30 },
       { "item": "tunic", "prob": 10 },
-      { "item": "postman_shirt", "prob": 10 },
       { "item": "linuxtshirt", "prob": 30 },
       { "item": "sleeveless_tunic", "prob": 5 },
       { "item": "tank_top", "prob": 20 }
@@ -138,7 +128,6 @@
       { "item": "flag_shirt", "prob": 10 },
       { "item": "jersey", "prob": 30 },
       { "item": "tunic", "prob": 5 },
-      { "item": "postman_shirt", "prob": 10 },
       { "item": "linuxtshirt", "prob": 30 },
       { "item": "halter_top", "prob": 5 },
       { "item": "tank_top", "prob": 20 }
@@ -328,6 +317,11 @@
       "no": [ "Welcome…", "Here to trade, I hope?", "Safe travels, scavenger." ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_ATHLETIC_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_ATHLETIC_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_ATHLETIC_UPSTAIRS" },
@@ -404,8 +398,8 @@
     "value": 1000,
     "item": "cavalry_sabre",
     "start": {
-      "assign_mission_target": { "om_terrain": "museum", "reveal_radius": 1, "random": true, "search_range": 120 },
-      "update_mapgen": { "om_terrain": "museum", "place_item": [ { "item": "cavalry_sabre", "x": 2, "y": 2 } ] },
+      "assign_mission_target": { "om_terrain": "museum", "om_special": "museum", "reveal_radius": 1, "random": true, "search_range": 120 },
+      "update_mapgen": { "om_terrain": "museum", "om_special": "museum", "place_item": [ { "item": "cavalry_sabre", "x": 2, "y": 2 } ] },
       "effect": { "u_add_var": "Heirloom_Sabre", "type": "mission", "context": "flag", "value": "in_progress" }
     },
     "end": {

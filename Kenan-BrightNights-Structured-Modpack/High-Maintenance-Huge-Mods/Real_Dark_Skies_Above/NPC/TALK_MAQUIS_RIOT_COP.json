@@ -15,7 +15,6 @@
     "job_description": "I'm to keep the peace and provide combat support.",
     "common": false,
     "traits": [
-      { "trait": "DKZ_COMBAT", "prob": 100 },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
       { "trait": "WAKEFUL", "prob": 50 },
@@ -242,6 +241,11 @@
       "no": [ "Don't cause any trouble here, I'd rather kill monsters than people.", "Safe travels." ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_RIOT_COP_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_RIOT_COP_UPSTAIRS" },
       {

@@ -16,9 +16,6 @@
     "job_description": "I'm looking for bright lights, shiny objects, and sweet drinks.",
     "common": false,
     "traits": [
-      {
-        "distribution": [ { "trait": "DKZ_SCIENTIST", "prob": 20 }, { "trait": "DKZ_MEDIC", "prob": 20 }, { "trait": "DKZ_TECH", "prob": 60 } ]
-      },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
       { "trait": "BIOLUM1", "prob": 40 },
@@ -303,6 +300,11 @@
       "no": [ "We don't bother anyone up here and expect the same from others.", "What brings you up here, scavenger." ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MOTH_MUTANT_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MOTH_MUTANT_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_MOTH_MUTANT_UPSTAIRS" },

@@ -1254,7 +1254,7 @@
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
-    "death_function": [ "MELT" ],
+    "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT" ]
   },
   {
@@ -1286,7 +1286,7 @@
     "special_attacks": [
       {
         "type": "bite",
-        "cooldown": 20,
+        "cooldown": 5,
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
@@ -1297,7 +1297,7 @@
       [ "SMASH", 20 ]
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT" ],
-    "death_function": [ "MELT" ],
+    "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "DESTROYS", "ACIDPROOF", "CAN_DIG" ]
   }
 ]

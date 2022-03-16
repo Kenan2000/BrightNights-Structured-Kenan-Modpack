@@ -16,7 +16,6 @@
     "job_description": "I'm just trying to eck out a living.",
     "common": false,
     "traits": [
-      { "distribution": [ { "trait": "DKZ_COMBAT", "prob": 50 }, { "trait": "DKZ_TECH", "prob": 50 } ] },
       { "group": "DKZ_starting_traits" },
       { "group": "Appearance_demographics" },
       { "trait": "FUR", "prob": 100 },
@@ -312,6 +311,11 @@
       "no": [ "We don't bother anyone up here and expect the same from others.", "What brings you up here, scavenger." ]
     },
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_RODENT_MUTANT_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_RODENT_MUTANT_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_RODENT_MUTANT_UPSTAIRS" },
