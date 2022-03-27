@@ -24,308 +24,154 @@
     "//": "----------------Additional change to existing mutation----------------",
     "type": "mutation",
     "id": "CANNIBAL",
-    "name": "Cannibal",
-    "points": 1,
-    "description": "For your whole life you've been forbidden from indulging in your peculiar tastes.  Now the world's ended, and you'll be damned if anyone is going to tell you that you can't eat people.",
-    "starting_trait": true,
-    "valid": false,
-    "category": [ "NECROMANTIC" ],
-    "cancels": [ "VEGETARIAN" ],
-    "flags": [ "CANNIBAL" ]
+    "copy-from": "CANNIBAL",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "SLIMY",
-    "name": "Slimy",
-    "points": 2,
-    "visibility": 7,
-    "ugliness": 6,
-    "description": "Your body is coated with a fine slime.  Protects from long term effects of acid, though not short term ones.  Greatly increases wet benefits.",
-    "leads_to": [ "SLIME_HANDS" ],
-    "changes_to": [ "VISCOUS" ],
-    "category": [ "FISH", "SLIME", "TROGLOBITE", "CEPHALOPOD", "NECROMANTIC" ],
-    "wet_protection": [
-      { "part": "head", "neutral": 3, "good": 4 },
-      { "part": "leg_l", "neutral": 7, "good": 14 },
-      { "part": "leg_r", "neutral": 7, "good": 14 },
-      { "part": "foot_l", "neutral": 2, "good": 4 },
-      { "part": "foot_r", "neutral": 2, "good": 4 },
-      { "part": "arm_l", "neutral": 7, "good": 12 },
-      { "part": "arm_r", "neutral": 7, "good": 12 },
-      { "part": "hand_l", "neutral": 2, "good": 3 },
-      { "part": "hand_r", "neutral": 2, "good": 3 },
-      { "part": "torso", "neutral": 14, "good": 26 }
-    ]
+    "copy-from": "SLIMY",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "//": "Route to undead mutation Routine addition wing-like protrusion → collapse finer etc.",
     "type": "mutation",
     "id": "WINGS_STUB",
-    "name": "Wing Stubs",
-    "points": 0,
-    "visibility": 2,
-    "ugliness": 2,
-    "description": "You have a pair of stubby little wings projecting from your shoulderblades.  They can be wiggled at will, but are useless.",
-    "changes_to": [ "WINGS_BIRD", "WINGS_BAT", "WINGS_INSECT", "WINGS_BUTTERFLY", "NEC_WINGS" ]
+    "copy-from": "WINGS_STUB",
+    "extend": { "changes_to": [ "NEC_WINGS" ] }
   },
   {
     "type": "mutation",
     "id": "HEADBUMPS",
-    "name": "Head Bumps",
-    "points": 0,
-    "visibility": 3,
-    "ugliness": 3,
-    "description": "You have a pair of bumps on your skull.",
-    "changes_to": [ "HORNS", "ANTENNAE", "NEC_HORNS" ]
+    "copy-from": "WINGS_STUB",
+    "extend": { "changes_to": [ "NEC_HORNS" ] }
   },
   {
     "type": "mutation",
     "id": "NAILS",
-    "name": "Long Fingernails",
-    "points": 1,
-    "visibility": 1,
-    "description": "Your fingernails are long and sharp.  If you aren't wearing gloves, your unarmed attacks deal a minor amount of cutting damage.",
-    "types": [ "CLAWS" ],
-    "changes_to": [ "CLAWS", "TALONS", "NEC_HORNS" ],
-    "cancels": [ "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8" ],
-    "category": [ "RAPTOR" ]
+    "copy-from": "NAILS",
+    "extend": { "changes_to": [ "NEC_HORNS" ] }
   },
   {
     "//": "Below we write what mutates with undead mutation",
     "type": "mutation",
     "id": "HUNGER2",
-    "name": "Very Fast Metabolism",
-    "points": -2,
-    "description": "You need about twice as much food as the average human to maintain your expanded cardiovascular and respiratory systems.  On a plus side, it doesn't take you much time to recover from any strenuous activity.",
-    "prereqs": [ "HUNGER" ],
-    "changes_to": [ "HUNGER3" ],
-    "types": [ "METABOLISM" ],
-    "category": [ "BEAST", "SLIME", "RAPTOR", "NECROMANTIC" ]
+    "copy-from": "HUNGER2",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "HUNGER3",
-    "name": "Extreme Metabolism",
-    "points": -2,
-    "description": "You consume three times as much food as the average human to maintain your truly superhuman endurance.",
-    "//~": "The simile there is intended for a Really Quick Burn--BAM burned.",
-    "prereqs": [ "HUNGER2" ],
-    "leads_to": [ "EATHEALTH" ],
-    "types": [ "METABOLISM" ],
-    "category": [ "CHIMERA", "NECROMANTIC" ]
+    "copy-from": "HUNGER3",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "CLAWS",
-    "name": "Claws",
-    "points": 2,
-    "visibility": 3,
-    "ugliness": 2,
-    "description": "You have claws on the ends of your fingers.  If you aren't wearing gloves, your unarmed attacks deal a minor amount of cutting damage.",
-    "types": [ "CLAWS" ],
-    "prereqs": [ "NAILS" ],
-    "changes_to": [ "CLAWS_RETRACT", "CLAWS_RAT" ],
-    "cancels": [ "ARM_TENTACLES", "ARM_TENTACLES_4", "ARM_TENTACLES_8" ],
-    "category": [ "BEAST", "RAT", "URSINE", "NECROMANTIC" ]
+    "copy-from": "CLAWS",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "ACIDPROOF",
-    "name": "Acidproof",
-    "points": 3,
-    "description": "Your mutated flesh is immune to the damaging effects of acid.",
-    "threshreq": [ "THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_NECROMANTIC" ],
-    "category": [ "INSECT", "CHIMERA", "MEDICAL", "SLIME", "NECROMANTIC" ]
+    "copy-from": "ACIDPROOF",
+    "extend": { "category": [ "NECROMANTIC" ], "threshreq": ["THRESH_NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "ACIDBLOOD",
-    "name": "Acid Blood",
-    "points": 4,
-    "description": "Your body has developed a wonderful defense mechanism.  Instead of normal blood, you bleed a strong molecular acid which will damage any creature foolish enough to harm you.",
-    "prereqs": [ "ACIDPROOF" ],
-    "threshreq": [ "THRESH_INSECT", "THRESH_CHIMERA", "THRESH_MEDICAL", "THRESH_SLIME", "THRESH_NECROMANTIC" ],
-    "category": [ "INSECT", "CHIMERA", "MEDICAL", "SLIME", "NECROMANTIC" ]
+    "copy-from": "ACIDBLOOD",
+    "extend": { "category": [ "NECROMANTIC" ], "threshreq": ["THRESH_NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "VOMITOUS",
-    "name": "Vomitous",
-    "points": -3,
-    "description": "You have a major digestive disorder.  Though it causes you to vomit frequently, you have found that you can trigger your vomit reflex on demand, too.",
-    "prereqs": [ "NAUSEA" ],
-    "changes_to": [ "EATPOISON" ],
-    "category": [ "SLIME", "RAT", "MEDICAL", "ELFA", "NECROMANTIC" ],
-    "active": true
+    "copy-from": "VOMITOUS",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "EATPOISON",
-    "name": "Intestinal Fortitude",
-    "points": 3,
-    "description": "Your guts have developed the ability to handle poisonous food.  Mostly.",
-    "changes_to": [ "EATDEAD" ],
-    "prereqs": [ "NAUSEA", "VOMITOUS", "POISRESIST", "POISONOUS" ],
-    "//": "Yes, you eventually got over the massive digestive upset.  Mutations aren't easy on a system!",
-    "prereqs2": [ "SAPROVORE", "TOLERANCE" ],
-    "threshreq": [ "THRESH_TROGLOBITE", "THRESH_CHIMERA", "THRESH_RAPTOR", "THRESH_RAT", "THRESH_MOUSE", "THRESH_NECROMANTIC" ],
-    "category": [ "TROGLOBITE", "RAPTOR", "RAT", "CHIMERA", "NECROMANTIC" ],
-    "valid": false
+    "copy-from": "EATPOISON",
+    "extend": { "category": [ "NECROMANTIC" ], "threshreq": ["THRESH_NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "EATDEAD",
-    "name": "Eater Of The Dead",
-    "points": 4,
-    "description": "Eating rotting, long-dead flesh is good for the struggle, and safe--if still completely unappealing--for you.",
-    "prereqs": [ "EATPOISON" ],
-    "threshreq": [ "THRESH_CHIMERA", "THRESH_RAT", "THRESH_MOUSE", "THRESH_NECROMANTIC" ],
-    "category": [ "RAT", "CHIMERA", "MOUSE", "NECROMANTIC" ],
-    "valid": false
+    "copy-from": "EATDEAD",
+    "extend": { "category": [ "NECROMANTIC" ], "threshreq": ["THRESH_NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "TROGLO2",
-    "name": "Very Light Sensitive",
-    "points": -3,
-    "description": "Sunlight makes you very uncomfortable.  If you are outdoors during the day, you suffer -1 to all stats; -2 if the weather is Sunny.",
-    "cancels": [ "SUNLIGHT_DEPENDENT" ],
-    "prereqs": [ "TROGLO" ],
-    "changes_to": [ "TROGLO3" ],
-    "category": [ "RAT", "NECROMANTIC" ]
+    "copy-from": "TROGLO2",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "SORES",
-    "name": "Sores",
-    "points": -2,
-    "visibility": 5,
-    "ugliness": 6,
-    "description": "Your extremities are covered in painful sores.  The pain is worse when they are covered in clothing.",
-    "prereqs": [ "SPOTS" ],
-    "category": [ "SLIME", "NECROMANTIC" ]
+    "copy-from": "SORES",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "TAIL_THICK",
-    "name": "Thick Tail",
-    "points": 1,
-    "visibility": 8,
-    "ugliness": 2,
-    "description": "You have a long, thick, lizardlike tail.  It helps you balance a bit but also makes a serviceable whip.  Prevents wearing non-fabric pants.",
-    "types": [ "TAIL" ],
-    "prereqs": [ "TAIL_STUB" ],
-    "changes_to": [ "TAIL_CLUB" ],
-    "category": [ "LIZARD", "NECROMANTIC" ],
-    "restricts_gear": [ "leg_l", "leg_r" ],
-    "allow_soft_gear": true,
-    "attacks": {
-      "attack_text_u": "You whap %s with your tail",
-      "attack_text_npc": "%1$s whaps %2$s with their tail",
-      "chance": 20,
-      "base_damage": { "damage_type": "stab", "amount": 8 }
-    },
-    "dodge_modifier": 1
+    "copy-from": "TAIL_THICK",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "ANIMALDISCORD",
-    "name": "Animal Discord",
-    "points": -1,
-    "description": "Most animals don't like you, and aggressive animals are more likely to attack you.  This only applies to natural animals such as woodland creatures.",
-    "starting_trait": true,
-    "cancels": [ "ANIMALEMPATH" ],
-    "changes_to": [ "ANIMALDISCORD2" ],
-    "category": [ "LUPINE", "BEAST", "RAPTOR", "INSECT", "NECROMANTIC" ]
+    "copy-from": "ANIMALDISCORD",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "SMELLY2",
-    "name": "Smelly",
-    "points": -2,
-    "visibility": 4,
-    "ugliness": 5,
-    "description": "You smell awful.  Monsters that track scent will find you very easily, and humans will react poorly.",
-    "prereqs": [ "SMELLY" ],
-    "leads_to": [ "PHEROMONE_INSECT", "PHEROMONE_MAMMAL" ],
-    "category": [ "FISH", "BEAST", "SLIME", "CHIMERA", "URSINE", "NECROMANTIC" ]
+    "copy-from": "SMELLY2",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "REGEN",
-    "name": "Regeneration",
-    "points": 6,
-    "description": "Your flesh regenerates from wounds incredibly quickly.  You heal 150% faster whilst asleep and 200% faster whilst awake.  Your broken limbs also heal 16 times faster than usual.",
-    "types": [ "HEALING" ],
-    "prereqs": [ "FASTHEALER2" ],
-    "category": [ "SLIME", "TROGLOBITE", "NECROMANTIC" ],
-    "healing_awake": 2.0,
-    "healing_resting": 1.5,
-    "mending_modifier": 16.0
+    "copy-from": "REGEN",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "INSOMNIA",
-    "name": "Insomniac",
-    "points": -2,
-    "description": "You have a hard time falling asleep, even under the best circumstances!",
-    "starting_trait": true,
-    "valid": false,
-    "category": [ "MEDICAL", "NECROMANTIC" ],
-    "cancels": [ "EASYSLEEPER" ]
+    "copy-from": "INSOMNIA",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "PAINRESIST",
-    "name": "Pain Resistant",
-    "points": 2,
-    "description": "You have a high tolerance for pain.",
-    "starting_trait": true,
-    "valid": false,
-    "cancels": [ "MORE_PAIN", "MORE_PAIN2", "MORE_PAIN3" ],
-    "category": [ "MEDICAL", "NECROMANTIC" ]
+    "copy-from": "PAINRESIST",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "PAINREC1",
-    "name": "Pain Recovery",
-    "points": 3,
-    "description": "You recover from pain slightly faster than normal.",
-    "changes_to": [ "PAINREC2" ],
-    "category": [ "MEDICAL", "NECROMANTIC" ]
+    "copy-from": "PAINREC1",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "PAINREC2",
-    "name": "Quick Pain Recovery",
-    "points": 5,
-    "description": "You recover from pain faster than normal.",
-    "prereqs": [ "PAINREC1" ],
-    "changes_to": [ "PAINREC3" ],
-    "category": [ "MEDICAL", "NECROMANTIC" ]
+    "copy-from": "PAINREC2",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "PAINREC3",
-    "name": "Very Quick Pain Recovery",
-    "points": 8,
-    "description": "You recover from pain much faster than normal.",
-    "prereqs": [ "PAINREC2" ],
-    "category": [ "MEDICAL", "NECROMANTIC" ]
+    "copy-from": "PAINREC3",
+    "extend": { "category": [ "NECROMANTIC" ] }
   },
   {
     "type": "mutation",
     "id": "NOPAIN",
-    "name": "Deadened",
-    "points": 2,
-    "description": "Nothing hurts any more.  Those bites tickle and the wounds itch a bit, but that's it.",
-    "valid": false,
-    "purifiable": false,
-    "prereqs": [ "MASOCHIST", "PAINRESIST" ],
-    "prereqs2": [ "PAINREC3" ],
-    "cancels": [ "MORE_PAIN", "MORE_PAIN2", "MORE_PAIN3" ],
-    "threshreq": [ "THRESH_MEDICAL", "THRESH_NECROMANTIC" ],
-    "category": [ "MEDICAL", "NECROMANTIC" ]
+    "copy-from": "NOPAIN",
+    "extend": { "category": [ "NECROMANTIC" ], "threshreq": ["THRESH_NECROMANTIC" ] }
   },
   {
     "//": "----------------Below undead exclusive mutation----------------",
