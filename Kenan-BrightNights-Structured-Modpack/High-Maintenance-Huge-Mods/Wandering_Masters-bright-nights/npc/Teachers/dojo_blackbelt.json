@@ -92,7 +92,7 @@
       { "text": "Can you teach me something?", "topic": "TALK_blackbelt_coach_teach_check" },
       {
         "text": "How can I become your student?",
-        "topic": "blackbelt_coach_student",
+        "topic": "TALK_blackbelt_coach_student",
         "condition": { "npc_has_var": "blackbelt_coach_student", "type": "flag", "context": "meeting", "value": "yes" }
       },
       {
