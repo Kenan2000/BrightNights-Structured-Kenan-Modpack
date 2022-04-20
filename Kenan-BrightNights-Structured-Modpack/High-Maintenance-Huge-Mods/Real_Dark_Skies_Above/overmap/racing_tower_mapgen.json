@@ -114,6 +114,7 @@
       "place_npcs": [
         { "class": "DKZ_MAQUIS_TROG_MUTANT", "x": 82, "y": 81, "add_trait": "DKZ_COMBAT" },
         { "class": "DKZ_MAQUIS_TROG_MUTANT", "x": 80, "y": 77, "add_trait": "DKZ_COMBAT" },
+        { "class": "DKZ_MAQUIS_TROG_MUTANT", "x": 75, "y": 75, "add_trait": "DKZ_LEADER" },
         { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 77, "y": 9, "add_trait": "DKZ_COMBAT" },
         { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 81, "y": 13, "add_trait": "DKZ_COMBAT" }
       ],
@@ -274,7 +275,7 @@
         { "vehicle": "forklift", "x": 50, "y": 50, "chance": 1000, "rotation": 0, "status": 1 }
       ],
       "place_npcs": [
-        { "class": "DKZ_MAQUIS_QUARTERMASTER", "x": 50, "y": 49, "add_trait": "DKZ_LEADER" },
+        { "class": "DKZ_MAQUIS_QUARTERMASTER", "x": 50, "y": 49 },
         { "class": "DKZ_MAQUIS_MANTIS_MUTANT", "x": 79, "y": 9, "add_trait": "DKZ_COMBAT" },
         { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 78, "y": 11, "add_trait": "DKZ_COMBAT" },
         { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 76, "y": 10, "add_trait": "DKZ_COMBAT" },
@@ -427,7 +428,10 @@
         "::::::::::::::::::::::::::::::::::::::::::::`'zzzzz`::::::::::::::::::::::::::::::::::::::::::::"
       ],
       "palettes": [ "arcology_palette" ],
-      "place_npcs": [ { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 37, "y": 37 }, { "class": "DKZ_MAQUIS_FELINE_MUTANT", "x": 39, "y": 37 } ],
+      "place_npcs": [
+        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 37, "y": 37, "add_trait": "DKZ_COMBAT" },
+        { "class": "DKZ_MAQUIS_FELINE_MUTANT", "x": 39, "y": 37, "add_trait": "DKZ_LEADER" }
+      ],
       "terrain": {
         "X": "t_zebra",
         "Z": [ "t_junk_wall", "t_junk_palisade", "t_junk_palisade" ],
@@ -1912,7 +1916,7 @@
       "place_npcs": [
         { "class": "DKZ_MAQUIS_CYBERCOP", "x": 72, "y": 5, "add_trait": "DKZ_COMBAT" },
         { "class": "DKZ_MAQUIS_BIONIC_DOCTOR", "x": 84, "y": 6, "add_trait": "DKZ_MEDIC" },
-        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 81, "y": 5, "add_trait": "DKZ_COMBAT" }
+        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 81, "y": 5, "add_trait": "DKZ_MEDIC" }
       ],
       "computers": {
         "6": {

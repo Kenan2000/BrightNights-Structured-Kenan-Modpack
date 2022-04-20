@@ -8,6 +8,11 @@
         "effect": { "u_add_var": "u_Talk_To_Intercom_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
         "condition": { "not": { "u_has_var": "u_Talk_To_Intercom_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" } },
         "topic": "TALK_ROBOFAC_INTERCOM_XENOIDS_1"
+      },
+      {
+        "text": "You do know that humanity is being attacked by Xenoids, right?",
+        "condition": { "u_has_var": "u_Talk_To_Intercom_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_ROBOFAC_INTERCOM_XENOIDS_1"
       }
     ]
   },

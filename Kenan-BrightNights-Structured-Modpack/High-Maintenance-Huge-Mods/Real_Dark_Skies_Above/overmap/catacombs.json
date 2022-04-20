@@ -97,8 +97,29 @@
         "XXXxXXXX",
         "........",
         "........",
-        "XXXXxxXX",
+        "XXXX..XX",
         "   XXXX ",
+        "        "
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_ew",
+    "weight": 400,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "        ",
+        "        ",
+        "XxxXXXxx",
+        "........",
+        "........",
+        "XXX...XX",
+        "  XxxXX ",
         "        "
       ],
       "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
@@ -129,7 +150,7 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "catacomb_8x8_nswe",
-    "weight": 200,
+    "weight": 100,
     "object": {
       "mapgensize": [ 8, 8 ],
       "rotation": [ 0, 3 ],
@@ -144,6 +165,134 @@
         "  x..xX "
       ],
       "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_nswe",
+    "weight": 200,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "  x..x  ",
+        " XX..XX ",
+        "XX....XX",
+        "........",
+        "........",
+        "XX.....X",
+        " X...XXX",
+        " xx..x  "
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_nswe",
+    "weight": 200,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "  x..x  ",
+        " XX..XX ",
+        "XX....XX",
+        "........",
+        "........",
+        "X......X",
+        "XX...XXX",
+        " xx..x  "
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_nswe",
+    "weight": 200,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "  x..x  ",
+        " XX..XX ",
+        "XX....XX",
+        "........",
+        "........",
+        "........",
+        "XX....xX",
+        " xx..xx "
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_nswe",
+    "weight": 200,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "  X..x  ",
+        "xxX..XX ",
+        "x.....XX",
+        "........",
+        "........",
+        "........",
+        "XX....xX",
+        " xx..xx "
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_nswe",
+    "weight": 200,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "  x..xx ",
+        " XX...X ",
+        "XX....XX",
+        "........",
+        "........",
+        "........",
+        "XX.....X",
+        " xx..xxX"
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "catacomb_8x8_nswe",
+    "weight": 50,
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "X.....xx",
+        "X.......",
+        "........",
+        "........",
+        "...b....",
+        "........",
+        "........",
+        "Xx....xx"
+      ],
+      "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" },
+      "furniture": { "-": "f_camp_chair", "b": "f_brazier" },
+      "mapping": { "b": { "furniture": "f_brazier", "fields": { "field": "fd_fire" } } }
     }
   },
   {
@@ -229,55 +378,21 @@
         "        Xxx...xxX       ",
         "        ........        ",
         "        ........        ",
-        "       XX......X        ",
-        "       XX......xxx      ",
-        "       XXx.<...+.x      ",
-        "       XXxx....x.x      ",
-        "       XXXxx+xxx.x      ",
-        "       XXXXx.. xxx      ",
-        "        XXXxxxxxX       ",
+        "        X......XX       ",
+        "        X......xxx      ",
+        "        Xx.<...+.x      ",
+        "        Xxx....x.x      ",
+        "         Xxx+xxxMx      ",
+        "          Xx..Mxxx      ",
+        "          XxxxxxX       ",
         "                        ",
         "                        ",
         "                        ",
         "                        "
       ],
-      "terrain": { ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log", "+": "t_door_c", "<": "t_wood_stairs_up" },
+      "terrain": { ".": "t_dirt", "M": "t_dirt", "X": "t_root_wall", "x": "t_wall_log", "+": "t_door_c", "<": "t_wood_stairs_up" },
+      "furniture": { "M": [ "f_makeshift_bed", "f_straw_bed" ] },
       "place_nested": [ { "chunks": [ "catacomb_8x8_ew" ], "x": 0, "y": 8 }, { "chunks": [ "catacomb_8x8_ew" ], "x": 16, "y": 8 } ]
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "om_terrain": "catacomb_sky_marshal_farm_4",
-    "object": {
-      "fill_ter": "t_rock",
-      "rows": [
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "      xxxxxx            ",
-        "     xx    x            ",
-        "     x     x            ",
-        "     xx+xxxx            ",
-        "  ..........            ",
-        "  ..........            ",
-        "  ...  .....            ",
-        "  ...  .....            ",
-        "  ...  .....            ",
-        "  ...  .....            ",
-        "  ..........            ",
-        "  ..........            ",
-        "  ..........            ",
-        "  ..........            ",
-        "  ..........            ",
-        "  ..........            ",
-        "  XXXXXXXXXX            "
-      ],
-      "terrain": { ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log", "+": "t_door_c", "<": "t_wood_stairs_up" }
     }
   },
   {
@@ -287,12 +402,15 @@
     "object": {
       "fill_ter": "t_rock",
       "place_nested": [
+        { "chunks": [ "catacomb_8x8_nswe" ], "x": 0, "y": 0 },
         { "chunks": [ "catacomb_8x8_nswe" ], "x": 8, "y": 0 },
         { "chunks": [ "catacomb_8x8_nswe" ], "x": 0, "y": 8 },
         { "chunks": [ "catacomb_8x8_nswe" ], "x": 8, "y": 8 },
         { "chunks": [ "catacomb_8x8_nswe" ], "x": 16, "y": 16 },
         { "chunks": [ "catacomb_8x8_nswe" ], "x": 16, "y": 0 },
-        { "chunks": [ "catacomb_8x8_nswe" ], "x": 16, "y": 8 }
+        { "chunks": [ "catacomb_8x8_nswe" ], "x": 0, "y": 16 },
+        { "chunks": [ "catacomb_8x8_nswe" ], "x": 16, "y": 8 },
+        { "chunks": [ "catacomb_8x8_nswe" ], "x": 8, "y": 16 }
       ]
     }
   },
@@ -306,7 +424,7 @@
         { "chunks": [ "catacomb_8x8_ns" ], "x": 8, "y": 0 },
         { "chunks": [ "catacomb_8x8_ew" ], "x": 0, "y": 8 },
         { "chunks": [ "catacomb_8x8_nswe" ], "x": 8, "y": 8 },
-        { "chunks": [ "catacomb_8x8_ns" ], "x": 16, "y": 0 },
+        { "chunks": [ "catacomb_8x8_ns" ], "x": 8, "y": 16 },
         { "chunks": [ "catacomb_8x8_ew" ], "x": 16, "y": 8 }
       ]
     }

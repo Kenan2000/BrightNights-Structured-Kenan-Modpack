@@ -1,0 +1,181 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_orchard",
+    "copy-from": "generic_rural_building",
+    "name": "apple orchard",
+    "sym": "F",
+    "color": "light_green"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_marshal_farm_inner_tree_plot", "sky_marshal_farm_outer_tree_plot" ],
+    "copy-from": "generic_rural_building",
+    "name": "tree plot",
+    "sym": "F",
+    "color": "green"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_inner_tree_plot_bunker",
+    "copy-from": "generic_rural_building",
+    "name": "tree plot with log hut",
+    "color": "green",
+    "sym": "F"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_marshal_farm_inner_tree_plot_bunker_roof" ],
+    "copy-from": "generic_rural_building",
+    "name": "log hut roof",
+    "color": "green",
+    "sym": "^"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "sky_marshal_farm_1",
+      "sky_marshal_farm_11",
+      "sky_marshal_farm_12",
+      "sky_marshal_farm_14",
+      "sky_marshal_farm_15",
+      "sky_marshal_farm_16",
+      "sky_marshal_farm_3",
+      "sky_marshal_farm_5",
+      "sky_marshal_farm_6",
+      "sky_marshal_farm_8"
+    ],
+    "copy-from": "generic_rural_building",
+    "name": "farm field"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "sky_marshal_farm_radio_tower",
+      "sky_marshal_farm_radio_tower_roof",
+      "sky_marshal_farm_radio_tower_even",
+      "sky_marshal_farm_radio_tower_even_stair_only",
+      "sky_marshal_farm_radio_tower_odd",
+      "sky_marshal_farm_radio_tower_top"
+    ],
+    "name": "radio tower",
+    "sym": "X",
+    "color": "light_gray",
+    "see_cost": 2
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "catacomb_tree_plot_bunker",
+      "catacomb_sky_marshal_farm_4",
+      "catacomb_zero",
+      "catacomb_one",
+      "catacomb_two",
+      "catacomb_seven"
+    ],
+    "name": "catacomb",
+    "sym": "§",
+    "color": "i_light_green",
+    "see_cost": 5
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_marshal_farm_13" ],
+    "copy-from": "generic_rural_building",
+    "name": "farm house"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_marshal_farm_radio_tower_basement", "sky_marshal_farm_13_basement" ],
+    "name": "basement",
+    "color": "dark_gray",
+    "copy-from": "generic_city_building_no_sidewalk",
+    "flags": [ "KNOWN_UP", "GENERIC_LOOT" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_marshal_farm_13_roof" ],
+    "copy-from": "generic_rural_building",
+    "name": "farm house roof"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "sky_marshal_farm_13_2ndfloor" ],
+    "copy-from": "generic_rural_building",
+    "name": "farm house 2nd floor"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_2",
+    "copy-from": "generic_rural_building",
+    "name": "farm field"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_4",
+    "copy-from": "generic_rural_building",
+    "name": "carriage house"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_4_roof",
+    "copy-from": "generic_rural_building",
+    "name": "carriage house roof"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_7",
+    "copy-from": "generic_rural_building",
+    "name": "horse stable"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_7_hayloft",
+    "copy-from": "generic_rural_building",
+    "name": "horse stable hayloft"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_7_roof",
+    "copy-from": "generic_rural_building",
+    "name": "horse stable roof"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_9",
+    "name": "green house",
+    "copy-from": "generic_rural_building"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_9_roof",
+    "copy-from": "generic_rural_building",
+    "name": "green house roof"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_10",
+    "copy-from": "generic_rural_building",
+    "name": "chicken coop"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "sky_marshal_farm_10_roof",
+    "copy-from": "generic_rural_building",
+    "name": "chicken coop roof"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "dkz_abstorefront", "dkz_abookstore" ],
+    "copy-from": "generic_city_building",
+    "name": "abandoned storefront",
+    "color": "h_dark_gray"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "dkz_abstorefront_roof", "dkz_abookstore_roof", "dkz_bookstore_upper_roof" ],
+    "copy-from": "generic_city_building",
+    "name": "abandoned storefront roof",
+    "color": "h_dark_gray"
+  }
+]

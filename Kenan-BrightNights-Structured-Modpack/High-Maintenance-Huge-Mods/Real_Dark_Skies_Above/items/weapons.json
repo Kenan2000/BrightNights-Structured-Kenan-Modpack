@@ -58,6 +58,27 @@
     "category": "weapons",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 2 ] ],
     "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "TRADER_AVOID" ]
+  },  
+  {
+    "id": "dkz_long_spear_salvaged",
+    "type": "TOOL",
+    "symbol": "/",
+    "color": "light_gray",
+    "looks_like": "knife_spear",
+    "name": { "str": "salvaged xenoid long spear" },
+    "description": "A long and slender spear made from dense alien metal, used by xenoid wardens.  It is not balanced as one would expect, much of the weight being on the piercing end.",
+    "price": "2000 USD",
+    "price_postapoc": "45 USD",
+    "material": [ "dkz_blend_mat" ],
+    "techniques": [ "WBLOCK_2" ],
+    "weight": "3360 g",
+    "volume": "2 L",
+    "bashing": 3,
+    "cutting": 21,
+    "to_hit": 1,
+    "category": "weapons",
+    "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -10 ] ],
+    "flags": [ "DURABLE_MELEE", "SHEATH_SWORD", "TRADER_AVOID" ]
   },
   {
     "id": "dkz_rangermachete_salvaged",

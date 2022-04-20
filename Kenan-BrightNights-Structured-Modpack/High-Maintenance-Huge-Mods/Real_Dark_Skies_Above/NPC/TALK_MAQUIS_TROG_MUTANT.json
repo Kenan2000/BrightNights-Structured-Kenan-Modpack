@@ -6,6 +6,7 @@
     "attitude": 0,
     "mission": 7,
     "chat": "TALK_MAQUIS_TROG_MUTANT_ROOT",
+    "mission_offered": "DKZ_MAQUIS_TROG_NEEDS_BIRDSEED_1",
     "faction": "maquis"
   },
   {
@@ -270,7 +271,7 @@
         "text": "Is there anything I can do to help you out?",
         "condition": {
           "and": [
-            { "not": { "npc_has_var": "Maquis_TROG_Mutant_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "npc_has_var": "Maquis_Trog_Mutant_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": "has_many_assigned_mission" },
             { "not": "has_assigned_mission" }
           ]
@@ -285,14 +286,17 @@
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_TROG_MUTANT_BIG_BROTHER",
     "type": "talk_topic",
-    "dynamic_line": [ "He's probably up on the roof chatting with the snipers posted up there.", "He's very rarely around here" ],
+    "dynamic_line": [ "He's probably up on the roof chatting with the snipers posted up there.", "He's very rarely around here." ],
     "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_TROG_MUTANT_DOING",
     "type": "talk_topic",
-    "dynamic_line": [ "I live down here along with some giant penguins, they're pretty good eating." ],
+    "dynamic_line": [
+      "I live down here along with some giant penguins, they're pretty good eating.",
+      "The sun started hurting my eyes so I do not go up stairs anymore."
+    ],
     "responses": [
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_TROG_MUTANT_ROOT" },
       { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_TROG_MUTANT_ROOT" },
@@ -314,32 +318,62 @@
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
-    "id": "DKZ_MAQUIS_RODENT_DIRTY_BOOKS_1",
+    "id": "DKZ_MAQUIS_TROG_NEEDS_BIRDSEED_1",
     "type": "mission_definition",
     "name": { "str": "Work While Busy" },
-    "description": "Find 3 erotic novels.",
+    "description": "Find 10 bird food.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 2,
     "value": 0,
-    "item": "novel_erotic",
-    "count": 3,
+    "item": "birdfood",
+    "count": 10,
     "end": {
       "effect": [
         { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 1 },
-        { "npc_add_var": "Maquis_Rodent_Mutant_Mission1", "type": "mission", "context": "flag", "value": "yes" }
+        { "npc_add_var": "Maquis_Trog_Mutant_Mission1", "type": "mission", "context": "flag", "value": "yes" }
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
-      "describe": "I'd like to read some erotic novels.",
-      "offer": "Hmm, that would be great!  But if you do, please bring more than just one.  I could read a single novel in a day.  Could you get me… 3 erotic novels?",
+      "describe": "I need a lot of bird food.",
+      "offer": "Could you bring me a lot of bird food down here?  My big penguins need to get fattened up more.",
       "accepted": "Just bring it to me when you have it.",
       "rejected": "Nevermind then.  I hope you'll change your mind.",
-      "advice": "I'd loot libraries and bookstores.",
-      "inquire": "So, have you found the books?",
-      "success": "Thank you.  This will keep me busy for a while.  Please take this as a token of my gratitude.",
+      "advice": "I remember buying lots of bird food at the mega-stores before everything hit the proverbial fan.  Try there.",
+      "inquire": "So, have you found anything?",
+      "success": "Thank you  I may need more at some point later.",
       "success_lie": "Could you give them to me?",
-      "failure": "Fine.  I can read something else."
+      "failure": "Fine.  I guess my birds will slowly starve to death.  I hope they don't kill each other."
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "DKZ_MAQUIS_TROG_NEEDS_SALTBLOCK_2",
+    "type": "mission_definition",
+    "name": { "str": "Work While Busy" },
+    "description": "Find 5 salt blocks.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 2,
+    "value": 0,
+    "item": "salt_lick",
+    "count": 5,
+    "end": {
+      "effect": [
+        { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 1 },
+        { "npc_add_var": "Maquis_Trog_Mutant_Mission1", "type": "mission", "context": "flag", "value": "yes" }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need a lot of bird food.",
+      "offer": "Could you bring me a lot of bird food down here?  My big penguins need to get fattened up more.",
+      "accepted": "Just bring it to me when you have it.",
+      "rejected": "Nevermind then.  I hope you'll change your mind.",
+      "advice": "I remember buying lots of bird food at the mega-stores before everything hit the proverbial fan.  Try there.",
+      "inquire": "So, have you found anything?",
+      "success": "Thank you  I may need more at some point later.",
+      "success_lie": "Could you give them to me?",
+      "failure": "Fine.  I guess my birds will slowly starve to death.  I hope they don't kill each other."
     }
   }
 ]

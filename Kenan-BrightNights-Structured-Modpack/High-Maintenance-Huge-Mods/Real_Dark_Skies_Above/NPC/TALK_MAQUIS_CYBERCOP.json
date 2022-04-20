@@ -182,7 +182,13 @@
     "type": "item_group",
     "id": "NC_MAQUIS_CYBERCOP_hat",
     "subtype": "distribution",
-    "entries": [ { "item": "hat_boonie", "prob": 100 } ]
+    "entries": [
+      { "item": "hat_cotton", "prob": 30 },
+      { "item": "hat_boonie", "prob": 10 },
+      { "item": "beret", "prob": 10 },
+      { "item": "beret_wool", "prob": 10 },
+      { "item": "hat_hunting", "prob": 10 }
+    ]
   },
   {
     "type": "item_group",
