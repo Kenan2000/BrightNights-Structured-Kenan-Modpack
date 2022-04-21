@@ -288,6 +288,64 @@
     "flags": [ "VARSIZE", "FANCY" ]
   },
   {
+    "id": "kawaii_sukumizu_kon",
+    "type": "ARMOR",
+    "name": { "str": "Cute Navy Blue Swimsuit" },
+    "description": "A swimming suit worn by female students.",
+    "weight": "200 g",
+    "volume": "1 L",
+    "price": "500 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "torso", "legs" ],
+    "coverage": 85,
+    "encumbrance": 11,
+    "max_encumbrance": 14,
+    "warmth": 0,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "SKINTIGHT", "FANCY", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "kawaii_sukumizu_siro",
+    "type": "ARMOR",
+    "name": { "str": "Cute White Swimsuit" },
+    "description": "A swimming suit worn by female students.",
+    "weight": "200 g",
+    "volume": "1 L",
+    "price": "500 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "torso", "legs" ],
+    "coverage": 85,
+    "encumbrance": 11,
+    "max_encumbrance": 14,
+    "warmth": 0,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "SKINTIGHT", "FANCY", "WATER_FRIENDLY" ]
+  },
+  {
+    "id": "kawaii_nurse",
+    "type": "ARMOR",
+    "name": { "str": "Cute Nurse Uniform" },
+    "description": "A nurse's uniform.",
+    "weight": "200 g",
+    "volume": "1 L",
+    "price": "500 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "blue",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 85,
+    "encumbrance": 5,
+    "max_encumbrance": 8,
+    "storage": "2500 ml",
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "FANCY" ]
+  },
+  {
     "id": "kawaii_maid_panties",
     "type": "ARMOR",
     "name": { "str": "Cute White Panties" },
@@ -1048,10 +1106,271 @@
     "flags": [ "VARSIZE", "FANCY" ]
   },
   {
+    "id": "kawaii_nurse_cap",
+    "type": "ARMOR",
+    "name": { "str": "Cute Nurse Hat" },
+    "description": "A hat that symbolizes the nurse.",
+    "weight": "10 g",
+    "volume": "250 ml",
+    "price": "50 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [ "head" ],
+    "coverage": 95,
+    "encumbrance": 5,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "FANCY" ]
+  },
+  {
     "id": "kawaii_wig_01",
     "type": "ARMOR",
     "name": { "str": "Cute Long Wavy Pink Wig" },
     "description": "A wig with long, wavy pink hair.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_acc_hobeni",
+    "type": "ARMOR",
+    "name": { "str": "Cute Rouge" },
+    "description": "It's the maiden's heart that makes the blush.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_acc_eye_light",
+    "type": "ARMOR",
+    "name": { "str": "Cute Shiny eye" },
+    "description": "The eye glistens with life. (For adding highlight on eyes that don't have it)",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_02",
+    "type": "ARMOR",
+    "name": { "str": "Cute Blond Pigtail Extension" },
+    "description": "A decorative hair extension with a white ribbon that raises your elder sisterly power.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_acc_darkface",
+    "type": "ARMOR",
+    "name": { "str": "Cute Dark Face" },
+    "description": "The face you wear when you plan evil deeds.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_acc_headset",
+    "type": "ARMOR",
+    "name": { "str": "Cute High-Tech Headset" },
+    "description": "A high-tech headset packed with next-gen technology (decorative)",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_03",
+    "type": "ARMOR",
+    "name": { "str": "Cute Long Blond Pigtail Extension" },
+    "description": "A long elegant ponytail extension with white ribbons.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_04",
+    "type": "ARMOR",
+    "name": { "str": "Cute Blond Bob Wig" },
+    "description": "It's a fluffy bob hair wig.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_05",
+    "type": "ARMOR",
+    "name": { "str": "Cute Milk Tea Bob Wig" },
+    "description": "It's a fluffy bob hair wig.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_06",
+    "type": "ARMOR",
+    "name": { "str": "Cute Pink Bob Wig" },
+    "description": "It's a fluffy bob hair wig.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_07",
+    "type": "ARMOR",
+    "name": { "str": "Cute Blue One-eyed Bob Wig" },
+    "description": "A hairstyle that covers one eye.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_08",
+    "type": "ARMOR",
+    "name": { "str": "Cute Pink One-eyed Bob Wig" },
+    "description": "A hairstyle that covers one eye.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_09",
+    "type": "ARMOR",
+    "name": { "str": "Cute Silver One-eyed Bob Wig" },
+    "description": "A hairstyle that covers one eye.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_10",
+    "type": "ARMOR",
+    "name": { "str": "Cute Light Green Elf Wig" },
+    "description": "A hairstyle designed after an elf.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_11",
+    "type": "ARMOR",
+    "name": { "str": "Cute Blond Elf Wig" },
+    "description": "A hairstyle designed after an elf.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_12",
+    "type": "ARMOR",
+    "name": { "str": "Cute Blond Semi-long Wig" },
+    "description": "A calm semi-long hair.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_13",
+    "type": "ARMOR",
+    "name": { "str": "Cute Milk Tea Semi-long Wig" },
+    "description": "A calm semi-long hair.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_14",
+    "type": "ARMOR",
+    "name": { "str": "Cute Black Semi-long Wig" },
+    "description": "A calm semi-long hair.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_15",
+    "type": "ARMOR",
+    "name": { "str": "Cute Silver Semi-long Wig" },
+    "description": "A calm semi-long hair.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_16",
+    "type": "ARMOR",
+    "name": { "str": "Cute Blond Long Ponytail Wig" },
+    "description": "Long hair lightly tied together.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_17",
+    "type": "ARMOR",
+    "name": { "str": "Cute Milk Tea Long Ponytail Wig" },
+    "description": "Long hair lightly tied together.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_wig_18",
+    "type": "ARMOR",
+    "name": { "str": "Cute Ice Blue Long Ponytail Wig" },
+    "description": "Long hair lightly tied together.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_eff_heart",
+    "type": "ARMOR",
+    "name": { "str": "Cute Heart Effect" },
+    "description": "A heart effect.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_eff_hatena",
+    "type": "ARMOR",
+    "name": { "str": "Cute ? Bubble Effect" },
+    "description": "A ? bubble.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_eff_bikkuri",
+    "type": "ARMOR",
+    "name": { "str": "Cute ! Bubble Effect" },
+    "description": "A ! bubble.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_eff_ase",
+    "type": "ARMOR",
+    "name": { "str": "Cute Sweat Bubble Effect" },
+    "description": "A sweat droplet bubble.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_eff_tere",
+    "type": "ARMOR",
+    "name": { "str": "Cute /// Bubble Effect" },
+    "description": "An embarassed blushing bubble effect.",
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
+    "id": "kawaii_acc_angelring",
+    "type": "ARMOR",
+    "name": { "str": "Cute Angel Halo" },
+    "description": "It's not a frisbee ring.",
     "symbol": "[",
     "color": "white",
     "flags": [ "ZERO_WEIGHT" ]
@@ -1115,6 +1434,26 @@
     "warmth": 0,
     "material_thickness": 2,
     "flags": [ "BELTED", "WATER_FRIENDLY", "STURDY" ]
+  },
+  {
+    "id": "kawaii_angel_wing_bag",
+    "type": "ARMOR",
+    "name": { "str": "Cute Angel Wings" },
+    "description": "Possession is not a big deal if you have the heart of an angel.",
+    "weight": "20 g",
+    "volume": "17000 ml",
+    "price": "99999 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "torso" ],
+    "coverage": 30,
+    "encumbrance": 30,
+    "storage": "15 L",
+    "warmth": 0,
+    "material_thickness": 2,
+    "flags": [ "BELTED", "WATER_FRIENDLY", "STURDY" ],
+    "armor": [ { "encumbrance": [ 30, 30 ], "coverage": 30, "covers": [ "torso" ] } ]
   },
   {
     "id": "kawaii_secretpoach",
@@ -1383,5 +1722,24 @@
     "encumbrance": 10,
     "coverage": 45,
     "material_thickness": 1
+  },
+  {
+    "id": "kawaii_gloves_light",
+    "type": "ARMOR",
+    "name": { "str": "Cute Maid Gloves" },
+    "description": "A pair of gloves modestly decorated with lace.",
+    "weight": "63 g",
+    "volume": "250 ml",
+    "price": "11 USD",
+    "to_hit": 1,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "light_blue",
+    "covers": [ "hands" ],
+    "coverage": 95,
+    "encumbrance": 1,
+    "warmth": 20,
+    "material_thickness": 2,
+    "flags": [ "WATER_FRIENDLY" ]
   }
 ]
