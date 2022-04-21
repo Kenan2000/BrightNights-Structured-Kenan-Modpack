@@ -130,7 +130,8 @@
   {
     "copy-from": "wilderness",
     "type": "scenario",
-    "extend": { "allowed_locs": [ "surv_camp_l" ] },
+    "add_professions": true,
+    "extend": { "allowed_locs": [ "surv_camp_l" ], "professions": [ "surv_drifter" ] },
     "id": "wilderness"
   },
   {
