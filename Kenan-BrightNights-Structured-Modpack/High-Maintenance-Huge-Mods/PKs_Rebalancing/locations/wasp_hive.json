@@ -39,7 +39,7 @@
     "method": "json",
     "weight": 100,
     "object": {
-      "fill_ter": "t_paper_floor",
+      "fill_ter": "t_floor_paper",
       "rows": [
         "   ###     **    **    *",
         "* ##x##   *  * ###. ### ",
@@ -68,7 +68,7 @@
       ],
       "terrain": {
         "#": "t_paper",
-        ".": "t_paper_floor",
+        ".": "t_floor_paper",
         " ": [
           "t_paper",
           "t_paper",
@@ -87,7 +87,7 @@
           "t_tree",
           "t_tree"
         ],
-        "*": [ "t_paper", "t_paper", "t_paper", "t_paper_floor", "t_paper_floor", "t_grass", "t_dirt", "t_dirt" ]
+        "*": [ "t_paper", "t_paper", "t_paper", "t_floor_paper", "t_floor_paper", "t_grass", "t_dirt", "t_dirt" ]
       },
       "monster": { "x": { "monster": "mon_wasp_larvae" }, "A": { "monster": "mon_wasp_queen" } },
       "items": {

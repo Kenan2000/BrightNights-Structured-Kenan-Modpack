@@ -87,7 +87,11 @@
     "damage": { "damage_type": "stab", "amount": 1, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 12, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 1000, "armor_multiplier": 3 }, "range": 10 } }
+    "explosion": {
+      "damage": 12,
+      "radius": 3,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 1000, "armor_multiplier": 3 }, "range": 10 }
+    }
   },
   {
     "id": "bomblet_frag",
@@ -106,7 +110,11 @@
     "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
-    "explosion": { "damage": 4, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 6800, "armor_multiplier": 3 }, "range": 10 } }
+    "explosion": {
+      "damage": 4,
+      "radius": 3,
+      "fragment": { "impact": { "damage_type": "stab", "amount": 6800, "armor_multiplier": 3 }, "range": 10 }
+    }
   },
   {
     "id": "bomblet_fire",
@@ -188,7 +196,15 @@
     "initial_charges": 1,
     "max_charges": 1,
     "turns_per_charge": 1,
-    "use_action": { "type": "explosion", "emp_blast_radius": 1, "explosion": { "damage": 1, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 65, "armor_multiplier": 3 }, "range": 10 } } }
+    "use_action": {
+      "type": "explosion",
+      "emp_blast_radius": 1,
+      "explosion": {
+        "damage": 1,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "stab", "amount": 65, "armor_multiplier": 3 }, "range": 10 }
+      }
+    }
   },
   {
     "id": "acidbomb_large",
@@ -388,16 +404,8 @@
     "ammo_type": "bfg_plutonium",
     "range": 40,
     "damage": { "damage_type": "stab", "amount": 35, "armor_penetration": 20 },
-    "effects": [
-      "RECOVER_9",
-      "NO_EMBED",
-      "BOUNCE",
-      "PLASMA",
-      "ACT_ON_RANGED_HIT",
-      "CUSTOM_EXPLOSION",
-      "LEAK_DAM",
-      "RADIOACTIVE"
-    ],
+    "effects": [ "RECOVER_9", "NO_EMBED", "BOUNCE", "PLASMA", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "flags": [ "LEAK_DAM", "RADIOACTIVE" ],
     "emits": [ "emit_bfg_rad", "emit_plasma", "emit_fatigue_big", "emit_fatigue" ],
     "countdown_interval": 2,
     "countdown_action": { "target": "bfg_shell_act", "target_charges": 1, "active": true, "type": "transform" }
@@ -418,7 +426,11 @@
     "use_action": {
       "type": "explosion",
       "emp_blast_radius": 8,
-      "explosion": { "damage": 120, "radius": 3, "fragment": { "impact": { "damage_type": "stab", "amount": 2400, "armor_multiplier": 3 }, "range": 10 } },
+      "explosion": {
+        "damage": 120,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "stab", "amount": 2400, "armor_multiplier": 3 }, "range": 10 }
+      },
       "fields_type": "fd_plasma",
       "fields_radius": 2,
       "fields_min_intensity": 0,
