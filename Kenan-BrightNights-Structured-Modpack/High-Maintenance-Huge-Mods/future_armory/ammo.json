@@ -14,7 +14,7 @@
 	"count": 30,
 	"ammo_type": "550arlov",
 	"range" : 40,
-	"damage": { "damage_type": "stab", "amount": 110, "armor_penetration": 40 },
+	"damage": { "damage_type": "bullet", "amount": 110, "armor_penetration": 40 },
 	"dispersion": 220,
 	"effects": [ "COOKOFF", "NEVER_MISFIRES" ]
   },
@@ -35,7 +35,7 @@
 	"name": "550 Arlov AP",
 	"description": "Variant of 550 Arlov that uses reinforced material to increase penetration ability at cost of damage reduction.",
 	"count": 30,
-	"relative": { "damage": { "damage_type": "stab", "amount": -30, "armor_penetration": 40 } }
+	"relative": { "damage": { "damage_type": "bullet", "amount": -30, "armor_penetration": 40 } }
   },
   {
     "id": "550_explosive",
@@ -61,7 +61,7 @@
 	"count": 3,
 	"ammo_type": "20mm",
 	"range": 140,
-	"damage": { "damage_type": "stab", "amount": 200, "armor_penetration": 50 },
+	"damage": { "damage_type": "bullet", "amount": 200, "armor_penetration": 50 },
 	"dispersion": 180,
 	"recoil": 27000,
 	"effects": [ "COOKOFF", "NEVER_MISFIRES" ]
@@ -81,7 +81,7 @@
 	"count": 20,
 	"ammo_type": "9x39",
 	"range": 120,
-	"damage": { "damage_type": "stab", "amount": 110, "armor_penetration": 50 },
+	"damage": { "damage_type": "bullet", "amount": 110, "armor_penetration": 50 },
 	"dispersion": 120,
 	"recoil": 10,
 	"effects": [ "NEVER_MISFIRES", "COOKOFF" ]

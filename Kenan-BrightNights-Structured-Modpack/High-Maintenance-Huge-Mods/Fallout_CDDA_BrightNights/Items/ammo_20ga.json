@@ -15,7 +15,7 @@
     "ammo_type": "20ga",
     "casing": "20ga_hull",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 40 },
+    "damage": { "damage_type": "bullet", "amount": 40 },
     "recoil": 1500,
     "loudness": 160,
     "effects": [ "COOKOFF", "SHOT" ]
@@ -27,7 +27,7 @@
     "name": { "str": "20 gauge birdshot" },
     "description": "Weak shotgun ammunition.  Designed for hunting birds and other small game, its applications in combat are very limited. I guess its good for practice?",
     "price": "24 USD",
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.3 }, "recoil": 0.6, "loudness": 0.8 },
+    "proportional": { "damage": { "damage_type": "bullet", "amount": 0.3 }, "recoil": 0.6, "loudness": 0.8 },
     "extend": { "effects": [ "NOGIB" ] }
   },
   {
@@ -38,7 +38,7 @@
     "description": "A shotgun shell filled with tiny steel darts.  Extremely damaging, plus the spread makes it very accurate at short range.  Slices through most forms of armor with ease.",
     "price": "100 USD",
     "count": 10,
-    "relative": { "damage": { "damage_type": "stab", "amount": -6, "armor_penetration": 12 } }
+    "relative": { "damage": { "damage_type": "bullet", "amount": -6, "armor_penetration": 12 } }
   },
   {
     "id": "20ga_slug",
@@ -48,7 +48,7 @@
     "description": "A heavy metal slug used with shotguns to give them the range capabilities of a rifle.  Extremely damaging but rather inaccurate.",
     "price": "45 USD",
     "dispersion": 100,
-    "relative": { "range": 12, "damage": { "damage_type": "stab", "armor_penetration": 6 } },
+    "relative": { "range": 12, "damage": { "damage_type": "bullet", "armor_penetration": 6 } },
     "proportional": { "recoil": 1.4 },
     "delete": { "effects": [ "SHOT" ] }
   }

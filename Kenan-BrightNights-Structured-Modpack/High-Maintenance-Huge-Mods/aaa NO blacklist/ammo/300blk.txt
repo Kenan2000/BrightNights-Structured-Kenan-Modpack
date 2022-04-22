@@ -27,7 +27,7 @@
     "descriprion": "300 blackout rounds with a 125gr full metal jacket bullet",
     "extend": { "effects": [ "COOKOFF" ] },
     "relative": {
-      "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 4 },     "dispersion": 10    }
+      "damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 4 },     "dispersion": 10    }
 
   },
   {
@@ -38,7 +38,7 @@
     "descriprion": "300 blackout rounds with a 125gr jacketed hollow point round",
     "extend": { "effects": [ "COOKOFF" ] },
     "relative": {
-      "damage": { "damage_type": "stab", "amount": 30 },   "dispersion": 50    }
+      "damage": { "damage_type": "bullet", "amount": 30 },   "dispersion": 50    }
 
   },
   {
@@ -49,7 +49,7 @@
     "descriprion": "300 blackout rounds with a 220gr armour peircing bullet",
     "extend": { "effects": [ "COOKOFF" ] },
     "relative": {
-   "dispersion": 10,  "damage": { "damage_type": "stab", "armor_penetration": 30 }    }
+   "dispersion": 10,  "damage": { "damage_type": "bullet", "armor_penetration": 30 }    }
 
   }
 ]

@@ -15,7 +15,7 @@
     "ammo_type": "145x114mm",
     "casing": "145x114mm_casing",
     "range": 45,
-    "damage": { "damage_type": "stab", "amount": 70, "armor_penetration": 29 },
+    "damage": { "damage_type": "bullet", "amount": 70, "armor_penetration": 29 },
     "dispersion": 30,
     "recoil": 27250,
     "effects": [ "COOKOFF" ]
@@ -26,7 +26,7 @@
     "type": "AMMO",
     "name": { "str": "reloaded 14.5x114mm" },
     "description": "A large proprietary cartridge for the PTRS-41 anti-tank rifle. Packs a hell of a punch, but it has limited use. This one has been hand-reloaded.",
-    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.9 }, "dispersion": 1.1 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {

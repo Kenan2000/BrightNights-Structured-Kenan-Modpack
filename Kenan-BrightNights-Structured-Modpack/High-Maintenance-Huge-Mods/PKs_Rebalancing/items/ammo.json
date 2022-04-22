@@ -84,7 +84,7 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 1, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "explosion": {
@@ -107,7 +107,7 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 20,
-    "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "explosion": {
@@ -130,7 +130,7 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 20,
-    "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 10 },
     "effects": [ "INCENDIARY", "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "emits": [ "emit_smoke_bomblet", "emit_fire_bomblet", "emit_fire_bomblet_small" ],
@@ -152,7 +152,7 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 20,
-    "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "emits": [ "emit_tgas_bomblet", "emit_acid_bomblet" ],
@@ -174,7 +174,7 @@
     "count": 6,
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 3, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 10 },
     "effects": [ "LARGE_BEANBAG", "RECOVER_9", "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "emits": [ "emit_dazzle_bomblet", "emit_teargas_bomblet" ],
@@ -313,7 +313,7 @@
     "ammo_type": "410shot",
     "casing": "410shot_hull",
     "range": 16,
-    "damage": { "damage_type": "stab", "amount": 34, "armor_penetration": 8 },
+    "damage": { "damage_type": "bullet", "amount": 34, "armor_penetration": 8 },
     "dispersion": 40,
     "recoil": 550,
     "loudness": 140,
@@ -335,7 +335,7 @@
     "ammo_type": "410shot",
     "casing": "410shot_hull",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 26, "armor_penetration": 12 },
+    "damage": { "damage_type": "bullet", "amount": 26, "armor_penetration": 12 },
     "dispersion": 10,
     "recoil": 350,
     "effects": [ "COOKOFF", "SHOT" ]
@@ -356,7 +356,7 @@
     "ammo_type": "410shot",
     "casing": "410shot_hull",
     "range": 8,
-    "damage": { "damage_type": "stab", "amount": 8 },
+    "damage": { "damage_type": "bullet", "amount": 8 },
     "dispersion": 40,
     "recoil": 300,
     "loudness": 180,
@@ -368,7 +368,7 @@
     "copy-from": "shot_410_slug",
     "name": { "str": ".410 slug, reloaded" },
     "description": "A hand-reloaded solid-shot small-bore shotgun shell designed to punch through armor.",
-    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.8 }, "dispersion": 1.2 },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.8 }, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -377,7 +377,7 @@
     "copy-from": "shot_410_flechette",
     "name": { "str": ".410 flechette, reloaded" },
     "description": "A hand-reloaded small-bore shotgun shell with exactly 4 pointed slugs and copious amounts of explosive powder.",
-    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.8 }, "dispersion": 1.2 },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.8 }, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -386,7 +386,7 @@
     "copy-from": "shot_410_inc",
     "name": { "str": ".410 incendiary, reloaded" },
     "description": "A hand-reloaded small-bore shotgun shell with a reserve of explosive incendiary that violently ingnites upon impact.",
-    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.8 }, "dispersion": 1.2 },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.8 }, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] }
   },
   {
@@ -403,7 +403,7 @@
     "count": 1,
     "ammo_type": "bfg_plutonium",
     "range": 40,
-    "damage": { "damage_type": "stab", "amount": 35, "armor_penetration": 20 },
+    "damage": { "damage_type": "bullet", "amount": 35, "armor_penetration": 20 },
     "effects": [ "RECOVER_9", "NO_EMBED", "BOUNCE", "PLASMA", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "flags": [ "LEAK_DAM", "RADIOACTIVE" ],
     "emits": [ "emit_bfg_rad", "emit_plasma", "emit_fatigue_big", "emit_fatigue" ],
