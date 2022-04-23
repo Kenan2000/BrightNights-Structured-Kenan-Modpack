@@ -44,15 +44,6 @@
   },
   {
     "type": "mutation",
-    "id": "STYLISH",
-    "name": { "str": "Stylish" },
-    "points": 1,
-    "description": "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
-    "starting_trait": true,
-    "valid": false
-  },
-  {
-    "type": "mutation",
     "id": "SHOGGOTH_BUFF_OK",
     "name": { "str": "Polymorphic Structure" },
     "points": 5,
@@ -81,19 +72,8 @@
   {
     "type": "mutation",
     "id": "PER_SLIME_OK",
-    "name": { "str": "Distributed Senses" },
-    "points": 7,
-    "visibility": 10,
-    "ugliness": 10,
-    "description": "You can now extend and reabsorb sensory organs at will, and can therefore ignore most shocks that would overwhelm lesser beings.",
-    "valid": false,
-    "purifiable": false,
-    "leads_to": [ "SLIMESPAWNER" ],
-    "prereqs": [ "PER_SLIME" ],
-    "prereqs2": [ "AMORPHOUS" ],
-    "threshreq": [ "THRESH_SLIME", "THRESH_SHOGGOTH" ],
-    "category": [ "SLIME", "SHOGGOTH" ],
-    "passive_mods": { "per_mod": 5 }
+    "copy-from": "PER_SLIME_OK",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
@@ -134,34 +114,14 @@
   {
     "type": "mutation",
     "id": "PER_SLIME",
-    "name": { "str": "Sensory Disintegration" },
-    "points": -7,
-    "visibility": 10,
-    "ugliness": 10,
-    "description": "Your sense organs are all over the place: eyes extending and retracting, 'ears' of various shapes migrating about, and taste & smell are uncontrollable.  The world is a horrible mixup.  Ugh!",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "PER_SLIME_OK" ],
-    "prereqs": [ "PER_UP" ],
-    "prereqs2": [ "AMORPHOUS" ],
-    "threshreq": [ "THRESH_SLIME", "THRESH_SHOGGOTH" ],
-    "category": [ "SLIME", "SHOGGOTH" ],
-    "passive_mods": { "per_mod": -8 }
+    "copy-from": "PER_SLIME",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "AMORPHOUS",
-    "name": { "str": "Amorphous Body" },
-    "points": -2,
-    "visibility": 10,
-    "ugliness": 10,
-    "description": "Your flesh is a pleasing gel-like consistency.  Your bodily functions seem to be moving around, and your leg-equivalents flow comfortably - if a little slower than your old meat-legs.",
-    "purifiable": false,
-    "leads_to": [ "INT_SLIME", "PER_SLIME" ],
-    "threshreq": [ "THRESH_SLIME", "THRESH_SHOGGOTH" ],
-    "category": [ "SLIME", "SHOGGOTH" ],
-    "armor": [ { "parts": "ALL", "bash": 4 } ],
-    "movecost_modifier": 1.25
+    "copy-from": "AMORPHOUS",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
@@ -189,69 +149,20 @@
   {
     "type": "mutation",
     "id": "HUNGER3",
-    "name": { "str": "Extreme Metabolism" },
-    "points": -2,
-    "description": "You consume three times as much food as the average human to maintain your truly superhuman endurance.",
-    "prereqs": [ "HUNGER2" ],
-    "leads_to": [ "EATHEALTH" ],
-    "types": [ "METABOLISM" ],
-    "category": [ "CHIMERA", "SHOGGOTH" ],
-    "metabolism_modifier": 2.0,
-    "stamina_regen_modifier": 0.5
+    "copy-from": "HUNGER3",
+    "extend": { "category": [ "SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "EATHEALTH",
-    "name": { "str": "Hyper-Metabolism" },
-    "points": 15,
-    "description": "Your particular metabolism allows you to burn calories at a prodigious rate to regenerate tissues in a matter of minutes, this is however a very wasteful process.  Activate to start healing.",
-    "prereqs": [ "HUNGER3" ],
-    "types": [ "METABOLISM" ],
-    "threshreq": [ "THRESH_CHIMERA", "THRESH_SHOGGOTH" ],
-    "category": [ "CHIMERA", "SHOGGOTH" ],
-    "valid": false,
-    "active": true,
-    "transform": {
-      "target": "EATHEALTH_active",
-      "msg_transform": "Your hyper-metabolism starts burning up calories.",
-      "active": true,
-      "moves": 0
-    }
-  },
-  {
-    "type": "mutation",
-    "id": "EATHEALTH_active",
-    "name": { "str": "Hyper-Metabolism: burning" },
-    "description": "You're burning calories like crazy to heal your wounds.",
     "copy-from": "EATHEALTH",
-    "cost": 1,
-    "time": 1,
-    "hunger": true,
-    "healing_awake": 300.0,
-    "healing_resting": 350.0,
-    "transform": { "target": "EATHEALTH", "msg_transform": "Your hyper-metabolism slows down.", "active": false, "moves": 0 }
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "MUT_TOUGH",
-    "name": { "str": "Resilient" },
-    "points": 2,
-    "description": "You can survive injuries that would incapacitate humans: you get a 20% bonus to all hit points.  Stacks with Tough, etc.",
-    "social_modifiers": { "intimidate": 2 },
-    "prereqs": [ "LARGE_OK", "HUGE_OK", "STR_UP_3", "STR_UP_4", "MASOCHIST_MED", "SHOGGOTH_BUFF_OK" ],
-    "threshreq": [
-      "THRESH_URSINE",
-      "THRESH_CATTLE",
-      "THRESH_CHIMERA",
-      "THRESH_MEDICAL",
-      "THRESH_LIZARD",
-      "THRESH_BEAST",
-      "THRESH_SHOGGOTH"
-    ],
-    "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
-    "changes_to": [ "MUT_TOUGH2" ],
-    "category": [ "URSINE", "CATTLE", "CHIMERA", "BEAST", "LIZARD", "MEDICAL", "SHOGGOTH" ],
-    "hp_modifier_secondary": 0.2
+    "copy-from": "MUT_TOUGH",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
@@ -295,18 +206,14 @@
     "mixed_effect": true,
     "passive_mods": { "int_mod": -4, "per_mod": -2 },
     "category": [ "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK" ],
+    "valid": false,
     "purifiable": false
   },
   {
     "type": "mutation",
     "id": "CATTLE_EARS",
-    "name": { "str": "Cattle Ears" },
-    "points": 0,
-    "description": "You have a pair of soft and floppy ears, like a cow.",
-    "visibility": 5,
-    "ugliness": -2,
-    "category": [ "MILK", "CATTLE" ],
-    "purifiable": true
+    "copy-from": "CATTLE_EARS",
+    "extend": { "category": [ "MILK" ] }
   },
   {
     "type": "mutation",
@@ -345,164 +252,85 @@
     "type": "mutation",
     "id": "LIGHTSTEP",
     "copy-from": "LIGHTSTEP",
-    "name": { "str": "Light Step" },
-    "points": 1,
-    "description": "You make less noise while walking.  You're also less likely to set off traps.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "CLUMSY" ]
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "CLUMSY",
     "copy-from": "CLUMSY",
-    "name": { "str": "Clumsy" },
-    "points": -1,
-    "description": "You make more noise while walking.  You're also more likely to set off traps.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "LIGHTSTEP" ]
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "PRETTY",
     "copy-from": "PRETTY",
-    "name": { "str": "Pretty" },
-    "points": 1,
-    "ugliness": -2,
-    "description": "You are a sight to behold.  NPCs who care about such thing will react more kindly to you.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "changes_to": [ "BEAUTIFUL" ]
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "BEAUTIFUL",
     "copy-from": "BEAUTIFUL",
-    "name": { "str": "Beautiful" },
-    "points": 2,
-    "visibility": -4,
-    "ugliness": -4,
-    "description": "You're a real head-turner.  Some people will react well to your appearance, and most people have an easier time trusting you.",
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "prereqs": [ "PRETTY" ],
-    "changes_to": [ "BEAUTIFUL2" ]
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "BEAUTIFUL2",
     "copy-from": "BEAUTIFUL2",
-    "name": { "str": "Very Beautiful" },
-    "points": 3,
-    "visibility": -7,
-    "ugliness": -7,
-    "description": "You are a vision of beauty.  Some people will react very well to your looks, and most people will trust you immediately.",
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "prereqs": [ "BEAUTIFUL" ],
-    "changes_to": [ "BEAUTIFUL3" ]
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "BEAUTIFUL3",
     "copy-from": "BEAUTIFUL3",
-    "name": { "str": "Glorious" },
-    "points": 4,
-    "visibility": -10,
-    "ugliness": -10,
-    "description": "You are incredibly beautiful.  People cannot help themselves for your charms, and will do whatever they can to please you.",
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "prereqs": [ "BEAUTIFUL2" ],
     "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "DEX_UP_3",
     "copy-from": "DEX_UP_3",
-    "name": { "str": "Extremely Dextrous" },
-    "points": 3,
-    "description": "You are nimble and quick.  +4 Dexterity",
-    "prereqs": [ "DEX_UP_2" ],
-    "changes_to": [ "DEX_UP_4" ],
-    "extend": { "category": [ "MAID" ] },
-    "passive_mods": { "dex_mod": 4 }
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "INT_UP_2",
     "copy-from": "INT_UP_2",
-    "name": { "str": "Very Smart" },
-    "points": 2,
-    "description": "You are smarter.  +2 Intelligence",
-    "prereqs": [ "INT_UP" ],
-    "changes_to": [ "INT_UP_3" ],
-    "extend": { "category": [ "MAID" ] },
-    "passive_mods": { "int_mod": 2 }
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "STYLISH",
     "copy-from": "STYLISH",
-    "name": { "str": "Stylish" },
     "points": 1,
-    "description": "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
-    "starting_trait": true,
-    "valid": false,
     "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "DEFT",
     "copy-from": "DEFT",
-    "name": { "str": "Deft" },
-    "points": 1,
-    "description": "While you're not any better at melee combat, you are better at recovering from a miss, and will be able to attempt another strike faster.",
-    "starting_trait": true,
     "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "SQUEAMISH",
     "copy-from": "SQUEAMISH",
-    "name": { "str": "Squeamish" },
-    "points": -1,
-    "description": "You can't even think about putting filthy clothes on yourself, especially from zombies' corpses.",
-    "starting_trait": true,
     "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "ANTIJUNK",
     "copy-from": "ANTIJUNK",
-    "name": { "str": "Junkfood Intolerance" },
-    "points": -1,
-    "description": "Something in those heavily processed foods doesn't agree with you.  It's possible for you to eat them, but you will suffer morale penalties due to nausea.",
-    "starting_trait": true,
     "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "ADDICTIVE",
     "copy-from": "ADDICTIVE",
-    "name": { "str": "Addictive Personality" },
-    "points": -2,
-    "description": "It's easier for you to become addicted to substances, and harder to rid yourself of these addictions.",
-    "starting_trait": true,
-    "valid": false,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "NONADDICTIVE" ]
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "ANIMALDISCORD",
     "copy-from": "ANIMALDISCORD",
-    "name": { "str": "Animal Discord" },
-    "points": -1,
-    "description": "Most animals don't like you, and aggressive animals are more likely to attack you.  This only applies to natural animals such as woodland creatures.",
-    "starting_trait": true,
-    "cancels": [ "ANIMALEMPATH" ],
     "extend": { "category": [ "MAID" ] }
   },
   {
@@ -615,30 +443,13 @@
     "type": "mutation",
     "id": "HUNGER",
     "copy-from": "HUNGER",
-    "name": { "str": "Fast Metabolism" },
-    "points": -2,
-    "description": "You require more food than most people, but recover stamina slightly faster.",
-    "starting_trait": true,
-    "cancels": [ "LIGHTEATER", "COLDBLOOD", "COLDBLOOD2", "COLDBLOOD3", "COLDBLOOD4" ],
-    "changes_to": [ "HUNGER2", "MET_RAT" ],
-    "extend": { "category": [ "MAID" ] },
-    "metabolism_modifier": 0.5,
-    "stamina_regen_modifier": 0.1
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "FASTHEALER",
     "copy-from": "FASTHEALER",
-    "name": { "str": "Fast Healer" },
-    "points": 2,
-    "description": "Your wounds heal themselves quicker than usual.  You heal 50% faster whilst asleep, and 20% faster whilst awake.  Your broken limbs also heal twice as fast.",
-    "starting_trait": true,
-    "cancels": [ "ROT1", "ROT2", "ROT3", "SLOWHEALER", "SLOWHEALER2", "SLOWHEALER3", "MET_RAT" ],
-    "changes_to": [ "FASTHEALER2", "REGEN_LIZ", "MAID_TEKELI" ],
-    "extend": { "category": [ "MAID" ] },
-    "healing_awake": 0.2,
-    "healing_resting": 0.5,
-    "mending_modifier": 2.0
+    "extend": { "category": [ "MAID" ], "changes_to": [ "MAID_TEKELI" ] }
   },
   {
     "type": "mutation",
@@ -650,7 +461,7 @@
     "prereqs2": [ "FASTHEALER" ],
     "threshreq": [ "THRESH_MAID" ],
     "category": [ "MAID" ],
-    "armor": [ { "parts": "ALL", "bash": 8, "cut": 8, "stab": 8 } ],
+    "armor": [ { "parts": "ALL", "bash": 8, "cut": 8, "stab": 8, "bullet": 8 } ],
     "healing_awake": 4.45,
     "healing_resting": 4.45
   }

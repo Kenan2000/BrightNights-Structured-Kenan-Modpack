@@ -295,27 +295,6 @@
   },
   {
     "type": "terrain",
-    "id": "t_paper_floor",
-    "name": "paper floor",
-    "description": " ",
-    "symbol": ".",
-    "color": "white",
-    "move_cost": 0,
-    "roof": "t_paper_floor",
-    "flags": [ "TRANSPARENT", "PERMEABLE", "FLAMMABLE_ASH" ],
-    "bash": {
-      "str_min": 4,
-      "str_max": 12,
-      "sound": "rrrrip!",
-      "sound_fail": "slap!",
-      "sound_vol": 6,
-      "sound_fail_vol": 4,
-      "ter_set": "t_null",
-      "items": [ { "item": "wasp_glue", "prob": 15 }, { "item": "wasp_glue", "prob": 15 }, { "item": "wasp_glue", "prob": 15 } ]
-    }
-  },
-  {
-    "type": "terrain",
     "id": "t_tar",
     "name": "tar",
     "description": "Some very flammable tar in a pit, you could probably swim through it.",

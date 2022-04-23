@@ -24,7 +24,7 @@
     "ammo": "9mm",
     "skill": "smg",
     "clip_size": 100,
-    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "dispersion": 240,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ], [ "AUTO", "auto", 13 ] ]
   },
@@ -36,7 +36,7 @@
     "skill": "shotgun",
     "ammo": "shot",
     "clip_size": 100,
-    "ranged_damage": { "damage_type": "stab", "amount": 1 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "dispersion": 345
   },
   {
@@ -120,7 +120,7 @@
     "clip_size": 100,
     "skill": "smg",
     "range": 10,
-    "ranged_damage": { "damage_type": "stab", "amount": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
     "dispersion": 260,
     "durability": 9,
     "barrel_length": 1,
@@ -134,7 +134,7 @@
     "ammo": "8x40mm",
     "clip_size": 50,
     "skill": "rifle",
-    "ranged_damage": { "damage_type": "stab", "amount": 5 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 5 },
     "dispersion": 90,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "5 rd.", 5 ], [ "AUTO", "auto", 10 ] ]
   },

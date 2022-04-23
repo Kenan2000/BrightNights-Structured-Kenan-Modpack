@@ -241,7 +241,7 @@
     "ammo_type": "9mmBL9_type",
     "casing": "9mm_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 28, "armor_penetration": 11 },
+    "damage": { "damage_type": "bullet", "amount": 28, "armor_penetration": 11 },
     "dispersion": 85,
     "recoil": 340,
     "effects": [ "COOKOFF" ]
@@ -264,7 +264,7 @@
     "ammo_type": "9mmBL9mk2_type",
     "casing": "9mm_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 45, "armor_penetration": 16 },
+    "damage": { "damage_type": "bullet", "amount": 45, "armor_penetration": 16 },
     "dispersion": 75,
     "recoil": 310,
     "effects": [ "COOKOFF" ]
@@ -287,7 +287,7 @@
     "ammo_type": "9mmBL9mk3_type",
     "casing": "9mm_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 72, "armor_penetration": 25 },
+    "damage": { "damage_type": "bullet", "amount": 72, "armor_penetration": 25 },
     "dispersion": 60,
     "recoil": 245,
     "effects": [ "COOKOFF" ]
@@ -310,7 +310,7 @@
     "ammo_type": "9mmBL9smg_type",
     "casing": "9mm_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 17, "armor_penetration": 9 },
+    "damage": { "damage_type": "bullet", "amount": 17, "armor_penetration": 9 },
     "dispersion": 65,
     "recoil": 260,
     "effects": [ "COOKOFF" ]
@@ -333,7 +333,7 @@
     "ammo_type": "9mmBL9smgmk2_type",
     "casing": "9mm_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 28, "armor_penetration": 12 },
+    "damage": { "damage_type": "bullet", "amount": 28, "armor_penetration": 12 },
     "dispersion": 55,
     "recoil": 230,
     "effects": [ "COOKOFF" ]
@@ -356,7 +356,7 @@
     "ammo_type": "9mmBL9smgmk3_type",
     "casing": "9mm_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 45, "armor_penetration": 19 },
+    "damage": { "damage_type": "bullet", "amount": 45, "armor_penetration": 19 },
     "dispersion": 40,
     "recoil": 185,
     "effects": [ "COOKOFF" ]
@@ -379,7 +379,7 @@
     "ammo_type": "308BL9_type",
     "casing": "308_casing",
     "range": 65,
-    "damage": { "damage_type": "stab", "amount": 73, "armor_penetration": 28 },
+    "damage": { "damage_type": "bullet", "amount": 73, "armor_penetration": 28 },
     "dispersion": 30,
     "recoil": 1760,
     "effects": [ "COOKOFF" ]
@@ -402,7 +402,7 @@
     "ammo_type": "308BL9mk2_type",
     "casing": "308_casing",
     "range": 65,
-    "damage": { "damage_type": "stab", "amount": 122, "armor_penetration": 39 },
+    "damage": { "damage_type": "bullet", "amount": 122, "armor_penetration": 39 },
     "dispersion": 25,
     "recoil": 1480,
     "effects": [ "COOKOFF" ]
@@ -425,7 +425,7 @@
     "ammo_type": "308BL9mk3_type",
     "casing": "308_casing",
     "range": 65,
-    "damage": { "damage_type": "stab", "amount": 195, "armor_penetration": 62 },
+    "damage": { "damage_type": "bullet", "amount": 195, "armor_penetration": 62 },
     "dispersion": 15,
     "recoil": 1065,
     "effects": [ "COOKOFF" ]
@@ -448,7 +448,7 @@
     "ammo_type": "BL9shot_type",
     "casing": "shot_hull",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 55, "armor_penetration": 22 },
+    "damage": { "damage_type": "bullet", "amount": 55, "armor_penetration": 22 },
     "recoil": 1835,
     "loudness": 160,
     "effects": [ "COOKOFF", "SHOT" ]
@@ -471,7 +471,7 @@
     "ammo_type": "BL9shotmk2_type",
     "casing": "shot_hull",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 88, "armor_penetration": 28 },
+    "damage": { "damage_type": "bullet", "amount": 88, "armor_penetration": 28 },
     "recoil": 1600,
     "loudness": 160,
     "effects": [ "COOKOFF", "SHOT" ]
@@ -494,7 +494,7 @@
     "ammo_type": "BL9shotmk3_type",
     "casing": "shot_hull",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 140, "armor_penetration": 45 },
+    "damage": { "damage_type": "bullet", "amount": 140, "armor_penetration": 45 },
     "recoil": 1265,
     "loudness": 160,
     "effects": [ "COOKOFF", "SHOT" ]
@@ -517,7 +517,7 @@
     "ammo_type": "357magBL9_type",
     "casing": "357mag_casing",
     "range": 16,
-    "damage": { "damage_type": "stab", "amount": 63, "armor_penetration": 24 },
+    "damage": { "damage_type": "bullet", "amount": 63, "armor_penetration": 24 },
     "dispersion": 45,
     "recoil": 395,
     "effects": [ "COOKOFF" ]
@@ -540,7 +540,7 @@
     "ammo_type": "357magBL9mk2_type",
     "casing": "357mag_casing",
     "range": 16,
-    "damage": { "damage_type": "stab", "amount": 102, "armor_penetration": 29 },
+    "damage": { "damage_type": "bullet", "amount": 102, "armor_penetration": 29 },
     "dispersion": 40,
     "recoil": 335,
     "effects": [ "COOKOFF" ]
@@ -563,7 +563,7 @@
     "ammo_type": "357magBL9mk3_type",
     "casing": "357mag_casing",
     "range": 16,
-    "damage": { "damage_type": "stab", "amount": 163, "armor_penetration": 46 },
+    "damage": { "damage_type": "bullet", "amount": 163, "armor_penetration": 46 },
     "dispersion": 30,
     "recoil": 265,
     "effects": [ "COOKOFF" ]
@@ -586,7 +586,7 @@
     "ammo_type": "556BL9_type",
     "casing": "223_casing",
     "range": 36,
-    "damage": { "damage_type": "stab", "amount": 29, "armor_penetration": 15 },
+    "damage": { "damage_type": "bullet", "amount": 29, "armor_penetration": 15 },
     "dispersion": 45,
     "recoil": 875,
     "effects": [ "COOKOFF" ]
@@ -609,7 +609,7 @@
     "ammo_type": "556BL9mk2_type",
     "casing": "223_casing",
     "range": 36,
-    "damage": { "damage_type": "stab", "amount": 49, "armor_penetration": 20 },
+    "damage": { "damage_type": "bullet", "amount": 49, "armor_penetration": 20 },
     "dispersion": 40,
     "recoil": 725,
     "effects": [ "COOKOFF" ]
@@ -632,7 +632,7 @@
     "ammo_type": "556BL9mk3_type",
     "casing": "223_casing",
     "range": 36,
-    "damage": { "damage_type": "stab", "amount": 78, "armor_penetration": 32 },
+    "damage": { "damage_type": "bullet", "amount": 78, "armor_penetration": 32 },
     "dispersion": 30,
     "recoil": 545,
     "effects": [ "COOKOFF" ]
@@ -969,7 +969,7 @@
     "count": 5,
     "ammo_type": "40mmBL9_type",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 1, "armor_penetration": 65 },
+    "damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 65 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "explosion": { "damage": 95, "radius": 3 }
@@ -988,7 +988,7 @@
     "count": 5,
     "ammo_type": "40mmBL9mk2_type",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 5, "armor_penetration": 75 },
+    "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 75 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "explosion": { "damage": 195, "radius": 3 }
@@ -1007,7 +1007,7 @@
     "count": 5,
     "ammo_type": "40mmBL9mk3_type",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 5, "armor_penetration": 85 },
+    "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 85 },
     "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
     "explode_in_fire": true,
     "explosion": { "damage": 400, "radius": 3 }

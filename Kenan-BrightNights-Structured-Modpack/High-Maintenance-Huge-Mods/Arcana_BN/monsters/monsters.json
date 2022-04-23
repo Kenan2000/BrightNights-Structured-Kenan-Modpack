@@ -555,6 +555,7 @@
     "dodge": 6,
     "armor_bash": 4,
     "armor_cut": 2,
+    "armor_bullet": 2,
     "harvest": "human",
     "death_drops": "mon_homunculus_death_drops",
     "death_function": [ "NORMAL" ],
@@ -854,11 +855,17 @@
     "armor_bash": 8,
     "armor_cut": 6,
     "armor_stab": 12,
+    "armor_bullet": 12,
     "vision_day": 50,
     "luminance": 200,
     "harvest": "exempt",
     "regenerates": 1,
     "special_attacks": [
+      {
+        "id": "slam",
+        "cooldown": 30,
+        "damage_max_instance": [ { "damage_type": "heat", "amount": 15, "armor_multiplier": 0.9 } ]
+      },
       {
         "type": "gun",
         "cooldown": 10,
@@ -926,11 +933,21 @@
     "armor_bash": 12,
     "armor_cut": 8,
     "armor_stab": 6,
+    "armor_bullet": 6,
     "vision_day": 20,
     "vision_night": 20,
     "emit_fields": [ "emit_toxic_leak" ],
     "harvest": "moruboru_harvest",
-    "special_attacks": [ { "type": "bite", "cooldown": 5 }, [ "TENTACLE", 5 ] ],
+    "special_attacks": [
+      { "type": "bite", "cooldown": 5 },
+      [ "TENTACLE", 5 ],
+      {
+        "type": "spell",
+        "spell_data": { "id": "arcana_monster_moruboru_fetid_exhalation" },
+        "cooldown": 50,
+        "monster_message": "A strange vapor emanates from the moruboru."
+      }
+    ],
     "death_drops": "mon_moruboru_death_drops",
     "death_function": [ "NORMAL" ],
     "flags": [ "SEES", "SMELLS", "NOHEAD", "POISON", "NO_BREATHE", "PARALYZEVENOM", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS" ],
@@ -964,6 +981,7 @@
     "armor_bash": 6,
     "armor_cut": 4,
     "armor_stab": 2,
+    "armor_bullet": 1,
     "vision_night": 25,
     "harvest": "human",
     "starting_ammo": { "bot_vortex": 6 },
@@ -1041,15 +1059,30 @@
     "armor_bash": 12,
     "armor_cut": 8,
     "armor_stab": 10,
+    "armor_bullet": 10,
     "vision_day": 50,
     "vision_night": 30,
     "harvest": "dracolich_harvest",
     "special_attacks": [
-      [ "FLESH_GOLEM", 5 ],
-      { "type": "bite", "cooldown": 10 },
+      {
+        "id": "scratch",
+        "cooldown": 30,
+        "damage_max_instance": [ { "damage_type": "cut", "amount": 25, "armor_multiplier": 0.75 } ],
+        "body_parts": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "head", 3 ], [ "arm_l", 5 ], [ "arm_r", 5 ], [ "torso", 7 ] ],
+        "effects": [ { "id": "downed", "duration": 3 } ],
+        "hit_dmg_u": "The %1$s slashes at you with a wicked claw!",
+        "hit_dmg_npc": "The %1$s slashes at <npcname> with a wicked claw!",
+        "no_dmg_msg_u": "The %1$s tries to slash at you, but fails to penetrate your armor!",
+        "no_dmg_msg_npc": "The %1$s tries to slash <npcname>, but fails to penetrate their armor!"
+      },
+      {
+        "type": "bite",
+        "cooldown": 5,
+        "damage_max_instance": [ { "damage_type": "stab", "amount": 15, "armor_multiplier": 0.5 } ]
+      },
       {
         "type": "gun",
-        "cooldown": 10,
+        "cooldown": 15,
         "move_cost": 500,
         "gun_type": "monster_fire_fake",
         "ammo_type": "generic_no_ammo",
@@ -1061,6 +1094,12 @@
         "require_targeting_player": false,
         "description": "Wicked flames erupt from the dracolich's mouth!",
         "no_ammo_sound": "a howl of feral anger!"
+      },
+      {
+        "type": "spell",
+        "spell_data": { "id": "arcana_monster_dracolich_failed_breath" },
+        "cooldown": 15,
+        "monster_message": "A stream of charred gore erupts from the dracolich's mouth!"
       }
     ],
     "death_drops": "mon_dracolich_death_drops",
@@ -1229,6 +1268,7 @@
     "vision_night": 2,
     "luminance": 60,
     "armor_stab": 8,
+    "armor_bullet": 8,
     "melee_damage": [ { "damage_type": "cold", "amount": 10, "armor_multiplier": 0.75 } ],
     "regenerates": 10,
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "CANPLAY" ] },
@@ -1336,6 +1376,7 @@
     "vision_day": 50,
     "vision_night": 50,
     "armor_stab": 10,
+    "armor_bullet": 10,
     "death_drops": {  },
     "extend": { "flags": [ "PATH_AVOID_DANGER_2", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
@@ -1402,6 +1443,7 @@
     "dodge": 2,
     "armor_cut": 3,
     "armor_stab": 8,
+    "armor_bullet": 8,
     "vision_day": 2,
     "vision_night": 50,
     "path_settings": { "max_dist": 10 },
@@ -1452,6 +1494,7 @@
     "melee_cut": 0,
     "melee_damage": [ { "damage_type": "cold", "amount": 2, "armor_multiplier": 0.1 } ],
     "armor_stab": 8,
+    "armor_bullet": 8,
     "vision_day": 2,
     "vision_night": 50,
     "path_settings": { "max_dist": 10 },
@@ -1527,6 +1570,7 @@
     "armor_bash": 12,
     "armor_cut": 6,
     "armor_stab": 16,
+    "armor_bullet": 16,
     "armor_fire": 24,
     "armor_acid": 24,
     "vision_day": 50,
@@ -1603,6 +1647,7 @@
     "armor_bash": 12,
     "armor_cut": 6,
     "armor_stab": 16,
+    "armor_bullet": 16,
     "armor_fire": 24,
     "armor_acid": 24,
     "vision_day": 50,
@@ -1649,6 +1694,8 @@
     "dodge": 4,
     "armor_bash": 24,
     "armor_cut": 32,
+    "armor_stab": 32,
+    "armor_bullet": 32,
     "armor_fire": 16,
     "armor_acid": 16,
     "luminance": 150,
@@ -1704,6 +1751,8 @@
     "dodge": 4,
     "armor_bash": 24,
     "armor_cut": 32,
+    "armor_stab": 32,
+    "armor_bullet": 32,
     "armor_fire": 16,
     "armor_acid": 16,
     "luminance": 150,
@@ -1777,6 +1826,7 @@
     "armor_bash": 2,
     "armor_cut": 2,
     "armor_stab": 2,
+    "armor_bullet": 2,
     "dodge": 1,
     "harvest": "human",
     "vision_day": 40,
@@ -1810,6 +1860,7 @@
     "armor_bash": 12,
     "armor_cut": 12,
     "armor_stab": 12,
+    "armor_bullet": 9,
     "dodge": 2,
     "diff": 2,
     "special_attacks": [
@@ -1853,6 +1904,7 @@
     "armor_bash": 4,
     "armor_cut": 4,
     "armor_stab": 4,
+    "armor_bullet": 3,
     "dodge": 3,
     "diff": 3,
     "special_attacks": [
@@ -1894,6 +1946,7 @@
     "armor_bash": 10,
     "armor_cut": 10,
     "armor_stab": 10,
+    "armor_bullet": 7,
     "dodge": 2,
     "diff": 3,
     "special_attacks": [
@@ -1925,4 +1978,3 @@
     "extend": { "flags": [ "ACIDPROOF" ] }
   }
 ]
-

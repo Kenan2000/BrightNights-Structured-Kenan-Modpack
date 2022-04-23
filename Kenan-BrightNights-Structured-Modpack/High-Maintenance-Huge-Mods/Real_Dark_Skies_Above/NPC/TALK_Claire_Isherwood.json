@@ -8,7 +8,12 @@
         "effect": { "u_add_var": "u_Talk_To_ClaireIsherwood_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
         "condition": { "not": { "u_has_var": "u_Talk_To_ClaireIsherwood_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" } },
         "topic": "TALK_ISHERWOOD_CLAIRE_XENOIDS"
-      }
+      },
+      {
+        "text": "Can you tell me anything else about the Xenoids?",
+        "condition": { "u_has_var": "u_Talk_To_ClaireIsherwood_about_Xenoids", "type": "general", "context": "meeting", "value": "yes"  },
+        "topic": "TALK_ISHERWOOD_CLAIRE_XENOIDS"
+      }	  
     ]
   },
   {

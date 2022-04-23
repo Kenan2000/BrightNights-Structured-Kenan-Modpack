@@ -17,7 +17,7 @@
     "ammo_type": "9x22mmR",
     "casing": "9x22mm_casing",
     "range": 15,
-    "damage": { "damage_type": "stab", "amount": 23 },
+    "damage": { "damage_type": "bullet", "amount": 23 },
     "dispersion": 30,
     "recoil": 275,
     "effects": [ "COOKOFF" ]
@@ -43,7 +43,7 @@
     "ammo_type": "8x22mm",
     "casing": "8x22mm_casing",
     "range": 15,
-    "damage": { "damage_type": "stab", "amount": 17, "armor_penetration": 2 },
+    "damage": { "damage_type": "bullet", "amount": 17, "armor_penetration": 2 },
     "dispersion": 60,
     "recoil": 300,
     "effects": [ "COOKOFF" ]
@@ -54,7 +54,7 @@
     "type": "AMMO",
     "name": { "str": "8x22 Nambu JHP" },
     "description": "8x22mm Nambu was a round used in the second world war by the Japanese. Comparable to .380, this rare ammo only slightly beats said caliber out. Rare for it's effectiveness, it might be safe to consider this round a novelty.",
-    "relative": { "damage": { "damage_type": "stab", "amount": 2, "armor_penetration": -2 } }
+    "relative": { "damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": -2 } }
   },
   {
     "id": "8x22mm_p",
@@ -66,7 +66,7 @@
     "price_postapoc": "15 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 25,
-    "relative": { "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 2 }, "dispersion": -15 },
+    "relative": { "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 2 }, "dispersion": -15 },
     "proportional": { "recoil": 1.1 }
   }
   

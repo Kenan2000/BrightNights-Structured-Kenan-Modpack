@@ -5,6 +5,8 @@
     "class": "NC_MAQUIS_FELIX_FOX",
     "attitude": 0,
     "mission": 7,
+    "name_unique": "Felix Fox",
+    "gender": "male",
     "chat": "TALK_MAQUIS_FELIX_FOX_ROOT",
     "faction": "maquis"
   },
@@ -46,7 +48,7 @@
     "id": "NC_MAQUIS_FELIX_FOX_weapon",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "rm103a_pistol" } ]
+    "entries": [ { "item": "rm2000_smg" } ]
   },
   {
     "id": "NC_MAQUIS_FELIX_FOX_worn",
@@ -75,7 +77,7 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "8x40_10_mag", "charges-min": 7, "count": 2 },
+      { "item": "8x40_25_mag", "charges-min": 7, "count": 2 },
       { "item": "8mm_caseless", "count": 3 },
       { "item": "multitool" }
     ]
@@ -86,6 +88,11 @@
     "type": "talk_topic",
     "dynamic_line": [ "what's up dude?.", "Hey how's it going man?." ],
     "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_FELIX_FOX_DOING" },
       { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP" },
@@ -121,23 +128,10 @@
       "type": "knowledge",
       "context": "flag",
       "value": "yes",
-      "yes": "Mr. Erikson is back at his office.",
-      "no": "Mr. Erikson is probably back at his office."
+      "yes": "No man, that sounds like too much work.  I'm just the point man here on the farm.  It takes a lot to keep this place going even before the world ended.  The Chad is in charge of everything but he is at Barter Tower.",
+      "no": "No man, that sounds like too much work.  There is some fed based out of a strange sky-scraper they call 'Barter Tower'."
     },
-    "responses": [
-      {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
-        "topic": "TALK_COMBAT_COMMANDS"
-      },
-      {
-        "text": "I've been helping everyone around here, I want to meet the man in charge.",
-        "topic": "TALK_MISSION_INQUIRE",
-        "condition": { "u_compare_var": "maquis_morale", "type": "counter", "context": "refugee_center", "op": ">", "value": 10 }
-      },
-      { "text": "Ok, Thanks.", "topic": "TALK_NONE" },
-      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
-    ]
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
@@ -145,7 +139,7 @@
     "type": "talk_topic",
     "dynamic_line": [
       "Protecting my homestead from zombies, aliens and Canadians.  Or at least two of those!",
-      "I'm keeping my little territory here sovereign!"
+      "I'm keeping my little territory here sovereign against alien invaders!"
     ],
     "responses": [
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
@@ -163,5 +157,41 @@
       "I do not have anything for sale, man.  There a merchant around somewhere."
     ],
     "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_GO_MEET_THE_BIG_FED",
+    "type": "mission_definition",
+    "name": { "str": "Locate Chad Erikson" },
+    "description": "Randy Erikson finally got news from his uncle, go to his last reported location and check it out.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+    "difficulty": 5,
+    "value": 50000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "racing_tower_z7_4_1",
+        "om_special": "arcology_racing",
+        "reveal_radius": 7,
+        "search_range": 700,
+        "z": 7,
+        "random": true,
+        "min_distance": 75
+      },
+      "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 3, "y": 3, "target": true } ] },
+      "effect": [ { "u_add_var": "MrEriksonExists", "type": "knowledge", "context": "flag", "value": "yes" } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need help getting in touch with a family member…",
+      "offer": "I have a general idea of where my uncle Chad Erikson is at, I give you a general idea which direction and how far away it is, but other than that I can only guess.",
+      "accepted": "I'll find him.",
+      "rejected": "Come back when you get a chance.",
+      "advice": "Just follow your map.",
+      "inquire": "Did you find him yet?",
+      "success": "With this we'll be able to convince others to join up and fight against the invasion",
+      "success_lie": "Something seems not right with how you described my brother…",
+      "failure": "It was a lost cause anyways…"
+    }
   }
 ]

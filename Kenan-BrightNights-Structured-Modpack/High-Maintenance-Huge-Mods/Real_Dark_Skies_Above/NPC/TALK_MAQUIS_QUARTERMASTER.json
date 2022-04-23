@@ -5,6 +5,7 @@
     "class": "NC_MAQUIS_QUARTERMASTER",
     "attitude": 0,
     "mission": 7,
+    "gender": "male",
     "chat": "TALK_MAQUIS_QUARTERMASTER_ROOT",
     "mission_offered": "DKZ_MAQUIS_QUARTERMASTER_CLEAN_UP_SEWER",
     "faction": "maquis"
@@ -176,9 +177,10 @@
     "difficulty": 2,
     "value": 500,
     "start": {
-      "assign_mission_target": { "om_terrain": "sewage_treatment_0_0_-1", "reveal_radius": 2, "random": true, "search_range": 75, "min_distance": 5 },
+      "assign_mission_target": { "om_terrain": "sewage_treatment_0_0_-1", "reveal_radius": 2, "random": true, "search_range": 75, "min_distance": 15 },
       "update_mapgen": { "place_monster": [ { "monster": "dkz_mon_lurker_sewer", "pack_size": [ 2, 3 ], "x": 0, "y": 12, "target": true } ] }
     },
+    "followup": "DKZ_MAQUIS_QUARTERMASTER_CHECK_FUSE_BOX",
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "I need you to find and kill some monsters.",
@@ -190,6 +192,67 @@
       "success": "Thanks.",
       "success_lie": "I'm sure you did…",
       "failure": "I wonder where it all went…"
+    }
+  },
+  {
+    "id": "DKZ_MAQUIS_QUARTERMASTER_CHECK_FUSE_BOX",
+    "type": "mission_definition",
+    "name": { "str": "Clean up a sewer" },
+    "description": "Go to a power substation and kill some strange creatures.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 2,
+    "value": 500,
+    "start": {
+      "assign_mission_target": { "om_terrain": "pwr_sub_s", "reveal_radius": 2, "random": true, "search_range": 75, "min_distance": 15 },
+      "update_mapgen": { "place_monster": [ { "monster": "dkz_mon_crystal_zap", "pack_size": [ 5, 6 ], "x": 10, "y": 10, "target": true } ] }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need you to find and kill some monsters.",
+      "offer": "There were reports of some kind of alien crystal monsters.  Go eliminate them out.",
+      "accepted": "Thank you.",
+      "rejected": "Oh well.  I'm sure it wasn't anything.",
+      "advice": "If you're going to fight monsters that use electricity against you, don't be a good conductor.",
+      "inquire": "How is the search going?",
+      "success": "Thanks.",
+      "success_lie": "I'm sure you did…",
+      "failure": "I wonder where it all went…"
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_MEET_THE_BIG_BOSS",
+    "type": "mission_definition",
+    "name": { "str": "Speak to Mr Erikson" },
+    "description": "The local leader of the Maaquis wants to meet you.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+    "difficulty": 5,
+    "value": 50000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "racing_tower_z7_4_1",
+        "om_special": "arcology_racing",
+        "reveal_radius": 7,
+        "search_range": 11,
+        "z": 7,
+        "random": true,
+        "min_distance": 6
+      },
+      "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 3, "y": 3, "target": true } ] },
+      "effect": [ { "u_add_var": "MrEriksonExists", "type": "knowledge", "context": "flag", "value": "yes" } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "The boss wants to see you…",
+      "offer": "The boss ups stairs wants to talk to you.  Do you want to talk to him?",
+      "accepted": "I'll find him.",
+      "rejected": "Why?",
+      "advice": "Just follow your map.",
+      "inquire": "Did you find him yet?",
+      "success": "With this we'll be able to convince others to join up and fight against the invasion",
+      "success_lie": "Something seems not right with how you described my brother…",
+      "failure": "It was a lost cause anyways…"
     }
   }
 ]

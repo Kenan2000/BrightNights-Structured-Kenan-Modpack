@@ -34,7 +34,7 @@
     "ammo_type": "8ga",
     "casing": "8ga_hull",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 75 },
+    "damage": { "damage_type": "bullet", "amount": 75 },
     "recoil": 2500,
     "loudness": 160,
     "effects": [ "COOKOFF", "SHOT" ]
@@ -50,7 +50,7 @@
     "price": "10 USD",
     "price_postapoc": "16 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
-    "proportional": { "damage": { "damage_type": "stab", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2, "range": 0.5 },
+    "proportional": { "damage": { "damage_type": "bullet", "amount": 0.2 }, "recoil": 0.6, "loudness": 0.8, "dispersion": 1.2, "range": 0.5 },
     "extend": { "effects": [ "INCENDIARY", "STREAM", "NOGIB" ] }
   },
   {
@@ -63,7 +63,7 @@
     "price_postapoc": "8 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 10,
-    "relative": { "damage": { "damage_type": "stab", "amount": -6, "armor_penetration": 12 } }
+    "relative": { "damage": { "damage_type": "bullet", "amount": -6, "armor_penetration": 12 } }
   },
   {
     "id": "8ga_he",
@@ -76,7 +76,7 @@
     "price_postapoc": "16 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 5,
-    "damage": { "damage_type": "stab", "amount": 70, "armor_penetration": 0 },
+    "damage": { "damage_type": "bullet", "amount": 70, "armor_penetration": 0 },
     "extend": { "effects": [ "EXPLOSIVE" ] }
   },
   {
@@ -85,7 +85,7 @@
     "type": "AMMO",
     "name": { "str": "8 gauge 00 shot, scrap loaded" },
     "description": "A shotgun shell filled with whatever was lying around.  They are more damaging than birdshot, but fairly inaccurate.",
-    "proportional": { "price": 0.4, "damage": { "damage_type": "stab", "amount": 0.6 }, "dispersion": 1.2 },
+    "proportional": { "price": 0.4, "damage": { "damage_type": "bullet", "amount": 0.6 }, "dispersion": 1.2 },
     "extend": { "effects": [ "RECYCLED" ] },
     "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
   },
@@ -100,7 +100,7 @@
     "price_postapoc": "4 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "dispersion": 100,
-    "relative": { "range": 12, "damage": { "damage_type": "stab", "armor_penetration": 6 } },
+    "relative": { "range": 12, "damage": { "damage_type": "bullet", "armor_penetration": 6 } },
     "proportional": { "recoil": 1.4 },
     "delete": { "effects": [ "SHOT" ] }
   }

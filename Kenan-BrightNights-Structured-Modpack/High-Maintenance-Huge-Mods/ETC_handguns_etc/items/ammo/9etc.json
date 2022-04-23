@@ -29,7 +29,7 @@
     "name": "9x19mm ETC FMJ",
     "description": "9x19mm Electrothermal-chemical ammunition with a brass jacketed 115gr bullet.  A popular round for military, law enforcement, and civilian use even after almost 150 years, adapted to a new ballistic propulsion technology.",
     "looks_like": "9mmfmj",
-    "relative": { "damage": { "damage_type": "stab", "amount": -4, "armor_penetration": 4 } }
+    "relative": { "damage": { "damage_type": "bullet", "amount": -4, "armor_penetration": 4 } }
   },
   {
     "id": "9etchvp",
@@ -40,7 +40,7 @@
     "//": "750 m/s muzzle velocity",
     "price": "50 USD",
     "count": 50,
-    "relative": { "damage": { "damage_type": "stab", "amount": -6, "armor_penetration": 8 }, "range": 1, "dispersion": -15 },
+    "relative": { "damage": { "damage_type": "bullet", "amount": -6, "armor_penetration": 8 }, "range": 1, "dispersion": -15 },
     "looks_like": "9mmP",
     "proportional": { "recoil": 1.15 }
   },
@@ -53,7 +53,7 @@
     "price": "78 USD",
     "material": [ "brass", "powder", "superalloy" ],
     "count": 25,
-    "relative": { "damage": { "damage_type": "stab", "amount": -8, "armor_penetration": 32 }, "range": 5, "dispersion": -20 },
+    "relative": { "damage": { "damage_type": "bullet", "amount": -8, "armor_penetration": 32 }, "range": 5, "dispersion": -20 },
     "looks_like": "9mmP2",
     "proportional": { "recoil": 1.3 }
   },
@@ -68,7 +68,7 @@
     "price": "95 USD",
     "material": [ "brass", "powder", "uranium" ],
     "count": 50,
-    "relative": { "damage": { "damage_type": "stab", "amount": -8, "armor_penetration": 12 }, "range": 3, "dispersion": -20 },
+    "relative": { "damage": { "damage_type": "bullet", "amount": -8, "armor_penetration": 12 }, "range": 3, "dispersion": -20 },
     "loudness": 65,
     "looks_like": "9mmP2",
     "proportional": { "recoil": 0.65 }

@@ -43,7 +43,12 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "hit_me_effect": [ { "id": "v_hemo_crimsoncoat_coat_pr_maybe" } ],
-          "values": [ { "value": "ARMOR_BASH", "add": -70 }, { "value": "ARMOR_CUT", "add": -70 }, { "value": "ARMOR_STAB", "add": -70 } ]
+          "values": [
+            { "value": "ARMOR_BASH", "add": -70 },
+            { "value": "ARMOR_CUT", "add": -70 },
+            { "value": "ARMOR_STAB", "add": -70 },
+            { "value": "ARMOR_BULLET", "add": -70 }
+          ]
         }
       ]
     },

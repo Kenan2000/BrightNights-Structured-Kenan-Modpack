@@ -15,7 +15,8 @@
             { "value": "STRENGTH", "add": 10 },
             { "value": "ARMOR_BASH", "add": -20 },
             { "value": "ARMOR_CUT", "add": -20 },
-            { "value": "ARMOR_STAB", "add": -20 }
+            { "value": "ARMOR_STAB", "add": -20 },
+            { "value": "ARMOR_BULLET", "add": -20 }
           ]
         }
       ]
@@ -117,7 +118,8 @@
             { "value": "ARMOR_CUT", "multiply": -0.5 },
             { "value": "ARMOR_ELEC", "multiply": -0.5 },
             { "value": "ARMOR_HEAT", "multiply": -0.5 },
-            { "value": "ARMOR_STAB", "multiply": -0.5 }
+            { "value": "ARMOR_STAB", "multiply": -0.5 },
+            { "value": "ARMOR_BULLET", "multiply": -0.5 }
           ]
         }
       ]
@@ -132,7 +134,7 @@
     "weight": "40 g",
     "volume": "50 ml",
     "//": "Arcanist trinkets are explicitly 100% post-cataclysm, minimal value but exotic, and have some minor crafting use.",
-    "price_postapoc": "1 USD",
+    "price_postapoc": "120 cent",
     "material": [ "veggy" ],
     "symbol": "[",
     "looks_like": "holy_symbol_wood",
@@ -146,7 +148,7 @@
     "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.",
     "weight": "60 g",
     "volume": "50 ml",
-    "price_postapoc": "1 USD",
+    "price_postapoc": "150 cent",
     "material": [ "stone" ],
     "symbol": "[",
     "looks_like": "aquamarine_silver_pendant_necklace",
@@ -243,7 +245,7 @@
     "covers": [ "torso" ],
     "coverage": 15,
     "encumbrance": 15,
-    "storage": "62500 ml",
+    "storage": 250,
     "material_thickness": 1,
     "weight_capacity_modifier": 2,
     "relic_data": {
@@ -256,7 +258,7 @@
               "id": "arcana_react_satchel_attention",
               "hit_self": true,
               "once_in": 50,
-              "message": "You feel like something is watching you...",
+              "message": "You feel like something is watching you…",
               "npc_message": "A strange aura of malice seems to briefly surround %1$s."
             },
             {

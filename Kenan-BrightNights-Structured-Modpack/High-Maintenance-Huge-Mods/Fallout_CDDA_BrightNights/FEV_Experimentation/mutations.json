@@ -28,55 +28,33 @@
   {
     "type": "mutation",
     "id": "UGLY",
-    "name": "Ugly",
-    "points": -1,
-    "visibility": 1,
-    "ugliness": 2,
-    "description": "You're not much to look at.  People who care about such things will react poorly to you.",
-    "starting_trait": true,
-    "cancels": [ "PRETTY", "BEAUTIFUL", "BEAUTIFUL2", "BEAUTIFUL3" ],
-    "changes_to": [ "DEFORMED" ],
-    "category": [ "RAPTOR", "FELINE", "LUPINE", "FEVMUTANT" ]
+    "copy-from": "UGLY",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "MUT_JUNKIE",
-    "name": "Metallassomaiphile",
-    "//": "name courtesy of wiktionary's Greek for 'mutate'.  Greek-speakers, feel free to correct the term",
-    "points": -1,
-    "description": "Just thinking of mutagen (such a lovely word!  'Mutagen'.  Perfect!) makes you thirsty.  And you so love your new parts.  You simply must have more mutagen!",
-    "threshreq": [ "THRESH_MEDICAL", "THRESH_CHIMERA" ],
-    "category": [ "MEDICAL", "CHIMERA", "FEVMUTANT" ]
+    "copy-from": "MUT_JUNKIE",
+    "extend": { "category": [ "FEVMUTANT" ], "threshreq": [ "THRESH_FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "UNSTABLE",
-    "name": "Genetically Unstable",
-    "points": -2,
-    "mixed_effect": true,
-    "description": "Your DNA has been damaged in a way that causes you to continually develop more mutations.",
-    "changes_to": [ "CHAOTIC" ],
-    "category": [ "SLIME", "MEDICAL", "CHIMERA", "FEVMUTANT" ]
+    "copy-from": "UNSTABLE",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "CHAOTIC",
-    "name": "Genetic Chaos",
-    "points": -4,
-    "purifiable": false,
-    "description": "Your body alters itself rapidly, and without your intervention or conscious control.",
-    "prereqs": [ "UNSTABLE", "MUT_JUNKIE" ],
-    "category": [ "CHIMERA", "FEVMUTANT" ]
+    "copy-from": "CHAOTIC",
+    "extend": { "category": [ "FEVMUTANT" ] }
+    
   },
   {
     "type": "mutation",
     "id": "ROBUST",
-    "name": "Robust Genetics",
-    "points": 3,
-    "description": "You have a very strong genetic base.  If you mutate, the odds that the mutation will be beneficial are greatly increased.",
-    "starting_trait": true,
-    "cancels": [ "CHAOTIC_BAD" ],
-    "category": [ "FISH", "SLIME", "ALPHA", "MEDICAL", "FEVMUTANT" ]
+    "copy-from": "ROBUST",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
@@ -131,61 +109,32 @@
   {
     "type": "mutation",
     "id": "SCHIZOPHRENIC",
-    "name": "Schizophrenic",
-    "points": -3,
-    "description": "You will periodically suffer from delusions, ranging from minor effects to full visual hallucinations.  Some of these effects may be controlled through the use of Thorazine.",
-    "starting_trait": true,
-    "valid": false,
-    "category": [ "MEDICAL", "FEVMUTANT" ]
+    "copy-from": "SCHIZOPHRENIC",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "DEFORMED",
-    "name": "Deformed",
-    "points": -2,
-    "visibility": 4,
-    "ugliness": 4,
-    "description": "You're slightly deformed.  Some people will react badly to your appearance.",
-    "cancels": [ "PRETTY", "BEAUTIFUL", "BEAUTIFUL2", "BEAUTIFUL3" ],
-    "prereqs": [ "UGLY" ],
-    "changes_to": [ "DEFORMED2" ],
-    "category": [ "FISH", "CATTLE", "INSECT", "CEPHALOPOD", "FELINE", "LUPINE", "FEVMUTANT" ]
+    "copy-from": "DEFORMED",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "DEFORMED2",
-    "name": "Badly Deformed",
-    "points": -3,
-    "visibility": 7,
-    "ugliness": 7,
-    "description": "You're hideously deformed.  Some people will have a strong negative reaction to your appearance.",
-    "cancels": [ "PRETTY", "BEAUTIFUL", "BEAUTIFUL2", "BEAUTIFUL3" ],
-    "prereqs": [ "DEFORMED" ],
-    "changes_to": [ "DEFORMED3" ],
-    "category": [ "BEAST", "URSINE", "PLANT", "FEVMUTANT" ]
+    "copy-from": "DEFORMED2",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "DEFORMED3",
-    "name": "Grotesque",
-    "points": -4,
-    "visibility": 10,
-    "ugliness": 10,
-    "description": "Your visage is disgusting and liable to induce vomiting.  People will not want to interact with you unless they have a very good reason to.",
-    "cancels": [ "PRETTY", "BEAUTIFUL", "BEAUTIFUL2", "BEAUTIFUL3" ],
-    "prereqs": [ "DEFORMED2" ],
-    "category": [ "SLIME", "RAT", "CHIMERA", "FEVMUTANT" ]
+    "copy-from": "DEFORMED3",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",
     "id": "SPIRITUAL",
-    "name": "Spiritual",
-    "points": 1,
-    "description": "You've always felt that there is more to the world than we can see.  Whether driven by religious beliefs or philosophical interest, you find great inspiration in studying holy texts and experiencing mystical things.",
-    "starting_trait": true,
-    "social_modifiers": { "persuade": 5 },
-    "valid": false,
-    "category": [ "FEVMUTANT" ]
+    "copy-from": "SPIRITUAL",
+    "extend": { "category": [ "FEVMUTANT" ] }
   },
   {
     "type": "mutation",

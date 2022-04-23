@@ -14,7 +14,7 @@
     "ammo_type": "7.92x33k",
     "casing": "7.92x33k_casing",
     "range": 40,
-    "damage": { "damage_type": "stab", "amount": 40 },
+    "damage": { "damage_type": "bullet", "amount": 40 },
     "dispersion": 20,
     "recoil": 1600,
     "effects": [ "COOKOFF" ]
@@ -26,7 +26,7 @@
     "name": { "str": "7.92x33 kurtz FMJ" },
     "description": "7.92x33 kurtz rounds with a 125gr full metal jacket bullet. ",
     "extend": { "effects": [ "COOKOFF" ] },
-    "relative": { "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 2 }, "dispersion": 30 }
+    "relative": { "damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 2 }, "dispersion": 30 }
   },
   {
     "id": "7.92x33k_fmjbt",
@@ -35,6 +35,6 @@
     "name": { "str": "7.92x33 kurtz FMJ-BT" },
     "description": "7.92x33 kurtz rounds with 123gr full metal jacket boat tail bullet",
     "extend": { "effects": [ "COOKOFF" ] },
-    "relative": { "damage": { "damage_type": "stab", "armor_penetration": 6 } }
+    "relative": { "damage": { "damage_type": "bullet", "armor_penetration": 6 } }
   }
 ]

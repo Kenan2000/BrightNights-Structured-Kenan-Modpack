@@ -267,7 +267,7 @@
     ],
     "encumbrance_always": [ [ "hand_l", 100 ] ],
     "rand_bash_bonus": { "min": 4, "max": 8 },
-    "armor": [ { "parts": "arm_l", "bash": 10, "cut": 10, "stab": 10 } ],
+    "armor": [ { "parts": "arm_l", "bash": 10, "cut": 10, "stab": 10, "bullet": 10 } ],
     "category": [ "SECRONOM_EX" ]
   },
   {
@@ -286,7 +286,7 @@
     "leads_to": [ "SECRO_BLADE_SHARP_THRESHOLD" ],
     "encumbrance_always": [ [ "hand_l", 100 ] ],
     "rand_cut_bonus": { "min": 4, "max": 12 },
-    "armor": [ { "parts": "arm_l", "bash": 6, "cut": 6, "stab": 6 } ],
+    "armor": [ { "parts": "arm_l", "bash": 6, "cut": 6, "stab": 6, "bullet": 6 } ],
     "attackcost_modifier": 0.9,
     "category": [ "SECRONOM_EX" ]
   },
@@ -307,7 +307,7 @@
     "encumbrance_always": [ [ "hand_l", 100 ] ],
     "rand_cut_bonus": { "min": 3, "max": 8 },
     "rand_bash_bonus": { "min": 3, "max": 8 },
-    "armor": [ { "parts": "arm_l", "bash": 14, "cut": 14, "stab": 14 } ],
+    "armor": [ { "parts": "arm_l", "bash": 14, "cut": 14, "stab": 14, "bullet": 14 } ],
     "attackcost_modifier": 1.05,
     "category": [ "SECRONOM_EX" ]
   },
@@ -378,7 +378,7 @@
       [ "arm_l", 7 ],
       [ "arm_r", 7 ]
     ],
-    "armor": [ { "parts": "ALL", "cut": 4, "bash": 4, "stab": 4 } ],
+    "armor": [ { "parts": "ALL", "cut": 4, "bash": 4, "stab": 4, "bullet": 4 } ],
     "dodge_modifier": -0.1,
     "movecost_swim_modifier": 1.025,
     "movecost_modifier": 1.025,
@@ -423,7 +423,7 @@
       [ "arm_l", 10 ],
       [ "arm_r", 10 ]
     ],
-    "armor": [ { "parts": "ALL", "cut": 6, "bash": 6, "stab": 6 } ],
+    "armor": [ { "parts": "ALL", "cut": 6, "bash": 6, "stab": 6, "bullet": 6 } ],
     "dodge_modifier": -0.125,
     "movecost_swim_modifier": 1.075,
     "movecost_modifier": 1.075,
@@ -466,7 +466,7 @@
       [ "arm_l", 5 ],
       [ "arm_r", 5 ]
     ],
-    "armor": [ { "parts": "ALL", "cut": 9, "bash": 9, "stab": 9 } ],
+    "armor": [ { "parts": "ALL", "cut": 9, "bash": 9, "stab": 9, "bullet": 9 } ],
     "dodge_modifier": -0.075,
     "movecost_swim_modifier": 1.05,
     "movecost_modifier": 1.05,
@@ -508,7 +508,7 @@
       [ "arm_l", 15 ],
       [ "arm_r", 10 ]
     ],
-    "armor": [ { "parts": "ALL", "cut": 12, "bash": 12, "stab": 12 } ],
+    "armor": [ { "parts": "ALL", "cut": 12, "bash": 12, "stab": 12, "bullet": 12 } ],
     "dodge_modifier": -0.2,
     "movecost_swim_modifier": 1.15,
     "movecost_modifier": 1.15,
@@ -727,7 +727,7 @@
     "dodge_modifier": 0.0175,
     "hearing_modifier": 0.01,
     "social_modifiers": { "persuade": -10, "lie": -10 },
-    "armor": [ { "parts": "head", "cut": 2, "bash": 4, "stab": 2 } ],
+    "armor": [ { "parts": "head", "cut": 2, "bash": 4, "stab": 2, "bullet": 2 } ],
     "attacks": [
       {
         "attack_text_u": "You lick %s",
@@ -908,7 +908,7 @@
     "description": "You've grown a mass of flabby flesh from your shoulders to the back of your body. Aside from being able to deflect physical harm, it severely hampers your movements and actions that requires finesse.",
     "types": [ "WINGS" ],
     "prereqs": [ "SECRO_UNKNOWN_WING_START" ],
-    "armor": [ { "parts": "torso", "bash": 5, "cut": 5, "stab": 5 } ],
+    "armor": [ { "parts": "torso", "bash": 5, "cut": 5, "stab": 5, "bullet": 5 } ],
     "encumbrance_always": [ [ "torso", 25 ] ],
     "dodge_modifier": -6,
     "movecost_modifier": 1.15,

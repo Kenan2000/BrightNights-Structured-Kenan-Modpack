@@ -159,7 +159,7 @@
     "count": 1,
     "ammo_type": "66mm",
     "range": 60,
-    "damage": { "damage_type": "stab", "amount": 222, "armor_penetration": 30 },
+    "damage": { "damage_type": "bullet", "amount": 222, "armor_penetration": 30 },
     "dispersion": 800,
     "recoil": 500,
     "effects": [ "EXPLOSIVE", "TRAIL", "SMOKE" ]
@@ -198,7 +198,7 @@
     "color": "yellow_red",
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 2, "armor_penetration": 200 },
+    "damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 200 },
     "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
     "use_action": { "target": "bomblet_vile_act", "target_charges": 5, "active": true, "type": "transform" }
   },
@@ -237,7 +237,7 @@
     "color": "yellow_red",
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 4, "armor_penetration": 200 },
+    "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 200 },
     "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
     "use_action": { "target": "bomblet_archvile_act", "target_charges": 5, "active": true, "type": "transform" }
   },
@@ -272,7 +272,7 @@
     "color": "brown",
     "ammo_type": "bomblet",
     "range": 25,
-    "damage": { "damage_type": "stab", "amount": 5, "armor_penetration": 200 },
+    "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 200 },
     "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
     "use_action": {
       "type": "place_monster",
@@ -295,7 +295,7 @@
     "range": 50,
     "dispersion": 350,
     "recoil": 100,
-    "damage": { "damage_type": "stab", "amount": 20, "armor_penetration": 10 },
+    "damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
     "effects": [ "NEVER_MISFIRES", "NO_EMBED", "RECOVER_9", "ACT_ON_RANGED_HIT" ],
     "emits": [ "emit_fire_bomblet_small" ],
     "countdown_interval": 2,

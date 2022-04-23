@@ -1,5 +1,54 @@
 [
   {
+    "type": "item_group",
+    "id": "DKZ_guns_swat",
+    "//": "Guns issued to paramilitary forces in addition to standard police issue.",
+    "items": [
+      { "item": "rm11b_sniper_rifle", "prob": 1, "charges-min": 4, "charges-max": 70 },
+      { "item": "rm51_assault_rifle", "prob": 2, "charges-min": 15, "charges-max": 25 },
+      { "item": "rm88_battle_rifle", "prob": 2, "charges-min": 15, "charges-max": 25 },
+      { "item": "ar15", "prob": 15, "charges-min": 25, "charges-max": 30 },
+      { "item": "hk_ump45", "prob": 15, "charges-min": 20, "charges-max": 25 },
+      { "item": "hk_mp5", "prob": 50, "charges-min": 25, "charges-max": 30 },
+      { "item": "hk_mp5k", "prob": 30, "charges-min": 25, "charges-max": 30 },
+      { "item": "hk_mp5sd", "prob": 35, "charges-min": 25, "charges-max": 30 },
+      { "item": "m4a1", "prob": 65, "charges-min": 25, "charges-max": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_pistol_improvised",
+    "//": "Makeshift or otherwise poor quality pistols.",
+    "items": [
+      { "item": "ashot", "prob": 100 },
+      { "item": "surv_hand_cannon", "prob": 100, "charges-min": 4, "charges-max": 5 },
+      { "item": "surv_six_shooter", "prob": 100, "charges-min": 5, "charges-max": 6 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_rifle_improvised",
+    "//": "Makeshift or otherwise poor quality rifles.",
+    "items": [
+      { "item": "rifle_22", "prob": 60 },
+      { "item": "rifle_3006", "prob": 30 },
+      { "item": "rifle_9mm", "prob": 60 },
+      { "item": "surv_carbine_223", "prob": 120, "charges-min": 0, "charges-max": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_shotgun_improvised",
+    "//": "Makeshift or otherwise poor quality shotguns.",
+    "items": [
+      { "item": "blunderbuss", "prob": 70 },
+      { "item": "bigun", "prob": 10, "charges-min": 0, "charges-max": 6 },
+      { "item": "pipe_double_shotgun", "prob": 70, "charges-min": 0, "charges-max": 2 },
+      { "item": "pipe_shotgun", "prob": 100 },
+      { "item": "revolver_shotgun", "prob": 30, "charges-min": 0, "charges-max": 6 }
+    ]
+  },
+  {
     "//": "pulled from core game and modified for Real Dark Skies",
     "type": "trait_group",
     "id": "DKZ_starting_traits",

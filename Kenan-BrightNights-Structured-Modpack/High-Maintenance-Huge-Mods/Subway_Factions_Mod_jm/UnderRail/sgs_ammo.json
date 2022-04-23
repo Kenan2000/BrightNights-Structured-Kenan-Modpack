@@ -35,7 +35,7 @@
     "ammo_type": "sgs_acid_b",
     "casing": "sgs_acid_vial",
     "range": 12,
-    "damage": { "damage_type": "stab", "amount": 5 },
+    "damage": { "damage_type": "bullet", "amount": 5 },
     "dispersion": 65,
     "recoil": 350,
     "effects": [ "COOKOFF", "ACIDBOMB", "TOXICGAS" ]
@@ -58,7 +58,7 @@
     "ammo_type": "sgs5",
     "casing": "sgs5_casing",
     "range": 14,
-    "damage": { "damage_type": "stab", "amount": 24 },
+    "damage": { "damage_type": "bullet", "amount": 24 },
     "dispersion": 65,
     "recoil": 350,
     "effects": [ "COOKOFF" ]
@@ -68,7 +68,7 @@
     "copy-from": "sgs5_b",
     "type": "AMMO",
     "name": { "str": "5mm Standard Round, reloaded" },
-    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.9 }, "dispersion": 1.1 },
     "extend": { "effects": [ "RECYCLED" ] },
     "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
   },
@@ -79,7 +79,7 @@
     "name": { "str": "5mm Standard Round, black powder" },
     "proportional": {
       "price": 0.3,
-      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "damage": { "damage_type": "bullet", "amount": 0.57, "armor_penetration": 0.5 },
       "recoil": 0.57,
       "dispersion": 1.2
     },
@@ -96,7 +96,7 @@
     "price_postapoc": "8 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 25,
-    "relative": { "damage": { "damage_type": "stab", "armor_penetration": 4 }, "dispersion": -10 },
+    "relative": { "damage": { "damage_type": "bullet", "armor_penetration": 4 }, "dispersion": -10 },
     "proportional": { "recoil": 1.2 }
   },
   {
@@ -109,7 +109,7 @@
     "price_postapoc": "4 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 10,
-    "relative": { "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 15 }, "dispersion": -20 },
+    "relative": { "damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 15 }, "dispersion": -20 },
     "proportional": { "recoil": 1.5 }
   },
   {
@@ -140,7 +140,7 @@
     "ammo_type": "sgs86",
     "casing": "sgs86_casing",
     "range": 37,
-    "damage": { "damage_type": "stab", "amount": 46, "armor_penetration": 4 },
+    "damage": { "damage_type": "bullet", "amount": 46, "armor_penetration": 4 },
     "dispersion": 30,
     "recoil": 1500,
     "effects": [ "COOKOFF" ]
@@ -150,7 +150,7 @@
     "copy-from": "sgs86_b",
     "type": "AMMO",
     "name": { "str": "8.6mm Standard Round, reloaded" },
-    "proportional": { "price": 0.7, "damage": { "damage_type": "stab", "amount": 0.9 }, "dispersion": 1.1 },
+    "proportional": { "price": 0.7, "damage": { "damage_type": "bullet", "amount": 0.9 }, "dispersion": 1.1 },
     "extend": { "effects": [ "RECYCLED" ] },
     "delete": { "effects": [ "NEVER_MISFIRES" ], "flags": [ "IRREPLACEABLE_CONSUMABLE" ] }
   },
@@ -161,7 +161,7 @@
     "name": { "str": "8.6mm Standard Round, black powder" },
     "proportional": {
       "price": 0.3,
-      "damage": { "damage_type": "stab", "amount": 0.57, "armor_penetration": 0.5 },
+      "damage": { "damage_type": "bullet", "amount": 0.57, "armor_penetration": 0.5 },
       "recoil": 0.57,
       "dispersion": 1.2
     },
@@ -178,7 +178,7 @@
     "price_postapoc": "8 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 25,
-    "relative": { "damage": { "damage_type": "stab", "armor_penetration": 4 }, "dispersion": -10 },
+    "relative": { "damage": { "damage_type": "bullet", "armor_penetration": 4 }, "dispersion": -10 },
     "proportional": { "recoil": 1.2 }
   },
   {
@@ -191,7 +191,7 @@
     "price_postapoc": "4 USD",
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "count": 10,
-    "relative": { "damage": { "damage_type": "stab", "amount": 15, "armor_penetration": 15 }, "dispersion": -20 },
+    "relative": { "damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 15 }, "dispersion": -20 },
     "proportional": { "recoil": 1.5 }
   },
   {

@@ -9,6 +9,7 @@
     "valid": false,
     "cancels": [ "DKZ_QUISLING", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ],
     "starting_trait": true,
+    "category": [ "DKZ" ],	
     "purifiable": false
   },
   {
@@ -21,6 +22,7 @@
     "valid": false,
     "cancels": [ "DKZ_QUISLING", "DKZ_COMBAT", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ],
     "starting_trait": true,
+    "category": [ "DKZ" ],		
     "purifiable": false
   },
   {
@@ -45,6 +47,7 @@
     "valid": false,
     "cancels": [ "DKZ_QUISLING", "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_LEADER" ],
     "starting_trait": true,
+    "category": [ "DKZ" ],		
     "purifiable": false
   },
   {
@@ -57,6 +60,7 @@
     "valid": false,
     "cancels": [ "DKZ_QUISLING", "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC" ],
     "starting_trait": true,
+    "category": [ "DKZ" ],		
     "purifiable": false
   },
   {
@@ -68,6 +72,7 @@
     "description": "You decided of your own free will, for what ever reason, to collaborate with the Xenoids against humanity.\n\nThis has no direct skill benefit, but allows you to present yourself as a collaborator to certain NPCs, although the Maquis may recognize and execute you.",
     "valid": false,
     "cancels": [ "DKZ_LEADER", "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC" ],
+    "anger_relations": [ [ "ALIEN", -200 ], [ "ALIENROBOT", -200 ], [ "BIOCRYSTAL", -200 ] ],	
     "starting_trait": false,
     "purifiable": false
   }
