@@ -952,8 +952,8 @@
     "points": 3,
     "visibility": 3,
     "ugliness": 2,
-    "description": "Your skin is light green and has a slightly woody quality to it.  This provides a weak armor (all: +2 cut, +1 heat), and helps you retain moisture, resulting in less thirst.  Greatly decreases wet penalties.",
-    "armor": [ { "parts": "ALL", "cut": 2, "heat": 1 } ],
+    "description": "Your skin is light green and has a slightly woody quality to it.  This provides a weak armor (all: +2 cut, +1 bullet, +1 heat), and helps you retain moisture, resulting in less thirst.  Greatly decreases wet penalties.",
+    "armor": [ { "parts": "ALL", "cut": 2, "bullet": 1, "heat": 1 } ],
     "thirst_modifier": -0.2
   },
   {
@@ -964,8 +964,8 @@
     "points": 5,
     "visibility": 10,
     "ugliness": 3,
-    "description": "Your skin is coated in a light bark, like that of a tree.  This provides resistance to bashing and cutting damage but makes you vulnerable against fire (all: +5 bash, +2 cut).  Greatly reduces wet effects.",
-    "armor": [ { "parts": "ALL", "bash": 5, "cut": 2 } ]
+    "description": "Your skin is coated in a light bark, like that of a tree.  This provides resistance to bashing and cutting damage but makes you vulnerable against fire (all: +5 bash, +5 cut, +4 bullet).  Greatly reduces wet effects.",
+    "armor": [ { "parts": "ALL", "bash": 5, "cut": 5, "bullet": 4 } ]
   },
   {
     "type": "mutation",
@@ -1664,8 +1664,8 @@
     "points": -5,
     "visibility": 8,
     "ugliness": 3,
-    "description": "You have grown a thick shell over your torso, providing excellent armor (torso: +10 bash, +14 cut).  You find you can use the empty space as 16 storage space, but cannot wear anything on your torso.  Somewhat reduces wet effects.",
-    "armor": [ { "parts": "torso", "bash": 10, "cut": 14 } ]
+    "description": "You have grown a thick shell over your torso, providing excellent armor (torso: +10 bash, +14 cut, +6 bullet).  You find you can use the empty space as 16 storage space, but cannot wear anything on your torso.  Somewhat reduces wet effects.",
+    "armor": [ { "parts": "torso", "bash": 10, "cut": 14, "bullet": 6 } ]
   },
   {
     "type": "mutation",
@@ -1676,8 +1676,8 @@
     "visibility": 10,
     "ugliness": 3,
     "mixed_effect": true,
-    "description": "Your protective shell (torso: +14 bash, +18 cut) has grown large enough to accommodate--if need be--your whole body.  Activate to pull your head and limbs into your shell, trading mobility and vision for warmth and shelter.",
-    "armor": [ { "parts": "torso", "bash": 14, "cut": 18 } ],
+    "description": "Your protective shell (torso: +14 bash, +18 cut, +9 bullet) has grown large enough to accommodate--if need be--your whole body.  Activate to pull your head and limbs into your shell, trading mobility and vision for warmth and shelter.",
+    "armor": [ { "parts": "torso", "bash": 14, "cut": 18, "bullet": 9 } ],
     "active": true
   },
   {
