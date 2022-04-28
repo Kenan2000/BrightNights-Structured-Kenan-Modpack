@@ -264,6 +264,7 @@
             { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } },
             { "not": "has_many_assigned_mission" },
             { "not": "has_assigned_mission" }
           ]
@@ -278,6 +279,7 @@
             { "u_has_var": "RANDYS_BUDDY", "type": "mission", "context": "flag", "value": "yes" },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } },
             { "not": "has_many_assigned_mission" },
             { "not": "has_assigned_mission" }
           ]

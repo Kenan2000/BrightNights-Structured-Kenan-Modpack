@@ -13,7 +13,7 @@
   {
     "type": "npc_class",
     "id": "NC_MAQUIS_FELIX_FOX",
-    "name": { "str": "MAQUIS" },
+    "name": { "str": "Maquis-Fox" },
     "job_description": "I'm here to keep the logistics of the resistance moving forward.",
     "common": false,
     "traits": [
@@ -106,6 +106,25 @@
         },
         "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
       },
+	  
+      {
+        "text": "[RP] I am a member of the Maquis, I need to get to the nearest base.",
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+            { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "effect": { "add_mission": "MISSION_GO_MEET_THE_BIG_FED" },
+        "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
+      },	  
+	  
+	  
       { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "See you later.", "topic": "TALK_DONE" }
     ]
