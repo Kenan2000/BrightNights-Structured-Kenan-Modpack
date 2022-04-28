@@ -626,7 +626,10 @@
         ">": "t_stairs_down",
         "<": "t_ladder_up"
       },
-      "furniture": { "®": "f_autodoc", "©": "f_autodoc_couch" },
+      "furniture": {
+        "®": "f_autodoc",
+        "©": "f_autodoc_couch" 
+	  },	  
       "mapping": { "n": { "furniture": "f_table", "fields": { "field": "fd_blood", "chance": 80 } } },
       "items": {
         "@": { "item": "bed", "chance": 10 },
@@ -639,6 +642,8 @@
       }
     }
   },
+  
+  
   {
     "type": "mapgen",
     "method": "json",
@@ -675,6 +680,9 @@
       "place_nested": [ { "chunks": [ "catacomb_8x8_ns" ], "x": 8, "y": 0 } ]
     }
   },
+
+  
+  
   {
     "type": "mapgen",
     "method": "json",
@@ -821,22 +829,22 @@
       "rows": [
         "                        ",
         "       -----------      ",
-        "       |_  _____ |      ",
-        "       | _RR__RR |      ",
+        "       |_  __ __ |      ",
+        "       | _RR_ RR |      ",
         "       | _R____R_|      ",
-        "       |_________|      ",
+        "       | ______  |      ",
         "       |____<___ |      ",
         "       |__R____R_|      ",
         "       |__RR__RR |      ",
         "       |________ |      ",
-        "       |______   |      ",
+        "       |______   | 4    ",
         "       |2##+########    ",
         "         +....rrr.>#    ",
         "         wZ.......l#    ",
-        "         ##+##....lw    ",
-        "         #q.Q#h.CCCw    ",
-        "         ##w##6.C###    ",
-        "             #www#_4    ",
+        "         ##+##....Cw    ",
+        "         #q.Q#h...Cw    ",
+        "         ##w##6CCCC#    ",
+        "             #www###    ",
         "                        ",
         "                        ",
         "                        ",

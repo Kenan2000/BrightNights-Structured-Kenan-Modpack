@@ -1818,7 +1818,7 @@
         "................................................................................................",
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         ".#########G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G##G#########.",
-        "..#<                        JJjJJjJJjJ JJ JJjJJ J  # z    ż # ż    z #     C 6#        #>  <<#..",
+        "..#<                        JJjJJjJJjJ JJ JJjJJ J  # z    ż # ż    z #     C 6#Ll Ll Ll#>  <<#..",
         "..#<                                            J  # Z;  ;Z # Z;  ;Z #  ;  ; X#  ;  ;  #>    #..",
         ".##                                             JJ #        #        #        #N      N#     ##.",
         "..#   ;                                         jj #LL    LL#LL    LL#xxx  xxx#n      n##;   #..",
@@ -1926,6 +1926,7 @@
           "failures": [ { "action": "damage" } ]
         }
       },
+      "mapping": { "L": { "furniture": "f_table", "fields": { "field": "fd_blood", "chance": 90 } }, "l": { "furniture": "f_makeshift_bed", "fields": { "field": "fd_blood", "chance": 25 } } },	  
       "terrain": {
         "S": "t_pavement",
         "s": "t_pavement",

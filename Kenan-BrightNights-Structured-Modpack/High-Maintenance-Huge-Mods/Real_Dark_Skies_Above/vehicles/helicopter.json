@@ -274,10 +274,10 @@
       { "x": -2, "y": 1, "part": "aisle_lights" },
       { "x": -4, "y": 1, "part": "aisle_lights" },
       { "x": -4, "y": 1, "part": "heavy_duty_military_blackhawk_rotors" },
-      { "x": -4, "y": -2, "part": "stowboard_horizontal" },
-      { "x": -4, "y": -3, "part": "halfboard_horizontal" },
-      { "x": -4, "y": 5, "part": "halfboard_horizontal" },
-      { "x": -4, "y": 4, "part": "stowboard_horizontal" },
+      { "x": -4, "y": -3, "part": "stowboard_horizontal" },
+      { "x": -4, "y": -2, "part": "halfboard_horizontal" },
+      { "x": -4, "y": 4, "part": "halfboard_horizontal" },
+      { "x": -4, "y": 5, "part": "stowboard_horizontal" },
       {
         "x": -4,
         "y": -3,
@@ -1137,8 +1137,12 @@
       { "x": -6, "y": 8, "part": "heavy_duty_military_osprey_rotors" },
       { "x": -5, "y": -8, "part": "engine_turbine_large" },
       { "x": -5, "y": -8, "part": "alternator_car" },
-      { "x": -5, "y": 8, "part": "engine_turbine_large" }
-    ],
+      { "x": -5, "y": -8, "part": "alternator_truck" },
+      { "x": -5, "y": 8, "part": "engine_turbine_large" },
+      { "x": -5, "y": 8, "part": "alternator_car" },
+      { "x": -5, "y": 8, "part": "alternator_truck" }
+
+	  ],
     "items": [
       { "x": -12, "y": -1, "chance": 5, "items": [ "grenade" ] },
       { "x": -11, "y": 1, "chance": 5, "items": [ "chestpouch" ] },
