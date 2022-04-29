@@ -13,7 +13,7 @@
   {
     "type": "npc_class",
     "id": "NC_MAQUIS_MELISSA_FORREST",
-    "name": { "str": "MAQUIS" },
+    "name": { "str": "Misty" },
     "job_description": "I'm here to understand being a plant.",
     "common": false,
     "traits": [
@@ -28,7 +28,8 @@
       { "trait": "LEAVES3", "prob": 100 },
       { "trait": "FASTHEALER2", "prob": 100 },
       { "trait": "BARK", "prob": 100 },
-      { "trait": "PLANTSKIN", "prob": 100 }
+      { "trait": "PLANTSKIN", "prob": 100 },
+      { "trait": "PACIFIST", "prob": 100 }
     ],
     "skills": [
       { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },

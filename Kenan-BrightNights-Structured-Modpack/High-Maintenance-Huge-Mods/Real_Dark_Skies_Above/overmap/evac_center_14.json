@@ -50,10 +50,10 @@
         { "item": "dkz_blend_scrap", "x": 5, "y": 22, "chance": 1000, "repeat": [ 1, 3 ] }
       ],
       "place_npcs": [
-        { "class": "evac_guard2", "x": 3, "y": 17 },
-        { "class": "evac_guard1", "x": 7, "y": 18 },
-        { "class": "refugee_FatimaalJadir", "x": 1, "y": 12 },
-        { "class": "DKZ_RANDY_ERIKSON", "x": 6, "y": 21 }
+        { "class": "evac_guard2", "x": 3, "y": 17, "add_trait": "DKZ_COMBAT" },
+        { "class": "evac_guard1", "x": 7, "y": 18, "add_trait": "DKZ_COMBAT" },
+        { "class": "refugee_FatimaalJadir", "x": 1, "y": 12, "add_trait": "PRETTY" },
+        { "class": "DKZ_RANDY_ERIKSON", "x": 6, "y": 21, "add_trait": "DKZ_TECH" }
       ]
     }
   }
