@@ -16,12 +16,7 @@
     "type": "item_group",
     "id": "metro_ammo_pistol_item",
     "subtype": "distribution",
-    "entries": [
-      { "item": "44magnum", "prob": 60 },
-      { "item": "44fmj", "prob": 20 },
-      { "item": "reloaded_44fmj", "prob": 20 },
-      { "item": "reloaded_44magnum", "prob": 10 }
-    ]
+    "entries": [ { "item": "44magnum", "prob": 60 }, { "item": "44fmj", "prob": 45 } ]
   },
   {
     "type": "item_group",
@@ -29,19 +24,14 @@
     "subtype": "collection",
     "entries": [
       { "item": "metro_lolifemag", "prob": 50, "ammo-item": "44magnum", "charges": 8 },
-      { "item": "metro_lolifemag", "prob": 30, "ammo-item": "reloaded_44fmj", "charges": 8 }
+      { "item": "metro_lolifemag", "prob": 30, "ammo-item": "44fmj", "charges": 8 }
     ]
   },
   {
     "type": "item_group",
     "id": "metro_ammo_rifle_item",
     "subtype": "distribution",
-    "entries": [
-      { "item": "545", "prob": 60 },
-      { "item": "545_ap", "prob": 20 },
-      { "item": "reloaded_545", "prob": 40 },
-      { "item": "reloaded_545_ap", "prob": 10 }
-    ]
+    "entries": [ { "item": "545", "prob": 80 }, { "item": "545_ap", "prob": 30 } ]
   },
   {
     "type": "item_group",

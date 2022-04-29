@@ -95,7 +95,7 @@
         "x": -7,
         "y": 0,
         "chance": 50,
-        "items": [ "surv_lmg_223", "surv_belt_223", "reloaded_223", "reloaded_223", "reloaded_223" ]
+        "items": [ "surv_lmg_223", "surv_belt_223", "223", "223", "223" ]
       },
       { "x": -6, "y": 0, "chance": 99, "items": [ "goggles_welding" ] },
       { "x": -4, "y": 0, "chance": 75, "item_groups": [ "stash_food" ] },
@@ -174,7 +174,7 @@
     ],
     "parts": [
       { "x": -2, "y": -1, "parts": [ "frame_wood_cross", "wheel_wood_b", "wooden_aisle_vertical" ] },
-      { "x": -2, "y": 0, "parts": [ "frame_wood_cross", "seat_wood", "turret_mount", { "ammo_types": [ "reloaded_762_54R" ], "part": "surv_lmg_762R_t", "ammo": 60, "ammo_qty": [ 5, 75 ] } ] },
+      { "x": -2, "y": 0, "parts": [ "frame_wood_cross", "seat_wood", "turret_mount", { "ammo_types": [ "762_54R" ], "part": "surv_lmg_762R_t", "ammo": 60, "ammo_qty": [ 5, 75 ] } ] },
       { "x": -2, "y": 1, "parts": [ "frame_wood_cross", "wheel_wood_b", "wooden_aisle_vertical" ] },
       { "x": -1, "y": 0, "parts": [ "frame_wood_cross", "wood box" ] },
       { "x": 0, "y": 0, "parts": [ "frame_wood_cross", "seat_wood", "reins_tackle" ] },

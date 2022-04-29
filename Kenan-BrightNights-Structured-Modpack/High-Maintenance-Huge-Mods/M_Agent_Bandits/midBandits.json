@@ -30,13 +30,13 @@
     "upgrades": { "into": "mon_bandit_m1911", "half_life": 21 },
     "hp": 60,
     "death_function": [ "NORMAL" ],
-    "starting_ammo": { "reloaded_9mm": 35 },
+    "starting_ammo": { "9mm": 35 },
     "special_attacks": [
       {
         "type": "gun",
         "cooldown": 6,
         "gun_type": "glock_19",
-        "ammo_type": "reloaded_9mm",
+        "ammo_type": "9mm",
         "max_ammo": 100,
         "fake_str": 10,
         "fake_dex": 6,
