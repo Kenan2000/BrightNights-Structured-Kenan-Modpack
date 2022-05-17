@@ -46,11 +46,11 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "plastic" ],
-    "ammo": [ "9mm", "40" ],
+    "ammo": [ "9mm" ],
     "dispersion": 90,
     "durability": 7,
     "magazine_well": "250 ml",
-    "magazines": [ [ "9mm", [ "strike9mm_mag" ] ], [ "40", [ "strike40_mag" ] ] ]
+    "magazines": [ [ "9mm", [ "strike9mm_mag" ] ] ]
   },
   {
     "id": "automag",
@@ -105,13 +105,13 @@
     "to_hit": -2,
     "bashing": 9,
     "material": [ "plastic", "steel" ],
-    "ammo": "9mm",
+    "ammo": [ "9mm" ],
     "range": -2,
     "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "dispersion": 150,
     "durability": 8,
     "magazine_well": "250 ml",
-    "magazines": [ [ "9mm", [ "hp9mm_mag" ] ], [ "40", [ "hp40mag" ] ] ]
+    "magazines": [ [ "9mm", [ "hp9mm_mag" ] ] ]
   },
   {
     "id": "m45a1",
