@@ -1,0 +1,29 @@
+[
+  {
+    "id": "TALK_NCR_TROOPSPAWN",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello ma'am, I am ready to join your squad.",
+      "no": "Hello sir, I am ready to join your squad."
+    },
+    "responses": [
+      {
+        "text": "Want to travel with me?",
+        "topic": "TALK_AGREE_FOLLOW",
+        "effect": "follow",
+        "condition": { "not": "npc_following" }
+      }
+    ]
+  },
+  {
+    "id": "TALK_LEGION_TROOPSPAWN",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I shall your commands until my last breath! True to Caesar!.",
+      "no": "I shall your commands until my last breath! True to Caesar!"
+    },
+    "responses": [ { "text": "Join Me", "topic": "TALK_AGREE_FOLLOW", "effect": "follow", "condition": { "not": "npc_following" } } ]
+  }
+]

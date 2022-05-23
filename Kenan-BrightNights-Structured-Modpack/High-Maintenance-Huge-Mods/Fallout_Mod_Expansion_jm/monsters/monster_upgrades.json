@@ -1,0 +1,42 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_GHOUL_UPGRADE",
+    "default": "mon_fallout_ghoul_runner",
+    "//": "Masters pick from here when upgrading; no dogs, bionics, or profession-types",
+    "monsters": [
+      { "monster": "mon_fallout_ghoul_vault", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_fallout_ghoul_roamer", "freq": 25, "cost_multiplier": 4 },
+      { "monster": "mon_fallout_ghoul_runner", "freq": 40, "cost_multiplier": 3 },
+      { "monster": "mon_fallout_ghoul_reaver", "freq": 45, "cost_multiplier": 4 },
+      { "monster": "mon_radghoul", "freq": 6, "cost_multiplier": 5 },
+      { "monster": "mon_ghoul_raider", "freq": 10, "cost_multiplier": 10 },
+      { "monster": "mon_ghoul_chinese", "freq": 4, "cost_multiplier": 10 },
+      { "monster": "mon_chinese_shock_ghoul", "freq": 2, "cost_multiplier": 25 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_RAIDER_UPGRADE",
+    "default": "mon_raider_melee",
+    "//": "Masters pick from here when upgrading; no dogs, bionics, or profession-types",
+    "monsters": [
+      { "monster": "mon_gun_raider", "freq": 15, "cost_multiplier": 2 },
+      { "monster": "mon_raider_melee", "freq": 25, "cost_multiplier": 2 },
+      { "monster": "mon_rifle_raider", "freq": 10, "cost_multiplier": 4 },
+      { "monster": "mon_raider_junkie", "freq": 20, "cost_multiplier": 3 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_SUPMUTANT_UPGRADE",
+    "default": "mon_supmutant_brute_a",
+    "//": "Masters pick from here when upgrading; no dogs, bionics, or profession-types",
+    "monsters": [
+      { "monster": "mon_supmutant_vault", "freq": 10, "cost_multiplier": 3 },
+      { "monster": "mon_supmutant_brute_a", "freq": 45, "cost_multiplier": 3 },
+      { "monster": "mon_supmutant_brute_b", "freq": 20, "cost_multiplier": 4 },
+      { "monster": "mon_sup_nightkin", "freq": 10, "cost_multiplier": 4 }
+    ]
+  }
+]

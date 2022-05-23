@@ -1,0 +1,81 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_vault_npc_recruit_security",
+    "name_suffix": "Vault Security Recruit",
+    "class": "fo_vault_npc_recruit_security_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_fre_vault_recruit_start",
+    "faction": "foc_vault_friendly"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_vault_npc_recruit_security_npc",
+    "name": { "str": "Vault Security Recruit" },
+    "job_description": "Is a friendly member of a vault.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 3 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -1, 3 ] },
+    "worn_override": "NC_FREVAULT_ARM_worn",
+    "carry_override": "NC_FREVAULT_ARM_carry",
+    "weapon_override": "NC_FREVAULT_ARM_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_recruit_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?" ],
+      "no": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem?" ]
+        },
+    "responses": [
+      {
+        "text": "So you work in vault security? Do you think it's dangerous at all?", "topic": "TALK_amg_fre_vault_recruit_go"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_amg_fre_vault_recruit_recruit"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_recruit_go",
+    "type": "talk_topic",
+    "dynamic_line": "It's a pretty boring job most days, little more than just standing at a post or resolving some dispute between two quarreling vault dwellers. Sometimes though, you get momements of excitement, getting your hands dirty as it were. But I want more, I want to leave this vault and experience the outside world for a change.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_recruit_recruit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am ready to join you on your journey!",
+      "no": "I am ready to join you on your journey!"},
+    "responses": [
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
+    ]
+  }
+]

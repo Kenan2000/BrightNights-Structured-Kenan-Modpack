@@ -1,0 +1,117 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_deathclaw_hunter",
+    "name_suffix": "Deathclaw Hunter",
+    "class": "fo_deathclaw_hunter_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_deathclawhunter_start"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_deathclaw_hunter_npc",
+    "name": { "str": "Deathclaw Hunter" },
+    "job_description": "A hunter who is as stupid as they are brave.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_DCLAWHUNT_worn",
+    "carry_override": "NC_DCLAWHUNT_carry",
+    "weapon_override": "NC_DCLAWHUNT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DCLAWHUNT_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "duster" },
+      { "item": "undershirt" },
+      { "item": "10gal_hat" },
+      { "item": "jeans" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "backpack_hiking" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DCLAWHUNT_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "repeat": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "item": "amr50mag", "charges": 8, "repeat": [ 3, 5 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_DCLAWHUNT_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "amr50", "charges": 8 }
+    ]
+  },
+  {
+    "id": "TALK_deathclawhunter_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you doing here, little missie, don't you know this is a deathclaw stomping ground!",
+      "no": "What are you doing here, guy, don't you know this is a deathclaw stomping ground!"},
+    "responses": [
+      {
+        "text": "What am I doing here, what are you doing here?!",
+        "topic": "TALK_deathclawhunter_infotown"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_deathclawhunter_recruit"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_deathclawhunter_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What does it look like, I'm hunting deathclaws obviously! Their eggs fetch a large sum of caps at any decent market, and their hide is a kind of status symbol amongst the well-heeled and backwoods alike - it's a testament to one's strength to wear their hide. Oh, and these monsters are a menace to society and have to be hunted down.",
+      "no": "What does it look like, I'm hunting deathclaws obviously! Their eggs fetch a large sum of caps at any decent market, and their hide is a kind of status symbol amongst the well-heeled and backwoods alike - it's a testament to one's strength to wear their hide. Oh, and these monsters are a menace to society and have to be hunted down."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_deathclawhunter_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_deathclawhunter_recruit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am ready to join you on your journey!",
+      "no": "I am ready to join you on your journey!"},
+    "responses": [
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
+    ]
+  }
+]

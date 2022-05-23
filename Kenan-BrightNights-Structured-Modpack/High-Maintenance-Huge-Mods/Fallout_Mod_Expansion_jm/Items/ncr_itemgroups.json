@@ -1,0 +1,197 @@
+[
+  {
+    "type": "item_group",
+    "id": "drop_ncr_armor",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ncr_armor", "prob": 95 },
+      { "item": "armor_combat_light", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drop_ncr_armor_helmet",
+    "subtype": "collection",
+    "entries": [
+      { "item": "fo_ncr_trooper_helmet", "prob": 96 },
+      { "item": "10gal_hat", "prob": 10 },
+      { "item": "beret", "prob": 10 },
+      { "item": "beret_recon", "prob": 10 },
+      { "item": "helmet_army", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncrfood",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "mirelurk_jerky", "prob": 75 },
+      { "item": "meat_gecko_smoked", "prob": 75 },
+      { "item": "dry_meat_gecko", "prob": 75 },
+      { "item": "jerky_gecko", "prob": 75 },
+      { "item": "kebab_gecko", "prob": 75 },
+      { "item": "xander_root", "prob": 75 },
+      { "item": "pie_happy", "prob": 75 },
+      { "item": "fruit_cactus_barrel", "prob": 75 },
+      { "item": "fruit_cactus_prickly", "prob": 75 },
+      { "item": "macaroni_blamco_cram", "prob": 75 },
+      { "item": "cave_fungus", "prob": 75 },
+      { "item": "macaroni_blamco", "prob": 75 },
+      { "item": "can_cram", "prob": 75 },
+      { "item": "mutfruit_crunchy", "prob": 75 },
+      { "item": "pemmican", "prob": 75 },
+      { "item": "meat_salted", "prob": 75 },
+      { "item": "meat_pickled", "prob": 75 },
+      { "item": "dry_meat", "prob": 75 },
+      { "item": "sausage", "prob": 75 },
+      { "item": "cola_nuka", "prob": 75 },
+      { "item": "sunset_sarsaparilla", "prob": 75 },
+      { "item": "cola_nuka_cranberry", "prob": 75 },
+      { "item": "macaroni_blamco_raw", "prob": 75 },
+      { "item": "salisbury_steak_fallout", "prob": 75 },
+      { "item": "sugarbombs", "prob": 75 },
+      { "item": "eggs_devilled_fallout", "prob": 75 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncropencrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "ammo_pistol_common", "prob": 35, "charges": [ 8, 25 ] },
+      { "group": "ammo_pistol_reloaded", "prob": 75, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_common", "prob": 25, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_rare", "prob": 20, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_milspec", "prob": 25, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_reloaded", "prob": 65, "charges": [ 8, 25 ] },
+      { "group": "ammo_shotgun_common", "prob": 25, "charges": [ 8, 25 ] },
+      { "group": "ammo_shotgun_reloaded", "prob": 35, "charges": [ 8, 25 ] }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncrclosedcrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "ammo_pistol_common", "prob": 35 },
+      { "group": "ammo_pistol_reloaded", "prob": 75 },
+      { "group": "ammo_rifle_common", "prob": 25 },
+      { "group": "ammo_rifle_rare", "prob": 20 },
+      { "group": "ammo_rifle_milspec", "prob": 25 },
+      { "group": "ammo_rifle_reloaded", "prob": 65 },
+      { "group": "ammo_shotgun_common", "prob": 25 },
+      { "group": "ammo_shotgun_reloaded", "prob": 35 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncrcrate_mags",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "mags_surplus", "prob": 35 },
+      { "group": "mags_cop", "prob": 75 },
+      { "group": "mags_pistol_common", "prob": 25 },
+      { "group": "mags_pistol_rare", "prob": 20 },
+      { "group": "mags_smg_common", "prob": 25 },
+      { "group": "mags_rifle_common", "prob": 65 },
+      { "group": "mags_rifle_makeshift", "prob": 25 },
+      { "group": "mags_crime", "prob": 35 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_gun_storage",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "fo_ncr_service_rifle", "prob": 130, "charges": 30 },
+      { "item": "cowboy_repeater", "prob": 3, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 5, "charges": 7 },
+      { "item": "brush_gun_medicine", "prob": 2, "charges": 8 },
+      { "item": "brush_gun", "prob": 2, "charges": 6 },
+      { "item": "greasegun", "prob": 25, "charges": 30 },
+      { "item": "colt_rangemaster", "prob": 10, "charges": 15 },
+      { "item": "carbine_assault", "prob": 15, "charges": 30 },
+      { "item": "14mmpistol", "prob": 15, "charges": 7 },
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 5 },
+      { "item": "amr50", "prob": 7, "charges": 7 },
+      { "item": "25mmapw", "prob": 6, "charges": 7 },
+      { "item": "grenademg", "prob": 2, "charges": 7 },
+      { "item": "cz53minigun", "prob": 3, "charges": 7 },
+      { "item": "20ga_singleshot", "prob": 3, "charges": 7 },
+      { "item": "caravan_shotgun", "prob": 3, "charges": 7 },
+      { "item": "citykiller", "prob": 10, "charges": 7 },
+      { "item": "ak112", "prob": 10, "charges": 30 },
+      { "item": "colt6250", "prob": 20, "charges": 30 },
+      { "item": "10mmsmg", "prob": 20, "charges": 30 },
+      { "item": "10mmgatling", "prob": 20, "charges": 30 },
+      { "item": "14mmsmg", "prob": 20, "charges": 30 },
+      { "item": "22_pistol", "prob": 5, "charges": 30 },
+      { "item": "22_smg", "prob": 5, "charges": 30 },
+      { "item": "varmint_rifle", "prob": 3, "charges": 30 },
+      { "item": "varmint_rifle_ratslayer", "prob": 3, "charges": 30 },
+      { "item": "thatgun", "prob": 5, "charges": 30 },
+      { "item": "revolver_ranger", "prob": 20, "charges": 6 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_gunmags_storage",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "stanag30", "prob": 100, "charges": 30 },
+      { "item": "stanag5", "prob": 20, "charges": 5 },
+      { "item": "stanag10", "prob": 25, "charges": 10 },
+      { "item": "stanag20", "prob": 55, "charges": 20 },
+      { "item": "stanag40", "prob": 10, "charges": 40 },
+      { "item": "stanag50", "prob": 5, "charges": 50 },
+      { "item": "stanag60", "prob": 5, "charges": 60 },
+      { "item": "stanag60drum", "prob": 5, "charges": 60 },
+      { "item": "stanag90", "prob": 5, "charges": 90 },
+      { "item": "stanag100", "prob": 5, "charges": 100 },
+      { "item": "stanag100drum", "prob": 5, "charges": 100 },
+      { "item": "stanag150", "prob": 5, "charges": 150 },
+      { "item": "survivor223mag", "prob": 5, "charges": 30 },
+
+
+      { "item": "25mmdrummag", "prob": 8, "charges": 30 },
+      { "item": "25mmdrummagxl", "prob": 1, "charges": 300 },
+      { "item": "47mmminigunmag", "prob": 4, "charges": 300 },
+      { "item": "amr50mag", "prob": 8, "charges": 30 },
+      { "item": "rangemastermag", "prob": 7, "charges": 30 },
+      { "item": "rangemastermag2", "prob": 7, "charges": 30 },
+      { "item": "rf2076mag", "prob": 7, "charges": 30 },
+      { "item": "rf2076drummag", "prob": 7, "charges": 30 },
+      { "item": "5mmmag", "prob": 7, "charges": 30 },
+      { "item": "5mmlargemag", "prob": 7, "charges": 30 },
+      { "item": "5mmdrummag", "prob": 7, "charges": 30 },
+      { "item": "5mmminigunmag", "prob": 5, "charges": 300 },
+      { "item": "colt6250mag", "prob": 7, "charges": 30 },
+      { "item": "10mmsmgmag", "prob": 7, "charges": 30 },
+      { "item": "10mmgatlingmag", "prob": 10, "charges": 60 },
+      { "item": "10mmgatlingmagxl", "prob": 8, "charges": 75 },
+      { "item": "p90cmag", "prob": 10, "charges": 30 },
+      { "item": "14mmpistolmag", "prob": 10, "charges": 30 },
+      { "item": "14mmsmgmag", "prob": 10, "charges": 30 },
+      { "item": "citykillermag", "prob": 10, "charges": 30 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_melee_storage",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 3 }
+
+    ]
+  }
+]

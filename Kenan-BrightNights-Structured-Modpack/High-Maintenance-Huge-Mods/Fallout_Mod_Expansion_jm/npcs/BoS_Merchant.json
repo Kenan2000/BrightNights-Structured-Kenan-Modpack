@@ -1,0 +1,118 @@
+[
+ {
+    "type": "npc",
+    "id": "bos_brotherhood_storescribe",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Scribe Merchant",
+    "class": "NC_BOSOUTPOST_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_BOSOUTPOST_Town",
+    "faction": "fac__fo_bos"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_BOSOUTPOST_SHOPKEEP",
+    "name": { "str": "Scribe Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_BOSMERCH_worn",
+    "weapon_override": "NC_BOSMERCH_weapon",
+    "shopkeeper_item_group": "NC_BOSMERCH_SHOPKEEP_misc",
+    "carry_override": "NC_BOSMERCH_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSMERCH_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "group": "fallout_energy_gungroups", "count": [ 4, 9 ] },
+      { "group": "supplies_electronics", "count": [ 4, 9 ] },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSMERCH_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "wattz_1000" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSMERCH_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "glasses_reading", "chance": 45 },
+      { "item": "fo_scribe_coat" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSOUTPOST_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "fallout_energy_gungroups", "count": [ 4, 9 ] },
+      { "group": "supplies_electronics", "count": [ 4, 9 ] },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_BOSOUTPOST_Town",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you buying, what are you selling?",
+      "no": "What are you buying, what are you selling?"},
+    "responses": [
+      {
+        "text": "What is it like being the quartermaster around here?",
+        "topic": "TALK_BOSOUTPOST_infotown"
+      },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_BOSOUTPOST_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_BOSOUTPOST_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's a pretty boring job, most of the time. Our elder for this chapter is rather skittish about sending forces out into the wastes, so it's not like inventory ever changes hands much for excursions, nor do we ever gain much through scavenging either. Perhaps a woman like you could change that.",
+      "no": "It's a pretty boring job, most of the time. Our elder for this chapter is rather skittish about sending forces out into the wastes, so it's not like inventory ever changes hands much for excursions, nor do we ever gain much through scavenging either. Perhaps a woman like you could change that."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_BOSOUTPOST_Town"
+      }
+    ]
+  }
+]

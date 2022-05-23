@@ -1,0 +1,151 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_DEATHCLAW_WARREN_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,Q,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,Q,,",
+                ",,,,,,,,,,,,Q,,,,,,,,,,,",
+                ",,,,,,,W,,,,,,,,,,,,,,,,",
+                ",,,,,WWW,,,,,WW,,,,,,,,,",
+                ",,,,WWttttttttWW,,,,,,W,",
+                ",,,,WttttttttttWW,,,,,W,",
+                ",,,,WttttTTtttttW,,,,,,,",
+                ",,,WWttttTTT>>tt,,,,,,,,",
+                ",,,WttttTTTTtttt,,,,,,,,",
+                ",,,,tttTTTTTTttt,,,,,,,,",
+                ",,,WtttTTTTTTTtt,,,,,,,,",
+                ",,,WttttTTTTTTtt,,,WQ,,,",
+                ",,,WW,tttTTTTttt,,,,,,,,",
+                ",,,,,,ttttTTTtttW,,,,,,,",
+                ",,,,,,,tttttttttWW,,,,,,",
+                ",,,,,,WWttttttttW,,,,,,,",
+                ",Q,,,,,Wtt,,,,,,W,,,,,,,",
+                ",,,,,,,WW,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,q,,,,,,,,,,,,,,,,w,,,",
+                ",,,,,,q,,,,,w,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_DCLAW_WARREN_PAL" ],
+        "place_nested": [ { "chunks": [ [ "dclaw_hunter_spawn", 25 ], [ "null", 75 ] ], "x": 23, "y": 23 }
+        ],
+        "place_monsters": [ { "monster": "GROUP_DEATHCLAW_WARREN", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.35 } ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_DEATHCLAW_WARREN_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWFFFFFWWWWWWWWWW",
+                "WWWWWWWWFFFFFFFWWWWWWWWW",
+                "WWWWWWWWFFFF<<FWWWWWWWWW",
+                "WWWWWWWWFFFSFFFWWWWWWWWW",
+                "WWWWWWWWFSFFFFFWWWWWWWWW",
+                "WWWWWWWWFNNFFFWWWWWWWWWW",
+                "WWWWWWWWNNNFfFWWWWWWWWWW",
+                "WWWWWWWFNNNNNFWWWWWWWWWW",
+                "WWWWWWWFFFfNFFWWWWWWWWWW",
+                "WWWWWWWWWFFFFFWWWWWWWWWW",
+                "WWWWWWWWWFFFFWWWWWWWWWWW",
+                "WWWWWWWWWFFWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWW"
+            ],
+        "palettes": [ "FO_DCLAW_WARREN_PAL" ],
+        "place_items": [
+        { "item": "trash", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 39, "repeat": [ 10, 15 ] },
+        { "item": "stash_food", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 25, "repeat": [ 4, 8 ] },
+        { "item": "stash_drugs", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 15, "repeat": [ 4, 8 ] },
+        { "item": "rare", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 20, "repeat": [ 3, 4 ] },
+        { "item": "ammo", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 40, "repeat": [ 6, 10 ] },
+        { "item": "ammo_pistol_rare", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 15, "repeat": [ 2, 6 ] },
+        { "item": "ammo_rifle_rare", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 15, "repeat": [ 3, 5 ] },
+        { "item": "antique_guns", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 15, "repeat": [ 5, 8 ] },
+        { "item": "wreckage", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 35, "repeat": [ 4, 5 ] },
+        { "item": "fallout_energy_gungroups_enhanced", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 25 },
+        { "item": "fallout_misc_itemgroup_food", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 45, "repeat": [ 5, 7 ] },
+        { "item": "mon_vault_table_enhanced_armory_guns", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 24, "repeat": [ 3, 6 ] }
+      ],
+        "place_item": [
+        { "item": "corpse_generic_human", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 80 },
+        { "item": "corpse_generic_human", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 80 },
+        { "item": "corpse_generic_human", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 80 },
+        { "item": "corpse_generic_human", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 80 },
+        { "item": "corpse_generic_human", "x": [ 8, 11 ], "y": [ 12, 14 ], "chance": 80 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 },
+        { "item": "egg_deathclaw", "x": [ 9, 11 ], "y": [ 7, 9 ], "chance": 75 }
+      ],
+        "place_monsters": [ { "monster": "GROUP_DEATHCLAW_WARREN", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.25 } ],
+        "fields" : {
+                "N": [ { "field": "fd_blood" } ]
+            },
+        "terrain": { ",": "t_region_groundcover", "N": "t_rock_floor" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_DEATHCLAW_WARREN_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "       .                ",
+                "     ...     ..         ",
+                "    ..        ..      . ",
+                "    .          ..     . ",
+                "    .           .       ",
+                "   ..                   ",
+                "   .                    ",
+                "                        ",
+                "   .                    ",
+                "   .               .    ",
+                "   ..                   ",
+                "                .       ",
+                "                ..      ",
+                "      ..        .       ",
+                "       .        .       ",
+                "       ..               ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_rock_floor"
+            }
+        }
+    }
+]

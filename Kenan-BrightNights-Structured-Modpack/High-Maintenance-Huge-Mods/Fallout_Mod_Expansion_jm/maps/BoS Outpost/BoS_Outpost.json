@@ -1,0 +1,154 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_BOSOUTPOST_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,ZZZZZZZZZZZZZZZZ,,,,",
+                ",,,,Z,,,,,,,,,,,,,,Z,,,,",
+                ",,,,Z,,,,,,,,,,,,,,Z,,,,",
+                ",,,,Z,,,,nnnnnnn,,,Z,,,,",
+                ",,,,Z,,,nnnnnnnnn,,Z,,,,",
+                ",,,,Z,,,nnwWWwnnn,,Z,,,,",
+                ",,,,Z,,,nnW<<Wnnn,,Z,,,,",
+                ",,,,Z,,,nnWFFWnnn,,Z,,,,",
+                ",,,,Z,,,,nw!!wnnn,,Z,,,,",
+                ",,,,Z,,,,nnnnnnnn,,Z,,,,",
+                ",,,,Z,,,,nnnnnnn,,,Z,,,,",
+                ",,,,Z,,nnnnnnnn,,,,Z,,,,",
+                ",,,,Z,nn,nnnnn,,nn,Z,,,,",
+                ",,,,Z,n,,,nnnn,nnnnZ,,,,",
+                ",,,,Z,nn,,nnn,,,,nnZ,,,,",
+                ",,,,ZZZZZZZnnZZZZZZZ,,,,",
+                ",,,,,,,,,,nnn,,,,,,,,,,,",
+                ",,,,,,,,,,nnn,,,,,,,,,,,",
+                ",,,,,,,,,,n,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_BOS_OUTPOSTPAL" ],
+        "faction_owner": [
+        { "id": "fac__fo_bos", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_npcs": [
+        { "class": "fo_bos_abbot", "x": 10, "y": 13}, { "class": "fo_bos_paladin", "x": 13, "y": 13}
+      ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_BOSOUTPOST_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~WWWWWWWWWWWWWWWWWWWWWW~",
+                "~WFgWTTTT|777WT_T_T_T_W~",
+                "~W*gCTTTTT*TTCT9T9T9T9W~",
+                "~WFgWWWWWm-TTWTTT*TTTTW~",
+                "~WFFWhthWWWTTW9T9T9WCWW~",
+                "~WFgWTTTt3WJ&W_T_T_WF*W~",
+                "~WFgCT*TT3W88WWWWCWWFFW~",
+                "~WFgWhtht3wwwwITiTIWFFW~",
+                "~WFFWWWWWWw>>wITiTIWFFW~",
+                "~WFFW*TTPIwffwTT*hTWFFW~",
+                "~WFgWThThWwffwWPttTWFFW~",
+                "~W*gCTtttW*TT*WWWWCWFFW~",
+                "~WFgWTtttWTTTTWFFgggFFW~",
+                "~WFFWThThWTTTTWFFgggF*W~",
+                "~WWCWWCWWW;TT;WWWWCWWWW~",
+                "~WXTXXTxxWTTTTW11TT222W~",
+                "~WTzz*zzTWTTTTW11T*11TW~",
+                "~WT{TTT{TWCWWCWT{PTP{TW~",
+                "~WTzz*zzTCFFFFCTTT*TTTW~",
+                "~WXTTTTTTW*FF*WT11T222W~",
+                "~WWWWWWWWWWWWWWWWWWWWWW~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_BOS_OUTPOSTPAL" ],
+        "place_nested": [ { "chunks": [ [ "bos_outpost_paladin_spawn", 80 ], [ "null", 20 ] ], "x": 10, "y": 17 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 80 ], [ "null", 20 ] ], "x": 13, "y": 17 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 19 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 20 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 20 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 7 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 18 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 11 },
+            { "chunks": [ [ "bos_outpost_paladin_spawn", 50 ], [ "null", 50 ] ], "x": 2, "y": 20 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 10 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 8 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 3 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 12 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 15 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 20 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 11 },
+            { "chunks": [ [ "bos_outpost_scribe_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 7 }
+        ],
+        "faction_owner": [
+        { "id": "fac__fo_bos", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_npcs": [
+        { "class": "bos_brotherhood_storescribe", "x": 12, "y": 6 },
+        { "class": "fo_bos_scribe_recruit", "x": 14, "y": 11 }
+      ],
+        "computers": {
+        "-": {
+          "name": "Brotherhood of Steel Armory Access Computer",
+          "security": 7,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_BOSOUTPOST_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "          ....          ",
+                "          ....          ",
+                "          ....          ",
+                "          ....          ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

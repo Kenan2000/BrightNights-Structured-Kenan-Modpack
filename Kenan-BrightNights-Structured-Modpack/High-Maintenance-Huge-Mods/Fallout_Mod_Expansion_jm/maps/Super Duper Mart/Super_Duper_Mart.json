@@ -1,0 +1,216 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_SUPERMART_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "QQQQQQQQQQQQQQQQQQQQQQQQ",
+                "QGGGQQQQQQGGGQQQQQQGGGQQ",
+                "QGQQQQQQQQQQQQQQQQQQQGQQ",
+                "qWWWZDDZZZWWWZZZDDZWWWqq",
+                "qW6ffffffffffffffffffWqq",
+                "qW6ffffffffffffffTcffWqq",
+                "qW6ff1W1f2W2f3W3fTTTCWqq",
+                "qW6ff1W1f2W2f3W3fffffWqq",
+                "qWWWf1W1f2W2f3W3ffff4Wqq",
+                "qqBWf1W1f2W2f3W3fff44Wqq",
+                "qqqW@ffff2W2f3W3ff5WWWqq",
+                "qqqW@ffff2W2f3W3ff5WBqqq",
+                "qqBW@fffffffffffff5Wqqqq",
+                "qWWWWWWff1W1f5W5fffWqqqq",
+                "qW7777Wff1W1f5W5ff5Wqqqq",
+                "qWNNN8Wff1W1f5W5ff5WBqqq",
+                "qWN777Wff1W1f5W5ffWWWWqq",
+                "qWNNNNnff1W1f5W5ffW44Wqq",
+                "qWNN88Wff1W1f5W5ffDf4Wqq",
+                "qWVNNNWfffffffffffDf4Wqq",
+                "qWvvvvWfffffffffffWf4Wqq",
+                "qWWWWWWWWWWWWWWWWWWWWWqq",
+                "qqqqqqqqqqqqqqqqqqq99qqq",
+                "qqqqqqqqqqqqqqqqqqqqqqqq"
+            ],
+        "palettes": [ "FO_PAL_SUPMART" ],
+        "place_npcs": [
+        { "class": "fo_wasteland_scavenger", "x": 16, "y": 1},
+        { "class": "fo_wasteland_scavenger", "x": 2, "y": 15}
+      ],
+        "place_item": [
+        { "item": "totalhack", "x": 3, "y": 20, "chance": 50 },
+        { "item": "textbook_robots", "x": 4, "y": 20, "chance": 10 },
+        { "item": "bot_protectron_inactive", "x": 2, "y": 19, "chance": 85 }
+      ],
+        "place_vehicles": [
+        { "vehicle": "shopping_cart", "x": 3, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 2, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 10, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 11, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 12, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 19, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 20, "y": 2, "chance": 20 }
+      ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_SUPERMART_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "QQQQQQQQQQQQQQQQQQQQQQQQ",
+                "QGGGQQQQQQGGGQQQQQQGGGQQ",
+                "QGQQQQQQQQQQQQQQQQQQQGQQ",
+                "qWWWZDDZZZWWWZZZDDZWWWqq",
+                "qW6ffffffffffffffffffWqq",
+                "qW6ffffffffffffffTcffWqq",
+                "qW6ff1W1f2W2f3W3fTTTCWqq",
+                "qW6ff1W1f2W2f3W3fffffWqq",
+                "qWWWf1W1f2W2f3W3ffff4Wqq",
+                "qqBWf1W1f2W2f3W3fff44Wqq",
+                "qqqW@ffff2W2f3W3ff5WWWqq",
+                "qqqW@ffff2W2f3W3ff5WBqqq",
+                "qqBW@fffffffffffff5Wqqqq",
+                "qWWWWWWff1W1f5W5fffWqqqq",
+                "qW7777Wff1W1f5W5ff5Wqqqq",
+                "qWNNN8Wff1W1f5W5ff5WBqqq",
+                "qWN777Wff1W1f5W5ffWWWWqq",
+                "qWNNNNnff1W1f5W5ffW44Wqq",
+                "qWNN88Wff1W1f5W5ffDf4Wqq",
+                "qWVNNNWfffffffffffDf4Wqq",
+                "qWvvvvWfffffffffffWf4Wqq",
+                "qWWWWWWWWWWWWWWWWWWWWWqq",
+                "qqqqqqqqqqqqqqqqqqq99qqq",
+                "qqqqqqqqqqqqqqqqqqqqqqqq"
+            ],
+        "palettes": [ "FO_PAL_SUPMART" ],
+        "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 1, "y": 0},
+        { "class": "fo_ncr_trooper", "x": 4, "y": 2},
+        { "class": "fo_ncr_trooper", "x": 4, "y": 1},
+
+        { "class": "fo_legionary_recruit", "x": 23, "y": 0},
+        { "class": "fo_legionary_recruit", "x": 19, "y": 2},
+        { "class": "fo_legionary", "x": 18, "y": 1},
+
+        { "class": "fo_legionary_recruit", "x": 16, "y": 14},
+        { "class": "fo_legionary", "x": 17, "y": 11},
+
+        { "class": "fo_ncr_trooper", "x": 6, "y": 11},
+        { "class": "fo_ncr_trooper", "x": 6, "y": 15},
+
+        { "class": "fo_wasteland_scavenger", "x": 2, "y": 15}
+      ],
+        "place_item": [
+        { "item": "totalhack", "x": 3, "y": 20, "chance": 50 },
+        { "item": "textbook_robots", "x": 4, "y": 20, "chance": 10 },
+        { "item": "bot_protectron_inactive", "x": 2, "y": 19, "chance": 85 }
+      ],
+        "place_vehicles": [
+        { "vehicle": "shopping_cart", "x": 3, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 2, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 10, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 11, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 12, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 19, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 20, "y": 2, "chance": 20 }
+      ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_SUPERMART_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "QQQQQQQQQQQQQQQQQQQQQQQQ",
+                "QGGGQQQQQQGGGQQQQQQGGGQQ",
+                "QGQQQQQQQQQQQQQQQQQQQGQQ",
+                "qWWWZDDZZZWWWZZZDDZWWWqq",
+                "qW6ffffffffffffffffffWqq",
+                "qW6ffffffffffffffTcffWqq",
+                "qW6ff1W1f2W2f3W3fTTTCWqq",
+                "qW6ff1W1f2W2f3W3fffffWqq",
+                "qWWWf1W1f2W2f3W3ffff4Wqq",
+                "qqBWf1W1f2W2f3W3fff44Wqq",
+                "qqqW@ffff2W2f3W3ff5WWWqq",
+                "qqqW@ffff2W2f3W3ff5WBqqq",
+                "qqBW@fffffffffffff5Wqqqq",
+                "qWWWWWWff1W1f5W5fffWqqqq",
+                "qW7777Wff1W1f5W5ff5Wqqqq",
+                "qWNNN8Wff1W1f5W5ff5WBqqq",
+                "qWN777Wff1W1f5W5ffWWWWqq",
+                "qWNNNNnff1W1f5W5ffW44Wqq",
+                "qWNN88Wff1W1f5W5ffDf4Wqq",
+                "qWVNNNWfffffffffffDf4Wqq",
+                "qWvvvvWfffffffffffWf4Wqq",
+                "qWWWWWWWWWWWWWWWWWWWWWqq",
+                "qqqqqqqqqqqqqqqqqqq99qqq",
+                "qqqqqqqqqqqqqqqqqqqqqqqq"
+            ],
+        "palettes": [ "FO_PAL_SUPMART" ],
+        "place_monsters": [ { "monster": "GROUP_RAIDERMART", "x": [ 0, 23 ], "y": [ 23, 2 ], "density": 2.8 } ],
+        "place_item": [
+        { "item": "totalhack", "x": 3, "y": 20, "chance": 50 },
+        { "item": "textbook_robots", "x": 4, "y": 20, "chance": 10 },
+        { "item": "bot_protectron_inactive", "x": 2, "y": 19, "chance": 85 }
+      ],
+        "place_vehicles": [
+        { "vehicle": "shopping_cart", "x": 3, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 2, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 10, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 11, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 12, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 19, "y": 2, "chance": 20 },
+        { "vehicle": "shopping_cart", "x": 20, "y": 2, "chance": 20 }
+      ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_SUPERMART_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                "   ...................  ",
+                "   ...................  ",
+                "   .................    ",
+                "   .................    ",
+                " ...................    ",
+                " ...................    ",
+                " ...................    ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                " .....................  ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

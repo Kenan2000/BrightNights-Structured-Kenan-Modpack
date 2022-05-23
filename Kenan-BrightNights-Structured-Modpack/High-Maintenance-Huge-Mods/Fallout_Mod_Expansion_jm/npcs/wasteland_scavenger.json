@@ -1,0 +1,295 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wasteland_scavenger",
+    "name_suffix": "Wasteland Scavenger",
+    "class": "fo_deathclaw_hunter_npc",
+    "attitude": 0,
+    "mission": 0,
+    "chat": "TALK_wastescav_start"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_deathclaw_hunter_npc",
+    "name": { "str": "Deathclaw Hunter" },
+    "job_description": "A hunter who is as stupid as they are brave.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_WASSCAV_worn",
+    "carry_override": "NC_WASSCAV_carry",
+    "weapon_override": "NC_WASSCAV_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASSCAV_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "wasteland_scav_boots" },
+      { "group": "wasteland_scav_pants" },
+      { "group": "wasteland_scav_shirt" },
+      { "group": "wasteland_scav_jacket" },
+      { "item": "socks" },
+      { "item": "fo_misc_pipboy", "prob": 30 },
+      { "group": "wasteland_scav_gloves" },
+      { "group": "wasteland_scav_hat" },
+      { "group": "wasteland_scav_backpack" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASSCAV_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "repeat": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "fallout_misc_itemgroup_food", "prob": 70, "repeat": [ 3, 5 ] },
+      { "group": "drops_superdupermart_drinks", "prob": 50, "repeat": [ 3, 5 ] },
+      { "group": "ammo_any_batteries_full", "prob": 85, "repeat": [ 2, 4 ] },
+      { "group": "stash_food", "prob": 65, "repeat": [ 2, 4 ] },
+      { "group": "supplies_electronics", "prob": 65, "repeat": [ 2, 4 ] },
+      { "group": "supplies_reagents_lab", "prob": 45, "repeat": [ 2, 4 ] },
+      { "group": "ammo_pistol_fallout_common", "prob": 65, "repeat": [ 1, 2 ] },
+      { "group": "ammo_heavy_fallout", "prob": 65, "repeat": [ 1, 2 ] },
+      { "group": "ammo_shotgun_fallout", "prob": 65, "repeat": [ 1, 2 ] },
+      { "item": "item_fo_waterchip", "prob": 15 },
+      { "item": "item_fo_glow_holotape", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASSCAV_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "wasteland_scav_ranged" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_boots",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "boots", "prob": 15 },
+      { "item": "boots_bunker", "prob": 15 },
+      { "item": "boots_combat", "prob": 20 },
+      { "item": "boots_fur", "prob": 15 },
+      { "item": "boots_hiking", "prob": 15 },
+      { "item": "boots_lsurvivor", "prob": 15 },
+      { "item": "boots_rubber", "prob": 15 },
+      { "item": "boots_scrap", "prob": 15 },
+      { "item": "boots_survivor", "prob": 15 },
+      { "item": "sneakers", "prob": 15 },
+      { "item": "lowtops", "prob": 15 },
+      { "item": "boots_winter", "prob": 15 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_pants",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 15 },
+      { "item": "pants", "prob": 15 },
+      { "item": "pants_army", "prob": 20 },
+      { "item": "pants_cargo", "prob": 15 },
+      { "item": "shorts", "prob": 15 },
+      { "item": "technician_pants_gray", "prob": 15 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_shirt",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "blazer", "prob": 15 },
+      { "item": "dress_shirt", "prob": 15 },
+      { "item": "hoodie", "prob": 20 },
+      { "item": "longshirt", "prob": 15 },
+      { "item": "postman_shirt", "prob": 15 },
+      { "item": "sweater", "prob": 15 },
+      { "item": "sweatshirt", "prob": 15 },
+      { "item": "technician_shirt_gray", "prob": 15 },
+      { "item": "tshirt", "prob": 15 },
+      { "item": "vest_leather", "prob": 15 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_jacket",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "bunker_coat", "prob": 15 },
+      { "item": "coat_lab", "prob": 15 },
+      { "item": "coat_rain", "prob": 20 },
+      { "item": "duster", "prob": 15 },
+      { "item": "duster_leather", "prob": 15 },
+      { "item": "duster_survivor", "prob": 15 },
+      { "item": "jacket_army", "prob": 15 },
+      { "item": "jacket_flannel", "prob": 15 },
+      { "item": "jacket_jean", "prob": 15 },
+      { "item": "jacket_light", "prob": 15 },
+      { "item": "sleeveless_duster_survivor", "prob": 15 },
+      { "item": "trenchcoat_survivor", "prob": 15 },
+      { "item": "jacket_leather", "prob": 15 },
+      { "item": "aep_suit", "prob": 5 },
+      { "item": "armor_larmor", "prob": 15 },
+      { "item": "armor_nomad", "prob": 45 },
+      { "item": "armor_nomad_light", "prob": 35 },
+      { "item": "armor_plarmor", "prob": 30 },
+      { "item": "armor_scavenger", "prob": 90 },
+      { "item": "armor_scrapsuit", "prob": 80 },
+      { "item": "armor_combat_light", "prob": 15 },
+      { "item": "hazmat_suit", "prob": 5 },
+      { "item": "lsurvivor_suit", "prob": 25 },
+      { "item": "survivor_suit", "prob": 20 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_gloves",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "chainmail_hands", "prob": 15 },
+      { "item": "fire_gauntlets", "prob": 15 },
+      { "item": "gloves_fingerless", "prob": 20 },
+      { "item": "gloves_fingerless_mod", "prob": 15 },
+      { "item": "gloves_leather", "prob": 15 },
+      { "item": "gloves_light", "prob": 15 },
+      { "item": "gloves_rubber", "prob": 15 },
+      { "item": "gloves_survivor", "prob": 15 },
+      { "item": "gloves_tactical", "prob": 15 },
+      { "item": "gloves_work", "prob": 15 },
+      { "item": "gloves_wraps", "prob": 15 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_hat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "beret", "prob": 15 },
+      { "item": "cowboy_hat", "prob": 15 },
+      { "item": "hat_boonie", "prob": 20 },
+      { "item": "hat_cotton", "prob": 15 },
+      { "item": "helm_nullifier", "prob": 15 },
+      { "item": "hat_general_green", "prob": 15 },
+      { "item": "helmet_biker_retro", "prob": 60 },
+      { "item": "hat_peoples", "prob": 15 },
+      { "item": "helmet_fiend", "prob": 15 },
+      { "item": "helmet_combat_light", "prob": 15 },
+      { "item": "hat_hard_hooded", "prob": 15 },
+      { "item": "hat_hunting", "prob": 15 },
+      { "item": "straw_hat", "prob": 15 },
+      { "item": "postman_hat", "prob": 15 },
+      { "item": "tinfoil_hat", "prob": 15 },
+      { "item": "pot_helmet", "prob": 35 },
+      { "item": "helmet_army", "prob": 35 },
+      { "item": "tac_fullhelmet", "prob": 15 },
+      { "item": "tac_helmet", "prob": 15 },
+      { "item": "firehelmet", "prob": 15 },
+      { "item": "helmet_ball", "prob": 15 },
+      { "item": "helmet_barbute", "prob": 15 },
+      { "item": "helmet_bike", "prob": 15 },
+      { "item": "helmet_motor", "prob": 15 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_backpack",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "backpack", "prob": 15 },
+      { "item": "backpack_hiking", "prob": 15 },
+      { "item": "backpack_leather", "prob": 20 },
+      { "item": "backpack_tactical_large", "prob": 15 },
+      { "item": "boxpack", "prob": 15 },
+      { "item": "rucksack", "prob": 15 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "wasteland_scav_ranged",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "wattz_1000", "prob": 10 },
+      { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "wattz_1000_magneto", "prob": 10 },
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 20 },
+      { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "aer9", "prob": 75 },
+      { "item": "heavy_battery_cell", "ammo-item": "battery", "charges": 1000, "container-item": "aer9_tribeam", "prob": 10 },
+      { "item": "heavy_battery_cell", "ammo-item": "battery", "charges": 1000, "container-item": "aer14_prototype", "prob": 10 }
+
+    ]
+  },
+  {
+    "id": "TALK_wastescav_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Why are you trying to talk to me, don't you know I'm busy scavving!",
+      "no": "Why are you trying to talk to me, don't you know I'm busy scavving!"},
+    "responses": [
+      {
+        "text": "A bit rude, but what are you doing here anyway?",
+        "topic": "TALK_wastescav_infotown"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_wastescav_recruit"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastescav_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Oh, I'm just scavenging out here for various odds and ends: food, canned goods, old robots, weapons, things of that nature. It's somewhat difficult at times, but I think it's fulfilling.",
+      "no": "Oh, I'm just scavenging out here for various odds and ends: food, canned goods, old robots, weapons, things of that nature. It's somewhat difficult at times, but I think it's fulfilling."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_wastescav_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastescav_recruit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am ready to join you on your journey!",
+      "no": "I am ready to join you on your journey!"},
+    "responses": [
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
+    ]
+  }
+]

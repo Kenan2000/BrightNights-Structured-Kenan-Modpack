@@ -1,0 +1,118 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_ncr_trooper",
+    "name_suffix": "NCR Trooper",
+    "class": "fo_ncr_trooper_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_ncr_trooper_start",
+    "faction": "fac__fo_NCR"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_ncr_trooper_npc",
+    "name": { "str": "NCR Trooper" },
+    "job_description": "Is a soldier of the New California Republic.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_NCRTROOP_worn",
+    "carry_override": "NC_NCRTROOP_carry",
+    "weapon_override": "NC_NCRTROOP_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NCRTROOP_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "ncr_armor" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "backpack_leather", "prob": 35 },
+      { "item": "bandolier_rifle", "prob": 35 },
+      { "item": "fo_ncr_trooper_helmet", "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NCRTROOP_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "item": "stanag30", "charges": 30, "repeat": [ 3, 5 ] },
+      { "item": "stanag10", "charges": 10, "prob": 20 },
+      { "item": "grenade", "prob": 15 },
+      { "item": "223", "prob": 85, "charges": [ 15, 25 ] },
+      { "group": "drops_ncr_trooper_melee", "prob": 45 },
+      { "group": "ammo_rifle_common", "prob": 65, "charges": [ 15, 35 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NCRTROOP_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "fo_ncr_service_rifle", "charges": 30, "prob": 80 },
+      { "item": "carbine_assault", "charges": 30, "prob": 10 },
+      { "item": "colt6250", "charges": 30, "prob": 10 },
+      { "item": "10mmsmg", "charges": 30, "prob": 10 },
+      { "item": "greasegun", "charges": 30, "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_trooper_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 3 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_ncr_trooper_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "We won't go quietly. The Legion can count on that.", "I just lost a month's worth of caps.", "It's been a long tour, all I can think about now is going home.", "When I got this assignment I was hoping there would be more gambling.", "Patrolling the Mojave almost makes you wish for a nuclear winter." ],
+      "no": [ "We won't go quietly. The Legion can count on that.", "I just lost a month's worth of caps.", "It's been a long tour, all I can think about now is going home.", "When I got this assignment I was hoping there would be more gambling.", "Patrolling the Mojave almost makes you wish for a nuclear winter." ]
+        },
+    "responses": [
+      {
+        "text": "So you're a soldier for the NCR, what's that like?", "topic": "TALK_fo_ncr_trooper_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_ncr_trooper_go",
+    "type": "talk_topic",
+    "dynamic_line": "Pretty rough, all things considered, especially now that the war with the Legion is heating up. Supply lines are spread thin with seemingly endless committments in different hotspots, so adequate support is spotty at best. Casualties trickle in seemingly endlessly, and with no end to the war in sight.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_vault_npc_friendly_sports",
+    "name_suffix": "Vault Athlete",
+    "class": "fo_vault_npc_friendly_sports_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_fre_vault_sports_start",
+    "faction": "foc_vault_friendly"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_vault_npc_friendly_sports_npc",
+    "name": { "str": "Vault Athlete" },
+    "job_description": "Is a friendly member of a vault.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ 0, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 1 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_FREVAULT_ATL_worn",
+    "carry_override": "NC_FREVAULT_ATL_carry",
+    "weapon_override": "NC_FREVAULT_ATL_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_ATL_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jumpsuit_vault" },
+      { "item": "socks" },
+      { "item": "boots_rubber" },
+      { "item": "football_armor", "prob": 60 },
+      { "item": "armguard_hard", "prob": 60 },
+      { "item": "helmet_ball", "prob": 60 },
+      { "item": "legguard_hard", "prob": 60 },
+      { "item": "mask_hockey", "prob": 10 },
+      { "item": "fo_misc_pipboy", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_ATL_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "repeat": [ 1, 3 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "fallout_10mm_maggroup", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_ATL_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_vault_dweller_melee_athlete", "prob": 70 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_vault_dweller_melee_athlete",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "vault_knife", "prob": 20 },
+      { "item": "super_sledge", "prob": 1 },
+      { "item": "fo_powfist", "prob": 1 },
+      { "item": "bat", "prob": 65 },
+      { "item": "nailbat", "prob": 20 }
+
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_sports_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?" ],
+      "no": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem?" ]
+        },
+    "responses": [
+      {
+        "text": "So you're a vault athlete, what, do you like playing football or something?", "topic": "TALK_amg_fre_vault_sports_go"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_amg_fre_vault_sports_recruit"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_sports_go",
+    "type": "talk_topic",
+    "dynamic_line": "Yeah, vaultball's pretty fun. I one of the best players on the team, I just wish people would respect me as being more than that, I kind of want to see the outside world, you know? There's a world beyond the fifty yard line or the third base, and I want to see it.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_sports_recruit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am ready to join you on your journey!",
+      "no": "I am ready to join you on your journey!"},
+    "responses": [
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
+    ]
+  }
+]

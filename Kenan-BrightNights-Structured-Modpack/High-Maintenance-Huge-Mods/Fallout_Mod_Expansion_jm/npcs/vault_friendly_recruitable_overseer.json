@@ -1,0 +1,148 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_vault_npc_overseer",
+    "name_suffix": "Vault Overseer",
+    "class": "fo_vault_npc_overseer_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_overseer_vault_start",
+    "mission_offered": "MISSION_FO_GET_WATER_CHIP",
+    "faction": "foc_vault_friendly"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_vault_npc_overseer_npc",
+    "name": { "str": "Vault Overseer" },
+    "job_description": "Is a friendly member of a vault.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "trait": "hair_white_medium" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_OVERVAULT_worn",
+    "carry_override": "NC_OVERVAULT_carry",
+    "weapon_override": "NC_OVERVAULT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_OVERVAULT_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jumpsuit_vault" },
+      { "item": "socks" },
+      { "item": "boots_rubber" },
+      { "item": "fo_misc_pipboy" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_OVERVAULT_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "item": "colt6250mag", "charges": 12, "repeat": [ 2, 3 ] },
+      { "item": "10mm", "prob": 85, "charges": [ 5, 35 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_OVERVAULT_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "colt6250", "charges": 12 }
+    ]
+  },
+  {
+    "id": "TALK_amg_overseer_vault_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some people talking about leaving the vault, they better watch what they say. It gives people bad ideas.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?", "What's a woman like you want with me anyway, can't you see I'm very busy?" ],
+      "no": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some people talking about leaving the vault, they better watch what they say. It gives people bad ideas.", "Hello, how's it going?", "Do you need anything?", "Is there a problem?", "What's a guy like you want with me anyway, can't you see I'm very busy?" ]
+        },
+    "responses": [
+      {
+        "text": "So what's it like being a vault overseer?", "topic": "TALK_amg_overseer_vault_go"
+      },
+      {
+        "text": "Do you have any tasks for me?", "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_overseer_vault_go",
+    "type": "talk_topic",
+    "dynamic_line": "It's by no means an easy job, much as people might think that Overseers like me and those before me just sit at a desk and lazily push papers all day while others bear the brunt of daily vault tasks. Administration, morale, personnel management - there's a lot more that goes into this job than people think. It's an immense burden that can strain even the most naturally talented of leaders. I almost envy those beneath me, it's not all their fault if somebody messes up or the vault collapses in itself.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_FO_GET_WATER_CHIP",
+    "type": "mission_definition",
+    "name": "Retrieve a extra water chip from the irradiated vault",
+    "description": "Retrieve a extra water chip from the irradiated vault for the safety of your vault.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "value": 150000,
+    "assign_mission_target": {
+    "om_special": "Irradiated Vault",
+    "reveal_radius": 2,
+    "search_range": 180
+  },
+    "item": "item_fo_waterchip",
+    "count": 1,
+    "end": {
+      "effect": [
+        { "u_buy_item": "jumpsuit_vault_13_armored", "count": 1 },
+        { "u_buy_item": "aer9", "count": 1 },
+        { "u_buy_item": "armor_combat_light", "count": 1 },
+        { "u_buy_item": "helmet_combat_light", "count": 1 },
+        { "u_buy_item": "colt6250_weathered", "count": 1 },
+        { "u_buy_item": "colt6250mag", "count": 2 },
+        { "u_buy_item": "5mm", "count": 250 },
+        { "u_buy_item": "10mmap", "count": 20 },
+        { "u_buy_item": "10mm_incendiary", "count": 20 },
+        { "u_buy_item": "10mm", "count": 135 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need you to go outside of our vault in order to retrieve a very rare item that is of crucial importance to our continued survival. I'll be blunt: we're running out of water since our old water chip finally died, and we lack any spares. Without that chip, our vault can't process water, and without water we will perish. I can't risk sending out a large party when, so you'll need to do it. We know that other vaults in the area have extra water chips, there's one on our old maps that has at least one spare, and we would like you to investigate it.",
+      "offer": "I need you to go outside of our vault in order to retrieve a very rare item that is of crucial importance to our continued survival. I'll be blunt: we're running out of water since our old water chip finally died, and we lack any spares. Without that chip, our vault can't process water, and without water we will perish. I can't risk sending out a large party when, so you'll need to do it. We know that other vaults in the area have extra water chips, there's one on our old maps that has at least one spare, and we would like you to investigate it.",
+      "accepted": "Great news, now go out and find it for me, for all of us, really.",
+      "rejected": "Oh great! I'll just find somebody else then since you're so selfish.",
+      "advice": "Look around at other various vaults in our vicinity. One of them is bound to have an extra water chip laying around somewhere.",
+      "inquire": "Have you found the chip yet?",
+      "success": "Amazing work, you've saved our vault. I cannot thank you enough",
+      "success_lie": "That's odd, I don't really know what to say.",
+      "failure": "Oh well, at least you tried. That's more than what most people do around here."
+    }
+  }
+]

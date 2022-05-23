@@ -1,0 +1,348 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_RAD_VAULT_1_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "WWWWWWWWWWWWWWWWWWWWW~~~",
+                "W*FF)FFFFFFFFFFF)FF*W~~~",
+                "WFFFFFFFFFFFFFFFFFFFW~~~",
+                "WFFWWWWWWWWWWWWWFFwwW~~~",
+                "WFgW]GGG}W}GGG]WgFw4W~~~",
+                "WFgCGGhGGWGGhGGCgFCFW~~~",
+                "WFgWPHHG3W3GHHPWgFw4W~~~",
+                "WFFWWWWWWWWWWWWWFFwwW~~~",
+                "WFgW]GGG}W}GGG]WgFw4W~~~",
+                "WFgCGGhGGWGGhGGCgFCFW~~~",
+                "WFgWPHHG3W3GHHPWgFw4W~~~",
+                "WFFWWWWWWWWWWWWWwCwwW~~~",
+                "WFFW++%WWWn.nW*FFFF*W~~~",
+                "WFFWFFFWWWNNNW[FFFFFW~~~",
+                "WWCWFF)F%WEN#WFuFuFFW~~~",
+                "FFFWCWFF+WWCWWFFFFFFW~~~",
+                "FFFFFCFF+WYNMw[uFuFFW~~~",
+                "WFFFFWWWWW|N{wFFFFFFW~~~",
+                "W*FFFFWDg*/NNCFuFuFFW~~~",
+                "WW*FFFWdgNNNmwFFIFIFW~~~",
+                "WWWWFFWWWWWWWWWWWWWWW~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL" ],
+        "set": [
+            { "square": "radiation", "amount": 10, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 0, 19 ], "y": [ 4, 23 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_RAD_VAULT_1_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~W3yyGPuuuW5YpYpWDaFPW",
+                "~~~WGyyGGGhuW5TpTpWFFFFW",
+                "~~~WGGGGG%WWWM{T)PWaaFdW",
+                "~~~WGGGGG%WWWWWCWWWFFFFW",
+                "~~~W*ggg)%WFFFFFFFCFFFdW",
+                "~~~WWWCWWWWFFWWWWWWaaF6W",
+                "~~~WIgggF)WFFWLLLLWDFF6W",
+                "~~~WIuuuFFWFFWPuFFWWWCWW",
+                "~~~WFFhuFgWgFWFhF*IIWF]W",
+                "~~~WFFPuFgCgFWFFFFFFWFFW",
+                "~~~WiuuuFgWgFWPuFFuPWFFW",
+                "~~~WigggF)WF]WFhFFhFWFFW",
+                "~~~WWWCWWWWCWWFFFFFFWF]W",
+                "~~~W!gggW((F=WPuFFuPWCWW",
+                "~~~W!'FFCFF)/WFhFFhFWF*F",
+                "~~~WaF)aW((F=WiIFIiFCFFF",
+                "~~~WaFFaWWWWWWWWWWWCWCWW",
+                "~~~W!'FFCFFFFFFFFCFFCF]W",
+                "~~~W!FaaW*FFFFFF*W*FW]WW",
+                "~~~WWWWWWWWWWWWWWWFFWWWW"
+            ],
+        "palettes": [ "FO_VAULTPAL_ADMIN" ],"place_item": [
+        { "item": "item_fo_waterchip", "x": 5, "y": 13, "chance": 100 }
+      ],
+        "set": [
+            { "square": "radiation", "amount": 10, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 4, 23 ], "y": [ 4, 23 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_RAD_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W+++*[;[WIILSFWFFFFWW",
+                "~~~W+MM_=_=W2FPjFWWFFFFW",
+                "~~~W+MM=opoW2FFFFWWW*FFW",
+                "~~~W=_=_AAAWii%F%WWWWFFW",
+                "~~~WwCwWJJJWWWWCWW]]WFFC",
+                "~~~WFFFW!ZvOx!WFFFFFFFFW",
+                "~~~WF$FCO)FF)OCF)FFFFF*W",
+                "~~~WFFFWllOXXzWFFWWWWWWW",
+                "~~~WWCWWWWWWWWWFgWGG)HHW",
+                "~~~W*FFFFFFFFFCFgCGGGhHW",
+                "~~~WFFFFFFFFFFWFgWyyGG3W",
+                "~~~WWCWWWWWWWWW*FWWWWWWW",
+                "~~~W)FFFFFFFF)WFgWGG)HHW",
+                "~~~WFWwJwwJwWFWFgCGGGhHW",
+                "~~~WFJlm||kKJFWFgWyyGG3W",
+                "~~~WFCTTT)TTCFCFFWWWWWWW",
+                "~~~WFJiT||PTJFWFgWGG)HHW",
+                "~~~WFWIT||T`WFWFgCGGGhHW",
+                "~~~W*Wg6666gW*WFgWyyGG3W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPALCONTROL" ],
+        "set": [
+            { "square": "radiation", "amount": 10, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 4, 21 ], "y": [ 1, 19 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_RAD_VAULT_1_4" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "WWWWWCWWWWWWWWWWWWWWW~~~",
+                "WW]WFF]FFFFFFFFFFFF*W~~~",
+                "W*FCFFFFFFFFFFFFFFFFW~~~",
+                "WFFWWWWWWWWWWwCwwWFFW~~~",
+                "FFFWjF;FFFFlW*FF4WFFW~~~",
+                "FFFWj);FFFFFWFFuhWFFW~~~",
+                "WFFWjF;FFFFlWiFuuWFFW~~~",
+                "WFFWWCWWWWWWWIFLLWFFW~~~",
+                "WFFW]F)w1122WwCwwWFFW~~~",
+                "WFFWFF-wFFFFWAFmgWgFW~~~",
+                "WFFW+FF&FFFFWFF)gCgFW~~~",
+                "WFFW=FFw=133WAF|gWgFW~~~",
+                "WFFWWCWWWWWWWwCwwWFFW~~~",
+                "WFFFFFFFFF*gg*FFFWFFW~~~",
+                "WFFFF)FFF{FggF{FFWFFW~~~",
+                "WWWWCWJWWFFggFFFFCFFW~~~",
+                "WIiFF)FbWFggggFFFWFFW~~~",
+                "W[FFFFFPwwCwwCwwWWCwW~~~",
+                "WFFFFFK?JFggggFw5FF5W~~~",
+                "W//FLL??JFMggMFw5*m5W~~~",
+                "WWWWWWWWWFMggMFWWWWWW~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_ENTRANCE" ],
+        "set": [
+            { "square": "radiation", "amount": 10, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.6 } ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Security Armory Access Computer",
+          "security": 5,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_RAD_VAULT_D" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~WWWW&&&&WWWW~~~~~~",
+                "~~~~~~WWWFFFFFFWWW~~~~~~",
+                "~~~~~~WWW-BBBBBWWW~~~~~~",
+                "~~~~~~~fMBBBBBBMf~~~~~~~",
+                "~~~~~~~fM*BBBB*Mf~~~~~~~",
+                "~~~~~~~fMMggggMMf~~~~~~~",
+                "~~~~~~~~ffffffffk~~~~~~~",
+                "~~~~~~~~fffffffff~~~~~~~",
+                "~~~~~~~~~fffffff~~~~~~~~",
+                "~~~~~~~~~fkfffff~~~~~~~~",
+                "~~~~~~~~~ffkffff~~~~~~~~",
+                "~~~~~~~~~fffffff~~~~~~~~",
+                "~~~~~~~~ffffffff~~~~~~~~",
+                "~~~~~~~ffffffffk~~~~~~~~",
+                "~~~~~~~fffffffff~~~~~~~~",
+                "~~~~~~~fkfffffff~~~~~~~~",
+                "~~~~~~~ffff<<fff~~~~~~~~",
+                "~~~~~~~ffff<<ffff~~~~~~~",
+                "~~~~~~~ffffffffff~~~~~~~",
+                "~~~~~~~ffffffffff~~~~~~~",
+                "~~~~~~~~fffffkfff~~~~~~~",
+                "~~~~~~~~~~~fffff~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_DOOR" ],
+        "set": [
+            { "square": "radiation", "amount": 10, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "place_item": [
+        { "item": "corpse_generic_human", "x": 13, "y": 7, "chance": 30 },
+        { "item": "corpse_generic_human", "x": 10, "y": 14, "chance": 30 },
+        { "item": "corpse_generic_human", "x": 9, "y": 19, "chance": 25 },
+        { "item": "corpse_generic_human", "x": 15, "y": 17, "chance": 25 }
+      ],
+        "computers": {
+        "-": {
+          "name": "Vault Access Console",
+          "security": 2,
+          "options": [ { "name": "Unlock Vault Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_RAD_VAULT_D_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................"
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_RAD_VAULT_H" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~```````~~~~~~~~~",
+                "~~~~~~```~~~~~~~~~~~~~~~",
+                "~~~~~~~~ffffffff~~~~~~~~",
+                "~~~~~~~~fwwWWwwf~~~~`~~~",
+                "~~~~~~~~fwggggwf```~`~~~",
+                "~~~~~~~`fWg<<gCf`````~~~",
+                "~~~~~~~`fCg<<gWf`~~``~~~",
+                "~~~~~~~~fwggggwf~~~~~~~~",
+                "~~~~~~~~fwwWWwwf~~~~~~~~",
+                "~~~~~~~`ffffffff~~~~~~~~",
+                "~~~~~~~`~~```~~~~~~~~~~~",
+                "~~~~~~~~~~````~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_HOUSE" ],
+        "set": [
+            { "square": "radiation", "amount": 10, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_RAD_VAULT_H_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

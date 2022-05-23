@@ -1,0 +1,233 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics"
+    ],
+    "tiles-new": [
+      {
+        "file": "Fallout_CDDA_npc_sprite.png",
+        "tiles": [
+          {
+            "id": "mon_fallout_ghoul",
+            "fg": [
+              { "weight": 1, "sprite": 3 },
+              { "weight": 1, "sprite": 4 },
+              { "weight": 1, "sprite": 5 },
+              { "weight": 1, "sprite": 6 },
+              { "weight": 1, "sprite": 7 },
+              { "weight": 1, "sprite": 8 },
+              { "weight": 1, "sprite": 9 },
+              { "weight": 1, "sprite": 10 },
+              { "weight": 1, "sprite": 11 },
+              { "weight": 1, "sprite": 12 },
+              { "weight": 1, "sprite": 13 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_fallout_ghoul_vault",
+            "fg": [ { "weight": 1, "sprite": 14 }, { "weight": 1, "sprite": 15 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_fallout_ghoul_roamer",
+            "fg": [
+              { "weight": 1, "sprite": 16 },
+              { "weight": 1, "sprite": 17 },
+              { "weight": 1, "sprite": 18 },
+              { "weight": 1, "sprite": 19 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_fallout_ghoul_runner",
+            "fg": [
+              { "weight": 1, "sprite": 20 },
+              { "weight": 1, "sprite": 21 },
+              { "weight": 1, "sprite": 22 },
+              { "weight": 1, "sprite": 23 },
+              { "weight": 1, "sprite": 24 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_fallout_ghoul_reaver",
+            "fg": [
+              { "weight": 1, "sprite": 25 },
+              { "weight": 1, "sprite": 26 },
+              { "weight": 1, "sprite": 27 },
+              { "weight": 1, "sprite": 28 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_radghoul",
+            "fg": [ { "weight": 1, "sprite": 29 }, { "weight": 1, "sprite": 30 }, { "weight": 1, "sprite": 31 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_ghoul_raider",
+            "fg": [ { "weight": 1, "sprite": 32 }, { "weight": 1, "sprite": 33 }, { "weight": 1, "sprite": 34 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_raider_lite",
+            "fg": [
+              { "weight": 1, "sprite": 35 },
+              { "weight": 1, "sprite": 36 },
+              { "weight": 1, "sprite": 37 },
+              { "weight": 1, "sprite": 38 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_raider_melee",
+            "fg": [ { "weight": 1, "sprite": 39 }, { "weight": 1, "sprite": 40 }, { "weight": 1, "sprite": 41 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_gun_raider",
+            "fg": [ { "weight": 1, "sprite": 42 }, { "weight": 1, "sprite": 43 }, { "weight": 1, "sprite": 44 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_rifle_raider",
+            "fg": [ { "weight": 1, "sprite": 45 }, { "weight": 1, "sprite": 46 }, { "weight": 1, "sprite": 47 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_raider_junkie",
+            "fg": [ { "weight": 1, "sprite": 48 }, { "weight": 1, "sprite": 49 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_vault_wanderer",
+            "fg": [ { "weight": 1, "sprite": 50 }, { "weight": 1, "sprite": 51 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_vault_dweller",
+            "fg": [ { "weight": 1, "sprite": 52 }, { "weight": 1, "sprite": 53 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_huboligist",
+            "fg": [ { "weight": 1, "sprite": 54 }, { "weight": 1, "sprite": 55 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_ghoul_chinese",
+            "fg": [ { "weight": 1, "sprite": 56 }, { "weight": 1, "sprite": 57 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "mon_power_arm_a", "fg": 58, "bg": 2, "rotates": false },
+          { "id": "mon_power_arm_b", "fg": 59, "bg": 2, "rotates": false },
+          { "id": "mon_chinese_shock_ghoul", "fg": 60, "bg": 2, "rotates": false },
+          {
+            "id": "mon_lobotomite_a",
+            "fg": [ { "weight": 1, "sprite": 61 }, { "weight": 1, "sprite": 62 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "overlay_wielded_fo_powfist", "fg": 63, "rotates": false },
+          { "id": "fo_powfist", "fg": 64, "rotates": false },
+          { "id": "mon_protectron_army", "fg": 65, "bg": 2, "rotates": false },
+          { "id": "broken_protectron_army", "fg": 66, "bg": 2, "rotates": false },
+          { "id": "bot_protectron_army_inactive", "fg": 66, "bg": 2, "rotates": false },
+          { "id": "mon_floating_eye_bot", "fg": 67, "bg": 2, "rotates": false },
+          { "id": "broken_floating_eye_bot", "fg": 68, "bg": 2, "rotates": false },
+          { "id": "mon_floating_eye_bot_inactive", "fg": 68, "bg": 2, "rotates": false },
+          { "id": "mon_assaultron_army", "fg": 69, "bg": 2, "rotates": false },
+          { "id": "broken_assaultron_army", "fg": 70, "bg": 2, "rotates": false },
+          { "id": "mon_assaultron_army_inactive", "fg": 70, "bg": 2, "rotates": false },
+          { "id": "fo_misc_pipboy", "fg": 71, "rotates": false },
+          { "id": "overlay_worn_fo_misc_pipboy", "fg": 72, "rotates": false },
+          { "id": "t_vault_floor_olight", "fg": 73, "rotates": false },
+          { "id": "t_vault_door_c", "fg": 74, "rotates": false },
+          { "id": "t_vault_door_o", "fg": 75, "rotates": false },
+          { "id": "f_fallout_magreel", "fg": 76, "rotates": false },
+          { "id": "f_fallout_server", "fg": 77, "rotates": false },
+          { "id": "item_fo_waterchip", "fg": 78, "rotates": false },
+          { "id": "item_fo_glow_holotape", "fg": 79, "rotates": false },
+          { "id": "overlay_female_worn_fo_scribe_coat", "fg": 80, "rotates": false },
+          { "id": "overlay_male_worn_fo_scribe_coat", "fg": 81, "rotates": false },
+          { "id": "fo_scribe_coat", "fg": 82, "rotates": false },
+          { "id": "overlay_wielded_fo_ncr_service_rifle", "fg": 83, "rotates": false },
+          { "id": "fo_ncr_service_rifle", "fg": 84, "rotates": false },
+          { "id": "overlay_worn_fo_ncr_trooper_helmet", "fg": 85, "rotates": false },
+          { "id": "fo_ncr_trooper_helmet", "fg": 86, "rotates": false },
+          { "id": "overlay_wielded_aer9", "fg": 87, "rotates": false },
+          { "id": "aer9", "fg": 88, "rotates": false },
+          { "id": "overlay_wielded_aer9_tribeam", "fg": 87, "rotates": false },
+          { "id": "aer9_tribeam", "fg": 88, "rotates": false },
+          { "id": "overlay_wielded_aer14_prototype", "fg": 87, "rotates": false },
+          { "id": "aer14_prototype", "fg": 88, "rotates": false },
+          { "id": "overlay_wielded_laser_pistol_aep", "fg": 89, "rotates": false },
+          { "id": "laser_pistol_aep", "fg": 90, "rotates": false },
+          { "id": "overlay_wielded_laser_pistol_aep_pewpew", "fg": 89, "rotates": false },
+          { "id": "laser_pistol_aep_pewpew", "fg": 90, "rotates": false },
+          { "id": "overlay_wielded_wattz_2000", "fg": 91, "rotates": false },
+          { "id": "wattz_2000", "fg": 92, "rotates": false },
+          { "id": "fo_dobb_frozenpod", "fg": 93, "rotates": false },
+          { "id": "overlay_male_mutation_mut_fo_ghoulification", "fg": 94, "rotates": false },
+          { "id": "overlay_female_mutation_mut_fo_ghoulification", "fg": 95, "rotates": false }
+        ],
+        "//": "range 1 to 368",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      },
+      {
+        "file": "Fallout_CDDA_npc_large.png",
+        "tiles": [
+          { "id": "mon_supmutant_brute_a", "fg": 1, "rotates": false },
+          { "id": "mon_supmutant_brute_b", "fg": 2, "rotates": false },
+          { "id": "mon_supmutant_master_a", "fg": 3, "rotates": false },
+          { "id": "mon_supmutant_master_b", "fg": 4, "rotates": false },
+          { "id": "mon_sup_behemoth", "fg": 5, "rotates": false },
+          { "id": "mon_sup_nightkin", "fg": 6, "rotates": false },
+          { "id": "mon_supmutant", "fg": 7, "rotates": false },
+          { "id": "mon_supmutant_vault", "fg": 8, "rotates": false },
+          { "id": "mon_fallout_mistergutsy", "fg": 9, "rotates": false },
+          { "id": "broken_fallout_mistergutsy", "fg": 10, "rotates": false },
+          { "id": "dep_fallout_gutsy", "fg": 10, "rotates": false },
+          { "id": "mon_fallout_misterhandy", "fg": 11, "rotates": false },
+          { "id": "broken_fallout_misterhandy", "fg": 12, "rotates": false },
+          { "id": "dep_fallout_handy", "fg": 12, "rotates": false }
+        ],
+        "//": "range 369 to 384",
+        "sprite_width": 64,
+        "sprite_height": 80,
+        "sprite_offset_x": -16,
+        "sprite_offset_y": -48
+      }
+    ]
+  }
+]

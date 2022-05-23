@@ -1,0 +1,98 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaulth_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_hostile","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaulth_athlete_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_hostile_sports","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaulth_armory_npc_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_hostile_armory","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaulth_clone_npc_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_hostile_gary","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaultf_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_friendly","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaultf_security",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_friendly_armory","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaultf_athlete",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_friendly_sports","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaultf_mechanic",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_mechanic","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "vaultf_security_recruit",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_vault_npc_recruit_security","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "bos_outpost_paladin_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_bos_paladin_base","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "bos_outpost_scribe_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_bos_scribe","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "dclaw_hunter_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_deathclaw_hunter","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "leg_recruit_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_legionary_recruit","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "leg_prime_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_legionary","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "leg_vet_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_legionary_veteran","x":0,"y":0}]}
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "nested_mapgen_id": "ncr_soldier_spawn",
+        "object": {"mapgensize": [1,1], "place_npcs": [{"class":"fo_ncr_trooper","x":0,"y":0}]}
+    }
+]

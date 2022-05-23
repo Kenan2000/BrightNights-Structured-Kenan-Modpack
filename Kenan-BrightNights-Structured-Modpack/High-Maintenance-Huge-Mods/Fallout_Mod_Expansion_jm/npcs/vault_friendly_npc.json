@@ -1,0 +1,181 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_vault_npc_friendly",
+    "name_suffix": "Vault Dweller",
+    "class": "fo_vault_npc_friendly_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_fre_vault_start",
+    "faction": "foc_vault_friendly"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_vault_npc_friendly_npc",
+    "name": { "str": "Vault Dweller" },
+    "job_description": "Is a friendly member of a vault.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_FREVAULT_worn",
+    "carry_override": "NC_FREVAULT_carry",
+    "weapon_override": "NC_FREVAULT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jumpsuit_vault" },
+      { "item": "socks" },
+      { "item": "boots_rubber" },
+      { "item": "backpack", "prob": 35 },
+      { "item": "fo_misc_pipboy", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "repeat": [ 1, 3 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "fallout_10mm_maggroup", "prob": 40 },
+      { "item": "10mm", "prob": 85, "charges": [ 5, 35 ] },
+      { "group": "ammo_pistol_common", "prob": 65, "charges": [ 15, 35 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_vault_dweller_melee", "prob": 30 },
+      { "group": "mon_vault_vault_dweller_guns", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_vault_dweller_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "vault_knife", "prob": 50 },
+      { "item": "fo_powfist", "prob": 3 },
+      { "item": "bat", "prob": 10 },
+      { "item": "baton", "prob": 10 },
+      { "item": "knuckle_brass", "prob": 3 },
+      { "item": "knife_butcher", "prob": 10 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_vault_dweller_guns",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "colt6250", "charges": 12, "prob": 30 },
+      { "item": "colt6250_weathered", "charges": 12, "prob": 5 },
+      { "item": "10mmsmg", "charges": 30, "prob": 10 },
+      { "item": "357_magnum_revolver", "charges": 10, "prob": 3 },
+      { "item": "colt_rangemaster", "ammo-item": "223", "charges": 10, "prob": 10 },
+      { "item": "wattz_1000", "prob": 3 },
+      { "item": "aer9", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "fo_vault_npc_friendly_armory",
+    "name_suffix": "Vault Security Guard",
+    "class": "fo_vault_npc_friendly_armory_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_fre_vault_security_start",
+    "faction": "foc_vault_friendly"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_vault_npc_friendly_armory_npc",
+    "name": { "str": "Vault Security Guard" },
+    "job_description": "Is a friendly member of a vault.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_FREVAULT_ARM_worn",
+    "carry_override": "NC_FREVAULT_ARM_carry",
+    "weapon_override": "NC_FREVAULT_ARM_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_ARM_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jumpsuit_vault" },
+      { "item": "socks" },
+      { "item": "boots_rubber" },
+      { "item": "helmet_riot", "prob": 65 },
+      { "item": "armguard_hard", "prob": 65 },
+      { "item": "armor_riot", "prob": 30 },
+      { "item": "kevlar", "prob": 65 },
+      { "item": "legguard_hard", "prob": 65 },
+      { "item": "backpack", "prob": 35 },
+      { "item": "fo_misc_pipboy", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_ARM_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "repeat": [ 1, 3 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "fallout_10mm_maggroup", "prob": 40 },
+      { "item": "10mm", "prob": 85, "charges": [ 5, 35 ] },
+      { "group": "ammo_pistol_common", "prob": 65, "charges": [ 15, 35 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FREVAULT_ARM_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_vault_dweller_amory_guns" }
+    ]
+  }
+]

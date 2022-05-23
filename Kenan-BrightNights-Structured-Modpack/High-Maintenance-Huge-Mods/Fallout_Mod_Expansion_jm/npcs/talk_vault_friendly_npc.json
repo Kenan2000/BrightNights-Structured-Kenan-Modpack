@@ -1,0 +1,61 @@
+[
+  {
+    "id": "TALK_amg_fre_vault_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?" ],
+      "no": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem?" ]
+        },
+    "responses": [
+      {
+        "text": "So you're a vault dweller, what's this place about anyway?", "topic": "TALK_amg_fre_vault_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+	  ]
+	},
+  {
+    "id": "TALK_amg_fre_vault_go",
+    "type": "talk_topic",
+    "dynamic_line": "Things are generally fine here, each days like the last, most days anway. I'm more than fine with that. My job's a bit boring at times, though.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_security_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "Please report any irregularities or illegal activity to me or other vault security guards.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?" ],
+      "no": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "Please report any irregularities or illegal activity to me or other vault security guards", "Hello, how's it going?", "Do you need anything?", "Is there a problem?" ]
+        },
+    "responses": [
+      {
+        "text": "So you're a vault dweller, what's this place about anyway?", "topic": "TALK_amg_fre_vault_security_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_fre_vault_security_go",
+    "type": "talk_topic",
+    "dynamic_line": "Things are generally fine here, each days like the last, most days anway. I'm more than fine with that. My job's a bit boring at times, though.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+  
+]

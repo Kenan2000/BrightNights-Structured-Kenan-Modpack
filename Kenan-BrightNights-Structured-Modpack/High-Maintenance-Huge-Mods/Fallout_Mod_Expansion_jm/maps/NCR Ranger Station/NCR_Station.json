@@ -1,0 +1,102 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_NCRRANGERP_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,VVV,,,,,,,,,",
+                "QQQQ,,,,,,,,VVVV,,,,QQQQ",
+                "Q,,,,,,WEWWEWWWWEWW,,,,Q",
+                "Q,*,,,,WfNfff*fff4W,*,,Q",
+                ",,,,,,,WIIfIIffff4W,,,,,",
+                ",,,,,,,WnffniWWWDWW,,,,,",
+                ",,,,,,,WEWWEWWv*f8W,,,,,",
+                ",,,XXx,,,,,,,EvfffE,,,,,",
+                ",Vwwwwwwwwww,Wvff8W,,,,,",
+                ",VwfMMMw222w,WEWDWW,,,,,",
+                "V,wffmMw1ffd,,,,VV,,V,,,",
+                "V,wffffw333w,,,,VV,,VV,,",
+                ",,wwwDwwwwww,,,,,,Z,,VV,",
+                "VV,,,,,,,,,,,,VV,,z,,,VV",
+                ",V,,,,VV,,,,,,V,,,,,,,V,",
+                ",,,CcCCVCcCC,CcCC,CCcCC,",
+                ",,,CFYC,CFYC,CFYC,CFpFC,",
+                ",,,CFFC,CFFC,CFFC,CPPpC,",
+                ",,,C6YC,C6YC,C6YC,CPPpC,",
+                ",,*CCCC,CCCC,CCCC,CPPpC,",
+                "Q,,,,,,,,,,,,,,,,,CppFC,",
+                "Q,VVV,,,,,,,,*,,V,CB77C,",
+                "QQQQVVV,,,,,,,,VV,CCCCC,",
+                ",,,,,,V,,,,,V,VV,,,,,,,,"
+            ],
+        "palettes": [ "PAL_NCRPOST" ],
+        "faction_owner": [
+        { "id": "fac__fo_NCR", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_npcs": [
+        { "class": "fo_ncr_ranger", "x": 4, "y": 10}
+      ],
+        "place_nested": [ { "chunks": [ [ "ncr_soldier_spawn", 65 ], [ "null", 35 ] ], "x": 1, "y": 2 },
+            { "chunks": [ [ "ncr_soldier_spawn", 65 ], [ "null", 35 ] ], "x": 22, "y": 2 },
+            { "chunks": [ [ "ncr_soldier_spawn", 65 ], [ "null", 35 ] ], "x": 1, "y": 21 },
+            { "chunks": [ [ "ncr_soldier_spawn", 65 ], [ "null", 35 ] ], "x": 23, "y": 23 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 21 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 17 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 14 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 17 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 16 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 8 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 4 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 5 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 22, "y": 9 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 12 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 5 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 6 },
+            { "chunks": [ [ "ncr_soldier_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 21 }
+        ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_NCRRANGERP_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "       ............     ",
+                "       ............     ",
+                "       ............     ",
+                "       ............     ",
+                "       ............     ",
+                "   ...       ......     ",
+                "  .......... ......     ",
+                "  .......... ......     ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........      .     ",
+                "                  .     ",
+                "                        ",
+                "   .... .... .... ..... ",
+                "   .... .... .... ..... ",
+                "   .... .... .... ..... ",
+                "   .... .... .... ..... ",
+                "   .... .... .... ..... ",
+                "                  ..... ",
+                "                  ..... ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "TALK_amg_hos_vault_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you doing around here, what do you want from me?",
+      "no": "What are you doing around here, what do you want from me?"
+        },
+    "responses": [
+      {
+        "text": "So you're a vault dwller, what's this place about anyway?", "topic": "TALK_amg_hos_vault_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+	  ]
+	},
+  {
+    "id": "TALK_amg_hos_vault_go",
+    "type": "talk_topic",
+    "dynamic_line": "I hate you and want to kill you, how are you even talking to me, anyway?",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+  
+]

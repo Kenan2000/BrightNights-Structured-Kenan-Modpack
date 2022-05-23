@@ -1,0 +1,397 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_legionary_recruit",
+    "name_suffix": "Legionary Recruit",
+    "class": "fo_legionary_recruit_npc",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_legion_start",
+    "faction": "fac__fo_legion"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_legionary_recruit_npc",
+    "name": { "str": "Legionary Recruit" },
+    "job_description": "Is a recruit soldier for Caesar's Legion.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_CLGRECRUIT_worn",
+    "carry_override": "NC_CLGRECRUIT_carry",
+    "weapon_override": "NC_CLGRECRUIT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLGRECRUIT_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "armor_legion_recruit" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "backpack_leather", "prob": 35 },
+      { "item": "helmet_legion_recruit", "prob": 75 },
+      { "item": "bandana", "prob": 60 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLGRECRUIT_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "item": "grenade", "prob": 10 },
+      { "item": "healing_powder", "prob": 15 },
+      { "group": "ammo_pistol_common", "prob": 35 },
+      { "item": "38_special", "prob": 85, "charges": [ 15, 25 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLGRECRUIT_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "drops_leg_recruit_melee", "prob": 50 },
+      { "group": "drops_leg_recruit_gun", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_leg_recruit_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 10 },
+      { "item": "spear_fallout_replica", "prob": 5 },
+      { "item": "spear_fallout", "prob": 10 },
+      { "item": "machete_gladius", "prob": 10 },
+      { "item": "meat_hook_claws", "prob": 10 },
+      { "item": "sword_crude", "prob": 10 },
+      { "item": "cavalry_sabre", "prob": 10 },
+      { "item": "longsword_inferior", "prob": 10 },
+      { "item": "survivor_machete", "prob": 10 },
+      { "item": "cestus", "prob": 10 },
+      { "item": "knuckle_brass", "prob": 5 },
+      { "item": "knuckle_nail", "prob": 5 },
+      { "item": "punch_dagger", "prob": 5 },
+      { "item": "spear_knife", "prob": 10 },
+      { "item": "spear_homemade_halfpike", "prob": 10 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_leg_recruit_gun",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "357_magnum_revolver", "prob": 55, "charges": 6 },
+      { "item": "cowboy_repeater", "prob": 55, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 3, "charges": 7 },
+      { "item": "colt_rangemaster", "prob": 20, "charges": 30 },
+      { "item": "varmint_rifle", "prob": 20, "charges": 30 },
+      { "item": "colt6250", "prob": 5, "charges": 30 },
+      { "item": "20ga_singleshot", "prob": 25, "charges": 7 },
+      { "item": "caravan_shotgun", "prob": 20, "charges": 7 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_legion_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "Ave, Amicus.", "Ave, True to Caesar.", "The camps are getting crowded.", "I'm looking forward to getting sent across the river.", "Why are you speaking to me, woman? Shouldn't you be managing the cooking pots?" ],
+      "no": [ "Ave, Amicus.", "Ave, True to Caesar.", "The camps are getting crowded.", "I'm looking forward to getting sent across the river." ]
+        },
+    "responses": [
+      {
+        "text": "So you're a soldier for the Legion, what's that like?", "topic": "TALK_fo_legion_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_legion_go",
+    "type": "talk_topic",
+    "dynamic_line": "It is glorious, to fight in Caesar's army against the dissolute and profligate of the west. We fight in glorious battle until our victory or death, and enjoys the spoils so harshly reaped by the glory of our legion.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "fo_legionary",
+    "name_suffix": "Legionary",
+    "class": "fo_legionary_npc",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_legion_start",
+    "faction": "fac__fo_legion"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_legionary_npc",
+    "name": { "str": "Legionary" },
+    "job_description": "Is a soldier for Caesar's Legion.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_CLG_worn",
+    "carry_override": "NC_CLG_carry",
+    "weapon_override": "NC_CLG_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLG_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "armor_legion_prime" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "backpack_leather", "prob": 35 },
+      { "item": "helmet_legion_prime", "prob": 75 },
+      { "item": "bandana", "prob": 60 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLG_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "item": "grenade", "prob": 10 },
+      { "item": "healing_powder", "prob": 15 },
+      { "group": "ammo_pistol_common", "prob": 35 },
+      { "group": "ammo_rifle_rare", "prob": 35, "charges": [ 15, 25 ] },
+      { "item": "38_special", "prob": 85, "charges": [ 5, 15 ] },
+      { "item": "4570_sp", "prob": 85, "charges": [ 5, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLG_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "drops_leg_melee", "prob": 45 },
+      { "group": "drops_leg_gun", "prob": 55 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_leg_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 10 },
+      { "item": "spear_fallout_replica", "prob": 5 },
+      { "item": "spear_fallout", "prob": 10 },
+      { "item": "machete_gladius", "prob": 10 },
+      { "item": "meat_hook_claws", "prob": 10 },
+      { "item": "sword_crude", "prob": 10 },
+      { "item": "cavalry_sabre", "prob": 10 },
+      { "item": "longsword_inferior", "prob": 10 },
+      { "item": "survivor_machete", "prob": 10 },
+      { "item": "cestus", "prob": 10 },
+      { "item": "bat", "prob": 10 },
+      { "item": "battleaxe", "prob": 10 },
+      { "item": "hammer_sledge", "prob": 10 },
+      { "item": "spear_knife", "prob": 10 },
+      { "item": "spear_homemade_halfpike", "prob": 10 },
+      { "item": "knuckle_brass", "prob": 5 },
+      { "item": "knuckle_nail", "prob": 5 },
+      { "item": "punch_dagger", "prob": 5 },
+      { "item": "spear_steel", "prob": 10 },
+      { "item": "fo_powfist", "prob": 10 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_leg_gun",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "357_magnum_revolver", "prob": 55, "charges": 6 },
+      { "item": "cowboy_repeater", "prob": 55, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 3, "charges": 7 },
+      { "item": "brush_gun_medicine", "prob": 40, "charges": 8 },
+      { "item": "brush_gun", "prob": 40, "charges": 6 },
+      { "item": "greasegun", "prob": 40, "charges": 30 },
+      { "item": "colt_rangemaster", "prob": 40, "charges": 15 },
+      { "item": "carbine_assault", "prob": 40, "charges": 30 },
+      { "item": "14mmpistol", "prob": 40, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 3, "charges": 7 },
+      { "item": "colt_rangemaster", "prob": 20, "charges": 30 },
+      { "item": "varmint_rifle", "prob": 20, "charges": 30 },
+      { "item": "colt6250", "prob": 5, "charges": 30 },
+      { "item": "20ga_singleshot", "prob": 25, "charges": 7 },
+      { "item": "caravan_shotgun", "prob": 20, "charges": 7 }
+
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "fo_legionary_veteran",
+    "name_suffix": "Legionary Veteran",
+    "class": "fo_legionary_veteran_npc",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_legion_start",
+    "faction": "fac__fo_legion"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_legionary_veteran_npc",
+    "name": { "str": "Legionary" },
+    "job_description": "Is a seasoned soldier for Caesar's Legion.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 3 ] },
+    "bonus_dex": { "rng": [ -2, 3 ] },
+    "bonus_int": { "rng": [ -2, 3 ] },
+    "bonus_per": { "rng": [ -2, 3 ] },
+    "worn_override": "NC_CLG_V_worn",
+    "carry_override": "NC_CLG_V_carry",
+    "weapon_override": "NC_CLG_V_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLG_V_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "armor_legion_veteran" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "backpack_leather", "prob": 35 },
+      { "item": "helmet_legion_veteran", "prob": 75 },
+      { "item": "bandana", "prob": 60 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLG_V_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "item": "grenade", "prob": 10 },
+      { "item": "healing_powder", "prob": 15 },
+      { "group": "ammo_pistol_common", "prob": 35 },
+      { "group": "ammo_rifle_rare", "prob": 35, "charges": [ 15, 25 ] },
+      { "item": "38_special", "prob": 85, "charges": [ 5, 15 ] },
+      { "item": "4570_sp", "prob": 85, "charges": [ 5, 15 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CLG_V_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "drops_leg__v_melee", "prob": 40 },
+      { "group": "drops_leg_gun", "prob": 60 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_leg__v_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 10 },
+      { "item": "spear_fallout_replica", "prob": 5 },
+      { "item": "spear_fallout", "prob": 10 },
+      { "item": "machete_gladius", "prob": 20 },
+      { "item": "meat_hook_claws", "prob": 10 },
+      { "item": "sword_crude", "prob": 10 },
+      { "item": "cavalry_sabre", "prob": 10 },
+      { "item": "longsword_inferior", "prob": 10 },
+      { "item": "survivor_machete", "prob": 10 },
+      { "item": "cestus", "prob": 10 },
+      { "item": "bat", "prob": 10 },
+      { "item": "battleaxe", "prob": 10 },
+      { "item": "hammer_sledge", "prob": 10 },
+      { "item": "spear_knife", "prob": 10 },
+      { "item": "spear_homemade_halfpike", "prob": 10 },
+      { "item": "knuckle_brass", "prob": 5 },
+      { "item": "knuckle_nail", "prob": 5 },
+      { "item": "punch_dagger", "prob": 5 },
+      { "item": "spear_steel", "prob": 10 },
+      { "item": "super_sledge", "prob": 10 },
+      { "item": "fo_powfist", "prob": 10 }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_leg_gun",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "357_magnum_revolver", "prob": 55, "charges": 6 },
+      { "item": "cowboy_repeater", "prob": 55, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 3, "charges": 7 },
+      { "item": "brush_gun_medicine", "prob": 40, "charges": 8 },
+      { "item": "brush_gun", "prob": 40, "charges": 6 },
+      { "item": "greasegun", "prob": 40, "charges": 30 },
+      { "item": "colt_rangemaster", "prob": 40, "charges": 15 },
+      { "item": "carbine_assault", "prob": 40, "charges": 30 },
+      { "item": "14mmpistol", "prob": 40, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 3, "charges": 7 }
+
+    ]
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "type": "npc",
+    "id": "npc_legion_ticketcard",
+    "name_suffix": "Faction Changer",
+    "class": "person_ticketcard_legion",
+    "gender": "female",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_TICKETFAC_LEGION",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc_class",
+    "id": "person_ticketcard_legion",
+    "name": { "str": "Faction Changer" },
+    "job_description": "A stopgap to allow the user to change their faction at the start of the game.",
+    "traits": [  ],
+    "common": false,
+    "worn_override": "NC_TICKETMANLEG_worn",
+    "carry_override": "NC_TICKETMANLEG_carry",
+    "weapon_override": "NC_TICKETMANLEG_weapon"
+  },
+  {
+    "type": "item_group",
+    "id": "NC_TICKETMANLEG_weapon",
+    "subtype": "distribution",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_TICKETMANLEG_worn",
+    "subtype": "collection",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_TICKETMANLEG_carry",
+    "subtype": "collection",
+    "entries": [ { "item": "null" } ]
+  },
+  {
+    "type": "TOOL",
+    "category": "other",
+    "id": "fo_leg_idticketcard",
+    "looks_like": "paper",
+    "name": { "str": "Legion Faction change device" },
+    "description": "A device used to improve the player character's relationship with Caesar's Legion. Should only be available at spawn, otherwise a glitch has occurred.",
+    "weight": "1 g",
+    "symbol": "L",
+    "color": "red",
+    "price": "1 USD",
+    "price_postapoc": "0 USD",
+    "material": [ "steel" ],
+    "volume": "1 ml",
+    "max_charges": 0,
+    "initial_charges": 0,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "ammo": [ "NULL" ],
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "npc_legion_ticketcard",
+      "summon_msg": "A faction changing NPC appears before you!",
+      "place_randomly": false
+    }
+  },
+  {
+    "id": "TALK_TICKETFAC_LEGION",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello lady, I am a stopgap to allow the user to change their faction at the start of the game. Otherwise it would be impossible to play for the Empire on an Imperial Profession Start.",
+      "no": "Hello sir, I am a stopgap to allow the user to change their faction at the start of the game. Otherwise it would be impossible to play for the Empire on an Imperial Profession Start."
+    },
+    "responses": [
+      {
+        "text": "Increase the Empire's reputation with me.",
+        "topic": "TALK_TICKETFAC_LEGION_E1",
+        "effect": [ { "npc_change_faction": "fac__fo_legion" } ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_TICKETFAC_LEGION_E1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I have improved your relationship with Caesar's Legion by 30 points.",
+      "no": "I have improved your relationship with Caesar's Legion by 30 points."
+    },
+    "responses": [
+      {
+        "text": "Now change my relationship with Gallia.",
+        "effect": [ { "u_faction_rep": 30 }, { "npc_change_faction": "fac__fo_NCR" } ],
+        "topic": "TALK_TICKETFAC_LEGION_G1"
+      }
+    ]
+  },
+  {
+    "id": "TALK_TICKETFAC_LEGION_G1",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I have decreased your relationship with New California Republic by 30 points.",
+      "no": "I have decreased your relationship with New California Republic by 30 points."
+    },
+    "responses": [ { "text": "Proceed.", "effect": [ { "u_faction_rep": -30 } ], "topic": "TALK_TICKETDEATH_LEGION" } ]
+  },
+  {
+    "id": "TALK_TICKETDEATH_LEGION",
+    "type": "talk_topic",
+    "dynamic_line": { "u_female": true, "yes": "The process is complete.", "no": "The process is complete." },
+    "responses": [ { "text": "Now go away", "effect": "npc_die", "topic": "TALK_DONE" } ]
+  }
+]

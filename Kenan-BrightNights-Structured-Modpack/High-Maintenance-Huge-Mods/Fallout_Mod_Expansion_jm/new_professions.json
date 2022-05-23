@@ -1,0 +1,610 @@
+[
+  {
+    "type": "profession",
+    "id": "vaultkid",
+    "name": "Vault Kid",
+    "description": "You were raised in a vault by some preppers. On your 10th birthday, the party was interrupted by radroaches. You were the only one to escape, with your presents: a BB gun and a bat.",
+    "points": -1,
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13",
+          "socks",
+          "boots_rubber",
+          "water_clean",
+          "matches",
+          "redryderle",
+          "bb",
+          "bat",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "shoulder_strap",
+          "fo_misc_pipboy"
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultdweller",
+    "name": "Vault Dweller",
+    "description": "When the cataclysm struck, you entered a vault. Unfortunately... There was a radiation leak in the vault... You managed to escape with the essentials for survival.",
+    "points": 2,
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13",
+          "socks",
+          "boots_rubber",
+          "water_clean",
+          "matches",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultpunk",
+    "name": "Vault Punk",
+    "description": "You didn't want to move into a vault with your stupid prepper family. Now a vault experiment rendered their efforts moot, and youd laugh. If you weren't currently in danger of a ghoul attack, that is. Make your mark. Tunnel Snakes Rule!",
+    "points": 4,
+    "skills": [ { "level": 2, "name": "melee" }, { "level": 2, "name": "bashing" }, { "level": 2, "name": "mechanics" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13",
+          "socks",
+          "boots_rubber",
+          "vault_knife",
+          "water_clean",
+          "matches",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "bat",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "bandana",
+          "jacket_leather_tunnel",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultscientist",
+    "name": "Vault Scientist",
+    "description": "When the cataclysm struck, you were working hard in the Vault you were assigned to. Alas, a FEV experiment gone wrong in the lab caused you to have to evacuate.",
+    "points": 3,
+    "skills": [ { "level": 4, "name": "cooking" }, { "level": 4, "name": "computer" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13",
+          "coat_lab",
+          "socks",
+          "scalpel",
+          "boots_rubber",
+          "vault_knife",
+          "water_clean",
+          "matches",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultmechanic",
+    "name": "Vault Mechanic",
+    "description": "When the cataclysm struck, you were working hard in the Vault you were assigned to. Alas, a water leak in the bottom floors spiraled out of control and you escaped with your toolbox.",
+    "points": 5,
+    "skills": [ { "level": 4, "name": "mechanics" }, { "level": 4, "name": "electronics" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13_utility",
+          "socks",
+          "boots_rubber",
+          "vault_knife",
+          "water_clean",
+          "toolbox",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultguard",
+    "name": "Vault Guard",
+    "description": "You were a guard in a vault before the cataclysm. The job was slow, and mostly involved keeping the children from being mean to each other. Alas, a radroach infestation arose in the lower levels, and the whole bunker had to be abandoned. You escaped with your gear.",
+    "points": 4,
+    "skills": [ { "level": 4, "name": "shotgun" }, { "level": 4, "name": "pistol" }, { "level": 4, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13_utility",
+          "socks",
+          "boots_rubber",
+          "vault_knife",
+          "water_clean",
+          "widowmaker",
+          "shot_beanbag",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "shoulder_strap",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultmechanic_bionic",
+    "name": "Bionic Vault Mechanic",
+    "description": "When the cataclysm struck, you were working hard in the Vault you were assigned to. Alas, a radroach infestation in the bottom floors spiraled out of control. Your augments helped you escape by the skin of your teeth.",
+    "points": 6,
+    "CBMs": [
+      "bio_torsionratchet",
+      "bio_power_storage_mkII",
+      "bio_power_storage_mkII",
+      "bio_tools",
+      "bio_sunglasses",
+      "bio_flashlight",
+      "bio_hydraulics",
+      "bio_batteries",
+      "bio_lighter"
+    ],
+    "skills": [ { "level": 6, "name": "mechanics" }, { "level": 6, "name": "electronics" }, { "level": 4, "name": "computer" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13_utility",
+          "socks",
+          "boots_rubber",
+          "vault_knife",
+          "water_clean",
+          "toolbox",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "vaultguard_bionic",
+    "name": "Bionic Vault Guard",
+    "description": "You were a bionic-enhanced guard in a vault before the cataclysm. The job was slow, as you were on 'reserve' for emergencies. Alas, an emergency came. A radroach infestation arose in the lower levels, and the whole bunker had to be abandoned. You escaped with your gear.",
+    "points": 10,
+    "CBMs": [
+      "bio_armor_eyes",
+      "bio_armor_head",
+      "bio_armor_torso",
+      "bio_armor_legs",
+      "bio_armor_arms",
+      "bio_targeting",
+      "bio_infrared",
+      "bio_metabolics",
+      "bio_power_storage_mkII"
+    ],
+    "skills": [ { "level": 4, "name": "shotgun" }, { "level": 4, "name": "pistol" }, { "level": 4, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_vault_13_utility",
+          "socks",
+          "boots_rubber",
+          "vault_knife",
+          "water_clean",
+          "widowmaker",
+          "shot_00",
+          "colt6250",
+          "colt6250mag",
+          "10mmjhp",
+          "cola_nuka",
+          "cola_nuka_quantum",
+          "backpack",
+          "holster",
+          "shoulder_strap",
+          "fo_misc_pipboy"
+        ],
+        "entries": [ { "item": "sheath", "container-item": "vault_knife" } ]
+      },
+      "male": [ "boxer_shorts" ],
+      "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fo_legion_recruit",
+    "name": "Legion Recruit",
+    "description": "Either by your own volition or the will of almighty Caesar, you took up arms on behalf of the Legion. You might just be a recruit, treated worse than dirt by the primes, but you will prove yourself to the legion! Ave, true to Caesar!",
+    "points": 3,
+    "skills": [ { "level": 2, "name": "survival" }, { "level": 1, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" } ],
+    "items": {
+      "both": {
+        "items": [
+          "armor_legion_recruit",
+          "socks",
+          "boots",
+          "water_clean",
+          "matches",
+          "helmet_legion_recruit",
+          "makeshift_machete",
+          "healing_powder",
+          "meat_gecko_smoked",
+          "meat_gecko_smoked",
+          "makeshift_sling",
+          "bandana",
+          "fo_leg_idticketcard",
+          "shoulder_strap"
+        ],
+        "entries": [
+          { "item": "20ga_shot", "charges": 25 },
+          { "item": "20ga_singleshot", "ammo-item": "20ga_shot", "charges": 1 }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "chestwrap", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fo_legion_prime",
+    "name": "Legion Prime",
+    "description": "Either by your own volition or the will of almighty Caesar, you took up arms on behalf of the Legion. You are a prime of the legion, Caesar's loyal arm agains tall his foes. The dogs of the New California Republic have grown impudent, and it's time to make them heel! Ave, true to Caesar!",
+    "points": 5,
+    "skills": [ { "level": 3, "name": "survival" }, { "level": 2, "name": "gun" }, { "level": 3, "name": "melee" }, { "level": 2, "name": "dodge" }, { "level": 1, "name": "throw" } ],
+    "items": {
+      "both": {
+        "items": [
+          "armor_legion_prime",
+          "socks",
+          "boots",
+          "water_clean",
+          "matches",
+          "helmet_legion_prime",
+          "machete",
+          "healing_powder",
+          "meat_gecko_smoked",
+          "meat_gecko_smoked",
+          "backpack_leather",
+          "bandana",
+          "fo_leg_idticketcard",
+          "shoulder_strap"
+        ],
+        "entries": [
+          { "item": "357_magnum", "charges": 35 },
+          { "item": "cowboy_repeater", "ammo-item": "357_magnum", "charges": 7, "contents-item": "shoulder_strap" }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "chestwrap", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fo_legion_veteran",
+    "name": "Legion Veteran",
+    "description": "Either by your own volition or the will of almighty Caesar, you took up arms on behalf of the Legion. You are a veteran of the legion, the legion's speartip against all its foes. The dogs of the New California Republic have grown impudent, and it's time to make them heel! Ave, true to Caesar!",
+    "points": 7,
+    "skills": [ { "level": 3, "name": "survival" }, { "level": 3, "name": "gun" }, { "level": 3, "name": "melee" }, { "level": 2, "name": "dodge" }, { "level": 2, "name": "throw" }, { "level": 1, "name": "bashing" }, { "level": 1, "name": "cutting" } ],
+    "items": {
+      "both": {
+        "items": [
+          "armor_legion_veteran",
+          "socks",
+          "boots",
+          "water_clean",
+          "matches",
+          "helmet_legion_veteran",
+          "machete_gladius",
+          "healing_powder",
+          "meat_gecko_smoked",
+          "meat_gecko_smoked",
+          "bandana",
+          "fo_leg_idticketcard",
+          "backpack_leather"
+        ],
+        "entries": [
+          { "item": "223", "charges": 50 },
+          { "item": "colt_rangemaster", "ammo-item": "223", "charges": 10, "contents-item": "shoulder_strap" },
+          { "item": "rangemastermag", "charges": 10 },
+          { "item": "rangemastermag", "charges": 10 },
+          { "item": "rangemastermag", "charges": 10 }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "chestwrap", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fo_legion_centurion",
+    "name": "Legion Centurion",
+    "description": "You are a seasoned centurion of the Legion, and have been granted a few recruits to lead into battle in the name of Caesar. Onward to battle against the dogs of the NCR!",
+    "points": 7,
+    "skills": [ { "level": 3, "name": "survival" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" }, { "level": 1, "name": "speech" } ],
+    "items": {
+      "both": {
+        "items": [
+          "armor_legion_prime",
+          "socks",
+          "boots",
+          "water_clean",
+          "matches",
+          "helmet_legion_prime",
+          "machete_gladius",
+          "healing_powder",
+          "meat_gecko_smoked",
+          "meat_gecko_smoked",
+          "backpack_leather",
+          "fo_legiontroopcard",
+          "fo_legiontroopcard",
+          "fo_leg_idticketcard",
+          "shoulder_strap"
+        ],
+        "entries": [
+          { "item": "223", "charges": 50 },
+          { "item": "colt_rangemaster", "ammo-item": "223", "charges": 10, "contents-item": "shoulder_strap" },
+          { "item": "rangemastermag", "charges": 10 },
+          { "item": "rangemastermag", "charges": 10 },
+          { "item": "rangemastermag", "charges": 10 }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "chestwrap", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "ncr_trooper_profession",
+    "name": "NCR Trooper",
+    "description": "Whether it was out of curiousity for a new path in life, a desire to serve your country, or just to kill people; you decided to join the armed forces of the New California Republic. Now that the war with the legion is heating up, you've been deployed to an active conflict zone. Good luck, soldier!",
+    "points": 4,
+    "skills": [ { "level": 1, "name": "survival" }, { "level": 2, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" }, { "level": 1, "name": "rifle" }, { "level": 1, "name": "firstaid" } ],
+    "items": {
+      "both": {
+        "items": [
+          "ncr_armor",
+          "socks",
+          "boots",
+          "water_clean",
+          "canteen",
+          "matches",
+          "fo_ncr_trooper_helmet",
+          "knife_combat",
+          "healing_powder",
+          "can_cram",
+          "jerky_gecko",
+          "bandages",
+          "bandages",
+          "backpack_leather",
+          "meat_gecko_smoked"
+        ],
+        "entries": [
+          { "item": "556", "charges": 20 },
+          { "item": "fo_ncr_service_rifle", "ammo-item": "223", "charges": 30, "contents-item": "shoulder_strap" },
+          { "item": "stanag30", "charges": 30 },
+          { "item": "stanag30", "charges": 30 }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "ncr_ranger_profession",
+    "name": "NCR Ranger",
+    "description": "You're a ranger, the eyes and the ears of the New California Republic against all enemies foreign and domestic. You've been deployed to the frontier against the legion, where it is believed that your survival skills and initiative will tip the scales against the armies of Caesar.",
+    "points": 4,
+    "skills": [ { "level": 3, "name": "survival" }, { "level": 2, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" }, { "level": 1, "name": "rifle" }, { "level": 1, "name": "firstaid" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jeans",
+          "dress_shirt",
+          "duster",
+          "socks",
+          "boots",
+          "water_clean",
+          "canteen",
+          "matches",
+          "cowboy_hat",
+          "knife_combat",
+          "healing_powder",
+          "can_cram",
+          "jerky_gecko",
+          "bandages",
+          "bandages",
+          "backpack_leather",
+          "meat_gecko_smoked"
+        ],
+        "entries": [
+          { "item": "357_magnum", "charges": 55 },
+          { "item": "357_magnum_revolver", "ammo-item": "357_magnum", "charges": 6, "container-item": "holster" },
+          { "item": "cowboy_repeater", "ammo-item": "357_magnum", "charges": 7, "contents-item": "shoulder_strap" }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "ncr_officer_profession",
+    "name": "NCR Officer",
+    "description": "After years of experience in the New California Republic's military, you finally became an officer with your own squad at your command. Do you dare lead your troops into battle against the Legion and all the myriad threats to the Republic?",
+    "points": 6,
+    "skills": [ { "level": 1, "name": "survival" }, { "level": 2, "name": "gun" }, { "level": 1, "name": "melee" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "throw" }, { "level": 1, "name": "rifle" }, { "level": 1, "name": "firstaid" } ],
+    "items": {
+      "both": {
+        "items": [
+          "ncr_armor",
+          "socks",
+          "boots",
+          "water_clean",
+          "canteen",
+          "matches",
+          "beret",
+          "knife_combat",
+          "healing_powder",
+          "can_cram",
+          "jerky_gecko",
+          "fo_ncrtroopcard",
+          "fo_ncrtroopcard",
+          "bandages",
+          "bandages",
+          "backpack_leather",
+          "meat_gecko_smoked"
+        ],
+        "entries": [
+          { "item": "556", "charges": 20 },
+          { "item": "fo_ncr_service_rifle", "ammo-item": "223", "charges": 30, "contents-item": "shoulder_strap" },
+          { "item": "stanag30", "charges": 30 },
+          { "item": "stanag30", "charges": 30 }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fo_gecko_trapper_prof",
+    "name": "Gecko Trapper",
+    "description": "You grew up poor in some no-name settlement in the depths of the wasteland, and you eventually decided that farming tatos or carrots for the rest of your life was simply too boring. Instead, you elected to become a trapper, hunting geckos for their precious pelts to fetch a few caps at local markets.",
+    "points": 3,
+    "skills": [ { "level": 3, "name": "survival" }, { "level": 1, "name": "gun" }, { "level": 2, "name": "cooking" }, { "level": 2, "name": "traps" } ],
+    "items": {
+      "both": {
+        "items": [
+          "tshirt",
+          "pants_cargo",
+          "socks",
+          "boots_gecko",
+          "water_clean",
+          "bottle_metal",
+          "butchering_kit",
+          "matches",
+          "jacket_jean",
+          "pockknife",
+          "oil_cooker",
+          "healing_powder",
+          "meat_gecko_smoked",
+          "meat_gecko_smoked",
+          "cowboy_hat",
+          "beartrap",
+          "beartrap",
+          "backpack_leather"
+        ],
+        "entries": [
+          { "item": "223", "charges": 20 },
+          { "item": "varmint_rifle", "ammo-item": "223", "charges": 10, "contents-item": "shoulder_strap" },
+          { "item": "rangemastermag", "charges": 10 },
+          { "item": "rangemastermag", "charges": 10 }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "bra", "panties" ]
+    }
+  },
+  {
+    "type": "profession",
+    "id": "fo_robot_enthusiast",
+    "name": "Wasteland Robot Enthusiast",
+    "description": "For as long as you've been in the wastes, you have had in interest in things other people would consider at best junk, and at worst deadly reminders of old world technology. Where others turned their back on the rusting treasure hiding beneath their feet or in some years-old facility, you struck gold. In time, you became a robotics expert in your own right, honing the old-world crafting of automation to an acceptable level for the wasteland. Dare you venture out into the world with your trusty robot, and your scientific skills?",
+    "points": 5,
+    "skills": [ { "level": 3, "name": "computer" }, { "level": 1, "name": "mechanics" }, { "level": 2, "name": "fabrication" }, { "level": 3, "name": "electronics" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jumpsuit_racer",
+          "socks",
+          "sneakers",
+          "water_clean",
+          "matches",
+          "pockknife",
+          "multitool",
+          "gloves_work",
+          "dep_fallout_handy",
+          "fancylad",
+          "can_cram",
+          "can_cram",
+          "totalhack",
+          "backpack_leather"
+        ],
+        "entries": [
+          { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "wattz_1000" },
+          { "item": "light_battery_cell", "ammo-item": "battery", "charges": 100 },
+          { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 100, "container-item": "soldering_iron" },
+          { "item": "light_battery_cell", "ammo-item": "battery", "charges": 100, "container-item": "electrohack" },
+          { "item": "goggles_welding", "custom-flags": [ "no_auto_equip" ] },
+          { "item": "wrench", "container-item": "tool_belt" }
+        ]
+      },
+        "male": [ "boxer_shorts" ],
+        "female": [ "bra", "panties" ]
+    }
+  }
+]

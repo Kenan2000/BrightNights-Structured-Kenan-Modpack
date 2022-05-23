@@ -1,0 +1,116 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_vault_npc_mechanic",
+    "name_suffix": "Vault Mechanic",
+    "class": "fo_vault_npc_mechanic_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_mech_vault_start",
+    "faction": "foc_vault_friendly"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_vault_npc_mechanic_npc",
+    "name": { "str": "Vault Mechanic" },
+    "job_description": "Is a friendly member of a vault.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 1 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -1, 4 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_MECHVAULT_worn",
+    "carry_override": "NC_MECHVAULT_carry",
+    "weapon_override": "NC_FREVAULT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MECHVAULT_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jumpsuit_vault" },
+      { "item": "socks" },
+      { "item": "boots_rubber" },
+      { "item": "fanny", "prob": 80 },
+      { "item": "backpack", "prob": 35 },
+      { "item": "fo_misc_pipboy" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MECHVAULT_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "repeat": [ 1, 3 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "fallout_10mm_maggroup", "prob": 40 },
+      { "item": "10mm", "prob": 85, "charges": [ 5, 35 ] },
+      { "item": "multitool", "prob": 45 },
+      { "item": "tool_belt", "prob": 45 },
+      { "group": "ammo_pistol_common", "prob": 65, "charges": [ 15, 35 ] }
+    ]
+  },
+  {
+    "id": "TALK_amg_mech_vault_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?" ],
+      "no": [ "What are you doing around here, what do you want from me?", "Just another day in the vault, huh?", "I heard some scratching behind my room's wall, hope it's not radroaches.", "Hello, how's it going?", "Do you need anything?", "Is there a problem?" ]
+        },
+    "responses": [
+      {
+        "text": "So you work in the vault IT department, what, is that just for programming or something?", "topic": "TALK_amg_mech_vault_go"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_amg_mech_vault_recruit"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_mech_vault_go",
+    "type": "talk_topic",
+    "dynamic_line": "It's more than just programming, it's a job that also entails trying to track down bugs within the vaults old computer network and server farms. You won't believe how much bad data and glitches can build up even in systems that seem completely anodyne and obscure. I also double-hat as a mechanic at times, although that's less frequent. Between you and me, I would love to leave the vault and see what tech lies in the outside world.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_mech_vault_recruit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am ready to join you on your journey!",
+      "no": "I am ready to join you on your journey!"},
+    "responses": [
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
+    ]
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_ncr_ranger",
+    "name_suffix": "NCR Ranger",
+    "class": "fo_ncr_ranger_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_ncr_ranger_start",
+    "faction": "fac__fo_NCR"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_ncr_ranger_npc",
+    "name": { "str": "NCR Ranger" },
+    "job_description": "Is a soldier of the New California Republic.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 3 ] },
+    "bonus_dex": { "rng": [ -2, 3 ] },
+    "bonus_int": { "rng": [ -2, 3 ] },
+    "bonus_per": { "rng": [ -2, 3 ] },
+    "worn_override": "NC_NCRRANGER_worn",
+    "carry_override": "NC_NCRRANGER_carry",
+    "weapon_override": "NC_NCRRANGER_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NCRRANGER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "socks" },
+      { "item": "boots" },
+      { "group": "drops_ncr_ranger_pants" },
+      { "group": "drops_ncr_ranger_shirt" },
+      { "group": "drops_ncr_ranger_jacket", "prob": 70 },
+      { "item": "backpack_leather", "prob": 35 },
+      { "item": "bandolier_rifle", "prob": 35 },
+      { "item": "bandolier_pistol", "prob": 35 },
+      { "group": "drops_ncr_ranger_hat", "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NCRRANGER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "item": "grenade", "prob": 5 },
+      { "item": "223", "prob": 85, "charges": [ 15, 25 ] },
+      { "group": "drops_ncr_ranger_ammo", "prob": 65, "charges": [ 15, 35 ] },
+      { "group": "drops_ncr_ranger_ammo", "prob": 35, "charges": [ 10, 40 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NCRRANGER_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drops_ncr_trooper_melee", "prob": 35 },
+      { "group": "drops_ncr_trooper_gun", "prob": 35 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_ranger_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "38_super", "prob": 20 },
+      { "item": "38super_fmj", "prob": 20 },
+      { "item": "44fmj", "prob": 15 },
+      { "item": "44magnum", "prob": 35 },
+      { "item": "38_fmj", "prob": 25 },
+      { "item": "38_special", "prob": 25 },
+      { "item": "357mag_fmj", "prob": 15 },
+      { "item": "357mag_jhp", "prob": 15 },
+      { "item": "357sig_jhp", "prob": 25 },
+      { "item": "357sig_fmj", "prob": 25 },
+      { "item": "4570_sp", "prob": 20 },
+      { "item": "4570_pen", "prob": 20 },
+      { "item": "4570_low", "prob": 20 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_trooper_gun",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cowboy_repeater", "prob": 15, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 5, "charges": 7 },
+      { "item": "brush_gun_medicine", "prob": 2, "charges": 8 },
+      { "item": "brush_gun", "prob": 2, "charges": 6 },
+      { "item": "357_magnum_revolver", "prob": 55, "charges": 6 },
+      { "item": "revolver_ranger", "prob": 20, "charges": 6 },
+      { "item": "thatgun", "prob": 5, "charges": 30 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_trooper_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_ranger_hat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "10gal_hat", "prob": 10 },
+      { "item": "beret", "prob": 5 },
+      { "item": "fo_ncr_trooper_helmet", "prob": 10 },
+      { "item": "cowboy_hat", "prob": 10 },
+      { "item": "hat_sombrero", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_ranger_pants",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "breeches", "prob": 3 },
+      { "item": "jeans", "prob": 35 },
+      { "item": "pants", "prob": 20 },
+      { "item": "pants_army", "prob": 10 },
+      { "item": "pants_leather", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_ranger_shirt",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 55 },
+      { "item": "longshirt", "prob": 35 },
+      { "item": "sweater", "prob": 20 },
+      { "item": "tshirt", "prob": 10 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_ncr_ranger_jacket",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "duster", "prob": 10 },
+      { "item": "duster_fur", "prob": 10 },
+      { "item": "duster_leather", "prob": 10 },
+      { "item": "duster_survivor", "prob": 10 },
+      { "item": "jacket_light", "prob": 35 },
+      { "item": "sleeveless_duster", "prob": 10 },
+      { "item": "sleeveless_duster_survivor", "prob": 10 },
+      { "item": "trenchcoat_leather", "prob": 10 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_ncr_ranger_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "You ever think about being a Ranger?", "We got ourselves a little Ranger family reunion now. Time's right for a feud.", "From here on out, we fight for Chief Hanlon.", "When I got this assignment I was hoping there would be more gambling.", "Patrolling the Mojave almost makes you wish for a nuclear winter." ],
+      "no": [ "You ever think about being a Ranger?", "We got ourselves a little Ranger family reunion now. Time's right for a feud.", "From here on out, we fight for Chief Hanlon.", "When I got this assignment I was hoping there would be more gambling.", "Patrolling the Mojave almost makes you wish for a nuclear winter." ]
+        },
+    "responses": [
+      {
+        "text": "So you're a ranger for the NCR, what's that like?", "topic": "TALK_fo_ncr_ranger_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_ncr_ranger_go",
+    "type": "talk_topic",
+    "dynamic_line": "Either extremely boring, or extremely frightening. You would think our jobs involve cavorting across the wasteland, getting into new scraps everyday in service of the republic, but no! Most of the time is just spent at these ranger stations, collating various radio tracks and intel to send back to Shady Sands or major military bases for analysis. It's quite a boring job really.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

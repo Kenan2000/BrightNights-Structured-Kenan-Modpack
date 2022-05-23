@@ -1,0 +1,375 @@
+[
+  {
+    "type": "item_group",
+    "id": "mon_vault_dresser_clothes",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jumpsuit_vault", "prob": 75, "count": [ 2, 5 ] },
+      { "item": "bag_canvas_westtek_nylon", "prob": 3 },
+      { "group": "dresser", "prob": 60, "count": [ 3, 6 ] },
+      { "group": "female_underwear_bottom", "prob": 30, "count": [ 1, 3 ] },
+      { "group": "female_underwear_top", "prob": 30, "count": [ 1, 3 ] },
+      { "group": "male_underwear_top", "prob": 30, "count": [ 1, 3 ] },
+      { "group": "male_underwear_bottom", "prob": 30, "count": [ 1, 3 ] },
+      { "group": "bags", "prob": 15, "count": [ 1, 2 ] },
+      { "group": "suits", "prob": 20, "count": [ 1, 2 ] },
+      { "group": "shoestore_accessories", "prob": 20, "count": [ 1, 2 ] },
+      { "group": "dresses", "prob": 20, "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_cookbooks",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "brewing_cookbook", "prob": 75 },
+      { "item": "cookbook", "prob": 75 },
+      { "item": "family_cookbook", "prob": 75 },
+      { "item": "mag_cooking", "prob": 75 },
+      { "item": "offalcooking", "prob": 75 },
+      { "item": "cookbook_daintydishes", "prob": 75 },
+      { "item": "baking_book", "prob": 75 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_food",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "macaroni_blamco_raw", "prob": 40 },
+      { "item": "macaroni_blamco", "prob": 15 },
+      { "item": "cave_fungus", "prob": 25 },
+      { "item": "can_cram", "prob": 65 },
+      { "item": "mutfruit", "prob": 45 },
+      { "item": "mutfruit_crunchy", "prob": 15 },
+      { "item": "instamash_raw", "prob": 45 },
+      { "item": "fancylad", "prob": 45 },
+      { "item": "salisbury_steak_fallout", "prob": 35 },
+      { "item": "sugarbombs", "prob": 25 },
+      { "item": "eggs_devilled_fallout", "prob": 35 },
+      { "item": "fruit_punga", "prob": 25 },
+      { "item": "jerky_gecko", "prob": 25 },
+      { "item": "stick_iguana", "prob": 25 },
+      { "item": "omelette_survival", "prob": 25 },
+      { "item": "pie_happy", "prob": 25 },
+      { "item": "kebab_gecko", "prob": 25 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_drink",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "rotgut", "prob": 10 },
+      { "item": "rum_roentgen", "prob": 15 },
+      { "item": "healing_powder_drink", "prob": 15 },
+      { "item": "cola_nuka", "prob": 150 },
+      { "item": "cola_newka", "prob": 15 },
+      { "item": "cola_nuka_quantum", "prob": 15 },
+      { "item": "cola_nuka_orange", "prob": 15 },
+      { "item": "cola_nuka_cherry", "prob": 15 },
+      { "item": "cola_nuka_grape", "prob": 15 },
+      { "item": "cola_nuka_cranberry", "prob": 15 },
+      { "item": "cola_nuka_dark", "prob": 15 },
+      { "item": "cola_nuka_quartz", "prob": 15 },
+      { "item": "cola_nuka_victory", "prob": 15 },
+      { "item": "cola_nuka_wild", "prob": 15 },
+      { "item": "cola_nuka_black", "prob": 15 },
+      { "item": "cola_nuka_berry", "prob": 15 },
+      { "item": "cola_nuka_fusion", "prob": 15 },
+      { "item": "cherry_nuka_cola", "prob": 15 },
+      { "item": "cola_nuka_classic", "prob": 15 },
+      { "item": "cola_nuka_sunrise", "prob": 15 },
+      { "item": "cola_nuka_rad", "prob": 15 },
+      { "item": "cola_nuka_lime", "prob": 15 },
+      { "item": "sunset_sarsaparilla", "prob": 55 },
+      { "item": "healing_powder_drink", "prob": 25 },
+      { "item": "bottle_plastic_nukadark", "prob": 5 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_table",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cola_nuka", "prob": 15 },
+      { "item": "colt6250mag", "charges": 12, "prob": 5 },
+      { "item": "colt6250", "prob": 5, "charges": 7, "damage": [ 0, 4 ] },
+      { "group": "office_supplies", "prob": 30 },
+      { "group": "homebooks", "prob": 15 },
+      { "group": "manuals", "prob": 15 },
+      { "group": "magazines", "prob": 15 },
+      { "group": "dining", "prob": 30, "repeat": [ 1, 2 ] },
+      { "group": "electronics", "prob": 15 },
+      { "group": "file_room", "prob": 30, "repeat": [ 1, 2 ] },
+      { "item": "sunset_sarsaparilla", "prob": 5 },
+      { "item": "cola_nuka_quantum", "prob": 3 },
+      { "item": "fo_misc_pipboy", "prob": 5 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_table_dining",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cola_nuka", "prob": 10 },
+      { "group": "magazines", "prob": 10 },
+      { "group": "fallout_misc_itemgroup_food", "prob": 30 },
+      { "group": "dining", "prob": 30, "repeat": [ 1, 3 ] },
+      { "group": "file_room", "prob": 10, "repeat": [ 1, 2 ] },
+      { "item": "sunset_sarsaparilla", "prob": 5 },
+      { "item": "cola_nuka_quantum", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_table_armory_guns",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "colt6250", "charges": 12, "prob": 30 },
+      { "item": "colt6250_weathered", "charges": 12, "prob": 5 },
+      { "item": "10mmsmg", "charges": 30, "prob": 10 },
+      { "item": "thatgun", "charges": 5, "prob": 3 },
+      { "item": "22_pistol", "charges": 10, "prob": 3 },
+      { "item": "mauser_9mm", "charges": 7, "prob": 3 },
+      { "item": "357_magnum_revolver", "charges": 10, "prob": 3 },
+      { "item": "14mmpistol", "charges": 7, "prob": 3 },
+      { "item": "colt_rangemaster", "ammo-item": "223", "charges": 10, "prob": 15 },
+      { "item": "varmint_rifle", "ammo-item": "223", "charges": 10, "prob": 10 },
+      { "item": "bozar", "ammo-item": "223", "charges": 50, "prob": 2 },
+      { "item": "rf2076", "ammo-item": "223", "charges": 10, "prob": 5 },
+      { "item": "r91", "ammo-item": "223", "charges": 10, "prob": 15 },
+      { "item": "carbine_marksman", "ammo-item": "223", "charges": 10, "prob": 5 },
+      { "item": "type93", "ammo-item": "223", "charges": 10, "prob": 5 },
+      { "item": "dks501", "ammo-item": "223", "charges": 10, "prob": 3 },
+      { "item": "thatgun", "ammo-item": "223", "charges": 5, "prob": 3 },
+      { "item": "wattz_1000", "prob": 3 },
+      { "item": "wattz_1000_magneto", "prob": 2 },
+      { "item": "laser_pistol_aep", "prob": 3 },
+      { "item": "laser_pistol_aep_pewpew", "prob": 4 },
+      { "item": "wattz_2000", "prob": 3 },
+      { "item": "aer9", "prob": 3 },
+      { "item": "laser_pistol_aep_pewpew", "prob": 5 },
+      { "item": "aer9_tribeam", "prob": 2 },
+      { "item": "aer14_prototype", "prob": 2 },
+      { "item": "laser_rcw", "prob": 2 },
+      { "item": "p94_caster", "prob": 2 },
+      { "item": "p94_rifle", "prob": 2 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_mags_armory",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "fallout_10mm_maggroup", "prob": 15 },
+      { "group": "fallout_5mm_maggroup", "prob": 15 },
+      { "group": "mags_rifle_rare", "prob": 10 },
+      { "group": "mags_pistol_common", "prob": 10 },
+      { "group": "mags_pistol_rare", "prob": 5 },
+      { "group": "mags_milspec", "prob": 5 },
+      { "group": "mags_smg_common", "prob": 19 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_ammo_armory",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "fallout_10mm_ammogroup", "prob": 15 },
+      { "group": "fallout_5mm_ammogroup", "prob": 11 },
+      { "group": "ammo_pistol_common", "prob": 15 },
+      { "group": "ammo_rifle_common", "prob": 15 },
+      { "group": "ammo_pistol_rare", "prob": 5 },
+      { "group": "ammo_pistol_milspec", "prob": 3 },
+      { "group": "ammo_rifle_rare", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_table_armory_armor",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jumpsuit_vault", "prob": 10 },
+      { "item": "jumpsuit_vault_13", "prob": 3 },
+      { "item": "kevlar", "prob": 25 },
+      { "item": "legguard_hard", "prob": 15 },
+      { "item": "boots_rubber", "prob": 15 },
+      { "item": "armor_riot", "prob": 15 },
+      { "item": "helmet_riot", "prob": 15 },
+      { "item": "chestguard_hard", "prob": 20 },
+      { "item": "armguard_hard", "prob": 20 },
+      { "item": "helmet_combat_light", "prob": 10 },
+      { "group": "clothing_military", "prob": 10 },
+      { "item": "jumpsuit_vault_13_utility", "prob": 3 },
+      { "item": "jumpsuit_vault_13_armored", "prob": 3 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_equipment_armory",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "vault_knife", "prob": 15 },
+      { "item": "backpack", "prob": 15 },
+      { "item": "holster", "prob": 15 },
+      { "item": "shoulder_strap", "prob": 10 },
+      { "item": "fo_misc_pipboy", "prob": 10 },
+      { "item": "sheath", "container-item": "vault_knife", "prob": 10 },
+      { "item": "toolbox", "prob": 5 },
+      { "item": "rad_x", "prob": 5 },
+      { "item": "med_x", "prob": 5 },
+      { "group": "hospital_medical_items", "prob": 15 },
+      { "group": "gear_medical", "prob": 10 },
+      { "group": "rad_gear", "prob": 10 },
+      { "group": "gear_survival", "prob": 25 },
+      { "group": "swat_gear", "prob": 5 },
+      { "item": "fo_misc_pipboy", "prob": 19 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_vegan_food",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "veggy_pickled", "prob": 4, "charges": 12, "container-item": "jar_3l_glass_sealed" },
+      { "item": "can_tomato", "prob": 4, "charges": 12, "container-item": "jar_3l_glass_sealed" },
+      { "item": "veggy_canned", "prob": 4, "charges": 12, "container-item": "jar_3l_glass_sealed" },
+      { "item": "apple_canned", "prob": 4, "charges": 12, "container-item": "jar_3l_glass_sealed" },
+      { "item": "dry_beans", "prob": 40 },
+      { "item": "dry_lentils", "prob": 40 },
+      { "item": "dry_rice", "prob": 40 },
+      { "item": "veggy_pickled", "prob": 8, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "dry_veggy", "prob": 10 },
+      { "item": "dry_fruit", "prob": 10 },
+      { "item": "oatmeal", "prob": 40 },
+      { "item": "curry_veggy", "prob": 15 },
+      { "item": "flour", "prob": 30 },
+      { "item": "can_tomato", "prob": 40 },
+      { "item": "can_corn", "prob": 35 },
+      { "item": "cooked_pumpkin", "prob": 25 },
+      { "item": "can_beans", "prob": 40 },
+      { "item": "con_milk", "prob": 30 },
+      { "item": "can_spam", "prob": 30 },
+      { "item": "can_pineapple", "prob": 30 },
+      { "item": "can_peach", "prob": 30 },
+      { "item": "can_coconut", "prob": 10 },
+      { "item": "soup_chicken", "prob": 15 },
+      { "item": "soup_mushroom", "prob": 15 },
+      { "item": "can_coconut", "prob": 5 }
+
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_carnivore_food",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "can_sardine", "prob": 14 },
+      { "item": "can_tuna", "prob": 35 },
+      { "item": "can_salmon", "prob": 25 },
+      { "item": "can_chowder", "prob": 35 },
+      { "item": "can_herring", "prob": 30 },
+      { "item": "can_chicken", "prob": 40 },
+      { "item": "curry_meat", "prob": 15 },
+      { "item": "dry_meat", "prob": 10 },
+      { "item": "dry_fish", "prob": 10 },
+      { "item": "fish_pickled", "prob": 8, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_pickled", "prob": 50, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_canned", "prob": 50, "charges": 12, "container-item": "jar_3l_glass_sealed" },
+      { "item": "fish_pickled", "prob": 4, "charges": 12, "container-item": "jar_3l_glass_sealed" },
+      { "item": "meat_pickled", "prob": 4, "charges": 12, "container-item": "jar_3l_glass_sealed" }
+
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_cooking_rewards",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "atomic_coffeepot", "prob": 14 },
+      { "item": "can_sealer", "prob": 35 },
+      { "item": "dehydrator", "prob": 25 },
+      { "item": "food_processor", "prob": 35 },
+      { "item": "hotplate", "prob": 30 },
+      { "item": "multi_cooker", "prob": 30 },
+      { "item": "pressure_cooker", "prob": 30 },
+      { "item": "vac_sealer", "prob": 30 },
+      { "item": "water_purifier", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_sportsitems",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "football_armor", "prob": 75 },
+      { "item": "armguard_hard", "prob": 75 },
+      { "item": "helmet_ball", "prob": 75 },
+      { "item": "legguard_hard", "prob": 75 },
+      { "item": "mask_hockey", "prob": 75 },
+      { "item": "helmet_football", "prob": 75 },
+      { "item": "bat", "prob": 75 },
+      { "item": "fo_powfist", "prob": 15 },
+      { "item": "super_sledge", "prob": 5 },
+      { "item": "nailbat", "prob": 25 },
+      { "item": "football", "prob": 40, "repeat": [ 3, 5 ] },
+      { "item": "baseball", "prob": 40, "repeat": [ 3, 5 ] }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_vault_table_enhanced_armory_guns",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "colt6250", "charges": 12, "prob": 15 },
+      { "item": "colt6250_weathered", "charges": 12, "prob": 5 },
+      { "item": "10mmsmg", "charges": 30, "prob": 10 },
+      { "item": "thatgun", "charges": 5, "prob": 3 },
+      { "item": "22_pistol", "charges": 10, "prob": 3 },
+      { "item": "mauser_9mm", "charges": 7, "prob": 3 },
+      { "item": "357_magnum_revolver", "charges": 10, "prob": 3 },
+      { "item": "14mmpistol", "charges": 7, "prob": 10 },
+      { "item": "colt_rangemaster", "ammo-item": "223", "charges": 15, "prob": 15 },
+      { "item": "varmint_rifle", "ammo-item": "223", "charges": 10, "prob": 10 },
+      { "item": "bozar", "ammo-item": "223", "charges": 50, "prob": 10 },
+      { "item": "rf2076", "ammo-item": "223", "charges": 10, "prob": 5 },
+      { "item": "r91", "ammo-item": "223", "charges": 10, "prob": 15 },
+      { "item": "carbine_marksman", "ammo-item": "223", "charges": 10, "prob": 10 },
+      { "item": "type93", "ammo-item": "223", "charges": 10, "prob": 5 },
+      { "item": "dks501", "ammo-item": "223", "charges": 10, "prob": 15 },
+      { "item": "thatgun", "ammo-item": "223", "charges": 5, "prob": 15 },
+      { "item": "wattz_1000", "prob": 15 },
+      { "item": "wattz_1000_magneto", "prob": 10 },
+      { "item": "laser_pistol_aep", "prob": 15 },
+      { "item": "laser_pistol_aep_pewpew", "prob": 4 },
+      { "item": "wattz_2000", "prob": 10 },
+      { "item": "aer9", "prob": 15 },
+      { "item": "laser_pistol_aep_pewpew", "prob": 5 },
+      { "item": "aer9_tribeam", "prob": 5 },
+      { "item": "aer14_prototype", "prob": 2 },
+      { "item": "laser_rcw", "prob": 4 },
+      { "item": "p94_caster", "prob": 5 },
+      { "item": "p94_rifle", "prob": 5 },
+      { "item": "l30", "prob": 5 },
+      { "item": "avenger", "prob": 5 },
+      { "item": "grenademg", "charges": 30, "prob": 5 }
+
+    ]
+  }
+]

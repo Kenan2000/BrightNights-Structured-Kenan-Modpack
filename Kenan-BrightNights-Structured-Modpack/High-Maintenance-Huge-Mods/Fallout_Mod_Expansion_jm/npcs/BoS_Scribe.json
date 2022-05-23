@@ -1,0 +1,225 @@
+[
+ {
+    "type": "npc",
+    "id": "fo_bos_scribe",
+    "name_suffix": "BoS Scribe",
+    "class": "fo_bos_scribe_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_bos_scribe_start",
+    "faction": "fac__fo_bos"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_bos_scribe_npc",
+    "name": { "str": "BoS Scribe" },
+    "job_description": "Is a scribe of the Brotherhood of Steel.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 0 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 3 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_BOSSCRIBE_worn",
+    "carry_override": "NC_BOSSCRIBE_carry",
+    "weapon_override": "NC_BOSSCRIBE_weapon",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 0, 3 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSSCRIBE_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "glasses_reading", "chance": 45 },
+      { "item": "fo_scribe_coat" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSSCRIBE_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "group": "fallout_misc_itemgroup_food", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSSCRIBE_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 55 }
+    ]
+  },
+  {
+    "id": "TALK_bos_scribe_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you doing here?",
+      "no": "What are you doing here?"},
+    "responses": [
+      {
+        "text": "What is it like being a scribe for the brotherhood of steel?",
+        "topic": "TALK_bos_scribe_infotown"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_bos_scribe_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's a pretty interesting duty to be bestowed upon somebody such as myself. I feel like me and my peers are the only people in the wasteland who are truly fit to deal with such precious and rare technology such as the type you can find in the various vaults, armories and labs of the pre-war era.",
+      "no": "It's a pretty interesting duty to be bestowed upon somebody such as myself. I feel like me and my peers are the only people in the wasteland who are truly fit to deal with such precious and rare technology such as the type you can find in the various vaults, armories and labs of the pre-war era."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_bos_scribe_start"
+      }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "fo_bos_scribe_recruit",
+    "name_suffix": "BoS Scribe Initiate",
+    "gender": "female",
+    "class": "fo_bos_scribe_recruit_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_bos_scribe_recruit_start",
+    "faction": "fac__fo_bos"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_bos_scribe_recruit_npc",
+    "name": { "str": "BoS Scribe Initiate" },
+    "job_description": "Is a scribe of the Brotherhood of Steel.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 0 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 3 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_BOSSCRIBE_worn",
+    "carry_override": "NC_BOSSCRIBE_carry",
+    "weapon_override": "NC_BOSSCRIBE_weapon",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 0, 3 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSSCRIBE_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "glasses_reading", "chance": 30 },
+      { "item": "fo_scribe_coat" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSSCRIBE_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "group": "fallout_misc_itemgroup_food", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_BOSSCRIBE_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 55 }
+    ]
+  },
+  {
+    "id": "TALK_bos_scribe_recruit_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you doing here?",
+      "no": "What are you doing here?"},
+    "responses": [
+      {
+        "text": "What is it like being a scribe for the brotherhood of steel?",
+        "topic": "TALK_bos_scribe_recruit_infotown"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_amg_bos_scribe_recruit"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_bos_scribe_recruit_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's a pretty interesting duty to be bestowed upon somebody such as myself. I feel like me and my peers are the only people in the wasteland who are truly fit to deal with such precious and rare technology such as the type you can find in the various vaults, armories and labs of the pre-war era. If only I could go out into the wastes on my own to travel more tech...",
+      "no": "It's a pretty interesting duty to be bestowed upon somebody such as myself. I feel like me and my peers are the only people in the wasteland who are truly fit to deal with such precious and rare technology such as the type you can find in the various vaults, armories and labs of the pre-war era If only I could go out into the wastes on my own to travel more tech..."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_bos_scribe_recruit_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_amg_bos_scribe_recruit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am ready to join you on your journey!",
+      "no": "I am ready to join you on your journey!"},
+    "responses": [
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
+    ]
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "type": "item_group",
+    "id": "mon_legion_armor",
+    "subtype": "collection",
+    "entries": [
+      { "item": "armor_legion_recruit", "prob": 45 },
+      { "item": "armor_legion_prime", "prob": 55 },
+      { "item": "armor_legion_veteran", "prob": 25 },
+      { "item": "armor_legate", "prob": 8 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mon_legion_helmet",
+    "subtype": "collection",
+    "entries": [
+      { "item": "helmet_legion_recruit", "prob": 45 },
+      { "item": "helmet_legion_prime", "prob": 55 },
+      { "item": "helmet_legion_veteran", "prob": 25 },
+      { "item": "helmet_legate", "prob": 8 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legionfood",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "mirelurk_jerky", "prob": 75 },
+      { "item": "meat_gecko_smoked", "prob": 75 },
+      { "item": "dry_meat_gecko", "prob": 75 },
+      { "item": "jerky_gecko", "prob": 75 },
+      { "item": "kebab_gecko", "prob": 75 },
+      { "item": "xander_root", "prob": 75 },
+      { "item": "pie_happy", "prob": 75 },
+      { "item": "fruit_cactus_barrel", "prob": 75 },
+      { "item": "fruit_cactus_prickly", "prob": 75 },
+      { "item": "macaroni_blamco_cram", "prob": 75 },
+      { "item": "cave_fungus", "prob": 75 },
+      { "item": "macaroni_blamco", "prob": 75 },
+      { "item": "can_cram", "prob": 75 },
+      { "item": "mutfruit_crunchy", "prob": 75 },
+      { "item": "pemmican", "prob": 75 },
+      { "item": "meat_salted", "prob": 75 },
+      { "item": "meat_pickled", "prob": 75 },
+      { "item": "dry_meat", "prob": 75 },
+      { "item": "sausage", "prob": 75 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legionopencrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "ammo_pistol_common", "prob": 35, "charges": [ 8, 25 ] },
+      { "group": "ammo_pistol_reloaded", "prob": 75, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_common", "prob": 25, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_rare", "prob": 20, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_milspec", "prob": 25, "charges": [ 8, 25 ] },
+      { "group": "ammo_rifle_reloaded", "prob": 65, "charges": [ 8, 25 ] },
+      { "group": "ammo_shotgun_common", "prob": 25, "charges": [ 8, 25 ] },
+      { "group": "ammo_shotgun_reloaded", "prob": 35, "charges": [ 8, 25 ] }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legionclosedcrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "ammo_pistol_common", "prob": 35 },
+      { "group": "ammo_pistol_reloaded", "prob": 75 },
+      { "group": "ammo_rifle_common", "prob": 25 },
+      { "group": "ammo_rifle_rare", "prob": 20 },
+      { "group": "ammo_rifle_milspec", "prob": 25 },
+      { "group": "ammo_rifle_reloaded", "prob": 65 },
+      { "group": "ammo_shotgun_common", "prob": 25 },
+      { "group": "ammo_shotgun_reloaded", "prob": 35 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legioncrate_mags",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "mags_surplus", "prob": 35 },
+      { "group": "mags_cop", "prob": 75 },
+      { "group": "mags_pistol_common", "prob": 25 },
+      { "group": "mags_pistol_rare", "prob": 20 },
+      { "group": "mags_smg_common", "prob": 25 },
+      { "group": "mags_rifle_common", "prob": 65 },
+      { "group": "mags_rifle_makeshift", "prob": 25 },
+      { "group": "mags_crime", "prob": 35 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legion_gun_storage",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "357_magnum_revolver", "prob": 55, "charges": 6 },
+      { "item": "cowboy_repeater", "prob": 55, "charges": 7 },
+      { "item": "cowboy_repeater_longue", "prob": 6, "charges": 7 },
+      { "item": "brush_gun_medicine", "prob": 40, "charges": 8 },
+      { "item": "brush_gun", "prob": 40, "charges": 6 },
+      { "item": "greasegun", "prob": 40, "charges": 30 },
+      { "item": "colt_rangemaster", "prob": 40, "charges": 15 },
+      { "item": "carbine_assault", "prob": 40, "charges": 30 },
+      { "item": "14mmpistol", "prob": 40, "charges": 7 },
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 5 },
+      { "item": "amr50", "prob": 6, "charges": 7 },
+      { "item": "25mmapw", "prob": 6, "charges": 7 },
+      { "item": "grenademg", "prob": 2, "charges": 7 },
+      { "item": "cz53minigun", "prob": 3, "charges": 7 },
+      { "item": "20ga_singleshot", "prob": 35, "charges": 7 },
+      { "item": "caravan_shotgun", "prob": 35, "charges": 7 },
+      { "item": "citykiller", "prob": 20, "charges": 7 },
+      { "item": "ak112", "prob": 20, "charges": 30 },
+      { "item": "mauser_9mm", "prob": 20, "charges": 30 },
+      { "item": "colt6250", "prob": 20, "charges": 30 },
+      { "item": "10mmsmg", "prob": 20, "charges": 30 },
+      { "item": "hk_p90c", "prob": 5, "charges": 30 },
+      { "item": "10mmgatling", "prob": 20, "charges": 30 },
+      { "item": "14mmsmg", "prob": 20, "charges": 30 },
+      { "item": "22_pistol", "prob": 5, "charges": 30 },
+      { "item": "22_smg", "prob": 5, "charges": 30 },
+      { "item": "colt_rangemaster", "prob": 20, "charges": 30 },
+      { "item": "varmint_rifle", "prob": 20, "charges": 30 },
+      { "item": "varmint_rifle_ratslayer", "prob": 20, "charges": 30 },
+      { "item": "thatgun", "prob": 20, "charges": 30 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legion_gunmags_storage",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "25mmdrummag", "prob": 8, "charges": 30 },
+      { "item": "25mmdrummagxl", "prob": 1, "charges": 300 },
+      { "item": "47mmminigunmag", "prob": 4, "charges": 300 },
+      { "item": "amr50mag", "prob": 8, "charges": 30 },
+      { "item": "rangemastermag", "prob": 45, "charges": 30 },
+      { "item": "rangemastermag2", "prob": 25, "charges": 30 },
+      { "item": "rf2076mag", "prob": 25, "charges": 30 },
+      { "item": "rf2076drummag", "prob": 25, "charges": 30 },
+      { "item": "5mmmag", "prob": 25, "charges": 30 },
+      { "item": "5mmlargemag", "prob": 25, "charges": 30 },
+      { "item": "5mmdrummag", "prob": 25, "charges": 30 },
+      { "item": "5mmminigunmag", "prob": 5, "charges": 300 },
+      { "item": "colt6250mag", "prob": 25, "charges": 30 },
+      { "item": "10mmsmgmag", "prob": 25, "charges": 30 },
+      { "item": "10mmgatlingmag", "prob": 10, "charges": 60 },
+      { "item": "10mmgatlingmagxl", "prob": 8, "charges": 75 },
+      { "item": "p90cmag", "prob": 10, "charges": 30 },
+      { "item": "14mmpistolmag", "prob": 10, "charges": 30 },
+      { "item": "14mmsmgmag", "prob": 10, "charges": 30 },
+      { "item": "citykillermag", "prob": 10, "charges": 30 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_legion_melee_storage",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 10 },
+      { "item": "spear_fallout_replica", "prob": 5 },
+      { "item": "spear_fallout", "prob": 10 },
+      { "item": "machete_gladius", "prob": 35 },
+      { "item": "meat_hook_claws", "prob": 10 },
+      { "item": "sword_crude", "prob": 10 },
+      { "item": "cavalry_sabre", "prob": 10 },
+      { "item": "longsword_inferior", "prob": 10 },
+      { "item": "survivor_machete", "prob": 10 },
+      { "item": "cestus", "prob": 10 },
+      { "item": "bat", "prob": 10 },
+      { "item": "battleaxe", "prob": 10 },
+      { "item": "hammer_sledge", "prob": 10 },
+      { "item": "spear_knife", "prob": 10 },
+      { "item": "spear_homemade_halfpike", "prob": 10 },
+      { "item": "knuckle_brass", "prob": 5 },
+      { "item": "knuckle_nail", "prob": 5 },
+      { "item": "punch_dagger", "prob": 5 },
+      { "item": "spear_steel", "prob": 10 },
+      { "item": "super_sledge", "prob": 10 },
+      { "item": "fo_powfist", "prob": 15 }
+
+    ]
+  }
+]

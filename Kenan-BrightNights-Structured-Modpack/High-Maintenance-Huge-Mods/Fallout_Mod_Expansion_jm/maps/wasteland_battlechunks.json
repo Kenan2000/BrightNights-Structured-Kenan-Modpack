@@ -1,0 +1,729 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired1_d",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "  T         ",
+        "     Mmmm d ",
+        "     ymm    ",
+        "            ",
+        "#..       ..",
+        "##.......b.#",
+        ".bb.....####",
+        " .#######   ",
+        "            ",
+        "        BB  ",
+        "    e       ",
+        "  D      e  "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_legionary_recruit", "x": 1, "y": 3 },
+        { "class": "fo_legionary_recruit", "x": 5, "y": 5 },
+        { "class": "fo_legionary", "x": 7, "y": 6 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired2_d",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "    BB    MY",
+        "   BBBB  mMy",
+        "            ",
+        "#..       ..",
+        "##.....B...#",
+        ".##.....####",
+        " .#######   ",
+        "            ",
+        "        e   ",
+        "  e   e     ",
+        "          D "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_legionary_recruit", "x": 1, "y": 3 },
+        { "class": "fo_legionary_recruit", "x": 5, "y": 5 },
+        { "class": "fo_legionary_veteran", "x": 7, "y": 6 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired3_d",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "   ba  mmm  ",
+        "    b   Mf  ",
+        "            ",
+        "            ",
+        "            ",
+        "       #### ",
+        "#      #  ##",
+        " ## ####    ",
+        "   yy       ",
+        "        bbb ",
+        "   b        "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_legionary_veteran", "x": 5, "y": 6 },
+        { "class": "fo_legionary", "x": 2, "y": 4 },
+        { "class": "fo_legionary_veteran", "x": 11, "y": 5 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired4_d",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "          e ",
+        "            ",
+        "        ee  ",
+        "    d       ",
+        "            ",
+        "   M        ",
+        "  ##mm      ",
+        "    #mm#Y   ",
+        "      Y     ",
+        "            ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_legionary_recruit", "x": 2, "y": 3 },
+        { "class": "fo_legionary", "x": 3, "y": 5 },
+        { "class": "fo_legionary", "x": 5, "y": 10 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired5_d",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "...         ",
+        "            ",
+        "        t   ",
+        "            ",
+        "            ",
+        "...    ..###",
+        "#..  bbb##..",
+        "#bb.####..  ",
+        "####...    .",
+        "       mmy  ",
+        "        Y   ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_legionary", "x": 3, "y": 5 },
+        { "class": "fo_legionary", "x": 5, "y": 4 },
+        { "class": "fo_legionary_recruit", "x": 8, "y": 4 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired6_d",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "...         ",
+        "  m         ",
+        "mmYyyy      ",
+        "  yyyMM     ",
+        "            ",
+        "#..       ..",
+        " #bb.....bbb",
+        " .#bb ######",
+        " ..####.   .",
+        "            ",
+        "     BBB    ",
+        "            "
+      ],
+      "place_npcs": [
+        { "class": "fo_legionary_recruit", "x": 3, "y": 4 },
+        { "class": "fo_legionary_recruit", "x": 5, "y": 5 },
+        { "class": "fo_legionary_recruit", "x": 7, "y": 6 }
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired1_u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "            ",
+        "            ",
+        "  BBB       ",
+        "    B       ",
+        "            ",
+        "      e     ",
+        "            ",
+        "            ",
+        "            ",
+        "            ",
+        "            "
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      },
+      "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 2, "y": 10 },
+        { "class": "fo_ncr_trooper", "x": 4, "y": 14 },
+        { "class": "fo_ncr_trooper", "x": 7, "y": 9 },
+        { "class": "fo_ncr_trooper", "x": 10, "y": 13 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired2_u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "            ",
+        "    e       ",
+        "            ",
+        "            ",
+        "            ",
+        "#######.   .",
+        "#bb bb###..#",
+        "        ###.",
+        "            ",
+        " yyMyyy     ",
+        "  YYY    d  ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      },
+      "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 1, "y": 8 },
+        { "class": "fo_ncr_trooper", "x": 5, "y": 9 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired3_u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "...         ",
+        ".      MM ..",
+        "     B      ",
+        "     B      ",
+        "      B     ",
+        "            ",
+        ".##########.",
+        "#bbbb....bb#",
+        "#....    ..#",
+        "#          #",
+        "     yy     ",
+        "       yy   "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 3, "y": 8 },
+        { "class": "fo_ncr_trooper", "x": 6, "y": 8 },
+        { "class": "fo_ncr_trooper", "x": 5, "y": 9 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired4_u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "...         ",
+        "  Y   e     ",
+        "mmm b     t ",
+        " yyy        ",
+        "            ",
+        "....####....",
+        "...#    #...",
+        "###.   ..##.",
+        "            ",
+        "..      ..#.",
+        "            ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 3, "y": 8 },
+        { "class": "fo_ncr_trooper", "x": 6, "y": 8 },
+        { "class": "fo_ncr_trooper", "x": 8, "y": 9 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired5_u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "...         ",
+        "            ",
+        "   ...      ",
+        "  y   .BB   ",
+        " yy  . Ymm  ",
+        "    . YYmmm ",
+        "############",
+        "    bbbbb   ",
+        "            ",
+        "      MM    ",
+        "    YYymm   ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 3, "y": 10 },
+        { "class": "fo_ncr_trooper", "x": 6, "y": 10 },
+        { "class": "fo_ncr_trooper", "x": 11, "y": 11 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_wired6_u",
+    "object": {
+      "mapgensize": [ 12, 12 ],
+      "rows": [
+        "...         ",
+        "  yyy   MMy ",
+        "  yy  m  MM ",
+        "  YY  MMm   ",
+        "   Y        ",
+        "      ##    ",
+        "  ####  #   ",
+        " #bbb    ###",
+        " #       bb ",
+        "#           ",
+        "         d  ",
+        "            "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "place_npcs": [
+        { "class": "fo_ncr_trooper", "x": 2, "y": 8 },
+        { "class": "fo_ncr_trooper", "x": 6, "y": 11 },
+        { "class": "fo_ncr_trooper", "x": 8, "y": 9 }
+      ],
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m1",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        ",
+        "        "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m2",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "        ",
+        "e  #MBBB",
+        "...  #. ",
+        " mmmT . ",
+        " m ....  ",
+        " mm ..  ",
+        "t  e    ",
+        "        "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m3",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "        ",
+        "d  # BBB",
+        "...M #. ",
+        "    BB. ",
+        "   BaaB ",
+        "  yyBBM ",
+        "D       ",
+        "      ee"
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m4",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "        ",
+        "B BB#...",
+        "...yy#. ",
+        "   tB . ",
+        " t     t",
+        "    ..YY",
+        "t  T. y.",
+        "    .   "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m5",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "V BB  e ",
+        " BBBBB  ",
+        "BBaaaBV ",
+        "BBaaaBB ",
+        "BBaaaBB ",
+        " BBBBBy ",
+        "  BByyTM",
+        "V   e   "
+      ],
+      "furniture": { "b": "f_sandbag_half", "V": "f_rubble_rock" , "M": "f_wreckage", "m": "f_ash", "y": "f_rubble"},
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m6",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "        ",
+        "  T  B  ",
+        " Y..  d ",
+        "MMM e  y",
+        " BT ..  ",
+        " d BB D ",
+        "    B   ",
+        "     D  "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m7",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "    yy  ",
+        "   Ymm  ",
+        "  ##  t ",
+        "    ##  ",
+        "  e     ",
+        "      # ",
+        " t    D ",
+        "        "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "wasteland_battlefield_m8",
+    "object": {
+      "mapgensize": [ 8, 8 ],
+      "rows": [
+        "        ",
+        " MYmmm  ",
+        "  BBBm  ",
+        " B#B e  ",
+        "        ",
+        "   #    ",
+        " e   #  ",
+        "        "
+      ],
+      "furniture": { "b": "f_sandbag_half", "M": "f_wreckage", "m": "f_ash", "Y": "f_rubble_rock", "y": "f_rubble" },
+      "terrain": {
+        "#": "t_fence_barbed",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_dead",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  }
+]

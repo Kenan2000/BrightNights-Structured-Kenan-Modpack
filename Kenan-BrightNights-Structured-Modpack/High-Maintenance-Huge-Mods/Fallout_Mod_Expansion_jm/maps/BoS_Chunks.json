@@ -1,0 +1,27 @@
+[
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "fo_bos_postdoor",
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rows": [
+        "##",
+        "  "
+      ],
+      "furniture": { "b": "f_sandbag_half" },
+      "terrain": {
+        "#": "t_metal_floor",
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_pine",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  }
+]

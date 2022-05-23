@@ -1,0 +1,1162 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "WWWWWWWWWWWWWWWWWWWWW~~~",
+                "W#.kNW]]WyGPWyGPWyGPW~~~",
+                "WnNNNCffW3hHW3hHW3hHW~~~",
+                "WWWWWWffWGGHWGGHWGGHW~~~",
+                "WnNNNCffWGGGWGGGWGGGW~~~",
+                "W#.kNWffWWCWWWCWWWCWW~~~",
+                "WWWWWWgggfffffffffffW~~~",
+                "WPHHGWg)gffffffffff*W~~~",
+                "WGGhGCggWWWWWWWCWWCWW~~~",
+                "Wy3GGWffWGG3yW*TTTT*W~~~",
+                "WWWWWWffCGhGGWSSTTSSW~~~",
+                "WPHHGWffWGHHPWttTTttW~~~",
+                "WGGhGCffWWWWWWttTTttW~~~",
+                "Wy3GGWffWGG3yWSSTTSSW~~~",
+                "WWWWWWffCGhGGWTTTTSSW~~~",
+                "FFF]vWffWGHHPWttTTttW~~~",
+                "FFFFFWWCWWWWWWttTTttW~~~",
+                "WFFFFFFFWEER1wSSTTSSW~~~",
+                "W*FFFFFFWTTTTCTTTTTTW~~~",
+                "WW*FFFFFWbbR1w*TVV[*W~~~",
+                "WWWWFFWWWWWWWWWWWWWWW~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL" ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 0, 19 ], "y": [ 4, 23 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "WWWWWWWWWWWWWWWWWWWWW~~~",
+                "W*FF)FFFFFFFFFFF)FF*W~~~",
+                "WFFFFFFFFFFFFFFFFFFFW~~~",
+                "WFFWWWWWWWWWWWWWFFwwW~~~",
+                "WFgW]GGG}W}GGG]WgFw4W~~~",
+                "WFgCGGhGGWGGhGGCgFCFW~~~",
+                "WFgWPHHG3W3GHHPWgFw4W~~~",
+                "WFFWWWWWWWWWWWWWFFwwW~~~",
+                "WFgW]GGG}W}GGG]WgFw4W~~~",
+                "WFgCGGhGGWGGhGGCgFCFW~~~",
+                "WFgWPHHG3W3GHHPWgFw4W~~~",
+                "WFFWWWWWWWWWWWWWwCwwW~~~",
+                "WFFW++%WWWn.nW*FFFF*W~~~",
+                "WFFWFFFWWWNNNW[FFFFFW~~~",
+                "WWCWFF)F%WEN#WFuFuFFW~~~",
+                "FFFWCWFF+WWCWWFFFFFFW~~~",
+                "FFFFFCFF+WYNMw[uFuFFW~~~",
+                "WFFFFWWWWW|N{wFFFFFFW~~~",
+                "W*FFFFWDg*/NNCFuFuFFW~~~",
+                "WW*FFFWdgNNNmwFFIFIFW~~~",
+                "WWWWFFWWWWWWWWWWWWWWW~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL" ],
+        "place_monsters": [ { "monster": "VAULT_RAIDER", "x": [ 0, 19 ], "y": [ 4, 23 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~W*GyyoooW'FaW44iPi44W",
+                "~~~WuGyyGGoW!FaWFuFhFuFW",
+                "~~~WusGGGGGWWCWWFuuuuuFW",
+                "~~~Wuu]G%%GW[F[WLFgFgFiW",
+                "~~~WWWWWWWCWFFFJFFgFgFIW",
+                "~~~WiiIIWFFWFFFWLFgFgFIW",
+                "~~~W1FFFJFFJ[F[W)ggggg)W",
+                "~~~W1FFFCggCgggWWCWJWCWW",
+                "~~~W*II1WFFWg)gFFFFFFFFW",
+                "~~~WWWWWWWWWgggFFFFFFFFW",
+                "~~~WU2U*IPIWFFWWWWWJWCWW",
+                "~~~WFFFFFFgJFFWggFFFFF*W",
+                "~~~WFFFFFsgCFFWgWWWWWFFW",
+                "~~~WU2UPuugWFFWFW]gDWCWW",
+                "~~~WWWWWWWWWFFJFCgggWFFF",
+                "~~~W((F(F(FWFFWFW]gWWFFF",
+                "~~~W+FF=F=FCFFWFWWWW*FFW",
+                "~~~W+FFFFFFWFFCFFCFFFFFW",
+                "~~~W*0F0F_FWF*W*FWFFFFWW",
+                "~~~WWWWWWWWWWWWWWWFFWWWW"
+            ],
+        "palettes": [ "FO_VAULTPAL_ADMIN" ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 4, 23 ], "y": [ 4, 23 ], "density": 0.75 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~W3yyGPuuuW5YpYpWDaFPW",
+                "~~~WGyyGGGhuW5TpTpWFFFFW",
+                "~~~WGGGGG%WWWM{T)PWaaFdW",
+                "~~~WGGGGG%WWWWWCWWWFFFFW",
+                "~~~W*ggg)%WFFFFFFFCFFFdW",
+                "~~~WWWCWWWWFFWWWWWWaaF6W",
+                "~~~WIgggF)WFFWLLLLWDFF6W",
+                "~~~WIuuuFFWFFWPuFFWWWCWW",
+                "~~~WFFhuFgWgFWFhF*IIWF]W",
+                "~~~WFFPuFgCgFWFFFFFFWFFW",
+                "~~~WiuuuFgWgFWPuFFuPWFFW",
+                "~~~WigggF)WF]WFhFFhFWFFW",
+                "~~~WWWCWWWWCWWFFFFFFWF]W",
+                "~~~W!gggW((F=WPuFFuPWCWW",
+                "~~~W!'FFCFF)/WFhFFhFWF*F",
+                "~~~WaF)aW((F=WiIFIiFCFFF",
+                "~~~WaFFaWWWWWWWWWWWCWCWW",
+                "~~~W!'FFCFFFFFFFFCFFCF]W",
+                "~~~W!FaaW*FFFFFF*W*FW]WW",
+                "~~~WWWWWWWWWWWWWWWFFWWWW"
+            ],
+        "palettes": [ "FO_VAULTPAL_ADMIN" ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 4, 23 ], "y": [ 4, 23 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W+++*[;[WIILSFWFFFFWW",
+                "~~~W+MM_=_=W2FPjFWWFFFFW",
+                "~~~W+MM=opoW2FFFFWWW*FFW",
+                "~~~W=_=_AAAWii%F%WWWWFFW",
+                "~~~WwCwWJJJWWWWCWW]]WFFC",
+                "~~~WFFFW!ZvOx!WFFFFFFFFW",
+                "~~~WF$FCO)FF)OCF)FFFFF*W",
+                "~~~WFFFWllOXXzWFFWWWWWWW",
+                "~~~WWCWWWWWWWWWFgWGG)HHW",
+                "~~~W*FFFFFFFFFCFgCGGGhHW",
+                "~~~WFFFFFFFFFFWFgWyyGG3W",
+                "~~~WWCWWWWWWWWW*FWWWWWWW",
+                "~~~W)FFFFFFFF)WFgWGG)HHW",
+                "~~~WFWwJwwJwWFWFgCGGGhHW",
+                "~~~WFJlm||kKJFWFgWyyGG3W",
+                "~~~WFCTTT)TTCFCFFWWWWWWW",
+                "~~~WFJiT||PTJFWFgWGG)HHW",
+                "~~~WFWIT||T`WFWFgCGGGhHW",
+                "~~~W*Wg6666gW*WFgWyyGG3W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPALCONTROL" ],
+        "place_monsters": [ { "monster": "VAULT_RAIDER", "x": [ 4, 21 ], "y": [ 1, 19 ], "density": 0.6 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W*FFFFFFFFFFFFFFFFFWW",
+                "~~~WFFFFFmmmFmFmmmFFFFFW",
+                "~~~WFWWWWW||g*g||WWWWWFW",
+                "~~~WFW)YYW|ggggg|W[[)WFC",
+                "~~~WFCyyIWFF|||FFWPiiCFW",
+                "~~~WFWUuuWWCWWWCWWooOWFW",
+                "~~~WFWWWWWTTR)RTTWWWWWFW",
+                "~~~WFW)YYWTeeeeeTW[[)WFW",
+                "~~~WFCyyIWTeeeeeTWPiiCFW",
+                "~~~WFWUuuWTRTRTRTWooOWFW",
+                "~~~WFWWWWWTRTRTRTWWWWWFW",
+                "~~~WFW)YYWTeeeeeTW[[)WFW",
+                "~~~WFCyyIWTeeeeeTWPiiCFW",
+                "~~~WFWUuuWTTRTR-TWooOWFW",
+                "~~~WCWWWWWCWW&&WCWWWWWCW",
+                "~~~WT.)W22T3WFFWT44W).TW",
+                "~~~WTTnW2TT3WF'WTT4WnTTW",
+                "~~~W1TTW2TT3WFFW5T4WTT1W",
+                "~~~W1knW2233W77W554Wnk1W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_VEGAN" ],
+        "place_nested": [ { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 2 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 2 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 16 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 10 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 5 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 14 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 25, "y": 17 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 10 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 10 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 7 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 14 },
+            { "chunks": [ [ "vaulth_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 17 }
+        ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Nutrition Storage Room",
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #67-E17\n\n  The purpose of this vault is to explore the effects of rapid dietary changes on a sample of test subjects divided into two distinct groups. The first of these two distinct groups of test subjects is comprised of commited vegetarians who have both dietary and ethical compunctions about the consumptions of animal flesh and other assorted meat products. The second of these two groups is comprised of subjects who are known to consume prodigious amounts of meat on a regular basis, and have since become inured to the effect of said meat and protein loading on their body. At the start of the experiment, it is the intention of the overseer and vault science to mandate that the first test subject group only consume the food typically consumed by the second group, and vice versa. Deviation from this dietary line will result in severe punishment, and it is expected that the two subject groups will follow their dietary regimen independent of their collective volition. It is expected in a postwar environment that one must accustom themselves to potentially unsavory changes in their environment. Towards that end, this project was developed."
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~WyyF6W/FWIIuuuiWFF*WW",
+                "~~~WYFF6W/FWFFFSFiWFFF*W",
+                "~~~WyyF6WPFWF*WWWWWCWFFW",
+                "~~~WYFF6WkFWCJWFFFFFCFFC",
+                "~~~WyyF6WkFFF|WF*FFFWWWW",
+                "~~~WYFFFWPFFF|WFFWWWW%%W",
+                "~~~W)gggWzXFF|WFFW|PsTsW",
+                "~~~WWJCJWWJCJWWFFW|TtttW",
+                "~~~W*gggFFFFFFCggCTTtttW",
+                "~~~WFFFFFFFFFFWggWTTsTsW",
+                "~~~WWJCJWWJCJWWWCWWCWWWW",
+                "~~~W^*gT[W/g*[WFFW<<)<<W",
+                "~~~W9TgTkW5gTTWiFW<|||(W",
+                "~~~W:TgT/W/g-]WiFW<|Z|9W",
+                "~~~W:TgT[WJ&JWWIFW<|||9W",
+                "~~~W?Tg9WW5T5WWIFW<|Z|9W",
+                "~~~W?Tg9W5T)5WPFFW<|||(W",
+                "~~~W`TTTWM{{MWOKFW<<)<<W",
+                "~~~W```PWM{{MWOO'Wm_0+=W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_CYBORG" ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Cybernetics Storage Room",
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #240-C17\n\n  A product of a joint project between RobCo, Norwood Medical Solutions and Vault-Tec, this vault was designed for the sole purpose of examining the effect of extensive cybernetic augmentation usage among a closed population. There are to be two groups: a control group that is recruited from a proportion of the population known to be averse to cybernetic implants; and another group comprised of subjects who entered a false lottery on the assumption that they would receive a complete suite of cybnernetic implants. Once the subjects were enclosed in the vault, the non-control group would gradually be made to go through a more and more extensive regime of augmentations such that their daily life and duties around the vault would both be a product of their implants, and said implants would be  a product of their duties. In this way, it is hoped that we can both examine the effects of an extensive augmentation process upon willing test subjects, but also the reactions to said augmentations amongst the decidely cybnernetic-averse control group. In addition to these common cybnernetics, the overseer will also have exclusive access to augmentations secretly implanted within the willing subjects, allowing control over the subject's mood, consciousness and executive function at will."
+        }
+          },
+        "place_monsters": [ { "monster": "GROUP_VAULT_CYBORGS", "x": [ 4, 21 ], "y": [ 1, 19 ], "density": 0.85 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~WFFFFFFFFFFFFFFCF*FWW",
+                "~~~WFwFwFFwwwwwwwwWFFFFW",
+                "~~~WwwwwwFFFwFFFFwWgFF*W",
+                "~~~WwFFFwwwFwFFwFFWggFFC",
+                "~~~WwFwFwwwFFFwwwFWWWWWW",
+                "~~~WwFwFFFFFFwwFFFwFFFFW",
+                "~~~WwFwFwwwwFwFFwFwFwwFW",
+                "~~~WwFwFFFFFFwFwwFwFwFFW",
+                "~~~WwFwwwFwwFFFwwwwFwwwW",
+                "~~~WwFFFFFwwFFwwFFFFwFwW",
+                "~~~WwwwFwFwwwFwFFFwwwFFW",
+                "~~~WFFFFwFFFwFwFwFwFFFwW",
+                "~~~WFwFFwwwFwFwwwFwwwFFW",
+                "~~~WFwwwwFwFwFFFFFFFwFFW",
+                "~~~WFFFFFFwFwwwwwwFFfFFW",
+                "~~~WwwwwwwwFFFwFFwF-WWWW",
+                "~~~WFFFwFFFFwwwFFwFWWF'W",
+                "~~~WFwwwFgggFFwFwwF&F)3W",
+                "~~~WFFFFFFFFwwwFFFFW124W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_MAZE" ],
+        "computers": {
+        "-": {
+          "name": "Vault Maze Security Resource Room",
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #94-B29\n\n  The purpose of this vault is to examine the effect of food deprivation in low-light conditions upon the ability of people to navigate in enclosed spaces. It is thought that such research would allow Vault-Tec to better acclimate to any post war situation, one in which such tight, enclosed spaces could become home to desperate post-war humans. Towards the end of exploring the intersection of starvation and navigation, we have elected to create a complex maze wherein various test subjects will be tasked with finding the maze's end. Situated at the end of the maze is a large stipend of food and other survival supplies. On a regular basis, the overseer will ordered the vault's maze to be rearranged in accordance with the vault's resident Thinkmachine 2800x. Test subjects will be compelled to travel through the maze on a regular basis so as to avoid starvation."
+        }
+          },
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 4, 21 ], "y": [ 1, 19 ], "density": 0.75 } ],
+        "place_item": [
+        { "item": "corpse_generic_human", "x": 6, "y": 2, "chance": 80 },
+        { "item": "corpse_generic_human", "x": 14, "y": 7, "chance": 80 },
+        { "item": "corpse_generic_human", "x": 9, "y": 18, "chance": 60 },
+        { "item": "corpse_generic_human", "x": 18, "y": 16, "chance": 80 }
+      ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W*VVFFFFFFFFFFFFFVVWW",
+                "~~~WVgcccccccccccccFggVW",
+                "~~~WVFccffffffffffccFgVW",
+                "~~~WFccfffTTfTTfTffccFFC",
+                "~~~WccffTffffffffTffccFW",
+                "~~~WcffTfccccccccffffccW",
+                "~~~WcfffccFF-FFFccfTffcW",
+                "~~~WcfTfcFwww&wwwccfTfcW",
+                "~~~WcfTfcFwQQ)Q'wFcfffcW",
+                "~~~WcfffcFw1Q1Q1wFcfTfcW",
+                "~~~WcfTfcFw1Q1Q1wFcfTfcW",
+                "~~~WcfTfcFw12121wFcfffcW",
+                "~~~WcfffccwwwwwwwFcfTfcW",
+                "~~~WcffTfccccFFFFFcfTfcW",
+                "~~~WccffTfffcccccccfffcW",
+                "~~~WFccfffffffffffffffcW",
+                "~~~WVFcfffTTfTTffTTffccW",
+                "~~~WVgcccfffffffffffccFW",
+                "~~~W*VVFcccccccccccccF*W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPALRACE" ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 4, 21 ], "y": [ 1, 19 ], "density": 0.4 } ],
+        "computers": {
+        "-": {
+          "name": "Vault Racing 1st Place Reward Room",
+          "security": 4,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #139-A93\n\n  The purpose of this vault is to examine the effect of food deprivation upon a subject's reaction time, technical aptitude and ability to focus. Towards this end, researchers with operation safehouse elected for a new experiment: a race on electrical vehicles every week wherein in the winner of said race is awarded a food stipend for them and their family and their designated 'maintenance team'. First place winners receive double the normal food allowance tickets, second place winners receive the normal food allotment, third place winners recieve one quarter the typical food stipend, and fourth place losers receive no food allotment tickets at all. It is thought that attaching one's sustenance to a very holistic activity such as racing and vehicle maintenance will cultivate within the test subjects a very strong sense of mechanical aptitude, rapid reflexes and a lack of strong self-preservation instinct. In this way, Vault-Tec researchers hope to create an environment wherein one's personal safety is not taken into account in even high-risk scenarios, as they could fear not just a loss of respect among their peers, but starvation as well."
+        }
+          },
+        "place_vehicles": [ { "vehicle": "scooter_electric", "x": 5, "y": 9, "chance": 99, "fuel": 80, "status": 0, "rotation": 270 },
+                            { "vehicle": "scooter_electric", "x": 15, "y": 17, "chance": 99, "fuel": 80, "status": 0, "rotation": 180 },
+                            { "vehicle": "scooter_electric", "x": 20, "y": 8, "chance": 99, "fuel": 80, "status": 0, "rotation": 90 },
+                            { "vehicle": "scooter_electric", "x": 13, "y": 3, "chance": 99, "fuel": 80, "status": 0, "rotation": 0 } ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~WF*FFFFFFFFFFFFFF*FWW",
+                "~~~WFFTTTTTTTTTTTTTTFFFW",
+                "~~~W;FTttttttttttttTF;FW",
+                "~~~W;FTtTTTTTTTTTTtTF;FC",
+                "~~~W;FTtTTTTTTTTTTtTF;FW",
+                "~~~WFFTtTTTTTTTTTTtTFFFW",
+                "~~~W;FTttttttttttttTF;FW",
+                "~~~W;FTtTTTtTTtTTTtTF;FW",
+                "~~~W;FTtTTTtTTtTTTtTF;FW",
+                "~~~WFFTtTTTtTTtTTTtTFFFW",
+                "~~~W;FTtTTTtTTtTTTtTF;FW",
+                "~~~W;FTtTTTtTTtTTTtTF;FW",
+                "~~~W;FTttttttttttttTF;FW",
+                "~~~WFFTtTTTTTTTTTTtTwwCW",
+                "~~~W;FTtTTTTTTTTTTtTJ'FW",
+                "~~~W;FTtTTTTTTTTTTtTJ-FW",
+                "~~~W;FTttttttttttttTw&&W",
+                "~~~WFFTTTTTTTTTTTTTTwFFW",
+                "~~~WF*FF]FFFFFFFF]FFw11W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_SPORTS" ],
+        "place_nested": [ { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 4 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 18, "y": 9 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 8 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 10 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 9 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 13 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 14 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 5 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 6 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 11 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 10 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 15 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 15 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 17 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 16 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 18 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 19 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 5 },
+            { "chunks": [ [ "vaulth_athlete_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 2 }
+        ],
+        "computers": {
+        "-": {
+          "name": "Vault Sports Locker Area",
+          "security": 4,
+          "options": [ { "name": "Unlock Containment Doors", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #638-E817\n\n  The purpose of this vault experiment is to examine sports and athleticism as a form of conflict resolution and dispute mediation. Towards this end, vault-tec scientists alloted a large portion of the vault to various football fields, baseball fields and sports pitches for a variety of lesser athletic activities. Whenever a major dispute is to appear between various members of the vault, or between various departments, the overseer will facilitate a sports match between the two negotiating parties. The victor of the match has the dispute mediated in their favor. In this way, Vault-Tec desires to see a system of social conflict mitigating wherein victory is determined by the mostly visceral traits of athleticism, reflexes and strength rather than charisma and abstract intelligence. It is expected that in a post-war world, such dispute mitigation methods will become more common."
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W/111111WaZaFZFWFFFWW",
+                "~~~W(ggggggC<<<<<<CF*FFW",
+                "~~~W(g*||||WaZaFZFWWW*FW",
+                "~~~W/g<WWWWWWWWCWWWFWFFC",
+                "~~~W(ggCFFFFF*FFgFFFWCWW",
+                "~~~W(<<WFFFFFFFFgFFFWFFW",
+                "~~~W00<WWCWWWWWWCWWWWFFW",
+                "~~~Wwwww*Fwwwww+<*m=WFFW",
+                "~~~WyyTJFFJTyyw/<|||WFFW",
+                "~~~WnTT&gg&TTnw/<|||WFFW",
+                "~~~WwwwwFFwwwwwk<|||WFFW",
+                "~~~WyyTJFFJTyyw<<<<PWCWW",
+                "~~~WnTT&gg&TTnwi<<IWWggW",
+                "~~~WwwwwF-wwwwwi<<IW(F[W",
+                "~~~WyyTJFFJTyyw66<6W0F@W",
+                "~~~WnTT&gg&TTnwWWCWWWCWW",
+                "~~~WwwwwFFwwwww'FFI]iFpW",
+                "~~~WyyTJFFw999wuhFFFFFFW",
+                "~~~WnTT&gg&TT9wuuuLL%%%W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_MUTANT" ],
+        "place_monsters": [ { "monster": "GROUP_VAULT_SUPER_MUTANT", "x": [ 4, 21 ], "y": [ 1, 19 ], "density": 0.3 } ],
+        "place_monster": [ { "monster": "mon_mutant_experimental", "x": 6, "y": 9, "chance": 75 },
+        { "monster": "mon_mutant_experimental", "x": 5, "y": 13, "chance": 75 },
+        { "monster": "mon_mutant_experimental", "x": 5, "y": 16, "chance": 75 },
+        { "monster": "mon_mutant_experimental", "x": 6, "y": 19, "chance": 75 },
+        { "monster": "mon_mutant_experimental", "x": 12, "y": 9, "chance": 75 },
+        { "monster": "mon_mutant_experimental", "x": 11, "y": 13, "chance": 75 },
+        { "monster": "mon_mutant_experimental", "x": 12, "y": 16, "chance": 75 } ],
+        "computers": {
+        "-": {
+          "name": "Vault Mutagen Research Area",
+          "security": 4,
+          "options": [ { "name": "Unlock Containment Doors", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #811-D142\n\n  The purpose of this vault is the product of a joint collaboration between West-Tek Industries and Vault-Tec towards the shared aim of examining the effect of targetd FEV mutagens upon a test population. In contrast to the traditional Forced Evolutionary Virus, the FEV variant to be employed upon test subjects within this vault is more precisely targeted in its mutation regime. The particular FEV variant in this vault is designed such that the target often still retains their lucidity, self-control and baseline humanform, albeit with certain alterations, often derived from other animal species or genelines. In greater concentration or with mutagens of a reduced purity, it is expected that the test subjects will undergo more severe transformations, and often with less advantageous mutagenic effects. To combat the reticence of test subjects to go through the mutagenic process, the overseer and vault science team will choose a variety of test subjects from the general vault population. These subjects will be chosen based off a holistic analysis of their mutagenic factor, psychological characteristics, age, sex and general health."
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~WFgW)FFFFFF)WggWFF*WW",
+                "~~~W]gCFFFFFFFFCggCFFF*W",
+                "~~~WFgWWCWWCWWCWggWFFFFW",
+                "~~~W[FW6GW6GW6GWFFWFFFFC",
+                "~~~WFFWvGWvGWvGWFFWWWWWW",
+                "~~~WF*WWWWWWWWWWF)W*fffW",
+                "~~~WFFW99ffff99WFFWfP@fW",
+                "~~~WFgW9|||||f9WFFWfuuuW",
+                "~~~W[gCffH)HfffCFFCffffW",
+                "~~~W]gWf|||||fIWFFW%fffW",
+                "~~~WFFWffH)Hff=WFFW%%f%W",
+                "~~~WFFWf|||||fiWFFWWWCWW",
+                "~~~WWCWWWW/kff(WFFW9Tg(W",
+                "~~~Wgggf*WWW&WWWWCW9Tg/W",
+                "~~~WXgfffW*XgX*W9T99Tg(W",
+                "~~~WXg|||W8FgF8WTTTT)g/W",
+                "~~~WXgggg&gXgXg&gggggg1W",
+                "~~~W9f||-W'FFFFWyYyYyY1W",
+                "~~~W99fffWI777iWyTyTyT1W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_CLONE" ],
+        "place_nested": [ { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 4 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 2 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 5 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 5 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 5 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 5 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 11 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 16 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 15 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 19 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 17 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 13 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 18 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 10 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 10 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 4 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 7 },
+            { "chunks": [ [ "vaulth_clone_npc_spawn", 50 ], [ "null", 50 ] ], "x": 22, "y": 6 }
+        ],
+        "computers": {
+        "-": {
+          "name": "Vault Medical Repository Access",
+          "security": 5,
+          "options": [ { "name": "Unlock Storage Doors", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #100-G54\n\n  THe purpose of this vault is to examine the effect of a completely homogenous population on conflict resolution, and to examine new state-of-the-art methods of genetic sampling and cloning. This vault in particular was made at the behest of various Vault-Tec medical researchers who wanted to put to practical study the methods of cloning that have only hitherto been used on various testing animals at the Commonwealth Institute of Technology and the California branch of West-Tek. It is believed that having a completely homogenous population derived from one geneline will amplify any positive or negative aspects of a singular person across an entire population. With that in mind, it is imperative that the overseer and his research team choose a person who is both complex and ample in positive and negative qualities, as this individual will be the keystone of any future research effort into the nascent science of cloning."
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W*FFFFFFFFFFFFFCFF*WW",
+                "~~~WFFF;FFFFFFFFFFWFFF*W",
+                "~~~WFFFWWWWWWWWWWWWFFFFW",
+                "~~~WFFFFFFFFFF;FF*WFFFFC",
+                "~~~WFFFFFFFFFFFFFFWWWWWW",
+                "~~~WWWWWWWWWWWWWFFW%FFFW",
+                "~~~W*FFF;FFFFFFFFFCFFuFW",
+                "~~~WFFFFFFFFFFFFFFW%FuhW",
+                "~~~WWWCWWWWWWWWWWWW%FuuW",
+                "~~~WgggggW7_F7_F7_W%FFLW",
+                "~~~Wg{*{gCFFF)FFFFWWCWWW",
+                "~~~WgggggW7_F7_F7_C```/W",
+                "~~~WWWWWWWWWWWFFFFW`gg`W",
+                "~~~W333W2FFFFCFF7_W`gg/W",
+                "~~~W3F3W2F111WjKDFWm`m*W",
+                "~~~WFF'WWF111WWWWWWWWWWW",
+                "~~~W)444WFF-FCFF;FFFFFlW",
+                "~~~WFFFF&FFFFWF);FFFFFlW",
+                "~~~W5555W2222W==;FFFFFlW",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_GUNVAULT" ],
+        "place_nested": [ { "chunks": [ [ "vaulth_armory_npc_spawn", 80 ], [ "null", 20 ] ], "x": 6, "y": 2 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 80 ], [ "null", 20 ] ], "x": 15, "y": 4 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 80 ], [ "null", 20 ] ], "x": 7, "y": 7 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 5 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 8 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 12 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 10 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 12 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 13 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 15 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 18 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 18 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 22, "y": 6 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 10 },
+            { "chunks": [ [ "vaulth_armory_npc_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 8 }
+        ],
+        "computers": {
+        "-": {
+          "name": "Vault Armory Access",
+          "security": 5,
+          "options": [ { "name": "Unlock Armory Doors", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        },
+        "'": {
+          "name": "VAULT TEC EXPERIMENT LOG #264-F34\n\n  The purpose of this vault is to examine the proliferation of firearms within an enclosed community. Towards this end, vault-tec researchers gave this vault in particular an enhanced armory with twice the firearms variety of standard vaults, and four times the quantity of guns, ammunition and security equipment. Said equipment is to be freely distributed to any and all vault personnel regardless of rank, with no restrictions placed upon when or how they may carry their firearms in any private or public space. It is believed that the overwhelming preponderance of firearms in such an enclosed space will have drastic impacts upon conflict resolution. Such a proliferation of firearms will be prevalent in any post-war situation, and it is imperative that vault-tec understand the circumstances in which conflicts would be resolved in such an environment."
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_4" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "WWWWWCWWWWWWWWWWWWWWW~~~",
+                "WW]WFF]FFFFFFFFFFFF*W~~~",
+                "W*FCFFFFFFFFFFFFFFFFW~~~",
+                "WFFWWWWWWWWWWwCwwWFFW~~~",
+                "FFFWjF;FFFFlW*FF4WFFW~~~",
+                "FFFWj);FFFFFWFFuhWFFW~~~",
+                "WFFWjF;FFFFlWiFuuWFFW~~~",
+                "WFFWWCWWWWWWWIFLLWFFW~~~",
+                "WFFW]F)w1122WwCwwWFFW~~~",
+                "WFFWFF-wFFFFWAFmgWgFW~~~",
+                "WFFW+FF&FFFFWFF)gCgFW~~~",
+                "WFFW=FFw=133WAF|gWgFW~~~",
+                "WFFWWCWWWWWWWwCwwWFFW~~~",
+                "WFFFFFFFFF*gg*FFFWFFW~~~",
+                "WFFFF)FFF{FggF{FFWFFW~~~",
+                "WWWWCWJWWFFggFFFFCFFW~~~",
+                "WIiFF)FbWFggggFFFWFFW~~~",
+                "W[FFFFFPwwCwwCwwWWCwW~~~",
+                "WFFFFFK?JFggggFw5FF5W~~~",
+                "W//FLL??JFMggMFw5*m5W~~~",
+                "WWWWWWWWWFMggMFWWWWWW~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_ENTRANCE" ],
+        "place_monsters": [ { "monster": "VAULT_GHOUL", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.6 } ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Security Armory Access Computer",
+          "security": 5,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_1_4" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "WWWWWCWWWWWWWWWWWWWWW~~~",
+                "WWWW*FW8h|WFW2g3WlllW~~~",
+                "WWWWFFWuuFWFW1g3WFFFW~~~",
+                "WWWWFFWF)FCFW1g=WFFFW~~~",
+                "FF*WFFW8FWWFWW&WW;;;W~~~",
+                "FFFWFFW8FWPF-FFFCF)FW~~~",
+                "WFFWFFWFFW?+FF][W=jjW~~~",
+                "WFFWWCWWCWWJJWWWWWWWW~~~",
+                "WFFFgggFF)FFFF)FFFFgW~~~",
+                "WFFFFFFFFFFFFFFFFFFgW~~~",
+                "WFFWWWWWWWCWWCWWCWWWW~~~",
+                "WFFWaFIi[W)FF)W_F_F_W~~~",
+                "WFgWDggg]W;FF;W7F7F7W~~~",
+                "WFgCFg*g|WFFFFWFF)FFW~~~",
+                "WFgW5ggg|WFFFFW_F_F_W~~~",
+                "WFFW5F55mWFFFFW7F7F7W~~~",
+                "WFFWWCWW/WggggWDkWCWW~~~",
+                "WFgW6FFWwwCwwCwwWWFIW~~~",
+                "WFgCF)+tJFggggFJF()uW~~~",
+                "WFgW7LLtJFMggMFJFF+uW~~~",
+                "WWWWWWWWWFMggMFWWWWWW~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_ENTRANCE" ],
+        "place_monsters": [ { "monster": "VAULT_RAIDER", "x": [ 0, 19 ], "y": [ 0, 19 ], "density": 0.6 } ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Security Armory Access Computer",
+          "security": 5,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_COMMON_VAULT_1_roof_1",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................"
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_COMMON_VAULT_1_roof_2",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................"
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_COMMON_VAULT_1_roof_3",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................"
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_COMMON_VAULT_1_roof_4",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................"
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_D" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~WWWW&&&&WWWW~~~~~~",
+                "~~~~~~WWWFFFFFFWWW~~~~~~",
+                "~~~~~~WWW-BBBBBWWW~~~~~~",
+                "~~~~~~~fMBBBBBBMf~~~~~~~",
+                "~~~~~~~fM*BBBB*Mf~~~~~~~",
+                "~~~~~~~fMMggggMMf~~~~~~~",
+                "~~~~~~~~ffffffffk~~~~~~~",
+                "~~~~~~~~fffffffff~~~~~~~",
+                "~~~~~~~~~fffffff~~~~~~~~",
+                "~~~~~~~~~fkfffff~~~~~~~~",
+                "~~~~~~~~~ffkffff~~~~~~~~",
+                "~~~~~~~~~fffffff~~~~~~~~",
+                "~~~~~~~~ffffffff~~~~~~~~",
+                "~~~~~~~ffffffffk~~~~~~~~",
+                "~~~~~~~fffffffff~~~~~~~~",
+                "~~~~~~~fkfffffff~~~~~~~~",
+                "~~~~~~~ffff<<fff~~~~~~~~",
+                "~~~~~~~ffff<<ffff~~~~~~~",
+                "~~~~~~~ffffffffff~~~~~~~",
+                "~~~~~~~ffffffffff~~~~~~~",
+                "~~~~~~~~fffffkfff~~~~~~~",
+                "~~~~~~~~~~~fffff~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_DOOR" ],
+        "place_item": [
+        { "item": "corpse_generic_human", "x": 13, "y": 7, "chance": 30 },
+        { "item": "corpse_generic_human", "x": 10, "y": 14, "chance": 30 },
+        { "item": "corpse_generic_human", "x": 9, "y": 19, "chance": 25 },
+        { "item": "corpse_generic_human", "x": 15, "y": 17, "chance": 25 }
+      ],
+        "computers": {
+        "-": {
+          "name": "Vault Access Console",
+          "security": 2,
+          "options": [ { "name": "Unlock Vault Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_D" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~WWWW&&&&WWWW~~~~~~",
+                "~~~~~~WWFFFFFFFFWW~~~~~~",
+                "~~~~~~WWB-BBBBBBWW~~~~~~",
+                "~~~~~~~WMBBBBBBMW~~~~~~~",
+                "~~~~~~~WM*BBBB*MW~~~~~~~",
+                "~~~~~~~WMMggggMMW~~~~~~~",
+                "~~~~~~~WLLLBBLLLW~~~~~~~",
+                "~~~~~~~WLLLBBLLLW~~~~~~~",
+                "~~~~~~~WLLLBBLLLW~~~~~~~",
+                "~~~~~~~WLLgBBgLLW~~~~~~~",
+                "~~~~~~~WLLgBBgLLW~~~~~~~",
+                "~~~~~~~WLLgBBgLLW~~~~~~~",
+                "~~~~~~~WLLLBBLLLW~~~~~~~",
+                "~~~~~~~WLLLBBLLLW~~~~~~~",
+                "~~~~~~~WL*LBBL*LW~~~~~~~",
+                "~~~~~~~WLLggggLLW~~~~~~~",
+                "~~~~~~~WLLg<<gLLW~~~~~~~",
+                "~~~~~~~WLLg<<gLLW~~~~~~~",
+                "~~~~~~~WLLggggLLW~~~~~~~",
+                "~~~~~~~WL*LLLL*LW~~~~~~~",
+                "~~~~~~~WWWWWWWWWW~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_DOOR" ],
+        "place_monster": [
+        { "monster": "mon_turret_light", "x": 8, "y": 1, "chance": 20 },
+        { "monster": "mon_turret_light", "x": 15, "y": 1, "chance": 20 }
+      ],
+        "computers": {
+        "-": {
+          "name": "Vault Access Console",
+          "security": 4,
+          "options": [ { "name": "Unlock Vault Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_COMMON_VAULT_D_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................",
+                "........................"
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_H" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~```n```~~~~~~~~~",
+                "~~~~~~```~nn##n~~~~~~~~~",
+                "~~~~~~~``nn###n``~~~~~~~",
+                "~~~~~~~`nn####nn``~~`~~~",
+                "~~~~~~~nn######nn````~~~",
+                "~~~~~~~n###<<###n````~~~",
+                "~~~~~~~nn##<<###n`~``~~~",
+                "~~~~~~``nn######n`~~~~~~",
+                "~~~~~~~``nn####nn~~~~~~~",
+                "~~~~~~~``~nnnnnn~~~~~~~~",
+                "~~~~~~~`~~```~~~~~~~~~~~",
+                "~~~~~~~~~~````~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_HOUSE" ],
+        "terrain": { "~": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_COMMON_VAULT_H" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~```````~~~~~~~~~",
+                "~~~~~~```~~~~~~~~~~~~~~~",
+                "~~~~~~~~ffffffff~~~~~~~~",
+                "~~~~~~~~fwwWWwwf~~~~`~~~",
+                "~~~~~~~~fwggggwf```~`~~~",
+                "~~~~~~~`fWg<<gCf`````~~~",
+                "~~~~~~~`fCg<<gWf`~~``~~~",
+                "~~~~~~~~fwggggwf~~~~~~~~",
+                "~~~~~~~~fwwWWwwf~~~~~~~~",
+                "~~~~~~~`ffffffff~~~~~~~~",
+                "~~~~~~~`~~```~~~~~~~~~~~",
+                "~~~~~~~~~~````~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_HOUSE" ],
+        "terrain": { "~": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_COMMON_VAULT_H_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

@@ -1,0 +1,362 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_PLAYER_VAULT_1_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "WWWWWWWWWWWWWWWWWWWWW~~~",
+                "W#.kNW]]WyGPWyGPWyGPW~~~",
+                "WnNNNCffW3hHW3hHW3hHW~~~",
+                "WWWWWWffWGGHWGGHWGGHW~~~",
+                "WnNNNCffWGGGWGGGWGGGW~~~",
+                "W#.kNWffWWCWWWCWWWCWW~~~",
+                "WWWWWWgggfffffffffffW~~~",
+                "WPHHGWg)gffffffffff*W~~~",
+                "WGGhGCggWWWWWWWCWWCWW~~~",
+                "Wy3GGWffWGG3yW*TTTT*W~~~",
+                "WWWWWWffCGhGGWSSTTSSW~~~",
+                "WPHHGWffWGHHPWttTTttW~~~",
+                "WGGhGCffWWWWWWttTTttW~~~",
+                "Wy3GGWffWGG3yWSSTTSSW~~~",
+                "WWWWWWffCGhGGWTTTTSSW~~~",
+                "FFF]vWffWGHHPWttTTttW~~~",
+                "FFFFFWWCWWWWWWttTTttW~~~",
+                "WFFFFFFFWEER1wSSTTSSW~~~",
+                "W*FFFFFFWTTTTCTTTTTTW~~~",
+                "WW*FFFFFWbbR1w*TVV[*W~~~",
+                "WWWWFFWWWWWWWWWWWWWWW~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL" ],
+        "faction_owner": [
+        { "id": "foc_vault_friendly", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 16 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 13 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 18, "y": 17 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 17 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 20 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 2, "y": 19 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 12 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 15 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 8 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 5 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 6 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 7 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 10 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 13 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 17 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 6 }
+        ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_PLAYER_VAULT_1_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~W*GyyoooW'FaW44iPi44W",
+                "~~~WuGyyGGoW!FaWFuFhFuFW",
+                "~~~WusGGGGGWWCWWFuuuuuFW",
+                "~~~Wuu]G%%GW[F[WLFgFgFiW",
+                "~~~WWWWWWWCWFFFJFFgFgFIW",
+                "~~~WiiIIWFFWFFFWLFgFgFIW",
+                "~~~W1FFFJFFJ[F[W)ggggg)W",
+                "~~~W1FFFCggCgggWWCWJWCWW",
+                "~~~W*II1WFFWg)gFFFFFFFFW",
+                "~~~WWWWWWWWWgggFFFFFFFFW",
+                "~~~WU2U*IPIWFFWWWWWJWCWW",
+                "~~~WFFFFFFgJFFWggFFFFF*W",
+                "~~~WFFFFFsgCFFWgWWWWWFFW",
+                "~~~WU2UPuugWFFWFW]gDWCWW",
+                "~~~WWWWWWWWWFFJFCgggWFFF",
+                "~~~W((F(F(FWFFWFW]gWWFFF",
+                "~~~W+FF=F=FCFFWFWWWW*FFW",
+                "~~~W+FFFFFFWFFCFFCFFFFFW",
+                "~~~W*0F0F_FWF*W*FWFFFFWW",
+                "~~~WWWWWWWWWWWWWWWFFWWWW"
+            ],
+        "palettes": [ "FO_VAULTPAL_ADMIN" ],
+        "place_npcs": [
+        { "class": "fo_vault_npc_overseer", "x": 19, "y": 5 }
+      ],
+        "faction_owner": [
+        { "id": "foc_vault_friendly", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 10 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 6 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 6 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 10 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 11 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 12 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 14 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 20 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 20 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 22 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 22 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 22, "y": 16 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 22 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 8 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 7 },
+            { "chunks": [ [ "vaultf_mechanic", 75 ], [ "null", 25 ] ], "x": 6, "y": 10 }
+        ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_PLAYER_VAULT_1_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~WWWWWWWWWWWWWWWWCWWWW",
+                "~~~W+++*[;[WIILSFWFFFFWW",
+                "~~~W+MM_=_=W2FPjFWWFFFFW",
+                "~~~W+MM=opoW2FFFFWWW*FFW",
+                "~~~W=_=_AAAWii%F%WWWWFFW",
+                "~~~WwCwWJJJWWWWCWW]]WFFC",
+                "~~~WFFFW!ZvOx!WFFFFFFFFW",
+                "~~~WF$FCO)FF)OCF)FFFFF*W",
+                "~~~WFFFWllOXXzWFFWWWWWWW",
+                "~~~WWCWWWWWWWWWFgWGG)HHW",
+                "~~~W*FFFFFFFFFCFgCGGGhHW",
+                "~~~WFFFFFFFFFFWFgWyyGG3W",
+                "~~~WWCWWWWWWWWW*FWWWWWWW",
+                "~~~W)FFFFFFFF)WFgWGG)HHW",
+                "~~~WFWwJwwJwWFWFgCGGGhHW",
+                "~~~WFJlm||kKJFWFgWyyGG3W",
+                "~~~WFCTTT)TTCFCFFWWWWWWW",
+                "~~~WFJiT||PTJFWFgWGG)HHW",
+                "~~~WFWIT||T`WFWFgCGGGhHW",
+                "~~~W*Wg6666gW*WFgWyyGG3W",
+                "~~~WWWWWWWWWWWWWWWWWWWWW",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPALCONTROL" ],
+        "faction_owner": [
+        { "id": "foc_vault_friendly", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 22, "y": 4 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 3 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 3 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 8 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 3 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 10 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 11 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 18 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 18 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 18 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 13 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 15 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 19 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 18, "y": 9 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 3 },
+            { "chunks": [ [ "vaultf_athlete", 75 ], [ "null", 25 ] ], "x": 10, "y": 3 }
+        ],
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_PLAYER_VAULT_1_4" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "WWWWWCWWWWWWWWWWWWWWW~~~",
+                "WWWW*FW8h|WFW2g3WlllW~~~",
+                "WWWWFFWuuFWFW1g3WFFFW~~~",
+                "WWWWFFWF)FCFW1g=WFFFW~~~",
+                "FF*WFFW8FWWFWW&WW;;;W~~~",
+                "FFFWFFW8FWPF-FFFCF)FW~~~",
+                "WFFWFFWFFW?+FF][W=jjW~~~",
+                "WFFWWCWWCWWJJWWWWWWWW~~~",
+                "WFFFgggFF)FFFF)FFFFgW~~~",
+                "WFFFFFFFFFFFFFFFFFFgW~~~",
+                "WFFWWWWWWWCWWCWWCWWWW~~~",
+                "WFFWaFIi[W)FF)W_F_F_W~~~",
+                "WFgWDggg]WFFFFW7F7F7W~~~",
+                "WFgCFg*g|W;FF;WFF)FFW~~~",
+                "WFgW5ggg|WFFFFW_F_F_W~~~",
+                "WFFW5F55mWFFFFW7F7F7W~~~",
+                "WFFWWCWW/WggggWDkWCWW~~~",
+                "WFgW6FFWwwCwwCwwWWFIW~~~",
+                "WFgCF)+tJFggggFJF()uW~~~",
+                "WFgW7LLtJFMggMFJFF+uW~~~",
+                "WWWWWWWWWFMggMFWWWWWW~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~",
+                "~~~~~~~~WFMggMFW~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_ENTRANCE" ],
+        "faction_owner": [
+        { "id": "foc_vault_friendly", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+                "place_npcs": [
+        { "class": "fo_vault_npc_friendly_armory", "x": 10, "y": 12 },
+        { "class": "fo_vault_npc_friendly_armory", "x": 13, "y": 12 }
+      ],
+        "place_nested": [ { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 12, "y": 11 },
+            { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 7, "y": 14 },
+            { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 5, "y": 13 },
+            { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 2, "y": 9 },
+            { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 11, "y": 8 },
+            { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 21, "y": 23 },
+            { "chunks": [ [ "vaultf_security", 50 ], [ "null", 50 ] ], "x": 18, "y": 12 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 4 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 18, "y": 18 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 6 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 13 },
+            { "chunks": [ [ "vaultf_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 5 },
+            { "chunks": [ [ "vaultf_security_recruit", 75 ], [ "null", 25 ] ], "x": 16, "y": 15 }
+        ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Security Armory Access Computer",
+          "security": 5,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", ")": "t_vault_floor_olight", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_PLAYER_VAULT_D" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~WWW-FFFFFWWW~~~~~~",
+                "~~~~~~WWWFFFFFFWWW~~~~~~",
+                "~~~~~~WWWW&&&&WWWW~~~~~~",
+                "~~~~~~~fM-BBBBBMf~~~~~~~",
+                "~~~~~~~fM*BBBB*Mf~~~~~~~",
+                "~~~~~~~fMMggggMMf~~~~~~~",
+                "~~~~~~~~ffffffffk~~~~~~~",
+                "~~~~~~~~fffffffff~~~~~~~",
+                "~~~~~~~~~fffffff~~~~~~~~",
+                "~~~~~~~~~fkfffff~~~~~~~~",
+                "~~~~~~~~~ffkffff~~~~~~~~",
+                "~~~~~~~~~fffffff~~~~~~~~",
+                "~~~~~~~~ffffffff~~~~~~~~",
+                "~~~~~~~ffffffffk~~~~~~~~",
+                "~~~~~~~fffffffff~~~~~~~~",
+                "~~~~~~~fkfffffff~~~~~~~~",
+                "~~~~~~~ffff<<fff~~~~~~~~",
+                "~~~~~~~ffff<<ffff~~~~~~~",
+                "~~~~~~~ffffffffff~~~~~~~",
+                "~~~~~~~ffffffffff~~~~~~~",
+                "~~~~~~~~fffffkfff~~~~~~~",
+                "~~~~~~~~~~~fffff~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_DOOR" ],
+        "computers": {
+        "-": {
+          "name": "Vault Access Console",
+          "options": [ { "name": "Unlock Vault Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_PLAYER_VAULT_H" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~",
+                "~~~~~~~~```````~~~~~~~~~",
+                "~~~~~~```~~~~~~~~~~~~~~~",
+                "~~~~~~~~ffffffff~~~~~~~~",
+                "~~~~~~~~fwwWWwwf~~~~`~~~",
+                "~~~~~~~~fwggggwf```~`~~~",
+                "~~~~~~~`fWg<<gCf`````~~~",
+                "~~~~~~~`fCg<<gWf`~~``~~~",
+                "~~~~~~~~fwggggwf~~~~~~~~",
+                "~~~~~~~~fwwWWwwf~~~~~~~~",
+                "~~~~~~~`ffffffff~~~~~~~~",
+                "~~~~~~~`~~```~~~~~~~~~~~",
+                "~~~~~~~~~~````~~~~~~~~~~",
+                "~~~~~~~~~~~~~~~~~~~~~~~~"
+            ],
+        "palettes": [ "FO_VAULTPAL_HOUSE" ],
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_PLAYER_VAULT_H_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "         ......         ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]
