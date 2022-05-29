@@ -18,11 +18,10 @@
     "morale": 100,
     "speed": 75,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 5, "armor_penetration": 7 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 6, "armor_penetration": 7 } ],
     "melee_skill": 6,
     "melee_dice": 1,
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "dodge": 3,
     "armor_bash": 5,
     "armor_cut": 5,
@@ -62,7 +61,6 @@
     "melee_skill": 6,
     "melee_dice": 1,
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "dodge": 2,
     "armor_bash": 5,
     "armor_cut": 5,
@@ -115,7 +113,7 @@
     "hp": 235,
     "speed": 100,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
-    "melee_damage": [ { "damage_type": "cut", "amount": 6, "armor_penetration": 8 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 7, "armor_penetration": 8 } ],
     "material": [ "flesh" ],
     "symbol": "Z",
     "color": "brown_green",
@@ -124,7 +122,6 @@
     "melee_skill": 6,
     "melee_dice": 1,
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "dodge": 3,
     "armor_bash": 5,
     "armor_cut": 5,
@@ -188,7 +185,7 @@
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
     "melee_damage": [
       { "damage_type": "stab", "amount": 5, "armor_penetration": 5 },
-      { "damage_type": "cut", "amount": 4, "armor_penetration": 5 }
+      { "damage_type": "cut", "amount": 5, "armor_penetration": 5 }
     ],
     "material": [ "flesh" ],
     "symbol": "☦",
@@ -199,7 +196,6 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "dodge": 4,
     "armor_bash": 6,
     "armor_cut": 9,
@@ -283,11 +279,10 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
     "melee_damage": [
       { "damage_type": "stab", "amount": 8, "armor_penetration": 8 },
-      { "damage_type": "cut", "amount": 4, "armor_penetration": 3 }
+      { "damage_type": "cut", "amount": 5, "armor_penetration": 3 }
     ],
     "dodge": 2,
     "armor_bash": 7,
@@ -409,7 +404,6 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "dodge": 2,
     "regenerates": 15,
     "death_function": [ "NORMAL" ],
@@ -478,7 +472,6 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "dodge": 2,
     "regenerates": 23,
     "death_function": [ "NORMAL" ],
@@ -561,10 +554,9 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
     "melee_damage": [
-      { "damage_type": "cut", "amount": 5, "armor_penetration": 7 },
+      { "damage_type": "cut", "amount": 6, "armor_penetration": 7 },
       { "damage_type": "bash", "amount": 12, "armor_penetration": 16 }
     ],
     "dodge": 3,
@@ -631,10 +623,9 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
     "melee_damage": [
-      { "damage_type": "cut", "amount": 7, "armor_penetration": 14 },
+      { "damage_type": "cut", "amount": 8, "armor_penetration": 14 },
       { "damage_type": "stab", "amount": 12, "armor_penetration": 8 }
     ],
     "dodge": 3,
@@ -701,10 +692,9 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
     "melee_damage": [
-      { "damage_type": "cut", "amount": 10, "armor_penetration": 12 },
+      { "damage_type": "cut", "amount": 11, "armor_penetration": 12 },
       { "damage_type": "stab", "amount": 10, "armor_penetration": 12 }
     ],
     "dodge": 4,
@@ -771,10 +761,9 @@
     "melee_dice": 1,
     "harvest": "zombie",
     "melee_dice_sides": 1,
-    "melee_cut": 1,
     "attack_effs": [ { "id": "BL9_bleed_immun", "duration": 15, "bp": "torso" } ],
     "melee_damage": [
-      { "damage_type": "cut", "amount": 10, "armor_penetration": 8 },
+      { "damage_type": "cut", "amount": 11, "armor_penetration": 8 },
       { "damage_type": "stab", "amount": 10, "armor_penetration": 8 },
       { "damage_type": "bash", "amount": 10, "armor_penetration": 8 }
     ],

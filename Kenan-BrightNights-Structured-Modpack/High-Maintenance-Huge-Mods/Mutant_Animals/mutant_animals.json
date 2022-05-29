@@ -18,7 +18,7 @@
     "morale": -20,
     "melee_dice": 1,
     "melee_dice_sides": 4,
-    "melee_cut": 2,
+    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "dodge": 4,
     "harvest": "mammal_tiny",
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
@@ -83,7 +83,7 @@
     "bodytype": "octopus",
     "description": "A shy mutated creature about the size of a large cat.  It lopes through the night on a dozen tentacles terminating in sharp claws.",
     "color": "dark_gray",
-    "melee_cut": 8,
+    "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "vision_night": 25,
     "harvest": "shellfish",
     "extend": { "flags": [ "CLIMBS", "NIGHT_INVISIBILITY", "NOHEAD", "GRABS" ] }
