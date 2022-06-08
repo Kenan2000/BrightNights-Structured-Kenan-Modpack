@@ -143,19 +143,6 @@
   },
   {
     "type": "mutation",
-    "id": "TOUGH_FEET",
-    "copy-from": "TOUGH_FEET",
-    "name": { "str": "Tough Feet" },
-    "points": 1,
-    "description": "The bottoms of your feet are tough (feet: +1 bash, +1 cut) and you are accustomed to going barefoot.  You receive no movement penalty for not wearing shoes and get a 5% bonus to all hit points.",
-    "starting_trait": true,
-    "valid": false,
-    "extend": { "category": [ "CATTLE", "SLIME", "CHIMERA", "PLANT", "TROGLOBITE" ] },
-    "armor": [ { "parts": [ "foot_l", "foot_r" ], "bash": 1, "cut": 1 } ],
-    "hp_modifier_secondary": 0.05
-  },
-  {
-    "type": "mutation",
     "id": "TOUGH",
     "copy-from": "TOUGH",
     "name": { "str": "Tough" },
