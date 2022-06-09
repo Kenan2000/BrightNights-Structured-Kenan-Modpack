@@ -302,9 +302,19 @@
     },
     "responses": [
       {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "techical_recruit", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a technician for an upcoming mission, interested?",
+        "topic": "TALK_MAQUIS_TECHNICAL_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "techical_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_TECH" }
+          ]
+        }
       },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MECHANIC_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MECHANIC_DOING" },
@@ -387,6 +397,7 @@
         { "npc_add_var": "Maquis_Mechanic_Mission1", "type": "mission", "context": "flag", "value": "yes" }
       ]
     },
+	"followup": "DKZ_MAQUIS_MECHANIC_MOTOR_OIL_MISSION_1",
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "I need you to find me something.",

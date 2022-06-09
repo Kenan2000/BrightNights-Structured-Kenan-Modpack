@@ -8,13 +8,13 @@
       "mapgensize": [ 8, 8 ],
       "rotation": [ 0, 3 ],
       "rows": [
-        "  x..X  ",
-        "  X..X  ",
-        "  X..X  ",
-        "  x..X  ",
-        "  x..X  ",
-        "  X..X  ",
-        "  X..X  ",
+        " xx..X  ",
+        "Xx...X  ",
+        "X...X   ",
+        "X..XX   ",
+        "Xx..X   ",
+        " X..X   ",
+        " X..XX  ",
         "  X..X  "
       ],
       "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
@@ -32,9 +32,9 @@
         "  x..X  ",
         " XX..X  ",
         " X...X  ",
-        " X...X  ",
-        " xx..X  ",
-        "  X..X  ",
+        " X..XX  ",
+        " x...X  ",
+        " XX..X  ",
         "  X..X  ",
         "  X..X  "
       ],
@@ -53,7 +53,7 @@
         "  X..x  ",
         "  X..xx ",
         "  x...x ",
-        "  x...X ",
+        "  xx..X ",
         "  X...x ",
         "  X..xx ",
         "  X..x  ",
@@ -74,8 +74,8 @@
         "        ",
         "   XXXX ",
         "XXXXxxXX",
-        "........",
-        "........",
+        ".....x..",
+        "..x.....",
         "XXxxXXXX",
         " XXXX   ",
         "        "
@@ -93,9 +93,9 @@
       "rotation": [ 0, 3 ],
       "rows": [
         "        ",
-        "  XXX   ",
-        "XXXxXXXX",
-        "........",
+        "XXXXX   ",
+        "...xXXXX",
+        "...x....",
         "........",
         "XXXX..XX",
         "   XXXX ",
@@ -115,8 +115,8 @@
       "rows": [
         "        ",
         "        ",
-        "XxxXXXxx",
-        "........",
+        "XxxxXxxx",
+        "....X...",
         "........",
         "XXX...XX",
         "  XxxXX ",
@@ -137,8 +137,8 @@
         "        ",
         "        ",
         "XxxXXXxx",
-        "........",
-        "........",
+        ".....X..",
+        "..X.....",
         "XXXxxxXX",
         "        ",
         "        "
@@ -356,43 +356,6 @@
         "        "
       ],
       "terrain": { " ": "t_null", ".": "t_dirt", "X": "t_root_wall", "x": "t_wall_log" }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
-    "om_terrain": [ "catacomb_tree_plot_bunker" ],
-    "object": {
-      "fill_ter": "t_rock",
-      "rows": [
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "         XXX XXX        ",
-        "        XXxXXXxXX       ",
-        "        Xxx...xxX       ",
-        "        ........        ",
-        "        ........        ",
-        "        X......XX       ",
-        "        X......xxx      ",
-        "        Xx.<...+.x      ",
-        "        Xxx....x.x      ",
-        "         Xxx+xxxMx      ",
-        "          Xx..Mxxx      ",
-        "          XxxxxxX       ",
-        "                        ",
-        "                        ",
-        "                        ",
-        "                        "
-      ],
-      "terrain": { ".": "t_dirt", "M": "t_dirt", "X": "t_root_wall", "x": "t_wall_log", "+": "t_door_c", "<": "t_wood_stairs_up" },
-      "furniture": { "M": [ "f_makeshift_bed", "f_straw_bed" ] },
-      "place_nested": [ { "chunks": [ "catacomb_8x8_ew" ], "x": 0, "y": 8 }, { "chunks": [ "catacomb_8x8_ew" ], "x": 16, "y": 8 } ]
     }
   },
   {

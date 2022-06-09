@@ -252,11 +252,6 @@
       "no": [ "Welcome…", "Here to trade, I hope?", "Safe travels." ]
     },
     "responses": [
-      {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
-        "topic": "TALK_COMBAT_COMMANDS"
-      },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MERCHANT_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MERCHANT_DOING" },
       { "text": "What is upstairs?", "topic": "TALK_MAQUIS_MERCHANT_UPSTAIRS" },

@@ -7,20 +7,20 @@
       "fill_ter": "t_floor",
       "rows": [
         "_______                 ",
-        "_______ ssss   ss  ss   ",
+        "_______       ssssssss  ",
         "___~~~~O    b|-xx--xx-| ",
         "_______O    b|BBBBBBBB| ",
         "_______O    b|B......B| ",
-        "_______O sss |B......B| ",
-        "___~~~~|--D--|.......B| ",
-        "_______|..............| ",
-        "_______|..............| ",
-        "_______|......|---+---| ",
-        "___~~~~|......+......l| ",
-        "_______|...ccc|...|b.l| ",
-        "_______|||+|..+..L|b.l| ",
-        "_______|>..|BB|..L|b.l| ",
-        "___~~~~|-------++-----|s",
+        "_______O SSS |B......B| ",
+        "___~~~~|--D--|B......B| ",
+        "_______|B...;;;......B| ",
+        "_______|B............B| ",
+        "_______|B.....|---+---| ",
+        "___~~~~|B.....|......l| ",
+        "_______|B..ccc|...|ḃ.l| ",
+        "_______|-+-|..+..L|ḃ.l| ",
+        "_______|Q.q|ḂḂ|..L|ḃ.l| ",
+        "___~~~~|-------+------|s",
         "       sss|<|    RRR 4Fs",
         "          G           Fs",
         "OOOOOO   sFFFFFFFFFFFFFs",
@@ -31,7 +31,6 @@
         "OOOOOOOOOOOOOOOOOOOOOOOO",
         "OOOOOOOOOOOOOOOOOOOOOOOO"
       ],
-      "set": [ { "point": "furniture", "id": "f_shackle", "x": [ 2, 14 ], "y": [ 2, 21 ], "chance": 3 } ],
       "terrain": {
         "O": [
           "t_tree_pine",
@@ -41,6 +40,7 @@
           "t_shrub",
           "t_tree_young",
           "t_tree_young",
+          "t_tree_young",
           "t_grass",
           "t_grass",
           "t_grass",
@@ -49,18 +49,23 @@
           "t_shrub",
           "t_grass",
           "t_dirt",
-          "t_tree_young",
           "t_grass",
           "t_grass",
           "t_dirt"
         ],
         " ": "t_sidewalk",
         "s": "t_sidewalk",
+        "S": "t_sidewalk",
+        "b": "t_sidewalk",
+        "ḃ": "t_floor",
+        "B": "t_floor",
+        "Ḃ": "t_floor",
         "_": "t_pavement",
         "~": "t_pavement_y",
         "+": "t_door_c",
         "-": "t_wall_w",
         ".": "t_floor",
+        ";": "t_floor",
         "D": "t_door_locked",
         "x": "t_window_boarded",
         "F": "t_chainfence",
@@ -72,16 +77,21 @@
         "|": "t_wall_w"
       },
       "furniture": {
+        "q": "f_sink",
+        "Q": "f_toilet",
         "s": "f_sandbag_half",
+        "S": "f_sandbag_wall",
         "B": "f_rack",
+        "Ḃ": "f_rack",
         "R": "f_dumpster",
         "L": "f_locker",
         "l": "f_locker",
         "b": "f_bench",
+        "ḃ": "f_bench",
         "c": "f_counter"
       },
       "items": { ".": { "item": "trash", "chance": 15 } },
-      "vehicles": { ".": { "vehicle": "shopping_cart", "chance": 1, "status": 1 } }
+      "vehicles": { ";": { "vehicle": "shopping_cart", "chance": 50, "status": 1 } }
     }
   },
   {
@@ -94,7 +104,7 @@
       "rows": [
         "                        ",
         "                        ",
-        "            ..........3 ",
+        "             .........3 ",
         "             .........3 ",
         "             .........3 ",
         "             .........3 ",
@@ -139,6 +149,7 @@
     }
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "dkz_abookstore" ],

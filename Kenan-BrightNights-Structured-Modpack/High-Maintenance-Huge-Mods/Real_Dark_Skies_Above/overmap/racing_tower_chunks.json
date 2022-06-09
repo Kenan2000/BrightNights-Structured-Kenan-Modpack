@@ -12,6 +12,17 @@
   },
   {
     "type": "item_group",
+    "id": "specialty_goods",
+    "subtype": "collection",
+    "items": [
+      { "group": "drugs_soldier", "prob": 30 },
+      { "group": "drugs_rare", "prob": 10 },
+      { "group": "jar_weed", "prob": 50 },
+      { "group": "schematics", "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
     "id": "scavenged_foods",
     "subtype": "collection",
     "items": [
@@ -576,7 +587,7 @@
         " ": { "item": "trash_junkyard", "chance": 1 },
         "A": { "item": "guns_milspec", "chance": 100, "repeat": [ 1, 2 ] },
         "B": { "item": "guns_common", "chance": 100, "repeat": [ 3, 5 ] },
-        "C": { "item": "scavenged_foods", "chance": 100, "repeat": [ 4, 7 ] },
+        "C": { "item": "specialty_goods", "chance": 100, "repeat": [ 2, 1 ] },
         "D": { "item": "scavenged_foods", "chance": 100, "repeat": [ 3, 5 ] }
       }
     }
@@ -608,7 +619,7 @@
         "A": { "item": "bionics_mil", "chance": 70, "repeat": [ 1, 2 ] },
         "B": { "item": "guns_common", "chance": 70, "repeat": [ 3, 5 ] },
         "C": { "item": "bionics", "chance": 25, "repeat": [ 4, 7 ] },
-        "D": { "item": "scavenged_foods", "chance": 100, "repeat": [ 5, 7 ] }
+        "D": { "item": "specialty_goods", "chance": 100, "repeat": [ 2, 3 ] }
       }
     }
   },
@@ -637,7 +648,7 @@
       "items": {
         " ": { "item": "trash_junkyard", "chance": 1 },
         "A": { "item": "scavenged_foods", "chance": 100, "repeat": [ 3, 5 ] },
-        "B": { "item": "guns_rare", "chance": 100, "repeat": [ 1, 3 ] },
+        "B": { "item": "specialty_goods", "chance": 100, "repeat": [ 1, 3 ] },
         "C": { "item": "scavenged_foods", "chance": 100, "repeat": [ 5, 9 ] },
         "D": { "item": "guns_common", "chance": 100, "repeat": [ 1, 2 ] }
       }
@@ -668,7 +679,7 @@
       "items": {
         " ": { "item": "trash_junkyard", "chance": 1 },
         "A": { "item": "scavenged_foods", "chance": 100, "repeat": [ 3, 5 ] },
-        "B": { "item": "guns_rare", "chance": 100, "repeat": [ 1, 3 ] },
+        "B": { "item": "specialty_goods", "chance": 100, "repeat": [ 1, 3 ] },
         "C": { "item": "scavenged_foods", "chance": 100, "repeat": [ 5, 9 ] },
         "D": { "item": "guns_common", "chance": 100, "repeat": [ 1, 2 ] }
       }
@@ -678,7 +689,7 @@
     "//": "4x4 crowded medical bedding",
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_medical",
+    "nested_mapgen_id": "racing_tower_4x4_medical_1",
     "weight": 250,
     "object": {
       "mapgensize": [ 4, 4 ],
@@ -695,7 +706,7 @@
       "item": {
         " ": { "item": "rag_bloody", "chance": 25 },
         "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 90 }
+        "B": { "item": "bag_iv", "chance": 1 }
       }
     }
   },
@@ -720,7 +731,7 @@
       "item": {
         " ": { "item": "rag_bloody", "chance": 15 },
         "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 100 }
+        "B": { "item": "bag_iv", "chance": 1 }
       }
     }
   },
@@ -745,7 +756,7 @@
       "item": {
         " ": { "item": "rag_bloody", "chance": 15 },
         "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 100 }
+        "B": { "item": "bag_iv", "chance": 10 }
       }
     }
   },
@@ -753,7 +764,7 @@
     "//": "4x4 in privacy tent, surgery",
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_medical",
+    "nested_mapgen_id": "racing_tower_4x4_surgery",
     "weight": 500,
     "object": {
       "mapgensize": [ 4, 4 ],
@@ -770,7 +781,7 @@
       "item": {
         " ": { "item": "rag_bloody", "chance": 95 },
         "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 100 }
+        "B": { "item": "bag_iv", "chance": 10 }
       }
     }
   },
@@ -778,7 +789,7 @@
     "//": "4x4 in privacy tent, surgery",
     "type": "mapgen",
     "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_medical",
+    "nested_mapgen_id": "racing_tower_4x4_surgery",
     "weight": 500,
     "object": {
       "mapgensize": [ 4, 4 ],
@@ -795,7 +806,7 @@
       "item": {
         " ": { "item": "rag_bloody", "chance": 95 },
         "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 100 }
+        "B": { "item": "bag_iv", "chance": 10 }
       }
     }
   },

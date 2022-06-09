@@ -459,7 +459,7 @@
     "type": "mission_definition",
     "name": { "str": "Get some reference software" },
     "goal": "MGOAL_FIND_ITEM",
-    "description": "Randy Erikson needs a  hardcopy of something called the 'Integrated Circuit Archive Database'.  Might have to see if you can find an internet connection or see if someone saved it on a USB drive.",
+    "description": "Randy Erikson needs a hardcopy of something called the 'Integrated Circuit Archive Database'.  Might have to see if you can find an internet connection or see if someone saved it on a USB drive.",
     "difficulty": 8,
     "value": 0,
     "item": "software_electronics_reference",
@@ -494,7 +494,6 @@
     "value": 0,
     "item": "software_useless",
     "origins": [ "ORIGIN_SECONDARY" ],
-    "followup": "MISSION_CHECK_UP_ON_BIG_BROTHER",
     "dialogue": {
       "describe": "I some old hobby software.",
       "offer": "I need another old piece of software, not sure what it was but I'll know it when I see it..",

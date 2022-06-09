@@ -89,6 +89,29 @@
     "type": "talk_topic",
     "dynamic_line": [ "What do you require citizen?.", "I'm kind of busy right now." ],
     "responses": [
+      {
+        "text": "I want to join the Maquis.",
+        "effect": { "u_add_var": "u_Ask_QM_Join_Maquis", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_Ask_QM_Join_Maquis", "type": "general", "context": "meeting", "value": "yes" } },
+            {
+              "u_compare_var": "maquis_morale",
+              "type": "counter",
+              "context": "refugee_center",
+              "op": ">",
+              "value": 0
+            }
+          ]
+        },
+        "opinion": { "trust": 1, "value": 1 },
+        "topic": "TALK_QUARTERMASTER_ASK_ABOUT_JOINING_MAQUIS"
+      },
+      {
+        "text": "Is there anything else I can to to help the Maquis than doing generic missions?",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_START",
+        "condition": "has_assigned_mission"
+      },
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_QUARTERMASTER_TRADE" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_QUARTERMASTER_DOING" },
       { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_QUARTERMASTER_LEADERSHIP" },
@@ -111,6 +134,129 @@
       { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "See you later.", "topic": "TALK_DONE" }
     ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_QUARTERMASTER_ASK_ABOUT_JOINING_MAQUIS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Thats great.  We always need help in the fight against the alien invader.  How do you want to help out?  Keep in mind you can change your mind as much and and frequently as you want.  There are many ways to defeat the xenoids."
+    ],
+    "responses": [
+      {
+        "text": "I just want to kill aliens.  The most direct way possible.",
+        "effect": [
+          { "u_add_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I want to help lead the fight against the xenoids.",
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_add_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I want to provide medical support and heal people.",
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_add_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I want to study the aliens to better defeat them.",
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_add_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "I want to engineer better technology to kill xenoids.",
+        "effect": [
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_add_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_START",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Well now that you mention it, I could use someone to act as point for a number of projects around the tower.  There is so much room around here to expand, and so many different ways to do so.  If you can go around and convince some people to move boxes around, then the Maquis can expand to add new facilities.  This can't be done instantaneously though, because everyone here already have jobs to do.  If you think everyone around here is completely stationary, think again."
+    ],
+    "responses": [
+      { "text": "Ok, what do we need most?.", "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL" },
+      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "First thing we need is to create a dedicated medical area.  So far, casualties are treated by comrades-in-arms during battle, or taken upstairs for dedicated treatment.  What we need is several large areas where people can safely recover, and I have a few places in mind already.  I've also gotten requests from the engineers and scientists upstairs for additional room so they can analyze the Xenoids technology and biology.  There is also talk about setting up dedicated areas for small-arms production. "
+    ],
+    "responses": [
+      {
+        "text": "Lets focus on getting the medical areas ready first.",
+        "condition": { "u_has_any_trait": [ "DKZ_MEDIC", "DKZ_LEADER" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_MEDICAL"
+      },
+      {
+        "text": "We need to understand our enemy to defeat them.  Lets help the scientists and engineers first.",
+        "condition": { "u_has_any_trait": [ "DKZ_TECH", "DKZ_SCIENTIST" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_TECHNOLOGY"
+      },
+      {
+        "text": "Better weapons helps everyone.  Lets get a small-arms production running first.",
+        "condition": { "u_has_any_trait": [ "DKZ_COMBAT" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMBAT"
+      }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_MEDICAL",
+    "type": "talk_topic",
+    "dynamic_line": [ "..." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_TECHNOLOGY",
+    "type": "talk_topic",
+    "dynamic_line": [ "..." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMBAT",
+    "type": "talk_topic",
+    "dynamic_line": [ "..." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
@@ -169,6 +315,7 @@
     "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE", "opinion": { "trust": -1, "value": -1 } } ]
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "DKZ_MAQUIS_QUARTERMASTER_CLEAN_UP_SEWER",
     "type": "mission_definition",
     "name": { "str": "Clean up a sewer" },
@@ -180,6 +327,7 @@
       "assign_mission_target": { "om_terrain": "sewage_treatment_0_0_-1", "reveal_radius": 2, "random": true, "search_range": 75, "min_distance": 15 },
       "update_mapgen": { "place_monster": [ { "monster": "dkz_mon_lurker_sewer", "pack_size": [ 2, 3 ], "x": 0, "y": 12, "target": true } ] }
     },
+    "end": { "effect": [ { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 2 } ] },
     "followup": "DKZ_MAQUIS_QUARTERMASTER_CHECK_FUSE_BOX",
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
@@ -195,6 +343,7 @@
     }
   },
   {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "DKZ_MAQUIS_QUARTERMASTER_CHECK_FUSE_BOX",
     "type": "mission_definition",
     "name": { "str": "Clean up a sewer" },
@@ -206,6 +355,7 @@
       "assign_mission_target": { "om_terrain": "pwr_sub_s", "reveal_radius": 2, "random": true, "search_range": 75, "min_distance": 15 },
       "update_mapgen": { "place_monster": [ { "monster": "dkz_mon_crystal_zap", "pack_size": [ 5, 6 ], "x": 10, "y": 10, "target": true } ] }
     },
+    "end": { "effect": [ { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 3 } ] },
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "I need you to find and kill some monsters.",

@@ -316,9 +316,19 @@
     },
     "responses": [
       {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
       },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MANTIS_MUTANT_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MANTIS_MUTANT_DOING" },

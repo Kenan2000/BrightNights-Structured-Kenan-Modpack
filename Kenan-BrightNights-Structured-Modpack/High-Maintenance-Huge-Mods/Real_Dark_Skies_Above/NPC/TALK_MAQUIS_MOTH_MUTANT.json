@@ -301,9 +301,19 @@
     },
     "responses": [
       {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "science_recruit", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a scientist to supervise an upcoming mission, interested?",
+        "topic": "TALK_MAQUIS_SCIENCE_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "science_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_SCIENTIST" }
+          ]
+        }
       },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MOTH_MUTANT_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MOTH_MUTANT_DOING" },
@@ -389,6 +399,7 @@
       ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],
+	"followup": "DKZ_MAQUIS_MOTH_MUTANT_DEW_THE_DEW_MISSION_1",
     "dialogue": {
       "describe": "I need you to find me something.",
       "offer": "Ever since I turned into a insect mutant, I've been wanting to have few more cans of my favorite energy cola, it was like a clear morning dew. I even have some of the new money for your troubles.",

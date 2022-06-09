@@ -325,9 +325,19 @@
     },
     "responses": [
       {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "medical_recruit", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need medical support for an upcoming mission, interested?",
+        "topic": "TALK_MAQUIS_MEDIC_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "medical_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
       },
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_TRADE" },
       { "text": "I need some bionic work done.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_INSTALL_BIONICS" },

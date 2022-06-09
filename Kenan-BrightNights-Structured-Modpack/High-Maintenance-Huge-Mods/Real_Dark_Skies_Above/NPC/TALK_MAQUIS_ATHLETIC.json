@@ -318,9 +318,19 @@
     },
     "responses": [
       {
-        "text": "Lets set a combat strategy…",
-        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
       },
       { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_ATHLETIC_ROOT" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_ATHLETIC_DOING" },
@@ -412,7 +422,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "dialogue": {
       "describe": "I have a heist for you…",
-      "offer": "My great-great-great-great-grandfather's civil war sabre is wasting way in a museum.  Now that no one is guarding it I want to recover it.",
+      "offer": "My great-great-great-great-grandfather's civil war sabre is wasting way in a museum.  Now that no one is guarding it I want it recovered.",
       "accepted": "Thats great.",
       "rejected": "I will wait, and perhaps someone else will help me.",
       "advice": "Just bust though the door, break the glass and grab it.  Stealth is not required for this mission.",
