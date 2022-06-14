@@ -17,20 +17,49 @@
     "encumbrance": 60,
     "storage": "4 L",
     "warmth": 60,
-    "power_armor": true,
     "material_thickness": 12,
     "environmental_protection": 16,
     "use_action": {
-      "type": "ups_based_armor",
-      "activate_msg": "Your power armor engages."
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
+      "msg": "The %s engages.",
+      "target": "power_armor_mutant_on",
+      "active": true,
+      "need_worn": true,
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
-    "flags": [ "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "POWERARMOR_EXO", "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "ALLOWS_NATURAL_ATTACKS" ]
+  },
+  {
+    "id": "power_armor_mutant_on",
+    "copy-from": "power_armor_mutant",
+    "repairs_like": "power_armor_mutant",
+    "looks_like": "power_armor_mutant",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "mutant power armor (active)", "str_pl": "mutant power armors (active)" },
+    "description": "A modified suit of DoubleTech Power Armor, Mk. II-H.Designed to be used with mutated anatomy in the _REDACTED_ project,it stayed a proof of concept since the _REDACTED_ lifecycle was too short.  It is currently turned on, activate it to turn it off.",
+    "flags": [ "POWERARMOR_EXO", "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "ALLOWS_NATURAL_ATTACKS", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "power_draw": 1500000,
+    "revert_to": "power_armor_mutant",
+    "use_action": {
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
+      "menu_text": "Turn off",
+      "msg": "The %s disengages.",
+      "target": "power_armor_mutant"
+    },
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
+    "encumbrance": 10,
+    "weight_capacity_bonus": "29009 g"
   },
   {
     "id": "power_armor_helmet_mutant",
     "type": "ARMOR",
     "name": "heavy power armor helmet",
-    "description": "A power armor helmet designed for use with the modified DoubleTech Power Armor, Mk. II-H.Like its accompanying suit, it was never mass produced since the lifespan of _REDACTED_ soldiers was too short, so only the blueprints remained .",
+    "description": "A power armor helmet designed for use with the modified DoubleTech Power Armor, Mk. II-H.Like its accompanying suit, it was never mass produced since the lifespan of _REDACTED_ soldiers was too short, so only the blueprints remained.",
     "weight": 5442,
     "volume": 28,
     "price": "37500 USD",
@@ -43,10 +72,44 @@
     "coverage": 100,
     "encumbrance": 60,
     "warmth": 60,
-    "power_armor": true,
     "material_thickness": 12,
     "environmental_protection": 16,
     "qualities": [ [ "GLARE", 2 ] ],
-    "flags": [ "OVERSIZE", "VARSIZE", "WATCH", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "THERMOMETER", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "POWERARMOR_EXTERNAL", "OVERSIZE", "VARSIZE", "WATCH", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "THERMOMETER", "ALLOWS_NATURAL_ATTACKS" ]
+  },
+  {
+    "id": "power_armor_helmet_mutant_on",
+    "copy-from": "power_armor_helmet_mutant",
+    "repairs_like": "power_armor_helmet_mutant",
+    "looks_like": "power_armor_helmet_mutant",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "heavy power armor helmet (active)", "str_pl": "heavy power armor helmets (active)" },
+    "description": "A power armor helmet designed for use with the modified DoubleTech Power Armor, Mk. II-H.Like its accompanying suit, it was never mass produced since the lifespan of _REDACTED_ soldiers was too short, so only the blueprints remained .",
+    "flags": [
+      "POWERARMOR_EXTERNAL",
+      "OVERSIZE",
+      "VARSIZE",
+      "WATCH",
+      "WATERPROOF",
+      "STURDY",
+      "PARTIAL_DEAF",
+      "THERMOMETER",
+      "ALLOWS_NATURAL_ATTACKS",
+      "CLIMATE_CONTROL",
+      "TRADER_AVOID"
+    ],
+    "power_draw": 500000,
+    "qualities": [ [ "GLARE", 2 ] ],
+    "revert_to": "power_armor_helmet_mutant",
+    "use_action": {
+      "type": "set_transformed",
+      "dependencies": "POWERARMOR_EXO",
+      "menu_text": "Turn off",
+      "msg": "The %s powers down.",
+      "target": "power_armor_helmet_mutant"
+    },
+    "covers": [ "head", "eyes", "mouth" ],
+    "encumbrance": 10,
+    "weight_capacity_bonus": "3628 g"
   }
  ] 

@@ -42,10 +42,42 @@
     "encumbrance": 35,
     "storage": "25 L",
     "warmth": 55,
-    "power_armor": true,
     "material_thickness": 6,
     "environmental_protection": 8,
-    "use_action": { "type": "ups_based_armor", "activate_msg": "Your Commercial power armor engages." },
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "use_action": {
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
+      "msg": "The %s engages.",
+      "target": "power_armor_Civilian_on",
+      "active": true,
+      "need_worn": true,
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
+    },
+    "flags": [ "POWERARMOR_EXO" "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+  },
+  {
+    "id": "power_armor_Civilian_on",
+    "copy-from": "power_armor_Civilian",
+    "repairs_like": "power_armor_Civilian",
+    "looks_like": "power_armor_Civilian",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "Commercial power armor (active)", "str_pl": "Commercial power armors (active)" },
+    "description": "A suit of DoubleTech Power Armor, Mk. I-C.  This model Is Made For Commercial Use, This Model Was Very Common To See On Rich Members Of society. Like all DoubleTech power armor, the control and climate-regulation systems require direct skin contact.  It is currently turned on, activate it to turn it off.",
+    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "power_draw": 1500000,
+    "revert_to": "power_armor_Civilian",
+    "use_action": {
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
+      "menu_text": "Turn off",
+      "msg": "The %s disengages.",
+      "target": "power_armor_Civilian_on"
+    },
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
+    "encumbrance": 0,
+    "weight_capacity_bonus": "8 kg"
   }
 ]
