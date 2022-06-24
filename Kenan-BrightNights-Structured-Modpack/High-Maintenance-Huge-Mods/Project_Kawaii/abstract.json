@@ -1,0 +1,63 @@
+[
+  {
+    "abstract": "kawaii_glasses_base",
+    "type": "ARMOR",
+    "name": { "str": "Cute glasses base" },
+    "repairs_like": "survivor_goggles",
+    "weight": "30 g",
+    "volume": "250 ml",
+    "price": "275 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "glass", "plastic" ],
+    "material_thickness": 1,
+    "environmental_protection": 1,
+    "symbol": "[",
+    "color": "cyan",
+    "covers": [ "eyes" ],
+    "coverage": 75,
+    "use_action": { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true },
+    "flags": [ "WATER_FRIENDLY", "FIRESTARTER", "FANCY", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SKINTIGHT" ]
+  },
+  {
+    "abstract": "kawaii_bra_base",
+    "type": "ARMOR",
+    "name": { "str": "Cute bra base" },
+    "weight": "32 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [ "torso" ],
+    "coverage": 25,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "SKINTIGHT", "FANCY" ]
+  },
+  {
+    "abstract": "kawaii_panties_base",
+    "type": "ARMOR",
+    "name": { "str": "Cute panties base" },
+    "weight": "32 g",
+    "volume": "250 ml",
+    "price": "10 USD",
+    "price_postapoc": "1 USD",
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "white",
+    "covers": [ "legs" ],
+    "coverage": 75,
+    "warmth": 5,
+    "material_thickness": 1,
+    "flags": [ "VARSIZE", "SKINTIGHT", "FANCY" ]
+  },
+  {
+    "abstract": "kawaii_acc_base",
+    "type": "ARMOR",
+    "name": { "str": "Cute accessories base" },
+    "symbol": "[",
+    "color": "white",
+    "flags": [ "ZERO_WEIGHT" ]
+  }
+]
