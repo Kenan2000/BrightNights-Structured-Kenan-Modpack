@@ -21,7 +21,6 @@
     "warmth": 60,
     "material_thickness": 10,
     "environmental_protection": 16,
-    "power_armor": true,
     "qualities": [ [ "GLARE", 1 ] ],
     "use_action": {
       "target": "secro_power_armor_atk_on",
@@ -45,7 +44,7 @@
         }
       ]
     },
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "WATCH", "THERMOMETER", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "WATCH", "THERMOMETER", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_atk_on",
@@ -69,7 +68,6 @@
     "warmth": 60,
     "material_thickness": 10,
     "environmental_protection": 16,
-    "power_armor": true,
     "qualities": [ [ "GLARE", 1 ] ],
     "use_action": {
       "target": "secro_power_armor_atk",
@@ -92,7 +90,7 @@
         }
       ]
     },
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "WATCH", "THERMOMETER", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "WATCH", "THERMOMETER", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_flesh_fite",
@@ -116,7 +114,6 @@
     "warmth": 30,
     "material_thickness": 9,
     "environmental_protection": 8,
-    "power_armor": true,
     "ammo": "secro_flesh",
     "max_charges": 100,
     "charges_per_use": 10,
@@ -136,7 +133,7 @@
       ]
     },
     "qualities": [ [ "GLARE", 2 ], [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
-    "flags": [ "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_flesh_tank",
@@ -160,7 +157,6 @@
     "warmth": 30,
     "material_thickness": 13,
     "environmental_protection": 8,
-    "power_armor": true,
     "ammo": "secro_flesh",
     "max_charges": 100,
     "charges_per_use": 10,
@@ -181,7 +177,7 @@
       ]
     },
     "qualities": [ [ "GLARE", 2 ], [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
-    "flags": [ "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_flesh_coward",
@@ -205,7 +201,6 @@
     "warmth": 30,
     "material_thickness": 5,
     "environmental_protection": 8,
-    "power_armor": true,
     "ammo": "secro_flesh",
     "max_charges": 100,
     "charges_per_use": 10,
@@ -225,7 +220,7 @@
       ]
     },
     "qualities": [ [ "GLARE", 2 ], [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
-    "flags": [ "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_flesh_range",
@@ -249,7 +244,6 @@
     "warmth": 30,
     "material_thickness": 6,
     "environmental_protection": 8,
-    "power_armor": true,
     "ammo": "secro_flesh",
     "max_charges": 100,
     "charges_per_use": 10,
@@ -268,7 +262,7 @@
       ]
     },
     "qualities": [ [ "GLARE", 2 ], [ "SECRO_FLESH_MORPHING", 1 ], [ "SECRO_FLESH_REFORMING", 1 ] ],
-    "flags": [ "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_flesh_infect",
@@ -292,7 +286,6 @@
     "warmth": 30,
     "material_thickness": 7,
     "environmental_protection": 12,
-    "power_armor": true,
     "ammo": "secro_flesh",
     "max_charges": 200,
     "charges_per_use": 50,
@@ -329,7 +322,7 @@
       ]
     },
     "qualities": [ [ "GLARE", 2 ], [ "SECRO_FLESH_MORPHING", 2 ], [ "SECRO_FLESH_REFORMING", 2 ] ],
-    "flags": [ "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
+    "flags": [ "POWERARMOR_EXO", "NO_TAKEOFF", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "SUN_GLASSES", "OVERSIZE" ]
   },
   {
     "id": "secro_power_armor_feed_item",
@@ -346,9 +339,8 @@
     "covers": [ "torso", "arms", "hands", "legs", "feet", "head", "eyes", "mouth" ],
     "coverage": 0,
     "encumbrance": 0,
-    "power_armor": true,
     "material_thickness": 1,
     "use_action": { "type": "cast_spell", "spell_id": "secro_power_armor_feed", "no_fail": true, "need_worn": true, "level": 0 },
-    "flags": [ "NO_TAKEOFF", "POWERARMOR_COMPATIBLE" ]
+    "flags": [ "POWERARMOR_MOD", "NO_TAKEOFF" ]
   }
 ]
