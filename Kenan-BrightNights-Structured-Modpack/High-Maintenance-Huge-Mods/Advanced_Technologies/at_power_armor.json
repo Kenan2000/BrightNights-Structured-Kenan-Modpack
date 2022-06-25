@@ -1,12 +1,12 @@
 [
   {
     "id": "power_armor_crusader",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": { "str": "modern crusader power armor" },
     "description": "This armor was manufactured and was owned by a cult of basically super christians and if you couldnt tell they wanted another crusade.",
     "//": "This should probably changed to a pseudo-vehicle like the civilian exoskeleton",
-    "weight": "450 kg",
-    "volume": "180 L",
+    "weight": "45 kg",
+    "volume": "100 L",
     "price": "115000 USD",
     "price_postapoc": "400 USD",
     "to_hit": 1,
@@ -20,19 +20,51 @@
     "encumbrance": 40,
     "storage": "20 L",
     "warmth": 60,
-    "power_armor": true,
     "material_thickness": 22,
     "environmental_protection": 30,
-    "use_action": { "type": "ups_based_armor", "activate_msg": "The crusade BEGINS AGAIN." },
-    "flags": [ "OVERSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "use_action": {
+      "type": "set_transform",
+      "turn_off": false,
+      "flag": "POWERARMOR_EXTERNAL",
+      "msg": "The crusade BEGINS AGAIN.",
+      "target": "power_armor_crusader_on",
+      "active": true,
+      "need_worn": true,
+      "set_charges": 2,
+      "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
+    },
+    "flags": [ "POWERARMOR_EXO", "OVERSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+  },
+  {
+    "id": "power_armor_crusader_on",
+    "copy_from": "power_armor_crusader",
+    "repairs_like": "power_armor_crusader",
+    "looks_like": "power_armor_crusader",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "modern crusader power armor (active)", "str_pl": "modern crusader power armors (active)" },
+    "description": "This armor was manufactured and was owned by a cult of basically super christians and if you couldnt tell they wanted another crusade.  It is turned on and continually drawing power.  Use it to turn it off.",
+    "flags": [ "POWERARMOR_EXO", "OVERSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "power_draw": 1500000,
+    "revert_to": "power_armor_crusader",
+    "use_action": {
+      "type": "set_transform",
+      "turn_off": true,
+      "flag": "POWERARMOR_EXTERNAL",
+      "menu_text": "Turn off",
+      "msg": "The crusade is put on hold, for now...",
+      "target": "power_armor_crusader"
+    },
+    "covers": [ "torso", "arms", "hands", "legs", "feet" ],
+    "encumbrance": 0,
+    "weight_capacity_bonus": "45 kg"
   },
   {
     "id": "power_armor_helmet_crusader",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": { "str": "modern crusader power armor helm" },
     "description": "While it may look like an old crusader helm complete with the cross shaped opening in the front the lights in the darkness tells it is not just any helm.",
-    "weight": "20442 g",
-    "volume": "9 L",
+    "weight": "15 kg",
+    "volume": "5 L",
     "price": "37500 USD",
     "price_postapoc": "100 USD",
     "to_hit": 1,
@@ -45,10 +77,43 @@
     "coverage": 100,
     "encumbrance": 35,
     "warmth": 60,
-    "power_armor": true,
     "material_thickness": 22,
     "environmental_protection": 16,
     "qualities": [ [ "GLARE", 2 ] ],
-    "flags": [ "OVERSIZE",  "WATCH", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "THERMOMETER", "SUN_GLASSES" ]
+    "flags": [ "POWERARMOR_EXTERNAL", "OVERSIZE", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "SUN_GLASSES" ]
+  },
+  {
+    "id": "power_armor_helmet_crusader_on",
+    "copy-from": "power_armor_helmet_crusader",
+    "repairs_like": "power_armor_helmet_crusader",
+    "looks_like": "power_armor_helmet_crusader",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "modern crusader power armor helm (active)", "str_pl": "modern crusader power armor helms (active)" },
+    "description": "While it may look like an old crusader helm complete with the cross shaped opening in the front the lights in the darkness tells it is not just any helm.",
+    "flags": [
+      "POWERARMOR_EXTERNAL",
+      "OVERSIZE",
+      "WATCH",
+      "WATERPROOF",
+      "STURDY",
+      "PARTIAL_DEAF",
+      "THERMOMETER",
+      "SUN_GLASSES",
+      "CLIMATE_CONTROL",
+      "TRADER_AVOID"
+    ],
+    "power_draw": 500000,
+    "qualities": [ [ "GLARE", 2 ] ],
+    "revert_to": "power_armor_helmet_crusader",
+    "use_action": {
+      "type": "set_transformed",
+      "dependencies": "POWERARMOR_EXO",
+      "menu_text": "Turn off",
+      "msg": "The %s powers down.",
+      "target": "power_armor_helmet_crusader"
+    },
+    "covers": [ "head", "eyes", "mouth" ],
+    "encumbrance": 0,
+    "weight_capacity_bonus": "15 kg"
   }
 ]
