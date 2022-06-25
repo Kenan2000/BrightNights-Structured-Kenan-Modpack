@@ -51,9 +51,9 @@
     "id": "NC_NCRTROOP_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
-      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
-      { "item": "stanag30", "charges": 30, "repeat": [ 3, 5 ] },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
+      { "item": "stanag30", "charges": 30, "count": [ 3, 5 ] },
       { "item": "stanag10", "charges": 10, "prob": 20 },
       { "item": "grenade", "prob": 15 },
       { "item": "223", "prob": 85, "charges": [ 15, 25 ] },

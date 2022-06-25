@@ -54,8 +54,8 @@
     "id": "NC_NCRRANGER_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
-      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
       { "item": "grenade", "prob": 5 },
       { "item": "223", "prob": 85, "charges": [ 15, 25 ] },
       { "group": "drops_ncr_ranger_ammo", "prob": 65, "charges": [ 15, 35 ] },

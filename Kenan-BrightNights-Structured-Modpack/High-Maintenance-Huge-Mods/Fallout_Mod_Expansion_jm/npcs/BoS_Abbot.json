@@ -51,7 +51,7 @@
     "id": "NC_BOSPAL_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
       { "group": "ammo_any_batteries_full", "prob": 15 },
       { "group": "fallout_misc_itemgroup_food", "prob": 40 }
     ]
@@ -151,8 +151,8 @@
       ],
       "effect": [
         { "u_add_var": "u_are_bos_member", "type": "general", "context": "meeting", "value": "yes" },
-        { "u_buy_item": "aer9" },
-        { "u_buy_item": "medium_battery_cell" },
+        { "u_buy_item": "aer9", "count": 1 },
+        { "u_buy_item": "medium_battery_cell", "count": 1 },
         { "u_buy_item": "armor_combat_light", "count": 1 },
         { "u_buy_item": "helmet_combat_light", "count": 1 },
         { "u_buy_item": "colt6250_weathered", "count": 1 },

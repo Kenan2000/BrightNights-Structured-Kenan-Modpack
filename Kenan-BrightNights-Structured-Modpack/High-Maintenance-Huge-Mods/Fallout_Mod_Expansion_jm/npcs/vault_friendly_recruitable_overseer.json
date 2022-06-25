@@ -58,9 +58,9 @@
     "id": "NC_OVERVAULT_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
-      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
-      { "item": "colt6250mag", "charges": 12, "repeat": [ 2, 3 ] },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
+      { "item": "colt6250mag", "charges": 12, "count": [ 2, 3 ] },
       { "item": "10mm", "prob": 85, "charges": [ 5, 35 ] }
     ]
   },

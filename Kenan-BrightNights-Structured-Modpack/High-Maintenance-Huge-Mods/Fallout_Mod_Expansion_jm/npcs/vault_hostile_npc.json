@@ -51,10 +51,10 @@
     "id": "NC_HOSVAULT_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "mon_vault_equipment_armory", "repeat": [ 1, 3 ], "prob": 65 },
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "mon_vault_equipment_armory", "count": [ 1, 3 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
       { "group": "ammo_any_batteries_full", "prob": 15 },
-      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
       { "group": "fallout_10mm_maggroup", "prob": 40 },
       { "item": "10mm", "prob": 85, "charges": [ 5, 35 ] },
       { "group": "ammo_pistol_common", "prob": 65, "charges": [ 15, 35 ] }

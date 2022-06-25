@@ -54,10 +54,10 @@
     "id": "NC_DCLAWHUNT_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "mon_vault_equipment_armory", "repeat": [ 3, 5 ], "prob": 65 },
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 75 },
+      { "group": "mon_vault_equipment_armory", "count": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
       { "group": "ammo_any_batteries_full", "prob": 15 },
-      { "item": "amr50mag", "charges": 8, "repeat": [ 3, 5 ] }
+      { "item": "amr50mag", "charges": 8, "count": [ 3, 5 ] }
     ]
   },
   {

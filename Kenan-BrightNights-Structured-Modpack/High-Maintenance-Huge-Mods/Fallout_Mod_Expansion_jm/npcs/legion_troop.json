@@ -52,8 +52,8 @@
     "id": "NC_CLGRECRUIT_carry",
     "subtype": "collection",
     "entries": [
-      { "group": "drugs_heal_simple", "repeat": [ 1, 2 ], "prob": 50 },
-      { "group": "fallout_misc_itemgroup_food", "repeat": [ 1, 2 ], "prob": 40 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
       { "item": "grenade", "prob": 10 },
       { "item": "healing_powder", "prob": 15 },
       { "group": "ammo_pistol_common", "prob": 35 },
