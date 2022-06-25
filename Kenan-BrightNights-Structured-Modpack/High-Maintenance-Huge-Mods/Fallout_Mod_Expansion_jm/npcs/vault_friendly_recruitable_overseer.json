@@ -112,13 +112,8 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 3,
     "value": 150000,
-    "assign_mission_target": {
-    "om_special": "Irradiated Vault",
-    "reveal_radius": 2,
-    "search_range": 180
-  },
+    "start": { "assign_mission_target": { "om_terrain": "FO_RAD_VAULT_H_roof", "om_special": "Irradiated Vault", "reveal_radius": 2, "search_range": 180 } },
     "item": "item_fo_waterchip",
-    "count": 1,
     "end": {
       "effect": [
         { "u_buy_item": "jumpsuit_vault_13_armored", "count": 1 },

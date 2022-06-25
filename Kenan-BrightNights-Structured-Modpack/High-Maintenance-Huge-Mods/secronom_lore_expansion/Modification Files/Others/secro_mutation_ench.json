@@ -144,20 +144,6 @@
   },
   {
     "type": "enchantment",
-    "id": "SECRONOM_FLESH_traverse_ench",
-    "intermittent_activation": {
-      "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "secro_power_armor_flesh_infect_traverse" } ] } ]
-    }
-  },
-  {
-    "type": "enchantment",
-    "id": "SECRONOM_FLESH_transmit_ench",
-    "intermittent_activation": {
-      "effects": [ { "frequency": "1 seconds", "spell_effects": [ { "id": "secro_power_armor_flesh_infect_or_random" } ] } ]
-    }
-  },
-  {
-    "type": "enchantment",
     "id": "SECRONOM_FLESH_BIO_mobile_ench",
     "ench_effects": [ { "effect": "SECRONOM_FLESH_BIO_mobile_unstable", "intensity": 1 } ]
   }

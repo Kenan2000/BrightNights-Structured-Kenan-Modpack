@@ -140,13 +140,8 @@
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 3,
     "value": 150000,
-    "assign_mission_target": {
-    "om_terrain": "FO_WESTTEK_2_roof_2",
-    "search_range": 300,
-    "reveal_radius": 3
-  },
+    "start": { "assign_mission_target": { "om_terrain": "FO_WESTTEK_2_roof_2", "om_special": "West-Tek Research Facility", "reveal_radius": 3, "search_range": 300 } },
     "item": "item_fo_glow_holotape",
-    "count": 1,
     "end": {
       "update_mapgen": [
         {
@@ -156,7 +151,8 @@
       ],
       "effect": [
         { "u_add_var": "u_are_bos_member", "type": "general", "context": "meeting", "value": "yes" },
-        { "u_buy_item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "aer9" },
+        { "u_buy_item": "aer9" },
+        { "u_buy_item": "medium_battery_cell" },
         { "u_buy_item": "armor_combat_light", "count": 1 },
         { "u_buy_item": "helmet_combat_light", "count": 1 },
         { "u_buy_item": "colt6250_weathered", "count": 1 },

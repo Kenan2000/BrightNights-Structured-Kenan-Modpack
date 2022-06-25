@@ -278,7 +278,7 @@
         "##############MMMMM#####",
         "##############Mh?6MMMMMM",
         "#############MM   M5 M M",
-        "#############Mr ! +0    ",
+        "#############M  ! +0    ",
         "#############MMo  MM M M",
         "##############MMpMMMMMMM",
         "###############MMM######",
@@ -301,8 +301,7 @@
       "furniture": { "h": "f_robotic_arm" },
       "mapping": { "?": { "terrain": "t_secro_experiment_vat" }, "r": { "furniture": "f_rack" }, "p": { "furniture": "f_rack" } },
       "item": {
-        "?": [ { "item": "secro_flesh", "repeat": [ 5, 15 ] }, { "item": "secro_power_armor_flesh_starter" } ],
-        "r": [ { "item": "bio_secro_fv" }, { "item": "bio_secro_fv_core" } ],
+        "?": [ { "item": "secro_flesh", "repeat": [ 5, 15 ] }, { "item": "depowered_armor" } ],
         "p": [ { "item": "secro_recipe_flesh" } ]
       },
       "monster": { "!": { "monster": "mon_turret_rifle" } }
