@@ -1,7 +1,6 @@
 [
   {
     "id": "kawaii_maid_dress",
-    "copy-from": "maid_dress_short",
     "type": "ARMOR",
     "name": { "str": "Cute Maid Clothes" },
     "description": "Made out of the hopes and dreams of men.",
@@ -186,7 +185,7 @@
     "covers": [ "torso", "arms", "head" ],
     "coverage": 95,
     "encumbrance": 10,
-    "flags": [ "VARSIZE", "POCKETS", "WATERPROOF", "RAINPROOF", "HOOD", "OUTER", "FANCY", "SOFT" ],
+    "flags": [ "VARSIZE", "POCKETS", "WATERPROOF", "RAINPROOF", "HOOD", "OUTER", "FANCY" ],
     "use_action": { "type": "transform", "msg": "You take off the hood.", "target": "kawaii_raincoat_off", "menu_text": "Toggle hood" }
   },
   {
@@ -198,7 +197,7 @@
     "covers": [ "torso", "arms" ],
     "coverage": 85,
     "encumbrance": 7,
-    "flags": [ "VARSIZE", "POCKETS", "WATERPROOF", "RAINPROOF", "OUTER", "FANCY", "SOFT" ],
+    "flags": [ "VARSIZE", "POCKETS", "WATERPROOF", "RAINPROOF", "OUTER", "FANCY" ],
     "use_action": { "type": "transform", "msg": "You put on the hood.", "target": "kawaii_raincoat", "menu_text": "Toggle hood" }
   },
   {
@@ -648,12 +647,15 @@
     "type": "ARMOR",
     "name": { "str": "Cute Red Half-Rim Glasses" },
     "description": "A maid wearing these will never miss the smallest speck of dust, nor signs of their master's health. (Toggle to adjust position)",
-    "use_action": {
-      "type": "transform",
-      "msg": "You lower the glasses",
-      "target": "kawaii_maid_megane_04",
-      "menu_text": "Adjust the glasses"
-    }
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "You lower the glasses",
+        "target": "kawaii_maid_megane_04",
+        "menu_text": "Adjust the glasses"
+      },
+      { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true }
+    ]
   },
   {
     "id": "kawaii_maid_megane_04",
@@ -661,12 +663,15 @@
     "type": "ARMOR",
     "name": { "str": "Cute Red Half-Rim Glasses" },
     "description": "A maid wearing these will never miss the smallest speck of dust, nor signs of their master's health. (Toggle to adjust position)",
-    "use_action": {
-      "type": "transform",
-      "msg": "You raise the glasses",
-      "target": "kawaii_maid_megane_03",
-      "menu_text": "Adjust the glasses"
-    }
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "You raise the glasses",
+        "target": "kawaii_maid_megane_03",
+        "menu_text": "Adjust the glasses"
+      },
+      { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true }
+    ]
   },
   {
     "id": "kawaii_maid_megane_05",
@@ -723,7 +728,7 @@
   },
   {
     "id": "kawaii_balclava",
-    "copy-from": "balaclava",
+    "copy-from": "balclava",
     "type": "ARMOR",
     "name": { "str": "Cute Balaclava" },
     "description": "'I refuse to cover up my cute face!' It's not as good against the cold as a normal balaclava, but it's a sacrifice necessary for the sake of fashion.",
