@@ -38,6 +38,16 @@
     "description": "This mutation exists just to show it somewhere..."
   },
   {
+    "type": "mutation",
+    "id": "SECRONOM_FLESH_BIO_construction_pp",
+    "name": { "str": "Pinpoint Bio-organic Construction" },
+    "points": 10,
+    "description": "You can build structures at exact spot using flesh and by the help of the player.",
+    "valid": false,
+    "purifiable": false,
+    "enchantments": [ "SECRONOM_FLESH_BIO_construction_pp_ench" ]
+  },
+  {
     "id": "ench_secro_power_armor_flesh_devour",
     "type": "enchantment",
     "condition": "ALWAYS",
