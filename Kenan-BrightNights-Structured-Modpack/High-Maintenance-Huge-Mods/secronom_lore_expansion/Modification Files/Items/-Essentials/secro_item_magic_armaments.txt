@@ -48,6 +48,26 @@
     "enchantments": [ "SECRONOM_FLESH_BIO_construction_pp_ench" ]
   },
   {
+    "type": "mutation",
+    "id": "SECRONOM_FLESH_traverse",
+    "name": { "str": "Traverse" },
+    "points": 10,
+    "description": "You have bonded with the hivemind, therefore, your movements across its territory are tracked.",
+    "valid": false,
+    "purifiable": false,
+    "enchantments": [ "SECRONOM_FLESH_traverse_ench" ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRONOM_FLESH_transmit",
+    "name": { "str": "Neural Link" },
+    "points": 10,
+    "description": "\"We are one.\"",
+    "valid": false,
+    "purifiable": false,
+    "enchantments": [ "SECRONOM_FLESH_transmit_ench" ]
+  },
+  {
     "id": "ench_secro_power_armor_flesh_devour",
     "type": "enchantment",
     "condition": "ALWAYS",
