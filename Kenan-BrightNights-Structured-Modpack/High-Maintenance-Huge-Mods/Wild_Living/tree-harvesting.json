@@ -17,7 +17,7 @@
       "sound": "crunch!",
       "sound_fail": "whack!",
       "ter_set": "t_dirt",
-	"items": [ { "item": "stick", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+      "items": [ { "item": "stick", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
     }
   },
   {
@@ -40,6 +40,7 @@
     "difficulty": 0,
     "time": "10 minutes",
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "apple_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_apple",
     "post_terrain": "t_tree_apple_cut"
   },
@@ -169,6 +170,7 @@
     "difficulty": 0,
     "time": 5,
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "pear_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_pear",
     "post_terrain": "t_tree_pear_cut"
   },
@@ -299,6 +301,7 @@
     "difficulty": 0,
     "time": 5,
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "cherry_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_cherry",
     "post_terrain": "t_tree_cherry_cut"
   },
@@ -429,6 +432,7 @@
     "difficulty": 0,
     "time": 5,
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "peach_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_peach",
     "post_terrain": "t_tree_peach_cut"
   },
@@ -559,6 +563,7 @@
     "difficulty": 0,
     "time": 5,
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "apricot_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_apricot",
     "post_terrain": "t_tree_apricot_cut"
   },
@@ -689,6 +694,7 @@
     "difficulty": 0,
     "time": 5,
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "plum_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_plum",
     "post_terrain": "t_tree_plum_cut"
   },
@@ -818,6 +824,7 @@
     "difficulty": 0,
     "time": 5,
     "qualities": [ [ { "id": "CUT", "level": 1 } ] ],
+    "byproducts": [ { "item": "coffee_cutting", "count": [ 1, 2 ] } ],
     "pre_terrain": "t_tree_coffee",
     "post_terrain": "t_tree_coffee_cut"
   },
