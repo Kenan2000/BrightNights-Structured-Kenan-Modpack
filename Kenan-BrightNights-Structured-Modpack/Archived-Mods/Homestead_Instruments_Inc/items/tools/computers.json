@@ -9,15 +9,10 @@
     "color": "light_gray",
     "ammo": [ "battery" ],
     "charges_per_use": 1,
-	"magazines": [
+    "magazines": [
       [
         "battery",
-        [
-          "medium_battery_cell",
-          "medium_plus_battery_cell",
-          "medium_atomic_battery_cell",
-          "medium_disposable_cell"
-        ]
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
       ]
     ],
     "magazine_well": "250 ml"
@@ -37,5 +32,14 @@
     "copy-from": "laptop_working_os",
     "name": { "str": "laptop computer with Ubuntu", "str_pl": "laptop computers with Ubuntu" },
     "description": "Working portable computer. Internal battery has been somewhat-crudely replaced to ensure as much. This one has Ubuntu - a distribution of Linux - installed."
+  },
+  {
+    "type": "TOOL",
+    "id": "laptop_working_euler",
+    "copy-from": "laptop_working_os",
+    "name": { "str": "laptop computer with EulerOS", "str_pl": "laptop computers with EulerOS" },
+    "description": "Working portable computer. Internal battery has been somewhat-crudely replaced to ensure as much. This one has EulerOS - a proprietary APEX design assistance system - installed.",
+    "//1": "resets flags: EulerOS is not meant to even have an exposed clock",
+    "flags": [  ]
   }
 ]

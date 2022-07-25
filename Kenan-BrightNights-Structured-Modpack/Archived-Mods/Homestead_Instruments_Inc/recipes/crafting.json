@@ -39,5 +39,18 @@
       [ [ "plastic_chunk", 1 ], [ "scrap", 2 ] ],
       [ [ "small_lcd_screen", 1 ] ]
     ]
+  },
+  {
+    "type": "recipe",
+    "result": "laptop_working_euler",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 1,
+    "time": "10 m",
+    "reversible": true,
+    "book_learn": [ [ "textbook_electronics", 1 ] ],
+    "tools": [ [ [ "software_os_euler", -1 ] ] ],
+    "components": [ [ [ "laptop_working", 1 ] ] ]
   }
 ]
