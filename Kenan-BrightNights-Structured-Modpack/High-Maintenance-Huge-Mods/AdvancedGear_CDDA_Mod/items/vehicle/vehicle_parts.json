@@ -25,9 +25,9 @@
     "item": "xl_nanite_cluster",
     "description": "Seeing this is a bug - nanovp",
     "requirements": {
-      "install": { "skills": [ [ "computer", 0 ] ], "time": 6000, "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "install": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
       "removal": { "skills": [ [ "computer", 0 ] ], "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
-      "repair": { "skills": [ [ "computer", 0 ] ], "time": 6000, "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
+      "repair": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
     },
     "breaks_into": [ { "item": "xl_nanite_cluster", "count": [ 1, 1 ] } ],
     "damage_reduction": { "all": 200 }

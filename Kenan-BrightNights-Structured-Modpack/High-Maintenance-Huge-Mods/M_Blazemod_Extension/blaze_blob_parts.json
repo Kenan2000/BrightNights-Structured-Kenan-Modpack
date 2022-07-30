@@ -4,7 +4,7 @@
     "override": true,
     "name" : "blob part",
     "folded_volume": 1,
-    "requirements": { "repair": { "time": 30000, "using": [ [ "blobrep", 1 ] ] } }
+    "requirements": { "repair": { "time": "5 m", "using": [ [ "blobrep", 1 ] ] } }
   },
   {
     "abstract" : "gray_part",

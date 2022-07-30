@@ -34,9 +34,9 @@
       "all" : 150
     },
     "requirements": {
-      "install": { "skills": [ [ "mechanics", 1 ] ], "time": 120000, "using": [ [ "welding_standard", 10 ] ] },
+      "install": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "welding_standard", 10 ] ] },
       "removal": { "skills": [ [ "mechanics", 1 ] ], "using": "vehicle_weld_removal" },
-      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": 30000, "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": "5 m", "using": [ [ "welding_standard", 5 ] ] }
     },
     "flags": [ "MOUNTABLE", "FOLDABLE" ]
   },{
@@ -119,9 +119,9 @@
       "all" : 500
     },
     "requirements": {
-      "install": { "skills": [ [ "computer", 0 ] ], "time": 6000, "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "install": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
       "removal": { "skills": [ [ "computer", 0 ] ], "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
-      "repair": { "skills": [ [ "computer", 0 ] ], "time": 6000, "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
+      "repair": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
     },
     "flags": [ "MOUNTABLE", "FOLDABLE" ]
   },{
@@ -201,9 +201,9 @@
       {"item": "xl_nanite_cluster", "count": [ 1, 1 ]}
     ],
     "requirements": {
-      "install": { "skills": [ [ "computer", 0 ] ], "time": 6000, "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
+      "install": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
       "removal": { "skills": [ [ "computer", 0 ] ], "qualities": [ { "id": "NANO_PRO", "level": 1 } ] },
-      "repair": { "skills": [ [ "computer", 0 ] ], "time": 6000, "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
+      "repair": { "skills": [ [ "computer", 0 ] ], "time": "1 m", "qualities": [ { "id": "NANO_PRO", "level": 1 } ] }
     },
     "flags": [ "AISLE", "OPAQUE", "OBSTACLE", "TOOL_NONE", "FLAT_SURF", "CARGO", "COVERED" ],
     "damage_reduction" : {

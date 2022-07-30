@@ -30,8 +30,8 @@
     "difficulty": 1,
     "location": "roof",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 7 ], [ "water_clean", 14 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 7 ], [ "water_clean", 14 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     },
     "flags": [ "ROOF", "FOLDABLE", "TOOL_NONE" ],
     "breaks_into": "break_car_mushroom"
@@ -50,8 +50,8 @@
     "difficulty": 1,
     "location": "roof",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 7 ], [ "water_clean", 14 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 7 ], [ "water_clean", 14 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     },
     "flags": [ "ROOF", "FOLDABLE", "TOOL_NONE" ],
     "breaks_into": "break_car_mushroom"
@@ -74,8 +74,8 @@
     "flags": [ "CONTROLS", "CTRL_ELECTRONIC", "FOLDABLE", "DOME_LIGHT", "ENABLED_DRAINS_EPOWER" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 7 ], [ "water_clean", 14 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 7 ], [ "water_clean", 14 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -94,8 +94,8 @@
     "damage_modifier": 80,
     "flags": [ "FOLDABLE", "TOOL_NONE" ],
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -114,8 +114,8 @@
     "damage_modifier": 80,
     "flags": [ "FOLDABLE", "TOOL_NONE" ],
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -136,8 +136,8 @@
     "flags": [ "SOLAR_PANEL", "FOLDABLE", "TOOL_NONE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 5 ] ], "components": [ [ [ "water", 20 ], [ "water_clean", 40 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 5 ] ], "components": [ [ [ "water", 20 ], [ "water_clean", 40 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -157,8 +157,8 @@
     "flags": [ "OBSTACLE", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 2 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 2 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -178,8 +178,8 @@
     "flags": [ "OBSTACLE", "OPAQUE", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 2 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 2 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -198,8 +198,8 @@
     "breaks_into": "break_car_mushroom",
     "flags": [ "NO_JACK", "INITIAL_PART", "MOUNTABLE", "TOOL_NONE", "FOLDABLE" ],
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -220,8 +220,8 @@
     "breaks_into": "break_car_mushroom",
     "flags": [ "CARGO", "BOARDABLE", "COVERED", "TOOL_NONE", "FOLDABLE" ],
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -241,8 +241,8 @@
     "flags": [ "OBSTACLE", "OPENABLE", "BOARDABLE", "WINDOW", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -262,8 +262,8 @@
     "flags": [ "OBSTACLE", "OPENABLE", "BOARDABLE", "OPAQUE", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 6 ], [ "water_clean", 12 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -300,8 +300,8 @@
     "flags": [ "WHEEL", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -320,8 +320,8 @@
     "damage_modifier": 50,
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 4 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     },
     "flags": [ "WHEEL", "STEERABLE", "TOOL_NONE", "FOLDABLE" ]
   },
@@ -356,8 +356,8 @@
     "flags": [ "ARMOR", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 4 ], [ "water_clean", 8 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 4 ], [ "water_clean", 8 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     },
     "damage_reduction": { "all": 5 }
   },
@@ -397,8 +397,8 @@
     "breaks_into": "break_car_mushroom",
     "flags": [ "TOOL_NONE", "FOLDABLE" ],
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 2 ] ], "components": [ [ [ "water", 3 ], [ "water_clean", 7 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 2 ] ], "components": [ [ [ "water", 3 ], [ "water_clean", 7 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -435,8 +435,8 @@
     "flags": [ "TOOL_NONE", "ENGINE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 5 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 5 ] ], "components": [ [ [ "water", 5 ], [ "water_clean", 10 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
@@ -472,8 +472,8 @@
     "flags": [ "BED", "SEAT", "BOARDABLE", "BELTABLE", "CARGO", "TOOL_NONE", "FOLDABLE" ],
     "breaks_into": "break_car_mushroom",
     "requirements": {
-      "install": { "time": 30000, "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 2 ], [ "water_clean", 5 ] ] ] },
-      "repair": { "time": 15000, "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
+      "install": { "time": "5 m", "skills": [ [ "cooking", 3 ] ], "components": [ [ [ "water", 2 ], [ "water_clean", 5 ] ] ] },
+      "repair": { "time": "2 m 30 s", "skills": [ [ "tailor", 1 ] ], "using": [ [ "sewing_standard", 50 ], [ "fabric_standard", 1 ] ] }
     }
   },
   {
