@@ -25,8 +25,6 @@
       "xenoid_bot",
       "alien_herbivore",
       "stray",
-      "zombie",
-      "zombie_aquatic",
       "mi-go",
       "triffid",
       "fungus",
@@ -55,14 +53,14 @@
   {
     "type": "MONSTER_FACTION",
     "name": "zombie",
-    "friendly": [ "slime", "cult", "zombie_aquatic", "xenoid", "stray" ],
+    "friendly": [ "slime", "cult", "zombie_aquatic", "stray" ],
     "neutral": [ "small_animal", "insect", "fish" ],
     "by_mood": "bee"
   },
   {
     "type": "MONSTER_FACTION",
     "name": "zombie_aquatic",
-    "friendly": [ "slime", "cult", "zombie", "xenoid", "stray" ],
+    "friendly": [ "slime", "cult", "zombie", "stray" ],
     "neutral": [ "small_animal", "insect" ],
     "by_mood": "bee"
   },
