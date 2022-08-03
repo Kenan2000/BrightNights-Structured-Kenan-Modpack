@@ -28,7 +28,7 @@
     "death_drops": "elderzombie",
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 6, "into_group": "GROUP_CRYPTIES_UPGRADE" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zombie_blooddefused",
@@ -60,7 +60,7 @@
     "death_drops": "elderzombie",
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 6, "into_group": "GROUP_CRYPTIES_DEFUSEDUPGRADE" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zombie_bloodinfused",
@@ -91,7 +91,7 @@
     "death_drops": "elderzombie",
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 6, "into_group": "GROUP_CRYPTIES_INFUSEDUPGRADE" },
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zombie_bonetitan",
@@ -121,7 +121,7 @@
     "special_attacks": [ [ "heavygrab", 20 ], [ "GRAB", 10 ] ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES" ]
   },
   {
     "id": "mon_zombie_bonewraith",
@@ -152,6 +152,6 @@
     "special_attacks": [ [ "tentaclebones", 10 ], [ "GRAB", 10 ] ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES", "BONES" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "REVIVES" ]
   }
 ]

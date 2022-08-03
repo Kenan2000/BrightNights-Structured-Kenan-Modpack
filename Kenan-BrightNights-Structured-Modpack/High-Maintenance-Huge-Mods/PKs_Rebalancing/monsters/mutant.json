@@ -65,7 +65,7 @@
       { "id": "skunk_spray", "duration": 3000 },
       { "id": "rad_tenths", "duration": 120 }
     ],
-    "flags": [ "SEES", "SMELLS", "WARM", "VENOM", "SWIMS", "LEATHER", "BONES" ]
+    "flags": [ "SEES", "SMELLS", "WARM", "VENOM", "SWIMS", "LEATHER" ]
   },
   {
     "id": "mon_sewer_fish",
@@ -417,10 +417,7 @@
       "ATTACKMON",
       "FUR",
       "LEATHER",
-      "BONES",
       "POISON",
-      "BONES",
-      "FAT",
       "REVIVES",
       "NO_NECRO"
     ]
@@ -478,10 +475,7 @@
       "ATTACKMON",
       "FUR",
       "LEATHER",
-      "BONES",
       "POISON",
-      "BONES",
-      "FAT",
       "REVIVES",
       "NO_NECRO"
     ]
@@ -534,7 +528,6 @@
       "WARM",
       "FLIES",
       "ANIMAL",
-      "BONES",
       "LEATHER",
       "HARDTOSHOOT",
       "SWARMS",
@@ -600,8 +593,6 @@
       "FUR",
       "KEENNOSE",
       "BLEED",
-      "BONES",
-      "FAT",
       "SWARMS",
       "GROUP_MORALE"
     ]
@@ -666,7 +657,6 @@
       "GROUP_BASH",
       "HUMAN",
       "BLEED",
-      "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_1",
       "HIT_AND_RUN"
@@ -723,7 +713,6 @@
       "GROUP_BASH",
       "HUMAN",
       "BLEED",
-      "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS"
@@ -785,7 +774,6 @@
       "GROUP_BASH",
       "HUMAN",
       "BLEED",
-      "BONES",
       "GROUP_MORALE",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS"
@@ -815,7 +803,7 @@
       { "type": "leap", "cooldown": 15, "max_range": 2 }
     ],
     "regen_morale": true,
-    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "GROUP_BASH", "HUMAN", "BLEED", "BONES", "GROUP_MORALE", "PATH_AVOID_DANGER_2" ],
+    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "GROUP_BASH", "HUMAN", "BLEED", "GROUP_MORALE", "PATH_AVOID_DANGER_2" ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "STALK" ],
     "placate_triggers": [ "FIRE", "PLAYER_WEAK" ]
   },
@@ -876,7 +864,6 @@
       "BORES",
       "HUMAN",
       "BLEED",
-      "BONES",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS",
       "HARDTOSHOOT"
@@ -926,7 +913,7 @@
       }
     ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SMELLS", "HEARS", "SEES", "CHITIN", "SWIMS", "GRABS", "FAT", "ARTHROPOD_BLOOD" ],
+    "flags": [ "SMELLS", "HEARS", "SEES", "CHITIN", "SWIMS", "GRABS", "ARTHROPOD_BLOOD" ],
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ]
   },
@@ -972,7 +959,7 @@
       }
     ],
     "death_function": [ "WORM", "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "DIGS", "BASHES", "POISON", "WARM", "LEATHER", "FAT" ],
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "DIGS", "BASHES", "POISON", "WARM", "LEATHER" ],
     "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT", "FRIEND_DIED", "FIRE" ]
   },
@@ -1080,7 +1067,6 @@
       "BLEED",
       "NO_BREATHE",
       "LEATHER",
-      "BONES",
       "STUMBLES"
     ]
   }

@@ -97,7 +97,7 @@
     "vision_day": 7,
     "vision_night": 7,
     "special_attacks": [ [ "wound_minor", 30 ], [ "FUNGUS", 200 ], [ "scratch", 25 ], { "type": "bite", "cooldown": 5 } ],
-    "flags": [ "SEES", "SMELLS", "STUMBLES", "WARM", "BASHES", "REVIVES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "STUMBLES", "WARM", "BASHES", "REVIVES", "GROUP_BASH", "POISON", "NO_BREATHE", "PUSH_MON" ]
   },
   {
     "id": "mon_boomer_fungus",
@@ -120,8 +120,6 @@
       "GROUP_BASH",
       "POISON",
       "NO_BREATHE",
-      "BONES",
-      "FAT",
       "PUSH_MON"
     ]
   },
@@ -1024,7 +1022,6 @@
       "CBM_CIV",
       "NO_BREATHE",
       "REVIVES",
-      "BONES",
       "PUSH_MON"
     ],
     "//": "A little out of place.  May replace with like a brute or w.e."

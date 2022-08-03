@@ -104,7 +104,7 @@
     "anger_triggers": [ "PLAYER_WEAK", "FIRE", "PLAYER_CLOSE" ],
     "fear_triggers": [ "MEAT", "FRIEND_DIED" ],
     "placate_triggers": [ "HURT", "SOUND" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "NO_BREATHE", "GRABS", "BONES", "HIT_AND_RUN" ],
+    "flags": [ "SEES", "SMELLS", "HEARS", "PATH_AVOID_DANGER_2", "WARM", "NO_BREATHE", "GRABS", "HIT_AND_RUN" ],
     "//": "http://smf.cataclysmdda.com/index.php?topic=2816.0"
   },
   {
@@ -236,7 +236,6 @@
       "SMELLS",
       "WARM",
       "BASHES",
-      "BONES",
       "POISON",
       "PLASTIC",
 	  "BLEED",
@@ -267,6 +266,6 @@
     "vision_day": 40,
     "vision_night": 5,
     "regen_morale": true,
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "BONES", "POISON", "PLASTIC", "BLEED", "PATH_AVOID_DANGER_2", "SWARMS", "QUEEN" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "POISON", "PLASTIC", "BLEED", "PATH_AVOID_DANGER_2", "SWARMS", "QUEEN" ]
   }
 ]

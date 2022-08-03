@@ -37,7 +37,7 @@
     "armor_stab": 20,
     "vision_day": 12,
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "BONES", "QUEEN" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "NO_BREATHE", "CLIMBS", "BASHES", "POISON", "QUEEN" ]
   },
   {
     "id": "mon_insect_saddler_baby_potent",
@@ -229,7 +229,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 25 }, [ "GRAB", 40 ], [ "scratch", 32 ], [ "PARROT", 22 ] ],
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_death_drop" ] },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "id": "mon_saddler_infected_brute",
@@ -259,7 +259,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 25 }, [ "GRAB", 40 ], [ "scratch", 32 ], [ "PARROT", 22 ] ],
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_brute_death_drop" ] },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE","FILTHY", "GRABS" ]
   },
   {
     "id": "mon_saddler_infected_scout",
@@ -290,7 +290,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 25 }, [ "GRAB", 40 ], [ "scratch", 32 ], [ "PARROT", 22 ] ],
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_scout_death_drop" ] },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "id": "mon_zombie_saddler_infected",
@@ -323,7 +323,7 @@
     "vision_night": 2,
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_death_drop" ] },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "id": "mon_zombie_saddler_infected_brute",
@@ -355,7 +355,7 @@
     "vision_night": 2,
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_brute_death_drop" ] },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "id": "mon_zombie_saddler_infected_scout",
@@ -384,7 +384,7 @@
     "special_attacks": [ { "type": "bite", "cooldown": 25 }, [ "GRAB", 40 ], [ "scratch", 32 ] ],
     "death_drops": { "subtype": "collection", "groups": [ "default_zombie_death_drops", "mon_insect_saddler_scout_death_drop" ] },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "//": "The product of a saddler after being manipulated.",
@@ -415,7 +415,7 @@
     "special_attacks": [ [ "GRAB", 40 ], [ "scratch", 32 ] ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "id": "mon_zombie_saddler_brute_used",
@@ -447,7 +447,7 @@
     "vision_night": 2,
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   },
   {
     "id": "mon_zombie_saddler_scout_used",
@@ -476,6 +476,6 @@
     "special_attacks": [ [ "GRAB", 40 ], [ "scratch", 32 ] ],
     "death_drops": "default_zombie_death_drops",
     "death_function": [ "NORMAL" ],
-    "flags": [ "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "BONES", "FILTHY", "GRABS" ]
+    "flags": [ "WARM", "BASHES", "GROUP_BASH", "POISON", "NO_BREATHE", "FILTHY", "GRABS" ]
   }
 ]
