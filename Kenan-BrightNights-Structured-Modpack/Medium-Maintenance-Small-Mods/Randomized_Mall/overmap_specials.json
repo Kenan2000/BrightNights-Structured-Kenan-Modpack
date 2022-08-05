@@ -93,13 +93,13 @@
       { "point":[6,6,0], "overmap": "mall_corner_south"}
     ],
     "connections" : [
-      { "point" : [0,-3,0], "terrain" : "road" },
-      { "point" : [-1,0,0], "terrain" : "road" },
-      { "point" : [6,-3,0], "terrain" : "road" },
-      { "point" : [7,0,0], "terrain" : "road" },
-      { "point" : [0,9,0], "terrain" : "road" },
-      { "point" : [3,9,0], "terrain" : "road" },
-      { "point" : [7,9,0], "terrain" : "road" }
+      { "point" : [0,-3,0], "connection" : "local_road" },
+      { "point" : [-1,0,0], "connection" : "local_road" },
+      { "point" : [6,-3,0], "connection" : "local_road" },
+      { "point" : [7,0,0], "connection" : "local_road" },
+      { "point" : [0,9,0], "connection" : "local_road" },
+      { "point" : [3,9,0], "connection" : "local_road" },
+      { "point" : [7,9,0], "connection" : "local_road" }
     ],
     "locations" : [ "land", "swamp" ],
     "city_distance" : [0, 15],

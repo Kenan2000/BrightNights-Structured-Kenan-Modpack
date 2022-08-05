@@ -443,7 +443,6 @@
       { "point": [ -1, 0, 0 ], "overmap": "secro_rd_leftright_sidewalk_flesh" },
       { "point": [ 2, 0, 0 ], "overmap": "secro_rd_leftright_sidewalk_flesh" },
       { "point": [ 3, 0, 0 ], "overmap": "secro_rd_connect_flesh" },
-      { "point": [ 4, 0, 0 ], "overmap": "road_end_east" },
       { "point": [ -2, 0, 0 ], "overmap": "secro_rd_curve_ru_flesh" },
       { "point": [ -2, -1, 0 ], "overmap": "secro_rd_verti_end_flesh_south" },
       { "point": [ 0, 1, 0 ], "overmap": "secro_rd_updown_sidewalk_flesh" },
@@ -485,7 +484,7 @@
       { "point": [ 3, -1, 0 ], "overmap": "secro_flesh_city_edge" },
       { "point": [ 2, -2, 0 ], "overmap": "secro_flesh_city_edge" }
     ],
-    "connections": [ { "point": [ 4, 0, 0 ], "terrain": "road", "connection": "local_road", "from": [ 5, 0, 0 ] } ],
+    "connections": [ { "point": [ 4, 0, 0 ], "connection": "local_road", "from": [ 5, 0, 0 ] } ],
     "type": "overmap_special"
   },
   {
@@ -534,7 +533,6 @@
       { "point": [ 0, 8, 0 ], "overmap": "secro_rd_tee_rud_flesh" },
       { "point": [ 1, 8, 0 ], "overmap": "secro_rd_leftright_sidewalk_flesh" },
       { "point": [ 2, 8, 0 ], "overmap": "secro_rd_connect_flesh" },
-      { "point": [ 3, 8, 0 ], "overmap": "road_end_east" },
       { "point": [ 0, 9, 0 ], "overmap": "secro_rd_verti_end_flesh_north" },
       { "point": [ -1, 5, 0 ], "overmap": "secro_rd_leftright_sidewalk_flesh" },
       { "point": [ -2, 5, 0 ], "overmap": "secro_rd_curve_rd_flesh" },
@@ -550,7 +548,6 @@
       { "point": [ 0, -6, 0 ], "overmap": "secro_rd_tee_lrd_flesh" },
       { "point": [ -1, -6, 0 ], "overmap": "secro_rd_leftright_sidewalk_flesh" },
       { "point": [ -2, -6, 0 ], "overmap": "secro_rd_connect_flesh" },
-      { "point": [ -3, -6, 0 ], "overmap": "road_end_west" },
       { "point": [ 1, -6, 0 ], "overmap": "secro_rd_hori_end_flesh_south" },
       { "point": [ -1, -1, 0 ], "overmap": "s_shop_flesh_east" },
       { "point": [ 1, -1, 0 ], "overmap": "s_shop_flesh_south" },
@@ -667,8 +664,8 @@
       { "point": [ 5, -1, 0 ], "overmap": "secro_flesh_city_edge" }
     ],
     "connections": [
-      { "point": [ -3, -6, 0 ], "terrain": "road", "connection": "local_road", "from": [ -3, -7, 0 ] },
-      { "point": [ 3, 8, 0 ], "terrain": "road", "connection": "local_road", "from": [ 5, 8, 0 ] }
+      { "point": [ -3, -6, 0 ], "connection": "local_road", "from": [ -3, -7, 0 ] },
+      { "point": [ 3, 8, 0 ], "connection": "local_road", "from": [ 5, 8, 0 ] }
     ],
     "type": "overmap_special"
   }
