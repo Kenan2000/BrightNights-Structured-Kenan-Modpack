@@ -2,13 +2,8 @@
 	{
         "type" : "overmap_special",
         "id" : "shop_mil",
-        "overmaps" :
-        [
-            { "point":[0,0,0], "overmap": "shop_mil_north"}
-        ],
-        "connections" : [
-            { "point" : [0,1,0], "connection" : "local_road" }
-        ],
+        "overmaps": [ { "point":[0,0,0], "overmap": "shop_mil_north"} ],
+        "connections": [ { "point" : [0,1,0], "connection" : "local_road" } ],
         "locations" : [ "field" ], "//":"what special locations does it spawn",
         "city_distance" : [7, 12], "//1":"how far from a city it should be",
         "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
@@ -32,13 +27,8 @@
 	{
         "type" : "overmap_special",
         "id" : "shop_food",
-        "overmaps" :
-        [
-            { "point":[0,0,0], "overmap": "shop_food_north"}
-        ],
-        "connections" : [
-            { "point" : [0,1,0], "connection" : "local_road" }
-        ],
+        "overmaps": [ { "point":[0,0,0], "overmap": "shop_food_north"} ],
+        "connections": [ { "point" : [0,1,0], "connection" : "local_road" } ],
         "locations" : [ "field" ], "//":"what special locations does it spawn",
         "city_distance" : [7, 12], "//1":"how far from a city it should be",
         "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
@@ -53,9 +43,7 @@
             { "point":[0,0,0], "overmap": "Merchant_Bunker_Sub_north"},
             { "point":[0,0,-1], "overmap": "Merchant_Bunker_B1_north"}
         ],
-		"connections" : [
-            { "point" : [0,1,0], "connection" : "local_road" }
-        ],
+		"connections": [ { "point" : [0,1,0], "connection" : "local_road" } ],
         "locations" : [ "field" ], "//":"what special locations does it spawn",
         "city_distance" : [6, -1], "//1":"how far from a city it should be",
         "city_sizes" : [4, 12], "//2":"what city sizes should it spawn in",
