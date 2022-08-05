@@ -9,6 +9,7 @@
 	  { "point": [ 0, 1, 0 ], "overmap": "villa_enter" },
 	  { "point": [ 0, 1, 1 ], "overmap": "villa_enter_up" },
 	  { "point": [ 0, 1, 2 ], "overmap": "villa_enter_roof" },
+	  { "point": [ 0, 2, 0 ], "overmap": "road_end_south" },
 	  { "point": [ 0, -1, 0 ], "overmap": "casino_road_2" },
 	  { "point": [ 0, -2, 0 ], "overmap": "casino_road" },
 	  { "point": [ 0, -1, 1 ], "overmap": "casino_road_up_2" },
@@ -188,13 +189,13 @@
 	  { "point": [ 1, -6, -9 ], "overmap": "sm_vault" },
 	  { "point": [ 2, -6, -9 ], "overmap": "sm_vault_2" }
     ],
-    "connections": [ { "point": [ 0, 2, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ 0, 2, 0 ], "terrain": "road" } ],
     "locations": [ "wilderness" ],
     "city_distance": [ 10, 30 ],
     "city_sizes": [ 0, 16 ],
-    "occurrences": [ 1, 1 ],
+    "occurrences": [ 33, 100 ],
 	"rotate": false,
-	"flags": [ "ELECTRIC_GRID" ]
+	"flags": [ "UNIQUE", "ELECTRIC_GRID" ]
   },
   {
     "type": "overmap_special",

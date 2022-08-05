@@ -9,7 +9,7 @@
       { "point": [ 1, 0, 0 ], "overmap": "campsite_field_biker_north" },
       { "point": [ 0, 1, 0 ], "overmap": "s_lot" }
     ],
-    "connections": [ { "point": [ 1, 1, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ 1, 1, 0 ], "terrain": "road" } ],
     "locations": [ "forest", "swamp" ],
     "city_distance": [ 12, -1 ],
     "city_sizes": [ 4, 12 ],
@@ -53,7 +53,7 @@
       { "point": [ 0, 0, 0 ], "overmap": "dirtroad2_aban1_east" },
       { "point": [ 1, 1, 0 ], "overmap": "campsite_field_biker_destroyed_north" }
     ],
-    "connections": [ { "point": [ 0, 1, 0 ], "connection": "local_road", "existing": true } ],
+    "connections": [ { "point": [ 0, 1, 0 ], "terrain": "road", "existing": true } ],
     "locations": [ "forest" ],
     "city_distance": [ 10, -1 ],
     "city_sizes": [ 4, 16 ],
@@ -95,7 +95,7 @@
       { "point": [ 1, 2, 0 ], "overmap": "farm_unsettled_bottomcenter_north" },
       { "point": [ 2, 2, 0 ], "overmap": "farm_unsettled_bottomright_north" }
     ],
-    "connections": [ { "point": [ 1, -1, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ 1, -1, 0 ], "terrain": "road" } ],
     "locations": [ "wilderness" ],
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 4, 12 ],
@@ -116,7 +116,7 @@
       { "point": [ 0, 1, 0 ], "overmap": "police_hub_21_north" },
       { "point": [ 1, 1, 0 ], "overmap": "police_hub_22_north" }
     ],
-    "connections": [ { "point": [ -2, 0, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ -2, 0, 0 ], "terrain": "road" } ],
     "locations": [ "land" ],
     "city_distance": [ 0, 8 ],
     "city_sizes": [ 4, 16 ],
@@ -380,7 +380,7 @@
       { "point": [ 2, 5, -2 ], "overmap": "doomlab_redacted_north" },
       { "point": [ 2, 0, -3 ], "overmap": "doomlab_finale_II_north" }
     ],
-    "connections": [ { "point": [ 2, -1, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ 2, -1, 0 ], "terrain": "road" } ],
     "locations": [ "land" ],
     "city_distance": [ 3, -1 ],
     "city_sizes": [ 4, 16 ],
@@ -428,7 +428,7 @@
       { "point": [ 4, 5, 0 ], "overmap": "road_ew" },
       { "point": [ 5, 5, 0 ], "overmap": "road_ew" }
     ],
-    "connections": [ { "point": [ 3, 6, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ 3, 6, 0 ], "terrain": "road" } ],
     "locations": [ "land" ],
     "city_distance": [ 0, 20 ],
     "city_sizes": [ 6, 16 ],
@@ -482,7 +482,7 @@
       { "point": [ 2, 5, 0 ], "overmap": "road_ew" },
       { "point": [ 3, 5, 0 ], "overmap": "road_ew" }
     ],
-    "connections": [ { "point": [ -2, 5, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ -2, 5, 0 ], "terrain": "road" } ],
     "locations": [ "land" ],
     "city_distance": [ 15, -1 ],
     "city_sizes": [ 4, 16 ],
@@ -504,7 +504,7 @@
       { "point": [ 1, 1, 0 ], "overmap": "crater" },
       { "point": [ 0, 0, -1 ], "overmap": "sludge_pit_under_north" }
     ],
-    "connections": [ { "point": [ -2, 0, 0 ], "connection": "local_road" } ],
+    "connections": [ { "point": [ -2, 0, 0 ], "terrain": "road" } ],
     "locations": [ "swamp", "field" ],
     "city_distance": [ 6, -1 ],
     "city_sizes": [ 4, 16 ],
