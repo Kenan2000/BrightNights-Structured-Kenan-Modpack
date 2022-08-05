@@ -23,9 +23,9 @@
             { "point":[1,1,-2], "overmap": "water_tower_corner_south"}
         ],
         "connections" : [
-            { "point" : [0,-1,0], "terrain" : "road" },
-            { "point" : [0,2,-2], "terrain" : "subway" },
-            { "point" : [1,2,-2], "terrain" : "subway" }
+            { "point" : [0,-1,0], "connection" : "local_road" },
+            { "point" : [0,2,-2], "connection" : "subway_tunnel" },
+            { "point" : [1,2,-2], "connection" : "subway_tunnel" }
         ],
         "locations" : [ "land" ],
         "city_distance" : [-1, 1],

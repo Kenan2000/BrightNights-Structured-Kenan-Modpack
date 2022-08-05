@@ -66,20 +66,20 @@
 
     ],
     "connections" : [
-      { "point" : [0,-1,-2], "terrain" : "subway" },
-      { "point" : [-1,0,-2], "terrain" : "subway" },
-      { "point" : [6,-1,-2], "terrain" : "subway" },
-      { "point" : [7,0,-2], "terrain" : "subway" },
-      { "point" : [0,-1,-2], "terrain" : "subway" },
-      { "point" : [-1,6,-2], "terrain" : "subway" },
-      { "point" : [6,7,-2], "terrain" : "subway" },
-      { "point" : [7,6,-2], "terrain" : "subway" },
+      { "point" : [0,-1,-2], "connection" : "subway_tunnel" },
+      { "point" : [-1,0,-2], "connection" : "subway_tunnel" },
+      { "point" : [6,-1,-2], "connection" : "subway_tunnel" },
+      { "point" : [7,0,-2], "connection" : "subway_tunnel" },
+      { "point" : [0,-1,-2], "connection" : "subway_tunnel" },
+      { "point" : [-1,6,-2], "connection" : "subway_tunnel" },
+      { "point" : [6,7,-2], "connection" : "subway_tunnel" },
+      { "point" : [7,6,-2], "connection" : "subway_tunnel" },
 
-      { "point" : [0,-1,-1], "terrain" : "sewer" },
-      { "point" : [6,-1,-1], "terrain" : "sewer" },
-      { "point" : [0,-1,-1], "terrain" : "sewer" },
-      { "point" : [-1,6,-1], "terrain" : "sewer" },
-      { "point" : [7,6,-1], "terrain" : "sewer" }
+      { "point" : [0,-1,-1], "connection" : "sewer_tunnel" },
+      { "point" : [6,-1,-1], "connection" : "sewer_tunnel" },
+      { "point" : [0,-1,-1], "connection" : "sewer_tunnel" },
+      { "point" : [-1,6,-1], "connection" : "sewer_tunnel" },
+      { "point" : [7,6,-1], "connection" : "sewer_tunnel" }
     ],
     "rotate" : false,
     "locations" : [ "subterranean" ],
