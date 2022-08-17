@@ -30,7 +30,7 @@
       "set_charges": 2,
       "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
-    "flags": [ "POWERARMOR_EXO", "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXO", "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
     "id": "power_armor_mutant_on",
@@ -40,7 +40,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "mutant power armor (active)", "str_pl": "mutant power armors (active)" },
     "description": "A modified suit of DoubleTech Power Armor, Mk. II-H.Designed to be used with mutated anatomy in the _REDACTED_ project,it stayed a proof of concept since the _REDACTED_ lifecycle was too short.  It is currently turned on, activate it to turn it off.",
-    "flags": [ "POWERARMOR_EXO", "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "ALLOWS_NATURAL_ATTACKS", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "extend": { "flags": [ "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 1500000,
     "revert_to": "power_armor_mutant",
     "use_action": {
@@ -75,7 +75,7 @@
     "material_thickness": 12,
     "environmental_protection": 16,
     "qualities": [ [ "GLARE", 2 ] ],
-    "flags": [ "POWERARMOR_EXTERNAL", "OVERSIZE", "VARSIZE", "WATCH", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "THERMOMETER", "ALLOWS_NATURAL_ATTACKS" ]
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXTERNAL", "OVERSIZE", "VARSIZE", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "ALLOWS_NATURAL_ATTACKS" ]
   },
   {
     "id": "power_armor_helmet_mutant_on",
@@ -85,19 +85,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "heavy power armor helmet (active)", "str_pl": "heavy power armor helmets (active)" },
     "description": "A power armor helmet designed for use with the modified DoubleTech Power Armor, Mk. II-H.Like its accompanying suit, it was never mass produced since the lifespan of _REDACTED_ soldiers was too short, so only the blueprints remained .",
-    "flags": [
-      "POWERARMOR_EXTERNAL",
-      "OVERSIZE",
-      "VARSIZE",
-      "WATCH",
-      "WATERPROOF",
-      "STURDY",
-      "PARTIAL_DEAF",
-      "THERMOMETER",
-      "ALLOWS_NATURAL_ATTACKS",
-      "CLIMATE_CONTROL",
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "WATCH", "THERMOMETER", "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 500000,
     "qualities": [ [ "GLARE", 2 ] ],
     "revert_to": "power_armor_helmet_mutant",
