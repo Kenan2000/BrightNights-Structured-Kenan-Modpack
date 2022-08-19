@@ -31,7 +31,7 @@
       "set_charges": 2,
       "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
-    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
   },
   {
     "id": "gkb_chinese_armor_on",
@@ -41,7 +41,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "Chinese power armor (active)", "str_pl": "Chinese power armors (active)" },
     "description": "Developed after the groundbreaking creation of power armor by the United States, the Type-13 combat exoskeleton was China's attempt at making an equivalent to the United States. Development of these suits of protection were significantly rushed though, and are often inferior to their American counterparts, if a bit lighter to wear.  It is currently turned on, activate it to turn it off.",
-    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "extend": { "flags": [ "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 1500000,
     "revert_to": "gkb_chinese_armor",
     "use_action": {
@@ -85,7 +85,7 @@
       "active": true
     },
     "qualities": [ [ "GLARE", 2 ] ],
-    "flags": [ "POWERARMOR_EXTERNAL", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "SUN_GLASSES" ]
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXTERNAL", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "SUN_GLASSES" ]
   },
   {
     "id": "gkb_chinese_armor_helmet_on",
@@ -95,17 +95,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "Chinese power armor helmet (active)", "str_pl": "Chinese power armor helmets (active)" },
     "description": "A fully enclosed combat helmet for hazardous environments and combat zones the Chinese military expected to find itself in, this was designed to fit with a powered exoskeleton, using cameras to expand visual range.  In practice, the cameras were unreliable and easily fouled.  The environmental controls function best with direct-skin contact.",
-    "flags": [
-      "POWERARMOR_EXTERNAL",
-      "WATCH",
-      "WATERPROOF",
-      "STURDY",
-      "PARTIAL_DEAF",
-      "THERMOMETER",
-      "SUN_GLASSES",
-      "CLIMATE_CONTROL",
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "WATCH", "THERMOMETER", "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 500000,
     "qualities": [ [ "GLARE", 2 ] ],
     "revert_to": "gkb_chinese_armor_helmet",
@@ -149,7 +139,7 @@
       "active": true
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "flags": [ "POWERARMOR_EXTERNAL", "STURDY", "SUN_GLASSES" ],
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXTERNAL", "STURDY", "SUN_GLASSES" ],
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "add": 1 } ] } ] }
   },
   {
@@ -160,15 +150,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "Chi Industries combat headset (active)", "str_pl": "Chi Industries combat headsets (active)" },
     "description": "The Chi Industries combat headset is a target aquisition system designed for use with the Chi-93b gaiden power suit. Lacks a great deal of ballistic effectiveness due to lack of coverage around the head.",
-    "flags": [
-      "POWERARMOR_EXTERNAL",
-      "WATCH",
-      "STURDY",
-      "THERMOMETER",
-      "SUN_GLASSES",
-      "CLIMATE_CONTROL",
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "WATCH", "THERMOMETER", "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 500000,
     "qualities": [ [ "GLARE", 2 ] ],
     "revert_to": "gkb_chi_powarmor_helmet",
@@ -214,7 +196,7 @@
       "set_charges": 2,
       "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
-    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ],
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ],
     "relic_data": {
       "passive_effects": [
         {
@@ -238,7 +220,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "Chi Industries power armor (active)", "str_pl": "Chi Industries power armors (active)" },
     "description": "This rather unique variant of power armor was developed by the famed Japanese robot company, Chi Industries. Known as the Chi-93b Gaiden power suit, this armor sacrifices protection for increased manuevarability and decreased cost. Curiously, the armor comes in two sex-based variants: an armored anime-esque battledress for women, and a more conventional form of power armor for men.  It is currently turned on, activate it to turn it off.",
-    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "extend": { "flags": [ "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 1500000,
     "revert_to": "gkb_chi_powarmor",
     "use_action": {
@@ -284,7 +266,7 @@
       "set_charges": 2,
       "set_charges_msg": "You need a UPS or a bionic armor interface to power this."
     },
-    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE" ]
   },
   {
     "id": "gkb_xedra_exsuit_on",
@@ -294,7 +276,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "XEDRA excursion suit (active)", "str_pl": "XEDRA excursion suits (active)" },
     "description": "Developed by XEDRA for use in the most hazardous environments, the excursion suit is a seldom seen, and even more seldom used power armor unit. Unlike most power armor units, the excursion suit features a relatively large internal storage area for jaunts across the New England exclusion zone, or perhaps areas more extra-terrestrial in nature.  It is currently turned on, activate it to turn it off.",
-    "flags": [ "POWERARMOR_EXO", "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "CLIMATE_CONTROL", "TRADER_AVOID" ],
+    "extend": { "flags": [ "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 1500000,
     "revert_to": "gkb_xedra_exsuit",
     "use_action": {
@@ -338,7 +320,7 @@
       "active": true
     },
     "qualities": [ [ "GLARE", 2 ] ],
-    "flags": [ "POWERARMOR_EXTERNAL", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "SUN_GLASSES" ],
+    "flags": [ "USE_UPS", "NAT_UPS", "POWERARMOR_EXTERNAL", "WATERPROOF", "STURDY", "PARTIAL_DEAF", "SUN_GLASSES" ],
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "PERCEPTION", "add": 1 } ] } ] }
   },
   {
@@ -349,15 +331,7 @@
     "type": "TOOL_ARMOR",
     "name": { "str": "XEDRA excursion suit helmet (active)", "str_pl": "XEDRA excursion suit helmets (active)" },
     "description": "A fully enclosed combat helmet for hazardous environments, features a large transparent superalloy visor similar to those found on spacesuits.  The environmental controls function best with direct-skin contact. It's target-acquisition visor slightly improves the user's perception.",
-    "flags": [
-      "POWERARMOR_EXTERNAL",
-      "WATCH",
-      "STURDY",
-      "THERMOMETER",
-      "SUN_GLASSES",
-      "CLIMATE_CONTROL",
-      "TRADER_AVOID"
-    ],
+    "extend": { "flags": [ "WATCH", "THERMOMETER", "CLIMATE_CONTROL", "TRADER_AVOID" ] },
     "power_draw": 500000,
     "qualities": [ [ "GLARE", 2 ] ],
     "revert_to": "gkb_xedra_exsuit_helmet",
