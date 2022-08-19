@@ -33,7 +33,8 @@
     "copy-from": "mon_fish_mutant",
     "name": { "str": "puke fish", "str_pl": "puke fish" },
     "description": "A disgustingly mutating fish about the size of a large carp.  It exudes a gooey brown gel and smells like rotting milk.",
-    "color": "green"
+    "color": "green",
+    "upgrades": { "half_life": 30, "into_group": "GROUP_FISH_MUTANT" }
   },
   {
     "id": "mon_fish_sick_finger",
@@ -41,7 +42,8 @@
     "copy-from": "mon_fish_mutant",
     "name": { "str": "finger fish", "str_pl": "finger fish" },
     "description": "A freakishly mutating fish about the size of a large carp.  A cluster of finger-like limbs have burst from its head.",
-    "color": "brown"
+    "color": "brown",
+    "upgrades": { "half_life": 30, "into_group": "GROUP_FISH_MUTANT" }
   },
   {
     "id": "mon_fish_sick_tumor",
@@ -50,7 +52,8 @@
     "name": { "str": "tumor fish", "str_pl": "tumor fish" },
     "description": "An odious mutating fish about the size of a large carp. It's so covered in bleeding tumors and fleshy nodules that it can barely swim.",
     "speed": 100,
-    "color": "brown"
+    "color": "brown",
+    "upgrades": { "half_life": 30, "into_group": "GROUP_FISH_MUTANT" }
   },
   {
     "id": "mon_fish_mutant_angel",
@@ -100,7 +103,7 @@
     "aggression": 100,
     "morale": 100,
     "anger_triggers": [ "PLAYER_CLOSE" ],
-    "fear_triggers": [  "HURT",  "SOUND", "FIRE" ],
+    "fear_triggers": [ "HURT", "SOUND", "FIRE" ],
     "volume": "62500 ml",
     "weight": 81500,
     "hp": 300,
