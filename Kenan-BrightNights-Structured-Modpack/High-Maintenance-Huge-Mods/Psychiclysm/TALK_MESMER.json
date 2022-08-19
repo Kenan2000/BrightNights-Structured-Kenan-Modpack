@@ -96,7 +96,7 @@
             {
               "and": [
                 {
-                  "npc_has_any_trait": [ "CHEMIMBALANCE", "UNOBSERVANT", "SLOWLEARNER", "INSOMNIA", "FORGETFUL", "NARCOLEPTIC", "TRUTHTELLER" ]
+                  "npc_has_any_trait": [ "CHEMIMBALANCE", "UNOBSERVANT", "SLOWLEARNER", "INSOMNIA", "NARCOLEPTIC", "TRUTHTELLER" ]
                 },
                 {
                   "npc_has_any_trait": [ "PYROMANIA", "PSYCHOPATH", "KILLER", "MASOCHIST", "BADTEMPER", "ADDICTIVE", "SCHIZOPHRENIC", "HOARDER", "MOODSWINGS" ]
@@ -105,7 +105,7 @@
             },
             {
               "not": {
-                "npc_has_any_trait": [ "FEARLESS", "FASTLEARNER", "GOODMEMORY", "SPIRITUAL", "OPTIMISTIC", "NONADDICTIVE", "SELFAWARE", "SAVANT" ]
+                "npc_has_any_trait": [ "FEARLESS", "FASTLEARNER", "SPIRITUAL", "OPTIMISTIC", "NONADDICTIVE", "SELFAWARE", "SAVANT" ]
               }
             }
           ]
@@ -236,7 +236,6 @@
           { "npc_lose_trait": "SLOWLEARNER" },
           { "npc_lose_trait": "INSOMNIA" },
           { "npc_lose_trait": "DISORGANIZED" },
-          { "npc_lose_trait": "FORGETFUL" },
           { "npc_lose_trait": "NARCOLEPTIC" },
           { "npc_lose_trait": "PYROMANIA" },
           { "npc_lose_trait": "CANNIBAL" },
