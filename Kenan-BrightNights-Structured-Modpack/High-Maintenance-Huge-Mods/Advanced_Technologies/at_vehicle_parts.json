@@ -401,7 +401,7 @@
   },
   {
     "type": "vehicle_part",
-    "id": "ehdframe_horizontal",
+    "abstract": "ehdframe",
     "name": "extra heavy duty frame",
     "symbol": "h",
     "color": "dark_gray",
@@ -412,6 +412,7 @@
     "difficulty": 3,
     "location": "structure",
     "flags": [ "MOUNTABLE" ],
+    "damage_reduction": { "all": 255 },
     "breaks_into": [
       { "item": "steel_lump", "count": [ 8, 12 ] },
       { "item": "steel_chunk", "count": [ 8, 12 ] },
@@ -422,222 +423,66 @@
       "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
       "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
     }
+  },
+  {
+    "type": "vehicle_part",
+    "id": "ehdframe_horizontal",
+    "copy-from": "ehdframe",
+    "symbol": "h"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_vertical",
-    "name": "extra heavy duty frame",
-    "symbol": "j",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "j"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_cross",
-    "name": "extra heavy duty frame",
-    "symbol": "c",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "c"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_nw",
-    "name": "extra heavy duty frame",
-    "symbol": "y",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "y"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_ne",
-    "name": "extra heavy duty frame",
-    "symbol": "u",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "u"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_se",
-    "name": "extra heavy duty frame",
-    "symbol": "n",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "n"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_sw",
-    "name": "extra heavy duty frame",
-    "symbol": "b",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "b"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_horizontal_2",
-    "name": "extra heavy duty frame",
-    "symbol": "=",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "="
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_vertical_2",
-    "name": "extra heavy duty frame",
-    "symbol": "H",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "H"
   },
   {
     "type": "vehicle_part",
     "id": "ehdframe_cover",
-    "name": "extra heavy duty frame",
-    "symbol": "^",
-    "color": "dark_gray",
-    "broken_symbol": "#",
-    "broken_color": "light_gray",
-    "durability": 1200,
-    "item": "ehdframe",
-    "difficulty": 3,
-    "location": "structure",
-    "flags": [ "MOUNTABLE" ],
-    "breaks_into": [
-      { "item": "steel_lump", "count": [ 8, 12 ] },
-      { "item": "steel_chunk", "count": [ 8, 12 ] },
-      { "item": "scrap", "count": [ 8, 12 ] }
-    ],
-    "requirements": {
-      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
-      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
-    }
+    "copy-from": "ehdframe",
+    "symbol": "^"
   },
   {
     "type": "vehicle_part",
@@ -686,6 +531,57 @@
       { "item": "steel_chunk", "count": [ 4, 6 ] },
       { "item": "scrap", "count": [ 4, 6 ] }
     ]
+  },
+  {
+    "type": "vehicle_part",
+    "abstract": "viewport",
+    "name": "viewport",
+    "symbol": "\"",
+    "color": "light_blue",
+    "damage_modifier": 80,
+    "broken_symbol": "0",
+    "broken_color": "light_gray",
+    "durability": 450,
+    "item": "viewport",
+    "difficulty": 3,
+    "location": "center",
+    "flags": [ "WINDSHIELD", "OBSTACLE", "WINDOW" ],
+    "damage_reduction": { "all": 35 },
+    "breaks_into": [
+      { "item": "glass_shard", "count": [ 8, 12 ] },
+      { "item": "steel_lump", "count": [ 3, 4 ] },
+      { "item": "steel_chunk", "count": [ 3, 4 ] },
+      { "item": "scrap", "count": [ 3, 4 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
+      "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
+    }
+  },
+  {
+    "copy-from": "viewport",
+    "id": "viewport",
+    "symbol": "\"",
+    "type": "vehicle_part"
+  },
+  {
+    "copy-from": "viewport",
+    "id": "viewport_nw",
+    "symbol": "y",
+    "type": "vehicle_part"
+  },
+  {
+    "copy-from": "viewport",
+    "id": "viewport_ne",
+    "symbol": "u",
+    "type": "vehicle_part"
+  },
+  {
+    "copy-from": "viewport",
+    "id": "viewport_horizontal_front",
+    "symbol": "T",
+    "type": "vehicle_part"
   },
   {
     "type": "vehicle_part",
