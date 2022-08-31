@@ -1208,19 +1208,10 @@
     "id": "target_iv_mutagen_infresist",
     "copy-from": "iv_mutagen_flavor",
     "type": "COMESTIBLE",
-    "name": "Infection resistance serum",
-    "description": "A special mutagenic serum designed to give you a single mutation. Makes you resistant to infections.",
-    "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "INFRESIST" }
-	},
-	{
-    "id": "target_iv_mutagen_infimmune",
-    "copy-from": "iv_mutagen_flavor",
-    "type": "COMESTIBLE",
     "name": "Infection immunity serum",
     "description": "A special mutagenic serum designed to give you a single mutation. Makes you immune to infections.",
     "color": "light_gray",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "INFIMMUNE" }
+    "use_action": { "type": "mutagen_iv", "mutation_category": "INFRESIST" }
 	},
 	{
     "id": "target_iv_mutagen_paraimmune",
