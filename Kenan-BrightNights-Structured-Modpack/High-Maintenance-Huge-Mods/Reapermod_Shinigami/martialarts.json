@@ -8,6 +8,7 @@
       "You steady the position of your scythe and gracefully enter the combat stance",
       "%s steadies the position of their scythe and gracefully enters the combat stance"
     ],
+    "allow_melee": true,
     "arm_block": 99,
     "leg_block": 99,
     "static_buffs": [
@@ -15,6 +16,7 @@
         "id": "shinigami_staticbuff1",
         "name": "Winds of the End",
         "description": "Bonus to hit increase when a scythe is equipped.",
+        "melee_allowed": true,
         "max_stacks": 1,
         "flat_bonuses": [ { "stat": "hit", "scale": 1.0 } ]
       },
@@ -22,6 +24,7 @@
         "id": "shinigami_staticbuff2",
         "name": "Hunger for Immortality",
         "description": "Reduced move cost for attacks when a scythe is equipped.",
+        "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 4 } ],
         "max_stacks": 1,
         "flat_bonuses": [ { "stat": "movecost", "scale": -10 } ]
@@ -30,6 +33,7 @@
         "id": "shinigami_staticbuff3",
         "name": "Storm of the Reaper",
         "description": "Further reduction to move cost when a scythe is equipped.",
+        "melee_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 9 } ],
         "max_stacks": 1,
         "flat_bonuses": [ { "stat": "movecost", "scale": -10 } ]
@@ -40,6 +44,7 @@
         "id": "shinigami_dodgebuff",
         "name": "Natural Death Avoidance",
         "description": "Cut damage increase on dodge.",
+        "melee_allowed": true,
         "buff_duration": 2,
         "max_stacks": 2,
         "mult_bonuses": [ { "stat": "damage", "type": "cut", "scale": 1.2 } ]
@@ -50,6 +55,7 @@
         "id": "shinigami_blockbuff",
         "name": "Unnatural Death Avoidance",
         "description": "Dodge bonus increase on block.",
+        "melee_allowed": true,
         "buff_duration": 2,
         "max_stacks": 2,
         "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ],
