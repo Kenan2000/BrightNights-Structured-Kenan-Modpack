@@ -4,6 +4,7 @@
     "id": "augsword_ripper",
     "name": "Ripper Slash",
     "skill_requirements": [ { "name": "melee", "level": 3 } ],
+    "melee_allowed": true,
     "crit_tec": true,
     "mult_bonuses": [ { "stat": "damage", "type": "cut", "scale": 1.2 } ],
     "messages": [ "You let go and rip %s", "<npcname> lets go and rips %s" ]
@@ -13,6 +14,7 @@
     "id": "augsword_shadow",
     "name": "Shadow Slash",
     "skill_requirements": [ { "name": "melee", "level": 5 } ],
+    "melee_allowed": true,
     "mult_bonuses": [ { "stat": "movecost", "scale": 0.7 }, { "stat": "damage", "type": "cut", "scale": 0.7 } ],
     "messages": [ "You slash %s from the shadows", "<npcname> slashes %s from the shadows" ]
   },
@@ -21,6 +23,7 @@
     "id": "augsword_zandatsu",
     "name": "Zandatsu",
     "skill_requirements": [ { "name": "melee", "level": 7 } ],
+    "melee_allowed": true,
     "crit_tec": true,
     "req_buffs": [ "augsword_parry" ],
     "mult_bonuses": [ { "stat": "movecost", "scale": 0.5 }, { "stat": "damage", "type": "cut", "scale": 2.2 } ],
@@ -31,6 +34,7 @@
     "id": "augsword_legsweep",
     "name": "Leg sweep",
     "skill_requirements": [ { "name": "melee", "level": 5 }, { "name": "unarmed", "level": 3 } ],
+    "melee_allowed": true,
     "down_dur": 2,
     "messages": [ "You quickly sweep the legs under %s", "<npcname> quickly sweeps the legs under %s" ]
   }
