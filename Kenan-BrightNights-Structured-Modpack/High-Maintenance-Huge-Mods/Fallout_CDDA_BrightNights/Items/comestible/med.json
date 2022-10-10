@@ -9,7 +9,7 @@
     "volume": "212 ml",
     "price": 50,
     "price_postapoc": 90,
-    "charges": 76,
+    "charges": 10,
     "stack_size": 200,
     "material": [ "powder" ],
     "flags": [ "NPC_SAFE", "IRREPLACEABLE_CONSUMABLE" ],
@@ -31,12 +31,13 @@
     "volume": "212 ml",
     "price": 67,
     "price_postapoc": 90,
-    "charges": 76,
+    "charges": 7,
     "stack_size": 100,
     "flags": [ "NPC_SAFE", "IRREPLACEABLE_CONSUMABLE" ],
     "symbol": "r",
     "color": "red",
     "phase": "liquid",
+    "container": "flask_glass",
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You inject some Med-X.",
@@ -50,3 +51,5 @@
     "items": [ [ "rad_x", 10 ], [ "med_x", 10 ] ]
   }
 ]
+
+
