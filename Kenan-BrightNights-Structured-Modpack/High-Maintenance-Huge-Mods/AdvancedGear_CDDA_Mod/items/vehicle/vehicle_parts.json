@@ -202,19 +202,18 @@
   {
     "type": "vehicle_part",
     "id": "nt_fluid_tank_1",
-    "name": "nanotech compression tank (2500L)",
-    "copy-from": "nanovp_fold",
+    "name": "nanotech compression tank (500L)",
+    "copy-from": "nanovp",
     "symbol": "O",
     "color": "light_blue",
     "broken_symbol": "#",
     "broken_color": "red",
     "damage_modifier": 80,
-    "folded_volume": 16,
+    "contains": "500 L",
     "description": "Collection of nanites formed into a hollow sphere with a complex mechanism to compress and decompress liquid to extreme levels.",
-    "size": 2500000,
     "item": "nano_container",
     "location": "fuel_source",
-    "flags": [ "FLUIDTANK", "FOLDABLE" ],
+    "flags": [ "FLUIDTANK" ],
     "breaks_into": [ { "item": "nano_container", "count": [ 1, 1 ] } ]
   },
   {
