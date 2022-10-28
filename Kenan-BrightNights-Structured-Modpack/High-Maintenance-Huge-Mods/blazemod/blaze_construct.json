@@ -2,6 +2,7 @@
   {
     "type": "construction",
     "id": "constr_blaze_blob_pit",
+    "group": "get_from_blaze_blob_pit",
     "category": "OTHER",
     "description": "Harvest Blob Feed from Corpse Pit: Smash to Harvest",
     "difficulty": 0,
@@ -15,6 +16,7 @@
   {
     "type": "construction",
     "id": "constr_blaze_blob_pit_slime",
+    "group": "get_from_blaze_blob_slime",
     "category": "OTHER",
     "description": "Harvest Blob Feed from Slime: Smash to Harvest",
     "difficulty": 0,
@@ -28,6 +30,7 @@
   {
     "type": "construction",
     "id": "constr_blz_fridge_vehicle",
+    "group": "convert_fridge_vehicle_blaze",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 3 ], [ "electronics", 4 ], [ "mechanics", 3 ] ],
     "time": "1 s",
@@ -41,6 +44,7 @@
   {
     "type": "construction",
     "id": "constr_blz_freezer_vehicle",
+    "group": "convert_fridge_freezer_vehicle_blaze",
     "category": "FURN",
     "required_skills": [ [ "electronics", 3 ], [ "mechanics", 3 ] ],
     "time": "1 s",
