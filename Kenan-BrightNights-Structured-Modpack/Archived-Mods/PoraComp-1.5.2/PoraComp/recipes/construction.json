@@ -2,31 +2,31 @@
   {
     "id" : "Canvas_Wall",
     "type": "construction",
-    "description": "Build Canvas Wall",
+    "group": "build_canvas_wall",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 1 ] ],
     "time": 10,
     "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
     "components": [ [ [ "sheet", 1 ], [ "rag", 20 ] ], [ [ "nail", 4 ] ] ],
     "pre_special": "check_empty",
-    "post_terrain": "f_canvas_wall"
+    "post_furniture": "f_canvas_wall"
   },
   {
     "id" : "Canvas Door",
     "type": "construction",
-    "description": "Build Canvas Door",
+    "group": "build_canvas_door",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 1 ] ],
     "time": 15,
     "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
     "components": [ [ [ "sheet", 1 ], [ "rag", 20 ] ], [ [ "nail", 8 ] ] ],
     "pre_special": "check_empty",
-    "post_terrain": "f_canvas_door"
+    "post_furniture": "f_canvas_door"
   },
   {
     "id" : "Centrifuge",
     "type": "construction",
-    "description": "Build Centrifuge",
+    "group": "build_centrifuge",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 8 ] ],
     "time": 360,

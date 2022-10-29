@@ -4,8 +4,6 @@
     "id": "constr_blaze_blob_pit",
     "group": "get_from_blaze_blob_pit",
     "category": "OTHER",
-    "description": "Harvest Blob Feed from Corpse Pit: Smash to Harvest",
-    "difficulty": 0,
     "time": "1 s",
     "pre_terrain": "t_pit_corpsed",
     "post_terrain": "blob_pit",
@@ -18,8 +16,6 @@
     "id": "constr_blaze_blob_pit_slime",
     "group": "get_from_blaze_blob_slime",
     "category": "OTHER",
-    "description": "Harvest Blob Feed from Slime: Smash to Harvest",
-    "difficulty": 0,
     "time": "1 s",
     "pre_terrain": "t_slime",
     "post_terrain": "blob_pit_slime",
@@ -37,9 +33,8 @@
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "HAMMER", "level": 3 }, { "id": "SAW_M", "level": 2 } ],
     "components": [ [ [ "cable", 10 ] ], [ [ "power_supply", 1 ] ], [ [ "plastic_chunk", 2 ] ] ],
     "pre_note": "Converts a fridge to run off of vehicle power.  You can 'e'xamine it afterwards to take it down for mounting.",
-    "pre_terrain": "f_fridge",
-    "post_terrain": "f_afs_fridge_vehicle",
-    "description": "Converts a fridge to run off of vehicle power.  You can 'e'xamine it afterwards to take it down for mounting"
+    "pre_furniture": "f_fridge",
+    "post_furniture": "f_afs_fridge_vehicle"
   },
   {
     "type": "construction",
@@ -51,8 +46,7 @@
     "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "HAMMER", "level": 3 }, { "id": "SAW_M", "level": 2 } ],
     "components": [ [ [ "cable", 10 ] ], [ [ "amplifier", 3 ] ], [ [ "refrigerant_tank", 2 ] ] ],
     "pre_note": "Further modifies a converted fridge to function as a freezer.  You can 'e'xamine it afterwards to take it down for mounting.",
-    "pre_terrain": "f_afs_fridge_vehicle",
-    "post_terrain": "f_afs_freezer_vehicle",
-    "description": "Modifies further a converted fridge to function as a freezer.  You can 'e'xamine it afterwards to take it down for mounting"
+    "pre_furniture": "f_afs_fridge_vehicle",
+    "post_furniture": "f_afs_freezer_vehicle"
   }
 ]

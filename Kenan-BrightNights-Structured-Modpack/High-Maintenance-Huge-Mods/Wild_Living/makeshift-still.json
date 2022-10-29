@@ -32,7 +32,6 @@
     "type": "construction",
     "id": "c_primitive_still",
     "group": "build_makeshift_still",
-    "description": "Build Makeshift Still",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 3 ], [ "survival", 2 ] ],
     "time": "45 m",
@@ -40,6 +39,6 @@
     "components": [ [ [ "bottle_glass", 2 ] ], [ [ "sheet_metal", 1 ] ] ],
     "pre_note": "Can be deconstructed without tools.",
     "pre_terrain": "t_dirtmound",
-    "post_terrain": "f_primitive_still"
+    "post_furniture": "f_primitive_still"
   }
 ]

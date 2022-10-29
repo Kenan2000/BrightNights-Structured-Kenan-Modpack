@@ -90,8 +90,6 @@
     "color": "cyan",
     "move_cost": 0,
     "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "CONNECT_TO_WALL" ],
-    "open": "t_door_bar_o",
-    "close": "t_door_bar_locked",
     "bash": {
       "str_min": 30,
       "str_max": 210,
@@ -116,7 +114,6 @@
     "color": "cyan",
     "move_cost": 2,
     "flags": [ "TRANSPARENT", "FLAT", "CONNECT_TO_WALL", "ROAD" ],
-    "close": "t_door_bar_c",
     "bash": {
       "str_min": 20,
       "str_max": 210,
