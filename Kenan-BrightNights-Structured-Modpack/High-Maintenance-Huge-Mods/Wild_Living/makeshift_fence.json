@@ -25,12 +25,12 @@
         "sound_fail": "wham.",
         "items": [ { "item": "2x4", "count": [ 2, 6 ] } ]
     }
-  },{
+  },
+  {
     "type" : "construction",
     "id": "c_makeshift_fence",
-    "description" : "Build Makeshift Fence",
+    "group" : "build_makeshift_fence",
     "category" : "FURN",
-    "difficulty" : 2,
     "time" : 10,
     "qualities": [
         [ { "id": "DIG", "level": 2 } ],
@@ -42,8 +42,9 @@
         [ [ "2x4", 8 ], [ "stick", 8 ] ]
         ],
     "pre_flags" : "DIGGABLE",
-    "post_terrain" : "f_makeshiftfence"
-  },{
+    "post_furniture" : "f_makeshiftfence"
+  },
+  {
     "type" : "furniture",
     "id" : "f_wovenfence",
     "name": "woven fence",
@@ -69,12 +70,12 @@
         "sound_fail": "wham.",
         "items": [ { "item": "2x4", "count": [ 2, 6 ] } ]
     }
-  },{
+  },
+  {
     "type" : "construction",
     "id": "c_wovenfence",
-    "description" : "Build Woven Fence",
+    "group" : "build_woven_fence",
     "category" : "FURN",
-    "difficulty" : 2,
     "time" : 10,
     "qualities": [
         [ { "id": "DIG", "level": 2 } ],
@@ -86,6 +87,6 @@
         [ [ "stick", 2 ], [ "stick_long", 8 ] ]
         ],
     "pre_flags" : "DIGGABLE",
-    "post_terrain" : "f_wovenfence"
+    "post_furniture" : "f_wovenfence"
   }
 ]

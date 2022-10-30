@@ -3,7 +3,6 @@
     "id": "Autodoc1",
     "group": "build_autodoc",
     "type": "construction",
-    "description": "Build Autodoc",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 4 ], [ "electronics", 3 ] ],
     "time": "1 s",
@@ -21,13 +20,12 @@
       [ [ "amplifier", 4 ] ]
     ],
     "pre_special": "check_empty",
-    "post_terrain": "f_autodoc"
+    "post_furniture": "f_autodoc"
   },
   {
     "id": "Autodoc_couch1",
     "group": "build_autodoc_couch",
     "type": "construction",
-    "description": "Build Autodoc Couch",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 4 ], [ "tailor", 4 ] ],
     "time": "1 s",
@@ -38,6 +36,6 @@
       [ [ "sheet", 4 ], [ "blanket", 2 ], [ "down_blanket", 2 ], [ "fur_blanket", 2 ] ]
     ],
     "pre_special": "check_empty",
-    "post_terrain": "f_autodoc_couch"
+    "post_furniture": "f_autodoc_couch"
   }
 ]

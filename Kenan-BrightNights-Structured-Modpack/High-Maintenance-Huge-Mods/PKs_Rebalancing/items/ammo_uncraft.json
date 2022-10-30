@@ -7,7 +7,7 @@
     "time": "5 s",
     "qualities": [ { "id": "PULL", "level": 1 } ],
     "components": [ [ [ "410shot_hull", 1 ] ], [ [ "shotgun_primer", 1 ] ], [ [ "gunpowder", 5 ] ], [ [ "lead", 10 ] ] ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   },
   {
     "result": "shot_410_flechette",
@@ -17,7 +17,7 @@
     "time": "5 s",
     "qualities": [ { "id": "PULL", "level": 1 } ],
     "components": [ [ [ "410shot_hull", 1 ] ], [ [ "shotgun_primer", 1 ] ], [ [ "gunpowder", 5 ] ], [ [ "lead", 8 ] ] ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   },
   {
     "result": "shot_410_inc",
@@ -33,7 +33,7 @@
       [ [ "lead", 5 ] ],
       [ [ "incendiary", 5 ] ]
     ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   },
   {
     "result": "shot_410_slug_reloaded",
@@ -43,7 +43,7 @@
     "time": "5 s",
     "qualities": [ { "id": "PULL", "level": 1 } ],
     "components": [ [ [ "410shot_hull", 1 ] ], [ [ "shotgun_primer", 1 ] ], [ [ "gunpowder", 5 ] ], [ [ "lead", 10 ] ] ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   },
   {
     "result": "shot_410_flechette_reloaded",
@@ -53,7 +53,7 @@
     "time": "5 s",
     "qualities": [ { "id": "PULL", "level": 1 } ],
     "components": [ [ [ "410shot_hull", 1 ] ], [ [ "shotgun_primer", 1 ] ], [ [ "gunpowder", 5 ] ], [ [ "lead", 8 ] ] ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   },
   {
     "result": "shot_410_inc_reloaded",
@@ -69,7 +69,7 @@
       [ [ "lead", 5 ] ],
       [ [ "incendiary", 5 ] ]
     ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   },
   {
     "result": "bfg_shell",
@@ -98,6 +98,6 @@
       [ [ "plut_cell", 2 ] ],
       [ [ "scrap", 5 ] ]
     ],
-    "flags": [ "UNCRAFT_SINGLE_CHARGE" ]
+    "charges": 1
   }
 ]

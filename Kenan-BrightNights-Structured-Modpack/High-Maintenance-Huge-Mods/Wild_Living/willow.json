@@ -1,8 +1,8 @@
 [
 	{
 		"type": "terrain",
-		"copy-from": "t_tree_willow",
 		"id": "t_tree_willow",
+		"copy-from": "t_tree_willow",
 		"name": "willow tree",
 		"description": "A willow tree",
 		"symbol": "4",
@@ -11,7 +11,6 @@
 		"move_cost": 0,
 		"flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ],
 		"examine_action": "harvest_ter",
-		"transforms_into": "t_tree_willow_harvested",
 		"harvest_by_season": [
 			{ 
 				"seasons": [ "spring", "autumn" ], 
