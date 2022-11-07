@@ -14,8 +14,43 @@
     "covers": [ "hand_either" ],
     "symbol": "P",
     "color": "green",
-    "use_action": [ "EINKTABLETPC", "PORTABLE_GAME" ],
-    "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE" ]
+    "use_action": [
+      {
+        "target": "fo_misc_pipboy_flashlight",
+        "msg": "You turn on screenlight of the Pip-Boy 3000.",
+        "active": true,
+        "type": "transform"
+      },
+      "EINKTABLETPC",
+      "PORTABLE_GAME",
+      "GEIGER"
+    ],
+    "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "ALARMCLOCK", "THERMOMETER" ]
+  },
+  {
+    "id": "fo_misc_pipboy_flashlight",
+    "copy-from": "fo_misc_pipboy",
+    "looks_like": "fo_misc_pipboy",
+    "type": "TOOL_ARMOR",
+    "name": { "str": "Pip-Boy 3000 (screenlight)", "str_pl": "Pip-Boy 3000 (screenlight)" },
+    "revert_to": "fo_misc_pipboy",
+    "use_action": {
+      "target": "fo_misc_pipboy",
+      "msg": "You turn off screenlight of the Pip-Boy 3000.",
+      "menu_text": "Off screenlight",
+      "type": "transform"
+    },
+    "flags": [
+      "WATCH",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "STURDY",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE",
+      "ALARMCLOCK",
+      "THERMOMETER",
+      "LIGHT_60"
+    ]
   },
   {
     "type": "GENERIC",

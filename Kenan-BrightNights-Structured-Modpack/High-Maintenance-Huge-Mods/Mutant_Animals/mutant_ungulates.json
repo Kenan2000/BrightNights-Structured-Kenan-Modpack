@@ -4,6 +4,8 @@
     "type": "MONSTER",
     "copy-from": "mon_cow",
     "name": { "str": "mutant cow" },
+    "default_faction": "herbivore",
+    "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
     "delete": {
@@ -17,6 +19,8 @@
     "type": "MONSTER",
     "copy-from": "mon_cow_calf",
     "name": { "str": "mutant cow calf" },
+    "default_faction": "herbivore",
+    "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
     "delete": { "flags": [ "CATTLEFODDER" ] }
@@ -129,6 +133,8 @@
     "type": "MONSTER",
     "copy-from": "mon_deer",
     "name": { "str": "mutant deer" },
+    "default_faction": "herbivore",
+    "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
     "delete": { "upgrades": { "half_life": 120, "into_group": "GROUP_DEER_ALL" } }
@@ -161,6 +167,8 @@
     "type": "MONSTER",
     "copy-from": "mon_horse",
     "name": { "str": "mutant horse" },
+    "default_faction": "herbivore",
+    "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
     "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "half_life": 120, "into_group": "GROUP_HORSE_ALL" } }
@@ -195,6 +203,8 @@
     "type": "MONSTER",
     "copy-from": "mon_sheep",
     "name": { "str": "mutant sheep", "str_pl": "mutant sheep" },
+    "default_faction": "herbivore",
+    "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "half_life": 120, "into_group": "GROUP_SHEEP_ALL" } },
     "species": [ "MUTANT" ]
@@ -361,6 +371,8 @@
     "type": "MONSTER",
     "copy-from": "mon_pig",
     "name": { "str": "mutant pig" },
+    "default_faction": "pig",
+    "bodytype": "pig",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
     "delete": { "upgrades": { "half_life": 120, "into_group": "GROUP_PIG_ALL" } }
@@ -370,6 +382,8 @@
     "type": "MONSTER",
     "copy-from": "mon_pig_piglet",
     "name": { "str": "mutant piglet" },
+    "default_faction": "pig",
+    "bodytype": "pig",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ]
   },
