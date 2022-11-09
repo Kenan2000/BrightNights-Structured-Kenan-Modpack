@@ -2,6 +2,7 @@
   {
     "type": "GENERIC",
     "id": "mss_survivor_sledge",
+    "looks_like": "hammer_sledge_heavy",
     "name": { "str": "survivor sledge" },
     "description": "A highly customized sledgehammer with carefully-placed rubber along the handle and a wicked-looking steel head, sharp on one end and square on another. Designed for post-apocalyptic swinging pleasure, though you could also use it as a clumsy tool.",
     "weight": "5800 g",
@@ -20,6 +21,7 @@
   {
     "type": "GENERIC",
     "id": "mss_survivor_claymore",
+    "looks_like": "zweihander",
     "name": { "str": "survivor claymore" },
     "description": "This is a ridiculously large and heavy custom-made sword. If you can get it moving, you can destroy anything.",
     "weight": "9000 g",
@@ -38,6 +40,7 @@
   {
     "type": "GENERIC",
     "id": "mss_survivor_flail",
+    "looks_like": "2h_flail_steel",
     "name": { "str": "survivor flail" },
     "description": "A highly customized, two-handed flail with carefully-placed rubber along the handle and a wicked-looking steel head, slightly spiked, mostly blunt, and very heavy. The chain is long enough to make using this a complicated endeavor, but if used properly by a skilled survivor, it could probably crush a skull or five.",
     "weight": "4000 g",
@@ -64,10 +67,10 @@
     "volume": "500 ml",
     "weight": "890 g",
     "bashing": 15,
-	"cutting": 1,
+    "cutting": 1,
     "price_postapoc": 500,
     "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "NONCONDUCTIVE" ],
     "techniques": [ "WBLOCK_1" ],
-	"qualities": [ [ "HAMMER", 1 ] ]
+    "qualities": [ [ "HAMMER", 1 ] ]
   }
 ]
