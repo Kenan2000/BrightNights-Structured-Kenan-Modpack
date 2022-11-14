@@ -411,7 +411,7 @@
       { "id": "rad_tenths", "duration": 20 },
       { "id": "rad_tenths", "duration": 20 }
     ],
-    "special_attacks": [ [ "TRIFFID_HEARTBEAT", 50 ], [ "para_poison", 20 ], [ "PARA_STING", 10 ], [ "SMASH", 40 ], [ "RANGED_PULL", 15 ] ],
+    "special_attacks": [ [ "TRIFFID_HEARTBEAT", 5000 ], [ "para_poison", 20 ], [ "PARA_STING", 10 ], [ "SMASH", 40 ], [ "RANGED_PULL", 15 ] ],
     "anger_triggers": [ "FIRE", "HURT", "PLAYER_CLOSE", "FRIEND_DIED" ],
     "death_drops": { "subtype": "collection", "groups": [ [ "fungal_sting", 100 ], [ "fungal_fighter_sting", 75 ], [ "biollante", 75 ] ] },
     "flags": [ "SEES", "SMELLS", "BASHES", "GROUP_BASH", "DESTROYS", "ATTACKMON", "PUSH_MON", "NOHEAD" ],
@@ -476,7 +476,7 @@
     "vision_day": 40,
     "vision_night": 30,
     "path_settings": { "max_dist": 30 },
-    "special_attacks": [ [ "GROWPLANTS", 50 ], [ "SMASH", 30 ], [ "PARA_STING", 10 ], [ "para_poison", 15 ] ],
+    "special_attacks": [ [ "GROWPLANTS", 5000 ], [ "SMASH", 30 ], [ "PARA_STING", 10 ], [ "para_poison", 15 ] ],
     "anger_triggers": [ "FIRE", "HURT", "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
     "death_drops": { "subtype": "collection", "groups": [ [ "fungal_sting", 100 ], [ "fungal_fighter_sting", 75 ] ] },
     "flags": [ "SEES", "SMELLS", "BASHES", "GROUP_BASH", "DESTROYS", "PUSH_MON", "NOHEAD" ],
