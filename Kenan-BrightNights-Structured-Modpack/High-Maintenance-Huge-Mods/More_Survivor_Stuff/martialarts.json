@@ -53,7 +53,7 @@
         "buff_duration": 2,
         "max_stacks": 3,
         "bonus_blocks": 1,
-		"mult_bonuses": [ { "stat": "movecost", "scale": 1.15 } ]
+        "mult_bonuses": [ { "stat": "movecost", "scale": 1.15 } ]
       }
     ],
     "onblock_buffs": [
@@ -80,17 +80,18 @@
         "flat_bonuses": [ { "stat": "dodge", "scale": -3.0 } ]
       }
     ],
-    "techniques": [ "mss_tec_sledge_counter",
-	"mss_tec_sledge_shove",
-	"mss_tec_sledge_feint",
-	"mss_tec_sledge_deathblow",
-	"mss_tec_sledge_deathblowstun",
-	"mss_tec_sledge_break",
-	"mss_tec_sledge_jab",
-	"mss_tec_sledge_gutbuster",
-	"mss_tec_sledge_tap",
-	"mss_tec_sledge_shoveonmiss"
-	],
+    "techniques": [
+      "mss_tec_sledge_counter",
+      "mss_tec_sledge_shove",
+      "mss_tec_sledge_feint",
+      "mss_tec_sledge_deathblow",
+      "mss_tec_sledge_deathblowstun",
+      "mss_tec_sledge_break",
+      "mss_tec_sledge_jab",
+      "mss_tec_sledge_gutbuster",
+      "mss_tec_sledge_tap",
+      "mss_tec_sledge_shoveonmiss"
+    ],
     "weapons": [
       "ax",
       "battleaxe",
@@ -101,16 +102,17 @@
       "halberd",
       "halberd_fake",
       "hammer_sledge",
-	  "hammer_sledge_short",
-	  "hammer_sledge_engineer",
-	  "hammer_sledge_heavy",
+      "scythe_war",
+      "hammer_sledge_short",
+      "hammer_sledge_engineer",
+      "hammer_sledge_heavy",
       "lobotomizer",
       "lucern_hammer",
       "lucern_hammerfake",
       "makeshift_halberd",
       "pickaxe",
-	  "homewrecker",
-	  "mss_survivor_sledge"
+      "homewrecker",
+      "mss_survivor_sledge"
     ]
   },
   {
@@ -140,8 +142,7 @@
         "melee_allowed": true,
         "buff_duration": 3,
         "max_stacks": 5,
-        "mult_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 }
-        ]
+        "mult_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 } ]
       }
     ],
     "onmiss_buffs": [
@@ -180,28 +181,28 @@
         "flat_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 } ]
       }
     ],
-    "techniques": [ "mss_tec_flail_break",
-	"mss_tec_flail_feint",
-	"mss_tec_flail_stunningblow",
-	"mss_tec_flail_swingaround",
-	"mss_tec_flail_swingandfling",
-	"mss_tec_flail_direct",
-	"mss_tec_flail_wrappedtrip",
-	"mss_tec_flail_kickover",
-	"mss_tec_flail_heavyblow"
-	],
-    "weapons": [
-      "2h_flail_steel",
-	  "2h_flail_wood",
-	  "mss_survivor_flail"
-    ]
+    "techniques": [
+      "mss_tec_flail_break",
+      "mss_tec_flail_feint",
+      "mss_tec_flail_stunningblow",
+      "mss_tec_flail_swingaround",
+      "mss_tec_flail_swingandfling",
+      "mss_tec_flail_direct",
+      "mss_tec_flail_wrappedtrip",
+      "mss_tec_flail_kickover",
+      "mss_tec_flail_heavyblow"
+    ],
+    "weapons": [ "2h_flail_steel", "2h_flail_wood", "mss_survivor_flail" ]
   },
   {
     "type": "martial_art",
     "id": "mss_style_glove",
     "name": "Survivor Glove-Fu",
     "description": "You're not unused to the concept of killing things with your own hands. Glove-Fu lets you show the Zs the real definition of a smackdown with unrelenting, heavy hitting powercombos.",
-    "initiate": [ "You assume a sturdy stance and keep one arm cocked and loaded.", "%s assumes a sturdy stance and keeps an arm ready." ],
+    "initiate": [
+      "You assume a sturdy stance and keep one arm cocked and loaded.",
+      "%s assumes a sturdy stance and keeps an arm ready."
+    ],
     "autolearn": [ [ "unarmed", "5" ] ],
     "arm_block": 1,
     "static_buffs": [
@@ -209,7 +210,7 @@
         "id": "mss_buff_glove_ready",
         "name": "Ready",
         "description": "You're ready. Your fighting implements are ready. They always will be. \n\n+2 Block attempts, -1.0 Dodge skill, blocked damage reduced by 50%% of Strength.",
-		"unarmed_allowed": true,
+        "unarmed_allowed": true,
         "skill_requirements": [ { "name": "melee", "level": 0 } ],
         "bonus_blocks": 2,
         "flat_bonuses": [ { "stat": "block", "scaling-stat": "str", "scale": 0.5 }, { "stat": "dodge", "scale": -1.0 } ]
@@ -223,9 +224,8 @@
         "unarmed_allowed": true,
         "buff_duration": 1,
         "max_stacks": 2,
-		"bonus_blocks": 1,
-        "mult_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 }
-        ]
+        "bonus_blocks": 1,
+        "mult_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 } ]
       }
     ],
     "onattack_buffs": [
@@ -237,7 +237,7 @@
         "skill_requirements": [ { "name": "melee", "level": 1 } ],
         "buff_duration": 2,
         "max_stacks": 2,
-		"bonus_blocks": 1,
+        "bonus_blocks": 1,
         "mult_bonuses": [ { "stat": "damage", "type": "bash", "scale": 1.1 } ]
       }
     ],
@@ -264,18 +264,19 @@
         "flat_bonuses": [ { "stat": "dodge", "scale": -3.0 } ]
       }
     ],
-    "techniques": [ "mss_tec_glove_break",
-	"mss_tec_glove_feint",
-	"mss_tec_glove_counter",
-	"mss_tec_glove_superiorcounter",
-	"mss_tec_glove_bodyshot",
-	"mss_tec_glove_superiorbodyshot",
-	"mss_tec_glove_bodyshotknock",
-	"mss_tec_glove_superiorbodyshotknock",
-	"mss_tec_glove_smackdown",
-	"mss_tec_glove_superiorsmackdown",
-	"mss_tec_glove_knockout",
-	"mss_tec_glove_wallbash"
-	]
+    "techniques": [
+      "mss_tec_glove_break",
+      "mss_tec_glove_feint",
+      "mss_tec_glove_counter",
+      "mss_tec_glove_superiorcounter",
+      "mss_tec_glove_bodyshot",
+      "mss_tec_glove_superiorbodyshot",
+      "mss_tec_glove_bodyshotknock",
+      "mss_tec_glove_superiorbodyshotknock",
+      "mss_tec_glove_smackdown",
+      "mss_tec_glove_superiorsmackdown",
+      "mss_tec_glove_knockout",
+      "mss_tec_glove_wallbash"
+    ]
   }
 ]
