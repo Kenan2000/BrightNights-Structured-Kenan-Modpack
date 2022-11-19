@@ -10,24 +10,7 @@
     "looks_like": "f_robotic_arm",
     "move_cost_mod": -1,
     "required_str": -1,
-    "flags": [ "TRANSPARENT", "AUTODOC" ],
     "examine_action": "autodoc",
-    "deconstruct": {
-      "items": [
-        { "item": "processor", "count": [ 1, 2 ] },
-        { "item": "RAM", "count": [ 4, 8 ] },
-        { "item": "cable", "charges": [ 4, 6 ] },
-        { "item": "small_lcd_screen", "count": [ 1, 2 ] },
-        { "item": "e_scrap", "count": [ 10, 16 ] },
-        { "item": "circuit", "count": [ 6, 10 ] },
-        { "item": "power_supply", "count": [ 2, 4 ] },
-        { "item": "amplifier", "count": [ 2, 4 ] },
-        { "item": "plastic_chunk", "count": [ 10, 12 ] },
-        { "item": "Autonmous_Machine_Parts", "count": [ 2, 5 ] },
-        { "item": "BioCo_AutoDoc_Core", "prob": 80 },
-        { "item": "scrap", "count": [ 6, 8 ] }
-      ]
-    },
     "bash": {
       "str_min": 8,
       "str_max": 150,
@@ -44,6 +27,36 @@
         { "item": "amplifier", "prob": 25 },
         { "item": "plastic_chunk", "count": [ 4, 10 ], "prob": 50 },
         { "item": "scrap", "count": [ 2, 6 ], "prob": 50 }
+      ]
+    }
+  },
+  {
+    "type": "furniture",
+    "id": "f_autodoc_couch",
+    "copy-from": "f_autodoc_couch",
+    "name": "Autodoc operation couch",
+    "symbol": "H",
+    "looks_like": "f_sofa",
+    "description": "A plush red sofa made less comfortable by the medical machinery directly above it.  It has a single leather strap on the right armrest.",
+    "bgcolor": "red",
+    "move_cost_mod": 2,
+    "coverage": 40,
+    "comfort": 4,
+    "floor_bedding_warmth": 500,
+    "required_str": 10,
+    "bash": {
+      "str_min": 10,
+      "str_max": 40,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "cable", "charges": [ 1, 2 ], "prob": 50 },
+        { "item": "e_scrap", "count": [ 1, 4 ], "prob": 50 },
+        { "item": "circuit", "count": [ 0, 2 ], "prob": 50 },
+        { "item": "scrap", "count": [ 2, 6 ], "prob": 50 },
+        { "item": "2x4", "count": [ 2, 5 ] },
+        { "item": "rag", "count": [ 4, 10 ], "prob": 50 },
+        { "item": "nail", "charges": [ 3, 8 ] }
       ]
     }
   },
