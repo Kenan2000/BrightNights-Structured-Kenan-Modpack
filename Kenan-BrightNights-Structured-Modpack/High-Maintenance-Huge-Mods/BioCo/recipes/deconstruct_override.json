@@ -1,0 +1,50 @@
+[
+  {
+    "result": "autodoc",
+    "type": "uncraft",
+    "skill_used": "electronics",
+    "difficulty": 5,
+    "time": "1 h",
+    "using": [ [ "soldering_standard", 14 ] ],
+    "qualities": [
+      { "id": "SCREW", "level": 1 },
+      { "id": "BIOASSEMBLE", "level": 3 }
+    ],
+    "components": [
+      [ [ "e_scrap", 30 ] ],
+      [ [ "cable", 200 ] ],
+      [ [ "circuit", 10 ] ],
+      [ [ "scrap", 20 ] ],
+      [ [ "sheet_metal", 5 ] ],
+      [ [ "plut_cell", 5 ] ],
+      [ [ "motor_small", 1 ] ],
+      [ [ "BioCo_AutoDoc_Core", 1 ] ],
+      [ [ "Autonmous_Machine_Parts", 1 ] ],
+      [ [ "Pristine_Bionic_Components", 4 ] ],
+      [ [ "RAM", 10 ] ],
+      [ [ "amplifier", 4 ] ],
+      [ [ "processor", 2 ] ],
+      [ [ "small_lcd_screen", 2 ] ],
+      [ [ "power_supply", 4 ] ]
+    ]
+  },
+  {
+    "result": "autodoc_couch",
+    "type": "uncraft",
+    "skill_used": "fabrication",
+    "time": "1 h",
+    "difficulty": 5,
+    "using": [ [ "soldering_standard", 14 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "e_scrap", 30 ] ],
+      [ [ "cable", 200 ] ],
+      [ [ "circuit", 10 ] ],
+      [ [ "scrap", 20 ] ],
+      [ [ "2x4", 12 ] ],
+      [ [ "rag", 30 ], [ "blanket", 1 ] ],
+      [ [ "nail", 20 ] ],
+      [ [ "Pristine_Bionic_Components", 4 ] ]
+    ]
+  }
+]
