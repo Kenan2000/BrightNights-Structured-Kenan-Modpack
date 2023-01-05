@@ -2,20 +2,20 @@
   {
     "id": "achievement_kill_stray",
     "type": "achievement",
-    "name": "There's a new kind of zombie around.",
+    "name": "<color_light_blue>There's another kind of zombie around.</color>",
     "requirements": [ { "event_statistic": "num_avatar_stray_kills", "is": ">=", "target": 1 } ]
   },
   {
     "id": "achievement_kill_alien",
     "type": "achievement",
-    "name": "If it bleeds we can kill it.",
+    "name": "<color_red>If it bleeds we can kill it.</color>",
     "hidden_by": [ "achievement_kill_stray" ],
     "requirements": [ { "event_statistic": "num_avatar_alien_kills", "is": ">=", "target": 1 } ]
   },
   {
     "id": "achievement_kill_alienrobot",
     "type": "achievement",
-    "name": "By the toll of a billion deaths man has bought his birthright of the Earth, and it is his against all comers.",
+    "name": "<color_red>By the toll of a billion deaths man has bought his birthright of the Earth, and it is his against all comers.</color>",
     "hidden_by": [ "achievement_kill_alien" ],
     "requirements": [
       { "event_statistic": "num_avatar_alienrobots_kills", "is": ">=", "target": 1 }

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "go_kart",
+    "type": "vehicle",
+    "name": "Go kart",
+    "parts": [
+      { "x": 1, "y": 0, "parts": [ "frame_vertical_2", "wheel_mount_light_steerable", "wheel_motorbike_or" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_vertical_2", "wheel_mount_light_steerable", "wheel_motorbike_or" ] },
+      {
+        "x": 0,
+        "y": 0,
+        "parts": [
+          "frame_vertical",
+          { "part": "tank_small", "fuel": "gasoline" },
+          "seat",
+          "controls",
+          "battery_motorbike_small",
+          "engine_1cyl_large",
+          "alternator_motorbike"
+        ]
+      },  
+	  {
+        "x": 0,
+        "y": 1,
+        "parts": [
+          "frame_vertical",
+          { "part": "tank_small", "fuel": "gasoline" },
+          "seat",
+          "controls",
+          "battery_motorbike_small",
+          "engine_1cyl_large",
+          "alternator_motorbike"
+        ]
+      },
+      { "x": -1, "y": 0, "parts": [ "xlframe_vertical", "muffler", "wheel_mount_light", "wheel_motorbike_or_rear" ] },
+      { "x": -1, "y": 1, "parts": [ "xlframe_vertical", "muffler", "wheel_mount_light", "wheel_motorbike_or_rear" ] }
+    ]
+  }
+]
