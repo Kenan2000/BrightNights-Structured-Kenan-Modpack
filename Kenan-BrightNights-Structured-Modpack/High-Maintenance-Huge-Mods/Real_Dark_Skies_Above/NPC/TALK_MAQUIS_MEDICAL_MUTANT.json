@@ -5,6 +5,7 @@
     "class": "NC_MAQUIS_MEDICAL_MUTANT",
     "attitude": 0,
     "mission": 7,
+    "gender": "male",	
     "chat": "TALK_MAQUIS_MEDICAL_MUTANT_ROOT",
     "faction": "maquis"
   },
@@ -20,138 +21,41 @@
       { "trait": "THRESH_MEDICAL", "prob": 100 },
       { "trait": "SCHIZOPHRENIC", "prob": 100 },
       { "trait": "INSOMNIA", "prob": 100 },
-      { "trait": "INFRESIST", "prob": 80 },
-      { "trait": "PARAIMMUNE", "prob": 80 },
+      { "trait": "INFRESIST", "prob": 90 },
+      { "trait": "PARAIMMUNE", "prob": 90 },
+      { "trait": "MASOCHIST_MED", "prob": 80 },
       { "trait": "RADIOGENIC", "prob": 30 },
-      { "trait": "MUT_TOUGH", "prob": 20 },
-      { "trait": "MASOCHIST_MED", "prob": 20 }
+      { "trait": "MUT_TOUGH", "prob": 20 }
     ],
     "skills": [ { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } } ],
+    "worn_override": "NC_MAQUIS_MEDICAL_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_MEDICAL_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_MEDICAL_MUTANT_carry",	
     "bonus_str": { "rng": [ -1, 1 ] },
     "bonus_dex": { "rng": [ -1, 1 ] },
     "bonus_int": { "rng": [ -1, 1 ] },
     "bonus_per": { "rng": [ -1, 1 ] }
   },
+
   {
-    "//": "----------INVENTORY LOADOUTS-----------------------------------------------------------------------------------",
+    "id": "NC_MAQUIS_MEDICAL_MUTANT_worn",
     "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_underwear_bottom_male",
     "subtype": "collection",
-    "items": [ [ "boxer_shorts", 70 ], [ "briefs", 30 ], [ "boxer_briefs", 50 ] ]
+    "entries": [ { "item": "house_coat" }, { "item": "mbag" } ]
   },
   {
+    "id": "NC_MAQUIS_MEDICAL_MUTANT_weapon",
     "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_underwear_bottom_female",
     "subtype": "collection",
-    "items": [ [ "panties", 70 ], [ "boy_shorts", 50 ], [ "bikini_bottom", 10 ] ]
+    "entries": [ { "item": "scalpel" } ]
   },
   {
+    "id": "NC_MAQUIS_MEDICAL_MUTANT_carry",
     "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_underwear_top_male",
     "subtype": "collection",
-    "items": [ [ "null", 50 ], [ "undershirt", 50 ], [ "long_undertop", 20 ], [ "tank_top", 25 ] ]
+    "entries": [ { "item": "joint" } ]
   },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_underwear_top_female",
-    "subtype": "collection",
-    "items": [ [ "null", 1 ], [ "bra", 10 ], [ "sports_bra", 80 ], [ "tank_top", 50 ] ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_underwear_feet_male",
-    "items": [ [ "null", 2 ], [ "socks", 80 ], [ "socks_ankle", 30 ], [ "socks_wool", 20 ] ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_underwear_feet_female",
-    "items": [ [ "null", 2 ], [ "socks", 50 ], [ "socks_ankle", 20 ], [ "socks_wool", 10 ], [ "stockings", 25 ], [ "tights", 10 ] ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_pants_male",
-    "subtype": "distribution",
-    "entries": [
-      { "item": "jeans", "prob": 20 },
-      { "item": "pants", "prob": 20 },
-      { "item": "pants_leather", "prob": 20 },
-      { "item": "pants_cargo", "prob": 20 },
-      { "item": "bunker_pants", "prob": 20 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_pants_female",
-    "subtype": "distribution",
-    "entries": [
-      { "item": "jeans", "prob": 20 },
-      { "item": "pants", "prob": 20 },
-      { "item": "pants_leather", "prob": 20 },
-      { "item": "pants_cargo", "prob": 20 },
-      { "item": "skirt", "prob": 20 },
-      { "item": "bunker_pants", "prob": 10 }
-    ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_shirt_male",
-    "subtype": "distribution",
-    "entries": [ { "item": "tshirt", "prob": 50 }, { "item": "polo_shirt", "prob": 20 }, { "item": "tank_top", "prob": 40 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_shirt_female",
-    "subtype": "distribution",
-    "entries": [ { "item": "tshirt", "prob": 70 }, { "item": "polo_shirt", "prob": 20 }, { "item": "tank_top", "prob": 20 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_gloves",
-    "subtype": "distribution",
-    "entries": [ { "item": "null", "prob": 100 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_coat",
-    "subtype": "distribution",
-    "entries": [ { "item": "trenchcoat", "prob": 100 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_shoes",
-    "subtype": "distribution",
-    "entries": [ { "item": "sneakers", "prob": 20 }, { "item": "boots", "prob": 20 }, { "item": "boots_combat", "prob": 80 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_masks",
-    "subtype": "distribution",
-    "entries": [ { "item": "null", "prob": 800 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_eyes",
-    "subtype": "distribution",
-    "entries": [ { "item": "null", "prob": 80 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_hat",
-    "subtype": "distribution",
-    "entries": [ { "item": "null", "prob": 100 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_extra",
-    "subtype": "distribution",
-    "entries": [ { "item": "backpack", "prob": 100 } ]
-  },
-  {
-    "type": "item_group",
-    "id": "NC_MAQUIS_MEDICAL_MUTANT_misc",
-    "subtype": "distribution",
-    "entries": [ { "group": "fireman_gear", "count-min": 1, "count-max": 2, "prob": 10 } ]
-  },
+
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_MEDICAL_MUTANT_ROOT",

@@ -44,7 +44,6 @@
       { "trait": "POISRESIST", "prob": 100 },
       { "trait": "ROBUST", "prob": 100 },
       { "trait": "SPIRITUAL", "prob": 100 },
-      { "trait": "PADDED_FEET", "prob": 100 },
       { "trait": "GLASSJAW", "prob": 100 },
       { "trait": "BADTEMPER", "prob": 100 }
     ],
@@ -108,23 +107,28 @@
     "responses": [
       {
         "text": "Wow, nice to meet you too, Randy.",
-        "effect": { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+        "effect": [
+          { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_RANDY_ERIKSON_QUESTIONS" }
+        ],
         "condition": { "not": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
         "topic": "TALK_RANDY_ERIKSON_FIRSTMEET"
       },
       {
-        "text": "Hi, Randy.  Got a second to talk?",
-        "topic": "TALK_RANDY_ERIKSON_QUESTIONS",
-        "condition": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" }
-      },
-      {
         "text": "Hey Randy, nice to meet you too.  Bye.",
-        "effect": { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+        "effect": [
+          { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_RANDY_ERIKSON_QUESTIONS" }
+        ],
         "condition": { "not": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
         "topic": "TALK_DONE"
       },
       {
         "text": "Hi Randy.  I don't have time to talk.",
+        "effect": [
+          { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_RANDY_ERIKSON_QUESTIONS" }
+        ],
         "condition": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
         "topic": "TALK_DONE"
       }
@@ -164,8 +168,23 @@
           ]
         },
         "trial": { "type": "PERSUADE", "difficulty": 1 },
-        "success": { "topic": "TALK_REFUGEE_Accept_Boris_Mission_1" },
-        "failure": { "topic": "TALK_REFUGEE_Refuse_Boris_Mission_1" }
+        "success": { "topic": "TALK_RANDY_ERIKSON_Accept_Boris_Mission_1" },
+        "failure": { "topic": "TALK_RANDY_ERIKSON_Refuse_Boris_Mission_1" }
+      },
+      {
+        "text": "[RP] I am a member of the Maquis, I need to get to the nearest base.",
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+            { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } }
+          ]
+        },
+        "effect": { "add_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" },
+        "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER_MAQUIS"
       },
       {
         "text": "What can you tell me about the Xenoids?",
@@ -201,6 +220,20 @@
         "opinion": { "trust": 1, "value": 1 },
         "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_WATCH"
       },
+      {
+        "text": "[PER 11]  Is that a helicopter outside?.",
+        "effect": { "u_add_var": "u_Talk_To_RandyErikson_about_helicopter", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            {
+              "not": { "u_has_var": "u_Talk_To_RandyErikson_about_helicopter", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_has_perception": 11 }
+          ]
+        },
+        "opinion": { "trust": 1, "value": 1 },
+        "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_HELICOPTER"
+      },
       { "text": "So how did you end up here?", "topic": "TALK_RANDY_ERIKSON_BACKGROUND" },
       { "text": "So what are you doing here?", "topic": "TALK_RANDY_ERIKSON_GENERATOR" },
       {
@@ -216,6 +249,33 @@
       },
       { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "Don't mind me…", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "talk_topic",
+    "id": "TALK_RANDY_ERIKSON_Refuse_Boris_Mission_1",
+    "dynamic_line": [ "Fuck no, I'm busy.", "No, I have too many projects I'm working on now." ],
+    "speaker_effect": { "effect": { "npc_add_var": "cleanup_asked", "type": "mission", "context": "Boris_mission_1", "value": "yes" } },
+    "responses": [
+      { "text": "Thanks anyway.  What were you saying before?", "topic": "TALK_NONE" },
+      { "text": "Well, thanks anyway.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "talk_topic",
+    "id": "TALK_RANDY_ERIKSON_Accept_Boris_Mission_1",
+    "dynamic_line": [ "Yeah I guess, I could use a break from my research.", "That's a big ask, for sure.  Okay, I'll see what I can do." ],
+    "speaker_effect": {
+      "effect": [
+        { "npc_add_var": "cleanup_asked", "type": "mission", "context": "Boris_mission_1", "value": "yes" },
+        { "u_adjust_var": "Boris_mission_1", "type": "mission", "context": "cleanup_promises", "adjustment": 1 }
+      ]
+    },
+    "responses": [
+      { "text": "Thanks anyway.  What were you saying before?", "topic": "TALK_NONE" },
+      { "text": "Well, thanks anyway.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -257,22 +317,6 @@
         "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER_MAQUIS"
       },
       {
-        "text": "[RP] I am a member of the Maquis, I need to get to the nearest base.",
-        "condition": {
-          "and": [
-            { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
-            { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
-            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
-            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
-            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } },
-            { "not": "has_many_assigned_mission" },
-            { "not": "has_assigned_mission" }
-          ]
-        },
-        "effect": { "add_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" },
-        "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER_MAQUIS"
-      },
-      {
         "text": "I'm not busy right now.  I can go look for him.",
         "condition": {
           "and": [
@@ -288,6 +332,13 @@
         "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER"
       }
     ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ASK_ABOUT_HELICOPTER",
+    "type": "talk_topic",
+    "dynamic_line": [ "Yeah I landed it just as it ran out of fuel.  Its yours so long as you can fill up the tank." ],
+    "responses": [ { "text": "Ok, I'll take it for a spin.", "topic": "TALK_DONE" } ]
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
@@ -321,7 +372,32 @@
         "no": "I've been spending most of my time keeping this jury-rigged generator running just slowly enough to trickle charge the batteries that are built into this old machinery so it can keep these utility lights on at night. It as effective as can be considering what I've got to work with."
       }
     ],
-    "responses": [ { "text": "Something else.", "topic": "TALK_NONE" }, { "text": "Good luck with that.", "topic": "TALK_DONE" } ]
+    "responses": [
+      { "text": "Lets discuss something else.", "topic": "TALK_NONE" },
+      { "text": "Good luck with that.", "topic": "TALK_DONE" },
+      {
+        "text": "[Mechanics 5] Have you tried checking the bearing coming off the engine?",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_Question_Randys_Mechanics_Skill", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_skill": { "skill": "mechanics", "level": 5 } }
+          ]
+        },
+        "effect": { "u_add_var": "u_Question_Randys_Mechanics_Skill", "type": "general", "context": "meeting", "value": "yes" },
+        "opinion": { "value": -1 },
+        "topic": "TALK_RANDY_ERIKSON_GENERATOR_ANGRY"
+      }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_GENERATOR_ANGRY",
+    "type": "talk_topic",
+    "dynamic_line": [ "I've checked that already, but thanks for nothing anyway; Talking to you I should be used to that by now." ],
+    "responses": [
+      { "text": "Sorry I asked.", "topic": "TALK_DONE" },
+      { "text": "Fuck you.", "topic": "TALK_DONE", "opinion": { "trust": -5, "value": -10 } }
+    ]
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
@@ -528,13 +604,13 @@
       "assign_mission_target": {
         "om_terrain": "racing_tower_z7_4_1",
         "om_special": "arcology_racing",
-        "reveal_radius": 7,
-        "search_range": 700,
+        "reveal_radius": 0,
+        "search_range": 750,
         "z": 7,
         "random": true,
         "min_distance": 75
       },
-      "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 3, "y": 3, "target": true } ] },
+      "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 5, "y": 5, "add_trait": "DKZ_LEADER" } ] },
       "effect": [ { "u_add_var": "MrEriksonExists", "type": "knowledge", "context": "flag", "value": "yes" } ]
     },
     "origins": [ "ORIGIN_SECONDARY" ],

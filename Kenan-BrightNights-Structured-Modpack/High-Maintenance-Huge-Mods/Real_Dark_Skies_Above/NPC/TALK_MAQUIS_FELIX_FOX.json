@@ -48,7 +48,7 @@
     "id": "NC_MAQUIS_FELIX_FOX_weapon",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "rm2000_smg" } ]
+    "entries": [ { "item": "knife_butcher" } ]
   },
   {
     "id": "NC_MAQUIS_FELIX_FOX_worn",
@@ -58,9 +58,10 @@
       { "item": "boxer_shorts" },
       { "item": "socks" },
       { "item": "boots_hiking" },
-      { "item": "jeans_red" },
       { "item": "tshirt_tour" },
+      { "item": "jeans_red" },
       { "item": "jacket_leather_red" },
+      { "item": "fancy_sunglasses" },	  
       { "item": "pickelhaube" },
       { "item": "backpack" },
       { "item": "badge_deputy" },
@@ -106,6 +107,7 @@
         },
         "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
       },
+	  
       {
         "text": "[RP] I am a member of the Maquis, I need to get to the nearest base.",
         "condition": {
@@ -121,7 +123,9 @@
         },
         "effect": { "add_mission": "MISSION_GO_MEET_THE_BIG_FED" },
         "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
-      },
+      },	  
+	  
+	  
       { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "See you later.", "topic": "TALK_DONE" }
     ]
@@ -210,7 +214,4 @@
       "failure": "It was a lost cause anyways…"
     }
   }
-
-
-
 ]

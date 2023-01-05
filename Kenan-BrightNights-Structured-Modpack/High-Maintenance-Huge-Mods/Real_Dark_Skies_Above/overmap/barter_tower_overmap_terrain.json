@@ -1,11 +1,20 @@
 [
   {
     "type": "overmap_terrain",
-    "id": [ "arcology_parking_1", "arcology_parking_2", "arcology_parking_3", "arcology_parking_4", "arcology_parking_5" ],
+    "id": [
+      "arcology_parking_1",
+      "arcology_parking_2",
+      "arcology_parking_3",
+      "arcology_parking_4",
+      "arcology_parking_5",
+      "arcology_outer_parking",
+      "arcology_outer_parking_entry",
+      "arcology_outer_parking_corner"
+    ],
     "name": "parking lot",
     "color": "dark_gray",
     "sym": "0",
-    "see_cost": 99
+    "see_cost": 5
   },
   {
     "type": "overmap_terrain",
@@ -71,7 +80,24 @@
     "name": "Under Town",
     "sym": "╬",
     "color": "i_light_red",
-    "see_cost": 0
+    "see_cost": 99
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "racing_tower_z-3_1_1",
+      "racing_tower_z-3_1_2",
+      "racing_tower_z-3_2_1",
+      "racing_tower_z-3_2_2",
+      "racing_tower_z-4_1_1",
+      "racing_tower_z-4_1_2",
+      "racing_tower_z-4_2_1",
+      "racing_tower_z-4_2_2"
+    ],
+    "name": "REDACTED",
+    "sym": "╬",
+    "color": "i_light_red",
+    "see_cost": 99
   },
   {
     "type": "overmap_terrain",
@@ -467,5 +493,4 @@
     "color": "i_light_green",
     "see_cost": 99
   }
-
 ]
