@@ -28,12 +28,12 @@
       [ "SEARCHLIGHT", 1 ],
       {
         "type": "gun",
-        "cooldown": 13,
+        "cooldown": 1000,
         "move_cost": 100,
         "gun_type": "dkz_drone_dart",
         "fake_skills": [ [ "gun", 2 ] ],
         "fake_dex": 5,
-        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "ranges": [ [ 5, 7, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false
@@ -101,7 +101,7 @@
         "gun_type": "dkz_drone_dart",
         "fake_skills": [ [ "gun", 2 ] ],
         "fake_dex": 5,
-        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "ranges": [ [ 5, 7, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false
