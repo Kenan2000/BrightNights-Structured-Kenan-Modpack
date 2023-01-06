@@ -277,12 +277,22 @@
       },
       {
         "text": "[RP]  I want to join the Maquis and fight against the xenoid invaders.",
-        "condition": { "not": { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] } },
+        "condition": {
+          "and": [
+            { "not": { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] } },
+            { "not": { "u_has_effect": "dkz_switch_focus" } }
+          ]
+        },
         "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_JOINING_MAQUIS"
       },
       {
         "text": "[RP]  I want change how I fight against the xenoid invaders.",
-        "condition": { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+            { "not": { "u_has_effect": "dkz_switch_focus" } }
+          ]
+        },
         "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_JOINING_MAQUIS"
       },
       {
@@ -318,7 +328,7 @@
     "responses": [
       { "text": "What can I do to help the Maquis?", "topic": "TALK_MISSION_LIST" },
       { "text": "I would like to ask you about the Xenoids.", "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS" },
-	  { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } 
+      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
     ]
   },
   {
@@ -336,7 +346,8 @@
           { "u_lose_trait": "DKZ_LEADER" },
           { "u_lose_trait": "DKZ_MEDIC" },
           { "u_lose_trait": "DKZ_SCIENTIST" },
-          { "u_lose_trait": "DKZ_TECH" }
+          { "u_lose_trait": "DKZ_TECH" },
+          { "u_add_effect": "dkz_switch_focus", "duration": 500000 }		  
         ],
         "topic": "TALK_NONE"
       },
@@ -347,7 +358,8 @@
           { "u_lose_trait": "DKZ_COMBAT" },
           { "u_lose_trait": "DKZ_MEDIC" },
           { "u_lose_trait": "DKZ_SCIENTIST" },
-          { "u_lose_trait": "DKZ_TECH" }
+          { "u_lose_trait": "DKZ_TECH" },
+          { "u_add_effect": "dkz_switch_focus", "duration": 500000 }
         ],
         "topic": "TALK_NONE"
       },
@@ -358,7 +370,8 @@
           { "u_lose_trait": "DKZ_COMBAT" },
           { "u_lose_trait": "DKZ_LEADER" },
           { "u_lose_trait": "DKZ_SCIENTIST" },
-          { "u_lose_trait": "DKZ_TECH" }
+          { "u_lose_trait": "DKZ_TECH" },
+          { "u_add_effect": "dkz_switch_focus", "duration": 500000 }
         ],
         "topic": "TALK_NONE"
       },
@@ -369,7 +382,8 @@
           { "u_lose_trait": "DKZ_COMBAT" },
           { "u_lose_trait": "DKZ_LEADER" },
           { "u_lose_trait": "DKZ_MEDIC" },
-          { "u_lose_trait": "DKZ_TECH" }
+          { "u_lose_trait": "DKZ_TECH" },
+          { "u_add_effect": "dkz_switch_focus", "duration": 500000 }
         ],
         "topic": "TALK_NONE"
       },
@@ -380,7 +394,8 @@
           { "u_lose_trait": "DKZ_COMBAT" },
           { "u_lose_trait": "DKZ_LEADER" },
           { "u_lose_trait": "DKZ_MEDIC" },
-          { "u_lose_trait": "DKZ_SCIENTIST" }
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_add_effect": "dkz_switch_focus", "duration": 500000 }
         ],
         "topic": "TALK_NONE"
       },
@@ -453,6 +468,11 @@
       {
         "text": "I have a question about the specific types of Xenoid attackers?",
         "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_UNITS"
+      },
+      {
+        "text": "[INT 11]  Are the Xenoids the only alien threat?.",
+        "condition": { "u_has_intelligence": 11 },
+        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_OTHER_ALIENS"
       },
       { "text": "That's all for now.", "topic": "TALK_CHAD_ERIKSON_QUESTIONS" },
       { "text": "Good bye.", "topic": "TALK_DONE" }
@@ -580,7 +600,32 @@
     "id": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_FAUNA",
     "type": "talk_topic",
     "dynamic_line": [
-      "You noticed a few new kinds of critters too?  There are the dog-lizard and the cow-lizard, which are generally not hostile unless they're in large packs.  There are also Lurkers, some kind of tentacle monster found in swamps or sewers, but they absorb bullets pretty effectivly.  Finally there are wisps which seem like alien fire-flys."
+      "You noticed a few new kinds of critters too?  There are the dog-lizard and the cow-lizard, which are generally not hostile unless they're in large packs.  There are also Lurkers, some kind of tentacle monster found in swamps or sewers, but they dodge bullets pretty effectively.  Finally there are wisps which seem like alien fire-flys."
+    ],
+    "responses": [
+      {
+        "text": "[INT 11] Why are ?",
+        "condition": { "u_has_intelligence": 11 },
+        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_MAGIC"
+      },
+      {
+        "text": "I want to know more about the types of Xenoids.",
+        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_UNITS"
+      },
+      {
+        "text": "I have some more general questions about the Xenoids.",
+        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS"
+      },
+      { "text": "Lets change the subject.", "topic": "TALK_CHAD_ERIKSON_QUESTIONS" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_CHAD_ERIKSON_ASK_ABOUT_OTHER_ALIENS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "It is true that there are at least two separate alien invasion forces on Earth.  In all cases so far, the Xenoids have been hostile to these other aliens, known colloquially as Mi-Go's.  "
     ],
     "responses": [
       { "text": "I want to know more about the types of Xenoids.", "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_UNITS" },
@@ -727,8 +772,8 @@
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "MISSION_REFUGEE_CHAD_ERIKSON_SCIENCE_FIELD_TRIP",
     "type": "mission_definition",
-    "name": { "str": "Bring enforcements to an operative setting up a forward base." },
-    "description": "Go to the entrance to the secret lab and meet up with the operative there.  Bring two volunteers reinforcements, and get them all there alive.",
+    "name": { "str": "Operation Science Field Trip" },
+    "description": "Bring enforcements to an operative setting up a forward base.  Go to the entrance to the secret lab and meet up with the operative there.  Bring two volunteers reinforcements, and get them all there alive.",
     "goal": "MGOAL_CONDITION",
     "goal_condition": { "u_has_var": "u_setup_Lab_Base", "type": "general", "context": "meeting", "value": "yes" },
     "difficulty": 5,
@@ -743,9 +788,7 @@
         "random": false,
         "min_distance": 25
       },
-      "update_mapgen": {
-        "place_npcs": [ { "class": "DKZ_MAQUIS_CYBERCOP", "x": 13, "y": 13, "add_trait": "DKZ_SCIENTIST" } ]
-      }
+      "update_mapgen": { "place_npcs": [ { "class": "DKZ_MAQUIS_CYBERCOP", "x": 13, "y": 13, "add_trait": "DKZ_SCIENTIST" } ] }
     },
     "end": {
       "effect": [
