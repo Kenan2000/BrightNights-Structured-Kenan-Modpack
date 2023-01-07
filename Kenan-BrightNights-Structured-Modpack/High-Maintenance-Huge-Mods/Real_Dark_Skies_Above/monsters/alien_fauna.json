@@ -38,7 +38,7 @@
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "KEENNOSE", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "KEENNOSE", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT", "ARTHROPOD_BLOOD" ]
   },
   {
     "id": "dkz_mon_lurker",
@@ -81,7 +81,7 @@
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "KEENNOSE", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT"  ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "KEENNOSE", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT", "ARTHROPOD_BLOOD"  ]
   },
   {
     "id": "dkz_mon_mossliz",
@@ -127,7 +127,8 @@
       "ANIMAL",
       "PET_WONT_FOLLOW",
       "PET_MOUNTABLE",
-      "CATTLEFODDER"
+      "CATTLEFODDER",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -177,7 +178,8 @@
       "ATTACKMON",
       "SWIMS",
       "PET_WONT_FOLLOW",
-      "DOGFOOD"
+      "DOGFOOD",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -213,7 +215,8 @@
       "FLIES",
       "SWARMS",
       "PET_WONT_FOLLOW",
-      "CATFOOD"
+      "CATFOOD",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -245,6 +248,6 @@
     "special_attacks": [ [ "ACID_BARF", 10 ] ],
     "anger_triggers": [ "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "KEENNOSE", "HEARS", "SMELLS", "BASHES", "DESTROYS", "ACIDPROOF", "PATH_AVOID_DANGER_1", "CAN_DIG" ]
+    "flags": [ "KEENNOSE", "HEARS", "SMELLS", "BASHES", "DESTROYS", "ACIDPROOF", "PATH_AVOID_DANGER_1", "CAN_DIG", "ARTHROPOD_BLOOD" ]
   }
 ]

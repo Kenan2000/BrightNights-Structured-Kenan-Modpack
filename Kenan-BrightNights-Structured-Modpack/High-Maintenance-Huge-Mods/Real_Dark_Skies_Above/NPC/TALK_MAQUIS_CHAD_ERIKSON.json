@@ -604,9 +604,9 @@
     ],
     "responses": [
       {
-        "text": "[INT 11] Why are ?",
+        "text": "[INT 11] Why are sure that these creatures are related to the invasion of Xenoids?",
         "condition": { "u_has_intelligence": 11 },
-        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_MAGIC"
+        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_FAUNA_AND_XENOIDS"
       },
       {
         "text": "I want to know more about the types of Xenoids.",
@@ -622,10 +622,26 @@
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_FAUNA_AND_XENOIDS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "These xeno-fauna seem related to the Xenoid invaders if in no other way than the blood that comes from them is a dull-white fluid, more similar to the haemophth of terrestiral insects.  You would have talk to the egg-heads around for exact specifics."
+    ],
+    "responses": [
+      {
+        "text": "I have some more general questions about the Xenoids.",
+        "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS"
+      },
+      { "text": "Lets change the subject.", "topic": "TALK_CHAD_ERIKSON_QUESTIONS" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_CHAD_ERIKSON_ASK_ABOUT_OTHER_ALIENS",
     "type": "talk_topic",
     "dynamic_line": [
-      "It is true that there are at least two separate alien invasion forces on Earth.  In all cases so far, the Xenoids have been hostile to these other aliens, known colloquially as Mi-Go's.  "
+      "It is true that there are at least two separate alien invasion forces on Earth.  In all cases so far, the Xenoids have been hostile to these other aliens, known colloquially as Mi-Go's.  We have multiple confirmed reports of these Mi-Go's taking human prisoners as well as creating from nowhere buildings of organic resin.  While not as numerous as the Xenoids, the Mi-Go's are just as much of a threat to humanity. Thankfully they seem to be hostile to each other."
     ],
     "responses": [
       { "text": "I want to know more about the types of Xenoids.", "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS_UNITS" },
