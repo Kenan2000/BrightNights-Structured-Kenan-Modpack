@@ -23,17 +23,19 @@
       { "trait": "STR_UP_2", "prob": 100 },
       { "trait": "SUNLIGHT_DEPENDENT", "prob": 100 },
       { "trait": "ROSEBUDS", "prob": 100 },
+      { "trait": "FLOWERS", "prob": 100 },
       { "trait": "SAPROPHAGE", "prob": 100 },
       { "trait": "ROOTS3", "prob": 100 },
       { "trait": "LEAVES3", "prob": 100 },
       { "trait": "FASTHEALER2", "prob": 100 },
       { "trait": "BARK", "prob": 100 },
       { "trait": "PLANTSKIN", "prob": 100 },
-      { "trait": "PACIFIST", "prob": 100 }
+      { "trait": "PACIFIST", "prob": 100 },
+      { "trait": "BEAUTIFUL", "prob": 100 }
     ],
     "skills": [
       { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
-      { "skill": "survival", "bonus": { "rng": [ 5, 6 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 7, 9 ] } },
       { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
       { "skill": "melee", "bonus": { "rng": [ 4, 5 ] } },
       { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },

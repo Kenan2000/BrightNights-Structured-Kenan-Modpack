@@ -28,12 +28,12 @@
       [ "SEARCHLIGHT", 1 ],
       {
         "type": "gun",
-        "cooldown": 13,
+        "cooldown": 1000,
         "move_cost": 100,
-        "gun_type": "dkz_mon_dart",
+        "gun_type": "dkz_drone_dart",
         "fake_skills": [ [ "gun", 2 ] ],
         "fake_dex": 5,
-        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "ranges": [ [ 5, 7, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false
@@ -78,7 +78,7 @@
     "material": [ "dkz_blend_mat", "dkz_biopoly_mat" ],
     "symbol": "d",
     "color": "light_gray",
-    "aggression": 25,
+    "aggression": 15,
     "dodge": 4,
     "morale": 100,
     "melee_skill": 3,
@@ -96,12 +96,12 @@
       { "id": "knife_slash" },
       {
         "type": "gun",
-        "cooldown": 13,
+        "cooldown": 1000,
         "move_cost": 100,
-        "gun_type": "dkz_mon_dart",
+        "gun_type": "dkz_drone_dart",
         "fake_skills": [ [ "gun", 2 ] ],
         "fake_dex": 5,
-        "ranges": [ [ 0, 10, "DEFAULT" ] ],
+        "ranges": [ [ 5, 7, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
         "laser_lock": false
@@ -141,9 +141,9 @@
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "species": [ "ALIEN"],
+    "volume": "60000 ml",
+    "weight": "78000 g",
     "hp": 110,
     "speed": 110,
     "material": [ "flesh" ],
@@ -199,13 +199,13 @@
       "WARM",
       "BASHES",
       "GROUP_BASH",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "FIREPROOF",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
       "HIT_AND_RUN",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -217,9 +217,9 @@
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "species": [ "ALIEN"],
+    "volume": "60500 ml",
+    "weight": "78500 g",
     "hp": 120,
     "speed": 110,
     "material": [ "flesh" ],
@@ -275,13 +275,13 @@
       "WARM",
       "BASHES",
       "GROUP_BASH",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "FIREPROOF",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
       "HIT_AND_RUN",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -289,24 +289,24 @@
     "id": "dkz_xenoid_stalker",
     "type": "MONSTER",
     "name": { "str": "xenoid stalker" },
-    "description": "A human-sized soldier dressed in light armor, a cloak that shifts subtly to camouflage them against their surroundings, and a featureless facial mask.  Armed with a large spear and quite quick on their feet, it surveys the world with a hateful glance.",
+    "description": "A human-sized soldier dressed in light armor, a cloak that shifts activly to camouflage them against their surroundings, and a featureless facial mask.  Armed with a large spear and quite quick on their feet, it surveys the world with a hateful glance.",
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "species": [ "ALIEN"],
+    "volume": "60800 ml",
+    "weight": "78800 g",
     "hp": 120,
     "speed": 110,
     "material": [ "flesh" ],
     "symbol": "@",
     "color": "green",
-    "aggression": 75,
+    "aggression": 95,
     "morale": 50,
     "melee_skill": 7,
     "melee_dice": 3,
     "melee_dice_sides": 4,
-    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 7 } ],
     "dodge": 5,
     "vision_day": 45,
     "vision_night": 19,
@@ -329,7 +329,7 @@
         "cooldown": 8,
         "move_cost": 300,
         "gun_type": "dkz_mon_flechette",
-        "fake_skills": [ [ "gun", 5 ] ],
+        "fake_skills": [ [ "gun", 7 ] ],
         "fake_dex": 9,
         "ranges": [ [ 0, 10, "DEFAULT" ] ],
         "require_targeting_npc": true,
@@ -351,13 +351,14 @@
       "WARM",
       "BASHES",
       "GROUP_BASH",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "FIREPROOF",
       "PRIORITIZE_TARGETS",
+      "NIGHT_INVISIBILITY",	  
       "CLIMBS",
       "HIT_AND_RUN",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -369,9 +370,9 @@
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "species": [ "ALIEN"],
+    "volume": "61000 ml",
+    "weight": "80000 g",
     "hp": 110,
     "speed": 110,
     "material": [ "flesh" ],
@@ -383,6 +384,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 5,
     "melee_damage": [ { "damage_type": "electric", "amount": 7 } ],
+
     "dodge": 2,
     "vision_day": 30,
     "vision_night": 7,
@@ -429,11 +431,11 @@
       "BASHES",
       "GROUP_BASH",
       "FIREPROOF",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -445,8 +447,8 @@
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
-    "volume": "62500 ml",
+    "species": [ "ALIEN"],
+    "volume": "61500 ml",
     "weight": "81500 g",
     "hp": 120,
     "speed": 110,
@@ -459,6 +461,7 @@
     "melee_dice": 2,
     "melee_dice_sides": 5,
     "melee_damage": [ { "damage_type": "electric", "amount": 7 } ],
+
     "dodge": 4,
     "vision_day": 30,
     "vision_night": 7,
@@ -505,11 +508,11 @@
       "BASHES",
       "GROUP_BASH",
       "FIREPROOF",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -521,7 +524,7 @@
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
+    "species": [ "ALIEN"],
     "volume": "62500 ml",
     "weight": "81500 g",
     "hp": 90,
@@ -580,11 +583,11 @@
       "BASHES",
       "GROUP_BASH",
       "FIREPROOF",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -596,7 +599,7 @@
     "default_faction": "xenoid",
     "bodytype": "human",
     "categories": [ "ALIEN" ],
-    "species": [ "ALIEN", "HUMAN" ],
+    "species": [ "ALIEN"],
     "volume": "62500 ml",
     "weight": "81500 g",
     "hp": 150,
@@ -609,7 +612,7 @@
     "melee_skill": 9,
     "melee_dice": 4,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "cut", "amount": 9 }, { "damage_type": "electric", "amount": 8 } ],
+    "melee_damage": [ { "damage_type": "electric", "amount": 8 }, { "damage_type": "cut", "amount": 9 } ],
     "dodge": 8,
     "vision_day": 30,
     "vision_night": 7,
@@ -660,11 +663,11 @@
       "BASHES",
       "GROUP_BASH",
       "FIREPROOF",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -677,8 +680,8 @@
     "bodytype": "human",
     "categories": [ "ALIEN" ],
     "species": [ "ALIEN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "volume": "63500 ml",
+    "weight": "83500 g",
     "hp": 180,
     "speed": 90,
     "material": [ "flesh" ],
@@ -734,11 +737,11 @@
       "BASHES",
       "GROUP_BASH",
       "FIREPROOF",
-      "HUMAN",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
       "CLIMBS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -752,8 +755,8 @@
     "categories": [ "ALIEN" ],
     "species": [ "ALIEN" ],
     "diff": 10,
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "volume": "70000 ml",
+    "weight": "95000 g",
     "hp": 180,
     "speed": 80,
     "material": [ "flesh" ],
@@ -798,7 +801,7 @@
     ],
     "death_drops": "dkz_mon_xenoid_pyro",
     "path_settings": { "max_dist": 45, "max_length": 15, "avoid_traps": true, "allow_open_doors": true, "bash_strength": 15 },
-    "death_function": [ "CONFLAGRATION" ],
+    "death_function": [ "NORMAL" ],
     "flags": [
       "SEES",
       "SMELLS",
@@ -814,7 +817,8 @@
       "ACIDPROOF",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -827,8 +831,8 @@
     "bodytype": "human",
     "categories": [ "ALIEN" ],
     "species": [ "ALIEN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "volume": "63000 ml",
+    "weight": "83000 g",
     "hp": 180,
     "speed": 90,
     "material": [ "flesh" ],
@@ -891,7 +895,8 @@
       "ACIDPROOF",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -904,8 +909,8 @@
     "bodytype": "human",
     "categories": [ "ALIEN" ],
     "species": [ "ALIEN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "volume": "64000 ml",
+    "weight": "84000 g",
     "hp": 180,
     "speed": 90,
     "material": [ "flesh" ],
@@ -968,7 +973,8 @@
       "ACIDPROOF",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -981,8 +987,8 @@
     "bodytype": "human",
     "categories": [ "ALIEN" ],
     "species": [ "ALIEN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
+    "volume": "65000 ml",
+    "weight": "85000 g",
     "hp": 250,
     "speed": 95,
     "material": [ "flesh" ],
@@ -1046,7 +1052,8 @@
       "ACIDPROOF",
       "PATH_AVOID_DANGER_1",
       "PRIORITIZE_TARGETS",
-      "CAN_OPEN_DOORS"
+      "CAN_OPEN_DOORS",
+	  "ARTHROPOD_BLOOD"
     ]
   },
   {
@@ -1063,7 +1070,7 @@
     "weight": "200 kg",
     "hp": 250,
     "speed": 75,
-    "material": [ "superalloy" ],
+    "material": [ "dkz_blend_mat" ],
     "symbol": "W",
     "luminance": 60,
     "color": "white",
@@ -1072,7 +1079,7 @@
     "melee_skill": 6,
     "melee_dice": 5,
     "melee_dice_sides": 5,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 20 } ],
     "armor_bash": 90,
     "armor_stab": 90,
     "armor_cut": 90,
@@ -1080,7 +1087,7 @@
     "armor_acid": 15,
     "vision_day": 50,
     "vision_night": 12,
-    "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
+    "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "3 s" } ],
     "path_settings": {
       "max_dist": 45,
       "max_length": 15,
@@ -1089,7 +1096,6 @@
       "allow_open_doors": true,
       "bash_strength": 100
     },
-    "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
     "anger_triggers": [ "HURT", "PLAYER_WEAK", "STALK" ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
@@ -1105,7 +1111,7 @@
         "ranges": [ [ 0, 30, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
-        "laser_lock": false,
+        "laser_lock": true,
         "targeting_cost": 500,
         "targeting_sound": "the sound of pressurized gas hissing loudly.",
         "targeting_volume": 50,
@@ -1147,7 +1153,7 @@
     "weight": "200 kg",
     "hp": 250,
     "speed": 75,
-    "material": [ "superalloy" ],
+    "material": [ "dkz_blend_mat" ],
     "symbol": "W",
     "luminance": 60,
     "color": "green",
@@ -1156,7 +1162,7 @@
     "melee_skill": 6,
     "melee_dice": 5,
     "melee_dice_sides": 5,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 20 } ],
     "armor_bash": 90,
     "armor_stab": 90,
     "armor_cut": 90,
@@ -1172,8 +1178,7 @@
       "allow_open_doors": true,
       "bash_strength": 100
     },
-    "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
-    "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
+    "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "2 s" } ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
       [ "PARROT", 5 ],
@@ -1189,7 +1194,7 @@
         "ranges": [ [ 0, 20, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
-        "laser_lock": false,
+        "laser_lock": true,
         "targeting_cost": 500,
         "targeting_sound": "an ominous rumble and hiss of gas.",
         "targeting_volume": 50,
@@ -1231,7 +1236,7 @@
     "weight": "250 kg",
     "hp": 300,
     "speed": 75,
-    "material": [ "superalloy" ],
+    "material": [ "dkz_blend_mat" ],
     "symbol": "W",
     "luminance": 60,
     "color": "dark_gray",
@@ -1240,7 +1245,7 @@
     "melee_skill": 6,
     "melee_dice": 5,
     "melee_dice_sides": 5,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 20 } ],
     "armor_bash": 95,
     "armor_stab": 95,
     "armor_cut": 95,
@@ -1256,8 +1261,7 @@
       "allow_open_doors": true,
       "bash_strength": 100
     },
-    "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "1 s" } ],
-    "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
+    "emit_fields": [ { "emit_id": "emit_toxic_leak", "delay": "2 s" } ],
     "fear_triggers": [ "HURT" ],
     "special_attacks": [
       [ "PARROT", 5 ],
@@ -1275,7 +1279,7 @@
         "ranges": [ [ 0, 20, "DEFAULT" ] ],
         "require_targeting_npc": true,
         "require_targeting_monster": true,
-        "laser_lock": false,
+        "laser_lock": true,
         "targeting_cost": 50,
         "targeting_sound": "an ominous whine of electrical elements.",
         "targeting_volume": 70,
@@ -1317,7 +1321,7 @@
     "weight": "200 kg",
     "hp": 250,
     "speed": 75,
-    "material": [ "superalloy" ],
+    "material": [ "dkz_blend_mat" ],
     "symbol": "W",
     "luminance": 60,
     "color": "red",
@@ -1326,7 +1330,7 @@
     "melee_skill": 6,
     "melee_dice": 5,
     "melee_dice_sides": 5,
-    "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 20 } ],
     "armor_bash": 90,
     "armor_stab": 90,
     "armor_cut": 90,
@@ -1342,8 +1346,8 @@
       "allow_open_doors": true,
       "bash_strength": 100
     },
-    "death_drops": { "groups": [ [ "robots", 4 ], [ "eyebot", 1 ], [ "turret_searchlight", 1 ] ] },
     "fear_triggers": [ "HURT" ],
+    "death_function": [ "BROKEN" ],
     "special_attacks": [
       [ "PARROT", 5 ],
       [ "IMPALE", 20 ],
@@ -1359,12 +1363,12 @@
         "require_targeting_npc": false,
         "require_targeting_monster": false,
         "require_targeting_player": false,
+        "laser_lock": true,
         "targeting_sound": "the sound of pressurized gas hissing loudly.",
         "targeting_volume": 50,
         "description": "Sound returns as the emissary's cannon roars to life!!"
       }
     ],
-    "death_function": [ "BROKEN" ],
     "flags": [
       "SEES",
       "HEARS",
@@ -1425,7 +1429,7 @@
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS", "AQUATIC", "POISON", "HARDTOSHOOT", "ARTHROPOD_BLOOD" ]
   },
   {
     "id": "dkz_mon_bileworm_rectified",
@@ -1449,6 +1453,7 @@
     "melee_skill": 4,
     "melee_dice": 4,
     "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],	
     "armor_bash": 10,
     "armor_cut": 8,
     "armor_bullet": 8,
@@ -1469,6 +1474,6 @@
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "DESTROYS", "ACIDPROOF", "CAN_DIG" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "BASHES", "DESTROYS", "ACIDPROOF", "CAN_DIG", "ARTHROPOD_BLOOD" ]
   }
 ]
