@@ -1,73 +1,56 @@
- [
- {
-    "id" : "vortex_stone",
-    "type" : "TOOL",
-    "name" : "vortex stone",
-    "description" : "This is a stone with spirals all over it, and holes around its perimeter.  Though it is fairly large, it weighs next to nothing.  Air seems to gather around it.",
-    "weight" : 1,
-    "volume" : 1,
-    "price" : 300000,
-    "bashing" : 6,
-    "material" : "stone",
-    "symbol" : ";",
-    "color" : "light_gray",
-    "initial_charges" : 1,
-    "max_charges" : 1,
-    "charges_per_use" : 1,
-    "use_action" : "VORTEX",
-    "book_data" : {
-      "max_level" : 0,
-      "intelligence" : 0,
-      "time" : 1,
-      "fun" : 0,
-      "skill" : "fabrication",
-      "required_level" : 1
-    }
-  }, {
-    "type" : "GENERIC",
-    "id" : "spiral_stone",
-    "symbol" : "*",
-    "color" : "light_gray",
-    "name" : "spiral stone",
-    "description" : "A rock the size of your fist.  It is covered with intricate spirals; it is impossible to tell whether they are carved, naturally formed, or some kind of fossil.",
-    "price" : 20000,
-    "price_postapoc" : 1000,
-    "material" : "stone",
-    "weight" : 493,
-    "volume" : 1,
-    "bashing" : 6,
-    "to_hit" : -1,
+[
+  {
+    "id": "vortex_stone",
+    "type": "TOOL",
+    "name": "vortex stone",
+    "description": "This is a stone with spirals all over it, and holes around its perimeter.  Though it is fairly large, it weighs next to nothing.  Air seems to gather around it.",
+    "weight": 1,
+    "volume": 1,
+    "price": 300000,
+    "bashing": 6,
+    "material": "stone",
+    "symbol": ";",
+    "color": "light_gray",
+    "initial_charges": 1,
+    "max_charges": 1,
+    "charges_per_use": 1,
+    "use_action": "VORTEX",
+    "book_data": { "max_level": 0, "intelligence": 0, "time": 1, "fun": 0, "skill": "fabrication", "required_level": 1 }
+  },
+  {
+    "type": "GENERIC",
+    "id": "spiral_stone",
+    "symbol": "*",
+    "color": "light_gray",
+    "name": "spiral stone",
+    "description": "A rock the size of your fist.  It is covered with intricate spirals; it is impossible to tell whether they are carved, naturally formed, or some kind of fossil.",
+    "price": 20000,
+    "price_postapoc": 1000,
+    "material": "stone",
+    "weight": 493,
+    "volume": 1,
+    "bashing": 6,
+    "to_hit": -1,
     "qualities": [ [ "HAMMER", 1 ] ],
-    "book_data" : {
-      "max_level" : 0,
-      "intelligence" : 0,
-      "time" : 1,
-      "fun" : 0,
-      "skill" : "fabrication",
-      "required_level" : 1
-    }
-  }, {
-    "type" : "COMESTIBLE",
-    "id" : "slime_scrap",
-    "category" : "other",
-    "name" : "blob glob",
-    "weight" : 238,
-    "color" : "dark_gray",
-    "use_action" : "POISON",
-    "comestible_type" : "FOOD",
-    "symbol" : "%",
-    "calories" : 174,
-    "description" : "A little hunk of glop that fell off a blob monster.  It doesn't seem hostile, but it does wiggle occasionally.",
-    "price" : 0,
-    "volume" : 1,
-    "fun" : -10,
-    "ammo_data" : {
-      "ammo_type" : "slime_scrap"
-    },
-    "fuel": {
-      "energy": 100
-    },
-
-    "energy" : 100
+    "book_data": { "max_level": 0, "intelligence": 0, "time": 1, "fun": 0, "skill": "fabrication", "required_level": 1 }
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "slime_scrap",
+    "category": "other",
+    "name": "blob glob",
+    "weight": 238,
+    "color": "dark_gray",
+    "use_action": "POISON",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "calories": 174,
+    "description": "A little hunk of glop that fell off a blob monster.  It doesn't seem hostile, but it does wiggle occasionally.",
+    "price": 0,
+    "volume": 1,
+    "fun": -10,
+    "ammo_data": { "ammo_type": "slime_scrap" },
+    "fuel": { "energy": 100 },
+    "energy": 100
   }
-  ]
+]
