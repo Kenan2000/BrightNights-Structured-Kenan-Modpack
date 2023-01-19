@@ -31,10 +31,11 @@
         "               r        "
       ],
       "terrain": {
-        "t": [ "t_stump" ],
-        "T": [ "t_trunk" ],
-        "x": "t_dirt_barren",
-        "X": "t_dirt_barren",
+        "t": "t_stump",
+        "T": "t_trunk",
+        "x": "t_pit_shallow",
+        "R": "t_pit",
+        "X": "t_pit",
         "z": "t_dirt_barren",
         "Z": "t_dirt_barren"
       },
@@ -57,7 +58,7 @@
     "type": "mapgen",
     "method": "json",
     "update_mapgen_id": "xenoid_dropsite_forest_five",
-    "object": {
+    "object": {	
       "rows": [
         "                        ",
         "            r        r  ",
@@ -84,7 +85,15 @@
         "                        ",
         "                        "
       ],
-      "terrain": { "t": "t_stump", "T": "t_trunk", "x": "t_dirt", "X": "t_dirt", "z": "t_dirt_barren", "Z": "t_dirt_barren" },
+      "terrain": {
+        "t": "t_stump",
+        "T": "t_trunk",
+        "x": "t_pit_shallow",
+        "R": "t_pit",
+        "X": "t_pit",
+        "z": "t_dirt_barren",
+        "Z": "t_dirt_barren"
+      },
       "items": {
         "x": { "item": "xenoid_dropsite_scrap", "chance": 5 },
         "R": { "item": "xenoid_dropsite_scrap", "chance": 80 },

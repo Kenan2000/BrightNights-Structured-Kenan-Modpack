@@ -1,5 +1,30 @@
 [
   {
+    "id": "bandana_head",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "name": { "str": "head bandana" },
+    "description": "A cotton bandana, worn over the head.",
+    "weight": "42 g",
+    "volume": "250 ml",
+    "price": "6 USD",
+    "price_postapoc": "1 USD",
+    "use_action": {
+      "type": "transform",
+      "msg": "You adjust the %s to cover your mouth.",
+      "target": "bandana",
+      "menu_text": "Cover mouth"
+    },
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "looks_like": "scarf",
+    "color": "blue",
+    "covers": [ "head" ],
+    "coverage": 80,
+    "warmth": 5,
+    "material_thickness": 1
+  },
+  {
     "id": "dkz_helicopter_flying_handbook",
     "type": "BOOK",
     "name": { "str": "Helicopter Flying Handbook", "str_pl": "copies of Helicopter Flying Handbook" },

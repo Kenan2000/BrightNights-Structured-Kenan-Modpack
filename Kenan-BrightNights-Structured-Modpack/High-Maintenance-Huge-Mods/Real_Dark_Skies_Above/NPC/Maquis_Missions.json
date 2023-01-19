@@ -1,5 +1,34 @@
 [
   {
+    "//": "----| STARTING SCENARIO MISSION |--------------------------------------------------------------------------------------",
+    "id": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE",
+    "type": "mission_definition",
+    "name": { "str": "Rendezvous at Headquarters" },
+    "description": "With your knowledge of humans cooperating with Xenoids, you have to get to the local Maquis resistance base and inform the leader of the existance of Quislings.",
+    "goal": "MGOAL_TALK_TO_NPC",
+    "destination": "racing_tower_z7_4_1",
+    "difficulty": 1,
+    "urgent": true,
+    "deadline_low": 2,
+    "deadline_high": 3,
+    "value": 0,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "racing_tower_z7_4_1",
+        "om_special": "arcology_racing",
+        "search_range": 555,
+        "random": true,
+        "min_distance": 88
+      },
+      "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 5, "y": 5, "target": true } ] },
+      "effect": [
+        { "u_add_var": "MrEriksonExists", "type": "knowledge", "context": "flag", "value": "yes" },
+        { "u_add_var": "Rendezvous_to_base", "type": "knowledge", "context": "flag", "value": "yes" }
+      ]
+    },
+    "origins": [ "ORIGIN_GAME_START" ]
+  },
+  {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "DKZ_MAQUIS_KILL_12_XENOIDS",
     "type": "mission_definition",
@@ -8,6 +37,9 @@
     "monster_species": "ALIEN",
     "monster_kill_goal": 12,
     "difficulty": 3,
+    "urgent": true,
+    "deadline_low": 3,
+    "deadline_high": 4,
     "value": 125000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
@@ -43,7 +75,10 @@
     "goal": "MGOAL_KILL_MONSTER_SPEC",
     "monster_species": "BIOCRYSTAL",
     "monster_kill_goal": 25,
-    "difficulty": 3,
+    "difficulty": 2,
+    "urgent": true,
+    "deadline_low": 2,
+    "deadline_high": 3,	
     "value": 25000,
     "origins": [ "ORIGIN_SECONDARY" ],
     "start": {
@@ -80,7 +115,10 @@
     "description": "Return to Maquis HQ.",
     "goal": "MGOAL_GO_TO_TYPE",
     "destination": "racing_tower_z0_2_2",
-    "difficulty": 0,
+    "difficulty": 1,
+    "urgent": true,
+    "deadline_low": 2,
+    "deadline_high": 3,	
     "value": 0,
     "start": {
       "assign_mission_target": {
@@ -120,7 +158,10 @@
     "description": "Return to Maquis HQ.",
     "goal": "MGOAL_GO_TO_TYPE",
     "destination": "racing_tower_z0_2_2",
-    "difficulty": 0,
+    "difficulty": 1,
+    "urgent": true,
+    "deadline_low": 2,
+    "deadline_high": 3,	
     "value": 0,
     "start": {
       "assign_mission_target": {
@@ -150,6 +191,62 @@
       "success": "Thanks for having my back.  As I said, I owe you one.",
       "success_lie": "Are you lost or something?",
       "failure": "Can't believe we got lost…"
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "DKZ_MAQUIS_CLEAN_UP_SEWER",
+    "type": "mission_definition",
+    "name": { "str": "Clean up a sewer" },
+    "description": "Go to a sewer treatment plant and kill some strange creatures.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 2,
+    "value": 500,
+    "start": {
+      "assign_mission_target": { "om_terrain": "sewage_treatment_0_0_-1", "reveal_radius": 2, "random": true, "search_range": 500, "min_distance": 50 },
+      "update_mapgen": { "place_monster": [ { "monster": "dkz_mon_lurker_sewer", "pack_size": [ 2, 3 ], "x": 0, "y": 12, "target": true } ] }
+    },
+    "end": { "effect": [ { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 2 } ] },
+    "followup": "DKZ_MAQUIS_QUARTERMASTER_CHECK_FUSE_BOX",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need you to find and kill some monsters.",
+      "offer": "There were reports of some kind of alien critters a sewers treatment plant.  Go eliminate them out.",
+      "accepted": "Thank you.",
+      "rejected": "Oh well.  I'm sure it wasn't anything.",
+      "advice": "You might get lucky and maybe a seweranha will kill them.",
+      "inquire": "How is the search going?",
+      "success": "Thanks.",
+      "success_lie": "I'm sure you did…",
+      "failure": "I wonder where it all went…"
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "DKZ_MAQUIS_CHECK_FUSE_BOX",
+    "type": "mission_definition",
+    "name": { "str": "Clean up a sewer" },
+    "description": "Go to a power substation and kill some strange creatures.",
+    "goal": "MGOAL_KILL_MONSTER",
+    "difficulty": 2,
+    "value": 500,
+    "start": {
+      "assign_mission_target": { "om_terrain": "pwr_sub_s", "reveal_radius": 2, "random": true, "search_range": 500, "min_distance": 50 },
+      "update_mapgen": { "place_monster": [ { "monster": "dkz_mon_crystal_zap", "pack_size": [ 5, 6 ], "x": 10, "y": 10, "target": true } ] }
+    },
+    "end": { "effect": [ { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 3 } ] },
+    "followup": "DKZ_MAQUIS_QUARTERMASTER_CLEAN_UP_SEWER",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need you to find and kill some monsters.",
+      "offer": "There were reports of some kind of alien crystal monsters.  Go eliminate them out.",
+      "accepted": "Thank you.",
+      "rejected": "Oh well.  I'm sure it wasn't anything.",
+      "advice": "If you're going to fight monsters that use electricity against you, don't be a good conductor.",
+      "inquire": "How is the search going?",
+      "success": "Thanks.",
+      "success_lie": "I'm sure you did…",
+      "failure": "I wonder where it all went…"
     }
   }
 ]
