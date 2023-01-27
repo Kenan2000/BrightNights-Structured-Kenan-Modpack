@@ -13,7 +13,7 @@
     "price": "60 USD",
     "price_postapoc": 100,
     "material": [ "plastic_trans" ],
-	"use_action": [
+    "use_action": [
       {
         "target": "wrist_comp_bad_flashlight",
         "msg": "You activate the flashlight.",
@@ -22,28 +22,50 @@
         "need_charges_msg": "The wrist computer's charge is too low.",
         "type": "transform"
       },
-	  "PORTABLE_GAME"
+      "PORTABLE_GAME"
     ],
     "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE" ],
     "coverage": 15,
     "symbol": "[",
     "ammo": [ "battery" ],
-    "magazines": [ [ "battery", [ "light_minus_battery_cell", "light_minus_atomic_battery_cell", "light_minus_disposable_cell", "light_battery_cell","light_atomic_battery_cell", "light_disposable_cell" ] ] ]
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_minus_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_battery_cell",
+          "light_atomic_battery_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ]
   },
-  
-    {
+  {
     "id": "wrist_comp_bad_flashlight",
     "copy-from": "wrist_comp_bad",
     "type": "TOOL",
     "name": { "str": "Liger Wristboy - Flashlight", "str_pl": "Liger Wristboys - Flashlight" },
     "power_draw": 500,
     "revert_to": "wrist_comp_bad",
-    "use_action": [ { "target": "wrist_comp_bad", "msg": "You stop lighting up the screen.", "menu_text": "Turn off", "type": "transform" } ],
-    "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "FRAGILE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "LIGHT_8", "CHARGEDIM", "TRADER_AVOID" ]
+    "use_action": [
+      { "target": "wrist_comp_bad", "msg": "You stop lighting up the screen.", "menu_text": "Turn off", "type": "transform" }
+    ],
+    "flags": [
+      "WATCH",
+      "ALARMCLOCK",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "FRAGILE",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE",
+      "LIGHT_8",
+      "CHARGEDIM",
+      "TRADER_AVOID"
+    ]
   },
-  
-  
-    {
+  {
     "type": "TOOL_ARMOR",
     "id": "wrist_comp_budget",
     "name": { "str": "wrist computer", "str_pl": "wrist computers" },
@@ -54,13 +76,13 @@
     "to_hit": -1,
     "color": "light_gray",
     "covers": [ "hand_either" ],
-	    "initial_charges": 500,
+    "initial_charges": 500,
     "max_charges": 600,
     "charges_per_use": 1,
     "price": "60 USD",
     "price_postapoc": 100,
     "material": [ "plastic_trans" ],
-	    "use_action": [
+    "use_action": [
       {
         "target": "wrist_comp_budget_flashlight",
         "msg": "You activate the flashlight.",
@@ -69,20 +91,39 @@
         "need_charges_msg": "The wrist computer's charge is too low.",
         "type": "transform"
       },
+      {
+        "target": "wrist_comp_budget_music",
+        "msg": "You activate the mp3 player.",
+        "active": true,
+        "need_charges": 1,
+        "need_charges_msg": "The wrist computer's charge is too low.",
+        "type": "transform"
+      },
       "CAMERA",
       "MP3",
-	  "PORTABLE_GAME",
-	  "EINKTABLETPC",
-	  "RADGLOVE"
+      "PORTABLE_GAME",
+      "EINKTABLETPC",
+      "RADGLOVE"
     ],
-    "flags": [ "WATCH", "ALARMCLOCK", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ],
+    "flags": [
+      "WATCH",
+      "ALARMCLOCK",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "STURDY",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE",
+      "USE_UPS",
+      "NO_UNLOAD",
+      "NO_RELOAD",
+      "THERMOMETER",
+      "FANCY"
+    ],
     "coverage": 15,
     "symbol": "[",
     "ammo": [ "battery" ]
-
   },
-  
-    {
+  {
     "id": "wrist_comp_budget_music",
     "copy-from": "wrist_comp_budget",
     "type": "TOOL",
@@ -90,8 +131,30 @@
     "description": "This wrist computer is playing music, steadily raising your morale.  You can't hear anything else while you're listening.",
     "power_draw": 300,
     "revert_to": "wrist_comp_budget",
-    "use_action": ["MP3_ON" ],
-    "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ],
+    "use_action": [
+      {
+        "target": "wrist_comp_budget",
+        "msg": "You deactivate the mp3 player app.",
+        "menu_text": "Turn off mp3 player",
+        "type": "transform"
+      },
+      "MP3_ON"
+    ],
+    "flags": [
+      "WATCH",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "STURDY",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE",
+      "TRADER_AVOID",
+      "ALARMCLOCK",
+      "USE_UPS",
+      "NO_UNLOAD",
+      "NO_RELOAD",
+      "THERMOMETER",
+      "FANCY"
+    ],
     "magazine_well": "250 ml"
   },
   {
@@ -102,15 +165,29 @@
     "power_draw": 1500,
     "revert_to": "wrist_comp_budget",
     "use_action": [
-	{
-      "target": "wrist_comp_budget",
-      "msg": "You deactivate the flashlight app.",
-      "menu_text": "Turn off flashlight",
-      "type": "transform"
-    }
-	],
-    "flags": [ "WATCH", "WATER_FRIENDLY", "BELTED", "STURDY", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "LIGHT_20", "CHARGEDIM", "TRADER_AVOID", "ALARMCLOCK", "USE_UPS", "NO_UNLOAD", "NO_RELOAD", "THERMOMETER", "FANCY" ]
+      {
+        "target": "wrist_comp_budget",
+        "msg": "You deactivate the flashlight app.",
+        "menu_text": "Turn off flashlight",
+        "type": "transform"
+      }
+    ],
+    "flags": [
+      "WATCH",
+      "WATER_FRIENDLY",
+      "BELTED",
+      "STURDY",
+      "ALLOWS_NATURAL_ATTACKS",
+      "OVERSIZE",
+      "LIGHT_20",
+      "CHARGEDIM",
+      "TRADER_AVOID",
+      "ALARMCLOCK",
+      "USE_UPS",
+      "NO_UNLOAD",
+      "NO_RELOAD",
+      "THERMOMETER",
+      "FANCY"
+    ]
   }
-  
-  
 ]
