@@ -91,14 +91,6 @@
         "need_charges_msg": "The wrist computer's charge is too low.",
         "type": "transform"
       },
-      {
-        "target": "wrist_comp_budget_music",
-        "msg": "You activate the mp3 player.",
-        "active": true,
-        "need_charges": 1,
-        "need_charges_msg": "The wrist computer's charge is too low.",
-        "type": "transform"
-      },
       "CAMERA",
       "MP3",
       "PORTABLE_GAME",
@@ -131,15 +123,7 @@
     "description": "This wrist computer is playing music, steadily raising your morale.  You can't hear anything else while you're listening.",
     "power_draw": 300,
     "revert_to": "wrist_comp_budget",
-    "use_action": [
-      {
-        "target": "wrist_comp_budget",
-        "msg": "You deactivate the mp3 player app.",
-        "menu_text": "Turn off mp3 player",
-        "type": "transform"
-      },
-      "MP3_ON"
-    ],
+    "use_action": [ "MP3_ON" ],
     "flags": [
       "WATCH",
       "WATER_FRIENDLY",
