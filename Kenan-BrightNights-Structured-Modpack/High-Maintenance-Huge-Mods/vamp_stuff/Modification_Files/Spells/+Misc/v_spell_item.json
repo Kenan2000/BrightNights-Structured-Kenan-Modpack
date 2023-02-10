@@ -18,7 +18,17 @@
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "v_hemo_whip_spell_ss_maybe" } ],
           "hit_me_effect": [ { "id": "v_hemo_whip_spell_d_maybe" } ],
-          "values": [ { "value": "STRENGTH", "add": 1 }, { "value": "SPEED", "add": 5 }, { "value": "MAX_HP", "add": 10 } ]
+          "values": [
+            { "value": "STRENGTH", "add": 1 },
+            { "value": "SPEED", "add": 5 },
+            { "value": "ARMOR_BASH", "add": -10 },
+            { "value": "ARMOR_CUT", "add": -10 },
+            { "value": "ARMOR_STAB", "add": -10 },
+            { "value": "ARMOR_BULLET", "add": -10 },
+            { "value": "ARMOR_HEAT", "add": -10 },
+            { "value": "ARMOR_COLD", "add": -10 },
+            { "value": "ARMOR_ACID", "add": -10 }
+          ]
         }
       ]
     },
@@ -72,7 +82,16 @@
           "has": "HELD",
           "condition": "ALWAYS",
           "hit_me_effect": [ { "id": "v_hemo_crimsoncoat_coat_pr_maybe" } ],
-          "values": [ { "value": "MAX_HP", "add": 50 }, { "value": "SPEED", "add": -15 } ],
+          "values": [
+            { "value": "ARMOR_BASH", "multiply": -0.5 },
+            { "value": "ARMOR_CUT", "multiply": -0.5 },
+            { "value": "ARMOR_STAB", "multiply": -0.5 },
+            { "value": "ARMOR_BULLET", "multiply": -0.5 },
+            { "value": "ARMOR_HEAT", "multiply": -0.5 },
+            { "value": "ARMOR_COLD", "multiply": -0.5 },
+            { "value": "ARMOR_ACID", "multiply": -0.5 },
+            { "value": "SPEED", "add": -15 }
+          ],
           "intermittent_activation": { "effects": [ { "frequency": "30 seconds", "spell_effects": [ { "id": "v_hemo_orusform_bloodling" } ] } ] }
         }
       ]
@@ -98,7 +117,12 @@
           "has": "WORN",
           "condition": "ALWAYS",
           "hit_you_effect": [ { "id": "v_war_etherealenchant_ss_maybe" } ],
-          "values": [ { "value": "ITEM_DAMAGE_AP", "add": 20 }, { "value": "ATTACK_COST", "add": -15 } ]
+          "values": [
+            { "value": "ITEM_DAMAGE_CUT", "add": 6 },
+            { "value": "ITEM_DAMAGE_STAB", "add": 7 },
+            { "value": "ITEM_DAMAGE_BASH", "add": 8 },
+            { "value": "ATTACK_COST", "add": -15 }
+          ]
         }
       ]
     },
