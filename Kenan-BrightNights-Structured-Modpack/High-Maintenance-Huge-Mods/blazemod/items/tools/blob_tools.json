@@ -154,7 +154,8 @@
     "symbol": ";",
     "color": "light_green",
     "ammo": [ "bfeed" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "bfeed": 250 } } ],
+    "initial_charges": 250,
+    "max_charges": 250,
     "charges_per_use": 250,
     "qualities": [ [ "JACK", 2 ] ],
     "use_action": {
@@ -180,7 +181,8 @@
     "symbol": ";",
     "color": "light_green",
     "ammo": [ "bfeed" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "bfeed": 40 } } ],
+    "initial_charges": 40,
+    "max_charges": 40,
     "charges_per_use": 20,
     "turns_per_charge": 1,
     "revert_to": "gloople",
@@ -192,7 +194,7 @@
       "difficulty": 1,
       "moves": 250,
       "place_randomly": true,
-      "skills": [ "chemistry", "cooking" ]
+      "skills": [ "cooking" ]
     },
     "flags": [ "NO_UNWIELD", "UNBREAKABLE_MELEE" ]
   },
@@ -252,7 +254,8 @@
     "symbol": ";",
     "color": "light_gray",
     "ammo": [ "bfeed" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "bfeed": 250 } } ],
+    "initial_charges": 250,
+    "max_charges": 250,
     "charges_per_use": 250,
     "qualities": [ [ "JACK", 8 ] ],
     "use_action": {
@@ -278,8 +281,9 @@
     "symbol": ";",
     "color": "light_green",
     "ammo": [ "bfeed" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "bfeed": 10 } } ],
-    "charges_per_use": 20,
+    "initial_charges": 10,
+    "max_charges": 10,
+    "charges_per_use": 10,
     "turns_per_charge": 1,
     "revert_to": "gray",
     "use_action": {
@@ -290,7 +294,7 @@
       "difficulty": 1,
       "moves": 100,
       "place_randomly": true,
-      "skills": [ "chemistry", "cooking" ]
+      "skills": [ "cooking" ]
     },
     "flags": [ "NO_UNWIELD", "UNBREAKABLE_MELEE" ]
   },
@@ -392,7 +396,8 @@
     "symbol": ";",
     "color": "green",
     "ammo": [ "bfeed" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "bfeed": 250 } } ],
+    "initial_charges": 250,
+    "max_charges": 250,
     "charges_per_use": 250,
     "qualities": [ [ "JACK", 4 ] ],
     "use_action": {
@@ -418,7 +423,8 @@
     "symbol": ";",
     "color": "light_green",
     "ammo": [ "bfeed" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "bfeed": 10 } } ],
+    "initial_charges": 10,
+    "max_charges": 10,
     "turns_per_charge": 1,
     "revert_to": "oozle",
     "use_action": {

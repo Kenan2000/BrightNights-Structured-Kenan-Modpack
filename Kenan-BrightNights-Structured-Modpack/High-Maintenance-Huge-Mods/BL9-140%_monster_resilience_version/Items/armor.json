@@ -278,7 +278,7 @@
     "repairs_like": "survivor_suit",
     "type": "ARMOR",
     "name": { "str": "BL9 experimental survivor suit" },
-    "description": "A highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 str, +1 dex, +1 int, +1 per, +10% to attack speed, +10% to action points</color>) and offer better environmental protection",
+    "description": "A highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 str, +1 dex, +1 int, +1 per, -10% to attack cost, +10% to action points</color>) and offer better environmental protection",
     "weight": "1400 g",
     "volume": "5500 ml",
     "price": "0 cent",
@@ -302,7 +302,7 @@
             { "value": "DEXTERITY", "add": 1 },
             { "value": "INTELLIGENCE", "add": 1 },
             { "value": "PERCEPTION", "add": 1 },
-            { "value": "ATTACK_SPEED", "multiply": 0.1 },
+            { "value": "ATTACK_COST", "multiply": -0.1 },
             { "value": "SPEED", "multiply": 0.1 }
           ]
         }
@@ -318,7 +318,7 @@
     "repairs_like": "gloves_survivor",
     "type": "ARMOR",
     "name": { "str": "pair of experimental BL9 survivor gloves" },
-    "description": "A highly experimental sleek and futuristic pair of survivor gloves with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 dex, +25% to attack speed</color>) and offer better environmental protection",
+    "description": "A highly experimental sleek and futuristic pair of survivor gloves with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+1 dex, -25% to attack cost</color>) and offer better environmental protection",
     "weight": "185 g",
     "volume": "400 ml",
     "price": "0 cent",
@@ -335,7 +335,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "DEXTERITY", "add": 1 }, { "value": "ATTACK_SPEED", "multiply": 0.25 } ]
+          "values": [ { "value": "DEXTERITY", "add": 1 }, { "value": "ATTACK_COST", "multiply": -0.25 } ]
         }
       ]
     },
@@ -349,7 +349,7 @@
     "repairs_like": "boots_survivor",
     "type": "ARMOR",
     "name": { "str": "pair of BL9 experimental survivor boots" },
-    "description": "A highly experimental sleek and futuristic pair of survivor boots with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+25% to attack speed, +25% to action points</color>) and offer better environmental protection",
+    "description": "A highly experimental sleek and futuristic pair of survivor boots with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>-25% to attack cost, +25% to action points</color>) and offer better environmental protection",
     "weight": "900 g",
     "volume": "1800 ml",
     "price": "0 cent",
@@ -606,7 +606,7 @@
     "repairs_like": "hsurvivor_suit",
     "type": "ARMOR",
     "name": { "str": "BL9 experimental survivor suit MK ii" },
-    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 str, +3 dex, +3 int, +3 per, +25% to attack speed, +25% to action points</color>) and offer better environmental protection",
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic survivor suit with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 str, +3 dex, +3 int, +3 per, -25% to attack cost, +25% to action points</color>) and offer better environmental protection",
     "weight": "1500 g",
     "volume": "4 L",
     "price": "0 cent",
@@ -630,7 +630,7 @@
             { "value": "DEXTERITY", "add": 3 },
             { "value": "INTELLIGENCE", "add": 3 },
             { "value": "PERCEPTION", "add": 3 },
-            { "value": "ATTACK_SPEED", "multiply": 0.25 },
+            { "value": "ATTACK_COST", "multiply": -0.25 },
             { "value": "SPEED", "multiply": 0.25 }
           ]
         }
@@ -646,7 +646,7 @@
     "repairs_like": "gloves_hsurvivor",
     "type": "ARMOR",
     "name": { "str": "Pair of BL9 experimental survivor gloves MK ii" },
-    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor gloves with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 dex, +60% to attack speed</color>) and offer better environmental protection",
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor gloves with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+3 dex, -60% to attack cost</color>) and offer better environmental protection",
     "weight": "425 g",
     "volume": "600 ml",
     "price": "0 cent",
@@ -663,7 +663,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "DEXTERITY", "add": 3 }, { "value": "ATTACK_SPEED", "multiply": 0.6 } ]
+          "values": [ { "value": "DEXTERITY", "add": 3 }, { "value": "ATTACK_COST", "multiply": -0.6 } ]
         }
       ]
     },
@@ -677,7 +677,7 @@
     "repairs_like": "boots_combat",
     "type": "ARMOR",
     "name": { "str": "Pair of BL9 experimental survivor boots MK ii" },
-    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor boots with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>+60% to attack speed, +60% to action points</color>) and offer better environmental protection",
+    "description": "A strengthened and augmented with technologies beyond human possibilities highly experimental sleek and futuristic pair of survivor boots with a unique design that is infused with physically and chemically structure-wise modified BL9 to be versatile, enhance the user's capabilities (<color_light_blue>-60% to attack cost, +60% to action points</color>) and offer better environmental protection",
     "weight": "1415 g",
     "volume": "1680 ml",
     "price": "0 cent",
@@ -695,7 +695,7 @@
         {
           "has": "WORN",
           "condition": "ALWAYS",
-          "values": [ { "value": "ATTACK_SPEED", "multiply": 0.6 }, { "value": "SPEED", "multiply": 0.6 } ]
+          "values": [ { "value": "ATTACK_COST", "multiply": -0.6 }, { "value": "SPEED", "multiply": 0.6 } ]
         }
       ]
     },

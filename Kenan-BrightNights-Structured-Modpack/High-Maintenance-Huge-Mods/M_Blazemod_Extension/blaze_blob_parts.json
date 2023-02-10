@@ -1,7 +1,7 @@
 [{
     "abstract" : "blob_tool",
     "type" : "vehicle_part",
-    "override": true,
+    "copy-from" : "blob_tool",
     "name" : "blob part",
     "folded_volume": 1,
     "requirements": { "repair": { "time": "5 m", "using": [ [ "blobrep", 1 ] ] } }
@@ -9,7 +9,6 @@
   {
     "abstract" : "gray_part",
     "type" : "vehicle_part",
-    "override": true,
     "copy-from" : "blob_tool",
     "name" : "metalloid part",
     "item" : "gray",

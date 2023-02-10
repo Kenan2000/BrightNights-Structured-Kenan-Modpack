@@ -128,7 +128,7 @@
       "l": { "item": "coffee_display", "chance": 30 },
       "L": { "item": "coffee_display", "chance": 30 },
       "R": { "item": "coffee_fridge", "chance": 30 },
-      "U": { "item": "coffee_display", "chance": 80, "amount": 3 }
+      "U": { "item": "coffee_display", "chance": 80, "repeat": [ 3, 4 ] }
     }
   },
   {
@@ -293,8 +293,8 @@
       ],
       "C": { "item": "wines_worthy", "chance": 50 },
       "T": { "item": "wines_worthy", "chance": 30 },
-      "L": { "item": "wines_worthy", "chance": 50, "amount": [2,8] },
-      "d": { "item": "wines_worthy", "chance": 50, "amount": 3 },
+      "L": { "item": "wines_worthy", "chance": 50, "repeat": [ 2, 8 ] },
+      "d": { "item": "wines_worthy", "chance": 50, "repeat": [ 3, 4 ] },
       "b": { "item": "wines_worthy", "chance": 30 }
     }
   },
@@ -429,7 +429,7 @@
       "C": { "item": "dining_ware", "chance": 30 },
       "T": { "item": "dining_ware", "chance": 50 },
       "L": { "item": "dining_ware", "chance": 50 },
-      "d": { "item": "flatware", "chance": 50, "amount": 10 },
+      "d": { "item": "flatware", "chance": 50, "repeat": [ 10, 11 ] },
       "b": { "item": "magazines", "chance": 30 }
     }
   },
@@ -444,7 +444,7 @@
       "C": { "item": "bookstore_misc", "chance": 30 },
       "T": { "item": "bookstore_misc", "chance": 50 },
       "L": { "item": "homebooks", "chance": 50 },
-      "d": { "item": "textbooks", "chance": 50, "amount": 3 },
+      "d": { "item": "textbooks", "chance": 50, "repeat": [ 3, 4 ] },
       "b": { "item": "homebooks", "chance": 30 }
     }
   },
@@ -459,7 +459,7 @@
       "C": { "item": "elecsto_diy", "chance": 50 },
       "T": { "item": "elecsto_stor", "chance": 30 },
       "L": { "item": "elecsto_persele", "chance": 80 },
-      "d": { "item": "elecsto_pcs", "chance": 50, "amount": 3 },
+      "d": { "item": "elecsto_pcs", "chance": 50, "repeat": [ 3, 4 ] },
       "b": { "item": "elecsto_books", "chance": 30 }
     }
   },
@@ -488,8 +488,8 @@
       ],
       "C": { "item": "shoestore_shoes", "chance": 50 },
       "T": { "item": "shoestore_shoes", "chance": 30 },
-      "L": { "item": "shoestore_shoes", "chance": 50, "amount": [ 1,3 ] },
-      "d": { "item": "shoestore_accessories", "chance": 50, "amount": 3 },
+      "L": { "item": "shoestore_shoes", "chance": 50, "repeat": [ 1, 3 ] },
+      "d": { "item": "shoestore_accessories", "chance": 50, "repeat": [ 3, 4 ] },
       "b": { "item": "shoestore_shoes", "chance": 30 }
     }
   },
@@ -510,7 +510,7 @@
         { "item": "dress_shop", "chance": 25 },
         { "item": "shoestore_shoes", "chance": 20 }
       ],
-      "d": { "item": "dress_shop", "chance": 30, "amount": 3 },
+      "d": { "item": "dress_shop", "chance": 30, "repeat": [ 3, 4 ] },
       "b": { "item": "tailorbooks", "chance": 20 }
     }
   },
@@ -539,8 +539,8 @@
       ],
       "C": { "item": "wedding_dresses", "chance": 50 },
       "T": { "item": "wedding_dresses", "chance": 30 },
-      "L": { "item": "wedding_dresses", "chance": 50, "amount": [ 1, 2 ] },
-      "d": { "item": "jewelry_front", "chance": 30, "amount": 2 },
+      "L": { "item": "wedding_dresses", "chance": 50, "repeat": [ 1, 2 ] },
+      "d": { "item": "jewelry_front", "chance": 30, "repeat": [ 3, 4 ] },
       "b": { "item": "dress_shoes", "chance": 30 }
     }
   },

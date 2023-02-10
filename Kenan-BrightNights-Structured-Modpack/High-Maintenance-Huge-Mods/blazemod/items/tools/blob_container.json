@@ -12,7 +12,7 @@
     "material": [ "flesh" ],
     "symbol": ";",
     "color": "light_green",
-    "storage": "10 L"
+    "contains": "10 L"
   },
   {
     "id": "gloople_tank_large",
@@ -20,7 +20,7 @@
     "category": "container",
     "name": { "str": "gelatinous tank" },
     "copy-from": "gloople_tank",
-    "storage": "60 L",
+    "contains": "60 L",
     "volume": "60 L"
   },
   {
@@ -36,7 +36,7 @@
     "material": [ "flesh" ],
     "symbol": ";",
     "color": "light_gray",
-    "storage": "30 L"
+    "contains": "30 L"
   },
   {
     "id": "gray_tank_large",
@@ -45,7 +45,7 @@
     "name": { "str": "gray tank" },
     "copy-from": "gray_tank",
     "volume": "100 L",
-    "storage": "100 L"
+    "contains": "100 L"
   },
   {
     "id": "oozle_tank",
@@ -60,7 +60,7 @@
     "material": [ "flesh" ],
     "symbol": ";",
     "color": "green",
-    "storage": "20 L"
+    "contains": "20 L"
   },
   {
     "id": "oozle_tank_large",
@@ -69,6 +69,6 @@
     "name": { "str": "oozing tank" },
     "copy-from": "oozle_tank",
     "volume": "80 L",
-    "storage": "80 L"
+    "contains": "80 L"
   }
 ]
