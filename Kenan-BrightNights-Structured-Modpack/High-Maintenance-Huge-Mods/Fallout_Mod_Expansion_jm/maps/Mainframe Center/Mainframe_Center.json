@@ -1,0 +1,300 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_MAINFRAME_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,V,,,,,,,,,,,,,",
+                ",,wCCCCCCCw::wCCCCCCCw,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,FFFF,C,,",
+                ",,C,,,,,,,,,,,,,FpbF,C,,",
+                ",,C,,,,,,,,,,,,,FFFF,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,FWDWDWF,,,,,,C,,",
+                ",,C,,,,,WWFFFWW,,,,,,C,,",
+                ",,C,,,,,WPF*FPW,,,,,,C,,",
+                ",,C,,,,,WPFFFPW,,,,,,C,,",
+                ",,C,,,,,WW>F>WW,,,,,,C,,",
+                ",,C,,,,,FWWWWWF,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,C,,,,,,,,,,,,,,,,,,C,,",
+                ",,wCCCCCCCCCCCCCCCCCCw,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_QST_MAINFRAME_PAL" ],
+        "computers": {
+        "V": {
+          "name": "NATIONAL GUARD NEW ENGLAND COMMONWEALTH ZAX MAINFRAME #13-B7",
+          "options": [ { "name": "Unlock Door", "action": "unlock" }, { "name": "Disarm Turrets", "action": "unlock_disarm", "security": 3 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" }, { "action": "secubots" }, { "action": "manhacks" } ]
+        }
+          },
+        "place_monster": [ { "monster": "mon_turret_light", "x": 8, "y": 9, "chance": 100 },
+        { "monster": "mon_turret_light", "x": 14, "y": 9, "chance": 100 },
+        { "monster": "mon_turret_light", "x": 8, "y": 14, "chance": 100 },
+        { "monster": "mon_turret_light", "x": 14, "y": 14, "chance": 100 } ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_QST_MAINFRAME_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "  M       MMMM       M  ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "         aaaaa          ",
+                "        aaaaaaa         ",
+                "        aaaaaaa         ",
+                "        aaaaaaa         ",
+                "        aaaaaaa         ",
+                "         aaaaa          ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "  M                  M  ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "M": "t_metal_floor",
+                "a": "t_strconc_floor"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_MAINFRAME_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",Wfff666w+:?Ffw444FfffW,",
+                ",WFFFF66w::FFFw444FFFFW,",
+                ",WzzF*FFwwwwdwwFF*FFzzW,",
+                ",WzzFFFFdFFFFFdFFFFFzzW,",
+                ",WWWWdWWWWWWWWWWWdWWWWW,",
+                ",WRFFAFFWFF*FFWFFAFFFRW,",
+                ",WrFFAFFdFFFFFdFFAFFFrW,",
+                ",WWWWdWWWWdWdWWWWdWWWWW,",
+                ",WHFFFF5WFAAAFWFFFFF88W,",
+                ",WhFF*F5WFAAAFW777*777W,",
+                ",WcFFFuUWFF*FFWFsFFFsFW,",
+                ",W3FFFFFWF<F<FWFFFFFFFW,",
+                ",W3LFFuUWWWWWWW777F777W,",
+                ",W33FFFFW>FFF>WFsFFFsFW,",
+                ",WWWWdWWWFFFFFWWWWdWWWW,",
+                ",WFFFFFeFFAAAFFFeFFF*IW,",
+                ",WLllLFeFFAFAFFFeVAAFIW,",
+                ",WFll*FeFFAFAFFFeFAAFGW,",
+                ",WLllLFdFFAAAFFFdFFFFZW,",
+                ",WigZZZWFFF*FFFFWllllZW,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_QST_MAINFRAME_PAL" ],
+        "place_monsters": [ { "monster": "GROUP_ROBREPAIR_BOTS", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 2.3 } ],
+        "computers": {
+        "V": {
+          "name": "NATIONAL GUARD NEW ENGLAND COMMONWEALTH ZAX MAINFRAME CENTER #13-B7",
+          "options": [ { "name": "Disarm Turrets", "action": "unlock_disarm", "security": 3 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" }, { "action": "secubots" }, { "action": "manhacks" } ]
+        },
+        "?": {
+          "name": "ZAX MAINFRAME CENTER #13-B7 ACCESS EMERGENCY SHAFT",
+          "security": 6,
+          "options": [ { "name": "Unlock Emergency Shaft Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "place_monster": [ { "monster": "mon_turret_light", "x": 11, "y": 19, "chance": 100 } ],
+        "terrain": { ",": "t_rock" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_MAINFRAME_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",WRFRWwww=+wFfkkFFWRFRW,",
+                ",WFFFWFwwwwwFFFOFFWFFFW,",
+                ",WAAAWFFFFAAAFFFFFWAAAW,",
+                ",WFFFdFFUuAAAFFiFFdFFFW,",
+                ",WFFFWFlWWdWdWWlFFWFFFW,",
+                ",WFFFWFlWWFFFWWlFFWFFFW,",
+                ",WFFFWFlW>FFF>WlFFWFFFW,",
+                ",WF*FWdWWWWWWWWWWdWF*FW,",
+                ",WFFFWFF7F1whFhFhFWFFFW,",
+                ",WFFFW9F7s1wFFFFF1WFFFW,",
+                ",WFFFW8F77FwHFHFH1WFFFW,",
+                ",WAAAW8FFFFwzczcF1WAAAW,",
+                ",WWdWWWWWWWWWWWWWWWWdWW,",
+                ",WFFFFFF?<FWF<?F55FFFzW,",
+                ",WFFOfFfOF3WFFOFFFFOFFW,",
+                ",WgFffFffF3W5FFFF*FFFFW,",
+                ",WgFFF*FFF3W5FooFFoocFW,",
+                ",WFFffFffF3W5FooFFoocFW,",
+                ",WFFOfFfOFFdFFOFFFFOFFW,",
+                ",WRFFFFFFFFWFFFFFFFFFRW,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_QST_MAINFRAME_PAL" ],
+        "place_monsters": [ { "monster": "GROUP_ROBREPAIR_BOTS", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 2.3 } ],
+        "computers": {
+        "V": {
+          "name": "NATIONAL GUARD NEW ENGLAND COMMONWEALTH ZAX MAINFRAME CENTER #13-B7",
+          "options": [ { "name": "Disarm Turrets", "action": "unlock_disarm", "security": 3 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" }, { "action": "secubots" }, { "action": "manhacks" } ]
+        },
+        "?": {
+          "name": "ZAX MAINFRAME CENTER #13-B7 ACCESS SHAFT ELEVATOR",
+          "security": 6,
+          "options": [ { "name": "Activate Elevator Door", "action": "elevator_on" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "place_monster": [ { "monster": "mon_turret_light", "x": 3, "y": 3, "chance": 100 }, { "monster": "mon_turret_light", "x": 20, "y": 3, "chance": 100 } ],
+        "terrain": { ",": "t_rock" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_MAINFRAME_4" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",WFJjW3FFF=fFFFWWWWWWWW,",
+                ",WhFFW3FFFFFFAAwwWwwwWW,",
+                ",WgFFW3FFF*FFAA`wWwFwWW,",
+                ",WFFFdFFFFFFFAAwwWwwwWW,",
+                ",WhFFWooFFooFFFWWWWWWWW,",
+                ",WgFFWWWWWWWWWWWFHFFHFW,",
+                ",WFFFUuWW<FFF<WWFhFFhFW,",
+                ",WhFFFFWFFAAAFFWFhFFhFW,",
+                ",WgF*UuWFFAOAFhWFhFFhFW,",
+                ",WFFFFFWF*AAA*FWFcFFcFW,",
+                ",WhFFUuWFFFFFFFW*FFFF*W,",
+                ",WgFFFFWWdWWWdWWWWdWWWW,",
+                ",WWWdWWWwFFFFFw555FFzzW,",
+                ",WhFFFFFwFFFFFw5FAAAzzW,",
+                ",WhFFsF*dFF*FFdFFAOAFFW,",
+                ",WhFcccFw>FFF>w3FAFAzzW,",
+                ",WWWWWWWwwwdwww3*AFAzzW,",
+                ",WHF111FWkkFRW33FAOAFFW,",
+                ",WHFFsF*dFF*FdFFFAAAzzW,",
+                ",WHFcccFWFFrFWFFFFFFzzW,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_QST_MAINFRAME_PAL" ],
+        "place_monsters": [ { "monster": "GROUP_ROBREPAIR_BOTS", "x": [ 0, 23 ], "y": [ 8, 23 ], "density": 2.3 } ],
+        "place_npcs": [
+                     { "class": "fo_central_mainframe_computer", "x": 19, "y": 4}
+                ],
+        "computers": {
+        "V": {
+          "name": "NATIONAL GUARD NEW ENGLAND COMMONWEALTH ZAX MAINFRAME CENTER #13-B7",
+          "options": [ { "name": "Disarm Turrets", "action": "unlock_disarm", "security": 3 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" }, { "action": "secubots" }, { "action": "manhacks" } ]
+        },
+        "?": {
+          "name": "ZAX MAINFRAME CENTER #13-B7 ACCESS SHAFT ELEVATOR",
+          "security": 6,
+          "options": [ { "name": "Activate Elevator Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_rock", "`": "t_intercom" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_MAINFRAME_5" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",WRFFRWfffffFkkkWoKFKoW,",
+                ",WrFFrWfFFFwFFFFWFFFFFW,",
+                ",WFFF6WFOFFwFFOFWoKFKoW,",
+                ",W44F6WFFFFwFFFFWFcFFFW,",
+                ",W44FuWFFFFFFFFFWFFFFFW,",
+                ",WFFFUWFFggFggFFWWWdWWW,",
+                ",WFFFFWFOggFggOFWFFFFFW,",
+                ",WAAAFWFFFFFFFFFdFFOFFW,",
+                ",WWdWWWWWWdWdWWWWFF*FFW,",
+                ",WAAAhchFWFFFWFFFFFOFFW,",
+                ",WFFFFFFFdFFFdFFFFFFFFW,",
+                ",WFFFFFFWWAAAWWWWWWWdWW,",
+                ",WFFFFFFWFFFFFW!2F!2FFW,",
+                ",WAAAHcHWFFFFFWFFFFFFFW,",
+                ",WWdWWWWWFFFFFW!2F!2FFW,",
+                ",WAAAFZZW<FFF<WFFFFFFFW,",
+                ",WFLFLFFWWWWWWW!2F!2FFW,",
+                ",WFlllFFW@@@@@WWWWWWdWW,",
+                ",WFlllFFdFFFFFWWWW#FFFW,",
+                ",WFLFLFFW@@@@@WWWW$FF(W,",
+                ",WWWWWWWWWWWWWWWWWWWWWW,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_QST_MAINFRAME_PAL" ],
+        "place_monsters": [ { "monster": "GROUP_GHOUL_MAINFRAME", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 1 } ],
+        "place_item": [
+        { "item": "item_fo_secondary_processor", "x": 4, "y": 7, "chance": 100 }
+      ],
+        "set": [
+            { "square": "radiation", "amount": 20, "x": 0, "y": 0, "x2": 23, "y2": 23 }
+            ],
+        "computers": {
+        "V": {
+          "name": "NATIONAL GUARD NEW ENGLAND COMMONWEALTH ZAX MAINFRAME CENTER #13-B7",
+          "options": [ { "name": "Disarm Turrets", "action": "unlock_disarm", "security": 3 } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" }, { "action": "secubots" }, { "action": "manhacks" } ]
+        }
+          },
+        "terrain": { ",": "t_rock", "`": "t_intercom" }
+        }
+    }
+]

@@ -1,0 +1,136 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_S_RADKING1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "SSSSSSSSSSSSSSSSSSSSSSSS",
+                "SSSSSSSSSSSSSSSSSSSSSSSS",
+                "SSSSSSSSSSSSSSSSSSSSSSSS",
+                "sssWwwwWWwwWWwwwWSSSSsss",
+                "sssWFFFRFFFFRFFFWSSSSsss",
+                "sssWF1111FF3333FWSSSSsss",
+                "sssWFFFFFFFFFFFTWWDWWsss",
+                "sseWF1111FF3333FBFFFWsss",
+                "sssWFFFFFFFFFFFFFFFFWsss",
+                "sssWrrFFFrrFFFFFFFFFWsss",
+                "sssWEEEDEEEFFFFFFFF2Wsss",
+                "sssWffffffERFFFFFFF2Wsss",
+                "sssWfZZfZZEEEFFFF222Wsss",
+                "sssWffXffXffEFFFEEEEWsss",
+                "sssWffffffffEFFFEYlLWsss",
+                "sssWfZZfZZffDFFFDYYyWsss",
+                "sssWffXffXffEFFFEEEEWsss",
+                "sssWffffffXfEFFFEYlLWsss",
+                "sssWzzzzfxZZE<F<DYYyWsss",
+                "sssWWWWWWWWWWWdWWWWWWsss",
+                "sssssssttsssssssssssssss",
+                "ssssssssssssssssssssssss",
+                "ssssssssssssssssssssssss",
+                "ssssssssssssssssssssssss"
+            ],
+        "palettes": [ "FO_S_RADKINGPAL" ],
+        "place_monsters": [ { "monster": "GROUP_MUTANT_BASE", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 6 } ],
+        "place_item": [
+           { "item": "television_radiation_king", "x": [ 5, 8 ] , "y": 5, "repeat": [ 1, 4 ] },
+           { "item": "television_radiation_king", "x": [ 5, 8 ], "y": 7, "repeat": [ 1, 4 ] },
+           { "item": "radiation_king_atomic", "x": [ 11, 14 ], "y": 5, "repeat": [ 1, 4 ] },
+           { "item": "radiation_king_atomic", "x": [ 11, 14 ], "y": 7, "repeat": [ 1, 4 ] }
+        ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_S_RADKING1_2",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "   KKKKKKKKKKKKKK       ",
+                "   |............h       ",
+                "   |............h       ",
+                "   |............hKKKh   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   WWwwWWWWWWWWWWwwWW   ",
+                "   W4FFF4F555555566xW   ",
+                "   W4FFF4FFFFFFFFbFFW   ",
+                "   W4FFF4FFbMMbFFFFFW   ",
+                "   W4FFF4FFFFFFFFFFFW   ",
+                "   WBFFFFFFFF>F>FFFFW   ",
+                "   WWwwWWWWWWWWWWwwWW   ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "palettes": [ "FO_S_RADKINGPAL" ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_S_RADKING1_ROOF",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "   |KKKKKKKKKKKKKKKKh   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |................h   ",
+                "   |KKKKKKKKKKKKKKKKh   ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "palettes": [ "FO_S_RADKINGPAL" ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    }
+]

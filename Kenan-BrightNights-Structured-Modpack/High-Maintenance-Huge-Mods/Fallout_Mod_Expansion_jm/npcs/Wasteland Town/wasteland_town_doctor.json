@@ -1,0 +1,272 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastedoc",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Doctor",
+    "class": "NC_WASTEFODOC_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_WASTEFODOC_Town",
+    "mission_offered": "MISSION_MISSION_WASTE_DOC_A",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WASTEFODOC_SHOPKEEP",
+    "name": { "str": "Doctor" },
+    "job_description": "I'm a local doctor.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_WASTEFODOC_worn",
+    "weapon_override": "NC_WASTEFODOC_weapon",
+    "shopkeeper_item_group": "NC_WASTEFODOC_SHOPKEEP_misc",
+    "carry_override": "NC_WASTEFODOC_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 2, 5 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFODOC_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "infantry_medical_gear", "count": [ 4, 9 ] },
+      { "group": "hospital_medical_items", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFODOC_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "scalpel" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFODOC_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "coat_lab" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFODOC_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFODOC_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "infantry_medical_gear", "prob": 80, "count": [ 4, 10 ] },
+      { "group": "hospital_medical_items", "prob": 80, "count": [ 6, 15 ] }
+    ]
+  },
+  {
+    "id": "TALK_WASTEFODOC_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Anything ails you, <name_g>?",
+        "Be careful out there, wouldn't want to have to patch you up now would I?",
+        "I know it might no be entirely believable, but I actually have a medical degree from the Followers of the Apocalypse.",
+        "Don't ever think that merely having a stimpak will get you out of any injury. Yes, they're useful, but they're not panaceas for every illness or injury.",
+        {
+          "u_has_dexterity": 10,
+            "yes": "Dexterity such as yours would be of great use as a doctor or surgeon.",
+            "no": "Some of the town guard members are such regular fixtures here that they might as well start paying me rent."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "Somebody with your level of intelligence would make a good fit as a doctor. You have the mind for studying and understanding the human body.",
+            "no": "I've considered moving my practice to Boston in the past, but to be frank that area seems to dangerous."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "Autodocs aren't as useful as one would think. They still necessitate a great deal of medical knowledge to be used properly.",
+            "no": "I diagnose you with low IQ, please don't go near any of the medical equipment without my knowledge. Don't want you breaking anything?"
+        },
+        "I've heard of people coming back from nearly severed limbs and severe head trauma by just stabbing themselves with fifteen stimpaks at once. Strange stuff.",
+        "How are things going?",
+        {
+        "u_male": [ "I'm not a practiced urologist, but I think I could still give you answers on, well, you know.", "Please try to avoid getting injured.", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "I'm not a practiced gynecologist, but I think I could still offer advice on, well, you know.", "Ma'am, do you have any pressing medical concerns.", "Hello, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What is it like being a doctor around here?",
+        "topic": "TALK_WASTEFODOC_infotown"
+      },
+      {
+        "text": "Do you have any medical items for me?",
+        "effect": "start_trade",
+        "topic": "TALK_WASTEFODOC_Town"
+      },
+      {
+        "text": "Could you heal me?",
+        "effect": "give_aid",
+        "condition": { "not": { "npc_has_effect": "fo_wastetown_doc_heal" } },
+        "topic": "TALK_WASTEFODOC_HEAL"
+      },
+      {
+        "text": "Do you have a task for me?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Goodbye, thank you for your time.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_WASTEFODOC_HEAL",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Okay, you're patched up now. Now don't go hurting yourself too soon, miss.",
+      "no": "Okay, you're patched up now. Now don't go hurting yourself too soon."},
+    "responses": [
+      {
+        "text": "Thank you, I feel better now.",
+        "effect": { "npc_add_effect": "fo_wastetown_doc_heal", "duration": 21600 },
+        "topic": "TALK_FOBOOK_Town"
+      }
+    ]
+  },
+  {
+    "id": "TALK_WASTEFODOC_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Most people try to avoid getting wounded, besides the town guard anyway. Generally I just deal with scrapes, bruises and the errant sicknesses that roll through town every once and a while. Although sometimes a guard or citizen will get shot and I'll have to extract bits of lead and copper from their flesh. Not pretty, but somebody needs to do it.",
+      "no": "Most people try to avoid getting wounded, besides the town guard anyway. Generally I just deal with scrapes, bruises and the errant sicknesses that roll through town every once and a while. Although sometimes a guard or citizen will get shot and I'll have to extract bits of lead and copper from their flesh. Not pretty, but somebody needs to do it."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_WASTEFODOC_Town"
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "fo_wastetown_doc_heal",
+    "name": [ "tired" ],
+    "desc": [ "This doctor has recently healed somebody and won't be able to do so for some time" ],
+    "apply_message": "The doctor performs a procedure.",
+    "remove_message": "The doctor has performed a procedure.",
+    "rating": "good",
+    "base_mods": { "str_mod": [ 0 ], "int_mod": [ 0 ] }
+  },
+  {
+    "id": "MISSION_MISSION_WASTE_DOC_A",
+    "type": "mission_definition",
+    "name": { "str": "Retrieve the precursor chemicals" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "fo_stim_precursors",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_DOCQUEST_HOUSE_1",
+        "om_special": "Isolated House",
+        "om_terrain_replace": "forest",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 55
+      }
+    },
+    "end": {
+    "effect": [
+        { "u_buy_item": "fo_stimpak_kit", "count": 5 },
+        { "u_buy_item": "fo_radaway", "count": 3 },
+        { "u_buy_item": "1st_aid", "count": 1 },
+        { "u_buy_item": "fo_mentat_kit", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_MISSION_WASTE_DOC_B",
+    "dialogue": {
+      "describe": "I'm in need of some assistance with retrieving an item. A few weeks ago, I made a deal with a caravan to acquire some medical precursor chemicals. The shipment still hasn't arrived and is several days overdue. Some local town scouts have determined that the package was captured by some waylaid travellers in an abandoned house in the forest. Retrieve it by any means you wish.",
+      "offer": "I'm in need of some assistance with retrieving an item. A few weeks ago, I made a deal with a caravan to acquire some medical precursor chemicals. The shipment still hasn't arrived and is several days overdue. Some local town scouts have determined that the package was captured by some waylaid travellers in an abandoned house in the forest. Retrieve it by any means you wish.",
+      "accepted": "Thanks for accepting my offer.",
+      "rejected": "I guess I'll get somebody else to retrieve it.",
+      "advice": "The person who robbed the caravan seemed pretty desperate, and they only robbed the medical supplies. Perhaps you can talk them into giving you what you want.",
+      "inquire": "Do you have the chemical reagants yet?",
+      "success": "Glad you got me what I wanted, I think a reward is in order.",
+      "success_lie": "Don't lie to me like that.",
+      "failure": "Oh well, I guess you tried."
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "fo_wastetown_autodoc_chunk",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "b"
+      ],
+      "furniture": { "b": "f_autodoc" },
+      "terrain": {
+        "T": "t_console"
+      }
+    }
+  },
+  {
+    "id": "MISSION_MISSION_WASTE_DOC_B",
+    "type": "mission_definition",
+    "name": { "str": "Fix the autodoc" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "fo_autodoc_arm",
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "hospital_6", "om_special": "hospital", "reveal_radius": 3, "search_range": 400 },
+      "update_mapgen": { "place_item": [ { "item": "fo_autodoc_arm", "x": 20, "y": 7, "amount": 1, "chance": 100 } ] }
+    },
+    "end": {
+    "effect": [
+        { "u_buy_item": "fo_stimpak_kit", "count": 7 },
+        { "u_buy_item": "fo_radaway", "count": 3 },
+        { "u_buy_item": "1st_aid", "count": 2 },
+        { "u_buy_item": "reference_firstaid1", "count": 1 } ],
+    "update_mapgen": [
+        {
+          "om_terrain": "FO_WASTETOWN_6",
+          "place_nested": [ { "chunks": [ "fo_wastetown_autodoc_chunk" ], "x": 17, "y": 0 } ]
+        }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "As you can, see the autodoc sitting over there is broken. Most of the internals are fine, it's just that the primary arm is in a state of disrepair. Seeing as how auto-docs were precision instruments made before the war, I doubt you or anyone else here could make a new one. A few months ago I found a pre-war shipping manifest detailing a shipment of an autodoc replacement arm to a local hospital. Please go and retrieve it for me.",
+      "offer": "As you can, see the autodoc sitting over there is broken. Most of the internals are fine, it's just that the primary arm is in a state of disrepair. Seeing as how auto-docs were precision instruments made before the war, I doubt you or anyone else here could make a new one. A few months ago I found a pre-war shipping manifest detailing a shipment of an autodoc replacement arm to a local hospital. Please go and retrieve it for me.",
+      "accepted": "Thanks for accepting my offer.",
+      "rejected": "I guess you didn't want a functioning auto-doc that much.",
+      "advice": "Hospitals are often pretty crowded areas rich with high-value medical supplies. Do be careful, you probably won't be the only person out there.",
+      "inquire": "Do you have the auto-doc arm yet?",
+      "success": "Thanks, I'll have that autodoc working in no time.",
+      "success_lie": "You're obviously lying",
+      "failure": "That's unfortunate, that auto-doc really would've taken a load off my shoulders."
+    }
+  }
+]

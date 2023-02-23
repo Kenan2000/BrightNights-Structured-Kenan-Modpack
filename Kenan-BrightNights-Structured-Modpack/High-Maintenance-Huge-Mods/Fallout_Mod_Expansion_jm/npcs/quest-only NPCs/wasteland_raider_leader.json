@@ -1,0 +1,51 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wasteland_raider_leader",
+    "name_suffix": "Raider Leader",
+    "class": "fo_wasteland_raider_leader_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wasteland_raider_start",
+    "faction": "hells_raiders"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wasteland_raider_leader_npc",
+    "name": { "str": "Raider Leader" },
+    "job_description": "Is a Raider in the wasteland.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_WASTE_RAIDER_LEADER_worn",
+    "carry_override": "NC_WASTE_RAIDER_carry",
+    "weapon_override": "NC_WASTE_RAIDER_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTE_RAIDER_LEADER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "chestguard_hard", "prob": 100 }, { "item": "cuirass_scrap", "prob": 100 }, { "item": "jacket_leather_mod", "prob": 100 }, { "item": "kevlar", "prob": 100 }, { "item": "motorbike_armor", "prob": 100 }, { "item": "vest_leather_mod", "prob": 100 }, { "item": "armor_wasteplate", "prob": 100 } ], "prob": 75 },
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "2byshin_guard", "prob": 100 }, { "item": "knee_pads", "prob": 100 }, { "item": "legguard_hard", "prob": 100 }, { "item": "legguard_metal", "prob": 100 }, { "item": "legguard_scrap", "prob": 100 }, { "item": "pants_survivor", "prob": 100 } ], "prob": 65 },
+      { "item": "socks" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "boots_combat", "prob": 100 }, { "item": "boots_fur", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 75 }
+      
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_guard",
+    "name_suffix": "Town Guard",
+    "class": "fo_wastetown_guard_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_guard_start",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_guard_npc",
+    "name": { "str": "Town Guard" },
+    "job_description": "Is a guard for the wasteland town.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_WASTETOWN_G_worn",
+    "carry_override": "NC_WASTETOWN_G_carry",
+    "weapon_override": "NC_WASTETOWN_G_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "fo_waste_shottypes",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "shot_beanbag", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "shot_bird", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "shot_dragon", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "shot_flechette", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "shot_he", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "shot_scrap", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "bp_shot_scrap", "prob": 5, "charges": [ 5, 13 ] },
+      { "item": "shot_slug", "prob": 10, "charges": [ 5, 13 ] },
+      { "item": "bp_shot_slug", "prob": 5, "charges": [ 5, 13 ] },
+      { "item": "bp_shot_dragon", "prob": 5, "charges": [ 5, 13 ] }
+
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTETOWN_G_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "bookplate", "prob": 100 }, { "item": "chestguard_hard", "prob": 100 }, { "item": "cuirass_scrap", "prob": 100 }, { "item": "jacket_leather_mod", "prob": 100 }, { "item": "kevlar", "prob": 100 }, { "item": "motorbike_armor", "prob": 100 }, { "item": "vest_leather_mod", "prob": 100 }, { "item": "armor_combat_light", "prob": 100 } ], "prob": 75 },
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "2byshin_guard", "prob": 100 }, { "item": "knee_pads", "prob": 100 }, { "item": "legguard_hard", "prob": 100 }, { "item": "legguard_metal", "prob": 100 }, { "item": "legguard_scrap", "prob": 100 }, { "item": "pants_survivor", "prob": 100 } ], "prob": 65 },
+      { "item": "socks" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "boots_combat", "prob": 100 }, { "item": "boots_fur", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 75 },
+      { "item": "bandolier_rifle", "prob": 15 },
+      { "distribution": [ { "item": "fo_ncr_trooper_helmet", "prob": 100 }, { "item": "helmet_biker_retro", "prob": 100 }, { "item": "helmet_combat_light", "prob": 100 }, { "item": "pot_helmet", "prob": 100 }, { "item": "helmet_army", "prob": 100 }, { "item": "helmet_bike", "prob": 100 }, { "item": "helmet_football", "prob": 100 }, { "item": "helmet_motor", "prob": 100 }, { "item": "helmet_scavenger", "prob": 100 }, { "item": "helmet_scrap", "prob": 100 }, { "item": "helmet_survivor", "prob": 100 }, { "item": "hat_boonie", "prob": 100 }, { "item": "beret", "prob": 100 }, { "item": "cowboy_hat", "prob": 100 }, { "item": "hat_hard", "prob": 100 }, { "item": "hat_hunting", "prob": 100 }, { "item": "straw_hat", "prob": 100 } ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTETOWN_G_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
+      { "distribution": [ 
+        { "collection": [ { "item": "medium_battery_cell", "ammo-item": "battery", "charges": 500, "container-item": "aer9", "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "ar15", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "survivor223mag", "charges": 5, "count": [ 1, 2 ], "prob": 65 }, { "item": "stanag10", "charges": [ 7, 10 ], "count": [ 1, 2 ], "prob": 35 }, { "item": "stanag30", "charges": [ 17, 30 ], "count": [ 1, 3 ], "prob": 35 }, { "item": "223", "charges": [ 10, 35 ], "prob": 35 }, { "item": "556", "charges": [ 5, 20 ], "prob": 25 }, { "item": "reloaded_223", "charges": [ 8, 25 ], "prob": 40 } ], "prob": 100 },
+        { "collection": [ { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "wattz_1000_magneto", "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "ak112", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "5mmmag", "charges": 30, "count": [ 1, 3 ], "prob": 100 }, { "item": "5mm", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "carbine_assault", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "5mmmag", "charges": 30, "count": [ 1, 3 ], "prob": 100 }, { "item": "5mm", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "colt6250", "dirt": [ 0, 4000 ], "charges": 12, "ammo-item": "40sw" }, { "item": "colt6250mag", "charges": 12, "ammo-item": "40sw", "count": [ 1, 2 ], "prob": 100 }, { "item": "40sw", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "14mmpistol", "dirt": [ 0, 4000 ], "charges": 7 }, { "item": "14mmpistolmag", "charges": 7, "count": [ 1, 2 ], "prob": 100 }, { "item": "14mm", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "14mmsmg", "dirt": [ 0, 4000 ], "charges": 21 }, { "item": "14mmsmgmag", "charges": 21, "count": [ 1, 2 ], "prob": 100 }, { "item": "14mm", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "colt_rangemaster", "dirt": [ 0, 4000 ], "charges": 10 }, { "item": "rangemastermag", "charges": 10, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "varmint_rifle", "dirt": [ 0, 4000 ], "charges": 10 }, { "item": "rangemastermag", "charges": 10, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "dks501", "dirt": [ 0, 4000 ], "charges": 10 }, { "item": "rangemastermag", "charges": 10, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "thatgun", "dirt": [ 0, 4000 ], "charges": 5 } ], "prob": 100 },
+        { "collection": [ { "item": "dks501", "dirt": [ 0, 4000 ], "charges": 10 }, { "item": "rangemastermag", "charges": 10, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "rf2076", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "rf2076mag", "charges": 30, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "r91", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "stanag30", "charges": 30, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "carbine_marksman", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "stanag30", "charges": 30, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "type93", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "stanag30", "charges": 30, "count": [ 1, 2 ], "prob": 100 }, { "item": "223", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 },
+        { "collection": [ { "item": "rifle_223", "dirt": [ 0, 4000 ] }, { "item": "bp_223", "charges": [ 0, 10 ] }, { "item": "reloaded_223", "charges": [ 3, 16 ] } ], "prob": 100 },
+        { "collection": [ { "item": "2_shot_special", "dirt": [ 0, 4000 ] }, { "item": "bp_38_fmj", "charges": [ 0, 8 ] }, { "item": "38_special", "charges": [ 5, 25 ] }, { "item": "38_fmj", "charges": [ 4, 7 ], "prob": 35 }, { "item": "reloaded_38_fmj", "charges": [ 4, 25 ], "prob": 35 } ], "prob": 100 },
+        { "collection": [ { "item": "cop_38", "dirt": [ 0, 4000 ] }, { "item": "bp_38_fmj", "charges": [ 0, 8 ] }, { "item": "38_special", "charges": [ 5, 25 ] }, { "item": "38_fmj", "charges": [ 4, 7 ], "prob": 35 }, { "item": "reloaded_38_fmj", "charges": [ 4, 25 ], "prob": 35 } ], "prob": 35 },
+        { "collection": [ { "item": "rifle_38", "dirt": [ 0, 4000 ] }, { "item": "bp_38_fmj", "charges": [ 0, 8 ] }, { "item": "38_special", "charges": [ 5, 25 ] }, { "item": "38_fmj", "charges": [ 4, 7 ], "prob": 35 }, { "item": "reloaded_38_fmj", "charges": [ 4, 25 ], "prob": 35 } ], "prob": 35 },
+        { "collection": [ { "item": "rifle_22", "dirt": [ 0, 4000 ] }, { "item": "22_cphp", "charges": [ 0, 10 ], "prob": 25 }, { "item": "22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "22_ratshot", "charges": [ 3, 16 ], "prob": 25 }, { "item": "bp_22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "reloaded_22_lr", "charges": [ 3, 16 ], "prob": 55 } ], "prob": 100 },
+        { "collection": [ { "item": "moss_brownie", "dirt": [ 0, 4000 ] }, { "item": "22_cphp", "charges": [ 0, 10 ], "prob": 25 }, { "item": "22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "22_ratshot", "charges": [ 3, 16 ], "prob": 25 }, { "item": "bp_22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "reloaded_22_lr", "charges": [ 3, 16 ], "prob": 55 } ], "prob": 50 },
+        { "collection": [ { "item": "marlin_9a", "dirt": [ 0, 4000 ] }, { "item": "22_cphp", "charges": [ 0, 10 ], "prob": 25 }, { "item": "22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "22_ratshot", "charges": [ 3, 16 ], "prob": 25 }, { "item": "bp_22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "reloaded_22_lr", "charges": [ 3, 16 ], "prob": 55 } ], "prob": 50 },
+        { "collection": [ { "item": "american_180", "dirt": [ 0, 4000 ] }, { "item": "a180mag", "charges": [ 50, 165 ] }, { "item": "a180mag", "charges": [ 50, 165 ], "prob": 25 }, { "item": "22_cphp", "charges": [ 0, 10 ], "prob": 25 }, { "item": "22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "22_ratshot", "charges": [ 3, 16 ], "prob": 25 }, { "item": "bp_22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "reloaded_22_lr", "charges": [ 3, 16 ], "prob": 55 } ], "prob": 50 },
+        { "collection": [ { "item": "sig_mosquito", "dirt": [ 0, 4000 ] }, { "item": "mosquitomag", "charges": [ 5, 10 ], "count": [ 1, 3 ] }, { "item": "22_cphp", "charges": [ 0, 10 ], "prob": 25 }, { "item": "22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "22_ratshot", "charges": [ 3, 16 ], "prob": 25 }, { "item": "bp_22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "reloaded_22_lr", "charges": [ 3, 16 ], "prob": 55 } ], "prob": 50 },
+        { "collection": [ { "item": "ruger_1022", "dirt": [ 0, 4000 ] }, { "item": "ruger1022mag", "charges": [ 8, 10 ], "count": [ 1, 4 ] }, { "item": "ruger1022bigmag", "charges": [ 10, 25 ], "prob": 25 }, { "item": "22_cphp", "charges": [ 0, 10 ], "prob": 25 }, { "item": "22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "22_ratshot", "charges": [ 3, 16 ], "prob": 25 }, { "item": "bp_22_lr", "charges": [ 3, 16 ], "prob": 25 }, { "item": "reloaded_22_lr", "charges": [ 3, 16 ], "prob": 55 } ], "prob": 50 },
+        { "collection": [ { "item": "sw_619", "dirt": [ 0, 4000 ] }, { "item": "38_speedloader", "charges": [ 7, 7 ], "prob": 50 }, { "item": "bp_38_fmj", "charges": [ 0, 8 ] }, { "item": "38_special", "charges": [ 5, 25 ] }, { "item": "38_fmj", "charges": [ 4, 7 ], "prob": 35 }, { "item": "reloaded_38_fmj", "charges": [ 4, 25 ], "prob": 35 } ], "prob": 50 },
+        { "collection": [ { "item": "ruger_mini", "dirt": [ 0, 4000 ] }, { "item": "ruger_makeshiftmag", "charges": 5, "count": [ 1, 2 ], "prob": 55 }, { "item": "ruger5", "charges": 5, "count": [ 1, 2 ], "prob": 25 }, { "item": "ruger20", "charges": [ 7, 20 ], "count": [ 1, 2 ], "prob": 38 }, { "item": "ruger10", "charges": [ 3, 10 ], "count": [ 1, 3 ], "prob": 20 }, { "item": "ruger30", "charges": [ 3, 30 ], "count": [ 1, 3 ], "prob": 20 }, { "item": "bp_223", "charges": [ 10, 20 ], "prob": 30 }, { "item": "223", "charges": [ 10, 35 ], "prob": 45 }, { "item": "556", "charges": [ 5, 20 ], "prob": 20 }, { "item": "reloaded_223", "charges": [ 8, 25 ], "prob": 35 } ], "prob": 35 },
+        { "collection": [ { "item": "surv_carbine_223", "dirt": [ 0, 4000 ] }, { "item": "survivor223mag", "charges": 5, "count": [ 1, 4 ], "prob": 75 }, { "item": "stanag5", "charges": 5, "count": [ 1, 2 ], "prob": 25 }, { "item": "stanag10", "charges": [ 7, 10 ], "count": [ 1, 2 ], "prob": 25 }, { "item": "stanag30", "charges": [ 17, 30 ], "count": [ 1, 3 ], "prob": 20 }, { "item": "bp_223", "charges": [ 10, 20 ], "prob": 30 }, { "item": "223", "charges": [ 10, 35 ], "prob": 45 }, { "item": "556", "charges": [ 5, 20 ], "prob": 20 }, { "item": "reloaded_223", "charges": [ 8, 25 ], "prob": 35 } ], "prob": 35 },
+        { "collection": [ { "item": "ashot", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "browning_a5", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 100 },
+        { "collection": [ { "item": "ksg", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 100 },
+        { "collection": [ { "item": "ksg-25", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "m1014", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "mossberg_500", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "mossberg_500_security", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "pipe_double_shotgun", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "pipe_shotgun", "dirt": [ 0, 4000 ] }, { "item": "shot_00", "charges": [ 5, 18 ] }, { "group": "fo_waste_shottypes", "count": [ 1, 4 ], "prob": 75 } ], "prob": 35 },
+        { "collection": [ { "item": "cz53minigun", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "5mmminigunmag", "charges": [ 100, 500 ], "count": [ 1, 2 ], "prob": 65 }, { "item": "5mm", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 }
+        ], "prob": 100 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTETOWN_G_weapon",
+    "subtype": "distribution",
+    "entries": [
+      
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_guard_start",
+    "type": "talk_topic",
+    "dynamic_line": [ 
+
+      { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes",
+      "yes": [
+        "What's it like out there in the wastes?",
+        "You're back, did you do anything interesting?",
+        "How are things going?",
+        { "u_has_strength": 10, "yes": "You look pretty strong, have you considered joining the town guard?", "no": "Maybe if you bulked up a bit then the town guard chief would consider you a more viable recruit." },
+        { "u_has_intelligence": 10, "yes": "You sound pretty sharp from the way you talk, have you considered speaking to the head of the junk guild? They always need inquisitive minds.", "no": "You think the nearby ruins have any good loot?" },
+        { "u_has_intelligence": 6, "yes": "Found any problems lately?", "no": "Um, not to sound rude, but you sound a bit dim..." },
+        { "u_male": [ "How's it going, dude?.", "Rough out there, isn't it?", "Seen anything interesting lately?" ], "no": [ "How's it going, lady?", "Ma'am, what do you think of the town?.", "Hey There." ] }
+      ],
+      "no": {
+        "u_male": [ "I don't know who you are, why are you here?", "What's a guy like you doing around these parts?" ],
+        "no": [ "I don't recognize a gal like you hanging around out here, who are you anyway?", "Ma'am, you really shouldn't be traveling out there." ]
+      }
+    } 
+      ],
+    "responses": [
+      {
+        "text": "Who are you, what are you doing here?",
+        "condition": { "not": { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_wastetown_guard_introduce"
+      },
+      {
+        "text": "How are things in the town?",
+        "condition": { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_wastetown_guard_question"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_guard_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "We guard this town against the various threats that encroach upon us from the New England wasteland. It's a pretty boring job most days.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "effect": { "u_add_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_guard_question",
+    "type": "talk_topic",
+    "dynamic_line": "Things are boring as always, we rarely get opportunities to go on patrols, perhaps that's more fit for somebody of your caliber, though.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

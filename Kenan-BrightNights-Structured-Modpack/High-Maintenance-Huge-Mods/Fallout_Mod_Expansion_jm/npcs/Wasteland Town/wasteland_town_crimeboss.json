@@ -1,0 +1,395 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_civ_crimeboss",
+    "name_suffix": "Crime Boss",
+    "class": "fo_wastetown_civ_crimeboss_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_crimeboss_start",
+    "mission_offered": "MISSION_WASTE_CRIME_A",
+    "faction": "foc_wasteland_criminals"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_civ_crimeboss_npc",
+    "name": { "str": "Crime Boss" },
+    "job_description": "Is a local leader among criminals in the region.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_WASTEBOSS_worn",
+    "carry_override": "NC_WASTEBOSS_carry",
+    "weapon_override": "NC_WASTEBOSS_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEBOSS_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "socks" },
+      { "item": "technician_pants_gray" },
+      { "item": "mbag" },
+      { "item": "kevlar" },
+      { "item": "tank_top" },
+      { "item": "sweater" },
+      { "item": "hat_knit" },
+      { "item": "boots" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEBOSS_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEBOSS_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "thatgun", "charges": 5, "prob": 100 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_crimeboss_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "u_known_by_criminals",
+      "type": "general",
+      "context": "meeting",
+      "value": "yes",
+      "yes": [
+        "Anything interesting happen recently, <name_g>?",
+        "Don't get caught, <name_g>.",
+        "Although I run this joint, I value the input of my underlings from time to time. When they're not acting stupid, that is.",
+        "Chems, liquor, hits. You name it, we got it.",
+        {
+          "u_has_strength": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "A guy like you has the muscle to commit strong arm robbery and then some.",
+                "no": "Wow, a bit surprising to see a dame like you with muscles like that! The guys won't know what hit 'em, perhaps literally!"
+                },
+            "no": "You know, being a good thief isn't always about being strong, sometimes you need a light touch."
+        },
+        {
+          "u_has_dexterity": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "You have the dexterity necessary to be a good thief - or a good hitman.",
+                "no": "A gal with fingers like yours could steal power armor from under the nose of the Brotherhood. Perhaps while it's still being worn!"
+                },
+            "no": "Although I sell chems, I don't use them myself. Don't get high on your own supply, the most basic advice in the game."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "From the way you talk you seem pretty sharp, almost as smart as me!",
+            "no": "The mayor doesn't knwo that we're running a criminal outlet right under their nose, what an oaf!"
+        },
+        {
+          "u_has_intelligence": 6, "yes": "There's an entire criminal underworld stretching back to before the war that still operates, you know. I'm just a small part of it.",
+            "no": "Okay, so you're not that smart, but nobody's perfect? Don't you worry your head with all those big numbers and plots, okay?"
+        },
+        "You ever see what a raider hopped up on psycho and jet can do to somebody? It's not pretty.",
+        "Some would say it's easier to lead an honest life than profit off of people's mysery. Those people are losers though.",
+        {
+        "u_male": [ "Work for me long enough, and you could be a made man.", "There's a fine line between being a mindless raider and a criminal mastermind.", "Do you think the people above us notice anything, <name_g>?" ],
+        "no": [ "If you pull your weight, you could go quite far around here. You could even become a made man, er, I guess made woman in your case.", "A lot of men are vulnerable to a pretty face, part of why women have a unique role to play in our criminal enterprise.", "What's up, <name_g>" ]
+      }
+      ],
+      "no": {
+        "u_male": [ "Perhaps men like you should stop being so nosy.", "What's up with dudes like you being so nosy, knock it off!" ],
+        "no": [ "What's a woman like you doing talking to me, don't you have anything better do to?", "Beat it, girl, I don't have anything to offer you." ]
+      }
+    },
+    "responses": [
+      {
+        "text": "What is this place anyway? Why are you hiding down here?",
+        "condition": { "not": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_wastetown_crimeboss_hostile"
+      },
+      {
+        "text": "What's it like being a wasteland crime boss?",
+        "condition": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_wastetown_crimeboss_go"
+      },
+      {
+        "text": "Got any jobs for me?",
+        "condition": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_crimeboss_hostile",
+    "type": "talk_topic",
+    "dynamic_line": "How did you even find us, how did you even get down here. Whatever, I'm gonna kill you anyway. That damn fence is gonna have hell to play for not keeping this place a secret!",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "effect": "hostile",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_crimeboss_go",
+    "type": "talk_topic",
+    "dynamic_line": "There's good times, and there's bad times. Sometimes I have to look over my shoulder, not only for fear of the guard catching to me, but because my own underlings or rival gangs might try and ice me without a second thought. Running drugs, killing people for money and stealing still has a reward all its own though.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_WASTE_CRIME_A",
+    "type": "mission_definition",
+    "name": "Retrieve the drug shipment.",
+    "description": "Retrieve the drug shipment from the raiders who stole it.",
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "fo_jet_kit",
+    "count": 5,
+    "difficulty": 3,
+    "followup": "MISSION_WASTE_CRIME_B",
+    "value": 150000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "road", "reveal_radius": 2, "random": true, "search_range": 85, "z": 0 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                  f     ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": {
+        "w": [ "t_window_reinforced" ],
+        "O": [ "t_brick_wall_halfway" ],
+        "D": [ "t_door_makeshift_c" ]
+      },
+      "furniture": {
+        "f": [ "f_crate_c" ]
+      },
+      "place_vehicles": [
+        { "chance": 100, "fuel": 23, "rotation": 90, "status": 0, "vehicle": "dirtlot", "x": 7, "y": 8 }, { "chance": 100, "fuel": 23, "rotation": 90, "status": 0, "vehicle": "dirtlot", "x": 9, "y": 17 }
+      ],
+        "item": { "f": { "item": "fo_jet_kit", "repeat": 5, "chance": 100 } },
+        "place_npcs": [ { "class": "fo_wasteland_raider", "x": 1, "y": 2 }, { "class": "fo_wasteland_raider", "x": 18, "y": 20 }, { "class": "fo_wasteland_raider", "x": 20, "y": 14 } ]
+      }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "223", "count": 30 },
+        { "u_buy_item": "colt_rangemaster", "count": 1 },
+        { "u_buy_item": "trenchcoat", "count": 1 },
+        { "u_buy_item": "rangemastermag", "count": 2 },
+        { "u_buy_item": "fo_mob_elecpick", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "We had a local drug shipment going outbound to another settlement when some drug-addled raiders came and absconded with our shipment. Get the jet back to us, I don't really care how you do it.",
+      "offer": "Go out and get back our jet shipment from some drug-addled raiders. You don't even have to kill them, just get our five jet back.",
+      "accepted": "Great, now don't get high on your own supply!",
+      "rejected": "Can't believe you wimped out so soon.",
+      "advice": "Raiders can be pretty tough. You should probably just ram them with a car or something. Works every time.",
+      "inquire": "Do you have the jet yet?",
+      "success": "Just checking... Seems like it's all here! Good work, I'll have more for you to do later",
+      "success_lie": "Don't bullshit me, it's that simple.",
+      "failure": "Can't believe you fucked up already, but here we are."
+    }
+  },
+  {
+    "id": "MISSION_WASTE_CRIME_B",
+    "type": "mission_definition",
+    "name": "Make two doses of ultrajet.",
+    "description": "Use the ultrajet recipe to create two ultrajet samples",
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "fo_ultrajet_kit",
+    "count": 2,
+    "difficulty": 3,
+    "followup": "MISSION_WASTE_CRIME_C",
+    "value": 150000,
+    "start": {
+      "effect": { "u_learn_recipe": "fo_ultrajet_kit" }
+
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "cap_bottle", "count": 200 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "We recently found a new and simple way to increase the potency of jet. Now we just need a way to test it. It's called ultrajet and can apparently be synthesized with jet, sugar bombs and some other basic chemicals. Go and make two samples of ultrajet for us.",
+      "offer": "Here, take this recipe for ultrajet and go and make some for us. We need to test its potency. Make two ultrajet samples.",
+      "accepted": "Try not to get high on this stuff before you give it to us",
+      "rejected": "The drug trade isn't for everybody, I guess.",
+      "advice": "Try to find jet somewhere and get your cooking skill up. That's all I can say really.",
+      "inquire": "Do you have the ultrajet yet?",
+      "success": "Hmm, this will do. I'll have more work for you, later.",
+      "success_lie": "Don't bullshit me, it's that simple.",
+      "failure": "Can't believe you fucked up already, but here we are."
+    }
+  },
+  {
+    "id": "MISSION_WASTE_CRIME_C",
+    "type": "mission_definition",
+    "name": { "str": "Convince the snitch to stop" },
+    "description": "The gang has a turncoat that's going to confess to the NCR, Convince them to change their story without killing them.",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "u_fo_snitch_stop", "type": "mission", "context": "qst_fo_snitch_stop", "value": "yes" },
+    "followup": "MISSION_WASTE_CRIME_D",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "effect": [
+        { "u_buy_item": "fo_mob_mesmetron" } ],
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 2, "random": true, "search_range": 75, "z": 0 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "            OOOW WOW    ",
+          "          WfAAfffffO    ",
+          "          W ffffff W    ",
+          "           ff  fff W    ",
+          "            OO  WWWO    ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": {
+        "W": [ "t_brick_wall" ],
+        "w": [ "t_window_reinforced" ],
+        "f": [ "t_floor_primitive" ],
+        "O": [ "t_brick_wall_halfway" ],
+        "D": [ "t_door_makeshift_c" ]
+      },
+      "furniture": {
+        "F": [ "f_straw_bed" ],
+        "A": [ "f_table" ]
+      },
+      "items": {
+            "A": [ { "item": "ammo_pistol_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "ammo_rifle_fallout_common", "chance": 33, "count": [ 1, 2 ] }, { "item": "guns_rifle_fallout_common", "chance": 35, "count": [ 1, 2 ] }, { "item": "guns_pistol_fallout_common", "chance": 35, "count": [ 1, 2 ] }, { "item": "mags_rifle_fallout_common", "chance": 35, "count": [ 1, 2 ] }, { "item": "mags_pistol_fallout_common", "chance": 25, "count": [ 1, 3 ] }, { "item": "drops_fo_rare_highvalue_misc", "chance": 5 } ]
+            },
+        "place_npcs": [ { "class": "fo_quest_crim_snitch", "x": 14, "y": 8 } ]
+      }
+    },
+    "dialogue": {
+      "describe": "We have a special assignment for you. A member of our gang has decided to turn snitch and rat us out to the NCR. Convince them to change their story without killing them. It would be too suspicious to just kill them.",
+      "offer": "Convince this snitch to change their story without actually killing them. Here, take this. We don't really know what it does, but it was apparently some kind of hypnosis device from before the war.",
+      "accepted": "Great, I don't really care how you do it, just don't kill them",
+      "rejected": "Why would you reject such an easy job. You've gone soft or something?",
+      "advice": "Just use the mesmetron on them. It'll work, probably.",
+      "inquire": "You soften up the snitch yet?",
+      "success": "Great, that's one less thorn in our side.",
+      "success_lie": "Why are you lying about this, you think I'm stupid or something?",
+      "failure": "The NCR's gonna be investigating every inch of our turf now, great job dumbass."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "fo_mob_elecpick", "count": 2 },
+        { "u_buy_item": "fo_stimpak_kit", "count": 3 },
+        { "u_buy_item": "sleeveless_duster_survivor", "count": 1 },
+        { "u_buy_item": "cap_bottle", "count": 100 },
+        { "u_buy_item": "fo_buffout_kit", "count": 2 },
+        { "u_buy_item": "fo_psycho_kit", "count": 3 }
+
+      ]
+    }
+  },
+  {
+    "id": "MISSION_WASTE_CRIME_D",
+    "type": "mission_definition",
+    "name": { "str": "assassinate the rival gang leader" },
+    "description": "Sneak into a rival gang's base and kill their leader.",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_ASSASSINATE",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "effect": [
+        { "u_buy_item": "fo_mob_stealthboy_mki" } ],
+      "assign_mission_target": {
+        "om_terrain": "FO_QST_RIVALHOUSE_2",
+        "om_special": "Rival Gang Safehouse",
+        "om_terrain_replace": "field",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 150,
+        "z": 0
+      },
+      "update_mapgen": {
+        "place_npcs": [ { "class": "fo_quest_rival_boss", "x": 21, "y": 6, "target": true } ]
+      }
+    },
+    "dialogue": {
+      "describe": "Okay, this one's gonna be tough. We need you to kill a rival gang leader. He's at the bottom of a heavil guarded safehouse and won't be taken out easily. Take this stealth boy, it might help you.",
+      "offer": "Okay, this one's gonna be tough. We need you to kill a rival gang leader. He's at the bottom of a heavil guarded safehouse and won't be taken out easily. Take this stealth boy, it might help you.",
+      "accepted": "Try to keep this job as quiet as possible",
+      "rejected": "Guess you're not up for wetwork.",
+      "advice": "The stealthboy doesn't have a long operating life.",
+      "inquire": "You kill them yet?",
+      "success": "I think a reward is on order. They probably didn't even know what happened!.",
+      "success_lie": "Why are you lying about this, you think I'm stupid or something?",
+      "failure": "Can't believe you weren't up for the task after all this."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "fo_mob_stealthboy_mkii", "count": 1 },
+        { "u_buy_item": "fo_mob_elecpick", "count": 3 },
+        { "u_buy_item": "cap_bottle", "count": 300 }
+
+      ]
+    }
+  }
+]

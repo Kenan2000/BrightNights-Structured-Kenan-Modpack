@@ -1,0 +1,1073 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,WWWWWWWWWWWWWWWWWWWWWW",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,wwQQwwwQQwww,",
+                ",,W,,,,,,,ow_FFFF`1t11w,",
+                ",,W,,,,,,,owrRRrFFFFF~w,",
+                ",,W,,,,,ookwFRRFFFFFFFQ,",
+                ",,W,,,,wwQQwrRRrFFFFFFQ,",
+                ",,W,,,,w3KKwFFFFwwEwwww,",
+                ",,W,,,|w3KKw8FF8wFFjjjw,",
+                ",,W,,,,w3FFwwwwwwFFUUjw,",
+                ",,W,,,,wFFFwjjjj_FFUUjQ,",
+                ",,W,,,,w_FFeFFFFFFFUUFQ,",
+                ",,W,,,,w2FFwwwEwFFFFF2w,",
+                ",,W,,,,w2KKwYFFwFFFFF2w,",
+                ",,W,,,,w2KKwyF`wF9FF22w,",
+                ",,W,,,,wwQQwwQQwEwQQwww,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,WWWW,,,,,,,,,,,,,,,",
+                ",,W,,W44WWWWWW,,,,,,,,,,",
+                ",,W,,W4OOLOOLWVVVcVVV,,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL" ],
+        "place_npcs": [
+                     { "class": "fo_wastetown_mayor", "x": 15, "y": 10}
+                ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 4, "y": 10 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 21, "y": 22 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 19, "y": 17 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 13, "y": 17 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 23, "y": 11 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 20, "y": 8 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 16, "y": 8 }
+        ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", "_": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_1_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "  ssssssssssssssssssssss",
+                "  s                     ",
+                "  s                     ",
+                "  s                     ",
+                "  s        |KKKKKKKKKK| ",
+                "  s        |..........| ",
+                "  s        |..........| ",
+                "  s        |..........| ",
+                "  s    |KKKK..........| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |..............| ",
+                "  s    |kkkkkkkkkkkkkk| ",
+                "  s                     ",
+                "  s  ssss               ",
+                "  s  sssssssss          ",
+                "  s  sssssssss          "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                "WWWWWWWWWWWWWWWWWWWWWWWW",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,JJJJJJqqJJqJJqqJJXXXX,",
+                ",,JR;'J$FFFAFA;AF$JJssX,",
+                ",,JRF'JFF!FAFAFAFAFEssX,",
+                ",,JRFFEFF!FFFFFFFFFqsss,",
+                ",,JRF'JFF!FAFAFAFAFEssX,",
+                ",,JRF'J$FFFAFA;AF$JJssX,",
+                ",,JJJJJJqqJJqJJqqJJXXXX,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,hhhhhhh,,,,,,,,,,,,,,,",
+                ",,h88888h,,,,,,,,,,,,,,,",
+                ",,h8FFF8h,,,,,,,,,,,,,,,",
+                ",,h8F8F8hhhhhhhh,,,,,,,,",
+                ",,h8F8FFlLL##NNh|,,,,,,,",
+                ",,h8FFF;l#FFFFFh,,,,,,,,",
+                ",,hllElllllElllh,,,,,,,,",
+                ",,hFFFF;FFFFFFth,,,,,,WW",
+                ",,hnRRnnRRnn!F@h,,,,,,W_",
+                ",,hFRRFFRRFF!F@h,,,,,,WW",
+                ",,hnRRnnRRnn!F@h,,,,,,,,",
+                ",,hFFFFFFFFF!F#h,,,,,,,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL" ],
+        "place_npcs": [
+                     { "class": "fo_waste_bartender", "x": 13, "y": 23}, { "class": "fo_wastetown_civ_preacher", "x": 8, "y": 7}
+                ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 5 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 8 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 9 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 13, "y": 6 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 13, "y": 8 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 15, "y": 8 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 15, "y": 8 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 15, "y": 6 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 21, "y": 9 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 20, "y": 14 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 6, "y": 20 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 3, "y": 22 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 3, "y": 20 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 7, "y": 20 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 10, "y": 22 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 10, "y": 20 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 20 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 22 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 9, "y": 23 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 7, "y": 22 },
+                    { "chunks": [ [ "fo_wasteland_town_recruit", 50 ], [ "fo_vault_town_recruit", 30 ], [ "fo_wasteland_ncr_deserter_recruit", 10 ], [ "fo_wasteland_legion_deserter_recruit", 10 ] ], "x": 3, "y": 19 }
+        ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_item": [
+           { "item": "holybook_bible1", "x": 9 , "y": 6, "chance": 85 }
+
+
+        ],
+        "place_items": [
+           { "item": "alcohol", "x": 12 , "y": [ 20, 23 ], "repeat": [ 1, 4 ] },
+           { "item": "fo_mob_miscdrops", "x": 12 , "y": [ 20, 23 ], "repeat": [ 1, 2 ], "chance": 50 },
+           { "item": "fo_nuka_bottles", "x": 12, "y": [ 20, 23 ], "repeat": [ 1, 4 ], "chance": 50 },
+
+           { "item": "alcohol", "x": [ 4, 5]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 7 },
+           { "item": "fo_mob_miscdrops", "x": [ 4, 5]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fo_nuka_bottles", "x": [ 4, 5]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "SUS_dishes", "x": [ 4, 5]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fallout_misc_itemgroup_food", "x": [ 4, 5]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+
+           { "item": "alcohol", "x": [ 8, 9 ]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 7 },
+           { "item": "fo_mob_miscdrops", "x": [ 8, 9 ]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fo_nuka_bottles", "x": [ 8, 9 ]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "SUS_dishes", "x": [ 8, 9 ]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fallout_misc_itemgroup_food", "x": [ 8, 9 ]  , "y": [ 20, 22 ], "repeat": [ 1, 2 ], "chance": 14 },
+
+           { "item": "religious_books", "x": 5, "y": [ 5, 6 ], "repeat": [ 2, 4 ], "chance": 75 },
+           { "item": "religious_books", "x": 5, "y": [ 8, 9 ], "repeat": [ 2, 4 ], "chance": 75 },
+
+           { "item": "exotic_books", "x": 5, "y": [ 5, 6 ], "repeat": [ 2, 4 ], "chance": 35 },
+           { "item": "exotic_books", "x": 5, "y": [ 8, 9 ], "repeat": [ 2, 4 ], "chance": 35 },
+
+           { "item": "fo_mob_miscdrops", "x": 3, "y": [ 5, 9 ], "repeat": [ 2, 5 ], "chance": 67 }
+
+
+        ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", "_": "t_manhole_cover", ";": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_2_U" ],"object": {
+            "fill_ter": "t_rock",
+            "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "          JJJJJJ        ",
+                "          J6ss^J        ",
+                "          J6ss^J        ",
+                "          Jcss^J        ",
+                "          JJJzJJJJJJJJJJ",
+                "          Jifff#7III77--",
+                "          JufssssIIIffff",
+                "          JGfssssssssssx",
+                "          JNfsssssssffff",
+                "          J8ffAAaass1f2k",
+                "          JJJJJJJJJJJJJJ"
+            ],
+            "faction_owner": [
+                    { "id": "foc_wasteland_criminals", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+            "place_npcs": [
+                     { "class": "fo_wastetown_civ_crimeboss", "x": 14, "y": 20}
+                ],
+            "place_nested": [ 
+                    { "chunks": [ [ "fo_wascrim_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 21 },
+                    { "chunks": [ [ "fo_wascrim_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 21 },
+                    { "chunks": [ [ "fo_wascrim_spawn", 50 ], [ "null", 50 ] ], "x": 12, "y": 14 },
+                    { "chunks": [ [ "fo_wascrim_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 19 },
+                    { "chunks": [ [ "fo_wascrim_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 20 }
+        ],
+        "palettes": [ "FO_WASTETOWN_PAL_BASEMENT" ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", "_": "t_manhole_cover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_2_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "ssssssssssssssssssssssss",
+                "                        ",
+                "  .................     ",
+                "  ..................    ",
+                "  ..................    ",
+                "  ..................    ",
+                "  ..................    ",
+                "  ..................    ",
+                "  .................     ",
+                "                        ",
+                "  |KKKKK|               ",
+                "  |.....|               ",
+                "  |.....|               ",
+                "  |.....|KKKKKK|        ",
+                "  |............|        ",
+                "  |............|        ",
+                "  |............|        ",
+                "  |............|      ss",
+                "  |............|      ss",
+                "  |............|      ss",
+                "  |............|        ",
+                "  |............|        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                "WWWWWWWWWWWWWWWWWWWWWW,,",
+                ",,,,,,,,,,,,,,,,,,,,,W,,",
+                ",,v,,,,,,,,,,,,,,,,,,W,,",
+                ",,v,,,,wwwwwwqwqwqww,W,,",
+                ",,v,,,,wL%4w^%^%^%%w,W,,",
+                ",,v,,,,w+%4w6%6%6%%w,W,,",
+                ",,v,,,,w+%4w%%%%%%;w,W,,",
+                ",,v&,&,w+%4w6%%6%6ww,W,,",
+                ",,wwwwwwwEww^%%^%^w,,W,,",
+                ",,w2FiFw;X%wwEwwEww,,W,,",
+                ",,w2F=Fw%X%~%%%%%~w,,W,,",
+                ",,w2r=F*%XXXXXXXXXw,,W,,",
+                ",,w2FFFw%%%%%%%%%;w,,W,,",
+                ",,wwwwwww*wqwqw*www,,W,,",
+                ",,,|,,,,,,,,,,,,,,,,,W,,",
+                ",,,,,,,,,,,,,,,,,,,,,W,,",
+                ",,,,,,,,,,,,,,,,,,,,,W,,",
+                "WWWWWW,,wwqwwqwwqww,,W,,",
+                "_588KW,,wG-G-G-G-Gw,,W,,",
+                "W5??KW,ww:-:-:-:-:q,,W,,",
+                "W???RW,w@::::::::`w,,W,,",
+                "W<??RW,w@::::::::(w,,W,,"
+            ],
+            "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+            "place_npcs": [
+                     { "class": "fo_wastedoc", "x": 9, "y": 23}, { "class": "fo_wastetown_guard_chief", "x": 4, "y": 13}, { "class": "fo_wastetown_civ_fence", "x": 2, "y": 22}
+                ],
+            "place_nested": [ { "chunks": [ [ "fo_wastetown_spawn", 80 ], [ "null", 20 ] ], "x": 14, "y": 16 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 80 ], [ "null", 20 ] ], "x": 8, "y": 16 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 5 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 4, "y": 5 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 7 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 10 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 13 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 14 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 17 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 3, "y": 21 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 19, "y": 22 }
+        ],
+        "palettes": [ "FO_WASTETOWN_PAL_RIGHT_ENTRANCE" ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", "_": "t_door_makeshift_c", ";": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_3_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "ssssssssssssssssssssss  ",
+                "                     s  ",
+                "                     s  ",
+                "       |KKKKKKKKKKK| s  ",
+                "       |...........| s  ",
+                "       |...........| s  ",
+                "       |...........| s  ",
+                "       |..........|| s  ",
+                "  |KKKK|..........|  s  ",
+                "  |...............|  s  ",
+                "  |...............|  s  ",
+                "  |...............|  s  ",
+                "  |...............|  s  ",
+                "  |kkkkkkkkkkkkkkk|  s  ",
+                "                     s  ",
+                "                     s  ",
+                "                     s  ",
+                "ssssss  |KKKKKKKKK|  s  ",
+                "ssssss  |.........|  s  ",
+                "ssssss ||.........|  s  ",
+                "ssssss |..........|  s  ",
+                "ssssss |..........|  s  "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_4" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,W,,WffIIMMMWXXXXxXX,,,",
+                "vvW,,Wufffff;Wm%m%%%X,,,",
+                "v,,,,WufUUMMMW%%%%~%X,,,",
+                "v,,,,WW'WWWWWWm%m%%%X,,,",
+                "v,,,,,,,,,,,,XXXXXxXX,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,Ds,DDssssssssssssssss",
+                ",,,,P,DPPPPPPPPPPPPPPPPP",
+                ",,,,,DPPPPPPPPPPPPPPPPPP",
+                ",,,D,DDDPPPPPPPPPPPPPPPP",
+                ",,,,DDDDPPPPPPPPPPPPPPPP",
+                ",,,,P,DDpppPPppppPPppppP",
+                ",,,,DDPDPPPPPPPPPPPPPPPP",
+                ",,,,,,PPPPPPPPPPPPPPPPPP",
+                ",,,,,,,PPPPPPPPPPPPPPPPP",
+                ",,,DPPPPPPPPPPPPPPPPPPPP",
+                ",,,DDss,ssssssssssssssss",
+                ",,,,,,DD,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                "v,,,,,,,,,,,,,,,,,,,,,,,",
+                "v,,,,,,,,,,,,,,,,,,,,,,,",
+                "v,,,,,,,,,,,,,,,,,,,,,,,",
+                "vvW,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,"
+            ],
+            "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+            "place_npcs": [
+                     { "class": "fo_wastetown_guard", "x": 1, "y": 2}, { "class": "fo_wastetown_guard", "x": 1, "y": 21}
+                ],
+            "place_nested": [ { "chunks": [ [ "fo_wastetown_spawn", 80 ], [ "null", 20 ] ], "x": 3, "y": 16 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 80 ], [ "null", 20 ] ], "x": 6, "y": 4 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 1, "y": 6 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 9, "y": 19 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 6, "y": 0 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 23, "y": 16 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 18, "y": 6 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 19, "y": 5 }
+        ],
+        "palettes": [ "FO_WASTETOWN_PAL_LEFT_ENTRANCE" ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", ";": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_4_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "  s  sssssssss          ",
+                "  s  sssssssss          ",
+                "     sssssssss          ",
+                "     sssssssss          ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "  s                     ",
+                "  s                     "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_5" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,hFFFFFFFFn!F#h,,,,,,,,",
+                ",,QnRRnnRRnF!F#Q,,,,,,,,",
+                ",,QFRRFFRRFn!F#Q,,,,,,,,",
+                ",,hnRRnnRRnFFFFh|,,,,,,,",
+                ",,hFFFFFF;FFFFFh,,,,,,,,",
+                ",,hhhEhQQhEhQQhh,,,,,,,,",
+                "ssssssssssssssssssssssss",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "pppPPppppPPppppPPppppPPp",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "ssssssssssssssssssssssss",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL" ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 3, "y": 16 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 10, "y": 1 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 3, "y": 3 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 6, "y": 1 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 0 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 11, "y": 2 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 20, "y": 19 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 4, "y": 13 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 6 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 17 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 3 }
+        ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", ";": "t_fo_powlamp" },
+        "place_items": [
+           { "item": "alcohol", "x": 12 , "y": [ 0, 2 ], "repeat": [ 1, 4 ] },
+           { "item": "fo_mob_miscdrops", "x": 12 , "y": [ 0, 2 ], "repeat": [ 1, 2 ], "chance": 50 },
+           { "item": "fo_nuka_bottles", "x": 12, "y": [ 0, 2 ], "repeat": [ 1, 4 ] },
+
+           { "item": "alcohol", "x": [ 4, 5]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 7 },
+           { "item": "fo_mob_miscdrops", "x": [ 4, 5]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fo_nuka_bottles", "x": [ 4, 5]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "SUS_dishes", "x": [ 4, 5]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fallout_misc_itemgroup_food", "x": [ 4, 5]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+
+           { "item": "alcohol", "x": [ 8, 9]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 7 },
+           { "item": "fo_mob_miscdrops", "x": [ 8, 9]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fo_nuka_bottles", "x": [ 8, 9]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "SUS_dishes", "x": [ 8, 9]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 },
+           { "item": "fallout_misc_itemgroup_food", "x": [ 8, 9]  , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 14 }
+
+
+        ]
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_5_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "  |............|        ",
+                "  |............|        ",
+                "  |............|        ",
+                "  |............|        ",
+                "  |............|        ",
+                "  |kkkkkkkkkkkk|        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_6" ],"object": {
+            "fill_ter": "t_region_groundcover",
+            "rows": [
+                
+                "WffffW,w@@@@!!!:;)w,,W,,",
+                "W;f88W,wwwwwwwwEwww,,Wvv",
+                "WWAWWW,,,,,|,,,,,,,,,,,v",
+                ",,,,,,,,,,,,,,,,,,,,,,,v",
+                ",,,,,,,,,,,,,,,,,,,,,,,v",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                "ssssssssssssss,DsDDD,,,,",
+                "PPPPPPPPPPPPPP,,DDDD,,,,",
+                "PPPPPPPPPPPPPPPPPDD,,,,,",
+                "PPPPPPPPPPPPPPPP,D,,,,,,",
+                "PPPPPPPPPPPPPPPP,D,,,,,,",
+                "pppPPppppPPppp,,,,,,,,,,",
+                "PPPPPPPPPPPPPPP,D,,,,,,,",
+                "PPPPPPPPPPPPPPPPD,DD,,,,",
+                "PPPPPPPPPPPPPPDP,DD,,,,,",
+                "PPPPPPPPPPPPPPDPP,,,,,,,",
+                "ssssssssssssss,ssD,,,,,,",
+                "###Q#E#Q######',,,,,,,,,",
+                "#jj.9.u.#22NN#,,,,,,,,,,",
+                "Q.......E....Q,,,,,,,,,v",
+                "#.=r.=r.#.===#,,,,,,,,,v",
+                "#;=..=..#;.ri#,,,,,,,,,v",
+                "###Q###Q######,,,,,,,Wvv",
+                ",,,,,,,,,,,,,,,,,,,,,W,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL_RIGHT_ENTRANCE" ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_npcs": [
+                     { "class": "fo_wastetown_guard", "x": 22, "y": 21}, { "class": "fo_wastetown_guard", "x": 22, "y": 2}, { "class": "fo_wastetown_caravan_employee", "x": 11, "y": 21}
+                ],
+            "place_nested": [ { "chunks": [ [ "fo_wastetown_spawn", 80 ], [ "null", 20 ] ], "x": 19, "y": 19 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 80 ], [ "null", 20 ] ], "x": 19, "y": 6 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 23, "y": 13 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 8, "y": 16 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 6, "y": 8 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 5, "y": 3 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 19, "y": 6 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 18, "y": 19 }
+        ],
+        "signs": { "'": { "signage": "Crimson Caravan Office" } },
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", ";": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_6_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "ssssss |..........|  s  ",
+                "ssssss |kkkkkkkkkk|  s  ",
+                "ssssss                  ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "..............          ",
+                "..............          ",
+                "..............          ",
+                "..............          ",
+                "..............          ",
+                "..............       s  ",
+                "                     s  "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_7" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,W,,,,wwqwwwqwwwwqwww,,",
+                ",,W,,,ww3KFw!!11wFjjjw,,",
+                ",,W,,,wwFFFw!nF!wFFFFE,,",
+                ",,W,,,ww3KFw!FF!wFFF9w,,",
+                ",,W,,,ww;FFEFFFFEFFF:w,,",
+                ",,W,,,ww2KFwtF11w;FFFw,,",
+                ",,W,,,,wwqwwwqwwwwqwww,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,wwqwwwqwwwwqwww,,",
+                ",,W,,,wwKK2w1FtjwjFFFw,,",
+                ",,W,,,wwKK3w1FnjwjFFFE,,",
+                ",,W,,,wwFFFw1FFjwjFF9w,,",
+                ",,W,,,ww;FFEFFnFEFFF:w,,",
+                ",,W,,,wwRRRwFFRRw;FFFw,,",
+                ",,W,,,,wwqwwwqwwwwqwww,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,W,,,,,,,,,,,,,,,,,,,,,",
+                ",,WWWWWWWWWWWWWWWWWWWWWW",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL" ],
+        "place_nested": [ { "chunks": [ [ "fo_wasresfem_spawn", 80 ], [ "null", 20 ] ], "x": 14, "y": 2 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 80 ], [ "null", 20 ] ], "x": 18, "y": 4 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 22, "y": 6 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 6, "y": 18 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 13, "y": 3 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 19, "y": 11 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 18, "y": 14 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 14, "y": 12 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 10, "y": 12 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 8, "y": 2 }
+        ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", ";": "t_fo_powlamp" },
+        "place_items": [
+           { "item": "SUS_dishes", "x": 12 , "y": [ 1, 3 ], "repeat": [ 1, 4 ], "chance": 50 },
+           { "item": "SUS_cookware", "x": 12 , "y": [ 1, 3 ], "repeat": [ 1, 2 ], "chance": 50 },
+           { "item": "SUS_junk_drawer", "x": 12, "y": [ 1, 3 ], "repeat": [ 1, 4 ], "chance": 50 },
+           { "item": "SUS_dishes", "x": 13 , "y": 1, "repeat": [ 1, 4 ], "chance": 10 },
+           { "item": "SUS_cookware", "x": 13 , "y": 1, "repeat": [ 1, 2 ], "chance": 10 },
+           { "item": "SUS_junk_drawer", "x": 13, "y": 1, "repeat": [ 1, 4 ], "chance": 10 },
+           { "item": "SUS_dishes", "x": 15 , "y": [ 3, 2 ], "repeat": [ 1, 4 ], "chance": 10 },
+           { "item": "SUS_cookware", "x": 15 , "y": [ 3, 2 ], "repeat": [ 1, 2 ], "chance": 10 },
+           { "item": "SUS_junk_drawer", "x": 15, "y": [ 3, 2 ], "repeat": [ 1, 4 ], "chance": 10 }
+
+
+        ]
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_7_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "  s    ...............  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s    ...............  ",
+                "  s                     ",
+                "  s                     ",
+                "  s    ...............  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s   ................  ",
+                "  s    ...............  ",
+                "  s                     ",
+                "  s                     ",
+                "  s                     ",
+                "  s                     ",
+                "  s                     ",
+                "  ssssssssssssssssssssss",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_8" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",lllll,,DD,DD,,,WWWWWWWW",
+                ",l4DDD,,DDD,D,,|W99<<99W",
+                ",l4DDR,,DDDDD,,,qmmifmmW",
+                ",l4DDR,,DDDD,,,,EFrffFrW",
+                ",lllll,,,DDD,,D,qFFffFFW",
+                ",,,,,,,DDDDD,DD,WFFffmmW",
+                ",,lllllDDDDD,D,,qFFffrFW",
+                ",,l4DDDDDDDDDD,,WmmifFFW",
+                ",,l4DDRDDDDDD,,,qFrffmmW",
+                ",,l44DRDDDD,D,D,W;FffFrW",
+                ",,lllllDDDDDD,,,WWWWWEWW",
+                ",,,,,,,,DDD,,,DD,,PGff8P",
+                ",,,,,,,,,DD,,D,D,,Pdff8P",
+                ",lllll,,,,,D,,,,,DPdff8P",
+                ",l4DDR,D,,,D,,,,DDPPPePP",
+                ",l4DDRD,,,D,,,,,,,,,,,,,",
+                ",l4DDD,,,,,,,,l,,RRl,,,,",
+                ",l4DDl,,lRRDl,lDDDDl,,,,",
+                ",lllll,,lDDDl,lDDDDl,,,,",
+                ",,,,,,,,l555l,l3333l,,,,",
+                ",,,,,,,,lllll,llllll,,,,",
+                "************************",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL_MERCHANTS" ],
+        "place_npcs": [
+                    { "class": "fo_waste_scrap_merchant", "x": 4, "y": 2},
+                    { "class": "fo_waste_hardware_merchant", "x": 5, "y": 8},
+                    { "class": "fo_waste_science_merchant", "x": 4, "y": 15},
+                    { "class": "fo_waste_book_merchant", "x": 10, "y": 18},
+                    { "class": "fo_waste_gun_merchant", "x": 17, "y": 17},
+                    { "class": "fo_wastetown_junk_leader", "x": 22, "y": 3}
+                ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 13 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 8 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 2 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 12 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 6, "y": 5 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 13, "y": 15 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 18, "y": 4 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 21, "y": 7 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 12, "y": 12 }
+        ],
+        "place_items": [
+           { "item": "everyday_gear", "x": 2, "y": [ 1, 3 ], "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "gear_homeless", "x": 2, "y": [ 1, 3 ], "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "book_survival", "x": 2, "y": [ 1, 3 ], "repeat": [ 7, 12 ], "chance": 15 },
+           { "item": "gear_survival", "x": 2, "y": [ 1, 3 ], "repeat": [ 7, 12 ], "chance": 75 },
+
+           { "item": "supplies_hardware", "x": 3, "y": [ 7, 9 ], "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_farming", "x": 3, "y": [ 7, 9 ], "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_metal", "x": 3, "y": [ 7, 9 ], "repeat": [ 7, 12 ], "chance": 15 },
+           { "item": "supplies_mechanics", "x": 3, "y": [ 7, 9 ], "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "fuel_barrel_full", "x": 3, "y": [ 7, 9 ], "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "tools_common", "x": 4, "y": 9, "repeat": [ 2, 6 ], "chance": 75 },
+           { "item": "tools_electronics", "x": 4, "y": 9, "repeat": [ 2, 6 ], "chance": 35 },
+
+           { "item": "supplies_electronics", "x": 2, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "supplies_reagents_lab", "x": 2, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "tools_electronics", "x": 2, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "science", "x": 2, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "ammo_atomic_batteries_full", "x": 2, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 8 },
+           { "item": "ammo_any_batteries_full", "x": 2, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+
+           { "item": "book_military", "x": [ 9, 11 ], "y": 19, "repeat": [ 4, 6 ], "chance": 65 },
+           { "item": "hardware_books", "x": [ 9, 11 ], "y": 19, "repeat": [ 4, 6 ], "chance": 25 },
+           { "item": "homebooks", "x": [ 9, 11 ], "y": 19, "repeat": [ 4, 6 ], "chance": 65 },
+           { "item": "manuals", "x": [ 9, 11 ], "y": 19, "repeat": [ 4, 6 ], "chance": 65 },
+           { "item": "magazines", "x": [ 9, 11 ], "y": 19, "repeat": [ 4, 6 ], "chance": 65 },
+           { "item": "novels", "x": [ 9, 11 ], "y": 19, "repeat": [ 4, 6 ], "chance": 65 },
+
+           { "item": "drops_fo_rare_highvalue_weapon", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 2 ], "chance": 8 },
+           { "item": "guns_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "guns_milspec", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 3 ], "chance": 10 },
+           { "item": "guns_obscure", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 3 ], "chance": 12 },
+           { "item": "mags_pistol_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_smg_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_rifle_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "ammo_pistol_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_pistol_fallout_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_fallout_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "guns_rifle_fallout_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_rifle_fallout_rare", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_common", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_rare", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_heavy_fallout", "x": [ 15, 18 ], "y": 19, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "drops_fo_melee_weapons", "x": [ 15, 18 ], "y": 19, "repeat": [ 3, 5 ], "chance": 65 },
+
+           { "item": "fallout_energy_gungroups_enhanced", "x": [ 15, 18 ], "y": 19, "repeat": [ 1, 2 ], "chance": 9 }
+
+
+
+        ],
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", ";": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_8_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                |KKKKKK|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |......|",
+                "                |kkkkkk|",
+                "                  ssssss",
+                "                  ssssss",
+                "                  ssssss",
+                "                  ssssss",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "ssssssssssssssssssssssss",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WASTETOWN_9" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",:,:,:,:,:,:,:,,,,VcVW,,",
+                ",:,:,:,:,:,:,:,,,,,,,W,,",
+                ",:,:,:,:,:,:,:,?,,?i,W,,",
+                ",:,:,:,:,:,:,:|o,,o,,W,,",
+                ",:,:,:,:,:,:,:wwEwwwwW,,",
+                ",:,:,:,:,:,:,:wdF!!!wW,,",
+                ",:,:,:,:,:,:,:QFFrF!wW,,",
+                ",:,:,:,:,:,:,:wrRRF1wW,,",
+                ",:,:,:,:,:,:,:wrRRF1wW,,",
+                ",:,:,:,:,:,:,:QFrFFGwW,,",
+                ",:,:,:,:,:,:,:wFL;FFwW,,",
+                ",:,:,:,:,:,:,:wQwHHEwW,,",
+                ",:,:,:,:,:,:,:,,w3FFwW,,",
+                ",:,:,:,:,:,:,:,,wKKFwW,,",
+                ",:,:,:,:,:,:,:,,wKK5wW,,",
+                ",:,:,:,:,:,:,:,HwwwwwW,,",
+                ",:,:,:,:,:,:,:ZHZ@@@@W,,",
+                ",:,:,:,:,:,:,:,zOOOOOW,,",
+                ",,,,,,,,,,,,,,,zOOOO~W,,",
+                ",,,,,,,,,,,,,,,zOOOO~W,,",
+                ",,,,,,,,,,,,,,,zOOOO~W,,",
+                "WWWWWWWWWWWWWWWWWWWWWW,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_WASTETOWN_PAL_FARM" ],
+        "place_npcs": [
+                     { "class": "fo_waste_farmer", "x": 18, "y": 8}
+                ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 2, "y": 0 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 1 },
+                    { "chunks": [ [ "fo_wastetown_spawn", 50 ], [ "null", 50 ] ], "x": 8, "y": 10 },
+
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 2, "y": 17 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 8, "y": 17 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 18, "y": 4 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 15, "y": 9 },
+                    { "chunks": [ [ "fo_wasresfem_spawn", 25 ], [ "fo_wasresmal_spawn", 25 ], [ "null", 50 ] ], "x": 18, "y": 6 }
+        ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_item": [
+           { "item": "wheat", "x": [ 16, 19 ] , "y": [ 17, 18 ], "chance": 85, "repeat": [ 8, 14 ] },
+           { "item": "cattlefodder", "x": [ 16, 19 ] , "y": [ 19, 20 ], "chance": 85, "repeat": [ 8, 14 ] }
+
+
+        ],
+        "sealed_item": { ":": { "item": { "item": "seed_corn" }, "furniture": "f_plant_seedling" } },
+        "terrain": { ",": "t_region_groundcover", "|": "t_gutter_downspout", ";": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_WASTETOWN_9_R",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                     s  ",
+                "                     s  ",
+                "                     s  ",
+                "                     s  ",
+                "              |KKKKK|s  ",
+                "              |.....|s  ",
+                "              |.....|s  ",
+                "              |.....|s  ",
+                "              |.....|s  ",
+                "              |.....|s  ",
+                "              |.....|s  ",
+                "              |kkkkk|s  ",
+                "                .....s  ",
+                "                .....s  ",
+                "                .....s  ",
+                "                .....s  ",
+                "               mmmmmms  ",
+                "               mmmmmms  ",
+                "               mmmmmms  ",
+                "               mmmmmms  ",
+                "               mmmmmms  ",
+                "ssssssssssssssssssssss  ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "s": "t_scrap_floor",
+                "m": "t_floor_primitive",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    }
+]

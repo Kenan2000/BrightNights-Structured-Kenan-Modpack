@@ -1,0 +1,265 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_quest_traveller",
+    "name_suffix": "Waylaid traveller",
+    "class": "fo_quest_traveller_npc",
+    "attitude": 1,
+    "mission": 8,
+    "chat": "TALK_fo_quest_traveller_start",
+    "faction": "foc_lost_travellers"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_quest_traveller_npc",
+    "name": { "str": "Waylaid traveller" },
+    "job_description": "A hunter who makes a living off of hunting Geckos.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_QST_TRAV_worn",
+    "carry_override": "NC_QST_TRAV_carry",
+    "weapon_override": "NC_QST_TRAV_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "tailor", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "traps", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_TRAV_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "bookplate", "prob": 100 }, { "item": "chestguard_hard", "prob": 100 }, { "item": "cuirass_scrap", "prob": 100 }, { "item": "jacket_leather_mod", "prob": 100 }, { "item": "kevlar", "prob": 100 }, { "item": "motorbike_armor", "prob": 100 }, { "item": "vest_leather_mod", "prob": 100 }, { "item": "armor_combat_light", "prob": 100 } ], "prob": 75 },
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "2byshin_guard", "prob": 100 }, { "item": "knee_pads", "prob": 100 }, { "item": "legguard_hard", "prob": 100 }, { "item": "legguard_metal", "prob": 100 }, { "item": "legguard_scrap", "prob": 100 }, { "item": "pants_survivor", "prob": 100 } ], "prob": 65 },
+      { "item": "duffelbag" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "boots_combat", "prob": 100 }, { "item": "boots_fur", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 75 },
+      { "item": "bandolier_rifle", "prob": 15 },
+      { "distribution": [ { "item": "fo_ncr_trooper_helmet", "prob": 100 }, { "item": "helmet_biker_retro", "prob": 100 }, { "item": "helmet_combat_light", "prob": 100 }, { "item": "pot_helmet", "prob": 100 }, { "item": "helmet_army", "prob": 100 }, { "item": "helmet_bike", "prob": 100 }, { "item": "helmet_football", "prob": 100 }, { "item": "helmet_motor", "prob": 100 }, { "item": "helmet_scavenger", "prob": 100 }, { "item": "helmet_scrap", "prob": 100 }, { "item": "helmet_survivor", "prob": 100 }, { "item": "hat_boonie", "prob": 100 }, { "item": "beret", "prob": 100 }, { "item": "cowboy_hat", "prob": 100 }, { "item": "hat_hard", "prob": 100 }, { "item": "hat_hunting", "prob": 100 }, { "item": "straw_hat", "prob": 100 } ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_TRAV_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "count": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 },
+      { "item": "fo_stim_precursors" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_TRAV_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "colt_rangemaster", "charges": 15 },
+      { "item": "colt6250", "charges": 12 },
+      { "item": "varmint_rifle", "charges": 10 },
+      { "item": "ak112", "charges": 30 }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_start",
+    "type": "talk_topic",
+    "dynamic_line": [ 
+
+      { "npc_has_var": "u_known_by_waylaid", "type": "general", "context": "meeting", "value": "yes",
+      "yes": [
+        "What do you want.",
+        "Make it quick.",
+        "Make it hasty, what do you want?"
+      ],
+      "no": {
+        "u_male": [ "GO AWAY! I have no idea who you are.", "What's a man like you doing here, don't you know that I'm in a bind!" ],
+        "no": [ "What are you doing here, my friend is dying and you just barge in like that!", "Get away from me you bitch! Are you gonna try and kill me or something!" ]
+      }
+    } 
+      ],
+    "responses": [
+      {
+        "text": "Calm down, I just stumbled upon this place. What's going on here?",
+        "condition": { "not": { "npc_has_var": "u_known_by_waylaid", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_quest_traveller_explain"
+      },
+      {
+        "text": "Any updates?",
+        "condition": { "npc_has_var": "u_known_by_waylaid", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_quest_traveller_start"
+      },
+      {
+        "text": "I healed your friend, can you give me the precursor chemicals now?",
+        "condition": {
+            "and": [
+              { "u_has_var": "u_heal_qst_friend", "type": "general", "context": "meeting", "value": "yes" },
+              { "not": { "npc_has_var": "u_has_qstfriend_item", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          },
+        "topic": "TALK_fo_quest_traveller_reward"
+      },
+      {
+        "text": "You have something that I want. Give to me now before I have to get violent.",
+        "condition": {
+            "and": [
+              { "not": { "npc_has_var": "u_known_waylaid_intimidate", "type": "general", "context": "meeting", "value": "yes" } },
+              { "not": { "u_has_var": "u_heal_qst_friend", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          },
+        "trial": {
+            "type": "INTIMIDATE",
+            "difficulty": 35
+          },
+        "success": {
+              "topic": "TALK_fo_quest_traveller_intimidate_success"
+        },
+        "failure": {
+              "topic": "TALK_fo_quest_traveller_intimidate_fail"
+        }
+      },
+      {
+        "text": "[Lie] I have this entire place surrounded with armed men. Give me the chemicals and this won't have to get violent.",
+        "condition": {
+            "and": [
+              { "not": { "npc_has_var": "u_known_waylaid_lie", "type": "general", "context": "meeting", "value": "yes" } },
+              { "not": { "u_has_var": "u_heal_qst_friend", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          },
+        "trial": {
+            "type": "LIE",
+            "difficulty": 35
+          },
+        "success": {
+              "topic": "TALK_fo_quest_traveller_lie_success"
+        },
+        "failure": {
+              "topic": "TALK_fo_quest_traveller_lie_fail"
+        }
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_explain",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Me and my friend over there on the bed are in a bad spot. We were travelling from out west and decided to scavenge for food in a local town. I had a bad feeling about it, but decided against my better judgement to get some tins of old food from a house. Before I knew it, we were ambushed by raiders and my friend over there got a terrible wound. I dragged 'em all the way out to this house in the sticks. I mugged some caravaneer on the way though for any medical supplies they had on them, not like these chemicals do much.",
+      "no": "Me and my friend over there on the bed are in a bad spot. We were travelling from out west and decided to scavenge for food in a local town. I had a bad feeling about it, but decided against my better judgement to get some tins of old food from a house. Before I knew it, we were ambushed by raiders and my friend over there got a terrible wound. I dragged 'em all the way out to this house in the sticks. I mugged some caravaneer on the way though for any medical supplies they had on them, not like these chemicals do much."},
+    "responses": [
+      {
+        "text": "Understood.",
+        "effect": { "npc_add_var": "u_known_by_waylaid", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_quest_traveller_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_intimidate_success",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "O-Okay, fine! Here it is, take the chemicals, just leave me and my friend alone. Please don't kill us!",
+      "no": "O-Okay, fine! Here it is, take the chemicals, just leave me and my friend alone. Please don't kill us!"},
+    "responses": [
+      {
+        "text": "See, that wasn't hard no was it?",
+        "effect": [ { "npc_add_var": "u_known_waylaid_intimidate", "type": "general", "context": "meeting", "value": "yes" },
+        { "npc_remove_item_with": "fo_stim_precursors" },
+        { "u_buy_item": "fo_stim_precursors" } ],
+        "topic": "TALK_fo_quest_traveller_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_intimidate_fail",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Heh! Do you think I would fall for that, little girl? You look like you could bend over in a rainstorm! You couldn't make a fly flinch!",
+      "no": "Heh! Do you think I would fall for that, little boy? You look like you could bend over in a rainstorm! You couldn't make a fly flinch!"},
+    "responses": [
+      {
+        "text": "O-Okay.",
+        "effect": { "npc_add_var": "u_known_waylaid_intimidate", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_quest_traveller_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_lie_success",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "O-Okay, fine! Here it is, take the chemicals, just leave me and my friend alone. Please don't kill us!",
+      "no": "O-Okay, fine! Here it is, take the chemicals, just leave me and my friend alone. Please don't kill us!"},
+    "responses": [
+      {
+        "text": "See, that wasn't hard no was it?",
+        "effect": [ { "npc_add_var": "u_known_waylaid_lie", "type": "general", "context": "meeting", "value": "yes" },
+        { "npc_remove_item_with": "fo_stim_precursors" },
+        { "u_buy_item": "fo_stim_precursors" } ],
+        "topic": "TALK_fo_quest_traveller_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_lie_fail",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "You think I would fall for that? You don't think I would notice an entire militia around this house! Give me a break!",
+      "no": "You think I would fall for that? You don't think I would notice an entire militia around this house! Give me a break!"},
+    "responses": [
+      {
+        "text": "O-Okay.",
+        "effect": { "npc_add_var": "u_known_waylaid_lie", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_quest_traveller_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_reward",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Sure thing, It's not like I need these anymore.",
+      "no": "Sure thing, It's not like I need these anymore."},
+    "responses": [
+      {
+        "text": "Thank you.",
+        "effect": [ { "u_buy_item": "fo_stim_precursors" }, { "npc_remove_item_with": "fo_stim_precursors" }, { "npc_add_var": "u_has_qstfriend_item", "type": "general", "context": "meeting", "value": "yes" } ],
+        "topic": "TALK_fo_quest_traveller_start"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_traveller_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "I'm still stuck here and my friend is still hurt, genius, what did you think I would say?",
+    "responses": [
+      {
+        "text": "Okay.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

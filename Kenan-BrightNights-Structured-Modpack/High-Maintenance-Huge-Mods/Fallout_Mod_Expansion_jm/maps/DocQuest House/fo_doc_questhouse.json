@@ -1,0 +1,91 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_DOCQUEST_HOUSE_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,Z,,,,,,z,,,,z,,,,,,,,,",
+                ",,,,,,z,,,,,,,,,,,,,Z,Z,",
+                ",,,,,,,,z,,,Z,,Z,,,,,,,,",
+                ",,z,,Z,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,Z,,,,,,,,,,,,,,,",
+                "Z,,,Z,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,z,,,,,,WWWWWwWWWW,,,,Z",
+                ",,,,,Z,,,WtF11FbFbW,,,,,",
+                ",,,,,,,,,wFFFFFbFbw,,,,,",
+                ",z,,,,,,,WFFFFFFFFW,,,,,",
+                ",,,,,,,,,WTRRTFFFFW,,,,,",
+                ",,Z,,,,,,wTRRT2FF1w,,,,,",
+                ",,,,,,,,,WWWWWWFF1W,,,,,",
+                ",,,,,,,,,,,,,,WFF1W,,,,,",
+                ",,,,z,,,,BB,B,WWDWW,,,,Z",
+                ",,,,,,,,BBBBBBBBBB,,,,,,",
+                "Z,,,,,,,BBBBBBBBBBB,,,,,",
+                ",,,,,Z,,BBBBBBBBBBBB,,z,",
+                ",,z,,,,,,,,,BB,,,B,,,,,,",
+                ",,,,,,,,z,,,,,,,,,,Z,Z,,",
+                ",,,Z,,Z,,,,,,,,,,,,,,,,,",
+                ",,,,,z,,,z,,,,Z,,,,,,,,,",
+                "z,z,,,,,,,,,,,,,,,,Z,,,,"
+            ],
+        "palettes": [ "FO_PAL_DOCHOUSE" ],
+        "place_zones": [
+        { "type": "NPC_INVESTIGATE_ONLY", "faction": "foc_lost_travellers", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+      ],
+        "faction_owner": [
+                    { "id": "foc_lost_travellers", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_npcs": [
+                     { "class": "fo_quest_traveller", "x": 14, "y": 10},
+                     { "class": "fo_quest_follower", "x": 15, "y": 8}
+                ],
+        "place_vehicles": [
+        { "chance": 65, "fuel": 0, "rotation": 0, "status": 1, "vehicle": "showroom_small_vehicles", "x": 8, "y": 17 }
+      ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_DOCQUEST_HOUSE_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "         ..........     ",
+                "         ..........     ",
+                "         ..........     ",
+                "         ..........     ",
+                "         ..........     ",
+                "         ..........     ",
+                "         ..........     ",
+                "              .....     ",
+                "              .....     ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_floor_primitive"
+            }
+        }
+    }
+]

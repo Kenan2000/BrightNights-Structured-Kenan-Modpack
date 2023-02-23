@@ -1,0 +1,110 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_enclave_trooper",
+    "name_suffix": "Enclave Trooper",
+    "class": "fo_enclave_trooper_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_enclave_trooper_start",
+    "faction": "fac__fo_enclave"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_enclave_trooper_npc",
+    "name": { "str": "Enclave Trooper" },
+    "job_description": "Is a soldier of the Enclave.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_ENCL_TROOPER_worn",
+    "carry_override": "NC_ENCL_TROOPER_carry",
+    "weapon_override": "NC_ENCL_TROOPER_weapons",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ENCL_TROOPER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "power_armor_x01" },
+      { "item": "power_armor_helmet_x01" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ENCL_TROOPER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
+      { "item": "adv_UPS_off", "charges": 2500, "prob": 100 },
+      { "group": "fallout_misc_itemgroup_food", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_ENCL_TROOPER_weapons",
+    "subtype": "collection",
+    "entries": [
+      { "item": "p94_rifle", "prob": 100 }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_enclave_trooper_start",
+    "dynamic_line": {
+      "u_has_var": "u_are_enclave_member",
+      "type": "general",
+      "context": "meeting",
+      "value": "yes",
+      "yes": [
+        "Another day serving the government.",
+        "Remember to report any muties if you find 'em.",
+        "I can't wait 'till this patrol is over.",
+        "I hope the radio plays something good soon.",
+        "Hello there, another glorious day in the Enclave."
+      ],
+      "no": [ "Get away now, or I'll start shooting!", "Are you a mutie?", "Don't get any ideas" ]
+    },
+    "responses": [
+      {
+        "text": "Who are you, what are you doing here?",
+        "topic": "TALK_bos_enclave_2"
+      },
+      {
+        "text": "What is the Enclave?",
+        "topic": "TALK_bos_enclave_3"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_bos_enclave_2",
+    "type": "talk_topic",
+    "dynamic_line": "I'm a soldier in the Enclave. Typically we go on patrols after dismounting from our Vertibird in the New England area, although most of our troops are in Chicago.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

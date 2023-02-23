@@ -1,0 +1,34 @@
+[
+    {
+        "type":"palette",
+        "id":"FO_PAL_DOCHOUSE",
+        "terrain": {
+           "W": "t_adobe_brick_wall",
+           "w": "t_window_reinforced",
+           "D": "t_door_makeshift_c",
+           "F": "t_floor_primitive",
+           "T": "t_floor_primitive",
+           "t": "t_floor_primitive",
+           "R": "t_floor_primitive",
+           "Z": "t_tree_maple",
+           "z": "t_shrub",
+           "B": "t_dirt",
+           "b": "t_floor_primitive",
+           "1": "t_floor_primitive",
+           "2": "t_floor_primitive"
+        },
+        "furniture": {
+           "T": "f_logstool",
+           "t": "f_woodstove",
+           "R": "f_table",
+           "b": "f_makeshift_bed",
+           "1": "f_rack_wood",
+           "2": "f_safe_l"
+        },
+    "items": {
+            "R": [ { "item": "fallout_misc_itemgroup_food", "chance": 38, "repeat": [ 1, 2 ] }, { "item": "alcohol", "chance": 15, "repeat": [ 1, 2 ] }, { "item": "dry_goods", "chance": 18, "repeat": [ 1, 4 ] }, { "item": "foodintincan", "chance": 40, "repeat": [ 1, 4 ] } ],
+            "1": [ { "item": "gear_survival", "chance": 38, "repeat": [ 1, 2 ] }, { "item": "drops_fo_drugdrop_misc", "chance": 35, "repeat": [ 1, 2 ] }, { "item": "fallout_misc_itemgroup_food", "chance": 75, "repeat": [ 3, 4 ] }, { "item": "foodintincan", "chance": 65, "repeat": [ 2, 4 ] }, { "item": "fo_mob_miscdrops", "chance": 20, "repeat": [ 1, 2 ] }, { "item": "books_fallout_common", "chance": 75, "repeat": [ 1, 3 ] } ],
+            "2": [ { "item": "ammo_pistol_fallout_common", "chance": 75, "repeat": [ 1, 2 ] }, { "item": "ammo_rifle_fallout_common", "chance": 50, "repeat": [ 1, 2 ] }, { "item": "guns_rifle_fallout_common", "chance": 75, "repeat": [ 1, 2 ] }, { "item": "guns_pistol_fallout_common", "chance": 65, "repeat": [ 1, 2 ] }, { "item": "mags_rifle_fallout_common", "chance": 75, "repeat": [ 1, 2 ] }, { "item": "mags_pistol_fallout_common", "chance": 75, "repeat": [ 1, 3 ] } ]
+            }
+        }
+]

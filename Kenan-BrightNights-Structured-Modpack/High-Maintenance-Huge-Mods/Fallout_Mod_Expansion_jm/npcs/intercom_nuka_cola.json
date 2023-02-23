@@ -1,0 +1,82 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_nuka_computer",
+    "name_unique": "the intercom",
+    "name_suffix": "Nuka-Cola Computer",
+    "gender": "female",
+    "class": "NC_ROBOFAC_INTERCOM",
+    "attitude": 0,
+    "mission": 3,
+    "mission_offered": "MISSION_NUKA_COMPUTER",
+    "chat": "TALK_nuka_computer_start"
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NUKA_COMPUTER_worn",
+    "subtype": "collection",
+    "entries": [  ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NUKA_COMPUTER_carry",
+    "subtype": "collection",
+    "entries": [  ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_NUKA_COMPUTER_weapon",
+    "subtype": "collection",
+    "entries": [  ]
+  },
+  {
+    "id": "TALK_nuka_computer_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Hello there, lucky guest. You have a special opportunity, one that is rarely provided by the Nuke Cola corporation to only its most dedicated customers!",
+      "no": "Hello there, lucky guest. You have a special opportunity, one that is rarely provided by the Nuke Cola corporation to only its most dedicated customers!"
+    },
+    "responses": [
+      { "text": "Who, or well, what are you?", "topic": "TALK_nukacomputer_infotown" },
+      { "text": "What do you mean by opportunity?", "topic": "TALK_MISSION_LIST" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_nukacomputer_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I am this Nuka-Cola bottling plant's production management main-frame, but I also moonlight as a tour guide! I have been running this plant in the abscence of any employees for [ERROR] days now, isn't it amazing how this place runs like a well-oiled machine, only the finest in Nuka-Cola products once again!",
+      "no": "I am this Nuka-Cola bottling plant's production management main-frame, but I also moonlight as a tour guide! I have been running this plant in the abscence of any employees for [ERROR] days now, isn't it amazing how this place runs like a well-oiled machine, only the finest in Nuka-Cola products once again!"
+    },
+    "responses": [ { "text": "Got it.", "topic": "TALK_nuka_computer_start" } ]
+  },
+  {
+    "id": "MISSION_NUKA_COMPUTER",
+    "type": "mission_definition",
+    "name": "Find 75 units of Nuka-Cola quantum for the Nuka Cola computer in return for a special prize!",
+    "description": "Find 75 units of Nuka-Cola quantum for the Nuka Cola computer in return for a special prize!",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "value": 150000,
+    "item": "cola_nuka_quantum",
+    "count": 75,
+    "end": {
+      "effect": [ { "u_buy_item": "power_armor_t51_nuka", "count": 1 }, { "u_buy_item": "power_armor_helmet_t51_nuka", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I have a special offer, just for you!",
+      "offer": "Seeing as how you're such a dedicated and special customer of the Nuka-Cola corporation, I have an offer for you! Give me 75 units of Nuka-Cola quantum, and I'll give you a special prize!",
+      "accepted": "That's great! Please return at your soonest possible convenience!",
+      "rejected": "You're missing out on a great opportunity!",
+      "advice": "Look in Nuka-Cola facilities for vending machines, you never know what you'll find!",
+      "inquire": "How is the search going?",
+      "success": "This is amazing! Here, have this complimentary suit of Nuka-Cola brand T-51b power armor, courtesy of the Nuka-Cola corporation! Don't go getting into trouble now!",
+      "success_lie": "Lying to a Nuka-Cola brand ZAX Supercomputer is an extremely difficult task. Try again next time!",
+      "failure": "Oh well, I guess somebody else will get the prize!"
+    }
+  }
+]

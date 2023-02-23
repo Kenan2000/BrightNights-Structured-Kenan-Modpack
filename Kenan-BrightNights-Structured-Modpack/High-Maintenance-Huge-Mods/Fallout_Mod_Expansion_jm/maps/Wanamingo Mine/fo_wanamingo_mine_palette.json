@@ -1,0 +1,42 @@
+[
+    {
+        "type":"palette",
+        "id":"FO_PAL_WANAMINGO",
+        "terrain": {
+           "R": "t_rock",
+           "f": "t_rock_floor",
+           "W": "t_junk_wall",
+           "D": "t_door_makeshift_c",
+           "T": "t_railroad_track_small",
+           "O": "t_machinery_light",
+           "P": "t_rock_floor",
+           "C": "t_little_column",
+           "<": "t_stairs_up",
+           ">": "t_stairs_down",
+           "N": "t_rock_floor",
+           "n": "t_rock_floor",
+           "F": "t_scrap_floor",
+           "1": "t_scrap_floor",
+           "2": "t_scrap_floor",
+           "3": "t_scrap_floor",
+           "V": "t_floor_primitive",
+           "v": "t_brick_wall",
+           "U": "t_conveyor",
+           "u": "t_scrap_floor"
+        },
+        "furniture": {
+           "P": "f_warehouse_shelf",
+           "N": "f_boulder_medium",
+           "n": "f_boulder_small",
+           "1": "f_locker",
+           "2": "f_desk",
+           "3": "f_chair",
+           "u": [ "f_crate_c", "f_crate_o" ]
+        },
+    "items": {
+            "P": [ { "item": "mine_equipment", "chance": 40, "repeat": [ 3, 7 ] }, { "item": "fuel_barrel", "chance": 30, "repeat": [ 1, 2 ] } ],
+            "1": [ { "item": "mine_equipment", "chance": 65, "repeat": [ 1, 6 ] }, { "item": "hardware_bulk", "chance": 65, "repeat": [ 2, 6 ] } ],
+            "2": [ { "item": "SUS_chemistry_bookcase", "chance": 25 }, { "item": "SUS_engineering_bookcase", "chance": 25 }, { "item": "book_mag_tech", "chance": 25 }, { "item": "office_mess", "chance": 40 }, { "item": "fo_mob_miscdrops", "chance": 7 } ]
+            }
+        }
+]

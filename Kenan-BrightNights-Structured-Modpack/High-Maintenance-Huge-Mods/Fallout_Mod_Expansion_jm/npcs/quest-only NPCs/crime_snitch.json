@@ -1,0 +1,224 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_quest_crim_snitch",
+    "name_suffix": "criminal turncoat",
+    "class": "fo_quest_crim_snitch_npc",
+    "attitude": 1,
+    "mission": 8,
+    "chat": "TALK_fo_quest_snitch_start"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_quest_crim_snitch_npc",
+    "name": { "str": "Criminal Turncoat" },
+    "job_description": "A former criminal who seeks to turn a new leaf in live.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_QST_SNITCH_worn",
+    "carry_override": "NC_QST_SNITCH_carry",
+    "weapon_override": "NC_QST_SNITCH_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "tailor", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "traps", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_SNITCH_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "2byshin_guard", "prob": 100 }, { "item": "knee_pads", "prob": 100 }, { "item": "legguard_hard", "prob": 100 }, { "item": "legguard_metal", "prob": 100 }, { "item": "legguard_scrap", "prob": 100 }, { "item": "pants_survivor", "prob": 100 } ], "prob": 65 },
+      { "item": "sleeveless_duster" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "boots_combat", "prob": 100 }, { "item": "boots_fur", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_SNITCH_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "count": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 },
+      { "group": "ammo_any_batteries_full", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_SNITCH_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "colt_rangemaster", "charges": 15 },
+      { "item": "colt6250_weathered", "charges": 12 },
+      { "item": "varmint_rifle", "charges": 10 },
+      { "item": "14mmpistol", "charges": 7 }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_snitch_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What do you want, leave me alone!", "Please don't kill me!", "I'm tired of that life, leave me alone!" ],
+      "no": [ "What do you want, leave me alone!", "Please don't kill me!", "I'm tired of that life, leave me alone!" ]
+        },
+    "responses": [
+      {
+        "text": "[LIE] The NCR won't believe you, you know what they do to criminals outside of NCR jurisdiction, right? They hang them without a trial. Just shut up and tell them that none of this ever happened, okay?",
+        "condition": { "not": { "npc_has_var": "u_fo_snitch_lie_test", "type": "general", "context": "meeting", "value": "yes" } },
+        "trial": {
+            "type": "LIE",
+            "difficulty": 40
+          },
+        "success": {
+              "topic": "TALK_fo_waste_snitch_lie"
+        },
+        "failure": {
+              "topic": "TALK_fo_waste_snitch_lie_fail"
+        }
+      },
+      {
+        "text": "[PERSUADE] Look, things will be much better for you if you don't fess up, okay? The gang will never stop hunting you down, even it costs them. Better to just forget all this and move on with your life.",
+        "condition": { "not": { "npc_has_var": "u_fo_snitch_persuade_test", "type": "general", "context": "meeting", "value": "yes" } },
+        "trial": {
+            "type": "PERSUADE",
+            "difficulty": 40
+          },
+        "success": {
+              "topic": "TALK_fo_waste_snitch_persuade"
+        },
+        "failure": {
+              "topic": "TALK_fo_waste_snitch_persuade_fail"
+        }
+      },
+      {
+        "text": "[INTIMIDATE] Shut up now, or things will soon get very painful for you.",
+        "condition": { "not": { "npc_has_var": "u_fo_snitch_intimidate_test", "type": "general", "context": "meeting", "value": "yes" } },
+        "trial": {
+            "type": "INTIMIDATE",
+            "difficulty": 40
+          },
+        "success": {
+              "topic": "TALK_fo_waste_snitch_intimidate"
+        },
+        "failure": {
+              "topic": "TALK_fo_waste_snitch_intimidate_fail"
+        }
+      },
+      {
+        "text": "[MESMETRON] Follow my instruction. You will go to the NCR and tell them that nothing is wrong. Do that and only that.",
+        "condition": {
+            "and": [
+              { "u_has_items": { "item": "fo_mob_mesmetron", "count": 1 } },
+              { "not": { "npc_has_var": "u_fo_snitch_mesmetron", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          },
+        "topic": "TALK_fo_waste_snitch_intimidate_mesmetron"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_lie",
+    "type": "talk_topic",
+    "dynamic_line": "Jeez, if I knew they were gonna kill me I woulda thought all this over beforehand, thanks a lot!",
+    "responses": [
+      {
+        "text": "Okay.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_lie_test", "type": "general", "context": "meeting", "value": "yes" }, { "u_add_var": "u_fo_snitch_stop", "type": "mission", "context": "qst_fo_snitch_stop", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_intimidate",
+    "type": "talk_topic",
+    "dynamic_line": "Okay, I'll shut up, just don't kill me!",
+    "responses": [
+      {
+        "text": "That's how I like it.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_intimidate_test", "type": "general", "context": "meeting", "value": "yes" }, { "u_add_var": "u_fo_snitch_stop", "type": "mission", "context": "qst_fo_snitch_stop", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_persuade",
+    "type": "talk_topic",
+    "dynamic_line": "You make a good point, I guess I'll just go and do something else, then.",
+    "responses": [
+      {
+        "text": "You made the right decision.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_persuade_test", "type": "general", "context": "meeting", "value": "yes" }, { "u_add_var": "u_fo_snitch_stop", "type": "mission", "context": "qst_fo_snitch_stop", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_lie_fail",
+    "type": "talk_topic",
+    "dynamic_line": "You think I'm that stupid? Sure the NCR might not have jurisdiction out here but there always looking to stamp out criminal enterprise. I wasn't born yesterday!",
+    "responses": [
+      {
+        "text": "Okay.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_lie_test", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_intimidate_fail",
+    "type": "talk_topic",
+    "dynamic_line": "You couldn't intimidate a bloatfly, now go away before I get mad at you for a change.",
+    "responses": [
+      {
+        "text": "O-Okay.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_intimidate_test", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_persuade_fail",
+    "type": "talk_topic",
+    "dynamic_line": "All that blabbering means nothing. I'm going and there's nothing you can do to stop me. Now beat it, loser.",
+    "responses": [
+      {
+        "text": "O-Okay.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_persuade_test", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_waste_snitch_intimidate_mesmetron",
+    "type": "talk_topic",
+    "dynamic_line": "Uh, I'll, um, do exactly as you say. I think? My head feels funny.",
+    "responses": [
+      {
+        "text": "Don't think too hard about it.",
+        "effect": [ { "npc_add_var": "u_fo_snitch_mesmetron", "type": "general", "context": "meeting", "value": "yes" }, { "u_add_var": "u_fo_snitch_stop", "type": "mission", "context": "qst_fo_snitch_stop", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_outpost_caravan_employee",
+    "name_suffix": "Crimson Caravan Liason",
+    "class": "fo_outpost_caravan_employee_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_outpost_crimson_caravan_start",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_outpost_caravan_employee_npc",
+    "name": { "str": "Crimson Caravan Liason" },
+    "job_description": "Is an employee for the Crimson Caravan company.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "fo_caravan_emp_worn",
+    "carry_override": "fo_caravan_emp_carry",
+    "weapon_override": "fo_caravan_emp_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "barter", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "id": "TALK_fo_outpost_crimson_caravan_start",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Trying to keep a good balance of trade is more difficult than it sounds.",
+        "Trader, merchant, or just a random citizen?",
+        "Can't you see that I'm busy. If you need something, make it quick!",
+        "Sometimes I wish I was given a post at some place more interesting, like Boston or Dayglow.",
+        {
+          "u_has_perception": 10,
+            "yes": "You seem to be fairly perceptive. Somebody with an eye like yours would be useful to Crimson Caravan. Spotting counterfeits and ambushes is an immensely valuable skill",
+            "no": "You see those filing cabinets over there? Those are filled with trade deals and disputes from all over the former New England Commonwealth. Perhaps I'll tell you more about them some day."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "Somebody as smart as you is wasting there time around here with these bumpkins. Ever consider going out west to see the NCR or Chicago Enclave? They actually value intellect.",
+            "no": "You wouldn't believe how bad the Capital wasteland is after even 200 years, it's like the war happened scarcely three decades ago down there!"
+        },
+        {
+          "u_has_intelligence": 6, "yes": "It's always a hassle getting carvan guards. Doesn't matter how small or obscure the town is, they always think they're hot-shots that could take down a deathclaw with their rusty 10mm they found in the back of a Super Duper Mart.",
+            "no": "Please don't touch any of my files! I know you probably have difficulty reading any word with more than two syllables anyway, it's not like you would learn anything from them."
+        },
+        "I had to travel all the way from the Hub to get here, and what's even out here, some ruins and random towns that stretch on for miles? Give me a break!",
+        "My highwayman broke down three hundred miles back, had to walk the rest of the way here. It was a slog and a half.",
+        {
+        "u_male": [ "What brings a guy like you here?", "A guy like you wouldn't believe how little happens on most caravan trips.", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "What brings you to this little hamlet, miss?", "Ma'am, do you have anything to trade?", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What's the crimson caravan doing here?", "topic": "TALK_fo_crimson_caravan_go"
+      },
+      {
+        "text": "I have the item you have requested", "topic": "TALK_fo_crimson_caravan_item_request_light",
+        "condition": {
+            "and": [
+              { "u_has_items": { "item": "item_qst_caravan_package_light", "count": 1 } },
+              { "not": { "npc_has_var": "u_caravan_gave_item", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          }
+      },
+      {
+        "text": "I have the item you have requested", "topic": "TALK_fo_crimson_caravan_item_request_medium",
+        "condition": {
+            "and": [
+              { "u_has_items": { "item": "item_qst_caravan_package_medium", "count": 1 } },
+              { "not": { "npc_has_var": "u_caravan_gave_item", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          }
+      },
+      {
+        "text": "I have the item you have requested", "topic": "TALK_fo_crimson_caravan_item_request_heavy",
+        "condition": {
+            "and": [
+              { "u_has_items": { "item": "item_qst_caravan_package_heavy", "count": 1 } },
+              { "not": { "npc_has_var": "u_caravan_gave_item", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          }
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_crimson_caravan_go",
+    "type": "talk_topic",
+    "dynamic_line": "We're a wasteland-reknowned trading company, and we've recently decided to set up shop on parts of the East Coast. It's a largely untapped market out here, since most caravans are basically the equivalent of mom and pop concerns without the logistical support or economies of scale that the Crimson Carvan company has. As for my daily duties here, I mainly shuffle paperwork around and relay information about various surpluses and shortages to other Carvan outposts to make trade flow more smoothly.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_crimson_caravan_item_request_light",
+    "type": "talk_topic",
+    "dynamic_line": "Thank you, here is a certificate as proof of transfer.",
+    "responses": [
+      {
+        "text": "Okay.",
+        "effect": [
+        { "u_buy_item": "item_fo_qst_caravan_transfer", "count": 1 }, { "npc_add_var": "u_caravan_gave_item", "type": "general", "context": "meeting", "value": "yes" } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_crimson_caravan_item_request_medium",
+    "type": "talk_topic",
+    "dynamic_line": "Thank you, here is a certificate as proof of transfer.",
+    "responses": [
+      {
+        "text": "Okay.",
+        "effect": [
+        { "u_buy_item": "item_fo_qst_caravan_transfer", "count": 1 }, { "npc_add_var": "u_caravan_gave_item", "type": "general", "context": "meeting", "value": "yes" } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_crimson_caravan_item_request_heavy",
+    "type": "talk_topic",
+    "dynamic_line": "Thank you, here is a certificate as proof of transfer.",
+    "responses": [
+      {
+        "text": "Okay.",
+        "effect": [
+        { "u_buy_item": "item_fo_qst_caravan_transfer", "count": 1 }, { "npc_add_var": "u_caravan_gave_item", "type": "general", "context": "meeting", "value": "yes" } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "fo_mob_nukagrenade",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "nuka grenade" },
+    "description": "An crude yet effective improvised weapon comprised of extract from Nuka Cola Quantum and various household cleaning supplies and chemicals. The weapon more than lives up to its name, leaving a small radioactive crater in its wake wherever it is thrown. Pull the cord to activate it.",
+    "weight": "850 g",
+    "volume": "500 ml",
+    "price": "15 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "tin" ],
+    "symbol": "*",
+    "color": "blue",
+    "use_action": {
+      "target": "fo_mob_nukagrenade_act",
+      "msg": "You pull the cord on the nuka grenade.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Pull cord",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "GRENADE" ]
+  },
+  {
+    "id": "fo_mob_nukagrenade_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "active nuka grenade" },
+    "description": "An crude yet effective improvised weapon comprised of extract from Nuka Cola Quantum and various household cleaning supplies and chemicals. The weapon more than lives up to its name, leaving a small radioactive crater in its wake wherever it is thrown. It is now active!",
+    "weight": "850 g",
+    "volume": "500 ml",
+    "price": "0 USD",
+    "price_postapoc": "0 USD",
+    "to_hit": -1,
+    "bashing": 6,
+    "material": [ "tin" ],
+    "symbol": "*",
+    "color": "blue",
+    "initial_charges": 5,
+    "max_charges": 5,
+    "turns_per_charge": 1,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_nuke_gas",
+      "fields_radius": 3,
+      "fields_min_intensity": 1,
+      "fields_max_intensity": 3,
+      "sound_volume": 0,
+      "sound_msg": "Tick.",
+      "no_deactivate_msg": "You've already pulled the %s's pin; try throwing it instead.",
+      "explosion": {
+        "damage": 65,
+        "radius": 3,
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 80, "armor_multiplier": 3 }, "range": 5 }
+      }
+    },
+    "flags": [ "BOMB", "TRADER_AVOID" ]
+  }
+]

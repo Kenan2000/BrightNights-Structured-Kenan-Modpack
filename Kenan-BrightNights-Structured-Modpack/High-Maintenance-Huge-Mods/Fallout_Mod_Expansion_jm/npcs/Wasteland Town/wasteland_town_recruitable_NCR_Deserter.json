@@ -1,0 +1,69 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_ncr_deserter",
+    "name_suffix": "NCR Deserter",
+    "class": "fo_wastetown_ncr_deserter_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_wastetown_ncr_deserter_recruit_start"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_ncr_deserter_npc",
+    "name": { "str": "NCR Deserter" },
+    "job_description": "Is a deserter from the New California Republic Army.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 3 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -1, 3 ] },
+    "worn_override": "NC_NCRTROOP_worn",
+    "carry_override": "NC_NCRTROOP_carry",
+    "weapon_override": "NC_NCRTROOP_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_ncr_deserter_recruit_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "Are you with the NCR?", "Are you with the Legion?", "I'm so tired on that war, glad I left it.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, miss?" ],
+      "no": [ "Are you with the NCR?", "Are you with the Legion?", "I'm so tired on that war, glad I left it.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, sir?" ]
+        },
+    "responses": [
+      {
+        "text": "So what's your story, you seem to be with the NCR", "topic": "TALK_wastetown_ncr_deserter_recruit_go"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_SUGGEST_FOLLOW"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_ncr_deserter_recruit_go",
+    "type": "talk_topic",
+    "dynamic_line": "Well, I was with the NCR until recently. I decided to desert. The pay wasn't worth it and I was tired of getting shot at by football armor-clad lunatics. Now I'm here, don't really know what to do.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "VAULT_GHOUL",
+    "default": "mon_fallout_ghoul_vault",
+    "monsters": [
+      { "monster": "mon_fallout_ghoul", "freq": 85, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_fallout_ghoul_vault", "freq": 1, "cost_multiplier": 2, "pack_size": [ 2, 5 ] },
+      { "monster": "mon_fallout_ghoul", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "VAULT_RAIDER",
+    "default": "mon_raider_lite",
+    "monsters": [
+      { "monster": "mon_raider_lite", "freq": 60, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_raider_melee", "freq": 30, "cost_multiplier": 2, "pack_size": [ 2, 5 ] },
+      { "monster": "mon_gun_raider", "freq": 35, "cost_multiplier": 0 },
+      { "monster": "mon_rifle_raider", "freq": 15, "cost_multiplier": 0 },
+      { "monster": "mon_raider_junkie", "freq": 30, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VAULT_CYBORGS",
+    "default": "mon_broken_cyborg",
+    "monsters": [
+      { "monster": "mon_broken_cyborg", "freq": 100, "cost_multiplier": 1, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_prototype_cyborg", "freq": 10, "cost_multiplier": 2 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_VAULT_SUPER_MUTANT",
+    "default": "mon_supmutant_vault",
+    "monsters": [
+      { "monster": "mon_supmutant_vault", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_supmutant", "freq": 90, "cost_multiplier": 0 }
+    ]
+  }
+]

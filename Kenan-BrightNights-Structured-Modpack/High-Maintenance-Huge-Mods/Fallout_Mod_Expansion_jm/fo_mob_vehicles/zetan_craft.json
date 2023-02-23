@@ -1,0 +1,139 @@
+[
+  {
+    "id": "ufo_zetan",
+    "type": "vehicle",
+    "name": "crashed UFO",
+    "blueprint": [
+      [ " --- " ],
+      [ "+o#o-" ],
+      [ "|=##|" ],
+      [ "+o#o-" ],
+      [ " --- " ]
+    ],
+    "parts": [
+      {
+        "x": -1,
+        "y": 0,
+        "parts": [ "xlframe_vertical", "ufo_zetan_rotor", "engine_electric_super", "storage_battery", "aisle_horizontal", "roof" ]
+      },
+      { "x": -1, "y": 1, "parts": [ "xlframe_vertical_2", "seat", "seatbelt", "roof" ] },
+      { "x": -1, "y": -1, "parts": [ "xlframe_vertical_2", "seat", "seatbelt", "roof" ] },
+      { "x": -1, "y": 2, "parts": [ "xlframe_vertical", "windshield" ] },
+      { "x": -1, "y": -2, "parts": [ "xlframe_vertical", "windshield" ] },
+      { "x": 0, "y": 0, "parts": [ "xlframe_cross", "seat", "seatbelt_heavyduty", "controls", "dashboard", "roof" ] },
+      { "x": 0, "y": 1, "parts": [ "xlframe_cross", "windshield" ] },
+      { "x": 0, "y": -1, "parts": [ "xlframe_cross", "windshield" ] },
+      { "x": 0, "y": 2, "parts": [ "xlframe_ne", "windshield" ] },
+      { "x": 0, "y": -2, "parts": [ "xlframe_nw", "windshield" ] },
+      { "x": -2, "y": 0, "parts": [ "xlframe_horizontal", "minireactor", "trunk" ] },
+      { "x": -2, "y": 1, "parts": [ "xlframe_cross", "windshield" ] },
+      { "x": -2, "y": -1, "parts": [ "xlframe_cross", "windshield" ] },
+      { "x": -2, "y": 2, "parts": [ "xlframe_sw", "door" ] },
+      { "x": -2, "y": -2, "parts": [ "xlframe_se", "door" ] },
+      { "x": 1, "y": 0, "parts": [ "xlframe_horizontal", "windshield", "turret_mount", "mounted_alien_ufo_cannon" ] },
+      { "x": 1, "y": 1, "parts": [ "xlframe_ne", "windshield" ] },
+      { "x": 1, "y": -1, "parts": [ "xlframe_nw", "windshield" ] },
+      { "x": -3, "y": 0, "parts": [ "xlframe_horizontal", "windshield" ] },
+      { "x": -3, "y": 1, "parts": [ "xlframe_se", "windshield" ] },
+      { "x": -3, "y": -1, "parts": [ "xlframe_sw", "windshield" ] }
+    ],
+    "items": [
+      { "x": -2, "y": 0, "chance": 95, "item_groups": [ "alien_gear_fallout", "alien_gear_fallout" ] },
+      { "x": -2, "y": 0, "chance": 95, "item_groups": [ "alien_junk_fallout", "alien_junk_fallout" ] }
+    ]
+  },
+  {
+    "id": "zeta_heat_vehicle_ray",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "Heat Ray" },
+    "description": "An extremely powerful weapon of zetan design, easily outclassing all but the most powerful energy weapons made by mankind. Uses an extremely rare form of power cell to operate, so be sparing with it!",
+    "weight": "9500 g",
+    "volume": "4500 ml",
+    "price": "7500 USD",
+    "to_hit": -1,
+    "bashing": 8,
+    "looks_like": "m134",
+    "material": [ "steel", "plastic" ],
+    "symbol": "(",
+    "color": "light_gray",
+    "skill": "rifle",
+    "range": 33,
+    "ranged_damage": { "damage_type": "heat", "amount": 150, "armor_penetration": 100 },
+    "sight_dispersion": 20,
+    "durability": 8,
+    "ammo": [ "zetan_plasma" ],
+    "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "mechanism", 4 ], [ "sights", 1 ] ],
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "AUTO", "high auto", 3 ] ],
+    "ammo_effects": [ "PLASMA", "INCENDIARY", "LASER" ],
+    "flags": [ "NEVER_JAMS", "MOUNTED_GUN" ],
+    "magazines": [ [ "zetan_plasma", [ "canister_zetan_ufo" ] ] ]
+  },
+  {
+    "id": "canister_zetan_ufo",
+    "type": "MAGAZINE",
+    "name": { "str": "heat ray plasma canister" },
+    "description": "A large battery of sorts, full of alien plasma. Extremely rare and designed specifically for the UFO's heat ray.",
+    "weight": "4500 g",
+    "volume": "259 ml",
+    "price": "50 USD",
+    "material": [ "alloy_zetan" ],
+    "symbol": "#",
+    "color": "light_gray",
+    "ammo_type": [ "zetan_plasma" ],
+    "capacity": 100,
+    "reliability": 9,
+    "reload_time": 3
+  },
+  {
+    "id": "mounted_alien_ufo_cannon",
+    "copy-from": "turret",
+    "type": "vehicle_part",
+    "name": { "str": "Alien Heat Cannon" },
+    "item": "zeta_heat_vehicle_ray",
+    "color": "light_gray",
+    "broken_color": "dark_gray",
+    "looks_like": "laser_rifle",
+    "breaks_into": [ { "item": "scrap_zetan", "prob": 100 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 4 ], [ "launcher", 2 ] ], "time": "25 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "15 m", "using": [ [ "welding_standard", 5 ] ] }
+    }
+  },
+  {
+    "id": "ufo_zetan_rotor",
+    "copy-from": "helicopter_rotors",
+    "type": "vehicle_part",
+    "name": "Zetan UFO Hover Device",
+    "item": "ufo_zetan_rotor_item",
+    "looks_like": "small_civilian_rotors",
+    "//": "rotor diameter is in meters",
+    "rotor_diameter": 8,
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 7 ] ], "time": "2 h", "using": [ [ "welding_standard", 20 ] ] },
+      "removal": { "skills": [ [ "mechanics", 7 ] ], "time": "2 h", "using": [ [ "vehicle_weld_removal", 4 ] ] },
+      "repair": { "skills": [ [ "mechanics", 8 ] ], "time": "2 h", "using": [ [ "welding_standard", 20 ] ] }
+    },
+    "durability": 100,
+    "description": "A mysterious hover pod built into the top and bottom of the UFO that enables it to fly through the air. Its levitation field surrounds the UFO at some distance, meaning the levitation field can make contact with objects before the UFO.",
+    "damage_modifier": 20,
+    "breaks_into": [ { "item": "scrap_zetan", "count": [ 8, 15 ] }, { "item": "zetan_sheet", "count": [ 2, 8 ] } ],
+    "damage_reduction": { "all": 22 }
+  },
+  {
+    "id": "ufo_zetan_rotor_item",
+    "type": "GENERIC",
+    "category": "veh_parts",
+    "name": { "str": "Zetan UFO Hover Device", "str_pl": "sets of Zetan UFO Hover Devices" },
+    "description": "A mysterious hover pod built into the top and bottom of the UFO that enables it to fly through the air. Its levitation field surrounds the UFO at some distance, meaning the levitation field can make contact with objects before the UFO.",
+    "price": "12 USD",
+    "price_postapoc": "2 USD",
+    "weight": "251000 g",
+    "volume": "251000 ml",
+    "looks_like": "xl_wind_turbine",
+    "material": [ "steel" ],
+    "symbol": "X",
+    "color": "blue"
+  }
+]

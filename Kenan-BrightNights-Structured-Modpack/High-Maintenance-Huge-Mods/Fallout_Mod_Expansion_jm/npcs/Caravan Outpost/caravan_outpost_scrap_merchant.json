@@ -1,0 +1,130 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_caravan_outpost_scrap_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Scrap Merchant",
+    "class": "NC_CARAVAN_FOSCRAP_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_CARAVAN_FOSCRAP_Town",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_CARAVAN_FOSCRAP_SHOPKEEP",
+    "name": { "str": "Scrap Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_CARAVAN_FOSCRAP_worn",
+    "weapon_override": "NC_CARAVAN_FOSCRAP_weapon",
+    "shopkeeper_item_group": "NC_CARAVAN_FOSCRAP_SHOPKEEP_misc",
+    "carry_override": "NC_CARAVAN_FOSCRAP_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOSCRAP_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "supplies_mechanics", "count": [ 4, 9 ] },
+      { "group": "supplies_electronics", "count": [ 4, 9 ] },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOSCRAP_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOSCRAP_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants_cargo" },
+      { "item": "jacket_army" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOSCRAP_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOSCRAP_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "supplies_mechanics", "count": [ 4, 9 ] },
+      { "group": "supplies_electronics", "count": [ 4, 9 ] },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_CARAVAN_FOSCRAP_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Considering buying anything, <name_g>",
+        "Be careful out there, <name_g>?",
+        "Oh, hey, it's you again.",
+        "Just another day here. I feel safe behind the walls.",
+        {
+          "u_has_perception": 10,
+            "yes": "You've got a pretty sharp eye for the scrap I have lying around here, I can tell you're perceptive. Have you considered working for Crimson Caravan or the Junk Guild?",
+            "no": "It might not look like much to a normal person, but this scrap is worth its weight in well, it's weight!"
+        },
+        {
+          "u_has_intelligence": 10, "yes": "You seem pretty bright, I think you could make use of the wares I have here.",
+            "no": "Wanna buy something? I get my wares from scavengers on a regular basis."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "You never know what kind of loot the scavs are going to bring in. Sometimes it's just old salsbury steak packages, sometimes it's extremely rare energy weapons from before the war!",
+            "no": "Look, I know these might just look like shiny baubles to you but PLEASE do not touch anything. Not to be rude, but you don't seem like you know much."
+        },
+        "Can you believe that some towns are based around undetonated nuclear bombs? Can you believe that there are people that talk about that for hours on end like it's profound?",
+        "How are things going?",
+        {
+        "u_male": [ "A guy like you consider buying anything?", "Rough out there, isn't it?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "Has a woman like you ever considered becoming a scavenger?", "Ma'am, what do you think of the town?.", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_CARAVAN_FOSCRAP_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

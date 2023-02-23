@@ -1,0 +1,38 @@
+[
+  {
+    "id": "laser_rcw",
+    "type": "GUN",
+    "symbol": "(",
+    "color": "brown",
+    "name": { "str": "Laser Rcw" },
+    "description": "The unique feature of this 'laser assault rifle' is the addition of a 'drum,' which gives this weapon its unique look, high rate of fire, and unusual name.",
+    "price": "16000 USD",
+    "looks_like": "tommygun",
+    "material": [ "steel", "plastic" ],
+    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "ups_charges": 10,
+    "skill": "smg",
+    "weight": "2950 g",
+    "volume": "3 L",
+    "bashing": 12,
+    "to_hit": -1,
+    "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 10 },
+    "range": 40,
+    "dispersion": 10,
+    "sight_dispersion": 60,
+    "recoil": 0,
+    "durability": 10,
+    "reload": 100,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ],
+      [ "mechanism", 1 ]
+    ]
+  }
+]

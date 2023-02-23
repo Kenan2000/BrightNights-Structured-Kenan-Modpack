@@ -1,0 +1,225 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_waste_farmer",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Farmer",
+    "class": "NC_WASTEFARMER_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_FOFARMER_Town",
+    "mission_offered": "MISSION_MISSION_WASTE_FARM_A",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WASTEFARMER_SHOPKEEP",
+    "name": { "str": "Farmer" },
+    "job_description": "I'm a local farmer.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_FOFARMER_worn",
+    "weapon_override": "NC_FOFARMER_weapon",
+    "shopkeeper_item_group": "NC_FOFARMER_SHOPKEEP_misc",
+    "carry_override": "NC_FOFARMER_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOFARMER_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "group": "ranch_homebooks", "count": [ 4, 9 ] },
+      { "group": "supplies_farming", "count": [ 4, 9 ] },
+      { "group": "tools_earthworking", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOFARMER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "pitchfork" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOFARMER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jeans" },
+      { "item": "straw_hat" },
+      { "item": "duster_leather" },
+      { "item": "dress_shirt" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOFARMER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOFARMER_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "ranch_homebooks", "count": [ 4, 9 ] },
+      { "group": "supplies_farming", "count": [ 4, 9 ] },
+      { "group": "tools_earthworking", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_FOFARMER_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "It's almost harvesting season.",
+        "Some people prefer mutfruits to apples, pretty odd if you ask me. I guess they like the texture.",
+        "Why don't I have any Brahmin around? Well, um? Don't worry about it.",
+        "Sometimes I wonder why I toil all day in the fields before getting shut-eye, but then I realize that eating years-old fancy lad snack cakes is disgusting.",
+        {
+          "u_has_strength": 10,
+            "yes": "With those muscles you would make for a decent farmhand, ever consider doing any work for me?",
+            "no": "My muscles still feel sore from working in the fields earlier, what do you want?"
+        },
+        {
+          "u_has_intelligence": 10, "yes": "You clearly have a good head on your shoulders. Some people think farmers are just bumpkins with mud for brains but it actually takes a lot to understand the finer aspects of crop rotation and animal husbandry.",
+            "no": "Farming isn't as easy as it looks."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "I wonder if any of the ruins have rare seeds from before the war that are still good for planting.",
+            "no": "You know about farms, right? Plants don't just spring up out of the ground, although you might not be bright enough to realize that."
+        },
+        "I heard that in the Capital Wasteland they only recent got fresh water that wasn't so irradiated it glowed in the dark, can you believe that?",
+        "I wish I had a few 'bots to help me out around here. Would make life much easier.",
+        {
+        "u_male": [ "Farming can give a man purpose on life, as odd as that is to say.", "A guy like you wouldn't believe how little happens on most caravan trips.", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "A lot of women could benefit from spending some time on a farm, work with your hands in the mud and all that.", "Ma'am, what do you think of the town?.", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What is it like being a farmer around here?",
+        "topic": "TALK_FOFARMER_infotown"
+      },
+      {
+        "text": "Is there anything around the farm that needs doing?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_FOFARMER_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_FOFARMER_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "At times I feel like nobody even cares about me, but when harvest season rolls around everybody is desperate to see what I've grown over the last season. It's times like that, around harvest, that make life worth living here. Although we're a wasteland, there are still places that are relatively safe and with decent soil, I like to think this is one of them.",
+      "no": "At times I feel like nobody even cares about me, but when harvest season rolls around everybody is desperate to see what I've grown over the last season. It's times like that, around harvest, that make life worth living here. Although we're a wasteland, there are still places that are relatively safe and with decent soil, I like to think this is one of them."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_FOFARMER_Town"
+      }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "fo_wastetown_windmill",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "b"
+      ],
+      "furniture": { "b": "f_wind_mill_active" },
+      "terrain": {
+        ".": "t_dirt",
+        "T": "t_tree_dead",
+        "t": "t_trunk",
+        "D": "t_tree",
+        "d": "t_tree_pine",
+        "A": "t_pit",
+        "a": "t_pit_shallow",
+        "e": "t_shrub",
+        "B": "t_mud"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "fo_wastetown_windmill_console",
+    "object": {
+      "mapgensize": [ 1, 1 ],
+      "rows": [
+        "T"
+      ],
+      "furniture": { "b": "f_wind_mill_active" },
+      "terrain": {
+        "T": "t_console"
+      }
+    }
+  },
+  {
+    "id": "MISSION_MISSION_WASTE_FARM_A",
+    "type": "mission_definition",
+    "name": "Retrieve a windmill control unit for the town farmer.",
+    "description": "Retrieve a windmill control unit for the town farmer.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 3,
+    "value": 15000,
+    "item": "fo_wastetown_windmill_controller",
+    "count": 1,
+    "start": {
+      "effect": { "u_learn_recipe": "fo_wastetown_windmill_controller" }
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "varmint_rifle", "count": 1 },
+        { "u_buy_item": "survivor223mag", "count": 2 },
+        { "u_buy_item": "223", "count": 30 } ],
+      "update_mapgen": [
+        {
+          "om_terrain": "FO_WASTETOWN_9",
+          "place_nested": [ { "chunks": [ "fo_wastetown_windmill" ], "x": 15, "y": 2 }, { "chunks": [ "fo_wastetown_windmill" ], "x": 18, "y": 2 }, { "chunks": [ "fo_wastetown_windmill_console" ], "x": 19, "y": 2 } ]
+        }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "My old windmills have been on the fritz recently, they barely work anymore. At this rate, we'll have to start importing fresh water via caravan if I don't get it fixed soon. It could be a real problem. Could you fix the windmills for me? Here's a recipe on the part I need, if it would help.",
+      "offer": "My old windmills have been on the fritz recently, they barely work anymore. At this rate, we'll have to start importing fresh water via caravan if I don't get it fixed soon. It could be a real problem. Could you fix the windmills for me? Here's a recipe on the part I need, if it would help.",
+      "accepted": "That's great news, I'll try to pay you as best I can!",
+      "rejected": "That's unfortunate, I might ask one of the junkers to see if they can fix it. What's the worst that could happen?",
+      "advice": "Try to ask one of the junkers or scavs about information on the windmill control recipe I gave you, they might now more..",
+      "inquire": "Have you found the controller yet?",
+      "success": "Great work, the pumps are already back to full capacity now. Your reward as promised.",
+      "success_lie": "I don't believe you. I think you're lying!",
+      "failure": "Drat! Now I'll need to get somebody else to do this. Might as well have tried to do it myself!"
+    }
+  }
+]

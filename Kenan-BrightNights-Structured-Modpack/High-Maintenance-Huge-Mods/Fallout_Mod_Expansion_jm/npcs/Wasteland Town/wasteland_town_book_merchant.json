@@ -1,0 +1,145 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_waste_book_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Book Merchant",
+    "class": "NC_WASTEFOBOOK_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_FOBOOK_Town",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WASTEFOBOOK_SHOPKEEP",
+    "name": { "str": "Book Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_FOBOOK_worn",
+    "weapon_override": "NC_FOBOOK_weapon",
+    "shopkeeper_item_group": "NC_FOBOOK_SHOPKEEP_misc",
+    "carry_override": "NC_FOBOOK_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBOOK_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "homebooks", "count": [ 4, 9 ] },
+      { "group": "hardware_books", "count": [ 4, 9 ] },
+      { "group": "manuals", "count": [ 4, 9 ] },
+      { "group": "exotic_books", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBOOK_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBOOK_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "waistcoat" },
+      { "item": "socks" },
+      { "item": "dress_shoes" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBOOK_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBOOK_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "homebooks", "count": [ 4, 9 ] },
+      { "group": "hardware_books", "count": [ 4, 9 ] },
+      { "group": "manuals", "count": [ 4, 9 ] },
+      { "group": "exotic_books", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_FOBOOK_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Considering purchasing any books, <name_g>",
+        "Be careful out there, <name_g>?",
+        "With books, you can travel across time and space without ever leaving your room, I should know!",
+        "Don't you ever just want to curl up with a nice book and forget about the wasteland out there?",
+        {
+          "u_has_perception": 10,
+            "yes": "You've got a pretty sharp eye for the scrap I have lying around here, I can tell you're perceptive. Have you considered working for Crimson Caravan or the Junk Guild?",
+            "no": "It might not look like much to a normal person, but this scrap is worth its weight in well, it's weight!"
+        },
+        {
+          "u_has_intelligence": 10, "yes": "You seem more intelligent than a lot of the people here. You could benefit a great deal from the books I have here.",
+            "no": "Books and magazines are a pathway to expanding your horizons beyond the scrap walls of this little town"
+        },
+        {
+          "u_has_intelligence": 6, "yes": "It's crazy how much information you can find in books even when the author doesn't intend for it.",
+            "no": "Even someone of your *ahem* intellect would benefit from reading, but perhaps we should stick to something simple with big words and a lot pictures?"
+        },
+        "Isn't a bit strange that Chinese soldiers would leave spec-ops training manuals around in English for us to read? Doesn't make much sense.",
+        "How are things going?",
+        {
+        "u_male": [ "There's books for everything a man's man could ask for! Hunting, trapping, cars, survival, you name it!", "Rough out there, isn't it?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "I have a lot of books that might interest a woman like you. Tailoring, Cooking, novels, survival, you name it!", "Ma'am, what do you think of the town?", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What is it like being a book merchant around here?",
+        "topic": "TALK_FOBOOK_infotown"
+      },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_FOBOOK_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_FOBOOK_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's an underappreciated craft here. Most people think books are merely for raising your aptitude in this or that skill, while caring little for what the author of the work actually meant. People care little for novels or literature that doesn't have any immediate purpose, unlike me of course. A book can have a use even if it's not immediately helpful in day-to-day wasteland life. The desire to unearth such valuable tomes is part of why I became a book merchant in the first place.",
+      "no": "It's an underappreciated craft here. Most people think books are merely for raising your aptitude in this or that skill, while caring little for what the author of the work actually meant. People care little for novels or literature that doesn't have any immediate purpose, unlike me of course. A book can have a use even if it's not immediately helpful in day-to-day wasteland life. The desire to unearth such valuable tomes is part of why I became a book merchant in the first place."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_FOBOOK_Town"
+      }
+    ]
+  }
+]

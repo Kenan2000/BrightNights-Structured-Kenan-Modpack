@@ -1,0 +1,181 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_ROBREPAIR_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "SSSSSSSSSSSSSSSSSSSSSSSS",
+                "PPPWWWWWWQQQQDDQQQQWWWWW",
+                "PPPWNFFDFFFFFFFFFFFw))))",
+                "PPPWnFFwYFFFFFFyyyFDFFFF",
+                "PPPWwwwwYFFFFFFyyyFwFFFg",
+                "PPPWNFFDFFFFFFFYYYFwFFFg",
+                "PPPWnFFwwwwwwddwwwwwwwww",
+                "PPPWwwww}fffffffff}wr???",
+                "PPPWfffffttttttttttwTT?T",
+                "PPPWRRfff@@tf@@tf@@wTT?T",
+                "PPPWRRfhfb@tfb@tfb@w????",
+                "PPPW8f-hff@tff@tff@wwwww",
+                "PPPW8ffhf??????????fffff",
+                "PPPW8f-hf??????????fKKff",
+                "PPPW8ffhff@tff@tff@fKKff",
+                "PPPWRRXHfb@tfb@Xfb@fffff",
+                "PPPWRRfff@@tf@@tf@@fKKff",
+                "PPPWfffffttttttttttfKKff",
+                "PPPWWWWWWWWWWWWWWWWWWWWW",
+                "PPPPPPPPsPPPPPPCZZSxzCPP",
+                "PPPPPPPPPPPPPPPcSSSSScPP",
+                "PPPPPPPPPPPPPPPCCCCCCCPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP"
+            ],
+        "palettes": [ "FO_ROBREPAIR_PAL" ],
+        "place_monsters": [ { "monster": "GROUP_ROBREPAIR_BOTS", "x": [ 4, 23 ], "y": [ 8, 17 ], "density": 0.65 } ],
+        "terrain": { ",": "t_region_groundcover", "%": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_ROBREPAIR_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "   |KKKKKKKKKKKKKKKKKKKK",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |....................",
+                "   |kkkkkkkkkkkkkkkkkkkk",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_ROBREPAIR_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "SSSSSSSSSSSSSSSSSSSSSSSS",
+                "WWWWWQQQQDDQQQQWWWWWWPPP",
+                "^^))wFFFFFFFFFF77777WPPP",
+                "FFFFDFH##FH##FJGGGJ$WPPP",
+                "GGgFwFFFJFFFJFJGGGJ$WPPP",
+                "GGgFw&FFFFFF&FFFFFFFWPPP",
+                "wwwwwwwwddwwwH##FH##WPPP",
+                "???rw3ffff22wFFJFFFJWPPP",
+                "T?TTw3f-f-ffwFFFFFFFWPPP",
+                "T?TTw3f+++HfwH##FH##WPPP",
+                "????w3f+++9fwFFJFFFJWPPP",
+                "%%%%wff-f-ffwwwwDwwwWPPP",
+                "ffff(ffffffff11wFFFFWPPP",
+                "fffffff-f-fff11wFFVVWPPP",
+                "f:f:fff+++HffffdFFFFWPPP",
+                "fffXfff+++9ffffw4FvvWPPP",
+                "f:f:fff-f-fff11w4FFFWPPP",
+                "fffffffff222211w4FVVWPPP",
+                "WWWWWWWWWWWWWWWWWWWWWPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP"
+            ],
+        "palettes": [ "FO_ROBREPAIR_PAL" ],
+        "place_monsters": [ { "monster": "GROUP_ROBREPAIR_BOTS", "x": [ 0, 19 ], "y": [ 7, 17 ], "density": 0.65 } ],
+        "place_item": [
+        { "item": "textbook_robots", "x": 15, "y": 9, "chance": 25 },
+        { "item": "totalhack", "x": 15, "y": 9, "chance": 25 },
+        { "item": "textbook_robots", "x": 2, "y": 8, "chance": 70 },
+        { "item": "totalhack", "x": 2, "y": 8, "chance": 70 },
+        { "item": "textbook_robots", "x": 7, "y": 3, "chance": 25 }
+      ],
+        "computers": {
+        "(": {
+          "name": "RobCo Repair Facility Storage Repository",
+          "security": 4,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "%": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_ROBREPAIR_2_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "KKKKKKKKKKKKKKKKKKKKh   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "....................h   ",
+                "kkkkkkkkkkkkkkkkkkkkh   ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof",
+                "|": "t_gutter_west",
+                "h": "t_gutter_east",
+                "k": "t_gutter_south",
+                "K": "t_gutter_north",
+                "J": "t_gutter_drop"
+            }
+        }
+    }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_central_mainframe_computer",
+    "name_unique": "the intercom",
+    "name_suffix": "Central Mainframe Computer",
+    "gender": "female",
+    "class": "NC_ROBOFAC_INTERCOM",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_central_mainframe_start"
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CENTRAL_MAINFRAME_worn",
+    "subtype": "collection",
+    "entries": [  ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CENTRAL_MAINFRAME_carry",
+    "subtype": "collection",
+    "entries": [  ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CENTRAL_MAINFRAME_weapon",
+    "subtype": "collection",
+    "entries": [  ]
+  },
+  {
+    "id": "TALK_central_mainframe_start",
+    "type": "talk_topic",
+    "dynamic_line": [
+      {
+        "npc_has_var": "u_known_met_mainframe",
+        "type": "general",
+        "context": "meeting",
+        "value": "yes",
+        "yes": [
+          "Hey again, anything interesting happen out there?",
+          "I have miles and miles of circuity in my servers, isn't that cool?",
+          "I heard there are other mainframes with personalities on the west coast, but I don't really buy that."
+        ],
+        "no": {
+          "u_male": [
+            "Oh great, finally somebody I can talk to. I've been down here for so long, and most people assume my robo-scouts sent to the surface are hostile, pretty sad state of affairs isn't it?"
+          ],
+          "no": [
+            "Oh great, finally somebody I can talk to. I've been down here for so long, and most people assume my robo-scouts sent to the surface are hostile, pretty sad state of affairs isn't it?"
+          ]
+        }
+      }
+    ],
+    "responses": [
+      {
+        "text": "Are you programmed to talk like that, you seem pretty happy for a computer.",
+        "effect": { "npc_add_var": "u_known_met_mainframe", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_central_mainframe_mood_question"
+      },
+      {
+        "text": "I have the processor chip with me. Here you go.",
+        "condition": {
+          "and": [
+            { "u_has_items": { "item": "item_fo_secondary_processor", "count": 1 } },
+            { "u_has_var": "u_mainframe_task_granted", "type": "general", "context": "meeting", "value": "yes" },
+            {
+              "not": { "u_has_var": "u_mainframe_item_granted", "type": "general", "context": "meeting", "value": "yes" }
+            }
+          ]
+        },
+        "topic": "TALK_central_mainframe_gift_complete"
+      },
+      {
+        "text": "I have the processor chip with me. Here you go.",
+        "condition": {
+          "and": [
+            { "u_has_items": { "item": "item_fo_secondary_processor", "count": 1 } },
+            { "u_has_var": "u_mainframe_task_granted", "type": "general", "context": "meeting", "value": "yes" },
+            { "u_has_var": "u_mainframe_item_granted", "type": "general", "context": "meeting", "value": "yes" }
+          ]
+        },
+        "topic": "TALK_central_mainframe_gift_complete_posthack"
+      },
+      {
+        "text": "I came here in search of something that you supposedly have. What is it?",
+        "effect": { "npc_add_var": "u_known_met_mainframe", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": { "not": { "u_has_var": "u_mainframe_item_granted", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_central_mainframe_loot_question"
+      },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "TALK_central_mainframe_mood_question",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "I sure am, miss! The labtechs over at RobCo realized that, in the event of a catastrophic nuclear war, much of the personnel that staffed this base would have to live in this silo, potentially for years. It was decided to give each of us mainframes a unique personality in order to accomodate the traits and quirks of our mainframe silo's staff. Makes it less boring, you know.",
+      "no": "I sure am, miss! The labtechs over at RobCo realized that, in the event of a catastrophic nuclear war, much of the personnel that staffed this base would have to live in this silo, potentially for years. It was decided to give each of us mainframes a unique personality in order to accomodate the traits and quirks of our mainframe silo's staff. Makes it less boring, you know."
+    },
+    "responses": [
+      { "text": "Thanks for the prompt response.", "topic": "TALK_central_mainframe_start" },
+      { "text": "What are the other silos like?", "topic": "TALK_central_mainframe_friends" }
+    ]
+  },
+  {
+    "id": "TALK_central_mainframe_friends",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Uh, most of them are friendly, or a bit standoffish. Some are male, some are female, some have erratic personalities and some are steadfast, doing their duties as if the war never even happened. But, uh, some are very hostile to put it mildly. They don't really like talking to the rest of us.",
+      "no": "Uh, most of them are friendly, or a bit standoffish. Some are male, some are female, some have erratic personalities and some are steadfast, doing their duties as if the war never even happened. But, uh, some are very hostile to put it mildly. They don't really like talking to the rest of us."
+    },
+    "responses": [ { "text": "Perhaps we will meet them some day.", "topic": "TALK_central_mainframe_start" } ]
+  },
+  {
+    "id": "TALK_central_mainframe_loot_question",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Oh that, you mean a GECK? Yeah, I have one of those. I'm not about to give it up though, it's not like I exactly need it anymore though. As you can see, there really isn't any personnel left here anymore besides me. If you help me with a certain thing, though, I'll give it to you. Don't worry, it won't take long.",
+      "no": "Oh that, you mean a GECK? Yeah, I have one of those. I'm not about to give it up though, it's not like I exactly need it anymore though. As you can see, there really isn't any personnel left here anymore besides me. If you help me with a certain thing, though, I'll give it to you. Don't worry, it won't take long."
+    },
+    "responses": [
+      { "text": "What is it? What do you need?", "topic": "TALK_central_mainframe_processor" },
+      {
+        "text": "[Computer 9] Activate data bypass shunt 44-QB, Grant full item access",
+        "condition": { "u_has_skill": { "skill": "computer", "level": 9 } },
+        "topic": "TALK_central_mainframe_bypass_gift"
+      }
+    ]
+  },
+  {
+    "id": "TALK_central_mainframe_bypass_gift",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "ACCESS GRANTED... Hey, that's not very nice! Could you at least thank me?",
+      "no": "ACCESS GRANTED... Hey, that's not very nice! Could you at least thank me?"
+    },
+    "responses": [
+      {
+        "text": "Thank you.",
+        "effect": [
+          { "u_buy_item": "fo_wastetown_windmill_controller" },
+          { "u_add_var": "u_mainframe_item_granted", "type": "general", "context": "meeting", "value": "yes" }
+        ],
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "No.",
+        "effect": [
+          { "u_buy_item": "fo_wastetown_windmill_controller" },
+          { "u_add_var": "u_mainframe_item_granted", "type": "general", "context": "meeting", "value": "yes" }
+        ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_central_mainframe_processor",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "A couple of years ago, one of my secondary processors broke down. There are replacements in the floor below me, but there's a bit of a problem. The lowest level of this silo is the reactor level, and a coolant leak resulted in a radiation burst that turned some of the personnel into these strange, ghoul-like creatures. They violently attack any of my retrieval bots. Can you go down there and get the processor for me? I'll give you what you want then.",
+      "no": "A couple of years ago, one of my secondary processors broke down. There are replacements in the floor below me, but there's a bit of a problem. The lowest level of this silo is the reactor level, and a coolant leak resulted in a radiation burst that turned some of the personnel into these strange, ghoul-like creatures. They violently attack any of my retrieval bots. Can you go down there and get the processor for me? I'll give you what you want then."
+    },
+    "responses": [
+      {
+        "text": "Okay, I'll get on that.",
+        "effect": [ { "u_add_var": "u_mainframe_task_granted", "type": "general", "context": "meeting", "value": "yes" } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_central_mainframe_gift_complete",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Thank you! I'll get that installed as soon as possible. Here's your GECK, hope you like it!",
+      "no": "Thank you! I'll get that installed as soon as possible. Here's your GECK, hope you like it!"
+    },
+    "responses": [
+      {
+        "text": "Thank you!",
+        "effect": [
+          { "u_buy_item": "item_fo_geck", "count": 1 },
+          { "u_sell_item": "item_fo_secondary_processor", "count": 1 },
+          { "u_add_var": "u_mainframe_item_granted", "type": "general", "context": "meeting", "value": "yes" }
+        ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

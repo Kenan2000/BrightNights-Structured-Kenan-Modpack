@@ -1,0 +1,343 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_civ_preacher",
+    "name_suffix": "Town Preacher",
+    "class": "fo_wastetown_civ_preacher_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_preacher_start",
+    "mission_offered": "MISSION_MISSION_PREACHER_ITEM_A",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_civ_preacher_npc",
+    "name": { "str": "Town Preacher" },
+    "job_description": "Is a preacher of the wasteland town.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_WASTEPREACHER_worn",
+    "carry_override": "NC_WASTEPREACHER_carry",
+    "weapon_override": "NC_WASTEPREACHER_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEPREACHER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "socks" },
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "dress_shoes" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEPREACHER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "holybook_fbible", "prob": 60 }, { "item": "holybook_bible1", "prob": 100 } ], "prob": 100 },
+      { "item": "fo_qst_special_locket", "prob": 100 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEPREACHER_weapon",
+    "subtype": "distribution",
+    "entries": [
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_preacher_start",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "I know I might not look like it, but I'm also the town historian. I have a lot of curios and relics in the rear room of this little church.",
+        "God gives us strength through these trying times, trust me.",
+        "I wonder what my next sermon should be, any advice?",
+        "I heard there's a church, a cult really, that worships those infernal atomic bombs. Can you believe that!",
+        {
+          "u_has_intelligence": 10, "yes": "You're clearly pretty smart. Perhaps you should spend some time poring over the scriptures. The wisdom of ages past could still help us today, if we have a mind for it.",
+            "no": "A lot of people don't like going to church, most of the town doesn't go these days."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "I'm always on the lookout for more rare or interesting items from the old world, please notify me if you find some. The town would love to see them.",
+            "no": "Please don't touch any of my files! I know you probably have difficulty reading any word with more than two syllables anyway, it's not like you would learn anything from them."
+        },
+        "I've heard some of the faithful say there is such a thing as a 'Fallout Bible'. I don't rightly know what that is, but I've heard it explains a lot about why things are the way there are. Some say it's not-canon though.",
+        "I heard there was some church of hub-something or other that measured people's energy levels. Apparently they were based on some overt nod to some actor and a cult in Hollywood. Bit on the nose if you ask me.",
+        {
+        "u_male": [ "Unlike that other church, men who lead the flock can actually get married here. If you ever wanted to become a preacher it's something to consider.", "Being a preacher isn't as violent as my last job, but it's a better life.", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "Have you ever chatted up the other women after a church session? It might seem boring, but there's perhaps stuff you could learn.", "Hello, Ma'am, what brings you here today?", "How is it going, <name_g>." ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What's it like being a preacher here?", "topic": "TALK_fo_wastetown_preacher_go"
+      },
+      {
+        "text": "Do you have a task for me?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Mind if I see your locket for a second?", "topic": "TALK_fo_wastetown_preacher_locket_inquire",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_FENCE_RETRIEVE_A" },
+              { "not": { "npc_has_var": "npc_gave_qst_locket", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          }
+      },
+      {
+        "text": "[Spiritual] I'm rather in-tune with higher powers myself, how do I know you're the real deal?",
+        "condition": { "u_has_trait": "SPIRITUAL" },
+        "topic": "TALK_fo_wastetown_spiritual"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_preacher_admit",
+    "type": "talk_topic",
+    "dynamic_line": "I... I was a mercenary. Not exactly at the level of cruelty of Talon Company or the Gunners but pretty close. I got tired of that life, saw too many innocent men and women be cut down like nothing just for the jangle of caps in my pocket. I moved on and would like to put it behind me.",
+    "responses": [
+      {
+        "text": "Wow, that's some pretty deep stuff.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_preacher_locket_inquire",
+    "type": "talk_topic",
+    "dynamic_line": "How did you know I even have that. Why would you need such a thing!",
+    "responses": [
+      {
+        "text": "[Spiritual] I sense great significance in that locket, surely somebody of your level of faith would be willing to part with it only for a moment?. I must convene with it.",
+        "condition": { "u_has_trait": "SPIRITUAL" },
+        "topic": "TALK_fo_wastetown_locket_spiritual"
+      },
+      {
+        "text": "[Lie] One of my relatives recognizes that locket from somewhere. Could you let me bring it to them.",
+        "condition": { "not": { "npc_has_var": "u_give_fail_locket_fo_qst", "type": "general", "context": "meeting", "value": "yes" } },
+        "trial": {
+            "type": "LIE",
+            "difficulty": 40
+          },
+        "success": {
+              "topic": "TALK_fo_wastetown_locket_give_lie"
+        },
+        "failure": {
+              "topic": "TALK_fo_wastetown_locket_give_fail"
+        }
+      },
+      {
+        "text": "Give the locket to me before I beat it out of you, okay?",
+        "condition": { "not": { "npc_has_var": "u_give_fail_locket_fo_qst", "type": "general", "context": "meeting", "value": "yes" } },
+        "trial": {
+            "type": "INTIMIDATE",
+            "difficulty": 40
+          },
+        "success": {
+              "topic": "TALK_fo_wastetown_locket_give_intimidate"
+        },
+        "failure": {
+              "topic": "TALK_fo_wastetown_locket_give_fail"
+        }
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_locket_spiritual",
+    "type": "talk_topic",
+    "dynamic_line": "I can sense that you, too, are a spiritual one. Here, take the locket, but be sure to give it back, okay?",
+    "responses": [
+      {
+        "text": "Thank you, I will reflect on this.",
+        "effect": [ { "u_buy_item": "fo_qst_special_locket" },
+                    { "npc_add_var": "npc_gave_qst_locket", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_locket_give_lie",
+    "type": "talk_topic",
+    "dynamic_line": "If they know the history of this locket, I can't blame them for wanting to take a look at it. Just give it back, okay?",
+    "responses": [
+      {
+        "text": "Thank you, they will appreciate this.",
+        "effect": [ { "u_buy_item": "fo_qst_special_locket" },
+                    { "npc_add_var": "npc_gave_qst_locket", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_locket_give_intimidate",
+    "type": "talk_topic",
+    "dynamic_line": "Okay, I'll give it to you, just don't try and hurt me, okay? Don't create a scene!",
+    "responses": [
+      {
+        "text": "Thanks for making it easy.",
+        "effect": [ { "u_buy_item": "fo_qst_special_locket" },
+                    { "npc_add_var": "npc_gave_qst_locket", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_locket_give_fail",
+    "type": "talk_topic",
+    "dynamic_line": "You think I would believe that, think again!",
+    "responses": [
+      {
+        "text": "...",
+        "effect": [ { "npc_add_var": "u_give_fail_locket_fo_qst", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_preacher_dont_admit",
+    "type": "talk_topic",
+    "dynamic_line": "I... I would rather not say. Perhaps some other time I'll tell you.",
+    "responses": [
+      {
+        "text": "Not entirely pleased with that answer, but okay.",
+        "effect": { "u_add_var": "u_preacher_admit_fail", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_spiritual",
+    "type": "talk_topic",
+    "dynamic_line": "I can sense it within you too, like you feel the divine that's around us all, even when we don't realize it. A lot of people aren't like that, but you clearly are.",
+    "responses": [
+      {
+        "text": "Interesting response.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_preacher_go",
+    "type": "talk_topic",
+    "dynamic_line": "A lot of people like to think that I'm a hack, that I'm a fraud of some kind, that I'm hiding something. I can understand why, there's a lot of people out there preaching that have something to hide, but I like to think I'm not one of them. I used to lead a violent life, but I put that behind me.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Care to explain what exactly you were before you became a preacher?",
+        "condition": { "not": { "u_has_var": "u_preacher_admit_fail", "type": "general", "context": "meeting", "value": "yes" } },
+        "trial": {
+            "type": "PERSUADE",
+            "difficulty": 5
+          },
+        "success": {
+              "topic": "TALK_fo_wastetown_preacher_admit"
+        },
+        "failure": {
+              "topic": "TALK_fo_wastetown_preacher_dont_admit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "MISSION_MISSION_PREACHER_ITEM_A",
+    "type": "mission_definition",
+    "name": { "str": "Find three Tragic the Garnering decks" },
+    "description": "Find three Tragic the Garnering decks for the town preacher",
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "deck_of_tragic_cards",
+    "count": 3,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+    "effect": [
+        { "u_buy_item": "cap_bottle", "count": 100 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_MISSION_PREACHER_ITEM_B",
+    "dialogue": {
+      "describe": "I might not look like it, but I'm a big fan of the pre-war card game, Tragic the Garnering. I would be very pleased if you could get me three tragic decks.",
+      "offer": "I might not look like it, but I'm a big fan of the pre-war card game, Tragic the Garnering. I would be very pleased if you could get me three tragic decks.",
+      "accepted": "Thank you, perhaps you will enjoy Tragic some day as well.",
+      "rejected": "Guess I'll have to buy them via caravan, then...",
+      "advice": "I can't really help you here. Tragic cards seem to be somewhat random in their distribution.",
+      "inquire": "Did you find three Tragic Decks yet?",
+      "success": "That's great, three more decks to add to my collection.",
+      "success_lie": "Don't lie to me about something like this!",
+      "failure": "I guess you could say it's tragic that you couldn't find all the tragic decks."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_PREACHER_ITEM_B",
+    "type": "mission_definition",
+    "name": { "str": "Find a pip-boy 3000" },
+    "description": "Find a pip-boy 3000 for the town preacher",
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "fo_misc_pipboy",
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+    "effect": [
+        { "u_buy_item": "cap_bottle", "count": 150 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_MISSION_PREACHER_ITEM_C",
+    "dialogue": {
+      "describe": "You see, I'm very big into pre-war history. But there's a part of my collection that is missing: a pip-boy 3000? Could you get one for me, please?",
+      "offer": "You see, I'm very big into pre-war history. But there's a part of my collection that is missing: a pip-boy 3000? Could you get one for me, please?",
+      "accepted": "Thanks for accepting my offer.",
+      "rejected": "Guess I'll have to ask the scavengers to find some",
+      "advice": "Look in any of the local vaults. They probably have something.",
+      "inquire": "Did you find a pip-boy yet?",
+      "success": "This a great find, you don't know how much this means to me.",
+      "success_lie": "Don't lie to me about something like this!",
+      "failure": "At least I still have a pip-boy 2000."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_PREACHER_ITEM_C",
+    "type": "mission_definition",
+    "name": { "str": "Find a water chip" },
+    "description": "Find a water chip for the town preacher",
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "item_fo_waterchip",
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+    "effect": [
+        { "u_buy_item": "cap_bottle", "count": 250 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "There's a story out west of a wasteland legend who saved the world for want a of a water chip? Could you get me one so I can take a look at it?",
+      "offer": "There's a story out west of a wasteland legend who saved the world for want a of a water chip? Could you get me one so I can take a look at it?",
+      "accepted": "Thanks for accepting my offer.",
+      "rejected": "Guess I'll have to become a wanderer myself to find it.",
+      "advice": "I have no help for you here, I have no idea where, or what, a water chip even is.",
+      "inquire": "Did you find a water chip?",
+      "success": "To see one in person! This is a tremendous honor.",
+      "success_lie": "Don't lie to me about something like this!",
+      "failure": "Oh well, hopefully somebody else will find a water chip and make use of it."
+    }
+  }
+]

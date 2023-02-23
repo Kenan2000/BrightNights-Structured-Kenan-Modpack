@@ -1,0 +1,500 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_junk_leader",
+    "name_suffix": "Junker leader",
+    "class": "fo_wastetown_junk_leader_npc",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_fo_junk_leader_start",
+    "mission_offered": "MISSION_MISSION_SCRAP_GUILD_A",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_junk_leader_npc",
+    "name": { "str": "Junker leader" },
+    "job_description": "Is the leader of the town's scavengers.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "fo_junkled_worn",
+    "carry_override": "fo_junkled_carry",
+    "weapon_override": "fo_junkled_weapon",
+    "skills": [
+      { "skill": "computer", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "fabrication", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "fo_junkled_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "pants_cargo" },
+      { "item": "duster_leather" },
+      { "item": "sweatshirt" },
+      { "item": "socks" },
+      { "item": "survivor_goggles" },
+      { "item": "gloves_light" },
+      { "item": "jerrypack" },
+      { "item": "boots" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "fo_junkled_carry",
+    "subtype": "collection",
+    "entries": [
+
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "fo_junkled_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "light_plus_battery_cell", "ammo-item": "battery", "charges": 150, "container-item": "laser_pistol_aep", "prob": 100 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_leader_start",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Don't worry about getting your hands dirty, <name_g>, I don't really mind.",
+        "People tell me that General Atomics made some kind of unmanned aircraft before the war, but I don't believe them. Their catalog only lists robotic products.",
+        "Found any interesting scrap out there in the wastes?",
+        "Say what you want about Robert House, but RobCo products were built to last!",
+        {
+          "u_has_perception": 10,
+            "yes": "Somebody like you has a good eye for scavenging, perhaps you could be useful at some point.",
+            "no": "Without people like me, the generators, batteries and machinery around here would essentially be non-functional."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "At last, I can converse with somebody who understands the finer aspects of RobCo operating systems. A true meeting of the minds!",
+            "no": "I heard the claim that the book 'what's a transistor' is fraught with danger, don't know why though."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "It's always a pleasure to access old databanks to see what people in the old world did on a day to day basis.",
+            "no": "Are you sure you know how to turn a computer on without breaking it?"
+        },
+        "I really don't understand why people think only bobby pins can be used for lockpicking.",
+        "How is life treating you in this town?",
+        {
+        "u_male": [ "Scavenging could be a worthwhile profession for a man like you, you ought to consider it.", "Rough out there, isn't it?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "I'll admit I'm somewhat surprised by seeing a woman that might interested in the minutiae of scavving, but it's a welcome sight I guess", "Ma'am, what do you think of the town?", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "So you're the head scavenger around here, what's that about?", "topic": "TALK_fo_junk_leader_go"
+      },
+      {
+        "text": "Do you have a task for me?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Do you have anything like a windmill controller? I have need of one.", "topic": "TALK_fo_junk_windmill",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_WASTE_FARM_A" },
+              { "not": { "npc_has_var": "u_reject_junk_windmill", "type": "general", "context": "meeting", "value": "yes" } }
+            ]
+          }
+      },
+      {
+        "text": "[Computer 5] About your server problem, I think I've detected the problem. We don't even need to find out who did it.",
+        "topic": "TALK_fo_junk_server_fix",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_SCRAP_GUILD_C" },
+              { "u_has_skill": { "skill": "computer", "level": 5 } }
+            ]
+          }
+      },
+      {
+        "text": "I found out who did it. It's the shady guy from across the street. He told me how to get rid of it, though.",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_SCRAP_GUILD_C" },
+              { "u_has_var": "u_know_qst_server_guilt", "type": "general", "context": "meeting", "value": "yes" }
+            ]
+          },
+        "topic": "TALK_fo_junk_server_fix_shady_guy"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_leader_go",
+    "type": "talk_topic",
+    "dynamic_line": "The town depends on me for finding spare parts for the various electro-mechanical systems our town needs to function. Well pumps, sewage systems, mills, lathes, me and my organization maintains it all. It's one of the more dangerous jobs given how often our excursions to ruins are, but we get rewarded handsomely for it.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_windmill_gibs",
+    "type": "talk_topic",
+    "dynamic_line": "You know, what just for you since you were so convicining, I'll cobble up a windmill controller, give me a moment.",
+    "responses": [
+      {
+        "text": "I appreciate it.",
+        "effect": [ { "u_buy_item": "fo_wastetown_windmill_controller" },
+                    { "npc_add_var": "u_reject_junk_windmill", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_windmill_gibs_flirt",
+    "type": "talk_topic",
+    "dynamic_line": "W-Well, u-uh yeah. I-I think I could make one windmill controller. J-just give me a moment! Don't wanna keep a nice lady like you waiting or anything!",
+    "responses": [
+      {
+        "text": "Aww, thank you! You're very kind.",
+        "effect": [ { "u_buy_item": "fo_wastetown_windmill_controller" },
+                    { "npc_add_var": "u_reject_junk_windmill", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_windmill_trade",
+    "type": "talk_topic",
+    "dynamic_line": "A worthy trade if I ever saw one! I'll cobble up a windmill controller, give me a moment.",
+    "responses": [
+      {
+        "text": "I appreciate it.",
+        "effect": [ { "u_buy_item": "fo_wastetown_windmill_controller" },
+                    { "u_sell_item": "e_scrap", "count": 20 },
+                    { "u_sell_item": "cable", "count": 15 },
+                    { "u_sell_item": "amplifier", "count": 3 },
+                    { "npc_add_var": "u_reject_junk_windmill", "type": "general", "context": "meeting", "value": "yes" } ] ,
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_windmill_nogibs",
+    "type": "talk_topic",
+    "dynamic_line": "How about no! I'm not some charity case.",
+    "responses": [
+      {
+        "text": "Well, you didn't have to be so rude!",
+        "effect": { "npc_add_var": "u_reject_junk_windmill", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_windmill",
+    "type": "talk_topic",
+    "dynamic_line": "A windmill controller? Yeah I have something like that, but it's not gonna come cheap. Get me three amplifier units, twenty units of electronic scrap and fifteen units of cable, okay?",
+    "responses": [
+      {
+        "text": "I got what you asked for, can you make the windmill controller now?",
+        "condition": {
+            "and": [
+              { "u_has_items": { "item": "e_scrap", "count": 20 } },
+              { "u_has_items": { "item": "cable", "count": 15 } },
+              { "u_has_items": { "item": "amplifier", "count": 3 } }
+            ]
+          },
+        "topic": "TALK_fo_junk_windmill_trade"
+      },
+      {
+        "text": "[Flirt] Hey there, wanna talk for a bit? I wanna get to know you. A girl like me needs a windmill controller, I know a nice guy like you would have one, right?",
+        "condition": {
+    "and": [
+      { "not": "u_male" },
+      { "not": "npc_female" }
+    ]
+        },
+        "trial": {
+            "type": "PERSUADE",
+            "difficulty": 18
+          },
+        "success": {
+              "topic": "TALK_fo_junk_windmill_gibs_flirt"
+        },
+        "failure": {
+              "topic": "TALK_fo_junk_windmill_nogibs"
+        }
+      },
+      {
+        "text": "Can't you just give it to me for free?",
+        "trial": {
+            "type": "PERSUADE",
+            "difficulty": 12
+          },
+        "success": {
+              "topic": "TALK_fo_junk_windmill_gibs"
+        },
+        "failure": {
+              "topic": "TALK_fo_junk_windmill_nogibs"
+        }
+      },
+      {
+        "text": "I don't seem to have anything for you at this time.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_server_fix",
+    "type": "talk_topic",
+    "dynamic_line": "Sure, you seem to know what you're doing. Wow, it seems like your fix actually worked!",
+    "responses": [
+      {
+        "text": "Good.",
+        "effect": { "npc_add_var": "u_qst_computer_network_fix", "type": "mission", "context": "u_qst_computer_network", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_junk_server_fix_shady_guy",
+    "type": "talk_topic",
+    "dynamic_line": "A bit odd, that guy, isn't he? Oh well, now that we now how to fix it you can just talk to me in a moment once I flush the virus out of the server banks. I'll be sure to speak to the guard chief about this character you spoke to later. Good work once again.",
+    "responses": [
+      {
+        "text": "Good.",
+        "effect": { "npc_add_var": "u_qst_computer_network_fix", "type": "mission", "context": "u_qst_computer_network", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_MISSION_SCRAP_GUILD_A",
+    "type": "mission_definition",
+    "name": { "str": "Activate the electronic store computer" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "item_fo_qst_store_holotape",
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "s_electronics", "om_special": "s_electronics", "reveal_radius": 3, "search_range": 400 },
+      "update_mapgen": [
+        {
+          "om_terrain": "s_electronics",
+          "place_item": [
+           { "item": "item_fo_qst_store_holotape", "x": 17 , "y": 17, "chance": 100 }
+        ]
+        }
+      ]
+    },
+    "end": {
+    "effect": [
+        { "u_buy_item": "light_minus_atomic_battery_cell", "count": 1 },
+        { "u_buy_item": "light_atomic_battery_cell", "count": 1 },
+        { "u_buy_item": "fo_mob_elecsafecrack", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_MISSION_SCRAP_GUILD_B",
+    "dialogue": {
+      "describe": "I need your help with something, I hope this will be a pretty basic tast for somebody just starting out with us. It's pretty easy, you just have to access an old computer database at the location I marked on your map. Once you do that, get back to me and tell me how you did.",
+      "offer": "I need your help with something, I hope this will be a pretty basic tast for somebody just starting out with us. It's pretty easy, you just have to access an old computer database at the location I marked on your map. Once you do that, get back to me and tell me how you did.",
+      "accepted": "Thanks, it shouldn't be that hard.",
+      "rejected": "I'll have to hack into the network by remote then.",
+      "advice": "Ideally you should have at least a preliminary knowledge of computing before you try this.",
+      "inquire": "Did you access the computer banks yet?",
+      "success": "I'm checking on my terminal now. It seems like everything is as specified. Good job!",
+      "success_lie": "My terminal still shows no connection. Don't try to BS somebody that knows what they're talking about.",
+      "failure": "You know what they say, if you want something done right, do it yourself."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_SCRAP_GUILD_B",
+    "type": "mission_definition",
+    "name": { "str": "Repair the broken floating eyes" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "mon_floating_eye_bot_inactive",
+    "count": 3,
+    "difficulty": 5,
+    "value": 250000,
+    "start": {
+      "effect": [
+        { "u_buy_item": "broken_floating_eye_bot", "count": 3 } ]
+    },
+    "end": {
+    "effect": [
+        { "u_buy_item": "superglue", "count": 3 },
+        { "u_buy_item": "welder_crude", "count": 1 },
+        { "u_buy_item": "goggles_welding", "count": 1 },
+        { "u_buy_item": "toolbox", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_MISSION_SCRAP_GUILD_C",
+    "dialogue": {
+      "describe": "Now that you've proven your worth to us, I have some more basic work. We stumbled across some old floating eye bots, but all the internal circuits are a bit worn out. These would make for great scouts or sentries, please repair them for us and get back to me.",
+      "offer": "Now that you've proven your worth to us, I have some more basic work. We stumbled across some old floating eye bots, but all the internal circuits are a bit worn out. These would make for great scouts or sentries, please repair them for us and get back to me.",
+      "accepted": "I'm sure you'll have those bots up and running in no time.",
+      "rejected": "I guess somebody doesn't want to know the joy that comes from seeing a 'bot start up for the first time.",
+      "advice": "You're going to need a basic knowledge of electronics, fabrication and computing to fix these little robots. You can probably find a guide in a local robot repair center.",
+      "inquire": "Did you fix up the bots yet?",
+      "success": "They're good as new, well, almost good as new. Great job anyway!",
+      "success_lie": "I feel like you're lying, why lie like this?.",
+      "failure": "Wow, fixing floating eye bots is pretty easy, I thought you would be able to do it."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_SCRAP_GUILD_C",
+    "type": "mission_definition",
+    "name": { "str": "Fix the junk guild computer network" },
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "npc_has_var": "u_qst_computer_network_fix", "type": "mission", "context": "u_qst_computer_network", "value": "yes" },
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+    "effect": [
+        { "u_buy_item": "wattz_1000", "count": 1 },
+        { "u_buy_item": "UPS_off", "count": 1 },
+        { "u_buy_item": "geiger_off", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_MISSION_SCRAP_GUILD_D",
+    "dialogue": {
+      "describe": "It's clear that you know your stuff when it comes to tech, so I have another task for you. Recently, our computer network has been on the fritz. I think there's foul play involved, I've checked every inch of hardware and nothing is amiss.",
+      "offer": "It's clear that you know your stuff when it comes to tech, so I have another task for you. Recently, our computer network has been on the fritz. I think there's foul play involved, I've checked every inch of hardware and nothing is amiss.",
+      "accepted": "Great, try to look into the problem as soon as possible.",
+      "rejected": "Oh well, more late nights bug-fixing for me I guess.",
+      "advice": "Try asking around to see if anybody else knows anything about our little computer problem. If you have a high enough computer skill you could just ask me to see if you can fix it yourself.",
+      "inquire": "Did you find the source of the problem yet?",
+      "success": "Looking at the server now. It's great! No problems detected.",
+      "success_lie": "I feel like you're lying to me.",
+      "failure": "Looks the computers will be out of operation for longer than we thought."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_SCRAP_GUILD_D",
+    "type": "mission_definition",
+    "name": { "str": "Find the first vault holotape" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "item_fo_qst_vault_holotape",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_COMMON_VAULT_1_2",
+        "om_special": "Common Vault",
+        "om_terrain_replace": "field",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 135
+      },
+      "update_mapgen": [
+        {
+          "om_terrain": "FO_COMMON_VAULT_1_2",
+          "place_item": [
+           { "item": "item_fo_qst_vault_holotape", "x": 12 , "y": 10, "chance": 100 }
+        ]
+        }
+      ]
+    },
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Alright, got another job for you. I've caught wind of a sealed pre-war silo that contains something very valuable. Only problem is that we need multiple holotapes to gain access to it. I've marked the first vault location your map, please retrieve the holotape and return to me.",
+      "offer": "Alright, got another job for you. I've caught wind of a sealed pre-war location that contains something very valuable. Only problem is that we need multiple holotapes to gain access to it. I've marked the first vault location your map, please retrieve the holotape and return to me.",
+      "accepted": "Stay safe out there!",
+      "rejected": "Unfortunate, we could be missing out on the find of the year!",
+      "advice": "Try looking around the vault control room.",
+      "inquire": "Did you find the tape yet?",
+      "success": "Looking at the tape now. It's great! No problems detected, but I think we'll need another.",
+      "success_lie": "I feel like you're lying to me.",
+      "failure": "We're not one step closer to unsealing whatever's in that silo."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_SCRAP_GUILD_E",
+    "type": "mission_definition",
+    "name": { "str": "Find the second vault holotape" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "item_fo_qst_vault_holotape",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_RAD_VAULT_1_2",
+        "om_special": "Irradiated Vault",
+        "om_terrain_replace": "field",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 135
+      },
+      "update_mapgen": [
+        {
+          "om_terrain": "FO_RAD_VAULT_1_2",
+          "place_item": [
+           { "item": "item_fo_qst_vault_holotape", "x": 12 , "y": 8, "chance": 100 }
+        ]
+        }
+      ]
+    },
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Got another holotape job for you. This time it's in an old irradiated vault. I think this is the last piece of the puzzle we need. Go there, get it, come back. Simple.",
+      "offer": "Got another holotape job for you. This time it's in an old irradiated vault. I think this is the last piece of the puzzle we need. Go there, get it, come back. Simple.",
+      "accepted": "Stay safe out there!",
+      "rejected": "Unfortunate, we could be missing out on the find of the year!",
+      "advice": "Try looking around the vault control room. Also try to keep some anti-radiation equipment on you like radaway or something.",
+      "inquire": "Did you find the tape yet?",
+      "success": "Looking at the tape now. It's great! No problems detected, but I think we'll need another.",
+      "success_lie": "I feel like you're lying to me.",
+      "failure": "Guess we won't know what's buried in that silo."
+    }
+  },
+  {
+    "id": "MISSION_MISSION_SCRAP_GUILD_F",
+    "type": "mission_definition",
+    "name": { "str": "Access the mainframe silo and retrieve the item" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "item_fo_geck",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_QST_MAINFRAME_1",
+        "om_special": "Mainframe Center",
+        "om_terrain_replace": "field",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 200
+      }
+    },
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+    "effect": [
+        { "u_buy_item": "fo_power_armor_t45_rust", "count": 1 },
+        { "u_buy_item": "fo_power_armor_helmet_t45_rust", "count": 1 },
+        { "u_buy_item": "UPS_off", "count": 1 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I've used the two holotapes you found to decode the location of an old pre-war silo. The tapes don't say exactly what is in the place, nor what it stores, it onlys says that a high value item is stored there. Retrieve whatever is there at your own leisure.",
+      "offer": "I've used the two holotapes you found to decode the location of an old pre-war silo. The tapes don't say exactly what is in the place, nor what it stores, it onlys says that a high value item is stored there. Retrieve whatever is there at your own leisure.",
+      "accepted": "Stay safe out there!",
+      "rejected": "To come all this way and turn back now? Kind of upset, really.",
+      "advice": "All I can tell you is to be careful. This place hasn't been cracked open for years, who knows what's down there.",
+      "inquire": "Did you whatever it is yet?",
+      "success": "We'll I'll be damned, is that a GECK? This a major achievement. With one of these, we could create an entire community! You've done us a great service, and I owe you something. Here, take this, it's an old suit of T-45d power armor from before the war. It's a bit rusty, but still works. You've earned it.",
+      "success_lie": "Why lie at a time like this?",
+      "failure": "Guess we won't know what's buried in that silo."
+    }
+  }
+]

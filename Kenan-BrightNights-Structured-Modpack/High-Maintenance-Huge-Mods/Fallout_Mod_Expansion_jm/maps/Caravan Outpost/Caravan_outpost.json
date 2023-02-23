@@ -1,0 +1,440 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_CARAVAN_OUTPOST_A" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,wwQwwwQww,,,,,DDDDDD,",
+                ",,,wFrF_FrFw,,,,DDDDDDD,",
+                ",,,w==FFRRRw,,,,DDDDDDD,",
+                ",,,QFFFFFFFQ,,,,DDDDDDD,",
+                ",,,wRRRFRRRw,,,,DDDDDDD,",
+                ",,,wFrFFFrFw,,,,DDDDDDD,",
+                ",,,wwQwEwQww,,,,,DDDDD,,",
+                ",,,,,,,,,,,,,,,,,DDDD,,,",
+                ",,,,,,,,,,,,,,,,,,,,D,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,WWEWqWW,,,,,ZZZZZZZZZ,",
+                ",,Wafff_W,,,,,,,,,,,,,,,",
+                ",,qaffffWWWW,,ZZZZZZZZZ,",
+                ",,WaIddIO2KW,,,,,,,,,,,,",
+                ",,WfIddIOfKW,,ZZZZZZZZZ,",
+                ",,qfffffEffW,,,,,,,,,,,,",
+                ",,WTt!11O33W,,ZZZZZZZZZ,",
+                ",,WWWWWWWWWW,,,,,,,,,,,,",
+                ",,,,,,,,,o,o,,ZZZZZZZZZ,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,^,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_CARAVAN_OUT_PAL" ],
+        "place_items": [
+
+           { "item": "supplies_hardware", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_farming", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_metal", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 15 },
+           { "item": "supplies_mechanics", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "fuel_barrel_full", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "tools_common", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 75 },
+           { "item": "trash_junkyard", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 75 },
+           { "item": "tools_electronics", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 35 },
+
+           { "item": "farming_seeds", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "farming_tools", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "supplies_farming", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "foodintincan", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "fresh_produce", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+           { "item": "preserved_food", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+           { "item": "pre_irradiated_food", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+
+           { "item": "drops_fo_rare_highvalue_weapon", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 2 ], "chance": 8 },
+           { "item": "guns_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "guns_milspec", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 10 },
+           { "item": "guns_obscure", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 12 },
+           { "item": "mags_pistol_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_smg_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_rifle_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "ammo_pistol_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_pistol_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "guns_rifle_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_rifle_fallout_rare", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_rare", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_heavy_fallout", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "drops_fo_melee_weapons", "x": [ 8, 10 ], "y": 4, "repeat": [ 3, 5 ], "chance": 65 },
+
+           { "item": "fallout_energy_gungroups_enhanced", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 2 ], "chance": 9 }
+
+
+
+        ],
+        "place_npcs": [
+                     { "class": "fo_outpost_caravan_employee", "x": 5, "y": 3},
+                     { "class": "fo_caravan_outpost_scrap_merchant", "x": 5, "y": 7},
+                     { "class": "fo_caravan_food_merchant", "x": 9, "y": 7},
+                     { "class": "fo_caravan_outpost_gun_merchant", "x": 9, "y": 3},
+                     { "class": "fo_caravan_outpost_guard", "x": 7, "y": 4}
+                ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 1, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 22, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 1, "y": 22 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 22, "y": 22 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 4, "y": 15 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 7, "y": 17 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 15, "y": 13 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 14, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 10, "y": 17 }
+
+        ],
+        "place_vehicles": [
+        { "chance": 66, "fuel": 23, "rotation": 90, "status": 0, "vehicle": "dirtlot", "x": 17, "y": 3 }
+      ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "sealed_item": { "Z": { "item": { "item": "seed_corn" }, "furniture": "f_plant_seedling" } },
+        "terrain": { ",": "t_region_groundcover", "_": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_CARAVAN_OUTPOST_A_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "  .......               ",
+                "  .......               ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_floor_primitive"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_CARAVAN_OUTPOST_B" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,wwQwwwQww,,,,,DDDDDD,",
+                ",,,wFrF_FrFw,,,,DDDDDDD,",
+                ",,,w==FFRRRw,,,,DDDDDDD,",
+                ",,,QFFFFFFFQ,,,,DDDDDDD,",
+                ",,,wRRRFRRRw,,,,DDDDDDD,",
+                ",,,wFrFFFrFw,,,,DDDDDDD,",
+                ",,,wwQwEwQww,,,,,DDDDD,,",
+                ",,,,,,,,,,,,,,,,,DDDD,,,",
+                ",,,,,,,,,,,,,,,,,,,,D,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,WWEWqWW,,,,,ZZZZZZZZZ,",
+                ",,Wafff_W,,,,,,,,,,,,,,,",
+                ",,qaffffWWWW,,ZZZZZZZZZ,",
+                ",,WaIddIO2KW,,,,,,,,,,,,",
+                ",,WfIddIOfKW,,ZZZZZZZZZ,",
+                ",,qfffffEffW,,,,,,,,,,,,",
+                ",,WTt!11O33W,,ZZZZZZZZZ,",
+                ",,WWWWWWWWWW,,,,,,,,,,,,",
+                ",,,,,,,,,o,o,,ZZZZZZZZZ,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,^,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_CARAVAN_OUT_PAL" ],
+        "place_items": [
+
+           { "item": "supplies_hardware", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_farming", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_metal", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 15 },
+           { "item": "supplies_mechanics", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "fuel_barrel_full", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "tools_common", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 75 },
+           { "item": "trash_junkyard", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 75 },
+           { "item": "tools_electronics", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 35 },
+
+           { "item": "farming_seeds", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "farming_tools", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "supplies_farming", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "foodintincan", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "fresh_produce", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+           { "item": "preserved_food", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+           { "item": "pre_irradiated_food", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+
+           { "item": "drops_fo_rare_highvalue_weapon", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 2 ], "chance": 8 },
+           { "item": "guns_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "guns_milspec", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 10 },
+           { "item": "guns_obscure", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 12 },
+           { "item": "mags_pistol_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_smg_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_rifle_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "ammo_pistol_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_pistol_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "guns_rifle_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_rifle_fallout_rare", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_rare", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_heavy_fallout", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "drops_fo_melee_weapons", "x": [ 8, 10 ], "y": 4, "repeat": [ 3, 5 ], "chance": 65 },
+
+           { "item": "fallout_energy_gungroups_enhanced", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 2 ], "chance": 9 }
+
+
+
+        ],
+        "place_npcs": [
+                     { "class": "fo_outpost_caravan_employee", "x": 5, "y": 3},
+                     { "class": "fo_caravan_outpost_scrap_merchant", "x": 5, "y": 7},
+                     { "class": "fo_caravan_food_merchant", "x": 9, "y": 7},
+                     { "class": "fo_caravan_outpost_gun_merchant", "x": 9, "y": 3},
+                     { "class": "fo_caravan_outpost_guard", "x": 7, "y": 4}
+                ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 1, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 22, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 1, "y": 22 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 22, "y": 22 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 4, "y": 15 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 7, "y": 17 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 15, "y": 13 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 14, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 10, "y": 17 }
+
+        ],
+        "place_vehicles": [
+        { "chance": 66, "fuel": 23, "rotation": 90, "status": 0, "vehicle": "dirtlot", "x": 17, "y": 3 }
+      ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "sealed_item": { "Z": { "item": { "item": "seed_corn" }, "furniture": "f_plant_seedling" } },
+        "terrain": { ",": "t_region_groundcover", "_": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_CARAVAN_OUTPOST_B_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "  .......               ",
+                "  .......               ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_floor_primitive"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_CARAVAN_OUTPOST_C" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,wwQwwwQww,,,,,DDDDDD,",
+                ",,,wFrF_FrFw,,,,DDDDDDD,",
+                ",,,w==FFRRRw,,,,DDDDDDD,",
+                ",,,QFFFFFFFQ,,,,DDDDDDD,",
+                ",,,wRRRFRRRw,,,,DDDDDDD,",
+                ",,,wFrFFFrFw,,,,DDDDDDD,",
+                ",,,wwQwEwQww,,,,,DDDDD,,",
+                ",,,,,,,,,,,,,,,,,DDDD,,,",
+                ",,,,,,,,,,,,,,,,,,,,D,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,WWEWqWW,,,,,ZZZZZZZZZ,",
+                ",,Wafff_W,,,,,,,,,,,,,,,",
+                ",,qaffffWWWW,,ZZZZZZZZZ,",
+                ",,WaIddIO2KW,,,,,,,,,,,,",
+                ",,WfIddIOfKW,,ZZZZZZZZZ,",
+                ",,qfffffEffW,,,,,,,,,,,,",
+                ",,WTt!11O33W,,ZZZZZZZZZ,",
+                ",,WWWWWWWWWW,,,,,,,,,,,,",
+                ",,,,,,,,,o,o,,ZZZZZZZZZ,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,^,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_CARAVAN_OUT_PAL" ],
+        "place_items": [
+
+           { "item": "supplies_hardware", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_farming", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "supplies_metal", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 15 },
+           { "item": "supplies_mechanics", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "fuel_barrel_full", "x": [ 4, 6 ], "y": 6, "repeat": [ 7, 12 ], "chance": 75 },
+           { "item": "tools_common", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 75 },
+           { "item": "trash_junkyard", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 75 },
+           { "item": "tools_electronics", "x": [ 4, 6 ], "y": 6, "repeat": 6, "chance": 35 },
+
+           { "item": "farming_seeds", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "farming_tools", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "supplies_farming", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "foodintincan", "x": [ 8, 10 ], "y": 6, "repeat": [ 4, 6 ], "chance": 75 },
+           { "item": "fresh_produce", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+           { "item": "preserved_food", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+           { "item": "pre_irradiated_food", "x": 6, "y": [ 14, 17 ], "repeat": [ 4, 6 ], "chance": 30 },
+
+           { "item": "drops_fo_rare_highvalue_weapon", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 2 ], "chance": 8 },
+           { "item": "guns_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "guns_milspec", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 10 },
+           { "item": "guns_obscure", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 12 },
+           { "item": "mags_pistol_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_smg_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "mags_rifle_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 3 ], "chance": 35 },
+           { "item": "ammo_pistol_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_pistol_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "ammo_rifle_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "guns_rifle_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_rifle_fallout_rare", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_common", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_pistol_fallout_rare", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+           { "item": "guns_heavy_fallout", "x": [ 8, 10 ], "y": 4, "repeat": [ 4, 7 ], "chance": 65 },
+
+           { "item": "drops_fo_melee_weapons", "x": [ 8, 10 ], "y": 4, "repeat": [ 3, 5 ], "chance": 65 },
+
+           { "item": "fallout_energy_gungroups_enhanced", "x": [ 8, 10 ], "y": 4, "repeat": [ 1, 2 ], "chance": 9 }
+
+
+
+        ],
+        "place_npcs": [
+                     { "class": "fo_outpost_caravan_employee", "x": 5, "y": 3},
+                     { "class": "fo_caravan_outpost_scrap_merchant", "x": 5, "y": 7},
+                     { "class": "fo_caravan_food_merchant", "x": 9, "y": 7},
+                     { "class": "fo_caravan_outpost_gun_merchant", "x": 9, "y": 3},
+                     { "class": "fo_caravan_outpost_guard", "x": 7, "y": 4}
+                ],
+        "place_nested": [ 
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 1, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 22, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 1, "y": 22 },
+                    { "chunks": [ [ "fo_caravan_guard_spawn", 50 ],[ "null", 50 ] ], "x": 22, "y": 22 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 4, "y": 15 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 7, "y": 17 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 15, "y": 13 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 14, "y": 1 },
+                    { "chunks": [ [ "fo_caravan_outpost_male_spawn", 25 ],[ "fo_caravan_outpost_female_spawn", 25 ],[ "null", 50 ] ], "x": 10, "y": 17 }
+
+        ],
+        "place_vehicles": [
+        { "chance": 66, "fuel": 23, "rotation": 90, "status": 0, "vehicle": "dirtlot", "x": 17, "y": 3 }
+      ],
+        "faction_owner": [
+                    { "id": "foc_wasteland_town", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "sealed_item": { "Z": { "item": { "item": "seed_corn" }, "furniture": "f_plant_seedling" } },
+        "terrain": { ",": "t_region_groundcover", "_": "t_fo_powlamp" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_CARAVAN_OUTPOST_C_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "   .........            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "  .......               ",
+                "  .......               ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "  ..........            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_floor_primitive"
+            }
+        }
+    }
+]

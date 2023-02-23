@@ -1,0 +1,166 @@
+[
+  {
+    "type": "mutation",
+    "id": "mut_fo_qst_injury",
+    "name": { "str": "Crippling Injury" },
+    "points": -1,
+    "description": "This person has a crippling injury, making it very difficult for them to move.",
+    "passive_mods": { "str_mod": -1 },
+    "social_modifiers": { "intimidate": -2 },
+    "metabolism_modifier": -0.1,
+    "movecost_modifier": 3.00,
+    "hp_modifier": -0.3
+  },
+  {
+    "type": "npc",
+    "id": "fo_quest_follower",
+    "name_suffix": "Waylaid traveller",
+    "class": "fo_quest_follower_npc",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_fo_quest_follower_start",
+    "faction": "foc_lost_travellers"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_quest_follower_npc",
+    "name": { "str": "Waylaid Traveller" },
+    "job_description": "A down on their luck traveller.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" }, { "trait": "mut_fo_qst_injury" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_QST_FOLLW_worn",
+    "carry_override": "NC_QST_FOLLW_carry",
+    "weapon_override": "NC_QST_FOLLW_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "tailor", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "traps", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_FOLLW_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 } ], "prob": 100 },
+      { "item": "socks" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "boots_combat", "prob": 100 }, { "item": "boots_fur", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_FOLLW_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "count": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_FOLLW_weapon",
+    "subtype": "distribution",
+    "entries": [
+
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_follower_start",
+    "type": "talk_topic",
+    "dynamic_line": [ 
+
+      { "npc_has_var": "u_known_qstheal", "type": "general", "context": "meeting", "value": "yes",
+      "no": [
+        "Can't you see that I'm in pain. What do you want with me!"
+      ],
+      "yes": {
+        "u_male": [ "Thanks for healing me, you're a lifesaver!", "I'm mostly patched up now, thank you!" ],
+        "no": [ "Thanks for healing me, you're a lifesaver!", "I'm mostly patched up now, thank you!" ]
+      }
+    } 
+      ],
+    "responses": [
+      {
+        "text": "What happened, why are you like this?",
+        "topic": "TALK_fo_quest_follower_explain"
+      },
+      {
+        "text": "[First Aid 4+] Hold still now, let me heal you.",
+        "condition": { "u_has_skill": { "skill": "firstaid", "level": 4 } },
+        "topic": "TALK_fo_quest_follower_heal"
+      },
+      {
+        "text": "[Two Stimpaks] Hold still now, let me heal you.",
+        "condition": { "u_has_items": { "item": "fo_stimpak_kit", "count": 2 } },
+        "topic": "TALK_fo_quest_follower_heal_stimpak"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_follower_explain",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What does it look like! I got injured when me and my friend were scavving. Now I'm stuck like this. Got any other smart questions!",
+      "no": "What does it look like! I got injured when me and my friend were scavving. Now I'm stuck like this. Got any other smart questions!"},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_follower_heal",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Wow, I already feel much better. Thank you! Be sure to tell my friend of what you did.",
+      "no": "Wow, I already feel much better. Thank you! Be sure to tell my friend of what you did."},
+    "responses": [
+      {
+        "text": "You're welcome.",
+        "effect": [ { "u_add_var": "u_heal_qst_friend", "type": "general", "context": "meeting", "value": "yes" },
+        { "npc_add_var": "u_known_qstheal", "type": "general", "context": "meeting", "value": "yes" },
+        { "npc_lose_trait": "mut_fo_qst_injury" } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_follower_heal_stimpak",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Wow, I already feel much better. Thank you! Be sure to tell my friend of what you did.",
+      "no": "Wow, I already feel much better. Thank you! Be sure to tell my friend of what you did."},
+    "responses": [
+      {
+        "text": "You're welcome.",
+        "effect": [ { "u_add_var": "u_heal_qst_friend", "type": "general", "context": "meeting", "value": "yes" },
+        { "u_sell_item": "fo_stimpak_kit", "count": 2 },
+        { "npc_add_var": "u_known_qstheal", "type": "general", "context": "meeting", "value": "yes" },
+        { "npc_lose_trait": "mut_fo_qst_injury" } ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_civ_mal",
+    "name_suffix": "Town Resident",
+    "class": "fo_wastetown_civ_mal_npc",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_resmal_start",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_civ_mal_npc",
+    "name": { "str": "Town Resident" },
+    "job_description": "Is a resident of the wasteland town.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_WASTERES_M_worn",
+    "carry_override": "NC_WASTERES_M_carry",
+    "weapon_override": "NC_WASTERES_M_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTERES_M_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bra" },
+      { "item": "panties" },
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 }, { "item": "tshirt", "prob": 100 }, { "item": "tshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 }, { "item": "shorts_denim", "prob": 100 } ], "prob": 100 },
+      { "item": "socks" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "dress_shoes", "prob": 100 }, { "item": "footrags", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 }, { "item": "lowtops", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 25 },
+      { "distribution": [ { "item": "hat_boonie", "prob": 100 }, { "item": "beret", "prob": 100 }, { "item": "cowboy_hat", "prob": 100 }, { "item": "hat_knit", "prob": 100 }, { "item": "hat_hunting", "prob": 100 }, { "item": "straw_hat", "prob": 100 }, { "item": "hat_ball", "prob": 100 } ], "prob": 35 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTERES_M_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTERES_M_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 75 },
+      { "item": "ashot", "charges": 1, "prob": 15 },
+      { "item": "colt6250", "charges": 12, "ammo-item": "40sw", "prob": 15 },
+      { "item": "10mmsmg", "charges": 30, "prob": 15, "ammo-item": "40sw"},
+      { "item": "pipe_double_shotgun", "charges": 2, "prob": 15 },
+      { "item": "shotgun_d", "charges": 2, "prob": 15 },
+      { "item": "varmint_rifle", "charges": 10, "prob": 15 },
+      { "item": "cop_38", "charges": 4, "prob": 15 },
+      { "item": "ruger_1022", "charges": 15, "prob": 15 },
+      { "item": "marlin_9a", "charges": 19, "prob": 10 },
+      { "item": "m1911", "charges": 6, "prob": 10 },
+      { "item": "14mmpistol", "charges": 7, "prob": 10 },
+      { "item": "fo_ripper_off", "prob": 5 },
+      { "item": "vault_knife", "prob": 5 },
+      { "item": "machete_gladius", "prob": 5 },
+      { "item": "fo_powfist", "prob": 10 },
+      { "item": "fo_bladedgauntlet", "prob": 5 },
+      { "item": "knuckle_brass", "prob": 5 },
+      { "item": "punch_dagger", "prob": 5 },
+      { "item": "switchblade", "prob": 5 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_combat", "prob": 5 },
+      { "item": "knife_butcher", "prob": 5 },
+      { "item": "knife_steak", "prob": 5 },
+      { "item": "ar15", "charges": 30, "prob": 10 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_resmal_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "u_known_by_town",
+      "type": "general",
+      "context": "meeting",
+      "value": "yes",
+      "yes": [
+        "Hello, <name_g>",
+        "Be careful out there, <name_g>?",
+        "Oh, hey, it's you again.",
+        "Just another day here. I feel safe behind the walls.",
+        {
+          "u_has_strength": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "You look like a pretty tough dude, have you ever considered joining the town guard? They always need new members.",
+                "no": "You look like a pretty tough chick! Glad to see there are some women out there capable of getting down in the dirt with the guys, ever consider joining the town guard?"
+                },
+            "no": "Maybe if you bulked up a bit then the town guard chief would consider you a more viable recruit."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "It's clear from the way you talk that you have a good head on your shoulders, perhaps you should try speaking to the town doctor or head of the junk guild, you might be of use to them.",
+            "no": "Some of the townsfolk are getting restless and want to go out into the waste on their own, I can't blame them at times, but I don't think it's a good idea."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "I hope the harvest is good this year, eating out of old tins from before the war gets boring after a while.",
+            "no": "Uh, are you sure you're alright. You don't seem put-together mentally, not to be rude."
+        },
+        "There are other settlements out there in the wastes, but they're probably quite far away.",
+        "How are things going?",
+        {
+        "u_male": [ "How's it going, dude?.", "Rough out there, isn't it?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "How's it going, lady?", "Ma'am, what do you think of the town?.", "What's up, <name_g>" ]
+      }
+      ],
+      "no": {
+        "u_male": [ "Who are you, I haven't seen you before?", "I don't recall any guy that looks like you around here, who are you?" ],
+        "no": [ "I haven't seen any woman like you around here before, who are you?", "What's a woman like you doing around here, did you blow in from the wastes or something?" ]
+      }
+    },
+    "responses": [
+      {
+        "text": "I don't really know much about this place, what do you all do here?",
+        "condition": { "not": { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_wastetown_resmal_introduce"
+      },
+      {
+        "text": "How has town life been treating you lately?",
+        "condition": { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_wastetown_resmal_question"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_resmal_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "I've lived here for some time now, years really. We decided to rally together around some old ruins out here away from the danger of the cities and shored up our defences with bits of scrap. Over time, we became a full-fledged and self-sustaining town, albeit a rather small one. Farming, trading, medical supplies, we have all the basics.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "effect": { "u_add_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_resmal_question",
+    "type": "talk_topic",
+    "dynamic_line": "Not much has happened recently, but there's always more work to be done.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,138 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_RIVALHOUSE_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "wwwwwwwwwwwwwwwwwwwwwwww",
+                "wwwwwwwwwwwwwwwwwwwwwwww",
+                "ww,,,,,,,,,,,,,,,,,,,,ww",
+                "ww,,,,,,,,,,,,,,,,,,,,ww",
+                "ww,,WWW@WW@WWWW@W@WW,,ww",
+                "ww,,W::FFFFFW*BFBFBW,,ww",
+                "ww,,@:YFeeeFWF6F6F6W,,ww",
+                "ww,,W:YFeeeFDFFFFFF@,,ww",
+                "ww,,W*FF<<FvWFBFBFBW,,ww",
+                "ww,,WWWDWWWWWF6F6F6W,,ww",
+                "ww,,W-FFW)*(W@WDW@WW,,ww",
+                "ww,,@rFFDFFFW,,,,,,,,,ww",
+                "ww,,WUFFW==+W7,,,,,,,,ww",
+                "ww,,WWWDWWWWW7,,,,,,,,ww",
+                "ww,,Wc*f888GWGJJJJJJJJww",
+                "ww,,WfffffffgQQQQQQQQJww",
+                "ww,,@fffffffgQQQQQQQQJww",
+                "ww,,WfffffffgQQQQQQQQJww",
+                "ww,,@fffffffgQQQQQQQQJww",
+                "ww,,WfffffffgQQQQQQQQJww",
+                "ww,,WWWWWWWWWJQQQQQQQJww",
+                "ww,,,,,,,,,,,JQQQQQQQJww",
+                "wwwwwwwwwwwwwwQQQQQQQwww",
+                "wwwwwwwwwwwwwwQQQQQQQwww"
+            ],
+        "palettes": [ "FO_QST_RIVALHOUSE_PAL" ],
+        "place_npcs": [
+                     { "class": "fo_quest_crim_rival", "x": 19, "y": 20}, 
+                     { "class": "fo_quest_crim_rival", "x": 15, "y": 7}, 
+                     { "class": "fo_quest_crim_rival", "x": 9, "y": 5}, 
+                     { "class": "fo_quest_crim_rival", "x": 6, "y": 10},
+                     { "class": "fo_quest_crim_rival", "x": 11, "y": 11}, 
+                     { "class": "fo_quest_crim_rival", "x": 21, "y": 8}
+                ],
+        "faction_owner": [
+                    { "id": "foc_rival_criminals", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_vehicles": [
+        { "chance": 75, "fuel": 0, "rotation": 180, "status": -1, "vehicle": "garage", "x": 7, "y": 18 }
+      ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_QST_RIVALHOUSE_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "                        ",
+                "                        ",
+                "     CCCCCCCCCCCCC      ",
+                "     C$fff%1fkfkfCCCCCCC",
+                "     C$fff%1fffffC99IIIC",
+                "     C*ffffffKfKfDHHHipC",
+                "     C8#ff%1fffffCHhhHPC",
+                "     C8fff%1f;ff;C*hhHPC",
+                "     CCC>>CCCCCCCCCCCCCC",
+                "       CCCC             ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+        "palettes": [ "FO_QST_RIVALHOUSE_PAL" ],
+        "place_npcs": [
+                     { "class": "fo_quest_crim_rival", "x": 7, "y": 3}, 
+                     { "class": "fo_quest_crim_rival", "x": 14, "y": 6}, 
+                     { "class": "fo_quest_crim_rival", "x": 16, "y": 3}, 
+                     { "class": "fo_quest_crim_rival", "x": 9, "y": 6}
+                ],
+        "faction_owner": [
+                    { "id": "foc_rival_criminals", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "terrain": { " ": "t_rock" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_QST_RIVALHOUSE_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "........................",
+                "........................",
+                "..                    ..",
+                "..                    ..",
+                "..  ................  ..",
+                "..  ................  ..",
+                "..  ................  ..",
+                "..  ................  ..",
+                "..  ................  ..",
+                "..  ................  ..",
+                "..  ................  ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..  .........         ..",
+                "..                    ..",
+                "..............       ...",
+                "..............       ..."
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

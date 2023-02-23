@@ -1,0 +1,164 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_waste_science_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Science Merchant",
+    "class": "NC_WASTEFOSCIENCE_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_FOSCIENCE_Town",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WASTEFOSCIENCE_SHOPKEEP",
+    "name": { "str": "Science Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_FOSCIENCE_worn",
+    "weapon_override": "NC_FOSCIENCE_weapon",
+    "shopkeeper_item_group": "NC_FOSCIENCE_SHOPKEEP_misc",
+    "carry_override": "NC_FOSCIENCE_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "cooking", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOSCIENCE_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] },
+      { "group": "ammo_any_batteries_full", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOSCIENCE_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOSCIENCE_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "pants" },
+      { "item": "coat_lab" },
+      { "item": "dress_shirt" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_rubber" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOSCIENCE_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOSCIENCE_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "supplies_reagents_lab", "count": [ 4, 9 ] },
+      { "group": "science", "count": [ 4, 9 ] },
+      { "group": "ammo_any_batteries_full", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_FOSCIENCE_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Ever considered buying science equipment, <name_g>?",
+        "Find any interesting holotapes lately?",
+        "Oh, hey, it's you again.",
+        "I feel like it's only me, the local doc and the junk guild leader that understand the finer aspects of computer programming",
+        {
+          "u_has_intelligence": 10, "yes": "You seem to have a firm grasp of old tech and the scientific method. We need more people like you to maintain old-world knowledge.",
+            "no": "Wanna buy something? I get my wares from scavengers on a regular basis."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "Ever consider buying any electronic equipment?",
+            "no": "I don't think you know enough to really understand the finer aspects of the scientific marvels of the old world, perhaps being a town guard is more your style?"
+        },
+        "I heard from a traveller that it's possible to hack nearly any computer in the wastes by just turning it off and on again if you're about to fail. Can you believe that?",
+        "Another boring day in this town.",
+        {
+        "u_male": [ "A guy like you have any interest in computers?", "Any electronics or tech here that pique your interest?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "Do you have any interest in programming? It's not very common for women to be into it, but the more the merrier!", "Ma'am, what do you think of the town?.", "Stay safe out there, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What is it like being a science merchant?",
+        "topic": "TALK_FOSCIENCE_infotown"
+      },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_FOSCIENCE_Town"
+      },
+      {
+        "text": "Do you know anything about the server problems the head of the junk guild has been experiencing? You're one of the only other people in this town who has a way with computers. Anything to say?",
+        "topic": "TALK_FOSCIENCE_server_accuse",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_SCRAP_GUILD_C" }
+            ]
+          }
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_FOSCIENCE_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Finding more advanced tech out in the wastes is difficult, not so much because of the lack of advanced equipment, but moreso because it's often in difficult to reach areas. Irradiated craters, labs crawling with all manner of nasty robots - or worse - things I don't even want to consider, or locked behind safes in consumer stores. If you can get ahold of it though, the world is more or less your oyster. It doesn't matter how weak or infirm you are, if you can master electronics and computers you can almost bend the earth to your will.",
+      "no": "Finding more advanced tech out in the wastes is difficult, not so much because of the lack of advanced equipment, but moreso because it's often in difficult to reach areas. Irradiated craters, labs crawling with all manner of nasty robots - or worse - things I don't even want to consider, or locked behind safes in consumer stores. If you can get ahold of it though, the world is more or less your oyster. It doesn't matter how weak or infirm you are, if you can master electronics and computers you can almost bend the earth to your will."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_FOSCIENCE_Town"
+      }
+    ]
+  },
+  {
+    "id": "TALK_FOSCIENCE_server_accuse",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_perception": 10, "yes": "Why would I, of all people, try to hack their server? Half of my transactions are recorded through them. I would be outta business without the scrap they bring in, it's pretty rude of you to even ask such a question! [PERCEPTION 10] (They are telling the truth).", "no": "Why would I, of all people, try to hack their server? Half of my transactions are recorded through them. I would be outta business without the scrap they bring in, it's pretty rude of you to even ask such a question!"},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_FOSCIENCE_Town"
+      }
+    ]
+  }
+]

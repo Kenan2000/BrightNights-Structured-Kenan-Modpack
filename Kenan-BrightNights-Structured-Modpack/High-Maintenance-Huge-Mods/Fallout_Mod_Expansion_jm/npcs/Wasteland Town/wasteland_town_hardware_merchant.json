@@ -1,0 +1,145 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_waste_hardware_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Hardware Merchant",
+    "class": "NC_WASTEFOHARDWARE_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_FOHARD_Town",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WASTEFOHARDWARE_SHOPKEEP",
+    "name": { "str": "Hardware Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_FOHARD_worn",
+    "weapon_override": "NC_FOHARD_weapon",
+    "shopkeeper_item_group": "NC_FOHARD_SHOPKEEP_misc",
+    "carry_override": "NC_FOHARD_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "fabrication", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOHARD_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "supplies_hardware", "count": [ 4, 9 ] },
+      { "group": "supplies_metal", "count": [ 4, 9 ] },
+      { "group": "supplies_farming", "count": [ 4, 9 ] },
+      { "group": "tools_common", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOHARD_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOHARD_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "hat_hard" },
+      { "item": "jeans" },
+      { "item": "jacket_light" },
+      { "item": "tshirt" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOHARD_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOHARD_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "supplies_hardware", "count": [ 4, 9 ] },
+      { "group": "supplies_metal", "count": [ 4, 9 ] },
+      { "group": "supplies_farming", "count": [ 4, 9 ] },
+      { "group": "tools_common", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_FOHARD_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Wanna buy any hardware, <name_g>?",
+        "Be careful out there, <name_g>?",
+        "Consider buying any hardware, there's always a new project to work on.",
+        "It brings me joy to know that I helped to build these walls.",
+        {
+          "u_has_perception": 10,
+            "yes": "You've got a pretty sharp eye for the scrap I have lying around here, I can tell you're perceptive. Have you considered working for Crimson Caravan or the Junk Guild?",
+            "no": "It might not look like much to a normal person, but this scrap is worth its weight in well, it's weight!"
+        },
+        {
+          "u_has_strength": 10, "yes": "You seem pretty strong, like the type of person that could carry plywood sheets around all day.",
+            "no": "Wanna buy something?"
+        },
+        "Isn't it a bit strange how you seemingly only ever see one person driving a car out in the wasteland? Did everybody else forget how to operate vehicles or something?",
+        "How is life treating you?",
+        {
+        "u_male": [ "A guy like you consider buying anything?", "Ever consider buying a toolset of your own, I probably have what you need.", "<name_g>, interested in buying something?" ],
+        "no": [ "It's somewhat surprising to see a woman interested in hardware like this, I'm glad anyway. Want to buy something?", "Ma'am, what do you think of the town?", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What is it like selling hardware around here?",
+        "topic": "TALK_FOHARD_infotown"
+      },
+      {
+        "text": "Could I purchase something?",
+        "effect": "start_trade",
+        "topic": "TALK_FOHARD_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_FOHARD_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "It's a bit of a shallow industry, all things considered. Most people are more than content to live in the remnants of pre-war houses that you can find nearly everywhere. Either that, or living in a hovel made of sheets of corrugated tin taped together with tape or something. It's like nobody appreciates my craft besides some of the people in this town, grateful for the security the walls provide.",
+      "no": "It's a bit of a shallow industry, all things considered. Most people are more than content to live in the remnants of pre-war houses that you can find nearly everywhere. Either that, or living in a hovel made of sheets of corrugated tin taped together with tape or something. It's like nobody appreciates my craft besides some of the people in this town, grateful for the security the walls provide."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_FOHARD_Town"
+      }
+    ]
+  }
+]

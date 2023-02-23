@@ -1,0 +1,146 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_waste_bartender",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "bartender",
+    "class": "NC_WASTEBARTENDER_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_FOBARTENDER_Town",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_WASTEBARTENDER_SHOPKEEP",
+    "name": { "str": "Bartender" },
+    "job_description": "I'm a local bartender.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_FOBARTENDER_worn",
+    "weapon_override": "NC_FOBARTENDER_weapon",
+    "shopkeeper_item_group": "NC_FOBARTENDER_SHOPKEEP_misc",
+    "carry_override": "NC_FOBARTENDER_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBARTENDER_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "fo_nuka_bottles", "count": [ 4, 9 ] },
+      { "group": "alcohol_bottled_canned", "count": [ 4, 9 ] },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 4, 9 ] },
+      { "group": "preserved_food", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBARTENDER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBARTENDER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "pants" },
+      { "item": "dress_shirt" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBARTENDER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FOBARTENDER_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "fo_nuka_bottles", "count": [ 4, 9 ] },
+      { "group": "alcohol_bottled_canned", "count": [ 4, 9 ] },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 4, 9 ] },
+      { "group": "preserved_food", "count": [ 4, 9 ] }
+    ]
+  },
+  {
+    "id": "TALK_FOBARTENDER_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "Feeling thirsty, <name_g>?",
+        "I always have something around here to whet the appetite, <name_g>",
+        "You can stay as long as you like, so long as you don't get too rowdy.",
+        "All sorts of people walk into this bar, perhaps you should talk to some of them and see what they're like.",
+        {
+          "u_has_strength": 10, "yes": "You seem like you could handle yourself in a barfight, do you have any good stories to tell about fighting in the wastes?",
+            "no": "Need something to drink, or eat perhaps?"
+        },
+        {
+          "u_has_intelligence": 6, "yes": "Some people really can't handle their liquor, they start blabbering endlessly about their personal lives to anybody within earshot.",
+            "no": "Typically I would recommend against drinking too much, but it doesn't seem like you have that many brain cells to lose in the first place."
+        },
+        "I've heard stories of people drinking alcohol and then suddenly becoming more charismatic. I find that hard to believe, but some people swear by it.",
+        "You liking your time in this bar?",
+        "Some people don't take to drinking and prefer Nuka Cola, I have some, if that's what you want.",
+        {
+        "u_male": [ "Consider a beer or some hard spirits?", "Rough out there, isn't it?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "Consider a cocktail or some light beer?", "Ma'am, what do you think of the town?.", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What is it like being a scrap merchant around here?",
+        "topic": "TALK_FOBARTENDER_infotown"
+      },
+      {
+        "text": "Got anything for me to eat or drink?",
+        "effect": "start_trade",
+        "topic": "TALK_FOBARTENDER_Town"
+      },
+      {
+        "text": "Could you cut my hair?",
+        "effect": "barber_hair",
+        "topic": "TALK_FOBARTENDER_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_FOBARTENDER_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "You really have to be a people person in order to be a good bartender, this bar could be consider one of the more important social hubs for this town. Good communication skills are absolutely skill not only to allay belligerent drunks, but for getting people to open up their daily experiences.",
+      "no": "You really have to be a people person in order to be a good bartender, this bar could be consider one of the more important social hubs for this town. Good communication skills are absolutely skill not only to allay belligerent drunks, but for getting people to open up their daily experiences."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_FOBARTENDER_Town"
+      }
+    ]
+  }
+]

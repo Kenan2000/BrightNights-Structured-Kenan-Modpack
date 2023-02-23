@@ -1,0 +1,86 @@
+[
+  {
+    "type": "recipe",
+    "result": "fo_powfist",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "mechanics", 5 ], [ "melee", 3 ] ],
+    "difficulty": 5,
+    "time": "120 m",
+    "autolearn": true,
+    "qualities": [
+      { "id": "SAW_M", "level": 1 },
+      { "id": "SAW_M_FINE", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "WRENCH_FINE", "level": 1 }
+    ],
+    "using": [ [ "soldering_standard", 10 ], [ "welding_standard", 25 ] ],
+    "components": [
+      [ [ "plastic_chunk", 10 ] ],
+      [ [ "amplifier", 2 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "scrap", 6 ] ],
+      [ [ "cable", 40 ] ],
+      [ [ "motor_small", 1 ] ],
+      [ [ "spring", 2 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "fo_bladedgauntlet",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_BASHING",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "mechanics", 3 ], [ "melee", 1 ] ],
+    "difficulty": 3,
+    "time": "70 m",
+    "autolearn": true,
+    "qualities": [ { "id": "SAW_M", "level": 1 }, { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "scrap", 10 ], [ "steel_chunk", 5 ] ],
+      [ [ "leather", 6 ], [ "rag", 12 ] ],
+      [ [ "duct_tape", 20 ], [ "filament", 20, "LIST" ] ]
+    ]
+  },
+  {
+    "result": "fo_mob_nukagrenade",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "cooking",
+    "difficulty": 6,
+    "time": "10 m",
+    "book_learn": [ [ "textbook_anarch", 4 ], [ "adv_chemistry", 6 ], [ "textbook_chemistry", 6 ] ],
+    "qualities": [ { "id": "CHEM", "level": 2 } ],
+    "tools": [ [ [ "surface_heat", 25, "LIST" ] ] ],
+    "components": [
+      [ [ "can_medium", 1 ] ],
+      [ [ "acid", 2 ], [ "chem_sulphuric_acid", 2 ], [ "chem_nitric_acid", 2 ] ],
+      [ [ "cola_nuka_quantum", 1 ] ],
+      [ [ "paper", 5 ], [ "rolling_paper", 32 ] ]
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "fo_rockit_launcher",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ "mechanics", 3 ],
+    "difficulty": 5,
+    "time": "3 h",
+    "autolearn": true,
+    "using": [ [ "soldering_standard", 10 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 }, { "id": "SCREW_FINE", "level": 1 }, { "id": "WRENCH_FINE", "level": 1 } ],
+    "components": [
+      [ [ "pipe", 3 ] ],
+      [ [ "duct_tape", 100 ], [ "superglue", 1 ] ],
+      [ [ "hose", 1 ] ],
+      [ [ "well_pump", 1 ] ],
+      [ [ "scrap", 15 ] ],
+      [ [ "funnel", 1 ], [ "metal_funnel", 1 ], [ "makeshift_funnel", 1 ] ],
+      [ [ "sheet_metal_small", 1 ] ]
+    ]
+  }
+]

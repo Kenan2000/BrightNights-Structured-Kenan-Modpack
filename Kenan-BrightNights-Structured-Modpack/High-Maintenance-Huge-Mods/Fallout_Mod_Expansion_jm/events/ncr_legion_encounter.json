@@ -1,0 +1,55 @@
+[
+  {
+    "id": "mx_fo_ncr_legion_event",
+    "type": "map_extra",
+    "name": { "str": "NCR-Legion Skirmish" },
+    "description": "A skirmish between the NCR and Caesar's Legion.",
+    "generator": { "generator_method": "update_mapgen", "generator_id": "mx_fo_ncr_legion_event" },
+    "sym": "S",
+    "color": "red",
+    "autonote": true
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "mx_fo_ncr_legion_event",
+    "object": {
+      "rows": [
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,"
+      ],
+      "terrain": { "A": [ "t_dirt" ], ",": [ "t_region_groundcover" ] },
+      "furniture": { "F": [ "f_rubble_rock" ] },
+      "place_npcs": [
+        { "class": "fo_legionary_recruit_wander", "x": 3, "y": 3 },
+        { "class": "fo_legionary_recruit_wander", "x": 9, "y": 2 },
+        { "class": "fo_legionary_wander", "x": 15, "y": 5 },
+        { "class": "fo_ncr_trooper_wander", "x": 3, "y": 17 },
+        { "class": "fo_ncr_trooper_wander", "x": 10, "y": 19 },
+        { "class": "fo_ncr_trooper_wander", "x": 15, "y": 19 }
+      ]
+    }
+  }
+]

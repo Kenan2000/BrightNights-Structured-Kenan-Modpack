@@ -1,0 +1,74 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_recruit_vault_dweller",
+    "name_suffix": "Vault Dweller",
+    "class": "fo_wastetown_recruit_vault_dweller_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_wastetown_vault_dweller_recruit_start"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_recruit_vault_dweller_npc",
+    "name": { "str": "Vault Dweller" },
+    "job_description": "Is a vault dweller alone in the wastes.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 3 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -1, 3 ] },
+    "worn_override": "NC_FREVAULT_worn",
+    "carry_override": "NC_FREVAULT_carry",
+    "weapon_override": "NC_FREVAULT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "computer", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_vault_dweller_recruit_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "I almost miss being in the vault, the routine, the tight corridors, the safety. This place is dangerous!", "This town is too dirty for me, I wanna leave.", "Are you from around here?", "Hello, how's it going?" ],
+      "no": [ "I almost miss being in the vault, the routine, the tight corridors, the safety. This place is dangerous!", "This town is too dirty for me, I wanna leave.", "Are you from around here?", "Hello, how's it going?" ]
+        },
+    "responses": [
+      {
+        "text": "So what's your story, you look like you're from a vault", "topic": "TALK_wastetown_vault_dweller_recruit_go"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_SUGGEST_FOLLOW"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_vault_dweller_recruit_go",
+    "type": "talk_topic",
+    "dynamic_line": "I was born in a vault, and lived in a vault most of my life. I really don't wanna talk about it, any more than the fact that I had to leave on bad terms.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

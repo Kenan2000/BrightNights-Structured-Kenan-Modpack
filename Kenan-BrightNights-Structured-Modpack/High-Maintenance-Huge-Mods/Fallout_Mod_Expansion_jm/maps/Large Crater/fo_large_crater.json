@@ -1,0 +1,124 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ 
+            [ "FO_LARGECRATER_1_3", "FO_LARGECRATER_1_2", "FO_LARGECRATER_1_1" ],
+            [ "FO_LARGECRATER_1_6", "FO_LARGECRATER_1_5", "FO_LARGECRATER_1_4" ],
+            [ "FO_LARGECRATER_1_9", "FO_LARGECRATER_1_8", "FO_LARGECRATER_1_7" ]
+        ],
+        "object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,ddd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,d,,,,,,,,,,,,,,,,,,,,d,,,,ddddddddddddddd,,,,,,,,,,,,,,,,,,,,,,,,,d,,,",
+                ",,,,,,,,,,,,d,,,,,,dddd,d,dddRRRRRRRRRRRRddddddd,,,,dd,,,,,,,,,,,,,,d,,,",
+                ",,d,dddd,,,dd,,,ddd,,dddddRRRRRRRRRRRRRRRRRRR,,dddd,,,dd,,,,d,ddd,,,d,,,",
+                ",d,,,,,,ddd,,,d,,,,,dd,RRRRRRRRRRRRRRRRRRRRRRRRR,,,dddd,dd,d,,,,,,,,,,,,",
+                "d,,,,,,,,d,,,d,,,ddddRRRRRRRrrrrrrrrrrrrrrrRRRRRRRR,,,,,,,ddd,,,,,,,,,,,",
+                ",,,,,,,,dd,,d,dddd,RRRRRrrrrrrrrrrrrrrrrrrrrrRRRRRRRRR,,,d,,dd,,,d,,,d,,",
+                "d,,,,dd,,,d,ddd,,RRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRRRR,dd,,dd,dd,,,,,,",
+                "d,,,dd,,d,ddd,,RRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRR,d,,d,dd,,d,d,,",
+                ",,,,,d,,dd,d,,RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRR,dd,,d,,,ddd,d,",
+                ",,,,,d,,d,d,,RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR,ddd,d,,,d,dd,,",
+                ",,,,d,dd,d,,RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRdddd,,d,,,,,d,,",
+                ",,,,d,,d,d,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR,,,d,,,,,ddd,",
+                ",,,d,,d,d,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,,d,,,,,,",
+                ",,,d,dd,d,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,,,,d,,,,,",
+                ",,,,dddddRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,,,,,,,d",
+                ",,d,dddd,RRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,,d,,,,",
+                ",,,,ddd,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR,,,,,,,,,d",
+                ",,dddd,RRRrrrrrrrrrrrrrrrrrrrrDDDDDDDDDrrrrrrrrrrrrrrrrrrrrRRR,,,d,dd,d,",
+                ",,ddd,,RRRrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrrrRR,,,,,,,d,,",
+                ",,dd,,RRRrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrrRRR,,,d,,d,,",
+                ",,dd,RRRRrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRRR,,,d,,,,",
+                ",,dd,RRRrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrRRR,,,,d,d,",
+                ",,ddRRRRrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRR,,,,,,d,",
+                ",dddRRRrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrRRR,,,ddd,",
+                ",,,dRRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRRR,,,dd,",
+                ",dddRRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRR,,,,,,",
+                "d,d,RRrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRR,,,d,,",
+                "d,,RRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrRRRR,,,,,",
+                "d,,RRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrRRRR,,,,,",
+                "d,RRRrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrRRR,,d,,",
+                "d,RRRrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrRRR,,d,,",
+                "d,RRRrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrRRR,,,,,",
+                "d,RRRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrRRRR,,dd",
+                "d,,RRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrRRR,,,,",
+                ",,,RRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrRRR,,dd",
+                ",,,RRrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrRRR,,d,",
+                ",d,RRrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrRRR,,dd",
+                ",d,RRRrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrRRR,,dd",
+                ",d,RRRrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrRRR,,dd",
+                ",d,RRRrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrRRR,d,d",
+                ",,dRRRrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrRRR,d,,",
+                ",,dRRRrrrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRR,d,,",
+                ",,d,RRrrrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrRRR,d,,",
+                ",,ddRRRrrrrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrRRR,d,,",
+                ",,ddRRRrrrrrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrrRRR,d,,",
+                ",,dd,RRRrrrrrrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDDDDrrrrrrrrrrrrrrrrrrRRR,dd,",
+                ",,d,,,RRrrrrrrrrrrrrrrrrrrrrrrrrrrDDDDDDDDDDDrrrrrrrrrrrrrrrrrrrrRR,,,d,",
+                ",,d,,,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrDDrrrrrrrrrrrrrrrrrrrrrrrrrrRR,,,d,",
+                ",,dd,,,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,",
+                ",,,,,ddRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,",
+                ",,d,,,d,RRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,",
+                ",,dd,,ddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,d,d",
+                ",,,,dddddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,,d",
+                ",,,,,,ddddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR,,d,,",
+                ",,,,,,,ddddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,d,d,",
+                ",,,,,,,,ddddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,,,,d",
+                ",d,,,,,,,dd,,RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,,,",
+                ",dd,d,,,,,dd,,RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRR,,,d,,d,",
+                ",,,dd,,,,,,dddddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRR,d,,,,,,,",
+                ",,,d,dd,,,,,dddddRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRdd,,,,d,,",
+                ",,,,,d,,,,,,,,ddd,RRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRR,dd,,,d,,,",
+                ",,,,,dddd,,,,,,d,,dRRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRR,dd,,d,,,,,",
+                ",,,ddddd,dd,,,,,,,dd,RRRRRRrrrrrrrrrrrrrrrrrrrrrrrrrrrrRRRRR,dd,,,,,,,,,",
+                ",,,d,,,dd,,ddd,,,,,,ddRRRRRRRRRrrrrrrrrrrrrrrrrrrrrrrRRRRRR,dd,,,d,,,,,,",
+                ",,,d,,,,ddd,dddd,,,,,ddd,,RRRRRRRRrrrrrrrrrrrrrrrrRRRRRRR,dd,d,ddd,,,,,,",
+                ",,,,,d,,dddd,dd,,,,,,,,dd,,,,RRRRRRRRRRRRrrrrRRRRRRRRRR,ddd,,,d,,,,,,,,,",
+                ",,,,,,,d,,dd,,,,d,ddd,,,,d,dd,,,,RRRRRRRRRRRRRRRRRRR,,,dd,,d,d,d,,,d,,,,",
+                ",,,,,,,,,d,d,,,ddd,,dd,d,,d,,dddd,,,RRRRRRRRRRRRRR,,dddd,,,,dd,,,,d,,,,,",
+                ",,,,,,,,,,d,,,,,,,dd,,,,,d,dd,,,,dd,,ddddddddddddddddd,d,,dd,,,,,d,,,,,,",
+                ",,,,,,,,,,,dd,,,,,dd,d,,d,dd,,dd,dd,,ddddddddddddddd,,,,ddddd,,d,,,,,,,,",
+                ",,,,,,,,,,,,,d,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,d,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_LARGECRATER_PAL" ],
+        "place_nested": [ { "chunks": [ [ "wasteland_crater_chunk_large_a", 25 ], [ "wasteland_crater_chunk_large_b", 25 ], [ "wasteland_crater_chunk_large_c", 25 ], [ "wasteland_crater_chunk_large_e", 25 ], [ "wasteland_crater_chunk_large_f", 25 ] ], "x": 28, "y": 27 }
+           
+        ],
+        "place_monsters": [ 
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.4 },
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 24, 47 ], "y": [ 0, 23 ], "density": 0.4 },
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 48, 71 ], "y": [ 0, 23 ], "density": 0.4 },
+
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 0, 23 ], "y": [  24, 47 ], "density": 0.4 },
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 24, 47 ], "y": [  24, 47 ], "density": 0.4 },
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 48, 71 ], "y": [ 24, 47 ], "density": 0.4 },
+
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 0, 23 ], "y": [  48, 71 ], "density": 0.4 },
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 24, 47 ], "y": [  48, 71 ], "density": 0.4 },
+        { "monster": "DUMP_FEMAGHOUL", "x": [ 48, 71 ], "y": [ 48, 71 ], "density": 0.4 }
+
+
+    ],
+        "set": [
+            { "square": "radiation", "amount": 6, "x": 0, "y": 0, "x2": 23, "y2": 23 },
+            { "square": "radiation", "amount": 6, "x": 24, "y": 0, "x2": 47, "y2": 23 },
+            { "square": "radiation", "amount": 6, "x": 48, "y": 0, "x2": 71, "y2": 23 },
+
+            { "square": "radiation", "amount": 6, "x": 0, "y": 24, "x2": 24, "y2": 47 },
+            { "square": "radiation", "amount": 11, "x": 24, "y": 24, "x2": 47, "y2": 47 },
+            { "square": "radiation", "amount": 6, "x": 48, "y": 24, "x2": 71, "y2": 47 },
+
+            { "square": "radiation", "amount": 6, "x": 0, "y": 48, "x2": 24, "y2": 71 },
+            { "square": "radiation", "amount": 6, "x": 24, "y": 48, "x2": 47, "y2": 71 },
+            { "square": "radiation", "amount": 6, "x": 48, "y": 48, "x2": 71, "y2": 71 }
+
+            ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    }
+]

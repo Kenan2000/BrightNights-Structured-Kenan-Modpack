@@ -1,0 +1,171 @@
+[
+  {
+    "type": "npc",
+    "id": "mut_fo_qst_daughter",
+    "name_suffix": "Mayor's daughter",
+    "class": "mut_fo_qst_daughter_npc",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_fo_quest_daughter_start",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "mut_fo_qst_daughter_npc",
+    "name": { "str": "Mayor's daughter" },
+    "job_description": "A daughter of the wasteland town's mayor.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_QST_DAUGHTER_worn",
+    "carry_override": "NC_QST_DAUGHTER_carry",
+    "weapon_override": "NC_QST_DAUGHTER_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_DAUGHTER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "flag_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "jersey", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "polo_shirt", "prob": 100 }, { "item": "sheriffshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 } ], "prob": 100 },
+      { "item": "socks" },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "boots_combat", "prob": 100 }, { "item": "boots_fur", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_DAUGHTER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_vault_equipment_armory", "count": [ 3, 5 ], "prob": 65 },
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 75 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_QST_DAUGHTER_weapon",
+    "subtype": "distribution",
+    "entries": [
+
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_daughter_start",
+    "type": "talk_topic",
+
+    "dynamic_line": [ 
+
+      { "u_has_var": "fo_escort_qst_daughter_mayor", "type": "general", "context": "fo_rescue_qst", "value": "yes",
+      "no": [
+            { "npc_has_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst", "value": "yes",
+                "yes": [ "I hope we get back to town soon.", "…", "I feel unsafe, get us out of here!", "…", "Yes?", "Wanna say something?" ],
+                "no": [ "Are you here to rescue me?", "Please get me back to town!", "Hey, are we back yet!" ]
+            } 
+      ],
+      "yes": {
+        "u_male": [ "Thanks for saving me, you're a real hero!", "I'm so glad to be back in town." ],
+        "no": [ "Thanks for saving me, you're a real hero!", "I'm so glad to be back in town." ]
+      }
+    }
+
+
+      ],
+    "responses": [
+      {
+        "text": "Look, no time to explain, let's get you out of here!",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_MAYOR_A" },
+              { "not": { "npc_has_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst", "value": "yes" } }
+            ]
+          },
+        "topic": "TALK_fo_quest_daughter_startfollow"
+      },
+      {
+        "text": "Stop following me!",
+        "condition": { "npc_has_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst", "value": "yes" },
+        "topic": "TALK_fo_quest_daughter_stopfollow"
+      },
+      {
+        "text": "Alright, we're safe in town! The mayor is waiting for you!",
+        "condition": {
+            "and": [
+              { "npc_has_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst", "value": "yes" },
+              { "u_has_var": "fo_escort_qst_daughter_mayor", "type": "general", "context": "fo_rescue_qst", "value": "yes" }
+            ]
+          },
+        "topic": "TALK_fo_quest_daughter_questcomplete"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_daughter_startfollow",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Okay, I'm with you!",
+      "no": "Okay, I'm with you!"},
+    "responses": [
+      {
+        "text": "Got it.",
+        "effect": [
+        "follow_only",
+        { "npc_add_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst", "value": "yes" },
+        { "u_add_var": "fo_escort_qst_daughter", "type": "general", "context": "fo_rescue_qst", "value": "yes" }
+      ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_daughter_stopfollow",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Okay, I'll stop following you.",
+      "no": "Okay, I'll stop following you."},
+    "responses": [
+      {
+        "text": "Got it.",
+        "effect": [
+        "stop_following",
+        { "npc_lose_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst" },
+        { "u_lose_var": "fo_escort_qst_daughter", "type": "general", "context": "fo_rescue_qst" }
+      ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_daughter_questcomplete",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Thanks, I'm saved!",
+      "no": "Thanks, I'm saved!"},
+    "responses": [
+      {
+        "text": "Got it.",
+        "effect": [
+        "stop_following",
+        { "npc_lose_var": "fo_qst_temporal_follower", "type": "general", "context": "fo_rescue_qst" },
+        { "u_add_var": "u_qst_daughter_save", "type": "mission", "context": "qst_daughter_rescue", "value": "yes" }
+      ],
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

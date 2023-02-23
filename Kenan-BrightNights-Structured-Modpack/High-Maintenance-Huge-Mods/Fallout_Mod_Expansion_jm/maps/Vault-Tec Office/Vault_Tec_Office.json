@@ -1,0 +1,130 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_VAULTOFFICE_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "QQQQQQQQQQQQQQQQQQQQQQQQ",
+                "QQQQQQQQQQQQQQQQQQQQQQQQ",
+                "QQQQQQQQQQQQQQQQQQQQQQQQ",
+                "QQQQWWWYYwUUUUwYYWWWQQQQ",
+                "QQQQWOOeRoEEEEoReOOWQQQQ",
+                "qWWWWEEeREEEEEEReEEWWWWq",
+                "qWffwEEeREEEEEEReEEwDDWq",
+                "qWfEw<<eRuuuuuuRe<<wEEWq",
+                "qWfEwwweRuIEEIuRewwwEdWq",
+                "qwSEAAweRiEEEEERewAAsEwq",
+                "qUEEaEwwywwwwwwywwEaEEUq",
+                "qUEEAAweReEEEEeRewAAsEUq",
+                "qwSEaEweReeeeeeRewEaEiwq",
+                "qwSEEEyeRRRRRRRReyEEEOwq",
+                "qUEEAAweeeeeeeeeewAAsEUq",
+                "qUEEaEwwywwwwwwywwEaEEUq",
+                "qwwywwwDEwPPipwEiwwwywwq",
+                "qW1rFFwDEwEEEEwESw22r2Wq",
+                "qW1rrrwwEwywwywESwrrr2Wq",
+                "qWGGsrryEEEEEEEEEyr222Wq",
+                "qWWWWrrwEAAEAAEAAwrWWWWq",
+                "qqqqWGswEEaEEaEEawrWqqqq",
+                "qqqqWWWwUUwUwUwUUwWWqqqq",
+                "qqqqqqqqqqqqqqqqqqqqqqqq"
+            ],
+        "palettes": [ "PAL_VAULTOFFICE" ],
+        "place_monsters": [ { "monster": "GROUP_VTECOFFICEBOT", "x": [ 2, 21 ], "y": [ 6, 19 ], "density": 2.8 } ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_VAULTOFFICE_2" ],"object": {
+            "fill_ter": "t_open_air",
+            "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "    WWWwUUwUUwUUwWWW    ",
+                "    WSEEAAsAAsAAEESW    ",
+                " WWWWSEEEaEEaEaEEESWWWW ",
+                " W55wEEEAAsAAsAAEEEw44W ",
+                " WEZw>>EEaEaEEaEE>>we4W ",
+                " WElwwwEAAsAAsAAEwwweeW ",
+                " wEEEEwEEaEEaEaEEw33eew ",
+                " ULkkLwwywwwwwwywwehHeU ",
+                " UEkkEweReEEEEeRewHHHeU ",
+                " wKkkEweReeeeeeReweeeew ",
+                " ULkkLyeRRRRRRRReyRRReU ",
+                " UEEEEweeeeeeeeeewjJJjU ",
+                " wwwwwwywwwwwwwwywwwwww ",
+                " wEaEEaEgxxx666gEEEEEEw ",
+                " WIAAAAEgxxxrr6gEtddtEW ",
+                " WEAAAAIgrrrr66gEEEEEEW ",
+                " WEaEEaEg$$$ggggEtXXtEW ",
+                " WWWWEEEyEEE-EEyEsEWWWW ",
+                "    WzzzwEEEEEEwEEEW    ",
+                "    WWWwUUwUUwUUwWWW    ",
+                "                        "
+            ],
+        "palettes": [ "PAL_VAULTOFFICE" ],
+        "place_monsters": [ { "monster": "GROUP_VTECOFFICEBOT", "x": [ 2, 21 ], "y": [ 6, 19 ], "density": 2.8 } ],
+        "place_item": [
+        { "item": "item_fo_vaultmap", "x": 11, "y": 17, "chance": 99 },
+        { "item": "aer14_prototype", "x": 9, "y": 16, "chance": 8 },
+        { "item": "item_fo_vaultmap", "x": 20, "y": 11, "chance": 20 }
+      ],
+        "computers": {
+        "-": {
+          "name": "Vault-Tec Regional Office Storage Room",
+          "security": 3,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "$": "t_door_metal_locked" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_VAULTOFFICE_2_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "    ................    ",
+                "    ................    ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                " ...................... ",
+                "    ................    ",
+                "    ................    ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

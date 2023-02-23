@@ -1,0 +1,70 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_caravan_outpost_guard",
+    "name_suffix": "Outpost Guard",
+    "class": "fo_caravan_outpost_guard_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_caravan_outpost_guard_start",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_caravan_outpost_guard_npc",
+    "name": { "str": "Outpost Guard" },
+    "job_description": "Is a guard for a caravan outpost.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_WASTETOWN_G_worn",
+    "carry_override": "NC_WASTETOWN_G_carry",
+    "weapon_override": "NC_WASTETOWN_G_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 3 ] } }
+    ]
+  },
+  {
+    "id": "TALK_fo_caravan_outpost_guard_start",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "What's it like out there in the wastes?",
+        "You're back, did you do anything interesting?",
+        "How are things going?",
+        {
+        "u_male": [ "With a big iron on your hip, a guy like you could become a pistoleer of the ol' west.", "Rough out there for those that are stuck with melee weapons, huh?", "Shot anything in the wastes lately, <name_g>?" ],
+        "no": [ "There's a lot of debate over whether or .40 or 10mm is better, although I hear that a lot of women shooters prefer .40 for its lesser recoil.", ".223 is more than enough for most nasties out there in the wastes, and with less recoil and wear, too!", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "What are you doing here?",
+        "topic": "TALK_fo_caravan_outpost_guard_question"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_caravan_outpost_guard_question",
+    "type": "talk_topic",
+    "dynamic_line": "We guard this caravan outpost against the various threats that encroach upon us from the New England wasteland. It's a pretty boring job most days.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

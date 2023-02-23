@@ -1,0 +1,259 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_civ_fence",
+    "name_suffix": "Shady Town Resident",
+    "class": "fo_wastetown_civ_fence_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_fence_start",
+    "mission_offered": "MISSION_MISSION_FENCE_RETRIEVE_A",
+    "faction": "foc_wasteland_criminals"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_civ_fence_npc",
+    "name": { "str": "Shady Town Resident" },
+    "job_description": "Is a resident of the wasteland town.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_WASTEFENCE_worn",
+    "carry_override": "NC_WASTEFENCE_carry",
+    "weapon_override": "NC_WASTEFENCE_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFENCE_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "socks" },
+      { "item": "duster_survivor" },
+      { "item": "pants_leather" },
+      { "item": "mbag" },
+      { "item": "tank_top" },
+      { "item": "hoodie" },
+      { "item": "hood_lsurvivor" },
+      { "item": "eclipse_glasses" },
+      { "item": "boots" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFENCE_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTEFENCE_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "14mmpistol", "charges": 7, "prob": 100 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_fence_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "u_known_by_criminals",
+      "type": "general",
+      "context": "meeting",
+      "value": "yes",
+      "yes": [
+        "Hello, <name_g>",
+        "Be careful out there, <name_g>?",
+        "Glad to see another initiate into our enterprise.",
+        "Don't speak up to loudly about our operation, okay?",
+        {
+          "u_has_strength": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "You look like a pretty tough dude, our criminal enterprise always needs muscle when things get tough.",
+                "no": "You look like a pretty tough chick! Our criminal enterprise always needs muscle when things get tough."
+                },
+            "no": "Maybe if you bulked up a bit then people would be more intimdated by you Ever consider that?"
+        },
+        {
+          "u_has_dexterity": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "Somebody with quick fingers like yours would be good at stealing and lockpicking. The boss might need a guy like you.",
+                "no": "You look like a woman who's good with her hands, if you know what I mean. Wait, not like that! I mean that you would be good at stealing and lockpicking, what did you think I meant? Jeez."
+                },
+            "no": "Being a good thief or cutthroat requires nimble fingers, any common klutz would get caught nearly instantly."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "Judging from the way you talk, you seem pretty sharp. The boss needs more people like you. A wise guy that can not only beat people up, but outsmart others, too.",
+            "no": "I'm still stunned that people don't know we're running a criminal enterprise right under their nose."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "Few things feel better in this world than stealing other people's stuff without asking!",
+            "no": "Look, so you're not the brightest fella, not everyone can be smart. The boss can still find a use for you, though. I'm sure of it."
+        },
+        "Do you think the other townsfolk have caught on to our operation? Let's hope not.",
+        "The enterprise needs more people like you.",
+        {
+        "u_male": [ "A wise guy like you could be of benefit to the boss, you should see him sometime.", "Rough out there, isn't it?", "How has criminal life been treating you, <name_g>" ],
+        "no": [ "You know, sometimes the life of crime needs a bit of a feminine touch, you know? You could be useful for that.", "Don't let our shady visage fool you, lady, we're equal-opportunity criminals!", "What's up, <name_g>" ]
+      }
+      ],
+      "no": {
+        "u_male": [ "Perhaps men like you should stop being so nosy.", "What's up with dudes like you being so nosy, knock it off!" ],
+        "no": [ "What's a woman like you doing talking to me, don't you have anything better do to?", "Beat it, girl, I don't have anything to offer you." ]
+      }
+    },
+    "responses": [
+      {
+        "text": "What do you do around here?",
+        "condition": { "not": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_wastetown_fence_fake_question"
+      },
+      {
+        "text": "How has town life been treating you lately?",
+        "condition": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_wastetown_fence_real_question"
+      },
+      {
+        "text": "Do you know anything about the server problems the head of the junk guild has been experiencing? You're always hanging out in this little shack and don't really seem to do much.",
+        "topic": "TALK_wastetown_fence_accuse",
+        "condition": {
+            "and": [
+              { "u_has_mission": "MISSION_MISSION_SCRAP_GUILD_C" }
+            ]
+          }
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_fence_fake_question",
+    "type": "talk_topic",
+    "dynamic_line": "I, uh, just do odd jobs around town. This and that. Don't worry about it.",
+    "responses": [
+      {
+        "text": "You sure about that?",
+        "topic": "TALK_fo_wastetown_fence_identity_inquire"
+      },
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_fence_real_question",
+    "type": "talk_topic",
+    "dynamic_line": "Things are looking up for our little gang. Townsfolk don't know we're down here, and we're raking in caps. I just act as a fence for them, setting up deals with other gangs and stuff.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_fence_identity_inquire",
+    "type": "talk_topic",
+    "dynamic_line": "Okay, I lied. If you want to find out what I really do. You gotta help me with something.",
+    "responses": [
+      {
+        "text": "Sure, what do you need?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "I'd rather not.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_fence_accuse",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_perception": 10, "yes": "Me, hack a server! I don't even know how to program at all. I'm just a random townsfolk, what's your deal? [PERCEPTION 10] (You can tell that they're lying).", "no": "WMe, hack a server! I don't even know how to program at all. I'm just a random townsfolk, what's your deal?"},
+    "responses": [
+      {
+        "text": "[PERCEPTION 10] I can tell that you're lying.",
+        "condition": { "u_has_perception": 10 },
+        "topic": "TALK_wastetown_fence_admit"
+      },
+      {
+        "text": "I'm not so sure if I believe you.",
+        "topic": "TALK_wastetown_fence_admit"
+      },
+      {
+        "text": "Got it.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_fence_admit",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_perception": 10, "yes": "Okay, I admit it. I put a bug in his server because I thought him and the Crimson Caravan employee were up to no good. I thought they were jacking up prices on us townsfolk, okay? How was I supposed to know it would mess up his servers? [PERCEPTION 10] (You can tell that they're lying).", "no": "Okay, I admit it. I put a bug in his server because I thought him and the Crimson Caravan employee were up to no good. I thought they were jacking up prices on us townsfolk, okay? How was I supposed to know it would mess up his servers? [PERCEPTION 10] (You can tell that they're lying)."},
+    "responses": [
+      {
+        "text": "[PERCEPTION 10] I can tell that you're still lying.",
+        "effect": { "u_add_var": "u_know_qst_server_guilt", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": { "u_has_perception": 10 },
+        "topic": "TALK_wastetown_fence_admit_again"
+      },
+      {
+        "text": "Okay, I'll be sure to tell the head of the junk guild about this. Thanks for confessing the easy way.",
+        "effect": { "u_add_var": "u_know_qst_server_guilt", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_fence_admit_again",
+    "type": "talk_topic",
+    "dynamic_line": "Okay, caught again. Look, I can't tell you why I did it, okay? Just tell him I did it, I don't care. It's not like a permanently bricked his computers, I just made them a bit slower with a virus. I'll tell you how to get rid of it.",
+    "responses": [
+      {
+        "text": "I should keep an eye on you, you seem a bit suspicious.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_MISSION_FENCE_RETRIEVE_A",
+    "type": "mission_definition",
+    "name": { "str": "Retrieve the preacher's locket" },
+    "goal": "MGOAL_FIND_ITEM",
+    "item": "fo_qst_special_locket",
+    "count": 1,
+    "difficulty": 5,
+    "value": 250000,
+    "end": {
+        "effect": { "u_add_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "Okay look, it's a simple job. The preacher has a special locket with something inside of it. Get it for me and I'll tell you what I really do.",
+      "offer": "Okay look, it's a simple job. The preacher has a special locket with something inside of it. Get it for me and I'll tell you what I really do.",
+      "accepted": "Come back to me when you get it.",
+      "rejected": "Guess you'll never know then.",
+      "advice": "Probably easiest to just talk him into giving it to you.",
+      "inquire": "Do you have the locket yet?",
+      "success": "Great work. So here's the truth. I'm a criminal, and I'm the public face of a gang hiding under the nose of the town. Move the bookshelf near me and use a crowbar to pry open the manhole. Go speak to the boss down there. ",
+      "success_lie": "You're obviously lying.",
+      "failure": "Way to go, loser."
+    }
+  }
+]

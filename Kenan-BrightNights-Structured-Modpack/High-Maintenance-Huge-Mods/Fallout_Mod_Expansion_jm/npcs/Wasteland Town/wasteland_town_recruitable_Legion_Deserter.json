@@ -1,0 +1,70 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_legion_deserter",
+    "name_suffix": "Legion Deserter",
+    "class": "fo_wastetown_legion_deserter_npc",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_wastetown_legion_deserter_recruit_start"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_legion_deserter_npc",
+    "name": { "str": "Legion Deserter" },
+    "job_description": "Is a deserter from the Caesar's Legion.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 3 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -1, 3 ] },
+    "worn_override": "NC_CLGRECRUIT_worn",
+    "carry_override": "NC_CLGRECRUIT_carry",
+    "weapon_override": "NC_CLGRECRUIT_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_legion_deserter_recruit_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "Are you with the NCR?", "Are you with the Legion?", "I'm so tired on that war, glad I left it.", "Hello, how's it going?", "Do you need anything?", "I'm shocked that a woman would willingly talk to a member of the legion, even a former one like me." ],
+      "no": [ "Are you with the NCR?", "Are you with the Legion?", "I'm so tired on that war, glad I left it.", "Hello, how's it going?", "Do you need anything?", "Is there a problem, sir?" ]
+        },
+    "responses": [
+      {
+        "text": "So what's your story, you seem to be with the Legion", "topic": "TALK_wastetown_legion_deserter_recruit_go"
+      },
+      {
+        "text": "Do you want to come with me?", "topic": "TALK_SUGGEST_FOLLOW"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_wastetown_legion_deserter_recruit_go",
+    "type": "talk_topic",
+    "dynamic_line": "I fought on campaign with Caesar and Graham. All the talk of conquering, loot and glory meant little to a recruit like me. I grew weary of constant campaigning, and could no longer stomach the brutality of the legion and decided to leave. Now, I rest here.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

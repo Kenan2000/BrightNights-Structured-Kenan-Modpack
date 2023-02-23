@@ -1,0 +1,185 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_GHOUL_MILBASE_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,WWWW,,WwwWW,,,,,,,",
+                ",,,,,,WAAAfwffAW,,,,,,,,",
+                ",,,,,,WAAAfWffAW,,,,,,,,",
+                ",,,,,,wffffWffAw,,,,,,,,",
+                ",,,,,,wFFwwFFFFw,,,,,,,,",
+                ",,,,,,,FFF<<FFF,,,,,,,,,",
+                ",,,,,,,11FFFaaaw,,,,,,,,",
+                ",,,,,,W,wwWWW,ww,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_GHOUL_MILBASE_PAL" ],
+        "faction_owner": [
+                    { "id": "hells_raiders", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_npcs": [
+                     { "class": "fo_ghoul_cultist", "x": 5, "y": 11},
+                     { "class": "fo_ghoul_cultist", "x": 13, "y": 18},
+                     { "class": "fo_ghoul_cultist", "x": 5, "y": 22}
+                ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "FO_GHOUL_MILBASE_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "      ....  .....       ",
+                "      .    .   .        ",
+                "      .    .   .        ",
+                "      .    .   .        ",
+                "      .  ..    .        ",
+                "          ..            ",
+                "               .        ",
+                "      . ..... ..        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_GHOUL_MILBASE_2" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,RRcCCCCCCcR,,,,,,,",
+                ",,,,,,RrcCCCCCCcR,,,,,,,",
+                ",,,,,,RrccDccDccRR,,,,,,",
+                ",,,,,,RrrrddddrrrR,,,,,,",
+                ",,,,,,RrrrddddrrrR,,,,,,",
+                ",,,,,,RrrbrrrrrrrR,,,,,,",
+                ",,,,,,RRrrrrrrrrRR,,,,,,",
+                ",,,,,,,Rrrrrrrr*R,,,,,,,",
+                ",,,,,,,RrrBrrrrrR,,,,,,,",
+                ",,,,,,,RrrrrrbrrRR,,,,,,",
+                ",,,,,,,RrrrrrrrrrR,,,,,,",
+                ",,,,,,,RrrrrrrrrrR,,,,,,",
+                ",,,,,,RRrrrrrrBrrR,,,,,,",
+                ",,,,,RR*rrrrrrrrrR,,,,,,",
+                ",,,,,RrrrrrrrrrrrR,,,,,,",
+                ",,,,,RrrrBrrbrrrRR,,,,,,",
+                ",,,,,RrrrrrrrrrrR,,,,,,,",
+                ",,,,,RrrrrrrrrrrR,,,,,,,",
+                ",,,,,RrrrrrrrrrrR,,,,,,,",
+                ",,,,,RRrrr>>rrrrR,,,,,,,",
+                ",,,,,RrrrrrrrrrrR,,,,,,,",
+                ",,,,,RrrrrrrBrrrR,,,,,,,",
+                ",,,,,RRRRrrrrrRRR,,,,,,,",
+                ",,,,,,,,RRRRRRR,,,,,,,,,"
+            ],
+        "palettes": [ "FO_GHOUL_MILBASE_PAL" ],
+        "place_npcs": [
+                     { "class": "fo_ghoul_cultist", "x": 9, "y": 12},
+                     { "class": "fo_ghoul_cultist", "x": 15, "y": 9},
+                     { "class": "fo_ghoul_cultist", "x": 9, "y": 4}
+                ],
+        "faction_owner": [
+                    { "id": "hells_raiders", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "terrain": { ",": "t_rock" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_GHOUL_MILBASE_3" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,ccccccccccccccccccc,",
+                ",,,,cICIC*cC*CcCCd=CCdc,",
+                ",,,,cHCHCCcCCCcCCC=CCCc,",
+                ",,,,cHCHCCDCCCc=+===+=c,",
+                ",,,,cCCCCCcCNCDCCCCCCCc,",
+                ",,,,c22255cCCCc=+===+=c,",
+                ",,cccccccccCCCcCCC=CCCc,",
+                ",,c6h6h6hCcCCCcCCd=CCdc,",
+                ",,cCCCCCCCcCCCccccccccc,",
+                ",,cCCCCCCCDCCCDCC77c,,,,",
+                ",,cCC6h6h*cCNCcCCCCc,,,,",
+                ",,ccDccccccCCCcgGGgc,,,,",
+                ",,cCC2222*cCCCcCGGCc,,,,",
+                ",,cCCCCCCCcCCCcgGGgc,,,,",
+                ",,cCnnCCCUcCCCcCCC*c,,,,",
+                ",,cCnnCCCUcC*CciCCYc,,,,",
+                ",,cCnnCCcccDcDccCCyc,,,,",
+                ",,c333uucCCC*CCcyyyc,,,,",
+                ",,cccccccCCdddCccccc,,,,",
+                ",,,,,,,,cCCdddCc,,,,,,,,",
+                ",,,,,,,,cCCdddCc,,,,,,,,"
+            ],
+        "palettes": [ "FO_GHOUL_MILBASE_PAL" ],
+        "place_npcs": [
+                     { "class": "fo_ghoul_cultist", "x": 11, "y": 16},
+                     { "class": "fo_ghoul_cultist", "x": 11, "y": 5},
+                     { "class": "fo_ghoul_cultist", "x": 16, "y": 17},
+                     { "class": "fo_ghoul_cultist", "x": 7, "y": 19},
+                     { "class": "fo_ghoul_cultist", "x": 3, "y": 11},
+                     { "class": "fo_ghoul_cultist", "x": 8, "y": 6},
+                     { "class": "fo_ghoul_cultist", "x": 13, "y": 8},
+
+                     { "class": "fo_ghoul_prison_captive", "x": 16, "y": 4},
+                     { "class": "fo_ghoul_prison_captive", "x": 21, "y": 5},
+                     { "class": "fo_ghoul_prison_captive", "x": 16, "y": 9},
+                     { "class": "fo_ghoul_prison_captive", "x": 20, "y": 10}
+                ],
+        "faction_owner": [
+                    { "id": "hells_raiders", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "terrain": { ",": "t_rock" }
+        }
+    }
+]

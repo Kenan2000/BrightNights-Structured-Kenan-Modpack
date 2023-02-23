@@ -1,0 +1,49 @@
+[
+  {
+    "id": "mx_fo_zetan_crash",
+    "type": "map_extra",
+    "name": { "str": "Mysterious Crash Site" },
+    "description": "A mysterious crash site.",
+    "generator": { "generator_method": "update_mapgen", "generator_id": "mx_fo_zetan_crash" },
+    "sym": "C",
+    "color": "light_green",
+    "autonote": true
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "mx_fo_zetan_crash",
+    "object": {
+      "rows": [
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,FFFFF,F,,",
+        ",,,,,,,,,,FF,,AAAAFF,,,,",
+        ",,,,,,,,FF,,AAAAAAA,,,,,",
+        ",,,,,,,,,,,,AAAAAAAAA,,,",
+        ",,,,,,,,,,,AAAAAAAAAA,,,",
+        ",,,,,,FFF,,,AAAAAAAA,,,,",
+        ",,,,,,F,F,,,AAAAAAAA,,,,",
+        ",,,,,,,,,,,,,AAAAAA,,,AA",
+        ",,,,,,,,,,,,,,AAAAAA,,,,",
+        ",,,,,,,,,,,,,,,AAAAA,,,,",
+        ",,,,,,,,,,,,,,,,AAAAA,,,",
+        ",,,,,,,,,,,,,A,,,AAAA,,,",
+        ",,,,,,,,,,,,,AA,,AAA,,,,",
+        ",,,,,,,,,,,,,,,,,,AA,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,FF,,,,,,,,,,,,,,AA,,,",
+        ",,,,,,,,,,,,,,,,,,,,,A,,",
+        ",,,,,,FF,,,,,,,,,,,,,,,,",
+        ",,,,FF,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,",
+        ",,,,,,,,,,,,,,,,,,,,,,,,"
+      ],
+      "terrain": { "A": [ "t_dirt" ], ",": [ "t_region_groundcover" ] },
+      "furniture": { "F": [ "f_rubble_rock" ] },
+      "place_monster": [ { "monster": "mon_zeta_alien", "x": 16, "y": 16 } ],
+      "place_vehicles": [ { "vehicle": "ufo_zetan", "x": 15, "y": 4, "fuel": 80, "status": 1, "rotation": 90, "chance": 100 } ]
+    }
+  }
+]

@@ -1,12 +1,44 @@
 [
-	{
+  {
     "type": "scenario",
     "id": "fo_vault_start",
     "name": "Vault Dweller",
-    "points" : 0,
+    "points": 0,
     "description": "You were either born in a vault, or joined the Vault-Tec program before the eve of the great war.",
-    "allowed_locs" : ["fo_vault_start_op"],
+    "allowed_locs": [ "fo_vault_start_op" ],
     "start_name": "Vault",
-    "professions" : ["vaultkid", "vaultdweller", "vaultpunk", "vaultscientist", "vaultmechanic", "vaultguard", "vaultmechanic_bionic", "vaultguard_bionic" ]
-	}
+    "professions": [
+      "vaultkid",
+      "vaultdweller",
+      "vaultpunk",
+      "vaultscientist",
+      "vaultmechanic",
+      "vaultguard",
+      "vaultmechanic_bionic",
+      "vaultguard_bionic"
+    ]
+  },
+  {
+    "type": "scenario",
+    "id": "fo_wasteland_town_start",
+    "name": "Wasteland Resident",
+    "points": 0,
+    "description": "You were either born into this town or drifted into it at some point, either way you're a resident of this place and have been for a while.",
+    "allowed_locs": [ "fo_vault_wastetown_start_op" ],
+    "start_name": "Vault",
+    "professions": [
+      "biker_khan",
+      "biker_atomcat",
+      "minuteman",
+      "soldier_anchorage",
+      "ncr_trooper_profession",
+      "ncr_ranger_profession",
+      "ncr_officer_profession",
+      "fo_gecko_trapper_prof",
+      "fo_robot_enthusiast",
+      "unemployed",
+      "sheltered_survivor",
+      "mechanic"
+    ]
+  }
 ]

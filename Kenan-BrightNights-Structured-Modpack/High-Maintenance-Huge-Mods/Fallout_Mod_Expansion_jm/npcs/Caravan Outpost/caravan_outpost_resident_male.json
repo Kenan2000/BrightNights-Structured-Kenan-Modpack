@@ -1,0 +1,81 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_caravan_outpost_civ_mal",
+    "name_suffix": "Outpost Resident",
+    "class": "fo_caravan_outpost_civ_mal_npc",
+    "gender": "male",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_caravan_resmal_start",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_caravan_outpost_civ_mal_npc",
+    "name": { "str": "Outpost Resident" },
+    "job_description": "Is a resident of the caravan outpost.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_WASTERES_M_worn",
+    "carry_override": "NC_WASTERES_M_carry",
+    "weapon_override": "NC_WASTERES_M_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } }
+    ]
+  },
+  {
+    "id": "TALK_fo_caravan_resmal_start",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "There are other settlements out there in the wastes, but they're probably quite far away.",
+        "How are things going?",
+        "Oh, hey, it's you again.",
+        "I wish I had my own car, I could go anywhere with one.",
+        {
+          "u_has_perception": 10,
+            "yes": "You've got a pretty sharp eye for the scrap I have lying around here, I can tell you're perceptive. Have you considered working for Crimson Caravan or the Junk Guild?",
+            "no": "It might not look like much to a normal person, but this scrap is worth its weight in well, it's weight!"
+        },
+        {
+          "u_has_intelligence": 10, "yes": "You seem pretty bright, You could probably make a name for yourself in the wasteland.",
+            "no": "I wonder what the next caravan will bring."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "I hope the harvest is good this year, eating out of old tins from before the war gets boring after a while.",
+            "no": "Uh, are you sure you're alright. You don't seem put-together mentally, not to be rude."
+        },
+        "Can you believe that some towns are based around undetonated nuclear bombs? Can you believe that there are people that talk about that for hours on end like it's profound?",
+        "How are things going?",
+        {
+        "u_male": [ "How's it going, dude?", "Rough out there, isn't it?", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "How's it going, lady?", "Ma'am, what do you think of this place?", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "How has town life been treating you lately?",
+        "topic": "TALK_fo_caravan_resmal_question"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_caravan_resmal_question",
+    "type": "talk_topic",
+    "dynamic_line": "Not much has happened recently, but there's always more work to be done. Sometimes caravans come in, sometimes they don't.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

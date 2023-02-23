@@ -26,6 +26,7 @@
     "id": "fo_ncr_trooper_helmet",
     "repairs_like": "xlkevlar",
     "type": "ARMOR",
+    "category": "armor",
     "name": { "str": "NCR trooper helmet" },
     "description": "A steel helmet that provides a high degree of protection from a wide variety of damage from all sorts of damage. Comes with a wide brim to block out the glare of the wasteland sun.",
     "weight": "1300 g",
@@ -44,5 +45,28 @@
     "material_thickness": 6,
     "techniques": [ "WBLOCK_1" ],
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "SUN_GLASSES" ]
+  },
+  {
+    "id": "fo_courser_uniform",
+    "type": "ARMOR",
+    "name": { "str": "Courser Uniform" },
+    "description": "A durable leather trenchcoat used by the infamous coursers of the institute. Many a synth's last image recorded into their datafeed was of coursers clad in black wearing uniforms such as this. Carries a wide variety of pockets for ample storage opportunities.",
+    "weight": "2300 g",
+    "volume": "5860 ml",
+    "price": "155 USD",
+    "price_postapoc": "10 USD",
+    "to_hit": -1,
+    "material": [ "leather", "kevlar", "nomex" ],
+    "symbol": "[",
+    "looks_like": "trenchcoat",
+    "color": "dark_gray",
+    "covers": [ "torso", "arms", "legs" ],
+    "coverage": 90,
+    "encumbrance": 15,
+    "storage": "6 L",
+    "warmth": 15,
+    "material_thickness": 2,
+    "environmental_protection": 2,
+    "flags": [ "VARSIZE", "POCKETS", "OUTER" ]
   }
 ]

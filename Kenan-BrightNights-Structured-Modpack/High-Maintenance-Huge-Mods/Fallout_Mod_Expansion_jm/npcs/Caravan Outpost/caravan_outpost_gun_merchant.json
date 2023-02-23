@@ -1,0 +1,145 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_caravan_outpost_gun_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Gun Merchant",
+    "class": "NC_CARAVAN_FOGUN_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_CARAVAN_FOGUN_Town",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_CARAVAN_FOGUN_SHOPKEEP",
+    "name": { "str": "Gun Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_CARAVAN_FOGUN_worn",
+    "weapon_override": "NC_CARAVAN_FOGUN_weapon",
+    "shopkeeper_item_group": "NC_CARAVAN_FOGUN_SHOPKEEP_misc",
+    "carry_override": "NC_CARAVAN_FOGUN_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOGUN_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "guns_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_milspec", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_rare", "count": [ 4, 9 ] },
+      { "group": "mags_smg_common", "count": [ 6, 8 ] },
+      { "group": "mags_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "ammo_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_shotgun_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "guns_smg_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_milspec", "count": [ 6, 8 ] },
+      { "group": "guns_shotgun_common", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOGUN_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOGUN_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "helmet_army" },
+      { "item": "jeans" },
+      { "item": "jacket_army" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_CARAVAN_FOGUN_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "guns_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_milspec", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_common", "count": [ 4, 9 ] },
+      { "group": "mags_pistol_rare", "count": [ 4, 9 ] },
+      { "group": "mags_smg_common", "count": [ 6, 8 ] },
+      { "group": "mags_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_common", "count": [ 6, 8 ] },
+      { "group": "ammo_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "ammo_rifle_common", "count": [ 6, 8 ] },
+      { "group": "ammo_shotgun_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_common", "count": [ 6, 8 ] },
+      { "group": "guns_pistol_rare", "count": [ 6, 8 ] },
+      { "group": "guns_smg_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_common", "count": [ 6, 8 ] },
+      { "group": "guns_rifle_milspec", "count": [ 6, 8 ] },
+      { "group": "guns_shotgun_common", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "id": "TALK_CARAVAN_FOGUN_Town",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "What're ya buyin? What're ya sellin?",
+        "Got some rare things on sale, stranger!",
+        "With a powerful enough gun, it doesn't matter how weak you are, you can make anybody your equal/",
+        "Few things match the smell of gunsmoke and the kick of a nice .45 early in the morning.",
+        {
+          "u_has_perception": 10,
+            "yes": "I see you have an eye for things. Gun's not just about shootin', it's about reloadin'. You'll know what I'm talking about!",
+            "no": "Anybody can learn to shoot, it just takes a bit of technique and understandin' of posture and ballistics!"
+        },
+        {
+          "u_has_dexterity": 10, "yes": "You seem pretty dextrous from the way you carry yourself, you must be an excellent shot.",
+            "no": "Pistols, Rifles, machine guns, heavy weapons, I have it all!"
+        },
+        {
+          "u_has_intelligence": 6, "yes": "Everybody could benefit from having at least three guns and four hundred rounds of ammo, I reckon.",
+            "no": "Look, anybody can handle a gun if'n they get a hold of one, but I think you might need to be a bit more careful around guns than most people. Not to be rude or nothin', but you don't seem too bright."
+        },
+        "I heard people say that weapons around Boston don't wear out like weapons everywhere else in the world. Doesn't make much sense, but I've heard stranger things happen.",
+        "Isn't it a bit odd that the standard issue 'assault rifle' adopted by the US army before the war was either a G3, a rifle that used .45 acp or a 25 pound air-cooled lewis gun masquerading as a rifleman's gun?",
+        {
+        "u_male": [ "With a big iron on your hip, a guy like you could become a pistoleer of the ol' west.", "Rough out there for those that are stuck with melee weapons, huh?", "Shot anything in the wastes lately, <name_g>?" ],
+        "no": [ "There's a lot of debate over whether or .40 or 10mm is better, although I hear that a lot of women shooters prefer .40 for its lesser recoil.", ".223 is more than enough for most nasties out there in the wastes, and with less recoil and wear, too!", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_CARAVAN_FOGUN_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

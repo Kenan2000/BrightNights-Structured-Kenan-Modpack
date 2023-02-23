@@ -1,0 +1,160 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "fo_powfist",
+    "symbol": "P",
+    "color": "light_gray",
+    "name": { "str": "power fist", "str_pl": "power fists" },
+    "category": "weapons",
+    "description": "An armored pneumatic fist. It appears as an armored gauntlet, like that of a suit of power armor. However, it appears to use a pneumatic ram instead of kinetic energy devices, making it function in a manner closer to that of the impact gloves.",
+    "material": [ "steel" ],
+    "volume": "1350 ml",
+    "weight": "820 g",
+    "bashing": 23,
+    "to_hit": 1,
+    "price_postapoc": 250,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+  },
+  {
+    "id": "fo_ballistic_fist",
+    "symbol": "P",
+    "color": "light_gray",
+    "name": { "str": "ballistic fist", "str_pl": "ballistic fists" },
+    "type": "GUN",
+    "category": "weapons",
+    "description": "An armored pneumatic fist. It appears as an armored gauntlet, like that of a suit of power armor. However, it appears to use a pneumatic ram instead of kinetic energy devices, making it function in a manner closer to that of the impact gloves.",
+    "material": [ "steel" ],
+    "volume": "1450 ml",
+    "weight": "1420 g",
+    "bashing": 26,
+    "to_hit": 1,
+    "price_postapoc": 250,
+    "ammo": [ "shot" ],
+    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
+    "range": -10,
+    "skill": "unarmed",
+    "dispersion": 900,
+    "durability": 6,
+    "clip_size": 2,
+    "reload": 250,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "MESSY", "RELOAD_EJECT" ]
+  },
+  {
+    "type": "TOOL",
+    "id": "fo_industrial_fist_off",
+    "symbol": "P",
+    "color": "light_gray",
+    "name": { "str": "industrial hand (off)", "str_pl": "industrial hands (off)" },
+    "category": "weapons",
+    "description": "An armored pneumatic fist. Although intended for use in cutting a variety of metals, plastics and woods, this H and H tools product has seen use in the post-war world as a (suprisingly effective) makeshift hand to hand weapon. It requires batteries to operate the rotating circular saw mounted in its fist housing. It is currently not active.",
+    "material": [ "steel" ],
+    "volume": "1550 ml",
+    "weight": "2900 g",
+    "cutting": 4,
+    "bashing": 10,
+    "to_hit": -1,
+    "price_postapoc": 250,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ],
+    "qualities": [ [ "AXE", 3 ], [ "SAW_M", 2 ] ],
+    "ammo": [ "battery" ],
+    "charges_per_use": 1,
+    "use_action": {
+      "menu_text": "Activate",
+      "type": "transform",
+      "target": "fo_industrial_fist_on",
+      "msg": "The industrial hand's saw whirrs to life!",
+      "need_charges": 1,
+      "need_charges_msg": "The industrial hand's saw remains inert. It needs more energy to function.",
+      "active": true
+    },
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "type": "TOOL",
+    "id": "fo_industrial_fist_on",
+    "symbol": "P",
+    "color": "light_gray",
+    "name": { "str": "industrial hand (on)", "str_pl": "industrial hands (on)" },
+    "category": "weapons",
+    "description": "An armored pneumatic fist. Although intended for use in cutting a variety of metals, plastics and woods, this H and H tools product has seen use in the post-war world as a (suprisingly effective) makeshift hand to hand weapon. It requires batteries to operate the rotating circular saw mounted in its fist housing. It is currently not active.",
+    "material": [ "steel" ],
+    "volume": "1550 ml",
+    "weight": "2900 g",
+    "to_hit": 1,
+    "cutting": 25,
+    "bashing": 10,
+    "price_postapoc": 250,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE", "TRADER_AVOID" ],
+    "techniques": "SWEEP",
+    "qualities": [ [ "AXE", 3 ], [ "SAW_M", 2 ] ],
+    "ammo": [ "battery" ],
+    "turns_per_charge": 10,
+    "use_action": {
+      "menu_text": "Activate",
+      "type": "transform",
+      "target": "fo_industrial_fist_off",
+      "msg": "The industrial hand's saw stops."
+    },
+    "magazines": [
+      [
+        "battery",
+        [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      ]
+    ],
+    "magazine_well": "250 ml"
+  },
+  {
+    "type": "TOOL",
+    "id": "fo_zapfist",
+    "symbol": "P",
+    "color": "light_gray",
+    "name": { "str": "zap glove", "str_pl": "zap gloves" },
+    "category": "weapons",
+    "description": "A special variant of powerfist that also contains a rubberized non-conductive glove with a contact-based electrode plate placed along the glove's fingers. Essentially a mixture of a power fist and a tazer, allowing one to stun their opponents and then pummel them to a pulp.",
+    "material": [ "steel" ],
+    "volume": "1550 ml",
+    "weight": "2500 g",
+    "bashing": 26,
+    "to_hit": 1,
+    "price_postapoc": 250,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ],
+    "charges_per_use": 20,
+    "use_action": "TAZER",
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_minus_disposable_cell",
+          "light_disposable_cell",
+          "light_minus_battery_cell",
+          "light_battery_cell",
+          "light_plus_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_atomic_battery_cell"
+        ]
+      ]
+    ]
+  },
+  {
+    "type": "GENERIC",
+    "id": "fo_bladedgauntlet",
+    "symbol": "B",
+    "color": "light_gray",
+    "name": { "str": "bladed gauntlet", "str_pl": "bladed guantletss" },
+    "category": "weapons",
+    "description": "A crude hand to hand weapon consisting of jagged metal blades affixed to a thick leather strap.",
+    "material": [ "steel" ],
+    "volume": "1540 ml",
+    "weight": "1000 g",
+    "bashing": 6,
+    "cutting": 15,
+    "price_postapoc": 250,
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
+  }
+]

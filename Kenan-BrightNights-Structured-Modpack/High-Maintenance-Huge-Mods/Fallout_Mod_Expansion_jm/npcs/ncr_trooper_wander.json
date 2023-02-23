@@ -1,0 +1,36 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_ncr_trooper_wander",
+    "name_suffix": "NCR Trooper",
+    "class": "fo_ncr_trooper_wander_npc",
+    "attitude": 0,
+    "mission": 0,
+    "chat": "TALK_fo_ncr_trooper_start",
+    "faction": "fac__fo_NCR"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_ncr_trooper_wander_npc",
+    "name": { "str": "NCR Trooper" },
+    "job_description": "Is a soldier of the New California Republic.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_NCRTROOP_worn",
+    "carry_override": "NC_NCRTROOP_carry",
+    "weapon_override": "NC_NCRTROOP_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 3 ] } }
+    ]
+  }
+]

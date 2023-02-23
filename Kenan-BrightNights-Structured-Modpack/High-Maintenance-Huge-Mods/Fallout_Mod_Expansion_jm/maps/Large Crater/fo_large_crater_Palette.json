@@ -1,0 +1,21 @@
+[
+    {
+        "type":"palette",
+        "id":"FO_LARGECRATER_PAL",
+        "terrain": {
+           "R": "t_dirt",
+           "D": "t_dirt",
+           "d": [ "t_dirt", "t_region_groundcover" ],
+           "r": "t_dirt"
+        },
+        "furniture": {
+           "R": "f_rubble_rock",
+           "r": [ "f_rubble_rock" , "f_null" ]
+        },
+    "items": {
+            "D": [ { "item": "fo_crater_scrap", "chance": 13 } ],
+            "d": [ { "item": "fo_crater_scrap", "chance": 18 } ],
+            "r": [ { "item": "fo_crater_scrap", "chance": 10 } ]
+            }
+        }
+]

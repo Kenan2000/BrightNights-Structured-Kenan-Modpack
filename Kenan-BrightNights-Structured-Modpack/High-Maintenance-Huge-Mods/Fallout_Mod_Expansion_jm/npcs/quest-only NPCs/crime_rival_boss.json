@@ -1,0 +1,55 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_quest_rival_boss",
+    "name_suffix": "rival crime boss",
+    "class": "fo_quest_rival_boss_npc",
+    "attitude": 1,
+    "mission": 8,
+    "chat": "TALK_fo_quest_rival_boss_start",
+    "faction": "foc_rival_criminals"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_quest_rival_boss_npc",
+    "name": { "str": "rival crime boss" },
+    "job_description": "The head of a rival crime family.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_WASTEBOSS_worn",
+    "carry_override": "NC_WASTEBOSS_carry",
+    "weapon_override": "NC_WASTEBOSS_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 4 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "tailor", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "traps", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "id": "TALK_fo_quest_rival_boss_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "What do you want, why are you speaking to me!", "Shut up before I get mad!" ],
+      "no": [ "What do you want, why are you speaking to me!", "Shut up before I get mad!" ]
+        },
+    "responses": [
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

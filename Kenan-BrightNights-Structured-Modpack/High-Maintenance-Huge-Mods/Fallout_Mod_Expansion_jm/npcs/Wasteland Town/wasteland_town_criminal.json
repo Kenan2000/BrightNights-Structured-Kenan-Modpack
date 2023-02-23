@@ -1,0 +1,177 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_crim",
+    "name_suffix": "Criminal",
+    "class": "fo_wastetown_crim_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_crim_start",
+    "faction": "foc_wasteland_criminals"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_crim_npc",
+    "name": { "str": "Criminal" },
+    "job_description": "Is a resident of the wasteland town.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_WASTECRIM_worn",
+    "carry_override": "NC_WASTECRIM_carry",
+    "weapon_override": "NC_WASTECRIM_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTECRIM_worn",
+    "subtype": "collection",
+    "entries": [
+      { "distribution": [ { "item": "dress_shirt", "prob": 100 }, { "item": "hoodie", "prob": 100 }, { "item": "longshirt", "prob": 100 }, { "item": "sweater", "prob": 100 }, { "item": "sweatshirt", "prob": 100 }, { "item": "dress", "prob": 100 }, { "item": "gown", "prob": 100 }, { "item": "maid_dress", "prob": 100 }, { "item": "sundress", "prob": 100 }, { "item": "tshirt", "prob": 100 }, { "item": "tshirt", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "jeans", "prob": 100 }, { "item": "pants", "prob": 100 }, { "item": "pants_army", "prob": 100 }, { "item": "pants_cargo", "prob": 100 }, { "item": "pants_leather", "prob": 100 }, { "item": "postman_shorts", "prob": 100 }, { "item": "technician_pants_gray", "prob": 100 }, { "item": "skirt", "prob": 100 }, { "item": "skirt_leather", "prob": 100 }, { "item": "hot_pants", "prob": 100 }, { "item": "shorts_denim", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "boots", "prob": 100 }, { "item": "dress_shoes", "prob": 100 }, { "item": "footrags", "prob": 100 }, { "item": "boots_hiking", "prob": 100 }, { "item": "boots_western", "prob": 100 }, { "item": "sneakers", "prob": 100 }, { "item": "lowtops", "prob": 100 } ], "prob": 100 },
+      { "distribution": [ { "item": "backpack", "prob": 100 }, { "item": "backpack_leather", "prob": 100 }, { "item": "boxpack", "prob": 100 }, { "item": "daypack", "prob": 100 }, { "item": "fanny", "prob": 100 }, { "item": "slingpack", "prob": 100 } ], "prob": 25 },
+      { "distribution": [ { "item": "hood_lsurvivor", "prob": 100 }, { "item": "beret", "prob": 100 }, { "item": "hood_survivor", "prob": 100 }, { "item": "hat_knit", "prob": 100 }, { "item": "hat_hunting", "prob": 100 }, { "item": "straw_hat", "prob": 100 }, { "item": "hood_fsurvivor", "prob": 100 } ], "prob": 35 },
+      { "distribution": [ { "item": "duster_survivor", "prob": 100 }, { "item": "duster_leather", "prob": 100 }, { "item": "trenchcoat", "prob": 100 } ], "prob": 75 },
+      { "distribution": [ { "item": "eclipse_glasses", "prob": 100 }, { "item": "fitover_sunglasses", "prob": 100 }, { "item": "goggles_welding", "prob": 100 }, { "item": "sunglasses", "prob": 100 }, { "item": "survivor_goggles", "prob": 100 } ], "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTECRIM_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTECRIM_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 35 },
+      { "item": "ashot", "charges": 1, "prob": 15 },
+      { "item": "colt6250", "charges": 12, "prob": 15 },
+      { "item": "10mmsmg", "charges": 30, "prob": 15, "ammo-item": "40sw"},
+      { "item": "pipe_double_shotgun", "charges": 2, "prob": 15 },
+      { "item": "shotgun_d", "charges": 2, "prob": 15 },
+      { "item": "varmint_rifle", "charges": 10, "prob": 15 },
+      { "item": "cop_38", "charges": 4, "prob": 15 },
+      { "item": "ruger_1022", "charges": 15, "prob": 15 },
+      { "item": "marlin_9a", "charges": 19, "prob": 10 },
+      { "item": "m1911", "charges": 6, "prob": 10 },
+      { "item": "14mmpistol", "charges": 7, "prob": 10 },
+      { "item": "fo_ripper_off", "prob": 5 },
+      { "item": "vault_knife", "prob": 5 },
+      { "item": "machete_gladius", "prob": 5 },
+      { "item": "fo_powfist", "prob": 10 },
+      { "item": "fo_bladedgauntlet", "prob": 5 },
+      { "item": "knuckle_brass", "prob": 5 },
+      { "item": "punch_dagger", "prob": 5 },
+      { "item": "switchblade", "prob": 5 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_combat", "prob": 5 },
+      { "item": "knife_butcher", "prob": 5 },
+      { "item": "knife_steak", "prob": 5 },
+      { "item": "ar15", "charges": 30, "prob": 10 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_crim_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "u_known_by_criminals",
+      "type": "general",
+      "context": "meeting",
+      "value": "yes",
+      "yes": [
+        "Hello, <name_g>",
+        "Be careful out there, <name_g>?",
+        "Glad to see another initiate into our enterprise.",
+        "Don't speak up to loudly about our operation, okay?",
+        {
+          "u_has_strength": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "You look like a pretty tough dude, our criminal enterprise always needs muscle when things get tough.",
+                "no": "You look like a pretty tough chick! Our criminal enterprise always needs muscle when things get tough."
+                },
+            "no": "Maybe if you bulked up a bit then people would be more intimdated by you Ever consider that?"
+        },
+        {
+          "u_has_dexterity": 10,
+            "yes": {
+                "u_male": true,
+                "yes": "Somebody with quick fingers like yours would be good at stealing and lockpicking. The boss might need a guy like you.",
+                "no": "You look like a woman who's good with her hands, if you know what I mean. Wait, not like that! I mean that you would be good at stealing and lockpicking, what did you think I meant? Jeez."
+                },
+            "no": "Being a good thief or cutthroat requires nimble fingers, any common klutz would get caught nearly instantly."
+        },
+        {
+          "u_has_intelligence": 10, "yes": "Judging from the way you talk, you seem pretty sharp. The boss needs more people like you. A wise guy that can not only beat people up, but outsmart others, too.",
+            "no": "I'm still stunned that people don't know we're running a criminal enterprise right under their nose."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "Few things feel better in this world than stealing other people's stuff without asking!",
+            "no": "Look, so you're not the brightest fella, not everyone can be smart. The boss can still find a use for you, though. I'm sure of it."
+        },
+        "Do you think the other townsfolk have caught on to our operation? Let's hope not.",
+        "The enterprise needs more people like you.",
+        {
+        "u_male": [ "A wise guy like you could be of benefit to the boss, you should see him sometime.", "Rough out there, isn't it?", "How has criminal life been treating you, <name_g>" ],
+        "no": [ "You know, sometimes the life of crime needs a bit of a feminine touch, you know? You could be useful for that.", "Don't let our shady visage fool you, lady, we're equal-opportunity criminals!", "What's up, <name_g>" ]
+      }
+      ],
+      "no": {
+        "u_male": [ "How did a shit-for-brained loser guy like you even get down here. Go back to whatever hole you crawled out of and die.", "What's up with dudes like you being so nosy, knock it off!" ],
+        "no": [ "Who are you, and how did a bitch like you even get down here? Fuck off before I get mad.", "Beat it, girl, I don't have anything to offer you." ]
+      }
+    },
+    "responses": [
+      {
+        "text": "No need to be rude! I was just looking around.",
+        "condition": { "not": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_wastetown_criminal_hostile"
+      },
+      {
+        "text": "What's it like being a criminal?",
+        "condition": { "u_has_var": "u_known_by_criminals", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_wastetown_criminal_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_criminal_hostile",
+    "type": "talk_topic",
+    "dynamic_line": "Alright, I've had enough of you. Time to shut you up!",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "effect": "hostile",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_crim_go",
+    "type": "talk_topic",
+    "dynamic_line": "Working under the boss can be pretty rough, don't get me wrong. It does have its perks though. The boss doesn't let anybody fuck with us, know what I mean? It's like we can steal whatever we want, within reason I guess.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

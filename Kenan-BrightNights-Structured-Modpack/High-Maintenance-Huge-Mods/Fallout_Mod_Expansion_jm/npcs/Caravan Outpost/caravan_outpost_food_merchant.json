@@ -1,0 +1,134 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_caravan_food_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Food Merchant",
+    "class": "NC_CARAVANFOFOOD_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_FOFOOD_Caravan",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_CARAVANFOFOOD_SHOPKEEP",
+    "name": { "str": "Book Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_FO_CAR_FOOD_worn",
+    "weapon_override": "NC_FO_CAR_FOOD_weapon",
+    "shopkeeper_item_group": "NC_FO_CAR_FOOD_SHOPKEEP_misc",
+    "carry_override": "NC_FO_CAR_FOOD_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FO_CAR_FOOD_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "item": "cap_bottle", "count-min": 30, "count-max": 200, "prob": 90 },
+      { "group": "farming_seeds", "count": [ 4, 9 ] },
+      { "group": "farming_tools", "count": [ 1, 2 ] },
+      { "group": "supplies_farming", "count": [ 1, 4 ] },
+      { "group": "foodintincan", "count": [ 2, 5 ] },
+      { "group": "fresh_produce", "count": [ 1, 3 ] },
+      { "group": "preserved_food", "count": [ 2, 5 ] },
+      { "group": "pre_irradiated_food", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FO_CAR_FOOD_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FO_CAR_FOOD_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "jeans" },
+      { "item": "straw_hat" },
+      { "item": "duster_leather" },
+      { "item": "dress_shirt" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FO_CAR_FOOD_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_FO_CAR_FOOD_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "farming_seeds", "count": [ 4, 9 ] },
+      { "group": "farming_tools", "count": [ 1, 2 ] },
+      { "group": "supplies_farming", "count": [ 1, 4 ] },
+      { "group": "foodintincan", "count": [ 2, 5 ] },
+      { "group": "fresh_produce", "count": [ 1, 3 ] },
+      { "group": "preserved_food", "count": [ 2, 5 ] },
+      { "group": "pre_irradiated_food", "count": [ 6, 8 ] }
+    ]
+  },
+  {
+    "id": "TALK_FOFOOD_Caravan",
+    "type": "talk_topic",
+    "dynamic_line": [
+        "It's almost harvesting season.",
+        "Some people prefer mutfruits to apples, pretty odd if you ask me. I guess they like the texture.",
+        "Why don't I have any Brahmin around? Well, um? Don't worry about it.",
+        "Sometimes I wonder why I toil all day in the fields before getting shut-eye, but then I realize that eating years-old fancy lad snack cakes is disgusting.",
+        {
+          "u_has_strength": 10,
+            "yes": "With those muscles you would make for a decent farmhand, ever consider doing any work for me?",
+            "no": "My muscles still feel sore from working in the fields earlier, what do you want?"
+        },
+        {
+          "u_has_intelligence": 10, "yes": "You clearly have a good head on your shoulders. Some people think farmers are just bumpkins with mud for brains but it actually takes a lot to understand the finer aspects of crop rotation and animal husbandry.",
+            "no": "Farming isn't as easy as it looks."
+        },
+        {
+          "u_has_intelligence": 6, "yes": "I wonder if any of the ruins have rare seeds from before the war that are still good for planting.",
+            "no": "You know about farms, right? Plants don't just spring up out of the ground, although you might not be bright enough to realize that."
+        },
+        "I heard that in the Capital Wasteland they only recent got fresh water that wasn't so irradiated it glowed in the dark, can you believe that?",
+        "I wish I had a few 'bots to help me out around here. Would make life much easier.",
+        {
+        "u_male": [ "Farming can give a man purpose on life, as odd as that is to say.", "A guy like you wouldn't believe how little happens on most caravan trips.", "How has wasteland life been treating you, <name_g>" ],
+        "no": [ "A lot of women could benefit from spending some time on a farm, work with your hands in the mud and all that.", "Ma'am, what do you think of this place?.", "What's up, <name_g>" ]
+      }
+      ],
+    "responses": [
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_FOFOOD_Caravan"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

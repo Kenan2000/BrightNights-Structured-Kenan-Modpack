@@ -1,0 +1,154 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ 
+            [ "FO_WANAMINGO_1_2", "FO_WANAMINGO_1_1" ],
+            [ "FO_WANAMINGO_1_3", "FO_WANAMINGO_1_4" ]
+        ],
+        "object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,,RRRRRRRR,,RRRRRRRRRR,,,",
+                ",,,,RRRRRRRRRR,,,,,,,,,,,RffffffRR,RffffffffR,,,",
+                ",,,,RPPffffffR,,,,,,,,,,,RffffffR,,RffffffffR,,,",
+                ",,,RRFFFFFfffR,,,,,,,,,,RRffNfffRRRRffffNfffR,,,",
+                ",,,RFFF<FFfffR,,,RRRRRR,RRffffCffffffNfCffffR,,,",
+                ",,,RuuuFFFfffWRRRRRfffRRRWffffffffffffffffffR,,,",
+                ",,RRuuuFFFffffffffffffffffffffffffffffffffffR,,,",
+                ",,RfUUUUUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTfffffR,,,",
+                ",,RRfffffTfffWRRRRRRRRRRRWRRffCfffffffTCffffR,,,",
+                ",,,RRffffTfffR,,,,,,,,,,,,RRffffffnfffTfffffR,,,",
+                ",,,,RRRWfTWRRR,,,,,,,,,,,,RRffffffffffTfffnfR,,,",
+                ",,,,,,,RfTR,,,,,,,,,,,,,,,,RRRRRRRRRRWTfWRRRR,,,",
+                ",,,,,,,RfTR,,,,,,,,,,,,,,,,,,,,,,,,,,RTfR,,,,,,,",
+                ",,,RRRRWfTWRRRR,,,RRRRRRRRRRRRRRRRRRRWTfW,,,,,,,",
+                ",,,RfffffTffffR,,RRNffffffffffffffffffTfRRR,,,,,",
+                ",,,RfffffTffffR,,,RffCfNfffffffCffffffTfR,,,,,,,",
+                ",,RRfffCfTCfffR,,,RfffffffffffffffffffTfR,,,,,,,",
+                ",RRfffffTTffffR,,,RfTTTTTTTTTTTTTTTTTTTfR,,,,,,,",
+                ",RffnffnTfffffR,,,RfTCfffffffffCffffffTfR,,,,,,,",
+                ",RffffffTfffffR,,,RfTffffffffffffRRRRWTfW,,,,,,,",
+                ",RfffnffTffffnR,,,RfTfffffffffRRRRRRRRTfR,,,,,,,",
+                ",RffffffTfffffR,,,RfTfRRRRRRRRRRRRRRRRTfR,,,,,,,",
+                ",RRffffCTfCfffR,,,RWTfW,,,,,,,,,,,,,,RTfR,,,,,,,",
+                ",,RRffffTfffffR,,,,RTfR,,,,,,,,,,,,,,RTfR,,,,,,,",
+                ",,,RRRWfTWRRRRR,,,,WTfWRR,,,,,,,,,,,,RTfR,,,,,,,",
+                ",,,,,,RfTR,,,,,,,,,RTfffRRRRR,,,,,,,,RTfR,,,,,,,",
+                ",,,,,,RfTR,,,,,,,,,RTfffffffR,,,,,,,,RTfR,,,,,,,",
+                ",,,,,,RfTR,,,,,,,,,RTfNfffffR,,,,,,,,RTfR,,,,,,,",
+                ",,,RRRWfTWRWRRRRRRWRTfffnCffRR,,,,,,,RTfR,,,,,,,",
+                ",,,RffffTTTTTTTTTTTTTffffffffR,,,,,,,RTfR,,,,,,,",
+                ",,,RfffffffffffffffffffffffffR,,,RRRRWTfWRRR,,,,",
+                ",,,RffffffnWRRRRRRWffRRRRRRRRR,,,RffffTffffRR,,,",
+                ",,,RffCffffR,,,,,,RffR,,,,,,,,,,RRffffTffNffR,,,",
+                ",,,RfffffffR,,,,,,RffR,,,,,,,,,,RffNffTfffffR,,,",
+                ",,,RfnfffffR,,,,RRRffRRRR,,,,,,,RffCfffffCffRR,,",
+                ",,,RfffffffR,,,RRfWDWWffRR,,,,,,RffffffffffffR,,",
+                ",,,RfRRRRRRR,,,RfFFFFFFfnR,,,,,,RffffffffffffR,,",
+                ",,,RRR,,,,,,,,,RRFFFFFFffR,,,,,,RffCfffffCfffR,,",
+                ",,,,,,,,,,,,,,,R1FFFFFFOOR,,,,,,RfffffffffffRR,,",
+                ",,,,,,,,,,,,,,,R1FFF3FFOOR,,,,,,RfffffffRRRRR,,,",
+                ",,,,,,,,,,,,,,,R1FF22FFfRR,,,,,,RRRRRRRRR,,,,,,,",
+                ",,,,,,,,,,,,,,,RRRRRRRRRR,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_PAL_WANAMINGO" ],
+        "place_item": [
+           { "item": "chunk_sulfur", "x": [ 4, 6 ] , "y": [ 7, 8 ], "chance": 70, "repeat": [ 5, 8 ] },
+           { "item": "steel_chunk", "x": [ 4, 6 ], "y": [ 7, 8 ], "chance": 70, "repeat": [ 4, 10 ] },
+           { "item": "material_shrd_limestone", "x": [ 4, 6 ], "y": [ 7, 8 ], "chance": 70, "repeat": [ 5, 8 ] },
+           { "item": "copper", "x": [ 4, 6 ], "y": [ 7, 8 ], "chance": 70, "repeat": [ 6, 10 ] },
+           { "item": "rock", "x": [ 4, 6 ], "y": [ 7, 8 ], "chance": 80, "repeat": [ 12, 25 ] }
+        ],
+        "place_monsters": [ { "monster": "GROUP_WANAMINGO_MINE", "x": [ 0, 23 ], "y": [ 0, 23 ], "density": 0.2 },
+        { "monster": "GROUP_WANAMINGO_MINE", "x": [ 24, 47 ], "y": [ 0, 23 ], "density": 0.2 },
+        { "monster": "GROUP_WANAMINGO_MINE", "x": [ 0, 23 ], "y": [ 24, 47 ], "density": 0.2 },
+        { "monster": "GROUP_WANAMINGO_MINE", "x": [ 24, 47 ], "y": [ 24, 47 ], "density": 0.2 } ],
+        "terrain": { ",": "t_rock" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WANAMINGO_2_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,WWWWWW,,,,,,,,,,,,",
+                ",,,,,,WVVVVW,,,,,,,,,,,,",
+                ",,,,,,WV>VVW,,,,,,,,,,,,",
+                ",,,,,,WVVVVD,,,,,,,,,,,,",
+                ",,,,,,WVVVVW,,,,,,,,,,,,",
+                ",,,,,,WWWWWW,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,",
+                ",,,,,,,,,,,,,,,,,,,,,,,,"
+            ],
+        "palettes": [ "FO_PAL_WANAMINGO" ],
+        "terrain": { ",": "t_region_groundcover", "A": "t_dirt" },
+        "furniture": { "F": "f_rubble_rock" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "FO_WANAMINGO_2_R" ],"object": {
+            "fill_ter": "t_open_air",
+            "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "      SSSSSS            ",
+                "      SSSSSS            ",
+                "      SSSSSS            ",
+                "      SSSSSS            ",
+                "      SSSSSS            ",
+                "      SSSSSS            ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+        "terrain": {
+                "S": "t_floor_primitive"
+            }
+        }
+    }
+]

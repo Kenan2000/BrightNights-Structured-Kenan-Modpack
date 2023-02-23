@@ -1,0 +1,502 @@
+[
+  {
+    "type": "npc",
+    "id": "fo_wastetown_guard_chief",
+    "name_suffix": "Guard Chief",
+    "class": "fo_wastetown_guard_chief_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_wastetown_guard_chief_start",
+    "mission_offered": "MISSION_FO_GUARD_CHIEF_A",
+    "faction": "foc_wasteland_town"
+  },
+  {
+    "type": "npc_class",
+    "id": "fo_wastetown_guard_chief_npc",
+    "name": { "str": "Guard Chief" },
+    "job_description": "Is a guard for the wasteland town.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_WASTETOWN_G_CHIEF_worn",
+    "carry_override": "NC_WASTETOWN_G_CHIEF_carry",
+    "weapon_override": "NC_WASTETOWN_G_CHIEF_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTETOWN_G_CHIEF_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "helmet_combat_light" },
+      { "item": "armor_combat_light" },
+      { "item": "socks" },
+      { "item": "boots_combat" },
+      { "item": "slingpack" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTETOWN_G_CHIEF_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "fallout_misc_itemgroup_food", "count": [ 1, 2 ], "prob": 40 },
+      { "collection": [ { "item": "ak112", "dirt": [ 0, 4000 ], "charges": 30 }, { "item": "5mmmag", "charges": 30, "count": [ 1, 3 ], "prob": 100 }, { "item": "5mm", "charges": [ 10, 35 ], "prob": 100 } ], "prob": 100 }
+      ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_WASTETOWN_G_CHIEF_weapon",
+    "subtype": "distribution",
+    "entries": [
+
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_guard_chief_start",
+    "type": "talk_topic",
+    "dynamic_line": [ 
+
+      { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes",
+      "yes": [
+        "Leading the town guard can be quite difficult.",
+        "Seen any super mutants out in the wastes?",
+        "I've been hearing reports of raider activity in the wasteland, not great.",
+        { "u_has_strength": 10, "yes": "you seem pretty strong, perhaps there's a place for you in the guard.", "no": "There's a lot of danger out there in the wasteland, please be careful." },
+        { "u_has_intelligence": 10, "yes": "The guard is always looking for people of a sound mind, you seem like a good fit..", "no": "It's risky sending patrols out into the wasteland, I generally prefer to keep the town guard posted closer to home, I guess." },
+        { "u_has_intelligence": 6, "yes": "Spotted anything out there recently?", "no": "You might not be that smart, but if you're good at fighting then that's all that matters in the end." },
+        { "u_male": [ "Without good armor, most people are as good as dead out there.", "It's dangerous in the wasteland.", "I wonder if a guy like you has seen much action out there, I can't really tell." ], "no": [ "What's a lady like you doing here, need something?", "Ma'am, what do you think of the guard?", "Hey There." ] }
+      ],
+      "no": {
+        "u_male": [ "I don't know who you are, why are you here?", "What's a guy like you doing around these parts?" ],
+        "no": [ "I don't recognize a gal like you hanging around out here, who are you anyway?", "Ma'am, you really shouldn't be traveling out there." ]
+      }
+    } 
+      ],
+    "responses": [
+      {
+        "text": "What are you doing here?",
+        "condition": { "not": { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_fo_wastetown_guardchief_introduce"
+      },
+      {
+        "text": "What do you do in your role as guard chief?",
+        "condition": { "u_has_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_fo_wastetown_guardchief_question"
+      },
+      {
+        "text": "Do you have a task for me?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_guardchief_introduce",
+    "type": "talk_topic",
+    "dynamic_line": "I'm the chief of the guard for this town. I generally manage training, patrols and weapon stocks that the town guard uses on a daily basis. If there's an urgent mission, I might also go on patrol myself, although that's rather rare now.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "effect": { "u_add_var": "u_known_by_town", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_wastetown_guardchief_question",
+    "type": "talk_topic",
+    "dynamic_line": "Lately there has been a series of attacks around the town that have started to worry me. I'm a bit stretched thin with personnel at the moment, perhaps you could handle it. It's not like I would have much to spare in the way of weapons, though.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "MISSION_FO_GUARD_CHIEF_A",
+    "type": "mission_definition",
+    "name": "Kill 25 Ghouls",
+    "description": "Kill 25 Ghouls",
+    "goal": "MGOAL_KILL_MONSTER_SPEC",
+    "difficulty": 3,
+    "value": 150000,
+    "monster_species": "FO_GHOUL",
+    "monster_kill_goal": 3,
+    "end": {
+      "effect": [
+        { "u_buy_item": "reloaded_223", "count": 30 },
+        { "u_buy_item": "colt_rangemaster", "count": 1 },
+        { "u_buy_item": "rangemastermag", "count": 2 } ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_FO_GUARD_CHIEF_B",
+    "dialogue": {
+      "describe": "You need to prove your worth first before I can consider any serious duties for you. Go and kill 25 ghouls and then get back to me.",
+      "offer": "You need to prove your worth first before I can consider any serious duties for you. Go and kill 25 ghouls and then get back to me.",
+      "accepted": "Affirmative, kill them and get back to me.",
+      "rejected": "Guess you weren't up for the task of wasteland defense.",
+      "advice": "Ghouls tend to hang around radioactive areas like craters, try searching for them there.",
+      "inquire": "Have you killed 25 ghouls yet?",
+      "success": "With this, I think I can now consider you a member of the town guard, at least on a temporary basis.",
+      "success_lie": "Don't lie to me, I wasn't born yesterday.",
+      "failure": "How did you manage to lose to a few ghouls?"
+    }
+  },
+  {
+    "id": "MISSION_FO_GUARD_CHIEF_B",
+    "type": "mission_definition",
+    "name": { "str": "Kill the mirelurk queen" },
+    "description": "One of the local swamps has a mirelurk queen. Kill her.",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_KILL_MONSTER",
+    "followup": "MISSION_FO_GUARD_CHIEF_C",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest_water", "reveal_radius": 1, "random": true, "search_range": 60, "min_distance": 5 },
+      "update_mapgen": { "place_monster": [ 
+      { "monster": "mon_mirelurk_queen", "x": 11, "y": 11, "target": true },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] },
+      { "monster": "mon_mirelurk", "x": [ 0, 21 ], "y": [ 0, 21 ] } 
+
+
+    ] }
+    },
+    "dialogue": {
+      "describe": "A mirelurk queen has set up a new nest in a nearby swamp. Go and kill her before this gets out of hand.",
+      "offer": "Kill the local mirelurk queen, I'll mark her location your map.",
+      "accepted": "Just make sure the mirelurk queen is dead.",
+      "rejected": "Understandeable, mirelurk queens are ornery beasts",
+      "advice": "Mirelurks, especially their queens, have thick shells. Try to use something armor-piercing to kill them.",
+      "inquire": "You kill the queen yet?",
+      "success": "With the queen dead, the mirelurks will be less of a problem around here.",
+      "success_lie": "You're obviously lying. Stop it.",
+      "failure": "With the queen still alive, Mirelurks are gonna be more of a problem around here."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "helmet_combat_light", "count": 1 },
+        { "u_buy_item": "fo_stimpak_kit", "count": 2 },
+        { "u_buy_item": "kevlar", "count": 1 },
+        { "u_buy_item": "cap_bottle", "count": 50 },
+        { "u_buy_item": "grenade", "count": 1 }
+
+      ]
+    }
+  },
+  {
+    "id": "MISSION_FO_GUARD_CHIEF_C",
+    "type": "mission_definition",
+    "name": { "str": "Kill the Super Mutant Master" },
+    "description": "Kill the Super Mutant Master",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_KILL_MONSTER",
+    "followup": "MISSION_FO_GUARD_CHIEF_D",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 55, "min_distance": 5, "z": 0 },
+      "update_mapgen": {
+        "rows": [
+          "                   fff  ",
+          "                   fFFF ",
+          "                    Ff  ",
+          "     ffFFF              ",
+          "    FFfFFFf        FFF  ",
+          "     FFFff        FFFF  ",
+          "                    FF  ",
+          "                m       ",
+          "          O   O      m  ",
+          "           m            ",
+          "   WWWW@@        O    f ",
+          "   Wbb@        M      f ",
+          "   Wbbb                 ",
+          "   Wbbbbb           ff  ",
+          "   WWWW b    O          ",
+          "       O                ",
+          "                        ",
+          "     n       n    n     ",
+          "                        ",
+          "   FFFF                 ",
+          "   fFFFf      ff fff    ",
+          "    fff       FFFFFFf   ",
+          "  fF           FFFFff   ",
+          "  FFf           fff     "
+        ],
+        "monster": { "M": { "monster": "mon_supmutant_master_b", "target": true }, "m": { "monster": "mon_supmutant_brute_b" }, "n": { "monster": "mon_supmutant_brute_a" } },
+        "terrain": {
+        "W": [ "t_junk_wall" ],
+        "w": [ "t_window_reinforced" ],
+        "D": [ "t_door_makeshift_c" ]
+      },
+      "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+      "place_vehicles": [
+        { "chance": 100, "fuel": 23, "rotation": 90, "status": 1, "vehicle": "city_pileup", "x": 15, "y": 21 }, { "chance": 100, "fuel": 23, "rotation": 180, "status": 0, "vehicle": "city_pileup", "x": 3, "y": 1 }
+      ],
+      "furniture": {
+        "F": [ "f_rubble" ],
+        "f": [ "f_rubble_landfill" ],
+        "A": [ "f_table" ],
+        "O": [ "f_camp_chair" ],
+        "@": [ "f_crate_c" ]
+      },
+      "item": { "b": [ { "item": "corpse", "chance": 18 } ] },
+      "items": {
+            "@": [ { "item": "ammo_pistol_fallout_common", "chance": 20, "count": [ 1, 2 ] }, { "item": "ammo_rifle_fallout_common", "chance": 28, "count": [ 1, 2 ] }, { "item": "guns_rifle_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "guns_pistol_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "mags_rifle_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "mags_pistol_fallout_common", "chance": 20, "count": [ 1, 3 ] }, { "item": "drops_fo_rare_highvalue_misc", "chance": 5 } ]
+            }
+      }
+    },
+    "dialogue": {
+      "describe": "This one's gonna be a bit harder. We need you to kill a super mutant master. He's hiding out with his band of mutants at this location. By now you know the drill, go and kill them.",
+      "offer": "Kill the super mutant master marked at this location on your map and then get back to me.",
+      "accepted": "Good to hear, I hate those damn mutants. Give me the creeps.",
+      "rejected": "I'll need an entire patrol to go after those mutants, some of them probably won't come back.",
+      "advice": "Super mutants are extremely tough. Try to be well armed and armored when going up against them.",
+      "inquire": "You kill their master yet?",
+      "success": "Always good to hear about dead super mutants. Here's your reward, you've earned it.",
+      "success_lie": "Don't bullshit. I know mutants, I know when they're still kicking. I know that you're lying.",
+      "failure": "As long as those mutants are alive, good people will suffer."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "ak112", "count": 1 },
+        { "u_buy_item": "5mmmag", "count": 3 },
+        { "u_buy_item": "5mm", "count": 100 },
+        { "u_buy_item": "5mm_bulk", "count": 200 }
+
+      ]
+    }
+  },
+  {
+    "id": "MISSION_FO_GUARD_CHIEF_D",
+    "type": "mission_definition",
+    "name": { "str": "Kill the Raider Leader" },
+    "description": "Kill the Raider Leader",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_ASSASSINATE",
+    "followup": "MISSION_FO_GUARD_CHIEF_E",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "forest", "reveal_radius": 1, "random": true, "search_range": 60, "min_distance": 5, "z": 0 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "  WWWWWWWWWWWWWWWWWWW   ",
+          "  W                 W   ",
+          "  W   wwpwwwwwwww   W   ",
+          "  W   w+++#wAA&&p   W   ",
+          "  W   DAAAAAAAA^w   W   ",
+          "      wwpwwwAAA^w       ",
+          "           pAAA^p       ",
+          "    VV     wwDwww       ",
+          "  VV                    ",
+          "       VVV     VV       ",
+          "      VVVVVVVVVVVVV     ",
+          "           VVVVVVVVV    ",
+          "     VVV       VVV      ",
+          "      VV                ",
+          "  W                 W   ",
+          "  W  ffFfff  ffFfff W   ",
+          "  W  f@  @f  f@  @f W   ",
+          "  W  f@  @f  f@  @f W   ",
+          "  W  ffffff  ffffff W   ",
+          "  W                 W   ",
+          "  WWWWWWWWWWWWWWWWWWW   ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": {
+        " ": [ "t_region_groundcover" ],
+        "W": [ "t_wall_log" ],
+        "w": [ "t_junk_wall" ],
+        "A": [ "t_scrap_floor" ],
+        "p": [ "t_window_empty" ],
+        "V": [ "t_dirt" ],
+        "D": [ "t_door_makeshift_c" ]
+      },
+      "place_npcs": [ { "class": "fo_wasteland_raider_leader", "x": 12, "y": 13, "target": true },
+        { "class": "fo_wasteland_raider", "x": 3, "y": 10 },
+        { "class": "fo_wasteland_raider", "x": 8, "y": 15 },
+        { "class": "fo_wasteland_raider", "x": 18, "y": 5 },
+        { "class": "fo_wasteland_raider", "x": 14, "y": 3 } ],
+      "furniture": {
+        "f": [ "f_canvas_wall" ],
+        "@": [ "f_bunkbed" ],
+        "F": [ "f_canvas_door" ],
+        "&": [ "f_crate_c" ],
+        "^": [ "f_workbench" ],
+        "#": [ "f_woodstove" ],
+        "+": [ "f_cupboard" ]
+      },
+      "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+      "items": {
+            "&": [ { "item": "ammo_pistol_fallout_common", "chance": 20, "count": [ 1, 2 ] }, { "item": "ammo_rifle_fallout_common", "chance": 28, "count": [ 1, 2 ] }, { "item": "guns_rifle_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "guns_pistol_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "mags_rifle_fallout_common", "chance": 25, "count": [ 1, 2 ] }, { "item": "mags_pistol_fallout_common", "chance": 20, "count": [ 1, 3 ] }, { "item": "drops_fo_rare_highvalue_misc", "chance": 5 } ],
+            "@": [ { "item": "army_bed", "chance": 65, "count": [ 1, 2 ] } ],
+            "+": [ { "item": "forage_autumn", "chance": 30, "count": [ 2, 5 ] }, { "item": "foodintincan", "chance": 65, "count": [ 1, 5 ] }, { "item": "cannedfood", "chance": 35, "count": [ 1, 3 ] }, { "item": "fallout_misc_itemgroup_food", "chance": 35, "count": [ 5, 7 ] } ],
+            "^": [ { "item": "chem_lab", "chance": 25, "count": [ 2, 5 ] }, { "item": "drops_fo_drugdrop_misc", "chance": 25, "count": [ 3, 4 ] }, { "item": "trash_junkyard", "chance": 25, "count": [ 3, 4 ] }, { "item": "trash_forest", "chance": 19, "count": [ 3, 4 ] } ]
+            }
+      }
+    },
+    "dialogue": {
+      "describe": "Got another job for you, a local raider has started harassing caravans with his gang. Go to their encampment in the local forest and kill them.",
+      "offer": "Got another job for you, a local raider has started harassing caravans with his gang. Go to their encampment in the local forest and kill them.",
+      "accepted": "Hopefully you will come back with word of one less raider gang terrorizing people.",
+      "rejected": "The Crimson Caravan Company's gonna be really mad now, I hate that.",
+      "advice": "Their base is probably deep in one of the local forests, so don't count on just being able to ram their leader to death with a car.",
+      "inquire": "You kill their leader?",
+      "success": "That's great news, take this as your reward.",
+      "success_lie": "Don't bullshit. I know mutants, I know when they're still kicking. I know that you're lying.",
+      "failure": "As long as those mutants are alive, good people will suffer."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "rf2076", "count": 1 },
+        { "u_buy_item": "rf2076mag", "count": 2 },
+        { "u_buy_item": "556", "count": 100 },
+        { "u_buy_item": "223", "count": 25 },
+        { "u_buy_item": "556_incendiary", "count": 30 }
+
+      ]
+    }
+  },
+  {
+    "id": "MISSION_FO_GUARD_CHIEF_E",
+    "type": "mission_definition",
+    "name": { "str": "Kill the Super Mutant Behemoths" },
+    "description": "Kill the Super Mutant Behemoths",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_KILL_MONSTER",
+    "followup": "MISSION_FO_GUARD_CHIEF_F",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "start": {
+      "assign_mission_target": { "om_terrain": "field", "reveal_radius": 1, "random": true, "search_range": 55, "min_distance": 5, "z": 0 },
+      "update_mapgen": {
+        "rows": [
+          "                        ",
+          "                        ",
+          "                        ",
+          "             b          ",
+          "             bb         ",
+          "              bbb       ",
+          "               b        ",
+          "                        ",
+          "      bbbb bbbb         ",
+          "         bbbbb b        ",
+          "          bbb           ",
+          "         M      bbb     ",
+          "    bbb       m   bbb   ",
+          "        b bbbbb   bbb   ",
+          "              bb        ",
+          "                        ",
+          "            b           ",
+          "          bbbb          ",
+          "           b            ",
+          "            bb          ",
+          "                bb      ",
+          "                        ",
+          "                        ",
+          "                        "
+        ],
+        "terrain": {
+        "W": [ "t_junk_wall" ],
+        "w": [ "t_window_reinforced" ],
+        "D": [ "t_door_makeshift_c" ]
+      },
+      "monster": { "M": { "monster": "mon_sup_behemoth", "target": true }, "m": { "monster": "mon_sup_behemoth" } },
+      "fields": { "b": { "field": "fd_blood", "intensity": 1 } },
+      "item": { "b": [ { "item": "corpse", "chance": 18 } ] }
+      }
+    },
+    "dialogue": {
+      "describe": "I need you to kill two super mutant behemoths. You heard that right, two of 'em. They're over in this field I marked on your map.",
+      "offer": "Go and kill these two super mutant behemoths I marked for you on your map in that field.",
+      "accepted": "I know you're up to the task.",
+      "rejected": "I can't blame you for rejecting, behemoths are horrid creatures.",
+      "advice": "Here's some advice, bring your most powerful weapons and explosives, too.",
+      "inquire": "Did you kill the behemoths yet?",
+      "success": "The bigger they are, the harder they fall, huh? Here take this, I've been meaning to give it to somebody and I think you deserve it.",
+      "success_lie": "You're obviously lying.",
+      "failure": "As long as those behemoths are alive, good people will suffer."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "armor_combat_light", "count": 1 }
+
+      ]
+    }
+  },
+  {
+    "id": "MISSION_FO_GUARD_CHIEF_F",
+    "type": "mission_definition",
+    "name": { "str": "Kill the Ghoul Militant Leader" },
+    "description": "Kill the Ghoul Militant Leader",
+    "difficulty": 1,
+    "value": 0,
+    "goal": "MGOAL_ASSASSINATE",
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_GHOUL_MILBASE_3",
+        "om_special": "Ghoul Militant Base",
+        "om_terrain_replace": "field",
+        "reveal_radius": 1,
+        "min_distance": 3,
+        "search_range": 150,
+        "z": 0
+      },
+      "update_mapgen": {
+        "place_npcs": [ { "class": "fo_ghoul_cultist_leader", "x": 12, "y": 9, "target": true } ]
+      }
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "A new group of ghoul militants have come up on my radar. I need you to take care of them. They call themselves some kind of enlightened political organization, but all they do is raid and kidnap for some kind of perverse purpose. Kill their leader and they should disperse.",
+      "offer": "Kill the leader of the ghoul militant group I've marked on your map. They've been causing trouble for everybody around them and I want them dead.",
+      "accepted": "Kill those ghouls and then get back to me.",
+      "rejected": "To come this far to reject my offer, I expected better of you.",
+      "advice": "The ghoul militants are very heavily armed, so you should try to get some decent ballistic protection. They're hiding out in a cave formation as well, so use that to your advantage.",
+      "inquire": "Did you kill the ghoul miliants yet?",
+      "success": "Glad to see that group wiped who. Who knows what they would have done.",
+      "success_lie": "Don't lie to me about this, I know when you lie.",
+      "failure": "Those militants are still out there, up to no good."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "c4", "count": 3 },
+        { "u_buy_item": "grenade", "count": 4 },
+        { "u_buy_item": "grenade_inc", "count": 2 },
+        { "u_buy_item": "LAW_Packed", "count": 2 },
+        { "u_buy_item": "improvised_pipebomb", "count": 4 },
+        { "u_buy_item": "flashbang", "count": 3 },
+        { "u_buy_item": "223", "count": 250 },
+        { "u_buy_item": "cap_bottle", "count": 500 }
+
+      ]
+    }
+  }
+]
