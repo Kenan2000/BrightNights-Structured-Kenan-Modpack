@@ -61,6 +61,7 @@
     "cutting": 29,
     "turns_per_charge": 4,
     "charges_per_use": 0,
+    "revert_to": "fo_ripper_off",
     "use_action": { "menu_text": "Activate", "type": "transform", "target": "fo_ripper_off", "msg": "The ripper's blades slow to halt." },
     "techniques": "SWEEP",
     "qualities": [ [ "BUTCHER", -100 ] ],
@@ -142,6 +143,7 @@
     "flags": [ "DURABLE_MELEE", "SPEAR", "REACH_ATTACK", "SHEATH_SPEAR", "POLEARM" ],
     "ammo": [ "battery" ],
     "turns_per_charge": 6,
+    "revert_to": "fo_thermic_lance_off",
     "use_action": {
       "menu_text": "Activate",
       "type": "transform",
