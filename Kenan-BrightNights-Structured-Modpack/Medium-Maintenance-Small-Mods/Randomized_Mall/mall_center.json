@@ -168,7 +168,7 @@
         "J": "t_slide"
       },
       "items": {
-        "V": { "item": "arcade_prizes", "chance": 99, "amount": [ 10, 20 ]},
+        "V": { "item": "arcade_prizes", "chance": 99, "repeat": [ 10, 20 ]},
         "l": { "item": "coat_rack", "chance": 25 }
       },
     "item": {
@@ -270,7 +270,7 @@
       "terrain":{ "4": "t_machinery_electronic" },
       "items": {
         "l": { "item": "coat_rack", "chance": 80 },
-        "X": { "item": "hardware_bulk", "chance": 30, "amount": [ 3, 6 ]},
+        "X": { "item": "hardware_bulk", "chance": 30, "repeat": [ 3, 6 ]},
         "x": { "item": "sports", "chance": 25 }
       },
       "vehicles": { "v": { "vehicle": "forklift", "chance": 80, "status": 0 } }
