@@ -2,6 +2,7 @@
   {
     "id": "gyro_pistol",
     "looks_like": "glock_17",
+    "copy-from": "pistol_base",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "MBA Gyrojet", "str_pl": "MBA Gyrojet" },
@@ -12,10 +13,8 @@
     "to_hit": -2,
     "bashing": 8,
     "material": [ "steel", "plastic" ],
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "13mm_gyro" ],
-    "skill": "pistol",
     "dispersion": 680,
     "durability": 3,
     "min_cycle_recoil": 504,
@@ -32,22 +31,11 @@
     "id": "gyro_pistol_enhanced",
     "looks_like": "glock_17",
     "type": "GUN",
-    "reload_noise_volume": 10,
+    "copy-from": "gyro_pistol",
     "name": { "str": "TAC Gyrojet", "str_pl": "TAC Gyrojet" },
     "description": "Reworked from an old design, this baby is like an old gyrojet, but it actually works reliably.",
-    "weight": "820 g",
-    "volume": "500 ml",
-    "price": "750 USD",
-    "to_hit": -2,
-    "bashing": 8,
-    "material": [ "steel", "plastic" ],
-    "symbol": "(",
-    "color": "dark_gray",
-    "ammo": [ "13mm_gyro" ],
-    "skill": "pistol",
     "dispersion": 240,
     "durability": 8,
-    "min_cycle_recoil": 504,
     "valid_mod_locations": [
       [ "accessories", 2 ],
       [ "barrel", 1 ],
@@ -57,10 +45,7 @@
       [ "sights", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
-    ],
-    "faults": [ "fault_gun_dirt", "fault_gun_chamber_spent" ],
-    "magazine_well": "250 ml",
-    "magazines": [ [ "13mm_gyro", [ "13mm_gyro_mag" ] ] ]
+    ]
   },
   
   

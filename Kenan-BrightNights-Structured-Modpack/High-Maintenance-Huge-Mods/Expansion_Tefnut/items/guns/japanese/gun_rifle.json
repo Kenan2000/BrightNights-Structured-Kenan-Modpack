@@ -3,6 +3,7 @@
     "id": "type100",
     "looks_like": "hk_mp5",
     "type": "GUN",
+    "copy-from": "smg_base",
     "reload_noise_volume": 10,
     "name": { "str": "Nambu Type 100" },
     "description": "The Japanese submachine gun of the second world war, the Type 100 fires the weak 8x22mm Nambu round. Nonetheless, it was used by paratroopers and infantry, though it didn't get very much attention at all compared to the Type 99 LMG. It's decently reliable, possibly because of the weaker ammunition.",
@@ -13,10 +14,8 @@
     "to_hit": -2,
     "bashing": 10,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
     "color": "brown",
     "ammo": [ "8x22mm" ],
-    "skill": "smg",
     "ranged_damage": { "damage_type": "bullet", "amount": 2 },
     "dispersion": 360,
     "durability": 7,
@@ -40,9 +39,7 @@
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
     "magazines": [ [ "8x22mm", [ "type100mag" ] ] ]
   },
-  
-  
-    {
+  {
     "id": "type30",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -79,8 +76,6 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-  
   {
     "id": "type30_carbine",
     "copy-from": "rifle_manual",
@@ -118,9 +113,7 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-  
-      {
+  {
     "id": "type38",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -157,9 +150,7 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-  
-        {
+  {
     "id": "type38_carbine",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -196,8 +187,7 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-        {
+  {
     "id": "type1_tera",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -235,8 +225,6 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-  
   {
     "id": "type97",
     "copy-from": "rifle_manual",
@@ -275,10 +263,10 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-    {
+  {
     "id": "type96",
     "looks_like": "ar15",
+    "copy-from": "mg_base",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "Type 96 LMG" },
@@ -290,16 +278,14 @@
     "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "6x50mm" ],
-    "skill": "rifle",
     "dispersion": 180,
     "durability": 6,
     "min_cycle_recoil": 3420,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
     "barrel_length": "1000 ml",
-		    "built_in_mods": [ "bipod" ],
+    "built_in_mods": [ "bipod" ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -322,6 +308,7 @@
     "id": "type3",
     "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "mg_base",
     "reload_noise_volume": 10,
     "name": { "str": "Type 3 HMG" },
     "description": "Used in the second world war, the Type 3 was a heavy machine gun, made to be mounted on a tripod. It looks light enough to be used manually, however, albeit with difficulty.",
@@ -358,9 +345,7 @@
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
     "magazines": [ [ "6x50mm", [ "belt6x50mm" ] ] ]
   },
-  
-  
-        {
+  {
     "id": "type99",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -397,9 +382,7 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-  
-          {
+  {
     "id": "type99_carbine",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -436,9 +419,7 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-  
-          {
+  {
     "id": "type99_sniper",
     "copy-from": "rifle_manual",
     "looks_like": "ar15",
@@ -476,11 +457,11 @@
     ],
     "flags": [ "RELOAD_ONE" ]
   },
-  
-      {
+  {
     "id": "type99_lmg",
     "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "mg_base",
     "reload_noise_volume": 10,
     "name": { "str": "Type 99 LMG" },
     "description": "Not to be confused with the Type 99 rifle, this LMG fires the powerful 7.7x58mm Arisaka round to devastating effect. It far outperforms the inferior Type 96 due to the bigger cartridge and improved parts",
@@ -491,16 +472,14 @@
     "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "7x58mm" ],
-    "skill": "rifle",
     "dispersion": 180,
     "durability": 8,
     "min_cycle_recoil": 3420,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
     "barrel_length": "1000 ml",
-		    "built_in_mods": [ "bipod" ],
+    "built_in_mods": [ "bipod" ],
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -518,11 +497,11 @@
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
     "magazines": [ [ "7x58mm", [ "type99mag", "belt7x58mm" ] ] ]
   },
-  
-      {
+  {
     "id": "type92",
     "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "mg_base",
     "reload_noise_volume": 10,
     "name": { "str": "Type 92 HMG" },
     "description": "A heavy machine gun from the second world war, used by the Japanese. It fires the powerful 7.7x58mm Arisaka round at high speeds. While meant to be mounted, you could probably fire it yourself if you were strong enough. It was often originally used as an anti-air gun, and was used up until and through the Vietnam war.",
@@ -533,10 +512,8 @@
     "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "7x58mm" ],
-    "skill": "rifle",
     "dispersion": 180,
     "durability": 6,
     "min_cycle_recoil": 3420,
