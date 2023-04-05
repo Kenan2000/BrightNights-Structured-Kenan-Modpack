@@ -1,0 +1,524 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_QUARTERMASTER",
+    "class": "NC_MAQUIS_QUARTERMASTER",
+    "attitude": 0,
+    "mission": 7,
+    "name_suffix": "Quartermaster",
+    "gender": "male",
+    "chat": "TALK_MAQUIS_QUARTERMASTER_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_QUARTERMASTER",
+    "name": { "str": "Maquis-The Quartermaster" },
+    "job_description": "I'm here to keep the logistics of the resistance moving forward.",
+    "common": false,
+    "traits": [
+      { "trait": "DKZ_LEADER", "prob": 100 },
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "ANTIJUNK", "prob": 100 },
+      { "trait": "JITTERY", "prob": 100 },
+      { "trait": "DISRESISTANT", "prob": 100 },
+      { "trait": "INFRESIST", "prob": 100 },
+      { "trait": "ROBUST", "prob": 100 },
+      { "trait": "NIGHTVISION", "prob": 100 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } }
+    ],
+    "bionics": [
+      { "id": "bio_metabolics", "chance": 100 },
+      { "id": "bio_power_armor_interface_mkII", "chance": 100 },
+      { "id": "bio_power_storage_mkII", "chance": 100 }
+    ],	
+    "worn_override": "NC_MAQUIS_QUARTERMASTER_worn",
+    "carry_override": "NC_MAQUIS_QUARTERMASTER_carried",
+    "weapon_override": "NC_MAQUIS_QUARTERMASTER_weapon",
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ -3, -2 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 1, 2 ] }
+  },
+  {
+    "id": "NC_MAQUIS_QUARTERMASTER_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "rm103a_pistol" } ]
+  },
+  {
+    "id": "NC_MAQUIS_QUARTERMASTER_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_shorts" },
+      { "item": "socks" },
+      { "item": "boots_hiking" },
+      { "item": "postman_shorts" },
+      { "item": "postman_shirt" },
+      { "item": "postman_hat" },
+      { "item": "backpack" },
+      { "item": "badge_deputy" },
+      { "item": "keffiyeh" },
+      {
+        "item": "light_minus_battery_cell",
+        "ammo-item": "battery",
+        "charges": 150,
+        "container-item": "dkz_zenture_industries_premium_zwatch"
+      }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_QUARTERMASTER_carried",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "8x40_10_mag", "charges-min": 7, "count": 2 },
+      { "item": "8mm_caseless", "count": 3 },
+      { "item": "multitool" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": [ "What do you require citizen?.", "I'm kind of busy right now." ],
+    "responses": [
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "effect": { "u_add_var": "u_Ask_QM_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            {
+              "not": { "u_has_var": "u_Ask_QM_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "opinion": { "trust": 2, "value": 2 },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I the sole survivor from a combat patrol mission and need to immediately debrief whoever is in charge.",
+        "effect": { "npc_add_var": "u_Ask_QM_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            {
+              "not": { "npc_has_var": "u_Ask_QM_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "opinion": { "trust": 4, "value": 6 },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BIG_BROTHER"
+      },
+      {
+        "text": "I want to join the Maquis.",
+        "effect": { "u_add_var": "u_Ask_QM_Join_Maquis", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_Ask_QM_Join_Maquis", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_any_trait": [ "DKZ_LEADER", "DKZ_TECH", "DKZ_COMBAT", "DKZ_MEDIC", "DKZ_SCIENTIST" , "DKZ_QUISLING" ] } },
+            {
+              "u_compare_var": "maquis_morale",
+              "type": "counter",
+              "context": "refugee_center",
+              "op": ">",
+              "value": 0
+            }
+          ]
+        },
+        "opinion": { "trust": 1, "value": 1 },
+        "topic": "TALK_QUARTERMASTER_ASK_ABOUT_JOINING_MAQUIS"
+      },
+      {
+        "text": "Mr. Erikson has requested that I coordinate base building.",
+        "condition": { "u_has_var": "u_Talk_To_ChadErikson_about_BaseBuilding", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_START"
+      },
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_QUARTERMASTER_TRADE" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_QUARTERMASTER_DOING" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_QUARTERMASTER_LEADERSHIP" },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_QUARTERMASTER_ASK_ABOUT_JOINING_MAQUIS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Thats great.  We always need help in the fight against the alien invader.  How do you want to help out?  Keep in mind you can change your mind as much and and frequently as you want.  There are many ways to defeat the xenoids."
+    ],
+    "responses": [
+      {
+        "text": "I just want to kill aliens.  The most direct way possible.",
+        "effect": [
+          { "u_add_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_NONE"
+      },
+      {
+        "text": "I want to help lead the fight against the xenoids.",
+        "effect": [
+          { "u_add_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_NONE"
+      },
+      {
+        "text": "I want to provide medical support and heal people.",
+        "effect": [
+          { "u_add_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_NONE"
+      },
+      {
+        "text": "I want to study the aliens to better defeat them.",
+        "effect": [
+          { "u_add_trait": "DKZ_SCIENTIST" },
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_TECH" }
+        ],
+        "topic": "TALK_NONE"
+      },
+      {
+        "text": "I want to engineer better technology to kill xenoids.",
+        "effect": [
+          { "u_add_trait": "DKZ_TECH" },
+          { "u_lose_trait": "DKZ_COMBAT" },
+          { "u_lose_trait": "DKZ_LEADER" },
+          { "u_lose_trait": "DKZ_MEDIC" },
+          { "u_lose_trait": "DKZ_SCIENTIST" }
+        ],
+        "topic": "TALK_NONE"
+      }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      {
+        "u_has_var": "u_met_Chad_Erikson",
+        "type": "general",
+        "context": "meeting",
+        "value": "yes",
+        "yes": [
+          "Mr. Erikson is probably still upstairs in his office.",
+          "I'm not sure where the boss is now, but he is probably upstairs somewhere."
+        ],
+        "no": [
+          "Mr. Erikson is always coming and going, he's got an office upstairs on the seventh floor.",
+          "I'm not sure where the boss is now, but he's probably somewhere on the seventh floor",
+          "Mr. Erikson is probably upstairs in his office on the seventh floor."
+        ]
+      }
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_LEADERSHIP",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "MrEriksonExists",
+      "type": "knowledge",
+      "context": "flag",
+      "value": "yes",
+      "yes": "The Maquis are numerous bands of survivors, former military operators, even mutated humans, that are united against the xenoid invaders.  Of everything going in with the cataclysm, the extra-terrestrial invasion takes priority.",
+      "no": "The Maquis don't just let any random survivor walk into a resistance base and speak to the commander of the local cell, you need to demonstrate that you are really with us.  Try talking to people around and see if anyone needs help or if you're up for a combat mission, I might find someone to talk you out on patrol."
+    },
+    "responses": [
+      {
+        "text": "I've been helping everyone around here, I want to meet the man in charge.",
+        "topic": "TALK_MISSION_INQUIRE",
+        "condition": { "u_compare_var": "maquis_morale", "type": "counter", "context": "refugee_center", "op": ">", "value": 10 }
+      },
+      { "text": "Ok, Thanks.", "topic": "TALK_NONE" },
+      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Just moving freight around to keep the resistance moving.",
+      "Amateurs study tactics, experts study logistics.",
+      "This entire tower might be one of the last good places left in New England, let alone the world.  Its kind of awesome when you think about it."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_QUARTERMASTER_TRADE" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_QUARTERMASTER_LEADERSHIP" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_QUARTERMASTER_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_TRADE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "No.  I can not sell anything, all goods are all spoken for.",
+      "I do not have anything for sale.  Don't ask again.",
+      "Then you should go find one of the many merchants around the tower.  They are scattered around all over."
+    ],
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE", "opinion": { "trust": -1, "value": -1 } } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_START",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Well now that you mention it, I could use someone to act as point for a number of projects around the tower.  There is so much room around here to expand, and so many different ways to do so.  If you can go around and convince some people to move boxes around, then the Maquis can expand to add new facilities.  This can't be done instantaneously though, because everyone here already have jobs to do.  If you think everyone around here is completely stationary, think again."
+    ],
+    "responses": [
+      {
+        "text": "Alright I'll lead the way, what options do we have?",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL"
+      },
+      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There are alot of different options for initial expansion.  Do you have any ideas to start with?",
+      "Do you have an idea how you would want to start the initial expansion?"
+    ],
+    "responses": [
+      {
+        "text": "Protecting the remaining citizens is the ultimate priority.",
+        "condition": { "u_has_any_trait": [ "DKZ_LEADER" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_LEADERSHIP_INITIAL"
+      },
+      {
+        "text": "First thing is setting up an area to recover alien technology.",
+        "condition": { "u_has_any_trait": [ "DKZ_TECHNICIAN" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_TECH_INITIAL"
+      },
+      {
+        "text": "Lets focus on getting a triage area and multiple recovery zones ready first.",
+        "condition": { "u_has_any_trait": [ "DKZ_MEDIC" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_MEDICAL_INITIAL"
+      },
+      {
+        "text": "We need to understand our enemy to defeat them.  Lets help the scientists first.",
+        "condition": { "u_has_any_trait": [ "DKZ_SCIENTIST" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_SCIENCE_INITIAL"
+      },
+      {
+        "text": "Better weapons and tactics help everyone.  Lets get a shooting range and bullet reloading running first.",
+        "condition": { "u_has_any_trait": [ "DKZ_COMBAT" ] },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMBAT_INITIAL"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE"
+      },
+      { "text": "I changed my mind.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Well there are several other directions that we could expand, but we can't do everything at once. First thing we need is to create a dedicated medical area.  So far, casualties are treated by comrades-in-arms during battle, or taken away for dedicated treatment.  What we need is several large areas where people can safely recover, and I have a few places in mind already.  I've also gotten requests from the lab-techs and scientists upstairs for additional resources so they can analyze the Xenoids technology and biology.  There is also talk about setting up dedicated areas as shooting ranges and for small-arms production."
+    ],
+    "responses": [
+      {
+        "text": "Protecting the remaining citizens is the ultimate priority.",
+        "condition": { "not": { "u_has_any_trait": [ "DKZ_LEADER" ] } },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_LEADERSHIP_INITIAL"
+      },
+      {
+        "text": "First thing is setting up an area to recover alien technology.",
+        "condition": { "not": { "u_has_any_trait": [ "DKZ_TECHNICIAN" ] } },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_TECH_INITIAL"
+      },
+      {
+        "text": "Lets focus on getting a triage area and multiple recovery zones ready first.",
+        "condition": { "not": { "u_has_any_trait": [ "DKZ_MEDIC" ] } },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_MEDICAL_INITIAL"
+      },
+      {
+        "text": "We need to understand our enemy to defeat them.  Lets help the scientists first.",
+        "condition": { "not": { "u_has_any_trait": [ "DKZ_SCIENTIST" ] } },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_SCIENCE_INITIAL"
+      },
+      {
+        "text": "Better weapons and tactics help everyone.  Lets get a shooting range running first.",
+        "condition": { "not": { "u_has_any_trait": [ "DKZ_COMBAT" ] } },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMBAT_INITIAL"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INITIAL"
+      },
+      { "text": "I changed my mind.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "--- LEADERSHIP --------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_LEADERSHIP_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "The many floors of the building are full of cardboard boxes and junk but there is plenty of space that could be turned into better living quarters for refugees.  In a few days every nook and cranny could be used for refugees."
+    ],
+    "responses": [
+      {
+        "text": "Ok, lets begin.",
+        "effect": [
+          { "npc_add_effect": "dkz_base_build_leadership", "duration": 60000 },
+          { "u_add_effect": "dkz_base_build_started", "duration": 60000 }
+        ],
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMMENCE"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE"
+      },
+      { "text": "Lets discuss something else.", "topic": "TALK_MAQUIS_QUARTERMASTER_ROOT" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "--- TECHNICAN ---------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_TECH_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "A lot of engineers on the seventh floor were rescued from a research lab before everything went down, they're grateful to be alive and could get a new laboratory up and running in a few days."
+    ],
+    "responses": [
+      {
+        "text": "Ok, lets begin.",
+        "effect": [
+          { "npc_add_effect": "dkz_base_build_technical", "duration": 60000 },
+          { "u_add_effect": "dkz_base_build_started", "duration": 60000 }
+        ],
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMMENCE"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE"
+      },
+      { "text": "Lets discuss something else.", "topic": "TALK_MAQUIS_QUARTERMASTER_ROOT" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "--- SCIENCE -----------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_SCIENCE_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "A lot of scientists on the seventh floor were rescued from a research lab before everything went down, they're grateful to be alive and could get a new laboratory up and running in a few days."
+    ],
+    "responses": [
+      {
+        "text": "Ok, lets begin.",
+        "effect": [
+          { "npc_add_effect": "dkz_base_build_science", "duration": 60000 },
+          { "u_add_effect": "dkz_base_build_started", "duration": 60000 }
+        ],
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMMENCE"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE"
+      },
+      { "text": "Lets discuss something else.", "topic": "TALK_MAQUIS_QUARTERMASTER_ROOT" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "--- MEDICAL -----------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_MEDICAL_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There are several areas on the ground floor that could become triage zones, and it shouldn't be too hard to find a volunteer with first aid training.  Also, we can get several more recovery areas ready, but that will take a few days to complete."
+    ],
+    "responses": [
+      {
+        "text": "Ok, lets begin.",
+        "effect": [
+          { "mapgen_update": "dkz_base_build_medical_1", "om_terrain": "racing_tower_z0_4_3" },
+          { "npc_add_effect": "dkz_base_build_medical" },
+          { "npc_add_effect": "dkz_base_build_started" },
+          { "u_add_effect": "dkz_base_build_started", "duration": 600 },
+          { "u_add_effect": "dkz_base_build_medical" }
+        ],
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMMENCE"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE"
+      },
+      { "text": "Lets discuss something else.", "topic": "TALK_MAQUIS_QUARTERMASTER_ROOT" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "--- COMBAT ------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMBAT_INITIAL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Well I see few of the combative types are already loitering around under the central skylight, that's as good a place to congregate as any, and it shouldn't be too hard to find a few more.  Also, we can get a dedicated shooting area in the lower basement completed in a few days."
+    ],
+    "responses": [
+      {
+        "text": "Ok, lets begin.",
+        "effect": [
+          { "npc_add_effect": "dkz_base_build_combat", "duration": 60000 },
+          { "u_add_effect": "dkz_base_build_started", "duration": 60000 }
+        ],
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMMENCE"
+      },
+      {
+        "text": "Maybe we should start in a different direction.",
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INVERSE"
+      },
+      { "text": "Lets discuss something else.", "topic": "TALK_MAQUIS_QUARTERMASTER_ROOT" },
+      { "text": "I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "--- COMBAT ------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_COMMENCE",
+    "type": "talk_topic",
+    "dynamic_line": [ "Ok, in a few days it should be completed." ],
+    "responses": [ { "text": "I have to go now.", "topic": "TALK_DONE" } ]
+  }
+]

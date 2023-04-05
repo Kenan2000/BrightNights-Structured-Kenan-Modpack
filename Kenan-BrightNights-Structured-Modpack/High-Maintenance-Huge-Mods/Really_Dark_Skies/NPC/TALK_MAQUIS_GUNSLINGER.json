@@ -1,0 +1,238 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_GUNSLINGER",
+    "class": "NC_MAQUIS_GUNSLINGER",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "male",
+    "chat": "TALK_MAQUIS_GUNSLINGER_ROOT",
+    "mission_offered": "DKZ_MAQUIS_GUNSLINGER_CARDS_MISSION_1",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_GUNSLINGER",
+    "name": { "str": "Maquis-Gunslinger" },
+    "job_description": "I'm here to shoot the wings off flies, but shooting aliens works too.",
+    "common": false,
+    "traits": [
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "WAKEFUL", "prob": 80 },
+      { "trait": "GOODHEARING", "prob": 50 },
+      { "trait": "ROBUST", "prob": 50 },
+      { "trait": "PRETTY", "prob": 15 },
+      { "trait": "ANTIJUNK", "prob": 50 },
+      { "trait": "NAUSEA", "prob": 3 },
+      { "trait": "HUNGER", "prob": 2 },
+      { "trait": "DEX_ALPHA", "prob": 90 },
+      { "trait": "INT_ALPHA", "prob": 20 },
+      { "trait": "PER_ALPHA", "prob": 20 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 5, 8 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 7, 8 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 5 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_GUNSLINGER_worn",
+    "weapon_override": "NC_MAQUIS_GUNSLINGER_weapon",
+    "carry_override": "NC_MAQUIS_GUNSLINGER_carry",
+    "bonus_str": { "rng": [ 1, 3 ] },
+    "bonus_dex": { "rng": [ 3, 5 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ 3, 5 ] }
+  },
+  {
+    "id": "NC_MAQUIS_GUNSLINGER_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [ { "item": "boxer_shorts", "prob": 85 }, { "item": "boxer_briefs", "prob": 85 }, { "item": "briefs", "prob": 15 } ]
+      },
+      {
+        "distribution": [ { "item": "socks", "prob": 55 }, { "item": "socks_ankle", "prob": 45 }, { "item": "socks_wool", "prob": 15 } ]
+      },
+      {
+        "distribution": [ { "item": "undershirt", "prob": 80 }, { "item": "long_undertop", "prob": 20 }, { "item": "tank_top", "prob": 5 } ]
+      },
+      {
+        "distribution": [
+          { "item": "jeans", "prob": 20 },
+          { "item": "pants", "prob": 20 },
+          { "item": "pants_leather", "prob": 20 },
+          { "item": "bunker_pants", "prob": 20 }
+        ]
+      },
+      {
+        "distribution": [ { "item": "gloves_leather", "prob": 15 }, { "item": "gloves_fingerless", "prob": 85 }, { "item": "null", "prob": 5 } ]
+      },
+      {
+        "distribution": [
+          { "item": "null", "prob": 5 },
+          { "item": "fancy_sunglasses", "prob": 60 },
+          { "item": "glasses_bal", "prob": 30 },
+          { "item": "sunglasses", "prob": 20 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "hat_ball", "prob": 10 },
+          { "item": "tricorne", "prob": 50 },
+          { "item": "cowboy_hat", "prob": 80 },
+          { "item": "hat_sombrero", "prob": 60 },
+          { "item": "hat_hunting", "prob": 20 },
+          { "item": "hat_boonie", "prob": 30 }
+        ]
+      },
+      { "group": "DKZ_armor_improvised_arm", "prob": 90 },
+      { "group": "DKZ_armor_improvised_leg", "prob": 90 },
+      { "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 } ] },
+      { "item": "badge_marshal", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_GUNSLINGER_weapon",
+    "subtype": "distribution",
+    "entries": [ { "group": "guns_pistol_milspec", "prob": 115 } ]
+  },
+  {
+    "id": "NC_MAQUIS_GUNSLINGER_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "multitool" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Are you lost, marshal?", "Don't start any trouble marshal, you aren't the law anymore." ],
+      "no": [ "Don't cause any trouble here, I'd rather kill monsters than people.", "Safe travels." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_GUNSLINGER_DOING" },
+      { "text": "What is upstairs?", "topic": "TALK_MAQUIS_GUNSLINGER_UPSTAIRS" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_GUNSLINGER_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "Maquis_Gunslinger_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Mr. Erikson is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There are some mutants in the upper floors and some in the basement, but they're good people.  So long as you don't stare at the heavily deformed ones.",
+      "My trigger finger is itching, must be some trouble on the horizon.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_UPSTAIRS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Sometimes I'll go up to the roof to help with sniper overwatch.  Its fun to use the really powerful rifles even if we can't take them down here.",
+      "I only go upstairs to check out the casino, its fun to use looted cash cards to gamble.  I'm up almost a hundred-thousand dollars.",
+      "The library is nice, they're always on the look for more books, the more rare, the more they'll give for them."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "DKZ_MAQUIS_GUNSLINGER_CARDS_MISSION_1",
+    "type": "mission_definition",
+    "name": { "str": "Work While Busy" },
+    "description": "Find a few packs of playing cards.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 2,
+    "value": 0,
+    "item": "deck_of_cards",
+    "count": 3,
+    "end": {
+      "effect": [
+        { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 1 },
+        { "npc_add_var": "Maquis_Gunslinger_Mission1", "type": "mission", "context": "flag", "value": "yes" }
+      ]
+    },
+    "followup": "DKZ_MAQUIS_GUNSLINGER_CARDS_MISSION_1",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I'd like a few packs of playing cards.",
+      "offer": "I really like tossing a card up in the air and shooting holes in it before it hits the ground, and its fun to play solitaire between watches.  Could you find me a few packs of playing cards?",
+      "accepted": "Just bring it to me when you have it.",
+      "rejected": "Nevermind then.  I hope you'll change your mind.",
+      "advice": "I'd loot libraries and bookstores.",
+      "inquire": "So, have you found the cards?",
+      "success": "Thank you.  This will keep me busy for a while.  Please take this as a token of my gratitude.",
+      "success_lie": "Could you give them to me?",
+      "failure": "Fine.  I can read something else."
+    }
+  }
+]

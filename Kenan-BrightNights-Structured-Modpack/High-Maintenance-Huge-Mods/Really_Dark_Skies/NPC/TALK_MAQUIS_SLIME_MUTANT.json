@@ -1,0 +1,144 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_SLIME_MUTANT",
+    "class": "NC_MAQUIS_SLIME_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_MAQUIS_SLIME_MUTANT_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_SLIME_MUTANT",
+    "name": { "str": "Maquis-Slime Mutant" },
+    "job_description": "I'm a slime girl.",
+    "common": false,
+    "traits": [
+      { "trait": "THRESH_SLIME" },
+      { "trait": "PER_SLIME_OK" },
+      { "trait": "INT_SLIME" },
+      { "trait": "DEX_UP" },
+      { "trait": "BENDY3" },
+      { "trait": "VISCOUS", "prob": 100 },
+      { "trait": "CHEMIMBALANCE", "prob": 90 },
+      { "trait": "POISRESIST", "prob": 90 },
+      { "trait": "AMORPHOUS", "prob": 50 },
+      { "trait": "REGEN", "prob": 30 },
+      { "trait": "RADIOGENIC", "prob": 10 },
+      { "trait": "RADIOACTIVE1", "prob": 0 },
+      { "trait": "PARAIMMUNE", "prob": 50 },
+      { "trait": "POISONOUS", "prob": 50 },
+      { "trait": "SLIME_HANDS", "prob": 50 },
+      { "trait": "WEBBED", "prob": 50 },
+      { "trait": "HUNGER2", "prob": 50 },
+      { "trait": "THIRST2", "prob": 50 },
+      { "trait": "HOLLOW_BONES", "prob": 30 },
+      { "trait": "ROBUST", "prob": 20 },
+      { "trait": "UNSTABLE", "prob": 20 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_SLIME_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_SLIME_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_SLIME_MUTANT_carry",
+    "bonus_str": { "rng": [ -2, 0 ] },
+    "bonus_dex": { "rng": [ 1, 3 ] },
+    "bonus_int": { "rng": [ 3, 5 ] },
+    "bonus_per": { "rng": [ 1, 3 ] }
+  },
+  {
+    "id": "NC_MAQUIS_SLIME_MUTANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "coat_rain" }, { "item": "mbag" } ]
+  },
+  {
+    "id": "NC_MAQUIS_SLIME_MUTANT_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "q_staff" } ]
+  },
+  {
+    "id": "NC_MAQUIS_SLIME_MUTANT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "multitool" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SLIME_MUTANT_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "What faint light brought you down here, marshal?", "Are you looking for something, sir?" ],
+      "no": [ "We don't bother anyone down here and expect the same from others.", "What brings you down here, scavenger." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_SLIME_MUTANT_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_SLIME_MUTANT_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_SLIME_MUTANT_BIG_BROTHER"
+      },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SLIME_MUTANT_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "He's probably up on the roof chatting with the snipers posted up there.", "He's very rarely around here" ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SLIME_MUTANT_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Just contemplating what its like being a mutant insect during the end of the world.",
+      "Rule #1: No Killing, the penalty is death.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_SLIME_MUTANT_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_SLIME_MUTANT_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  }
+]
