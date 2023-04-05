@@ -1,0 +1,232 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_FELINE_MUTANT",
+    "class": "NC_MAQUIS_FELINE_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_MAQUIS_FELINE_MUTANT_ROOT",
+    "mission_offered": "DKZ_MAQUIS_FELINE_MUTANT_FIND_CAT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_FELINE_MUTANT",
+    "name": { "str": "Maquis-Feline Mutant" },
+    "job_description": "I'm just trying to be a lazy cat.",
+    "common": false,
+    "traits": [
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "THRESH_FELINE" },
+      { "trait": "DEX_UP_3", "prob": 100 },
+      { "trait": "FEL_EYE", "prob": 100 },
+      { "trait": "FELINE_EARS", "prob": 100 },
+      { "trait": "PRETTY", "prob": 100 },
+      { "trait": "FEL_NV", "prob": 100 },
+      { "trait": "TAIL_LONG", "prob": 80 },
+      { "trait": "WHISKERS", "prob": 80 },
+      { "trait": "SMELLY", "prob": 25 },
+      { "trait": "PADDED_FEET", "prob": 35 },
+      { "trait": "SNARL", "prob": 25 },
+      { "trait": "SNOUT", "prob": 15 },
+      { "trait": "SLEEPY2", "prob": 45 },
+      { "trait": "LIGHTSTEP", "prob": 65 },
+      { "distribution": [ { "trait": "FELINE_FUR", "prob": 70 }, { "trait": "LYNX_FUR", "prob": 30 } ] },
+      { "distribution": [ { "trait": "FANGS", "prob": 90 }, { "trait": "SABER_TEETH", "prob": 10 } ] },
+      { "distribution": [ { "trait": "CARNIVORE", "prob": 50 }, { "trait": "PRED3", "prob": 50 } ] },
+      { "distribution": [ { "trait": "CLAWS_RETRACT", "prob": 80 }, { "trait": "PAWS", "prob": 20 } ] }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_FELINE_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_FELINE_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_FELINE_MUTANT_carry",
+    "bonus_str": { "rng": [ -1, 2 ] },
+    "bonus_dex": { "rng": [ 2, 5 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ 2, 5 ] }
+  },
+  {
+    "id": "NC_MAQUIS_FELINE_MUTANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [ { "item": "boy_shorts", "prob": 50 }, { "item": "panties", "prob": 60 }, { "item": "boxer_shorts", "prob": 2 } ]
+      },
+      { "distribution": [ { "item": "socks", "prob": 50 }, { "item": "socks_ankle", "prob": 50 } ] },
+      { "distribution": [ { "item": "pants_leather", "prob": 90 }, { "item": "pants_cargo", "prob": 10 } ] },
+      { "distribution": [ { "item": "tshirt", "prob": 80 }, { "item": "tank_top", "prob": 20 } ] },
+      {
+        "distribution": [
+          { "item": "greatcoat", "prob": 10 },
+          { "item": "trenchcoat", "prob": 20 },
+          { "item": "trenchcoat_faux_fur", "prob": 40 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "pearl_collar", "prob": 1 },
+          { "item": "faux_fur_collar", "prob": 20 },
+          { "item": "fur_collar", "prob": 20 },
+          { "item": "leather_collar", "prob": 20 }
+        ]
+      },
+      { "distribution": [ { "item": "boots_combat", "prob": 20 }, { "item": "boots", "prob": 20 } ] },
+      {
+        "distribution": [ { "item": "gloves_fingerless", "prob": 30 }, { "item": "gloves_fingerless_mod", "prob": 70 } ]
+      },
+      {
+        "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 }, { "item": "mbag", "prob": 25 } ]
+      },
+      { "group": "DKZ_armor_improvised_arm", "prob": 90 },
+      { "group": "DKZ_armor_improvised_leg", "prob": 90 },
+      { "item": "ballistic_vest_esapi" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_FELINE_MUTANT_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cestus", "prob": 75 },
+      { "item": "bagh_nakha", "prob": 15 },
+      { "item": "punch_dagger", "prob": 95 },
+      { "item": "knuckle_nail", "prob": 25 },
+      { "item": "knuckle_steel", "prob": 15 },
+      { "item": "knuckle_brass", "prob": 55 }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_FELINE_MUTANT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "8x40_25_mag", "charges-min": 20, "count": 1 },
+      { "item": "8mm_caseless", "count": 5 },
+      { "item": "multitool" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELINE_MUTANT_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Buzz off, fed." ],
+      "no": [ "We don't bother anyone up here and expect the same from others.", "What brings you up here, scavenger." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "techical_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a technician for an upcoming mission, interested?",
+        "topic": "TALK_MAQUIS_TECHNICAL_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "techical_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_TECH" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_FELINE_MUTANT_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_FELINE_MUTANT_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_FELINE_MUTANT_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": { "and": [ { "not": "has_many_assigned_mission" }, { "not": "has_assigned_mission" } ] },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELINE_MUTANT_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Chad is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELINE_MUTANT_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm minding my own business, mind your own.",
+      "Just contemplating what its like being a mutant insect during the end of the world.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_FELINE_MUTANT_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_FELINE_MUTANT_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "id": "DKZ_MAQUIS_FELINE_MUTANT_FIND_CAT",
+    "type": "mission_definition",
+    "name": { "str": "Find and save the internet famous cat 'Lucky'" },
+    "goal": "MGOAL_FIND_MONSTER",
+    "difficulty": 4,
+    "value": 100000,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "has_generic_rewards": false,
+    "start": {
+      "assign_mission_target": { "om_terrain": "park", "reveal_radius": 5, "random": true, "search_range": 100, "min_distance": 25 },
+      "update_mapgen": {
+        "place_monster": [
+          { "monster": "mon_cat_chonker", "x": 22, "y": 22, "name": "Lucky", "target": true },
+          { "monster": "dkz_xenoid_berserker", "x": 1, "y": 1 }
+        ]
+      }
+    },
+    "end": {
+      "opinion": { "trust": 4, "value": 10 },
+	  
+      "effect": [
+	  
+        { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 11 },
+        { "u_add_var": "Pretty_Kitty_Found", "type": "mission", "context": "flag", "value": "yes" }
+      ]
+    },
+    "dialogue": {
+      "describe": "I need you to find a cat.",
+      "offer": "The last time I was out on patrol, I saw a cat out by a small park, but I remember seeing that same cat on the internet before everything went down.  However, it ran off before I could catch it.  I want to go back out and try to find it again but I need some help, are you up for finding a random cat in a world that's gone crazy?",
+      "accepted": "Thank you!  I don't have anything to catch the cat with, but you could probably find a pet carrier.  The cat was very fluffy and big so it might not fit into a smaller cage.  You will also need to have some cat food to make it friendly enough.",
+      "rejected": "Oh well, I'm sure a random cat will survive the cataclysm.",
+      "advice": "A cat must be friendly to you in order to accept going into confinement.  If you're having problems catching the cat, try befriending it with food.",
+      "inquire": "Have you found the cat?",
+      "success": "Thank you so much! That cat really likes you now. ",
+      "success_lie": "What?!  You're lying, I can tell!  Did you even bring a cage?",
+      "failure": "Oh no!  I guess they are too much for you…"
+    }
+  }
+]
