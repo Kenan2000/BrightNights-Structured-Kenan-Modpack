@@ -1,0 +1,95 @@
+[
+  {
+    "type": "effect_type",
+    "id": "panic",
+    "name": [ "Panicking" ],
+    "desc": [ "You just can't stop shaking and are overwhelmed by existential fear!" ],
+    "apply_message": "An all consuming dread overwhelms your mind and you begin to shake uncontrollably!",
+    "rating": "bad",
+    "remove_message": "Your feel your heart-rate slow back to normal.",
+    "miss_messages": [ [ "You shake uncontrollably", 4 ] ],
+    "base_mods": {
+      "dex_mod": [ -2 ],
+      "int_mod": [ -1 ],
+      "per_mod": [ -3 ],
+      "fatigue_amount": [ 2 ],
+      "vomit_chance": [ 25 ],
+      "vomit_tick": [ 15 ],
+      "pain_amount": [ 1 ]
+    },
+    "show_in_info": true
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_switch_focus",
+    "//": "This marks a player as having switched their role-playing focus.",
+    "show_in_info": false
+  },  
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_started",
+    "//": "This marks a player as having begun base building at Barter Tower.",
+    "remove_message": "You realize that the upgrade at Maquis Headquarters should be completed by now.",	
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_combat",
+    "//": "This marks a player as focusing on combat aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz__base_build_technical",
+    "//": "This marks a player as focusing on technical aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_medical",
+    "//": "This marks a player as focusing on medical aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_science",
+    "//": "This marks a player as focusing on scientific aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz__base_build_leadership",
+    "//": "This marks a player as focusing on leadership aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_combat_done",
+    "//": "This marks a player as having finished combat aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz__base_build_technical_done",
+    "//": "This marks a player as having finished technical aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_medical_done",
+    "//": "This marks a player as having finished medical aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz_base_build_science_done",
+    "//": "This marks a player as having finished scientific aspects in base building at Barter Tower.",
+    "show_in_info": false
+  },
+  {
+    "type": "effect_type",
+    "id": "dkz__base_build_leadership_done",
+    "//": "This marks a player as having finished leadership aspects in base building at Barter Tower.",
+    "show_in_info": false
+  }
+]
