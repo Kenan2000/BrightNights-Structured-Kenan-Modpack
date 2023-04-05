@@ -1,0 +1,100 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_pavement_light",
+    "name": "pavement",
+    "connects_to": "PAVEMENT",
+    "description": "A segment of asphalt, slowly degrading from cracks.",
+    "symbol": ".",
+	"looks_like": "t_pavement",
+    "light_emitted": 60,	
+    "color": "dark_gray",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE" ],
+    "bash": {
+      "ter_set": "t_null",
+      "str_min": 50,
+      "str_max": 400,
+      "str_min_supported": 100,
+      "items": [ { "item": "rock", "count": [ 2, 10 ] }, { "item": "rebar", "count": [ 0, 4 ] } ]
+    }
+  },
+
+  {
+    "type": "terrain",
+    "id": "t_sidewalk_ramp_down_high",
+    "name": "sidewalk ramp down (high end)",
+    "connects_to": "PAVEMENT",
+    "description": "The upper end of a sidewalk ramp leading down.",
+    "symbol": ">",
+    "color": "light_gray",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "ROAD", "Z_TRANSPARENT" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_sidewalk_ramp_down_low",
+    "name": "sidewalk ramp down (low end)",
+    "connects_to": "WALL",
+    "description": "The lower end of a sidewalk ramp leading down.",
+    "symbol": ">",
+    "color": "light_gray",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "ROAD", "RAMP_DOWN", "Z_TRANSPARENT" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_sidewalk_ramp_up_high",
+    "name": "sidewalk ramp up (high end)",
+    "connects_to": "WALL",
+    "description": "The upper end of a sidewalk ramp leading up.",
+    "symbol": "<",
+    "color": "light_gray",
+    "move_cost": 2,
+    "flags": [ "ROAD", "RAMP_UP" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_sidewalk_ramp_up_low",
+    "name": "sidewalk ramp up (low end)",
+    "description": "The lower end of a sidewalk ramp leading up.",
+    "symbol": "<",
+    "color": "light_gray",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "ROAD" ]
+  },
+  {
+    "id": "fd_mechanical_fluid",
+    "type": "field_type",
+    "intensity_levels": [
+      { "name": "mechanical fluid splatter", "color": "light_gray" },
+      { "name": "mechanical fluid stain" },
+      { "name": "puddle of mechanical fluid", "color": "dark_gray" }
+    ],
+    "description_affix": "covered_in",
+    "is_splattering": true,
+    "half_life": "10 days",
+    "phase": "liquid",
+    "display_field": true,
+    "looks_like": "fd_sludge"
+  },
+  {
+    "type": "terrain",
+    "id": "t_zebra",
+    "alias": [ "t_zebra_h", "t_zebra_v" ],
+    "name": "pedestrian crossing",
+    "connects_to": "PAVEMENT",
+    "description": "White polymer lines painted on the pavement which indicate places where pedestrians should cross the road.",
+    "symbol": ".",
+    "color": "white",
+    "move_cost": 2,
+    "flags": [ "TRANSPARENT", "FLAT", "ROAD", "MINEABLE" ],
+    "bash": {
+      "ter_set": "t_null",
+      "str_min": 50,
+      "str_max": 400,
+      "str_min_supported": 100,
+      "items": [ { "item": "rock", "count": [ 2, 10 ] }, { "item": "rebar", "count": [ 0, 4 ] } ]
+    }
+  } 
+]
