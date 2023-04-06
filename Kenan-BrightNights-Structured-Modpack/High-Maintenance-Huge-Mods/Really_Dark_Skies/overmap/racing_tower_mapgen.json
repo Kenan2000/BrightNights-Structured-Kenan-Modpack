@@ -321,49 +321,6 @@
   {
     "type": "mapgen",
     "method": "json",
-    "om_terrain": [ [ "racing_tower_z-4_annex1a", "racing_tower_z-4_annex1b" ] ],
-    "object": {
-      "fill_ter": "t_thconc_floor",
-      "rows": [
-        "################################################",
-        "rrrrrrrrrrrrr                                  #",
-        "rrrrrrrrrrrrr                                  #",
-        "rrrrrIrrrIrrrr                                 #",
-        "XxXXXxXXXxXWrrr                                #",
-        "rIrrrIrrrIrrrrr                                #",
-        "rIrrrIrrrIrrrrr                                #",
-        "rIrrrIrrrIrrrrr                                #",
-        "XxXXXxXXXxXWrrr                                #",
-        "rIrrrIrrrIrrrr                                 #",
-        "rrrrrrrrrrrrr                                  #",
-        "rrrrrrrrrrrrr                                  #",
-        "rrrrrrrrrrrrr                                  #",
-        "rrrrrrrrrrrrr                                  #",
-        "rIrrrIrrrIrrrr                                 #",
-        "XxXXXxXXXxXWrrr                                #",
-        "rIrrrIrrrIrrrrr                                #",
-        "rIrrrIrrrIrrrrr                                #",
-        "rIrrrIrrrIrrrrr                                #",
-        "XxXXXIXXXxXWrrr                                #",
-        "rIrrrIrrrIrrrr                                 #",
-        "rrrrrrrrrrrrr                                  #",
-        "rrrrrrrrrrr                                    #",
-        "################################################"
-		],
-      "palettes": [ "arcology_palette" ],
-      "terrain": {
-        "r": "t_railroad_rubble",
-        "-": "t_railroad_tie_h",
-        "I": "t_railroad_tie_v",
-        "X": "t_railroad_track",
-        "x": "t_railroad_track_on_tie",
-        "W": "t_buffer_stop"
-      }
-    }
-  },
-  {
-    "type": "mapgen",
-    "method": "json",
     "om_terrain": [
       [ "racing_tower_z-1_1_1", "racing_tower_z-1_2_1", "racing_tower_z-1_3_1", "racing_tower_z-1_4_1" ],
       [ "racing_tower_z-1_1_2", "racing_tower_z-1_2_2", "racing_tower_z-1_3_2", "racing_tower_z-1_4_2" ],
