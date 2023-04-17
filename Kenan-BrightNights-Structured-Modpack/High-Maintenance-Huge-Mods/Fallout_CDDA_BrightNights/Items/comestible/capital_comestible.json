@@ -12,7 +12,6 @@
     "description": "It could be eaten raw if you're desperate, but is much better cooked. Sterilized with radiation to last upwards of 200 years",
     "price": 150,
     "material": [ "wheat", "milk" ],
-    "flags": [ "EDIBLE_FROZEN" ],
     "volume": "750 ml",
     "fun": -6
   },
@@ -52,7 +51,7 @@
     "material": [ "mushroom" ],
     "volume": "250 ml",
     "fun": 3,
-    "flags": [ "FREEZERBURN", "SMOKABLE" ]
+    "flags": [ "SMOKABLE" ]
   },
   {
     "type": "COMESTIBLE",
@@ -106,8 +105,7 @@
     "price": 900,
     "material": [ "fruit" ],
     "volume": "250 ml",
-    "fun": 3,
-    "flags": [ "FREEZERBURN" ]
+    "fun": 3
   },
   {
     "type": "COMESTIBLE",
@@ -124,7 +122,6 @@
     "price": 450,
     "material": [ "powder", "veggy" ],
     "volume": "250 ml",
-    "flags": [ "EDIBLE_FROZEN" ],
     "charges": 10,
     "fun": -5
   },
@@ -237,7 +234,6 @@
     "price": 400,
     "material": [ "junk" ],
     "volume": "250 ml",
-    "flags": [ "EDIBLE_FROZEN" ],
     "charges": 12,
     "fun": 10
   },
@@ -255,7 +251,6 @@
     "description": "Processed and irradiated devilled eggs. Theyre good, though!",
     "price": 150,
     "material": [ "junk", "milk", "egg" ],
-    "flags": [ "EDIBLE_FROZEN" ],
     "volume": "750 ml",
     "fun": 6
   },

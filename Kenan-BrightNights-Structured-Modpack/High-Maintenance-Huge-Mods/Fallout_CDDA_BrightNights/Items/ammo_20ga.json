@@ -14,7 +14,8 @@
     "stack_size": 20,
     "ammo_type": "20ga",
     "casing": "20ga_hull",
-    "range": 12,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 10, "length": 12 } ],
     "damage": { "damage_type": "bullet", "amount": 40 },
     "recoil": 1500,
     "loudness": 160,
@@ -48,7 +49,7 @@
     "description": "A heavy metal slug used with shotguns to give them the range capabilities of a rifle.  Extremely damaging but rather inaccurate.",
     "price": "45 USD",
     "dispersion": 100,
-    "relative": { "range": 12, "damage": { "damage_type": "bullet", "armor_penetration": 6 } },
+    "relative": { "damage": { "damage_type": "bullet", "armor_penetration": 6 } },
     "proportional": { "recoil": 1.4 },
     "delete": { "effects": [ "SHOT" ] }
   }
