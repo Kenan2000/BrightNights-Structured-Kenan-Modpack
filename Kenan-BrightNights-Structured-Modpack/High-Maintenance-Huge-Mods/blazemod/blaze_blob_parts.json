@@ -293,7 +293,7 @@
     "breaks_into": [ { "item": "glooplegrow" } ],
     "description": "A living blob, formed into a storage space for holding liquids.  If filled with the appropriate fuel for the vehicle's engine, the engine will automatically draw fuel from the tank when the engine is on.  If filled with water, you can access the water from a water faucet, if one is installed in the vehicle.  You can also use a rubber hose to siphon liquids out of a tank.",
     "requirements": { "repair": { "time": "5 m", "using": [ [ "blobrep", 1 ] ] } },
-    "flags": [ "FOLDABLE", "FUEL_TANK" ]
+    "flags": [ "FOLDABLE", "FLUIDTANK" ]
   },
   {
     "id": "gloople_tank_large",
@@ -684,7 +684,7 @@
     "breaks_into": [ { "item": "graygrow" } ],
     "description": "A living blob, formed into a storage space for holding liquids.  If filled with the appropriate fuel for the vehicle's engine, the engine will automatically draw fuel from the tank when the engine is on.  If filled with water, you can access the water from a water faucet, if one is installed in the vehicle.  You can also use a rubber hose to siphon liquids out of a tank.",
     "requirements": { "repair": { "time": "5 m", "using": [ [ "blobrep", 1 ] ] } },
-    "flags": [ "FOLDABLE", "FUEL_TANK" ]
+    "flags": [ "FOLDABLE", "FLUIDTANK" ]
   },
   {
     "id": "gray_tank_large",
@@ -1278,7 +1278,7 @@
     "breaks_into": [ { "item": "oozlegrow" } ],
     "requirements": { "repair": { "time": "5 m", "using": [ [ "blobrep", 1 ] ] } },
     "description": "A living blob, formed into a storage space for holding liquids.  If filled with the appropriate fuel for the vehicle's engine, the engine will automatically draw fuel from the tank when the engine is on.  If filled with water, you can access the water from a water faucet, if one is installed in the vehicle.  You can also use a rubber hose to siphon liquids out of a tank.",
-    "flags": [ "FOLDABLE", "FUEL_TANK" ]
+    "flags": [ "FOLDABLE", "FLUIDTANK" ]
   },
   {
     "id": "oozle_tank_large",

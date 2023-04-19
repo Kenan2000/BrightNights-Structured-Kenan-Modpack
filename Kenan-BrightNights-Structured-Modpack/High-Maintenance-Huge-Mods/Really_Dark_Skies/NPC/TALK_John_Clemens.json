@@ -1,0 +1,27 @@
+[
+  {
+    "id": "TALK_REFUGEE_John_2",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "What can you tell me about aliens?",
+        "effect": { "u_add_var": "u_Talk_To_John_Clemens_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "not": { "u_has_var": "u_Talk_To_John_Clemens_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" }
+        },
+        "topic": "TALK_John_2_XENOIDS"
+      },
+      {
+        "text": "Can you tell me anything else about aliens, again?",
+        "condition": { "u_has_var": "u_Talk_To_John_Clemens_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_John_2_XENOIDS"
+      }
+    ]
+  },
+  {
+    "id": "TALK_John_2_XENOIDS",
+    "type": "talk_topic",
+    "dynamic_line": "I never figured the little green men would be real!",
+    "responses": [ { "text": "They're real alright.", "topic": "TALK_REFUGEE_John_2" } ]
+  }
+]

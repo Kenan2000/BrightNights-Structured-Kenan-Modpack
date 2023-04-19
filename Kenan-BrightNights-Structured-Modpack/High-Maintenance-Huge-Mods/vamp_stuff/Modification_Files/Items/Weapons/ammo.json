@@ -80,7 +80,8 @@
     "stack_size": 20,
     "ammo_type": "bloodshot",
     "casing": "shot_hull",
-    "range": 4,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 12, "length": 4 } ],
     "damage": { "damage_type": "bullet", "amount": 65 },
     "recoil": 2750,
     "loudness": 180,
@@ -101,10 +102,13 @@
     "stack_size": 20,
     "ammo_type": "bloodshot",
     "casing": "shot_hull",
-    "range": 4,
+    "range": 0,
+    "shape": [ "cone", { "half_angle": 12, "length": 4 } ],
     "damage": { "damage_type": "bullet", "amount": 57 },
     "recoil": 2650,
     "loudness": 180,
     "effects": [ "COOKOFF", "SHOT", "RECYCLED" ]
   }
 ]
+
+

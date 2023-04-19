@@ -102,9 +102,7 @@
         "text": "Who are you, what happened to you?",
         "topic": "TALK_DOBBSOLDIER_INFOTOWN"
       },
-      {
-        "text": "Do you want to come with me? I can be your squad now.", "topic": "TALK_DOBBSOLDIER_RECRUIT"
-      },
+      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } },
       {
         "text": "See you later.",
         "topic": "TALK_DONE"
@@ -116,24 +114,13 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_female": true,
-      "yes": "I was in a battle. Yes, a battle. There was gunfire and explosions everywhere. People dying. I was scared but I had to keep on fighting. Then there was this blinding flash. he next thing I remember was seeing my body as if I was looking down at it from above. I heard the doctors say I was dead and then they threw my body onto a pile of other bodies. Some men came by and took my body to a laboratory. I heard them say something about trying to regenerate my body by immersing it in something called Biomed Gel.",
-      "no": "I was in a battle. Yes, a battle. There was gunfire and explosions everywhere. People dying. I was scared but I had to keep on fighting. Then there was this blinding flash. he next thing I remember was seeing my body as if I was looking down at it from above. I heard the doctors say I was dead and then they threw my body onto a pile of other bodies. Some men came by and took my body to a laboratory. I heard them say something about trying to regenerate my body by immersing it in something called Biomed Gel."},
+      "yes": "I was in a battle. Yes, a battle. There was gunfire and explosions everywhere. People dying. I was scared but I had to keep on fighting. Then there was this blinding flash. The next thing I remember was seeing my body as if I was looking down at it from above. I heard the doctors say I was dead and then they threw my body onto a pile of other bodies. Some men came by and took my body to a laboratory. I heard them say something about trying to regenerate my body by immersing it in something called Biomed Gel.",
+      "no": "I was in a battle. Yes, a battle. There was gunfire and explosions everywhere. People dying. I was scared but I had to keep on fighting. Then there was this blinding flash. The next thing I remember was seeing my body as if I was looking down at it from above. I heard the doctors say I was dead and then they threw my body onto a pile of other bodies. Some men came by and took my body to a laboratory. I heard them say something about trying to regenerate my body by immersing it in something called Biomed Gel."},
     "responses": [
       {
         "text": "Got it.",
         "topic": "TALK_DOBBSOLDIER_START"
       }
-    ]
-  },
-  {
-    "id": "TALK_DOBBSOLDIER_RECRUIT",
-    "type": "talk_topic",
-    "dynamic_line": {
-      "u_female": true,
-      "yes": "I am ready to rejoin my squad!",
-      "no": "I am ready to rejoin my squad!"},
-    "responses": [
-      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
     ]
   }
 ]
