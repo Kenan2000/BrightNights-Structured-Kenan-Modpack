@@ -186,15 +186,14 @@
   {
     "id": "kawaii_amts_eve",
     "type": "GUN",
+    "copy-from": "rifle_auto",
     "reload_noise_volume": 10,
-    "symbol": "(",
     "color": "light_blue",
     "name": { "str": "<color_pink>[AMTS] </color>EVE Scout Rifle" },
     "description": "An advanced prototype rifle. Has both semi-automatic and two-round burst firing modes.",
     "price": "0 cent",
     "material": [ "kawaii_amsteel", "kawaii_amplastic" ],
-    "flags": [ "MODE_BURST", "NEVER_JAMS" ],
-    "skill": "rifle",
+    "flags": [ "NEVER_JAMS" ],
     "ammo": [ "kawaii_308AM" ],
     "weight": "3 g",
     "volume": "3 ml",
@@ -203,7 +202,8 @@
     "dispersion": 40,
     "durability": 9,
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 2 ] ],
-    "magazines": [ [ "kawaii_308AM", [ "kawaii_eve_mag" ] ] ]
+    "magazines": [ [ "kawaii_308AM", [ "kawaii_eve_mag" ] ] ],
+    "valid_mod_locations": [  ]
   },
   {
     "id": "kawaii_eve_mag",
