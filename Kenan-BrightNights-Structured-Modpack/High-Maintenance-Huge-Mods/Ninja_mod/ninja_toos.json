@@ -59,6 +59,7 @@
   {
     "id": "ninja_scroll_lightning",
     "type": "GUN",
+    "copy-from": "rifle_energy",
     "name": { "str": "Scroll of thunder release art", "str_pl": "Scroll of thunder release art" },
     "description": "It is a discharge device which camouflaged as a scroll ... where the technique of thunder release was written. It operates by feeding power from the UPS. Furess is a technique to escape. Get away from the zombie while he is immobilized.",
     "weight": "600 g",
@@ -70,7 +71,6 @@
     "material": [ "paper", "steel", "plastic" ],
     "symbol": "?",
     "color": "light_blue",
-    "skill": "rifle",
     "range": 10,
     "ranged_damage": { "damage_type": "stab", "amount": 30, "armor_penetration": 15 },
     "dispersion": 10,
@@ -82,7 +82,8 @@
     "ups_charges": 100,
     "reload": 0,
     "ammo_effects": [ "LIGHTNING", "BOUNCE" ],
-    "flags": [ "NEVER_JAMS", "MODE_BURST" ]
+    "flags": [ "NEVER_JAMS" ],
+    "valid_mod_locations": [  ]
   },
   {
     "id": "ninja_scroll_fire",
@@ -109,7 +110,7 @@
     "loudness": 150,
     "clip_size": 10,
     "ammo_effects": [ "SHOT" ],
-    "extend": { "flags": [ "MODE_BURST", "PRIMITIVE_RANGED_WEAPON", "MODE_BURST" ] },
+    "extend": { "flags": [ "PRIMITIVE_RANGED_WEAPON" ] },
     "delete": { "flags": [ "FIRE_100" ] }
   },
   {
