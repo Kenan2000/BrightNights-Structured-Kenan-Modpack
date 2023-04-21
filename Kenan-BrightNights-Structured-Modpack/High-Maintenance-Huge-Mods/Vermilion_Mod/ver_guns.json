@@ -2,6 +2,7 @@
   {
     "id": "railaccelerator",
     "type": "GUN",
+    "copy-from": "rifle_magnetic",
     "looks_like": "heavy_rail_rifle",
     "name": { "str": "S-01 Rail Accelerator mk2" },
     "description": "A crude, humongous hunk of tech scrap seated into the remains of what seems like a minigun's frame and the widened receiver of a large caliber machine gun, as well as numerous picatinny rails and odds and ends from other weapons that are now impossible to identify, reinforced with superalloy and ceramics covered in piezoelectric capacitors. The weapon launches rails at such an overkill velocity that they shatter on impact. Carved near the blade are the words 'With love, Shion' and a small carving of a canine-eared head of a person with a smug grin, holding up a victory sign.",
@@ -12,10 +13,8 @@
     "bashing": 16,
     "cutting": 21,
     "material": [ "steel", "superalloy", "ceramic" ],
-    "symbol": "(",
     "color": "magenta",
     "ammo": [ "metal_rail" ],
-    "skill": "rifle",
     "range": 45,
     "ranged_damage": { "damage_type": "stab", "amount": 50, "armor_penetration": 115 },
     "barrel_length": 6,
@@ -43,15 +42,15 @@
       [ "sling", 1 ],
       [ "well", 1 ]
     ],
-    "ammo_effects": [ "TRAIL", "WIDE" ]
+    "ammo_effects": [ "TRAIL", "WIDE" ],
+    "flags": [  ]
   },
   {
     "id": "ptrs41",
     "type": "GUN",
     "name": { "str": "PTRS-41" },
     "looks_like": "ar15",
-    "copy-from": "rifle_base",
-    "symbol": "(",
+    "copy-from": "rifle_semi",
     "color": "dark_gray",
     "description": "The PTRS-41 is a semi-automatic anti-tank rifle produced and used by the Soviets during World War II. It fires the powerful 14.5x114mm cartridge, but getting ahold of those after the Cataclysm might prove to be a difficult task.",
     "price": "1890 USD",

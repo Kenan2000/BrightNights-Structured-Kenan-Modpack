@@ -2,8 +2,7 @@
   {
     "id": "umbrella_kingsman",
     "type": "GUN",
-    "category": "guns",
-    "skill": "pistol",
+    "copy-from": "pistol_base",
     "name": "umbrella gun",
     "description": "An umbrella that looks like it came straight out of a movie, it seems to be bulletproof.",
     "weight": 141,
@@ -53,9 +52,9 @@
   {
     "id": "magnum_statesman",
     "type": "GUN",
+    "copy-from": "pistol_base",
     "name": { "str": ".44 Magnum", "str_pl": ".44 Magnum" },
     "description": "One of the most famous guns in the world, the .44 Magnum is known for being great to dispatch an opponent in a gun duel.",
-    "skill": "pistol",
     "symbol": "F",
     "weight": 3937,
     "volume": 12,

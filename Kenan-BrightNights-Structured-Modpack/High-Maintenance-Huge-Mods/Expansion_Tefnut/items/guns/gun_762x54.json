@@ -164,6 +164,7 @@
     {
     "id": "huaqing",
     "looks_like": "ar15",
+    "copy-from": "gatling_base",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "Hua Qing Minigun" },
@@ -175,10 +176,8 @@
     "to_hit": -4,
     "bashing": 18,
     "material": "hardsteel",
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "762R" ],
-    "skill": "rifle",
     "ranged_damage": { "damage_type": "bullet", "amount": -1 },
     "dispersion": 200,
     "durability": 9,

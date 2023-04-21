@@ -2,6 +2,7 @@
   {
     "id": "ABlaser_pistol",
     "type": "GUN",
+    "copy-from": "pistol_energy",
     "name": { "str": "Type-38 laser pistol" },
     "description": "The service sidearm of the Pan Pacific Coalition, the Type-38 is relatively light and nimble laser pistol.",
     "weight": "600 g",
@@ -12,7 +13,6 @@
     "material": [ "steel", "plastic" ],
     "symbol": "(",
     "color": "magenta",
-    "skill": "pistol",
     "range": 28,
     "ranged_damage": { "damage_type": "heat", "amount": 12, "armor_penetration": 14 },
     "dispersion": 200,
@@ -20,22 +20,14 @@
     "loudness": 7,
     "ups_charges": 22,
     "reload": 200,
-    "valid_mod_locations": [
-      [ "accessories", 2 ],
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "lens", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "stock", 1 ],
-      [ "underbarrel", 1 ]
-    ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD" ]
+    "ammo_effects": [ "LASER", "INCENDIARY" ]
   },
   {
     "id": "ABlaser_carbine",
     "type": "GUN",
+    "copy-from": "rifle_energy",
+    "extend": { "weapon_category": [ "SUBMACHINE_GUNS" ] },
+    "delete": { "weapon_category": [ "RIFLES" ] },
     "name": { "str": "Type-40 laser carbine" },
     "description": "A lightweight laser weapon developed by the Pan Pacific Consortium. This carbine compensates for its lack of firepower with rapid fire rate.",
     "weight": "2150 g",
@@ -44,9 +36,8 @@
     "to_hit": -1,
     "bashing": 8,
     "material": [ "steel", "plastic" ],
-    "symbol": "(",
-    "color": "magenta",
     "skill": "smg",
+    "color": "magenta",
     "range": 28,
     "ranged_damage": { "damage_type": "heat", "amount": 12, "armor_penetration": 14 },
     "dispersion": 150,
@@ -55,23 +46,12 @@
     "loudness": 12,
     "ups_charges": 22,
     "reload": 0,
-    "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "sling", 1 ],
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "lens", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "stock", 1 ],
-      [ "underbarrel", 1 ]
-    ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD" ]
+    "ammo_effects": [ "LASER", "INCENDIARY" ]
   },
   {
     "id": "ABlaser_sniper",
     "type": "GUN",
+    "copy-from": "rifle_energy",
     "name": { "str": "Type-41 laser precision rifle" },
     "description": "A precise, powerful laser weapon with a huge energy consumption. The Pan Pacific Consortium designed this weapon for designated marksmen.",
     "weight": "3850 g",
@@ -80,9 +60,7 @@
     "to_hit": -1,
     "bashing": 11,
     "material": [ "steel", "plastic" ],
-    "symbol": "(",
     "color": "magenta",
-    "skill": "rifle",
     "range": 38,
     "ranged_damage": { "damage_type": "heat", "amount": 33, "armor_penetration": 14 },
     "dispersion": 20,
@@ -91,23 +69,14 @@
     "loudness": 12,
     "ups_charges": 55,
     "reload": 500,
-    "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "sling", 1 ],
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "lens", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "stock", 1 ],
-      [ "underbarrel", 1 ]
-    ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD" ]
+    "ammo_effects": [ "LASER", "INCENDIARY" ]
   },
   {
     "id": "ABlaser_shotgun",
     "type": "GUN",
+    "copy-from": "rifle_energy",
+    "extend": { "weapon_category": [ "SHOTGUNS" ] },
+    "delete": { "weapon_category": [ "RIFLES" ] },
     "name": { "str": "Type-37 scatter laser" },
     "description": "A close-quarter laser weapon developed by the Pan Pacific Consortium. In the early days of laser weapon development, the PPC's engineers came up with the idea of solving the low accuracy of their laser weapons by fastening several barrels together.",
     "weight": "2650 g",
@@ -116,7 +85,6 @@
     "to_hit": -1,
     "bashing": 8,
     "material": [ "steel", "plastic" ],
-    "symbol": "(",
     "color": "magenta",
     "skill": "shotgun",
     "range": 20,
@@ -127,18 +95,6 @@
     "loudness": 12,
     "ups_charges": 22,
     "reload": 150,
-    "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "sling", 1 ],
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "lens", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "stock", 1 ],
-      [ "underbarrel", 1 ]
-    ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD" ]
+    "ammo_effects": [ "LASER", "INCENDIARY" ]
   }
 ]

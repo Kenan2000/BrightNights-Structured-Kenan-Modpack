@@ -61,6 +61,7 @@
   {
     "id": "gkb_chi_chargelance",
     "type": "GUN",
+    "copy-from": "rocket_base",
     "reload_noise_volume": 10,
     "name": { "str": "Type 26 Chargelance" },
     "description": "A state-of-the-art direct energy weapon developed by famed Japanese Robotics company, Chi-Industries. The Type 26 Chargelance is a curious mixture of 21st century technological prowess and medieval craftsmanship. Despite sporting a thermal charge cannon, the chargelance was also designed to use its ponderous mass effectively in melee combat. The front of the weapon is honed to a fine, cutting edge. Uses UPS charge to operate.",
@@ -74,7 +75,6 @@
     "material": [ "superalloy", "plastic" ],
     "symbol": "(",
     "color": "cyan",
-    "skill": "launcher",
     "range": 25,
     "ranged_damage": { "damage_type": "heat", "amount": 40, "armor_penetration": 4 },
     "dispersion": 10,
@@ -85,11 +85,12 @@
     "reload": 0,
     "valid_mod_locations": [ [ "accessories", 4 ], [ "emitter", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ] ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE", "PYROMANIAC_WEAPON" ]
   },
   {
     "id": "chi_digibow",
     "type": "GUN",
+    "copy-from": "bow_base",
     "looks_like": "longbow",
     "name": { "str": "Type 13 DigiBow" },
     "description": "A modern bow designed by Chi-Industries, this weapon is an eclectic mixture of modern forays into direct energy warfare and the ancient Japanese tradition of Kyudo: The art of the bow. It's sleek white exterior hides an immense array of laser projectors, that create a complex arrangement of light to act not only as the bowstring, but the arrow as well. Uses medium batteries.",
@@ -97,7 +98,7 @@
     "price_postapoc": "150 USD",
     "material": [ "superalloy", "plastic" ],
     "flags": [ "WATERPROOF_GUN", "NEVER_JAMS", "FIRE_TWOHAND", "STR_DRAW", "PRIMITIVE_RANGED_WEAPON", "BELTED", "FIRE_20" ],
-    "skill": "archery",
+    "extend": { "weapon_categories": [ "ENERGY_WEAPONS" ] }, 
     "min_strength": 5,
     "weight": "250 g",
     "volume": "1500 ml",
@@ -124,8 +125,9 @@
   },
   {
     "id": "gkb_xedra_ar",
-    "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "rifle_energy",
+    "looks_like": "ar15",
     "reload_noise_volume": 10,
     "name": { "str": "XEDRA Pattern AR" },
     "description": "A rare laser-based firearm employed by XEDRA at some point after the cataclysm. Unlike most laser weapons, this firearm uses commonly-found medium batteries in place of a standard magazine. The rifle seems to be deliberately modelled after a M4 Carbine.",
@@ -139,7 +141,6 @@
     "symbol": "(",
     "color": "blue",
     "ammo": [ "battery" ],
-    "skill": "rifle",
     "range": 30,
     "ranged_damage": { "damage_type": "heat", "amount": 25, "armor_penetration": 4 },
     "dispersion": 10,
@@ -147,19 +148,8 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "3 rd.", 3 ] ],
     "loudness": 12,
     "reload": 0,
-    "valid_mod_locations": [
-      [ "accessories", 4 ],
-      [ "emitter", 1 ],
-      [ "grip", 1 ],
-      [ "lens", 1 ],
-      [ "rail", 1 ],
-      [ "sights", 1 ],
-      [ "sling", 1 ],
-      [ "stock", 1 ],
-      [ "underbarrel", 1 ]
-    ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
+    "extend": { "flags": [ "FIRE_20" ] },
     "magazines": [
       [
         "battery",
@@ -171,6 +161,7 @@
   {
     "id": "gkb_xedra_magnum",
     "looks_like": "glock_17",
+    "copy-from": "pistol_energy",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "XEDRA pattern thermal magnum" },
@@ -185,7 +176,6 @@
     "symbol": "(",
     "color": "blue",
     "ammo": [ "battery" ],
-    "skill": "pistol",
     "range": 15,
     "ranged_damage": { "damage_type": "heat", "amount": 45, "armor_penetration": 4 },
     "dispersion": 160,
@@ -203,7 +193,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_50" ],
+    "extend": { "flags": [ "NO_UNLOAD", "FIRE_50" ] },
     "magazines": [
       [
         "battery",

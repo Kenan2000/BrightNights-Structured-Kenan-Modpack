@@ -38,6 +38,7 @@
   {
     "id": "metro_lolife_pistol",
     "looks_like": "glock_17",
+    "copy-from": "pistol_base",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str_sp": "Lolife" },
@@ -49,10 +50,7 @@
     "to_hit": -2,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
-    "color": "light_gray",
     "ammo": [ "44" ],
-    "skill": "pistol",
     "ranged_damage": { "damage_type": "bullet", "amount": -3 },
     "dispersion": 500,
     "durability": 6,
