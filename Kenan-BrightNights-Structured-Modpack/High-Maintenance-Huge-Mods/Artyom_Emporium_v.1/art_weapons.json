@@ -191,21 +191,6 @@
     "magazines": [ [ "45", [ "p220mag" ] ] ]
   },
   {
-    "id": "sig_p220stb",
-    "type": "GUN",
-    "copy-from": "sig_p220",
-    "name": { "str": "SIG P220 Scorpion", "str_pl": "SIG P220 Scorpion" },
-    "looks_like": "p226_357sig",
-    "description": "A special edition of the SIG P220, custom grips, custom finish, custom everything. All in a nice desert paint job. Even comes with a threaded barrel!",
-    "price": "194 USD",
-    "weight": "975 g",
-    "ranged_damage": { "damage_type": "bullet", "amount": 8 },
-    "dispersion": 135,
-    "sight_dispersion": 70,
-    "recoil": 125,
-    "durability": 9
-  },
-  {
     "id": "sig_p227",
     "type": "GUN",
     "copy-from": "sig_p224",
@@ -239,6 +224,21 @@
     ],
     "magazine_well": "250 ml",
     "magazines": [ [ "45", [ "p227mag" ] ] ]
+  },
+  {
+    "id": "sig_p220stb",
+    "type": "GUN",
+    "copy-from": "sig_p220",
+    "name": { "str": "SIG P220 Scorpion", "str_pl": "SIG P220 Scorpion" },
+    "looks_like": "p226_357sig",
+    "description": "A special edition of the SIG P220, custom grips, custom finish, custom everything. All in a nice desert paint job. Even comes with a threaded barrel!",
+    "price": "194 USD",
+    "weight": "975 g",
+    "ranged_damage": { "damage_type": "bullet", "amount": 8 },
+    "dispersion": 135,
+    "sight_dispersion": 70,
+    "recoil": 125,
+    "durability": 9
   },
   {
     "id": "sig_p226",

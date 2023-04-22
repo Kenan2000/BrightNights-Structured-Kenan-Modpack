@@ -30,14 +30,6 @@
     "modes": [ [ "DEFAULT", "semi-auto", 1 ] ]
   },
   {
-    "id": "HMG44_auto",
-    "type": "GUN",
-    "copy-from": "stg44",
-    "name": { "str": "STG-44 (full-auto)" },
-    "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and fires the proprietary 7.92 x 33 kurtz and has an effective range of 600 meters. This however is a reproduction rifle built to the original specifications. The lower receiver has been replaced with an original lower receiver.",
-    "durability": 6
-  },
-  {
     "id": "HMG44_sbr",
     "type": "GUN",
     "copy-from": "stg44",
@@ -51,14 +43,6 @@
     "durability": 6,
     "built_in_mods": [ "barrel_small" ],
     "magazines": [ [ "762", [ "stgmag762" ] ] ]
-  },
-  {
-    "id": "HMG44_sbr_auto",
-    "type": "GUN",
-    "copy-from": "HMG44_sbr",
-    "name": { "str": "STG-44 (SBR full-auto)" },
-    "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle built to the original specifications. it's been converted into an SBR and the lower receiver has been replaced with an original lower receiver",
-    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "full-auto", 5 ] ]
   },
   {
     "id": "HMG44_smol",
@@ -81,6 +65,22 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "muzzle", 1 ], [ "mechanism", 2 ], [ "sling", 1 ] ],
     "built_in_mods": [ "barrel_small" ],
     "magazines": [ [ "223", [ "stgmag223" ] ] ]
+  },
+  {
+    "id": "HMG44_auto",
+    "type": "GUN",
+    "copy-from": "stg44",
+    "name": { "str": "STG-44 (full-auto)" },
+    "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and fires the proprietary 7.92 x 33 kurtz and has an effective range of 600 meters. This however is a reproduction rifle built to the original specifications. The lower receiver has been replaced with an original lower receiver.",
+    "durability": 6
+  },
+  {
+    "id": "HMG44_sbr_auto",
+    "type": "GUN",
+    "copy-from": "HMG44_sbr",
+    "name": { "str": "STG-44 (SBR full-auto)" },
+    "description": "widely considered to be one of the first assault rifles, the STG-44 was produced in germany during the second world war and originally fired a proprietary 7.92x33 kurtz round. This however is a reproduction rifle built to the original specifications. it's been converted into an SBR and the lower receiver has been replaced with an original lower receiver",
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "full-auto", 5 ] ]
   },
   {
     "id": "HMG44_smol_auto",
