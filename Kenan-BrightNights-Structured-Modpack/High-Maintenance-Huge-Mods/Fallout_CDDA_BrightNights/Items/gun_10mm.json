@@ -14,7 +14,7 @@
     "looks_like": "glock_22",
     "material": [ "steel", "plastic" ],
     "color": "black",
-    "ammo": [ "40" ],
+    "ammo": [ "40", "10mm" ],
     "ranged_damage": { "damage_type": "bullet", "amount": 1 },
     "durability": 7,
     "valid_mod_locations": [
@@ -30,7 +30,7 @@
       [ "underbarrel", 1 ]
     ],
     "magazine_well": "250 ml",
-    "magazines": [ [ "40", [ "colt6250mag" ] ] ]
+    "magazines": [ [ "40", [ "colt6250mag" ] ], [ "10mm", [ "colt6250mag" ] ] ]
   },
   {
     "id": "colt6250_weathered",
@@ -59,7 +59,7 @@
     "bashing": 16,
     "looks_like": "hk_mp5",
     "material": [ "steel", "plastic" ],
-    "ammo": [ "40" ],
+    "ammo": [ "40", "10mm" ],
     "ranged_damage": { "damage_type": "bullet", "amount": 2 },
     "dispersion": 480,
     "durability": 7,
@@ -78,7 +78,7 @@
       [ "underbarrel", 1 ]
     ],
     "magazine_well": "250 ml",
-    "magazines": [ [ "40", [ "10mmsmgmag" ] ] ]
+    "magazines": [ [ "40", [ "10mmsmgmag" ] ], [ "10mm", [ "10mmsmgmag" ] ] ]
   },
   {
     "id": "hk_p90c",
