@@ -259,9 +259,9 @@
     "id": "DKZ_guns_rifle_improvised",
     "//": "Makeshift or otherwise poor quality rifles.",
     "items": [
-      { "item": "rifle_22", "prob": 60 },
+      { "item": "rifle_22", "prob": 20 },
       { "item": "rifle_3006", "prob": 30 },
-      { "item": "rifle_9mm", "prob": 60 },
+      { "item": "rifle_9mm", "prob": 90 },
       { "item": "surv_carbine_223", "prob": 120, "charges-min": 0, "charges-max": 5 }
     ]
   },
@@ -322,7 +322,7 @@
     "type": "item_group",
     "id": "DKZ_guns_smg_improvised",
     "//": "Makeshift or otherwise poor quality SMGs.",
-    "items": [ [ "smg_40", 40 ], [ "smg_45", 40 ], [ "smg_9mm", 100 ] ]
+    "items": [ [ "smg_40", 40 ], [ "smg_45", 40 ], [ "smg_9mm", 150 ] ]
   },
   {
     "type": "item_group",
@@ -436,7 +436,7 @@
     "//": "Military quality cutting weapons.",
     "items": [
       { "item": "switchblade", "prob": 5 },
-      { "item": "knife_combat", "prob": 80 },
+      { "item": "knife_combat", "prob": 150 },
       { "item": "knife_rambo", "prob": 80 },
       { "item": "knife_hunting", "prob": 50 },
       { "item": "knife_rm42", "prob": 50 },

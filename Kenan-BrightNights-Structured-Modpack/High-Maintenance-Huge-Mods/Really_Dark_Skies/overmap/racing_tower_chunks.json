@@ -512,7 +512,7 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "racing_tower_4x4_store",
-    "weight": 100,
+    "weight": 200,
     "object": {
       "mapgensize": [ 4, 4 ],
       "rotation": [ 0, 3 ],
@@ -521,12 +521,12 @@
         "A  B",
         " _  ",
         "    ",
-        "B  D"
+        "C  D"
       ],
       "terrain": { " ": "t_null" },
       "place_npcs": [
         { "class": "DKZ_MAQUIS_MERCHANT", "x": 1, "y": 1, "add_trait": "DKZ_LEADER" },
-        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 0, "y": 1, "add_trait": "DKZ_COMBAT" }
+        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 2, "y": 2, "add_trait": "DKZ_COMBAT" }
       ],
       "furniture": { "-": "f_camp_chair", "A": "f_table", "B": "f_table", "C": "f_table", "D": "f_table" },
       "items": {
@@ -543,7 +543,38 @@
     "type": "mapgen",
     "method": "json",
     "nested_mapgen_id": "racing_tower_4x4_store",
-    "weight": 100,
+    "weight": 300,
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rotation": [ 0, 3 ],
+      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
+      "rows": [
+        "A  B",
+        " _  ",
+        "    ",
+        "C  D"
+      ],
+      "terrain": { " ": "t_null" },
+      "place_npcs": [
+        { "class": "DKZ_MAQUIS_MERCHANT", "x": 1, "y": 1, "add_trait": "DKZ_LEADER" },
+        { "class": "DKZ_MAQUIS_GUARD", "x": 2, "y": 2, "add_trait": "DKZ_COMBAT" }
+      ],
+      "furniture": { "-": "f_camp_chair", "A": "f_table", "B": "f_table", "C": "f_table", "D": "f_table" },
+      "items": {
+        " ": { "item": "trash_junkyard", "chance": 1 },
+        "A": { "item": "guns_milspec", "chance": 80, "repeat": [ 1, 2 ] },
+        "B": { "item": "guns_common", "chance": 40, "repeat": [ 3, 5 ] },
+        "C": { "item": "specialty_goods", "chance": 80, "repeat": [ 2, 1 ] },
+        "D": { "item": "scavenged_foods", "chance": 40, "repeat": [ 3, 5 ] }
+      }
+    }
+  },
+  {
+    "//": "4x4 shopkeeper",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "racing_tower_4x4_store",
+    "weight": 300,
     "object": {
       "mapgensize": [ 4, 4 ],
       "rotation": [ 0, 3 ],
@@ -564,7 +595,6 @@
         " ": { "item": "trash_junkyard", "chance": 1 },
         "A": { "item": "guns_milspec", "chance": 80, "repeat": [ 1, 2 ] },
         "B": { "item": "guns_common", "chance": 40, "repeat": [ 3, 5 ] },
-        "C": { "item": "specialty_goods", "chance": 80, "repeat": [ 2, 1 ] },
         "D": { "item": "scavenged_foods", "chance": 40, "repeat": [ 3, 5 ] }
       }
     }
@@ -581,7 +611,7 @@
       "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
       "rows": [
         "    ",
-        "ABC ",
+        " BC ",
         " -D ",
         "    "
       ],
@@ -593,7 +623,6 @@
       "furniture": { "-": "f_camp_chair", "A": "f_table", "B": "f_table", "C": "f_table", "D": "f_table" },
       "items": {
         " ": { "item": "trash_junkyard", "chance": 1 },
-        "A": { "item": "bionics_mil", "chance": 70, "repeat": [ 1, 2 ] },
         "B": { "item": "guns_common", "chance": 70, "repeat": [ 3, 5 ] },
         "C": { "item": "bionics", "chance": 25, "repeat": [ 4, 7 ] },
         "D": { "item": "specialty_goods", "chance": 100, "repeat": [ 2, 3 ] }
@@ -613,19 +642,18 @@
       "rows": [
         "    ",
         " -D ",
-        "BCA ",
+        " CA ",
         "    "
       ],
       "terrain": { " ": "t_null" },
       "place_npcs": [
         { "class": "DKZ_MAQUIS_MERCHANT", "x": 1, "y": 1, "add_trait": "DKZ_LEADER" },
-        { "class": "DKZ_MAQUIS_GUARD", "x": 0, "y": 3, "add_trait": "DKZ_COMBAT" }
+        { "class": "DKZ_MAQUIS_GUARD", "x": 1, "y": 3, "add_trait": "DKZ_COMBAT" }
       ],
       "furniture": { "-": "f_camp_chair", "A": "f_table", "B": "f_table", "C": "f_table", "D": "f_table" },
       "items": {
         " ": { "item": "trash_junkyard", "chance": 1 },
         "A": { "item": "scavenged_foods", "chance": 80, "repeat": [ 3, 5 ] },
-        "B": { "item": "specialty_goods", "chance": 80, "repeat": [ 1, 3 ] },
         "C": { "item": "scavenged_foods", "chance": 30, "repeat": [ 5, 9 ] },
         "D": { "item": "guns_common", "chance": 20, "repeat": [ 1, 2 ] }
       }
@@ -644,7 +672,7 @@
       "rows": [
         "    ",
         " -D ",
-        "ABC ",
+        " BC ",
         "    "
       ],
       "terrain": { " ": "t_null" },
@@ -659,131 +687,6 @@
         "B": { "item": "specialty_goods", "chance": 80, "repeat": [ 1, 3 ] },
         "C": { "item": "scavenged_foods", "chance": 30, "repeat": [ 5, 9 ] },
         "D": { "item": "guns_common", "chance": 20, "repeat": [ 1, 2 ] }
-      }
-    }
-  },
-  {
-    "//": "4x4 crowded medical bedding",
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_medical",
-    "weight": 250,
-    "object": {
-      "mapgensize": [ 4, 4 ],
-      "rotation": [ 0, 3 ],
-      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
-      "rows": [
-        "ABAB",
-        "    ",
-        "BABA",
-        "    "
-      ],
-      "terrain": { " ": "t_null" },
-      "furniture": { "A": "f_floor_mattress", "B": "f_IV_pole" },
-      "item": {
-        " ": { "item": "rag_bloody", "chance": 25 },
-        "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 1 }
-      }
-    }
-  },
-  {
-    "//": "4x4 not crowded medical bedding",
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_medical",
-    "weight": 250,
-    "object": {
-      "mapgensize": [ 4, 4 ],
-      "rotation": [ 0, 3 ],
-      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
-      "rows": [
-        "    ",
-        " AB ",
-        "    ",
-        " BA "
-      ],
-      "terrain": { " ": "t_null" },
-      "furniture": { "A": "f_floor_mattress", "B": "f_IV_pole" },
-      "item": {
-        " ": { "item": "rag_bloody", "chance": 15 },
-        "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 1 }
-      }
-    }
-  },
-  {
-    "//": "4x4 kind of crowded medical bedding",
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_medical",
-    "weight": 250,
-    "object": {
-      "mapgensize": [ 4, 4 ],
-      "rotation": [ 0, 3 ],
-      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
-      "rows": [
-        " A A",
-        " B B",
-        "    ",
-        " AB "
-      ],
-      "terrain": { " ": "t_null" },
-      "furniture": { "A": "f_floor_mattress", "B": "f_IV_pole" },
-      "item": {
-        " ": { "item": "rag_bloody", "chance": 15 },
-        "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 10 }
-      }
-    }
-  },
-  {
-    "//": "4x4 in privacy tent, surgery",
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_surgery",
-    "weight": 500,
-    "object": {
-      "mapgensize": [ 4, 4 ],
-      "rotation": [ 0, 3 ],
-      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
-      "rows": [
-        "1111",
-        "1 B1",
-        "2 A1",
-        "1111"
-      ],
-      "terrain": { " ": "t_null" },
-      "furniture": { "1": "f_large_canvas_wall", "2": "f_large_canvas_door", "A": "f_floor_mattress", "B": "f_IV_pole" },
-      "item": {
-        " ": { "item": "rag_bloody", "chance": 95 },
-        "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 10 }
-      }
-    }
-  },
-  {
-    "//": "4x4 in privacy tent, surgery",
-    "type": "mapgen",
-    "method": "json",
-    "nested_mapgen_id": "racing_tower_4x4_surgery",
-    "weight": 500,
-    "object": {
-      "mapgensize": [ 4, 4 ],
-      "rotation": [ 0, 3 ],
-      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
-      "rows": [
-        "1111",
-        "1A 1",
-        "1B 2",
-        "1111"
-      ],
-      "terrain": { " ": "t_null" },
-      "furniture": { "1": "f_large_canvas_wall", "2": "f_large_canvas_door", "A": "f_floor_mattress", "B": "f_IV_pole" },
-      "item": {
-        " ": { "item": "rag_bloody", "chance": 95 },
-        "A": { "item": "rag_bloody", "chance": 25 },
-        "B": { "item": "bag_iv", "chance": 10 }
       }
     }
   },

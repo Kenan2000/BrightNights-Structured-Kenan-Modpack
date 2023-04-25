@@ -10,9 +10,9 @@
         "_______ ````````````````",
         "_______o````b|XXX--XXX|4",
         "_______o````b|........| ",
-        "_______o````b|.BƁ..ƁB.| ",
-        "_~~~~~~o`````|.BB..BB.| ",
-        "_______|xxDxx|.ḄḂ..BB.| ",
+        "_______o``a`b|.BƁ..ƁB.| ",
+        "_~~~~~~o`a``a|.BB..ḆB.| ",
+        "_______|xxDxx|.ḄḂ..Bḅ.| ",
         "_______|..............X ",
         "_______|..............X ",
         "_______|B......|--+---| ",
@@ -56,6 +56,7 @@
         "o": [ "t_grass", "t_shrub" ],
         " ": "t_grass",
         "`": "t_sidewalk",
+        "a": "t_pit",
         "b": "t_sidewalk",
         "s": "t_floor",
         "ḃ": "t_floor",
@@ -63,6 +64,8 @@
         "Ḃ": "t_floor",
         "Ɓ": "t_floor",
         "Ḅ": "t_floor",
+        "Ḇ": "t_floor",
+        "ḅ": "t_floor",
         "_": "t_pavement",
         "~": "t_pavement_y",
         "+": "t_door_c",
@@ -88,6 +91,8 @@
         "Ḃ": "f_rack",
         "Ɓ": "f_rack",
         "Ḅ": "f_rack",
+        "Ḇ": "f_rack",
+        "ḅ": "f_rack",
         "R": "f_dumpster",
         "L": "f_locker",
         "l": "f_locker",
@@ -108,14 +113,16 @@
         { "class": "DKZ_QUISLING_BANDIT", "x": 17, "y": 20, "add_trait": "DKZ_QUISLING" }
       ],
       "place_monster": [
-        { "group": "GROUP_QUISSLING_HELPERS", "x": [ 1, 4 ], "y": [ 1, 4 ] , "chance": 95, "repeat": 5 },
-        { "group": "GROUP_QUISSLING_HELPERS", "x": [ 19, 22 ], "y": [ 19, 22 ], "chance": 95, "repeat": 3 },
+        { "group": "GROUP_QUISSLING_HELPERS", "x": [ 1, 4 ], "y": [ 1, 4 ], "chance": 90, "repeat": 7 },
+        { "group": "GROUP_QUISSLING_HELPERS", "x": [ 19, 22 ], "y": [ 19, 22 ], "chance": 90, "repeat": 5 },
         { "group": "GROUP_XENOID_BOSS", "x": [ 19, 22 ], "y": [ 19, 22 ] }
       ],
       "item": {
-        "Ɓ": { "item": "shoulder_strap", "chance": 80 },
+        "Ɓ": { "item": "shoulder_strap", "chance": 90 },
         "Ḃ": { "item": "keffiyeh", "chance": 100 },
         "Ḅ": { "item": "pickelhaube", "chance": 100 },
+        "Ḇ": { "item": "1st_aid", "chance": 100 },
+        "ḅ": { "item": "tool_belt", "chance": 100 },
         ":": { "item": "sm_extinguisher", "chance": 100 }
       }
     }
@@ -130,19 +137,19 @@
       "rows": [
         "                        ",
         "                        ",
-        "        #####|||||||||| ",
-        "       ##...#|BBB::..B| ",
-        "       #.....|B.BBBB.B| ",
-        "       #....#|B...B..B| ",
-        "       |+|||||B..BB.BB| ",
-        "       |BBBBB|B...B..B| ",
-        "       |.....|B...BB.B| ",
+        "             |||||||||| ",
+        "        #####|BBBBBBBB| ",
+        "       ##...#|B..BB..B| ",
+        "       #....X|B..BB..B| ",
+        "       |....#|B..BB..B| ",
+        "       |+|||||B..BB..B| ",
+        "       |BBBBB|B..BB..B| ",
         "       |.....+...BB..B| ",
-        "       |.F.F.|...~B.~B|#",
+        "       |.F.F.|...~..~B| ",
         "       |||||||...~.~~~|~",
         "       |~.q~~+~~~~~~~~`~",
         "       |Q~.~.|<.~BBBBB|~",
-        "       ||||||||||||||||#",
+        "       |||||||||||||||| ",
         "                        ",
         "                        ",
         "                        ",
@@ -162,10 +169,10 @@
         "G": "t_grate",
         "~": "t_sewage",
         "`": "t_sewage",
-        ":": "t_open_air"
+        "X": "t_open_air"
       },
-      "place_monster": [ { "monster": [ "dkz_mon_lurker_rectified" ], "x": [ 19, 21 ], "y": [ 10, 13 ], "chance": 100, "repeat": [ 2, 3 ] } ],
-      "furniture": { "F": "f_home_furnace", "q": "f_sink", "Q": "f_toilet", "B": "f_rack" , "`": "f_rubble" }
+      "place_monster": [ { "monster": [ "dkz_mon_lurker_rectified" ], "x": [ 19, 21 ], "y": [ 10, 13 ], "chance": 100 } ],
+      "furniture": { "F": "f_home_furnace", "q": "f_sink", "Q": "f_toilet", "B": "f_rack", "`": "f_rubble" }
     }
   },
   {
@@ -268,11 +275,11 @@
       "items": {
         "A": { "item": "DKZ_cutting_military", "chance": 100 },
         "B": [
-          { "item": "DKZ_armor_improvised_eye", "chance": 80 },
-          { "item": "DKZ_armor_improvised_torso", "chance": 80 },
-          { "item": "DKZ_armor_improvised_head", "chance": 80 },
-          { "item": "DKZ_armor_improvised_leg", "chance": 80 },
-          { "item": "DKZ_armor_improvised_hand", "chance": 80 }
+          { "item": "DKZ_armor_improvised_eye", "chance": 90 },
+          { "item": "DKZ_armor_improvised_torso", "chance": 90 },
+          { "item": "DKZ_armor_improvised_head", "chance": 90 },
+          { "item": "DKZ_armor_improvised_leg", "chance": 90 },
+          { "item": "DKZ_armor_improvised_hand", "chance": 90 }
         ],
         "C": { "item": "DKZ_guns_smg_military", "chance": 100 }
       },
@@ -296,11 +303,11 @@
       "items": {
         "A": { "item": "DKZ_bashing_improvised", "chance": 100 },
         "B": [
-          { "item": "DKZ_armor_improvised_eye", "chance": 80 },
-          { "item": "DKZ_armor_improvised_torso", "chance": 80 },
-          { "item": "DKZ_armor_improvised_head", "chance": 80 },
-          { "item": "DKZ_armor_improvised_leg", "chance": 80 },
-          { "item": "DKZ_armor_improvised_hand", "chance": 80 }
+          { "item": "DKZ_armor_improvised_eye", "chance": 90 },
+          { "item": "DKZ_armor_improvised_torso", "chance": 90 },
+          { "item": "DKZ_armor_improvised_head", "chance": 90 },
+          { "item": "DKZ_armor_improvised_leg", "chance": 90 },
+          { "item": "DKZ_armor_improvised_hand", "chance": 90 }
         ],
         "C": { "item": "DKZ_guns_shotgun_common", "chance": 100 }
       },
@@ -324,11 +331,11 @@
       "items": {
         "A": { "item": "DKZ_bashing_improvised", "chance": 100 },
         "B": [
-          { "item": "DKZ_armor_improvised_eye", "chance": 80 },
-          { "item": "DKZ_armor_improvised_torso", "chance": 80 },
-          { "item": "DKZ_armor_improvised_head", "chance": 80 },
-          { "item": "DKZ_armor_improvised_leg", "chance": 80 },
-          { "item": "DKZ_armor_improvised_hand", "chance": 80 }
+          { "item": "DKZ_armor_improvised_eye", "chance": 90 },
+          { "item": "DKZ_armor_improvised_torso", "chance": 90 },
+          { "item": "DKZ_armor_improvised_head", "chance": 90 },
+          { "item": "DKZ_armor_improvised_leg", "chance": 90 },
+          { "item": "DKZ_armor_improvised_hand", "chance": 90 }
         ],
         "C": { "item": "DKZ_guns_rifle_common", "chance": 100 }
       },
@@ -352,11 +359,11 @@
       "items": {
         "A": { "item": "DKZ_bashing_improvised", "chance": 100 },
         "B": [
-          { "item": "DKZ_armor_improvised_eye", "chance": 80 },
-          { "item": "DKZ_armor_improvised_torso", "chance": 80 },
-          { "item": "DKZ_armor_improvised_head", "chance": 80 },
-          { "item": "DKZ_armor_improvised_leg", "chance": 80 },
-          { "item": "DKZ_armor_improvised_hand", "chance": 80 }
+          { "item": "DKZ_armor_improvised_eye", "chance": 90 },
+          { "item": "DKZ_armor_improvised_torso", "chance": 90 },
+          { "item": "DKZ_armor_improvised_head", "chance": 90 },
+          { "item": "DKZ_armor_improvised_leg", "chance": 90 },
+          { "item": "DKZ_armor_improvised_hand", "chance": 90 }
         ],
         "C": { "item": "DKZ_guns_rifle_military", "chance": 100 }
       },
@@ -380,11 +387,11 @@
       "items": {
         "A": { "item": "DKZ_cutting_military", "chance": 100 },
         "B": [
-          { "item": "DKZ_armor_upgraded_eye", "chance": 80 },
-          { "item": "DKZ_armor_improvised_torso", "chance": 80 },
-          { "item": "DKZ_armor_improvised_head", "chance": 80 },
-          { "item": "DKZ_armor_improvised_leg", "chance": 80 },
-          { "item": "DKZ_armor_improvised_hand", "chance": 80 }
+          { "item": "DKZ_armor_upgraded_eye", "chance": 90 },
+          { "item": "DKZ_armor_improvised_torso", "chance": 90 },
+          { "item": "DKZ_armor_improvised_head", "chance": 90 },
+          { "item": "DKZ_armor_improvised_leg", "chance": 90 },
+          { "item": "DKZ_armor_improvised_hand", "chance": 90 }
         ],
         "C": { "item": "DKZ_guns_energy", "chance": 100 }
       },
@@ -412,16 +419,44 @@
       "items": {
         "A": { "item": "DKZ_cutting_military", "chance": 100 },
         "B": [
-          { "item": "DKZ_armor_upgraded_eye", "chance": 80 },
-          { "item": "DKZ_armor_chitin_torso", "chance": 80 },
-          { "item": "DKZ_armor_chitin_hand", "chance": 80 },
-          { "item": "DKZ_armor_chitin_arm", "chance": 80 },
-          { "item": "DKZ_armor_chitin_boots", "chance": 80 },
-          { "item": "DKZ_armor_chitin_head", "chance": 80 }
+          { "item": "DKZ_armor_upgraded_eye", "chance": 90 },
+          { "item": "DKZ_armor_chitin_torso", "chance": 90 },
+          { "item": "DKZ_armor_chitin_hand", "chance": 90 },
+          { "item": "DKZ_armor_chitin_arm", "chance": 90 },
+          { "item": "DKZ_armor_chitin_boots", "chance": 90 },
+          { "item": "DKZ_armor_chitin_head", "chance": 90 }
         ],
         "C": { "item": "DKZ_guns_pistol_military", "chance": 100 }
       },
       "item": { "A": { "item": "rag_bloody", "chance": 50 }, "B": { "item": "corpse_painful", "chance": 100 } }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "dkz_abstorefront_chunk",
+    "weight": 85,
+    "object": {
+      "mapgensize": [ 2, 2 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        " A",
+        "CB"
+      ],
+      "terrain": { " ": "t_null" },
+      "mapping": { "C": { "fields": { "field": "fd_blood" }, "chance": 60 }, "B": { "fields": { "field": "fd_blood" }, "chance": 60 } },
+      "items": { "A": { "item": "DKZ_cutting_military", "chance": 100 }, "C": { "item": "DKZ_guns_pistol_military", "chance": 100 } },
+      "item": {
+        "B": [
+          { "item": "helmet_riot", "chance": 100 },
+          { "item": "armor_riot", "chance": 100 },
+          { "item": "badge_swat", "chance": 100 },
+          { "item": "gloves_tactical", "chance": 100 },
+          { "item": "boots_combat", "chance": 100 },
+          { "item": "corpse_painful", "chance": 100 }
+        ],
+        "A": { "item": "rag_bloody", "chance": 50 }
+      }
     }
   },
   {
