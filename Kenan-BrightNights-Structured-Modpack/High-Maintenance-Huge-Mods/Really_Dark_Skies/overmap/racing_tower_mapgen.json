@@ -113,36 +113,11 @@
       "palettes": [ "arcology_palette" ],
       "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "free_merchants", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "place_npcs": [
-        {
-          "class": "DKZ_MAQUIS_BEAST_MUTANT",
-          "x": 75,
-          "y": 75,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_TROG_MUTANT",
-          "x": 73,
-          "y": 75,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_BEAST_MUTANT",
-          "x": 82,
-          "y": 81,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SPIDER_MUTANT",
-          "x": 77,
-          "y": 9,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SPIDER_MUTANT",
-          "x": 81,
-          "y": 13,
-          "add_trait": [ "DKZ_COMBAT" ]
-        }
+        { "class": "DKZ_MAQUIS_BEAST_MUTANT", "x": 75, "y": 75, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_TROG_MUTANT", "x": 73, "y": 75, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_BEAST_MUTANT", "x": 82, "y": 81, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 77, "y": 9, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 81, "y": 13, "add_trait": [ "DKZ_COMBAT" ] }
       ],
       "place_fields": [
         { "field": "fd_web", "x": [ 72, 84 ], "y": [ 4, 16 ], "repeat": 15 },
@@ -321,6 +296,49 @@
   {
     "type": "mapgen",
     "method": "json",
+    "om_terrain": [ [ "racing_tower_z-4_annex1a", "racing_tower_z-4_annex1b" ] ],
+    "object": {
+      "fill_ter": "t_thconc_floor",
+      "rows": [
+        "################################################",
+        "rrrrrrrrrrrrr                                  #",
+        "rrrrrrrrrrrrr                                  #",
+        "rrrrrIrrrIrrrr                                 #",
+        "XxXXXxXXXxXWrrr                                #",
+        "rIrrrIrrrIrrrrr                                #",
+        "rIrrrIrrrIrrrrr                                #",
+        "rIrrrIrrrIrrrrr                                #",
+        "XxXXXxXXXxXWrrr                                #",
+        "rIrrrIrrrIrrrr                                 #",
+        "rrrrrrrrrrrrr                                  #",
+        "rrrrrrrrrrrrr                                  #",
+        "rrrrrrrrrrrrr                                  #",
+        "rrrrrrrrrrrrr                                  #",
+        "rIrrrIrrrIrrrr                                 #",
+        "XxXXXxXXXxXWrrr                                #",
+        "rIrrrIrrrIrrrrr                                #",
+        "rIrrrIrrrIrrrrr                                #",
+        "rIrrrIrrrIrrrrr                                #",
+        "XxXXXIXXXxXWrrr                                #",
+        "rIrrrIrrrIrrrr                                 #",
+        "rrrrrrrrrrrrr                                  #",
+        "rrrrrrrrrrr                                    #",
+        "################################################"
+      ],
+      "palettes": [ "arcology_palette" ],
+      "terrain": {
+        "r": "t_railroad_rubble",
+        "-": "t_railroad_tie_h",
+        "I": "t_railroad_tie_v",
+        "X": "t_railroad_track",
+        "x": "t_railroad_track_on_tie",
+        "W": "t_buffer_stop"
+      }
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
     "om_terrain": [
       [ "racing_tower_z-1_1_1", "racing_tower_z-1_2_1", "racing_tower_z-1_3_1", "racing_tower_z-1_4_1" ],
       [ "racing_tower_z-1_1_2", "racing_tower_z-1_2_2", "racing_tower_z-1_3_2", "racing_tower_z-1_4_2" ],
@@ -474,46 +492,16 @@
         { "field": "fd_web", "x": [ 48, 71 ], "y": [ 3, 23 ], "repeat": 25 }
       ],
       "place_vehicles": [
-        { "vehicle": "military_cargo_truck", "x": 53, "y": 28, "chance": 1000, "rotation": 30, "status": 1 },
+        { "vehicle": "military_cargo_truck", "x": 38, "y": 28, "chance": 1000, "rotation": 30, "status": 1 },
         { "vehicle": "forklift", "x": 50, "y": 50, "chance": 1000, "rotation": 0, "status": 1 }
       ],
       "place_npcs": [
-        {
-          "class": "DKZ_MAQUIS_MANTIS_MUTANT",
-          "x": 79,
-          "y": 9,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SPIDER_MUTANT",
-          "x": 78,
-          "y": 11,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SPIDER_MUTANT",
-          "x": 76,
-          "y": 10,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_MANTIS_MUTANT",
-          "x": 79,
-          "y": 12,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_RIOT_COP",
-          "x": 93,
-          "y": 84,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_RIOT_COP",
-          "x": 5,
-          "y": 11,
-          "add_trait": [ "DKZ_LEADER" ]
-        }
+        { "class": "DKZ_MAQUIS_MANTIS_MUTANT", "x": 79, "y": 9, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 78, "y": 11, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SPIDER_MUTANT", "x": 76, "y": 10, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_MANTIS_MUTANT", "x": 79, "y": 12, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_RIOT_COP", "x": 93, "y": 84, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_RIOT_COP", "x": 5, "y": 11, "add_trait": [ "DKZ_LEADER" ] }
       ],
       "liquids": { "T": { "liquid": "water_sewage", "amount": [ 1, 25 ] }, "t": { "liquid": "water_sewage", "amount": [ 2, 5 ] } },
       "furniture": { "V": "f_vending_o", "T": "f_standing_tank", "Y": "f_washer", "y": "f_dryer" },
@@ -591,12 +579,12 @@
         ":####    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''      ##:",
         "::#     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
         "::#     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
-        ":##  ^  '''^^''''''''''^^''''''''''^^''''''''''''''''''''''^^''''''''''^^''''''''''^^'''  ^  ##:",
-        "::#     '''^^''''''''''^^''''''''''^^''''''''''''''''''''''^^''''''''''^^''''''''''^^'''     #::",
-        "::#     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
-        ":##  ^ ;''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''; ^  ##:",
-        "::#     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
-        "::#     ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
+        ":##  ^  '''^^''ẍẍẌẌẍẍ''^^''ẍẍẌẌẍẍ''^^''''''''''''''''''''''^^''''''''''^^''''''''''^^'''  ^  ##:",
+        "::#     '''^^''ẍ''''ẍ''^^''ẍ''''ẍ''^^''''''''''''''''''''''^^''''''''''^^''''''''''^^'''     #::",
+        "::#     '''''''Ẍ'ẇ''Ẍ''''''Ẍ'ẇ''Ẍ'''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
+        ":##  ^ ;'''''''Ẍ''ẇ'Ẍ''''''Ẍ''ẇ'Ẍ'''''''''''''''''''''''''''''''''''''''''''''''''''''''; ^  ##:",
+        "::#     '''''''ẍ''''ẍ''''''ẍ''''ẍ'''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
+        "::#     '''''''ẍẍẍẍẍẍ''''''ẍẍẍẍẍẍ'''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
         ":##  ^  '''''''''^^''''''''''^^''''''''''''''''''''''''''''''''''^^''''''''''^^'''''''''  ^  ##:",
         "::#     '''''''''^^''''''''''^^''''''''''''''''''''''''''''''''''^^''ẇ'''''''^^'''''''''     #::",
         "::#     '''''''ẍẍẍẍẍẍ''''''ẍẍẍẍẍẍ'''''''''''''''''''''''''''''''''''''''''''''''''''''''     #::",
@@ -674,35 +662,15 @@
         "::#  ; <#                                   ''''''''                                        >#::",
         "::#>>  <#                                    ''''''c                                        >#::",
         ":############################################@@@@@@############################################:",
-        "::#::#::#::#::#::#::#::#::#::#::#::#::#::#::#::::::#::#::#::#::#::#::#::#::#::#::#::#::#::#::#::",
-        "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"
+        "::#::#::#::#::#::#::#::#::#::#::#::#::#::#::#Zz:Z:z#::#::#::#::#::#::#::#::#::#::#::#::#::#::#::",
+        "::::::::::::::::::::::::::::::::::::::::::::zZzZzZzZ::::::::::::::::::::::::::::::::::::::::::::"
       ],
       "palettes": [ "arcology_palette" ],
       "place_npcs": [
-        {
-          "class": "DKZ_MAQUIS_QUARTERMASTER",
-          "x": 38,
-          "y": 49,
-          "add_trait": [ "DKZ_LEADER", "DKZ_TEAM_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_ELF_MUTANT",
-          "x": 50,
-          "y": 37,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_FELINE_MUTANT",
-          "x": 50,
-          "y": 38,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_MOTH_MUTANT",
-          "x": 50,
-          "y": 39,
-          "add_trait": [ "DKZ_LEADER" ]
-        }
+        { "class": "DKZ_MAQUIS_QUARTERMASTER", "x": 38, "y": 49, "add_trait": [ "DKZ_LEADER", "DKZ_TEAM_LEADER" ] },
+        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 50, "y": 37, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_FELINE_MUTANT", "x": 50, "y": 38, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_MOTH_MUTANT", "x": 50, "y": 39, "add_trait": [ "DKZ_LEADER" ] }
       ],
       "furniture": { "§": "f_tourist_table", "Ø": "f_stool", "Ẍ": "f_large_canvas_door", "ẍ": "f_large_canvas_wall" },
       "item": { "§": { "item": "deck_of_cards", "chance": 100 } },
@@ -721,12 +689,13 @@
       "place_nested": [
         { "chunks": [ "racing_tower_4x4_surgery" ], "x": 68, "y": 17 },
         { "chunks": [ "racing_tower_4x4_surgery" ], "x": 64, "y": 24 },
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 76, "y": 18 },
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 76, "y": 23 },
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 76, "y": 26 },
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 72, "y": 26 },
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 76, "y": 24 },
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 76, "y": 28 },
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 72, "y": 28 },
         { "chunks": [ "racing_tower_NPC_D" ], "x": 50, "y": 50 },
+        { "chunks": [ "racing_tower_4x4_store" ], "x": 16, "y": 12 },
         { "chunks": [ "racing_tower_4x4_store" ], "x": 16, "y": 20 },
+        { "chunks": [ "racing_tower_4x4_store" ], "x": 28, "y": 12 },
         { "chunks": [ "racing_tower_4x4_store" ], "x": 28, "y": 20 },
         { "chunks": [ "racing_tower_4x4_store" ], "x": 20, "y": 28 }
       ]
@@ -2062,42 +2031,12 @@
       ],
       "palettes": [ "arcology_palette" ],
       "place_npcs": [
-        {
-          "class": "DKZ_MAQUIS_BIONIC_ASSASSIN",
-          "x": 70,
-          "y": 4,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_RIOT_COP",
-          "x": 71,
-          "y": 3,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_RIOT_COP",
-          "x": 73,
-          "y": 3,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_CYBERCOP",
-          "x": 73,
-          "y": 5,
-          "add_trait": [ "DKZ_LEADER" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_BIONIC_DOCTOR",
-          "x": 84,
-          "y": 6,
-          "add_trait": [ "DKZ_MEDIC" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_ELF_MUTANT",
-          "x": 81,
-          "y": 5,
-          "add_trait": [ "DKZ_MEDIC" ]
-        }
+        { "class": "DKZ_MAQUIS_BIONIC_ASSASSIN", "x": 70, "y": 4, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_RIOT_COP", "x": 71, "y": 3, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_RIOT_COP", "x": 73, "y": 3, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_CYBERCOP", "x": 73, "y": 5, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_BIONIC_DOCTOR", "x": 84, "y": 6, "add_trait": [ "DKZ_MEDIC" ] },
+        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 81, "y": 5, "add_trait": [ "DKZ_MEDIC" ] }
       ],
       "computers": {
         "6": {
@@ -2319,54 +2258,14 @@
       ],
       "terrain": { "'": "t_pavement", "X": "t_glass_roof", "B": "t_metal_flat_roof" },
       "place_npcs": [
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 2,
-          "y": 2,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 2,
-          "y": 92,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 2,
-          "y": 47,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 92,
-          "y": 2,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 49,
-          "y": 2,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 92,
-          "y": 49,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 47,
-          "y": 92,
-          "add_trait": [ "DKZ_COMBAT" ]
-        },
-        {
-          "class": "DKZ_MAQUIS_SNIPER",
-          "x": 92,
-          "y": 92,
-          "add_trait": [ "DKZ_COMBAT" ]
-        }
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 2, "y": 2, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 2, "y": 92, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 2, "y": 47, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 92, "y": 2, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 49, "y": 2, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 92, "y": 49, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 47, "y": 92, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_SNIPER", "x": 92, "y": 92, "add_trait": [ "DKZ_COMBAT" ] }
       ]
     }
   },
@@ -2482,14 +2381,7 @@
         "................................................................................................"
       ],
       "palettes": [ "arcology_palette" ],
-      "place_npcs": [
-        {
-          "class": "DKZ_MAQUIS_BIRD_MUTANT",
-          "x": 31,
-          "y": 20,
-          "add_trait": [ "DKZ_COMBAT" ]
-        }
-      ]
+      "place_npcs": [ { "class": "DKZ_MAQUIS_BIRD_MUTANT", "x": 31, "y": 20, "add_trait": [ "DKZ_COMBAT" ] } ]
     }
   }
 ]

@@ -13,6 +13,131 @@
     }
   },
   {
+    "//": "4x4 crowded medical bedding",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "racing_tower_4x4_medical",
+    "weight": 250,
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rotation": [ 0, 3 ],
+      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
+      "rows": [
+        "ABAB",
+        "    ",
+        "BABA",
+        "    "
+      ],
+      "terrain": { " ": "t_null" },
+      "furniture": { "A": "f_floor_mattress", "B": "f_IV_pole" },
+      "item": {
+        " ": { "item": "rag_bloody", "chance": 25 },
+        "A": { "item": "rag_bloody", "chance": 25 },
+        "B": { "item": "bag_iv", "chance": 1 }
+      }
+    }
+  },
+  {
+    "//": "4x4 not crowded medical bedding",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "racing_tower_4x4_medical",
+    "weight": 250,
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rotation": [ 0, 3 ],
+      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
+      "rows": [
+        "    ",
+        " AB ",
+        "    ",
+        " BA "
+      ],
+      "terrain": { " ": "t_null" },
+      "furniture": { "A": "f_floor_mattress", "B": "f_IV_pole" },
+      "item": {
+        " ": { "item": "rag_bloody", "chance": 15 },
+        "A": { "item": "rag_bloody", "chance": 25 },
+        "B": { "item": "bag_iv", "chance": 1 }
+      }
+    }
+  },
+  {
+    "//": "4x4 kind of crowded medical bedding",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "racing_tower_4x4_medical",
+    "weight": 250,
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rotation": [ 0, 3 ],
+      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
+      "rows": [
+        " A A",
+        " B B",
+        "    ",
+        " AB "
+      ],
+      "terrain": { " ": "t_null" },
+      "furniture": { "A": "f_floor_mattress", "B": "f_IV_pole" },
+      "item": {
+        " ": { "item": "rag_bloody", "chance": 15 },
+        "A": { "item": "rag_bloody", "chance": 25 },
+        "B": { "item": "bag_iv", "chance": 10 }
+      }
+    }
+  },
+  {
+    "//": "4x4 in privacy tent, surgery",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "racing_tower_4x4_surgery",
+    "weight": 500,
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rotation": [ 0, 3 ],
+      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
+      "rows": [
+        "1111",
+        "1 B1",
+        "2 A1",
+        "1111"
+      ],
+      "terrain": { " ": "t_null" },
+      "furniture": { "1": "f_large_canvas_wall", "2": "f_large_canvas_door", "A": "f_floor_mattress", "B": "f_IV_pole" },
+      "item": {
+        " ": { "item": "rag_bloody", "chance": 95 },
+        "A": { "item": "rag_bloody", "chance": 25 },
+        "B": { "item": "bag_iv", "chance": 10 }
+      }
+    }
+  },
+  {
+    "//": "4x4 in privacy tent, surgery",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "racing_tower_4x4_surgery",
+    "weight": 500,
+    "object": {
+      "mapgensize": [ 4, 4 ],
+      "rotation": [ 0, 3 ],
+      "faction_owner": [ { "id": "maquis", "x": [ 0, 5 ], "y": [ 0, 5 ] } ],
+      "rows": [
+        "1111",
+        "1A 1",
+        "1B 2",
+        "1111"
+      ],
+      "terrain": { " ": "t_null" },
+      "furniture": { "1": "f_large_canvas_wall", "2": "f_large_canvas_door", "A": "f_floor_mattress", "B": "f_IV_pole" },
+      "item": {
+        " ": { "item": "rag_bloody", "chance": 95 },
+        "A": { "item": "rag_bloody", "chance": 25 },
+        "B": { "item": "bag_iv", "chance": 10 }
+      }
+    }
+  },
+  {
     "type": "mapgen",
     "method": "json",
     "update_mapgen_id": "dkz_base_build_war_protocol1",
