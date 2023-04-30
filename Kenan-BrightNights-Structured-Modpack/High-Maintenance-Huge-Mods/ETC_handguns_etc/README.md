@@ -50,7 +50,7 @@ New Professions were added so you can try some of them from the very game start 
 * The most powerful round features a superalloy and tungsten core penetrator and cannot be hand-loaded, while its subsonic round has a depleted uranium core and likewise can't.
 
 ###### 5.56x45mm
-* Guns chambered for it and ammo are found almost exclusively in labs, military bases, bunkers, or near a dead soldier if you're lucky. A line of them can be converted to several configurations, UPS-free, modified action for conventional .223 included.
+* Guns chambered for it and ammo are found almost exclusively in labs, military bases, bunkers, or near a dead soldier if you're lucky. A line of them can be converted to several configurations, UPS-free, modified action for conventional 5.56x45mm included.
 
 * "Drone-Killer" rounds: slightly lower stopping power than 5.56 NATO due to overpenetration but longer range, accuracy and drastically better armor penetration.
 
@@ -72,20 +72,20 @@ New Professions were added so you can try some of them from the very game start 
 * Hand-loading without spare, factory-made microcells is !FUN! It requires Fabrication skill at 10 and a 'lab journal-Herrera', found only in labs. It is radioactive too, for it involves pouring plutonium slurry inside crafted microcells.
 
 ## Other guns
-* .308 and .300 Stockless Marksman Carbines, wrist-breaking 'sidearms' to the M24 and M2010 ESR sniper rifles using the same rounds and mags, small enough to fit in holsters. Burst capable for maximum overkill.
+* 7.62x51mm and .300 Stockless Marksman Carbines, wrist-breaking 'sidearms' to the M24 and M2010 ESR sniper rifles using the same rounds and mags, small enough to fit in holsters. Burst capable for maximum overkill.
 
 * 9mm Designated Marksman SMG plus its semi-auto and silenced variants, with very long barrels for 9mm guns, making them better for long range engagements and worse for close combat. Use rifles skill like the Cx4 Storm.
 
 * 9mm Baby Eel, like its ETC counterpart, it is small and lightweight enough to fit inside an ankle holster while loaded with either a compact suppressor or pistol scope attached.
 
-* QR555 .223 modular weapon system with integrated suppressors, created to operate with new, reduced power subsonic loads for 5.56 NATO. Interchangeable with the 5.56 ETC ER555, it shares most components with it through conversion kits.
+* QR555 5.56x45mm modular weapon system with integrated suppressors, created to operate with new, reduced power subsonic loads for 5.56 NATO. Interchangeable with the 5.56 ETC ER555, it shares most components with it through conversion kits.
 
 * Gauss guns. The GC166 is an endgame-tier coilgun which can shoot nails, flechettes or optimal rare magpins. The GG285 is even more powerful but its 1.06mm magnetic metal glass ammo is very rare.
 
 * 3 Shotguns. The OCG12 Excidia, an automatic double barrel shotgun based upon the Gilboa Snake like the Saiga-12 is based upon the AK-47, its OCG12-S Scuta semi-auto variant and the Modified L12 Defender, a starting gun for Leadworks Executives. 
 
 ## Other ammo
-* Subsonic loads for 5.56 NATO: .223 OCG Blackout and 5.56 OCG Blackout. They don't use a larger diameter like .300 Whisper/AAC Blackout but use tungsten and uranium respectively to pack more mass into the same volume and mitigate muzzle energy loss.
+* Subsonic loads for 5.56 NATO: 5.56x45mm OCG Blackout and 5.56 OCG Blackout. They don't use a larger diameter like .300 Whisper/AAC Blackout but use tungsten and uranium respectively to pack more mass into the same volume and mitigate muzzle energy loss.
 
 * Some custom 12 gauge magnum handloads reusing tungsten or depleted uranium projectiles extracted from previously mentioned rounds for increased armor penetration.
 

@@ -152,10 +152,10 @@
 		  },
 		  { "text": ".357 Magnum rounds [50 for 250 chips] (use your code card to unlock)", "topic": "POOR", "condition": { "and": [ { "u_has_item": "357_code" }, { "not": { "u_has_items": { "item": "sierra_chip", "count": 250 } } } ] } },
 		  {
-			"text": ".308 Winchester rounds [20 for 150 chips] (use your code card to unlock)", "topic": "TRADE", "condition": { "and": [ { "u_has_items": { "item": "sierra_chip", "count": 150 } }, { "u_has_item": "308_code" } ] },
+			"text": "7.62x51mm '.308 Winchester' rounds [20 for 150 chips] (use your code card to unlock)", "topic": "TRADE", "condition": { "and": [ { "u_has_items": { "item": "sierra_chip", "count": 150 } }, { "u_has_item": "308_code" } ] },
 			"effect": [ { "u_sell_item": "sierra_chip", "count": 150 }, { "npc_consume_item": "sierra_chip", "count": 150 }, { "u_buy_item": "308", "count": 1 } ]
 		  },
-		  { "text": ".308 Winchester rounds [20 for 150 chips] (use your code card to unlock)", "topic": "POOR", "condition": { "and": [ { "u_has_item": "308_code" }, { "not": { "u_has_items": { "item": "sierra_chip", "count": 150 } } } ] } },
+		  { "text": "7.62x51mm '.308 Winchester' rounds [20 for 150 chips] (use your code card to unlock)", "topic": "POOR", "condition": { "and": [ { "u_has_item": "308_code" }, { "not": { "u_has_items": { "item": "sierra_chip", "count": 150 } } } ] } },
 		  {
 			"text": "Firearm repair kit [250 chips] (use your code card to unlock)", "topic": "TRADE", "condition": { "and": [ { "u_has_items": { "item": "sierra_chip", "count": 250 } }, { "u_has_item": "gun_code" } ] },
 			"effect": [ { "u_sell_item": "sierra_chip", "count": 250 }, { "npc_consume_item": "sierra_chip", "count": 250 }, { "u_buy_item": "small_repairkit", "count": 1 } ]
