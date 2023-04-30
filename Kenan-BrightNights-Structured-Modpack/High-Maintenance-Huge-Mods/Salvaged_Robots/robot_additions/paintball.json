@@ -2,7 +2,7 @@
   {
     "type": "AMMO",
     "id": "glowball",
-    "price": 500,
+    "price": "5 USD",
     "name": "glowball",
     "symbol": "=",
     "color": "pink",
@@ -11,7 +11,7 @@
     "volume": "250 ml",
     "weight": "1 g",
     "ammo_type": "paintball",
-    "damage": 2,
+    "damage": { "damage_type": "bash", "amount": 2 },
     "dispersion": 100,
     "count": 100,
     "stack_size": 100,
