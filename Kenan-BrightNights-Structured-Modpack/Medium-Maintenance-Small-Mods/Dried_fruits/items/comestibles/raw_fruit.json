@@ -1,4 +1,4 @@
-[
+[    
   {
     "type": "COMESTIBLE",
     "id": "apple_slices",
@@ -16,7 +16,7 @@
     "material": "fruit",
     "volume": "375 ml",
     "fun": 3,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "FREEZERBURN", "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_apple",
     "vitamins": [ [ "vitC", 3 ] ]
   },
@@ -37,7 +37,7 @@
     "material": "fruit",
     "volume": "66 ml",
     "fun": 3,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_plums",
     "vitamins": [ [ "vitC", 2 ] ]
   },
@@ -59,7 +59,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 3,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_apricots",
     "vitamins": [ [ "vitA", 4 ], [ "vitC", 4 ], [ "iron", 1 ] ]
   },
@@ -80,7 +80,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 4,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_peaches",
     "vitamins": [ [ "vitC", 3 ] ]
   },  
@@ -100,7 +100,7 @@
     "material": "fruit",
     "volume": "500 ml",
     "fun": 5,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_bananas",
     "vitamins": [ [ "vitC", 4 ] ]
   },  
@@ -122,7 +122,7 @@
     "volume": "1500 ml",
     "bashing": 1,
     "fun": 4,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_pineapple",
     "vitamins": [ [ "vitC", 22 ] ]
   },
@@ -144,7 +144,7 @@
     "//": "serving size is 250 ml of edible material, extra volume is the pit.",
     "volume": "1 L",
     "fun": 5,
-	"flags": [ "SMOKABLE" ],
+	"flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_pineapple",
     "vitamins": [ [ "vitA", 2 ], [ "vitC", 17 ] ]
   },
@@ -165,7 +165,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 3,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_kiwi",
     "vitamins": [ [ "vitC", 1 ], [ "calcium", 2 ], [ "iron", 2 ] ]
   },
@@ -186,7 +186,7 @@
     "material": "fruit",
     "volume": "750 ml",
     "fun": 5,
-	"flags": [ "SMOKABLE" ],
+	"flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_papaya",
     "vitamins": [ [ "vitA", 3 ], [ "vitC", 39 ], [ "calcium", 1 ] ]
   },
@@ -207,7 +207,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 4,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "FREEZERBURN", "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "raisins",
     "vitamins": [ [ "vitC", 1 ] ]
   },  
@@ -228,7 +228,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 2,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN"  ],
     "smoking_result": "dried_blueberries",
     "vitamins": [ [ "vitC", 6 ] ]
   },  
@@ -248,7 +248,7 @@
     "price": 150,
     "material": "fruit",
     "volume": "250 ml",
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dried_cranberries",
     "vitamins": [ [ "vitC", 6 ] ]
   },   {
@@ -268,7 +268,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 5,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE","EDIBLE_FROZEN" ],
     "smoking_result": "dry_fruit",
     "vitamins": [ [ "vitC", 34 ] ]
   },
@@ -289,7 +289,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 4,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dry_fruit",
     "vitamins": [ [ "vitC", 15 ], [ "iron", 1 ] ]
   },
@@ -310,7 +310,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 2,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dry_fruit",
     "vitamins": [ [ "vitC", 1 ] ]
   },
@@ -331,6 +331,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 4,
+    "flags": [ "EDIBLE_FROZEN" ],
     "vitamins": [ [ "vitC", 14 ], [ "calcium", 1 ], [ "iron", 3 ] ]
   },
   {
@@ -350,6 +351,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": -2,
+    "flags": [ "EDIBLE_FROZEN" ],
     "vitamins": [ [ "vitA", 1 ], [ "vitC", 15 ], [ "calcium", 1 ], [ "iron", 3 ] ]
   },
   {
@@ -369,6 +371,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 2,
+    "flags": [ "EDIBLE_FROZEN" ],
     "vitamins": [ [ "vitA", 8 ], [ "vitC", 152 ], [ "calcium", 6 ], [ "iron", 2 ] ]
   },
   {
@@ -388,7 +391,7 @@
     "material": "fruit",
     "volume": "250 ml",
     "fun": 4,
-    "flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE", "EDIBLE_FROZEN" ],
     "smoking_result": "dry_fruit",
     "vitamins": [ [ "vitC", 2 ] ]
   }

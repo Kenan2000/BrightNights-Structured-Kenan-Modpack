@@ -2,24 +2,26 @@
   {
     "id": "crab_imitation",
     "type": "COMESTIBLE",
-    "comestible_type": "FOOD",
+	"comestible_type": "FOOD",
     "name": { "str": "imitation crab meat", "str_pl": "imitation crab meat" },
     "description": "Imitation crab meat. A real delicacy, with a decent amount of longevity to it. A rather smart snack, bringing you back to days before the dead walked.",
     "//": "Nutrition information based on whitefish",
     "weight": "148 g",
     "volume": "50 ml",
-    "symbol": "%",
-    "color": "red",
-    "container": "plastic_bag_vac",
-    "charges": 4,
-    "healthy": -1,
+	"symbol": "%",
+	"color": "red",
+	"container": "plastic_bag_vac",
+	"charges": 4,
+	"healthy": -1,
     "fun": 5,
     "price": 500,
     "spoils_in": "24 days",
     "vitamins": [ [ "vitA", 1 ], [ "vitC", 1 ], [ "calcium", 1 ], [ "iron", 2 ], [ "vitB", 5 ] ],
     "calories": 90
   },
-  {
+  
+  
+    {
     "type": "COMESTIBLE",
     "id": "crabsmart_sandwich",
     "name": { "str": "imitation crab sandwich", "str_pl": "imitation crab sandwiches" },
@@ -37,7 +39,8 @@
     "fun": 14,
     "vitamins": [ [ "vitA", 2 ], [ "vitC", 3 ], [ "calcium", 10 ], [ "iron", 10 ], [ "vitB", 5 ] ]
   },
-  {
+  
+    {
     "type": "COMESTIBLE",
     "id": "macaroni_crabsmart",
     "name": { "str": "imitation crab macaroni and cheese" },
@@ -54,7 +57,7 @@
     "price": 490,
     "material": [ "wheat", "flesh", "milk" ],
     "volume": "250 ml",
-    "flags": [ "EATEN_HOT" ],
+    "flags": [ "EATEN_HOT", "FREEZERBURN" ],
     "fun": 9,
     "vitamins": [ [ "vitA", 15 ], [ "vitC", 4 ], [ "calcium", 32 ], [ "iron", 20 ], [ "vitB", 195 ] ]
   }

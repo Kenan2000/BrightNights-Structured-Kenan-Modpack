@@ -8,9 +8,7 @@
     "price": "650 USD",
     "material": [ "plastic", "powder", "uranium" ],
     "dispersion": 80,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 14 } ],
-    "relative": { "damage": { "damage_type": "bullet", "amount": 12, "armor_penetration": -17 } },
+    "relative": { "damage": { "damage_type": "bullet", "amount": 12, "armor_penetration": -17 }, "range": 14 },
     "proportional": { "recoil": 2 },
     "extend": { "effects": [ "INCENDIARY" ] },
     "delete": { "effects": [ "SHOT" ] }
@@ -30,8 +28,7 @@
     "stack_size": 20,
     "ammo_type": "shot",
     "casing": "shot_hull",
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ],
+    "range": 12,
     "damage": { "damage_type": "bullet", "amount": 38, "armor_penetration": 50 },
     "recoil": 2750,
     "loudness": 160,
@@ -45,9 +42,7 @@
     "description": "A custom armor-piercing slug with an extracted 100gr .22 ETC tungsten ball converted into its tip, enveloped by a lead outer core which in turn is covered by a copper jacket.",
     "price": "400 USD",
     "dispersion": 90,
-    "range": 0,
-    "shape": [ "cone", { "half_angle": 15, "length": 12 } ],
-    "relative": { "damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": -34 } },
+    "relative": { "damage": { "damage_type": "bullet", "amount": 6, "armor_penetration": -34 }, "range": 12 },
     "proportional": { "recoil": 1.5 },
     "delete": { "effects": [ "SHOT" ] }
   }

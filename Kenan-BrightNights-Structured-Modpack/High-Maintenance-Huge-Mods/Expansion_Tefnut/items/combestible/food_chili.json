@@ -1,5 +1,5 @@
 [
-  {
+    {
     "type": "COMESTIBLE",
     "id": "chili_canned",
     "name": { "str": "canned chili", "str_pl": "canned chili" },
@@ -20,7 +20,8 @@
     "charges": 2,
     "vitamins": [ [ "vitA", 14 ], [ "vitC", 7 ], [ "calcium", 6 ], [ "iron", 27 ] ]
   },
-  {
+  
+      {
     "type": "COMESTIBLE",
     "id": "beans_refried",
     "name": { "str": "refried beans", "str_pl": "refried beans" },
@@ -41,7 +42,8 @@
     "charges": 6,
     "vitamins": [ [ "vitA", 14 ], [ "vitC", 7 ], [ "calcium", 6 ], [ "iron", 27 ] ]
   },
-  {
+  
+        {
     "type": "COMESTIBLE",
     "id": "chili_canned_nobeans",
     "name": { "str": "beanless canned chili", "str_pl": "beanless canned chili" },
@@ -62,17 +64,14 @@
     "charges": 4,
     "vitamins": [ [ "vitA", 14 ], [ "vitC", 7 ], [ "calcium", 6 ], [ "iron", 27 ] ]
   },
-  {
+  
+    {
     "type": "COMESTIBLE",
     "id": "chiliburger",
     "name": { "str": "chili burger" },
     "conditional_names": [
       { "type": "FLAG", "condition": "CANNIBALISM", "name": { "str": "chump %s", "str_pl": "chump %s" } },
-      {
-        "type": "COMPONENT_ID",
-        "condition": "mutant",
-        "name": { "str": "chilling burger", "str_pl": "chilling burgers" }
-      }
+      { "type": "COMPONENT_ID", "condition": "mutant", "name": { "str": "chilling burger", "str_pl": "chilling burgers" } }
     ],
     "weight": "133 g",
     "color": "brown",
@@ -91,9 +90,7 @@
     "vitamins": [ [ "calcium", 9 ], [ "iron", 14 ], [ "vitA", 14 ], [ "vitC", 7 ] ]
   },
   
-  
-  
-  {
+    {
     "type": "COMESTIBLE",
     "id": "chilirice",
     "name": { "str": "chili and rice", "str_pl": "chili and rice" },
@@ -108,8 +105,9 @@
     "price": 500,
     "material": [ "veggy", "bean", "flesh", "tomato" ],
     "volume": "250 ml",
-    "flags": [ "EATEN_HOT" ],
+    "flags": [ "EATEN_HOT", "FREEZERBURN" ],
     "fun": 5,
     "vitamins": [ [ "vitC", 14 ], [ "calcium", 4 ], [ "iron", 16 ] ]
   }
+  
 ]
