@@ -1,5 +1,5 @@
 [
-{
+  {
     "type": "COMESTIBLE",
     "id": "pizza_junk",
     "name": { "str": "fast-food pizza" },
@@ -14,13 +14,12 @@
     "material": [ "wheat", "flesh", "junk" ],
     "volume": "1 L",
     "charges": 8,
-	   "healthy": -3,
+    "healthy": -3,
     "flags": [ "EATEN_HOT" ],
     "fun": 5,
     "vitamins": [ [ "vitA", 3 ], [ "vitC", 10 ], [ "calcium", 28 ], [ "iron", 28 ] ]
   },
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "fastfood_burrito",
     "name": { "str": "fast food burrito" },
@@ -40,8 +39,7 @@
     "flags": [ "EATEN_HOT" ],
     "fun": 3
   },
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "fastfood_taco",
     "name": { "str": "fast food taco" },
@@ -61,8 +59,7 @@
     "flags": [ "EATEN_HOT" ],
     "fun": 5
   },
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "fastfood_quesadilla",
     "name": { "str": "fast food quesadilla" },
@@ -82,8 +79,7 @@
     "flags": [ "EATEN_HOT" ],
     "fun": 1
   },
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "can_cocktail",
     "name": { "str_sp": "fruit cocktail" },
@@ -95,7 +91,7 @@
     "symbol": "%",
     "quench": 6,
     "calories": 280,
-	    "healthy": -1,
+    "healthy": -1,
     "description": "Peach, pear, and pineapple chunks, mixed with grapes and cherries in a sweet, sugary syrup. Not as healthy as raw fruit, but certainly delicious.",
     "price": 140,
     "price_postapoc": 150,
@@ -104,8 +100,7 @@
     "fun": 8,
     "vitamins": [ [ "vitA", 4 ], [ "vitC", 9 ], [ "iron", 4 ] ]
   },
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "beefaroni",
     "name": { "str": "beefaroni" },
@@ -125,7 +120,6 @@
     "charges": 2,
     "vitamins": [ [ "vitA", 6 ], [ "calcium", 16 ], [ "iron", 9 ] ]
   },
-  
   {
     "type": "COMESTIBLE",
     "id": "beefaroni_cheese",
@@ -140,15 +134,13 @@
     "description": "Ground beef and Macaroni noodles. Similar to hamburger helper, but comes canned. Now with extra cheese!.",
     "price": 250,
     "price_postapoc": 200,
-    "material": [ "flesh", "wheat", "milk"  ],
+    "material": [ "flesh", "wheat", "milk" ],
     "volume": "500 ml",
     "flags": [ "EATEN_HOT" ],
     "charges": 2,
     "vitamins": [ [ "vitA", 6 ], [ "calcium", 16 ], [ "iron", 12 ] ]
   },
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "macaroni_can",
     "name": { "str_sp": "Canned mac & cheese" },
@@ -169,9 +161,7 @@
     "fun": 2,
     "vitamins": [ [ "calcium", 10 ], [ "iron", 11 ] ]
   },
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "can_beef",
     "name": { "str_sp": "canned corn beef" },
@@ -193,10 +183,7 @@
     "fun": 2,
     "vitamins": [ [ "iron", 3 ] ]
   },
-  
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "cheezits",
     "name": { "str_sp": "cheesey cracker" },
@@ -213,14 +200,11 @@
     "price_postapoc": 200,
     "material": [ "junk", "milk" ],
     "volume": "250 ml",
-    "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "vitamins": [ [ "vitC", 7 ], [ "calcium", 1 ], [ "iron", 2 ] ],
     "fun": 6
   },
-  
-  
-      {
+  {
     "type": "COMESTIBLE",
     "id": "cheesepuffs",
     "name": { "str_sp": "cheese puffs" },
@@ -237,14 +221,11 @@
     "price_postapoc": 200,
     "material": [ "junk", "milk" ],
     "volume": "250 ml",
-    "flags": [ "EDIBLE_FROZEN" ],
     "charges": 3,
     "vitamins": [ [ "vitC", 7 ], [ "calcium", 1 ], [ "iron", 2 ] ],
     "fun": 6
   },
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "takis",
     "name": { "str_sp": "spicy tortilla chips" },
@@ -261,17 +242,11 @@
     "price_postapoc": 150,
     "material": "junk",
     "volume": "250 ml",
-    "flags": [ "EDIBLE_FROZEN" ],
-	"charges": 6,
+    "charges": 6,
     "vitamins": [ [ "calcium", 5 ], [ "iron", 3 ] ],
     "fun": 12
   },
-  
-  
-  
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "kiwi_strawberry",
     "name": { "str": "strawberry kiwi soda", "str_pl": "strawberry kiwi soda" },
@@ -293,9 +268,7 @@
     "vitamins": [ [ "vitC", 60 ] ],
     "fun": 6
   },
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "pineapple_soda",
     "name": { "str": "pineapple soda", "str_pl": "pineapple soda" },
@@ -317,9 +290,7 @@
     "vitamins": [ [ "vitC", 60 ] ],
     "fun": -2
   },
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "citrusrush",
     "name": { "str": "citrus soda" },
@@ -345,8 +316,7 @@
     "flags": [ "EATEN_COLD" ],
     "fun": 5
   },
-  
-      {
+  {
     "type": "COMESTIBLE",
     "id": "jumpjuice",
     "name": { "str": "Jump Juice" },
@@ -372,9 +342,7 @@
     "flags": [ "EATEN_COLD" ],
     "fun": 5
   },
-  
-  
-    {
+  {
     "type": "COMESTIBLE",
     "id": "cola_cocaine",
     "name": { "str": "cocaine cola" },
@@ -402,6 +370,4 @@
     "freezing_point": -49,
     "fun": 30
   }
-  
-  
 ]
