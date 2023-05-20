@@ -9,7 +9,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 1.4, "armor_penetration": 9 },
     "dispersion": 250,
-    "effects": [ "RECOVER_2" ]
+    "dont_recover_one_in": 2
   },
   {
     "id": "bolt_simple_wood",
@@ -21,7 +21,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 1.5, "armor_penetration": 11 },
     "dispersion": 480,
-    "effects": [ "RECOVER_6" ]
+    "dont_recover_one_in": 6
   },
   {
     "id": "bolt_makeshift",
@@ -33,7 +33,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "armor_penetration": 14, "damage_multiplier": 1.65 },
     "dispersion": 480,
-    "effects": [ "RECOVER_8" ]
+    "dont_recover_one_in": 8
   },
   {
     "id": "bolt_wood",
@@ -45,7 +45,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 1.72, "armor_penetration": 14 },
     "dispersion": 440,
-    "effects": [ "RECOVER_25" ]
+    "dont_recover_one_in": 25
   },
   {
     "id": "bolt_wood_bodkin",
@@ -57,7 +57,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 1.8, "armor_penetration": 16 },
     "dispersion": 400,
-    "effects": [ "RECOVER_30" ]
+    "dont_recover_one_in": 30
   },
   {
     "id": "bolt_metal",
@@ -69,7 +69,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 1.95, "armor_penetration": 19 },
     "dispersion": 400,
-    "effects": [ "RECOVER_20" ]
+    "dont_recover_one_in": 20
   },
   {
     "id": "bolt_steel",
@@ -81,7 +81,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 2.05, "armor_penetration": 20 },
     "dispersion": 70,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "id": "bolt_steel_bodkin",
@@ -93,7 +93,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 2.15, "armor_penetration": 25 },
     "dispersion": 65,
-    "effects": [ "RECOVER_40" ]
+    "dont_recover_one_in": 40
   },
   {
     "id": "bolt_steel_target",
@@ -105,7 +105,8 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 0.5 },
     "dispersion": 70,
-    "effects": [ "RECOVER_45", "NOGIB" ]
+    "effects": [ "NOGIB" ],
+    "dont_recover_one_in": 45
   },
   {
     "id": "bolt_cf",
@@ -117,7 +118,7 @@
     "loudness": 0,
     "damage": { "damage_type": "stab", "damage_multiplier": 2.35, "armor_penetration": 30 },
     "dispersion": 60,
-    "effects": [ "RECOVER_30" ]
+    "dont_recover_one_in": 30
   },
   {
     "id": "bullet_crossbow",
