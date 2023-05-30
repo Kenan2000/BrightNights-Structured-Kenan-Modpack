@@ -1,8 +1,9 @@
 [
-    {
-        "type" : "SPECIES",
-        "id" : "CYBORG",
-		"anger_triggers" : ["HURT", "FRIEND_DIED"],
-        "fear_triggers" : ["FIRE"]
-    }
+  {
+    "type" : "SPECIES",
+    "id" : "CYBORG",
+    "name": { "str": "cyborg" },
+    "anger_triggers" : ["HURT", "FRIEND_DIED"],
+    "fear_triggers" : ["FIRE"]
+  }
 ]

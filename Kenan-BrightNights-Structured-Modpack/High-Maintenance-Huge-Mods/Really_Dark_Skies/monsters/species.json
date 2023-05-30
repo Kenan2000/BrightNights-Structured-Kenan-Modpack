@@ -2,6 +2,7 @@
   {
     "type": "SPECIES",
     "id": "ALIEN",
+    "name": { "str": "alien" },
     "description": "an alien",
     "footsteps": "metallic footfalls",
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ]
@@ -9,6 +10,7 @@
   {
     "type": "SPECIES",
     "id": "ALIENROBOT",
+    "name": { "str": "alien robot" },
     "description": "an alien robot",
     "footsteps": "booming stomps",
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ]
@@ -16,6 +18,7 @@
   {
     "type": "SPECIES",
     "id": "WILDALIEN",
+    "name": { "str": "alien animal" },
     "description": "an alien animal",
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
     "fear_triggers": [ "HURT", "FIRE" ]
@@ -23,6 +26,7 @@
   {
     "type": "SPECIES",
     "id": "BIOCRYSTAL",
+    "name": { "str": "fusion of flesh and mineral", "str_pl": "fusions of flesh and mineral" },
     "description": "a fusion of flesh and mineral",
     "footsteps": "shuffling and scraping.",
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],

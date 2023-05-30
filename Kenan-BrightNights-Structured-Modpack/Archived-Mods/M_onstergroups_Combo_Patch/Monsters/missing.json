@@ -2,6 +2,7 @@
   {
     "type" : "SPECIES",
     "id" : "TYRANID",
+    "name": { "str": "tyranid" },
     "description": "a tyranid",
     "anger_triggers" : [ "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
     "fear_triggers" : [ "HURT", "FIRE" ]	
@@ -9,6 +10,7 @@
   {
     "type" : "SPECIES",
     "id" : "ORK",
+    "name": { "str": "ork" },
     "description": "an ork",
     "anger_triggers" : [ "FRIEND_DIED", "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
     "fear_triggers" : [ "HURT", "FIRE" ]
