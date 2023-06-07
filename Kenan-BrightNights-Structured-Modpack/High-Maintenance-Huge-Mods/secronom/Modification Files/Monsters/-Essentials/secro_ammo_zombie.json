@@ -20,7 +20,8 @@
     "ammo_type": "SSgrenade",
     "range": 18,
     "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 8 },
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "RECOVER_9", "CUSTOM_EXPLOSION" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": {
       "damage": 5,
@@ -69,7 +70,8 @@
     "ammo_type": "SSgrenade",
     "range": 18,
     "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 8 },
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "RECOVER_9", "CUSTOM_EXPLOSION" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": {
       "damage": 10,
@@ -118,7 +120,8 @@
     "ammo_type": "SSgrenade",
     "range": 18,
     "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 8 },
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "RECOVER_9", "CUSTOM_EXPLOSION" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": {
       "damage": 20,

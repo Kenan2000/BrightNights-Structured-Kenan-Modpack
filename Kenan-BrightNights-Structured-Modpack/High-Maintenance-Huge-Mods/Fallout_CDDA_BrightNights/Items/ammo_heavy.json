@@ -17,7 +17,8 @@
     "damage": { "damage_type": "stab", "amount": 255, "armor_penetration": 8 },
     "dispersion": 30,
     "recoil": 3000,
-    "effects": [ "RECOVER_100", "WIDE", "MUZZLE_SMOKE" ]
+    "effects": [ "WIDE", "MUZZLE_SMOKE" ],
+    "dont_recover_one_in": 100
   },
   {
     "id": "cannonshot",
@@ -80,7 +81,8 @@
     "damage": { "damage_type": "stab", "amount": 510, "armor_penetration": 8 },
     "dispersion": 30,
     "recoil": 3000,
-    "effects": [ "RECOVER_100", "WIDE", "MUZZLE_SMOKE" ]
+    "effects": [ "WIDE", "MUZZLE_SMOKE" ],
+    "dont_recover_one_in": 100
   },
   {
     "id": "47mm_caseless",

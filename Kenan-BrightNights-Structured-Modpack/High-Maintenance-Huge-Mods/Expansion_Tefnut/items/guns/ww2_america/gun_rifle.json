@@ -3,6 +3,7 @@
     "id": "m1941_johnson",
     "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "rifle_manual",
     "reload_noise_volume": 10,
     "name": { "str": "m1941 'Johnny Gun'" },
     "description": "Designed by a lawyer during the second world war, the 'Johnny Gun' was designed to replace the m1 rifle the military had adopted. Being fed by a side-loading magazine, its a tad bulkier than other options at the time, and was mostly forgotten for being a worse BAR.",
@@ -10,13 +11,10 @@
     "volume": "3500 ml",
     "price": "3500 USD",
     "price_postapoc": "40 USD",
-    "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "3006" ],
-    "skill": "rifle",
     "dispersion": 240,
     "durability": 7,
     "min_cycle_recoil": 3420,
@@ -39,12 +37,11 @@
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
     "magazines": [ [ "3006", [ "m1941mag", "m1941bigmag", "belt3006" ] ] ]
   },
-
-
   {
     "id": "m1919",
     "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "mg_base",
     "reload_noise_volume": 10,
     "name": { "str": "m1919 Browning Machine Gun" },
     "description": "Chambered in 30-06, this gun saw common usage from the second world war all the way up to Vietnam. Loaded by a .30-06 ammo belt, it was mostly relegated to secondary roles once the M60 came out, but still occasionally sees use to this day.",
@@ -55,16 +52,13 @@
     "to_hit": -1,
     "bashing": 12,
     "material": [ "steel", "wood" ],
-    "symbol": "(",
     "color": "dark_gray",
     "ammo": [ "3006" ],
-    "skill": "rifle",
     "dispersion": 180,
     "durability": 8,
     "min_cycle_recoil": 3420,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "AUTO", "auto", 3 ] ],
     "barrel_length": "1000 ml",
-
     "valid_mod_locations": [
       [ "accessories", 4 ],
       [ "barrel", 1 ],
@@ -82,11 +76,11 @@
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt", "fault_gun_chamber_spent" ],
     "magazines": [ [ "3006", [ "m1918mag", "m1918bigmag", "belt3006" ] ] ]
   },
-  
-    {
+  {
     "id": "makeshift_stinger",
     "looks_like": "ar15",
     "type": "GUN",
+    "copy-from": "mg_base",
     "reload_noise_volume": 10,
     "name": { "str": "Stinger machine gun" },
     "description": "Chambered in 30-06, this gun was a cobbled together alteration of a plane-mounted machine gun. It's incredibly fast firing, but bulky, and prone to overheating.",

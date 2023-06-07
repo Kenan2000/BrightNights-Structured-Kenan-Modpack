@@ -84,12 +84,11 @@
     "id": "walker_fusion",
     "type": "GUN",
     "name": "blaster",
+    "copy-from": "rifle_energy",
     "description": "This weapon glows in places, and is almost painfully hot to the touch.",
     "weight": 1,
     "volume": "250 ml",
-    "skill": "rifle",
     "price": 1,
-    "to_hit": -1,
     "bashing": 1,
     "material": [ "flesh", "bone" ],
     "symbol": "(",
@@ -105,6 +104,7 @@
     "id": "walker_laser",
     "type": "GUN",
     "name": "laser",
+    "copy-from": "rifle_energy",
     "description": "This weapon's many eyes constantly move, only settling for a mere moment before finding a new focus.",
     "weight": 1,
     "volume": "250 ml",
@@ -114,7 +114,6 @@
     "material": [ "flesh", "bone" ],
     "symbol": "(",
     "color": "pink",
-    "skill": "rifle",
     "range": 24,
     "ranged_damage": { "damage_type": "heat", "amount": 10, "armor_penetration": 15 },
     "dispersion": 90,
@@ -123,7 +122,8 @@
     "ups_charges": 25,
     "reload": 200,
     "ammo_effects": [ "LASER", "INCENDIARY" ],
-    "flags": [ "NO_UNLOAD" ]
+    "flags": [ "NO_UNLOAD" ],
+    "valid_mod_locations": [  ]
   },
   {
     "id": "walker_flamer",
@@ -150,6 +150,7 @@
   {
     "id": "walker_tesla",
     "type": "GUN",
+    "copy-from": "rifle_energy",
     "name": "tesla coil",
     "description": "Blue-green electricity arcs between this weapons twitching cilia.",
     "volume": "250 ml",
@@ -157,13 +158,14 @@
     "material": [ "flesh", "bone" ],
     "symbol": "(",
     "color": "pink",
-    "skill": "rifle",
     "range": 16,
     "ranged_damage": { "damage_type": "stab", "amount": 18 },
     "dispersion": 10,
     "durability": 3,
     "loudness": 35,
     "reload": 500,
-    "ammo_effects": [ "LIGHTNING", "BOUNCE" ]
+    "ammo_effects": [ "LIGHTNING", "BOUNCE" ],
+    "valid_mod_locations": [  ],
+    "flags": [  ]
   }
 ]

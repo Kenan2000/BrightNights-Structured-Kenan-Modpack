@@ -1,0 +1,259 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_RODENT_MUTANT",
+    "class": "NC_MAQUIS_RODENT_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_MAQUIS_RODENT_MUTANT_ROOT",
+    "mission_offered": "DKZ_MAQUIS_RODENT_DIRTY_BOOKS_1",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_RODENT_MUTANT",
+    "name": { "str": "Maquis-Rodent Mutant" },
+    "job_description": "I'm just trying to eck out a living.",
+    "common": false,
+    "traits": [
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "FUR", "prob": 100 },
+      { "trait": "GROWL", "prob": 100 },
+      { "trait": "WHISKERS_RAT", "prob": 100 },
+      { "trait": "TAIL_RAT", "prob": 100 },
+      { "trait": "MUZZLE_RAT", "prob": 100 },
+      { "trait": "INCISORS", "prob": 90 },
+      { "trait": "INFRESIST", "prob": 90 },
+      { "trait": "DISRESISTANT", "prob": 70 },
+      { "trait": "NIGHTVISION2", "prob": 50 },
+      { "trait": "PROJUNK", "prob": 80 },
+      { "trait": "SMALL2", "prob": 25 },
+      { "trait": "PAWS", "prob": 50 },
+      { "trait": "BURROW", "prob": 50 },
+      { "trait": "ANIMALDISCORD2", "prob": 70 },
+      { "trait": "MET_RAT", "prob": 60 },
+      { "trait": "DEFORMED3", "prob": 50 },
+      { "trait": "GOODCARDIO2", "prob": 50 },
+      { "trait": "EASYSLEEPER2", "prob": 50 },
+      { "trait": "CRAFTY", "prob": 50 },
+      { "trait": "EATDEAD", "prob": 50 },
+      { "distribution": [ { "trait": "CLAWS_ST", "prob": 50 }, { "trait": "CLAWS_RAT", "prob": 50 } ] },
+      { "distribution": [ { "trait": "THRESH_RAT", "prob": 50 }, { "trait": "THRESH_MOUSE", "prob": 50 } ] }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_RODENT_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_RODENT_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_RODENT_MUTANT_carry",
+    "bonus_str": { "rng": [ -1, 2 ] },
+    "bonus_dex": { "rng": [ 2, 5 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ 2, 5 ] }
+  },
+  {
+    "id": "NC_MAQUIS_RODENT_MUTANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [ { "item": "boxer_shorts", "prob": 50 }, { "item": "briefs", "prob": 50 }, { "item": "boxer_briefs", "prob": 50 } ]
+      },
+      { "distribution": [ { "item": "socks", "prob": 50 }, { "item": "socks_ankle", "prob": 50 } ] },
+      {
+        "distribution": [
+          { "item": "jeans", "prob": 10 },
+          { "item": "pants", "prob": 10 },
+          { "item": "pants_leather", "prob": 20 },
+          { "item": "pants_cargo", "prob": 20 },
+          { "item": "technician_pants_gray", "prob": 60 },
+          { "item": "pants_army", "prob": 50 },
+          { "item": "bunker_pants", "prob": 20 }
+        ]
+      },
+      {
+        "distribution": [ { "item": "tshirt", "prob": 80 }, { "item": "polo_shirt", "prob": 20 }, { "item": "tank_top", "prob": 20 } ]
+      },
+      {
+        "distribution": [
+          { "item": "null", "prob": 20 },
+          { "item": "hoodie", "prob": 20 },
+          { "item": "jacket_light", "prob": 20 },
+          { "item": "jacket_leather", "prob": 20 },
+          { "item": "jacket_flannel", "prob": 20 },
+          { "item": "trenchcoat", "prob": 20 },
+          { "item": "jacket_jean", "prob": 20 },
+          { "item": "jacket_army", "prob": 20 },
+          { "item": "bunker_coat", "prob": 10 },
+          { "item": "jacket_windbreaker", "prob": 10 },
+          { "item": "kevlar", "prob": 5 },
+          { "item": "trenchcoat", "prob": 20 },
+          { "item": "ballistic_vest_esapi", "prob": 30 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "bandana_head", "prob": 80 },
+          { "item": "hat_ball", "prob": 10 },
+          { "item": "hat_hard", "prob": 10 },
+          { "item": "helmet_bike", "prob": 10 },
+          { "item": "helmet_riot", "prob": 10 },
+          { "item": "helmet_motor", "prob": 10 },
+          { "item": "hat_hunting", "prob": 10 },
+          { "item": "hat_hunting", "prob": 10 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "tshirt", "prob": 20 },
+          { "item": "polo_shirt", "prob": 20 },
+          { "item": "dress_shirt", "prob": 20 },
+          { "item": "tank_top", "prob": 20 }
+        ]
+      },
+      {
+        "distribution": [ { "item": "gloves_leather", "prob": 50 }, { "item": "gloves_fingerless", "prob": 50 }, { "item": "null", "prob": 5 } ]
+      },
+      {
+        "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 }, { "item": "null", "prob": 5 } ]
+      }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_RODENT_MUTANT_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_butcher", "prob": 20 },
+      { "item": "hatchet", "prob": 20 },
+      { "item": "ax", "prob": 20 },
+      { "item": "machete", "prob": 20 },
+      { "item": "knife_combat", "prob": 20 },
+      { "item": "hammer", "prob": 20 },
+      { "item": "wrench", "prob": 20 },
+      { "item": "hammer_sledge", "prob": 10 },
+      { "item": "hammer_sledge_short", "prob": 10 },
+      { "item": "pipe", "prob": 20 },
+      { "item": "bat", "prob": 20 },
+      { "item": "bat_metal", "prob": 20 },
+      { "item": "crowbar", "prob": 50 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_RODENT_MUTANT_carry",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "rad_gear", "count-min": 1, "count-max": 2, "prob": 90 },
+      { "group": "fireman_gear", "count-min": 1, "count-max": 2, "prob": 90 },
+      { "item": "baton", "prob": 100 }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RODENT_MUTANT_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Buzz off, fed." ],
+      "no": [ "We don't bother anyone up here and expect the same from others.", "What brings you up here, scavenger." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_RODENT_MUTANT_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_RODENT_MUTANT_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_RODENT_MUTANT_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "Maquis_Rodent_Mutant_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        }
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RODENT_MUTANT_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Chad is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RODENT_MUTANT_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm minding my own business, mind your own.",
+      "Just contemplating what its like being a mutant insect during the end of the world.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_RODENT_MUTANT_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_RODENT_MUTANT_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "DKZ_MAQUIS_RODENT_DIRTY_BOOKS_1",
+    "type": "mission_definition",
+    "name": { "str": "Work While Busy" },
+    "description": "Find 3 erotic novels.",
+    "goal": "MGOAL_FIND_ITEM",
+    "difficulty": 2,
+    "value": 0,
+    "item": "novel_erotic",
+    "count": 3,
+    "end": {
+      "effect": [
+        { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 1 },
+        { "npc_add_var": "Maquis_Rodent_Mutant_Mission1", "type": "mission", "context": "flag", "value": "yes" }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I'd like to read some erotic novels.",
+      "offer": "Hmm, that would be great!  But if you do, please bring more than just one.  I could read a single novel in a day.  Could you get me… 3 erotic novels?",
+      "accepted": "Just bring it to me when you have it.",
+      "rejected": "Nevermind then.  I hope you'll change your mind.",
+      "advice": "I'd loot libraries and bookstores.",
+      "inquire": "So, have you found the books?",
+      "success": "Thank you.  This will keep me busy for a while.  Please take this as a token of my gratitude.",
+      "success_lie": "Could you give them to me?",
+      "failure": "Fine.  I can read something else."
+    }
+  }
+]

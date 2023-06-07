@@ -1,0 +1,150 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_MANTIS_MUTANT",
+    "class": "NC_MAQUIS_MANTIS_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "male",
+    "chat": "TALK_MAQUIS_MANTIS_MUTANT_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_MANTIS_MUTANT",
+    "name": { "str": "Maquis-Mantis Mutant" },
+    "job_description": "I'm to become an insectiod killing machine.",
+    "common": false,
+    "traits": [
+      { "group": "DKZ_starting_traits" },
+      { "trait": "BIOLUM1", "prob": 30 },
+      { "trait": "BIOLUM2", "prob": 10 },
+      { "trait": "GOODCARDIO", "prob": 80 },
+      { "trait": "QUICK", "prob": 70 },
+      { "trait": "LIGHTEATER", "prob": 10 },
+      { "trait": "POISRESIST", "prob": 20 },
+      { "trait": "HEAVYSLEEPER", "prob": 10 },
+      { "trait": "TERRIFYING", "prob": 70 },
+      { "trait": "PROJUNK", "prob": 55 },
+      { "trait": "ANIMALDISCORD", "prob": 85 },
+      { "trait": "NIGHTVISION2", "prob": 45 },
+      { "trait": "COMPOUND_EYES", "prob": 100 },
+      { "trait": "CHITIN2", "prob": 100 },
+      { "trait": "MANDIBLES", "prob": 100 },
+      { "trait": "CHITIN3", "prob": 50 },
+      { "trait": "THRESH_INSECT", "prob": 100 },
+      { "trait": "ACIDBLOOD", "prob": 30 },
+      { "trait": "ACIDPROOF", "prob": 40 },
+      { "trait": "WINGS_INSECT", "prob": 100 },
+      { "trait": "INSECT_ARMS_OK", "prob": 95 },
+      { "trait": "INSECT_ARMS", "prob": 20 },
+      { "trait": "DEFORMED", "prob": 70 },
+      { "trait": "PHEROMONE_INSECT", "prob": 75 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_MANTIS_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_MANTIS_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_MANTIS_MUTANT_carry",
+    "bonus_str": { "rng": [ 4, 6 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "bonus_int": { "rng": [ -3, 0 ] },
+    "bonus_per": { "rng": [ -2, 1 ] }
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_MANTIS_MUTANT_worn",
+    "subtype": "distribution",
+    "entries": [ { "item": "loincloth" }, { "item": "mbag" } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_MANTIS_MUTANT_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "rm2000_smg", "prob": 95, "charges-min": 15, "charges-max": 20 },
+      { "item": "rm2000_smg", "prob": 95, "charges-min": 20, "charges-max": 25 }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_MANTIS_MUTANT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "8x40_25_mag", "charges-min": 20, "count": 1 }, { "item": "8mm_caseless", "count": 5 } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MANTIS_MUTANT_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Buzz off, fed." ],
+      "no": [ "We don't bother anyone up here and expect the same from others.", "What brings you up here, scavenger." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MANTIS_MUTANT_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MANTIS_MUTANT_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_MANTIS_MUTANT_BIG_BROTHER"
+      },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MANTIS_MUTANT_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Chad is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MANTIS_MUTANT_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm minding my own business, mind your own.",
+      "Just contemplating what its like being a mutant insect during the end of the world.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MANTIS_MUTANT_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_MANTIS_MUTANT_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  }
+]

@@ -2,8 +2,8 @@
   {
     "id": ".30810mag",
     "type": "MAGAZINE",
-    "name": { "str": "10 Round .308 Magazine" },
-    "description": "A 10 round .308 magazine for use in sniper rifles",
+    "name": { "str": "10 Round 7.62x51mm Magazine" },
+    "description": "A 10 round 7.62x51mm magazine for use in sniper rifles",
     "weight": "600 g",
     "volume": "1 L",
     "price": "90 USD",
@@ -21,8 +21,8 @@
   {
     "id": ".30820mag",
     "type": "MAGAZINE",
-    "name": { "str": "20 Round .308 Magazine" },
-    "description": "A 20 round .308 magazine for use in sniper rifles",
+    "name": { "str": "20 Round 7.62x51mm Magazine" },
+    "description": "A 20 round 7.62x51mm magazine for use in sniper rifles",
     "weight": "1200 g",
     "volume": "1500 ml",
     "price": "90 USD",
@@ -418,7 +418,7 @@
   {
     "id": "stanarg10",
     "type": "MAGAZINE",
-    "name": { "str": "556 AK short magazine" },
+    "name": { "str": "5.56x45mm AK short magazine" },
     "description": "A compact 10-round magazine meant for AK profile rifles.",
     "weight": "100 g",
     "volume": "250 ml",
@@ -518,23 +518,6 @@
     "reliability": 8,
     "reload_time": 130,
     "flags": [ "MAG_BULKY" ]
-  },
-  {
-    "id": "usas10mag",
-    "type": "MAGAZINE",
-    "name": { "str": "USAS-12 box magazine" },
-    "description": "A removable plastic magazine for the USAS-12 shotgun.  Holds 10 rounds",
-    "weight": "210 g",
-    "volume": "500 ml",
-    "price": "45 USD",
-    "material": [ "plastic" ],
-    "symbol": "#",
-    "color": "dark_gray",
-    "ammo_type": "shot",
-    "capacity": 10,
-    "reliability": 9,
-    "reload_time": 100,
-    "flags": [ "MAG_COMPACT" ]
   },
   {
     "id": "usas30mag",

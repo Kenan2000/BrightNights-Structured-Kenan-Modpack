@@ -199,7 +199,8 @@
     "ammo_type": "bomblet",
     "range": 25,
     "damage": { "damage_type": "bullet", "amount": 2, "armor_penetration": 200 },
-    "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
+    "effects": [ "ACT_ON_RANGED_HIT" ],
+    "dont_recover_one_in": 5,
     "use_action": { "target": "bomblet_vile_act", "target_charges": 5, "active": true, "type": "transform" }
   },
   {
@@ -238,7 +239,8 @@
     "ammo_type": "bomblet",
     "range": 25,
     "damage": { "damage_type": "bullet", "amount": 4, "armor_penetration": 200 },
-    "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
+    "effects": [ "ACT_ON_RANGED_HIT" ],
+    "dont_recover_one_in": 5,
     "use_action": { "target": "bomblet_archvile_act", "target_charges": 5, "active": true, "type": "transform" }
   },
   {
@@ -273,7 +275,8 @@
     "ammo_type": "bomblet",
     "range": 25,
     "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 200 },
-    "effects": [ "ACT_ON_RANGED_HIT", "RECOVER_5" ],
+    "effects": [ "ACT_ON_RANGED_HIT" ],
+    "dont_recover_one_in": 5,
     "use_action": {
       "type": "place_monster",
       "monster_id": "mon_cacodemon",
@@ -296,7 +299,8 @@
     "dispersion": 350,
     "recoil": 100,
     "damage": { "damage_type": "bullet", "amount": 20, "armor_penetration": 10 },
-    "effects": [ "NEVER_MISFIRES", "NO_EMBED", "RECOVER_9", "ACT_ON_RANGED_HIT" ],
+    "effects": [ "NEVER_MISFIRES", "NO_EMBED", "ACT_ON_RANGED_HIT" ],
+    "dont_recover_one_in": 9,
     "emits": [ "emit_fire_bomblet_small" ],
     "countdown_interval": 2,
     "countdown_destroy": true,

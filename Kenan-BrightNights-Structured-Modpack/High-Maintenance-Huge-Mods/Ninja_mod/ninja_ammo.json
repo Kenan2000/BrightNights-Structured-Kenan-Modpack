@@ -19,7 +19,7 @@
     "damage": { "damage_type": "stab", "amount": 14, "armor_penetration": 2 },
     "dispersion": 0,
     "recoil": 0,
-    "effects": [ "RECOVER_25" ],
+    "dont_recover_one_in": 25,
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 7 ] ]
   },
   {
@@ -42,7 +42,7 @@
     "damage": { "damage_type": "stab", "amount": 19, "armor_penetration": 8 },
     "dispersion": 0,
     "recoil": 0,
-    "effects": [ "RECOVER_25" ],
+    "dont_recover_one_in": 25,
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 7 ] ]
   },
   {
@@ -65,7 +65,7 @@
     "damage": { "damage_type": "stab", "amount": 0 },
     "dispersion": 0,
     "recoil": 0,
-    "effects": [ "RECOVER_1" ]
+    "dont_recover_one_in": 1
   },
   {
     "id": "chem_rocket_fuel",

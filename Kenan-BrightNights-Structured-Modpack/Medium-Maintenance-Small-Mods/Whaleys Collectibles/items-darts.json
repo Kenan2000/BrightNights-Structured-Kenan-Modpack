@@ -17,7 +17,8 @@
     "count": 10,
     "stack_size": 100,
     "loudness": 1,
-    "effects": [ "NOGIB", "NEVER_MISFIRES", "RECOVER_90" ]
+    "effects": [ "NOGIB", "NEVER_MISFIRES" ],
+    "dont_recover_one_in": 90
   },
   {
     "type": "ammunition_type",
@@ -28,6 +29,7 @@
   {
     "id": "foam_dart_pistol",
     "looks_like": "hk_mp5",
+    "weapon_category": [ "PISTOLS", "PNEUMATIC" ],
     "type": "GUN",
     "reload_noise_volume": 1,
     "symbol": "(",
@@ -58,6 +60,7 @@
     "id": "foam_dart_smg",
     "looks_like": "hk_mp5",
     "type": "GUN",
+    "weapon_category": [ "SUBMACHINE_GUNS", "PNEUMATIC" ],
     "reload_noise_volume": 1,
     "symbol": "(",
     "color": "yellow",

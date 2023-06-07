@@ -46,7 +46,7 @@
     "id": ".303",
     "type": "AMMO",
     "name": { "str": ".303 British" },
-    "description": ".303 British was commonly used before the introduction and standardization of NATO-bloc ammunition. It is roughly similar to .308 in terms of ballistics, but is rimmed.",
+    "description": ".303 British was commonly used before the introduction and standardization of NATO-bloc ammunition. It is roughly similar to 7.62x51mm in terms of ballistics, but is rimmed.",
     "weight": "18 g",
     "volume": "250 ml",
     "price": "22 USD",
@@ -97,7 +97,7 @@
     "id": "reloaded_308_match",
     "copy-from": "308",
     "type": "AMMO",
-    "name": { "str": "Match .308" },
+    "name": { "str": "Match 7.62x51mm" },
     "proportional": { "price": 2.0, "damage": { "damage_type": "bullet", "amount": 1.1 }, "dispersion": 0.8 },
     "extend": { "effects": [ "RECYCLED", "NEVER_MISFIRES" ] }
   },

@@ -364,8 +364,8 @@
   {
     "id": "308BL9",
     "type": "AMMO",
-    "name": { "str": ".308 BL9" },
-    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a 308 caliber handmade bullet",
+    "name": { "str": "7.62x51mm BL9" },
+    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a 7.62x51mm caliber handmade bullet",
     "weight": "18 g",
     "volume": "250 ml",
     "price": 180,
@@ -387,8 +387,8 @@
   {
     "id": "308BL9mk2",
     "type": "AMMO",
-    "name": { "str": ".308 MK ii BL9" },
-    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a stronger 308 caliber handmade bullet",
+    "name": { "str": "7.62x51mm MK ii BL9" },
+    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a stronger 7.62x51mm caliber handmade bullet",
     "weight": "18 g",
     "volume": "250 ml",
     "price": 180,
@@ -410,8 +410,8 @@
   {
     "id": "308BL9mk3",
     "type": "AMMO",
-    "name": { "str": ".308 MK iii BL9" },
-    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form an incredibly destructive and strong 308 caliber handmade bullet",
+    "name": { "str": "7.62x51mm MK iii BL9" },
+    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form an incredibly destructive and strong 7.62x51mm caliber handmade bullet",
     "weight": "18 g",
     "volume": "250 ml",
     "price": 180,
@@ -571,8 +571,8 @@
   {
     "id": "556BL9",
     "type": "AMMO",
-    "name": { "str": "5.56 BL9" },
-    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a 5.56 caliber handmade bullet",
+    "name": { "str": "5.56x45mm BL9" },
+    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a 5.56x45mm caliber handmade bullet",
     "weight": "12 g",
     "volume": "250 ml",
     "price": 280,
@@ -594,8 +594,8 @@
   {
     "id": "556BL9mk2",
     "type": "AMMO",
-    "name": { "str": "5.56 BL9 MK ii" },
-    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a stronger 5.56 caliber handmade bullet",
+    "name": { "str": "5.56x45mm BL9 MK ii" },
+    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form a stronger 5.56x45mm caliber handmade bullet",
     "weight": "12 g",
     "volume": "250 ml",
     "price": 280,
@@ -617,8 +617,8 @@
   {
     "id": "556BL9mk3",
     "type": "AMMO",
-    "name": { "str": "5.56 BL9 MK iii" },
-    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form an incredibly destructive and strong 5.56 caliber handmade bullet",
+    "name": { "str": "5.56x45mm BL9 MK iii" },
+    "description": "Manually and clumsily soldered pieces of steel with BL9 samples, somehow the BL9 knows what form to take in order to encase the piece of steel in such a perfect manner to form an incredibly destructive and strong 5.56x45mm caliber handmade bullet",
     "weight": "12 g",
     "volume": "250 ml",
     "price": 280,
@@ -846,7 +846,7 @@
     "dispersion": 60,
     "loudness": 0,
     "count": 10,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "type": "AMMO",
@@ -867,7 +867,7 @@
     "loudness": 0,
     "count": 10,
     "show_stats": true,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "type": "AMMO",
@@ -889,7 +889,7 @@
     "dispersion": 50,
     "loudness": 0,
     "count": 10,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "type": "AMMO",
@@ -910,7 +910,7 @@
     "loudness": 0,
     "count": 10,
     "show_stats": true,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "type": "AMMO",
@@ -932,7 +932,7 @@
     "dispersion": 35,
     "loudness": 0,
     "count": 10,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "type": "AMMO",
@@ -953,7 +953,7 @@
     "loudness": 0,
     "count": 10,
     "show_stats": true,
-    "effects": [ "RECOVER_35" ]
+    "dont_recover_one_in": 35
   },
   {
     "id": "40mmBL9",
@@ -970,7 +970,8 @@
     "ammo_type": "40mmBL9_type",
     "range": 25,
     "damage": { "damage_type": "bullet", "amount": 1, "armor_penetration": 65 },
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 95, "radius": 3 }
   },
@@ -989,7 +990,8 @@
     "ammo_type": "40mmBL9mk2_type",
     "range": 25,
     "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 75 },
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 195, "radius": 3 }
   },
@@ -1008,7 +1010,8 @@
     "ammo_type": "40mmBL9mk3_type",
     "range": 25,
     "damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 85 },
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 400, "radius": 3 }
   },
@@ -1120,12 +1123,12 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE1",
       "BL9_LASERTRAIL1"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 49, "radius": 3 }
   },
@@ -1212,7 +1215,8 @@
     "damage": { "damage_type": "heat", "amount": 38, "armor_penetration": 25 },
     "dispersion": 95,
     "recoil": 1175,
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BL9_DAZZLINGAOE1", "BL9_PLASMA1" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BL9_DAZZLINGAOE1", "BL9_PLASMA1" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 49, "radius": 3 }
   },
@@ -1302,13 +1306,13 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE1",
       "BL9_LIGHTNINGAOE1",
       "BL9_LIGHTNINGTRAIL1"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 49, "radius": 3 }
   },
@@ -1398,13 +1402,13 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE1",
       "BL9_ACIDAOE1",
       "BL9_ACIDTRAIL1"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 49, "radius": 3 }
   },
@@ -1494,12 +1498,12 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE2",
       "BL9_LASERTRAIL2"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 98, "radius": 3 }
   },
@@ -1586,7 +1590,8 @@
     "damage": { "damage_type": "heat", "amount": 64, "armor_penetration": 34 },
     "dispersion": 80,
     "recoil": 965,
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BL9_DAZZLINGAOE2", "BL9_PLASMA2" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BL9_DAZZLINGAOE2", "BL9_PLASMA2" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 98, "radius": 3 }
   },
@@ -1676,13 +1681,13 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE2",
       "BL9_LIGHTNINGAOE2",
       "BL9_LIGHTNINGTRAIL2"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 98, "radius": 3 }
   },
@@ -1772,13 +1777,13 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE2",
       "BL9_ACIDAOE2",
       "BL9_ACIDTRAIL2"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 98, "radius": 3 }
   },
@@ -1868,12 +1873,12 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE3",
       "BL9_LASERTRAIL3"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 235, "radius": 3 }
   },
@@ -1960,7 +1965,8 @@
     "damage": { "damage_type": "heat", "amount": 102, "armor_penetration": 46 },
     "dispersion": 60,
     "recoil": 800,
-    "effects": [ "NEVER_MISFIRES", "COOKOFF", "RECOVER_9", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BL9_DAZZLINGAOE3", "BL9_PLASMA3" ],
+    "effects": [ "NEVER_MISFIRES", "COOKOFF", "ACT_ON_RANGED_HIT", "CUSTOM_EXPLOSION", "BL9_DAZZLINGAOE3", "BL9_PLASMA3" ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 235, "radius": 3 }
   },
@@ -2050,13 +2056,13 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE3",
       "BL9_LIGHTNINGAOE3",
       "BL9_LIGHTNINGTRAIL3"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 235, "radius": 3 }
   },
@@ -2146,13 +2152,13 @@
     "effects": [
       "NEVER_MISFIRES",
       "COOKOFF",
-      "RECOVER_9",
       "ACT_ON_RANGED_HIT",
       "CUSTOM_EXPLOSION",
       "BL9_DAZZLINGAOE3",
       "BL9_ACIDAOE3",
       "BL9_ACIDTRAIL3"
     ],
+    "dont_recover_one_in": 9,
     "explode_in_fire": true,
     "explosion": { "damage": 235, "radius": 3 }
   }

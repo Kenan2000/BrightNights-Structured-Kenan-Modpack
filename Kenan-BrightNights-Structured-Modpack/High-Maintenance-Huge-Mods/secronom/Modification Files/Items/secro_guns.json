@@ -40,18 +40,16 @@
     "//": "VERY WIP, CURRENTLY UNOBTAINABLE. NEEDS MORE IDEAL FIXING BEFORE USE, ESP. ITS AMMO.",
     "id": "SS_grenade_launcher",
     "type": "GUN",
+    "copy-from": "launcher_base",
     "name": { "str": "SS grenade launcher" },
     "description": "A simple grenade launcher for the use of exceptional SS grenades.",
     "weight": "2654 g",
     "volume": "1500 ml",
     "price": "5220 USD",
     "to_hit": -1,
-    "bashing": 12,
     "material": [ "steel" ],
-    "symbol": ")",
     "color": "light_red",
     "ammo": [ "SSgrenade" ],
-    "skill": "launcher",
     "range": 30,
     "dispersion": 40,
     "sight_dispersion": 45,
@@ -61,7 +59,8 @@
     "reload": 500,
     "valid_mod_locations": [ [ "accessories", 1 ] ],
     "ammo_effects": [ "DRAW_AS_LINE", "NO_EMBED" ],
-    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ]
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ],
+    "faults": [  ]
   },
   {
     "id": "cheytac",
@@ -326,9 +325,9 @@
   },
   {
     "id": "lmilaser",
+    "copy-from": "rifle_energy",
     "type": "GUN",
     "name": { "str": "LMI Laser Rifle" },
-    "skill": "rifle",
     "description": "Sleek, futuristic laser rifle, the LMI stands for Living Matter Incinerator, and as the name suggest, capable of delivering superheated laser energy towards zombies and humans. the only warning this weapon has is to not aim it at your eyes.",
     "weight": "3800 g",
     "volume": "1750 ml",
@@ -347,7 +346,6 @@
     "ups_charges": 20,
     "reload": 100,
     "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ] ],
-    "ammo_effects": [ "PLASMA", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
+    "ammo_effects": [ "PLASMA", "INCENDIARY" ]
   }
 ]
