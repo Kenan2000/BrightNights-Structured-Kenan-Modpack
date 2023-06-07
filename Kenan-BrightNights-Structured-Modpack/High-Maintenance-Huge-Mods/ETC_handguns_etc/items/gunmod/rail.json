@@ -9,7 +9,16 @@
     "volume": "0 ml",
     "integral_volume": 0,
     "price": 0,
-    "mod_targets": [ "pistol", "shotgun", "smg", "rifle", "crossbow" ],
+    "mod_target_category": [
+      [ "PISTOLS" ],
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "S_XBOWS" ],
+      [ "M_XBOWS" ]
+    ],
     "flags": [ "IRREMOVABLE" ]
   }
 ]

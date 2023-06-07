@@ -14,7 +14,18 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "stock",
-    "mod_targets": [ "smg", "rifle", "shotgun", "crossbow", "pistol", "launcher" ],
+    "mod_target_category": [
+      [ "PISTOLS" ],
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "S_XBOWS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ]
+    ],
     "min_skills": [ [ "gun", 2 ] ],
     "dispersion_modifier": -20,
     "handling_modifier": 1,
@@ -35,7 +46,14 @@
     "symbol": ":",
     "color": "brown",
     "location": "underbarrel",
-    "mod_targets": [ "smg", "rifle", "launcher" ],
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ]
+    ],
     "min_skills": [ [ "gun", 2 ] ],
     "dispersion_modifier": -35
   },
@@ -54,7 +72,7 @@
     "symbol": ":",
     "color": "green",
     "location": "sling",
-    "mod_targets": [ "smg", "pistol" ],
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ] ],
     "flags": [ "IS_ARMOR", "BELTED", "OVERSIZE" ],
     "dispersion_modifier": -75,
     "handling_modifier": 3
@@ -73,7 +91,16 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "sights",
-    "mod_targets": [ "smg", "rifle", "shotgun", "crossbow", "launcher" ],
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ]
+    ],
     "min_skills": [ [ "gun", 2 ], [ "rifle", 1 ] ],
     "aim_speed": 8,
     "sight_dispersion": 15
@@ -91,7 +118,16 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "sights",
-    "mod_targets": [ "smg", "rifle", "shotgun", "crossbow", "launcher" ],
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ]
+    ],
     "min_skills": [ [ "gun", 2 ], [ "rifle", 1 ] ],
     "aim_speed": 6,
     "sight_dispersion": 45
@@ -113,7 +149,7 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "muzzle",
-    "mod_targets": [ "shotgun" ],
+    "mod_target_category": [ [ "SHOTGUNS" ] ],
     "damage_modifier": { "damage_type": "bullet", "amount": -4 },
     "loudness_modifier": -30,
     "handling_modifier": 1,
@@ -132,7 +168,7 @@
     "symbol": ":",
     "color": "light_red",
     "location": "underbarrel",
-    "mod_targets": [ "rifle" ],
+    "mod_target_category": [ [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
     "min_skills": [ [ "gun", 2 ] ],
     "gun_data": {
       "skill": "shotgun",

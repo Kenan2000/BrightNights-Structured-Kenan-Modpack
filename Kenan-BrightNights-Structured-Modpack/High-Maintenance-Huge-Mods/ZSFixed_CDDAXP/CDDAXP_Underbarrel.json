@@ -15,7 +15,16 @@
     "symbol": ":",
     "color": "white",
     "location": "underbarrel",
-    "mod_targets": [ "shotgun", "smg", "rifle", "crossbow", "launcher" ],
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ]
+    ],
     "dispersion_modifier": 10,
     "flags": [ "SPEAR" ]
   },
@@ -34,7 +43,15 @@
     "symbol": ":",
     "color": "white",
     "location": "underbarrel",
-    "mod_targets": [ "shotgun", "rifle", "crossbow", "launcher" ],
+    "mod_target_category": [
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "M_XBOWS" ],
+      [ "GRENADE_LAUNCHERS" ],
+      [ "ROCKET_LAUNCHERS" ]
+    ],
     "dispersion_modifier": 20
   },
   {
@@ -53,7 +70,7 @@
     "symbol": ":",
     "color": "white",
     "location": "underbarrel",
-    "mod_targets": [ "pistol", "smg", "crossbow" ],
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "S_XBOWS" ], [ "M_XBOWS" ] ],
     "dispersion_modifier": 15,
     "flags": [ "STAB" ]
   }

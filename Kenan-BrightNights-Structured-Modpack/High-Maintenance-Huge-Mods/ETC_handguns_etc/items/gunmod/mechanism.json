@@ -11,7 +11,7 @@
     "damage_modifier": 0,
     "loudness_modifier": 10,
     "location": "mechanism",
-    "mod_targets": [ "smg" ],
+    "mod_target_category": [ [ "SUBMACHINE_GUNS" ] ],
     "flags": [ "IRREMOVABLE" ]
   },
   {
@@ -26,7 +26,7 @@
     "damage_modifier": 5,
     "loudness_modifier": 20,
     "location": "mechanism",
-    "mod_targets": [ "rifle" ],
+    "mod_target_category": [ [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
     "flags": [ "IRREMOVABLE" ]
   },
   {
@@ -41,7 +41,7 @@
     "damage_modifier": 0,
     "loudness_modifier": 80,
     "location": "mechanism",
-    "mod_targets": [ "rifle", "pistol" ],
+    "mod_target_category": [ [ "PISTOLS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
     "flags": [ "IRREMOVABLE" ]
   }
 ]

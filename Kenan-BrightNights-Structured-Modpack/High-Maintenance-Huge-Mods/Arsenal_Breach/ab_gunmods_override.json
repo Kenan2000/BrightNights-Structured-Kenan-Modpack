@@ -8,7 +8,7 @@
     "install_time": "15 m",
     "range_modifier": -12,
     "damage_modifier": { "damage_type": "heat", "amount": 5 },
-    "mod_targets": [ "rifle", "pistol", "smg", "shotgun" ]
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "SHOTGUNS" ] ]
   },
   {
     "id": "heat_ray_conversion",
@@ -23,7 +23,7 @@
     "symbol": ":",
     "color": "light_gray",
     "location": "lens",
-    "mod_targets": [ "rifle", "pistol", "smg", "shotgun" ],
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "SHOTGUNS" ] ],
     "range_modifier": -25,
     "damage_modifier": { "damage_type": "heat", "amount": -8 },
     "ups_charges_modifier": 50,
@@ -43,7 +43,7 @@
     "symbol": ":",
     "color": "magenta",
     "location": "underbarrel",
-    "mod_targets": [ "rifle", "crossbow" ],
+    "mod_target_category": [ [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "M_XBOWS" ] ],
     "gun_data": {
       "skill": "rifle",
       "dispersion": 10,
@@ -71,7 +71,7 @@
     "symbol": ":",
     "color": "light_gray",
     "location": "lens",
-    "mod_targets": [ "rifle", "pistol", "smg", "shotgun" ],
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "SHOTGUNS" ] ],
     "range_modifier": 12,
     "damage_modifier": { "damage_type": "heat", "amount": -5 },
     "ammo_effects": [ "SHOT" ],
@@ -91,7 +91,7 @@
     "symbol": ":",
     "color": "light_gray",
     "location": "emitter",
-    "mod_targets": [ "rifle", "pistol", "smg", "shotgun" ],
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "SHOTGUNS" ] ],
     "damage_modifier": { "damage_type": "heat", "amount": -5 },
     "ups_charges_modifier": -10,
     "min_skills": [ [ "weapon", 4 ], [ "electronics", 5 ] ]
@@ -106,6 +106,6 @@
     "range_modifier": 5,
     "damage_modifier": { "damage_type": "heat", "amount": 5 },
     "ups_charges_modifier": 10,
-    "mod_targets": [ "rifle", "pistol", "smg", "shotgun" ]
+    "mod_target_category": [ [ "PISTOLS" ], [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ], [ "SHOTGUNS" ] ]
   }
 ]
