@@ -1048,5 +1048,30 @@
       { "item": "fo_zapfist", "prob": 30 },
       { "item": "fo_bladedgauntlet", "prob": 45 }
     ]
+  },
+  {
+    "id": "office_paper",
+    "type": "item_group",
+    "subtype": "collection",
+    "//": "Random paper/data items. for filing cabinets or other office locations",
+    "items": [
+      { "item": "Fallout_Expansion_common_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_irradiated_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_nuka_plant_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_research_facility_mission_hologram", "prob": 68 }
+    ]
+  },
+  {
+    "id": "SUS_office_filing_cabinet",
+    "type": "item_group",
+    "//": "SUS item groups are collections that contain a reasonable realistic distribution of items that might spawn in a given storage furniture.",
+    "//2": "This group is for an office filing cabinet containing folders and documents.",
+    "subtype": "collection",
+    "items": [
+      { "item": "Fallout_Expansion_common_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_irradiated_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_nuka_plant_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_research_facility_mission_hologram", "prob": 68 }
+    ]
   }
 ]

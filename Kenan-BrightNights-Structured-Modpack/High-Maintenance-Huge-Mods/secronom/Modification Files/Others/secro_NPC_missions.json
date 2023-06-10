@@ -1,0 +1,378 @@
+[
+  {
+    "type": "npc_class",
+    "id": "Secronom_hologram_class",
+    "name": { "str": "Secronom Locator Hologram" },
+    "job_description": "Secronom Locator Hologram",
+    "common": false,
+    "bonus_int": { "rng": [ 5, 6 ] },
+    "skills": [ { "skill": "ALL", "bonus": { "rng": [ 4, 6 ] } } ],
+    "traits": [ { "group": "Appearance_demographics" }, { "trait": "SECRONOM_HOLOGRAM_PROTECTION" } ]
+  },
+  {
+    "type": "mutation",
+    "id": "SECRONOM_HOLOGRAM_PROTECTION",
+    "name": { "str": "Hologram Protection" },
+    "points": 10,
+    "description": "\"I am programmed to not engage wandering monsters.\"",
+    "valid": false,
+    "purifiable": false,
+    "ignored_by": [ "ZOMBIE", "MUTANT" ]
+  },
+  {
+    "type": "npc",
+    "id": "Secronom_flesh_forest_hologram",
+    "name_unique": "Secronom Flesh Forest Locator Hologram",
+    "class": "Secronom_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SECRONOM_FLESH_FOREST_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Secronom_flesh_island_hologram",
+    "name_unique": "Secronom Flesh Island Locator Hologram",
+    "class": "Secronom_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SECRONOM_FLESH_ISLAND_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Secronom_flesh_cave_hologram",
+    "name_unique": "Secronom Flesh Cave Locator Hologram",
+    "class": "Secronom_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SECRONOM_FLESH_CAVE_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Secronom_flesh_cityclass1_hologram",
+    "name_unique": "Secronom Flesh City CLass 1 Locator Hologram",
+    "class": "Secronom_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SECRONOM_FLESH_CITYCLASS1_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Secronom_flesh_cityclass2_hologram",
+    "name_unique": "Secronom Flesh City CLass 2 Locator Hologram",
+    "class": "Secronom_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_SECRONOM_FLESH_CITYCLASS2_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_SECRONOM_FLESH_FOREST",
+    "type": "mission_definition",
+    "name": { "str": "Go to Flesh Forest" },
+    "description": "Go to Flesh Forest",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "flesh_forest_3",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "flesh_forest_3",
+        "reveal_radius": 5,
+        "om_special": "Flesh Forest",
+        "search_range": 368
+      }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_SECRONOM_FLESH_ISLAND",
+    "type": "mission_definition",
+    "name": { "str": "Go to Flesh Island" },
+    "description": "Go to Flesh Island",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "flesh_forest_3",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "flesh_forest_3", "reveal_radius": 5, "om_special": "Flesh Island", "search_range": 368 }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_SECRONOM_FLESH_CAVE",
+    "type": "mission_definition",
+    "name": { "str": "Go to Flesh Cave" },
+    "description": "Go to Flesh Cave",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "flesh_cavern_entrance",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "flesh_cavern_entrance", "reveal_radius": 5, "om_special": "Flesh Cave", "search_range": 368 }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_SECRONOM_FLESH_CITYCLASS1",
+    "type": "mission_definition",
+    "name": { "str": "Go to Flesh City Class 1" },
+    "description": "Go to Flesh City Class 1",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "secro_flesh_city_core",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "secro_flesh_city_core", "reveal_radius": 5, "om_special": "Flesh City 1", "search_range": 368 }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_SECRONOM_FLESH_CITYCLASS2",
+    "type": "mission_definition",
+    "name": { "str": "Go to Flesh City Class 2" },
+    "description": "Go to Flesh City Class 2",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "secro_flesh_city_core",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": { "om_terrain": "secro_flesh_city_core", "reveal_radius": 5, "om_special": "Flesh City 2", "search_range": 368 }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_FOREST_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_SECRONOM_FLESH_FOREST_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_SECRONOM_FLESH_FOREST" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_SECRONOM_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_SECRONOM_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_SECRONOM_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_SECRONOM_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_FOREST_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_SECRONOM_FLESH_FOREST_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_ISLAND_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_SECRONOM_FLESH_ISLAND_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_SECRONOM_FLESH_ISLAND" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_SECRONOM_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_SECRONOM_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_SECRONOM_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_SECRONOM_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_ISLAND_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_SECRONOM_FLESH_ISLAND_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_CAVE_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_SECRONOM_FLESH_CAVE_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_SECRONOM_FLESH_CAVE" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_SECRONOM_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_SECRONOM_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_SECRONOM_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_SECRONOM_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_CAVE_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_SECRONOM_FLESH_CAVE_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_CITYCLASS1_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_SECRONOM_FLESH_CITYCLASS1_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_SECRONOM_FLESH_CITYCLASS1" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_SECRONOM_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_SECRONOM_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_SECRONOM_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_SECRONOM_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_CITYCLASS1_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_SECRONOM_FLESH_CITYCLASS1_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_CITYCLASS2_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_SECRONOM_FLESH_CITYCLASS2_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_SECRONOM_FLESH_CITYCLASS2" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_SECRONOM_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_SECRONOM_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_SECRONOM_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_SECRONOM_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_SECRONOM_FLESH_CITYCLASS2_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_SECRONOM_FLESH_CITYCLASS2_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_HOLOGRAM_GOODBYE",
+    "type": "talk_topic",
+    "dynamic_line": "Good luck to you!",
+    "responses": [ { "text": "Thanks", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_HOLOGRAM_1",
+    "type": "talk_topic",
+    "dynamic_line": "I'm a magic genie from a magic camera. No, I'm just joking. What kind of a question is this? You don't like to explore or don't know much about your own world? Have not you seen stuff in labs? Military structures? Top secret stuff? Aliens or whatever these creatures are? You think that your own people don't have tech which can produce holograms? I'm a hologram, software with some additional technologies, it is that simple",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_HOLOGRAM_2",
+    "type": "talk_topic",
+    "dynamic_line": "This question is much more intelligent than the other one. My creators can be described as a bunch of highly technological geeks majority of which are humans honestly. They neither possess that many combat skills nor they are that interested in subjecting their lives to unnecessary risk clearly. They only engage hostile creatures for basic survival needs. They try to rely on self-sufficiency with relative success thanks to their applied intelligence along with tech that they have managed to find or engineer themselves. They have made these projectors so that we can help each other. We provide you with locations with dangerous creatures along with valuable items or survivors who are captive. You clear these locations acquiring whatever valuable items or survivors you want from there making these locations safe shelters where we including you can live hopefully as well",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_SECRONOM_HOLOGRAM_3",
+    "type": "talk_topic",
+    "dynamic_line": "What do you want to do? Play archived games? Browse archived social media? Watch archived videos? Listen to archived music? Read archived files along with archived books? Something to play, read, listen, watch for fun, intelligence improving, spiritual improving, mental improving? Or for reproductive physical state improving?",
+    "responses": [
+      {
+        "text": "I like some of these a lot honestly. Healthy stuff",
+        "topic": "TALK_DONE",
+        "switch": true,
+        "effect": [ "morale_chat_activity", { "npc_add_effect": "asked_to_socialize", "duration": 7000 } ]
+      }
+    ]
+  }
+]

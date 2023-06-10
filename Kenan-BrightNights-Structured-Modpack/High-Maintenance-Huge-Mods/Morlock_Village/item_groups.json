@@ -18,24 +18,24 @@
       [ "essay_book", 200 ],
       [ "plays_book", 200 ],
       [ "novel_experimental", 100 ],
-      [ "jewelry_book", 20],
+      [ "jewelry_book", 20 ],
       [ "trailmap", 20 ],
       [ "novel_satire", 100 ]
     ]
   },
   {
-    "id" : "survivorzed_extra",
-    "type" : "item_group",
-    "items":[ [ "morlock_map", 50 ]]
-  }, 
-  {
-    "id" : "sewer",
-    "type" : "item_group",
-    "items":[ [ "morlock_map", 1 ] ]
+    "id": "survivorzed_extra",
+    "type": "item_group",
+    "items": [ [ "morlock_map", 50 ] ]
   },
   {
-    "type" : "item_group",
-    "id" : "pottery",
+    "id": "sewer",
+    "type": "item_group",
+    "items": [ [ "morlock_map", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "pottery",
     "items": [
       [ "ceramic_plate", 50 ],
       [ "ceramic_bowl", 100 ],
@@ -47,8 +47,8 @@
     ]
   },
   {
-    "type" : "item_group",
-    "id" : "blacksmith_fullkit",
+    "type": "item_group",
+    "id": "blacksmith_fullkit",
     "subtype": "collection",
     "entries": [
       { "item": "anvil" },
@@ -70,5 +70,20 @@
       { "item": "hacksaw" },
       { "item": "knife_butcher", "count": [ 3, 5 ] }
     ]
+  },
+  {
+    "id": "office_paper",
+    "type": "item_group",
+    "subtype": "collection",
+    "//": "Random paper/data items. for filing cabinets or other office locations",
+    "items": [ { "item": "Morlock_Village_mission_hologram", "prob": 68 } ]
+  },
+  {
+    "id": "SUS_office_filing_cabinet",
+    "type": "item_group",
+    "//": "SUS item groups are collections that contain a reasonable realistic distribution of items that might spawn in a given storage furniture.",
+    "//2": "This group is for an office filing cabinet containing folders and documents.",
+    "subtype": "collection",
+    "items": [ { "item": "Morlock_Village_mission_hologram", "prob": 68 } ]
   }
 ]

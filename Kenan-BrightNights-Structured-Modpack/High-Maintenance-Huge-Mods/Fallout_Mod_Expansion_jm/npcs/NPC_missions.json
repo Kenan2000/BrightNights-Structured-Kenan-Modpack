@@ -1,0 +1,329 @@
+[
+  {
+    "type": "npc_class",
+    "id": "Fallout_Expansion_hologram_class",
+    "name": { "str": "Fallout Expansion Locator Hologram" },
+    "job_description": "Fallout Expansion Locator Hologram",
+    "common": false,
+    "bonus_int": { "rng": [ 5, 6 ] },
+    "skills": [ { "skill": "ALL", "bonus": { "rng": [ 4, 6 ] } } ],
+    "traits": [ { "group": "Appearance_demographics" }, { "trait": "FALLOUT_EXPANSION_HOLOGRAM_PROTECTION" } ]
+  },
+  {
+    "type": "mutation",
+    "id": "FALLOUT_EXPANSION_HOLOGRAM_PROTECTION",
+    "name": { "str": "Hologram Protection" },
+    "points": 10,
+    "description": "\"I am programmed to not engage wandering monsters.\"",
+    "valid": false,
+    "purifiable": false,
+    "ignored_by": [ "ZOMBIE", "MUTANT" ]
+  },
+  {
+    "type": "npc",
+    "id": "Fallout_Expansion_common_vault_hologram",
+    "name_unique": "Fallout Expansion Common Vault Locator Hologram",
+    "class": "Fallout_Expansion_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_FALLOUT_EXPANSION_COMMON_VAULT_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Fallout_Expansion_irradiated_vault_hologram",
+    "name_unique": "Fallout Expansion Irradiated Vault Locator Hologram",
+    "class": "Fallout_Expansion_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_FALLOUT_EXPANSION_IRRADIATED_VAULT_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Fallout_Expansion_nuka_plant_hologram",
+    "name_unique": "Fallout Expansion Nuka Cola Plant Locator Hologram",
+    "class": "Fallout_Expansion_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_FALLOUT_EXPANSION_NUKA_PLANT_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "Fallout_Expansion_research_facility_hologram",
+    "name_unique": "Fallout Expansion West-Tek Research Facility Locator Hologram",
+    "class": "Fallout_Expansion_hologram_class",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_FALLOUT_EXPANSION_RESEARCH_FACILITY_HOLOGRAM",
+    "faction": "no_faction"
+  },
+  {
+    "id": "MISSION_FALLOUT_EXPANSION_COMMON_VAULT",
+    "type": "mission_definition",
+    "name": { "str": "Go to Common Vault" },
+    "description": "Go to Common Vault",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "FO_COMMON_VAULT_H",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_COMMON_VAULT_H",
+        "reveal_radius": 5,
+        "om_special": "Common Vault",
+        "search_range": 368
+      }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_FALLOUT_EXPANSION_IRRADIATED_VAULT",
+    "type": "mission_definition",
+    "name": { "str": "Go to Irradiated Vault" },
+    "description": "Go to Irradiated Vault",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "FO_RAD_VAULT_H",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_RAD_VAULT_H",
+        "reveal_radius": 5,
+        "om_special": "Irradiated Vault",
+        "search_range": 368
+      }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_FALLOUT_EXPANSION_NUKA_PLANT",
+    "type": "mission_definition",
+    "name": { "str": "Go to Nuka Cola Plant" },
+    "description": "Go to Nuka Cola Plant",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "FO_NUKAPLANT_1_1",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_NUKAPLANT_1_1",
+        "reveal_radius": 5,
+        "om_special": "Nuka Cola Plant",
+        "search_range": 368
+      }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "MISSION_FALLOUT_EXPANSION_RESEARCH_FACILITY",
+    "type": "mission_definition",
+    "name": { "str": "Go to West-Tek Research Facility" },
+    "description": "Go to West-Tek Research Facility",
+    "goal": "MGOAL_GO_TO_TYPE",
+    "destination": "FO_WESTTEK_2_1",
+    "difficulty": 3,
+    "value": 368000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "FO_WESTTEK_2_1",
+        "reveal_radius": 5,
+        "om_special": "West-Tek Research Facility",
+        "search_range": 368
+      }
+    },
+    "origins": [ "ORIGIN_OPENER_NPC" ],
+    "dialogue": {
+      "describe": "You want me to find this location for you to explore? Sure, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "offer": "You want me to locate it now for you to explore? Sure, just tell me, you will just need to wait for a couple of minutes or less for me to find it via my network system",
+      "accepted": "Good luck to you!",
+      "rejected": "Not interested in explorations of new locations? No rush hopefully. You can come back to me later. I'm sure that you will. Because I believe that you are not a boring person",
+      "advice": "Use your wits for your own safety hopefully as well",
+      "inquire": "Have you went to this location that I have found for you to explore?",
+      "success": "Good work!",
+      "success_lie": "What's the point of lying to me? You think I'm gonna reward you? Your rewards for this mission is valuable for you items or living creatures or other survivors you manage to find in this location which I have found for you to explore",
+      "failure": "You are a boring, lazy person honestly. I guess that laziness applies to both of us"
+    }
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_COMMON_VAULT_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_FALLOUT_EXPANSION_COMMON_VAULT_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_FALLOUT_EXPANSION_COMMON_VAULT" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_COMMON_VAULT_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_FALLOUT_EXPANSION_COMMON_VAULT_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_IRRADIATED_VAULT_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_FALLOUT_EXPANSION_IRRADIATED_VAULT_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_FALLOUT_EXPANSION_IRRADIATED_VAULT" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_IRRADIATED_VAULT_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_FALLOUT_EXPANSION_IRRADIATED_VAULT_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_NUKA_PLANT_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_FALLOUT_EXPANSION_NUKA_PLANT_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_FALLOUT_EXPANSION_NUKA_PLANT" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_NUKA_PLANT_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_FALLOUT_EXPANSION_NUKA_PLANT_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_RESEARCH_FACILITY_HOLOGRAM",
+    "type": "talk_topic",
+    "dynamic_line": "System is online. Initiate conversation mode. Look at that. Survivor has managed to activate a hologram projector easily! Yeah, my creators know many types of you who don't even read what's written on items honestly. Good that you seem like a pretty intelligent person hopefully. So, do you want me to show you where this location is via my network system? I can grant you access to archived global network system which my creators have managed to restore. However, after usage I will need to recharge a little bit which only means that you will need to wait to use this function again hopefully",
+    "responses": [
+      {
+        "text": "[MISSIONS] I want you to find this location for me to explore it hopefully via your network system",
+        "topic": "TALK_FALLOUT_EXPANSION_RESEARCH_FACILITY_HOLOGRAM_MISSION",
+        "effect": { "add_mission": "MISSION_FALLOUT_EXPANSION_RESEARCH_FACILITY" }
+      },
+      { "text": "Who or what are you?", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_1" },
+      {
+        "text": "Who are your creators? What is the purpose of producing these projectors?",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_2"
+      },
+      {
+        "text": "[IMPROVE MOOD] I want you to grant me access to archived global network system",
+        "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_3",
+        "condition": { "not": { "npc_has_effect": "asked_to_socialize" } }
+      },
+      { "text": "[GOODBYE]", "topic": "TALK_FALLOUT_EXPANSION_HOLOGRAM_GOODBYE" }
+    ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_RESEARCH_FACILITY_HOLOGRAM_MISSION",
+    "type": "talk_topic",
+    "dynamic_line": "Initiate search mode. Please, wait for a couple of minutes or less. You've heard me clearly. Still, we have limitations with regards to our locating tools. If locator does not manage to find this location then simply create another hologram locator of which can find this location successfully",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_FALLOUT_EXPANSION_RESEARCH_FACILITY_HOLOGRAM" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_HOLOGRAM_GOODBYE",
+    "type": "talk_topic",
+    "dynamic_line": "Good luck to you!",
+    "responses": [ { "text": "Thanks", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_HOLOGRAM_1",
+    "type": "talk_topic",
+    "dynamic_line": "I'm a magic genie from a magic camera. No, I'm just joking. What kind of a question is this? You don't like to explore or don't know much about your own world? Have not you seen stuff in labs? Military structures? Top secret stuff? Aliens or whatever these creatures are? You think that your own people don't have tech which can produce holograms? I'm a hologram, software with some additional technologies, it is that simple",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_HOLOGRAM_2",
+    "type": "talk_topic",
+    "dynamic_line": "This question is much more intelligent than the other one. My creators can be described as a bunch of highly technological geeks majority of which are humans honestly. They neither possess that many combat skills nor they are that interested in subjecting their lives to unnecessary risk clearly. They only engage hostile creatures for basic survival needs. They try to rely on self-sufficiency with relative success thanks to their applied intelligence along with tech that they have managed to find or engineer themselves. They have made these projectors so that we can help each other. We provide you with locations with dangerous creatures along with valuable items or survivors who are captive. You clear these locations acquiring whatever valuable items or survivors you want from there making these locations safe shelters where we including you can live hopefully as well",
+    "responses": [ { "text": "Can I talk to you about something else?", "topic": "TALK_DONE" } ]
+  },
+  {
+    "id": "TALK_FALLOUT_EXPANSION_HOLOGRAM_3",
+    "type": "talk_topic",
+    "dynamic_line": "What do you want to do? Play archived games? Browse archived social media? Watch archived videos? Listen to archived music? Read archived files along with archived books? Something to play, read, listen, watch for fun, intelligence improving, spiritual improving, mental improving? Or for reproductive physical state improving?",
+    "responses": [
+      {
+        "text": "I like some of these a lot honestly. Healthy stuff",
+        "topic": "TALK_DONE",
+        "switch": true,
+        "effect": [ "morale_chat_activity", { "npc_add_effect": "asked_to_socialize", "duration": 7000 } ]
+      }
+    ]
+  }
+]

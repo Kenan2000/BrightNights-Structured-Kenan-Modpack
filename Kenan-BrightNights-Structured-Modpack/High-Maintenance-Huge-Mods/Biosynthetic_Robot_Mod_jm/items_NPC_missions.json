@@ -1,0 +1,54 @@
+[
+  {
+    "id": "Biosynthetic_Robots_compliance_mission_hologram",
+    "type": "TOOL",
+    "name": { "str": "Hologram Projector - Locator of Automated Compliance Center" },
+    "description": "This is a hologram projector which generates an interactive hologram when you activate it. Hologram can talk to you, answer some of your questions, but most importantly, it can locate Automated Compliance Center",
+    "weight": "85 g",
+    "volume": "15 ml",
+    "price": "500 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "plastic", "steel" ],
+    "looks_like": "camera",
+    "symbol": "[",
+    "max_charges": 1,
+    "initial_charges": 1,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "Biosynthetic_Robots_compliance_hologram",
+      "summon_msg": "Hologram appears in front of you!",
+      "place_randomly": false,
+      "moves": 0
+    },
+    "color": "blue",
+    "flags": [ "NPC_SAFE", "INEDIBLE" ]
+  },
+  {
+    "id": "Biosynthetic_Robots_XEDRA_mission_hologram",
+    "type": "TOOL",
+    "name": { "str": "Hologram Projector - Locator of XEDRA Black Site" },
+    "description": "This is a hologram projector which generates an interactive hologram when you activate it. Hologram can talk to you, answer some of your questions, but most importantly, it can locate XEDRA Black Site",
+    "weight": "85 g",
+    "volume": "15 ml",
+    "price": "500 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "plastic", "steel" ],
+    "looks_like": "camera",
+    "symbol": "[",
+    "max_charges": 1,
+    "initial_charges": 1,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "Biosynthetic_Robots_XEDRA_hologram",
+      "summon_msg": "Hologram appears in front of you!",
+      "place_randomly": false,
+      "moves": 0
+    },
+    "color": "blue",
+    "flags": [ "NPC_SAFE", "INEDIBLE" ]
+  }
+]

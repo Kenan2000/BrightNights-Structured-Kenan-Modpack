@@ -1,0 +1,54 @@
+[
+  {
+    "id": "Steampunk_Mod_scientist_compound_mission_hologram",
+    "type": "TOOL",
+    "name": { "str": "Hologram Projector - Locator of Scientist Compound" },
+    "description": "This is a hologram projector which generates an interactive hologram when you activate it. Hologram can talk to you, answer some of your questions, but most importantly, it can locate Scientist Compound",
+    "weight": "85 g",
+    "volume": "15 ml",
+    "price": "500 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "plastic", "steel" ],
+    "looks_like": "camera",
+    "symbol": "[",
+    "max_charges": 1,
+    "initial_charges": 1,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "Steampunk_Mod_scientist_compound_hologram",
+      "summon_msg": "Hologram appears in front of you!",
+      "place_randomly": false,
+      "moves": 0
+    },
+    "color": "blue",
+    "flags": [ "NPC_SAFE", "INEDIBLE" ]
+  },
+  {
+    "id": "Steampunk_Mod_shady_warehouse_mission_hologram",
+    "type": "TOOL",
+    "name": { "str": "Hologram Projector - Locator of Shady Warehouse" },
+    "description": "This is a hologram projector which generates an interactive hologram when you activate it. Hologram can talk to you, answer some of your questions, but most importantly, it can locate Shady Warehouse",
+    "weight": "85 g",
+    "volume": "15 ml",
+    "price": "500 USD",
+    "price_postapoc": "5 USD",
+    "material": [ "plastic", "steel" ],
+    "looks_like": "camera",
+    "symbol": "[",
+    "max_charges": 1,
+    "initial_charges": 1,
+    "charges_per_use": 0,
+    "turns_per_charge": 0,
+    "use_action": {
+      "type": "place_npc",
+      "npc_class_id": "Steampunk_Mod_shady_warehouse_hologram",
+      "summon_msg": "Hologram appears in front of you!",
+      "place_randomly": false,
+      "moves": 0
+    },
+    "color": "blue",
+    "flags": [ "NPC_SAFE", "INEDIBLE" ]
+  }
+]
