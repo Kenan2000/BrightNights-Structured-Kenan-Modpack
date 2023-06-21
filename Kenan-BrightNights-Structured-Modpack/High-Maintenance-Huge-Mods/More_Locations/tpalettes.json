@@ -469,9 +469,9 @@
     "items": {
       " ": { "item": "trash", "chance": 1 },
       ".": [
-        { "item": "trash", "chance": 1, "damage": [ 0, 2 ] },
-        { "item": "trash_forest", "chance": 1, "damage": [ 0, 2 ] },
-        { "item": "livingroom", "chance": 1, "damage": [ 0, 2 ] }
+        { "item": "trash", "chance": 1 },
+        { "item": "trash_forest", "chance": 1 },
+        { "item": "livingroom", "chance": 1 }
       ],
       "a": { "item": "livingroom", "chance": 20 },
       "A": { "item": "livingroom", "chance": 30 },
@@ -513,7 +513,7 @@
     },
     "mapping": {
       "*": { "furniture": "f_rubble", "item": { "item": "heavy_flashlight" } },
-      "W": { "furniture": "f_woodstove", "item": { "item": "2x4", "amount": 10 }, "fields": { "field": "fd_fire" } }
+      "W": { "furniture": "f_woodstove", "item": { "item": "2x4" }, "fields": { "field": "fd_fire" } }
     }
   },
   {
