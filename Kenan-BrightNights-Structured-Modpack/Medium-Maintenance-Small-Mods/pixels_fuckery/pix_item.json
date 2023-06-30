@@ -11,7 +11,15 @@
     "symbol": ":",
     "color": "dark_gray",
     "location": "stock",
-    "mod_targets": [ "smg", "rifle", "shotgun", "launcher" ],
+    "mod_target_category": [
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "GATLING_GUNS" ],
+      [ "MACHINE_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "ROCKET_LAUNCHERS" ],
+      [ "GRENADE_LAUNCHERS" ]
+    ],
     "handling_modifier": -6,
     "min_skills": [ [ "weapon", 3 ] ]
   },
@@ -27,7 +35,7 @@
     "symbol": ":",
     "color": "light_gray",
     "location": "barrel",
-    "mod_targets": [ "smg", "rifle", "shotgun" ],
+    "mod_target_category": [ [ "SUBMACHINE_GUNS" ], [ "RIFLES" ], [ "GATLING_GUNS" ], [ "MACHINE_GUNS" ], [ "SHOTGUNS" ] ],
     "dispersion_modifier": 55,
     "loudness_modifier": 1,
     "min_skills": [ [ "weapon", 3 ] ]

@@ -18,7 +18,7 @@
     "max_charges": 1,
     "gunmod_data": {
       "location": "barrel",
-      "mod_targets": [ "rifle" ],
+      "mod_target_category": [ [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
       "dispersion_modifier": -855,
       "damage_modifier": 45,
       "range_modifier": 40
@@ -51,7 +51,7 @@
     "ammo": "plasma",
     "gunmod_data": {
       "location": "barrel",
-      "mod_targets": [ "rifle" ],
+      "mod_target_category": [ [ "RIFLES" ], [ "MACHINE_GUNS" ], [ "GATLING_GUNS" ] ],
       "dispersion_modifier": -900,
       "damage_modifier": 83,
       "handling_modifier": -15,

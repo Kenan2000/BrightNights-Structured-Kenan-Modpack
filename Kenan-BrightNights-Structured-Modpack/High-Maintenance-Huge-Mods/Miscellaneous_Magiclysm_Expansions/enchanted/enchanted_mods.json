@@ -13,8 +13,19 @@
     "symbol": ".",
     "color": "dark_gray",
     "location": "accessories",
-    "mod_targets": [ "archery", "crossbow", "rifle", "shotgun", "smg", "pistol", "rugerlcp", "kp32", "kp3at", "kpf9", "cop_38", "moss_brownie" ],
+    "mod_targets": [ "rugerlcp", "kp32", "kp3at", "kpf9", "cop_38", "moss_brownie" ],
+    "mod_target_category": [
+      [ "PISTOLS" ],
+      [ "SUBMACHINE_GUNS" ],
+      [ "RIFLES" ],
+      [ "MACHINE_GUNS" ],
+      [ "GATLING_GUNS" ],
+      [ "SHOTGUNS" ],
+      [ "BOWS" ],
+      [ "S_XBOWS" ],
+      [ "M_XBOWS" ]
+    ],
     "dispersion_modifier": 0,
     "min_skills": [ [ "spellcraft", 1 ] ]
   }
-  ]
+]
