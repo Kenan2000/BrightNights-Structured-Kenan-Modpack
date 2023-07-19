@@ -1,0 +1,64 @@
+[
+  {
+    "id": "achievement_dkz_RANDYS_FIXED_GENERATOR",
+    "type": "achievement",
+    "name": { "str": "Power Overwhelming." },
+    "description": "<color_light_blue>[Really Dark Skies]</color> Help Randy Erikson fix the secret generator at the refugee center.",
+    "requirements": [ { "event_statistic": "num_avatar_dkz_RANDYS_FIXED_GENERATOR", "is": ">=", "target": 1 } ]
+  },
+  {
+    "id": "num_avatar_dkz_RANDYS_FIXED_GENERATOR",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_dkz_RANDYS_FIXED_GENERATOR"
+  },
+  {
+    "id": "avatar_dkz_RANDYS_FIXED_GENERATOR",
+    "type": "event_transformation",
+    "event_type": "character_gains_effect",
+    "value_constraints": { "effect": { "equals": "dkz_RANDYS_FIXED_GENERATOR" } },
+    "drop_fields": [ "effect" ]
+  },
+  {
+    "id": "achievement_dkz_RANDYS_BUDDY",
+    "type": "achievement",
+    "hidden_by": [ "achievement_dkz_RANDYS_FIXED_GENERATOR" ],
+    "name": { "str": "The game within the game." },
+    "description": "<color_light_blue>[Really Dark Skies]</color> Help Randy Erikson find all the latest updates for Cataclysm - Bright Nights.",
+    "requirements": [ { "event_statistic": "num_avatar_dkz_RANDYS_BUDDY", "is": ">=", "target": 1 } ]
+  },
+  {
+    "id": "num_avatar_dkz_RANDYS_BUDDY",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_dkz_RANDYS_BUDDY"
+  },
+  {
+    "id": "avatar_dkz_RANDYS_BUDDY",
+    "type": "event_transformation",
+    "event_type": "character_gains_effect",
+    "value_constraints": { "effect": { "equals": "dkz_RANDYS_BUDDY" } },
+    "drop_fields": [ "effect" ]
+  },
+  {
+    "id": "achievement_dkz_MET_MR_ERIKSON",
+    "type": "achievement",
+    "hidden_by": [ "achievement_dkz_MET_MR_ERIKSON" ],
+    "name": { "str": "Take me to your leader." },
+    "description": "<color_light_blue>[Really Dark Skies]</color> You have meet with Chad Erikson, the leader of the Maquis, the alien resistance organization.",
+    "requirements": [ { "event_statistic": "num_avatar_dkz_MET_MR_ERIKSON", "is": ">=", "target": 1 } ]
+  },
+  {
+    "id": "num_avatar_dkz_MET_MR_ERIKSON",
+    "type": "event_statistic",
+    "stat_type": "count",
+    "event_transformation": "avatar_dkz_MET_MR_ERIKSON"
+  },
+  {
+    "id": "avatar_dkz_MET_MR_ERIKSON",
+    "type": "event_transformation",
+    "event_type": "character_gains_effect",
+    "value_constraints": { "effect": { "equals": "dkz_MET_MR_ERIKSON" } },
+    "drop_fields": [ "effect" ]
+  }
+]

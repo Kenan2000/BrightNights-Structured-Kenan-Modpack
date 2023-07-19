@@ -1,5 +1,132 @@
 [
   {
+    "result": "xenoid-bone_necklace",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "time": "30 m",
+    "reversible": true,
+    "autolearn": true,
+    "type": "recipe",
+    "components": [ [ [ "bone_xenoid_small", 25 ] ], [ [ "cordage", 1, "LIST" ] ] ]
+  },
+  {
+    "result": "armor_xeno-scrapsuit",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "40 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "cordage", 1 ] ],
+    "components": [ [ [ "cuirass_xeno-scrap", 1 ] ], [ [ "armguard_xeno-scrap", 1 ] ], [ [ "legguard_xeno-scrap", 1 ] ] ]
+  },
+  {
+    "result": "cuirass_xeno-scrap",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "2 h",
+    "autolearn": true,
+    "using": [ [ "cordage", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "dkz_blend_scrap", 16 ] ] ]
+  },
+  {
+    "result": "boots_xeno-scrap",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "40 m",
+    "reversible": true,
+    "autolearn": true,
+    "using": [ [ "cordage", 4 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "dkz_blend_scrap", 10 ] ] ]
+  },
+  {
+    "result": "helmet_xeno-scrap",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "45 m",
+    "autolearn": true,
+    "using": [ [ "cordage", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "dkz_blend_scrap", 6 ] ] ]
+  },
+  {
+    "result": "armguard_xeno-scrap",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_ARMS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "50 m",
+    "autolearn": true,
+    "using": [ [ "cordage", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [ [ [ "dkz_blend_scrap", 12 ] ] ]
+  },
+  {
+    "result": "legguard_xeno-scrap",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "time": "55 m",
+    "autolearn": true,
+    "using": [ [ "cordage", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
+    "components": [ [ [ "dkz_blend_scrap", 12 ] ] ]
+  },
+  {
+    "result": "improvised_grenade_xeno",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 3,
+    "time": "1 h",
+    "reversible": false,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "PRY", "level": 1 }, { "id": "SAW_M", "level": 1 } ],
+    "components": [ [ [ "dkz_powercell", 1 ] ], [ [ "copper", 2 ] ], [ [ "duct_tape", 5 ] ] ]
+  },
+  {
+    "result": "improvised_pipebomb_xeno",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 m",
+    "reversible": false,
+    "autolearn": true,
+    "components": [ [ [ "dkz_powercell", 1 ] ], [ [ "improvised_pipebomb", 1 ] ], [ [ "duct_tape", 3 ] ] ]
+  },
+  {
+    "result": "xeno-dynamite",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_EXPLOSIVE",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "time": "1 m",
+    "reversible": false,
+    "autolearn": true,
+    "components": [ [ [ "dkz_powercell", 1 ] ], [ [ "dynamite", 1 ] ], [ [ "duct_tape", 3 ] ] ]
+  },
+  {
     "result": "dkz_xenoid_mask_reclaimed_white",
     "type": "recipe",
     "category": "CC_ARMOR",
@@ -17,11 +144,6 @@
       { "id": "SAW_M", "level": 1 }
     ],
     "tools": [ [ [ "forge", 50 ] ] ],
-    "components": [
-      [ [ "dkz_xenoid_mask_salvaged", 1 ] ],
-      [ [ "sheet_kevlar", 1 ] ],
-      [ [ "steel_chunk", 1 ] ],
-      [ [ "w_paint", 3 ] ]
-    ]
+    "components": [ [ [ "dkz_xenoid_mask_salvaged", 1 ] ], [ [ "sheet_kevlar", 1 ] ], [ [ "steel_chunk", 1 ] ], [ [ "w_paint", 3 ] ] ]
   }
 ]

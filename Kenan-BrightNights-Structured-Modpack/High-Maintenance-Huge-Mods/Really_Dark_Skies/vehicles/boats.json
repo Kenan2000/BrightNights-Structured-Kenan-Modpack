@@ -1,0 +1,82 @@
+[
+  {
+    "type": "vehicle",
+    "id": "racing_boat_motor_single",
+    "name": "racing motor boat",
+    "blueprint": [
+      [ "|--\\" ],
+      [ "|==O>" ],
+      [ "|--/ " ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_vertical", "carbonfiber_boat_hull" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_horizontal", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_horizontal", "carbonfiber_boat_hull" ] },
+      { "x": 3, "y": 0, "parts": [ "frame_sw", "carbonfiber_boat_hull" ] },
+      {
+        "x": 0,
+        "y": 1,
+        "parts": [ "frame_vertical", "carbonfiber_boat_hull", "engine_1cyl_large", "alternator_bicycle", "battery_motorbike" ]
+      },
+      { "x": 1, "y": 1, "parts": [ "frame_cross", "carbonfiber_boat_hull", "trunk" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_cross", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 1, "part": "tank", "fuel": "gasoline" },
+      { "x": 3, "y": 1, "parts": [ "frame_cross", "carbonfiber_boat_hull", "seat", "seatbelt", "controls", "dashboard" ] },
+      { "x": 4, "y": 1, "parts": [ "frame_horizontal", "carbonfiber_boat_hull", "windshield" ] },
+      { "x": 0, "y": 2, "parts": [ "frame_vertical", "carbonfiber_boat_hull" ] },
+      { "x": 1, "y": 2, "parts": [ "frame_horizontal", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 2, "parts": [ "frame_horizontal", "carbonfiber_boat_hull" ] },
+      { "x": 3, "y": 2, "parts": [ "frame_ne", "carbonfiber_boat_hull" ] }
+    ]
+  },
+  {
+    "type": "vehicle",
+    "id": "DUKWX",
+    "name": "Amphibious Truck",
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_cross", "seat", "seatbelt", "controls", "dashboard", "roof", "carbonfiber_boat_hull" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_cross", "seat", "seatbelt", "roof", "carbonfiber_boat_hull" ] },
+      { "x": 0, "y": 2, "parts": [ "frame_cross", "seat", "seatbelt", "roof", "carbonfiber_boat_hull" ] },
+      { "x": 0, "y": 3, "parts": [ "frame_vertical", "door", "carbonfiber_boat_hull" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_vertical", "door", "carbonfiber_boat_hull" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_vertical", "windshield", "wheel_mount_medium_steerable", "wheel_wide" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_cross", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_cross", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": 1, "y": 2, "parts": [ "frame_cross", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": 1, "y": 3, "parts": [ "frame_vertical", "windshield", "wheel_mount_medium_steerable", "wheel_wide" ] },
+      { "x": 2, "y": -1, "parts": [ "frame_nw", "halfboard_nw", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_horizontal", "halfboard_horizontal", "headlight", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_horizontal", "halfboard_horizontal", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 1, "parts": [ "engine_v6", "alternator_truck", "battery_car" ] },
+      { "x": 2, "y": 2, "parts": [ "frame_horizontal", "halfboard_horizontal", "headlight", "carbonfiber_boat_hull" ] },
+      { "x": 2, "y": 3, "parts": [ "frame_ne", "halfboard_ne", "carbonfiber_boat_hull" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_vertical", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": -1, "y": -1, "part": "tank", "fuel": "gasoline" },
+      { "x": -1, "y": 0, "parts": [ "frame_cross", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_cross", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": -1, "y": 2, "parts": [ "frame_cross", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": -1, "y": 3, "parts": [ "frame_vertical", "windshield", "carbonfiber_boat_hull" ] },
+      { "x": -1, "y": 3, "part": "tank", "fuel": "gasoline" },
+      { "x": -2, "y": -1, "parts": [ "frame_vertical", "halfboard_vertical", "carbonfiber_boat_hull" ] },
+      { "x": -2, "y": 0, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -2, "y": 1, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -2, "y": 2, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -2, "y": 3, "parts": [ "frame_vertical", "halfboard_vertical", "carbonfiber_boat_hull" ] },
+      { "x": -3, "y": -1, "parts": [ "frame_vertical", "halfboard_vertical", "wheel_mount_medium", "wheel_wide" ] },
+      { "x": -3, "y": 0, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -3, "y": 1, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -3, "y": 2, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -3, "y": 3, "parts": [ "frame_vertical", "halfboard_vertical", "wheel_mount_medium", "wheel_wide" ] },
+      { "x": -4, "y": -1, "parts": [ "frame_vertical", "halfboard_vertical", "wheel_mount_medium", "wheel_wide" ] },
+      { "x": -4, "y": 0, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -4, "y": 1, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -4, "y": 2, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -4, "y": 3, "parts": [ "frame_vertical", "halfboard_vertical", "wheel_mount_medium", "wheel_wide" ] },
+      { "x": -5, "y": -1, "parts": [ "frame_sw", "halfboard_sw", "carbonfiber_boat_hull" ] },
+      { "x": -5, "y": 0, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -5, "y": 1, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -5, "y": 2, "parts": [ "frame_cross", "cargo_space", "carbonfiber_boat_hull" ] },
+      { "x": -5, "y": 3, "parts": [ "frame_se", "halfboard_se", "carbonfiber_boat_hull" ] }
+    ]
+  }  
+]
