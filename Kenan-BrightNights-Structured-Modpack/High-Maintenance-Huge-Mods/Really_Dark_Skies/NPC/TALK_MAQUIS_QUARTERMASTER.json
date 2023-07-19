@@ -128,6 +128,21 @@
         "topic": "TALK_MAQUIS_QUARTERMASTER_BIG_BROTHER"
       },
       {
+        "text": "[MISSION] I am a Chi Industries Bio-Synth and was activated with orders to come to this location and find a 'Mr. Erikson'.",
+        "effect": { "npc_add_var": "u_Ask_QM_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            {
+              "not": { "npc_has_var": "u_Ask_QM_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_has_mission": "DKZ_N_SYNTH_MAID_TO_KILL" }
+          ]
+        },
+        "opinion": { "trust": 4, "value": 6 },
+        "topic": "TALK_MAQUIS_QUARTERMASTER_N_SYNTH_MAID_TO_KILL"
+      },
+      {
         "text": "I want to join the Maquis.",
         "effect": { "u_add_var": "u_Ask_QM_Join_Maquis", "type": "general", "context": "meeting", "value": "yes" },
         "condition": {
@@ -240,6 +255,27 @@
         "no": [
           "Mr. Erikson is always coming and going, he's got an office upstairs on the seventh floor.",
           "I'm not sure where the boss is now, but he's probably somewhere on the seventh floor",
+          "Mr. Erikson is probably upstairs in his office on the seventh floor."
+        ]
+      }
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  }, 
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_QUARTERMASTER_N_SYNTH_MAID_TO_KILL",
+    "type": "talk_topic",
+    "dynamic_line": [
+      {
+        "u_has_var": "u_met_Chad_Erikson",
+        "type": "general",
+        "context": "meeting",
+        "value": "yes",
+        "yes": [
+          "Mr. Erikson is probably still upstairs in his office."
+        ],
+        "no": [
+          "Mr. Erikson is always coming and going, he's got an office upstairs on the seventh floor.",
           "Mr. Erikson is probably upstairs in his office on the seventh floor."
         ]
       }

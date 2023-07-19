@@ -131,21 +131,6 @@
     },
     "responses": [
       {
-        "text": "[MISSION] Sir!  Mission is Foxtrot Uniform Charlie Kilo!  Sir!",
-        "condition": {
-          "and": [
-            { "u_has_var": "Rendezvous_to_base", "type": "knowledge", "context": "flag", "value": "yes" },
-            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } }
-          ]
-        },
-        "effect": [
-          { "u_add_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
-          { "npc_first_topic": "TALK_CHAD_ERIKSON_QUESTIONS" }
-        ],
-        "opinion": { "trust": 3, "value": 2 },
-        "topic": "TALK_CHAD_ERIKSON_RENDEZVOUS_TO_BASE"
-      },
-      {
         "text": "Hey, Chad.  How did you end up in charge here?",
         "effect": [
           { "u_add_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
@@ -179,6 +164,62 @@
         "opinion": { "trust": -1, "value": -2 },
         "condition": { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
         "topic": "TALK_DONE"
+      },
+      {
+        "text": "[MISSION] I got a message from the evacuation shelter's computer to meet up with someone named 'Chad' here!",
+        "condition": {
+          "and": [
+            { "u_has_var": "Rendezvous_to_base", "type": "knowledge", "context": "flag", "value": "yes" },
+            { "u_has_mission": "DKZ_MAQUIS_IS_RECRUITING" },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } }
+          ]
+        },
+        "effect": [
+          { "u_add_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_CHAD_ERIKSON_QUESTIONS" }
+        ],
+        "opinion": { "trust": 1, "value": 5 },
+        "topic": "TALK_CHAD_ERIKSON_MAQUIS_IS_RECRUITING"
+      },
+      {
+        "text": "[MISSION] Your nephew Randy wanted me to see how you are doing.",
+        "effect": { "u_add_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "opinion": { "trust": 3, "value": 4 },
+        "topic": "TALK_CHAD_ERIKSON_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] Felix Fox sent me.",
+        "effect": { "u_add_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" }
+          ]
+        },
+        "opinion": { "trust": 2, "value": 3 },
+        "topic": "TALK_CHAD_ERIKSON_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] Sir!  Mission is Foxtrot Uniform Charlie Kilo!  Sir!",
+        "condition": {
+          "and": [
+            { "u_has_var": "Rendezvous_to_base", "type": "knowledge", "context": "flag", "value": "yes" },
+            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } }
+          ]
+        },
+        "effect": [
+          { "u_add_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_CHAD_ERIKSON_QUESTIONS" }
+        ],
+        "opinion": { "trust": 3, "value": 2 },
+        "topic": "TALK_CHAD_ERIKSON_RENDEZVOUS_TO_BASE"
       }
     ]
   },
@@ -223,30 +264,6 @@
       { "u_male": [ "Buddy, what do you want?" ], "no": [ "Lady, want do you want?" ] }
     ],
     "responses": [
-      {
-        "text": "[MISSION] Your nephew Randy wanted me to see how you are doing.",
-        "effect": { "u_add_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
-        "condition": {
-          "and": [
-            { "not": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
-            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
-          ]
-        },
-        "opinion": { "trust": 3, "value": 4 },
-        "topic": "TALK_CHAD_ERIKSON_BIG_BROTHER"
-      },
-      {
-        "text": "[MISSION] Felix Fox sent me.",
-        "effect": { "u_add_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
-        "condition": {
-          "and": [
-            { "not": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
-            { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" }
-          ]
-        },
-        "opinion": { "trust": 2, "value": 3 },
-        "topic": "TALK_CHAD_ERIKSON_BIG_BROTHER"
-      },
       {
         "text": "Is there anything else I can to help the Maquis than doing generic missions?",
         "effect": { "u_add_var": "u_Talk_To_ChadErikson_about_BaseBuilding", "type": "general", "context": "meeting", "value": "yes" },
@@ -317,6 +334,52 @@
       "We do have plans to expand facilities here at Barter Tower, but the Maquis have been fighting for survival for weeks now.  If you want to take point on the task, I will leave base expansion entirely in our control.  Talk to the quartermaster on the ground level, he should still be wearing his postman uniform."
     ],
     "responses": [ { "text": "OK, Thanks.", "topic": "TALK_NONE" }, { "text": "OK, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_CHAD_ERIKSON_MAQUIS_IS_RECRUITING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I prefer Mr. Erikson but yes, we did hijack some of the computer system of the emergency messaging system and direct survivors here.  Are you ready to get to work"
+    ],
+    "responses": [
+      {
+        "text": "No. I have to go.",
+        "effect": [
+          { "u_faction_rep": -2 },
+          { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": -2 }
+        ],
+        "opinion": { "trust": -3, "value": -1 },
+        "topic": "TALK_CHAD_ERIKSON_MAQUIS_IS_RECRUITING_REJECT"
+      },
+      {
+        "text": "Yes. What do you need done?",
+        "opinion": { "trust": 3, "value": 5 },
+        "effect": [
+          { "u_faction_rep": 2 },
+          { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 2 }
+        ],
+        "topic": "TALK_CHAD_ERIKSON_MAQUIS_IS_RECRUITING_ACCEPT"
+      },
+      { "text": "I would like to ask you about the Xenoids.", "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS" },
+      { "text": "I have so many questions about everything.", "topic": "TALK_CHAD_ERIKSON_QUESTIONS" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_CHAD_ERIKSON_MAQUIS_IS_RECRUITING_REJECT",
+    "type": "talk_topic",
+    "dynamic_line": [ "That is fine.  You can leave at any time, and feel free speak to the merchants on the lower floors." ],
+    "responses": [ { "text": "OK, Bye.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_CHAD_ERIKSON_MAQUIS_IS_RECRUITING_ACCEPT",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I want you to take point on the task of coordinating additional facilities here at Barter Tower, I will leave base expansion entirely in our control.  Talk to the quartermaster on the ground level, he should still be wearing his postman uniform."
+    ],
+    "responses": [ { "text": "OK, Bye.", "topic": "TALK_DONE" } ]
   },
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
@@ -463,7 +526,7 @@
     "id": "TALK_CHAD_ERIKSON_ASK_ABOUT_RACING_ARCOLOGY",
     "type": "talk_topic",
     "dynamic_line": [
-      "Its a funny story about a Mexican cartel drug front, a CIA Honey-pot, an FBI Reco case, and the Library of Congress's newspaper archives.  The Cartel was trying to launder their drug and human trafficking money by building a large indoor go-cart race track.  Somehow the CIA had an agent within the that specific cartel and were able to influence the cartel to invest far more money than they should have, after which the FBI collected all the bad guys they had this building practically ready to open.  The FBI ended up giving most of the floors to the Library of Congress to store newspapers, and some of the other usual suspects took their share too.  Once this cataclysm happened and much of the government was destroyed, this site was commandeered to coordinate local responses against the Xenoids."
+      "Its a funny story about a Mexican cartel drug front, a CIA Honey-pot, an FBI Reco case, and the Library of Congress's newspaper archives.\n\nThe Cartel was trying to launder their drug and human trafficking money here in the states by building this large indoor go-cart race track.  Apparently the head guys kids loved go-cart racing and he thought it would be the perfect cover.\n\nSomehow a CIA agent had gotten within that specific cartel and were able to influence the cartel to invest far more money than they should have, and after which FBI collected all the bad guys the Federal Government had this building practically ready to open.  Not wanting anything to go watste,  the FBI ended up giving most of the floors to the Library of Congress to store newspapers, and some of the other usual suspects took their share too.\n\nOnce this cataclysm happened and much of the government was destroyed, this site was commandeered to coordinate local responses against the Xenoids."
     ],
     "responses": [
       { "text": "I have some questions about the Xenoids.", "topic": "TALK_CHAD_ERIKSON_ASK_ABOUT_XENOIDS" },

@@ -7,6 +7,19 @@
   },
   {
     "type": "scenario",
+    "id": "dkz_fallingskies",  
+    "name": "The Sky is Falling",	
+    "points": -1,	
+	"description": "Whatever your previous life and profession where, they stopped mattering when the Xenoids invaded from the sky, and the Mi-Go appeared out of no-where.  Now its up to you to help lead this rag-tag alien resistance organisation 'The Maquis' to victory over all alien invaders",
+    "allowed_locs": [ "sloc_shelter" ],		
+    "forced_traits": "DKZ_LEADER",	
+    "flags": [ "CITY_START" ],
+    "start_name": "In Town",	
+    "missions": [ "DKZ_MAQUIS_IS_RECRUITING" ]
+	
+  },
+  {
+    "type": "scenario",
     "id": "dkz_combatpatrol",
     "name": "Foxtrot Uniform Charlie Kilo",
     "points": -5,
