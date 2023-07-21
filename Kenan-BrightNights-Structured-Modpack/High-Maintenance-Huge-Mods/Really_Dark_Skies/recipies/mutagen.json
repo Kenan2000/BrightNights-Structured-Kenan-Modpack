@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mutagen_xenoid",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "xenoid mutagen",
+    "use_action": { "type": "mutagen", "mutation_category": "XENOID" }
+  },
+  {
+    "id": "iv_mutagen_xenoid",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": "xenoid serum",
+    "description": "A super-concentrated mutagen resembling liquefied metal.  You need a syringe to inject it… if you really want to?",
+    "color": "light_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "XENOID" }
+  },
+  {
+    "type": "recipe",
+    "result": "mutagen_xenoid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "skills_required": [ "firstaid", 4 ],
+    "difficulty": 8,
+    "time": "2 h",
+    "batch_time_factors": [ 80, 20 ],
+    "book_learn": [ [ "recipe_creepy", 8 ] ],
+    "using": [ [ "mutagen_production_standard", 25 ] ],
+    "components": [
+      [ [ "mutagen", 1 ] ],
+      [
+        [ "alien_brain", 1 ],
+        [ "alien_heart", 1 ],
+        [ "alien_fat", 5 ],
+        [ "alien_meat", 4 ],
+        [ "alien_lung", 5 ],
+        [ "alien_kidney", 6 ],
+        [ "alien_liver", 3 ],
+        [ "alien_meat_scrap", 16 ],
+        [ "alien_offal", 20 ]
+      ],
+      [ [ "ammonia", 1 ], [ "lye_powder", 100 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "iv_mutagen_xenoid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "skills_required": [ "firstaid", 7 ],
+    "difficulty": 10,
+    "time": "5 h",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_serum", 8 ] ],
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "mutagen_xenoid", 2 ] ] ],
+    "flags": [ "SECRET" ]
+  }
+]

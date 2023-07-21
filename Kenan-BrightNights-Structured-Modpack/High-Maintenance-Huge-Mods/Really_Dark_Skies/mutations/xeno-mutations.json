@@ -1,0 +1,215 @@
+[
+  {
+    "//": ".",
+    "type": "mutation_category",
+    "id": "XENOID",
+    "name": "XENOID",
+    "threshold_mut": "THRESH_XENOID",
+    "mutagen_message": "Strange memories of another world overwhelm you…",
+    "iv_message": "You look into your own self and see them looking back at you.",
+    "iv_pain": 10,
+    "iv_morale": 25,
+    "iv_morale_max": 100,
+    "iv_sleep": true,
+    "iv_sleep_dur": 20,
+    "iv_sleep_message": "You gaze inside, beyond your fear, beyond good and evil, beyond the old humanity.",
+    "memorial_message": "Prepared the way for the Xenoid Masters."
+  },
+  {
+    "type": "mutation",
+    "id": "THRESH_XENOID",
+    "name": { "str": "Xeno-Sapien" },
+    "points": 666,
+    "description": "You reject your humanity and replace it with gifts from your Xenoid Masters.",
+    "valid": false,
+    "profession": false,
+    "purifiable": false,
+    "threshold": true,
+    "metabolism_modifier": -0.17,
+    "thirst_modifier": -0.17,
+    "stamina_regen_modifier": 0.11,
+    "fatigue_modifier": -0.11,
+    "anger_relations": [ [ "ALIEN", -500 ], [ "ALIENROBOT", -500 ] ],
+    "armor": [ { "parts": "ALL", "physical": 3, "heat": 3 } ],
+    "ignored_by": [ "ALIEN", "ALIENROBOT" ]
+
+  },
+  {
+    "type": "mutation",
+    "id": "ALIEN_EMPLATHY",
+    "name": { "str": "Alien Empathy" },
+    "points": 3,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "Alien influence has altered you in some way which makes Xenoids, 'relatively' friendly to you.  Still might not be a good idea to get too friendly back.",
+    "purifiable": false,
+    "category": [ "XENOID" ],
+    "anger_relations": [ [ "ALIEN", -100 ], [ "ALIENROBOT", -100 ] ],
+    "ignored_by": [ "ALIEN", "ALIENROBOT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "XENO_EPIDERMIS",
+    "name": { "str": "Xeno-Epidermis" },
+    "points": 4,
+    "visibility": 1,
+    "ugliness": 1,
+    "description": "Alien influence has altered your skin, making it subtly easier to move, as well as providing minor protection.",
+    "types": [ "SKIN" ],
+    "purifiable": false,
+    "category": [ "XENOID" ],
+    "movecost_modifier": 0.95,
+    "armor": [ { "parts": "ALL", "physical": 1, "heat": 1 } ]
+  },
+  {
+    "type": "mutation",
+    "id": "XENO_METABOLISM",
+    "name": { "str": "Xeno-Metabolism" },
+    "points": 5,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "Alien influence has altered your metabolism, making you able to run multiple marathons while only needing a few hours of sleep each night.",
+    "types": [ "SKIN" ],
+    "category": [ "XENOID" ],
+    "purifiable": false,
+    "fatigue_modifier": -0.15,
+    "stamina_regen_modifier": 0.15
+  },
+  {
+    "type": "mutation",
+    "id": "XENO_REGENERATION",
+    "name": { "str": "Xeno-Regeneration" },
+    "points": 7,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "Alien influence has altered your physiology, making you wounds heal much faster than what is natural.",
+    "types": [ "HEALING" ],
+    "prereqs": [ "FASTHEALER2", "XENO_EPIDERMIS" ],
+    "category": [ "XENOID" ],
+    "threshreq": [ "THRESH_XENOID" ],
+    "purifiable": false,
+    "healing_awake": 0.3,
+    "healing_resting": 0.7,
+    "mending_modifier": 11.0
+  },
+  {
+    "type": "mutation",
+    "id": "XENO_BIOLOGY",
+    "name": { "str": "Xeno-Biology" },
+    "points": 11,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "Alien influence has altered your fundamental biology, making you causing a variety of effects.  These include better hearing and pain tolerance, as well as increasing stamina, and decreasing food and water requirements.",
+    "types": [ "HEALING" ],
+    "prereqs": [ "TOXICFLESH", "XENO_REGENERATION" ],
+    "category": [ "XENOID" ],
+    "threshreq": [ "THRESH_XENOID" ],
+    "purifiable": false,
+    "hp_modifier_secondary": 0.13,	
+    "pain_recovery": 1.17,
+    "hearing_modifier": 1.13,
+    "max_stamina_modifier": 1.13,
+    "stamina_regen_modifier": 0.11,	
+    "metabolism_modifier": -0.23,
+    "thirst_modifier": -0.23
+  },
+  {
+    "type": "mutation",
+    "id": "XENO_SOCIOLOGY",
+    "name": { "str": "Xeno-Sociology" },
+    "points": 13,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": "Alien influence has altered your fundamental social outlook, allowing you to manipulate humans like hacking a computer",
+    "types": [ "HEALING" ],
+    "prereqs": [ "ALIEN_EMPLATHY", "TERRIFYING" ],
+    "category": [ "XENOID" ],
+    "threshreq": [ "THRESH_XENOID" ],
+    "purifiable": false,
+    "social_modifiers": { "lie": 15, "persuade": 5, "intimidate": 25 }
+  },
+  {
+    "type": "mutation",
+    "id": "TOXICFLESH",
+    "copy-from": "TOXICFLESH",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "STR_ALPHA",
+    "copy-from": "STR_ALPHA",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_ALPHA",
+    "copy-from": "DEX_ALPHA",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_ALPHA",
+    "copy-from": "PER_ALPHA",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "INFRARED",
+    "copy-from": "INFRARED",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FASTHEALER",
+    "copy-from": "FASTHEALER",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FASTHEALER2",
+    "copy-from": "FASTHEALER2",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PARAIMMUNE",
+    "copy-from": "PARAIMMUNE",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "POISRESIST",
+    "copy-from": "POISRESIST",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PAINRESIST",
+    "copy-from": "PAINRESIST",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "TERRIFYING",
+    "copy-from": "TERRIFYING",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "KILLER",
+    "copy-from": "KILLER",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PSYCHOPATH",
+    "copy-from": "PSYCHOPATH",
+    "extend": { "category": [ "XENOID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "THINSKIN",
+    "copy-from": "THINSKIN",
+    "extend": { "category": [ "XENOID" ] }
+  }
+]

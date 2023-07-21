@@ -19,7 +19,83 @@
       "items": [ { "item": "rock", "count": [ 2, 10 ] }, { "item": "rebar", "count": [ 0, 4 ] } ]
     }
   },
+  
+  {
+    "type": "terrain",
+    "id": "t_asphalt_floor",
+    "name": "concrete floor",
+    "description": "A bare and cold concrete floor with matching roof, could still insulate from the outdoors but roof collapse is possible if supporting walls are broken down.",
+    "symbol": ".",
+    "color": "cyan",
+    "move_cost": 2,
+	"looks_like": "t_pavement",
+    "roof": "t_flat_roof",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_null",
+      "str_min": 100,
+      "str_max": 400,
+      "str_min_supported": 150,
+      "items": [
+        { "item": "rock", "count": [ 5, 10 ] },
+        { "item": "scrap", "count": [ 5, 8 ] },
+        { "item": "rebar", "count": [ 0, 2 ] }
+      ]
+    }
+  },  
+  
+  {
+    "type": "terrain",
+    "id": "t_asphalt_y_floor",
+    "name": "concrete floor",
+    "description": "A bare and cold concrete floor with matching roof, could still insulate from the outdoors but roof collapse is possible if supporting walls are broken down.",
+    "symbol": ".",
+    "color": "cyan",
+    "move_cost": 2,
+	"looks_like": "t_pavement_y",
+    "roof": "t_flat_roof",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_null",
+      "str_min": 100,
+      "str_max": 400,
+      "str_min_supported": 150,
+      "items": [
+        { "item": "rock", "count": [ 5, 10 ] },
+        { "item": "scrap", "count": [ 5, 8 ] },
+        { "item": "rebar", "count": [ 0, 2 ] }
+      ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_asphalt_floor_light",
+    "name": "concrete floor",
+    "description": "A bare and cold concrete floor with matching roof, could still insulate from the outdoors but roof collapse is possible if supporting walls are broken down.",
+    "symbol": ".",
+    "color": "cyan",
+    "move_cost": 2,
+	"looks_like": "t_pavement",
+    "roof": "t_flat_roof",
+    "light_emitted": 60,	
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT", "ROAD" ],
+    "bash": {
+      "sound": "SMASH!",
+      "ter_set": "t_null",
+      "str_min": 100,
+      "str_max": 400,
+      "str_min_supported": 150,
+      "items": [
+        { "item": "rock", "count": [ 5, 10 ] },
+        { "item": "scrap", "count": [ 5, 8 ] },
+        { "item": "rebar", "count": [ 0, 2 ] }
+      ]
+    }
+  },
 
+  
   {
     "type": "terrain",
     "id": "t_sidewalk_ramp_down_high",
@@ -73,7 +149,7 @@
     ],
     "description_affix": "covered_in",
     "is_splattering": true,
-    "half_life": "10 days",
+    "half_life": "100 days",
     "phase": "liquid",
     "display_field": true,
     "looks_like": "fd_sludge"

@@ -549,6 +549,7 @@
     "end": {
       "effect": [
         { "u_add_var": "RANDY_FIXED_GENERATOR", "type": "mission", "context": "flag", "value": "yes" },
+		{ "u_add_effect": "dkz_RANDYS_FIXED_GENERATOR" },		
         { "u_adjust_var": "refugee_happiness", "type": "counter", "context": "refugee_center", "adjustment": 1 }
       ]
     }
@@ -608,7 +609,8 @@
     "end": {
       "effect": [
         { "u_buy_item": "FMCNote", "count": 137 },
-        { "u_add_var": "RANDYS_BUDDY", "type": "mission", "context": "flag", "value": "yes" },
+        { "u_add_var": "RANDYS_BUDDY", "type": "mission", "context": "flag", "value": "yes" },		
+		{ "u_add_effect": "dkz_RANDYS_BUDDY" },
         { "u_adjust_var": "refugee_happiness", "type": "counter", "context": "refugee_center", "adjustment": 1 },
         { "u_buy_item": "dkz_helicopter_design_for_dummies", "count": 1 }
       ]

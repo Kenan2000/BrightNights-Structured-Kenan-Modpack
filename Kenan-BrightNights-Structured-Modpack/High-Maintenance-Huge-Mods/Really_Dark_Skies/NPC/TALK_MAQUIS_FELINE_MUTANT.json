@@ -203,16 +203,14 @@
       "assign_mission_target": { "om_terrain": "trailhead", "reveal_radius": 5, "random": true, "search_range": 100, "min_distance": 25 },
       "update_mapgen": {
         "place_monster": [
-          { "monster": "mon_cat_chonker", "x": 22, "y": 22, "name": "Lucky", "target": true },
+          { "monster": "mon_cat_the_chonker", "x": 22, "y": 22, "name": "Lucky", "target": true },
           { "monster": "dkz_xenoid_berserker", "x": 1, "y": 1 }
         ]
       }
     },
     "end": {
       "opinion": { "trust": 4, "value": 10 },
-	  
       "effect": [
-	  
         { "u_adjust_var": "maquis_morale", "type": "counter", "context": "refugee_center", "adjustment": 11 },
         { "u_add_var": "Pretty_Kitty_Found", "type": "mission", "context": "flag", "value": "yes" }
       ]
@@ -228,5 +226,17 @@
       "success_lie": "What?!  You're lying, I can tell!  Did you even bring a cage?",
       "failure": "Oh no!  I guess they are too much for you…"
     }
+  },
+  {
+    "id": "mon_cat_the_chonker",
+    "type": "MONSTER",
+    "copy-from": "mon_cat",
+    "name": "The Golden Chonker",
+    "description": "Oh Lawd! He iz here!\n\nThis impressive feline is the celebrated on internet cat forums for its chonkiness and majestic golden mane.  Appears surprisingly well-groomed, this chonker is truly the brightest gem of the internet.",
+    "volume": "9000 ml",
+    "weight": "13 kg",
+    "speed": 70,
+    "hp": 20,
+    "reproduction": { "baby_monster": "mon_cat_chonker_kitten", "baby_count": 8, "baby_timer": 60 }
   }
 ]

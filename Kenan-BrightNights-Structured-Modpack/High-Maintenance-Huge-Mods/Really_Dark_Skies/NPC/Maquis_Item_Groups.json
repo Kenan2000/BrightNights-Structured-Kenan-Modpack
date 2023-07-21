@@ -126,7 +126,7 @@
     ]
   },
   {
-    "//1": "-----------------------------------------------------------------------------------------------------------------------",  
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
     "type": "item_group",
     "id": "DKZ_armor_improvised_hand",
     "//": "Makeshift or otherwise poor hand armor.",
@@ -405,6 +405,22 @@
   {
     "//1": "-----------------------------------------------------------------------------------------------------------------------",
     "type": "item_group",
+    "id": "DKZ_guns_caseless",
+    "//": "Assorted factory crafted caseless weapons.",
+    "items": [
+      { "item": "rm120c", "prob": 15, "charges-min": 5, "charges-max": 5 },
+      { "item": "rm20", "prob": 15, "charges-min": 20, "charges-max": 20 },
+      { "item": "rm11b_sniper_rifle", "prob": 15, "charges-min": 10, "charges-max": 10 },
+      { "item": "rm298", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm51_assault_rifle", "prob": 25, "charges-min": 50, "charges-max": 50 },
+      { "item": "rm614_lmg", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm88_battle_rifle", "prob": 25, "charges-min": 50, "charges-max": 50 },
+      { "item": "rm99_pistol", "prob": 25, "charges-min": 5, "charges-max": 5 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
     "id": "DKZ_guns_launcher_improvised",
     "//": "Makeshift or otherwise poor quality grenade and rocket launchers",
     "items": [
@@ -445,7 +461,6 @@
       { "item": "kukri", "prob": 10 }
     ]
   },
-  
   {
     "//1": "-----------------------------------------------------------------------------------------------------------------------",
     "type": "item_group",
