@@ -166,5 +166,101 @@
       "furniture": {  },
       "place_monsters": [ { "monster": "GROUP_SNATCHERZED_ROOF", "x": [ 10, 13 ], "y": [ 10, 13 ], "density": 0.09 } ]
     }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_secro_ssf_nested",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "          a a           ",
+        "           a a          ",
+        "          a a           ",
+        "           a a          ",
+        "          a e.          ",
+        "           a a          ",
+        "          a a           ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { ".": "t_pavement" },
+      "furniture": {  },
+      "monster": {
+        "a": { "group": "GROUP_SECROLAB_FAILEDSPECIMENS", "chance": 25 },
+        "e": { "group": "GROUP_SECROLAB_FAILEDSPECIMENS", "chance": 25 }
+      },
+      "vehicles": { "e": { "vehicle": "secro_veh_sscarrier_abandoned", "chance": 100, "status": 0 } },
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "mx_secro_ssf",
+    "object": { "place_nested": [ { "chunks": [ "mx_secro_ssf_nested" ], "x": 0, "y": 0 } ] }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "mx_secro_ssb_nested",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "            a           ",
+        "           a            ",
+        "            a           ",
+        "           a            ",
+        "            e.          ",
+        "           a            ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "terrain": { ".": "t_pavement" },
+      "furniture": {  },
+      "monster": {
+        "a": { "group": "GROUP_SECROLAB_BOWSPECIMENS", "chance": 25 },
+        "e": { "group": "GROUP_SECROLAB_FAILEDSPECIMENS", "chance": 25 }
+      },
+      "vehicles": { "e": { "vehicle": "secro_veh_sscarrier_abandoned", "chance": 100, "status": 0 } },
+      "flags": [ "ALLOW_TERRAIN_UNDER_OTHER_DATA" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "update_mapgen_id": "mx_secro_ssb",
+    "object": { "place_nested": [ { "chunks": [ "mx_secro_ssb_nested" ], "x": 0, "y": 0 } ] }
   }
 ]
