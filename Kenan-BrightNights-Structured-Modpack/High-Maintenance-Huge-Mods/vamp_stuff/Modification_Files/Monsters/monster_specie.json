@@ -2,17 +2,20 @@
   {
     "type": "SPECIES",
     "id": "LEECH",
+    "name": { "str": "leech", "str_pl": "leeches" },
     "anger_triggers": [ "FRIEND_DIED" ],
     "fear_triggers": [ "HURT", "FIRE" ]
   },
   {
     "type": "SPECIES",
     "id": "VAMPBAT",
+    "name": { "str": "vampire bat" },
     "anger_triggers": [ "FRIEND_DIED" ],
     "fear_triggers": [ "HURT", "FIRE" ]
   },
   {
     "type": "SPECIES",
-    "id": "ELDERZED"
+    "id": "ELDERZED",
+    "name": { "str": "elder zombie" }
   }
 ]
