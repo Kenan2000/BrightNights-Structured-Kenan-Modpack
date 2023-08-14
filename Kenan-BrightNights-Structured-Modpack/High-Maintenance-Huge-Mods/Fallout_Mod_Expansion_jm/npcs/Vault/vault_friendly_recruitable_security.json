@@ -48,7 +48,7 @@
         "text": "So you work in vault security? Do you think it's dangerous at all?", "topic": "TALK_amg_fre_vault_recruit_go"
       },
       {
-        "text": "Do you want to come with me?", "topic": "TALK_amg_fre_vault_recruit_recruit"
+        "text": "Do you want to come with me?", "topic": "TALK_SUGGEST_FOLLOW"
       },
       {
         "text": "Goodbye.",
@@ -65,17 +65,6 @@
         "text": "Thanks for the info.",
         "topic": "TALK_DONE"
       }
-    ]
-  },
-  {
-    "id": "TALK_amg_fre_vault_recruit_recruit",
-    "type": "talk_topic",
-    "dynamic_line": {
-      "u_female": true,
-      "yes": "I am ready to join you on your journey!",
-      "no": "I am ready to join you on your journey!"},
-    "responses": [
-      { "text": "Want to travel with me?", "topic": "TALK_SUGGEST_FOLLOW", "condition": { "not": "npc_following" } }
     ]
   }
 ]
