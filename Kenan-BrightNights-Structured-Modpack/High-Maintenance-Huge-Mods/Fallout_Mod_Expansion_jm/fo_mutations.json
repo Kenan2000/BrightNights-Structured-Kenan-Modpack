@@ -4,9 +4,10 @@
     "id": "mut_fo_ghoulification",
     "name": { "str": "Ghoul" },
     "points": -3,
-    "description": "You have been exposed to an immense amount of radiation at some point in the past and became a ghoul rather than dying. Your skin has the consistency of dried leather, your nose, hair and ears are gone, and your face as the consistency of three-week old chopped liver. At least you have more radiation resistance now.",
+    "description": "You have been exposed to an immense amount of radiation at some point in the past and became a ghoul rather than dying. Your skin has the consistency of dried leather, your nose, hair and ears are gone, and your face as the consistency of three-week old chopped liver. At least you have more radiation resistance and are ignored by your feral peers now.",
     "starting_trait": true,
     "social_modifiers": { "persuade": -2 },
+    "ignored_by": [ "FO_GHOUL" ],
     "visibility": 5,
     "ugliness": 5
   }
