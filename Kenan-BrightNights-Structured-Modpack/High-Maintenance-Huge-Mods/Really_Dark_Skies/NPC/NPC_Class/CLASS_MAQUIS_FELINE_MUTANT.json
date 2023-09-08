@@ -1,0 +1,123 @@
+[  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_FELINE_MUTANT",
+    "class": "NC_MAQUIS_FELINE_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_MAQUIS_FELINE_MUTANT_ROOT",
+    "mission_offered": "DKZ_MAQUIS_FELINE_MUTANT_FIND_CAT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_FELINE_MUTANT",
+    "name": { "str": "Maquis-Feline Mutant" },
+    "job_description": "I'm just trying to be a lazy cat.",
+    "common": false,
+    "traits": [
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "THRESH_FELINE" },
+      { "trait": "DEX_UP_3", "prob": 100 },
+      { "trait": "FEL_EYE", "prob": 100 },
+      { "trait": "FELINE_EARS", "prob": 100 },
+      { "trait": "PRETTY", "prob": 100 },
+      { "trait": "FEL_NV", "prob": 100 },
+      { "trait": "TAIL_LONG", "prob": 80 },
+      { "trait": "WHISKERS", "prob": 80 },
+      { "trait": "SMELLY", "prob": 25 },
+      { "trait": "PADDED_FEET", "prob": 35 },
+      { "trait": "SNARL", "prob": 25 },
+      { "trait": "SNOUT", "prob": 15 },
+      { "trait": "SLEEPY2", "prob": 45 },
+      { "trait": "LIGHTSTEP", "prob": 65 },
+      { "distribution": [ { "trait": "FELINE_FUR", "prob": 70 }, { "trait": "LYNX_FUR", "prob": 30 } ] },
+      { "distribution": [ { "trait": "FANGS", "prob": 90 }, { "trait": "SABER_TEETH", "prob": 10 } ] },
+      { "distribution": [ { "trait": "CARNIVORE", "prob": 50 }, { "trait": "PRED3", "prob": 50 } ] },
+      { "distribution": [ { "trait": "CLAWS_RETRACT", "prob": 80 }, { "trait": "PAWS", "prob": 20 } ] }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 3 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_FELINE_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_FELINE_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_FELINE_MUTANT_carry",
+    "bonus_str": { "rng": [ -1, 2 ] },
+    "bonus_dex": { "rng": [ 2, 5 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ 2, 5 ] }
+  },
+  {
+    "id": "NC_MAQUIS_FELINE_MUTANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [ { "item": "boy_shorts", "prob": 50 }, { "item": "panties", "prob": 60 }, { "item": "boxer_shorts", "prob": 2 } ]
+      },
+      { "distribution": [ { "item": "socks", "prob": 50 }, { "item": "socks_ankle", "prob": 50 } ] },
+      { "distribution": [ { "item": "pants_leather", "prob": 90 }, { "item": "pants_cargo", "prob": 10 } ] },
+      { "distribution": [ { "item": "tshirt", "prob": 80 }, { "item": "tank_top", "prob": 20 } ] },
+      {
+        "distribution": [
+          { "item": "greatcoat", "prob": 10 },
+          { "item": "trenchcoat", "prob": 20 },
+          { "item": "trenchcoat_faux_fur", "prob": 40 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "pearl_collar", "prob": 1 },
+          { "item": "faux_fur_collar", "prob": 20 },
+          { "item": "fur_collar", "prob": 20 },
+          { "item": "leather_collar", "prob": 20 }
+        ]
+      },
+      { "distribution": [ { "item": "boots_combat", "prob": 20 }, { "item": "boots", "prob": 20 } ] },
+      {
+        "distribution": [ { "item": "gloves_fingerless", "prob": 30 }, { "item": "gloves_fingerless_mod", "prob": 70 } ]
+      },
+      {
+        "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 }, { "item": "mbag", "prob": 25 } ]
+      },
+      { "group": "DKZ_armor_improvised_arm", "prob": 90 },
+      { "group": "DKZ_armor_improvised_leg", "prob": 90 },
+      { "item": "ballistic_vest_esapi" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_FELINE_MUTANT_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cestus", "prob": 75 },
+      { "item": "bagh_nakha", "prob": 15 },
+      { "item": "punch_dagger", "prob": 95 },
+      { "item": "knuckle_nail", "prob": 25 },
+      { "item": "knuckle_steel", "prob": 15 },
+      { "item": "knuckle_brass", "prob": 55 }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_FELINE_MUTANT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "8x40_25_mag", "charges-min": 20, "count": 1 },
+      { "item": "8mm_caseless", "count": 5 },
+      { "item": "multitool" }
+    ]
+  }]

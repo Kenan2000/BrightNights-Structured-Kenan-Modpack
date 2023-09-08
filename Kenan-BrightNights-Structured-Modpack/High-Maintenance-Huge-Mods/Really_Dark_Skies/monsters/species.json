@@ -2,23 +2,23 @@
   {
     "type": "SPECIES",
     "id": "ALIEN",
-    "name": { "str": "alien" },
+    "name": "ALIEN",
     "description": "an alien",
     "footsteps": "metallic footfalls",
-    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ]
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ]
   },
   {
     "type": "SPECIES",
     "id": "ALIENROBOT",
-    "name": { "str": "alien robot" },
+    "name": "ALIEN ROBOT",
     "description": "an alien robot",
     "footsteps": "booming stomps",
-    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ]
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ]
   },
   {
     "type": "SPECIES",
     "id": "WILDALIEN",
-    "name": { "str": "alien animal" },
+    "name": "WILD ALIEN",
     "description": "an alien animal",
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED" ],
     "fear_triggers": [ "HURT", "FIRE" ]
@@ -26,7 +26,7 @@
   {
     "type": "SPECIES",
     "id": "BIOCRYSTAL",
-    "name": { "str": "fusion of flesh and mineral", "str_pl": "fusions of flesh and mineral" },
+    "name": "BIO-CRYSTAL",
     "description": "a fusion of flesh and mineral",
     "footsteps": "shuffling and scraping.",
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK" ],

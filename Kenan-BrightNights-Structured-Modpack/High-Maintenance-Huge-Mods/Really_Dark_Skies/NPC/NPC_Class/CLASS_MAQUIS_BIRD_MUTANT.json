@@ -1,0 +1,107 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_BIRD_MUTANT",
+    "class": "NC_MAQUIS_BIRD_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_MAQUIS_BIRD_MUTANT_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_BIRD_MUTANT",
+    "name": { "str": "Maquis-Bird Mutant" },
+    "job_description": "I'm just dreaming of flying.",
+    "common": false,
+    "traits": [
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "THRESH_BIRD", "prob": 100 },
+      { "trait": "BIRD_EYE", "prob": 100 },
+      { "trait": "FEATHERS", "prob": 100 },
+      { "trait": "WINGS_BIRD", "prob": 100 },
+      {
+        "distribution": [ { "trait": "BEAK", "prob": 10 }, { "trait": "BEAK_PECK", "prob": 45 }, { "trait": "BEAK_HUM", "prob": 45 } ]
+      },
+      { "trait": "DEFT", "prob": 75 },
+      { "trait": "FLEET2", "prob": 50 },
+      { "trait": "HOLLOW_BONES", "prob": 90 },
+      { "trait": "LIGHTSTEP", "prob": 60 },
+      { "trait": "BADBACK", "prob": 50 },
+      { "trait": "GLASSJAW", "prob": 75 },
+      { "trait": "DEX_UP_3", "prob": 90 },
+      { "trait": "PER_UP_4", "prob": 90 },
+      { "trait": "TALONS", "prob": 75 },
+      { "trait": "GIZZARD", "prob": 50 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 2, 4 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_BIRD_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_BIRD_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_BIRD_MUTANT_carry",
+    "bonus_str": { "rng": [ -2, 0 ] },
+    "bonus_dex": { "rng": [ 1, 3 ] },
+    "bonus_int": { "rng": [ 3, 5 ] },
+    "bonus_per": { "rng": [ 1, 3 ] }
+  },
+  {
+    "id": "NC_MAQUIS_BIRD_MUTANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [ { "item": "boy_shorts", "prob": 50 }, { "item": "panties", "prob": 60 }, { "item": "boxer_shorts", "prob": 5 } ]
+      },
+      { "distribution": [ { "item": "socks", "prob": 50 }, { "item": "socks_ankle", "prob": 50 } ] },
+      { "distribution": [ { "item": "pants_leather", "prob": 90 }, { "item": "pants_cargo", "prob": 10 } ] },
+      { "distribution": [ { "item": "tshirt", "prob": 80 }, { "item": "tank_top", "prob": 20 } ] },
+      {
+        "distribution": [
+          { "item": "jacket_windbreaker", "prob": 70 },
+          { "item": "jacket_light", "prob": 10 },
+          { "item": "jacket_flannel", "prob": 20 }
+        ]
+      },
+      { "distribution": [ { "item": "leathersandals", "prob": 100 } ] },
+      { "distribution": [ { "item": "gloves_fingerless", "prob": 5 }, { "item": "null", "prob": 75 } ] },
+      {
+        "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 }, { "item": "null", "prob": 5 } ]
+      },
+      { "item": "porkpie", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_MAQUIS_BIRD_MUTANT_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "rm103a_pistol", "prob": 95, "charges-min": 9, "charges-max": 10 },
+      { "item": "rm99_pistol", "prob": 95, "charges-min": 4, "charges-max": 5 }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_BIRD_MUTANT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "8x40_10_mag", "charges-min": 7, "count": 2 },
+      { "item": "8mm_caseless", "count": 3 },
+      { "item": "multitool" }
+    ]
+  }
+]

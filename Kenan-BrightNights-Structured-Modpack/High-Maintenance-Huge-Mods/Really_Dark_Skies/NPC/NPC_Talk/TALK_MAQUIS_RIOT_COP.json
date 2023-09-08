@@ -1,0 +1,99 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RIOT_COP_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Are you lost, marshal?", "Don't start any trouble marshal, you aren't the law anymore." ],
+      "no": [ "Don't cause any trouble here, I'd rather kill monsters than people.", "Safe travels." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_RIOT_COP_DOING" },
+      { "text": "What is this place?", "topic": "TALK_MAQUIS_RIOT_COP_THE_TOWER" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_RIOT_COP_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" },
+            {
+              "u_compare_var": "maquis_morale",
+              "type": "counter",
+              "context": "refugee_center",
+              "op": "<",
+              "value": 15
+            }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RIOT_COP_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Mr. Erikson is very busy with the various operations against the aliens.",
+      "I am not sure where Mr. Erikson's office is.",
+      "Chad Erikson is the closest thing to a leader the resistance has."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RIOT_COP_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There is an arrangement with everyone that lives here, the bottom two floors are a free trade zone and the upper floors are for the alien resistance operation.  We also help keep the outside defences in place and warn of any zombies or xenoids around the perimeter.  It takes a lot to keep this place running",
+      "Enforcing Rule #1: No Killing, the penalty is death.",
+      "I keep the peace down here, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_RIOT_COP_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_RIOT_COP_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RIOT_COP_THE_TOWER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "This is Barter Tower and I am on duty.",
+      "We fortified this entire tower complex, now Barter Tower is an open trade zone for any living humans."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_RIOT_COP_ROOT" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "UltimateCataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "Really_Dark_Skies_extras.png",
+        "tiles": [
+          { "id": "improvised_grenade_xeno", "fg": 4 },
+          { "id": "overlay_wielded_improvised_grenade_xeno", "fg": 20 },
+          { "id": "improvised_grenade_xeno_act", "fg": 5 },
+          { "id": "overlay_wielded_improvised_grenade_xeno_act", "fg": 21 },
+          { "id": "improvised_pipebomb_xeno", "fg": 0 },
+          { "id": "overlay_wielded_improvised_pipebomb_xeno", "fg": 16 },
+          { "id": "improvised_pipebomb_xeno_act", "fg": 1 },
+          { "id": "overlay_wielded_improvised_pipebomb_xeno_act", "fg": 17 },
+          { "id": "xeno-dynamite", "fg": 2 },
+          { "id": "overlay_wielded_xeno-dynamite", "fg": 18 },
+          { "id": "xeno-dynamite_act", "fg": 3 },
+          { "id": "overlay_wielded_xeno-dynamite_act", "fg": 19 }
+        ],
+        "//": "range 1 to 128",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  }
+]

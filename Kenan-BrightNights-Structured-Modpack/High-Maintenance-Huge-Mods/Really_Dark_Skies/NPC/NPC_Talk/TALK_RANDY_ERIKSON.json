@@ -1,0 +1,566 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "u_met_Randy_Erikson",
+      "type": "general",
+      "context": "meeting",
+      "value": "yes",
+      "yes": [ "Hey there. What did you break?", "What's up this time?", "Hello again.", "Oh, hey. What did you do now?" ],
+      "no": "I don't think I've seen you wander in here before. I'm Randy. Close the door behind you when you leave."
+    },
+    "responses": [
+      {
+        "text": "Wow, nice to meet you too, Randy.",
+        "effect": [
+          { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_RANDY_ERIKSON_QUESTIONS" }
+        ],
+        "condition": { "not": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_RANDY_ERIKSON_FIRSTMEET"
+      },
+      {
+        "text": "Hey Randy, nice to meet you too.  Bye.",
+        "effect": [
+          { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_RANDY_ERIKSON_QUESTIONS" }
+        ],
+        "condition": { "not": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "Hi Randy.  I don't have time to talk.",
+        "effect": [
+          { "u_add_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+          { "npc_first_topic": "TALK_RANDY_ERIKSON_QUESTIONS" }
+        ],
+        "condition": { "u_has_var": "u_met_Randy_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_FIRSTMEET",
+    "type": "talk_topic",
+    "dynamic_line": "I don't usually get any visitors back here unless the lights aren't working.  What do you want?  Did you trip over a cord or something.",
+    "responses": [
+      { "text": "No, I just had some questions.", "topic": "TALK_RANDY_ERIKSON_QUESTIONS" },
+      { "text": "Actually I'm just heading out. Bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_QUESTIONS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I don't have forever to chat, whatchya need?",
+      "Yes, what do you want?",
+      "I'm pretty busy but could probably help.",
+      "Whats up?",
+      "What is broken now?",
+      { "u_male": [ "Buddy, what do you want?", "Dude, what?" ], "no": [ "Girl, want do you want?" ] }
+    ],
+    "responses": [
+      {
+        "text": "[MISSION] I have important information for the head of the Maquis.",
+        "effect": { "u_add_var": "u_Ask_Randy_Erikson_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            {
+              "not": { "u_has_var": "u_Ask_Randy_Erikson_about_Big_Brother", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "opinion": { "trust": 2, "value": 2 },
+        "topic": "TALK_RANDY_ERIKSON_RENDEZVOUS_TO_BASE"
+      },
+      {
+        "text": "I'm trying to put a cleanup crew together to tidy up the back room.  Can you help?",
+        "condition": {
+          "and": [
+            { "u_has_mission": "MISSION_REFUGEE_Boris_CLEANUP" },
+            {
+              "not": { "npc_has_var": "cleanup_asked", "type": "mission", "context": "Boris_mission_1", "value": "yes" }
+            }
+          ]
+        },
+        "trial": { "type": "PERSUADE", "difficulty": 1 },
+        "success": { "topic": "TALK_RANDY_ERIKSON_Accept_Boris_Mission_1" },
+        "failure": { "topic": "TALK_RANDY_ERIKSON_Refuse_Boris_Mission_1" }
+      },
+      {
+        "text": "[RP] I am a member of the Maquis, I need to get to the nearest base.",
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+            { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } }
+          ]
+        },
+        "effect": { "add_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" },
+        "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER_MAQUIS"
+      },
+      {
+        "text": "What can you tell me about the Xenoids?",
+        "effect": { "u_add_var": "u_Talk_To_RandyErikson_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+        "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_XENOIDS"
+      },
+      {
+        "text": "That is a very nice watch.",
+        "effect": { "u_add_var": "u_Talk_To_RandyErikson_about_Watch", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            {
+              "not": { "u_has_var": "u_Talk_To_RandyErikson_about_Watch", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_is_wearing": "dkz_zenture_industries_premium_zwatch" }
+          ]
+        },
+        "opinion": { "trust": 1, "value": 2 },
+        "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_WATCH"
+      },
+      {
+        "text": "That is a very nice watch.",
+        "effect": { "u_add_var": "u_Talk_To_RandyErikson_about_Watch", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            {
+              "not": { "u_has_var": "u_Talk_To_RandyErikson_about_Watch", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_is_wearing": "dkz_zenture_industries_basic_zwatch" }
+          ]
+        },
+        "opinion": { "trust": 1, "value": 1 },
+        "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_WATCH"
+      },
+      {
+        "text": "[PER 11]  Is that a helicopter outside?.",
+        "effect": { "u_add_var": "u_Talk_To_RandyErikson_about_helicopter", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            {
+              "not": { "u_has_var": "u_Talk_To_RandyErikson_about_helicopter", "type": "general", "context": "meeting", "value": "yes" }
+            },
+            { "u_has_perception": 11 }
+          ]
+        },
+        "opinion": { "trust": 1, "value": 1 },
+        "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_HELICOPTER"
+      },
+      { "text": "So how did you end up here?", "topic": "TALK_RANDY_ERIKSON_BACKGROUND" },
+      { "text": "So what are you doing here?", "topic": "TALK_RANDY_ERIKSON_GENERATOR" },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "Don't mind me…", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "talk_topic",
+    "id": "TALK_RANDY_ERIKSON_Refuse_Boris_Mission_1",
+    "dynamic_line": [ "Fuck no, I'm busy.", "No, I have too many projects I'm working on now." ],
+    "speaker_effect": { "effect": { "npc_add_var": "cleanup_asked", "type": "mission", "context": "Boris_mission_1", "value": "yes" } },
+    "responses": [
+      { "text": "Thanks anyway.  What were you saying before?", "topic": "TALK_NONE" },
+      { "text": "Well, thanks anyway.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "talk_topic",
+    "id": "TALK_RANDY_ERIKSON_Accept_Boris_Mission_1",
+    "dynamic_line": [ "Yeah I guess, I could use a break from my research.", "That's a big ask, for sure.  Okay, I'll see what I can do." ],
+    "speaker_effect": {
+      "effect": [
+        { "npc_add_var": "cleanup_asked", "type": "mission", "context": "Boris_mission_1", "value": "yes" },
+        { "u_adjust_var": "Boris_mission_1", "type": "mission", "context": "cleanup_promises", "adjustment": 1 }
+      ]
+    },
+    "responses": [
+      { "text": "Thanks anyway.  What were you saying before?", "topic": "TALK_NONE" },
+      { "text": "Well, thanks anyway.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_BACKGROUND",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I was trying to get in contact with the rest of my family because I'd figure that if anyone would be fighting alien invaders it would be my uncle.  But when it came down to it I ended using my last full magazine to drop half a dozen strays a pair of xenoids that were about to kill me.  Then, I ran here as quick as my feet could carry me and now I'm stuck here in the 0ruins of this public school, doing the best I can to help these guys keep the lights on.  I could probably rendezvous with my family if I wanted, but I want to make sure these people here are safe before I'd even consider leaving this place.  The people are here are nice and this place kind of grows on you."
+    ],
+    "responses": [
+      { "text": "Its good that you like it here.", "topic": "TALK_NONE" },
+      { "text": "What is your uncle doing?", "topic": "TALK_RANDY_ERIKSON_ASK_ABOUT_HIS_UNCLE" },
+      { "text": "OK, see you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ASK_ABOUT_HIS_UNCLE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I always knew my uncle worked for a spooky part of the government, so I naturally assumed that would be on the front lines of fighting humanity's last battle.  A few days ago I got a ping from him through my phone, but it was only his location, and even then it wasn't that precise."
+    ],
+    "responses": [
+      { "text": "That's interesting.", "topic": "TALK_NONE" },
+      { "text": "OK, see you later.", "topic": "TALK_DONE" },
+      {
+        "text": "[RP] I want to join up with the resistance and fight against the alien invaders.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] } },
+            { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "effect": { "add_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" },
+        "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER_MAQUIS"
+      },
+      {
+        "text": "I'm not busy right now.  I can go look for him.",
+        "condition": {
+          "and": [
+            { "u_has_var": "RANDYS_BUDDY", "type": "mission", "context": "flag", "value": "yes" },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "effect": { "add_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" },
+        "topic": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER"
+      }
+    ]
+  },
+  {
+    "//": "---to do: randy should give at least 20 gallons of gas.----------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_RENDEZVOUS_TO_BASE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Shh, don't be so loud, this area isn't secured.  There is a helicopter outside, take it to the rendezvous point, get going as fast as you can!"
+    ],
+    "responses": [ { "text": "OK, I'll take it for a spin.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ASK_ABOUT_HELICOPTER",
+    "type": "talk_topic",
+    "dynamic_line": [ "Yeah I landed it just as it ran out of fuel.  Its yours so long as you can fill up the tank." ],
+    "responses": [ { "text": "OK, I'll take it for a spin.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "So my uncle, Chad Erikson, was the guy who got my this cool watch, but since this cataclysm started the internet went down globally all I have is the built in games.  I still try to refresh the connection and see if I can find any transient satellites or another a random link to anything left on-line.  This morning when I woke up I had noticed that MY watch had been pinged by someone that I am sure is my uncle Chad. I have a good idea of where he is at, I give you the direction and how far away it is, but other than that I can only guess."
+    ],
+    "responses": [ { "text": "OK, I'll go find him.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_MISSION_CHECK_UP_ON_BIG_BROTHER_MAQUIS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "So my uncle, Chad Erikson, was the guy who got my this cool watch, but since this cataclysm started the internet went down globally all I have is the built in games.  I still try to refresh the connection and see if I can find any transient satellites or another random link to anything left on-line.  This morning when I woke up I had noticed that MY watch had been pinged by someone that I am sure is my uncle Chad. I have a good idea of where he is at, I give you the direction and how far away it is, but other than that I can only guess."
+    ],
+    "responses": [ { "text": "OK, I'll go find him.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_GENERATOR",
+    "type": "talk_topic",
+    "dynamic_line": [
+      {
+        "u_has_var": "RANDY_FIXED_GENERATOR",
+        "context": "flag",
+        "type": "mission",
+        "value": "yes",
+        "yes": "Now that the generator is fixed, I finally beat my record length playing Snake.  I also have time to finish reading 'Roadside Picnic'.  Thanks again, stalker.",
+        "no": "I've been spending most of my time keeping this jury-rigged generator running just slowly enough to trickle charge the batteries that are built into this old machinery so it can keep these utility lights on at night. It as effective as can be considering what I've got to work with."
+      }
+    ],
+    "responses": [
+      { "text": "Lets discuss something else.", "topic": "TALK_NONE" },
+      { "text": "Good luck with that.", "topic": "TALK_DONE" },
+      {
+        "text": "[Mechanics 5] Have you tried checking the bearing coming off the engine?",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_Question_Randys_Mechanics_Skill", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_skill": { "skill": "mechanics", "level": 5 } }
+          ]
+        },
+        "effect": { "u_add_var": "u_Question_Randys_Mechanics_Skill", "type": "general", "context": "meeting", "value": "yes" },
+        "opinion": { "value": -1 },
+        "topic": "TALK_RANDY_ERIKSON_GENERATOR_ANGRY"
+      }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_GENERATOR_ANGRY",
+    "type": "talk_topic",
+    "dynamic_line": [ "I've checked that already, but thanks for nothing anyway; Talking to you I should be used to that by now." ],
+    "responses": [
+      { "text": "Sorry I asked.", "topic": "TALK_DONE" },
+      { "text": "Fuck you.", "topic": "TALK_DONE", "opinion": { "trust": -5, "value": -10 } }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ASK_ABOUT_WATCH",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I know right.  I  know a guy on the inside and got mine right before shit really hit the fan.  I just wish all my old friends were still alive so I could brag to them about having the coolest watch."
+    ],
+    "responses": [ { "text": "Yeah, me too.", "topic": "TALK_NONE" }, { "text": "I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ASK_ABOUT_WATCH",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I know right.  I  know a guy on the inside and got mine right before shit really hit the fan.  I just wish all my old friends were still alive so I could brag to them about having the coolest watch."
+    ],
+    "responses": [ { "text": "Yeah, me too.", "topic": "TALK_NONE" }, { "text": "I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_RANDY_ERIKSON_ASK_ABOUT_XENOIDS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I managed to salvage this after I took their gear apart Its unlike anything I've ever seen on earth.  I'm almost certain that the prismetallic plates seem fabricated using 3d-printed, the cloth-like weave more fire-retardant than asbestos, stronger as steel and lighter as silk, and I don't even know where to start with those damn electronics."
+    ],
+    "responses": [ { "text": "That's interesting.", "topic": "TALK_NONE" }, { "text": "OK, see you later.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_REFUGEE_RANDY_ERIKSON_1",
+    "type": "mission_definition",
+    "name": { "str": "Find a wrench" },
+    "goal": "MGOAL_FIND_ITEM",
+    "description": "Retrieve a decent wrench for Randy Erikson.  Keep an eye out for the other tools he said he might need.",
+    "difficulty": 2,
+    "value": 0,
+    "item": "wrench",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_REFUGEE_RANDY_ERIKSON_2",
+    "dialogue": {
+      "describe": "I need a real wrench to fix shit around here.",
+      "offer": "I feel silly asking this, but can you find a good wrench?  My multi-tool has been working good for most things, but I could get so much done with a nice adjustable crescent wrench.",
+      "accepted": "Thank you.",
+      "rejected": "Then why ask?",
+      "advice": "Remember where you used to go to buy a wrench, try there.  If you see a voltmeter or a soldering iron, grab them too.",
+      "inquire": "How is the search going?",
+      "success": "Thanks!  Now I finally feel ready in case this generator decides it wants to commit suicide.",
+      "success_lie": "What good does this do me?",
+      "failure": "It's okay.  I didn't really expect you to succeed anyway."
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_REFUGEE_RANDY_ERIKSON_2",
+    "type": "mission_definition",
+    "name": { "str": "Find a voltmeter" },
+    "goal": "MGOAL_FIND_ITEM",
+    "description": "Randy Erikson said he needs a voltmeter to troubleshoot some electronic machinery.",
+    "difficulty": 3,
+    "value": 0,
+    "item": "voltmeter",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_REFUGEE_RANDY_ERIKSON_3",
+    "dialogue": {
+      "describe": "I need a voltmeter to diagnose the electrical system.",
+      "offer": "I hope you listened to my advice on your last mission because now I'm going to need a voltmeter to figure out why there are more warning lights flashing than normal.  Go get one.",
+      "accepted": "Thanks.",
+      "rejected": "I think it will work for now, but who knows when the lights will go out for good?",
+      "advice": "I remember seeing a nice voltmeter at the electronics store in the mall before shit hit the fan.  Try there maybe?",
+      "inquire": "How is the search going?",
+      "success": "Thank you so much.  Now lets see what part isn't working.",
+      "success_lie": "What good does this do me?",
+      "failure": "It's okay.  I didn't really expect you to succeed anyway."
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_REFUGEE_RANDY_ERIKSON_3",
+    "type": "mission_definition",
+    "name": { "str": "Find a soldering iron" },
+    "goal": "MGOAL_FIND_ITEM",
+    "description": "Randy Erikson needs a working soldering iron to fix a power control board.",
+    "difficulty": 3,
+    "value": 0,
+    "item": "soldering_iron",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_REFUGEE_RANDY_ERIKSON_4",
+    "dialogue": {
+      "describe": "I need a soldering to fix the electrical system.",
+      "offer": "I think I figured out which parts of the power control board are acting up. Luckily I have the replacement circuits, but I'm going to need a good soldering iron. You already wouldn't have one would you?",
+      "accepted": "Thanks.",
+      "rejected": "I think it will work for now, but who knows when the lights will go out for good?",
+      "advice": "Didn't you find one at the electronics store in the mall? Go back and pick up some extra solder while you're there.",
+      "inquire": "How is the search going?",
+      "success": "Great now I actually have to fix it.",
+      "success_lie": "What good does this do me?",
+      "failure": "It's okay.  I didn't really expect you to succeed anyway."
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_REFUGEE_RANDY_ERIKSON_4",
+    "type": "mission_definition",
+    "name": { "str": "Get a pound of solder wire" },
+    "goal": "MGOAL_FIND_ITEM",
+    "description": "Randy Erikson needs 225 units of solder to finalize repairs of the power control board.",
+    "difficulty": 1,
+    "value": 0,
+    "item": "solder_wire",
+    "count": 225,
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "followup": "MISSION_REFUGEE_RANDY_ERIKSON_5",
+    "dialogue": {
+      "describe": "I need more solder.",
+      "offer": "I vastly underestimated how much solder I am going to need to fix this thing. I need at least a pound to fix everything that's broken. Do you have that much on you?",
+      "accepted": "Thanks.",
+      "rejected": "I think it will work for now, but who knows when the lights will go out for good?",
+      "advice": "One pound is 225 units of solder wire. Can you remember that number or do you need me to write it down for you too?",
+      "inquire": "How is the search going?",
+      "success": "Great now I actually have to fix it.",
+      "success_lie": "What good does this do me?",
+      "failure": "It's okay.  I didn't really expect you to succeed anyway."
+    },
+    "end": {
+      "effect": [
+        { "u_add_var": "RANDY_FIXED_GENERATOR", "type": "mission", "context": "flag", "value": "yes" },
+		{ "u_add_effect": "dkz_RANDYS_FIXED_GENERATOR" },		
+        { "u_adjust_var": "refugee_happiness", "type": "counter", "context": "refugee_center", "adjustment": 1 }
+      ]
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_REFUGEE_RANDY_ERIKSON_5",
+    "type": "mission_definition",
+    "name": { "str": "Get some reference software" },
+    "goal": "MGOAL_FIND_ITEM",
+    "description": "Randy Erikson needs a hard-copy of something called the 'Integrated Circuit Archive Database'.  Might have to see if you can find an internet connection or see if someone saved it on a USB drive.",
+    "difficulty": 8,
+    "value": 0,
+    "item": "software_electronics_reference",
+    "followup": "MISSION_REFUGEE_RANDY_ERIKSON_6",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need the circuit reference documentation.",
+      "offer": "I've gotten all the loose parts fixed and all wires replaced that needed replacing, but to check every circuit I need a hard copy of the 'Integrated Circuit Archive Database', since I can't just ask the internet for that kind of stuff any more.",
+      "accepted": "Thanks.",
+      "rejected": "I need those reference documents to double check everything.",
+      "advice": "I bet a secret government lab has a copy.  It should be on a USB drive somewhere.",
+      "inquire": "How is the search going?",
+      "success": "Wow, you actually found it. Here is a book that will help you use the helicopter parked out there.",
+      "success_lie": "What good does this do me?",
+      "failure": "It's okay.  I didn't really expect you to succeed anyway."
+    },
+    "end": {
+      "effect": [
+        { "u_add_var": "RANDY_HAS_REFERANCE_SOFTWARE", "type": "mission", "context": "flag", "value": "yes" },
+        { "u_buy_item": "dkz_helicopter_flying_handbook", "count": 1 }
+      ]
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_REFUGEE_RANDY_ERIKSON_6",
+    "type": "mission_definition",
+    "name": { "str": "Get some hobby software" },
+    "goal": "MGOAL_FIND_ITEM",
+    "description": "Randy Erikson wants a some software that has probably been mislabeled.  It was probably useless to begin with.",
+    "difficulty": 9,
+    "value": 0,
+    "item": "software_useless",
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I some old hobby software.",
+      "offer": "I need another old piece of software, not sure what it was but I'll know it when I see it..",
+      "accepted": "Thanks.",
+      "rejected": "Whatever.",
+      "advice": "I will know it when I check the files on the USB.  Probably got mislabeled as miscellaneous or something.",
+      "inquire": "How is the search going?",
+      "success": "Finally I have all my favorite mods for Cataclysm Bright Nights, this game is so boring unmodded.  Here is a book you'll really like, plus some paper money the staff here keep giving me.",
+      "success_lie": "What good does this do me?",
+      "failure": "It's okay.  I didn't really expect you to succeed anyway."
+    },
+    "end": {
+      "effect": [
+        { "u_buy_item": "FMCNote", "count": 137 },
+        { "u_add_var": "RANDYS_BUDDY", "type": "mission", "context": "flag", "value": "yes" },		
+		{ "u_add_effect": "dkz_RANDYS_BUDDY" },
+        { "u_adjust_var": "refugee_happiness", "type": "counter", "context": "refugee_center", "adjustment": 1 },
+        { "u_buy_item": "dkz_helicopter_design_for_dummies", "count": 1 }
+      ]
+    }
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "MISSION_CHECK_UP_ON_BIG_BROTHER",
+    "type": "mission_definition",
+    "name": { "str": "Locate Chad Erikson" },
+    "description": "Randy Erikson finally got news from his uncle, go to his last reported location and check it out.",
+    "goal": "MGOAL_CONDITION",
+    "goal_condition": { "u_has_var": "u_found_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" },
+    "difficulty": 5,
+    "value": 50000,
+    "start": {
+      "assign_mission_target": {
+        "om_terrain": "racing_tower_z7_4_1",
+        "om_special": "arcology_racing",
+        "reveal_radius": 0,
+        "search_range": 750,
+        "z": 7,
+        "random": true,
+        "min_distance": 200
+      },
+      "update_mapgen": { "place_npcs": [ { "class": "DKZ_CHAD_ERIKSON", "x": 5, "y": 5, "add_trait": "DKZ_LEADER" } ] },
+     "effect": [
+	    { "u_faction_rep": 1 },
+        { "u_add_var": "MrEriksonExists", "type": "knowledge", "context": "flag", "value": "yes" },
+        { "u_add_var": "Rendezvous_to_base", "type": "knowledge", "context": "flag", "value": "yes" }
+      ]
+    },
+    "origins": [ "ORIGIN_SECONDARY" ],
+    "dialogue": {
+      "describe": "I need help getting in touch with a family member…",
+      "offer": "I have a general idea of where my uncle Chad Erikson is at, I give you a general idea which direction and how far away it is, but other than that I can only guess.",
+      "accepted": "I'll find him.",
+      "rejected": "Come back when you get a chance.",
+      "advice": "Just follow your map.",
+      "inquire": "Did you find him yet?",
+      "success": "With this we'll be able to convince others to join up and fight against the invasion",
+      "success_lie": "Something seems not right with how you described my brother…",
+      "failure": "It was a lost cause anyways…"
+    }
+  }
+]

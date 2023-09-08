@@ -1,0 +1,76 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_ELF_MUTANT_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Buzz off, fed." ],
+      "no": [ "We don't bother anyone up here and expect the same from others.", "What brings you up here, scavenger." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_ELF_MUTANT_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_ELF_MUTANT_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_ELF_MUTANT_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "Maquis_Elf_Mutant_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_ELF_MUTANT_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Chad is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_ELF_MUTANT_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm minding my own business, mind your own.",
+      "Just contemplating what its like being a mutant insect during the end of the world.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_ELF_MUTANT_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_ELF_MUTANT_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  }
+]

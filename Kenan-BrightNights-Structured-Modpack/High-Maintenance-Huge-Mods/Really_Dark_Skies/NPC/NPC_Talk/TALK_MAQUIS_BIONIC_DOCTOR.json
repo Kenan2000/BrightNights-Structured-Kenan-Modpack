@@ -1,0 +1,107 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_BIONIC_DOCTOR_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [
+        "Are you lost, marshal?",
+        "Can I help you marshal?  Got any bionics that need a tune up?.",
+        "Hello marshal, need any bionics installed?"
+      ],
+      "no": [ "Welcome…" ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "medical_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need medical support for an upcoming mission, interested?",
+        "topic": "TALK_MAQUIS_MEDIC_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "medical_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_TRADE" },
+      { "text": "I need some bionic work done.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_INSTALL_BIONICS" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_BIONIC_DOCTOR_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "Maquis_Bionic_Doctor_Mission2", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MAQUIS_BIONIC_DOCTOR_TRADE",
+    "dynamic_line": [
+      "I don't have anything for sale.",
+      "Then you should go find a merchant downstairs and talk to them.",
+      "Dammit, I'm a doctor not a merchant."
+    ],
+    "responses": [
+      { "text": "I have another question.", "topic": "TALK_NONE" },
+      { "text": "Ok, I have to go now.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_BIONIC_DOCTOR_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm sure that Mr. Erikson is on this floor.",
+      "I just saw Mr. Erikson go into one of the roooms around here, sorry I can't help you any more than that."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_BIONIC_DOCTOR_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [ "I help people install cybernetic augmentations into their body." ],
+    "responses": [
+      { "text": "I need some bionic work done.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_INSTALL_BIONICS" },
+      { "text": "I have another question.", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_BIONIC_DOCTOR_INSTALL_BIONICS",
+    "type": "talk_topic",
+    "dynamic_line": "I can help you install or remove bionics",
+    "responses": [
+      {
+        "text": "I was wondering if you could install a cybernetic implant…",
+        "topic": "TALK_DONE",
+        "effect": "bionic_install"
+      },
+      { "text": "I need help removing an implant…", "topic": "TALK_DONE", "effect": "bionic_remove" }
+    ]
+  }
+]

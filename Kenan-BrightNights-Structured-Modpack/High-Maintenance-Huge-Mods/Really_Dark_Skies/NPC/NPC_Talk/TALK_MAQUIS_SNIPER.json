@@ -1,0 +1,74 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SNIPER_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": [ "Don't distract me while I'm aiming.", "I'm kind of busy right now." ],
+    "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_SNIPER_TRADE" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_SNIPER_DOING" },
+      {
+        "text": "[MISSION] I the sole survivor from a combat patrol mission and need to immediately debrief whoever is in charge.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_SNIPER_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his brother Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_SNIPER_BIG_BROTHER"
+      },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SNIPER_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I believe Mr. Erikson has an office on the seventh floor.", 
+	  "He should be down one floor in his office on the seventh floor.",
+      "Mr. Erikson is usually in his office in the seventh floor."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SNIPER_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "It is really nice to be up here just me, my mp3 player, and this huge fucking gun.",
+      "This entire tower might be one of the last good places left in New England, let alone the world.  Its kind of awesome when you think about it."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_SNIPER_TRADE" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_SNIPER_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SNIPER_TRADE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "No.  I wouldn't sell you my gun.",
+      "Go down stairs if you want to trade, I'm busy up here.",
+      "Piss off, this is my gun."
+    ],
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE", "opinion": { "trust": -2, "value": -2 } } ]
+  }
+]

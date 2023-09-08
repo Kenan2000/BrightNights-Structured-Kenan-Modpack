@@ -1,0 +1,68 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_DEMOLITIONS_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Are you lost, marshal?", "Don't start any trouble marshal, you aren't the law anymore." ],
+      "no": [ "Don't cause any trouble here, I'd rather kill monsters than people.", "Safe travels." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_DEMOLITIONS_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_DEMOLITIONS_DOING" },
+      { "text": "What is upstairs?", "topic": "TALK_MAQUIS_DEMOLITIONS_UPSTAIRS" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_DEMOLITIONS_BIG_BROTHER"
+      },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_DEMOLITIONS_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Mr. Erikson is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_DEMOLITIONS_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There is an arrangement with everyone that lives here, the bottom two floors are a free trade zone and the upper floors are for the alien resistance operation.  We also help them keep the outside defences in place and warn of any zombies or xenoids around the perimeter.  There is always something that needs to be blown up.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_DEMOLITIONS_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_DEMOLITIONS_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_DEMOLITIONS_UPSTAIRS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Sometimes I'll go up to the roof to help with sniper overwatch.  Its fun to use the really powerful rifles even if we can't take them down here.",
+      "I only go upstairs to check out the casino, its fun to use looted cash cards to gamble.  I'm up almost a hundred-thousand dollars.",
+      "The library is nice, they're always on the look for more books, the more rare, the more they'll give for them."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_DEMOLITIONS_ROOT" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  }
+]

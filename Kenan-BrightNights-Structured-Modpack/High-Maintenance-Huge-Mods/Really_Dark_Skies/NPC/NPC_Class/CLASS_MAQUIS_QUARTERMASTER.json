@@ -1,0 +1,94 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_QUARTERMASTER",
+    "class": "NC_MAQUIS_QUARTERMASTER",
+    "attitude": 0,
+    "mission": 7,
+    "name_suffix": "Quartermaster",
+    "gender": "male",
+    "chat": "TALK_MAQUIS_QUARTERMASTER_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_QUARTERMASTER",
+    "name": { "str": "Maquis-The Quartermaster" },
+    "job_description": "I'm here to keep the logistics of the resistance moving forward.",
+    "common": false,
+    "traits": [
+      { "trait": "DKZ_LEADER", "prob": 100 },
+      { "group": "DKZ_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "ANTIJUNK", "prob": 100 },
+      { "trait": "JITTERY", "prob": 100 },
+      { "trait": "DISRESISTANT", "prob": 100 },
+      { "trait": "INFRESIST", "prob": 100 },
+      { "trait": "ROBUST", "prob": 100 },
+      { "trait": "NIGHTVISION", "prob": 100 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 3, 4 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } }
+    ],
+    "bionics": [
+      { "id": "bio_metabolics", "chance": 100 },
+      { "id": "bio_power_armor_interface_mkII", "chance": 100 },
+      { "id": "bio_power_storage_mkII", "chance": 100 }
+    ],	
+    "worn_override": "NC_MAQUIS_QUARTERMASTER_worn",
+    "carry_override": "NC_MAQUIS_QUARTERMASTER_carried",
+    "weapon_override": "NC_MAQUIS_QUARTERMASTER_weapon",
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ -3, -2 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 1, 2 ] }
+  },
+  {
+    "id": "NC_MAQUIS_QUARTERMASTER_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "rm103a_pistol" } ]
+  },
+  {
+    "id": "NC_MAQUIS_QUARTERMASTER_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_shorts" },
+      { "item": "socks" },
+      { "item": "boots_hiking" },
+      { "item": "postman_shorts" },
+      { "item": "postman_shirt" },
+      { "item": "postman_hat" },
+      { "item": "backpack" },
+      { "item": "badge_deputy" },
+      { "item": "keffiyeh" },
+      {
+        "item": "light_minus_battery_cell",
+        "ammo-item": "battery",
+        "charges": 150,
+        "container-item": "dkz_zenture_industries_premium_zwatch"
+      }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_QUARTERMASTER_carried",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "8x40_10_mag", "charges-min": 7, "count": 2 },
+      { "item": "8mm_caseless", "count": 3 },
+      { "item": "multitool" }
+    ]
+  }
+]
