@@ -1,6 +1,15 @@
 [
   {
     "type": "monstergroup",
+    "name": "GROUP_XENOID_SQUAD",
+    "default": "dkz_xenoid_enforcer",
+    "monsters": [
+      { "monster": "dkz_xenoid_ranger", "freq": 40, "cost_multiplier": 0, "pack_size": [ 2, 3 ] },
+      { "monster": "dkz_xenoid_knight", "freq": 50, "cost_multiplier": 0, "pack_size": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "monstergroup",
     "name": "GROUP_MAYBE_MIL",
     "monsters": [
       { "monster": "mon_dkz_glowdrone", "freq": 40, "cost_multiplier": 0 },
@@ -25,14 +34,34 @@
       { "monster": "dkz_xenoid_ranger", "freq": 90, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
       { "monster": "dkz_xenoid_knight", "freq": 70, "cost_multiplier": 0, "pack_size": [ 1, 3 ] }
     ]
+  },  {
+    "type": "monstergroup",
+    "name": "GROUP_XENOID_MINI_DRONES",
+    "default": "mon_dkz_glowdrone",
+    "monsters": [
+      { "monster": "mon_dkz_scidrone", "freq": 120, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
+      { "monster": "mon_dkz_glowdrone", "freq": 20, "cost_multiplier": 0, "pack_size": [ 1, 2 ] }
+    ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_XENOID_BOSS",
     "default": "dkz_xenoid_knight",
     "monsters": [
-      { "monster": "dkz_xenoid_enforcer", "freq": 120, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
-      { "monster": "dkz_xenoid_ranger", "freq": 90, "cost_multiplier": 0, "pack_size": [ 1, 3 ] }
+      { "monster": "dkz_xenoid_knight", "freq": 80, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
+      { "monster": "dkz_xenoid_fumigator", "freq": 60, "cost_multiplier": 10, "pack_size": [ 1, 2 ] },
+      { "monster": "dkz_xenoid_pyro", "freq": 10, "cost_multiplier": 0, "starts": 256 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_XENOID_EMISSARY",
+    "default": "dkz_xenoid_knight",
+    "monsters": [
+      { "monster": "mon_dkz_emissary", "freq": 60, "cost_multiplier": 50, "starts": 360 },
+      { "monster": "mon_dkz_emissary_plague", "freq": 25, "cost_multiplier": 50, "starts": 720 },
+      { "monster": "mon_dkz_emissary_flame", "freq": 20, "cost_multiplier": 50, "starts": 600 },
+      { "monster": "mon_dkz_emissary_war", "freq": 5, "cost_multiplier": 50, "starts": 600 }
     ]
   },
   {
@@ -125,7 +154,7 @@
   },
   {
     "name": "GROUP_MIL_BASE",
-    "//": "Xenoids prioritize attacking military bases.. Starts with large groups of knights and drones, ends with emissaries, earlier than normal spawns.",	
+    "//": "Xenoids prioritize attacking military bases.. Starts with large groups of knights and drones, ends with emissaries, earlier than normal spawns.",
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_dkz_glowdrone", "freq": 100, "cost_multiplier": 0, "pack_size": [ 2, 5 ] },

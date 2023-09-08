@@ -119,7 +119,8 @@
         { "class": "DKZ_QUISLING_BANDIT", "x": 17, "y": 20, "add_trait": [ "NO_RANGED_CRIT", "DKZ_QUISLING" ] }
       ],
       "place_monster": [
-        { "group": "GROUP_QUISSLING_HELPERS", "x": [ 1, 4 ], "y": [ 1, 4 ], "chance": 90, "repeat": 5 },
+        { "group": "GROUP_XENOID_MINI_DRONES", "x": [ 1, 4 ], "y": [ 1, 4 ], "chance": 90, "repeat": 2 },
+        { "group": "GROUP_QUISSLING_HELPERS", "x": [ 1, 4 ], "y": [ 1, 4 ], "chance": 90, "repeat": 3 },
         { "group": "GROUP_QUISSLING_HELPERS", "x": [ 19, 22 ], "y": [ 19, 22 ], "chance": 90, "repeat": 3 },
         { "group": "GROUP_XENOID_BOSS", "x": [ 19, 22 ], "y": [ 19, 22 ] }
       ],

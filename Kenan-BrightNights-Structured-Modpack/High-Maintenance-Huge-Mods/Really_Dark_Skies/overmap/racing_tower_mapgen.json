@@ -110,7 +110,7 @@
         "########################rrr-x---x-rrrr-x---x-rrr################################################",
         "########################rrrrXrrrXrrrrrrXrrrXrrrr################################################"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_zones": [ { "type": "NPC_INVESTIGATE_ONLY", "faction": "free_merchants", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
       "place_npcs": [
         { "class": "DKZ_MAQUIS_BEAST_MUTANT", "x": 75, "y": 75, "add_trait": [ "DKZ_LEADER" ] },
@@ -223,7 +223,7 @@
         "#                                              #",
         "################################################"
       ],
-      "palettes": [ "arcology_palette" ]
+      "palettes": [ "racing_arcology_palette" ]
     }
   },
   {
@@ -282,7 +282,7 @@
         "#                                  rrrrrrrrrrrrr",
         "################################################"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "terrain": {
         "r": "t_railroad_rubble",
         "-": "t_railroad_tie_h",
@@ -325,7 +325,7 @@
         "rrrrrrrrrrr                                    #",
         "################################################"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "terrain": {
         "r": "t_railroad_rubble",
         "-": "t_railroad_tie_h",
@@ -465,7 +465,7 @@
         "###### Q  #    # Q  #4 4 4 4 4# nN##############################################################",
         "############&&##################################################################################"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "terrain": {
         "'": [
           "t_asphalt_floor_light",
@@ -594,8 +594,8 @@
         "ZZ@''''''''''''''''''''''''''''''''''''''''''''''''''''''''-Dd'''''''''''''''''''''''''''''''@ZZ",
         "Zz@''''''''''''''''''''''''''''''''''''''''''''''''''''''''---'''''''''''''''''''''''''''''''@Zz",
         "Zz@'''''''''''''''''''''''''''''''---''''''''''''''''''''''''''''''''''''''''''''''''''''''''@ZZ",
-        "ZZ@'''''''''''''''''''''''''''''''dD-'Ø''''''''''''''''''''''''''''''''''''''''''''''''''''''@zZ",
-        "zZ@'''''''''''''''''''''''''''''''dD-'§''''''''''''''''''''''''''''''''''''''''''''''''''''''@ZZ",
+        "ZZ@'''''''''''''''''''''''''''''''dD-''''''''''''''''''''''''''''''''''''''''''''''''''''''''@zZ",
+        "zZ@'''''''''''''''''''''''''''''''dD-''''''''''''''''''''''''''''''''''''''''''''''''''''''''@ZZ",
         "z##c''''''''''''''''''''''''''''''dD-''''''''''''''''''''''''''''''''''''''''''''''''''''''' ##z",
         "::#    '''''''''''''''''''''''''''dD-''''''''''''''''''''''''''''''''''''''''''''''''''''    #::",
         "::#    '''''''''''''''''''''''''''dD-''''''''''''''''''''''''''''''''''''''''''''''''''''    #::",
@@ -642,14 +642,13 @@
         "::#::#::#::#::#::#::#::#::#::#::#::#::#::#::#Zz:Z:z#::#::#::#::#::#::#::#::#::#::#::#::#::#::#::",
         "::::::::::::::::::::::::::::::::::::::::::::zZzZzZzZ::::::::::::::::::::::::::::::::::::::::::::"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_npcs": [
-        { "class": "DKZ_MAQUIS_QUARTERMASTER", "x": 38, "y": 49, "add_trait": [ "DKZ_LEADER", "DKZ_TEAM_LEADER" ] },
-        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 50, "y": 37, "add_trait": [ "DKZ_COMBAT" ] },
-        { "class": "DKZ_MAQUIS_FELINE_MUTANT", "x": 50, "y": 38, "add_trait": [ "DKZ_LEADER" ] },
-        { "class": "DKZ_MAQUIS_MOTH_MUTANT", "x": 50, "y": 39, "add_trait": [ "DKZ_LEADER" ] }
+        { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 51, "y": 37, "add_trait": [ "DKZ_COMBAT" ] },
+        { "class": "DKZ_MAQUIS_FELINE_MUTANT", "x": 53, "y": 38, "add_trait": [ "DKZ_LEADER" ] },
+        { "class": "DKZ_MAQUIS_MOTH_MUTANT", "x": 55, "y": 39, "add_trait": [ "DKZ_LEADER" ] }
       ],
-      "furniture": { "§": "f_tourist_table", "Ø": "f_stool", "Ẍ": "f_large_canvas_door", "ẍ": "f_large_canvas_wall" },
+      "furniture": { "Ẍ": "f_large_canvas_door", "ẍ": "f_large_canvas_wall" },
       "item": { "§": { "item": "deck_of_cards", "chance": 100 } },
       "terrain": {
         "'": [ "t_asphalt_floor_light", [ "t_asphalt_floor", 80 ] ],
@@ -658,8 +657,6 @@
         "z": [ "t_junk_palisade", "t_junk_palisade", "t_junk_wall" ],
         "Ẍ": "t_asphalt_floor",
         "ẇ": "t_asphalt_floor_light",
-        "§": "t_asphalt_floor",
-        "Ø": "t_asphalt_floor",
         "B": "t_asphalt_floor",
         "s": "t_asphalt_floor"
       },
@@ -802,7 +799,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_nested": [
         { "chunks": [ "racing_tower_7x7_food" ], "x": 32, "y": 3 },
         { "chunks": [ "racing_tower_7x7_food" ], "x": 40, "y": 3 },
@@ -943,7 +940,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_nested": [
         { "chunks": [ "racing_tower_4x4_junk" ], "x": 7, "y": 37 },
         { "chunks": [ "racing_tower_4x4_junk" ], "x": 11, "y": 37 },
@@ -1196,7 +1193,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_monster": [
         { "monster": "mon_pig_piglet", "x": [ 11, 13 ], "y": [ 49, 51 ], "repeat": [ 1, 2 ] },
         { "monster": "mon_pig_piglet", "x": [ 79, 81 ], "y": [ 49, 51 ], "repeat": [ 1, 2 ] },
@@ -1422,7 +1419,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_nested": [
         { "chunks": [ "racing_tower_6x6_junk" ], "x": 3, "y": 10 },
         { "chunks": [ "racing_tower_6x6_junk" ], "x": 3, "y": 16 },
@@ -1655,7 +1652,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_nested": [
         { "chunks": [ "racing_tower_6x6_junk" ], "x": 3, "y": 24 },
         { "chunks": [ "racing_tower_6x6_junk" ], "x": 3, "y": 30 },
@@ -1837,7 +1834,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_nested": [
         { "chunks": [ "racing_tower_6x6_junk" ], "x": 3, "y": 24 },
         { "chunks": [ "racing_tower_6x6_junk" ], "x": 3, "y": 30 },
@@ -2002,7 +1999,7 @@
         "..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..##..#..#..#..#..#..#..#..#..#..#..#..#..#..#..#..",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_npcs": [
         { "class": "DKZ_MAQUIS_BIONIC_ASSASSIN", "x": 70, "y": 4, "add_trait": [ "DKZ_COMBAT" ] },
         { "class": "DKZ_MAQUIS_RIOT_COP", "x": 71, "y": 3, "add_trait": [ "DKZ_LEADER" ] },
@@ -2011,7 +2008,6 @@
         { "class": "DKZ_MAQUIS_MEDICAL_MUTANT", "x": 65, "y": 4, "add_trait": [ "DKZ_MEDIC" ] },
         { "class": "DKZ_MAQUIS_ELF_MUTANT", "x": 64, "y": 5, "add_trait": [ "DKZ_MEDIC" ] }
       ],
-      "place_monster": [ { "monster": "mon_mech_lifter", "x": [ 76, 79 ], "y": [ 4, 9 ], "repeat": [ 3, 4 ] } ],
       "computers": {
         "6": {
           "name": "Lab Console",
@@ -2218,7 +2214,7 @@
         "=                                                                                              =",
         "================================================================================================"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_vehicles": [
         { "vehicle": "helicopter_apache_1a", "x": 36, "y": 87, "chance": 100, "rotation": 90, "fuel": 100, "status": 0 },
         {
@@ -2355,7 +2351,7 @@
         "................................................................................................",
         "................................................................................................"
       ],
-      "palettes": [ "arcology_palette" ],
+      "palettes": [ "racing_arcology_palette" ],
       "place_npcs": [ { "class": "DKZ_MAQUIS_BIRD_MUTANT", "x": 31, "y": 20, "add_trait": [ "DKZ_COMBAT" ] } ]
     }
   }
