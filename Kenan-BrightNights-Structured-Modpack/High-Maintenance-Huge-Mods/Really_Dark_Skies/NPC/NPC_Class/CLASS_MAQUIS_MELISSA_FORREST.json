@@ -1,0 +1,85 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_MELISSA_FORREST",
+    "class": "NC_MAQUIS_MELISSA_FORREST",
+    "attitude": 0,
+    "mission": 7,
+    "name_unique": "Melissa 'Misty' Forrest",
+    "gender": "female",
+    "chat": "TALK_MAQUIS_MELISSA_FORREST_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_MELISSA_FORREST",
+    "name": { "str": "Misty" },
+    "job_description": "I'm here to understand being a plant.",
+    "common": false,
+    "traits": [
+      { "trait": "DKZ_SCIENTIST", "prob": 100 },
+      { "trait": "COLDBLOOD2", "prob": 100 },
+      { "trait": "DISIMMUNE", "prob": 100 },
+      { "trait": "STR_UP_2", "prob": 100 },
+      { "trait": "SUNLIGHT_DEPENDENT", "prob": 100 },
+      { "trait": "ROSEBUDS", "prob": 100 },
+      { "trait": "FLOWERS", "prob": 100 },
+      { "trait": "SAPROPHAGE", "prob": 100 },
+      { "trait": "ROOTS3", "prob": 100 },
+      { "trait": "LEAVES3", "prob": 100 },
+      { "trait": "FASTHEALER2", "prob": 100 },
+      { "trait": "BARK", "prob": 100 },
+      { "trait": "PLANTSKIN", "prob": 100 },
+      { "trait": "PACIFIST", "prob": 100 },
+      { "trait": "BEAUTIFUL", "prob": 100 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 7, 9 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 4, 5 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "smg", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 1 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_MELISSA_FORREST_worn",
+    "carry_override": "NC_MAQUIS_MELISSA_FORREST_carried",
+    "weapon_override": "NC_MAQUIS_MELISSA_FORREST_weapon",
+    "bonus_str": { "rng": [ 1, 2 ] },
+    "bonus_dex": { "rng": [ -1, 0 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 1, 2 ] }
+  },
+  {
+    "id": "NC_MAQUIS_MELISSA_FORREST_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "pitchfork" } ]
+  },
+  {
+    "id": "NC_MAQUIS_MELISSA_FORREST_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "bikini_bottom" },
+      { "item": "bikini_top" },
+      { "item": "mbag" },
+      {
+        "item": "light_minus_battery_cell",
+        "ammo-item": "battery",
+        "charges": 150,
+        "container-item": "dkz_zenture_industries_premium_zwatch"
+      }
+    ]
+  },
+  {
+    "id": "NC_MAQUIS_MELISSA_FORREST_carried",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [ { "item": "multitool" } ]
+  }
+]

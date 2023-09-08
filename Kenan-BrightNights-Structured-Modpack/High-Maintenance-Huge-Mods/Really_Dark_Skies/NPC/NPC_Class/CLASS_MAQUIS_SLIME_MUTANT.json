@@ -1,0 +1,82 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_MAQUIS_SLIME_MUTANT",
+    "class": "NC_MAQUIS_SLIME_MUTANT",
+    "attitude": 0,
+    "mission": 7,
+    "gender": "female",
+    "chat": "TALK_MAQUIS_SLIME_MUTANT_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_MAQUIS_SLIME_MUTANT",
+    "name": { "str": "Maquis-Slime Mutant" },
+    "job_description": "I'm a slime girl.",
+    "common": false,
+    "traits": [
+      { "trait": "THRESH_SLIME" },
+      { "trait": "PER_SLIME_OK" },
+      { "trait": "INT_SLIME" },
+      { "trait": "DEX_UP" },
+      { "trait": "BENDY3" },
+      { "trait": "VISCOUS", "prob": 100 },
+      { "trait": "CHEMIMBALANCE", "prob": 90 },
+      { "trait": "POISRESIST", "prob": 90 },
+      { "trait": "AMORPHOUS", "prob": 50 },
+      { "trait": "REGEN", "prob": 30 },
+      { "trait": "RADIOGENIC", "prob": 10 },
+      { "trait": "RADIOACTIVE1", "prob": 0 },
+      { "trait": "PARAIMMUNE", "prob": 50 },
+      { "trait": "POISONOUS", "prob": 50 },
+      { "trait": "SLIME_HANDS", "prob": 50 },
+      { "trait": "WEBBED", "prob": 50 },
+      { "trait": "HUNGER2", "prob": 50 },
+      { "trait": "THIRST2", "prob": 50 },
+      { "trait": "HOLLOW_BONES", "prob": 30 },
+      { "trait": "ROBUST", "prob": 20 },
+      { "trait": "UNSTABLE", "prob": 20 }
+    ],
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -4 } ] } },
+      { "skill": "survival", "bonus": { "rng": [ 2, 3 ] } },
+      { "skill": "firstaid", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 5, 7 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "bashing", "bonus": { "rng": [ 3, 5 ] } },
+      { "skill": "stabbing", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "cutting", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "shotgun", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "pistol", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 1, 2 ] } }
+    ],
+    "worn_override": "NC_MAQUIS_SLIME_MUTANT_worn",
+    "weapon_override": "NC_MAQUIS_SLIME_MUTANT_weapon",
+    "carry_override": "NC_MAQUIS_SLIME_MUTANT_carry",
+    "bonus_str": { "rng": [ -2, 0 ] },
+    "bonus_dex": { "rng": [ 1, 3 ] },
+    "bonus_int": { "rng": [ 3, 5 ] },
+    "bonus_per": { "rng": [ 1, 3 ] }
+  },
+  {
+    "id": "NC_MAQUIS_SLIME_MUTANT_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "coat_rain" }, { "item": "mbag" } ]
+  },
+  {
+    "id": "NC_MAQUIS_SLIME_MUTANT_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "q_staff" } ]
+  },
+  {
+    "id": "NC_MAQUIS_SLIME_MUTANT_carry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "multitool" } ]
+  }
+]

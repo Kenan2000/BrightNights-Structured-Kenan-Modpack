@@ -1,0 +1,108 @@
+[
+  {
+    "type": "npc",
+    "id": "DKZ_CHAD_ERIKSON",
+    "class": "NC_CHAD_ERIKSON",
+    "name_unique": "Chad Erikson",
+    "gender": "male",
+    "attitude": 1,
+    "mission": 3,
+    "mission_offered": "MISSION_REFUGEE_CHAD_ERIKSON_1",
+    "chat": "TALK_CHAD_ERIKSON_ROOT",
+    "faction": "maquis"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_CHAD_ERIKSON",
+    "name": { "str": "Chad Erikson" },
+    "job_description": "I am the leader of the local chapter of the Maquis, the last human resistance against the Xenoid invaders.",
+    "skills": [
+      { "skill": "computer", "level": { "rng": [ 4, 5 ] } },
+      { "skill": "electronics", "level": { "rng": [ 4, 5 ] } },
+      { "skill": "dodge", "level": { "rng": [ 5, 7 ] } },
+      { "skill": "gun", "level": { "rng": [ 8, 9 ] } },
+      { "skill": "pistol", "level": { "rng": [ 8, 9 ] } },
+      { "skill": "rifle", "level": { "rng": [ 5, 7 ] } },
+      { "skill": "shotgun", "level": { "rng": [ 4, 6 ] } },
+      { "skill": "smg", "level": { "rng": [ 3, 5 ] } },
+      { "skill": "melee", "level": { "rng": [ 3, 5 ] } },
+      { "skill": "firstaid", "level": { "rng": [ 2, 3 ] } },
+      { "skill": "fabrication", "level": { "rng": [ 2, 3 ] } },
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 4, 2 ] }, { "rng": [ -3, 0 ] } ] } ] }
+      }
+    ],
+    "traits": [
+      { "trait": "DKZ_LEADER", "prob": 100 },
+      { "trait": "PALE", "prob": 100 },
+      { "trait": "hair_white_crewcut", "prob": 100 },
+      { "trait": "FACIAL_HAIR_3DAYSTUBBLE", "prob": 100 },
+      { "trait": "DISRESISTANT", "prob": 100 },
+      { "trait": "INFRESIST", "prob": 100 },
+      { "trait": "ROBUST", "prob": 100 },
+      { "trait": "LOVES_BOOKS", "prob": 100 },
+      { "trait": "FASTREADER", "prob": 100 },
+      { "trait": "THIRST", "prob": 100 },
+      { "trait": "HUNGER", "prob": 100 },
+      { "trait": "INSOMNIA", "prob": 100 }
+    ],
+    "bionics": [
+      { "id": "bio_metabolics", "chance": 100 },
+      { "id": "bio_tools", "chance": 100 },
+      { "id": "bio_cqb", "chance": 100 },
+      { "id": "bio_blade", "chance": 100 },
+      { "id": "bio_power_armor_interface_mkII", "chance": 100 },
+      { "id": "bio_power_storage_mkII", "chance": 100 },
+      { "id": "bio_power_storage_mkII", "chance": 100 }
+    ],
+    "worn_override": "NC_DKZ_CHAD_ERIKSON_worn",
+    "carry_override": "NC_DKZ_CHAD_ERIKSON_carried",
+    "weapon_override": "NC_DKZ_CHAD_ERIKSON_weapon",
+    "bonus_str": { "rng": [ 2, 3 ] },
+    "bonus_dex": { "rng": [ -1, 0 ] },
+    "bonus_int": { "rng": [ 2, 3 ] },
+    "bonus_per": { "rng": [ 3, 4 ] }
+  },
+  {
+    "id": "NC_DKZ_CHAD_ERIKSON_weapon",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [ { "item": "rm103a_pistol" } ]
+  },
+  {
+    "id": "NC_DKZ_CHAD_ERIKSON_worn",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "item": "socks" },
+      { "item": "boxer_shorts" },
+      { "item": "flag_shirt" },
+      { "item": "pants_cargo" },
+      { "item": "ballistic_vest_esapi" },
+      { "item": "boots_combat" },
+      { "item": "beret_wool" },
+      { "item": "backpack" },
+      { "item": "badge_marshal" },
+      {
+        "item": "light_minus_battery_cell",
+        "ammo-item": "battery",
+        "charges": 150,
+        "container-item": "dkz_zenture_industries_premium_zwatch"
+      }
+    ]
+  },
+  {
+    "id": "NC_DKZ_CHAD_ERIKSON_carried",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "light_battery_cell", "ammo-item": "battery", "charges": 300, "container-item": "radio" },
+      { "group": "charged_two_way_radio" },
+      { "item": "syringe" },
+      { "item": "8x40_10_mag", "charges-min": 7, "count": 2 },
+      { "item": "8mm_caseless", "count": 3 },
+      { "item": "multitool" }
+    ]
+  }
+]

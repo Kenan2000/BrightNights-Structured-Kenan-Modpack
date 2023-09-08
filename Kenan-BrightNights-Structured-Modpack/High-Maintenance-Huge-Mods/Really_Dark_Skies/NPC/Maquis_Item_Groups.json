@@ -1,0 +1,487 @@
+[
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_armor_chitin_arm",
+    "//": "Chitinous arm armor.",
+    "items": [ { "item": "armguard_chitin", "prob": 95 }, { "item": "armguard_acidchitin", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_chitin_boots",
+    "//": "Chitinous boots armor.",
+    "items": [ { "item": "boots_chitin", "prob": 95 }, { "item": "boots_acidchitin", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_chitin_torso",
+    "//": "Chitinous torso armor.",
+    "items": [ { "item": "armor_chitin", "prob": 95 }, { "item": "armor_acidchitin", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_chitin_hand",
+    "//": "Chitinous hand armor.",
+    "items": [ { "item": "gauntlets_chitin", "prob": 95 }, { "item": "gauntlets_acidchitin", "prob": 15 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_chitin_head",
+    "//": "Chitinous hand armor.",
+    "items": [ { "item": "helmet_chitin", "prob": 95 }, { "item": "helmet_acidchitin", "prob": 15 } ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_arm",
+    "//": "Makeshift or otherwise poor arm armor.",
+    "items": [
+      { "item": "2byarm_guard", "prob": 95 },
+      { "item": "armguard_soft", "prob": 95 },
+      { "item": "armguard_paper", "prob": 95 },
+      { "item": "armguard_scrap", "prob": 75 },
+      { "item": "armguard_larmor", "prob": 75 },
+      { "item": "armguard_metal", "prob": 75 },
+      { "item": "armguard_lightplate", "prob": 10 },
+      { "item": "chainmail_arms", "prob": 10 },
+      { "item": "armguard_hard", "prob": 5 },
+      { "item": "elbow_pads", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_improved_arm",
+    "//": "Makeshift but otherise good arm armor.",
+    "items": [
+      { "item": "armguard_scrap", "prob": 15 },
+      { "item": "armguard_larmor", "prob": 15 },
+      { "item": "armguard_metal", "prob": 15 },
+      { "item": "armguard_lightplate", "prob": 10 },
+      { "item": "chainmail_arms", "prob": 10 },
+      { "item": "armguard_hard", "prob": 75 },
+      { "item": "elbow_pads", "prob": 95 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_torso",
+    "//": "Makeshift or otherwise poor torso armor.",
+    "items": [
+      { "item": "bookplate", "prob": 95 },
+      { "item": "football_armor", "prob": 95 },
+      { "item": "vest_leather_mod", "prob": 75 },
+      { "item": "motorbike_armor", "prob": 85 },
+      { "item": "jacket_leather_mod", "prob": 85 },
+      { "item": "jacket_leather_bone", "prob": 1 },
+      { "item": "cuirass_scrap", "prob": 35 },
+      { "item": "fencing_jacket", "prob": 45 },
+      { "item": "chestguard_hard", "prob": 95 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_improved_torso",
+    "//": "Makeshift or otherwise poor torso armor.",
+    "items": [
+      { "item": "football_armor", "prob": 15 },
+      { "item": "chestguard_hard", "prob": 25 },
+      { "item": "vest_leather_mod", "prob": 95 },
+      { "item": "motorbike_armor", "prob": 95 },
+      { "item": "jacket_leather_mod", "prob": 95 },
+      { "item": "jacket_leather_bone", "prob": 1 },
+      { "item": "cuirass_scrap", "prob": 5 },
+      { "item": "fencing_jacket", "prob": 45 },
+      { "item": "armor_nomad", "prob": 75 },
+      { "item": "armor_riot", "prob": 75 },
+      { "item": "armor_scavenger", "prob": 85 },
+      { "item": "armor_scrapsuit", "prob": 85 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_leg",
+    "//": "Makeshift or otherwise poor leg armor.",
+    "items": [
+      { "item": "legguard_paper", "prob": 95 },
+      { "item": "2byshin_guard", "prob": 95 },
+      { "item": "legguard_scrap", "prob": 95 },
+      { "item": "legguard_metal", "prob": 85 },
+      { "item": "legguard_hard", "prob": 85 },
+      { "item": "knee_pads", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_leg",
+    "//": "Makeshift or otherwise poor leg armor.",
+    "items": [
+      { "item": "legguard_paper", "prob": 95 },
+      { "item": "2byshin_guard", "prob": 95 },
+      { "item": "legguard_scrap", "prob": 95 },
+      { "item": "legguard_metal", "prob": 85 },
+      { "item": "legguard_hard", "prob": 85 },
+      { "item": "knee_pads", "prob": 15 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_hand",
+    "//": "Makeshift or otherwise poor hand armor.",
+    "items": [
+      { "item": "gloves_bag", "prob": 95 },
+      { "item": "gloves_golf", "prob": 95 },
+      { "item": "gloves_wraps", "prob": 65 },
+      { "item": "gloves_fingerless", "prob": 95 },
+      { "item": "gloves_fingerless_mod", "prob": 85 },
+      { "item": "gloves_wool", "prob": 85 },
+      { "item": "gloves_work", "prob": 85 },
+      { "item": "beekeeping_gloves", "prob": 75 },
+      { "item": "gloves_rubber", "prob": 35 },
+      { "item": "fire_gauntlets", "prob": 35 },
+      { "item": "gloves_leather", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_head",
+    "//": "Makeshift or otherwise poor leg armor.",
+    "items": [
+      { "item": "pot_helmet", "prob": 95 },
+      { "item": "helmet_scavenger", "prob": 95 },
+      { "item": "helmet_scrap", "prob": 95 },
+      { "item": "helmet_football", "prob": 95 },
+      { "item": "helmet_ball", "prob": 95 },
+      { "item": "helmet_bike", "prob": 75 },
+      { "item": "helmet_larmor", "prob": 45 },
+      { "item": "firehelmet", "prob": 25 },
+      { "item": "helmet_army", "prob": 5 },
+      { "item": "tac_fullhelmet", "prob": 1 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_armor_improvised_eye",
+    "//": "Makeshift or otherwise poor eye armor.",
+    "items": [
+      { "item": "glasses_safety", "prob": 90 },
+      { "item": "iggaak", "prob": 20 },
+      { "item": "goggles_ski", "prob": 25 },
+      { "item": "goggles_welding", "prob": 15 },
+      { "item": "glasses_bal", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_armor_upgraded_eye",
+    "//": "Looted, manufactured, or otherwise good eye armor.",
+    "items": [
+      { "item": "glasses_safety", "prob": 1 },
+      { "item": "goggles_ski", "prob": 5 },
+      { "item": "goggles_welding", "prob": 15 },
+      { "item": "survivor_goggles", "prob": 85 },
+      { "item": "glasses_bal", "prob": 75 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_pistol_improvised",
+    "//": "Makeshift or otherwise poor quality pistols.",
+    "items": [
+      { "item": "ashot", "prob": 100 },
+      { "item": "surv_hand_cannon", "prob": 100, "charges-min": 4, "charges-max": 5 },
+      { "item": "surv_six_shooter", "prob": 100, "charges-min": 5, "charges-max": 6 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_pistol_military",
+    "//": "Pistols looted from military areas.",
+    "items": [
+      { "item": "m17", "prob": 100, "charges-min": 17, "charges-max": 17 },
+      { "item": "glock_18c", "prob": 70, "charges-min": 17, "charges-max": 17 },
+      { "item": "glock_18c", "prob": 70, "charges-min": 17, "charges-max": 17 },
+      { "item": "mk23", "prob": 10, "charges-min": 12, "charges-max": 12 },
+      { "item": "usp_45", "prob": 15, "charges-min": 12, "charges-max": 12 },
+      { "item": "m1911_MEU", "prob": 5, "charges-min": 7, "charges-max": 7 },
+      { "item": "glock_19", "prob": 20, "charges-min": 15, "charges-max": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_pistol_common",
+    "//": "Pistols looted from gun stores.",
+    "items": [
+      { "item": "glock_17", "prob": 35, "charges-min": 17, "charges-max": 15 },
+      { "item": "glock_19", "prob": 50, "charges-min": 15, "charges-max": 15 },
+      { "item": "glock_21", "prob": 8, "charges-min": 15, "charges-max": 15 },
+      { "item": "glock_22", "prob": 35, "charges-min": 15, "charges-max": 15 },
+      { "item": "glock_31", "prob": 15, "charges-min": 15, "charges-max": 15 },
+      { "item": "m1911", "prob": 50, "charges-min": 7, "charges-max": 7 },
+      { "item": "m9", "prob": 30, "charges-min": 15, "charges-max": 15 },
+      { "item": "px4", "prob": 24, "charges-min": 15, "charges-max": 15 },
+      { "item": "px4_40", "prob": 20, "charges-min": 14, "charges-max": 14 },
+      { "item": "ruger_lcr_38", "prob": 10, "charges-min": 5, "charges-max": 5 },
+      { "item": "sig_mosquito", "prob": 15, "charges-min": 10, "charges-max": 10 },
+      { "item": "sw_22", "prob": 15, "charges-min": 10, "charges-max": 10 },
+      { "item": "sw_610", "prob": 20, "charges-min": 6, "charges-max": 6 },
+      { "item": "sw_619", "prob": 25, "charges-min": 7, "charges-max": 7 },
+      { "item": "model_10_revolver", "prob": 20, "charges-min": 6, "charges-max": 6 },
+      { "item": "taurus_spectrum", "prob": 15, "charges-min": 6, "charges-max": 6 },
+      { "item": "p226_357sig", "prob": 20, "charges-min": 14, "charges-max": 15 },
+      { "item": "p320_357sig", "prob": 10, "charges-min": 14, "charges-max": 14 },
+      { "item": "kp32", "prob": 10, "charges-min": 7, "charges-max": 7 },
+      { "item": "kp3at", "prob": 35, "charges-min": 8, "charges-max": 6 },
+      { "item": "rugerlcp", "prob": 35, "charges-min": 6, "charges-max": 6 },
+      { "item": "kpf9", "prob": 35, "charges-min": 7, "charges-max": 7 },
+      { "item": "hi_power_9mm", "prob": 5, "charges-min": 15, "charges-max": 15 },
+      { "item": "hi_power_40", "prob": 3, "charges-min": 10, "charges-max": 10 },
+      { "item": "walther_p38", "prob": 2, "charges-min": 8, "charges-max": 8 },
+      { "item": "walther_ppq_9mm", "prob": 9, "charges-min": 17, "charges-max": 17 },
+      { "item": "walther_ppq_40", "prob": 5, "charges-min": 14, "charges-max": 14 },
+      { "item": "walther_ppq_45", "prob": 3, "charges-min": 12, "charges-max": 12 },
+      { "item": "hptc9", "prob": 3, "charges-min": 15, "charges-max": 15 },
+      { "item": "hptcf380", "prob": 2, "charges-min": 10, "charges-max": 10 },
+      { "item": "hptjcp", "prob": 1, "charges-min": 10, "charges-max": 10 },
+      { "item": "hptjhp", "prob": 1, "charges-min": 9, "charges-max": 9 },
+      { "item": "cz75", "prob": 18, "charges-min": 26, "charges-max": 26 },
+      { "item": "walther_ccp", "prob": 8, "charges-min": 8, "charges-max": 8 },
+      { "item": "walther_p22", "prob": 13, "charges-min": 10, "charges-max": 10 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_rifle_improvised",
+    "//": "Makeshift or otherwise poor quality rifles.",
+    "items": [
+      { "item": "rifle_22", "prob": 20 },
+      { "item": "rifle_3006", "prob": 30 },
+      { "item": "rifle_9mm", "prob": 90 },
+      { "item": "surv_carbine_223", "prob": 120, "charges-min": 0, "charges-max": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_rifle_common",
+    "//": "Rifles commonly owned by citizens and found in many locations.",
+    "items": [
+      { "item": "browning_blr", "prob": 25, "charges-min": 4, "charges-max": 4 },
+      { "item": "ar_pistol", "prob": 52, "charges-min": 30, "charges-max": 30 },
+      { "item": "garand", "prob": 65, "charges-min": 8, "charges-max": 8 },
+      { "item": "ar10", "prob": 20, "charges-min": 20, "charges-max": 20 },
+      { "item": "ar15", "prob": 30, "charges-min": 30, "charges-max": 30 },
+      { "item": "cx4", "prob": 45, "charges-min": 15, "charges-max": 15 },
+      { "item": "ksub2000", "prob": 30, "charges-min": 15, "charges-max": 15 },
+      { "item": "m1a", "prob": 50, "charges-min": 5, "charges-max": 5 },
+      { "item": "marlin_9a", "prob": 80, "charges-min": 19, "charges-max": 19 },
+      { "item": "mosin44", "prob": 15, "charges-min": 5, "charges-max": 5 },
+      { "item": "mosin91_30", "prob": 25, "charges-min": 5, "charges-max": 5 },
+      { "item": "remington700_270", "prob": 50, "charges-min": 4, "charges-max": 4 },
+      { "item": "ruger_1022", "prob": 70, "charges-min": 10, "charges-max": 10 },
+      { "item": "ruger_mini", "prob": 60, "charges-min": 5, "charges-max": 5 },
+      { "item": "sks", "prob": 40, "charges-min": 10, "charges-max": 10 },
+      { "item": "win70", "prob": 15, "charges-min": 3, "charges-max": 3 },
+      { "item": "1895sbl", "prob": 15, "charges-min": 7, "charges-max": 7 },
+      { "item": "aksemi", "prob": 35, "charges-min": 30, "charges-max": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_rifle_military",
+    "//": "Military specification rifles only ever found at military sites.",
+    "items": [
+      { "item": "h&k416a5", "prob": 50, "charges-min": 30, "charges-max": 30 },
+      { "item": "m107a1", "prob": 30, "charges-min": 10, "charges-max": 10 },
+      { "item": "m134", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "m14ebr", "prob": 10, "charges-min": 20, "charges-max": 20 },
+      { "item": "tac50", "prob": 5, "charges-min": 5, "charges-max": 5 },
+      { "item": "m2010", "prob": 20, "charges-min": 5, "charges-max": 5 },
+      { "item": "m240", "prob": 15, "charges-min": 100, "charges-max": 100 },
+      { "item": "m249", "prob": 25, "charges-min": 10, "charges-max": 10 },
+      { "item": "m27iar", "prob": 50, "charges-min": 30, "charges-max": 30 },
+      { "item": "m60", "prob": 15, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm11b_sniper_rifle", "prob": 15, "charges-min": 10, "charges-max": 10 },
+      { "item": "rm298", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm51_assault_rifle", "prob": 25, "charges-min": 50, "charges-max": 50 },
+      { "item": "rm614_lmg", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm88_battle_rifle", "prob": 25, "charges-min": 50, "charges-max": 50 },
+      { "item": "sig552", "prob": 100, "charges-min": 30, "charges-max": 30 },
+      { "item": "scar_l", "prob": 50, "charges-min": 30, "charges-max": 30 },
+      { "item": "scar_h", "prob": 50, "charges-min": 20, "charges-max": 20 },
+      { "item": "m110a1", "prob": 50, "charges-min": 20, "charges-max": 20 },
+      { "item": "acr_300blk", "prob": 15, "charges-min": 30, "charges-max": 30 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_smg_improvised",
+    "//": "Makeshift or otherwise poor quality SMGs.",
+    "items": [ [ "smg_40", 40 ], [ "smg_45", 40 ], [ "smg_9mm", 150 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_smg_common",
+    "//": "SMGs commonly owned by citizens and found in many locations.",
+    "items": [
+      { "item": "tommygun", "prob": 70, "charges-min": 20, "charges-max": 20 },
+      { "item": "hk_mp5_semi_pistol", "prob": 70, "charges-min": 30, "charges-max": 30 },
+      { "item": "sten", "prob": 100, "charges-min": 32, "charges-max": 32 },
+      { "item": "uzi", "prob": 100, "charges-min": 32, "charges-max": 32 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_smg_military",
+    "//": "Military specification SMGs only ever found at military sites.",
+    "items": [
+      { "item": "hk_mp7", "prob": 100, "charges-min": 20, "charges-max": 20 },
+      { "item": "needlegun", "prob": 30, "charges-min": 50, "charges-max": 50 },
+      { "item": "rm2000_smg", "prob": 50, "charges-min": 10, "charges-max": 10 },
+      { "item": "hk_mp5", "prob": 100, "charges-min": 30, "charges-max": 30 },
+      { "item": "hk_mp5k", "prob": 10, "charges-min": 30, "charges-max": 30 },
+      { "item": "hk_mp5sd", "prob": 5, "charges-min": 30, "charges-max": 30 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_shotgun_improvised",
+    "//": "Makeshift or otherwise poor quality shotguns.",
+    "items": [
+      { "item": "blunderbuss", "prob": 70 },
+      { "item": "bigun", "prob": 10, "charges-min": 6, "charges-max": 6 },
+      { "item": "pipe_double_shotgun", "prob": 70, "charges-min": 2, "charges-max": 2 },
+      { "item": "pipe_shotgun", "prob": 100 },
+      { "item": "revolver_shotgun", "prob": 30, "charges-min": 6, "charges-max": 6 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_shotgun_common",
+    "//": "Shotguns commonly owned by citizens and found in many locations.",
+    "items": [
+      { "item": "mossberg_500", "prob": 33, "charges-min": 6, "charges-max": 6 },
+      { "item": "remington_870", "prob": 35, "charges-min": 6, "charges-max": 6 },
+      { "item": "mossberg_500_security", "prob": 17, "charges-min": 6, "charges-max": 6 },
+      { "item": "remington_870_express", "prob": 18, "charges-min": 6, "charges-max": 6 },
+      { "item": "browning_a5", "prob": 14, "charges-min": 5, "charges-max": 5 },
+      { "item": "remington_1100", "prob": 17, "charges-min": 10, "charges-max": 10 },
+      { "item": "mossberg_930", "prob": 15, "charges-min": 6, "charges-max": 6 },
+      { "item": "shotgun_410", "prob": 30, "charges-min": 1, "charges-max": 1 },
+      { "item": "shotgun_d", "prob": 30, "charges-min": 2, "charges-max": 2 },
+      { "item": "shotgun_s", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "DKZ_guns_shotgun_military",
+    "//": "Military shotguns currently in service.",
+    "items": [
+      { "item": "rm20", "prob": 20, "charges-min": 20, "charges-max": 20 },
+      { "item": "remington_870_express", "prob": 50, "charges-min": 6, "charges-max": 6 },
+      { "item": "remington_870_breacher", "prob": 20, "charges-min": 4, "charges-max": 4 },
+      { "item": "mossberg_590", "prob": 50, "charges-min": 9, "charges-max": 9 },
+      { "item": "m1014", "prob": 100, "charges-min": 8, "charges-max": 8 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_energy",
+    "//": "Assorted factory crafted energy weapons.",
+    "items": [
+      { "item": "laser_rifle", "prob": 30 },
+      { "item": "emp_gun", "prob": 10 },
+      { "item": "v29", "prob": 70 },
+      { "item": "plasma_gun", "prob": 10 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_caseless",
+    "//": "Assorted factory crafted caseless weapons.",
+    "items": [
+      { "item": "rm120c", "prob": 15, "charges-min": 5, "charges-max": 5 },
+      { "item": "rm20", "prob": 15, "charges-min": 20, "charges-max": 20 },
+      { "item": "rm11b_sniper_rifle", "prob": 15, "charges-min": 10, "charges-max": 10 },
+      { "item": "rm298", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm51_assault_rifle", "prob": 25, "charges-min": 50, "charges-max": 50 },
+      { "item": "rm614_lmg", "prob": 10, "charges-min": 100, "charges-max": 100 },
+      { "item": "rm88_battle_rifle", "prob": 25, "charges-min": 50, "charges-max": 50 },
+      { "item": "rm99_pistol", "prob": 25, "charges-min": 5, "charges-max": 5 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_guns_launcher_improvised",
+    "//": "Makeshift or otherwise poor quality grenade and rocket launchers",
+    "items": [
+      { "item": "launcher_simple", "prob": 100 },
+      { "item": "triple_launcher_simple", "prob": 15, "charges-min": 3, "charges-max": 3 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_cutting_improvised",
+    "//": "Makeshift or otherwise poor quality cutting weapons.",
+    "items": [
+      { "item": "knife_steak", "prob": 90 },
+      { "item": "knife_butcher", "prob": 90 },
+      { "item": "knife_chef", "prob": 70 },
+      { "item": "makeshift_knife", "prob": 80 },
+      { "item": "knife_paring", "prob": 70 },
+      { "item": "knife_meat_cleaver", "prob": 50 },
+      { "item": "knife_vegetable_cleaver", "prob": 50 },
+      { "item": "knife_hunting", "prob": 10 },
+      { "item": "switchblade", "prob": 1 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_cutting_military",
+    "//": "Military quality cutting weapons.",
+    "items": [
+      { "item": "switchblade", "prob": 5 },
+      { "item": "knife_combat", "prob": 150 },
+      { "item": "knife_rambo", "prob": 80 },
+      { "item": "knife_hunting", "prob": 50 },
+      { "item": "knife_rm42", "prob": 50 },
+      { "item": "knife_trench", "prob": 90 },
+      { "item": "sword_bayonet", "prob": 20 },
+      { "item": "kukri", "prob": 10 }
+    ]
+  },
+  {
+    "//1": "-----------------------------------------------------------------------------------------------------------------------",
+    "type": "item_group",
+    "id": "DKZ_bashing_improvised",
+    "//": "Makeshift or otherwise poor quality bashing weapons.",
+    "items": [
+      { "item": "golf_club", "prob": 90 },
+      { "item": "hockey_stick", "prob": 90 },
+      { "item": "pipe", "prob": 90 },
+      { "item": "nailbat", "prob": 90 },
+      { "item": "bat", "prob": 70 },
+      { "item": "bat_metal", "prob": 70 },
+      { "item": "baton-extended", "prob": 70 },
+      { "item": "shillelagh", "prob": 15 },
+      { "item": "cudgel", "prob": 50 },
+      { "item": "homewrecker", "prob": 50 },
+      { "item": "q_staff", "prob": 10 },
+      { "item": "i_staff", "prob": 5 },
+      { "item": "tonfa", "prob": 20 },
+      { "item": "tonfa_wood", "prob": 10 },
+      { "item": "pool_cue", "prob": 70 }
+    ]
+  }
+]
