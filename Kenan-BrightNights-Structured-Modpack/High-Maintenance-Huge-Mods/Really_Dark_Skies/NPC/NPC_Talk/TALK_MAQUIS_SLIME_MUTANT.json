@@ -1,0 +1,64 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SLIME_MUTANT_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "What faint light brought you down here, marshal?", "Are you looking for something, sir?" ],
+      "no": [ "We don't bother anyone down here and expect the same from others.", "What brings you down here, scavenger." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_SLIME_MUTANT_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_SLIME_MUTANT_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_SLIME_MUTANT_BIG_BROTHER"
+      },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SLIME_MUTANT_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "He's probably up on the roof chatting with the snipers posted up there.", "He's very rarely around here" ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SLIME_MUTANT_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Just contemplating what its like being a mutant insect during the end of the world.",
+      "Rule #1: No Killing, the penalty is death.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_SLIME_MUTANT_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_SLIME_MUTANT_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  }
+]

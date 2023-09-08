@@ -1,0 +1,91 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Are you lost, marshal?", "Don't start any trouble marshal, you aren't the law anymore." ],
+      "no": [ "Don't cause any trouble here, I'd rather kill monsters than people.", "Safe travels." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a volunteer for a combat mission, interested?",
+        "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "combat_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_COMBAT" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_GUNSLINGER_DOING" },
+      { "text": "What is upstairs?", "topic": "TALK_MAQUIS_GUNSLINGER_UPSTAIRS" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_GUNSLINGER_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "Maquis_Gunslinger_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Mr. Erikson is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There are some mutants in the upper floors and some in the basement, but they're good people.  So long as you don't stare at the heavily deformed ones.",
+      "My trigger finger is itching, must be some trouble on the horizon.",
+      "I keep the peace down here between other scavengers, but everyone is very civil to each other since there are monsters outside."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "Ok, I'll leave you to it.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUNSLINGER_UPSTAIRS",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Sometimes I'll go up to the roof to help with sniper overwatch.  Its fun to use the really powerful rifles even if we can't take them down here.",
+      "I only go upstairs to check out the casino, its fun to use looted cash cards to gamble.  I'm up almost a hundred-thousand dollars.",
+      "The library is nice, they're always on the look for more books, the more rare, the more they'll give for them."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_GUNSLINGER_ROOT" },
+      { "text": "Well, bye.", "topic": "TALK_DONE" }
+    ]
+  }
+]

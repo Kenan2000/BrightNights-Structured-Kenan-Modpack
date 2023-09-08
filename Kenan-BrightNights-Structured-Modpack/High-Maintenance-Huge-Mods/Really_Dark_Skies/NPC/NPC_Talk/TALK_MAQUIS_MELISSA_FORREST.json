@@ -1,0 +1,71 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MELISSA_FORREST_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": [ "Greetings.", "Hello." ],
+    "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_MELISSA_FORREST_TRADE" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MELISSA_FORREST_DOING" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_MELISSA_FORREST_LEADERSHIP" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_MELISSA_FORREST_BIG_BROTHER"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MELISSA_FORREST_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Mr. Erikson is not on the farm, he's probably back at Barter Tower directing local resistance operations against the Xenoids."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MELISSA_FORREST_LEADERSHIP",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "MrEriksonExists",
+      "type": "knowledge",
+      "context": "flag",
+      "value": "yes",
+      "yes": "Mr. Erikson is back at his office.",
+      "no": "Mr. Erikson is probably back at his office."
+    },
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MELISSA_FORREST_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm contemplating what it means to be a plant." ],
+    "responses": [
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_MELISSA_FORREST_TRADE" },
+      { "text": "Interesting.", "topic": "TALK_MAQUIS_MELISSA_FORREST_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MELISSA_FORREST_TRADE",
+    "type": "talk_topic",
+    "dynamic_line": [ "All I need is sunlight." ],
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE" } ]
+  }
+]

@@ -1,0 +1,76 @@
+[
+
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MECHANIC_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_is_wearing": "badge_marshal",
+      "yes": [ "Are you lost, marshal?", "Oh, a U.S. marshal, where did all of you guys go?." ],
+      "no": [ "Welcome…", "Here to trade, I hope?", "Safe travels." ]
+    },
+    "responses": [
+      {
+        "text": "Lets set a combat strategy",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "techical_recruit", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      {
+        "text": "I need a technician for an upcoming mission, interested?",
+        "topic": "TALK_MAQUIS_TECHNICAL_RECRUIT",
+        "condition": {
+          "and": [
+            { "u_compare_var": "maquis_recruit", "type": "counter", "context": "techical_recruit", "op": ">", "value": 0 },
+            { "npc_has_trait": "DKZ_TECH" }
+          ]
+        }
+      },
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MECHANIC_ROOT" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_MECHANIC_DOING" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_MECHANIC_BIG_BROTHER"
+      },
+      {
+        "text": "Is there anything I can do to help you out?",
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "Maquis_Mechanic_Mission1", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "topic": "TALK_MISSION_LIST"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MECHANIC_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [ "I'm not sure where Mr. Erikson is at right now." ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MECHANIC_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "There is an arrangement with everyone that lives here, the bottom two floors are a free trade zone and the upper floors are for the alien resistance operation.  We all help them keep the outside defences in place and warn of any zombies or xenoids around the perimeter.  They really help provide cover when we're moving cars in or out.",
+      "I found this vehicle here and I don't know if I should repair it or use it for parts.  Either way it will make me some money somehow."
+    ],
+    "responses": [
+      { "text": "Let's trade.", "effect": "start_trade", "topic": "TALK_MAQUIS_MECHANIC_ROOT" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_MECHANIC_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  }
+]

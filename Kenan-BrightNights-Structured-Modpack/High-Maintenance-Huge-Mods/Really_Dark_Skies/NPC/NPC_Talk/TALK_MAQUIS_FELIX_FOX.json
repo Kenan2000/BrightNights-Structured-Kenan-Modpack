@@ -1,0 +1,94 @@
+[
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_ROOT",
+    "type": "talk_topic",
+    "dynamic_line": [ "what's up dude?.", "Hey how's it going man?." ],
+    "responses": [
+      {
+        "text": "Lets set a combat strategy…",
+        "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "maquis", "value": "yes" },
+        "topic": "TALK_COMBAT_COMMANDS"
+      },
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_FELIX_FOX_DOING" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP" },
+      {
+        "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "condition": {
+          "and": [
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
+      },
+      {
+        "text": "[RP] I am a member of the Maquis, I need to get to the nearest base.",
+        "condition": {
+          "and": [
+            { "u_has_any_trait": [ "DKZ_COMBAT", "DKZ_TECH", "DKZ_SCIENTIST", "DKZ_MEDIC", "DKZ_LEADER" ] },
+            { "not": { "u_has_var": "MrEriksonExists", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" } },
+            { "not": { "u_has_mission": "MISSION_GO_MEET_THE_BIG_FED" } },
+            { "not": "has_many_assigned_mission" },
+            { "not": "has_assigned_mission" }
+          ]
+        },
+        "effect": { "add_mission": "MISSION_GO_MEET_THE_BIG_FED" },
+        "topic": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER"
+      },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
+      { "text": "See you later.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Ha, the spooky Chad is back his usual office on the seventh floor of Barter Tower.  The Princess is in another castle!"
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_has_var": "MrEriksonExists",
+      "type": "knowledge",
+      "context": "flag",
+      "value": "yes",
+      "yes": "No man, that sounds like too much work.  I'm just the point man here on the farm.  It takes a lot to keep this place going even before the world ended.  The Chad is in charge of everything but he is at Barter Tower.",
+      "no": "No man, that sounds like too much work.  There is some fed based out of a strange sky-scraper they call 'Barter Tower'."
+    },
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_DOING",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Protecting my homestead from zombies, aliens and Canadians.  Or at least two of those!",
+      "I'm keeping my little territory here sovereign against alien invaders!"
+    ],
+    "responses": [
+      { "text": "Let's trade.", "topic": "TALK_MAQUIS_FELIX_FOX_TRADE" },
+      { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_FELIX_FOX_LEADERSHIP" },
+      { "text": "Nice arrangement for everyone.", "topic": "TALK_MAQUIS_FELIX_FOX_ROOT" },
+      { "text": "Ok, good bye.", "topic": "TALK_DONE" }
+    ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_FELIX_FOX_TRADE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "No. I'm good, I have everything I need.",
+      "I do not have anything for sale, man.  There a merchant around somewhere."
+    ],
+    "responses": [ { "text": "Well, bye.", "topic": "TALK_DONE" } ]
+  }
+]
