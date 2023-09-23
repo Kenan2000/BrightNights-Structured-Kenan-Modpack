@@ -22,6 +22,11 @@
     }
   },
   {
+    "type": "effect_type",
+    "id": "med_x_effect",
+    "removes_effects": [ "poison", "badpoison", "foodpoison", "paralyzepoison" ]
+  },
+  {
     "id": "med_x",
     "type": "COMESTIBLE",
     "comestible_type": "MED",

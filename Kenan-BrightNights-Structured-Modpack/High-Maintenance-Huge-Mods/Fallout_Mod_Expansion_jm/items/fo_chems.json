@@ -56,11 +56,12 @@
       "speed_mod": [ 15 ],
       "str_mod": [ 2 ],
       "per_mod": [ 2 ],
+      "stim_tick": [ 42 ],
       "stim_min": [ 3 ],
-      "stim_max": [ 8 ],
+      "stim_max": [ 5 ],
       "stamina_min": [ 100 ]
     },
-    "scaling_mods": { "speed_mod": [ 2 ], "int_mod": [ -0.8 ], "vomit_chance": [ 15 ], "stim_min": [ 2 ], "stim_max": [ 6 ] }
+    "scaling_mods": { "speed_mod": [ 2 ], "int_mod": [ -0.8 ], "vomit_chance": [ 15 ], "stim_tick": [ 42 ], "stim_min": [ 3 ], "stim_max": [ 3 ] }
   },
   {
     "id": "fo_jet_kit",
@@ -81,7 +82,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You activate the jet applicator and feel a rush of energy!",
-      "effects": [ { "id": "fo_mob_jetdrug", "duration": "5 minutes" } ],
+      "effects": [ { "id": "fo_mob_jetdrug", "duration": "8 minutes" } ],
       "used_up_item": "fo_jet_empty"
     }
   },
@@ -100,11 +101,12 @@
       "speed_mod": [ 25 ],
       "str_mod": [ 3 ],
       "per_mod": [ 3 ],
+      "stim_tick": [ 42 ],
       "stim_min": [ 3 ],
-      "stim_max": [ 8 ],
+      "stim_max": [ 5 ],
       "stamina_min": [ 150 ]
     },
-    "scaling_mods": { "speed_mod": [ 5 ], "int_mod": [ -0.5 ], "vomit_chance": [ 15 ], "stim_min": [ 2 ], "stim_max": [ 6 ] }
+    "scaling_mods": { "speed_mod": [ 5 ], "int_mod": [ -0.5 ], "vomit_chance": [ 15 ], "stim_tick": [ 42 ], "stim_min": [ 3 ], "stim_max": [ 3 ] }
   },
   {
     "id": "fo_ultrajet_kit",
@@ -126,7 +128,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You activate the jet applicator and feel a rush of energy!",
-      "effects": [ { "id": "fo_mob_ultrajetdrug", "duration": "5 minutes" } ],
+      "effects": [ { "id": "fo_mob_ultrajetdrug", "duration": "8 minutes" } ],
       "used_up_item": "fo_jet_empty"
     }
   },
@@ -147,9 +149,9 @@
     "type": "effect_type",
     "id": "fo_mob_psychodrug",
     "name": [ "High on Psycho" ],
-    "desc": [ "Your speed, perception and reaction time have been boosted by jet." ],
-    "apply_message": "You inhale a charge of jet and quickly feel your synapses sharpen and your speed increase.",
-    "remove_message": "The jet's effect wears off.",
+    "desc": [ "Your speed, perception, strength, pain resistance and reaction time have been boosted by psycho." ],
+    "apply_message": "You inject yourself with psycho and quickly feel a surge of aggression with endurance of a trained soldier.",
+    "remove_message": "The psycho's effect wears off.",
     "rating": "good",
     "max_intensity": 4,
     "int_add_val": 1,
@@ -159,8 +161,9 @@
       "str_mod": [ 2 ],
       "per_mod": [ 2 ],
       "stamina_min": [ 65 ],
-      "pkill_min": [ 10 ],
-      "pkill_max": [ 15 ]
+      "pkill_tick": [ 42 ],
+      "pkill_min": [ 3 ],
+      "pkill_max": [ 5 ]
     },
     "scaling_mods": { "speed_mod": [ 2 ], "int_mod": [ -0.8 ], "stamina_amount": [ 4 ] }
   },
@@ -182,8 +185,8 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "use_action": {
       "type": "consume_drug",
-      "activation_message": "You activate the jet applicator and feel a rush of energy!",
-      "effects": [ { "id": "fo_mob_psychodrug", "duration": "5 minutes" } ],
+      "activation_message": "You inject yourself with psycho and quickly feel a surge of aggression with endurance of a trained soldier!",
+      "effects": [ { "id": "fo_mob_psychodrug", "duration": "8 minutes" } ],
       "used_up_item": "fo_psycho_empty"
     }
   },
@@ -239,14 +242,14 @@
     "id": "fo_mob_buffoutdrug",
     "name": [ "High on Buffout" ],
     "desc": [ "Your strength, agility and pain resistance have increased." ],
-    "apply_message": "You take a mentat pill and feel your mind expand within an instant.",
-    "remove_message": "The mentat's effect wears off.",
+    "apply_message": "You take a buffout pill and instantly feel your strength, reflexes with endurance greatly increased.",
+    "remove_message": "The buffout's effect wears off.",
     "rating": "good",
     "max_intensity": 3,
     "int_add_val": 1,
     "int_decay_tick": 400,
-    "base_mods": { "str_mod": [ 3 ], "dex_mod": [ 1 ], "pkill_min": [ 10 ], "pkill_max": [ 15 ], "stamina_min": [ 35 ] },
-    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 0.5 ], "pkill_min": [ 3 ], "pkill_max": [ 6 ] }
+    "base_mods": { "str_mod": [ 3 ], "dex_mod": [ 1 ], "pkill_tick": [ 42 ], "pkill_min": [ 3 ], "pkill_max": [ 5 ], "stamina_min": [ 35 ] },
+    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 0.5 ], "pkill_tick": [ 42 ], "pkill_min": [ 3 ], "pkill_max": [ 3 ] }
   },
   {
     "id": "fo_buffout_kit",
@@ -264,8 +267,8 @@
     "flags": [ "IRREPLACEABLE_CONSUMABLE" ],
     "use_action": {
       "type": "consume_drug",
-      "activation_message": "You consume a mentat and feel your synapses start to flood your mind with new information!",
-      "effects": [ { "id": "fo_mob_buffoutdrug", "duration": "30 minutes" } ]
+      "activation_message": "You take a buffout pill and instantly feel your strength, reflexes with endurance greatly increased!",
+      "effects": [ { "id": "fo_mob_buffoutdrug", "duration": "8 minutes" } ]
     }
   },
   {
@@ -286,7 +289,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You activate the radaway.",
-      "effects": [ { "id": "fo_mob_radaway", "duration": "40 minutes" } ],
+      "effects": [ { "id": "fo_mob_radaway", "duration": "42 minutes" } ],
       "used_up_item": "bag_iv"
     }
   },
@@ -304,4 +307,9 @@
     "base_mods": { "rad_chance": [ 10 ], "rad_min": [ -1 ] },
     "scaling_mods": { "rad_min": [ -1 ], "rad_max": [ -2 ] }
   }
+
+
+
+
+
 ]
