@@ -1,213 +1,239 @@
-[{
-    "abstract" : "blob_tool",
-    "type" : "vehicle_part",
+[
+  {
+    "abstract": "blob_tool",
+    "type": "vehicle_part",
     "folded_volume": 1,
     "requirements": { "repair": { "time": "5 m", "using": [ [ "blobrep", 1 ] ] } }
   },
   {
-    "abstract" : "gray_part",
-    "type" : "vehicle_part",
-    "copy-from" : "blob_tool",
-    "name" : "metalloid part",
-    "item" : "gray",
-    "color" : "light_gray",
-    "broken_color" : "light_gray",
-    "difficulty" : 1,
-    "durability" : 1000,
-    "damage_modifier" : 10,
-    "breaks_into" : [{
-        "item" : "slime_scrap",
-        "count" : [3, 8]
-      }
-    ],
-    "damage_reduction" : {
-      "all" : 10
-    }
-  }, {
-    "abstract" : "gray_frame",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_part",
-    "location" : "structure",
-    "broken_symbol" : "#",
-    "name" : "metalloid frame",
-    "flags" : ["TOOL_NONE", "BOARDABLE", "MOUNTABLE", "AISLE"]
-  }, {
-    "id" : "gray_cross",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "c"
-  }, {
-    "id" : "gray_horizontal",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "h"
-  }, {
-    "id" : "gray_horizontal_2",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "="
-  }, {
-    "id" : "gray_ne",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "u"
-  }, {
-    "id" : "gray_nw",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "y"
-  }, {
-    "id" : "gray_se",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "n"
-  }, {
-    "id" : "gray_sw",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "b"
-  }, {
-    "id" : "gray_vertical",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "j"
-  }, {
-    "id" : "gray_vertical_2",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_frame",
-    "symbol" : "H"
-  }, {
-    "abstract" : "gray_board",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_part",
-    "location" : "center",
-    "broken_symbol" : "#",
-    "name" : "metalloid wall",
-    "flags" : ["OPAQUE", "OBSTACLE", "TOOL_NONE"]
-  }, {
-    "id" : "grayboard_horizontal",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_board",
-    "symbol" : "h"
-  }, {
-    "id" : "grayboard_ne",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_board",
-    "symbol" : "u"
-  }, {
-    "id" : "grayboard_nw",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_board",
-    "symbol" : "y"
-  }, {
-    "id" : "grayboard_se",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_board",
-    "symbol" : "n"
-  }, {
-    "id" : "grayboard_sw",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_board",
-    "symbol" : "b"
-  }, {
-    "id" : "grayboard_vertical",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_board",
-    "symbol" : "j"
-  }, {
-    "id" : "graydoor",
-    "type" : "vehicle_part",
-    "name" : "metalloid hatch",
-    "copy-from" : "gray_part",
-    "location" : "center",
-    "symbol" : "+",
-    "broken_symbol" : "&",
-    "flags" : ["OBSTACLE", "OPENABLE", "BOARDABLE", "WINDOW", "TOOL_NONE"]
-  }, {
-    "id" : "graydoor_opaque",
-    "type" : "vehicle_part",
-    "name" : "opaque metalloid hatch",
-    "copy-from" : "gray_board",
-    "item" : "gray",
-    "location" : "center",
-    "symbol" : "+",
-    "broken_symbol" : "&",
-    "flags" : ["OBSTACLE", "OPAQUE", "OPENABLE", "BOARDABLE", "TOOL_NONE"]
-  }, {
-    "abstract" : "gray_halfboard",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_part",
-    "location" : "center",
-    "broken_symbol" : "#",
-    "name" : "metalloid barrier",
-    "flags" : ["OBSTACLE", "TOOL_NONE"]
-  }, {
-    "id" : "halfgrayboard_horizontal",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "h"
-  }, {
-    "id" : "halfgrayboard_horizontal_2",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "="
-  }, {
-    "id" : "halfgrayboard_ne",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "u"
-  }, {
-    "id" : "halfgrayboard_nw",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "y"
-  }, {
-    "id" : "halfgrayboard_se",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "n"
-  }, {
-    "id" : "halfgrayboard_sw",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "b"
-  }, {
-    "id" : "halfgrayboard_vertical",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "j"
-  }, {
-    "id" : "halfgrayboard_vertical_2",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_halfboard",
-    "symbol" : "H"
-  }, {
-    "id" : "gray_seat",
-    "type" : "vehicle_part",
-    "copy-from" : "gray_part",
-    "name" : "metalloid seat",
-    "location" : "center",
-    "symbol" : "#",
-    "broken_symbol" : "*",
-    "flags" : ["SEAT", "BED", "BOARDABLE", "BELTABLE", "TOOL_NONE"]
-  }, {
-    "id" : "gray_plate",
-    "type" : "vehicle_part",
-    "name" : "metalloid reinforcement",
-    "copy-from" : "gray_part",
-    "location" : "armor",
-    "symbol" : "X",
-    "broken_symbol" : "*",
-    "flags" : ["ARMOR", "TOOL_NONE"]
-  }, {
-    "id" : "gray_roof",
-    "type" : "vehicle_part",
-    "name" : "metalloid roof",
-    "copy-from" : "gray_part",
-    "location" : "roof",
-    "symbol" : "#",
-    "broken_symbol" : "#",
-    "color" : "light_gray",
-    "flags" : ["ROOF", "TOOL_NONE"]
+    "abstract": "gray_part",
+    "type": "vehicle_part",
+    "copy-from": "blob_tool",
+    "name": "metalloid part",
+    "item": "gray",
+    "color": "light_gray",
+    "broken_color": "light_gray",
+    "difficulty": 1,
+    "durability": 1000,
+    "damage_modifier": 10,
+    "breaks_into": [ { "item": "slime_scrap", "count": [ 3, 8 ] } ],
+    "damage_reduction": { "all": 10 }
+  },
+  {
+    "abstract": "gray_frame",
+    "type": "vehicle_part",
+    "copy-from": "gray_part",
+    "location": "structure",
+    "broken_symbol": "#",
+    "name": "metalloid frame",
+    "flags": [ "TOOL_NONE", "BOARDABLE", "MOUNTABLE", "AISLE" ]
+  },
+  {
+    "id": "gray_cross",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "c"
+  },
+  {
+    "id": "gray_horizontal",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "h"
+  },
+  {
+    "id": "gray_horizontal_2",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "="
+  },
+  {
+    "id": "gray_ne",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "u"
+  },
+  {
+    "id": "gray_nw",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "y"
+  },
+  {
+    "id": "gray_se",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "n"
+  },
+  {
+    "id": "gray_sw",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "b"
+  },
+  {
+    "id": "gray_vertical",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "j"
+  },
+  {
+    "id": "gray_vertical_2",
+    "type": "vehicle_part",
+    "copy-from": "gray_frame",
+    "symbol": "H"
+  },
+  {
+    "abstract": "gray_board",
+    "type": "vehicle_part",
+    "copy-from": "gray_part",
+    "location": "center",
+    "broken_symbol": "#",
+    "name": "metalloid wall",
+    "flags": [ "OPAQUE", "OBSTACLE", "TOOL_NONE" ]
+  },
+  {
+    "id": "grayboard_horizontal",
+    "type": "vehicle_part",
+    "copy-from": "gray_board",
+    "symbol": "h"
+  },
+  {
+    "id": "grayboard_ne",
+    "type": "vehicle_part",
+    "copy-from": "gray_board",
+    "symbol": "u"
+  },
+  {
+    "id": "grayboard_nw",
+    "type": "vehicle_part",
+    "copy-from": "gray_board",
+    "symbol": "y"
+  },
+  {
+    "id": "grayboard_se",
+    "type": "vehicle_part",
+    "copy-from": "gray_board",
+    "symbol": "n"
+  },
+  {
+    "id": "grayboard_sw",
+    "type": "vehicle_part",
+    "copy-from": "gray_board",
+    "symbol": "b"
+  },
+  {
+    "id": "grayboard_vertical",
+    "type": "vehicle_part",
+    "copy-from": "gray_board",
+    "symbol": "j"
+  },
+  {
+    "id": "graydoor",
+    "type": "vehicle_part",
+    "name": "metalloid hatch",
+    "copy-from": "gray_part",
+    "location": "center",
+    "symbol": "+",
+    "broken_symbol": "&",
+    "flags": [ "OBSTACLE", "OPENABLE", "BOARDABLE", "WINDOW", "TOOL_NONE" ]
+  },
+  {
+    "id": "graydoor_opaque",
+    "type": "vehicle_part",
+    "name": "opaque metalloid hatch",
+    "copy-from": "gray_board",
+    "item": "gray",
+    "location": "center",
+    "symbol": "+",
+    "broken_symbol": "&",
+    "flags": [ "OBSTACLE", "OPAQUE", "OPENABLE", "BOARDABLE", "TOOL_NONE" ]
+  },
+  {
+    "abstract": "gray_halfboard",
+    "type": "vehicle_part",
+    "copy-from": "gray_part",
+    "location": "center",
+    "broken_symbol": "#",
+    "name": "metalloid barrier",
+    "flags": [ "OBSTACLE", "TOOL_NONE" ]
+  },
+  {
+    "id": "halfgrayboard_horizontal",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "h"
+  },
+  {
+    "id": "halfgrayboard_horizontal_2",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "="
+  },
+  {
+    "id": "halfgrayboard_ne",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "u"
+  },
+  {
+    "id": "halfgrayboard_nw",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "y"
+  },
+  {
+    "id": "halfgrayboard_se",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "n"
+  },
+  {
+    "id": "halfgrayboard_sw",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "b"
+  },
+  {
+    "id": "halfgrayboard_vertical",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "j"
+  },
+  {
+    "id": "halfgrayboard_vertical_2",
+    "type": "vehicle_part",
+    "copy-from": "gray_halfboard",
+    "symbol": "H"
+  },
+  {
+    "id": "gray_seat",
+    "type": "vehicle_part",
+    "copy-from": "gray_part",
+    "name": "metalloid seat",
+    "location": "center",
+    "symbol": "#",
+    "broken_symbol": "*",
+    "flags": [ "SEAT", "BED", "BOARDABLE", "BELTABLE", "TOOL_NONE" ]
+  },
+  {
+    "id": "gray_plate",
+    "type": "vehicle_part",
+    "name": "metalloid reinforcement",
+    "copy-from": "gray_part",
+    "location": "armor",
+    "symbol": "X",
+    "broken_symbol": "*",
+    "flags": [ "ARMOR", "TOOL_NONE" ]
+  },
+  {
+    "id": "gray_roof",
+    "type": "vehicle_part",
+    "name": "metalloid roof",
+    "copy-from": "gray_part",
+    "location": "roof",
+    "symbol": "#",
+    "broken_symbol": "#",
+    "color": "light_gray",
+    "flags": [ "ROOF", "TOOL_NONE" ]
   }
 ]
