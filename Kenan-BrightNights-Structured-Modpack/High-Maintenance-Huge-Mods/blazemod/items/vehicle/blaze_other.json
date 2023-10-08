@@ -82,68 +82,68 @@
     "id": "steam_triple_large",
     "copy-from": "engine_steam",
     "type": "ENGINE",
-    "name": "large steam engine",
+    "name": { "str": "large steam engine" },
     "description": "A large steam engine.  An integrated boiler burns coal to heat water into steam, driving a reciprocating shaft.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "280 kg",
     "volume": "95 L",
     "price": "14000 USD",
-    "price_postapoc": 2800000
+    "price_postapoc": "28000 USD"
   },
   {
     "id": "steam_triple_giant",
     "copy-from": "engine_steam",
     "type": "ENGINE",
-    "name": "huge steam engine",
+    "name": { "str": "huge steam engine" },
     "description": "A huge steam engine.  An integrated boiler burns coal to heat water into steam, driving a reciprocating shaft.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "835 kg",
     "volume": "175 L",
     "price": "25650 USD",
-    "price_postapoc": 5130000
+    "price_postapoc": "51300 USD"
   },
   {
     "id": "steam_turbine_small",
     "copy-from": "engine_steam",
     "type": "ENGINE",
-    "name": "small steam turbine",
+    "name": { "str": "small steam turbine" },
     "description": "A small steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "80 kg",
     "volume": "18750 ml",
     "//": "Steam turbine efficiency sucks - ideally 47% efficient with reheat cycles, versus 55% for a modern gas engine.  Going with 33% efficieny for easy math",
     "price": "2550 USD",
-    "price_postapoc": 510000
+    "price_postapoc": "5100 USD"
   },
   {
     "id": "steam_turbine_medium",
     "copy-from": "engine_steam",
     "type": "ENGINE",
-    "name": "medium steam turbine",
+    "name": { "str": "medium steam turbine" },
     "description": "A medium sized steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "120 kg",
     "volume": "27500 ml",
     "price": "3800 USD",
-    "price_postapoc": 760000
+    "price_postapoc": "7600 USD"
   },
   {
     "id": "steam_turbine_large",
     "copy-from": "engine_steam",
     "type": "ENGINE",
-    "name": "large steam turbine",
+    "name": { "str": "large steam turbine" },
     "description": "A large steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "190 kg",
     "volume": "45 L",
     "price": "5950 USD",
-    "price_postapoc": 1190000
+    "price_postapoc": "11900 USD"
   },
   {
     "id": "steam_turbine_giant",
     "copy-from": "engine_steam",
     "type": "ENGINE",
-    "name": "huge steam turbine",
+    "name": { "str": "huge steam turbine" },
     "description": "A huge steam turbine.  An integrated boiler burns coal to heat water into steam, driving a spinning turbine.  A condensor recaptures the water, making this a closed cycle system.",
     "weight": "345 kg",
     "volume": "81250 ml",
     "price": "10600 USD",
-    "price_postapoc": 2120000
+    "price_postapoc": "21200 USD"
   },
   {
     "id": "solar_array",
@@ -194,7 +194,7 @@
     "id": "tread1",
     "type": "WHEEL",
     "category": "veh_parts",
-    "name": "Rubber Caterpillar Track",
+    "name": { "str": "Rubber Caterpillar Track" },
     "description": "A short, interlocking set of hard rubber tracks reinforced by stiff wire held in place by a set of smaller wheels.  Similar with what you might see used on light construction vehicles.  It's significantly stronger than regular tires due to not being at risk of bursting; but is quite heavy.",
     "weight": "32368 g",
     "volume": "50 L",
@@ -211,7 +211,7 @@
     "id": "tread2",
     "type": "WHEEL",
     "category": "veh_parts",
-    "name": "Steel Caterpillar Track",
+    "name": { "str": "Steel Caterpillar Track" },
     "description": "A short, interlocking set of shaped steel tracks held in place by a set of smaller wheels.  Similar with what you might see used on large construction vehicles.  It's significantly stronger than regular tires due to not being at risk of bursting; but is very heavy.",
     "weight": "95968 g",
     "volume": "75 L",
@@ -228,7 +228,7 @@
     "id": "tread3",
     "type": "WHEEL",
     "category": "veh_parts",
-    "name": "Reinforced Caterpillar Track",
+    "name": { "str": "Reinforced Caterpillar Track" },
     "description": "A short, interlocking set of shaped steel tracks held in place by a set of smaller wheels.  Similar with what you might see used on APCs and armored vehicles.  It's significantly stronger than regular tires due to not being at risk of bursting; but is extremely heavy.",
     "weight": "287824 g",
     "volume": "87500 ml",

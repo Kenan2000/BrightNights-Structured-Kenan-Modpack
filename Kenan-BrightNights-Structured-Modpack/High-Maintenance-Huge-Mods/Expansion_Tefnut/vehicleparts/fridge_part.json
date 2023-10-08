@@ -2,7 +2,7 @@
   {
     "type": "vehicle_part",
     "id": "minifreezer_cargo_rack",
-    "name": "cargo freezer rack",
+    "name": { "str": "cargo freezer rack" },
     "symbol": "H",
     "color": "light_blue",
     "broken_symbol": "#",
@@ -11,7 +11,7 @@
     "damage_modifier": 80,
     "durability": 100,
     "epower": -60,
-    "size": 6000,
+    "size": "1500 L",
     "item": "minifreezer_cargo_rack",
     "location": "center",
     "requirements": {

@@ -2,7 +2,7 @@
 	{
 		"type" : "npc_class",
 		"id" : "NC_BERZERKER",
-		"name" : "Berzerker",
+		"name" : { "str": "Berzerker" },
 		"common" : false,
 		"job_description" : "BUG? You shouldn't be able to talk to them.",
 		"bonus_str" : { "rng" : [ 2, 4 ] },
@@ -33,7 +33,7 @@
 	{
 		"type" : "npc_class",
 		"id" : "NC_MILITIAKING",
-		"name" : "Militia King",
+		"name" : { "str": "Militia King" },
 		"common" : false,
 		"job_description" : "BUG? You shouldn't be able to talk to me.",
 		"bonus_str" : 5,

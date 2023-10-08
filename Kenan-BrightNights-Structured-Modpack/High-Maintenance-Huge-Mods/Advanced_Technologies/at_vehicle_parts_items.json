@@ -2,7 +2,7 @@
   {
     "type": "GENERIC",
     "id": "double_mil_plate",
-    "name": "thick composite plating",
+    "name": { "str": "thick composite plating" },
     "description": "A doubled up slab of military composite armor. If this doesn't protect you, nothing will.",
     "weight": "33 kg",
     "to_hit": -4,
@@ -13,7 +13,7 @@
     "bashing": 10,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 32000
+    "price": "320 USD"
   },
   {
     "type": "GENERIC",
@@ -29,7 +29,7 @@
     "bashing": 10,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 32000
+    "price": "320 USD"
   },
   {
     "type": "GENERIC",
@@ -45,7 +45,7 @@
     "bashing": 10,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 350
+    "price": "3 USD"
   },
   {
     "type": "GENERIC",
@@ -61,23 +61,23 @@
     "bashing": 10,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 124000
+    "price": "1240 USD"
   },
   {
     "type": "GENERIC",
     "id": "viewport",
     "name": { "str": "vehicle viewport" },
     "description": "a viewport for heavily armored vehicles usually used by the military.",
-    "weight": 40000,
+    "weight": "40000 g",
     "to_hit": -4,
     "color": "dark_gray",
     "symbol": "]",
     "material": [ "glass", "hardsteel" ],
-    "volume": 30,
+    "volume": "7500 ml",
     "bashing": 10,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 124000
+    "price": "1240 USD"
   },
   {
     "type": "WHEEL",
@@ -100,52 +100,52 @@
   {
     "type": "GENERIC",
     "id": "mil_bullbar",
-    "name": "Military Bullbar",
+    "name": { "str": "Military Bullbar" },
     "description": "A huge extra heavy duty bullbar for pushing cars and clearing brush. If this cant clear the path, nothing will.",
-    "weight": 78000,
+    "weight": "78000 g",
     "to_hit": -4,
     "color": "green",
     "symbol": "]",
     "material": [ "hardsteel" ],
-    "volume": 50,
+    "volume": "12500 ml",
     "bashing": 10,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 80000
+    "price": "800 USD"
   },
   {
     "type": "GENERIC",
     "id": "ehdframe",
-    "name": "extra heavy duty frame",
+    "name": { "str": "extra heavy duty frame" },
     "description": "A large, sturdy frame that appears to be two heavy duty frames combined, this is twice the strength, and twice the weight.",
-    "weight": 52000,
+    "weight": "52000 g",
     "to_hit": -10,
     "color": "green",
     "symbol": "]",
     "material": [ "hardsteel", "steel" ],
     "techniques": [ "DEF_DISARM" ],
-    "volume": 160,
+    "volume": "40 L",
     "bashing": 35,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 24000
+    "price": "240 USD"
   },
   {
     "type": "GENERIC",
     "id": "shdframe",
-    "name": "super duty frame",
+    "name": { "str": "super duty frame" },
     "description": "A large, sturdy frame that appears to be a extra heavy duty frame combined with thick armor, this is much stronger, and much heavier.",
-    "weight": 1850600,
+    "weight": "1850600 g",
     "to_hit": -10,
     "color": "green",
     "symbol": "]",
     "material": [ "hardsteel", "steel" ],
     "techniques": [ "DEF_DISARM" ],
-    "volume": 300,
+    "volume": "75 L",
     "bashing": 35,
     "cutting": 0,
     "category": "veh_parts",
-    "price": 24000
+    "price": "240 USD"
   },
   {
     "id": "mechleg_mount_light",
@@ -155,8 +155,8 @@
     "description": "A piece of metal with holes suitable for a mech leg.",
     "weight": "150 g",
     "volume": "250 ml",
-    "price": 10,
-    "price_postapoc": 10,
+    "price": "1 USD",
+    "price_postapoc": "1 USD",
     "material": [ "steel" ],
     "symbol": ";",
     "color": "dark_gray"
@@ -170,7 +170,7 @@
     "weight": "5 kg",
     "volume": "6 L",
     "price": "30 USD",
-    "price_postapoc": 500,
+    "price_postapoc": "5 USD",
     "bashing": 14,
     "to_hit": -2,
     "material": [ "steel" ],
@@ -186,7 +186,7 @@
     "weight": "6 kg",
     "volume": "7 L",
     "price": "50 USD",
-    "price_postapoc": 500,
+    "price_postapoc": "5 USD",
     "bashing": 14,
     "to_hit": -2,
     "material": [ "steel" ],

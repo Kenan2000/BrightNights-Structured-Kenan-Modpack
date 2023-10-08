@@ -2,7 +2,7 @@
   {
     "id": "mhand",
     "type": "SPELL",
-    "name": "Mage Hand",
+    "name": { "str": "Mage Hand" },
     "description": "An ethereal hand forms to assist you.",
     "message": "A magical hand appears before you.",
     "valid_targets": [ "ground" ],
@@ -26,7 +26,7 @@
   {
     "id": "cone_force",
     "type": "SPELL",
-    "name": "Shockwave",
+    "name": { "str": "Shockwave" },
     "description": "You blast a cone of force towards a target.",
     "effect": "cone_attack",
     "valid_targets": [ "ally", "hostile", "ground" ],
@@ -39,7 +39,7 @@
     "aoe_increment": 2,
     "min_range": 8,
     "max_range": 30,
-    "range_increment": 1.0,
+    "range_increment": 1,
     "spell_class": "MAGUS",
     "base_casting_time": 200,
     "base_energy_cost": 400,

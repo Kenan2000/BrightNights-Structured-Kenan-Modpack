@@ -2,31 +2,31 @@
   {
     "id": "nano_turret_pistol_weapon",
     "type": "GUN",
-    "name": "nanotech pistol",
+    "name": { "str": "nanotech pistol" },
     "description": "You shouldn't see this. nano_turret_pistol_weapon",
     "copy-from" : "nano_turret_pistol"
   },{
     "id": "nano_turret_shredder_weapon",
     "type": "GUN",
-    "name": "nanotech shredder",
+    "name": { "str": "nanotech shredder" },
     "description": "You shouldn't see this. nano_turret_shredder_weapon",
     "copy-from" : "nano_turret_shredder"
   },{
     "id": "nano_turret_rifle_weapon",
     "type": "GUN",
-    "name": "nanotech rifle",
+    "name": { "str": "nanotech rifle" },
     "description": "You shouldn't see this. nano_turret_rifle_weapon",
     "copy-from" : "nano_turret_rifle"
   },{
     "id": "nano_turret_smg_weapon",
     "type": "GUN",
-    "name": "nanotech smg",
+    "name": { "str": "nanotech smg" },
     "description": "You shouldn't see this. nano_turret_smg_weapon",
     "copy-from" : "nano_turret_smg"
   },{
     "id": "mon_nano_turret_pistol",
     "type": "MONSTER",
-    "name": "nanotech pistol turret",
+    "name": { "str": "nanotech pistol turret" },
     "description": "A shimmering pool of liquid metal with a small barrel sticking out, this turret specializes in accuracy, though it lacks in raw power.",
     "default_faction": "nanotech_guards",
     "looks_like": "mon_blob_large",
@@ -34,7 +34,7 @@
     "harvest": "exempt",
     "diff": 30,
     "volume": "2000 ml",
-    "weight": 3627,
+    "weight": "3627 g",
     "hp": 150,
     "speed": 100,
     "material": [ "nanite" ],
@@ -63,11 +63,11 @@
     "id": "mon_nano_turret_shredder",
     "copy-from": "mon_nano_turret_pistol",
     "type": "MONSTER",
-    "name": "nanotech shredder turret",
+    "name": { "str": "nanotech shredder turret" },
     "description": "A shimmering pool of liquid metal with a wide barrel sticking out, this turret specializes in power, though it lacks in accuracy and range.",
     "diff": 50,
     "volume": "4000 ml",
-    "weight": 4375,
+    "weight": "4375 g",
     "revert_to_itype": "nanoturret_shredder",
     "starting_ammo": { "metal_nanopowder": 200 },
     "special_attacks": [
@@ -77,11 +77,11 @@
     "id": "mon_nano_turret_rifle",
     "copy-from": "mon_nano_turret_pistol",
     "type": "MONSTER",
-    "name": "nanotech rifle turret",
+    "name": { "str": "nanotech rifle turret" },
     "description": "A shimmering pool of liquid metal with a long barrel sticking out, this turret specializes in accuracy, though it lacks in raw power.",
     "diff": 40,
     "volume": "4000 ml",
-    "weight": 4375,
+    "weight": "4375 g",
     "revert_to_itype": "nanoturret_rifle",
     "starting_ammo": { "metal_nanopowder": 300 },
     "special_attacks": [
@@ -91,11 +91,11 @@
     "id": "mon_nano_turret_smg",
     "copy-from": "mon_nano_turret_pistol",
     "type": "MONSTER",
-    "name": "nanotech smg turret",
+    "name": { "str": "nanotech smg turret" },
     "description": "A shimmering pool of liquid metal with a short barrel sticking out, this turret specializes in speed, though it lacks in range and sustainability.",
     "diff": 50,
     "volume": "3000 ml",
-    "weight": 4523,
+    "weight": "4523 g",
     "revert_to_itype": "nanoturret_smg",
     "starting_ammo": { "metal_nanopowder": 200 },
     "special_attacks": [

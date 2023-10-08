@@ -178,7 +178,7 @@
     "copy-from": "fake_item",
     "name": { "str": "hell PRMP4 Peppergun" },
     "description": "Capable both single shot and burst fire, the PRMP4 'peppergun' is one of the first, and most successful, bomblet launchers.  Designed to suppress small squads of infantrymen, it can work equally well to non-lethally quell a riot.",
-    "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ],
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ],
     "ammo_effects": [ "NEVER_MISFIRES", "DRAW_AS_LINE" ],
     "skill": "launcher",
     "range": 10,
@@ -187,7 +187,7 @@
     "sight_dispersion": 20,
     "recoil": 20,
     "durability": 10,
-    "burst": 4
+    "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 4 ] ]
   },
   {
     "id": "hell_bomblet_launcher_rotary2",
@@ -195,7 +195,7 @@
     "copy-from": "fake_item",
     "name": { "str": "hell PRMP4 Peppergun" },
     "description": "Capable both single shot and burst fire, the PRMP4 'peppergun' is one of the first, and most successful, bomblet launchers.  Designed to suppress small squads of infantrymen, it can work equally well to non-lethally quell a riot.",
-    "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ],
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ],
     "ammo_effects": [ "NEVER_MISFIRES", "DRAW_AS_LINE" ],
     "skill": "launcher",
     "range": 10,

@@ -269,7 +269,7 @@
     "crit_ok": false,
 	"weighting": 2,
     "mult_bonuses": [
-      { "stat": "movecost", "scale": 0.0 },
+      { "stat": "movecost", "scale": 0 },
       { "stat": "damage", "type": "bash", "scale": 0.8 },
       { "stat": "damage", "type": "cut", "scale": 0.8 },
       { "stat": "damage", "type": "stab", "scale": 0.4 }
@@ -288,7 +288,7 @@
 	"weighting": 1,
 	"stun_dur": 2,
     "mult_bonuses": [
-      { "stat": "movecost", "scale": 0.0 },
+      { "stat": "movecost", "scale": 0 },
       { "stat": "damage", "type": "bash", "scale": 1.2 },
       { "stat": "damage", "type": "cut", "scale": 0.8 },
       { "stat": "damage", "type": "stab", "scale": 0.4 }

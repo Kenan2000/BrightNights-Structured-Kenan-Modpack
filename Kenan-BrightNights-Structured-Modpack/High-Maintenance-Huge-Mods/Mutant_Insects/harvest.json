@@ -2,9 +2,9 @@
   {
     "type": "GENERIC",
     "id": "stinger",
-    "name": "stinger",
+    "name": { "str": "stinger" },
     "description": "A six-inch stinger from a giant insect.  Makes a mediocre melee weapon.",
-    "weight": 540,
+    "weight": "540 g",
     "to_hit": -1,
     "color": "white",
     "symbol": ",",
@@ -12,7 +12,7 @@
     "volume": "250 ml",
     "cutting": 10,
     "flags": [ "SPEAR" ],
-    "price": 3000
+    "price": "30 USD"
   },
   {
     "id": "arachnid_stinger",

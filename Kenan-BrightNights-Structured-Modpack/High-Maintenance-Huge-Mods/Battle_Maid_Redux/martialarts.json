@@ -2,7 +2,7 @@
   {
     "type": "martial_art",
     "id": "style_maid",
-    "name": "L'art du Nettoyage",
+    "name": { "str": "L'art du Nettoyage" },
     "description": "It is the servant's duty to take out the trash. Pause to consider your offensive options.",
     "initiate": [ "You steady yourself, ready to strike with poise and grace.", "%s appears more steady and composed." ],
     "arm_block": 99,
@@ -14,7 +14,7 @@
         "unarmed_allowed": true,
         "melee_allowed": true,
 		"bonus_blocks": 1,
-        "flat_bonuses": [ { "stat": "block", "scaling-stat": "dex", "scale": 1.0 }, { "stat": "dodge", "scale": -1.0 }]
+        "flat_bonuses": [ { "stat": "block", "scaling-stat": "dex", "scale": 1 }, { "stat": "dodge", "scale": -1 }]
       },
 	  {
         "id": "maid_defense_2",
@@ -24,7 +24,7 @@
         "bonus_dodges": 1,
         "unarmed_allowed": true,
         "melee_allowed": true,
-        "flat_bonuses": [{ "stat": "dodge", "scale": 2.0 }]
+        "flat_bonuses": [{ "stat": "dodge", "scale": 2 }]
       }
     ],
     "onmove_buffs": [
@@ -39,7 +39,7 @@
 		"max_stacks": 1,
         "flat_bonuses": [
           { "stat": "hit", "scale": -1 },
-          { "stat": "dodge", "scale": 2.0 }
+          { "stat": "dodge", "scale": 2 }
         ],
 		"mult_bonuses": [
           { "stat": "damage", "type": "bash", "scale": 0.7 },
@@ -71,7 +71,7 @@
 			"melee_allowed": true,
 			"buff_duration": 1,
 			"bonus_dodges": -1,
-			"flat_bonuses": [{ "stat": "dodge", "scale": -2.0 }]
+			"flat_bonuses": [{ "stat": "dodge", "scale": -2 }]
 		}
 	],
     "techniques": [ "tec_maid_precise", "tec_maid_counter", "tec_maid_meleecounter", "tec_maid_miyage", "tec_maid_kyusyu", "tec_maid_grab" ],

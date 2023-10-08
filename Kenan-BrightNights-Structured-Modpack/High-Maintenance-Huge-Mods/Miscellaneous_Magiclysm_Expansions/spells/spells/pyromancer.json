@@ -2,7 +2,7 @@
   {
     "type": "SPELL",
     "id": "acid_spew",
-    "name": "Acid Spawn",
+    "name": { "str": "Acid Spawn" },
     "description": "Spews a line of acid from your mouth.",
     "valid_targets": [ "hostile", "ally", "ground" ],
     "damage_type": "acid",
@@ -29,7 +29,7 @@
   {
     "id": "fireboulder",
     "type": "SPELL",
-    "name": "Fireboulder",
+    "name": { "str": "Fireboulder" },
     "description": "You hurl a baseball-sized glowing orb that, when reaches its target or an obstacle, produces a pressure-less blast of searing heat.",
     "effect": "projectile_attack",
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
@@ -54,7 +54,7 @@
   {
     "id": "flamethrower",
     "type": "SPELL",
-    "name": "Flamethrower",
+    "name": { "str": "Flamethrower" },
     "description": "You fire a mid-range cone of searing heat.",
     "effect": "cone_attack",
     "valid_targets": [ "ally", "hostile", "ground" ],
@@ -79,7 +79,7 @@
   {
     "id": "fireshot",
     "type": "SPELL",
-    "name": "Searing Shot",
+    "name": { "str": "Searing Shot" },
     "description": "Creates intense flame at a location, harming the target.",
     "valid_targets": [ "hostile" ],
     "flags": [ "CONCENTRATE", "SOMATIC" ],
@@ -101,7 +101,7 @@
   {
     "id": "fpunch",
     "type": "SPELL",
-    "name": "Flaming Fist",
+    "name": { "str": "Flaming Fist" },
     "description": "Your hands combust, damaging those whom you place them upon.",
     "valid_targets": [ "hostile" ],
     "min_damage": 10,

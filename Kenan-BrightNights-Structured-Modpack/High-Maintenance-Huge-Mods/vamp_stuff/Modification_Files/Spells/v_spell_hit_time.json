@@ -3,7 +3,7 @@
     "//": "Spells that activate from hitting, getting hit and intermittence.",
     "type": "SPELL",
     "id": "v_spell_null",
-    "name": "null",
+    "name": { "str": "null" },
     "description": "null... just ignore this.",
     "valid_targets": [ "none" ],
     "flags": [ "SILENT" ],
@@ -13,7 +13,7 @@
   {
     "type": "SPELL",
     "id": "v_hemo_whip_spell_ss_maybe",
-    "name": "Sweeping Strike?",
+    "name": { "str": "Sweeping Strike?" },
     "description": "1/10 chance to do Sweeping Strike.",
     "valid_targets": [ "none" ],
     "message": "",
@@ -38,7 +38,7 @@
     "//": "Notify the player about the casted on-hit spell.",
     "type": "SPELL",
     "id": "v_hemo_whip_spell_ss_yes",
-    "name": "Sweeping Strike!",
+    "name": { "str": "Sweeping Strike!" },
     "description": "Does the Sweeping Strike.",
     "valid_targets": [ "none" ],
     "message": "The leech's whip strikes a wide arc!",
@@ -51,7 +51,7 @@
   {
     "id": "v_hemo_whip_spell_ss",
     "type": "SPELL",
-    "name": "Sweeping Strike",
+    "name": { "str": "Sweeping Strike" },
     "description": "Swipes through an arc, dealing 16 cutting damage.",
     "valid_targets": [ "hostile", "ground" ],
     "effect": "cone_attack",
@@ -67,7 +67,7 @@
   {
     "id": "v_hemo_whip_spell_d_maybe",
     "type": "SPELL",
-    "name": "Drain?",
+    "name": { "str": "Drain?" },
     "description": "1/5 chance to do Drain.",
     "valid_targets": [ "none" ],
     "effect": "target_attack",
@@ -85,7 +85,7 @@
   {
     "type": "SPELL",
     "id": "v_hemo_whip_spell_d_yes",
-    "name": "Drain!",
+    "name": { "str": "Drain!" },
     "description": "Does the Drain Damage and Drain Heal.",
     "valid_targets": [ "none" ],
     "message": "The leech's whip absorbs the life force from a nearby creature!",
@@ -96,7 +96,7 @@
   {
     "id": "v_hemo_whip_spell_d_dmg",
     "type": "SPELL",
-    "name": "Drain Damage",
+    "name": { "str": "Drain Damage" },
     "description": "Deals 2 hp.",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
@@ -110,7 +110,7 @@
   {
     "id": "v_hemo_whip_spell_d_heal",
     "type": "SPELL",
-    "name": "Drain Heal",
+    "name": { "str": "Drain Heal" },
     "description": "Heals 1 hp.",
     "valid_targets": [ "self" ],
     "effect": "target_attack",
@@ -122,7 +122,7 @@
   {
     "id": "v_hemo_crimsoncoat_coat_pr_maybe",
     "type": "SPELL",
-    "name": "Piercing Retaliation?",
+    "name": { "str": "Piercing Retaliation?" },
     "description": "3/4 chance to do Piercing Retaliation.",
     "valid_targets": [ "none" ],
     "effect": "target_attack",
@@ -139,7 +139,7 @@
   {
     "type": "SPELL",
     "id": "v_hemo_crimsoncoat_coat_pr_yes",
-    "name": "Piercing Retaliation!",
+    "name": { "str": "Piercing Retaliation!" },
     "description": "Does the Piercing Retaliation.",
     "valid_targets": [ "none" ],
     "message": "The crimson coat retaliates to the attack!",
@@ -150,7 +150,7 @@
   {
     "id": "v_hemo_crimsoncoat_coat_pr",
     "type": "SPELL",
-    "name": "Piercing Retaliation",
+    "name": { "str": "Piercing Retaliation" },
     "description": "Deals 12 stab damage and stuns for 1-3 turns.",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "RANDOM_DURATION" ],
@@ -167,7 +167,7 @@
   {
     "id": "v_hemo_orusform_bloodling",
     "type": "SPELL",
-    "name": "Orus: Rise! Bloodling!",
+    "name": { "str": "Orus: Rise! Bloodling!" },
     "description": "Summons a bloodling at a random field in range.",
     "valid_targets": [ "fd_blood" ],
     "effect": "summon",
@@ -186,7 +186,7 @@
   {
     "type": "SPELL",
     "id": "v_war_etherealenchant_ss_maybe",
-    "name": "Summon Silhouette?",
+    "name": { "str": "Summon Silhouette?" },
     "description": "1/20 chance to do Summon Silhouette.",
     "valid_targets": [ "none" ],
     "message": "",
@@ -220,7 +220,7 @@
   {
     "type": "SPELL",
     "id": "v_war_etherealenchant_ss_yes",
-    "name": "Summon Silhouette!",
+    "name": { "str": "Summon Silhouette!" },
     "description": "Does the Summon Silhouette.",
     "valid_targets": [ "none" ],
     "message": "An etherean silhouette emerges from your weapon!",
@@ -233,7 +233,7 @@
   {
     "id": "v_war_etherealenchant_ss",
     "type": "SPELL",
-    "name": "Summon Silhouette",
+    "name": { "str": "Summon Silhouette" },
     "description": "Summons an etherean silhouette.",
     "valid_targets": [ "self", "ground" ],
     "effect": "summon",

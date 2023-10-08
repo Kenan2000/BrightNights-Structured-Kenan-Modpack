@@ -3,7 +3,7 @@
     "id": "ammolink22etc",
     "copy-from": "ammolink",
     "type": "GENERIC",
-    "name": ".22 ETC ammo belt linkage",
+    "name": { "str": ".22 ETC ammo belt linkage" },
     "looks_like": "ammolink223",
     "use_action": { "type": "ammobelt", "belt": "belt22etc" }
   },
@@ -11,7 +11,7 @@
     "id": "ammolink556etc",
     "copy-from": "ammolink",
     "type": "GENERIC",
-    "name": "5.56 ETC ammo belt linkage",
+    "name": { "str": "5.56 ETC ammo belt linkage" },
     "looks_like": "ammolink223",
     "use_action": { "type": "ammobelt", "belt": "belt556etc" }
   },
@@ -19,7 +19,7 @@
     "id": "ammolink9etc",
     "copy-from": "ammolink",
     "type": "GENERIC",
-    "name": "9mm ETC ammo belt linkage",
+    "name": { "str": "9mm ETC ammo belt linkage" },
     "looks_like": "ammolink223",
     "use_action": { "type": "ammobelt", "belt": "belt9etc" }
   }

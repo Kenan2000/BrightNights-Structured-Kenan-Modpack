@@ -2,7 +2,7 @@
   {
     "type": "martial_art",
     "id": "style_boxing_newreno",
-    "name": "New Reno Boxing",
+    "name": { "str": "New Reno Boxing" },
     "description": "The boxing style of New Reno. More focused on dirty fighting than traditional boxing, you gain the ability to hit harder if you keep hitting. While normally still done with restraint, fighters have been known to use these tactics lethally.",
     "initiate": [ "You lower your chin and raise your fists to eye level.", "%s prepares to fight with raised fists." ],
     "learn_difficulty": 1,
@@ -25,13 +25,13 @@
         "unarmed_allowed": true,
         "buff_duration": 1,
         "max_stacks": 2,
-        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1 } ]
       }
     ],
     "onhit_buffs": [
       {
         "id": "buff_renoboxing_onhit",
-        "name": "Masticator's Fury",
+        "name": "Masticator's Fury,
         "description": "Landing a hit fills you with enough fury you could rip someone's ear off.\n\n Extra x2.5 damage on follow up hits.\nLasts 2 turns.",
         "skill_requirements": [ { "name": "unarmed", "level": 3 } ],
         "unarmed_allowed": true,
@@ -56,7 +56,7 @@
   {
     "type": "martial_art",
     "id": "style_chosenone",
-    "name": "Arroyo Style",
+    "name": { "str": "Arroyo Style" },
     "description": "A style honed by the Hero of Arroyo, Arroyo Style combines the dirty tactics of New Reno Boxing, the Honor of Dragon-Style Kung Fu, and the fluidity of a wastelander's wit into a single style.",
     "initiate": [ "You relax and patiently await conflict like the great dragon.", "%s assumes a dragon-like stance." ],
     "learn_difficulty": 10,
@@ -93,7 +93,7 @@
         "unarmed_allowed": true,
         "skill_requirements": [ { "name": "unarmed", "level": 1 } ],
         "buff_duration": 1,
-        "flat_bonuses": [ { "stat": "hit", "scale": 1.0 }, { "stat": "damage", "type": "bash", "scale": 2.5 } ]
+        "flat_bonuses": [ { "stat": "hit", "scale": 1 }, { "stat": "damage", "type": "bash", "scale": 2.5 } ]
       }
     ],
     "techniques": [
@@ -115,7 +115,7 @@
   {
     "type": "martial_art",
     "id": "style_gecko",
-    "name": "Gecko Hunting",
+    "name": { "str": "Gecko Hunting" },
     "description": "A somewhat primative martial art, Gecko Hunting was developed in Klamath to avoid a gecko's deadly bite and get them",
     "initiate": [ "You raise your spear and prepare for a great hunt.", "%s raises their spear menacingly." ],
     "learn_difficulty": 3,
@@ -127,7 +127,7 @@
         "name": "Gecko Hunting Stance",
         "description": "You keep at the ready to avoid .\n\nIncreased dodge.",
         "melee_allowed": true,
-        "flat_bonuses": [ { "stat": "dodge", "scale": 2.0 } ]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 2 } ]
       }
     ],
     "ondodge_buffs": [
@@ -138,9 +138,9 @@
         "melee_allowed": true,
         "buff_duration": 1,
         "mult_bonuses": [
-          { "stat": "damage", "type": "bash", "scale": 3.0 },
-          { "stat": "damage", "type": "cut", "scale": 3.0 },
-          { "stat": "damage", "type": "stab", "scale": 3.0 }
+          { "stat": "damage", "type": "bash", "scale": 3 },
+          { "stat": "damage", "type": "cut", "scale": 3 },
+          { "stat": "damage", "type": "stab", "scale": 3 }
         ]
       }
     ],
@@ -179,7 +179,7 @@
   {
     "type": "mutation",
     "id": "MARTIAL_ARTSFA",
-    "name": "Wasteland Martial Artist",
+    "name": { "str": "Wasteland Martial Artist" },
     "points": 2,
     "description": "You have wandered the wastes and learned one of the many martial arts taught across the wastes.",
     "starting_trait": true,

@@ -139,7 +139,7 @@
     "id": "bio_increased_bionics_space_mkI",
     "copy-from": "bionic_general",
     "type": "BIONIC_ITEM",
-    "name": "Bionic Space Expander CBM Mk. I",
+    "name": { "str": "Bionic Space Expander CBM Mk. I" },
     "description": "Nanobots replace large parts of the involuntary muscles with an innovativ, synthetic muscle structure (that's far smaller but equally capable) to expand the available space for bionic implementations.",
     "price": "20000 USD",
     "difficulty": 6
@@ -148,7 +148,7 @@
     "id": "bio_increased_bionics_space_mkII",
     "copy-from": "bionic_general",
     "type": "BIONIC_ITEM",
-    "name": "Bionic Space Expander CBM Mk. II",
+    "name": { "str": "Bionic Space Expander CBM Mk. II" },
     "description": "Parts of the stroma and skeleton get replaced by nanobots with small storage units to significantly increase the space for bionic implementations in all bodyparts.",
     "price": "45000 USD",
     "difficulty": 8
@@ -157,7 +157,7 @@
     "id": "bio_increased_bionics_space_mkIII",
     "copy-from": "bionic_general",
     "type": "BIONIC_ITEM",
-    "name": "Bionic Space Expander CBM Mk. III",
+    "name": { "str": "Bionic Space Expander CBM Mk. III" },
     "description": "Within picoseconds mikro teleport systems cut currently unused bionic implants in an uncountable number of pieces, move them to otherwise unusable space (like the fat tissue) and restore now needed implants on that location.",
     "price": "70000 USD",
     "difficulty": 10
@@ -166,7 +166,7 @@
     "id": "bio_increased_bionics_space_mkIV",
     "copy-from": "bionic_general",
     "type": "BIONIC_ITEM",
-    "name": "Bionic Space Expander CBM Mk. IV",
+    "name": { "str": "Bionic Space Expander CBM Mk. IV" },
     "description": "Through quantum tunneling most of your implants aren't in this universe anymore ... wherever they are: you've got a lot more space for bionic implementations!",
     "price": "95000 USD",
     "difficulty": 12
@@ -174,7 +174,7 @@
   {
     "id": "bio_increased_bionics_space_mkI",
     "type": "bionic",
-    "name": "Bionic Space Expander Mk. I",
+    "name": { "str": "Bionic Space Expander Mk. I" },
     "description": "Nanobots replace large parts of the involuntary muscles with an innovativ, synthetic muscle structure (that's far smaller but equally capable) to expand the available space for bionic implementations.",
     "occupied_bodyparts": [
       [ "torso", -64 ],
@@ -194,7 +194,7 @@
   {
     "id": "bio_increased_bionics_space_mkII",
     "type": "bionic",
-    "name": "Bionic Space Expander Mk. II",
+    "name": { "str": "Bionic Space Expander Mk. II" },
     "description": "Parts of the stroma and skeleton get replaced by nanobots with small storage units to significantly increase the space for bionic implementations in all bodyparts.",
     "occupied_bodyparts": [
       [ "torso", -128 ],
@@ -214,7 +214,7 @@
   {
     "id": "bio_increased_bionics_space_mkIII",
     "type": "bionic",
-    "name": "Bionic Space Expander Mk. III",
+    "name": { "str": "Bionic Space Expander Mk. III" },
     "description": "Within picoseconds mikro teleport systems cut currently unused bionic implants in an uncountable number of pieces, move them to otherwise unusable space (like the fat tissue) and restore now needed implants on that location.",
     "occupied_bodyparts": [
       [ "torso", -192 ],
@@ -234,7 +234,7 @@
   {
     "id": "bio_increased_bionics_space_mkIV",
     "type": "bionic",
-    "name": "Bionic Space Expander Mk. IV",
+    "name": { "str": "Bionic Space Expander Mk. IV" },
     "description": "Through quantum tunneling most of your implants aren't in this universe anymore ... wherever they are: you've got a lot more space for bionic implementations!",
     "occupied_bodyparts": [
       [ "torso", -256 ],

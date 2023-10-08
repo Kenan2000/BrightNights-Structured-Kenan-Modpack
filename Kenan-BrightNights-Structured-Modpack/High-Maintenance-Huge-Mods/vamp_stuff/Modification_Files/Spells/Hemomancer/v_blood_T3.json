@@ -2,7 +2,7 @@
   {
     "id": "t3_blood_crimsonhaze",
     "type": "SPELL",
-    "name": "Crimson Haze",
+    "name": { "str": "Crimson Haze" },
     "description": "Vaporizes your blood to create a disorienting wave of haze that <color_yellow>slows down</color> foes around you.\n* Foes within a 4 tile radius are afflicted with <color_yellow>blindness</color> for 7 turns.\n\nThis is a <color_white>Tier 3</color> spell.",
     "valid_targets": [ "hostile", "ground" ],
     "effect": "projectile_attack",
@@ -27,7 +27,7 @@
   {
     "id": "t3_blood_suppress",
     "type": "SPELL",
-    "name": "Suppress",
+    "name": { "str": "Suppress" },
     "description": "Heavily binds the target, dealing <color_green>biological damage</color> and renders them <color_yellow>unconscious</color>.\n\nThis is a <color_white>Tier 3</color> spell.",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",

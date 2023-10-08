@@ -3,7 +3,7 @@
     "id": "monspell_fear",
     "type": "SPELL",
     "//": "monster-only spell for fear attacks.",
-    "name": "...monster spell. Fear",
+    "name": { "str": "...monster spell. Fear" },
     "description": "Scare the crap out of humans.",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -22,7 +22,7 @@
   {
     "id": "monspell_psychic_stress",
     "type": "SPELL",
-    "name": "...monster spell. Stress",
+    "name": { "str": "...monster spell. Stress" },
     "description": "Drive people stupid.",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -42,7 +42,7 @@
   {
     "id": "monspell_psychic_feedback",
     "type": "SPELL",
-    "name": "...monster spell. Feedback",
+    "name": { "str": "...monster spell. Feedback" },
     "description": "Cause Psychic Feedback to humans.",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -63,7 +63,7 @@
   {
     "id": "monspell_flaming_eye",
     "type": "SPELL",
-    "name": "...monster spell. Flaming eye stare",
+    "name": { "str": "...monster spell. Flaming eye stare" },
     "description": "Feedback + Daze",
     "valid_targets": [ "hostile" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -86,7 +86,7 @@
     "id": "monspell_madness",
     "type": "SPELL",
     "//": "permanent madness effect.",
-    "name": "...monster spell. Madness",
+    "name": { "str": "...monster spell. Madness" },
     "description": "Permanent crazy.",
     "valid_targets": [ "hostile" ],
     "flags": [ "PERMANENT", "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -105,7 +105,7 @@
   {
     "id": "resist_psychic_stress",
     "type": "SPELL",
-    "name": "Psychic Fortress",
+    "name": { "str": "Psychic Fortress" },
     "description": "A mental shield to resist psychic attacks.  Erects a towering fortress of encouraging memories and benevolvent images around the human psyche.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -123,7 +123,7 @@
   {
     "id": "resist_fear",
     "type": "SPELL",
-    "name": "Encage Instincts",
+    "name": { "str": "Encage Instincts" },
     "description": "A mental shield to resist fear.  Captures one's own instincts of self-preservation in a shimmering cage of pure will, disallowing natural fears to overpower the ego.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -141,7 +141,7 @@
   {
     "id": "resist_psychic_feedback",
     "type": "SPELL",
-    "name": "Enforced Duality",
+    "name": { "str": "Enforced Duality" },
     "description": "A mental shield to resist damaging psychic attacks.  Strenthens the duality of the mind and body by sealing chakras and preventing attacks on the brain-stem that cause psychosomatic reactions.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -159,7 +159,7 @@
   {
     "id": "block_psychic",
     "type": "SPELL",
-    "name": "Inverse Microcosm",
+    "name": { "str": "Inverse Microcosm" },
     "description": "A short-term shield to block all psychic attacks.  Transforms the psyche into a self-sustaining microcosm, cut off from outside influences.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -178,7 +178,7 @@
     "id": "remove_madness",
     "//": "item spell",
     "type": "SPELL",
-    "name": "...item spell. remove madness.",
+    "name": { "str": "...item spell. remove madness." },
     "description": "A meditation to heal lasting psychic traumas.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -196,7 +196,7 @@
   {
     "id": "boost_int_per",
     "type": "SPELL",
-    "name": "Amplifying Mandala",
+    "name": { "str": "Amplifying Mandala" },
     "description": "Temporarily boosts Intelligence and Perception.  You form a spinning mandala of light in your mind's eye, allowing you to alter neural pathways with greater efficiency.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -214,7 +214,7 @@
   {
     "id": "boost_speed",
     "type": "SPELL",
-    "name": "Neural Delimiter", 
+    "name": { "str": "Neural Delimiter" }, 
     "description": "Temporarily boosts Speed.  Removes neural limits and conditioned inhibitors to momentarily increase mental speed.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS", "CONCENTRATE" ],
@@ -232,7 +232,7 @@
   {
     "id": "bionic_resist_fear",
     "type": "SPELL",
-    "name": "reduce fear ",
+    "name": { "str": "reduce fear " },
     "description": "...",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -250,7 +250,7 @@
   {
     "id": "bionic_resist_psychic",
     "type": "SPELL",
-    "name": "...bionic spell. psychic shield",
+    "name": { "str": "...bionic spell. psychic shield" },
     "description": "...",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],
@@ -269,7 +269,7 @@
   {
     "id": "bionic_resist_psychic_feedback",
     "type": "SPELL",
-    "name": "...bionic spell. feedback",
+    "name": { "str": "...bionic spell. feedback" },
     "description": "...",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_LEGS", "NO_HANDS" ],

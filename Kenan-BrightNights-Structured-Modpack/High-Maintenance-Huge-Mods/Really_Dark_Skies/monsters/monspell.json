@@ -2,7 +2,7 @@
   {
     "type": "SPELL",
     "id": "dkz_monspell_stun",
-    "name": "psi stun",
+    "name": { "str": "psi stun" },
     "description": "an attack that stuns the target for a few turns",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
@@ -17,7 +17,7 @@
   {
     "type": "SPELL",
     "id": "dkz_monspell_panic",
-    "name": "psi panic",
+    "name": { "str": "psi panic" },
     "description": "an attack that panics the target for a few turns",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
@@ -32,7 +32,7 @@
   {
     "type": "SPELL",
     "id": "dkz_monspell_halluc",
-    "name": "psi hallucinate",
+    "name": { "str": "psi hallucinate" },
     "description": "an attack that causes the target to hallucinate for a many turns",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
@@ -47,7 +47,7 @@
   {
     "type": "SPELL",
     "id": "dkz_spell_mindblast",
-    "name": "psi mindblast",
+    "name": { "str": "psi mindblast" },
     "description": "blasts a target with a wave of disorienting psionic energy.  has random effects",
     "valid_targets": [ "hostile", "ground" ],
     "message": "",
@@ -69,7 +69,7 @@
   {
     "type": "SPELL",
     "id": "dkz_cameraflash",
-    "name": "camera",
+    "name": { "str": "camera" },
     "description": "an attack that blinds the target for a quite a few turns",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",

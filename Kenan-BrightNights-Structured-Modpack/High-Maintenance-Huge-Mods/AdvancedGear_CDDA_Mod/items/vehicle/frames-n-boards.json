@@ -2,23 +2,23 @@
   {
     "type":"GENERIC",
     "id" : "nano_frame",
-    "name" : "nanotech hybrid frame",
+    "name" : { "str": "nanotech hybrid frame" },
     "description" : "A large frame made of steel and reinforced with nanites.  Useful for crafting.",
     "looks_like": "frame",
-    "weight" : 20000,
+    "weight" : "20 kg",
     "to_hit" : -5,
     "color" : "cyan",
     "symbol" : "]",
     "material" : ["steel", "nanite"],
     "techniques" : ["DEF_DISARM"],
-    "volume" : 60,
+    "volume" : "15 L",
     "bashing" : 20,
     "category" : "veh_parts",
-    "price" : 5500
+    "price" : "55 USD"
   },{
     "abstract": "nanotech_frame",
     "type": "vehicle_part",
-    "name": "nanotech hybrid frame",
+    "name": { "str": "nanotech hybrid frame" },
     "item": "nano_frame",
     "location": "structure",
     "color": "dark_gray",
@@ -26,7 +26,7 @@
     "durability": 3000,
     "description": "A heavy metal framework infused with nanites working to augment the durability.  Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size.",
     "looks_like": "frame",
-    "folded_volume": 25,
+    "folded_volume": "6250 ml",
     "breaks_into" : [
       {"item": "nano_frame", "count": [ 0, 1 ]}
     ],
@@ -103,7 +103,7 @@
   },{
     "abstract": "nanotech_frame2",
     "type": "vehicle_part",
-    "name": "nanotech frame",
+    "name": { "str": "nanotech frame" },
     "item": "xl_nanite_cluster",
     "location": "structure",
     "color": "dark_gray",
@@ -111,7 +111,7 @@
     "durability": 7500,
     "description": "A large cluster of nanites actively forming a support network for other structures to attach to.  Other vehicle components can be mounted on it, and it can be attached to other frames to increase the vehicle's size.",
     "looks_like": "frame",
-    "folded_volume": 8,
+    "folded_volume": "2 L",
     "breaks_into" : [
       {"item": "xl_nanite_cluster", "count": [ 1, 1 ]}
     ],
@@ -188,14 +188,14 @@
   },{
     "abstract": "nanoboard",
     "type": "vehicle_part",
-    "name": "nanotech board",
+    "name": { "str": "nanotech board" },
     "item": "xl_nanite_cluster",
     "location": "center",
     "color": "dark_gray",
     "difficulty": 0,
     "durability": 5000,
-    "folded_volume": 25,
-    "size": 120,
+    "folded_volume": "6250 ml",
+    "size": "30 L",
     "description": "A strong metal wall.  Keeps zombies outside the vehicle and prevents people from seeing through it.",
     "breaks_into" : [
       {"item": "xl_nanite_cluster", "count": [ 1, 1 ]}
@@ -213,7 +213,7 @@
     "abstract": "nanohalfboard",
     "copy-from": "nanoboard",
     "type": "vehicle_part",
-    "name": "nanotech quarterpanel",
+    "name": { "str": "nanotech quarterpanel" },
     "description": "A half-height strong metal wall.  Keeps zombies outside the vehicle but allows people to see over it.",
     "delete": { "flags": [ "OPAQUE" ] }
   },{

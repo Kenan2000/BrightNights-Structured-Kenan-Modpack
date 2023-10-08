@@ -22,7 +22,7 @@
     "durability": 100,
     "description": "A small fridge.  When turned on, it will cool the food inside, extended the time until the food spoils. It is powered by an internal nuclear reactor and thus will not drain your vehicles power.",
     "//": "Use average consumption, not the max on the appliance rating plate. 30W ~ 260kWh per annum",
-    "size": 300,
+    "size": "75 L",
     "item": "minifridge_atomic",
     "requirements": {
       "install": { "skills": [ [ "mechanics", 3 ], [ "electronics", 3 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
@@ -49,7 +49,7 @@
     "looks_like": "minifridge",
     "damage_modifier": 80,
     "durability": 100,
-    "size": 300,
+    "size": "75 L",
     "item": "minifreezer_atomic",
     "requirements": {
       "install": { "skills": [ [ "mechanics", 3 ], [ "electronics", 3 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
@@ -108,7 +108,7 @@
     "description": "A massive cargo fridge.  When turned on, it will cool the food inside, extended the time until the food spoils.",
     "//": "Use average consumption, not the max on the appliance rating plate. 30W ~ 260kWh per annum",
     "epower": -40,
-    "size": 1000,
+    "size": "250 L",
     "item": "minifridge_cargo",
     "location": "center",
     "requirements": {
@@ -138,7 +138,7 @@
     "damage_modifier": 80,
     "durability": 100,
     "epower": -60,
-    "size": 1000,
+    "size": "250 L",
     "item": "minifreezer_cargo",
     "location": "center",
     "requirements": {
@@ -342,7 +342,7 @@
     "copy-from": "turret",
     "name": { "str": "105mm tank gun" },
     "item": "tank_gun_105",
-    "size": 10,
+    "size": "2500 ml",
     "breaks_into": [ { "item": "tank_gun_105", "prob": 50 } ],
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ], [ "launcher", 2 ] ], "time": "25 m", "using": [ [ "vehicle_bolt", 1 ] ] },
@@ -356,7 +356,7 @@
     "copy-from": "turret",
     "name": { "str": "70mm bubble turret" },
     "item": "70mm_autocannon",
-    "size": 50,
+    "size": "12500 ml",
     "breaks_into": [ { "item": "70mm_autocannon", "prob": 50 } ],
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ], [ "rifle", 3 ] ], "time": "25 m", "using": [ [ "vehicle_bolt", 1 ] ] },
@@ -370,7 +370,7 @@
     "copy-from": "turret",
     "name": { "str": "double-barreled 140mm tank gun" },
     "item": "tank_gun_dual",
-    "size": 50,
+    "size": "12500 ml",
     "breaks_into": [ { "item": "tank_gun_dual", "prob": 50 } ],
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ], [ "launcher", 2 ] ], "time": "25 m", "using": [ [ "vehicle_bolt", 1 ] ] },

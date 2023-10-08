@@ -2,7 +2,7 @@
   {
     "id": "summon_owlcub",
     "type": "SPELL",
-    "name": "Summon Owlbear Cub",
+    "name": { "str": "Summon Owlbear Cub" },
     "description": "A young owlbear hatches to serve you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 1,
@@ -28,7 +28,7 @@
   {
     "id": "cleave",
     "type": "SPELL",
-    "name": "Cleave",
+    "name": { "str": "Cleave" },
     "description": "No darkness shall stand before ye and live!",
     "valid_targets": [ "hostile" ],
     "min_damage": 30,
@@ -48,7 +48,7 @@
   {
     "id": "staminatomana",
     "type": "SPELL",
-    "name": "Conjure Raw Magic",
+    "name": { "str": "Conjure Raw Magic" },
     "description": "You channel endurance into magical energy.  You spend stamina to regain mana.",
     "valid_targets": [ "self" ],
     "min_damage": 100,
@@ -69,7 +69,7 @@
   {
     "id": "scorn",
     "type": "SPELL",
-    "name": "Baleful Sight",
+    "name": { "str": "Baleful Sight" },
     "description": "Your rath itself manifests your gaze, crippling those whom you hate.",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
@@ -91,7 +91,7 @@
   {
     "id": "eldritch_blast",
     "type": "SPELL",
-    "name": "Eldritch Blast",
+    "name": { "str": "Eldritch Blast" },
     "description": "You are quite certian you saw this in a game somewhere. A crackling beam of energy streaks toward your foes.",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",
@@ -113,7 +113,7 @@
   {
     "id": "eldritch_ball",
     "type": "SPELL",
-    "name": "Necrotic Fireball",
+    "name": { "str": "Necrotic Fireball" },
     "description": "Black flame springs forth from your hand, as energy engulfs your foes, wasting them to dust.",
     "effect": "projectile_attack",
     "valid_targets": [ "hostile", "ground" ],

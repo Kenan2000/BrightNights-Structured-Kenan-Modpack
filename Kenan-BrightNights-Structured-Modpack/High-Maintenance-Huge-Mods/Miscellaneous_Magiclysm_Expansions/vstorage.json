@@ -2,7 +2,7 @@
  {
     "id": "magic_fuel_bunker",
     "type": "MAGAZINE",
-    "name": "magical fuel bunker",
+    "name": { "str": "magical fuel bunker" },
     "description": "A bin for holding solid fuel, this one designed specificaly for solid magical fuels.",
     "symbol": "]",
     "color": "blue",
@@ -15,6 +15,6 @@
     "reliability": 10,
     "//": "mods will need to expand",
     "ammo_type": "crystallized_mana",
-    "price": 3000
+    "price": "30 USD"
   }
 ]

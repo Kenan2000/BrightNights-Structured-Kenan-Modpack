@@ -1,7 +1,7 @@
 [{
     "id": "fear",
     "type": "SPELL",
-    "name": "Cause Fear",
+    "name": { "str": "Cause Fear" },
     "description": "Instill a great fear wihin the minds of your foes!",
     "message": "Your eyes glow green for a moment.  Now your sight can pierce the darkest shadows.",
     "valid_targets": [ "ally", "self", "hostile" ],

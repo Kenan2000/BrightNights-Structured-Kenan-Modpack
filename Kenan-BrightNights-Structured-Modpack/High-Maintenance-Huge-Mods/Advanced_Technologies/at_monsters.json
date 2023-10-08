@@ -2,7 +2,7 @@
   {
     "type": "MONSTER",
     "id": "mon_sniper",
-    "name": "sniper joe",
+    "name": { "str": "sniper joe" },
     "species": "ROBOT",
     "default_faction": "bot",
     "symbol": "@",
@@ -158,7 +158,7 @@
   {
     "type": "MONSTER",
     "id": "mon_met",
-    "name": "met",
+    "name": { "str": "met" },
     "species": "ROBOT",
     "default_faction": "cop_bot",
     "symbol": "@",
@@ -186,7 +186,7 @@
   {
     "type": "MONSTER",
     "id": "mon_cyborg",
-    "name": "cyborg",
+    "name": { "str": "cyborg" },
     "species": "CYBORG",
     "default_faction": "player",
     "symbol": "@",
@@ -235,7 +235,7 @@
   {
     "type": "MONSTER",
     "id": "mon_cyborg_heavy",
-    "name": "heavy cyborg",
+    "name": { "str": "heavy cyborg" },
     "species": "CYBORG",
     "default_faction": "player",
     "symbol": "@",
@@ -265,7 +265,7 @@
   {
     "type": "MONSTER",
     "id": "mon_cyborg_advanced",
-    "name": "advanced cyborg",
+    "name": { "str": "advanced cyborg" },
     "species": "CYBORG",
     "default_faction": "player",
     "symbol": "@",

@@ -58,7 +58,7 @@
   {
     "type": "mutation",
     "id": "HAMFISTS",
-    "name": "Ham Fisted",
+    "name": { "str": "Ham Fisted" },
     "points": -4,
     "visibility": 4,
     "ugliness": 3,
@@ -84,7 +84,7 @@
   {
     "type": "mutation",
     "id": "THRESH_FEVMUTANT",
-    "name": "FEV mutant",
+    "name": { "str": "FEV mutant" },
     "points": 1,
     "description": "The master has blessed you with the next step in human evolution. The world is good as yours.",
     "cancels": [ "CARNIVORE" ],
@@ -96,7 +96,7 @@
   {
     "type": "mutation",
     "id": "INT_FEVMUTANT",
-    "name": "Strong Bond",
+    "name": { "str": "Strong Bond" },
     "points": 6,
     "description": "The master's words help you understand things better.",
     "valid": false,
@@ -138,7 +138,7 @@
   {
     "type": "mutation",
     "id": "TOUGH_FEVMUTANT",
-    "name": "Vat Skin",
+    "name": { "str": "Vat Skin" },
     "points": 2,
     "description": "Your skin is tough from your evolution. You can take a lot more punishment, but can't move as good.",
     "starting_trait": false,

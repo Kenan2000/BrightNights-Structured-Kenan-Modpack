@@ -209,7 +209,7 @@
     "warmth": 8,
     "material_thickness": 3,
     "environmental_protection": 4,
-    "use_action": { "type": "holster", "max_volume": 2, "draw_cost": 10, "skills": [ "pistol", "rifle", "launcher" ] },
+    "use_action": { "type": "holster", "max_volume": "500 ml", "draw_cost": 10, "skills": [ "pistol", "rifle", "launcher" ] },
     "flags": [ "VARSIZE", "RAINPROOF", "STURDY", "POCKETS", "FANCY" ]
   },
   {
@@ -377,7 +377,7 @@
       "type": "holster",
       "holster_prompt": "Sheath knife",
       "holster_msg": "You sheath your %s",
-      "max_volume": 1,
+      "max_volume": "250 ml",
       "draw_cost": 80,
       "multi": 2,
       "flags": [ "SHEATH_KNIFE" ]

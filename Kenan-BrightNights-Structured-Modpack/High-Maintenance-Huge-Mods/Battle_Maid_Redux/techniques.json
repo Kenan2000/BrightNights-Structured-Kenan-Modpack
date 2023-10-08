@@ -12,9 +12,9 @@
     "messages": [ "You strike %s with an elegant coup de grâce", "<npcname> strikes %s in one elegant motion" ],
     "mult_bonuses": [
 		{ "stat": "movecost", "scale": 1.5 },
-		{ "stat": "damage", "type": "bash", "scale": 2.0 },
-        { "stat": "damage", "type": "cut", "scale": 2.0 },
-        { "stat": "damage", "type": "stab", "scale": 2.0 }	]
+		{ "stat": "damage", "type": "bash", "scale": 2 },
+        { "stat": "damage", "type": "cut", "scale": 2 },
+        { "stat": "damage", "type": "stab", "scale": 2 }	]
   },
   {
     "type": "technique",
@@ -26,7 +26,7 @@
     "knockback_dist": 1,
     "messages": [ "You block %s's attack and shove them back. Back!", "<npcname> struggles and forces %s back" ],
     "mult_bonuses": [
-		{ "stat": "movecost", "scale": 0.0 },
+		{ "stat": "movecost", "scale": 0 },
 		{ "stat": "damage", "type": "bash", "scale": 0.25 },
         { "stat": "damage", "type": "cut", "scale": 0.25 },
         { "stat": "damage", "type": "stab", "scale": 0.25 }	],
@@ -45,7 +45,7 @@
       "You whirl away and strike %s",
       "<npcname> strikes with a malice that surprises you"
     ],
-    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0 } ],
     "flat_bonuses": [ { "stat": "movecost", "scale": 50 } ]
   },
   {

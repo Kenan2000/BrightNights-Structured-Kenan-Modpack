@@ -2,7 +2,7 @@
   {
     "type": "vehicle_part",
     "id": "jumbo_mech_leg",
-    "name": "experimental jumbo mech leg",
+    "name": { "str": "experimental jumbo mech leg" },
     "symbol": "H",
     "color": "dark_gray",
     "broken_symbol": "x",
@@ -129,7 +129,7 @@
     "broken_symbol": "X",
     "broken_color": "light_gray",
     "damage_modifier": 80,
-    "folded_volume": 1,
+    "folded_volume": "250 ml",
     "durability": 180,
     "description": "A piece of metal with holes suitable for a specialized mech leg.",
     "item": "mechleg_mount_light",
@@ -252,7 +252,7 @@
       "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
       "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
-    "size": 300,
+    "size": "75 L",
     "location": "on_roof",
     "flags": [ "TURRET", "CARGO" ],
     "breaks_into": [ { "item": "heavy_railgun", "count": [ 0, 1 ] } ]
@@ -273,7 +273,7 @@
       "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
       "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
     },
-    "size": 400,
+    "size": "100 L",
     "location": "on_roof",
     "flags": [ "TURRET", "CARGO" ],
     "breaks_into": [ { "item": "gatling", "count": [ 0, 1 ] } ]
@@ -281,7 +281,7 @@
   {
     "type": "vehicle_part",
     "id": "mounted_33x308_smac",
-    "name": "33mm autocannon",
+    "name": { "str": "33mm autocannon" },
     "symbol": "t",
     "color": "light_gray",
     "broken_symbol": "#",
@@ -289,7 +289,7 @@
     "damage_modifier": 80,
     "durability": 1200,
     "item": "33x308_smac",
-    "size": 600,
+    "size": "150 L",
     "location": "on_roof",
     "flags": [ "TURRET", "CARGO" ],
     "breaks_into": [ { "item": "33x308_smac", "count": [ 0, 1 ] } ],
@@ -402,7 +402,7 @@
   {
     "type": "vehicle_part",
     "abstract": "ehdframe",
-    "name": "extra heavy duty frame",
+    "name": { "str": "extra heavy duty frame" },
     "symbol": "h",
     "color": "dark_gray",
     "broken_symbol": "#",
@@ -517,7 +517,7 @@
     "broken_color": "dark_gray",
     "damage_modifier": 80,
     "durability": 720,
-    "size": 150,
+    "size": "37500 ml",
     "item": "ehdframe",
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 10 ] ] },
@@ -535,7 +535,7 @@
   {
     "type": "vehicle_part",
     "abstract": "viewport",
-    "name": "viewport",
+    "name": { "str": "viewport" },
     "symbol": "\"",
     "color": "light_blue",
     "damage_modifier": 80,

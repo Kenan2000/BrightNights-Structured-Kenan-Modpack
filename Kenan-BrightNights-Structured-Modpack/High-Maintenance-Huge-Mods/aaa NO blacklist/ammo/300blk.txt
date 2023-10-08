@@ -2,10 +2,10 @@
   {
     "abstract": "300blk",
     "type": "AMMO",
-    "name": "300 blackout",
+    "name": { "str": "300 blackout" },
     "weight": "30 g",
     "volume": "60 ml", 
-    "price": 300, 
+    "price": "3 USD", 
     "material": [ "brass", "powder" ],
     "symbol": "=", 
     "color": "yellow", 
@@ -14,7 +14,7 @@
     "ammo_type": "300blk", 
     "casing": "300blk_casing",
     "range": 40, 
-    "damage": 35,
+    "damage": { "damage_type": "bullet", "amount": 35 },
     "dispersion": 10, 
     "recoil": 1500,
     "effects": [ "COOKOFF" ]
@@ -23,7 +23,7 @@
     "id": "300blk_fmj",
     "copy-from": 300blk",
     "type": "AMMO",
-    "name": "300 blackout FMJ",
+    "name": { "str": "300 blackout FMJ" },
     "descriprion": "300 blackout rounds with a 125gr full metal jacket bullet",
     "extend": { "effects": [ "COOKOFF" ] },
     "relative": {
@@ -34,7 +34,7 @@
     "id": "300blk_jhp",
     "copy-from": 300blk",
     "type": "AMMO",
-    "name": "300 blackout FMJ",
+    "name": { "str": "300 blackout FMJ" },
     "descriprion": "300 blackout rounds with a 125gr jacketed hollow point round",
     "extend": { "effects": [ "COOKOFF" ] },
     "relative": {
@@ -45,7 +45,7 @@
     "id": "300blk_ap",
     "copy-from": 300blk",
     "type": "AMMO",
-    "name": "300 blackout FMJ",
+    "name": { "str": "300 blackout FMJ" },
     "descriprion": "300 blackout rounds with a 220gr armour peircing bullet",
     "extend": { "effects": [ "COOKOFF" ] },
     "relative": {

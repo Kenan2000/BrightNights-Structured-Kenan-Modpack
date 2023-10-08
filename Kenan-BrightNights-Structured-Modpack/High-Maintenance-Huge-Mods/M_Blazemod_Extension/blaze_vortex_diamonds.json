@@ -2,7 +2,7 @@
   {
     "id": "daisle",
     "type": "vehicle_part",
-    "name": "crystal path",
+    "name": { "str": "crystal path" },
     "item": "diamondplate",
     "symbol": "=",
     "difficulty": 6,
@@ -17,7 +17,7 @@
   {
     "id": "obeliskoflight",
     "type": "vehicle_part",
-    "name": "diamond obelisk",
+    "name": { "str": "diamond obelisk" },
     "item": "dobelisk",
     "location": "on_roof",
     "symbol": "T",
@@ -50,7 +50,7 @@
   {
     "id": "prismoflight",
     "type": "vehicle_part",
-    "name": "diamond prism",
+    "name": { "str": "diamond prism" },
     "item": "dprism",
     "location": "on_roof",
     "symbol": "*",
@@ -144,7 +144,7 @@
     "book_data": {
       "max_level": 0,
       "intelligence": 0,
-      "time": 1,
+      "time": "1 m",
       "fun": 0,
       "skill": "fabrication",
       "required_level": 1

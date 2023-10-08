@@ -52,7 +52,7 @@
     "reload": 250,
     "valid_mod_locations": [ [ "accessories", 4 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ] ],
     "ammo_effects": [ "DRAW_AS_LINE" ],
-    "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ]
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ]
   },
   {
     "id": "bomblet_launcher_rotary",
@@ -89,7 +89,7 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "DRAW_AS_LINE" ],
-    "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ]
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ]
   },
   {
     "id": "bomblet_launcher_dualshot",
@@ -118,7 +118,7 @@
     "valid_mod_locations": [ [ "accessories", 4 ], [ "grip", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ] ],
     "built_in_mods": [ "bomblet_undermod" ],
     "ammo_effects": [ "DRAW_AS_LINE" ],
-    "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ]
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ]
   },
   {
     "id": "bomblet_launcher_brute",
@@ -332,7 +332,7 @@
     "type": "GUN",
     "name": { "str": "Ithaca 2021" },
     "description": "The 2021 shotgun, produced commercially by Ithaca, is sturdy underbarrel shotgun designed for home defense and private military use.  With a pistol grip and a shortened barrel, this manuverable shotgun lacks both a proper stock and point of attachment for an underbarrel mod.",
-    "weight": 3066,
+    "weight": "3066 g",
     "volume": "1500 ml",
     "price": "2000 USD",
     "to_hit": -2,
@@ -385,7 +385,7 @@
     "modes": [ [ "DEFAULT", "semi auto", 1 ], [ "BURST", "burst", 2 ] ],
     "clip_size": 12,
     "reload": 130,
-    "flags": [ "MODE_BURST", "NEVER_JAMS", "RELOAD_ONE" ],
+    "flags": [ "NEVER_JAMS", "RELOAD_ONE" ],
     "valid_mod_locations": [ [ "accessories", 4 ], [ "bore", 1 ], [ "muzzle", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ] ]
   },
   {

@@ -2,7 +2,7 @@
   {
     "type": "vehicle_part",
     "abstract": "shdframe",
-    "name": "super duty frame",
+    "name": { "str": "super duty frame" },
     "symbol": "h",
     "color": "dark_gray",
     "broken_symbol": "#",
@@ -87,7 +87,7 @@
   {
     "type": "vehicle_part",
     "id": "shdframe_core",
-    "name": "super duty core",
+    "name": { "str": "super duty core" },
     "symbol": "+",
     "color": "dark_gray",
     "broken_symbol": "#",
@@ -112,14 +112,14 @@
   {
     "type": "vehicle_part",
     "id": "shd_hatch",
-    "name": "bulk head",
+    "name": { "str": "bulk head" },
     "symbol": "+",
     "color": "dark_gray",
     "broken_symbol": "&",
     "broken_color": "dark_gray",
     "damage_modifier": 80,
     "durability": 1700,
-    "size": 150,
+    "size": "37500 ml",
     "item": "shdframe",
     "difficulty": 7,
     "location": "center",
@@ -138,7 +138,7 @@
   {
     "type": "vehicle_part",
     "id": "blast_door",
-    "name": "heavy duty blast shutters",
+    "name": { "str": "heavy duty blast shutters" },
     "symbol": "+",
     "color": "dark_gray",
     "broken_symbol": "0",

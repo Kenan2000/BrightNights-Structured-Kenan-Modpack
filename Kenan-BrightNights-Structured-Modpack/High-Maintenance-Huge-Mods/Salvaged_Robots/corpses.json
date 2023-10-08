@@ -5,7 +5,7 @@
     "symbol": ",",
     "color": "light_gray",
     "looks_like": "power_armor_light",
-    "name": "broken light auto armor",
+    "name": { "str": "broken light auto armor" },
     "category": "other",
     "description": "A broken set of power armor fitted with an AI core for automated use.  It cannot be worn or disassembled until re-crafted into an undamaged robot.",
     "material": [ "superalloy", "plastic" ],
@@ -21,7 +21,7 @@
     "id": "broken_autoarmor_basic",
     "copy-from": "broken_autoarmor_light",
     "looks_like": "power_armor_basic",
-    "name": "broken basic auto armor",
+    "name": { "str": "broken basic auto armor" },
     "description": "A broken set of power armor fitted with an AI core for automated use.  It cannot be worn or disassembled until re-crafted into an undamaged robot.",
     "weight": "28010 g",
     "volume": "75 L",
@@ -31,7 +31,7 @@
     "type": "GENERIC",
     "id": "broken_autoarmor_heavy",
     "copy-from": "broken_autoarmor_light",
-    "name": "broken heavy auto armor",
+    "name": { "str": "broken heavy auto armor" },
     "category": "other",
     "looks_like": "power_armor_heavy",
     "description": "A broken set of power armor fitted with an AI core for automated use.  It cannot be worn or disassembled until re-crafted into an undamaged robot.",
@@ -60,7 +60,7 @@
     "id": "broken_light_hack",
     "copy-from": "broken_hack_base",
     "color": "white",
-    "name": "broken floating lantern",
+    "name": { "str": "broken floating lantern" },
     "description": "A broken floating lantern, now dark and motionless.  Could be gutted for parts.",
     "weight": 4700
   },
@@ -69,7 +69,7 @@
     "id": "broken_arson_hack",
     "copy-from": "broken_hack_base",
     "color": "white",
-    "name": "broken floating lantern",
+    "name": { "str": "broken floating lantern" },
     "description": "A broken arson hack, now cold and burnt.  Could be gutted for parts.",
     "weight": 4700
   },
@@ -78,7 +78,7 @@
     "id": "broken_distract_hack",
     "copy-from": "broken_hack_base",
     "color": "white",
-    "name": "broken floating lantern",
+    "name": { "str": "broken floating lantern" },
     "description": "A broken distract-o-hack, now silent and still.  Could be gutted for parts.",
     "weight": 4700
   },
@@ -87,7 +87,7 @@
     "id": "broken_spore_hack",
     "copy-from": "broken_hack_base",
     "color": "dark_gray",
-    "name": "broken spore hack",
+    "name": { "str": "broken spore hack" },
     "description": "A broken spore hack.  Much less threatening now that it lies quiet on solid ground.  Could be gutted for parts.",
     "weight": 4700
   },
@@ -96,7 +96,7 @@
     "type": "GENERIC",
     "copy-from": "broken_turret_base",
     "color": "light_blue",
-    "name": "broken watercannon turret",
+    "name": { "str": "broken watercannon turret" },
     "description": "A broken watercannon turret.  Much less threatening now that it lies limp on solid ground.  Could be gutted for parts."
   },
   {
@@ -104,7 +104,7 @@
     "id": "broken_eyebot_heater",
     "copy-from": "broken_eyebot",
     "color": "pink",
-    "name": "broken floating heater",
+    "name": { "str": "broken floating heater" },
     "description": "A broken floating heater, now cold and motionless.  Could be stripped down or re-crafted."
   },
   {
@@ -112,7 +112,7 @@
     "id": "broken_eyebot_furnace",
     "copy-from": "broken_eyebot",
     "color": "red",
-    "name": "broken floating furnace",
+    "name": { "str": "broken floating furnace" },
     "description": "A broken floating furnace, now cold and motionless.  Could bestripped down or re-crafted."
   },
   {
@@ -120,7 +120,7 @@
     "id": "broken_eyebot_burn",
     "copy-from": "broken_eyebot",
     "color": "red",
-    "name": "broken burning eye",
+    "name": { "str": "broken burning eye" },
     "description": "A broken burning eye, now dark and motionless.  Could be stripped down or re-crafted."
   },
   {
@@ -128,7 +128,7 @@
     "id": "broken_utilibot_butler",
     "copy-from": "broken_utilibot",
     "color": "dark_gray",
-    "name": "broken butler-bot",
+    "name": { "str": "broken butler-bot" },
     "description": "A broken butler-bot, now silent and mangled.  Could be stripped down for parts."
   },
   {
@@ -136,7 +136,7 @@
     "id": "broken_utilibot_const",
     "copy-from": "broken_utilibot",
     "color": "dark_gray",
-    "name": "broken construction robot",
+    "name": { "str": "broken construction robot" },
     "description": "A broken construction robot, now wrecked and immobile.  Could be stripped down for parts."
   },
   {
@@ -144,7 +144,7 @@
     "id": "broken_utilibot_fire",
     "copy-from": "broken_utilibot",
     "color": "yellow",
-    "name": "broken firefighter robot",
+    "name": { "str": "broken firefighter robot" },
     "description": "A broken firefighter robot, now cold and inert.  Could be stripped down for parts."
   },
   {
@@ -152,7 +152,7 @@
     "id": "broken_utilibot_blob",
     "copy-from": "broken_utilibot",
     "color": "light_green",
-    "name": "broken blob breeder",
+    "name": { "str": "broken blob breeder" },
     "description": "A broken robotic incubator for alien blobs.  Could be stripped down or re-crafted."
   },
   {
@@ -160,7 +160,7 @@
     "id": "broken_utilibot_slimespring",
     "copy-from": "broken_utilibot",
     "color": "light_green",
-    "name": "broken slime breeder",
+    "name": { "str": "broken slime breeder" },
     "description": "A broken robotic incubator for alien slimes.  Could be stripped down or re-crafted."
   },
   {
@@ -168,7 +168,7 @@
     "id": "broken_utilibot_digester",
     "copy-from": "broken_utilibot",
     "color": "light_green",
-    "name": "broken digestron",
+    "name": { "str": "broken digestron" },
     "description": "A broken acid digestor robot, now cold and unmoving.  Could be stripped down or re-crafted."
   },
   {
@@ -176,7 +176,7 @@
     "id": "broken_utilibot_beehive",
     "copy-from": "broken_utilibot",
     "color": "yellow",
-    "name": "broken bee-bot",
+    "name": { "str": "broken bee-bot" },
     "description": "A broken beehive robot, now still and bee-less.  Could be stripped down or re-crafted."
   },
   {
@@ -185,7 +185,7 @@
     "symbol": ",",
     "color": "white",
     "looks_like": "broken_tribot",
-    "name": "broken medical bot",
+    "name": { "str": "broken medical bot" },
     "category": "other",
     "description": "A broken medical robot, now crumpled and inert.  Could be stripped down for parts.",
     "price": "300 USD",
@@ -201,14 +201,14 @@
   {
     "type": "GENERIC",
     "id": "broken_medibot_disarmed",
-    "name": "broken disarmed medical robot",
+    "name": { "str": "broken disarmed medical robot" },
     "copy-from": "broken_medibot",
     "description": "A broken medical robot.  Its onboard pharma-crafter and integral surgical tools have been removed.  Could be gutted for parts or crafted into a salvaged robot."
   },
   {
     "type": "GENERIC",
     "id": "broken_medibot_assassin",
-    "name": "broken assassin robot",
+    "name": { "str": "broken assassin robot" },
     "copy-from": "broken_medibot",
     "color": "dark_gray",
     "description": "A broken assassin robot, now limp and immobile.  Could be stripped down or re-crafted."
@@ -218,7 +218,7 @@
     "id": "broken_medibot_elixir",
     "copy-from": "broken_medibot",
     "color": "light_green",
-    "name": "broken elixirator",
+    "name": { "str": "broken elixirator" },
     "description": "A broken elixirator, now shattered and lifeless.  Could be stripped down or re-crafted."
   },
   {
@@ -226,7 +226,7 @@
     "id": "broken_medibot_party",
     "copy-from": "broken_medibot",
     "color": "yellow",
-    "name": "broken party bot",
+    "name": { "str": "broken party bot" },
     "description": "A broken party robot, now wasted and burnt out.  Looks like the party's over.  Could be stripped down or re-crafted."
   },
   {
@@ -234,7 +234,7 @@
     "id": "broken_broken_cyborg",
     "symbol": ",",
     "color": "light_gray",
-    "name": "broken insane cyborg",
+    "name": { "str": "broken insane cyborg" },
     "category": "other",
     "description": "A broken cyborg, now limp and unmoving.  Could be gutted for parts or crafted into a salvaged robot.",
     "material": [ "steel", "plastic" ],
@@ -250,7 +250,7 @@
     "id": "broken_cyborg_necro",
     "symbol": ",",
     "color": "light_gray",
-    "name": "broken necrotic cyborg",
+    "name": { "str": "broken necrotic cyborg" },
     "category": "other",
     "description": "A broken cyborg, now limp and unmoving.  Could be stripped down or re-crafted into a salvaged robot.",
     "material": [ "steel", "plastic" ],
@@ -266,7 +266,7 @@
     "id": "broken_skitterbot_rat",
     "copy-from": "broken_skitterbot",
     "color": "light_gray",
-    "name": "broken rat snatcher",
+    "name": { "str": "broken rat snatcher" },
     "description": "A broken rat snatcher, now harmless and inert.  Could be stripped down or re-crafted."
   },
   {
@@ -274,7 +274,7 @@
     "id": "broken_skitterbot_grab",
     "copy-from": "broken_skitterbot",
     "color": "light_gray",
-    "name": "broken grab-bot",
+    "name": { "str": "broken grab-bot" },
     "description": "A broken grabber robot, now limp and nonthreatening.  Could be stripped down or re-crafted."
   },
   {
@@ -282,7 +282,7 @@
     "id": "broken_skitterbot_hunter",
     "copy-from": "broken_skitterbot",
     "color": "light_gray",
-    "name": "broken pest hunter",
+    "name": { "str": "broken pest hunter" },
     "description": "A broken pest hunter, now harmless and inert.  Could be gutted for parts or re-crafted."
   },
   {
@@ -290,7 +290,7 @@
     "id": "broken_defbot_9mm",
     "copy-from": "broken_defbot_disarmed",
     "color": "light_gray",
-    "name": "broken security robot",
+    "name": { "str": "broken security robot" },
     "description": "A broken defense robot.  Its internal weapons have been removed.  Could be gutted for parts or crafted into a salvaged robot."
   },
   {
@@ -298,7 +298,7 @@
     "id": "broken_defbot_shot",
     "copy-from": "broken_defbot_disarmed",
     "color": "light_gray",
-    "name": "broken defense bot",
+    "name": { "str": "broken defense bot" },
     "description": "A broken defense robot.  Its internal weapons have been removed.  Could be gutted for parts or crafted into a salvaged robot."
   },
   {
@@ -306,7 +306,7 @@
     "id": "broken_defbot_riotcontrol",
     "copy-from": "broken_defbot_disarmed",
     "color": "light_gray",
-    "name": "broken riotcontrol robot",
+    "name": { "str": "broken riotcontrol robot" },
     "description": "A broken defense robot.  Its internal weapons have been removed.  Could be gutted for parts or crafted into a salvaged robot."
   },
   {
@@ -314,7 +314,7 @@
     "id": "broken_defbot_cowboy",
     "copy-from": "broken_defbot_disarmed",
     "color": "brown",
-    "name": "broken junkyard cowboy",
+    "name": { "str": "broken junkyard cowboy" },
     "description": "A broken salvaged robot.  Could be stripped for parts or re-crafted."
   },
   {
@@ -322,7 +322,7 @@
     "id": "broken_defbot_samurai",
     "copy-from": "broken_defbot_disarmed",
     "color": "cyan",
-    "name": "broken shortcircuit samurai",
+    "name": { "str": "broken shortcircuit samurai" },
     "description": "A broken salvaged robot.  Could be stripped for parts or re-crafted."
   },
   {
@@ -330,7 +330,7 @@
     "id": "broken_defbot_paladin",
     "copy-from": "broken_defbot_disarmed",
     "color": "red",
-    "name": "broken slapdash paladin",
+    "name": { "str": "broken slapdash paladin" },
     "description": "A broken salvaged robot.  Could be stripped for parts or re-crafted."
   },
   {
@@ -339,7 +339,7 @@
     "symbol": ",",
     "color": "green",
     "looks_like": "broken_secubot",
-    "name": "broken disarmed military bot",
+    "name": { "str": "broken disarmed military bot" },
     "category": "other",
     "description": "A broken defense robot.  Its internal weapons have been removed.  Could be gutted for parts or crafted into a salvaged robot.",
     "price": "300 USD",
@@ -357,7 +357,7 @@
     "id": "broken_milbot_trainer",
     "copy-from": "broken_milbot_disarmed",
     "color": "light_gray",
-    "name": "broken military trainer robot",
+    "name": { "str": "broken military trainer robot" },
     "description": "A broken military trainer robot, shattered and inert.  This one is armed with an integrated paintball gun.  Could be stripped for parts."
   },
   {
@@ -365,7 +365,7 @@
     "id": "broken_milbot_556",
     "copy-from": "broken_milbot_disarmed",
     "color": "light_gray",
-    "name": "broken military robot",
+    "name": { "str": "broken military robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated 5.56mm firearm.  Could be stripped for parts."
   },
   {
@@ -373,7 +373,7 @@
     "id": "broken_milbot_308",
     "copy-from": "broken_milbot_disarmed",
     "color": "light_gray",
-    "name": "broken military robot",
+    "name": { "str": "broken military robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated 7.62mm firearm.  Could be stripped for parts."
   },
   {
@@ -381,7 +381,7 @@
     "id": "broken_milbot_50bmg",
     "copy-from": "broken_milbot_disarmed",
     "color": "light_gray",
-    "name": "broken military robot",
+    "name": { "str": "broken military robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated 50 caliber firearm.  Could be stripped for parts."
   },
   {
@@ -389,7 +389,7 @@
     "id": "broken_milbot_8x40mm",
     "copy-from": "broken_milbot_disarmed",
     "color": "light_gray",
-    "name": "broken military robot",
+    "name": { "str": "broken military robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated 8x40mm firearm.  Could be stripped for parts."
   },
   {
@@ -397,7 +397,7 @@
     "id": "broken_milbot_needle",
     "copy-from": "broken_milbot_disarmed",
     "color": "light_gray",
-    "name": "broken military robot",
+    "name": { "str": "broken military robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated flechette gun.  Could be stripped for parts."
   },
   {
@@ -405,7 +405,7 @@
     "id": "broken_milbot_40mm",
     "copy-from": "broken_milbot_disarmed",
     "color": "red",
-    "name": "broken military robot",
+    "name": { "str": "broken military robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated 40mm grenade launcher.  Could be stripped for parts."
   },
   {
@@ -413,7 +413,7 @@
     "id": "broken_milbot_flame",
     "copy-from": "broken_milbot_disarmed",
     "color": "red",
-    "name": "broken military flame robot",
+    "name": { "str": "broken military flame robot" },
     "description": "A broken military robot, shattered and inert.  This one is armed with an integrated flamethrower.  Could be stripped for parts."
   },
   {
@@ -421,7 +421,7 @@
     "id": "broken_milbot_gaurdian",
     "copy-from": "broken_milbot_disarmed",
     "color": "white",
-    "name": "broken robo-guardian",
+    "name": { "str": "broken robo-guardian" },
     "description": "A broken salvaged robot.  Could be stripped or recrafted."
   },
   {
@@ -429,7 +429,7 @@
     "id": "broken_milbot_deluxe",
     "copy-from": "broken_milbot_disarmed",
     "color": "yellow",
-    "name": "broken robote deluxe",
+    "name": { "str": "broken robote deluxe" },
     "description": "A broken deluxe robot.  Could be stripped or recrafted."
   },
   {
@@ -437,7 +437,7 @@
     "id": "broken_milbot_protector",
     "copy-from": "broken_milbot_disarmed",
     "color": "green",
-    "name": "broken robo-protector",
+    "name": { "str": "broken robo-protector" },
     "description": "A broken salvaged robot.  Could be stripped or recrafted."
   },
   {
@@ -445,7 +445,7 @@
     "id": "broken_milbot_defender",
     "copy-from": "broken_milbot_disarmed",
     "color": "red",
-    "name": "broken robo-defender",
+    "name": { "str": "broken robo-defender" },
     "description": "A broken salvaged robot.  Could be stripped or recrafted."
   },
   {
@@ -454,7 +454,7 @@
     "symbol": ",",
     "color": "white",
     "looks_like": "broken_copbot",
-    "name": "broken disarmed advanced bot",
+    "name": { "str": "broken disarmed advanced bot" },
     "category": "other",
     "description": "A broken advanced robot.  Its internal weapons have been removed.  Could be gutted for parts or crafted into a salvaged robot.",
     "price": "300 USD",
@@ -472,7 +472,7 @@
     "id": "broken_advbot_laser",
     "copy-from": "broken_advbot_disarmed",
     "color": "yellow",
-    "name": "broken advanced robot",
+    "name": { "str": "broken advanced robot" },
     "description": "A broken advanced robot.  This one is armed with an integrated laser-emitter.  Could be stripped for parts."
   },
   {
@@ -480,7 +480,7 @@
     "id": "broken_advbot_plasma",
     "copy-from": "broken_advbot_disarmed",
     "color": "magenta",
-    "name": "broken advanced robot",
+    "name": { "str": "broken advanced robot" },
     "description": "A broken advanced robot.  This one is armed with an integrated plasma-ejector.  Could be stripped for parts."
   },
   {
@@ -488,7 +488,7 @@
     "id": "broken_advbot_rail",
     "copy-from": "broken_advbot_disarmed",
     "color": "magenta",
-    "name": "broken advanced robot",
+    "name": { "str": "broken advanced robot" },
     "description": "A broken advanced robot.  This one is armed with an integrated laser-emitter.  Could be stripped for parts."
   },
   {
@@ -496,7 +496,7 @@
     "id": "broken_advbot_lightning",
     "copy-from": "broken_advbot_disarmed",
     "color": "light_blue",
-    "name": "broken advanced robot",
+    "name": { "str": "broken advanced robot" },
     "description": "A broken advanced robot.  This one is armed with an integrated electro-caster.  Could be stripped for parts."
   },
   {
@@ -504,7 +504,7 @@
     "id": "broken_advbot_emp",
     "copy-from": "broken_advbot_disarmed",
     "color": "light_blue",
-    "name": "broken advanced robot",
+    "name": { "str": "broken advanced robot" },
     "description": "A broken advanced robot.  This one is armed with an integrated EMP projector.  Could be stripped for parts."
   },
   {
@@ -520,7 +520,7 @@
     "id": "broken_advbot_bitter",
     "copy-from": "broken_advbot_disarmed",
     "color": "light_green",
-    "name": "broken bitter spinster",
+    "name": { "str": "broken bitter spinster" },
     "description": "A broken salvaged robot.  Could be stripped or recrafted."
   },
   {
@@ -528,7 +528,7 @@
     "id": "broken_chickenbot_horror",
     "copy-from": "broken_chickenbot_disarmed",
     "color": "red",
-    "name": "broken chainsaw horror",
+    "name": { "str": "broken chainsaw horror" },
     "description": "A broken salvaged robot.  Thank God it's finally dead.  Could be stripped or recrafted."
   },
   {
@@ -536,7 +536,7 @@
     "id": "broken_chickenbot_terror",
     "copy-from": "broken_chickenbot_disarmed",
     "color": "red",
-    "name": "broken screeching terror",
+    "name": { "str": "broken screeching terror" },
     "description": "A broken salvaged robot.  Thank God it's finally dead.  Could be stripped or recrafted."
   },
   {
@@ -544,7 +544,7 @@
     "id": "broken_chickenbot_nightmare",
     "copy-from": "broken_chickenbot_disarmed",
     "color": "red",
-    "name": "broken hooked nightmare",
+    "name": { "str": "broken hooked nightmare" },
     "description": "A broken salvaged robot.  Thank God it's finally dead.  Could be stripped or recrafted."
   },
   {
@@ -552,7 +552,7 @@
     "id": "broken_tankbot_king",
     "copy-from": "broken_tankbot_disarmed",
     "color": "pink",
-    "name": "broken fist king",
+    "name": { "str": "broken fist king" },
     "description": "A broken salvaged robot.  Could be stripped or recrafted."
   },
   {
@@ -560,7 +560,7 @@
     "id": "broken_tankbot_sultan",
     "copy-from": "broken_tankbot_disarmed",
     "color": "magenta",
-    "name": "broken atomic sultan",
+    "name": { "str": "broken atomic sultan" },
     "description": "A broken salvaged robot.  Could be stripped or recrafted."
   },
   {
@@ -568,7 +568,7 @@
     "id": "broken_molebot",
     "symbol": ",",
     "color": "green",
-    "name": "broken miner bot",
+    "name": { "str": "broken miner bot" },
     "category": "other",
     "description": "A broken miner bot.  Much less threatening now that it's no longer capable of drilling anything.  Could be gutted for parts.",
     "price": "200 USD",
@@ -586,7 +586,7 @@
     "id": "broken_tripod",
     "symbol": ",",
     "color": "green",
-    "name": "broken tribot",
+    "name": { "str": "broken tribot" },
     "category": "other",
     "description": "A broken tribot.  Now that its legs lie broken and immobile, the world seems a little less threatening.  Could be gutted for parts.",
     "price": "10 USD",

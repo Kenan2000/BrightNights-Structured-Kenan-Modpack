@@ -2,7 +2,7 @@
   {
     "id": "mon_ninja_decoy",
     "type": "MONSTER",
-    "name": "Decoy doll",
+    "name": { "str": "Decoy doll" },
     "description": "I made shirts on trees and attached strings so that I could produce movement. It is installed on the floor.",
     "default_faction": "player",
     "species": [ "ROBOT" ],
@@ -35,7 +35,7 @@
   {
     "id": "mon_ninja_afterimage",
     "type": "MONSTER",
-    "name": "After Image",
+    "name": { "str": "After Image" },
     "description": "Goshigoshi .... This is afterimage ...!",
     "default_faction": "player",
     "species": [ "ROBOT" ],
@@ -61,7 +61,7 @@
   {
     "id": "mon_ninja_spring_floor",
     "type": "MONSTER",
-    "name": "Spring Floor",
+    "name": { "str": "Spring Floor" },
     "description": "It is a floor type defense robot. Jump up and play the intruder. \n Despite being devised as defense method not to kill \n the user who brought a cruel trap to the destroyed place was banned and manufacturing was banned as being inhumane.",
     "default_faction": "defense_bot",
     "species": [ "ROBOT" ],

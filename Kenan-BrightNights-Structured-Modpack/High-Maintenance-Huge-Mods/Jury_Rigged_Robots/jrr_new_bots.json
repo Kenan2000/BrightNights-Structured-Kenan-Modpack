@@ -2,7 +2,7 @@
   {
     "type": "MONSTER",
     "id": "mon_pursuer_bot",
-    "name": "pursuer drone",
+    "name": { "str": "pursuer drone" },
     "species": "ROBOT",
     "default_faction": "military",
     "symbol": "P",
@@ -33,7 +33,7 @@
   {
     "type": "MONSTER",
     "id": "mon_seeker_bot",
-    "name": "seeker drone",
+    "name": { "str": "seeker drone" },
     "species": "ROBOT",
     "default_faction": "military",
     "symbol": "s",
@@ -84,7 +84,7 @@
   {
     "type": "MONSTER",
     "id": "mon_hunter_bot",
-    "name": "hunter drone",
+    "name": { "str": "hunter drone" },
     "species": "ROBOT",
     "default_faction": "military",
     "symbol": "h",
@@ -115,7 +115,7 @@
   {
     "type": "MONSTER",
     "id": "mon_chaser_bot",
-    "name": "chaser drone",
+    "name": { "str": "chaser drone" },
     "species": "ROBOT",
     "default_faction": "military",
     "symbol": "c",

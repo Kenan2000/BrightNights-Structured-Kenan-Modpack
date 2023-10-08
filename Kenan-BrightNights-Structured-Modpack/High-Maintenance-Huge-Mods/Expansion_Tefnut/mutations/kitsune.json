@@ -15,7 +15,7 @@
   {
     "type": "mutation",
     "id": "THRESH_KITSUNE",
-    "name": "Trickster",
+    "name": { "str": "Trickster" },
     "points": 1,
     "description": "The world may be over, but you've still got mischief to make!",
     "valid": false,
@@ -87,7 +87,7 @@
     {
     "type": "mutation",
     "id": "SMELLY_FOXMUSK",
-    "name": "Fox Musk",
+    "name": { "str": "Fox Musk" },
     "points": -4,
     "description": "You have an exceptionally strong odor that makex you incredibly easy to track.",
     "starting_trait": false,
@@ -178,7 +178,7 @@
   {
     "type": "mutation",
     "id": "KITSUNE_SMARTS",
-    "name": "Prankster",
+    "name": { "str": "Prankster" },
     "points": 8,
     "description": "You can out-fox anyone on the block!  +8 Intelligence",
     "prereqs": [ "INT_UP" ],
@@ -204,7 +204,7 @@
     {
     "type": "mutation",
     "id": "KITSUNE_WEAK",
-    "name": "Minor atrophy",
+    "name": { "str": "Minor atrophy" },
     "points": 1,
     "description": "Your muscles are a little weaker from lack of use. But who needs strength, right?  Strength - 2",
 	"threshreq": [ "THRESH_KITSUNE" ],
@@ -222,7 +222,7 @@
       {
     "type": "mutation",
     "id": "TAIL_TWIN",
-    "name": "Twin Tails",
+    "name": { "str": "Twin Tails" },
     "points": 1,
     "visibility": 7,
     "description": "Your fluffy tail has split into two! You can dodge even better, and you feel something special about the world around you.",
@@ -240,7 +240,7 @@
   {
     "type": "mutation",
     "id": "TAIL_TRI",
-    "name": "Three Tails",
+    "name": { "str": "Three Tails" },
     "points": 1,
     "visibility": 7,
     "description": "Your fluffy tail has split further into three!  Magical potential is further increased, but dodge hasnt increased any further.",
@@ -260,7 +260,7 @@
   {
     "type": "mutation",
     "id": "TAIL_QUAD",
-    "name": "Four Tails",
+    "name": { "str": "Four Tails" },
     "points": 1,
     "visibility": 7,
     "description": "Your tails have split once more into four! Youre approaching enlightenment, you know it!",
@@ -281,7 +281,7 @@
     {
     "type": "mutation",
     "id": "TAIL_PENT",
-    "name": "Five Tails",
+    "name": { "str": "Five Tails" },
     "points": 1,
     "visibility": 7,
     "description": "Your tails have split once more into five! Your old dodge modifier is gone, but your magic is further powering up",
@@ -301,7 +301,7 @@
     {
     "type": "mutation",
     "id": "TAIL_SEX",
-    "name": "Six Tails",
+    "name": { "str": "Six Tails" },
     "points": 1,
     "visibility": 7,
     "description": "You have six silky, fluffy tails on your behind. Their ability as a focus for magic has further increased. Getting any further tails is bound to be a challenge, though.",
@@ -361,7 +361,7 @@
   {
     "type": "mutation",
     "id": "FOXSLEEP",
-    "name": "Kitsune energy",
+    "name": { "str": "Kitsune energy" },
     "points": 5,
     "description": "You require very little sleep. After all, if you sleep, you might miss something funny!",
     "valid": false,

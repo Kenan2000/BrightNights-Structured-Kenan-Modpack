@@ -2,7 +2,7 @@
   {
     "id": "mon_zombie_tendrils",
     "type": "MONSTER",
-    "name": "tendril zombie",
+    "name": { "str": "tendril zombie" },
     "description": "A human body with two twitching tentacles and stem-like outgrowths slit through the worn and tattered clothing.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_1" ],
@@ -56,7 +56,7 @@
   {
     "id": "mon_zombie_thicktendrils",
     "type": "MONSTER",
-    "name": "tendril zombie",
+    "name": { "str": "tendril zombie" },
     "description": "A tendril zombie with its tentacle pairs thickened from further mutation.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_1" ],
@@ -108,7 +108,7 @@
   {
     "id": "mon_zombie_tendricles",
     "type": "MONSTER",
-    "name": "tendril zombie",
+    "name": { "str": "tendril zombie" },
     "description": "A frail-looking corpse with raging long tentacles covering its rotten skin. Its tendril pairs are tipped with a sharp bone.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_1" ],
@@ -163,7 +163,7 @@
   {
     "id": "mon_zombie_tentawraith",
     "type": "MONSTER",
-    "name": "wraith",
+    "name": { "str": "wraith" },
     "description": "Dreadful outgrowths of savage tentacles accompanies this corpse's crimson body, thrashing anything in its path as it moves aimlessly. Within a closer look, one of its arm pulsates that burdens the body, dragging the heavily mutated portion into the ground.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE", "SECROZED_3" ],
@@ -224,7 +224,7 @@
   {
     "id": "mon_zombie_tentawraith_tent",
     "type": "MONSTER",
-    "name": "tentacle",
+    "name": { "str": "tentacle" },
     "description": "A fleshy tentacle, writhing violently in its surroundings. Immobile and short-lived, it stretches to strike from afar.",
     "default_faction": "zombie",
     "species": [ "ZOMBIE" ],

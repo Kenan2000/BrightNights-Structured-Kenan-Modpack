@@ -2,8 +2,8 @@
   {
     "type": "COMESTIBLE",
     "id": "egg_bird",
-    "name": "bird egg",
-    "weight": 75,
+    "name": { "str": "bird egg" },
+    "weight": "75 g",
     "color": "brown",
     "spoils_in": "7 days",
     "comestible_type": "FOOD",
@@ -12,7 +12,7 @@
     "healthy": 1,
     "calories": 113,
     "description": "Nutritious egg laid by a bird.",
-    "price": 250,
+    "price": "2 USD",
     "material": "egg",
     "volume": "250 ml",
     "stack_size": 4,
@@ -23,21 +23,21 @@
 {
     "type": "COMESTIBLE",
     "id": "egg_songbird",
-    "name": "songbird egg",
+    "name": { "str": "songbird egg" },
     "copy-from": "egg_bird",
     "rot_spawn": "GROUP_EGG_SONGBIRD"
 },
 {
     "type": "COMESTIBLE",
     "id": "egg_bird_mutant_vultch",
-    "name": "vultch egg",
+    "name": { "str": "vultch egg" },
     "copy-from": "egg_bird",
     "rot_spawn": "GROUP_EGG_VULTCH"
 },
 {
     "type": "COMESTIBLE",
     "id": "egg_bird_mutant_iridescent",
-    "name": "iridescent egg",
+    "name": { "str": "iridescent egg" },
     "color": "pink",
     "copy-from": "egg_bird",
     "rot_spawn": "GROUP_EGG_IRIDESCENT"
@@ -45,14 +45,14 @@
 {
     "type": "COMESTIBLE",
     "id": "egg_bird_mutant_ghoul",
-    "name": "ghoul bird egg",
+    "name": { "str": "ghoul bird egg" },
     "copy-from": "egg_bird",
     "use_action": "POISON",
     "quench": -4,
     "healthy": -10,
     "calories": 113,
     "description": "Poisonous egg laid by a bird.",
-    "price": 0,
+    "price": "0 cent",
     "material": "egg",
     "volume": "250 ml",
     "stack_size": 4,
@@ -64,8 +64,8 @@
     "id": "egg_bird_mutant_elephant",
     "volume": "1 L",
     "calories": 500,
-    "weight": 300,
-    "name": "elephant egg",
+    "weight": "300 g",
+    "name": { "str": "elephant egg" },
     "copy-from": "egg_bird",
     "rot_spawn": "GROUP_EGG_ELEPHANT"
 }

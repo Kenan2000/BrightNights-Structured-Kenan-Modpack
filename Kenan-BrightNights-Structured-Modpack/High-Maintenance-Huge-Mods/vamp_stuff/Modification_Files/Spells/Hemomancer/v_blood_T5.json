@@ -2,7 +2,7 @@
   {
     "id": "t5_blood_vampiricoutrage",
     "type": "SPELL",
-    "name": "Vampiric Outrage",
+    "name": { "str": "Vampiric Outrage" },
     "description": "Sets you in catastrophic madness, consuming own's life force in exchange of barraging random attacks.\n* For every damage, you randomly attack foes with 25 (<color_magenta>bash</color>, cut or <color_light_red>stab</color>) damage within a 12 tile radius. There's a 1/10 chance to suck the target's life force, dealing up to <color_green>10 biological damage</color> and heals you by <color_green>5</color>.\n\nThis is a <color_red>tier 5</color> spell.",
     "message": "<color_light_red>Dread fills your mind and body...</color>\nAs you stand, blood tendrils emerges from you!",
     "valid_targets": [ "none" ],
@@ -34,7 +34,7 @@
   {
     "id": "t5_blood_essencepull",
     "type": "SPELL",
-    "name": "Essence Pull",
+    "name": { "str": "Essence Pull" },
     "description": "Attempts to instantly kill the target by draining every ounce of their life force, dealing immensive <color_green>biological damage</color>.\n\nThis is a <color_red>tier 5</color> spell.",
     "valid_targets": [ "hostile" ],
     "effect": "target_attack",

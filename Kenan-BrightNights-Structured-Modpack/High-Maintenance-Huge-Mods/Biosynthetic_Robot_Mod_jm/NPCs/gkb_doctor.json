@@ -105,7 +105,7 @@
   {
     "id": "MISSION_GKB_DOC_A_ITEM",
     "type": "mission_definition",
-    "name": "Retrieve an anesthesia kit.",
+    "name": { "str": "Retrieve an anesthesia kit." },
     "description": "Retrieve an anesthesia kit.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 1,
@@ -136,7 +136,7 @@
   {
     "id": "MISSION_GKB_DOC_B_ITEM",
     "type": "mission_definition",
-    "name": "Defeat the Dawson robots.",
+    "name": { "str": "Defeat the Dawson robots." },
     "description": "Defeat the Dawson robots.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 3,

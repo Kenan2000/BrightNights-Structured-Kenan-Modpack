@@ -78,7 +78,7 @@
     "warmth": 20,
     "material_thickness": 3,
     "environmental_protection": 4,
-    "use_action": { "type": "holster", "min_volume": 6, "max_volume": 14, "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ] },
+    "use_action": { "type": "holster", "min_volume": "1500 ml", "max_volume": "3500 ml", "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ] },
     "flags": [ "VARSIZE", "WATERPROOF", "STURDY", "OUTER" ]
   },
   {
@@ -377,7 +377,7 @@
     "coverage": 2,
     "encumbrance": 0,
     "material_thickness": 1,
-    "container_data": { "contains": 1, "seals": true, "watertight": true },
+    "container_data": { "contains": "250 ml", "seals": true, "watertight": true },
     "use_action": { "target": "sac_purse_arm", "msg": "You take a moment to adjust the strings of your pouch.", "type": "transform" },
     "flags": [ "FRAGILE" ]
   },
@@ -401,7 +401,7 @@
     "coverage": 2,
     "encumbrance": 0,
     "material_thickness": 1,
-    "container_data": { "contains": 1, "seals": true, "watertight": true },
+    "container_data": { "contains": "250 ml", "seals": true, "watertight": true },
     "use_action": { "target": "sac_purse_leg", "msg": "You take a moment to adjust the strings of your arm-pouch.", "type": "transform" },
     "flags": [ "FRAGILE" ]
   },
@@ -426,7 +426,7 @@
     "coverage": 2,
     "encumbrance": 0,
     "material_thickness": 1,
-    "container_data": { "contains": 1, "seals": true, "watertight": true },
+    "container_data": { "contains": "250 ml", "seals": true, "watertight": true },
     "use_action": {
       "target": "sac_purse_ankle",
       "msg": "You take a moment to adjust the strings of your leg-pouch.",
@@ -454,7 +454,7 @@
     "coverage": 2,
     "encumbrance": 0,
     "material_thickness": 1,
-    "container_data": { "contains": 1, "seals": true, "watertight": true },
+    "container_data": { "contains": "250 ml", "seals": true, "watertight": true },
     "use_action": { "target": "sac_purse", "msg": "You take a moment to reset the strings of your pouch.", "type": "transform" },
     "flags": [ "FRAGILE" ]
   },

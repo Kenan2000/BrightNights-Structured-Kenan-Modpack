@@ -2,12 +2,12 @@
   {
     "abstract": "nanogear",
     "type": "ARMOR",
-    "name": "nanotech gear",
+    "name": { "str": "nanotech gear" },
     "description": "You shouldn't see this - nanogear",
     "symbol": "[",
     "color": "light_gray",
     "volume": "250 ml",
-    "weight": 1713,
+    "weight": "1713 g",
     "storage": "0 ml",
     "price": "5000 USD",
     "material": "nanite",
@@ -27,7 +27,7 @@
     "name": { "str": "nanotech shield" },
     "looks_like": "shield_scutum",
     "description": "A large shield composed of a cluster of nanites, currently in passive mode, you can block attacks with it.  When not in use, it compresses itself into the handle.",
-    "weight": 569,
+    "weight": "569 g",
     "volume": "1 L",
     "price": "2500 USD",
     "to_hit": 0,
@@ -46,10 +46,10 @@
   {
     "id": "nano_shield_active",
     "type": "ARMOR",
-    "name": "nanotech shield (active)",
+    "name": { "str": "nanotech shield (active)" },
     "looks_like": "shield_scutum",
     "description": "A large shield composed of a cluster of nanites, currently in active mode, it will automatically attempt to block attacks for you, allowing you to make use of your hand.  When not in use, it compresses itself into the handle.",
-    "weight": 569,
+    "weight": "569 g",
     "volume": "500 ml",
     "price": "2500 USD",
     "to_hit": 0,
@@ -68,10 +68,10 @@
   {
     "type": "ARMOR",
     "id": "nano_storage",
-    "name": "nanotech 'mini-shoggoth' storage",
+    "name": { "str": "nanotech 'mini-shoggoth' storage" },
     "copy-from": "nanogear",
     "looks_like": "slime_scrap",
-    "weight": 3157,
+    "weight": "3157 g",
     "covers": [ "torso" ],
     "storage": "250 L",
     "description": "A large blob of nanites with an AI, it actively branches out pseudopods to grasp items held near it and supports them as optimally as possible, including reaching down and forming 'legs' to support itself if needed.",
@@ -83,7 +83,7 @@
   {
     "type": "ARMOR",
     "id": "nano_holster",
-    "name": "nanotech holster",
+    "name": { "str": "nanotech holster" },
     "copy-from": "nanogear",
     "looks_like": "holster",
     "covers": [ "leg_either" ],
@@ -93,10 +93,10 @@
       "type": "holster",
       "holster_prompt": "Store weapon",
       "holster_msg": "You store your %s",
-      "max_volume": 18,
-      "min_volume": 0,
+      "max_volume": "4500 ml",
+      "min_volume": "0 ml",
       "multi": 2,
-      "max_weight": 5000,
+      "max_weight": "5000 g",
       "draw_cost": 0,
       "skills": [ "pistol", "smg", "shotgun", "rifle", "launcher" ]
     }
@@ -104,7 +104,7 @@
   {
     "type": "ARMOR",
     "id": "nano_sheath",
-    "name": "nanotech sheath",
+    "name": { "str": "nanotech sheath" },
     "copy-from": "nanogear",
     "looks_like": "sheath",
     "covers": [ "leg_either" ],
@@ -114,10 +114,10 @@
       "type": "holster",
       "holster_prompt": "Store weapon",
       "holster_msg": "You store your %s",
-      "max_volume": 18,
-      "min_volume": 0,
+      "max_volume": "4500 ml",
+      "min_volume": "0 ml",
       "multi": 2,
-      "max_weight": 5000,
+      "max_weight": "5000 g",
       "draw_cost": 0,
       "flags": [ "SHEATH_KNIFE", "SHEATH_SWORD", "SHEATH_SPEAR" ]
     }
@@ -125,7 +125,7 @@
   {
     "type": "ARMOR",
     "id": "nano_mag_holder",
-    "name": "nanotech magazine holder",
+    "name": { "str": "nanotech magazine holder" },
     "copy-from": "nanogear",
     "looks_like": "slime_scrap",
     "description": "A small blob of nanites with an AI, it stores magazines and assists in loading them as needed.",
@@ -136,8 +136,8 @@
       "holster_prompt": "Store ammo",
       "holster_msg": "You store your %s.",
       "multi": 4,
-      "max_volume": 6,
-      "min_volume": 0,
+      "max_volume": "1500 ml",
+      "min_volume": "0 ml",
       "draw_cost": 0,
       "flags": [ "MAG_COMPACT", "MAG_BULKY" ]
     }
@@ -145,9 +145,9 @@
   {
     "type": "ARMOR",
     "id": "nanosuit",
-    "name": "nanosuit",
+    "name": { "str": "nanosuit" },
     "copy-from": "nanogear",
-    "weight": 9836,
+    "weight": "9836 g",
     "covers": [ "head", "mouth", "eyes", "torso", "arms", "hands", "legs", "feet" ],
     "description": "A cluster of carefully programmed nanites designed to fully cover the body and defend against external threats.  Can be activated to produce heat.",
     "looks_like": "rm13_armor_on",
@@ -197,7 +197,7 @@
   {
     "type": "ARMOR",
     "id": "nanosuit_heated",
-    "name": "nanosuit (heat+)",
+    "name": { "str": "nanosuit (heat+)" },
     "copy-from": "nanosuit",
     "description": "A cluster of carefully programmed nanites designed to fully cover the body and defend against external threats.  Currently heating itself.",
     "warmth": 50,
@@ -215,7 +215,7 @@
     "type": "ARMOR",
     "id": "nanosuit_heated_2",
     "copy-from": "nanosuit_heated",
-    "name": "nanosuit (heat++)",
+    "name": { "str": "nanosuit (heat++)" },
     "warmth": 100,
     "use_action": [
       {
@@ -231,7 +231,7 @@
     "type": "ARMOR",
     "id": "nanosuit_heated_3",
     "copy-from": "nanosuit_heated",
-    "name": "nanosuit (heat+++)",
+    "name": { "str": "nanosuit (heat+++)" },
     "warmth": 150,
     "use_action": [
       {
@@ -247,7 +247,7 @@
     "type": "ARMOR",
     "id": "nanosuit_heated_4",
     "copy-from": "nanosuit_heated",
-    "name": "nanosuit (heat++++)",
+    "name": { "str": "nanosuit (heat++++)" },
     "warmth": 200,
     "use_action": [
       {
@@ -263,7 +263,7 @@
     "type": "ARMOR",
     "id": "nanosuit_heated_5",
     "copy-from": "nanosuit_heated",
-    "name": "nanosuit (heat+++++)",
+    "name": { "str": "nanosuit (heat+++++)" },
     "warmth": 250,
     "use_action": [
       {
@@ -285,11 +285,11 @@
     "rigid": true,
     "seals": true,
     "watertight": true,
-    "name": "nanotech liquid compressor",
+    "name": { "str": "nanotech liquid compressor" },
     "description": "A heavily compressed liquid storage device, it is also capable of keeping its contents fresh and maintaining their temperature.",
     "price": "2400 USD",
-    "weight": 2957,
-    "volume": 16,
+    "weight": "2957 g",
+    "volume": "4 L",
     "bashing": 0,
     "cutting": 0,
     "to_hit": 0,
@@ -308,11 +308,11 @@
     "rigid": true,
     "seals": true,
     "watertight": true,
-    "name": "nanotech liquid compressor d",
+    "name": { "str": "nanotech liquid compressor d" },
     "description": "A heavily compressed liquid storage device, it is basically a debug crooked nail that you should not see",
     "price": "2400 USD",
-    "weight": 2957,
-    "volume": 16,
+    "weight": "2957 g",
+    "volume": "4 L",
     "bashing": 0,
     "cutting": 0,
     "to_hit": 0,

@@ -110,7 +110,7 @@
   {
     "id": "MISSION_GKB_COOK_A_ITEM",
     "type": "mission_definition",
-    "name": "Retrieve the water purifier.",
+    "name": { "str": "Retrieve the water purifier." },
     "description": "Retrieve the water purifier.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 3,
@@ -182,7 +182,7 @@
   {
     "id": "MISSION_GKB_COOK_B_ITEM",
     "type": "mission_definition",
-    "name": "Defeat the Dawson robots.",
+    "name": { "str": "Defeat the Dawson robots." },
     "description": "Defeat the Dawson robots.",
     "goal": "MGOAL_KILL_MONSTER",
     "difficulty": 3,

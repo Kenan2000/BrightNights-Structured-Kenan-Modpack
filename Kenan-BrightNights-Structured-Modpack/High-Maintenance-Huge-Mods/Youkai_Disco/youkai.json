@@ -2,7 +2,7 @@
   {
     "type": "MONSTER",
     "id": "mon_tengu",
-    "name": "tengu thug",
+    "name": { "str": "tengu thug" },
     "description": "A tall person with a red face and a long nose, covered in black feathers with wings on its back, wearing a kimono with a mischievous look in the eye.  With a quick glance you also spot its sharp claws, and a wooden club by its belt.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "tengu",
@@ -34,7 +34,7 @@
   {
     "type": "MONSTER",
     "id": "mon_tengu_monk",
-    "name": "tengu monk",
+    "name": { "str": "tengu monk" },
     "description": "A tall person with a red face and a long nose, with most of its head however covered up by rags.  From under its kimono you can spot pieces of Japanese armor.  It often meditates and is probably best left to itself.  As for weapons, it's holding a naginata, a dangerous polearm.",
     "species": [ "YOUKAI", "ORDER_SIDE" ],
     "default_faction": "tengu",
@@ -67,7 +67,7 @@
   {
     "type": "MONSTER",
     "id": "mon_nekomata",
-    "name": "cat",
+    "name": { "str": "cat" },
     "description": "A small domesticated predator gone feral in the absence of human stewardship.  Harried by the elements and the rigors of survival, it waggles its two tails...  Wait, nevermind, that's probably not your ordinary cat.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "nekomata",
@@ -97,7 +97,7 @@
   {
     "type": "MONSTER",
     "id": "mon_kappa",
-    "name": "kappa",
+    "name": { "str": "kappa" },
     "description": "A small humanoid the size of child, with frog-like skin and turtle-like carapace on it's back.  It carries water in a cavity in its skull, has a sharp beak and is known to drag people under the water in order to eat them.  It would prefer cucumbers however.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "kappa",
@@ -134,7 +134,7 @@
   {
     "type": "MONSTER",
     "id": "mon_kappa_engineer",
-    "name": "kappa engineer",
+    "name": { "str": "kappa engineer" },
     "description": "A small humanoid the size of child, with frog-like skin and turtle-like carapace on it's back.  It carries water in a cavity in its skull and strangely enough in this case a bunch of tools.  What would it need those for?",
     "species": [ "YOUKAI", "ORDER_SIDE" ],
     "default_faction": "kappa",
@@ -171,7 +171,7 @@
   {
     "id": "mon_kappabot",
     "type": "MONSTER",
-    "name": "mysterious robot",
+    "name": { "str": "mysterious robot" },
     "description": "On the outside this robot seems to be of a very old design, similar in look to ancient Japanese automata.  Then you notice its giant size and the fact that, among many unfamiliar symbols, it has a three-leafed nuclear hazard sign.",
     "default_faction": "youkai",
     "species": [ "ROBOT", "YOUKAI", "ORDER_SIDE" ],
@@ -201,7 +201,7 @@
   {
     "id": "mon_oni",
     "type": "MONSTER",
-    "name": "oni bandit",
+    "name": { "str": "oni bandit" },
     "description": "A huge, muscular person with blood red skin, glaring at you with rage, wearing animal skins and wielding a giant log as a makeshift club.  Under its singular horn stares at you a smaller, third eye, surrounded by unkempt hair.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "oni",
@@ -237,7 +237,7 @@
   {
     "type": "MONSTER",
     "id": "mon_kamaitachi",
-    "name": "kamaitachi",
+    "name": { "str": "kamaitachi" },
     "description": "A small weasel-like creature, with four sickles instead of its four paws. It flies on an unending gust of hot wind filled with dust and seems to be able to control its direction.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "kamaitachi",
@@ -267,7 +267,7 @@
 	
     "type": "MONSTER",
     "id": "mon_okka",
-    "name": "okka",
+    "name": { "str": "okka" },
     "description": "A small bulbous creature with red, frog-like skin. It runs around on its two tiny clawed feets, hiding from people's sight.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "okka",
@@ -293,7 +293,7 @@
   },  {
     "type": "MONSTER",
     "id": "mon_kanazuchibo",
-    "name": "kanazuchibo",
+    "name": { "str": "kanazuchibo" },
     "description": "A  tiny humanoid with grey, wrinkly skin and long, uncombed silver hair. It carries around absurdly large wooden hammer, given its size.",
     "species": [ "YOUKAI", "CHAOS_SIDE" ],
     "default_faction": "youkai",

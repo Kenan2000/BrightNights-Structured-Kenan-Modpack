@@ -160,7 +160,7 @@
   {
     "id": "MISSION_WASTE_CRIME_A",
     "type": "mission_definition",
-    "name": "Retrieve the drug shipment.",
+    "name": { "str": "Retrieve the drug shipment." },
     "description": "Retrieve the drug shipment from the raiders who stole it.",
     "goal": "MGOAL_FIND_ITEM",
     "item": "fo_jet_kit",
@@ -236,7 +236,7 @@
   {
     "id": "MISSION_WASTE_CRIME_B",
     "type": "mission_definition",
-    "name": "Make two doses of ultrajet.",
+    "name": { "str": "Make two doses of ultrajet." },
     "description": "Use the ultrajet recipe to create two ultrajet samples",
     "goal": "MGOAL_FIND_ITEM",
     "item": "fo_ultrajet_kit",

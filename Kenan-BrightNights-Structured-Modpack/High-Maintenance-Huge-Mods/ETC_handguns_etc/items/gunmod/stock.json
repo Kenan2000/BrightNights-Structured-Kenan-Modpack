@@ -3,22 +3,22 @@
     "id": "ocg_recoil_stock",
     "copy-from": "recoil_stock",
     "type": "GUNMOD",
-    "name": "OCG recoil stock",
+    "name": { "str": "OCG recoil stock" },
     "description": "An advanced OCG built in stock designed to absorb perceived recoil.",
-    "weight": 0,
+    "weight": "0 g",
     "volume": "0 ml",
-    "price": 0,
+    "price": "0 cent",
     "flags": [ "IRREMOVABLE" ]
   },
   {
     "id": "ocg_telescopic_stock",
     "copy-from": "folding_stock",
     "type": "GUNMOD",
-    "name": "OCG telescopic stock",
+    "name": { "str": "OCG telescopic stock" },
     "description": "An OCG built in telescopic stock which is faster to set up than a folding stock but won't reduce as much volume.",
-    "weight": 0,
-    "integral_volume": 1,
-    "price": 0,
+    "weight": "0 g",
+    "integral_volume": "250 ml",
+    "price": "0 cent",
     "flags": [ "IRREMOVABLE", "COLLAPSIBLE_STOCK" ]
   }
 ]

@@ -136,7 +136,7 @@
   {
     "id": "MISSION_GKB_GUN_A_ITEM",
     "type": "mission_definition",
-    "name": "Retrieve the esoteric electronic device from the bandit.",
+    "name": { "str": "Retrieve the esoteric electronic device." },
     "description": "Retrieve the esoteric electronic device from the bandit.",
     "goal": "MGOAL_FIND_ITEM",
     "difficulty": 3,
@@ -207,7 +207,7 @@
   {
     "id": "MISSION_GKB_GUN_B_ITEM",
     "type": "mission_definition",
-    "name": "Kill the road bandits.",
+    "name": { "str": "Kill the road bandits." },
     "description": "Kill the road bandits.",
     "goal": "MGOAL_ASSASSINATE",
     "difficulty": 3,

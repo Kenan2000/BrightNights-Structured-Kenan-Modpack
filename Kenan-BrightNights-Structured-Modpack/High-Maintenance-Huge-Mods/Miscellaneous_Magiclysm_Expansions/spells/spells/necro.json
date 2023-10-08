@@ -2,7 +2,7 @@
   {
     "id": "mass_summon_zombie",
     "type": "SPELL",
-    "name": "Summon Zombie Pack",
+    "name": { "str": "Summon Zombie Pack" },
     "description": "Several ethereal-looking zombies rise from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 3,
@@ -29,7 +29,7 @@
   {
     "id": "summon_skeletons",
     "type": "SPELL",
-    "name": "Summon Skeletons",
+    "name": { "str": "Summon Skeletons" },
     "description": "Ghostly skeletons rise from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 3,
@@ -56,7 +56,7 @@
   {
     "id": "summon_uncatpack",
     "type": "SPELL",
-    "name": "Summon Decayed Pouncer Pack",
+    "name": { "str": "Summon Decayed Pouncer Pack" },
     "description": " Decrepit-looking large cats rises from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 2,
@@ -83,7 +83,7 @@
   {
     "id": "summon_tzom",
     "type": "SPELL",
-    "name": "Summon Undead Bodyguards",
+    "name": { "str": "Summon Undead Bodyguards" },
     "description": "Muscular corpses rise from the earth to defend you. You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 2,
@@ -110,7 +110,7 @@
   {
     "id": "summon_zombie_regiment",
     "type": "SPELL",
-    "name": "Summon Zombified Regiment",
+    "name": { "str": "Summon Zombified Regiment" },
     "description": "Many ethereal-looking zombies rise from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 9,
@@ -137,7 +137,7 @@
   {
     "id": "summon_zombie_army",
     "type": "SPELL",
-    "name": "Azeraks Conquest of Undeath",
+    "name": { "str": "Azeraks Conquest of Undeath" },
     "description": "The dead shall rise and shamble the earth, and the dead shall outnumber the living!",
     "valid_targets": [ "ground" ],
     "min_damage": 12,
@@ -164,7 +164,7 @@
   {
     "id": "summon_skeleton_scouts",
     "type": "SPELL",
-    "name": "Summon Skeleton Scouts",
+    "name": { "str": "Summon Skeleton Scouts" },
     "description": "Several ghostly skeletons rise from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 6,
@@ -191,7 +191,7 @@
   {
     "id": "summon_skeleton_squad",
     "type": "SPELL",
-    "name": "Summon Skeleton Squadrant",
+    "name": { "str": "Summon Skeleton Squadrant" },
     "description": "A squadrant of ghastly skeletons rise from the depths of the earth to fight for you.  You may be able to summon more with a higher level in this spell.",
     "valid_targets": [ "ground" ],
     "min_damage": 8,

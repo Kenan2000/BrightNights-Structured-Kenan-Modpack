@@ -20,7 +20,7 @@
         "melee_allowed": true,
         "buff_duration": 2,
         "bonus_dodges": 1,
-        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1 } ]
       }
     ],
     "onmove_buffs": [
@@ -32,7 +32,7 @@
         "melee_allowed": true,
         "buff_duration": 1,
         "max_stacks": 2,
-        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1 } ]
       }
     ],
     "techniques": [
@@ -101,7 +101,7 @@
         "melee_allowed": true,
         "buff_duration": 1,
         "max_stacks": 2,
-        "flat_bonuses": [ { "stat": "hit", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "hit", "scale": 1 } ]
       }
     ],
     "onpause_buffs": [
@@ -112,7 +112,7 @@
         "skill_requirements": [ { "name": "melee", "level": 5 } ],
         "melee_allowed": true,
         "buff_duration": 1,
-        "flat_bonuses": [ { "stat": "speed", "scale": 50.0 } ]
+        "flat_bonuses": [ { "stat": "speed", "scale": 50 } ]
       }
     ],
     "techniques": [ "mma_tec_diamond_mind_strike", "mma_tec_diamond_mind_crit" ],
@@ -146,7 +146,7 @@
         "name": "Combat Acrobat",
         "description": "Always stay light on your feet.  It is better to evade than be hit.\n\n+1.0 Dodging skill.",
         "melee_allowed": true,
-        "flat_bonuses": [ { "stat": "hit", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "hit", "scale": 1 } ]
       },
       {
         "id": "mma_buff_hylian_static2",
@@ -154,7 +154,7 @@
         "description": "After a great deal of practice, you have become even more nimble in a battle.\n\n+1.0 Dodging skill.",
         "skill_requirements": [ { "name": "melee", "level": 3 } ],
         "melee_allowed": true,
-        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1 } ]
       },
       {
         "id": "mma_buff_hylian_static3",
@@ -162,7 +162,7 @@
         "description": "You have seen so much combat that your dodging skills have become top notch!\n\n+1.0 Dodging skill.",
         "skill_requirements": [ { "name": "melee", "level": 5 } ],
         "melee_allowed": true,
-        "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "dodge", "scale": 1 } ]
       }
     ],
     "ondodge_buffs": [
@@ -296,7 +296,7 @@
         "melee_allowed": true,
         "buff_duration": 2,
         "flat_bonuses": [
-          { "stat": "hit", "scale": 1.0 },
+          { "stat": "hit", "scale": 1 },
           { "stat": "arpen", "type": "bash", "scaling-stat": "per", "scale": 0.5 },
           { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 0.5 },
           { "stat": "arpen", "type": "stab", "scaling-stat": "per", "scale": 0.5 }
@@ -379,7 +379,7 @@
         "melee_allowed": true,
         "unarmed_allowed": true,
         "buff_duration": 1,
-        "flat_bonuses": [ { "stat": "speed", "scale": 20.0 } ]
+        "flat_bonuses": [ { "stat": "speed", "scale": 20 } ]
       }
     ],
     "onpause_buffs": [
@@ -433,7 +433,7 @@
         "name": "Determination",
         "description": "You are a determined warrior.  Your inner calm aids you in landing your strikes and protecting yourself.\n\nBlocked damage reduced by 100% of Strength, +1 Accuracy.",
         "melee_allowed": true,
-        "flat_bonuses": [ { "stat": "hit", "scale": 1.0 }, { "stat": "block", "scaling-stat": "str", "scale": 1.0 } ]
+        "flat_bonuses": [ { "stat": "hit", "scale": 1 }, { "stat": "block", "scaling-stat": "str", "scale": 1 } ]
       },
       {
         "id": "mma_buff_shii_cho_static2",
@@ -443,9 +443,9 @@
         "melee_allowed": true,
         "bonus_blocks": 1,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": 1.0 },
-          { "stat": "armor", "type": "cut", "scale": 1.0 },
-          { "stat": "armor", "type": "stab", "scale": 1.0 }
+          { "stat": "armor", "type": "bash", "scale": 1 },
+          { "stat": "armor", "type": "cut", "scale": 1 },
+          { "stat": "armor", "type": "stab", "scale": 1 }
         ]
       },
       {
@@ -456,9 +456,9 @@
         "melee_allowed": true,
         "bonus_blocks": 1,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": 1.0 },
-          { "stat": "armor", "type": "cut", "scale": 1.0 },
-          { "stat": "armor", "type": "stab", "scale": 1.0 }
+          { "stat": "armor", "type": "bash", "scale": 1 },
+          { "stat": "armor", "type": "cut", "scale": 1 },
+          { "stat": "armor", "type": "stab", "scale": 1 }
         ]
       },
       {
@@ -469,9 +469,9 @@
         "melee_allowed": true,
         "bonus_blocks": 1,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": 1.0 },
-          { "stat": "armor", "type": "cut", "scale": 1.0 },
-          { "stat": "armor", "type": "stab", "scale": 1.0 }
+          { "stat": "armor", "type": "bash", "scale": 1 },
+          { "stat": "armor", "type": "cut", "scale": 1 },
+          { "stat": "armor", "type": "stab", "scale": 1 }
         ]
       }
     ],
@@ -512,9 +512,9 @@
         "melee_allowed": true,
         "unarmed_allowed": true,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": 2.0 },
-          { "stat": "armor", "type": "cut", "scale": 2.0 },
-          { "stat": "armor", "type": "stab", "scale": 2.0 }
+          { "stat": "armor", "type": "bash", "scale": 2 },
+          { "stat": "armor", "type": "cut", "scale": 2 },
+          { "stat": "armor", "type": "stab", "scale": 2 }
         ],
         "mult_bonuses": [
           { "stat": "damage", "type": "bash", "scale": 1.1 },
@@ -533,9 +533,9 @@
         "unarmed_allowed": true,
         "buff_duration": 1,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": 5.0 },
-          { "stat": "armor", "type": "cut", "scale": 5.0 },
-          { "stat": "armor", "type": "stab", "scale": 5.0 }
+          { "stat": "armor", "type": "bash", "scale": 5 },
+          { "stat": "armor", "type": "cut", "scale": 5 },
+          { "stat": "armor", "type": "stab", "scale": 5 }
         ]
       }
     ],
@@ -550,9 +550,9 @@
         "buff_duration": 1,
         "max_stacks": 5,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": 1.0 },
-          { "stat": "armor", "type": "cut", "scale": 1.0 },
-          { "stat": "armor", "type": "stab", "scale": 1.0 }
+          { "stat": "armor", "type": "bash", "scale": 1 },
+          { "stat": "armor", "type": "cut", "scale": 1 },
+          { "stat": "armor", "type": "stab", "scale": 1 }
         ]
       }
     ],
@@ -574,9 +574,9 @@
         "req_buffs": [ "mma_buff_stone_dragon_onmove1" ],
         "buff_duration": 4,
         "flat_bonuses": [
-          { "stat": "armor", "type": "bash", "scale": -2.0 },
-          { "stat": "armor", "type": "cut", "scale": -2.0 },
-          { "stat": "armor", "type": "stab", "scale": -2.0 }
+          { "stat": "armor", "type": "bash", "scale": -2 },
+          { "stat": "armor", "type": "cut", "scale": -2 },
+          { "stat": "armor", "type": "stab", "scale": -2 }
         ],
         "mult_bonuses": [
           { "stat": "damage", "type": "bash", "scale": 0.9 },
@@ -615,8 +615,8 @@
         "melee_allowed": true,
         "unarmed_allowed": true,
         "flat_bonuses": [
-          { "stat": "hit", "scale": 2.0 },
-          { "stat": "speed", "scale": 15.0 },
+          { "stat": "hit", "scale": 2 },
+          { "stat": "speed", "scale": 15 },
           { "stat": "damage", "type": "bash", "scale": 1.25 },
           { "stat": "damage", "type": "cut", "scale": 1.25 },
           { "stat": "damage", "type": "stab", "scale": 1.25 }
@@ -633,7 +633,7 @@
         "unarmed_allowed": true,
         "buff_duration": 1,
         "max_stacks": 2,
-        "flat_bonuses": [ { "stat": "hit", "scale": 1.0 } ],
+        "flat_bonuses": [ { "stat": "hit", "scale": 1 } ],
         "mult_bonuses": [
           { "stat": "damage", "type": "bash", "scale": 1.15 },
           { "stat": "damage", "type": "cut", "scale": 1.15 },
@@ -663,7 +663,7 @@
         "unarmed_allowed": true,
         "buff_duration": 2,
         "max_stacks": 2,
-        "flat_bonuses": [ { "stat": "speed", "scale": 30.0 } ]
+        "flat_bonuses": [ { "stat": "speed", "scale": 30 } ]
       }
     ],
     "onmove_buffs": [
@@ -675,7 +675,7 @@
         "melee_allowed": true,
         "unarmed_allowed": true,
         "buff_duration": 1,
-        "flat_bonuses": [ { "stat": "hit", "scale": 2.0 } ],
+        "flat_bonuses": [ { "stat": "hit", "scale": 2 } ],
         "mult_bonuses": [
           { "stat": "damage", "type": "bash", "scale": 1.1 },
           { "stat": "damage", "type": "cut", "scale": 1.1 },

@@ -89,7 +89,7 @@
     "category": "weapons",
     "looks_like": "grapnel",
     "flags": [ "STAB", "REACH_ATTACK", "NONCONDUCTIVE" ],
-    "price": 300
+    "price": "3 USD"
   },
   {
     "type": "TOOL",
@@ -162,12 +162,12 @@
     "type": "TOOL",
     "symbol": "/",
     "color": "blue",
-    "name": "Sword of plutonium",
+    "name": { "str": "Sword of plutonium" },
     "description": "It is a beautiful sword that fires lightly.",
     "price": "30000 USD",
     "flags": [ "LIGHT_120", "UNBREAKABLE_MELEE", "RADIOACTIVE", "LEAK_ALWAYS" ],
     "techniques": [ "SPIN", "WIDE" ],
-    "weight": 4000,
+    "weight": "4000 g",
     "volume": "3750 ml",
     "bashing": 30,
     "cutting": 46,

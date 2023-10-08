@@ -2,7 +2,7 @@
   {
     "type": "vehicle_part",
     "id": "robot_cargo",
-    "name": "robot_carrier",
+    "name": { "str": "robot_carrier" },
     "symbol": "=",
     "color": "light_gray",
     "looks_like": "cargo_space",
@@ -10,7 +10,7 @@
     "broken_color": "dark_gray",
     "durability": 250,
     "description": "A cargo space for carrying robots.  'e'xamine it to capture a robot next to you, or to release the robot currently contained.  When selecting a robot to capture, choose its tile relative to you, not the part.",
-    "size": 800,
+    "size": "200 L",
     "item": "robot_carrier",
     "location": "center",
     "requirements": {

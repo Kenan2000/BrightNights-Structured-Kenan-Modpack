@@ -51,7 +51,7 @@
     "container": "jug_plastic",
     "symbol": "~",
     "description": "An oil based paint used for waterproofing canvas.",
-    "price": 60,
+    "price": "1 USD",
     "material": [ "oil", "veggy" ],
     "volume": "250 ml",
     "phase": "liquid",
@@ -64,7 +64,7 @@
     "name": { "str": "thick canvas", "str_pl": "thick canvasses" },
     "description": "A large reinforced sheet of cloth",
     "material": [ "canvas" ],
-    "proportional": { "weight": 2.0, "volume": 2.0, "price": 1.5 }
+    "proportional": { "weight": 2, "volume": 2, "price": 1.5 }
   },
   {
     "type": "GENERIC",
@@ -78,7 +78,7 @@
     "type": "GENERIC",
     "id": "drying_oilcloth_frame",
     "copy-from": "canvas",
-    "proportional": {"weight": 2.0 },
+    "proportional": {"weight": 2 },
     "name": { "str": "drying oilcloth", "str_pl": "drying oilcloths" },
     "material": [ "oilcloth", "wood" ],
     "use_action": {
