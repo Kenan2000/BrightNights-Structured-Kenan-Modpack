@@ -12,7 +12,7 @@
     "volume": "50 ml",
     "weight": "1 g",
     "ammo_type": "foam_dart",
-    "damage": 1,
+    "damage": { "damage_type": "bullet", "amount": 1 },
     "dispersion": 100,
     "count": 10,
     "stack_size": 100,
