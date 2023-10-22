@@ -8,7 +8,7 @@
     "weight": "300 g",
     "price": "208 USD",
     "material": [ "superalloy", "plastic" ],
-    "use_action": { "type": "picklock", "pick_quality": 5 }
+    "qualities": [ [ "LOCKPICK", 5 ] ]
   },
   {
     "id": "tieclip_pick",
@@ -19,6 +19,6 @@
     "weight": "590 g",
     "price": "500 USD",
     "material": [ "superalloy", "silver" ],
-    "use_action": { "type": "picklock", "pick_quality": 5 }
+    "qualities": [ [ "LOCKPICK", 5 ] ]
   }
 ]
