@@ -7,7 +7,7 @@
     "name": { "str": "Sacrifice" },
     "description": "Spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster deals an instant death damage, sacrificing itself upon casting a spell that's been combined with.'",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "valid_targets": [ "ally", "hostile", "ground", "self" ],
+    "valid_targets": [ "self" ],
     "effect": "target_attack",
     "effect_str": "secro_sacrifice_effect",
     "min_damage": 100000000,
