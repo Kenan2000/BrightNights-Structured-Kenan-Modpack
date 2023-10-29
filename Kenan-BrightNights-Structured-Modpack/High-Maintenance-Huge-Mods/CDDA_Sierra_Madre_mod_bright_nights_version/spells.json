@@ -12,7 +12,7 @@
 		"max_duration": 12000,
 		"difficulty": 0,
 		"energy_source": "NONE",
-		"flags": [ "SILENT" ]
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ]
 	},
 	{
 		"id": "ghost_sight_spell",
@@ -27,7 +27,7 @@
 		"max_duration": 30000,
 		"difficulty": 0,
 		"energy_source": "NONE",
-		"flags": [ "SILENT" ]
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ]
 	},
 	{
 		"id": "vault_enter",
@@ -67,7 +67,7 @@
 		"max_damage": 1,
 		"min_range": 7,
 		"max_range": 7,
-		"flags": [ "SILENT" ]
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ]
 	},
 	{
 		"id": "stimpack_spell",
@@ -76,7 +76,7 @@
 		"description": "Injecting stimpack",
 		"message": "You quickly inject stimpack into your body and instantly feel better, just like people in medication ads do.",
 		"valid_targets": [ "self" ],
-		"flags": [ "SILENT" ],
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
 		"effect": "target_attack",
 		"effect_str": "stimpack_used",
 		"min_damage": -20,
@@ -92,7 +92,7 @@
 		"description": "Injecting stimpack",
 		"message": "You quickly inject stimpack into your body and instantly feel better, just like people in medication ads do.",
 		"valid_targets": [ "self" ],
-		"flags": [ "SILENT" ],
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
 		"effect": "target_attack",
 		"effect_str": "stimpack_used2",
 		"min_duration": 1,
@@ -105,7 +105,7 @@
 		"description": "Drinking Sierra Madre Martini",
 		"message": "You've drunk some Sierra Madre Martini. It doesn't taste very good, but despite being made out of the Cloud, it fills you with strength and power.",
 		"valid_targets": [ "self" ],
-		"flags": [ "SILENT" ],
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
 		"effect": "target_attack",
 		"effect_str": "sierra_martini_effect",
 		"min_damage": -10,
@@ -120,7 +120,7 @@
 		"description": "Poisioning with the Cloud",
 		"message": "As you attack your foe, you notice that the Cloud venom starts working...",
 		"valid_targets": [ "hostile", "ally", "self" ],
-		"flags": [ "SILENT" ],
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
 		"effect": "target_attack",
 		"effect_str": "venom_weak",
 		"min_duration": 3000,
@@ -133,7 +133,7 @@
 		"description": "Poisioning with the Cloud",
 		"message": "As you attack your foe, you notice that the Cloud venom starts working...",
 		"valid_targets": [ "hostile", "ally", "self" ],
-		"flags": [ "SILENT" ],
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
 		"effect": "target_attack",
 		"effect_str": "venom_potent",
 		"min_duration": 3000,
@@ -146,7 +146,7 @@
 		"description": "Poisioning with the Cloud",
 		"message": "As you attack your foe, you notice that the Cloud venom starts working...",
 		"valid_targets": [ "hostile", "ally", "self" ],
-		"flags": [ "SILENT" ],
+		"flags": [ "SILENT", "NO_EXPLOSION_VFX" ],
 		"effect": "target_attack",
 		"effect_str": "venom_lethal",
 		"min_duration": 3000,
