@@ -199,7 +199,7 @@
       { "id": "mon_zombie_skittyweavy_heal" },
       { "id": "mon_zombie_skittyweavy_flee", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_range": 1,
@@ -393,7 +393,7 @@
       { "id": "mon_zombie_skittyweavy_repleshy_heal" },
       { "id": "mon_zombie_skittyweavy_flee", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_range": 1,
@@ -574,7 +574,7 @@
       { "id": "mon_zombie_skittyweavy_sickly_heal" },
       { "id": "mon_zombie_skittyweavy_flee", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_range": 1,
@@ -626,7 +626,7 @@
     "name": { "str": "a spell" },
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "extra_effects": [ { "id": "mon_zombie_revenant_forsaken_dilute" }, { "id": "mon_zombie_revenant_withdraw", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_range": 3,
@@ -655,7 +655,7 @@
       { "id": "mon_zombie_revenant_allure_incite", "hit_self": true },
       { "id": "mon_zombie_revenant_withdraw", "hit_self": true }
     ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_range": 3,
@@ -689,7 +689,7 @@
       { "id": "mon_insect_saddler_brood_birth", "hit_self": true },
       { "id": "mon_insect_saddler_brood_birth", "hit_self": true }
     ],
-    "flags": [ "SILENT", "WONDER", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "WONDER", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_damage": 1,
@@ -764,7 +764,7 @@
     "description": "Target spell casted by a monster. If you're seeing this, then read this one instead:\n'Caster locks its line of sight onto the target, then casts the Spell(s).'",
     "message": "The sight of <npcname> locks onto its target...",
     "extra_effects": [ { "id": "mon_zombie_nightwail_shadow_enshroud", "hit_self": true } ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "NO_EXPLOSION_VFX" ],
     "valid_targets": [ "none" ],
     "effect": "target_attack",
     "min_range": 3,
