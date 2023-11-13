@@ -22,7 +22,7 @@
     "reload": 0,
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "PLASMA", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
 	"magazines": [ [ "zetan_plasma", [ "canister_zetan" ] ] ]
   },
   {
@@ -50,7 +50,7 @@
     "reload": 200,
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ] ],
     "ammo_effects": [ "PLASMA", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE" ],
 	"magazines": [ [ "zetan_plasma", [ "canister_zetan" ] ] ],
     "faults": [  ]
   },
@@ -77,7 +77,7 @@
     "reload": 200,
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ] ],
     "ammo_effects": [ "PLASMA", "INCENDIARY" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
 	"magazines": [ [ "zetan_plasma", [ "canister_zetan" ] ] ]
   },
   {
@@ -88,7 +88,7 @@
     "description": "A small, yet bulky alien firearm, it seems incredibly powerful. The shots from this one seem stronger.",
     "color": "red",
     "ammo_effects": [ "PLASMA", "EXPLOSIVE_SMALL", "FLAME" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_50" ]
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_50" ]
   },
   {
     "id": "zetan_pistol_shot",
@@ -117,7 +117,7 @@
     "reload": 200,
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ] ],
     "ammo_effects": [ "PLASMA", "SHOT" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
 	"magazines": [ [ "zetan_plasma", [ "canister_zetan" ] ] ],
     "faults": [  ]
   },
@@ -143,7 +143,7 @@
     "reload": 0,
     "valid_mod_locations": [ [ "grip", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "PLASMA", "FLAME", "EXPLOSIVE" ],
-    "flags": [ "NEVER_JAMS", "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_100" ],
+    "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_100" ],
 	"magazines": [ [ "zetan_plasma", [ "canister_zetan" ] ] ]
   }
 ]

@@ -552,7 +552,7 @@
     "material": [ "wood", "steel", "superalloy" ],
     "reload_noise": "chuk chuk.",
     "reload_noise_volume": 15,
-    "flags": [ "NON-FOULING", "NEEDS_NO_LUBE", "RELOAD_ONE", "PUMP_ACTION", "FIRE_TWOHAND" ],
+    "flags": [ "NON_FOULING", "NEEDS_NO_LUBE", "RELOAD_ONE", "PUMP_ACTION", "FIRE_TWOHAND" ],
     "weight": "3629 g",
     "volume": "2600 ml",
     "barrel_length": "700 ml",
@@ -582,7 +582,7 @@
     "material": [ "plastic", "steel", "superalloy" ],
     "reload_noise": "slosh.",
     "reload_noise_volume": 15,
-    "flags": [ "NON-FOULING", "NEEDS_NO_LUBE", "FIRE_TWOHAND" ],
+    "flags": [ "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_TWOHAND" ],
     "weight": "4250 g",
     "volume": "3000 ml",
     "barrel_length": "800 ml",
@@ -618,7 +618,7 @@
     "price": "20000 USD",
     "price_postapoc": "500 USD",
     "material": [ "steel", "superalloy" ],
-    "flags": [ "NON-FOULING", "NEEDS_NO_LUBE" ],
+    "flags": [ "NON_FOULING", "NEEDS_NO_LUBE" ],
     "reload_noise_volume": 10,
     "weight": "890 g",
     "volume": "750 ml",
@@ -701,6 +701,6 @@
       [ "underbarrel", 1 ]
     ],
     "ammo_effects": [ "LASER" ],
-    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON-FOULING", "NEEDS_NO_LUBE" ]
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ]
   }
 ]
