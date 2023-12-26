@@ -17,7 +17,7 @@
 				".._.X......._X_____....$",
 				"....X...._...X.........$",
 				"___.X...._...X........_$",
-				"...;XXXXXxXXXX;__......$",
+				"...;XXXXX.XXXX;__......$",
 				"_.....;;.._;...____....$",
 				"..___...._....s........$",
 				"....._..._....s._..___.$",
@@ -41,12 +41,16 @@
 				".": "t_grass",
 				"_": "t_dirt",
 				"1": "t_tree_young",
+				"O": "t_grass",
+				"X": "t_grass",
 				";": "t_pit_glass"
 			},
 			"furniture": {
 				"f": "f_dandelion",
 				"O": "f_crate_o",
-				"D": "f_dumpster"
+				"X": "f_crate_c",
+				"D": "f_dumpster",
+				"s": "f_sandbag_half"
 			},
 			"place_vehicles": [
 				{
@@ -71,4 +75,5 @@
 			]
 		}
 	}
+
 ]

@@ -19,8 +19,8 @@
         "######|eee%GG...........",
         "######|eee|GG...........",
         "######-----GG...........",
-        "######..................",
-        "######......v.....z.....",
+        "######.....Z............",
+        "######............z.....",
         "######..................",
         "######.....z............",
         "######..................",
@@ -35,7 +35,7 @@
       ],
       "rotation": 0,
       "palettes": [ "missile_silo" ],
-      "terrain": { "*": "t_metal_floor" },
+      "terrain": { "*": "t_metal_floor", "%": "t_generator_broken" },
       "fields": { "*": { "field": "fd_nuke_gas", "intensity": 2, "age": 0 } },
       "monster": { "z": { "monster": "mon_zombie_soldier" }, "Z": { "monster": "mon_zombie_bio_op" } }
     }
