@@ -28,13 +28,39 @@
       { "text": "What is this place?", "topic": "TALK_MAQUIS_RIOT_COP_THE_TOWER" },
       {
         "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
         "condition": {
           "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
           ]
         },
         "topic": "TALK_MAQUIS_RIOT_COP_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I need to see a Mr. Chad.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_MAQUIS_IS_RECRUITING" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_RIOT_COP_RENDEZVOUS_TO_BASE"
+      },
+      {
+        "text": "[MISSION] I have important information for resistance leadership.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_RIOT_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_RIOT_COP_RENDEZVOUS_TO_BASE"
       },
       {
         "text": "Is there anything I can do to help you out?",
@@ -63,8 +89,17 @@
     "type": "talk_topic",
     "dynamic_line": [
       "Mr. Erikson is very busy with the various operations against the aliens.",
-      "I am not sure where Mr. Erikson's office is.",
-      "Chad Erikson is the closest thing to a leader the resistance has."
+      "I am not sure where Mr. Erikson's office is."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_RIOT_COP_RENDEZVOUS_TO_BASE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Mr. Erikson is the closest thing to a leader the resistance has, and he's usually upstairs.",
+      "The higher-ups have an ongoing poker game on the seventh floor.  They usually push some boxes in front of the door so the room looks unocuppied."
     ],
     "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
   },

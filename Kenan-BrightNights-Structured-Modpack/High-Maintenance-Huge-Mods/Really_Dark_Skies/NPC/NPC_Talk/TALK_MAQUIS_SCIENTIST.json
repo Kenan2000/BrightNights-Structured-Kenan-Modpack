@@ -28,13 +28,27 @@
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_SCIENTIST_DOING" },
       {
         "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
         "condition": {
           "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
           ]
         },
         "topic": "TALK_MAQUIS_SCIENTIST_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I have important information for resistance leadership.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_RIOT_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_SCIENTIST_RENDEZVOUS_TO_BASE"
       },
       {
         "text": "Is there anything I can do to help you out?",
@@ -53,6 +67,16 @@
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_SCIENTIST_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I just saw him on the top floors, not sure where exactly.",
+      "I was trying to find him myself.  I'm sure he's up in his office upstairs."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_SCIENTIST_RENDEZVOUS_TO_BASE",
     "type": "talk_topic",
     "dynamic_line": [
       "I just saw him on the top floors, not sure where exactly.",

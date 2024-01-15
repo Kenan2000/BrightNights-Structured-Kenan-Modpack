@@ -16,7 +16,7 @@
     "color": "i_brown",
     "extend": { "flags": [ "SOURCE_FOOD", "SOURCE_SAFETY", "RISK_LOW", "SOURCE_FARMING" ] },
     "mondensity": 0
-  },  
+  },
   {
     "type": "overmap_terrain",
     "id": "sky_marshal_farm_orchard",
@@ -76,7 +76,7 @@
       "sky_marshal_farm_radio_tower_odd",
       "sky_marshal_farm_radio_tower_top"
     ],
-    "copy-from": "sky_marshal_farm_generic_rural_building",	
+    "copy-from": "sky_marshal_farm_generic_rural_building",
     "name": "radio tower",
     "sym": "X",
     "color": "light_gray",
@@ -197,22 +197,6 @@
     "id": "sky_marshal_farm_10_roof",
     "copy-from": "generic_rural_building",
     "name": "chicken coop roof",
-    "mondensity": 0
-  },
-  {
-    "type": "overmap_terrain",
-    "id": [ "dkz_abstorefront", "dkz_abookstore" ],
-    "copy-from": "generic_city_building",
-    "name": "abandoned storefront",
-    "color": "h_dark_gray",
-    "mondensity": 0
-  },
-  {
-    "type": "overmap_terrain",
-    "id": [ "dkz_abstorefront_roof", "dkz_abookstore_roof", "dkz_bookstore_upper_roof" ],
-    "copy-from": "generic_city_building",
-    "name": "abandoned storefront roof",
-    "color": "h_dark_gray",
     "mondensity": 0
   }
 ]

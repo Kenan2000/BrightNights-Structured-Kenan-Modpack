@@ -15,13 +15,27 @@
       { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_MELISSA_FORREST_LEADERSHIP" },
       {
         "text": "[MISSION] I'm looking for Chad Erikson, his nephew Randy sent me.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
         "condition": {
           "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
           ]
         },
         "topic": "TALK_MAQUIS_MELISSA_FORREST_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I have important information for resistance leadership.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_RIOT_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_MELISSA_FORREST_RENDEZVOUS_TO_BASE"
       },
       { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "See you later.", "topic": "TALK_DONE" }
@@ -30,6 +44,15 @@
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_MELISSA_FORREST_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Mr. Erikson is not on the farm, he's probably back at Barter Tower directing local resistance operations against the Xenoids."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_MELISSA_FORREST_RENDEZVOUS_TO_BASE",
     "type": "talk_topic",
     "dynamic_line": [
       "Mr. Erikson is not on the farm, he's probably back at Barter Tower directing local resistance operations against the Xenoids."

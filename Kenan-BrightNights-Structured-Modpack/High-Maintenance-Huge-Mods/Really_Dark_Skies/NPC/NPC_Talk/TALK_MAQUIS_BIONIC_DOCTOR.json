@@ -33,13 +33,27 @@
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_BIONIC_DOCTOR_DOING" },
       {
         "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
         "condition": {
           "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
           ]
         },
         "topic": "TALK_MAQUIS_BIONIC_DOCTOR_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I have important information for resistance leadership.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_RIOT_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_BIONIC_DOCTOR_RENDEZVOUS_TO_BASE"
       },
       {
         "text": "Is there anything I can do to help you out?",
@@ -72,6 +86,16 @@
   {
     "//": "-----------------------------------------------------------------------------------------------------------------------",
     "id": "TALK_MAQUIS_BIONIC_DOCTOR_BIG_BROTHER",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "I'm sure that Mr. Erikson is on this floor.",
+      "I just saw Mr. Erikson go into one of the roooms around here, sorry I can't help you any more than that."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_BIONIC_DOCTOR_RENDEZVOUS_TO_BASE",
     "type": "talk_topic",
     "dynamic_line": [
       "I'm sure that Mr. Erikson is on this floor.",

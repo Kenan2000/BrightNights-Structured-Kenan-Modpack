@@ -1,0 +1,69 @@
+[
+  {
+    "type": "npc_class",
+    "id": "NC_PRISONER",
+    "name": { "str": "Prisoner" },
+    "job_description": "I'm just trying to survive.",
+    "common": false,
+    "skills": [ { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 3 ] }, { "constant": -3 } ] } } ],
+    "worn_override": "naked_prisoner",
+    "carry_override": "naked_prisoner",
+    "weapon_override": "naked_prisoner",
+    "traits": [
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" },
+      { "trait": "MIGO_HEAT_RESIST", "prob": 95 },
+      { "trait": "WARM_NATURED", "prob": 85 },
+      { "trait": "MIGO_BREATHE", "prob": 75 },
+      { "trait": "SCHIZOPHRENIC", "prob": 50 },
+      { "trait": "MIGO_EARS", "prob": 45 },
+      { "trait": "MIGO_SCENT", "prob": 40 },
+      { "trait": "WINGS_migo", "prob": 30 },
+      { "trait": "CHAOTIC_BAD", "prob": 25 },
+      { "trait": "EERIE", "prob": 25 },
+      { "trait": "ELDRITCH", "prob": 10 },
+      { "trait": "THRESH_YUGGOTH", "prob": 5 },
+      { "distribution": [ { "trait": "mouth_TENDRILS", "prob": 70 }, { "trait": "FACIAL_TENTACLES", "prob": 40 } ] },
+      {
+        "distribution": [
+          { "trait": "BADTEMPER", "prob": 40 },
+          { "trait": "CANNIBAL", "prob": 30 },
+          { "trait": "PSYCHOPATH", "prob": 10 },
+          { "trait": "KILLER", "prob": 10 },
+          { "trait": "INSOMNIA", "prob": 10 }
+        ]
+      },
+      {
+        "distribution": [
+          { "trait": "UNOBSERVANT", "prob": 65 },
+          { "trait": "NARCOLEPTIC", "prob": 35 },
+          { "trait": "CHEMIMBALANCE", "prob": 40 },
+          { "trait": "JITTERY", "prob": 25 },
+          { "trait": "STIMBOOST", "prob": 10 }
+        ]
+      },
+      {
+        "distribution": [
+          { "trait": "NEURAL_IMPROVEMENT", "prob": 70 },
+          { "trait": "EXPANDED_CONSCIOUSNESS", "prob": 20 },
+          { "trait": "UPLIFTED", "prob": 9 },
+          { "trait": "ALIEN_INT", "prob": 1 }
+        ]
+      },
+      {
+        "distribution": [
+          { "trait": "ENHANCED_REACTIONS", "prob": 60 },
+          { "trait": "QUICKENING", "prob": 30 },
+          { "trait": "OTHERWORLDLY_GRACE", "prob": 10 }
+        ]
+      },
+      {
+        "distribution": [
+          { "trait": "NEW_MUSCLES", "prob": 60 },
+          { "trait": "MUSCLE_FIBER", "prob": 30 },
+          { "trait": "OTHERWORLDLY_GRACE", "prob": 10 }
+        ]
+      }
+    ]
+  }
+]

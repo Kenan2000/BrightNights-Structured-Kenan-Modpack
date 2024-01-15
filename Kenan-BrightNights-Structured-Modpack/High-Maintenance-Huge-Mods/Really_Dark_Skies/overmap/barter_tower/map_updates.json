@@ -10,26 +10,26 @@
   {
     "type": "mapgen",
     "method": "json",
-    "update_mapgen_id": "dkz_base_build_medical_1",
+    "update_mapgen_id": "dkz_base_build_combat_1",
     "object": {
       "place_nested": [
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 12 },
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 16 },
-        { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 20 },
-        { "chunks": [ "racing_tower_4x4_surgery" ], "x": 0, "y": 18 }
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 0 },
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 4 },
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 8 },
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 0, "y": 8 }
       ]
     }
   },
   {
     "type": "mapgen",
     "method": "json",
-    "update_mapgen_id": "dkz_base_build_medical_2",
+    "update_mapgen_id": "dkz_base_build_medical_1",
     "object": {
       "place_nested": [
         { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 0 },
         { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 4 },
         { "chunks": [ "racing_tower_4x4_medical" ], "x": 4, "y": 8 },
-        { "chunks": [ "racing_tower_4x4_surgery" ], "x": 0, "y": 2 }
+        { "chunks": [ "racing_tower_4x4_medical" ], "x": 0, "y": 8 }
       ]
     }
   },

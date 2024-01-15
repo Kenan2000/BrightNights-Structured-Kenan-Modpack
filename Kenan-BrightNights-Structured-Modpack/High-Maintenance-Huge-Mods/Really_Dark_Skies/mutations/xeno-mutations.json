@@ -1,5 +1,83 @@
 [
   {
+    "id": "recipe_xenoid",
+    "type": "BOOK",
+    "name": { "str": "PE0X0 \"Xenoid\": Proposal", "str_pl": "copies of PE0X0 \"Xenoid\": Proposal" },
+    "description": "This sheaf of papers is a highly speculative proposal for focusing \"PE0X0\".  Scribbled notes throughout seem to think that it might work, but that there's no time.",
+    "weight": "50 g",
+    "volume": "500 ml",
+    "price": "1250 USD",
+    "price_postapoc": "20 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "light_green",
+    "skill": "cooking",
+    "required_level": 10,
+    "max_level": 10,
+    "intelligence": 12,
+    "time": "45 m",
+    "fun": -20
+  },
+  {
+    "type": "recipe",
+    "result": "mutagen_xenoid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "skills_required": [ "firstaid", 3 ],
+    "difficulty": 10,
+    "time": "60 m",
+    "batch_time_factors": [ 80, 20 ],
+    "book_learn": [ [ "recipe_xenoid", 8 ] ],
+    "using": [ [ "mutagen_production_standard", 25 ] ],
+    "components": [
+      [ [ "mutagen", 2 ] ],
+      [
+        [ "alien_brain", 2 ],
+        [ "alien_heart", 2 ],
+        [ "alien_liver", 3 ],
+        [ "alien_lung", 5 ],
+        [ "alien_kidney", 7 ],
+        [ "alien_meat", 10 ],
+        [ "alien_fat", 15 ]
+      ],
+      [ [ "ammonia", 3 ], [ "lye_powder", 300 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "iv_mutagen_xenoid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "cooking",
+    "skills_required": [ "firstaid", 5 ],
+    "difficulty": 10,
+    "time": "2 h",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_xenoid", 9 ] ],
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "mutagen_xenoid", 5 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "id": "iv_mutagen_xenoid",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "xenoid serum" },
+    "description": "A super-concentrated mutagen as black as the void between the stars.  You need a syringe to inject it… if you really want to?",
+    "color": "dark_gray",
+    "use_action": { "type": "mutagen_iv", "mutation_category": "XENOID" }
+  },
+  {
+    "id": "iv_mutagen_xenoid",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "xenoid mutagen" },
+    "description": "A mutagen as black as the void between the stars.  You could drink it… if you really want to?",
+    "use_action": { "type": "mutagen", "mutation_category": "XENOID" }
+  },
+  {
     "//": ".",
     "type": "mutation_category",
     "id": "XENOID",
@@ -19,7 +97,7 @@
     "type": "mutation",
     "id": "THRESH_XENOID",
     "name": { "str": "Xeno-Sapien" },
-    "points": 666,
+    "points": 6667,
     "description": "You reject your humanity and replace it with gifts from your Xenoid Masters.",
     "valid": false,
     "profession": false,
@@ -32,7 +110,6 @@
     "anger_relations": [ [ "ALIEN", -500 ], [ "ALIENROBOT", -500 ] ],
     "armor": [ { "parts": "ALL", "physical": 3, "heat": 3 } ],
     "ignored_by": [ "ALIEN", "ALIENROBOT" ]
-
   },
   {
     "type": "mutation",
@@ -105,11 +182,11 @@
     "category": [ "XENOID" ],
     "threshreq": [ "THRESH_XENOID" ],
     "purifiable": false,
-    "hp_modifier_secondary": 0.13,	
+    "hp_modifier_secondary": 0.13,
     "pain_recovery": 1.17,
     "hearing_modifier": 1.13,
     "max_stamina_modifier": 1.13,
-    "stamina_regen_modifier": 0.11,	
+    "stamina_regen_modifier": 0.11,
     "metabolism_modifier": -0.23,
     "thirst_modifier": -0.23
   },
@@ -213,3 +290,5 @@
     "extend": { "category": [ "XENOID" ] }
   }
 ]
+
+

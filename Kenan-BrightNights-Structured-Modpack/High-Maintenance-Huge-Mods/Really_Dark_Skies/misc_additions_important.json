@@ -177,12 +177,15 @@
     "id": "mon_cat_the_chonker",
     "type": "MONSTER",
     "copy-from": "mon_cat",
+    "looks_like": "mon_cat_chonker",
     "name": { "str": "The Golden Chonker" },
     "description": "Oh Lawd! He iz here!\n\nThis impressive feline is the celebrated on internet cat forums for its chonkiness and majestic golden mane.  Appears surprisingly well-groomed, this chonker is truly the brightest gem of the internet.",
     "volume": "9000 ml",
     "weight": "13 kg",
     "speed": 70,
     "hp": 20,
+    "fear_triggers": [  "HURT", "SOUND" ],
+    "placate_triggers": [ "PLAYER_NEAR_BABY" ],	  
     "reproduction": { "baby_monster": "mon_cat_chonker_kitten", "baby_count": 8, "baby_timer": 60 }
   }
 ]

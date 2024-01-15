@@ -343,9 +343,7 @@
         "//§§§§§§§§§§§§§§§§§§§§§§§§§§.//,,,,/,,,//.§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§."
       ],
       "palettes": [ "sky_marshal_farm" ],
-      "place_npcs": [
-        { "class": "DKZ_MAQUIS_FELIX_FOX", "x": 15, "y": 75 }
-      ],
+      "place_npcs": [ { "class": "DKZ_MAQUIS_FELIX_FOX", "x": 15, "y": 75 } ],
       "place_vehicles": [ { "vehicle": "military_cargo_truck", "x": 81, "y": 21, "rotation": 180, "chance": 100, "fuel": 10, "status": 0 } ],
       "furniture": { "F": "f_grave_stone", "Ḟ": "f_grave_head", "f": "f_grave_monument" },
       "terrain": {
@@ -369,9 +367,7 @@
         "m": { "item": { "item": "seed_corn" }, "furniture": "f_planter_harvest" },
         "u": { "item": { "item": "seed_beans" }, "furniture": "f_planter_harvest" }
       },
-	  "item": {
-        "n": { "item": "deck_of_cards", "chance":75 }
-	  },
+      "item": { "n": { "item": "deck_of_cards", "chance": 75 } },
       "items": {
         "k": { "item": "SUS_office_desk", "chance": 30 },
         "V": { "item": "SUS_fridge", "chance": 80, "repeat": [ 2, 4 ] },
@@ -385,7 +381,10 @@
         "^": { "item": "horse_gear", "chance": 30 }
       },
       "mapping": { "`": { "monster": [ { "monster": "mon_fish_blinky", "chance": 90 } ] } },
-      "place_signs": [ { "signage": "Please do not disturb the fish", "x": 37, "y": 17 }, { "signage": "Please do not disturb the fish", "x": 27, "y": 13 } ],
+      "place_signs": [
+        { "signage": "Please do not disturb the fish", "x": 37, "y": 17 },
+        { "signage": "Please do not disturb the fish", "x": 27, "y": 13 }
+      ],
       "place_monster": [
         { "monster": "mon_chicken", "x": [ 40, 44 ], "y": [ 48, 52 ], "repeat": [ 6, 7 ], "chance": 100 },
         { "monster": "mon_sheep", "x": [ 52, 54 ], "y": [ 31, 33 ], "chance": 90 },
@@ -630,13 +629,7 @@
         ">": "t_stairs_down",
         "<": "t_ladder_up"
       },
-      "furniture": {
-        "n": "f_table",
-        "Ø": "f_bed",
-        "s": "f_sandbag_half",
-        "®": "f_autodoc",
-        "©": "f_autodoc_couch" 
-	  },	  
+      "furniture": { "n": "f_table", "Ø": "f_bed", "s": "f_sandbag_half", "®": "f_autodoc", "©": "f_autodoc_couch" },
       "items": {
         "@": { "item": "bed", "chance": 10 },
         "n": { "item": "dissection", "chance": 50, "repeat": [ 2, 3 ] },
@@ -648,8 +641,6 @@
       }
     }
   },
-  
-  
   {
     "type": "mapgen",
     "method": "json",
@@ -673,7 +664,7 @@
         "......<.......          ",
         "xZ............          ",
         " Z..............        ",
-        " Z.............z        ",
+        " Z.............Z        ",
         " Z.............Z        ",
         " Z.............Z        ",
         " Z...............       ",
@@ -686,9 +677,6 @@
       "place_nested": [ { "chunks": [ "catacomb_8x8_ns" ], "x": 8, "y": 0 } ]
     }
   },
-
-  
-  
   {
     "type": "mapgen",
     "method": "json",
@@ -721,7 +709,7 @@
         "                        ",
         "                        ",
         "                        ",
-        "                        "		
+        "                        "
       ],
       "terrain": {
         "+": "t_door_c",
@@ -935,11 +923,9 @@
         "6": {
           "name": "Broadcasting Control",
           "security": 1,
-          "options": [
-            { "name": "Browse Audio Archive", "action": "radio_archive" }
-          ]
+          "options": [ { "name": "Browse Audio Archive", "action": "radio_archive" } ]
         }
-      },	  
+      },
       "items": {
         "C": { "item": "radio", "chance": 80, "repeat": [ 1, 2 ] },
         "r": { "item": "recycle_electronic", "chance": 80, "repeat": [ 1, 2 ] },
@@ -994,7 +980,7 @@
         "C": "t_floor",
         "H": "t_floor",
         "W": "t_floor",
-        "b": "t_floor",		
+        "b": "t_floor",
         "<": "t_stairs_up",
         "X": "t_root_wall",
         "x": "t_wall_log",
@@ -1010,7 +996,7 @@
         "C": "f_chair",
         "H": "f_bookcase",
         "b": "f_workbench"
-      }, 
+      },
       "items": {
         ".": [ { "item": "trash", "chance": 5 } ],
         "R": [

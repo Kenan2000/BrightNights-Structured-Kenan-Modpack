@@ -5,7 +5,10 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "badge_marshal",
-      "yes": [ "Are you lost, marshal?", "Don't start any trouble marshal, you aren't the law anymore." ],
+      "yes": [
+        "Its nice to see another fellow wearing a badge, I hope you earned it.",
+        "Don't start any trouble marshal, you aren't the law anymore."
+      ],
       "no": [ "Don't cause any trouble here, I'd rather kill monsters than people.", "Safe travels." ]
     },
     "responses": [
@@ -14,6 +17,7 @@
         "condition": { "npc_has_var": "temporal_follower", "type": "general", "context": "combat_recruit", "value": "yes" },
         "topic": "TALK_COMBAT_COMMANDS"
       },
+      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_GUARD_DOING" },
       {
         "text": "I need a volunteer for a combat mission, interested?",
         "topic": "TALK_MAQUIS_COMBAT_RECRUIT",
@@ -24,16 +28,29 @@
           ]
         }
       },
-      { "text": "What are you doing here?", "topic": "TALK_MAQUIS_GUARD_DOING" },
       {
         "text": "[MISSION] I'm looking for Chad Erikson, Randy sent me.",
+        "effect": { "npc_add_var": "u_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
         "condition": {
           "and": [
+            { "not": { "npc_has_var": "u_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
             { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
             { "u_has_mission": "MISSION_CHECK_UP_ON_BIG_BROTHER" }
           ]
         },
         "topic": "TALK_MAQUIS_GUARD_BIG_BROTHER"
+      },
+      {
+        "text": "[MISSION] I have important information for resistance leadership.",
+        "effect": { "npc_add_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "and": [
+            { "not": { "npc_has_var": "npc_Asked_Guards_about_Leaders", "type": "general", "context": "meeting", "value": "yes" } },
+            { "not": { "u_has_var": "u_met_Chad_Erikson", "type": "general", "context": "meeting", "value": "yes" } },
+            { "u_has_mission": "DKZ_MAQUIS_RENDEZVOUS_TO_BASE" }
+          ]
+        },
+        "topic": "TALK_MAQUIS_GUARD_RENDEZVOUS_TO_BASE"
       },
       {
         "text": "Is there anything I can do to help you out?",
@@ -62,8 +79,17 @@
     "type": "talk_topic",
     "dynamic_line": [
       "Mr. Erikson is very busy with the various operations against the aliens.",
-      "I am not sure where Mr. Erikson's office is.",
-      "Chad Erikson is the closest thing to a leader the resistance has."
+      "I am not sure where Mr. Erikson's office is."
+    ],
+    "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
+  },
+  {
+    "//": "-----------------------------------------------------------------------------------------------------------------------",
+    "id": "TALK_MAQUIS_GUARD_RENDEZVOUS_TO_BASE",
+    "type": "talk_topic",
+    "dynamic_line": [
+      "Chad Erikson is the closest thing to a leader the resistance has, and he's usually upstairs.",
+      "The higher-ups have an ongoing poker game on the seventh floor.  They usually push some boxes in front of the door so the room looks unocuppied."
     ],
     "responses": [ { "text": "Ok, Thanks.", "topic": "TALK_NONE" }, { "text": "Ok, I have to go now.", "topic": "TALK_DONE" } ]
   },

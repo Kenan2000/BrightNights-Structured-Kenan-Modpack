@@ -1,0 +1,46 @@
+[
+  {
+    "id": "TALK_Millyficent_1",
+    "type": "talk_topic",
+    "responses": [
+      {
+        "text": "What can you tell me about Xenoids?",
+        "effect": { "u_add_var": "u_Talk_To_Millyficent_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "not": { "u_has_var": "u_Talk_To_Millyficent_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" }
+        },
+        "topic": "TALK_Millyficent_1_XENOIDS"
+      },
+      {
+        "text": "Can you tell me anything else about Xenoids?",
+        "condition": { "u_has_var": "u_Talk_To_AleeshaSeward_about_Xenoids", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_Millyficent_1_XENOIDS"
+      },
+      {
+        "text": "What can you tell me about Mi-Gos?",
+        "effect": { "u_add_var": "u_Talk_To_Millyficent_about_Migo", "type": "general", "context": "meeting", "value": "yes" },
+        "condition": {
+          "not": { "u_has_var": "u_Talk_To_Millyficent_about_Migo", "type": "general", "context": "meeting", "value": "yes" }
+        },
+        "topic": "TALK_Millyficent_1_MIGO"
+      },
+      {
+        "text": "Can you tell me anything else about Mi-Gos?",
+        "condition": { "u_has_var": "u_Talk_To_Millyficent_about_Migo", "type": "general", "context": "meeting", "value": "yes" },
+        "topic": "TALK_Millyficent_1_MIGO"
+      }
+    ]
+  },
+  {
+    "id": "TALK_Millyficent_1_XENOIDS",
+    "type": "talk_topic",
+    "dynamic_line": "What do you want to know about them?",
+    "responses": [ { "text": "I know what you mean.", "topic": "TALK_Millyficent_1" } ]
+  },
+  {
+    "id": "TALK_Millyficent_1_MIGO",
+    "type": "talk_topic",
+    "dynamic_line": "What do you want to know about them?",
+    "responses": [ { "text": "I know what you mean.", "topic": "TALK_Millyficent_1" } ]
+  }
+]

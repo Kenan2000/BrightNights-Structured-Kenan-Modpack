@@ -13,6 +13,7 @@
       { "text": "Let's trade.", "topic": "TALK_MAQUIS_QUARTERMASTER_TRADE" },
       { "text": "What are you doing here?", "topic": "TALK_MAQUIS_QUARTERMASTER_DOING" },
       { "text": "Are you in charge of the Maquis?", "topic": "TALK_MAQUIS_QUARTERMASTER_LEADERSHIP" },
+      { "text": "About that mission…", "topic": "TALK_MISSION_INQUIRE", "condition": "has_assigned_mission" },
       { "text": "See you later.", "topic": "TALK_DONE" }
     ]
   },
@@ -156,7 +157,7 @@
       },
       {
         "text": "Maybe we should start in a different direction.",
-        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL"
+        "topic": "TALK_MAQUIS_QUARTERMASTER_BASE_BUILDING_INITIAL_INITIAL"
       },
       { "text": "I changed my mind.", "topic": "TALK_DONE" }
     ]
@@ -244,8 +245,7 @@
       {
         "text": "Ok, lets begin.",
         "effect": [
-          { "mapgen_update": "dkz_base_build_medical_1", "om_terrain": "racing_tower_z0_4_2" },
-          { "mapgen_update": "dkz_base_build_medical_2", "om_terrain": "racing_tower_z0_4_3" },
+          { "mapgen_update": "dkz_base_build_medical_1", "om_terrain": "racing_tower_z0_4_3" },
           { "npc_add_effect": "dkz_base_build_medical" },
           { "npc_add_effect": "dkz_base_build_started" },
           { "u_add_effect": "dkz_base_build_started", "duration": 600 },

@@ -1,5 +1,85 @@
 [
   {
+    "id": "roller_boots_off",
+    "repairs_like": "boots",
+    "type": "ARMOR",
+    "name": { "str": "pair of heely boots (off)", "str_pl": "pairs of heely boots (off)" },
+    "description": "A pair of combat boots with four wheels, which are cabable of either inline-skate style or roller-skate style.  Currently the wheels are hidden.",
+    "looks_like": "boots",
+    "weight": "1500 g",
+    "volume": "3 L",
+    "price": "250 USD",
+    "price_postapoc": "100 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "material": [ "leather", "steel" ],
+    "symbol": "[",
+    "color": "light_blue",
+    "covers": [ "feet" ],
+    "coverage": 90,
+    "encumbrance": 25,
+    "warmth": 25,
+    "material_thickness": 3,
+    "use_action": {
+      "type": "transform",
+      "target": "roller_boots_quad",
+      "msg": "You pop the wheels into roller-skating style.",
+      "moves": 1500
+    },
+    "flags": [ "VARSIZE", "REQUIRES_BALANCE" ]
+  },
+  {
+    "id": "roller_boots_quad",
+    "type": "ARMOR",
+    "name": { "str": "pair of heely boots (quad)", "str_pl": "pairs of heely boots (quad)" },
+    "description": "A pair of combat boots with wheels, currently the wheels are out in roller-skater style.",
+    "looks_like": "rollerskates",
+    "weight": "1500 g",
+    "volume": "3 L",
+    "price": "250 USD",
+    "price_postapoc": "100 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "material": [ "leather", "steel" ],
+    "symbol": "[",
+    "color": "light_blue",
+    "covers": [ "feet" ],
+    "coverage": 90,
+    "encumbrance": 25,
+    "warmth": 25,
+    "material_thickness": 3,
+    "use_action": {
+      "type": "transform",
+      "target": "roller_boots_inline",
+      "msg": "You pop the wheels into inline-skating style.",
+      "moves": 1500
+    },
+    "flags": [ "VARSIZE", "ROLLER_QUAD", "REQUIRES_BALANCE" ]
+  },
+  {
+    "id": "roller_boots_inline",
+    "type": "ARMOR",
+    "name": { "str": "pair of heely boots (inline)", "str_pl": "pairs of heely boots (inline)" },
+    "description": "A pair of combat boots with wheels, currently the wheels are out in inline-skater style.",
+    "looks_like": "roller_blades",
+    "weight": "1500 g",
+    "volume": "3 L",
+    "price": "250 USD",
+    "price_postapoc": "100 USD",
+    "to_hit": -1,
+    "bashing": 4,
+    "material": [ "leather", "steel" ],
+    "symbol": "[",
+    "color": "light_blue",
+    "covers": [ "feet" ],
+    "coverage": 90,
+    "encumbrance": 25,
+    "warmth": 25,
+    "material_thickness": 3,
+    "use_action": { "type": "transform", "target": "roller_boots_off", "msg": "You pop the wheels back in.", "moves": 2500 },
+    "flags": [ "VARSIZE", "ROLLER_INLINE", "REQUIRES_BALANCE" ]
+  },
+  {
     "id": "xenoid-bone_necklace",
     "type": "ARMOR",
     "name": { "str": "xenoid-bone necklace" },
@@ -10,7 +90,7 @@
     "price": "1 USD",
     "price_postapoc": "1 USD",
     "material": [ "bone", "leather" ],
-    "flags": [ "FANCY" , "TRADER_AVOID"],
+    "flags": [ "FANCY", "TRADER_AVOID" ],
     "symbol": "u",
     "color": "white",
     "use_action": "MEDITATE"
@@ -79,5 +159,33 @@
     "intelligence": 12,
     "time": "30 m",
     "fun": -3
+  },
+  {
+    "id": "migo_map",
+    "copy-from": "abstractmap",
+    "type": "GENERIC",
+    "name": { "str": "map of monsters" },
+    "description": "This is a haphazardly drawn map.  It has alien hieroglyphs scrawled along side of seemingly random locations.",
+    "color": "white",
+    "use_action": {
+      "type": "reveal_map",
+      "radius": 333,
+      "terrain": [
+        "mi-go_outpost0",
+        "mi-go_outpost1",
+        "mi-go_outpost2",
+        "mi-go_outpost1-1",
+        "mi-go_outpost2-1",
+        "mi-go_outpost2-2",
+        "mi-go_outpost2-3",
+        "mi-go_scout_tower_1",
+        "mi-go_scout_tower_2",
+        "mi-go_scout_tower_3",
+        "mi-go_scout_tower_4",
+        "mi-go_camp1",
+        "mi-go_camp2"
+      ],
+      "message": "You add the locations to your map."
+    }
   }
 ]
