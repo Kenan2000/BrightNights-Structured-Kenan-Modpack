@@ -1,36 +1,6 @@
 [
   {
     "type": "overmap_terrain",
-    "id": "field",
-    "copy-from": "field",
-    "spawns": { "group": "GROUP_FIELD", "population": [ 0, 1 ], "chance": 20 }
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "forest",
-    "copy-from": "forest",
-    "spawns": { "group": "GROUP_FOREST", "population": [ 0, 2 ], "chance": 45 }
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "crater",
-    "copy-from": "crater",
-    "extras": "field"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "ants",
-    "copy-from": "ants",
-    "extras": "subway"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "ants_food",
-    "copy-from": "ants_food",
-    "extras": "subway"
-  },
-  {
-    "type": "overmap_terrain",
     "id": "pit_topside",
     "name": "cave",
     "sym": "C",
@@ -747,17 +717,6 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "pond_swamp",
-    "name": "bog",
-    "sym": "F",
-    "color": "blue",
-    "see_cost": 5,
-    "extras": "none",
-    "mondensity": 2,
-    "spawns": { "group": "GROUP_BOG", "population": [ 0, 3 ], "chance": 60 }
-  },
-  {
-    "type": "overmap_terrain",
     "id": "farm_unsettled_barn",
     "name": "farm field",
     "sym": "#",
@@ -858,36 +817,6 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "orchard_tree_apple",
-    "name": "apple orchard",
-    "sym": "T",
-    "color": "light_green",
-    "see_cost": 5,
-    "extras": "field",
-    "mondensity": 3
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "orchard_processing",
-    "name": "orchard processing",
-    "sym": "T",
-    "color": "i_light_green",
-    "see_cost": 5,
-    "extras": "field",
-    "mondensity": 3
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "orchard_stall",
-    "name": "orchard stall",
-    "sym": "T",
-    "color": "i_light_green",
-    "see_cost": 5,
-    "extras": "field",
-    "mondensity": 3
-  },
-  {
-    "type": "overmap_terrain",
     "id": "wasp_center",
     "name": "wasp hive",
     "sym": "a",
@@ -905,16 +834,6 @@
     "see_cost": 5,
     "extras": "none",
     "mondensity": 4
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "barn",
-    "name": "barn",
-    "sym": "O",
-    "color": "brown",
-    "see_cost": 2,
-    "extras": "field",
-    "mondensity": 2
   },
   {
     "type": "overmap_terrain",
@@ -1335,15 +1254,6 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "hunter_shack",
-    "name": "swamp shack",
-    "sym": "#",
-    "color": "light_blue",
-    "see_cost": 2,
-    "extras": "field"
-  },
-  {
-    "type": "overmap_terrain",
     "id": "triffid_grove_swamp",
     "name": "triffid grove",
     "sym": "T",
@@ -1487,15 +1397,6 @@
   },
   {
     "type": "overmap_terrain",
-    "id": "cabin_strange",
-    "name": "forest",
-    "sym": "F",
-    "color": "green",
-    "see_cost": 5,
-    "extras": "field"
-  },
-  {
-    "type": "overmap_terrain",
     "id": "cabin_strange_100",
     "name": "forest",
     "sym": "F",
@@ -1520,15 +1421,6 @@
     "color": "green",
     "see_cost": 5,
     "extras": "field"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "cabin_strange_b",
-    "name": "cabin basement",
-    "sym": "C",
-    "color": "i_green",
-    "see_cost": 5,
-    "extras": "build"
   },
   {
     "type": "overmap_terrain",
