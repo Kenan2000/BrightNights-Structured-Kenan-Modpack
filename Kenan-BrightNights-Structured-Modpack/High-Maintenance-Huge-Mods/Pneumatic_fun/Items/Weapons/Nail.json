@@ -1,7 +1,7 @@
 [
   {
     "id": "coilgun",
-    "copy-from": "coilgun",
+    "copy-from": "rifle_magnetic",
     "looks_like": "ar15",
     "type": "GUN",
     "name": { "str": "coilgun" },
@@ -35,6 +35,7 @@
   {
     "id": "nailrifle",
     "copy-from": "nailgun",
+    "extend": { "weapon_category": [ "RIFLES" ] },
     "looks_like": "ar15",
     "type": "GUN",
     "name": { "str": "nail rifle" },
