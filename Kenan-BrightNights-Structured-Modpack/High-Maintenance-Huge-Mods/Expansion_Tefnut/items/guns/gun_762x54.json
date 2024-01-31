@@ -32,10 +32,10 @@
       [ "muzzle", 1 ],
       [ "sights", 1 ],
       [ "sling", 1 ],
-      [ "grip mount", 1 ],
-      [ "rail mount", 1 ],
-      [ "stock mount", 1 ],
-      [ "underbarrel mount", 1 ]
+      [ "grip", 1 ],
+      [ "rail", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "762R", [ "dragunovmag", "dragunovsmallmag", "dragunovbigmag" ] ] ]
   },
@@ -73,7 +73,7 @@
       [ "muzzle", 1 ],
       [ "sights", 1 ],
       [ "sling", 1 ],
-      [ "underbarrel mount", 1 ]
+      [ "underbarrel", 1 ]
     ],
     "magazines": [ [ "762R", [ "avs36mag", "avs36bigmag" ] ] ]
   },
@@ -184,7 +184,7 @@
     "blackpowder_tolerance": 96,
     "ups_charges": 1,
     "reload": 400,
-    "valid_mod_locations": [ [ "brass catcher", 1 ], [ "sling", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ] ],
+    "valid_mod_locations": [ [ "brass catcher", 1 ], [ "sling", 1 ], [ "rail", 1 ], [ "sights", 1 ] ],
     "modes": [ [ "DEFAULT", "low auto", 50 ], [ "AUTO", "high auto", 100 ] ],
     "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
     "magazines": [ [ "762R", [ "belt762R" ] ] ],
