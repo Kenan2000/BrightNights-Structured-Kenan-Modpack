@@ -331,7 +331,7 @@
         "fake_skills": [ [ "gun", 2 ], [ "launcher", 2 ] ],
         "fake_dex": 9,
         "no_ammo_sound": "drip.  drip.",
-        "ranges": [ [ 0, 10, "BURST" ] ]
+        "ranges": [ [ 0, 10, "AUTO" ] ]
       }
     ]
   },
@@ -488,7 +488,7 @@
         "gun_type": "robogun_nail",
         "fake_skills": [ [ "gun", 0 ], [ "pistol", 2 ] ],
         "fake_dex": 8,
-        "ranges": [ [ 0, 3, "BURST" ] ]
+        "ranges": [ [ 0, 3, "AUTO" ] ]
       }
     ]
   },
@@ -512,7 +512,7 @@
         "gun_type": "watercannon",
         "fake_skills": [ [ "gun", 2 ], [ "launcher", 2 ] ],
         "fake_dex": 8,
-        "ranges": [ [ 0, 5, "BURST" ] ]
+        "ranges": [ [ 0, 5, "AUTO" ] ]
       }
     ],
     "extend": { "flags": [ "FIREPROOF", "BASHES" ] }
@@ -936,7 +936,7 @@
         "gun_type": "robogun_556",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 4, "BURST" ], [ 5, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
+        "ranges": [ [ 0, 4, "AUTO" ], [ 5, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -967,7 +967,7 @@
         "gun_type": "robogun_308",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 5, "DEFAULT" ], [ 6, 10, "BURST" ], [ 11, 20, "DEFAULT" ] ],
+        "ranges": [ [ 0, 5, "DEFAULT" ], [ 6, 10, "AUTO" ], [ 11, 20, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -997,7 +997,7 @@
         "gun_type": "robogun_50bmg",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 5, "DEFAULT" ], [ 6, 10, "BURST" ], [ 11, 20, "DEFAULT" ] ],
+        "ranges": [ [ 0, 5, "DEFAULT" ], [ 6, 10, "AUTO" ], [ 11, 20, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -1027,7 +1027,7 @@
         "gun_type": "robogun_8x40mm",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 6 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 5, "BURST" ], [ 6, 10, "AUTO" ], [ 11, 24, "DEFAULT" ] ],
+        "ranges": [ [ 0, 5, "AUTO" ], [ 6, 10, "AUTO" ], [ 11, 24, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -1057,7 +1057,7 @@
         "gun_type": "robogun_needle",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 4, "BURST" ], [ 4, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
+        "ranges": [ [ 0, 4, "AUTO" ], [ 4, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -1168,7 +1168,7 @@
         "gun_type": "robogun_laser",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 8, "AUTO" ], [ 8, 16, "BURST" ] ],
+        "ranges": [ [ 0, 8, "AUTO" ], [ 8, 16, "AUTO" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -1285,7 +1285,7 @@
         "gun_type": "robogun_emp",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 4, "BURST" ], [ 4, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
+        "ranges": [ [ 0, 4, "AUTO" ], [ 4, 8, "AUTO" ], [ 9, 16, "DEFAULT" ] ],
         "require_targeting_player": true,
         "require_targeting_npc": true,
         "require_targeting_monster": true,
@@ -1458,7 +1458,7 @@
         "gun_type": "robogun_556",
         "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
         "fake_dex": 10,
-        "ranges": [ [ 0, 16, "BURST" ] ],
+        "ranges": [ [ 0, 16, "AUTO" ] ],
         "no_crits": true,
         "targeting_cost": 150,
         "require_targeting_player": false
