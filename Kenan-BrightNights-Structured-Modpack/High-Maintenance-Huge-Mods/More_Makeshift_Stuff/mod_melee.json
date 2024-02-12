@@ -61,7 +61,7 @@
     "volume": "10 L",
     "bashing": 15,
     "cutting": 21,
-    "flags": [ "DURABLE_MELEE", "SPEAR", "REACH_ATTACK", "REACH3" ],
+    "flags": [ "DURABLE_MELEE", "STAB", "SPEAR", "REACH_ATTACK", "REACH3" ],
     "category": "weapons",
     "price": "50 USD"
   },
@@ -79,7 +79,7 @@
     "volume": "2 L",
     "bashing": 6,
     "cutting": 14,
-    "flags": [ "SPEAR", "REACH_ATTACK" ],
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK" ],
     "use_action": { "type": "transform", "moves": 40, "target": "tele_spear_sw", "msg": "You collapse your spear." },
     "price": "50 USD",
     "category": "weapons",

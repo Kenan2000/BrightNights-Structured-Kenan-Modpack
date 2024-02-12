@@ -5,36 +5,36 @@
 		"subcategory": "CSC_OTHER_TOOLS",
 		"skill_used": "fabrication",
 		"difficulty": 3,
-		"skills_required": ["survival", 5],
+		"skills_required": [ "survival", 5 ],
 		"time": "2 m 30 s",
 		"autolearn": true,
 		"book_learn": [ 
-      ["survival_book", 3],
-			["textbook_survival", 4]
+      [ "survival_book", 3 ],
+			[" textbook_survival", 4 ]
 		],
 		"qualities": [
       { "id": "CUT", "level": 1 }
     ],
 		"tools": [
 			[ 
-				["fire", -1]
+				[ "fire", -1 ]
 			]
 		],
 		"components": [
 			[
-				["2x4", 2],
-				["stick", 4]
+				[ "2x4", 2 ],
+				[ "stick", 4 ]
 			],
 			[
-				["bone", 4],
-				["bone_human", 4]
+				[ "bone", 4 ],
+				[ "bone_human", 4 ]
 			],
 			[
-				["cordage_short", 2, "LIST"],
-				["sinew", 40],
-				["thread", 40],
-				["plant_fibre", 40],
-				["yarn", 40]
+				[ "cordage_short", 2, "LIST" ],
+				[ "sinew", 40 ],
+				[ "thread", 40 ],
+				[ "plant_fibre", 40 ],
+				[ "yarn", 40 ]
 			]
 		]
 	},
@@ -50,13 +50,13 @@
 		"to_hit": -3,
 		"bashing": 10,
 		"cutting": 3,
-		"material": ["wood"],
+		"material": [ "wood" ],
 		"symbol": "/",
 		"color": "white",
 		"initial_charges": 90,
 		"max_charges": 90,
 		"charges_per_use": 10,
 		"use_action": "PICKAXE",
-		"flags": ["SPEAR", "FRAGILE", "DIG_TOOL"]
+		"flags": [ "STAB", "SPEAR", "FRAGILE", "DIG_TOOL" ]
 	}
 ]

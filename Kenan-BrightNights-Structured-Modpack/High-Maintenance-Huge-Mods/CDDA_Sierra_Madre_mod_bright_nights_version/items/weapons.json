@@ -18,7 +18,7 @@
     "color": "light_gray",
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ] ],
-    "flags": [ "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "spear_knife_ghost_clean",
@@ -39,7 +39,7 @@
     "color": "light_gray",
     "techniques": [ "WBLOCK_2" ],
     "qualities": [ [ "CUT", 2 ], [ "COOK", 1 ] ],
-    "flags": [ "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "spear_knife_ghost_weak",
@@ -64,7 +64,7 @@
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "CUT", 1 ], [ "COOK", 1 ] ],
     "relic_data": { "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "cloud_weak_spell" } ] } ] },
-    "flags": [ "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "spear_knife_ghost_potent",
@@ -91,7 +91,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "cloud_potent_spell" } ] } ]
     },
-    "flags": [ "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "spear_knife_ghost_lethal",
@@ -118,7 +118,7 @@
     "relic_data": {
       "passive_effects": [ { "has": "WIELD", "condition": "ALWAYS", "hit_you_effect": [ { "id": "cloud_lethal_spell" } ] } ]
     },
-    "flags": [ "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
+    "flags": [ "STAB", "SPEAR", "REACH_ATTACK", "MESSY", "NONCONDUCTIVE", "SHEATH_SPEAR", "DURABLE_MELEE" ]
   },
   {
     "id": "spear_throwing_ghost",
@@ -137,7 +137,7 @@
     "cutting": 15,
     "thrown_damage": [ { "damage_type": "bash", "amount": 3 }, { "damage_type": "stab", "amount": 18 } ],
     "min_skills": [ [ "throw", 1 ] ],
-    "flags": [ "SHEATH_SPEAR", "JAVELIN", "FRAGILE_MELEE", "NONCONDUCTIVE", "MESSY" ],
+    "flags": [ "SHEATH_SPEAR", "STAB", "JAVELIN", "FRAGILE_MELEE", "NONCONDUCTIVE", "MESSY" ],
     "price": "400 USD",
     "price_postapoc": "10 USD",
     "qualities": [ [ "COOK", 1 ] ]

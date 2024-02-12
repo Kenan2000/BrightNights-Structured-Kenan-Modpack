@@ -38,7 +38,7 @@
     "city_sizes": [ 4, 16 ],
     "occurrences": [ 0, 1 ],
     "flags": [ "CLASSIC" ],
-    "spawns": { "group": "GROUP_HORROR", "population": [ 4, 12 ], "radius": [ 55, 165 ] }
+    "spawns": { "group": "GROUP_HORROR", "population": [ 3, 12 ], "radius": [ 15, 35 ] }
   },
   {
     "type": "overmap_special",
@@ -79,7 +79,7 @@
     "city_distance": [ 10, -1 ],
     "occurrences": [ 80, 100 ],
     "flags": [ "BEE", "UNIQUE" ],
-    "spawns": { "group": "GROUP_BEE", "population": [ 800, 2400 ], "radius": [ 80, 240 ] }
+    "spawns": { "group": "GROUP_BEE", "population": [ 300, 1500 ], "radius": [ 15, 35 ] }
   },
   {
     "type": "overmap_special",
@@ -101,7 +101,8 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 4, 12 ],
     "occurrences": [ 0, 3 ],
-    "flags": [ "CLASSIC" ]
+    "flags": [ "CLASSIC" ],
+    "spawns": { "group": "GROUP_PK_CULT", "population": [ 1000, 2100 ], "radius": [ 7, 15 ] }
   },
   {
     "type": "overmap_special",
@@ -122,7 +123,7 @@
     "city_distance": [ 0, 8 ],
     "city_sizes": [ 4, 16 ],
     "occurrences": [ 0, 1 ],
-    "spawns": { "group": "GROUP_ROBOCOP", "population": [ 12, 36 ], "radius": [ 65, 130 ] }
+    "spawns": { "group": "GROUP_ROBOCOP", "population": [ 15, 37 ], "radius": [ 35, 65 ] }
   },
   {
     "type": "overmap_special",
@@ -147,7 +148,7 @@
     "city_distance": [ 10, -1 ],
     "occurrences": [ 0, 3 ],
     "flags": [ "TRIFFID" ],
-    "spawns": { "group": "GROUP_TRIFFID_SWAMP", "population": [ 400, 1050 ], "radius": [ 35, 90 ] }
+    "spawns": { "group": "GROUP_TRIFFID_SWAMP", "population": [ 500, 1050 ], "radius": [ 15, 35 ] }
   },
   {
     "type": "overmap_special",
@@ -156,7 +157,7 @@
     "locations": [ "wilderness" ],
     "city_distance": [ 10, -1 ],
     "occurrences": [ 0, 3 ],
-    "spawns": { "group": "GROUP_WASP", "population": [ 150, 450 ], "radius": [ 90, 180 ] }
+    "spawns": { "group": "GROUP_WASP", "population": [ 100, 395 ], "radius": [ 15, 35 ] }
   },
   {
     "type": "overmap_special",
@@ -166,7 +167,7 @@
     "city_distance": [ 0, 10 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 0, 1 ],
-    "spawns": { "group": "GROUP_SPIDER", "population": [ 18, 54 ], "radius": [ 4, 10 ] }
+    "spawns": { "group": "GROUP_SPIDER", "population": [ 15, 68 ], "radius": [ 3, 9 ] }
   },
   {
     "type": "overmap_special",
@@ -179,7 +180,7 @@
     "city_distance": [ 0, 8 ],
     "city_sizes": [ 0, 16 ],
     "occurrences": [ 0, 1 ],
-    "spawns": { "group": "GROUP_SPIDER_TRAP", "population": [ 15, 40 ], "radius": [ 4, 12 ] }
+    "spawns": { "group": "GROUP_SPIDER_TRAP", "population": [ 15, 68 ], "radius": [ 3, 9 ] }
   },
   {
     "type": "overmap_special",
@@ -192,7 +193,7 @@
     "city_distance": [ 2, -1 ],
     "city_sizes": [ 4, 16 ],
     "occurrences": [ 0, 1 ],
-    "spawns": { "group": "GROUP_SPIDER_TRAP", "population": [ 15, 40 ], "radius": [ 4, 10 ] }
+    "spawns": { "group": "GROUP_SPIDER_TRAP", "population": [ 15, 68 ], "radius": [ 3, 9 ] }
   },
   {
     "type": "overmap_special",
@@ -213,8 +214,9 @@
     "locations": [ "land" ],
     "city_distance": [ -1, 4 ],
     "city_sizes": [ 5, 16 ],
-    "occurrences": [ 0, 2 ],
-    "spawns": { "group": "GROUP_DOOM", "population": [ 50, 130 ], "radius": [ 12, 35 ] }
+    "occurrences": [ 33, 100 ],
+    "spawns": { "group": "GROUP_DOOM", "population": [ 50, 130 ], "radius": [ 7, 15 ] },
+    "flags": [ "UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -251,8 +253,9 @@
     "locations": [ "land" ],
     "city_distance": [ 2, 25 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 0, 1 ],
-    "spawns": { "group": "GROUP_DOOM", "population": [ 100, 300 ], "radius": [ 25, 65 ] }
+    "occurrences": [ 33, 100 ],
+    "spawns": { "group": "GROUP_DOOM", "population": [ 100, 300 ], "radius": [ 15, 37 ] },
+    "flags": [ "UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -347,8 +350,9 @@
     "locations": [ "land" ],
     "city_distance": [ 3, -1 ],
     "city_sizes": [ 4, 16 ],
-    "occurrences": [ 0, 2 ],
-    "spawns": { "group": "GROUP_DOOM", "population": [ 10, 35 ], "radius": [ 7, 21 ] }
+    "occurrences": [ 33, 100 ],
+    "spawns": { "group": "GROUP_DOOM", "population": [ 10, 35 ], "radius": [ 7, 15 ] },
+    "flags": [ "UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -450,7 +454,8 @@
     "city_distance": [ 15, -1 ],
     "city_sizes": [ 4, 16 ],
     "occurrences": [ 0, 1 ],
-    "flags": [ "CLASSIC" ]
+    "flags": [ "CLASSIC" ],
+    "spawns": { "group": "GROUP_PK_CULT", "population": [ 3500, 3700 ], "radius": [ 7, 35 ] }
   },
   {
     "type": "overmap_special",
@@ -472,7 +477,7 @@
     "city_distance": [ 6, -1 ],
     "city_sizes": [ 4, 16 ],
     "occurrences": [ 0, 2 ],
-    "spawns": { "group": "GROUP_SLUDGE", "population": [ 15, 35 ], "radius": [ 8, 32 ] }
+    "spawns": { "group": "GROUP_SLUDGE", "population": [ 15, 35 ], "radius": [ 8, 35 ] }
   },
   {
     "type": "overmap_special",

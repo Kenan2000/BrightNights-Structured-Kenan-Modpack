@@ -1,47 +1,5 @@
 [
   {
-    "type": "monstergroup",
-    "name": "GROUP_BS",
-    "default": "mon_null",
-    "monsters": [
-      { "monster": "mon_dementia", "freq": 200, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
-      { "monster": "mon_cult_churl", "freq": 100, "cost_multiplier": 2 },
-      { "monster": "mon_cult_slave", "freq": 100, "cost_multiplier": 1 },
-      { "monster": "mon_blood_sacrifice", "freq": 75, "cost_multiplier": 1 },
-      { "monster": "mon_shadow", "freq": 75, "cost_multiplier": 2, "pack_size": [ 1, 4 ] },
-      {
-        "monster": "mon_cult_churl",
-        "freq": 75,
-        "cost_multiplier": 3,
-        "pack_size": [ 1, 5 ],
-        "conditions": [ "DAWN", "DUSK", "NIGHT" ]
-      },
-      {
-        "monster": "mon_cult_slave",
-        "freq": 75,
-        "cost_multiplier": 2,
-        "pack_size": [ 1, 5 ],
-        "conditions": [ "DAWN", "DUSK", "NIGHT" ]
-      },
-      {
-        "monster": "mon_flesh_angel",
-        "freq": 50,
-        "cost_multiplier": 5,
-        "pack_size": [ 1, 2 ],
-        "conditions": [ "DUSK", "NIGHT", "DAWN" ]
-      },
-      { "monster": "mon_homunculus", "freq": 50, "cost_multiplier": 5, "conditions": [ "DAWN", "DUSK", "NIGHT" ] },
-      {
-        "monster": "mon_bat_vampire",
-        "freq": 50,
-        "cost_multiplier": 0,
-        "conditions": [ "SPRING", "SUMMER", "AUTUMN" ],
-        "pack_size": [ 4, 7 ]
-      },
-      { "monster": "mon_darkman", "freq": 25, "cost_multiplier": 9, "conditions": [ "DUSK", "NIGHT" ] }
-    ]
-  },
-  {
     "type": "mapgen",
     "method": "json",
     "om_terrain": [ "cabin_strange_100" ],
@@ -101,9 +59,9 @@
       "furniture": { "b": "f_bed", "C": "f_counter", "c": "f_chair", "t": "f_table", "w": "f_washer", "W": "f_dryer" },
       "monster": { "*": { "monster": "mon_shadow" } },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 }
       ]
     }
   },
@@ -163,9 +121,9 @@
       "furniture": { "S": [ "f_statue", "f_rubble" ], "b": "f_bench", "C": "f_counter", "c": "f_chair", "A": "f_armchair", "s": "f_sofa" },
       "monster": { "*": { "monster": "mon_shadow" }, "^": { "monster": "mon_blood_sacrifice" } },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 }
       ]
     }
   },
@@ -236,9 +194,9 @@
       "toilets": { "T": {  } },
       "monster": { "*": { "monster": "mon_shadow" } },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 5 }
       ]
     }
   },
@@ -297,9 +255,9 @@
       "furniture": { "S": "f_statue", "=": "f_large_canvas_wall", "c": "f_chair", "s": "f_sink", "b": "f_straw_bed" },
       "toilets": { "T": {  } },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
       ]
     }
   },
@@ -354,9 +312,9 @@
       },
       "furniture": { "=": "f_large_canvas_wall", "f": "f_rack", "c": "f_chair", "t": "f_table" },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
       ]
     }
   },
@@ -444,9 +402,9 @@
         "n": "f_slab"
       },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
       ]
     }
   },
@@ -511,9 +469,9 @@
       "furniture": { "c": "f_chair" },
       "monster": { "&": { "monster": "mon_legion" }, "^": { "monster": "mon_blood_sacrifice" } },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 }
       ]
     }
   },
@@ -571,9 +529,9 @@
       "furniture": { "c": "f_chair" },
       "monster": { "&": { "monster": "mon_nuculais" }, "^": { "monster": "mon_blood_sacrifice" } },
       "place_monsters": [
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
-        { "monster": "GROUP_BS", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 }
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 },
+        { "monster": "GROUP_PK_CULT", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 6 }
       ]
     }
   }
