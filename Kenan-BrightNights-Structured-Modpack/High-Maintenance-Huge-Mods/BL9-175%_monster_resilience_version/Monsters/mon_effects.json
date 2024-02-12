@@ -8,7 +8,7 @@
     "desc": [ "You are burning due to standing in lava!" ],
     "rating": "bad",
     "max_intensity": 1,
-    "max_duration": 3,
+    "max_duration": "3 s",
     "base_mods": { "hurt_min": [ 7 ], "hurt_max": [ 11 ] }
   },
   {
@@ -26,7 +26,7 @@
     "max_intensity": 10,
     "int_decay_step": -10,
     "int_decay_tick": 1,
-    "max_duration": 11,
+    "max_duration": "11 s",
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "hurt_min": [ -3 ] },
@@ -41,7 +41,7 @@
     "max_intensity": 10,
     "int_decay_step": -10,
     "int_decay_tick": 1,
-    "max_duration": 11,
+    "max_duration": "11 s",
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "hurt_min": [ -1.5 ] },
@@ -52,7 +52,6 @@
     "id": "herb_cleanse",
     "removes_effects": [
       "fungus",
-      "flu",
       "dermatik",
       "bloodworms",
       "paincysts",
@@ -65,23 +64,21 @@
       "badpoison",
       "foodpoison",
       "paralyzepoison",
-      "tetanus",
       "infected",
-      "asthma",
-      "common_cold"
+      "asthma"
     ],
     "name": [ "Herb Cleansing" ],
     "desc": [
       "You have taken some healing herbs.  It appears to have panacea-like effects along with radioation cleansing properties slowly cleansing your body of radiation; if you take more of it, you'll be able to speed up the process."
     ],
     "max_intensity": 1,
-    "base_mods": { "rad_chance": [ 180 ], "rad_min": [ -4 ], "rad_max": [ -3 ], "h_mod_chance": [ 1000 ], "vomit_chance": [ 10000 ] },
+    "base_mods": { "rad_chance": [ 196 ], "rad_min": [ -4 ], "rad_max": [ -3 ], "h_mod_chance": [ 1000 ], "vomit_chance": [ 10000 ] },
     "scaling_mods": {
       "h_mod_min": [ 0 ],
       "h_mod_max": [ 2 ],
       "h_mod_chance": [ 100 ],
       "vomit_chance": [ -1000 ],
-      "rad_chance": [ 180 ],
+      "rad_chance": [ 196 ],
       "rad_min": [ -0.7 ],
       "rad_max": [ -0.9 ]
     }
@@ -104,6 +101,6 @@
     "blocks_effects": [ "bleed" ],
     "name": [ "Bleeding Immunity" ],
     "max_intensity": 1,
-    "max_duration": 17400
+    "max_duration": "7 h"
   }
 ]

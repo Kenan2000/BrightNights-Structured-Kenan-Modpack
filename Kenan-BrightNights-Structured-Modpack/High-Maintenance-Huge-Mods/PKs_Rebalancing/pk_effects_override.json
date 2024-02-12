@@ -6,20 +6,9 @@
     "desc": [
       "You are experiencing hallucinations.  The resulting sense of surrealism is a real stressor, and gets the blood pumping."
     ],
-    "max_duration": 3200,
+    "max_duration": "37 m",
+    "blood_analysis_description": "Hallucinations",
     "base_mods": { "str_mod": [ 1 ] }
-  },
-  {
-    "type": "effect_type",
-    "id": "took_flumed",
-    "removes_effects": [ "common_cold", "flu", "infection_minor" ],
-    "base_mods": { "rad_amount": [ 3 ], "health_amount": [ -5 ] }
-  },
-  {
-    "type": "effect_type",
-    "id": "flushot",
-    "blocks_effects": [ "common_cold", "flu", "infection_minor" ],
-    "removes_effects": [ "common_cold", "flu", "flu_zed", "infection_minor" ]
   },
   {
     "type": "effect_type",
@@ -29,30 +18,19 @@
       "You have recently taken a Prussain Blue pill.  It will slowly cleanse your body of radiation; taking more will speed up the process."
     ],
     "max_intensity": 5,
-    "base_mods": { "rad_chance": [ 180 ], "rad_min": [ -2 ], "rad_max": [ -1 ], "h_mod_chance": [ 1000 ], "vomit_chance": [ 10000 ] },
+    "base_mods": { "rad_chance": [ 196 ], "rad_min": [ -2 ], "rad_max": [ -1 ], "h_mod_chance": [ 1000 ], "vomit_chance": [ 10000 ] },
     "scaling_mods": {
       "h_mod_min": [ -1 ],
       "h_mod_max": [ 0 ],
       "h_mod_chance": [ -100 ],
       "speed_mod": [ -1.5 ],
       "vomit_chance": [ -1000 ],
-      "rad_chance": [ 180 ],
+      "rad_chance": [ 196 ],
       "rad_min": [ -0.3 ],
       "rad_max": [ -0.5 ]
-    }
-  },
-  {
-    "type": "effect_type",
-    "id": "onfire",
-    "name": [ "On Fire" ],
-    "desc": [ "Loss of health - Entire Body\nYour clothing and other equipment may be consumed by the flames." ],
-    "remove_memorial_log": "Put out the fire.",
-    "apply_message": "You're on fire!  Wait in place to attempt to put out the fire.",
-    "apply_memorial_log": "Caught on fire.",
-    "rating": "bad",
-    "max_intensity": 3,
-    "int_dur_factor": 2,
-    "max_duration": 35
+    },
+    "blood_analysis_description": "Prussian Blue",
+    "rating": "good"
   },
   {
     "type": "effect_type",
@@ -62,7 +40,7 @@
     "apply_message": "Your vision flickers and goes gray!",
     "remove_message": "The world flickers back to normality.",
     "rating": "bad",
-    "max_duration": 3850
+    "permanent": true
   },
   {
     "type": "effect_type",
@@ -81,16 +59,13 @@
       "badpoison",
       "foodpoison",
       "paralyzepoison",
-      "tetanus",
       "bite",
       "infected",
       "asthma",
-      "common_cold",
-      "flu",
       "flu_zed",
       "infection_minor"
     ],
-    "base_mods": { "rad_amount": [ -75 ], "health_amount": [ 5 ] }
+    "base_mods": { "pkill_min": [ 5 ], "rad_amount": [ -75 ], "health_amount": [ 5 ] }
   },
   {
     "type": "effect_type",
@@ -100,32 +75,22 @@
     "miss_messages": [ [ "Your stomach rolls over.", 1 ] ],
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
-    "int_add_val": 1,
-    "max_intensity": 3,
+    "resist_effects": [ "antitoxin" ],
+    "max_duration": "24 h",
     "base_mods": {
       "per_mod": [ -1 ],
       "dex_mod": [ -1 ],
-      "str_mod": [ -2, -1 ],
-      "speed_mod": [ -15 ],
+      "str_mod": [ -3, -1 ],
+      "speed_mod": [ -20 ],
       "pain_min": [ 1 ],
-      "pain_chance": [ 100, 500 ],
-      "vomit_chance": [ 400, 700 ],
+      "pain_chance": [ 300, 900 ],
+      "vomit_chance": [ 600, 1200 ],
       "rad_min": [ 1 ],
       "rad_max_val": [ 75 ],
       "rad_chance": [ 1000 ],
       "h_mod_min": [ -1 ],
       "h_mod_tick": [ 30 ],
       "h_mod_chance": [ 20 ]
-    },
-    "scaling_mods": {
-      "per_mod": [ -1 ],
-      "dex_mod": [ -1 ],
-      "str_mod": [ -1, -0.5 ],
-      "speed_mod": [ -5 ],
-      "pain_chance": [ -33.5, -200 ],
-      "vomit_chance": [ -150, -200 ],
-      "rad_chance": [ -300 ],
-      "rad_max_val": [ 75 ]
     }
   },
   {
@@ -136,17 +101,6 @@
     "apply_message": "You're covered in bile!",
     "rating": "bad",
     "base_mods": { "per_mod": [ -3 ], "vomit_chance": [ 400 ] }
-  },
-  {
-    "type": "effect_type",
-    "id": "tetanus",
-    "name": [ "Lockjaw" ],
-    "desc": [
-      "You have frequent muscle spasms, unable to freely move around even when not doubled over.  Lockjaw is caused by bacteria and their toxins."
-    ],
-    "rating": "bad",
-    "resist_effects": [ "valium" ],
-    "base_mods": { "dex_mod": [ -4, 0 ] }
   },
   {
     "type": "effect_type",
@@ -178,7 +132,9 @@
     "miss_messages": [ [ "You feel stiff.", 4 ] ],
     "rating": "bad",
     "max_intensity": 20,
+    "max_duration": "30 m",
     "resist_traits": [ "POISRESIST" ],
+    "resist_effects": [ "antitoxin" ],
     "int_add_val": 1,
     "int_decay_tick": 1500,
     "base_mods": {
@@ -213,7 +169,7 @@
     "max_intensity": 3,
     "int_decay_step": -1,
     "int_decay_tick": 600,
-    "max_duration": 1200,
+    "max_duration": "20 m",
     "decay_messages": [
       [ "You feel a little better.", "neutral" ],
       [ "You feel a little better.", "neutral" ],
@@ -221,6 +177,7 @@
     ],
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
+    "resist_effects": [ "antitoxin" ],
     "pain_sizing": true,
     "hurt_sizing": true,
     "main_parts_only": true,
@@ -269,7 +226,7 @@
     "max_intensity": 3,
     "int_decay_step": -1,
     "int_decay_tick": 900,
-    "max_duration": 1800,
+    "max_duration": "30 m",
     "decay_messages": [
       [ "You feel a little better.", "neutral" ],
       [ "You feel a little better.", "neutral" ],
@@ -277,6 +234,7 @@
     ],
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
+    "resist_effects": [ "antitoxin" ],
     "pain_sizing": true,
     "hurt_sizing": true,
     "main_parts_only": true,
@@ -323,12 +281,13 @@
     "desc": [ "Your %s is exposed to the cold.", "Your %s is very exposed to the cold.", "Your %s is dangerously cold!" ],
     "speed_name": "Cold",
     "max_intensity": 3,
+    "permanent": true,
     "part_descs": true,
     "base_mods": {
       "speed_mod": [ -3 ],
       "dex_mod": [ -0.6 ],
       "health_min": [ -1 ],
-      "health_tick": [ 180 ],
+      "health_tick": [ 196 ],
       "health_chance": [ 60 ],
       "h_mod_tick": [ 12 ],
       "h_mod_chance": [ 60 ]
@@ -339,7 +298,7 @@
       "dex_mod": [ -0.6 ],
       "hurt_min": [ 1 ],
       "hurt_chance": [ 90 ],
-      "pkill_tick": [ 10 ],
+      "pkill_tick": [ 30 ],
       "pkill_min": [ 1 ],
       "pkill_max_val": [ 60 ],
       "stamina_min": [ -0.5 ],
@@ -359,12 +318,13 @@
     ],
     "speed_name": "Hot",
     "max_intensity": 3,
+    "permanent": true,
     "part_descs": true,
     "base_mods": {
       "speed_mod": [ -2 ],
       "thirst_min": [ 1 ],
       "thirst_max": [ 3 ],
-      "thirst_tick": [ 600 ],
+      "thirst_tick": [ 1200 ],
       "thirst_chance": [ 3 ],
       "pain_min": [ 1 ],
       "pain_chance": [ 2 ],
@@ -373,14 +333,14 @@
       "hurt_chance": [ -300 ],
       "stamina_chance": [ 2 ],
       "health_min": [ -1 ],
-      "health_tick": [ 180 ],
+      "health_tick": [ 196 ],
       "health_chance": [ 60 ],
       "h_mod_tick": [ 18 ],
       "h_mod_chance": [ 40 ]
     },
     "scaling_mods": {
       "speed_mod": [ -4 ],
-      "thirst_tick": [ -240 ],
+      "thirst_tick": [ -300 ],
       "thirst_chance": [ -1 ],
       "pain_max_val": [ 10 ],
       "hurt_chance": [ 200 ],
@@ -400,8 +360,9 @@
     ],
     "part_descs": true,
     "speed_name": "Frostbite",
-    "max_intensity": 2,
     "dur_add_perc": 0,
+    "max_intensity": 2,
+    "permanent": true,
     "base_mods": {
       "dex_mod": [ -0.6 ],
       "speed_mod": [ -4 ],
@@ -426,6 +387,7 @@
     "id": "frostbite_recovery",
     "name": [ "Defrosting" ],
     "desc": [ "Your %s is starting to feel the damage cold has wrought." ],
+    "permanent": true,
     "part_descs": true,
     "base_mods": {
       "dex_mod": [ -0.5 ],
@@ -453,7 +415,8 @@
     "rating": "bad",
     "base_mods": { "speed_mod": [ -5 ], "str_mod": [ -1 ] },
     "scaling_mods": { "speed_mod": [ -10 ], "str_mod": [ -1.5 ] },
-    "permanent": true
+    "permanent": true,
+    "blood_analysis_description": "Hypocalcemia"
   },
   {
     "type": "effect_type",
@@ -470,7 +433,8 @@
     "rating": "bad",
     "base_mods": { "speed_mod": [ -5 ], "stamina_min": [ -1 ], "fatigue_tick": [ 30 ] },
     "scaling_mods": { "speed_mod": [ -5 ], "stamina_min": [ -1 ], "fatigue_min": [ 0.5 ] },
-    "permanent": true
+    "permanent": true,
+    "blood_analysis_description": "Anemia"
   },
   {
     "type": "effect_type",
@@ -487,7 +451,8 @@
     "rating": "bad",
     "base_mods": { "per_mod": [ -1 ] },
     "scaling_mods": { "per_mod": [ -2 ], "int_mod": [ -1 ] },
-    "permanent": true
+    "permanent": true,
+    "blood_analysis_description": "Vitamin A Deficiency"
   },
   {
     "type": "effect_type",
@@ -504,7 +469,8 @@
     "rating": "bad",
     "base_mods": { "stamina_min": [ -0.5 ], "hurt_chance": [ 125 ], "hurt_tick": [ 60 ] },
     "scaling_mods": { "stamina_min": [ -0.5 ], "hurt_min": [ 1 ], "hurt_chance": [ -25 ] },
-    "permanent": true
+    "permanent": true,
+    "blood_analysis_description": "Vitamin B Deficiency"
   },
   {
     "type": "effect_type",
@@ -529,7 +495,8 @@
       "stamina_min": [ -1.25 ],
       "pain_chance": [ -30 ]
     },
-    "permanent": true
+    "permanent": true,
+    "blood_analysis_description": "Scurvy"
   },
   {
     "type": "effect_type",
@@ -550,7 +517,8 @@
       "thirst_tick": [ 240 ],
       "thirst_chance": [ 3 ]
     },
-    "permanent": true
+    "permanent": true,
+    "blood_analysis_description": "Hypervitaminosis"
   },
   {
     "type": "effect_type",
@@ -570,6 +538,7 @@
       "vomit_chance": [ -800 ],
       "h_mod_amount": [ -3 ],
       "health_amount": [ -3 ]
-    }
+    },
+   "show_in_info": true
   }
 ]

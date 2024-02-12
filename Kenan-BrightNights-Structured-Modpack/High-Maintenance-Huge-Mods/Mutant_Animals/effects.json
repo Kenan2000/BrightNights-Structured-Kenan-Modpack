@@ -7,6 +7,7 @@
     "apply_message": "You have contracted a fever.",
     "rating": "bad",
     "resist_effects": [ "antibiotic" ],
+    "resist_traits": [ "INFRESIST", "DISRESISTANT" ],
     "base_mods": {
       "thirst_tick": [ 300 ],
       "thirst_min": [ 1 ],
@@ -21,7 +22,7 @@
       "cough_chance": [ 300, 0 ],
       "vomit_chance": [ 3600, 7200 ]
     },
-    "max_duration": 60000
+    "max_duration": "16 h"
   },
   {
     "type": "effect_type",
@@ -41,11 +42,8 @@
       "badpoison",
       "foodpoison",
       "paralyzepoison",
-      "tetanus",
       "infected",
-      "asthma",
-      "common_cold",
-      "flu"
+      "asthma"
     ],
     "base_mods": { "pkill_min": [ 5 ] }
   }

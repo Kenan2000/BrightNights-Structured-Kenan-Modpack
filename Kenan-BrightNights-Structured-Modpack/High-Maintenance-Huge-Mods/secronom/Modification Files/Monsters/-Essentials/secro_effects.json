@@ -4,7 +4,7 @@
     "id": "unify_bloodslow",
     "max_intensity": 5,
     "int_add_val": 1,
-    "max_duration": 120,
+    "max_duration": "2 m",
     "int_decay_step": -1,
     "int_decay_tick": 15,
     "rating": "bad",
@@ -20,7 +20,7 @@
     "id": "unity_bloodslow",
     "max_intensity": 20,
     "int_add_val": 1,
-    "max_duration": 240,
+    "max_duration": "4 m",
     "int_decay_step": -1,
     "int_decay_tick": 15,
     "rating": "bad",
@@ -60,7 +60,7 @@
     "max_intensity": 3,
     "int_decay_step": -1,
     "int_decay_tick": 300,
-    "max_duration": 600,
+    "max_duration": "10 m",
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
     "pain_sizing": true,
@@ -76,7 +76,7 @@
     "max_intensity": 3,
     "int_decay_step": -1,
     "int_decay_tick": 300,
-    "max_duration": 600,
+    "max_duration": "10 m",
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
     "base_mods": { "dex_mod": [ -1.55 ], "speed_mod": [ -1.15 ] },
@@ -90,7 +90,7 @@
     "max_intensity": 3,
     "int_decay_step": -1,
     "int_decay_tick": 250,
-    "max_duration": 1000,
+    "max_duration": "16 m",
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
     "base_mods": { "int_mod": [ -2, -1.25 ] },
@@ -104,7 +104,7 @@
     "max_intensity": 3,
     "int_decay_step": -1,
     "int_decay_tick": 150,
-    "max_duration": 600,
+    "max_duration": "10 m",
     "rating": "bad",
     "resist_traits": [ "POISRESIST" ],
     "base_mods": { "hunger_min": [ 2, 1 ], "hunger_chance": [ 275 ], "thirst_min": [ 3, 1 ], "thirst_chance": [ 325 ] },
@@ -129,7 +129,7 @@
     "max_intensity": 5,
     "int_decay_step": -3,
     "int_decay_tick": 45,
-    "max_duration": 180,
+    "max_duration": "3 m",
     "rating": "bad",
     "scaling_mods": { "int_mod": [ -0.66 ], "dex_mod": [ -0.33 ], "speed_mod": [ -2 ] }
   },
@@ -146,7 +146,7 @@
     "max_intensity": 10,
     "int_decay_step": -2,
     "int_decay_tick": 30,
-    "max_duration": 300,
+    "max_duration": "5 m",
     "rating": "bad",
     "show_in_info": true,
     "scaling_mods": { "dex_mod": [ -0.25 ], "speed_mod": [ -2.5 ] }
@@ -169,7 +169,7 @@
     "miss_messages": [ [ "You feel something sink deep within you.", 1 ] ],
     "rating": "bad",
     "max_intensity": 3,
-    "max_duration": 9600,
+    "max_duration": "160 m",
     "resist_traits": [ "POISRESIST" ],
     "base_mods": { "hurt_min": [ 1 ], "hurt_max": [ 2 ], "hurt_chance": [ 21 ], "hurt_tick": [ 6 ] },
     "scaling_mods": { "str_mod": [ -0.9 ], "per_mod": [ -0.82 ], "dex_mod": [ -1.3 ], "int_mod": [ -1.65 ] }
@@ -178,7 +178,23 @@
     "//": "And royal jelly is the only available cure (at the moment).",
     "type": "effect_type",
     "id": "cureall",
-    "removes_effects": [ "vector_infect" ]
+    "removes_effects": [ 
+      "fungus",
+      "dermatik",
+      "bloodworms",
+      "paincysts",
+      "brainworms",
+      "tapeworm",
+      "poison",
+      "blind",
+      "stung",
+      "badpoison", 
+      "infected",
+      "paralyzepoison",
+      "foodpoison", 
+      "asthma", 
+      "vector_infect" 
+   ]
   },
   {
     "type": "effect_type",
@@ -200,7 +216,7 @@
     "max_intensity": 100,
     "int_decay_step": -5,
     "int_decay_tick": 10,
-    "max_duration": 300,
+    "max_duration": "5 m",
     "rating": "bad",
     "base_mods": { "pain_min": [ 1 ], "pain_max": [ 2 ], "pain_chance": [ 30 ] },
     "scaling_mods": { "per_mod": [ -0.04 ], "dex_mod": [ -0.08 ], "speed_mod": [ -0.16 ] }
@@ -231,7 +247,7 @@
     "max_intensity": 5,
     "int_decay_step": -1,
     "int_decay_tick": 60,
-    "max_duration": 600,
+    "max_duration": "10 m",
     "base_mods": { "size_mod": [ 0.2 ] },
     "scaling_mods": { "size_mod": [ 0.2 ] }
   },
@@ -247,7 +263,7 @@
     "max_intensity": 5,
     "int_decay_step": -1,
     "int_decay_tick": 24,
-    "max_duration": 120,
+    "max_duration": "2 m",
     "rating": "bad",
     "scaling_mods": { "per_mod": [ -0.5 ], "dex_mod": [ -0.25 ], "speed_mod": [ -1.5 ] }
   },
@@ -266,7 +282,7 @@
     "name": [ "Corrupted" ],
     "desc": [ "Sizzling corrupt acid takes a firm hold while burning you!" ],
     "rating": "bad",
-    "max_duration": 10,
+    "max_duration": "10 s",
     "base_mods": { "hurt_min": [ 1 ], "hurt_max": [ 2 ], "hurt_tick": [ 2 ], "speed_mod": [ -20 ], "dex_mod": [ -1 ] }
   },
   {
@@ -290,7 +306,7 @@
     "max_intensity": 60,
     "int_decay_step": -30,
     "int_decay_tick": 120,
-    "max_duration": 900,
+    "max_duration": "15 m",
     "base_mods": { "hurt_min": [ -1 ], "hurt_max": [ -1 ], "speed_mod": [ 1 ] },
     "scaling_mods": { "speed_mod": [ 1.15 ] }
   },
@@ -309,7 +325,7 @@
     "max_intensity": 25,
     "int_decay_step": -10,
     "int_decay_tick": 6,
-    "max_duration": 125,
+    "max_duration": "125 s",
     "base_mods": { "hurt_min": [ 1 ], "hurt_max": [ 1 ], "hurt_tick": [ 10 ], "speed_mod": [ -1 ] },
     "scaling_mods": { "speed_mod": [ -1.5 ], "str_mod": [ -0.32 ], "dex_mod": [ -0.64 ], "per_mod": [ -0.16 ], "int_mod": [ -0.08 ] }
   },
@@ -325,7 +341,7 @@
     "max_intensity": 25,
     "int_decay_step": -10,
     "int_decay_tick": 6,
-    "max_duration": 125,
+    "max_duration": "125 s",
     "base_mods": { "hurt_min": [ -2 ], "hurt_max": [ -2 ], "hurt_tick": [ 10 ], "speed_mod": [ 1 ] },
     "scaling_mods": { "speed_mod": [ 2 ] }
   },
@@ -357,7 +373,7 @@
     "max_intensity": 10,
     "int_decay_step": -3,
     "int_decay_tick": 50,
-    "max_duration": 330,
+    "max_duration": "330 s",
     "base_mods": { "speed_mod": [ -7.5 ], "dex_mod": [ -1 ] },
     "scaling_mods": { "speed_mod": [ -7.5 ], "dex_mod": [ -1 ] }
   },
@@ -376,7 +392,7 @@
     "max_intensity": 10,
     "int_decay_step": -10,
     "int_decay_tick": 1,
-    "max_duration": 11,
+    "max_duration": "11 s",
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "hurt_min": [ -1 ] },
@@ -391,7 +407,7 @@
     "max_intensity": 10,
     "int_decay_step": -10,
     "int_decay_tick": 1,
-    "max_duration": 11,
+    "max_duration": "11 s",
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "hurt_min": [ -1.5 ] },
@@ -406,7 +422,7 @@
     "max_intensity": 10,
     "int_decay_step": -10,
     "int_decay_tick": 1,
-    "max_duration": 11,
+    "max_duration": "11 s",
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "hurt_min": [ -1.75 ] },
@@ -421,7 +437,7 @@
     "max_intensity": 10,
     "int_decay_step": -10,
     "int_decay_tick": 1,
-    "max_duration": 11,
+    "max_duration": "11 s",
     "rating": "good",
     "show_in_info": true,
     "base_mods": { "hurt_min": [ -3 ] },
@@ -502,7 +518,7 @@
     "//": "Don't trigger the triggerer.",
     "type": "effect_type",
     "id": "secro_revenant_trigger_immune",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "removes_effects": [ "secro_revenant_trigger" ],
     "blocks_effects": [ "secro_revenant_trigger" ]
   },
@@ -564,7 +580,7 @@
     "int_decay_step": -2,
     "int_decay_tick": 5,
     "max_intensity": 5,
-    "max_duration": 30,
+    "max_duration": "30 s",
     "show_in_info": true,
     "base_mods": { "speed_mod": [ 5 ] },
     "scaling_mods": { "speed_mod": [ 5 ] },
@@ -617,7 +633,7 @@
     "int_decay_step": -1,
     "int_decay_tick": 30,
     "max_intensity": 26,
-    "max_duration": 1560,
+    "max_duration": "26 m",
     "show_in_info": true,
     "pain_sizing": true,
     "hurt_sizing": true,
@@ -677,7 +693,7 @@
     "desc": [ "You feel the bones sink deeper from underneath as you stand on it!" ],
     "show_in_info": true,
     "rating": "bad",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "base_mods": { "hurt_min": [ 1, 4 ], "hurt_tick": [ 3 ], "speed_mod": [ -4 ] }
   },
   {
@@ -689,7 +705,7 @@
     ],
     "show_in_info": true,
     "rating": "bad",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "base_mods": { "dodge_mod": [ -1 ], "speed_mod": [ -10 ] }
   },
   {
@@ -730,7 +746,7 @@
     "int_decay_step": -1,
     "int_decay_tick": 1,
     "max_intensity": 25,
-    "max_duration": 50,
+    "max_duration": "50 s",
     "show_in_info": true,
     "pain_sizing": true,
     "hurt_sizing": true,
@@ -744,7 +760,7 @@
     "desc": [ "You are melting as you move!" ],
     "show_in_info": true,
     "rating": "bad",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "base_mods": { "hurt_min": [ 5, 10 ], "hurt_tick": [ 1 ] }
   },
   {
@@ -766,7 +782,7 @@
     "desc": [
       "Your wounds are mending at an incredible rate and causes your body to grow exponentially, surpassing the average health cap temporarily!"
     ],
-    "max_duration": 240,
+    "max_duration": "4 m",
     "main_parts_only": true,
     "rating": "good",
     "base_mods": { "hurt_min": [ -1 ], "hurt_tick": [ 5 ] }
@@ -777,7 +793,7 @@
     "name": [ "Corroding" ],
     "desc": [ "Sizzling blood acid is burning you!" ],
     "rating": "bad",
-    "max_duration": 10,
+    "max_duration": "10 s",
     "base_mods": { "hurt_min": [ 1 ], "hurt_max": [ 2 ], "hurt_tick": [ 3 ], "speed_mod": [ -3 ] }
   },
   {
@@ -916,7 +932,7 @@
     "max_intensity": 15,
     "int_decay_step": -5,
     "int_decay_tick": 30,
-    "max_duration": 150,
+    "max_duration": "150 s",
     "rating": "bad",
     "show_in_info": true,
     "scaling_mods": { "dex_mod": [ -0.075 ], "speed_mod": [ -0.75 ] }
@@ -938,7 +954,7 @@
     "id": "mon_szombie_vessel_arma_biters",
     "name": [ "Armament - Biters" ],
     "show_in_info": true,
-    "max_duration": 20,
+    "max_duration": "20 s",
     "base_mods": { "bash_mod": [ 8.0 ], "cut_mod": [ 8.0 ], "speed_mod": [ -15 ] },
     "removes_effects": [ "mon_szombie_vessel_arma_tents", "mon_szombie_vessel_arma_blades" ]
   },
@@ -947,7 +963,7 @@
     "id": "mon_szombie_vessel_arma_tents",
     "name": [ "Armament - Tentacles" ],
     "show_in_info": true,
-    "max_duration": 20,
+    "max_duration": "20 s",
     "base_mods": { "hit_mod": [ 3.0 ], "bash_mod": [ 4.0 ], "speed_mod": [ 15 ] },
     "removes_effects": [ "mon_szombie_vessel_arma_biters", "mon_szombie_vessel_arma_blades" ]
   },
@@ -956,7 +972,7 @@
     "id": "mon_szombie_vessel_arma_blades",
     "name": [ "Armament - Blades" ],
     "show_in_info": true,
-    "max_duration": 20,
+    "max_duration": "20 s",
     "base_mods": { "hit_mod": [ 2.0 ], "cut_mod": [ 10 ], "speed_mod": [ -5 ] },
     "removes_effects": [ "mon_szombie_vessel_arma_biters", "mon_szombie_vessel_arma_tents" ]
   },
@@ -996,13 +1012,13 @@
     "name": [ "Vessel Resistance" ],
     "desc": [ "The bio-organic exoskeleton isn't responding to you!" ],
     "rating": "bad",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "base_mods": { "speed_mod": [ -25 ], "dex_mod": [ -4 ] }
   },
   {
     "type": "effect_type",
     "id": "secro_power_armor_flesh_resisted",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "rating": "good",
     "removes_effects": [ "secro_power_armor_flesh_resist" ],
     "blocks_effects": [ "secro_power_armor_flesh_resist" ]
@@ -1010,7 +1026,7 @@
   {
     "type": "effect_type",
     "id": "eff_carrion_alpha_rally_atk_cmd",
-    "max_duration": 100,
+    "max_duration": "100 s",
     "removes_effects": [ "ai_controlled" ],
     "blocks_effects": [ "ai_controlled" ]
   },
@@ -1400,7 +1416,7 @@
     "//": "Effects used for immunity fields",
     "type": "effect_type",
     "id": "secro_down_immune",
-    "max_duration": 1,
+    "max_duration": "1 s",
     "removes_effects": [ "downed" ],
     "blocks_effects": [ "downed" ]
   },
@@ -1412,7 +1428,7 @@
   {
     "type": "effect_type",
     "id": "pacified",
-    "max_duration": 10,
+    "max_duration": "10 s",
     "name": [ "pacified" ],
     "desc": [ "pacified" ]
   }

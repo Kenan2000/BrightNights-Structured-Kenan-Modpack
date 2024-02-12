@@ -56,12 +56,12 @@
       "speed_mod": [ 15 ],
       "str_mod": [ 2 ],
       "per_mod": [ 2 ],
-      "stim_tick": [ 42 ],
+      "stim_tick": [ 51 ],
       "stim_min": [ 3 ],
       "stim_max": [ 5 ],
       "stamina_min": [ 100 ]
     },
-    "scaling_mods": { "speed_mod": [ 2 ], "int_mod": [ -0.8 ], "vomit_chance": [ 15 ], "stim_tick": [ 42 ], "stim_min": [ 3 ], "stim_max": [ 3 ] }
+    "scaling_mods": { "speed_mod": [ 2 ], "int_mod": [ -0.8 ], "vomit_chance": [ 15 ], "stim_tick": [ 51 ], "stim_min": [ 3 ], "stim_max": [ 3 ] }
   },
   {
     "id": "fo_jet_kit",
@@ -82,7 +82,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You activate the jet applicator and feel a rush of energy!",
-      "effects": [ { "id": "fo_mob_jetdrug", "duration": "8 minutes" } ],
+      "effects": [ { "id": "fo_mob_jetdrug", "duration": "15 minutes" } ],
       "used_up_item": "fo_jet_empty"
     }
   },
@@ -101,12 +101,12 @@
       "speed_mod": [ 25 ],
       "str_mod": [ 3 ],
       "per_mod": [ 3 ],
-      "stim_tick": [ 42 ],
+      "stim_tick": [ 51 ],
       "stim_min": [ 3 ],
       "stim_max": [ 5 ],
       "stamina_min": [ 150 ]
     },
-    "scaling_mods": { "speed_mod": [ 5 ], "int_mod": [ -0.5 ], "vomit_chance": [ 15 ], "stim_tick": [ 42 ], "stim_min": [ 3 ], "stim_max": [ 3 ] }
+    "scaling_mods": { "speed_mod": [ 5 ], "int_mod": [ -0.5 ], "vomit_chance": [ 15 ], "stim_tick": [ 51 ], "stim_min": [ 3 ], "stim_max": [ 3 ] }
   },
   {
     "id": "fo_ultrajet_kit",
@@ -128,7 +128,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You activate the jet applicator and feel a rush of energy!",
-      "effects": [ { "id": "fo_mob_ultrajetdrug", "duration": "8 minutes" } ],
+      "effects": [ { "id": "fo_mob_ultrajetdrug", "duration": "15 minutes" } ],
       "used_up_item": "fo_jet_empty"
     }
   },
@@ -161,7 +161,7 @@
       "str_mod": [ 2 ],
       "per_mod": [ 2 ],
       "stamina_min": [ 65 ],
-      "pkill_tick": [ 42 ],
+      "pkill_tick": [ 51 ],
       "pkill_min": [ 3 ],
       "pkill_max": [ 5 ]
     },
@@ -248,8 +248,8 @@
     "max_intensity": 3,
     "int_add_val": 1,
     "int_decay_tick": 400,
-    "base_mods": { "str_mod": [ 3 ], "dex_mod": [ 1 ], "pkill_tick": [ 42 ], "pkill_min": [ 3 ], "pkill_max": [ 5 ], "stamina_min": [ 35 ] },
-    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 0.5 ], "pkill_tick": [ 42 ], "pkill_min": [ 3 ], "pkill_max": [ 3 ] }
+    "base_mods": { "str_mod": [ 3 ], "dex_mod": [ 1 ], "pkill_tick": [ 51 ], "pkill_min": [ 3 ], "pkill_max": [ 5 ], "stamina_min": [ 35 ] },
+    "scaling_mods": { "str_mod": [ 1 ], "dex_mod": [ 0.5 ], "pkill_tick": [ 51 ], "pkill_min": [ 3 ], "pkill_max": [ 3 ] }
   },
   {
     "id": "fo_buffout_kit",
@@ -268,7 +268,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You take a buffout pill and instantly feel your strength, reflexes with endurance greatly increased!",
-      "effects": [ { "id": "fo_mob_buffoutdrug", "duration": "8 minutes" } ]
+      "effects": [ { "id": "fo_mob_buffoutdrug", "duration": "15 minutes" } ]
     }
   },
   {
@@ -289,7 +289,7 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You activate the radaway.",
-      "effects": [ { "id": "fo_mob_radaway", "duration": "42 minutes" } ],
+      "effects": [ { "id": "fo_mob_radaway", "duration": "51 minutes" } ],
       "used_up_item": "bag_iv"
     }
   },

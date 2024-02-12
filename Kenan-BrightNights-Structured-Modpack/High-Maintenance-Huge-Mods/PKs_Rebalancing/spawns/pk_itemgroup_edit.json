@@ -554,7 +554,6 @@
       { "item": "berserker_drug", "prob": 15 },
       { "item": "stamina_vial", "prob": 35 },
       { "item": "medikit", "prob": 25 },
-      { "item": "chloroform_rag", "prob": 10 },
       { "item": "antidote_posion", "prob": 10 },
       { "item": "iodine", "prob": 15 },
       { "item": "prussian_blue", "prob": 15 }
@@ -591,9 +590,41 @@
   {
     "type": "item_group",
     "subtype": "collection",
+    "id": "mon_zombie_hazmat_death_drops",
+    "entries": [ { "item": "prussian_blue", "prob": 35 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_soldier_death_drops",
+    "entries": [ { "item": "prussian_blue", "prob": 35 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_bio_op_death_drops",
+    "entries": [ { "item": "prussian_blue", "prob": 35 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_military_pilot_death_drops",
+    "entries": [ { "item": "prussian_blue", "prob": 35 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_zombie_swat_death_drops",
+    "entries": [ { "item": "prussian_blue", "prob": 35 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
     "id": "mon_zombie_scientist_death_drops",
     "entries": [
       { "group": "prefab_chems", "prob": 1 },
+      { "item": "gelatin_slimy_residue", "prob": 1 },
+      { "item": "prussian_blue", "prob": 35 },
       { "item": "bot_manhack_fire", "prob": 2 },
       { "item": "bot_manhack", "prob": 10 },
       { "item": "acidbomb_large", "prob": 3 },
@@ -634,7 +665,6 @@
       [ "1st_aid", 5 ],
       [ "pokeball", 10 ],
       [ "machete", 5 ],
-      [ "chloroform_rag", 10 ],
       [ "antidote_posion", 12 ],
       [ "antidote_badpoison", 6 ],
       [ "clay_boiled", 15 ],
@@ -651,19 +681,19 @@
     "type": "item_group",
     "id": "science",
     "items": [
-      [ "1st_aid", 5 ],
+      [ "1st_aid", 7 ],
       [ "antidote_posion", 10 ],
       [ "triffid_sap", 10 ],
       [ "iodine", 8 ],
       [ "prussian_blue", 8 ],
       [ "stamina_vial", 8 ],
-      [ "chloroform_rag", 5 ],
-      [ "triffid_sap_grenade", 5 ],
-      [ "royal_jelly_sap", 5 ],
-      [ "medikit", 4 ],
+      [ "triffid_sap_grenade", 7 ],
+      [ "royal_jelly_sap", 7 ],
+      [ "medikit", 7 ],
       [ "bot_manhack_missile", 4 ],
-      [ "berserker_drug", 2 ],
-      [ "antidote_badpoison", 2 ],
+      [ "berserker_drug", 3 ],
+      [ "antidote_badpoison", 3 ],
+      [ "gelatin_slimy_residue", 3 ],
       [ "pokeball", 3 ],
       [ "bot_turret_shockcannon", 3 ],
       [ "mutagen", 5 ],

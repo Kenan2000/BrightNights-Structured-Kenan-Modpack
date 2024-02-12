@@ -488,6 +488,26 @@
     "color": "light_green"
   },
   {
+    "id": "gelatin_slimy_residue",
+    "looks_like": "slime_scrap",
+    "type": "TOOL",
+    "name": { "str": "amoebic mold residue" },
+    "description": "This is grown residue of an amoebic mold. It can be shaped into it's full form via tinkering with this cytoplasm residue. It grows by itself, but it needs to be shaped into a more coherent shape. That's few minutes of work to turn an amoebic mold shapeless residue into a living pet that can be harnessed. Good slimy boy, or good slimy girl, you can't tell by it's looks, but you know that it's loyal, benign to you, unlike it's peers.",
+    "weight": "8 kg",
+    "volume": "8 L",
+    "price": "1 USD",
+    "material": [ "flesh" ],
+    "symbol": "%",
+    "color": "light_blue",
+    "use_action": { 
+      "type": "place_monster",
+      "monster_id": "mon_gelatin",
+      "difficulty": 3,  
+      "moves": 196,
+      "skills": [ "mechanics", "fabrication" ]
+    }
+  },
+  {
     "type": "GENERIC",
     "id": "fridge_cargo",
     "name": { "str": "ice box" },

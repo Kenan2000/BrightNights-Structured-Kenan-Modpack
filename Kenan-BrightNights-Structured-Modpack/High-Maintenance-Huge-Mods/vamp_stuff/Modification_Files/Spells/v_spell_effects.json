@@ -24,7 +24,7 @@
     "type": "effect_type",
     "id": "v_spell_bloodpuddle",
     "name": [ "Ensnared" ],
-    "max_duration": 15,
+    "max_duration": "15 s",
     "desc": [ "Viscous blood sticks to your body!" ],
     "show_in_info": true,
     "base_mods": { "speed_mod": [ -80 ] }
@@ -53,7 +53,7 @@
     "name": [ "Withering" ],
     "desc": [ "Pressence of a vile aura drains you submissively!" ],
     "show_in_info": true,
-    "max_duration": 3,
+    "max_duration": "3 s",
     "base_mods": { "speed_mod": [ -20 ], "hurt_min": [ 2 ], "hurt_max": [ 3 ] }
   },
   {
@@ -108,11 +108,21 @@
   {
     "type": "effect_type",
     "id": "onfire",
+    "name": [ "On Fire" ],
+    "desc": [ "Loss of health - Entire Body\nYour clothing and other equipment may be consumed by the flames." ],
+    "max_intensity": 3,
+    "int_dur_factor": "5 s",
+    "rating": "bad",
+    "max_duration": "50 s",
+    "show_in_info": true,
     "removes_effects": [ "v_spell_elem_freeze", "v_spell_elem_flashfreeze", "v_spell_elem_flame_curse" ]
   },
   {
     "type": "effect_type",
     "id": "hit_by_player",
+    "name": [ "Hit by Player" ],
+    "desc": [ "AI tag for when monsters are hit by player. This is a bug if you have it." ],
+    "max_duration": "10 m",
     "//": "Freezing effects are removed with just a hit.",
     "removes_effects": [ "v_spell_elem_freeze", "v_spell_elem_flashfreeze" ]
   },

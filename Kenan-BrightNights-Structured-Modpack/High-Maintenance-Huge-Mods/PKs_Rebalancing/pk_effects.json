@@ -44,10 +44,10 @@
     "max_intensity": 6,
     "base_mods": {
       "thirst_min": [ 1 ],
-      "thirst_tick": [ 10 ],
-      "thirst_chance": [ 10 ],
+      "thirst_tick": [ 15 ],
+      "thirst_chance": [ 3 ],
       "thirst_max_val": [ 25 ],
-      "vomit_chance": [ 3000 ]
+      "vomit_chance": [ 1000 ]
     },
     "scaling_mods": { "thirst_chance": [ -1 ], "thirst_max_val": [ 35 ], "vomit_chance": [ -300, -200 ] }
   },
@@ -178,8 +178,8 @@
     "int_add_val": 1,
     "apply_message": "You take and the antibiotics ... and hope.",
     "remove_message": "Your body is less immune.",
-    "blocks_effects": [ "tetanus", "infected", "common_cold", "flu", "flu_zed", "infection_minor" ],
-    "removes_effects": [ "tetanus", "infected", "common_cold", "flu", "flu_zed", "infection_minor" ],
+    "blocks_effects": [ "infected", "flu_zed", "infection_minor" ],
+    "removes_effects": [ "infected", "flu_zed", "infection_minor" ],
     "base_mods": { "h_mod_min": [ 1 ], "h_mod_chance": [ 1200 ] }
   },
   {
@@ -329,7 +329,8 @@
     "id": "infection_minor",
     "name": [ "Minor Inflammation" ],
     "desc": [ "Your wounds are inflammed.  Strong immunities or proper dressing should help." ],
-    "resist_effects": [ "took_flumed", "INFRESIST", "DISRESISTANT", "gauze", "disinfected" ],
+    "resist_effects": [ "gauze", "disinfected" ],
+    "resist_traits": [ "INFRESIST", "DISRESISTANT" ],
     "int_add_val": 1,
     "max_intensity": 7,
     "base_mods": {
@@ -363,7 +364,8 @@
     "name": [ "Quivering Bowels" ],
     "desc": [ "Your bowels feel weak, your blood hot, your insides like runny eggs." ],
     "rating": "bad",
-    "resist_effects": [ "took_flumed", "INFRESIST", "DISRESISTANT" ],
+    "resist_effects": [ "antibiotic" ],
+    "resist_traits": [ "INFRESIST", "DISRESISTANT" ],
     "harmful_cough": true,
     "base_mods": {
       "speed_mod": [ -12, -5 ],
