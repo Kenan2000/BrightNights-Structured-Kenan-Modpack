@@ -59,14 +59,14 @@
     "id": "drops_ncropencrate_ammo",
     "subtype": "distribution",
     "entries": [
-      { "group": "ammo_pistol_common", "prob": 35, "charges": [ 8, 25 ] },
-      { "group": "ammo_pistol_reloaded", "prob": 75, "charges": [ 8, 25 ] },
-      { "group": "ammo_rifle_common", "prob": 25, "charges": [ 8, 25 ] },
-      { "group": "ammo_rifle_rare", "prob": 20, "charges": [ 8, 25 ] },
-      { "group": "ammo_rifle_milspec", "prob": 25, "charges": [ 8, 25 ] },
-      { "group": "ammo_rifle_reloaded", "prob": 65, "charges": [ 8, 25 ] },
-      { "group": "ammo_shotgun_common", "prob": 25, "charges": [ 8, 25 ] },
-      { "group": "ammo_shotgun_reloaded", "prob": 35, "charges": [ 8, 25 ] }
+      { "group": "ammo_pistol_common", "prob": 35, "count": [ 3, 9 ] },
+      { "group": "ammo_pistol_reloaded", "prob": 75, "count": [ 3, 9 ] },
+      { "group": "ammo_rifle_common", "prob": 25, "count": [ 3, 9 ] },
+      { "group": "ammo_rifle_rare", "prob": 20, "count": [ 3, 9 ] },
+      { "group": "ammo_rifle_milspec", "prob": 25, "count": [ 3, 9 ] },
+      { "group": "ammo_rifle_reloaded", "prob": 65, "count": [ 3, 9 ] },
+      { "group": "ammo_shotgun_common", "prob": 25, "count": [ 3, 9 ] },
+      { "group": "ammo_shotgun_reloaded", "prob": 35, "count": [ 3, 9 ] }
 
     ]
   },
@@ -156,8 +156,6 @@
       { "item": "stanag100drum", "prob": 5, "charges": 100 },
       { "item": "stanag150", "prob": 5, "charges": 150 },
       { "item": "survivor223mag", "prob": 5, "charges": 30 },
-
-
       { "item": "25mmdrummag", "prob": 8, "charges": 30 },
       { "item": "25mmdrummagxl", "prob": 1, "charges": 300 },
       { "item": "47mmminigunmag", "prob": 4, "charges": 300 },
@@ -178,7 +176,6 @@
       { "item": "14mmpistolmag", "prob": 10, "charges": 30 },
       { "item": "14mmsmgmag", "prob": 10, "charges": 30 },
       { "item": "citykillermag", "prob": 10, "charges": 30 }
-
     ]
   },
   {
@@ -191,7 +188,10 @@
       { "item": "knife_rambo", "prob": 10 },
       { "item": "knife_trench", "prob": 10 },
       { "item": "knife_steak", "prob": 3 }
-
     ]
   }
+
+
+
+
 ]
