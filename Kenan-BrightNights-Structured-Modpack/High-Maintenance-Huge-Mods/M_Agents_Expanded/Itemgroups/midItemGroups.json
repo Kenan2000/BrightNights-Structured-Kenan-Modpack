@@ -1,0 +1,172 @@
+[
+  {
+    "type": "item_group",
+    "id": "ammo_pistol_bandit_drops",
+    "//": "Reloaded pistol ammo, black powder loads roughly half of the time. A modified copy of the default ammo reloaded drops",
+    "subtype": "distribution",
+    "entries": [
+      { "group": "ammo_pistol_modern_handloads", "prob": 80 },
+      { "group": "ammo_pistol_blackpowder_handloads", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_glock",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ], "prob": 80 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_ninemm", "damage": [ 0, 3 ], "prob": 1, "dirt": [ 0, 4000 ] },
+      { "group": "ammo_pistol_bandit_drops", "prob": 78 },
+      { "group": "ammo_pistol_common", "prob": 15 },
+      { "group": "ammo_pistol_rare", "prob": 8 },
+      { "group": "mags_pistol_common", "prob": 19 },
+      { "group": "mags_pistol_rare", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_highway",
+    "entries": [
+      { "group": "mon_bandit45_clothes", "damage": [ 0, 4 ], "prob": 37 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 35 },
+      { "group": "bandit_45cal_guns", "damage": [ 0, 3 ], "prob": 1, "dirt": [ 0, 4000 ] },
+      { "group": "ammo_pistol_bandit_drops", "prob": 78 },
+      { "group": "ammo_pistol_common", "prob": 15 },
+      { "group": "ammo_pistol_rare", "prob": 9 },
+      { "group": "mags_pistol_common", "prob": 25 },
+      { "group": "mags_pistol_rare", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "mon_bandit45_clothes",
+    "entries": [
+      { "group": "cop_gear", "prob": 37, "damage": [ 0, 2 ] },
+      { "group": "cop_gloves", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cop_helmet", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cop_pants", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cop_shoes", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cop_torso", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "underwear", "damage": [ 1, 4 ] },
+      { "group": "clothing_glasses", "prob": 5 },
+      { "group": "clothing_watch", "prob": 5 },
+      { "item": "cash_card", "charges-min": 0, "charges-max": 50000 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_smg",
+    "entries": [
+      { "group": "mon_zombie_soldier_death_drops", "damage": [ 0, 4 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_uzi", "damage": [ 0, 3 ], "prob": 1, "dirt": [ 0, 4000 ] },
+      { "group": "ammo_pistol_bandit_drops", "prob": 78 },
+      { "group": "ammo_smg_obscure", "prob": 15 },
+      { "group": "ammo_smg_common", "prob": 51 },
+      { "group": "mags_smg_rare", "prob": 15 },
+      { "group": "mags_smg_makeshift", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "bandit_ninemm",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "glock_19", 1 ],
+      [ "ksub2000", 1 ],
+      [ "l_lookout_9mm", 1 ],
+      [ "l_sp_9mm", 1 ],
+      [ "rifle_9mm", 1 ],
+      [ "tec9", 1 ],
+      [ "hi_power_9mm", 1 ],
+      [ "hptc9", 1 ],
+      [ "walther_ccp", 1 ],
+      [ "makarov", 1 ],
+      [ "2_shot_special", 1 ],
+      [ "cop_38", 1 ],
+      [ "rifle_38", 1 ],
+      [ "rifle_38", 1 ],
+      [ "surv_six_shooter", 1 ],
+      [ "rifle_40", 1 ],
+      [ "moss_brownie", 1 ],
+      [ "rifle_22", 1 ],
+      [ "sig_mosquito", 1 ],
+      [ "j22", 1 ],
+      [ "sw_22", 1 ],
+      [ "rifle_44", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "bandit_45cal_guns",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "m1911", 1 ],
+      [ "l_sp_45", 1 ],
+      [ "l_mp_45", 1 ],
+      [ "m1911_MEU", 1 ],
+      [ "rifle_45", 1 ],
+      [ "surv_hand_cannon", 1 ],
+      [ "usp_45", 1 ],
+      [ "walther_ppq_45", 1 ],
+      [ "hptjhp", 1 ],
+      [ "glock_21", 1 ],
+      [ "bond_410", 1 ],
+      [ "colt_saa", 1 ],
+      [ "glock_22", 1 ],
+      [ "sig_40", 1 ],
+      [ "rifle_40", 1 ],
+      [ "surv_six_shooter", 1 ],
+      [ "hi_power_40", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_uzi",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "uzi", 1 ],
+      [ "american_180", 1 ],
+      [ "smg_40", 1 ],
+      [ "calico", 1 ],
+      [ "hk_mp5", 1 ],
+      [ "hk_mp5k", 1 ],
+      [ "hk_mp5_semi_pistol", 1 ],
+      [ "smg_9mm", 1 ],
+      [ "sten", 1 ],
+      [ "mac_10", 1 ],
+      [ "smg_45", 1 ],
+      [ "tommygun", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_mounted",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ], "prob": 51 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_mounted_pistols", "damage": [ 0, 3 ], "prob": 1 },
+      { "group": "ammo_pistol_bandit_drops", "prob": 78 },
+      { "group": "ammo_pistol_common", "prob": 20 },
+      { "group": "ammo_pistol_rare", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "bandit_mounted_pistols",
+    "ammo": 30,
+    "magazine": 30,
+    "items": [ [ "model_10_revolver", 1 ], [ "sw_619", 1 ], [ "sw_619", 1 ], [ "sw629", 1 ] ]
+  }
+]

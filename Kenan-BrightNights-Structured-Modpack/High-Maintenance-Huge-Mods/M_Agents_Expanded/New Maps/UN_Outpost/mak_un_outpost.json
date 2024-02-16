@@ -1,0 +1,99 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "MAK_UN_OUTPOST_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "CCCCCCCCCCCccCCCCCCCCCCC",
+                "COOOO,,,,,,,,,,,,,,OOOOC",
+                "CO,,,,,,,,,,,,,,,,,,,,OC",
+                "CO,,WWWWWWWWW,,,,,,,,,OC",
+                "CO,,Wr1r1Rr1W,,,,WWWW,OC",
+                "C,,,WRRRRRRRW,,,,WyyW,,C",
+                "C,,,Wr1RRRr1WWWWWWUUW,,C",
+                "C,,,WWWWqWWWW1111RRRW,,C",
+                "C,,,Weeee333WRRRRRRYW,,C",
+                "C,,,We*III*3WYYYYRYYW,,C",
+                "C,,,WeeIIIe3WWWWWqWWW,,C",
+                "c,,,Qe*III*eW3333eeeQ,,c",
+                "c,,,Weeeeeeeqeee*eeeW,,c",
+                "C,,,WWWWeeeeWeeewwwwW,,C",
+                "C,,,,,,WWWQWWWeeQeeeW,,C",
+                "C,,,,,,WTTTTTWeew22uW,,C",
+                "C,,,,,,WTWqWqWWQWWWWW,,C",
+                "C,,,,,,WEWtWtW,,,,,,,,,C",
+                "C,,,,,,WWWWWWW,,,,,,,,,C",
+                "CO,,,,,,,,,,,,,,,,,,,,OC",
+                "CO,,,,,,,,,,,,,,,,,,,,OC",
+                "CO,,,,,,,,,,,,,,,,,,,,OC",
+                "COOOO,,,,,,,,,,,,,,OOOOC",
+                "CCCCCCCCCCCccCCCCCCCCCCC"
+            ],
+        "palettes": [ "MAK_PAL_UNPOST" ],
+        "faction_owner": [
+        { "id": "fac_fo_UN", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ { "chunks": [ [ "mak_unsoldier_spawn", 65 ], [ "null", 35 ] ], "x": 2, "y": 2 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 65 ], [ "null", 35 ] ], "x": 21, "y": 2 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 65 ], [ "null", 35 ] ], "x": 2, "y": 21 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 65 ], [ "null", 35 ] ], "x": 21, "y": 21 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 16 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 8 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 8 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 13 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 18 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 18, "y": 12 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 14 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 6 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 5 },
+            { "chunks": [ [ "mak_unsoldier_spawn", 50 ], [ "null", 50 ] ], "x": 15, "y": 8 },
+            { "chunks": [ [ "mak_unsniper_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 22 },
+            { "chunks": [ [ "mak_unsniper_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 1 },
+            { "chunks": [ [ "mak_unsniper_spawn", 50 ], [ "null", 50 ] ], "x": 21, "y": 10 }
+        ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "MAK_UN_OUTPOST_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "    .........           ",
+                "    .........    ....   ",
+                "    .........    ....   ",
+                "    .................   ",
+                "    .................   ",
+                "    .................   ",
+                "    .................   ",
+                "    .................   ",
+                "    .................   ",
+                "    .................   ",
+                "    .................   ",
+                "       ..............   ",
+                "       ..............   ",
+                "       ..............   ",
+                "       .......          ",
+                "       .......          ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

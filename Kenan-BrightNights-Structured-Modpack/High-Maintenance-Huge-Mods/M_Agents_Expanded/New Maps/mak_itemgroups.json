@@ -1,0 +1,214 @@
+[
+  {
+    "type": "item_group",
+    "id": "un_geardrop_gear",
+    "subtype": "distribution",
+    "entries": [ { "item": "mak_un_helmet", "prob": 50 }, { "item": "mak_un_vest", "prob": 45 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "bear_closedcrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "545", "prob": 50 },
+      { "item": "545_ap", "prob": 50 },
+      { "item": "reloaded_545", "prob": 20 },
+      { "item": "reloaded_545_ap", "prob": 20 },
+      { "item": "762_m43", "prob": 50 },
+      { "item": "762_m87", "prob": 50 },
+      { "item": "reloaded_762_m43", "prob": 20 },
+      { "item": "reloaded_762_m87", "prob": 20 },
+      { "item": "762_54R", "prob": 45 },
+      { "item": "reloaded_762_54R", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bear_closedcrate_mag",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "762R_clip", "prob": 25 },
+      { "item": "762x39_clip", "prob": 50 },
+      { "item": "akmag10", "prob": 25 },
+      { "item": "akmag20", "prob": 50 },
+      { "item": "akmag30", "prob": 50 },
+      { "item": "akmag40", "prob": 15 },
+      { "item": "akdrum75", "prob": 15 },
+      { "item": "ak74mag", "prob": 45 },
+      { "item": "rpk74mag", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bear_opencrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "545", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "545_ap", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "reloaded_545", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "reloaded_545_ap", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "762_m43", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "762_m87", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "reloaded_762_m43", "prob": 45, "charges": [ 3, 9 ] },
+      { "item": "reloaded_762_m87", "prob": 45, "charges": [ 3, 9 ] },
+      { "item": "762_54R", "prob": 45, "charges": [ 3, 9 ] },
+      { "item": "reloaded_762_54R", "prob": 45, "charges": [ 3, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bear_explosive",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "grenade_emp", "prob": 5 },
+      { "item": "dynamite_bomb", "prob": 10 },
+      { "item": "dynamite", "prob": 5 },
+      { "item": "c4", "prob": 10 },
+      { "item": "grenade", "prob": 65 },
+      { "item": "grenade_inc", "prob": 15 },
+      { "item": "molotov", "prob": 15 },
+      { "item": "smokebomb", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bear_rpg_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "RPG-7_ammo", "prob": 15 },
+      { "item": "RPG-7_pg7vr", "prob": 5 },
+      { "item": "RPG-7_tbg7v", "prob": 5 },
+      { "item": "RPG-7_og7v", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bear_gunlocker",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "ak74", "prob": 25, "charges": 30 },
+      { "item": "an94", "prob": 10, "charges": 30 },
+      { "item": "ak47", "prob": 65, "charges": 30 },
+      { "item": "arx160", "prob": 10, "charges": 30 },
+      { "item": "sks", "prob": 10, "charges": 30 },
+      { "item": "aksemi", "prob": 10, "charges": 30 },
+      { "item": "draco", "prob": 10, "charges": 30 },
+      { "item": "mosin44", "prob": 25, "charges": 30 },
+      { "item": "mosin91_30", "prob": 10, "charges": 30 },
+      { "item": "mosin91_30_ebr", "prob": 10, "charges": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "usec_closedcrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "223", "prob": 25 },
+      { "item": "556", "prob": 50 },
+      { "item": "556_incendiary", "prob": 10 },
+      { "item": "reloaded_223", "prob": 20 },
+      { "item": "reloaded_556", "prob": 20 },
+      { "item": "reloaded_556_incendiary", "prob": 50 },
+      { "item": "308", "prob": 25 },
+      { "item": "762_51", "prob": 20 },
+      { "item": "762_51_incendiary", "prob": 20 },
+      { "item": "reloaded_308", "prob": 20 },
+      { "item": "reloaded_762_51", "prob": 15 },
+      { "item": "reloaded_762_51_incendiary", "prob": 5 },
+      { "item": "300blk", "prob": 10 },
+      { "item": "300blk_ss", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "usec_closedcrate_mag",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "famasmag", "prob": 25 },
+      { "item": "ruger5", "prob": 15 },
+      { "item": "stanag10", "prob": 25 },
+      { "item": "ruger10", "prob": 10 },
+      { "item": "ruger20", "prob": 15 },
+      { "item": "ruger30", "prob": 10 },
+      { "item": "ruger90", "prob": 10 },
+      { "item": "stanag5", "prob": 10 },
+      { "item": "stanag20", "prob": 10 },
+      { "item": "stanag30", "prob": 90 },
+      { "item": "stanag50", "prob": 15 },
+      { "item": "stanag60drum", "prob": 10 },
+      { "item": "stanag100", "prob": 10 },
+      { "item": "stanag100drum", "prob": 10 },
+      { "item": "g36mag_30rd", "prob": 10 },
+      { "item": "augmag_30rd", "prob": 10 },
+      { "item": "falbigmag", "prob": 10 },
+      { "item": "falmag", "prob": 20 },
+      { "item": "g3mag", "prob": 20 },
+      { "item": "m14mag", "prob": 30 },
+      { "item": "scarhbigmag", "prob": 10 },
+      { "item": "hk417mag_20rd", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "usec_opencrate_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "223", "prob": 25, "charges": [ 3, 9 ] },
+      { "item": "556", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "556_incendiary", "prob": 10, "charges": [ 3, 9 ] },
+      { "item": "reloaded_223", "prob": 20, "charges": [ 3, 9 ] },
+      { "item": "reloaded_556", "prob": 20, "charges": [ 3, 9 ] },
+      { "item": "reloaded_556_incendiary", "prob": 50, "charges": [ 3, 9 ] },
+      { "item": "308", "prob": 25, "charges": [ 3, 9 ] },
+      { "item": "762_51", "prob": 20, "charges": [ 3, 9 ] },
+      { "item": "762_51_incendiary", "prob": 20, "charges": [ 3, 9 ] },
+      { "item": "reloaded_308", "prob": 20, "charges": [ 3, 9 ] },
+      { "item": "reloaded_762_51", "prob": 15, "charges": [ 3, 9 ] },
+      { "item": "reloaded_762_51_incendiary", "prob": 5, "charges": [ 3, 9 ] },
+      { "item": "300blk", "prob": 10, "charges": [ 3, 9 ] },
+      { "item": "300blk_ss", "prob": 10, "charges": [ 3, 9 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "usec_launcher_ammo",
+    "subtype": "distribution",
+    "entries": [ { "item": "LAW_Packed", "prob": 65 }, { "item": "atgm_heat", "prob": 20 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "usec_gunlocker",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "ar15", "prob": 40, "charges": 30 },
+      { "item": "ar_pistol", "prob": 10, "charges": 30 },
+      { "item": "famas", "prob": 10, "charges": 30 },
+      { "item": "h&k416a5", "prob": 10, "charges": 30 },
+      { "item": "m249", "prob": 10, "charges": 30 },
+      { "item": "m27iar", "prob": 10, "charges": 30 },
+      { "item": "m4a1", "prob": 35, "charges": 30 },
+      { "item": "m16a4", "prob": 45, "charges": 30 },
+      { "item": "ruger_mini", "prob": 10, "charges": 30 },
+      { "item": "scar_l", "prob": 10, "charges": 30 },
+      { "item": "sig552", "prob": 10, "charges": 30 },
+      { "item": "acr_300blk", "prob": 5, "charges": 30 },
+      { "item": "iwi_tavor_x95_300blk", "prob": 5, "charges": 30 },
+      { "item": "fn_fal", "prob": 3, "charges": 30 },
+      { "item": "hk_g3", "prob": 3, "charges": 30 },
+      { "item": "m134", "prob": 1, "charges": 30 },
+      { "item": "m14ebr", "prob": 3, "charges": 30 },
+      { "item": "m240", "prob": 3, "charges": 30 },
+      { "item": "m60", "prob": 3, "charges": 30 },
+      { "item": "scar_h", "prob": 3, "charges": 30 },
+      { "item": "M24", "prob": 3, "charges": 30 },
+      { "item": "ar10", "prob": 3, "charges": 30 },
+      { "item": "acr", "prob": 3, "charges": 30 },
+      { "item": "TDI", "prob": 3, "charges": 30 },
+      { "item": "usp_45", "prob": 3, "charges": 30 },
+      { "item": "ksg", "prob": 3, "charges": 30 },
+      { "item": "SPAS_12", "prob": 3, "charges": 30 },
+      { "item": "USAS_12", "prob": 3, "charges": 30 },
+      { "item": "mossberg_500", "prob": 3, "charges": 30 }
+    ]
+  }
+]

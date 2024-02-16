@@ -1,0 +1,289 @@
+[
+  {
+    "type": "npc",
+    "id": "mak_redneck",
+    "name_suffix": "Redneck",
+    "class": "mak_redneck_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_mak_redneck_start",
+    "faction": "fac_fo_redneck"
+  },
+  {
+    "type": "npc_class",
+    "id": "mak_redneck_npc",
+    "name": { "str": "Redneck" },
+    "job_description": "A backwoods denizen that decided not to leave New England.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Skin_Fair" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "weapon_override": "NC_REDNECK_WEAPONS",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDNECK_WEAPONS",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 50 },
+      { "item": "ashot", "charges": 1, "prob": 15 },
+      { "item": "browning_a5", "charges": 5, "prob": 15 },
+      { "item": "mossberg_500", "charges": 6, "prob": 15},
+      { "item": "pipe_double_shotgun", "charges": 2, "prob": 15 },
+      { "item": "shotgun_d", "charges": 2, "prob": 15 },
+      { "item": "remington_870", "charges": 5, "prob": 15 },
+      { "item": "winchester_1897", "charges": 6, "prob": 15 },
+      { "item": "ruger_1022", "charges": 15, "prob": 15 },
+      { "item": "marlin_9a", "charges": 19, "prob": 10 },
+      { "item": "m1911", "charges": 6, "prob": 10 },
+      { "item": "savage_111f", "charges": 3, "prob": 10 },
+      { "item": "ar15", "charges": 30, "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_helmet",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_hat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 50 },
+      { "item": "cowboy_hat", "prob": 10 },
+      { "item": "10gal_hat", "prob": 10 },
+      { "item": "drinking_hat", "prob": 5 },
+      { "item": "hat_ball", "prob": 10 },
+      { "item": "hat_fur", "prob": 5 },
+      { "item": "hat_hunting", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_coat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 20 },
+      { "item": "hoodie", "prob": 20 },
+      { "item": "jacket_light", "prob": 20 },
+      { "item": "jacket_leather", "prob": 20 },
+      { "item": "trenchcoat", "prob": 20 },
+      { "item": "jacket_jean", "prob": 20 },
+      { "item": "jacket_flannel", "prob": 20 },
+      { "item": "jacket_windbreaker", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_pants_male",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 20 },
+      { "item": "pants", "prob": 20 },
+      { "item": "pants_cargo", "prob": 20 },
+      { "item": "shorts", "prob": 20 },
+      { "item": "shorts_denim", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_pants_female",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 20 },
+      { "item": "pants", "prob": 20 },
+      { "item": "skirt", "prob": 20 },
+      { "item": "shorts", "prob": 20 },
+      { "item": "shorts_denim", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_shirt_male",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "flag_shirt", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "sweatshirt", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_shirt_female",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "flag_shirt", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "halter_top", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_gloves",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 60 },
+      { "item": "gloves_leather", "prob": 10 },
+      { "item": "gloves_fingerless", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_masks",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 75 },
+      { "item": "mask_dust", "prob": 5 },
+      { "item": "bandana", "prob": 5 },
+      { "item": "mask_filter", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_shoes",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "boots", "prob": 25 },
+      { "item": "boots_combat", "prob": 25 },
+      { "item": "boots_hiking", "prob": 25 },
+      { "item": "lowtops", "prob": 25 },
+      { "item": "sneakers", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_npc_vest",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 80 }, { "item": "kevlar", "prob": 5 }, { "item": "tacvest", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_REDNECK_WORN",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mak_redneck_shirt" },
+      { "group": "mak_redneck_hats", "prob": 50 },
+      { "group": "mak_redneck_bag", "prob": 75 },
+      { "group": "mak_redneck_pants" },
+      { "group": "mak_redneck_boots" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_bag",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "bindle", "prob": 25 },
+      { "item": "boxpack", "prob": 25 },
+      { "item": "duffelbag", "prob": 25 },
+      { "item": "daypack", "prob": 25 },
+      { "item": "makeshift_sling", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_shirt",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "flag_shirt", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "sweatshirt", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_pants",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 25 },
+      { "item": "pants", "prob": 25 },
+      { "item": "pants_cargo", "prob": 25 },
+      { "item": "shorts", "prob": 25 },
+      { "item": "shorts_denim", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_hats",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "cowboy_hat", "prob": 25 },
+      { "item": "10gal_hat", "prob": 25 },
+      { "item": "drinking_hat", "prob": 25 },
+      { "item": "hat_ball", "prob": 25 },
+      { "item": "hat_fur", "prob": 25 },
+      { "item": "hat_hunting", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_redneck_boots",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "boots", "prob": 25 },
+      { "item": "boots_combat", "prob": 25 },
+      { "item": "boots_hiking", "prob": 25 },
+      { "item": "lowtops", "prob": 25 },
+      { "item": "sneakers", "prob": 25 }
+    ]
+  },
+  {
+    "id": "TALK_mak_redneck_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "Seen any varmints around lately?.", 
+        "It's not safe to go out at night. Not unless you're armed, that is!.", 
+        "Food at our trailers is getting a little sparse, we'll need to start scavenging soon.", 
+        "At least the government is off our backs now! Although I wouldn't mind a little help considering how awful things are now.", 
+        "What are you doin' about 'round these parts?" ],
+      "no": [ "Seen any varmints around lately?.", 
+        "It's not safe to go out at night. Not unless you're armed, that is!.", 
+        "Food at our trailers is getting a little sparse, we'll need to start scavenging soon.", 
+        "At least the government is off our backs now! Although I wouldn't mind a little help considering how awful things are now.", 
+        "What are you doin' about 'round these parts?" ]
+        },
+    "responses": [
+      {
+        "text": "Why are you guys hanging around this trailer park, it seems a bit sparse.", "topic": "TALK_mak_redneck_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_mak_redneck_go",
+    "type": "talk_topic",
+    "dynamic_line": "Well, we decided not to leave when the government set up the New England Exclusion zone. Who knows where they were taking all those people anyway, we all know FEMA isn't worth a damn to anyone of us. They treat us like garbage and mock our way of life, then expect us to leave and go to goodness knows where at the drop of a hat, I don't think so! But yeah, things are a bit rough now as you can see.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

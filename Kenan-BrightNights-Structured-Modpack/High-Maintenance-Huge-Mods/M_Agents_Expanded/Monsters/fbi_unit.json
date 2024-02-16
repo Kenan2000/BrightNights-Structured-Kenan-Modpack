@@ -1,0 +1,84 @@
+[
+  {
+    "type": "MONSTER",
+    "id": "mon_fbi_op",
+    "name": { "str": "FBI X-Operative" },
+    "default_faction": "f_feds",
+    "symbol": "F",
+    "color": "blue",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "material": [ "flesh" ],
+    "diff": 15,
+    "aggression": 100,
+    "morale": 100,
+    "regen_morale": true,
+    "speed": 95,
+    "melee_skill": 3,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_cut": 1,
+    "dodge": 1,
+    "armor_bash": 7,
+    "armor_cut": 7,
+    "armor_stab": 5,
+    "armor_bullet": 5,
+    "armor_acid": 1,
+    "vision_day": 30,
+    "vision_night": 8,
+    "death_drops": { "subtype": "collection", "groups": [ [ "dead_fbi", 100 ] ] },
+    "hp": 65,
+    "death_function": [ "NORMAL" ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "gun_type": "laser_cannon",
+        "fake_skills": [ [ "gun", 2 ], [ "rifle", 3 ] ],
+        "ranges": [ [ 2, 15, "DEFAULT" ] ]
+      }
+    ],
+    "description": "Although the US government has largely left the New England SEZ, some FBI units have been inserted to observe from time to time. It's not entirely known as to what their purpose is, but the strange lovecraftian creatures might give a clue.",
+    "flags": [
+      "ATTACKMON",
+      "HUMAN",
+      "GOODHEARING",
+      "GROUP_MORALE",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "PUSH_MON"
+    ],
+    "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
+    "fear_triggers": [ "FRIEND_DIED", "SOUND", "FIRE" ],
+    "placate_triggers": [ "PLAYER_WEAK", "SOUND", "MEAT" ],
+    "categories": [ "CLASSIC" ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "dead_fbi",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "fbi_dead_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "fbi_dead_drops",
+    "items": [
+      [ "v29", 25 ],
+      [ "blazer", 5 ],
+      [ "dress_shirt", 5 ],
+      [ "light_disposable_cell", 5 ],
+      [ "medium_battery_cell", 5 ],
+      [ "medium_plus_battery_cell", 5 ],
+      [ "emp_gun", 5 ],
+      [ "light_minus_atomic_battery_cell", 1 ],
+      [ "laser_rifle", 1 ]
+    ]
+  }
+]

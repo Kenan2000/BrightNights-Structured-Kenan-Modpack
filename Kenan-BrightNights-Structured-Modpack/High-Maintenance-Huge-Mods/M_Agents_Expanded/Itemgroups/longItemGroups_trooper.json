@@ -1,0 +1,94 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "un_soldier",
+    "entries": [
+      { "group": "mon_zombie_soldier_death_drops", "damage": [ 0, 2 ], "prob": 90 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "UN_sig552", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "ammo_rifle_reloaded", "prob": 78 },
+      { "group": "ammo_rifle_rare", "prob": 10 },
+      { "group": "ammo_rifle_obscure", "prob": 10 },
+      { "group": "ammo_rifle_common", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "UN_sig552",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [ [ "223", 3 ], [ "sig552", 3 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "merc_soldier",
+    "entries": [
+      { "group": "mon_zombie_soldier_death_drops", "damage": [ 0, 2 ], "prob": 90 },
+      { "group": "ammo_rifle_obscure", "prob": 33 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "merc_shotgun",
+    "entries": [
+      { "group": "mon_merc_death_drops", "damage": [ 0, 2 ], "prob": 90 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "UN_sig552", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "ammo_rifle_obscure", "prob": 33 }
+    ]
+  },
+  {
+    "id": "mon_merc_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 60,
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ],
+        "prob": 33
+      },
+      { "group": "infantry_common_gear", "prob": 37 },
+      { "group": "military_standard_grenades", "count": [ 1, 3 ], "prob": 20 },
+      { "group": "military_patrol_food" },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "cash_card", "prob": 10, "charges": [ 0, 50000 ] },
+      { "item": "mossberg_500", "prob": 1, "damage": [ 1, 4 ] },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "scav_range_one",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "rangescav_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "rangescav_drops",
+    "items": [
+      [ "stick", 10 ],
+      [ "pointy_stick", 5 ],
+      [ "spear_wood", 5 ],
+      [ "i_staff", 1 ],
+      [ "sword_wood", 2 ],
+      [ "knife_butter", 2 ],
+      [ "baton-extended", 2 ],
+      [ "spike", 3 ],
+      [ "torch_done", 3 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 2 ],
+      [ "golf_club", 2 ]
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "TALK_amg_guard_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you doing around here, what do you want from me?",
+      "no": "What are you doing around here, what do you want from me?"
+        },
+    "responses": [
+      {
+        "text": "So you're a member of a miltia, what's this place about anyway?", "topic": "TALK_amg_guard_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+	  ]
+	},
+  {
+    "id": "TALK_amg_guard_go",
+    "type": "talk_topic",
+    "dynamic_line": "I'm glad to see somebody taken's a bit of genuine interest in us, that usually didn't mean well before the Cataclysm but now we can take any chance we get. We fortified this little compound when the exclusion zone was set up, now this is where most of us stay.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+  
+]

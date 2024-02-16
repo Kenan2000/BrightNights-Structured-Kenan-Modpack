@@ -1,0 +1,81 @@
+[
+  {
+    "type": "npc",
+    "id": "amg_leader",
+    "name_suffix": "Militia Local Leader",
+    "class": "amg_leader_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_amg_leader_start",
+    "faction": "fac_nat_militia"
+  },
+  {
+    "type": "npc_class",
+    "id": "amg_leader_npc",
+    "name": { "str": "Militia Local Leader" },
+    "job_description": "A local leader of a miltia.",
+    "traits": [
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "common": false,
+    "bonus_str": { "rng": [ -1, 1 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -1, 1 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "worn_override": "NC_AMGLED_worn",
+    "carry_override": "NC_AMGLED_carry",
+    "weapon_override": "NC_AMGLED_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -2 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGLED_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "item": "usp_45", "charges": 12 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGLED_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "amg_led_nshirts" },
+      { "group": "amg_led_npants" },
+      { "group": "amg_led_shoes" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGLED_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "preserved_food", "count": [ 1, 2 ], "prob": 35 },
+      { "group": "drugs_heal_simple", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "amg_led_nshirts",
+    "items": [ [ "lsurvivor_suit", 35 ], [ "sweater", 10 ], [ "tshirt", 15 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "amg_led_npants",
+    "items": [ [ "pants_cargo", 25 ], [ "pants", 75 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "amg_led_shoes",
+    "items": [ [ "boots", 50 ], [ "dress_shoes", 50 ] ]
+  }
+]

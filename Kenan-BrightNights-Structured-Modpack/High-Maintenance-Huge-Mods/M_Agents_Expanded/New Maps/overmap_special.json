@@ -1,0 +1,52 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "BEAR Outpost",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "MAK_BEAR_OUTPOST_1_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "MAK_BEAR_OUTPOST_1_roof_north" }
+    ],
+    "locations": [ "forest" ],
+    "city_distance": [ 1, 35 ],
+    "occurrences": [ 0, 2 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "Isolated_Compound",
+    "overmaps": [
+      { "point": [ 1, 0, 0 ], "overmap": "AMG_COMPOUND_a_1_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "AMG_COMPOUND_a_roof_1_north" },
+      { "point": [ 0, 0, 0 ], "overmap": "AMG_COMPOUND_a_2_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "AMG_COMPOUND_a_roof_2_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "AMG_COMPOUND_a_3_north" },
+      { "point": [ 0, 1, 1 ], "overmap": "AMG_COMPOUND_a_roof_3_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "AMG_COMPOUND_a_4_north" },
+      { "point": [ 1, 1, 1 ], "overmap": "AMG_COMPOUND_a_roof_4_north" }
+    ],
+    "locations": [ "land" ],
+    "occurrences": [ 1, 1 ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "UN Security Outpost",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "MAK_UN_OUTPOST_1_south" },
+      { "point": [ 0, 0, 1 ], "overmap": "MAK_UN_OUTPOST_1_roof_south" }
+    ],
+    "locations": [ "land" ],
+    "city_distance": [ 3, 20 ],
+    "occurrences": [ 0, 2 ],
+    "flags": [ "ELECTRIC_GRID" ]
+  },
+  {
+    "type": "city_building",
+    "id": "MAK_USEC_OUTPOST_1",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "MAK_USEC_OUTPOST_1_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "MAK_USEC_OUTPOST_2_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "MAK_USEC_OUTPOST_2_roof_north" }
+    ],
+    "locations": [ "land" ],
+    "flags": [ "ELECTRIC_GRID" ]
+  }
+]

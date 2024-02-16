@@ -1,0 +1,363 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_looter",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "bandit_looter_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_scrapper",
+    "entries": [
+      { "group": "mon_bandit45_clothes", "damage": [ 0, 4 ], "prob": 75 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_scrapper_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_psycho",
+    "entries": [
+      { "group": "mon_zombie_soldier_death_drops", "damage": [ 0, 4 ], "prob": 80 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_psycho_melee", "damage": [ 0, 3 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_super_psycho",
+    "entries": [
+      { "group": "mon_zombie_survivor_death_drops", "damage": [ 0, 3 ], "prob": 75 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_super_psycho_drop", "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_looter_drops",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "stick", "prob": 75 },
+      { "item": "pointy_stick", "prob": 45 },
+      { "item": "spear_wood", "prob": 15 },
+      { "item": "bat", "prob": 15 },
+      { "item": "bat_nerf", "prob": 1 },
+      { "item": "bowling_pin", "prob": 1 },
+      { "item": "cudgel", "prob": 20 },
+      { "item": "glass_shiv", "prob": 20 },
+      { "item": "hockey_stick", "prob": 20 },
+      { "item": "pool_cue", "prob": 10 },
+      { "item": "sharp_toothbrush", "prob": 15 },
+      { "item": "knife_butcher", "prob": 20 },
+      { "item": "knife_steak", "prob": 20 },
+      { "item": "knife_paring", "prob": 20 },
+      { "item": "knife_bread", "prob": 20 },
+      { "item": "i_staff", "prob": 5 },
+      { "item": "canister_empty", "prob": 5 },
+      { "item": "sword_wood", "prob": 15 },
+      { "item": "spike", "prob": 20 },
+      { "item": "torch_done", "prob": 5 },
+      { "item": "rock", "prob": 25 },
+      { "item": "sharp_rock", "prob": 25 },
+      { "item": "pipe", "prob": 30 },
+      { "item": "golf_club", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_scrapper_drops",
+    "items": [
+      [ "stick", 10 ],
+      [ "pointy_stick", 5 ],
+      [ "q_staff", 2 ],
+      [ "spear_wood", 5 ],
+      [ "baton-extended", 1 ],
+      [ "spike", 1 ],
+      [ "torch_done", 1 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 1 ],
+      [ "golf_club", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_psycho_melee",
+    "items": [
+      [ "stick", 5 ],
+      [ "pointy_stick", 5 ],
+      [ "q_staff", 5 ],
+      [ "spear_wood", 5 ],
+      [ "sword_wood", 2 ],
+      [ "baton-extended", 5 ],
+      [ "spike", 5 ],
+      [ "torch_done", 1 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 1 ],
+      [ "golf_club", 10 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_super_psycho_drop",
+    "items": [ [ "chainsaw_off", 3 ], [ "elec_chainsaw_off", 3 ], [ "combatsaw_off", 3 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_shotgun",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 30 },
+      { "group": "bandit_shot_gun", "damage": [ 0, 3 ], "prob": 1, "dirt": [ 0, 4000 ] },
+      { "group": "ammo_shotgun_reloaded", "prob": 78 },
+      { "group": "ammo_shotgun_common", "prob": 51 },
+      { "group": "ammo_shotgun_rare", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_raider",
+    "entries": [
+      { "group": "mon_zombie_cop_death_drops", "damage": [ 0, 3 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 30 },
+      { "group": "bandit_raider_gun", "damage": [ 0, 3 ], "prob": 1, "dirt": [ 0, 4000 ] },
+      { "group": "ammo_shotgun_reloaded", "prob": 78 },
+      { "group": "ammo_shotgun_common", "prob": 63 },
+      { "group": "ammo_shotgun_rare", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_shot_gun",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "pipe_shotgun", 3 ],
+      [ "shotgun_s", 1 ],
+      [ "shotgun_d", 1 ],
+      [ "mossberg_500", 1 ],
+      [ "ashot", 1 ],
+      [ "pipe_double_shotgun", 1 ],
+      [ "revolver_shotgun", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_raider_gun",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "surv_levershotgun", 1 ],
+      [ "m1014", 1 ],
+      [ "shotgun_d", 1 ],
+      [ "mossberg_500", 1 ],
+      [ "winchester_1897", 1 ],
+      [ "revolver_shotgun", 1 ],
+      [ "browning_a5", 1 ],
+      [ "remington_1100", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_shock",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ], "prob": 70 },
+      { "group": "bandit_shock_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_shock_drops",
+    "items": [
+      [ "tazer", 35 ],
+      [ "pointy_stick", 5 ],
+      [ "q_staff", 2 ],
+      [ "light_minus_battery_cell", 3 ],
+      [ "light_minus_disposable_cell", 3 ],
+      [ "light_battery_cell", 3 ],
+      [ "light_plus_battery_cell", 3 ],
+      [ "cu_pipe", 3 ],
+      [ "medium_battery_cell", 1 ],
+      [ "medium_disposable_cell", 1 ],
+      [ "spike", 1 ],
+      [ "torch_done", 1 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 1 ],
+      [ "golf_club", 1 ],
+      [ "light_atomic_battery_cell", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_horse_m",
+    "entries": [
+      { "group": "mon_zombie_cop_death_drops", "damage": [ 0, 4 ], "prob": 70 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_scrapper_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "tech_scav_augs",
+    "entries": [
+      { "group": "mon_zombie_cop_death_drops", "damage": [ 0, 4 ], "prob": 80 },
+      { "group": "bionics_tech", "prob": 22 },
+      { "group": "electronics", "prob": 37 },
+      { "group": "bionics_common", "prob": 15 },
+      { "group": "bionics_mil", "prob": 3 },
+      { "group": "bionics_subs", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "tech_scav_wanderer",
+    "entries": [
+      { "group": "mon_zombie_cop_death_drops", "damage": [ 0, 4 ], "prob": 80 },
+      { "group": "electronics", "prob": 37 },
+      { "group": "bionics_tech", "prob": 22 },
+      { "group": "bionics_common", "prob": 15 },
+      { "group": "bionics_mil", "prob": 3 },
+      { "group": "bionics_subs", "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "dd_armed_citizen",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "item": "rifle_22", "damage": [ 0, 4 ], "prob": 1 },
+      { "item": "22_lr", "prob": 63 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "dd_bow_bandit",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "dd_bows", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "dd_arrows", "prob": 78, "count": [ 1, 2 ] }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "dd_bows",
+    "items": [ [ "shortbow", 3 ], [ "compbow", 3 ], [ "selfbow", 3 ], [ "compositebow", 3 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "dd_arrows",
+    "items": [
+      [ "arrow_wood", 1 ],
+      [ "arrow_metal_sharpened_fletched", 1 ],
+      [ "arrow_fire_hardened_fletched", 1 ],
+      [ "arrow_wood_heavy", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "dd_mallninjalite",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "guns_pistol_common", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "ammo_pistol_common", "prob": 63 },
+      { "group": "gunmod_common", "prob": 65, "count": [ 1, 2 ] },
+      { "group": "gunmod_milspec", "prob": 45 },
+      { "group": "sights_all", "prob": 20 },
+      { "group": "bandit_looter_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "id": "dd_mallninjapro",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 60,
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ],
+        "prob": 33
+      },
+      {
+        "distribution": [ { "group": "duty_rifle", "prob": 3 }, { "group": "guns_rifle_milspec", "prob": 1 } ],
+        "prob": 1
+      },
+      { "group": "infantry_common_gear", "prob": 37 },
+      { "group": "grenades", "prob": 33 },
+      { "group": "military_patrol_food" },
+      { "group": "gunmod_common", "prob": 65, "count": [ 1, 2 ] },
+      { "group": "gunmod_milspec", "prob": 80 },
+      { "group": "sights_all", "prob": 20 },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "cash_card", "prob": 10, "charges": [ 0, 50000 ] },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drop_stalker_elite",
+    "subtype": "collection",
+    "entries": [
+      { "group": "mon_bandit45_clothes", "damage": [ 0, 4 ], "prob": 75 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_scrapper_drops", "damage": [ 0, 4 ], "prob": 37 },
+      { "group": "army_personal_locker", "damage": [ 0, 4 ], "prob": 37 },
+      { "group": "ammo_pistol_bandit_drops", "prob": 63, "count": [ 1, 2 ] },
+      { "group": "ammo_milspec", "prob": 33, "count": [ 1, 2 ] },
+      { "group": "ammo_rifle_bandit_drops", "prob": 63, "count": [ 1, 2 ] },
+      { "group": "mil_food_nodrugs", "count": [ 1, 2 ] },
+      { "group": "mags_milspec", "prob": 20, "count": [ 1, 2 ] },
+      { "group": "mags_cop", "prob": 20, "count": [ 1, 2 ] },
+      { "group": "mags_pistol_common", "prob": 20, "count": [ 1, 2 ] },
+      { "group": "mags_rifle_rare", "prob": 20, "count": [ 1, 2 ] },
+      { "group": "bandit_stalker_elite_clothes", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_stalker_elite_clothes",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "mask_bal", "prob": 35 },
+      { "item": "boots_combat", "prob": 65 },
+      { "item": "duster", "prob": 65 },
+      { "item": "duster_fur", "prob": 65 },
+      { "item": "duster_leather", "prob": 65 },
+      { "item": "sleeveless_duster", "prob": 65 },
+      { "item": "sleeveless_duster_leather", "prob": 65 },
+      { "item": "sleeveless_trenchcoat", "prob": 65 },
+      { "item": "trenchcoat", "prob": 35 },
+      { "item": "trenchcoat_leather", "prob": 35 },
+      { "item": "gloves_tactical", "prob": 65 },
+      { "item": "hat_boonie", "prob": 65 },
+      { "item": "hat_hard_hooded", "prob": 35 },
+      { "item": "helmet_army", "prob": 35 },
+      { "item": "firehelmet", "prob": 65 },
+      { "item": "helmet_ball", "prob": 65 },
+      { "item": "helmet_liner", "prob": 35 },
+      { "item": "helmet_scrap", "prob": 65 },
+      { "item": "2byshin_guard", "prob": 65 }
+    ]
+  }
+]

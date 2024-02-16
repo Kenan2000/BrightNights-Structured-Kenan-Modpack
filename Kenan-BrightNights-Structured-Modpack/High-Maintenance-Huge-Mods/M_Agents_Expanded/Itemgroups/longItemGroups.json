@@ -1,0 +1,183 @@
+[
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_bandit_drops",
+    "//": "Reloaded pistol ammo, black powder loads roughly half of the time. A modified copy of the default ammo reloaded drops",
+    "subtype": "distribution",
+    "entries": [ { "group": "ammo_rifle_modern_handloads", "prob": 80 }, { "group": "ammo_rifle_blackpowder_handloads", "prob": 20 } ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_rifle",
+    "entries": [
+      { "group": "mon_zombie_soldier_death_drops", "damage": [ 0, 3 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_remington_700", "damage": [ 0, 3 ], "prob": 1 },
+      { "group": "ammo_rifle_bandit_drops", "prob": 78 },
+      { "group": "ammo_rifle_rare", "prob": 10 },
+      { "group": "ammo_rifle_obscure", "prob": 10 },
+      { "group": "ammo_rifle_common", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_super_rifle",
+    "entries": [
+      { "group": "mon_zombie_soldier_death_drops", "damage": [ 0, 2 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_savage_gun", "damage": [ 0, 2 ], "prob": 1 },
+      { "group": "ammo_rifle_bandit_drops", "prob": 78 },
+      { "group": "ammo_rifle_rare", "prob": 10 },
+      { "group": "ammo_rifle_common", "prob": 25 },
+      { "group": "ammo_rifle_milspec", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_alpha",
+    "entries": [
+      { "group": "mon_zombie_survivor_death_drops", "damage": [ 0, 2 ], "prob": 90 },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_hkg36", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "ammo_rifle_obscure", "prob": 33 },
+      { "group": "ammo_rifle_bandit_drops", "prob": 63 },
+      { "group": "ammo_rifle_rare", "prob": 10 },
+      { "group": "ammo_rifle_common", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_remington_700",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "remington_700", 1 ],
+      [ "m1903", 1 ],
+      [ "rifle_3006", 1 ],
+      [ "browning_blr", 1 ],
+      [ "garand", 1 ],
+      [ "rifle_308", 1 ],
+      [ "rifle_223", 1 ],
+      [ "mosin44", 1 ],
+      [ "surv_carbine_223", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_savage_gun",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [ [ "remington_700", 1 ], [ "savage_111f", 1 ], [ "remington700_270", 1 ], [ "M24", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_hkg36",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [
+      [ "ar10", 3 ],
+      [ "hk_g36", 3 ],
+      [ "hk417_13", 3 ],
+      [ "hk_g3", 3 ],
+      [ "fn_fal", 3 ],
+      [ "acr", 3 ],
+      [ "ar15", 3 ],
+      [ "hk_g36", 3 ],
+      [ "m16a4", 3 ],
+      [ "ruger_mini", 3 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_powder",
+    "entries": [
+      { "group": "mon_zombie_survivor_death_drops", "damage": [ 0, 3 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "bandit_powder_rifle", "damage": [ 0, 3 ], "prob": 1 },
+      { "group": "ammo_rifle_powder_re", "prob": 78 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandit_powder_rifle",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [ [ "rifle_flintlock", 1 ], [ "flintlock_ammo", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "ammo_rifle_powder_re",
+    "//": "Reloaded rifle ammo balanced according to rarity.",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "flintlock_ammo", "prob": 60 },
+      { "item": "flintlock_shot", "prob": 20 },
+      { "item": "44army", "prob": 15 },
+      { "item": "bp_44fmj", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_gunner",
+    "entries": [
+      { "group": "default_zombie_death_drops" },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 30 },
+      { "group": "bandit_gunner_bolt_guns", "damage": [ 0, 3 ], "prob": 1 },
+      { "group": "ammo_rifle_bandit_drops", "prob": 78 },
+      { "group": "ammo_rifle_rare", "prob": 10 },
+      { "group": "ammo_rifle_obscure", "prob": 10 },
+      { "group": "ammo_rifle_common", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "bandit_gunner_bolt_ammo",
+    "entries": [
+      { "group": "ammo_rifle_obscure", "prob": 10 },
+      { "group": "ammo_rifle_milspec", "prob": 15 },
+      { "group": "ammo_rifle_rare", "prob": 10 },
+      { "group": "ammo_rifle_common", "prob": 30 },
+      { "group": "ammo_rifle_bandit_drops", "prob": 51 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "bandit_gunner_bolt_guns",
+    "entries": [
+      { "item": "mosin44", "prob": 3 },
+      { "item": "mosin44_ebr", "prob": 3 },
+      { "item": "mosin91_30", "prob": 3 },
+      { "item": "browning_blr", "prob": 3 },
+      { "item": "garand", "prob": 3 },
+      { "item": "m1903", "prob": 3 },
+      { "item": "remington_700", "prob": 3 },
+      { "item": "rifle_3006", "prob": 3 },
+      { "item": "rifle_308", "prob": 3 },
+      { "item": "savage_111f", "prob": 3 },
+      { "item": "M24", "prob": 3 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bandit_levergunner",
+    "entries": [
+      { "group": "clothing_outdoor_torso", "damage": [ 0, 1 ] },
+      { "group": "clothing_outdoor_pants", "damage": [ 0, 2 ] },
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "item": "10gal_hat", "damage": [ 0, 3 ], "prob": 65 },
+      { "item": "henry_big_boy", "damage": [ 0, 2 ], "prob": 1 },
+      { "item": "colt_army", "damage": [ 0, 2 ], "prob": 1 },
+      { "item": "44magnum", "prob": 51 },
+      { "item": "44army", "prob": 10 },
+      { "item": "reloaded_44magnum", "prob": 10 }
+    ]
+  }
+]

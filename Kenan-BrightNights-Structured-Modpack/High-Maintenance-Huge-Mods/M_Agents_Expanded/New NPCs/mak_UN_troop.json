@@ -1,0 +1,191 @@
+[
+  {
+    "type": "npc",
+    "id": "mak_un_trooper",
+    "name_suffix": "UN Trooper",
+    "//": "If Mission set to 0, then they walk around.",
+    "class": "mak_un_trooper_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_UN_trooper_start",
+    "faction": "fac_fo_UN"
+  },
+  {
+    "type": "npc_class",
+    "id": "mak_un_trooper_npc",
+    "name": { "str": "UN Trooper" },
+    "job_description": "Is a soldier representing the United Nations Security Detail.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_UNTROOP_worn",
+    "carry_override": "NC_UNTROOP_carry",
+    "weapon_override": "NC_UNTROOP_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_UNTROOP_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "longshirt" },
+      { "item": "jacket_army" },
+      { "item": "pants_army" },
+      { "item": "mak_un_vest", "prob": 65 },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "molle_pack", "prob": 65 },
+      { "item": "bandolier_rifle", "prob": 35 },
+      { "item": "mak_un_helmet", "prob": 85 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_UNTROOP_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "drops_un_trooper_melee", "prob": 55 },
+      { "group": "military", "count": [ 1, 2 ], "prob": 40 },
+      { "group": "mil_food", "count": [ 1, 2 ], "prob": 75 },
+      { "item": "stanag30", "charges": 30, "count": [ 3, 5 ] },
+      { "item": "stanag10", "charges": 10, "prob": 20 },
+      { "item": "augmag_30rd", "charges": 30, "prob": 40 },
+      { "item": "grenade", "prob": 15 },
+      { "item": "223", "prob": 85 },
+      { "group": "ammo_rifle_common", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_UNTROOP_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drops_un_trooper_ranged" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_un_trooper_ranged",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "steyr_aug", "prob": 10, "charges": 30 },
+      { "item": "hk_g36", "prob": 5, "charges": 30 },
+      { "item": "sig552", "prob": 10, "charges": 30 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_un_trooper_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 3 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_un_trooper_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "How are you even speaking to me?" ],
+      "no": [ "How are you even speaking to me?" ]
+        },
+    "responses": [
+      {
+        "text": "So you're a soldier for the UN, what's that like?", "topic": "TALK_fo_un_trooper_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_un_trooper_go",
+    "type": "talk_topic",
+    "dynamic_line": "Pretty fun, but again, how are you even speaking to me?",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "type": "npc",
+    "id": "mak_un_sniper",
+    "name_suffix": "UN Sniper",
+    "class": "mak_un_sniper_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_UN_trooper_start",
+    "faction": "fac_fo_UN"
+  },
+  {
+    "type": "npc_class",
+    "id": "mak_un_sniper_npc",
+    "name": { "str": "UN Sniper" },
+    "job_description": "Is a soldier representing the United Nations Security Detail.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ 0, 4 ] },
+    "worn_override": "NC_UNTROOP_worn",
+    "carry_override": "NC_UNSNIPER_carry",
+    "weapon_override": "NC_UNSNIPER_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 2, 4 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_UNSNIPER_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "military", "count": [ 1, 2 ], "prob": 40 },
+      { "group": "mil_food", "count": [ 1, 2 ], "prob": 75 },
+      { "item": "augmag_30rd", "charges": 30, "prob": 40 },
+      { "item": "grenade", "prob": 15 },
+      { "item": "762_51", "prob": 85 },
+      { "item": "308", "prob": 85 },
+      { "group": "ammo_rifle_common", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_UNSNIPER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "m14ebr", "prob": 85, "charges": 30 },
+      { "item": "M24", "prob": 85, "charges": 30 },
+      { "item": "m110a1", "prob": 85, "charges": 30 },
+      { "item": "remington700_270", "prob": 85, "charges": 30 }
+    ]
+  }
+]

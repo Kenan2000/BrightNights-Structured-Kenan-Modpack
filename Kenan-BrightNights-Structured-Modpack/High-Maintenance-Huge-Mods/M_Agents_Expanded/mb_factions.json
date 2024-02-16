@@ -1,0 +1,95 @@
+[
+  {
+    "type": "MONSTER_FACTION",
+    "name": "bandito",
+    "friendly": [ "bandit_loot", "bandit_gun", "bandit_raid", "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "bandit_loot",
+    "base_faction": "bandito",
+    "friendly": [ "bandit_gun", "bandit_raid" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "bandit_gun",
+    "base_faction": "bandito",
+    "friendly": [ "bandit_loot", "bandit_raid" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "bandit_raid",
+    "base_faction": "bandito",
+    "friendly": [ "bandit_loot", "bandit_gun" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_cultist",
+    "friendly": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_untroop",
+    "friendly": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_mercenary",
+    "friendly": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_farmer",
+    "friendly": [ "small_animal", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_scav",
+    "friendly": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_prison",
+    "friendly": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_toxic",
+    "friendly": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "ban_redneck",
+    "friendly": [ "small_animal", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "f_strikewitch",
+    "friendly": [ "cop_bot", "military", "utility_bot", "science", "small_animal", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "a_school",
+    "neutral": [ "small_animal", "player" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "a_abys",
+    "neutral": [ "small_animal" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "f_feds",
+    "neutral": [ "small_animal", "cop_bot", "military", "utility_bot" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "f_duty",
+    "neutral": [ "small_animal", "cop_bot", "military", "utility_bot" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "f_survlmoe",
+    "neutral": [ "small_animal", "cop_bot", "military", "utility_bot", "player" ]
+  }
+]

@@ -1,0 +1,163 @@
+[
+  {
+    "type": "npc",
+    "id": "amg_gun_merchant",
+    "//": "Appears in the refugee center as shopkeeper with missions.  Faction critical.",
+    "name_suffix": "Militia Merchant",
+    "class": "NC_AMGGUN_SHOPKEEP",
+    "attitude": 0,
+    "mission": 3,
+    "chat": "TALK_AMGGUN_Town",
+    "faction": "fac_nat_militia"
+  },
+  {
+    "type": "npc_class",
+    "id": "NC_AMGGUN_SHOPKEEP",
+    "name": { "str": "Militia Merchant" },
+    "job_description": "I'm a local shopkeeper.",
+    "traits": [
+      { "group": "NPC_starting_traits" },
+      { "group": "Appearance_demographics" }
+    ],
+    "common": false,
+    "bonus_int": { "one_in": 4 },
+    "bonus_per": { "one_in": 4 },
+    "worn_override": "NC_AMGGUN_worn",
+    "weapon_override": "NC_AMGGUN_weapon",
+    "shopkeeper_item_group": "NC_AMGGUN_SHOPKEEP_misc",
+    "carry_override": "NC_AMGGUN_SHOPKEEP_misc",
+    "skills": [
+      {
+        "skill": "ALL",
+        "level": { "mul": [ { "one_in": 3 }, { "sum": [ { "dice": [ 2, 2 ] }, { "constant": -2 }, { "one_in": 4 } ] } ] }
+      },
+      { "skill": "mechanics", "bonus": { "one_in": 2 } },
+      { "skill": "electronics", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "speech", "bonus": { "rng": [ 1, 3 ] } },
+      { "skill": "barter", "bonus": { "rng": [ 3, 5 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGGUN_SHOPKEEP_misc",
+    "subtype": "collection",
+    "items": [
+      { "group": "guns_pistol_common", "count": [ 1, 5 ], "prob": 30 },
+      { "group": "mags_milspec", "count": [ 1, 5 ], "prob": 15 },
+      { "group": "mags_pistol_common", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "mags_pistol_rare", "count": [ 3, 9 ], "prob": 25 },
+      { "group": "mags_smg_common", "count": [ 6, 8 ], "prob": 25 },
+      { "group": "mags_rifle_common", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "ammo_pistol_common", "count": [ 3, 7 ], "prob": 35 },
+      { "group": "ammo_pistol_rare", "count": [ 1, 6 ], "prob": 25 },
+      { "group": "ammo_rifle_common", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "ammo_shotgun_common", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "guns_pistol_rare", "count": [ 1, 6 ], "prob": 25 },
+      { "group": "guns_smg_common", "count": [ 1, 6 ], "prob": 25 },
+      { "group": "guns_rifle_common", "count": [ 1, 5 ], "prob": 33 },
+      { "group": "guns_rifle_milspec", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "guns_shotgun_common", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "supplies_mechanics", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "supplies_electronics", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "supplies_hardware", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "hospital_medical_items", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "science", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "tools_common", "count": [ 3, 4 ], "prob": 35 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGGUN_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGGUN_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "boxer_briefs" },
+      { "item": "pants_cargo" },
+      { "item": "jacket_army" },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "item": "gloves_light" },
+      { "item": "duffelbag" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGGUN_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "null" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_AMGGUN_SHOP",
+    "subtype": "collection",
+    "entries": [
+      { "group": "guns_pistol_common", "count": [ 1, 5 ], "prob": 30 },
+      { "group": "mags_milspec", "count": [ 1, 5 ], "prob": 15 },
+      { "group": "mags_pistol_common", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "mags_pistol_rare", "count": [ 3, 9 ], "prob": 25 },
+      { "group": "mags_smg_common", "count": [ 6, 8 ], "prob": 25 },
+      { "group": "mags_rifle_common", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "ammo_pistol_common", "count": [ 3, 7 ], "prob": 35 },
+      { "group": "ammo_pistol_rare", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "ammo_rifle_common", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "ammo_shotgun_common", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "guns_pistol_rare", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "guns_smg_common", "count": [ 1, 5 ], "prob": 25 },
+      { "group": "guns_rifle_common", "count": [ 1, 5 ], "prob": 33 },
+      { "group": "guns_rifle_milspec", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "guns_shotgun_common", "count": [ 3, 7 ], "prob": 25 },
+      { "group": "supplies_mechanics", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "supplies_electronics", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "supplies_hardware", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "hospital_medical_items", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "science", "count": [ 3, 4 ], "prob": 35 },
+      { "group": "tools_common", "count": [ 3, 4 ], "prob": 35 }
+    ]
+  },
+  {
+    "id": "TALK_AMGGUN_Town",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "What are you buying, what are you selling?",
+      "no": "What are you buying, what are you selling?" },
+    "responses": [
+      {
+        "text": "What is it like being a merchant around here?",
+        "topic": "TALK_AMGGUN_infotown"
+      },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_AMGGUN_Town"
+      },
+      {
+        "text": "See you later.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_AMGGUN_infotown",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Living in the compound has its own difficulties, for sure. At least now we don't have to worry about losing our jobs or getting thrown in jail for uh competition reasons essentially",
+      "no": "Living in the compound has its own difficulties, for sure. At least now we don't have to worry about losing our jobs or getting thrown in jail for uh competition reasons essentially" },
+    "responses": [
+      {
+        "text": "Got it.",
+        "topic": "TALK_AMGGUN_Town"
+      }
+    ]
+  }
+]

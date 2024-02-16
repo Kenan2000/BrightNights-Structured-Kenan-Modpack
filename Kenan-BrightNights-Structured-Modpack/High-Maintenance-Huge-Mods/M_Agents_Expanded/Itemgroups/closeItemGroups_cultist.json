@@ -1,0 +1,154 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cultist_one",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "cultist_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "cultist_drops",
+    "items": [
+      [ "stick", 10 ],
+      [ "pointy_stick", 5 ],
+      [ "spear_wood", 5 ],
+      [ "spear_forked", 5 ],
+      [ "bwirebat", 3 ],
+      [ "i_staff", 1 ],
+      [ "sword_wood", 2 ],
+      [ "knife_butter", 2 ],
+      [ "baton-extended", 2 ],
+      [ "bokken_fake", 2 ],
+      [ "spike", 3 ],
+      [ "torch_done", 3 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 2 ],
+      [ "golf_club", 2 ],
+      [ "holybook_granth", 1 ],
+      [ "holybook_kallisti", 1 ],
+      [ "holybook_slack", 1 ],
+      [ "longsword_inferior", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cultist_two",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "cultist_armor_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "cultist_armor_drops",
+    "items": [
+      [ "stick", 10 ],
+      [ "cuirass_scrap", 65 ],
+      [ "pointy_stick", 5 ],
+      [ "spear_wood", 5 ],
+      [ "spear_forked", 5 ],
+      [ "bwirebat", 3 ],
+      [ "i_staff", 1 ],
+      [ "sword_wood", 2 ],
+      [ "knife_butter", 2 ],
+      [ "baton-extended", 2 ],
+      [ "holybook_granth", 1 ],
+      [ "holybook_kallisti", 1 ],
+      [ "holybook_slack", 1 ],
+      [ "longsword_inferior", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "cultist_three",
+    "entries": [
+      { "group": "cultist_elite_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "cultist_elite_drops",
+    "items": [
+      [ "broadsword", 10 ],
+      [ "jacket_leather_mod", 25 ],
+      [ "broadsword_inferior", 10 ],
+      [ "mace_inferior", 5 ],
+      [ "mace", 5 ],
+      [ "bwirebat", 3 ],
+      [ "i_staff", 1 ],
+      [ "baton-extended", 2 ],
+      [ "holybook_granth", 1 ],
+      [ "holybook_kallisti", 1 ],
+      [ "holybook_slack", 1 ],
+      [ "longsword_inferior", 1 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "un_melee",
+    "entries": [
+      { "group": "mon_unmelee_death_drops", "damage": [ 0, 2 ], "prob": 90 }
+    ]
+  },
+  {
+    "id": "mon_unmelee_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ]
+      },
+      { "group": "infantry_common_gear" },
+      { "group": "military_standard_grenades", "count": [ 1, 3 ], "prob": 20 },
+      { "group": "military_patrol_food" },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "cash_card", "prob": 10, "charges": [ 0, 50000 ] },
+      { "item": "baton", "prob": 70, "damage": [ 1, 4 ] },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "farmer_one",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "farmer_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "farmer_drops",
+    "items": [
+      [ "pitchfork", 10 ],
+      [ "g_shovel", 5 ],
+      [ "hoe", 5 ],
+      [ "shovel", 5 ],
+      [ "seed_blackberries", 3 ],
+      [ "seed_raspberries", 3 ],
+      [ "seed_grapes", 3 ],
+      [ "seed_cabbage", 3 ],
+      [ "seed_tomato", 3 ],
+      [ "seed_buckwheat", 3 ],
+      [ "seed_corn", 3 ],
+      [ "ax", 1 ],
+      [ "sword_wood", 2 ],
+      [ "knife_butter", 2 ],
+      [ "spike", 3 ],
+      [ "torch_done", 3 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 2 ]
+    ]
+  }
+]

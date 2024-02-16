@@ -1,0 +1,78 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "toxic_one_m",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "toxicma_drops", "damage": [ 0, 4 ], "prob": 37 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "toxicma_drops",
+    "items": [
+      [ "stick", 10 ],
+      [ "pointy_stick", 5 ],
+      [ "spear_wood", 5 ],
+      [ "i_staff", 1 ],
+      [ "sword_wood", 2 ],
+      [ "knife_butter", 2 ],
+      [ "baton-extended", 2 ],
+      [ "spike", 3 ],
+      [ "torch_done", 3 ],
+      [ "rock", 1 ],
+      [ "sharp_rock", 1 ],
+      [ "pipe", 2 ],
+      [ "golf_club", 2 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "toxic_one_g",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "toxicga_drops", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "ammo_pistol_reloaded", "prob": 78 },
+      { "group": "ammo_pistol_common", "prob": 20 },
+      { "group": "ammo_pistol_rare", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "toxicga_drops",
+    "items": [ [ "moss_brownie", 1 ], [ "cop_38", 1 ], [ "rifle_22", 1 ], [ "ashot", 1 ], [ "rifle_9mm", 1 ], [ "sw_22", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "toxic_two_g",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "toxicgb_drops", "damage": [ 0, 4 ], "prob": 1 },
+      { "group": "ammo_pistol_reloaded", "prob": 78 },
+      { "group": "ammo_pistol_common", "prob": 20 },
+      { "group": "ammo_pistol_rare", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "toxicgb_drops",
+    "items": [ [ "skorpion_61", 1 ], [ "mac_10", 1 ], [ "smg_45", 1 ], [ "uzi", 1 ], [ "smg_9mm", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "toxic_three",
+    "entries": [
+      { "group": "default_zombie_death_drops", "damage": [ 0, 4 ] },
+      { "group": "toxict_drops", "damage": [ 0, 4 ], "prob": 1 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "toxict_drops",
+    "items": [ [ "chemical_thrower", 1 ], [ "stick", 1 ], [ "pipe", 1 ] ]
+  }
+]

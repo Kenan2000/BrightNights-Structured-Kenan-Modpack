@@ -1,0 +1,98 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 3000,
+        "om_terrain": [ "MAK_BEAR_OUTPOST_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                ",T,,,,,,T,,,,,,,T,,,,,T,",
+                ",,,,WWWWWWWWWWWWWWWW,,,,",
+                ",T,,W22,,,,,,,,,,,3WT,,,",
+                ",,,,W,,wwwwwwEwwEw,W,,,,",
+                ",,,,W3,wOOOieeeeew,W,,,,",
+                ",T,,W,,EOeeeeIuuIE,W,,,,",
+                ",,T,W3,woooPeeuuew,W,,,T",
+                ",,,,W3,wwwwweIuuIw,W,,,,",
+                ",,,,W,,,,,,weeeeew,W,,,,",
+                ",,,,W,,QQ,,wwEwZEw,W,,,,",
+                ",QQ,Q,,,QQ,,,,,,,,,Q,,,,",
+                ",,QQQ,QQQQQQQQQQQQQQQQ,,",
+                ",Q,QQQQQQQQQQQQQQQQQQQ,,",
+                ",,,QQ,,QQQQQQQQQQ,,Q,QQ,",
+                ",,,,W,,QQ,QQQ,,,,,,W,,Q,",
+                "T,,,W,,,,,,,QQ,,,,,W,,Q,",
+                ",,,,WttYttQ,,,,QqqqW,,,,",
+                ",,T,W1UQUtQwwRww,,,W,,,,",
+                ",,,,WQQQ1tQw4e4w,,,W,,,,",
+                ",T,,W1UQUtQw4e4w,,,W,,,,",
+                ",,,,WQQQ1tQw5e5w,,,W,,T,",
+                ",,,,W1UQUt,w5e5wrrrW,,,,",
+                ",,,TWWWWWWWWWWWWWWWWT,,,",
+                ",,,,,,,,,,,,T,,,,,,,,,,,"
+            ],
+        "palettes": [ "MAK_BEARPAL" ],
+        "faction_owner": [
+        { "id": "fac_fo_BEAR", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_item": [
+        { "item": "RPG", "x": 14, "y": 21, "chance": 50 }
+      ],
+        "place_nested": [ { "chunks": [ [ "mak_bear_spawn", 65 ], [ "null", 35 ] ], "x": 3, "y": 9 },
+            { "chunks": [ [ "mak_bear_spawn", 65 ], [ "null", 35 ] ], "x": 5, "y": 13 },
+            { "chunks": [ [ "mak_bear_spawn", 65 ], [ "null", 35 ] ], "x": 20, "y": 10 },
+            { "chunks": [ [ "mak_bear_spawn", 65 ], [ "null", 35 ] ], "x": 17, "y": 13 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 18 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 10 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 16, "y": 7 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 5 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 15 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 12 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 12 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 11, "y": 10 },
+            { "chunks": [ [ "mak_bear_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 12 }
+        ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "MAK_BEAR_OUTPOST_1_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "    ................    ",
+                "    .              .    ",
+                "    .  ........... .    ",
+                "    .  ........... .    ",
+                "    .  ........... .    ",
+                "    .  ........... .    ",
+                "    .  ........... .    ",
+                "    .      ....... .    ",
+                "    .      ....... .    ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "    .              .    ",
+                "    .              .    ",
+                "    ......         .    ",
+                "    ...... .....   .    ",
+                "    ...... .....   .    ",
+                "    ...... .....   .    ",
+                "    ...... .....   .    ",
+                "    ...... .........    ",
+                "    ................    ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "type": "palette",
+    "id": "MAK_BEARPAL",
+    "terrain": {
+      "W": "t_palisade",
+      "w": "t_wall_log",
+      "Q": "t_dirt",
+      "q": "t_dirt",
+      "E": "t_window_domestic",
+      "e": "t_floor",
+      "R": "t_door_metal_pickable",
+      "r": "t_dirt",
+      "T": "t_tree",
+      "t": "t_dirt",
+      "Y": "t_dirt",
+      "U": "t_dirt",
+      "1": "t_dirt",
+      "2": "t_dirt",
+      "3": "t_dirt",
+      "4": "t_floor",
+      "5": "t_floor",
+      "u": "t_floor",
+      "I": "t_floor",
+      "i": "t_floor",
+      "O": "t_floor",
+      "o": "t_floor",
+      "P": "t_floor",
+      "Z": "t_door_c"
+    },
+    "furniture": {
+      "q": "f_sandbag_half",
+      "r": "f_target",
+      "t": "f_large_canvas_wall",
+      "Y": "f_large_canvas_door_o",
+      "U": "f_bunkbed",
+      "1": "f_locker",
+      "2": "f_crate_c",
+      "3": "f_crate_o",
+      "4": "f_rack",
+      "5": "f_utility_shelf",
+      "u": "f_table",
+      "I": "f_stool",
+      "i": "f_utility_shelf",
+      "O": "f_counter",
+      "o": "f_cupboard",
+      "P": "f_bookcase"
+    },
+    "items": {
+      "u": [ { "item": "dining", "chance": 20 }, { "item": "cannedfood", "chance": 20, "repeat": [ 1, 2 ] } ],
+      "O": [
+        { "item": "SUS_pantry", "chance": 20 },
+        { "item": "cannedfood", "chance": 25, "repeat": [ 1, 2 ] },
+        { "item": "dining", "chance": 20 }
+      ],
+      "o": [
+        { "item": "SUS_pantry", "chance": 40, "repeat": [ 3, 6 ] },
+        { "item": "cannedfood", "chance": 45, "repeat": [ 5, 9 ] },
+        { "item": "SUS_breakfast_cupboard", "chance": 30 },
+        { "item": "SUS_coffee_cupboard", "chance": 50 }
+      ],
+      "i": [
+        { "item": "SUS_pantry", "chance": 40, "repeat": [ 3, 6 ] },
+        { "item": "cannedfood", "chance": 45, "repeat": [ 5, 9 ] },
+        { "item": "SUS_breakfast_cupboard", "chance": 30 },
+        { "item": "SUS_coffee_cupboard", "chance": 50 }
+      ],
+      "P": [
+        { "item": "SUS_field_manual_bookcase", "chance": 35, "repeat": [ 2, 4 ] },
+        { "item": "book_military", "chance": 35, "repeat": [ 2, 5 ] },
+        { "item": "book_survival", "chance": 15 }
+      ],
+      "1": [
+        { "item": "bunker_basement_clothing", "chance": 30, "repeat": [ 2, 4 ] },
+        { "item": "military_patrol_food", "chance": 45, "repeat": [ 2, 4 ] },
+        { "item": "infantry_common_gear", "chance": 30, "repeat": [ 1, 3 ] },
+        { "item": "military", "chance": 25, "repeat": [ 2, 4 ] },
+        { "item": "army_personal_locker", "chance": 65, "repeat": [ 3, 5 ] }
+      ],
+      "2": [
+        { "item": "bear_closedcrate_ammo", "chance": 55, "repeat": [ 1, 2 ] },
+        { "item": "bear_closedcrate_mag", "chance": 45, "repeat": [ 1, 2 ] }
+      ],
+      "3": [
+        { "item": "bear_opencrate_ammo", "chance": 30, "repeat": [ 1, 2 ] },
+        { "item": "bear_closedcrate_mag", "chance": 45, "repeat": [ 1, 2 ] },
+        { "item": "trash_forest", "chance": 75, "repeat": [ 4, 6 ] }
+      ],
+      "4": [
+        { "item": "bear_closedcrate_ammo", "chance": 65, "repeat": [ 1, 2 ] },
+        { "item": "bear_closedcrate_mag", "chance": 65, "repeat": [ 1, 2 ] },
+        { "item": "bear_explosive", "chance": 60, "repeat": [ 1, 3 ] },
+        { "item": "bear_rpg_ammo", "chance": 55, "repeat": [ 1, 3 ] }
+      ],
+      "5": [ { "item": "bear_gunlocker", "chance": 68, "repeat": [ 1, 3 ] } ]
+    }
+  }
+]

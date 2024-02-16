@@ -1,0 +1,232 @@
+[
+  {
+    "type": "npc",
+    "id": "mak_shelter_guard",
+    "name_suffix": "Shelter Guard",
+    "class": "mak_shelter_guard_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_mak_shelter_guard_start",
+    "faction": "fac_fo_hostilesurv"
+  },
+  {
+    "type": "npc_class",
+    "id": "mak_shelter_guard_npc",
+    "name": { "str": "Shelter Guard" },
+    "job_description": "A Guard of an LMOE shelter.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Appearance_demographics" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "weapon_override": "NC_SHELTER_GUARD_WEAPONS",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_SHELTER_GUARD_WEAPONS",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "2_shot_special", "prob": 20, "charges": 30 },
+      { "item": "model_10_revolver", "prob": 20, "charges": 30 },
+      { "item": "american_180", "prob": 5, "charges": 30 },
+      { "item": "marlin_9a", "prob": 20, "charges": 30 },
+      { "item": "ruger_1022", "prob": 20, "charges": 30 },
+      { "item": "colt_army", "prob": 20, "charges": 30 },
+      { "item": "ar15", "prob": 20, "charges": 30 },
+      { "item": "m249", "prob": 5, "charges": 30 },
+      { "item": "hk_g36", "prob": 20, "charges": 30 },
+      { "item": "m4a1", "prob": 20, "charges": 30 },
+      { "item": "rifle_223", "prob": 20, "charges": 30 },
+      { "item": "ruger_mini", "prob": 20, "charges": 30 },
+      { "item": "garand", "prob": 20, "charges": 30 },
+      { "item": "m1903", "prob": 20, "charges": 30 },
+      { "item": "cx4", "prob": 20, "charges": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_helmet",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_hat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 50 },
+      { "item": "beret", "prob": 10 },
+      { "item": "10gal_hat", "prob": 10 },
+      { "item": "drinking_hat", "prob": 5 },
+      { "item": "hat_ball", "prob": 10 },
+      { "item": "hat_fur", "prob": 5 },
+      { "item": "hat_hunting", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_coat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 80 },
+      { "item": "hoodie", "prob": 10 },
+      { "item": "jacket_light", "prob": 10 },
+      { "item": "jacket_leather", "prob": 10 },
+      { "item": "trenchcoat", "prob": 10 },
+      { "item": "jacket_jean", "prob": 10 },
+      { "item": "jacket_flannel", "prob": 10 },
+      { "item": "jacket_windbreaker", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_pants_male",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 20 },
+      { "item": "pants", "prob": 20 },
+      { "item": "pants_cargo", "prob": 20 },
+      { "item": "shorts", "prob": 20 },
+      { "item": "shorts_denim", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_pants_female",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 20 },
+      { "item": "pants", "prob": 20 },
+      { "item": "skirt", "prob": 20 },
+      { "item": "shorts", "prob": 20 },
+      { "item": "shorts_denim", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_shirt_male",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "flag_shirt", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "sweatshirt", "prob": 25 },
+      { "item": "jersey", "prob": 25 },
+      { "item": "linuxtshirt", "prob": 25 },
+      { "item": "polo_shirt", "prob": 25 },
+      { "item": "tshirt", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_shirt_female",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "flag_shirt", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "halter_top", "prob": 25 },
+      { "item": "jersey", "prob": 25 },
+      { "item": "linuxtshirt", "prob": 25 },
+      { "item": "polo_shirt", "prob": 25 },
+      { "item": "tshirt", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_gloves",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 30 },
+      { "item": "gloves_leather", "prob": 30 },
+      { "item": "gloves_fingerless", "prob": 30 },
+      { "item": "gloves_fsurvivor", "prob": 30 },
+      { "item": "gloves_light", "prob": 30 },
+      { "item": "gloves_tactical", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_masks",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 75 },
+      { "item": "mask_dust", "prob": 5 },
+      { "item": "mask_filter", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_shoes",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "boots", "prob": 25 },
+      { "item": "slippers", "prob": 25 },
+      { "item": "lowtops", "prob": 25 },
+      { "item": "sneakers", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_vest",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 80 }, { "item": "kevlar", "prob": 5 }, { "item": "tacvest", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_shelter_guard_npc_eyes",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 80 }, { "item": "glasses_safety", "prob": 20 }, { "item": "sunglasses", "prob": 20 } ]
+  },
+  {
+    "id": "TALK_mak_shelter_guard_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "How did you even get in here? Was the door really just unlocked like that?.", 
+        "I have a gun and I'm willing to use it, don't tempt me!.", 
+        "You think you can take me on, who do you think you are?", 
+        "How did you even find our shelter?", 
+        "What's it like for a woman out there in the exclusion zone? Is it dangerous?" ],
+      "no": [ "How did you even get in here? Was the door really just unlocked like that?.", 
+        "I have a gun and I'm willing to use it, don't tempt me!.", 
+        "You think you can take me on, who do you think you are?", 
+        "How did you even find our shelter?", 
+        "What's it like for a man out there in the exclusion zone? Have you found anything interesting?" ]
+        },
+    "responses": [
+      {
+        "text": "How long have you been hiding in this shelter?", "topic": "TALK_mak_shelter_survivor_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_mak_shelter_survivor_go",
+    "type": "talk_topic",
+    "dynamic_line": "I don't really know, it's been too long. I've just been guarding these people for any potential threats from the outside world, but nothing has come here before you decided to traipse into our little domain.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

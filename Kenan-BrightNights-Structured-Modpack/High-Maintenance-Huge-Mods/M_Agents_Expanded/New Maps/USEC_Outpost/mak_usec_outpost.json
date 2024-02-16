@@ -1,0 +1,156 @@
+[
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "MAK_USEC_OUTPOST_1" ],"object": {
+            "fill_ter": "t_floor",
+            "rows": [
+                
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "PPPPPPPPPPPPPPPPPPPPPPPP",
+                "pppp1111XXxxxxXX1111pppp",
+                "pppp1eFFTTFrrFTTFFe1pppp",
+                "pp111FFFTTFRRETTFFF111pp",
+                "pp1eFFFFTTTTTTTTFFFFe1pp",
+                "pp1FFFF4TTTTTTTT4FFFF1pp",
+                "pp1xxXx1111111111xXxx1pp",
+                "pp1rRFF1SwSwSwaa1FFRr1pp",
+                "pp1FRFO1AwAwAwFF1eFRF1pp",
+                "pp1FFFO1FFFFFFFF1EFFE1pp",
+                "pp111A1111111A1111A111pp",
+                "pp1EOFFe1eF<<Fe1eFFFF1pp",
+                "ppxrRFFFATTTTTTAFRRuFxpp",
+                "ppxFRFRr1eFFFFe1OFrFFxpp",
+                "ppxFFFRF1111A111FFFFFxpp",
+                "pp1FRRFO1FFFFFF1FRRuI1pp",
+                "pp1FrFFO1ssssss1OFrFi1pp",
+                "pp11xxx1111111111xxx11pp",
+                "pppppppppmmppppppppppppp",
+                "pppppppppppppppppppppppp",
+                "pppppppppppppppppppppppp",
+                "pppppppppppppppppppppppp"
+            ],
+        "palettes": [ "MAK_USECPAL" ],
+        "faction_owner": [
+        { "id": "fac_fo_USEC", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_nested": [ { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 6, "y": 2 },
+            { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 16, "y": 2 },
+            { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 9, "y": 6 },
+            { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 17, "y": 7 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 6, "y": 9 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 3, "y": 11 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 5, "y": 16 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 20, "y": 16 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 19, "y": 11 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 15 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 13, "y": 6 }
+        ],
+        "terrain": { ",": "t_region_groundcover" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "weight": 1000,
+        "om_terrain": [ "MAK_USEC_OUTPOST_2" ],"object": {
+            "fill_ter": "t_open_air",
+            "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "    ffffffffffffffff    ",
+                "    ffff11111111ffff    ",
+                "  ffffff17L7L7L1ffffff  ",
+                "  ff11111DDDDDD11111ff  ",
+                "  ff1ZZD17L7LDL1DDN1ff  ",
+                "  ff1llD11111d11DDz1ff  ",
+                "  ff1DDDdDDDDDDdDDz1ff  ",
+                "  ff1DDD1DMDDMD1DDz1ff  ",
+                "  ff11d11DMDDMD11d11ff  ",
+                "  ffh9K81*DDDD*18Kkhff  ",
+                "  ffhKKK1DD>>DD18Kkhff  ",
+                "  HHHHHK1DDDDDD1KKKhff  ",
+                "  H5D5HK11111111KKKhff  ",
+                "  H5D5HKKKKK998KKKKhff  ",
+                "  H6DD&KKKKKKKKKKJKhff  ",
+                "  H666H-KKKKKK99KjKhff  ",
+                "  HHHHHhhhhhhhhhhhhhff  ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+        "palettes": [ "MAK_USECPAL" ],
+        "faction_owner": [
+        { "id": "fac_fo_USEC", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+           ],
+        "place_item": [
+        { "item": "atgm_launcher", "x": 4, "y": 15, "chance": 50 },
+        { "item": "atgm_heat", "x": 4, "y": 15, "chance": 50 },
+        { "item": "atgm_heat", "x": 4, "y": 15, "chance": 25 }
+      ],
+        "place_nested": [ { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 9, "y": 10 },
+            { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 14, "y": 10 },
+            { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 5, "y": 13 },
+            { "chunks": [ [ "mak_usec_spawn", 65 ], [ "null", 35 ] ], "x": 18, "y": 16 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 10, "y": 18 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 7, "y": 18 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 14, "y": 9 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 9, "y": 6 },
+            { "chunks": [ [ "mak_usec_spawn", 50 ], [ "null", 50 ] ], "x": 17, "y": 7 }
+        ],
+        "computers": {
+        "-": {
+          "name": "United Security Storage Room Access",
+          "security": 3,
+          "options": [ { "name": "Unlock Door", "action": "unlock" } ],
+          "failures": [ { "action": "damage" }, { "action": "alarm" } ]
+        }
+          },
+        "terrain": { ",": "t_region_groundcover", "&": "t_door_metal_locked", "*": "t_thconc_floor_olight" }
+        }
+    },
+    {
+        "type": "mapgen",
+        "method": "json",
+        "om_terrain": "MAK_USEC_OUTPOST_2_roof",
+        "weight": 100,
+        "object": {
+            "fill_ter": "t_open_air",
+             "rows": [
+                
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "        ........        ",
+                "        .........       ",
+                "    ................    ",
+                "    ................    ",
+                "    ................    ",
+                "    ................    ",
+                "    ................    ",
+                "    ................    ",
+                "        ........        ",
+                "        ........        ",
+                "  ..... ........        ",
+                "  ..... ........        ",
+                "  .....                 ",
+                "  .....                 ",
+                "  .....                 ",
+                "  .....                 ",
+                "                        ",
+                "                        ",
+                "                        ",
+                "                        "
+            ],
+            "terrain": {
+                ".": "t_flat_roof"
+            }
+        }
+    }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "type": "npc",
+    "id": "mak_farmer",
+    "name_suffix": "farmer",
+    "class": "mak_farmer_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_mak_farmer_start",
+    "faction": "fac_fo_farmers"
+  },
+  {
+    "type": "npc_class",
+    "id": "mak_farmer_npc",
+    "name": { "str": "farmer" },
+    "job_description": "A backwoods denizen that decided not to leave New England.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Skin_Fair" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -2, 2 ] },
+    "bonus_dex": { "rng": [ -2, 2 ] },
+    "bonus_int": { "rng": [ -2, 2 ] },
+    "bonus_per": { "rng": [ -2, 2 ] },
+    "weapon_override": "NC_farmer_WEAPONS",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "mechanics", "bonus": { "rng": [ 3, 6 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 1, 2 ] } },
+      { "skill": "cooking", "bonus": { "rng": [ 0, 2 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_farmer_WEAPONS",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 50 },
+      { "item": "pitchfork", "prob": 50 },
+      { "item": "makeshift_scythe_war", "prob": 25 },
+      { "item": "knife_folding", "prob": 15 },
+      { "item": "knife_combat", "prob": 15 },
+      { "item": "knife_hunting", "prob": 15 },
+      { "item": "ashot", "charges": 1, "prob": 15 },
+      { "item": "browning_a5", "charges": 5, "prob": 15 },
+      { "item": "mossberg_500", "charges": 6, "prob": 15},
+      { "item": "pipe_double_shotgun", "charges": 2, "prob": 15 },
+      { "item": "shotgun_d", "charges": 2, "prob": 15 },
+      { "item": "remington_870", "charges": 5, "prob": 15 },
+      { "item": "winchester_1897", "charges": 6, "prob": 15 },
+      { "item": "ruger_1022", "charges": 15, "prob": 15 },
+      { "item": "marlin_9a", "charges": 19, "prob": 10 },
+      { "item": "m1911", "charges": 6, "prob": 10 },
+      { "item": "savage_111f", "charges": 3, "prob": 10 },
+      { "item": "ar15", "charges": 30, "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_helmet",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 100 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_extra",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 5 },
+      { "item": "backpack", "prob": 25 },
+      { "item": "backpack_leather", "prob": 25 },
+      { "item": "rucksack", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_hat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 50 },
+      { "item": "cowboy_hat", "prob": 10 },
+      { "item": "10gal_hat", "prob": 10 },
+      { "item": "drinking_hat", "prob": 5 },
+      { "item": "hat_ball", "prob": 10 },
+      { "item": "hat_fur", "prob": 5 },
+      { "item": "hat_hunting", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_coat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 20 },
+      { "item": "hoodie", "prob": 20 },
+      { "item": "jacket_light", "prob": 20 },
+      { "item": "jacket_leather", "prob": 20 },
+      { "item": "trenchcoat", "prob": 20 },
+      { "item": "jacket_jean", "prob": 20 },
+      { "item": "jacket_flannel", "prob": 20 },
+      { "item": "jacket_windbreaker", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_pants_male",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 20 },
+      { "item": "pants", "prob": 20 },
+      { "item": "pants_cargo", "prob": 20 },
+      { "item": "shorts", "prob": 20 },
+      { "item": "shorts_denim", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_pants_female",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jeans", "prob": 20 },
+      { "item": "pants", "prob": 20 },
+      { "item": "skirt", "prob": 20 },
+      { "item": "shorts", "prob": 20 },
+      { "item": "shorts_denim", "prob": 20 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_shirt_male",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "sweatshirt", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_shirt_female",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "dress", "prob": 25 },
+      { "item": "hoodie", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "halter_top", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_gloves",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 60 },
+      { "item": "gloves_leather", "prob": 10 },
+      { "item": "gloves_fingerless", "prob": 10 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_eyes",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 80 }, { "item": "glasses_safety", "prob": 5 }, { "item": "sunglasses", "prob": 5 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_scarf",
+    "items": [ [ "null", 50 ], [ "knit_scarf", 5 ], [ "long_knit_scarf", 5 ], [ "scarf", 5 ], [ "scarf_long", 5 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_masks",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "null", "prob": 75 },
+      { "item": "mask_dust", "prob": 5 },
+      { "item": "bandana", "prob": 5 },
+      { "item": "mask_filter", "prob": 5 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_shoes",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "boots", "prob": 25 },
+      { "item": "boots_combat", "prob": 25 },
+      { "item": "boots_hiking", "prob": 25 },
+      { "item": "lowtops", "prob": 25 },
+      { "item": "sneakers", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_misc",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "water_clean", "prob": 90 },
+      { "item": "knife_butcher", "prob": 100 },
+      { "item": "coke", "prob": 5 },
+      { "group": "farming_seeds", "prob": 35, "count": [ 4, 9 ] },
+      { "group": "farming_tools", "prob": 35, "count": [ 1, 2 ] },
+      { "item": "lighter", "prob": 60 },
+      { "item": "veggy_pickled", "prob": 30, "charges": 2, "container-item": "jar_glass_sealed" },
+      { "item": "meat_pickled", "prob": 20, "charges": 2, "container-item": "jar_glass_sealed" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "mak_farmer_npc_vest",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 80 }, { "item": "kevlar", "prob": 5 }, { "item": "tacvest", "prob": 5 } ]
+  },
+  {
+    "id": "TALK_mak_farmer_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "It's almost harvesting season.", 
+        "Less talking, more farming!.", 
+        "I'm so thankful for having this farm, at least we won't starve.", 
+        "It's almost peaceful out here, you know? Well, besides the horrible things that roam the forests and have made the cities and towns their stomping grounds..", 
+        "What brings a lady like you to our little farm?" ],
+      "no": [ "It's almost harvesting season.", 
+        "Less talking, more farming!.", 
+        "I'm so thankful for having this farm, at least we won't starve.", 
+        "It's almost peaceful out here, you know? Well, besides the horrible things that roam the forests and have made the cities and towns their stomping grounds..", 
+        "What brings a man like you to our little farm?" ]
+        },
+    "responses": [
+      {
+        "text": "So you decided to stay on your farm, why is that?.", "topic": "TALK_mak_farmer_go"
+      },
+      {
+        "text": "Would you be willing to let me buy anything?",
+        "effect": "start_trade",
+        "topic": "TALK_mak_farmer_start"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_mak_farmer_go",
+    "type": "talk_topic",
+    "dynamic_line": "What, leave my farm, probably the only place I've ever really known, to go off to goodness knows where with those evac shelters? Sure, it's more dangerous now than before, but I just can't bring myself to leave the exclusion zone. Besides, we're not really bothered much anyway, the dangers around seemingly have no desire to move that far, it's rather strange if you think about it.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_mak_farmer_start"
+      }
+    ]
+  }
+]

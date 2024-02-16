@@ -1,0 +1,643 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "Chibi_Ultica",
+      "Ultimate_Cataclysm",
+      "MshockXottoplus",
+      "UNDEAD_PEOPLE",
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE_LEGACY",
+      "UlticaShell",
+      "MshockXottoplus12",
+      "MSX++DEAD_PEOPLE",
+      "MXplus12_for_cosmetics",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "M_Agent_Bandits_normal.png",
+        "tiles": [
+          { "id": "bg_shadow_item", "fg": 1, "rotates": false },
+          { "id": "bg_shadow_normal", "fg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_alpha",
+            "fg": [ { "weight": 1, "sprite": 3 }, { "weight": 1, "sprite": 4 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_alpha", "fg": [ { "weight": 1, "sprite": 271 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_glock",
+            "fg": [
+              { "weight": 1, "sprite": 5 },
+              { "weight": 1, "sprite": 6 },
+              { "weight": 1, "sprite": 7 },
+              { "weight": 1, "sprite": 185 },
+              { "weight": 1, "sprite": 186 },
+              { "weight": 1, "sprite": 187 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_glock", "fg": [ { "weight": 1, "sprite": 262 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_looter",
+            "fg": [
+              { "weight": 1, "sprite": 8 },
+              { "weight": 1, "sprite": 13 },
+              { "weight": 1, "sprite": 14 },
+              { "weight": 1, "sprite": 15 },
+              { "weight": 1, "sprite": 16 },
+              { "weight": 1, "sprite": 17 },
+              { "weight": 1, "sprite": 18 },
+              { "weight": 1, "sprite": 19 },
+              { "weight": 1, "sprite": 20 },
+              { "weight": 1, "sprite": 9 },
+              { "weight": 1, "sprite": 10 },
+              { "weight": 1, "sprite": 11 },
+              { "weight": 1, "sprite": 12 },
+              { "weight": 1, "sprite": 182 },
+              { "weight": 1, "sprite": 183 },
+              { "weight": 1, "sprite": 184 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_looter", "fg": [ { "weight": 1, "sprite": 256 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_m1911",
+            "fg": [
+              { "weight": 1, "sprite": 21 },
+              { "weight": 1, "sprite": 22 },
+              { "weight": 1, "sprite": 23 },
+              { "weight": 1, "sprite": 24 },
+              { "weight": 1, "sprite": 246 },
+              { "weight": 1, "sprite": 247 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_m1911", "fg": [ { "weight": 1, "sprite": 266 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_melee",
+            "fg": [
+              { "weight": 1, "sprite": 25 },
+              { "weight": 1, "sprite": 26 },
+              { "weight": 1, "sprite": 27 },
+              { "weight": 1, "sprite": 28 },
+              { "weight": 1, "sprite": 29 },
+              { "weight": 1, "sprite": 239 },
+              { "weight": 1, "sprite": 240 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_m1911", "fg": [ { "weight": 1, "sprite": 258 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_raider",
+            "fg": [
+              { "weight": 1, "sprite": 30 },
+              { "weight": 1, "sprite": 31 },
+              { "weight": 1, "sprite": 32 },
+              { "weight": 1, "sprite": 33 },
+              { "weight": 1, "sprite": 248 },
+              { "weight": 1, "sprite": 249 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_raider", "fg": [ { "weight": 1, "sprite": 263 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_rifle",
+            "fg": [
+              { "weight": 1, "sprite": 34 },
+              { "weight": 1, "sprite": 35 },
+              { "weight": 1, "sprite": 36 },
+              { "weight": 1, "sprite": 37 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_rifle", "fg": [ { "weight": 1, "sprite": 271 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_scrapper",
+            "fg": [
+              { "weight": 1, "sprite": 38 },
+              { "weight": 1, "sprite": 39 },
+              { "weight": 1, "sprite": 40 },
+              { "weight": 1, "sprite": 241 },
+              { "weight": 1, "sprite": 242 },
+              { "weight": 1, "sprite": 243 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_scrapper", "fg": [ { "weight": 1, "sprite": 265 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_shotgun",
+            "fg": [
+              { "weight": 1, "sprite": 41 },
+              { "weight": 1, "sprite": 42 },
+              { "weight": 1, "sprite": 212 },
+              { "weight": 1, "sprite": 213 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_shotgun", "fg": [ { "weight": 1, "sprite": 260 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_smg",
+            "fg": [
+              { "weight": 1, "sprite": 43 },
+              { "weight": 1, "sprite": 44 },
+              { "weight": 1, "sprite": 244 },
+              { "weight": 1, "sprite": 245 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_looter", "fg": [ { "weight": 1, "sprite": 257 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_super_psycho",
+            "fg": [ { "weight": 1, "sprite": 45 }, { "weight": 1, "sprite": 46 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "corpse_mon_bandit_super_psycho",
+            "fg": [ { "weight": 1, "sprite": 268 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_bandit_super_snipe",
+            "fg": [ { "weight": 1, "sprite": 47 }, { "weight": 1, "sprite": 48 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "corpse_mon_bandit_super_snipe",
+            "fg": [ { "weight": 1, "sprite": 271 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "mon_bandog", "fg": 49, "bg": 2, "rotates": true },
+          { "id": "corpse_mon_bandog", "fg": 272, "bg": 2, "rotates": true },
+          { "id": "mon_duty_exoskeleton", "fg": 214, "bg": 2, "rotates": true },
+          { "id": "mon_banditbot", "fg": 50, "bg": 2, "rotates": true },
+          { "id": "broken_banditbot", "fg": 52, "bg": 2, "rotates": true },
+          {
+            "id": "mon_cultist_one",
+            "fg": [
+              { "weight": 1, "sprite": 76 },
+              { "weight": 1, "sprite": 77 },
+              { "weight": 1, "sprite": 78 },
+              { "weight": 1, "sprite": 79 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_cultist_two",
+            "fg": [
+              { "weight": 1, "sprite": 80 },
+              { "weight": 1, "sprite": 81 },
+              { "weight": 1, "sprite": 82 },
+              { "weight": 1, "sprite": 83 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_cultist_three",
+            "fg": [ { "weight": 1, "sprite": 84 }, { "weight": 1, "sprite": 85 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_duty_recruit",
+            "fg": [
+              { "weight": 1, "sprite": 188 },
+              { "weight": 1, "sprite": 189 },
+              { "weight": 1, "sprite": 190 },
+              { "weight": 1, "sprite": 191 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_duty_soldier",
+            "fg": [
+              { "weight": 1, "sprite": 192 },
+              { "weight": 1, "sprite": 193 },
+              { "weight": 1, "sprite": 194 },
+              { "weight": 1, "sprite": 195 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_duty_officer",
+            "fg": [ { "weight": 1, "sprite": 196 }, { "weight": 1, "sprite": 197 }, { "weight": 1, "sprite": 198 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_duty_m",
+            "fg": [ { "weight": 1, "sprite": 199 }, { "weight": 1, "sprite": 200 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "mon_maidbot", "fg": 53, "bg": 2, "rotates": true },
+          { "id": "mon_schoolbot", "fg": 55, "bg": 2, "rotates": true },
+          { "id": "broken_maidbot", "fg": 54, "bg": 2, "rotates": true },
+          { "id": "broken_schoolbot", "fg": 56, "bg": 2, "rotates": true },
+          {
+            "id": "mon_un_soldier",
+            "fg": [ { "weight": 1, "sprite": 57 }, { "weight": 1, "sprite": 58 }, { "weight": 1, "sprite": 59 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_mallninja_lite",
+            "fg": [ { "weight": 1, "sprite": 225 }, { "weight": 1, "sprite": 226 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_mallninja_pro",
+            "fg": [ { "weight": 1, "sprite": 227 }, { "weight": 1, "sprite": 228 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_bandit_bow",
+            "fg": [ { "weight": 1, "sprite": 229 }, { "weight": 1, "sprite": 230 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_bow", "fg": 257, "bg": 2, "rotates": true },
+          {
+            "id": "mon_bandit_rifgun",
+            "fg": [ { "weight": 1, "sprite": 231 }, { "weight": 1, "sprite": 232 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_bandit_bow_elite",
+            "fg": [ { "weight": 1, "sprite": 233 }, { "weight": 1, "sprite": 234 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_bow", "fg": 261, "bg": 2, "rotates": true },
+          {
+            "id": "mon_tech_wanderer",
+            "fg": [ { "weight": 1, "sprite": 235 }, { "weight": 1, "sprite": 236 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_bandit_longgun",
+            "fg": [ { "weight": 1, "sprite": 237 }, { "weight": 1, "sprite": 238 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_merc_soldier",
+            "fg": [ { "weight": 1, "sprite": 67 }, { "weight": 1, "sprite": 68 }, { "weight": 1, "sprite": 72 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_merc_shotgun",
+            "fg": [ { "weight": 1, "sprite": 69 }, { "weight": 1, "sprite": 70 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "mon_factobot", "fg": 51, "bg": 2, "rotates": true },
+          { "id": "broken_factobot", "fg": 52, "bg": 2, "rotates": true },
+          { "id": "mon_unbotm", "fg": 60, "bg": 2, "rotates": true },
+          { "id": "broken_unbotm", "fg": 52, "bg": 2, "rotates": true },
+          { "id": "mon_un_guard", "fg": 61, "bg": 2, "rotates": true },
+          {
+            "id": "mon_farmer",
+            "fg": [
+              { "weight": 1, "sprite": 89 },
+              { "weight": 1, "sprite": 90 },
+              { "weight": 1, "sprite": 91 },
+              { "weight": 1, "sprite": 92 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_scav_melee_one",
+            "fg": [ { "weight": 1, "sprite": 86 }, { "weight": 1, "sprite": 87 }, { "weight": 1, "sprite": 88 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_tech_scav",
+            "fg": [ { "weight": 1, "sprite": 215 }, { "weight": 1, "sprite": 216 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_pa",
+            "fg": [
+              { "weight": 1, "sprite": 135 },
+              { "weight": 1, "sprite": 136 },
+              { "weight": 1, "sprite": 137 },
+              { "weight": 1, "sprite": 138 },
+              { "weight": 1, "sprite": 139 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_ra",
+            "fg": [
+              { "weight": 1, "sprite": 135 },
+              { "weight": 1, "sprite": 136 },
+              { "weight": 1, "sprite": 137 },
+              { "weight": 1, "sprite": 138 },
+              { "weight": 1, "sprite": 139 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_ca",
+            "fg": [
+              { "weight": 1, "sprite": 135 },
+              { "weight": 1, "sprite": 136 },
+              { "weight": 1, "sprite": 137 },
+              { "weight": 1, "sprite": 138 },
+              { "weight": 1, "sprite": 139 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_ma",
+            "fg": [
+              { "weight": 1, "sprite": 135 },
+              { "weight": 1, "sprite": 136 },
+              { "weight": 1, "sprite": 137 },
+              { "weight": 1, "sprite": 138 },
+              { "weight": 1, "sprite": 139 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "haunted_doll",
+            "fg": [
+              { "weight": 1, "sprite": 201 },
+              { "weight": 1, "sprite": 202 },
+              { "weight": 1, "sprite": 203 },
+              { "weight": 1, "sprite": 204 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_pb",
+            "fg": [ { "weight": 1, "sprite": 140 }, { "weight": 1, "sprite": 141 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_rb",
+            "fg": [ { "weight": 1, "sprite": 142 }, { "weight": 1, "sprite": 143 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_mb",
+            "fg": [ { "weight": 1, "sprite": 144 }, { "weight": 1, "sprite": 145 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_cb",
+            "fg": [ { "weight": 1, "sprite": 146 }, { "weight": 1, "sprite": 147 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_pc",
+            "fg": [ { "weight": 1, "sprite": 148 }, { "weight": 1, "sprite": 149 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_schoolgirl_rc",
+            "fg": [ { "weight": 1, "sprite": 150 }, { "weight": 1, "sprite": 151 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_kanmusu",
+            "fg": [ { "weight": 1, "sprite": 152 }, { "weight": 1, "sprite": 153 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_kanmusu_ar",
+            "fg": [ { "weight": 1, "sprite": 154 }, { "weight": 1, "sprite": 155 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_kanmusu_am",
+            "fg": [ { "weight": 1, "sprite": 156 }, { "weight": 1, "sprite": 157 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_fbi_op",
+            "fg": [ { "weight": 1, "sprite": 171 }, { "weight": 1, "sprite": 172 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_scav_range_one",
+            "fg": [ { "weight": 1, "sprite": 64 }, { "weight": 1, "sprite": 65 }, { "weight": 1, "sprite": 66 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_prison_one",
+            "fg": [
+              { "weight": 1, "sprite": 105 },
+              { "weight": 1, "sprite": 106 },
+              { "weight": 1, "sprite": 107 },
+              { "weight": 1, "sprite": 108 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_prison_two",
+            "fg": [ { "weight": 1, "sprite": 109 }, { "weight": 1, "sprite": 110 }, { "weight": 1, "sprite": 111 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_toxic_one_m",
+            "fg": [ { "weight": 1, "sprite": 96 }, { "weight": 1, "sprite": 97 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_toxic_one_g",
+            "fg": [ { "weight": 1, "sprite": 98 }, { "weight": 1, "sprite": 99 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_toxic_two_m",
+            "fg": [ { "weight": 1, "sprite": 100 }, { "weight": 1, "sprite": 101 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_toxic_two_g",
+            "fg": [ { "weight": 1, "sprite": 102 }, { "weight": 1, "sprite": 103 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "mon_toxic_three", "fg": 104, "bg": 2, "rotates": true },
+          { "id": "mon_secmaidbot", "fg": 93, "bg": 2, "rotates": true },
+          { "id": "broken_secmaidbot", "fg": 54, "bg": 2, "rotates": true },
+          {
+            "id": "mon_bandit_stalk",
+            "fg": [ { "weight": 1, "sprite": 112 }, { "weight": 1, "sprite": 113 }, { "weight": 1, "sprite": 114 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_stalk", "fg": [ { "weight": 1, "sprite": 263 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_angry_mob_upg",
+            "fg": [
+              { "weight": 1, "sprite": 217 },
+              { "weight": 1, "sprite": 218 },
+              { "weight": 1, "sprite": 219 },
+              { "weight": 1, "sprite": 220 },
+              { "weight": 1, "sprite": 221 },
+              { "weight": 1, "sprite": 222 },
+              { "weight": 1, "sprite": 223 },
+              { "weight": 1, "sprite": 224 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_angry_mob_upg", "fg": [ { "weight": 1, "sprite": 256 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_angry_mob",
+            "fg": [
+              { "weight": 1, "sprite": 115 },
+              { "weight": 1, "sprite": 116 },
+              { "weight": 1, "sprite": 117 },
+              { "weight": 1, "sprite": 118 },
+              { "weight": 1, "sprite": 119 },
+              { "weight": 1, "sprite": 120 },
+              { "weight": 1, "sprite": 121 },
+              { "weight": 1, "sprite": 122 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_angry_mob", "fg": [ { "weight": 1, "sprite": 256 } ], "bg": 2, "rotates": false },
+          { "id": "mon_banwardog", "fg": 123, "bg": 2, "rotates": true },
+          { "id": "corpse_mon_banwardog", "fg": 273, "bg": 2, "rotates": true },
+          {
+            "id": "mon_bandit_shock",
+            "fg": [ { "weight": 1, "sprite": 124 }, { "weight": 1, "sprite": 125 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_mon_bandit_shock", "fg": [ { "weight": 1, "sprite": 270 } ], "bg": 2, "rotates": false },
+          {
+            "id": "mon_bandit_powder",
+            "fg": [ { "weight": 1, "sprite": 126 }, { "weight": 1, "sprite": 127 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_shelterling_g",
+            "fg": [ { "weight": 1, "sprite": 206 }, { "weight": 1, "sprite": 207 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_shelterling",
+            "fg": [
+              { "weight": 1, "sprite": 208 },
+              { "weight": 1, "sprite": 209 },
+              { "weight": 1, "sprite": 210 },
+              { "weight": 1, "sprite": 211 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          { "id": "corpse_haunted_doll", "fg": 205, "rotates": false },
+          {
+            "id": "mon_redneck_shotgun",
+            "fg": [
+              { "weight": 1, "sprite": 167 },
+              { "weight": 1, "sprite": 168 },
+              { "weight": 1, "sprite": 169 },
+              { "weight": 1, "sprite": 170 }
+            ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_ban_scientist",
+            "fg": [ { "weight": 1, "sprite": 173 }, { "weight": 1, "sprite": 174 }, { "weight": 1, "sprite": 175 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_ban_sci_smg",
+            "fg": [ { "weight": 1, "sprite": 176 }, { "weight": 1, "sprite": 177 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_ban_sci_p",
+            "fg": [ { "weight": 1, "sprite": 178 }, { "weight": 1, "sprite": 179 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_ban_sci_b",
+            "fg": [ { "weight": 1, "sprite": 180 }, { "weight": 1, "sprite": 181 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_strike_witch",
+            "fg": [ { "weight": 1, "sprite": 128 }, { "weight": 1, "sprite": 129 } ],
+            "bg": 2,
+            "rotates": false
+          },
+          {
+            "id": "mon_bandit_stalk_elite",
+            "fg": [ { "weight": 1, "sprite": 250 }, { "weight": 1, "sprite": 251 }, { "weight": 1, "sprite": 252 } ],
+            "bg": 2,
+            "rotates": false
+          }
+        ],
+        "//": "range 1 to 64",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  }
+]

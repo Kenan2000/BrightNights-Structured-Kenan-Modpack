@@ -1,0 +1,57 @@
+[
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "prison_one",
+    "entries": [
+      { "group": "prisoner_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "prisoner_drops",
+    "items": [
+      [ "jumpsuit", 80 ],
+      [ "pointy_stick", 5 ],
+      [ "spear_wood", 5 ],
+      [ "bwirebat", 3 ],
+      [ "i_staff", 1 ],
+      [ "sword_wood", 2 ],
+      [ "switchblade", 2 ],
+      [ "baton-extended", 2 ],
+      [ "knife_butcher", 2 ],
+      [ "golf_club", 2 ],
+      [ "longsword_inferior", 1 ],
+      [ "oxycodone", 4 ],
+      [ "morphine", 2 ],
+      [ "tramadol", 2 ],
+      [ "xanax", 1 ],
+      [ "adderall", 1 ],
+      [ "thorazine", 3 ],
+      [ "prozac", 3 ]
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "prison_two",
+    "entries": [
+      { "group": "prisoner_drops", "damage": [ 0, 4 ] },
+      { "group": "prisoner_armor_drops", "damage": [ 0, 4 ], "prob": 80 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "prisoner_armor_drops",
+    "items": [
+      [ "pot_helmet", 10 ],
+      [ "cuirass_scrap", 35 ],
+      [ "helmet_football", 5 ],
+      [ "spear_wood", 5 ],
+      [ "knife_combat", 5 ],
+      [ "ax", 3 ],
+      [ "i_staff", 1 ],
+      [ "longsword_inferior", 1 ]
+    ]
+  }
+]

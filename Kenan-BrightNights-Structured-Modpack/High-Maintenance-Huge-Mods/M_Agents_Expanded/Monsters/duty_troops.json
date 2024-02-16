@@ -1,0 +1,551 @@
+[
+  {
+    "type": "MONSTER",
+    "id": "mon_duty_recruit",
+    "name": { "str": "Duty recruit" },
+    "default_faction": "f_duty",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "symbol": "d",
+    "color": "red",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "material": [ "flesh" ],
+    "diff": 15,
+    "aggression": 100,
+    "morale": 100,
+    "regen_morale": true,
+    "speed": 95,
+    "melee_skill": 2,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 1,
+    "dodge": 1,
+    "armor_bash": 9,
+    "armor_cut": 9,
+    "armor_stab": 9,
+    "armor_bullet": 9,
+    "armor_acid": 2,
+    "vision_day": 40,
+    "vision_night": 2,
+    "path_settings": { "max_dist": 10, "allow_open_doors": true, "allow_climb_stairs": true },
+    "death_drops": { "subtype": "collection", "groups": [ [ "mon_duty_recruit_death_drops", 100 ] ] },
+    "upgrades": { "into": "mon_duty_soldier", "half_life": 24 },
+    "hp": 60,
+    "death_function": [ "NORMAL" ],
+    "starting_ammo": { "9x18mm": 24 },
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "gun_type": "makarov",
+        "ammo_type": "9x18mm",
+        "max_ammo": 100,
+        "fake_str": 11,
+        "fake_dex": 8,
+        "fake_per": 7,
+        "fake_skills": [ [ "gun", 2 ], [ "pistol", 2 ] ],
+        "move_cost": 150,
+        "targeting_cost": 30,
+        "ranges": [ [ 3, 15, "DEFAULT" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "description": "The recruit's pistol explodes in light and sound!",
+        "targeting_sound": "Get out of here, stalker!",
+        "targeting_volume": 50,
+        "no_ammo_sound": "chk chk!"
+      }
+    ],
+    "description": "A recruit whose interest in the zone led them to joining Duty, a faction whose primary interest is maintaning some semblance of order within the New England Exclusion Zone.",
+    "flags": [
+      "HUMAN",
+      "GOODHEARING",
+      "GROUP_MORALE",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ],
+    "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
+    "fear_triggers": [ "FRIEND_DIED", "SOUND", "FIRE" ],
+    "placate_triggers": [ "PLAYER_WEAK", "SOUND", "MEAT" ],
+    "categories": [ "CLASSIC" ]
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_duty_officer",
+    "name": { "str": "Duty officer" },
+    "default_faction": "f_duty",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "symbol": "d",
+    "color": "red",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "material": [ "flesh" ],
+    "diff": 15,
+    "aggression": 100,
+    "morale": 100,
+    "regen_morale": true,
+    "speed": 95,
+    "melee_skill": 4,
+    "melee_dice": 2,
+    "melee_dice_sides": 6,
+    "melee_cut": 4,
+    "dodge": 4,
+    "armor_bash": 9,
+    "armor_cut": 9,
+    "armor_stab": 9,
+    "armor_bullet": 9,
+    "armor_acid": 2,
+    "vision_day": 40,
+    "vision_night": 2,
+    "path_settings": { "max_dist": 10, "allow_open_doors": true, "allow_climb_stairs": true },
+    "death_drops": { "subtype": "collection", "groups": [ [ "mon_duty_officer_death_drops", 100 ] ] },
+    "hp": 90,
+    "death_function": [ "NORMAL" ],
+    "starting_ammo": { "9x18mm": 24 },
+    "special_attacks": [
+      [ "BIO_OP_TAKEDOWN", 20 ],
+      {
+        "type": "gun",
+        "cooldown": 5,
+        "gun_type": "makarov",
+        "ammo_type": "9x18mm",
+        "max_ammo": 100,
+        "fake_str": 11,
+        "fake_dex": 8,
+        "fake_per": 7,
+        "fake_skills": [ [ "gun", 4 ], [ "pistol", 4 ] ],
+        "move_cost": 150,
+        "targeting_cost": 30,
+        "ranges": [ [ 3, 15, "DEFAULT" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "description": "The officer's pistol explodes in light and sound!",
+        "targeting_sound": "Get out of here, stalker!",
+        "targeting_volume": 50,
+        "no_ammo_sound": "chk chk!"
+      }
+    ],
+    "description": "An officer whose interest in the zone led them to joining Duty, a faction whose primary interest is maintaning some semblance of order within the New England Exclusion Zone.",
+    "flags": [
+      "HUMAN",
+      "GOODHEARING",
+      "GROUP_MORALE",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ],
+    "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
+    "fear_triggers": [ "FRIEND_DIED", "SOUND", "FIRE" ],
+    "placate_triggers": [ "PLAYER_WEAK", "SOUND", "MEAT" ],
+    "categories": [ "CLASSIC" ]
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_duty_soldier",
+    "name": { "str": "Duty soldier" },
+    "default_faction": "f_duty",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "symbol": "D",
+    "color": "red_white",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "material": [ "flesh" ],
+    "diff": 25,
+    "aggression": 100,
+    "morale": 100,
+    "regen_morale": true,
+    "speed": 95,
+    "melee_skill": 7,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_cut": 6,
+    "dodge": 3,
+    "armor_bash": 11,
+    "armor_cut": 9,
+    "armor_stab": 7,
+    "armor_bullet": 7,
+    "armor_acid": 15,
+    "vision_day": 60,
+    "vision_night": 10,
+    "path_settings": { "max_dist": 10, "allow_open_doors": true, "allow_climb_stairs": true },
+    "death_drops": { "subtype": "collection", "groups": [ [ "mon_duty_soldier_death_drops", 100 ] ] },
+    "hp": 100,
+    "death_function": [ "NORMAL" ],
+    "special_attacks": [
+      [ "GRAB", 5 ],
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "gun_type": "ak47",
+        "ammo_type": "762_m43",
+        "max_ammo": 500,
+        "fake_str": 4,
+        "fake_dex": 5,
+        "fake_per": 3,
+        "fake_int": 1,
+        "fake_skills": [ [ "gun", 5 ], [ "rifle", 5 ] ],
+        "move_cost": 100,
+        "targeting_cost": 40,
+        "ranges": [ [ 4, 35, "BURST" ], [ 4, 35, "AUTO" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "targeting_volume": 20,
+        "description": "P-P-P-POW",
+        "no_ammo_sound": "chk, chk!"
+      }
+    ],
+    "starting_ammo": { "762_m43": 150 },
+    "description": "A soldier whose interest in the zone led them to joining Duty, a faction whose primary interest is maintaning some semblance of order within the New England Exclusion Zone.",
+    "flags": [
+      "HUMAN",
+      "GROUP_MORALE",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "HIT_AND_RUN",
+      "CAN_OPEN_DOORS",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ],
+    "anger_triggers": [ "FRIEND_DIED", "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
+    "fear_triggers": [ "FIRE" ],
+    "placate_triggers": [ "PLAYER_WEAK", "SOUND", "MEAT" ]
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_duty_m",
+    "name": { "str": "armored Duty trooper" },
+    "default_faction": "f_duty",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "symbol": "d",
+    "color": "pink",
+    "volume": "62500 ml",
+    "weight": "83500 g",
+    "material": [ "flesh" ],
+    "diff": 10,
+    "aggression": 100,
+    "morale": 100,
+    "speed": 85,
+    "melee_skill": 3,
+    "melee_dice": 3,
+    "melee_dice_sides": 6,
+    "melee_cut": 2,
+    "dodge": 3,
+    "armor_bash": 8,
+    "armor_cut": 10,
+    "armor_stab": 13,
+    "armor_bullet": 13,
+    "vision_day": 40,
+    "vision_night": 8,
+    "path_settings": { "max_dist": 10, "allow_open_doors": true, "allow_climb_stairs": true },
+    "death_drops": { "subtype": "collection", "groups": [ [ "un_melee", 100 ] ] },
+    "hp": 85,
+    "death_function": [ "NORMAL" ],
+    "description": "A soldier whose interest in the zone led them to joining Duty, a faction whose primary interest is maintaning some semblance of order within the New England Exclusion Zone. This one has eschewed firearms in lieu of a riot shield and a baton, watch out!",
+    "flags": [
+      "HUMAN",
+      "GROUP_MORALE",
+      "GROUP_BASH",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "FILTHY",
+      "WARM",
+      "BASHES",
+      "CAN_OPEN_DOORS",
+      "PUSH_MON",
+      "PATH_AVOID_DANGER_1",
+      "SWARMS"
+    ],
+    "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
+    "placate_triggers": [ "MEAT" ],
+    "categories": [ "CLASSIC" ]
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_duty_exoskeleton",
+    "name": { "str": "Duty exoskeleton soldier" },
+    "default_faction": "f_duty",
+    "bodytype": "human",
+    "species": [ "HUMAN" ],
+    "symbol": "D",
+    "color": "red_white",
+    "volume": "62500 ml",
+    "weight": "81500 g",
+    "material": [ "flesh" ],
+    "diff": 25,
+    "aggression": 100,
+    "morale": 100,
+    "regen_morale": true,
+    "speed": 95,
+    "melee_skill": 7,
+    "melee_dice": 3,
+    "melee_dice_sides": 5,
+    "melee_cut": 6,
+    "dodge": 3,
+    "armor_bash": 20,
+    "armor_cut": 25,
+    "armor_stab": 20,
+    "armor_acid": 35,
+    "armor_bullet": 20,
+    "vision_day": 60,
+    "vision_night": 10,
+    "path_settings": { "max_dist": 10, "allow_open_doors": true, "allow_climb_stairs": true },
+    "death_drops": { "subtype": "collection", "groups": [ [ "mon_duty_exoskeleton_death_drops", 100 ] ] },
+    "hp": 100,
+    "death_function": [ "NORMAL" ],
+    "special_attacks": [
+      {
+        "type": "gun",
+        "cooldown": 4,
+        "gun_type": "m249",
+        "ammo_type": "223",
+        "max_ammo": 100,
+        "fake_str": 4,
+        "fake_dex": 3,
+        "fake_per": 3,
+        "fake_int": 1,
+        "fake_skills": [ [ "gun", 4 ], [ "rifle", 3 ] ],
+        "move_cost": 250,
+        "targeting_cost": 150,
+        "targeting_volume": 20,
+        "ranges": [ [ 4, 17, "DEFAULT" ], [ 3, 17, "BURST" ], [ 4, 20, "AUTO" ] ],
+        "require_targeting_player": true,
+        "require_targeting_npc": true,
+        "require_targeting_monster": true,
+        "description": "CRACK!!",
+        "no_ammo_sound": "chk!"
+      }
+    ],
+    "starting_ammo": { "223": 250 },
+    "description": "A soldier whose interest in the zone led them to joining Duty, a faction whose primary interest is maintaning some semblance of order within the New England Exclusion Zone. This one wears a powerful exoskeleton!",
+    "flags": [
+      "HUMAN",
+      "GROUP_MORALE",
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "WARM",
+      "SWARMS",
+      "BASHES",
+      "HIT_AND_RUN",
+      "CAN_OPEN_DOORS",
+      "PATH_AVOID_DANGER_1",
+      "PUSH_MON"
+    ],
+    "anger_triggers": [ "FRIEND_DIED", "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ],
+    "placate_triggers": [ "PLAYER_WEAK", "SOUND", "MEAT" ]
+  },
+  {
+    "id": "mon_duty_recruit_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 60,
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ],
+        "prob": 33
+      },
+      {
+        "distribution": [
+          { "group": "duty_pistol", "prob": 3 },
+          { "group": "guns_pistol_common", "prob": 1 }
+        ],
+        "prob": 1
+      },
+      { "group": "infantry_common_gear", "prob": 37 },
+      { "group": "military_standard_grenades", "prob": 33 },
+      { "group": "military_patrol_food" },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "cash_card", "prob": 10, "charges": [ 0, 50000 ] },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "duty_pistol",
+    "entries": [
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "duty_ninemm", "damage": [ 0, 3 ], "prob": 1 },
+      { "group": "duty_pistol_ammo", "prob": 78 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "duty_ninemm",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [ [ "makarov", 1 ], [ "skorpion_82", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "duty_pistol_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "9x18mm", "prob": 80 },
+      { "item": "9x18mmP2", "prob": 25 },
+      { "item": "9x18mmfmj", "prob": 20 },
+      { "item": "reloaded_9x18mm", "prob": 25 },
+      { "item": "reloaded_9x18mmP2", "prob": 25 },
+      { "item": "reloaded_9x18mmfmj", "prob": 15 }
+    ]
+  },
+  {
+    "id": "mon_duty_soldier_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 60,
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ],
+        "prob": 33
+      },
+      {
+        "distribution": [
+          { "group": "duty_rifle", "prob": 3 },
+          { "group": "guns_rifle_milspec", "prob": 1 }
+        ],
+        "prob": 1
+      },
+      { "group": "infantry_common_gear", "prob": 37 },
+      { "group": "military_standard_grenades", "prob": 33 },
+      { "group": "military_patrol_food" },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "cash_card", "prob": 10, "charges": [ 0, 50000 ] },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "duty_rifle",
+    "entries": [
+      { "group": "bags", "damage": [ 0, 3 ], "prob": 20 },
+      { "group": "duty_akmm", "damage": [ 0, 3 ], "prob": 1 },
+      { "group": "duty_rifle_ammo", "prob": 78 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "distribution",
+    "id": "duty_akmm",
+    "ammo": 60,
+    "magazine": 60,
+    "items": [ [ "ak47", 3 ], [ "sks", 1 ] ]
+  },
+  {
+    "type": "item_group",
+    "id": "duty_rifle_ammo",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "762_m43", "prob": 80 },
+      { "item": "762_m87", "prob": 25 },
+      { "item": "reloaded_762_m43", "prob": 20 },
+      { "item": "reloaded_762_m87", "prob": 25 }
+    ]
+  },
+  {
+    "id": "mon_duty_officer_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 60,
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ],
+        "prob": 33
+      },
+      {
+        "distribution": [
+          { "group": "duty_pistol", "prob": 3 },
+          { "group": "guns_pistol_common", "prob": 1 }
+        ],
+        "prob": 1
+      },
+      { "group": "infantry_common_gear", "prob": 37 },
+      { "group": "military_standard_grenades", "prob": 33 },
+      { "group": "military_patrol_food" },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "id_military", "prob": 90 },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "id": "mon_duty_exoskeleton_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "magazine": 100,
+    "ammo": 60,
+    "entries": [
+      {
+        "distribution": [
+          { "group": "clothing_soldier_set", "prob": 65, "damage": [ 1, 4 ] },
+          { "group": "clothing_soldier_winter_set", "prob": 35, "damage": [ 1, 4 ] }
+        ],
+       "prob": 33
+      },
+      {
+        "distribution": [
+          { "group": "guns_rifle_milspec", "prob": 3 }
+        ],
+        "prob": 1
+      },
+      { "group": "infantry_common_gear", "prob": 37 },
+      { "group": "military_standard_grenades", "prob": 33 },
+      { "group": "military_patrol_food" },
+      { "distribution": [ { "group": "infantry_officer_gear" }, { "group": "infantry_medical_gear" } ], "prob": 25 },
+      { "item": "id_military", "prob": 20 },
+      { "item": "powered_exoskeleton", "prob": 90, "damage": [ 0, 3 ] },
+      { "group": "misc_smoking", "prob": 30 }
+    ]
+  },
+  {
+    "name": "GROUP_MIL_DUTY",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_duty_recruit", "freq": 100, "cost_multiplier": 2, "pack_size": [ 1, 3 ] },
+      { "monster": "mon_duty_officer", "freq": 15, "cost_multiplier": 5 },
+      { "monster": "mon_duty_exoskeleton", "freq": 4, "cost_multiplier": 1 },
+      { "monster": "mon_duty_exoskeleton", "freq": 5, "cost_multiplier": 1, "starts": 75 },
+      { "monster": "mon_duty_recruit", "freq": 50, "cost_multiplier": 10, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_duty_m", "freq": 50, "cost_multiplier": 5, "pack_size": [ 1, 3 ] }
+    ]
+  }
+]
+
+
+

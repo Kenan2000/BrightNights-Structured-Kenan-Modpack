@@ -1,0 +1,36 @@
+[
+  {
+    "id": "TALK_amg_leader_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": "Can't you see that I'm busy? whatever you wan't make sure it's important.",
+      "no": "Can't you see that I'm busy? whatever you wan't make sure it's important."
+        },
+    "responses": [
+      {
+        "text": "What's it like being a leader of a militia?", "topic": "TALK_agm_leader_go"
+      },
+      {
+        "text": "Do you have a task for me?",
+        "topic": "TALK_MISSION_LIST"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+	  ]
+	},
+  {
+    "id": "TALK_agm_leader_go",
+    "type": "talk_topic",
+    "dynamic_line": "To be honest with you, it's easier now then it was when the society was still the way it was only a short while ago. The new denizens of New England might be dangerous, but we can organize without the same fear of powerful institutions bearing down on us at the slightest whiff of our presence.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+  
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_TOXIC_SCAV_A",
+    "default": "mon_toxic_one_m",
+    "monsters": [
+      { "monster": "mon_toxic_one_m", "freq": 8, "cost_multiplier": 3 },
+      { "monster": "mon_toxic_one_m", "freq": 6, "cost_multiplier": 4 },
+      { "monster": "mon_toxic_one_g", "freq": 5, "cost_multiplier": 5 },
+      { "monster": "mon_toxic_one_m", "freq": 10, "cost_multiplier": 6, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_toxic_three", "freq": 1, "cost_multiplier": 25, "starts": 300 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_TOXIC_SCAV_B",
+    "default": "mon_toxic_one_m",
+    "monsters": [
+      { "monster": "mon_toxic_one_m", "freq": 8, "cost_multiplier": 3, "pack_size": [ 2, 5 ] },
+      { "monster": "mon_toxic_one_m", "freq": 6, "cost_multiplier": 4 },
+      { "monster": "mon_toxic_one_g", "freq": 5, "cost_multiplier": 5, "pack_size": [ 1, 5 ] },
+      { "monster": "mon_toxic_one_m", "freq": 10, "cost_multiplier": 6, "pack_size": [ 1, 4 ] },
+      { "monster": "mon_toxic_three", "freq": 1, "cost_multiplier": 25, "starts": 350 }
+    ]
+  }
+]

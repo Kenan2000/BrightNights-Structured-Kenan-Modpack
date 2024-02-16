@@ -1,0 +1,230 @@
+[
+  {
+    "type": "npc",
+    "id": "mak_bear_trooper",
+    "name_suffix": "BEAR Trooper",
+    "//": "If Mission set to 0, then they walk around.",
+    "class": "mak_bear_trooper_npc",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_fo_bear_trooper_start",
+    "faction": "fac_fo_BEAR"
+  },
+  {
+    "type": "npc_class",
+    "id": "mak_bear_trooper_npc",
+    "name": { "str": "bear Trooper" },
+    "job_description": "Is a soldier representing United Security.",
+    "traits": [ { "group": "NPC_starting_traits" }, { "group": "Hair_Any" } ],
+    "common": false,
+    "bonus_str": { "rng": [ -3, 3 ] },
+    "bonus_dex": { "rng": [ -3, 3 ] },
+    "bonus_int": { "rng": [ -3, 3 ] },
+    "bonus_per": { "rng": [ -3, 3 ] },
+    "worn_override": "NC_bearTROOP_worn",
+    "carry_override": "NC_bearTROOP_carry",
+    "weapon_override": "NC_bearTROOP_weapon",
+    "skills": [
+      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
+      { "skill": "dodge", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "melee", "bonus": { "rng": [ 0, 1 ] } },
+      { "skill": "unarmed", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "rifle", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "survival", "bonus": { "rng": [ 0, 2 ] } },
+      { "skill": "gun", "bonus": { "rng": [ 1, 3 ] } }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_bearTROOP_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drops_bear_trooper_jacket", "prob": 65 },
+      { "group": "drops_bear_trooper_pants" },
+      { "group": "drops_bear_trooper_shirt" },
+      { "group": "drops_bear_trooper_vest", "prob": 70 },
+      { "group": "drops_bear_trooper_bag", "prob": 85 },
+      { "group": "drops_bear_trooper_hat", "prob": 85 },
+      { "item": "socks" },
+      { "item": "boots" },
+      { "group": "drops_bear_trooper_pouch", "prob": 50 },
+      { "item": "bandolier_rifle", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_bearTROOP_carry",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drugs_heal_simple", "count": [ 1, 2 ], "prob": 50 },
+      { "group": "drops_bear_trooper_melee", "prob": 55 },
+      { "group": "military", "count": [ 1, 2 ], "prob": 40 },
+      { "group": "mil_food", "count": [ 1, 2 ], "prob": 75 },
+      { "item": "akmag30", "charges": 30, "count": [ 1, 3 ] },
+      { "item": "akmag10", "charges": 10, "prob": 20 },
+      { "item": "akdrum75", "charges": 70, "prob": 8 },
+      { "item": "ak74mag", "charges": 30, "prob": 8 },
+      { "item": "augmag_30rd", "charges": 30, "prob": 40 },
+      { "item": "grenade", "prob": 15 },
+      { "item": "762_m43", "prob": 85 },
+      { "item": "545", "prob": 85 },
+      { "item": "762_54R", "prob": 85 },
+      { "group": "ammo_rifle_common", "prob": 65 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "NC_bearTROOP_weapon",
+    "subtype": "collection",
+    "entries": [
+      { "group": "drops_bear_trooper_ranged" }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_pouch",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "legpouch", "prob": 25 },
+      { "item": "legpouch_large", "prob": 25 },
+      { "item": "chestrig", "prob": 55 },
+      { "item": "chestpouch", "prob": 25 },
+      { "item": "tacvest", "prob": 25 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_pants",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "pants_army", "prob": 25 },
+      { "item": "winter_pants_army", "prob": 25 },
+      { "item": "pants_cargo", "prob": 25 },
+      { "item": "jeans", "prob": 25 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_shirt",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "sweater", "prob": 25 },
+      { "item": "dress_shirt", "prob": 25 },
+      { "item": "longshirt", "prob": 25 },
+      { "item": "tshirt", "prob": 25 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_jacket",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jacket_army", "prob": 55 },
+      { "item": "winter_jacket_army", "prob": 25 },
+      { "item": "jacket_light", "prob": 25 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_vest",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "modularvest", "prob": 55 },
+      { "item": "modularvestceramic", "prob": 15 },
+      { "item": "modularvesthard", "prob": 15 },
+      { "item": "modularvestsuper", "prob": 3 },
+      { "item": "dragonskin", "prob": 25 },
+      { "item": "kevlar", "prob": 35 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_bag",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "molle_pack", "prob": 55 },
+      { "item": "backpack", "prob": 15 },
+      { "item": "daypack", "prob": 5 },
+      { "item": "dump_pouch", "prob": 25 },
+      { "item": "runner_bag", "prob": 10 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_hat",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "helmet_army", "prob": 55 },
+      { "item": "tac_helmet", "prob": 15 },
+      { "item": "tac_fullhelmet", "prob": 5 },
+      { "item": "hat_boonie", "prob": 10 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_ranged",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "ak74", "prob": 25, "charges": 30 },
+      { "item": "an94", "prob": 10, "charges": 30 },
+      { "item": "ak47", "prob": 65, "charges": 30 },
+      { "item": "arx160", "prob": 10, "charges": 30 },
+      { "item": "sks", "prob": 10, "charges": 30 },
+      { "item": "aksemi", "prob": 10, "charges": 30 },
+      { "item": "draco", "prob": 10, "charges": 30 },
+      { "item": "mosin44", "prob": 25, "charges": 30 },
+      { "item": "mosin91_30", "prob": 10, "charges": 30 },
+      { "item": "mosin91_30_ebr", "prob": 10, "charges": 30 }
+
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "drops_bear_trooper_melee",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "knife_combat", "prob": 10 },
+      { "item": "knife_folding", "prob": 5 },
+      { "item": "knife_rambo", "prob": 10 },
+      { "item": "knife_trench", "prob": 10 },
+      { "item": "knife_steak", "prob": 3 }
+
+    ]
+  },
+  {
+    "id": "TALK_fo_bear_trooper_start",
+    "type": "talk_topic",
+    "dynamic_line": {
+      "u_female": true,
+      "yes": [ "How are you even speaking to me." ],
+      "no": [ "How are you even speaking to me." ]
+        },
+    "responses": [
+      {
+        "text": "What kind of trooper are you?", "topic": "TALK_fo_bear_trooper_go"
+      },
+      {
+        "text": "Goodbye.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  },
+  {
+    "id": "TALK_fo_bear_trooper_go",
+    "type": "talk_topic",
+    "dynamic_line": "How are you even speaking to me, but whatever.",
+    "responses": [
+      {
+        "text": "Thanks for the info.",
+        "topic": "TALK_DONE"
+      }
+    ]
+  }
+]

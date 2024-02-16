@@ -1,0 +1,66 @@
+[
+  {
+    "type": "recipe",
+    "result": "bullet_electric_crossbow",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "electronics", 2 ] ],
+    "difficulty": 3,
+    "time": "15 m",
+    "reversible": true,
+    "decomp_learn": 2,
+    "book_learn": [ [ "recipe_bows", 1 ], [ "manual_archery", 3 ], [ "book_archery", 2 ] ],
+    "qualities": [ { "id": "SCREW", "level": 1 }, { "id": "WRENCH", "level": 1 } ],
+    "components": [ [ [ "2x4", 2 ], [ "stick", 4 ] ], [ [ "e_scrap", 5 ] ], [ [ "amplifier", 1 ] ], [ [ "scrap", 1 ] ],[ [ "motor_small", 1 ] ], [ [ "cordage_superior", 3, "LIST" ] ], [ [ "leather", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "heavycoilgun",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "electronics",
+    "skills_required": [ "gun", 2 ],
+    "difficulty": 3,
+    "time": "40 m",
+    "reversible": true,
+    "book_learn": [ [ "advanced_electronics", 3 ], [ "textbook_electronics", 3 ], [ "textbook_anarch", 4 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
+    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 5 ] ] ],
+    "components": [ [ [ "pipe", 3 ] ], [ [ "power_supply", 2 ] ], [ [ "motor_tiny", 2 ] ], [ [ "amplifier", 2 ] ], [ [ "scrap", 15 ] ], [ [ "cable", 20 ] ], [ [ "metal_tank", 1 ] ], [ [ "sheet_metal_small", 5 ] ], [ [ "e_scrap", 10 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bbgun_mag",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_RANGED",
+    "skill_used": "electronics",
+    "skills_required": [ "gun", 2 ],
+    "difficulty": 3,
+    "time": "40 m",
+    "reversible": true,
+    "book_learn": [ [ "advanced_electronics", 3 ], [ "textbook_electronics", 3 ], [ "textbook_anarch", 4 ] ],
+    "qualities": [ { "id": "SAW_M_FINE", "level": 1 } ],
+    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 5 ] ] ],
+    "components": [ [ [ "cable", 30 ] ], [ [ "bbgun", 1 ] ], [ [ "amplifier", 2 ] ], [ [ "scrap", 13 ], [ "sheet_metal_small", 2 ], [ "steel_lump", 2 ] ], [ [ "e_scrap", 3 ] ] ]
+  },
+  {
+    "result": "bearimag",
+    "type": "recipe",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MAGAZINES",
+    "skill_used": "fabrication",
+    "difficulty": 1,
+    "skills_required": [ "gun", 2 ],
+    "time": "8 m",
+    "autolearn": true,
+    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "small_repairkit", 10 ], [ "large_repairkit", 5 ] ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "SCREW", "level": 1 } ],
+    "components": [
+      [ [ "can_drink_unsealed", 1 ], [ "can_food_unsealed", 1 ], [ "canister_empty", 1 ] ],
+      [ [ "spring", 1 ] ],
+      [ [ "scrap", 3 ] ],
+      [ [ "duct_tape", 40 ] ]
+    ]
+  }
+]

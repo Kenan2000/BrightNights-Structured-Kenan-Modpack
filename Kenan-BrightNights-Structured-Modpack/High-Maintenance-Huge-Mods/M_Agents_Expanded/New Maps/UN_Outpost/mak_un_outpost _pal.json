@@ -1,0 +1,83 @@
+[
+  {
+    "type": "palette",
+    "id": "MAK_PAL_UNPOST",
+    "terrain": {
+      "C": "t_chainfence",
+      "c": "t_chaingate_c",
+      "W": "t_concrete_wall",
+      "w": "t_wall_metal",
+      "Q": "t_door_metal_c",
+      "T": "t_linoleum_white",
+      "t": "t_linoleum_white",
+      "q": "t_door_c",
+      "E": "t_linoleum_white",
+      "e": "t_strconc_floor",
+      "R": "t_floor",
+      "r": "t_floor",
+      "1": "t_floor",
+      "Y": "t_floor",
+      "y": "t_floor",
+      "U": "t_floor",
+      "u": "t_plut_generator",
+      "2": "t_strconc_floor",
+      "*": "t_thconc_floor_olight",
+      "3": "t_strconc_floor",
+      "I": "t_strconc_floor",
+      "O": "t_region_groundcover"
+    },
+    "furniture": {
+      "t": "f_toilet",
+      "E": "f_sink",
+      "r": "f_bunkbed",
+      "1": "f_locker",
+      "Y": "f_counter",
+      "y": "f_table",
+      "U": "f_chair",
+      "2": "f_locker",
+      "3": "f_rack",
+      "I": "f_table",
+      "O": "f_sandbag_half"
+    },
+    "items": {
+      "I": [ { "item": "mil_food", "chance": 25, "repeat": [ 1, 2 ] }, { "item": "dining", "chance": 25, "repeat": [ 1, 2 ] } ],
+      "y": [
+        { "item": "book_military", "chance": 35, "repeat": [ 1, 2 ] },
+        { "item": "book_survival", "chance": 30, "repeat": [ 1, 2 ] },
+        { "item": "dining", "chance": 25, "repeat": [ 1, 2 ] }
+      ],
+      "Y": [
+        { "item": "guns_rifle_milspec", "chance": 21, "repeat": [ 1, 3 ] },
+        { "item": "energy_weapon_armory", "chance": 11 },
+        { "item": "ammo_milspec", "chance": 23, "repeat": [ 2, 4 ] },
+        { "item": "grenades", "chance": 22, "repeat": [ 1, 3 ] },
+        { "item": "guns_launcher_milspec", "chance": 23 },
+        { "item": "mags_milspec", "chance": 23, "repeat": [ 3, 4 ] }
+      ],
+      "1": [
+        { "item": "bunker_basement_clothing", "chance": 30, "repeat": [ 2, 4 ] },
+        { "item": "military_patrol_food", "chance": 45, "repeat": [ 2, 4 ] },
+        { "item": "infantry_common_gear", "chance": 30, "repeat": [ 1, 3 ] },
+        { "item": "military", "chance": 25, "repeat": [ 2, 4 ] },
+        { "item": "army_personal_locker", "chance": 65, "repeat": [ 3, 5 ] },
+        { "item": "un_geardrop_gear", "chance": 50, "repeat": [ 1, 3 ] }
+      ],
+      "2": [
+        { "item": "hardware_plumbing", "chance": 21, "repeat": [ 1, 3 ] },
+        { "item": "supplies_mechanics", "chance": 11 },
+        { "item": "supplies_metal", "chance": 11 },
+        { "item": "ammo_any_batteries_full", "chance": 65, "repeat": [ 2, 3 ] },
+        { "item": "metal_workshop", "chance": 65, "repeat": [ 2, 3 ] },
+        { "item": "trash_junkyard", "chance": 45, "repeat": [ 2, 3 ] }
+      ],
+      "3": [
+        { "item": "guns_rifle_milspec", "chance": 21, "repeat": [ 1, 3 ] },
+        { "item": "energy_weapon_armory", "chance": 11 },
+        { "item": "ammo_milspec", "chance": 35, "repeat": [ 2, 4 ] },
+        { "item": "grenades", "chance": 22, "repeat": [ 1, 3 ] },
+        { "item": "guns_launcher_milspec", "chance": 23 },
+        { "item": "mags_milspec", "chance": 23, "repeat": [ 3, 4 ] }
+      ]
+    }
+  }
+]
