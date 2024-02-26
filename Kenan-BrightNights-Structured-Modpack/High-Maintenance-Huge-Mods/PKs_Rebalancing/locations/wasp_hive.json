@@ -1,7 +1,7 @@
 [
   {
     "type": "monstergroup",
-    "name": "GROUP_WASP",
+    "name": "GROUP_WASP_NEST",
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_wasp", "freq": 335, "cost_multiplier": 1 },
@@ -16,7 +16,7 @@
   },
   {
     "type": "monstergroup",
-    "name": "GROUP_WASP_CENTER",
+    "name": "GROUP_WASP_QUEEN",
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_wasp", "freq": 400, "cost_multiplier": 1 },
@@ -99,8 +99,8 @@
         " ": { "item": "wasp_center", "chance": 1 }
       },
       "place_monsters": [
-        { "monster": "GROUP_WASP_CENTER", "x": [ 1, 22 ], "y": [ 1, 22 ], "repeat": [ 1, 2 ] },
-        { "monster": "GROUP_WASP_CENTER", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
+        { "monster": "GROUP_WASP_NEST", "x": [ 1, 22 ], "y": [ 1, 22 ], "repeat": [ 1, 2 ] },
+        { "monster": "GROUP_WASP_QUEEN", "x": [ 1, 22 ], "y": [ 1, 22 ], "chance": 3 }
       ]
     }
   }

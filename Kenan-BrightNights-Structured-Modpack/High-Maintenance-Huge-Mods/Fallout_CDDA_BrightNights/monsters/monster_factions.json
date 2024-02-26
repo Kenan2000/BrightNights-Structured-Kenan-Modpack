@@ -2,22 +2,42 @@
   {
     "type": "MONSTER_FACTION",
     "name": "mantis",
-    "neutral": [ "military", "defense_bot", "utility_bot", "zombie" ],
-    "by_mood": [ "mantis", "insect", "zombie" ]
+    "neutral": [ "military", "defense_bot", "utility_bot", "zombie", "zombie_aquatic" ],
+    "by_mood": [ "mantis", "insect", "zombie", "zombie_aquatic" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "radscorpion",
     "base_faction": "insect",
-    "by_mood": [ "radscorpion", "insect", "zombie" ]
+    "by_mood": [ "radscorpion", "insect", "zombie", "zombie_aquatic" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ghoul",
     "by_mood": [ "radscorpion", "mantis", "military" ],
-    "friendly": [ "zombie" ]
+    "friendly": [ "cult", "zombie", "zombie_aquatic" ]
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "zombie",
+    "friendly": [ "slime", "cult", "zombie_aquatic", "ghoul" ],
+    "neutral": [ "small_animal", "insect", "fish" ],
+    "by_mood": "bee"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "zombie_aquatic",
+    "friendly": [ "slime", "cult", "zombie", "ghoul" ],
+    "neutral": [ "small_animal", "insect" ],
+    "by_mood": "bee"
+  },
+  {
+    "type": "MONSTER_FACTION",
+    "name": "slime",
+    "friendly": [ "zombie", "nether", "cult", "ghoul" ]
   }
 ]
+
 
 
 
