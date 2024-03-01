@@ -50,7 +50,8 @@
     "type": "item_group",
     "id": "ammo_energy_fallout",
     "//": "expensive ammo commonly used in big guns.",
-    "items": [ [ "battery", 100 ], [ "plasma", 50 ] ]
+    "subtype": "collection",
+    "items": [ { "group": "ammo_any_batteries_full", "prob": 100 }, [ "plasma", 50 ] ]
   },
   {
     "type": "item_group",
