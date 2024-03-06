@@ -88,7 +88,7 @@
       "m": "f_dumpster"
     },
     "items": {
-      "E": [ { "item": "trash", "chance": 65, "repeat": [ 3, 4 ] } ],
+      "E": [ { "item": "trash", "chance": 65 } ],
       "R": [
         { "item": "office_paper", "chance": 15 },
         { "item": "office_supplies", "chance": 10 },
@@ -96,23 +96,23 @@
         { "item": "usec_opencrate_ammo", "chance": 15 }
       ],
       "O": [
-        { "item": "office_paper", "chance": 65, "repeat": [ 3, 4 ] },
-        { "item": "office_supplies", "chance": 25, "repeat": [ 3, 4 ] },
-        { "item": "file_room", "chance": 55, "repeat": [ 3, 4 ] }
+        { "item": "office_paper", "chance": 65 },
+        { "item": "office_supplies", "chance": 25 },
+        { "item": "file_room", "chance": 55 }
       ],
       "o": [
-        { "item": "SUS_field_manual_bookcase", "chance": 35, "repeat": [ 2, 4 ] },
-        { "item": "book_military", "chance": 35, "repeat": [ 2, 5 ] },
+        { "item": "SUS_field_manual_bookcase", "chance": 35, "repeat": [ 1, 3 ] },
+        { "item": "book_military", "chance": 35, "repeat": [ 1, 3 ] },
         { "item": "book_survival", "chance": 15 }
       ],
       "s": [
-        { "item": "office_paper", "chance": 45, "repeat": [ 3, 4 ] },
-        { "item": "office_supplies", "chance": 20, "repeat": [ 3, 4 ] },
-        { "item": "file_room", "chance": 40, "repeat": [ 3, 4 ] },
-        { "item": "electronics", "chance": 40, "repeat": [ 3, 4 ] },
-        { "item": "supplies_electronics", "chance": 40, "repeat": [ 3, 4 ] }
+        { "item": "office_paper", "chance": 45 },
+        { "item": "office_supplies", "chance": 20 },
+        { "item": "file_room", "chance": 40 },
+        { "item": "electronics", "chance": 40, "repeat": [ 1, 3 ] },
+        { "item": "supplies_electronics", "chance": 40, "repeat": [ 1, 3 ] }
       ],
-      "4": [ { "item": "vending_food_items", "chance": 75, "repeat": [ 3, 7 ] } ],
+      "4": [ { "item": "vending_food_items", "chance": 75, "repeat": [ 1, 6 ] } ],
       "5": [
         { "item": "usec_closedcrate_ammo", "chance": 60, "repeat": [ 1, 2 ] },
         { "item": "usec_closedcrate_mag", "chance": 65, "repeat": [ 1, 2 ] },
@@ -124,10 +124,10 @@
       ],
       "6": [ { "item": "usec_gunlocker", "chance": 68, "repeat": [ 1, 3 ] } ],
       "7": [
-        { "item": "bunker_basement_clothing", "chance": 30, "repeat": [ 2, 4 ] },
-        { "item": "military_patrol_food", "chance": 45, "repeat": [ 2, 4 ] },
+        { "item": "bunker_basement_clothing", "chance": 30, "repeat": [ 1, 3 ] },
+        { "item": "military_patrol_food", "chance": 45, "repeat": [ 1, 3 ] },
         { "item": "infantry_common_gear", "chance": 30, "repeat": [ 1, 3 ] },
-        { "item": "military", "chance": 25, "repeat": [ 2, 4 ] },
+        { "item": "military", "chance": 25, "repeat": [ 1, 3 ] },
         { "item": "army_personal_locker", "chance": 65, "repeat": [ 3, 5 ] }
       ],
       "8": [
@@ -137,9 +137,9 @@
       "9": [
         { "item": "usec_opencrate_ammo", "chance": 30, "repeat": [ 1, 2 ] },
         { "item": "usec_closedcrate_mag", "chance": 45, "repeat": [ 1, 2 ] },
-        { "item": "trash_junkyard", "chance": 75, "repeat": [ 4, 6 ] }
+        { "item": "trash_junkyard", "chance": 75 }
       ],
-      "m": [ { "item": "trash", "chance": 65, "repeat": [ 7, 12 ] } ]
+      "m": [ { "item": "trash", "chance": 65 } ]
     }
   }
 ]

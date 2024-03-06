@@ -25,7 +25,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "240 m", "using": [ [ "welding_standard", 15 ], [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "120 m", "using": [ [ "vehicle_weld_removal", 1 ], [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "rolling_resistance": 1.25
   },
@@ -45,7 +45,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 15 ], [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 5 ] ], "time": "35 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 6 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 6 ] ], "time": "25 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "location": "under",
     "flags": [ "WHEEL", "VARIABLE_SIZE", "NEEDS_WHEEL_MOUNT_HEAVY" ],
@@ -75,7 +75,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 6 ] ], "time": "60 m", "using": [ [ "welding_standard", 10 ], [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "35 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "25 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "location": "under",
     "flags": [ "WHEEL", "VARIABLE_SIZE", "NEEDS_WHEEL_MOUNT_MEDIUM" ],
@@ -105,7 +105,11 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 3 ] ] },
       "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "35 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "25 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "25 m",
+        "using": [ [ "welding_standard", 5  ], [ "vehicle_repair_superalloy", 1 ] ]
+      }
     },
     "location": "under",
     "flags": [ "WHEEL", "VARIABLE_SIZE", "NEEDS_WHEEL_MOUNT_LIGHT" ],
@@ -136,7 +140,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "10 m", "using": [ [ "welding_standard", 3 ] ] },
       "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "10 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "10 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "10 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "flags": [ "WHEEL_MOUNT_LIGHT", "NEEDS_JACKING", "FOLDABLE" ],
     "breaks_into": [ { "item": "scrap", "count": [ 0, 1 ] } ],
@@ -165,7 +169,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "welding_standard", 10 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "15 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "flags": [ "WHEEL_MOUNT_MEDIUM", "NEEDS_JACKING" ],
     "breaks_into": [ { "item": "scrap", "count": [ 1, 4 ] }, { "item": "steel_chunk", "count": [ 2, 5 ] } ],
@@ -194,7 +198,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 15 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "flags": [ "WHEEL_MOUNT_HEAVY", "NEEDS_JACKING" ],
     "breaks_into": [ { "item": "scrap", "count": [ 1, 4 ] }, { "item": "steel_chunk", "count": [ 3, 7 ] } ],
@@ -223,7 +227,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 15 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "flags": [ "WHEEL_MOUNT_HEAVY", "NEEDS_JACKING" ],
     "breaks_into": [ { "item": "scrap", "count": [ 1, 4 ] }, { "item": "steel_chunk", "count": [ 3, 7 ] } ],
@@ -250,7 +254,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 15 ], [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "size": "75 L",
     "location": "on_roof",
@@ -271,7 +275,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 7 ] ], "time": "60 m", "using": [ [ "welding_standard", 15 ], [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "size": "100 L",
     "location": "on_roof",
@@ -296,7 +300,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 4 ] ], "time": "80 m", "using": [ [ "welding_standard", 15 ], [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "40 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "35 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "35 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     }
   },
   {
@@ -344,7 +348,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
       "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "location": "under",
     "flags": [ "WHEEL", "VARIABLE_SIZE" ],
@@ -367,7 +371,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 6 ] ], "time": "60 m", "using": [ [ "welding_standard", 20 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 10 ] ] }
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 10  ], [ "steel_tiny", 1 ] ] }
     },
     "location": "armor",
     "flags": [ "ARMOR" ],
@@ -393,7 +397,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
       "removal": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "40 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "40 m", "using": [ [ "welding_standard", 5  ], [ "steel_tiny", 1 ] ] }
     },
     "flags": [ "ROOF" ],
     "breaks_into": "ig_vp_steel_plate",
@@ -421,7 +425,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
       "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10  ], [ "steel_tiny", 1 ] ] }
     }
   },
   {
@@ -497,7 +501,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
       "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "35 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "25 m", "using": [ [ "welding_standard", 10 ] ] }
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "25 m", "using": [ [ "welding_standard", 10  ], [ "steel_tiny", 1 ] ] }
     },
     "location": "structure",
     "flags": [ "MOUNTABLE" ],
@@ -522,7 +526,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 10 ] ] },
       "removal": { "skills": [ [ "mechanics", 3 ] ], "time": "35 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "25 m", "using": [ [ "welding_standard", 20 ] ] }
+      "repair": { "skills": [ [ "mechanics", 4 ] ], "time": "25 m", "using": [ [ "welding_standard", 20  ], [ "steel_tiny", 1 ] ] }
     },
     "location": "center",
     "flags": [ "CARGO", "OBSTACLE", "OPAQUE", "OPENABLE", "MULTISQUARE", "BOARDABLE" ],
@@ -556,7 +560,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 5 ] ], "time": "50 m", "using": [ [ "welding_standard", 20 ] ] },
       "removal": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10 ] ] }
+      "repair": { "skills": [ [ "mechanics", 3 ] ], "time": "15 m", "using": [ [ "welding_standard", 10  ], [ "steel_tiny", 1 ] ] }
     }
   },
   {
@@ -599,9 +603,12 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "welding_standard", 20 ] ] },
       "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "45 m", "using": [ [ "vehicle_bolt", 1 ] ] },
-      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 10 ] ] }
+      "repair": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "welding_standard", 10  ], [ "steel_tiny", 1 ] ] }
     },
     "flags": [ "OPENABLE", "OPENCLOSE_INSIDE", "OPAQUE", "CURTAIN" ],
     "breaks_into": [ { "item": "scrap", "count": [ 4, 6 ] } ]
   }
+
+
+
 ]

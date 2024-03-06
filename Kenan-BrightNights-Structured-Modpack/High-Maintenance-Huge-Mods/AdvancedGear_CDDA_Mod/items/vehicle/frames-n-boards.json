@@ -15,6 +15,12 @@
     "bashing" : 20,
     "category" : "veh_parts",
     "price" : "55 USD"
+  },
+  {
+    "id": "advancedgear_nanites",	  
+    "type": "requirement",
+    "//": "Materials used for repairing nanite parts",
+    "components": [ [ [ "nanite_cluster", 21 ] ] ]
   },{
     "abstract": "nanotech_frame",
     "type": "vehicle_part",
@@ -36,7 +42,7 @@
     "requirements": {
       "install": { "skills": [ [ "mechanics", 1 ] ], "time": "20 m", "using": [ [ "welding_standard", 10 ] ] },
       "removal": { "skills": [ [ "mechanics", 1 ] ], "using": "vehicle_weld_removal" },
-      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": "5 m", "using": [ [ "welding_standard", 5 ] ] }
+      "repair": { "skills": [ [ "mechanics", 1 ] ], "time": "5 m", "using": [ [ "welding_standard", 5  ], [ "advancedgear_nanites", 1 ] ] }
     },
     "flags": [ "MOUNTABLE", "FOLDABLE" ]
   },{
