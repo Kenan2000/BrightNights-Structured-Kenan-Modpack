@@ -78,6 +78,7 @@
     "name": { "str": "ironhorn calf", "str_pl": "ironhorn calves" },
     "description": "A young mutated cow with a pair of metal horns.",
     "harvest": "mammal_large_metalbone",
+    "delete": { "upgrades": { "age_grow": 180, "into": "mon_cow" } },
     "upgrades": { "age_grow": 28, "into": "mon_cow_mutant_ironhorn" },
     "color": "light_gray"
   },
@@ -91,6 +92,7 @@
     "volume": "1400000 ml",
     "weight": "1400000 g",
     "harvest": "mammal_large_fur",
+    "delete": { "reproduction": { "baby_monster": "mon_cow_calf", "baby_count": 1, "baby_timer": 343 } },
     "reproduction": { "baby_monster": "mon_cow_calf_mutant_auroch", "baby_count": 1, "baby_timer": 240 },
     "color": "brown",
     "starting_ammo": { "milk_raw": 60 },
@@ -103,6 +105,7 @@
     "name": { "str": "auroch calf", "str_pl": "auroch calves" },
     "description": "A young mutated cow that has evolved back into its prehistoric state.",
     "harvest": "mammal_large_fur",
+    "delete": { "upgrades": { "age_grow": 180, "into": "mon_cow" } },
     "upgrades": { "age_grow": 120, "into": "mon_cow_mutant_auroch" },
     "color": "light_gray"
   },
@@ -112,6 +115,7 @@
     "copy-from": "mon_cow_mutant",
     "name": { "str": "moss bison", "str_pl": "moss bison" },
     "description": "A mutated cow that can photosynthesize sunlight through its moss-like fur.  This green beast is quite lethargic and is often mistaken for a bush or hedge.",
+    "delete": { "death_drops": { "subtype": "collection", "groups": [ [ "cow", 25 ] ] }, "reproduction": { "baby_monster": "mon_cow_calf", "baby_count": 1, "baby_timer": 343 } },
     "reproduction": { "baby_monster": "mon_cow_calf_mutant_moss", "baby_count": 1, "baby_timer": 120 },
     "default_faction": "triffid",
     "death_drops": "mutant_cowmoss_death_drops",
@@ -125,6 +129,7 @@
     "description": "A young mutated cow that can photosynthesize sunlight through its moss-like fur.  This green beast is quite lethargic and is often mistaken for a bush or hedge.",
     "default_faction": "plant",
     "death_drops": "mutant_cowmoss_death_drops",
+    "delete": { "death_drops": { "subtype": "collection", "groups": [ [ "cow", 25 ] ] }, "upgrades": { "age_grow": 180, "into": "mon_cow" } },
     "upgrades": { "age_grow": 60, "into": "mon_cow_mutant_moss" },
     "color": "light_gray"
   },
@@ -194,6 +199,7 @@
     "copy-from": "mon_horse_mutant",
     "name": { "str": "glue horse" },
     "description": "A mutating horse that oozes a sticky substance from pulsing pores.  Driven mad by this affliction, the horse scratches itself against trees and buildings, leaving traces of disgusting glue everywhere it goes.",
+    "delete": { "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 360 } },
     "reproduction": { "baby_egg": "bone_glue", "baby_count": 20, "baby_timer": 1 },
     "color": "white",
     "upgrades": { "half_life": 60, "into_group": "GROUP_HORSE_MUTANT" }
@@ -280,6 +286,7 @@
     "fear_triggers": [ "FIRE" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
     "harvest": "mammal_large_fur",
+    "delete": { "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 360 } },
     "reproduction": { "baby_monster": "mon_ungulate_mutant_brat", "baby_count": 8, "baby_timer": 120 },
     "starting_ammo": { "mucus_spit": 10 },
     "special_attacks": [
@@ -317,6 +324,7 @@
     "fear_triggers": [ "FIRE" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
     "harvest": "mammal_large_fur",
+    "delete": { "upgrades": { "age_grow": 180, "into": "mon_cow" } },
     "upgrades": { "age_grow": 60, "into": "mon_ungulate_mutant_screech" },
     "starting_ammo": { "mucus_spit": 10 },
     "special_attacks": [
@@ -350,6 +358,7 @@
     "armor_bash": 6,
     "armor_cut": 2,
     "armor_bullet": 2,
+    "delete": { "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 360 } },
     "reproduction": { "baby_monster": "mon_ungulate_mutant_foal_sleipnir", "baby_count": 1, "baby_timer": 240 },
     "symbol": "S",
     "color": "cyan",
@@ -361,6 +370,7 @@
     "copy-from": "mon_cow_calf_mutant",
     "name": { "str": "sleipnir foal", "str_pl": "sleipnir foals" },
     "description": "A young mutated horse with a third pair of legs. It appears to not mind human company.",
+    "delete": { "upgrades": { "age_grow": 180, "into": "mon_cow" } },
     "upgrades": { "age_grow": 120, "into": "mon_ungulate_mutant_sleipnir" },
     "symbol": "s",
     "color": "cyan",
@@ -434,6 +444,7 @@
     "armor_cut": 10,
     "armor_bullet": 6,
     "armor_stab": 6,
+    "delete": { "reproduction": { "baby_monster": "mon_pig_piglet", "baby_count": 8, "baby_timer": 154 } },
     "reproduction": { "baby_monster": "mon_pig_piglet_mutant_rhino", "baby_count": 3, "baby_timer": 120 }
   },
   {
@@ -442,6 +453,7 @@
     "copy-from": "mon_pig_piglet_mutant",
     "name": { "str": "rhino piglet" },
     "description": "A juvenile mutated pig that is growing a thick protective hide similar to that of a rhino.",
+    "delete": { "upgrades": { "age_grow": 38, "into": "mon_pig" } },
     "upgrades": { "age_grow": 30, "into": "mon_pig_mutant_rhino" },
     "color": "light_gray"
   },
@@ -464,6 +476,7 @@
     "armor_bash": 5,
     "armor_cut": 5,
     "armor_bullet": 4,
+    "delete": { "reproduction": { "baby_monster": "mon_pig_piglet", "baby_count": 8, "baby_timer": 154 } },
     "reproduction": { "baby_monster": "mon_pig_piglet_mutant_quill", "baby_count": 3, "baby_timer": 120 },
     "extend": { "flags": [ "DOGFOOD" ] }
   },
@@ -473,6 +486,7 @@
     "copy-from": "mon_pig_piglet",
     "name": { "str": "quill piglet" },
     "description": "A juvenile mutated pig covered in small bone nubs.",
+    "delete": { "upgrades": { "age_grow": 38, "into": "mon_pig" } },
     "upgrades": { "age_grow": 30, "into": "mon_pig_mutant_quill" },
     "extend": { "flags": [ "DOGFOOD" ] },
     "color": "light_gray"
