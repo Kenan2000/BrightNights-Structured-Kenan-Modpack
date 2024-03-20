@@ -1,0 +1,106 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FOREST",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_duty_recruit", "freq": 8, "cost_multiplier": 0 },
+      { "monster": "mon_duty_officer", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_ZOMBIE",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_duty_officer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_officer", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_duty_recruit", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_recruit", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 7, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 3, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "//": "+15% child",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_duty_recruit", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_recruit", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_duty_officer", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_duty_recruit", "freq": 3, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PREPPER_HOUSE",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_duty_officer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 2, "cost_multiplier": 0 },
+      { "monster": "mon_duty_officer", "freq": 2, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 2, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 1, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MAYBE_MIL",
+    "//": "50% chance military zombie",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_duty_m", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_officer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_recruit", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_exoskeleton", "freq": 3, "cost_multiplier": 0, "starts": 96 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MALL",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_duty_recruit", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 7, "cost_multiplier": 0 },
+      { "monster": "mon_duty_officer", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_exoskeleton", "freq": 3, "cost_multiplier": 0, "starts": 96 },
+      { "monster": "mon_duty_m", "freq": 2, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "name": "GROUP_ROOF_ZOMBIE",
+    "type": "monstergroup",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_duty_officer", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_duty_m", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_soldier", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_duty_exoskeleton", "freq": 3, "cost_multiplier": 0, "starts": 96 },
+      { "monster": "mon_duty_soldier", "freq": 2, "cost_multiplier": 0 }
+    ]
+  }
+]
+
+
+
+
+
+
+

@@ -2,65 +2,65 @@
   {
     "type": "MONSTER_FACTION",
     "name": "bandito",
-    "friendly": [ "bandit_loot", "bandit_gun", "bandit_raid", "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "bandit_loot", "bandit_gun", "bandit_raid", "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "bandit_loot",
     "base_faction": "bandito",
-    "friendly": [ "bandit_gun", "bandit_raid", "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "bandit_gun", "bandit_raid", "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "bandit_gun",
     "base_faction": "bandito",
-    "friendly": [ "bandit_loot", "bandit_raid", "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "bandit_loot", "bandit_raid", "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "bandit_raid",
     "base_faction": "bandito",
-    "friendly": [ "bandit_loot", "bandit_gun", "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "bandit_loot", "bandit_gun", "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_cultist",
-    "friendly": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "small_animal", "cult" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_untroop",
-    "friendly": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_mercenary",
-    "friendly": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_farmer",
-    "friendly": [ "small_animal", "player" ]
+    "friendly": [ "small_animal", "ban_redneck", "player" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_scav",
-    "friendly": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_prison",
-    "friendly": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_toxic",
-    "friendly": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "friendly": [ "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "ban_redneck",
-    "friendly": [ "small_animal", "player" ]
+    "friendly": [ "small_animal", "ban_farmer", "player" ]
   },
   {
     "type": "MONSTER_FACTION",
@@ -75,123 +75,21 @@
   {
     "type": "MONSTER_FACTION",
     "name": "a_abys",
-    "neutral": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether" ]
+    "neutral": [ "small_animal" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "f_feds",
-    "neutral": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether", "cop_bot", "military", "utility_bot" ]
+    "neutral": [ "small_animal", "utility_bot", "ban_farmer", "ban_redneck", "player" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "f_duty",
-    "neutral": [ "small_animal", "cult", "zombie", "zombie_aquatic", "triffid", "nether", "cop_bot", "military", "utility_bot" ]
+    "neutral": [ "small_animal", "utility_bot", "ban_farmer", "ban_redneck", "player" ]
   },
   {
     "type": "MONSTER_FACTION",
     "name": "f_survlmoe",
-    "neutral": [ "small_animal", "cop_bot", "military", "utility_bot", "player" ]
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "zombie",
-    "friendly": [
-      "slime",
-      "cult",
-      "zombie_aquatic",
-      "bandito",
-      "bandit_loot",
-      "bandit_gun",
-      "bandit_raid",
-      "ban_cultist",
-      "ban_untroop",
-      "ban_mercenary",
-      "ban_scav",
-      "ban_prison",
-      "ban_toxic",
-      "a_abys",
-      "f_feds",
-      "f_duty"
-    ],
-    "neutral": [ "small_animal", "insect", "fish" ],
-    "by_mood": "bee"
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "zombie_aquatic",
-    "friendly": [
-      "slime",
-      "cult",
-      "zombie",
-      "bandito",
-      "bandit_loot",
-      "bandit_gun",
-      "bandit_raid",
-      "ban_cultist",
-      "ban_untroop",
-      "ban_mercenary",
-      "ban_scav",
-      "ban_prison",
-      "ban_toxic",
-      "a_abys",
-      "f_feds",
-      "f_duty"
-    ],
-    "neutral": [ "small_animal", "insect" ],
-    "by_mood": "bee"
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "slime",
-    "friendly": [
-      "zombie",
-      "nether",
-      "cult",
-      "bandito",
-      "bandit_loot",
-      "bandit_gun",
-      "bandit_raid",
-      "ban_cultist",
-      "ban_untroop",
-      "ban_mercenary",
-      "ban_scav",
-      "ban_prison",
-      "ban_toxic",
-      "a_abys",
-      "f_feds",
-      "f_duty"
-    ]
-  },
-  {
-    "type": "MONSTER_FACTION",
-    "name": "nether",
-    "friendly": [
-      "slime",
-      "cult",
-      "bandito",
-      "bandit_loot",
-      "bandit_gun",
-      "bandit_raid",
-      "ban_cultist",
-      "ban_untroop",
-      "ban_mercenary",
-      "ban_scav",
-      "ban_prison",
-      "ban_toxic",
-      "a_abys",
-      "f_feds",
-      "f_duty"
-    ]
+    "neutral": [ "small_animal", "utility_bot", "ban_farmer", "ban_redneck", "player" ]
   }
 ]
-
-
-
-
-
-
-
-
-
-
-

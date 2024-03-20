@@ -1,0 +1,61 @@
+[
+  {
+    "type": "monstergroup",
+    "name": "GROUP_FOREST",
+    "default": "mon_null",
+    "monsters": [
+      { "monster": "mon_farmer", "freq": 8, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_fbi_op", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_fbi_op", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 5, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_HOUSE",
+    "//": "+15% child",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_farmer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 3, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_PREPPER_HOUSE",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_redneck_shotgun", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 2, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_fbi_op", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 6, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "name": "GROUP_MALL",
+    "default": "mon_zombie",
+    "monsters": [
+      { "monster": "mon_redneck_shotgun", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 7, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 5, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 3, "cost_multiplier": 0 },
+      { "monster": "mon_farmer", "freq": 6, "cost_multiplier": 0 },
+      { "monster": "mon_redneck_shotgun", "freq": 2, "cost_multiplier": 0 }
+    ]
+  }
+]
+
+
+
+
