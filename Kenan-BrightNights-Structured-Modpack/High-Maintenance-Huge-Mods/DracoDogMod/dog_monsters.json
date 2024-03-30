@@ -5,11 +5,11 @@
     "name": { "str": "Labrador mutt" },
     "description": "This once-average Labrador mixed breed dog has clearly gone feral.  Though it likely still instinctually trusts humans, it's probably far from domestic by now.",
     "default_faction": "dog",
-    "bodytype": "dog",
+    "bodytype": "quadruped",
     "categories": [ "WILDLIFE" ],
     "species": [ "MAMMAL" ],
     "volume": "30000 ml",
-    "weight": "30000 g",
+    "weight": "30 kg",
     "harvest": "mammal_small_fur",
     "hp": 30,
     "speed": 150,
@@ -26,18 +26,19 @@
     "vision_night": 5,
     "path_settings": { "max_dist": 10 },
     "revert_to_itype": "mon_dog_crate",
-    "reproduction": { "baby_monster": "mon_dog_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size small canines",
+    "reproduction": { "baby_monster": "mon_dog_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN", "WINTER" ],
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "FRIEND_DIED" ],
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
-    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ] ],
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ] ],
     "flags": [
       "ANIMAL",
       "DOGFOOD",
       "GROUP_MORALE",
       "HEARS",
+      "PET_MOUNTABLE",
       "HIT_AND_RUN",
       "KEENNOSE",
       "PATH_AVOID_DANGER_1",
@@ -64,7 +65,7 @@
     "name": { "str": "bulldog" },
     "description": "The American Bulldog is a hardy, well built dog, that seems suited for surviving the apocalypse.  Can be trained as an attack dog.",
     "volume": "49000 ml",
-    "weight": "49000 g",
+    "weight": "49 kg",
     "hp": 47,
     "speed": 135,
     "melee_skill": 4,
@@ -73,9 +74,9 @@
     "vision_night": 4,
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_bull_crate",
-    "reproduction": { "baby_monster": "mon_dog_bull_pup", "baby_count": 7, "baby_timer": 300 },
-    "//": "7 puppies and 300-320 days per-litter for size medium canines",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "reproduction": { "baby_monster": "mon_dog_bull_pup", "baby_count": 7, "baby_timer": 22 },
+    "//": "7 puppies and 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
+    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkbull",
@@ -87,7 +88,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkbull_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ]
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_auscattle",
@@ -96,7 +97,7 @@
     "name": { "str": "cattle dog" },
     "description": "An agile and sturdy breed that is welcome on any farm, the Australian Cattle Dog is adept at leaping fences and herding livestock.  Can be trained as an attack dog.",
     "volume": "18000 ml",
-    "weight": "18000 g",
+    "weight": "18 kg",
     "hp": 20,
     "speed": 200,
     "morale": 10,
@@ -105,10 +106,10 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 4,
     "vision_night": 6,
-    "special_attacks": [ { "type": "leap", "cooldown": 8, "max_range": 2 } ],
-    "reproduction": { "baby_monster": "mon_dog_auscattle_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size small canines",
-    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], { "type": "leap", "cooldown": 8, "max_range": 2 } ],
+    "reproduction": { "baby_monster": "mon_dog_auscattle_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
+    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkauscattle",
@@ -120,7 +121,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkauscattle_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ]
+    "extend": { "special_attacks": [ [ "LUNGE", 15 ] ] }
   },
   {
     "id": "mon_dog_pitbullmix",
@@ -129,7 +130,7 @@
     "name": { "str": "pit bull mix" },
     "description": "The oft-misunderstood Pit Bull is not actually a single breed but a label for several such as American Pit Bull Terrier and American Staffordshire Terrier.  Average abilities and well-known for their 'lock jaw' which isn't real but their incredible determination is.  Can be trained as an attack dog.",
     "volume": "25000 ml",
-    "weight": "25000 g",
+    "weight": "25 kg",
     "hp": 27,
     "speed": 135,
     "aggression": 1,
@@ -139,10 +140,10 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_pitbullmix_crate",
-    "special_attacks": [ [ "dogbite", 5 ], [ "fdogbite", 15 ] ],
-    "reproduction": { "baby_monster": "mon_dog_pitbullmix_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size small canines",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "special_attacks": [ [ "dogbite", 5 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], [ "fdogbite", 15 ] ],
+    "reproduction": { "baby_monster": "mon_dog_pitbullmix_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
+    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkpitbullmix",
@@ -154,7 +155,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkpitbullmix_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ]
+    "extend": { "special_attacks": [ [ "LUNGE", 15 ] ] }
   },
   {
     "id": "mon_dog_beagle",
@@ -163,7 +164,7 @@
     "name": { "str": "beagle" },
     "description": "An adorable Beagle that has managed to survive the apocalypse.  Being agile and small, they are difficult to shoot at.  Generally attacks in packs.",
     "volume": "10000 ml",
-    "weight": "10000 g",
+    "weight": "10 kg",
     "hp": 13,
     "speed": 135,
     "melee_skill": 2,
@@ -172,10 +173,10 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_beagle_crate",
-    "special_attacks": [ [ "minordogbite", 20 ] ],
+    "special_attacks": [ [ "minordogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ] ],
     "fear_triggers": [ "HURT" ],
-    "reproduction": { "baby_monster": "mon_dog_beagle_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size tiny canines",
+    "reproduction": { "baby_monster": "mon_dog_beagle_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 65 days per-litter for size tiny canines, that's 21 days per-litter for average season length",
     "flags": [
       "ANIMAL",
       "DOGFOOD",
@@ -183,6 +184,7 @@
       "GUILT",
       "HARDTOSHOOT",
       "HEARS",
+      "PET_MOUNTABLE",
       "HIT_AND_RUN",
       "KEENNOSE",
       "PATH_AVOID_DANGER_1",
@@ -210,7 +212,7 @@
     "name": { "str": "border collie" },
     "description": "An athletic and hyperactive dog that loves to herd animals and jump, the Border Collie is an agile attacker.  Although they can be easy to train, they don't work well in packs.  Can be trained as an attack dog.",
     "volume": "16000 ml",
-    "weight": "16000 g",
+    "weight": "16 kg",
     "hp": 19,
     "speed": 200,
     "aggression": -5,
@@ -218,10 +220,10 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 4,
     "revert_to_itype": "mon_dog_bcollie_crate",
-    "special_attacks": [ { "type": "leap", "cooldown": 8, "max_range": 2 } ],
-    "reproduction": { "baby_monster": "mon_dog_bcollie_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size small canines",
-    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], { "type": "leap", "cooldown": 8, "max_range": 2 } ],
+    "reproduction": { "baby_monster": "mon_dog_bcollie_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
+    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkbcollie",
@@ -233,7 +235,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkbcollie_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ]
+    "extend": { "special_attacks": [ [ "LUNGE", 15 ] ] }
   },
   {
     "id": "mon_dog_boxer",
@@ -252,8 +254,9 @@
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_boxer_crate",
     "fear_triggers": [ "HURT" ],
-    "reproduction": { "baby_monster": "mon_dog_boxer_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size small canines"
+    "reproduction": { "baby_monster": "mon_dog_boxer_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
+    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkboxer",
@@ -265,7 +268,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkboxer_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ]
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_chihuahua",
@@ -285,10 +288,10 @@
     "vision_night": 6,
     "harvest": "mammal_tiny",
     "revert_to_itype": "mon_dog_chihuahua_crate",
-    "special_attacks": [ [ "minordogbite", 20 ] ],
+    "special_attacks": [ [ "minordogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ] ],
     "fear_triggers": [ "HURT" ],
-    "reproduction": { "baby_monster": "mon_dog_chihuahua_pup", "baby_count": 3, "baby_timer": 240 },
-    "//": "1-3 puppies & 240 days per-litter for size tiny canines",
+    "reproduction": { "baby_monster": "mon_dog_chihuahua_pup", "baby_count": 3, "baby_timer": 21 },
+    "//": "1-3 puppies & 65 days per-litter for size tiny canines, that's 21 days per-litter for average season length",
     "flags": [
       "ANIMAL",
       "DOGFOOD",
@@ -321,7 +324,7 @@
     "name": { "str": "dachshund" },
     "description": "A weiner dog!  This awkward looking dog can be a useful watch dog, plus it looks adorable as it bumbles around, also making it hard to shoot.",
     "volume": "10000 ml",
-    "weight": "10000 g",
+    "weight": "10 kg",
     "hp": 10,
     "speed": 135,
     "aggression": -4,
@@ -331,16 +334,17 @@
     "vision_night": 6,
     "harvest": "mammal_small_leather",
     "revert_to_itype": "mon_dog_dachshund_crate",
-    "special_attacks": [ [ "minordogbite", 20 ] ],
+    "special_attacks": [ [ "minordogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ] ],
     "fear_triggers": [ "HURT" ],
-    "reproduction": { "baby_monster": "mon_dog_dachshund_pup", "baby_count": 4, "baby_timer": 270 },
-    "//": "1-4 puppies & 270 days per-litter for size small canines",
+    "reproduction": { "baby_monster": "mon_dog_dachshund_pup", "baby_count": 5, "baby_timer": 21 },
+    "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
     "flags": [
       "ANIMAL",
       "DOGFOOD",
       "GUILT",
       "HARDTOSHOOT",
       "HEARS",
+      "PET_MOUNTABLE",
       "HIT_AND_RUN",
       "KEENNOSE",
       "PATH_AVOID_DANGER_1",
@@ -375,9 +379,9 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "vision_night": 6,
     "revert_to_itype": "mon_dog_gshepherd_crate",
-    "reproduction": { "baby_monster": "mon_dog_gshepherd_pup", "baby_count": 7, "baby_timer": 300 },
-    "//": "1-7 puppies & 300-320 days per-litter for size medium canines",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "reproduction": { "baby_monster": "mon_dog_gshepherd_pup", "baby_count": 7, "baby_timer": 22 },
+    "//": "1-7 puppies & 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
+    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkgshepherd",
@@ -389,8 +393,7 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkgshepherd_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ],
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], [ "LUNGE", 15 ] ]
   },
   {
     "id": "mon_dog_gpyrenees",
@@ -412,8 +415,8 @@
     "vision_night": 6,
     "harvest": "mammal_fur",
     "revert_to_itype": "mon_dog_gpyrenees_crate",
-    "reproduction": { "baby_monster": "mon_dog_gpyrenees_pup", "baby_count": 7, "baby_timer": 320 },
-    "//1": "1-7 puppies & 300-320 days per-litter for size medium canines",
+    "reproduction": { "baby_monster": "mon_dog_gpyrenees_pup", "baby_count": 7, "baby_timer": 22 },
+    "//1": "1-7 puppies & 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -425,7 +428,8 @@
     "description": "A resilient Great Pyrenees that has been trained to fight.  Improved agility, attack, health, owner bond, and speed.",
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
-    "revert_to_itype": "mon_dog_atkgpyrenees_crate"
+    "revert_to_itype": "mon_dog_atkgpyrenees_crate",
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ] ]
   },
   {
     "id": "mon_dog_rottweiler",
@@ -435,7 +439,7 @@
     "//": "Rare, location specific only",
     "description": "A terrifying breed to face feral, Rottweilers are descended from Roman legion mastiffs.  It's robust, vicious, and quite capable of mauling a human to death.",
     "volume": "50000 ml",
-    "weight": "50000 g",
+    "weight": "50 kg",
     "hp": 42,
     "speed": 135,
     "aggression": 4,
@@ -446,8 +450,8 @@
     "vision_night": 6,
     "harvest": "mammal_leather",
     "revert_to_itype": "mon_dog_rottweiler_crate",
-    "reproduction": { "baby_monster": "mon_dog_rottweiler_pup", "baby_count": 7, "baby_timer": 300 },
-    "//1": "1-7 puppies & 300-320 days per-litter for size medium canines",
+    "reproduction": { "baby_monster": "mon_dog_rottweiler_pup", "baby_count": 7, "baby_timer": 22 },
+    "//1": "1-7 puppies & 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
     "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
@@ -460,6 +464,6 @@
     "proportional": { "hp": 1.15, "morale": 1.67, "speed": 1.1 },
     "relative": { "aggression": 10, "dodge": 1, "melee_skill": 1, "melee_dice_sides": 1, "melee_cut": 1 },
     "revert_to_itype": "mon_dog_atkrottweiler_crate",
-    "special_attacks": [ [ "LUNGE", 15 ] ]
+    "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], [ "LUNGE", 15 ] ]
   }
 ]

@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "mon_bird_mutant_songbird",
     "copy-from": "mon_songbird",
     "type": "MONSTER",
@@ -68,7 +68,7 @@
     "description": "A sickly deformed bird chick.  If it survives it could mutate into something even stranger.",
     "symbol": "b",
     "color": "dark_gray",
-    "upgrades": { "age_grow": 12, "into_group": "GROUP_BIRD_MUTANT" }
+    "upgrades": { "age_grow": 8, "into_group": "GROUP_BIRD_MUTANT" }
   },
   {
     "id": "mon_bird_sick_malformed",
@@ -78,7 +78,7 @@
     "description": "A mutating bird no longer capable of flight due to its twisted and asymetrical wings.",
     "color": "brown",
     "speed": 50,
-    "upgrades": { "half_life": 30, "into_group": "GROUP_BIRD_MUTANT" },
+    "upgrades": { "half_life": 15, "into_group": "GROUP_BIRD_MUTANT" },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -89,7 +89,7 @@
     "description": "A mutating bird afflicted with serious radiation burns.",
     "color": "brown",
     "attack_effs": [ { "id": "irradiated", "chance": 30, "duration": 250 } ],
-    "upgrades": { "half_life": 30, "into_group": "GROUP_BIRD_MUTANT" },
+    "upgrades": { "half_life": 15, "into_group": "GROUP_BIRD_MUTANT" },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -100,7 +100,7 @@
     "description": "A mutating bird suffering from the symptoms of a flesh eating virus.",
     "color": "brown",
     "attack_effs": [ { "id": "foodpoison", "chance": 50, "duration": 50 } ],
-    "upgrades": { "half_life": 30, "into_group": "GROUP_BIRD_MUTANT" },
+    "upgrades": { "half_life": 15, "into_group": "GROUP_BIRD_MUTANT" },
     "extend": { "flags": [ "NO_BREED", "POISON" ] }
   },
   {
@@ -133,7 +133,7 @@
       }
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "FRIEND_DIED" ],
-    "reproduction": { "baby_egg": "egg_bird_mutant_vultch", "baby_count": 1, "baby_timer": 5 }
+    "reproduction": { "baby_egg": "egg_bird_mutant_vultch", "baby_count": 1, "baby_timer": 3 }
   },
   {
     "id": "mon_bird_mutant_vultch_chick",
@@ -141,7 +141,7 @@
     "copy-from": "mon_bird_mutant_chick",
     "name": { "str": "two headed chick" },
     "description": "A sickly deformed bird chick growing a second head.",
-    "upgrades": { "age_grow": 12, "into": "mon_bird_mutant_vultch" }
+    "upgrades": { "age_grow": 8, "into": "mon_bird_mutant_vultch" }
   },
   {
     "id": "mon_bird_mutant_thing",
@@ -180,7 +180,7 @@
     "melee_dice_sides": 3,
     "melee_damage": [ { "damage_type": "cut", "amount": 2 } ],
     "fear_triggers": [ "HURT", "PLAYER_CLOSE" ],
-    "reproduction": { "baby_egg": "egg_bird_mutant_iridescent", "baby_count": 1, "baby_timer": 10 },
+    "reproduction": { "baby_egg": "egg_bird_mutant_iridescent", "baby_count": 1, "baby_timer": 5 },
     "extend": { "flags": [ "BIRDFOOD" ] }
   },
   {
@@ -188,7 +188,7 @@
     "type": "MONSTER",
     "copy-from": "mon_bird_mutant_chick",
     "name": { "str": "deformed bird chick" },
-    "upgrades": { "age_grow": 12, "into": "mon_bird_mutant_iridescent" },
+    "upgrades": { "age_grow": 8, "into": "mon_bird_mutant_iridescent" },
     "extend": { "flags": [ "BIRDFOOD" ] }
   },
   {
@@ -214,7 +214,7 @@
     "type": "MONSTER",
     "copy-from": "mon_bird_mutant_chick",
     "name": { "str": "deformed bird chick" },
-    "upgrades": { "age_grow": 12, "into": "mon_bird_mutant_ghoul" }
+    "upgrades": { "age_grow": 8, "into": "mon_bird_mutant_ghoul" }
   },
   {
     "id": "mon_bird_mutant_elephant",
@@ -248,6 +248,6 @@
     "description": "A deformed bird chick already grown to the size of a turkey. How big will this thing get?",
     "volume": "30000 ml",
     "weight": "40750 g",
-    "upgrades": { "age_grow": 24, "into": "mon_bird_mutant_elephant" }
+    "upgrades": { "age_grow": 14, "into": "mon_bird_mutant_elephant" }
   }
 ]

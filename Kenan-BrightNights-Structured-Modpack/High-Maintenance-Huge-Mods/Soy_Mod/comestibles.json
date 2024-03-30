@@ -61,7 +61,7 @@
     "name": { "str": "soybean seed", "str_pl": "soybean seeds" },
     "symbol": ".",
     "color": "brown",
-    "description": "It is a soybean seed. If you have a flower pot, you can harvest it in the form of edamame.",
+    "description": "It is a soybean seed. If you have a flower pot, you can plant it to harvest it in the form of edamame.",
     "material": [ "soybeanmaterial" ],
     "comestible_type": "FOOD",
     "tool": "null",
@@ -73,13 +73,13 @@
     "to_hit": 0,
     "charges": 4,
     "stack_size": 100,
-    "seed_data": { "plant_name": "soy", "fruit": "daizu", "byproducts": [ "withered" ], "grow": 65 }
+    "seed_data": { "plant_name": "soy", "fruit": "daizu", "byproducts": [ "withered" ], "grow": "35 days" }
   },
   {
     "type": "COMESTIBLE",
     "id": "brew_soysauce",
     "name": { "str": "soy sauce (unfermented)", "str_pl": "soy sauce (unfermented)" },
-    "description": "If fermented in a vat, it will make fine soy sauce.",
+    "description": "If fermented in a vat for 3 days, it will make fine soy sauce.",
     "weight": "24 g",
     "color": "yellow",
     "addiction_type": "none",
@@ -102,7 +102,7 @@
     "bashing": 0,
     "phase": "liquid",
     "comestible_type": "DRINK",
-    "brewable": { "time": "7 m", "results": [ "soysauce" ] }
+    "brewable": { "time": "72 hours", "results": [ "soysauce" ] }
   },
   {
     "type": "GENERIC",
@@ -120,7 +120,7 @@
     "material": [ "soybeanmaterial", "wood" ],
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 115200,
+      "transform_age": 691200,
       "not_ready_msg": "Miso is aged.",
       "msg": "The Miso's aging was successful!",
       "moves": 0,

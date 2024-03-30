@@ -1,6 +1,8 @@
 [
   {
     "name": "GROUP_PARK_SCENIC",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -14,6 +16,8 @@
   },
   {
     "name": "GROUP_PARK_PLAYGROUND",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -26,6 +30,8 @@
   },
   {
     "name": "GROUP_PARK_DOG",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -38,6 +44,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 13, "cost_multiplier": 0, "pack_size": [ 2, 6 ] },
@@ -59,6 +67,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_VANILLA",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 13, "cost_multiplier": 0, "pack_size": [ 2, 6 ] },
@@ -72,6 +82,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_POLICE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 13, "cost_multiplier": 0, "pack_size": [ 2, 5 ] },
@@ -91,6 +103,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 26, "cost_multiplier": 0, "pack_size": [ 3, 6 ] },
@@ -112,6 +126,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PREPPER_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray_heavy", "freq": 10, "cost_multiplier": 0 },
@@ -124,6 +140,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MIL_BASE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 13, "cost_multiplier": 0, "pack_size": [ 2, 3 ] },
@@ -143,6 +161,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PHARM",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 13, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
@@ -161,6 +181,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ELECTRO",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 8, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
@@ -179,6 +201,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_GROCERY",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 8, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
@@ -197,6 +221,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PUBLICWORKERS",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 8, "cost_multiplier": 0 },
@@ -209,6 +235,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 20, "cost_multiplier": 0, "pack_size": [ 2, 7 ] },
@@ -221,12 +249,16 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_FAT_BASE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [ { "monster": "dkz_mon_stray_big", "freq": 20, "cost_multiplier": 0, "pack_size": [ 2, 6 ] } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_FAT",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray_eater", "freq": 10, "cost_multiplier": 0, "pack_size": [ 4, 8 ] },
@@ -236,6 +268,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_GRAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray_wretch", "freq": 20, "cost_multiplier": 0 },
@@ -245,6 +279,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SCHOOL",
+    "override": false,
+    "auto_total": true,
     "default": "dkz_mon_stray_child",
     "//": "School monster spawns.",
     "monsters": [
@@ -260,6 +296,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SMALL_STATION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 2, "cost_multiplier": 4, "pack_size": [ 1, 2 ] },
@@ -270,6 +308,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LARGE_STATION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray_heavy", "freq": 2, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
@@ -280,6 +320,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CHURCH_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 15, "cost_multiplier": 0, "pack_size": [ 25, 30 ] },
@@ -294,6 +336,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_PRISON",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 80, "cost_multiplier": 0, "pack_size": [ 2, 6 ] },
@@ -305,6 +349,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_COP",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray_cop", "freq": 25, "cost_multiplier": 0, "pack_size": [ 0, 3 ] },
@@ -314,6 +360,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOSPITAL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray", "freq": 8, "cost_multiplier": 0, "pack_size": [ 2, 6 ] },
@@ -336,6 +384,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_STEEL_MILL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "//": "Steel mill monster spawns.",
     "monsters": [
@@ -358,6 +408,8 @@
   },
   {
     "name": "GROUP_MALL",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -374,6 +426,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_SEXSHOP_A",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "dkz_mon_stray_cop", "freq": 9, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
@@ -383,11 +437,15 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_SEXSHOP_B",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [ { "monster": "dkz_mon_stray_big", "freq": 25, "cost_multiplier": 0 } ]
   },
   {
     "name": "GROUP_FIRE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -398,12 +456,16 @@
   },
   {
     "name": "GROUP_PLAIN",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [ { "monster": "dkz_mon_stray", "freq": 20, "cost_multiplier": 0, "pack_size": [ 1, 3 ] } ]
   },
   {
     "name": "GROUP_HOTEL_POOL",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -413,6 +475,8 @@
   },
   {
     "name": "GROUP_HOTEL_GYM",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -422,6 +486,8 @@
   },
   {
     "name": "GROUP_POOL_NOKIDS",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [

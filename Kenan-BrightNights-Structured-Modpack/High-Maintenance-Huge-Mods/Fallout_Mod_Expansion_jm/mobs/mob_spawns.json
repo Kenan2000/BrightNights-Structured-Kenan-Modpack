@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 15, "cost_multiplier": 1, "pack_size": [ 2, 8 ] },
       { "monster": "mon_fallout_ghoul", "freq": 8, "cost_multiplier": 1, "pack_size": [ 2, 4 ] },
@@ -28,6 +30,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "//": "+15% child",
     "default": "mon_zombie",
     "monsters": [
@@ -50,6 +54,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PREPPER_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_raider_lite", "freq": 15, "cost_multiplier": 1 },
@@ -66,6 +72,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_GROCERY",
+    "override": false,
+    "auto_total": true,
     "//": "+15% bommers",
     "default": "mon_zombie",
     "monsters": [
@@ -88,6 +96,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SCHOOL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "//": "School monster spawns.",
     "monsters": [
@@ -100,6 +110,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MALL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 1, "cost_multiplier": 7, "pack_size": [ 2, 8 ] },
@@ -124,6 +136,8 @@
   },
   {
     "name": "GROUP_PARK_SCENIC",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -145,6 +159,8 @@
   {
     "type": "monstergroup",
     "name": "DUMP_ZOMBIES",
+    "override": false,
+    "auto_total": true,
     "default": "mon_fallout_ghoul",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 2, "cost_multiplier": 7, "pack_size": [ 2, 8 ] },
@@ -173,6 +189,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CHUD",
+    "override": false,
+    "auto_total": true,
     "default": "mon_fallout_ghoul",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 2, "cost_multiplier": 7, "pack_size": [ 1, 4 ] },
@@ -186,6 +204,8 @@
   },
   {
     "name": "GROUP_ROOF_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -198,6 +218,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PUBLICWORKERS",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_tough",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 50, "cost_multiplier": 1, "pack_size": [ 2, 3 ] },
@@ -211,6 +233,8 @@
   },
   {
     "name": "GROUP_MANSION",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_fallout_ghoul",
     "monsters": [
@@ -227,6 +251,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_INDUSTRIAL_CENTER",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_tough",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 1, "cost_multiplier": 8, "pack_size": [ 2, 8 ] },
@@ -252,6 +278,8 @@
   },
   {
     "name": "GROUP_FIRE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -264,6 +292,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_STEEL_MILL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_tough",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 1, "cost_multiplier": 8, "pack_size": [ 2, 8 ] },
@@ -289,6 +319,8 @@
   },
   {
     "name": "GROUP_MIL_BASE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_zombie_soldier",
     "monsters": [
@@ -305,6 +337,8 @@
   },
   {
     "name": "GROUP_MIL_STRONG",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_zombie_soldier",
     "monsters": [
@@ -318,6 +352,8 @@
   },
   {
     "name": "GROUP_MIL_WEAK",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_zombie_soldier",
     "monsters": [
@@ -330,6 +366,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_MIL",
+    "override": false,
+    "auto_total": true,
     "//": "50% chance military zombie or robot",
     "default": "mon_null",
     "monsters": [
@@ -380,6 +418,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST",
+    "override": false,
+    "auto_total": true,
     "is_animal": true,
     "monsters": [
       { "monster": "mon_yao_guai", "freq": 5, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
@@ -390,6 +430,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 10, "cost_multiplier": 1, "pack_size": [ 2, 8 ] },
@@ -428,6 +470,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
+    "override": false,
+    "auto_total": true,
     "default": "mon_sewer_rat",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 20, "cost_multiplier": 1, "pack_size": [ 2, 8 ] },
@@ -440,6 +484,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CENTRAL_LAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_fo_ghoul_scientist", "freq": 65, "cost_multiplier": 0 },
@@ -455,6 +501,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_fo_ghoul_scientist", "freq": 65, "cost_multiplier": 0 },
@@ -470,6 +518,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB_SURFACE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_fo_ghoul_scientist", "freq": 65, "cost_multiplier": 0 },
@@ -485,6 +535,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB_SECURITY",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_labsecurity",
     "monsters": [
       { "monster": "mon_fo_ghoul_scientist", "freq": 50, "cost_multiplier": 0 },
@@ -499,6 +551,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB_FEMA",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "//": "Mostly scientists, lab personnel and regular zombies.",
     "monsters": [
@@ -514,6 +568,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MICROLAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_fo_ghoul_scientist", "freq": 50, "cost_multiplier": 0 },
@@ -538,6 +594,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MINER",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_miner",
     "monsters": [
       { "monster": "mon_fallout_ghoul", "freq": 15, "cost_multiplier": 1, "pack_size": [ 2, 8 ] },

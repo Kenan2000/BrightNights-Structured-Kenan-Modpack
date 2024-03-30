@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_duty_recruit", "freq": 8, "cost_multiplier": 0 },
@@ -15,6 +17,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_duty_officer", "freq": 3, "cost_multiplier": 0 },
@@ -31,6 +35,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "//": "+15% child",
     "default": "mon_zombie",
     "monsters": [
@@ -44,6 +50,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PREPPER_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_duty_officer", "freq": 3, "cost_multiplier": 0 },
@@ -57,6 +65,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_MIL",
+    "override": false,
+    "auto_total": true,
     "//": "50% chance military zombie",
     "default": "mon_null",
     "monsters": [
@@ -70,6 +80,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MALL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_duty_recruit", "freq": 6, "cost_multiplier": 0 },
@@ -85,6 +97,8 @@
   },
   {
     "name": "GROUP_ROOF_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -96,11 +110,6 @@
       { "monster": "mon_duty_soldier", "freq": 2, "cost_multiplier": 0 }
     ]
   }
+
+
 ]
-
-
-
-
-
-
-

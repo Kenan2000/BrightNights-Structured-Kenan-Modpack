@@ -26,7 +26,7 @@
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
-    "price": "13 USD",
+    "price": "16 USD",
     "material": [ "clay", "veggy" ],
     "volume": "2500 ml",
     "bashing": 1,
@@ -43,13 +43,13 @@
   {
     "type": "GENERIC",
     "id": "gp_tomato",
-    "name": { "str": "garden pot (growing tomato)", "str_pl": "garden pots (growing tomatoes)" },
+    "name": { "str": "garden pot (growing tomatoes)", "str_pl": "garden pots (growing tomatoes)" },
     "description": "This is a garden pot growing tomatoes.  Once ripe, it can be activated to prepare them for harvest.",
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 2160000,
+      "not_ready_msg": "The tomatoes aren't done growing yet.",
       "msg": "The tomatoes are ready to harvest!",
       "moves": 0,
       "target": "gp_tomato_ready"
@@ -58,7 +58,7 @@
   {
     "type": "GENERIC",
     "id": "gp_tomato_ready",
-    "name": { "str": "garden pot (ripe tomato)", "str_pl": "garden pots (ripe tomatoes)" },
+    "name": { "str": "garden pot (ripe tomatoes)", "str_pl": "garden pots (ripe tomatoes)" },
     "description": "This is a garden pot with a ripe tomato plant.  Disassemble to retrieve the tasty 'matos.",
     "copy-from": "gp_pot_grown"
   },
@@ -70,8 +70,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 4147200,
+      "not_ready_msg": "The wheat isn't done growing yet.",
       "msg": "The wheat is ready to harvest!",
       "moves": 0,
       "target": "gp_wheat_ready"
@@ -92,8 +92,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 3628800,
+      "not_ready_msg": "The hops aren't done growing yet.",
       "msg": "The hops are ready to harvest!",
       "moves": 0,
       "target": "gp_hops_ready"
@@ -114,8 +114,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 2679700,
+      "not_ready_msg": "The buckwheat isn't done growing yet.",
       "msg": "The buckwheat is ready to harvest!",
       "moves": 0,
       "target": "gp_buckwheat_ready"
@@ -136,8 +136,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 1814400,
+      "not_ready_msg": "The broccoli isn't done growing yet.",
       "msg": "The broccoli is ready to harvest!",
       "moves": 0,
       "target": "gp_broccoli_ready"
@@ -158,8 +158,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 2851200,
+      "not_ready_msg": "The oats aren't done growing yet.",
       "msg": "The oats are ready to harvest!",
       "moves": 0,
       "target": "gp_oats_ready"
@@ -180,9 +180,9 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
-      "msg": "Barley is ready to harvest!",
+      "transform_age": 2679500,
+      "not_ready_msg": "The barley isn't done growing yet.",
+      "msg": "The barley is ready to harvest!",
       "moves": 0,
       "target": "gp_barley_ready"
     }
@@ -197,13 +197,13 @@
   {
     "type": "GENERIC",
     "id": "gp_carrot",
-    "name": { "str": "garden pot (growing carrot)", "str_pl": "garden pots (growing carrots)" },
+    "name": { "str": "garden pot (growing carrots)", "str_pl": "garden pots (growing carrots)" },
     "description": "This is a garden pot growing carrots.  Once ripe, it can be activated to prepare it for harvest.",
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 2679500,
+      "not_ready_msg": "The carrots aren't done growing yet.",
       "msg": "The carrots are ready to harvest!",
       "moves": 0,
       "target": "gp_carrot_ready"
@@ -212,7 +212,7 @@
   {
     "type": "GENERIC",
     "id": "gp_carrot_ready",
-    "name": { "str": "garden pot (ripe carrot)", "str_pl": "garden pots (ripe carrot)" },
+    "name": { "str": "garden pot (ripe carrots)", "str_pl": "garden pots (ripe carrots)" },
     "description": "This is a garden pot containing some ripe carrots.  Disassemble to harvest them.  Store away from rabbits.",
     "copy-from": "gp_pot_grown"
   },
@@ -224,8 +224,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 3628800,
+      "not_ready_msg": "The cotton isn't done growing yet.",
       "msg": "The cotton is ready to harvest!",
       "moves": 0,
       "target": "gp_cotton_boll_ready"
@@ -246,8 +246,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 3369600,
+      "not_ready_msg": "The cabbage isn't done growing yet.",
       "msg": "The cabbages are ready to harvest!",
       "moves": 0,
       "target": "gp_cabbage_ready"
@@ -268,9 +268,9 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
-      "msg": "The cucumbers are ready to harvest!",
+      "transform_age": 1900800,
+      "not_ready_msg": "The cucumber isn't done growing yet.",
+      "msg": "The cucumber is ready to harvest!",
       "moves": 0,
       "target": "gp_cucumber_ready"
     }
@@ -279,7 +279,7 @@
     "type": "GENERIC",
     "id": "gp_cucumber_ready",
     "name": { "str": "garden pot (ripe cucumber)", "str_pl": "garden pots (ripe cucumber)" },
-    "description": "This is a garden pot containing ripe cucumbers.  Disassemble to harvest them.",
+    "description": "This is a garden pot containing ripe cucumber.  Disassemble to harvest it.",
     "copy-from": "gp_pot_grown"
   },
   {
@@ -290,8 +290,8 @@
     "copy-from": "gp_pot_growing",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 432000,
-      "not_ready_msg": "It isn't done growing yet.",
+      "transform_age": 7603200,
+      "not_ready_msg": "The garlic isn't done growing yet.",
       "msg": "The garlic is ready to harvest!",
       "moves": 0,
       "target": "gp_garlic_ready"

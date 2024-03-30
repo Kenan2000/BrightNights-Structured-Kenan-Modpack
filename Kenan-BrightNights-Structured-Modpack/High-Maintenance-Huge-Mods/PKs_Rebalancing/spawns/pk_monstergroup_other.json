@@ -3,7 +3,7 @@
     "type": "monstergroup",
     "name": "GROUP_SEWER",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_sewer_rat",
     "monsters": [
       { "monster": "mon_twisted_body", "freq": 25, "cost_multiplier": 15, "pack_size": [ 1, 4 ], "starts": 25 },
@@ -63,7 +63,7 @@
     "type": "monstergroup",
     "name": "GROUP_NETHER",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_blank",
     "monsters": [
       { "monster": "mon_stemcell_nether", "freq": 175, "cost_multiplier": 0, "pack_size": [ 2, 6 ] },
@@ -91,7 +91,7 @@
     "type": "monstergroup",
     "name": "GROUP_SWAMP",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_maggot", "freq": 5, "cost_multiplier": 0, "conditions": [ "SPRING", "SUMMER", "AUTUMN" ] },
@@ -299,7 +299,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_BOG",
-    "override": false,
     "freq_total": 1001,
     "default": "mon_null",
     "monsters": [
@@ -338,7 +337,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CABIN",
-    "override": false,
     "freq_total": 1001,
     "default": "mon_null",
     "monsters": [

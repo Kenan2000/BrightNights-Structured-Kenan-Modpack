@@ -6,15 +6,23 @@
     "//": "Crates of various dog breeds weighted by rarity",
     "items": [
       [ "mon_dog_crate", 33 ],
-      [ "mon_dog_bull_crate", 2 ],
-      [ "mon_dog_auscattle_crate", 2 ],
+      [ "mon_dog_bull_crate", 7 ],
+      [ "mon_dog_auscattle_crate", 7 ],
       [ "mon_dog_pitbullmix_crate", 29 ],
-      [ "mon_dog_beagle_crate", 7 ],
-      [ "mon_dog_bcollie_crate", 3 ],
+      [ "mon_dog_beagle_crate", 15 ],
+      [ "mon_dog_bcollie_crate", 9 ],
       [ "mon_dog_boxer_crate", 8 ],
       [ "mon_dog_chihuahua_crate", 12 ],
-      [ "mon_dog_dachshund_crate", 3 ],
-      [ "mon_dog_gshepherd_crate", 5 ]
+      [ "mon_dog_dachshund_crate", 9 ],
+      [ "mon_dog_gshepherd_crate", 21 ],
+      [ "mon_dog_gpyrenees_crate", 5 ],
+      [ "mon_dog_rottweiler_crate", 2 ]
     ]
+  },
+  {
+    "id": "animalshelter_utility",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "group": "dog_crates", "prob": 5 } ]
   }
 ]

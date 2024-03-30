@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CHUD",
+    "override": false,
+    "auto_total": true,
     "default": "mon_chud",
     "monsters": [
       { "monster": "mon_one_eye", "freq": 20, "cost_multiplier": 0 },

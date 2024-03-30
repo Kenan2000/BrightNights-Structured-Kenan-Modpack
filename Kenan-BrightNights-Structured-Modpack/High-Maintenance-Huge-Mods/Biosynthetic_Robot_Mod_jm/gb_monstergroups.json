@@ -76,6 +76,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_POLICE",
+    "override": false,
+    "auto_total": true,
     "//": "+30% cops",
     "default": "mon_null",
     "monsters": [
@@ -108,6 +110,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_compbot", "freq": 2, "cost_multiplier": 1 },
@@ -120,6 +124,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_COP",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_pbota", "freq": 17, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
@@ -130,6 +136,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOSPITAL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_nursebot_a", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
@@ -139,6 +147,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PHARM",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_nursebot_a", "freq": 20, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
@@ -147,6 +157,8 @@
   },
   {
     "name": "GROUP_MIL_STRONG",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_gkb_mk2", "freq": 7, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
@@ -159,6 +171,8 @@
   },
   {
     "name": "GROUP_MIL_BASE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_gkb_mk2", "freq": 20, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
@@ -172,6 +186,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_MIL",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_gkb_mk2", "freq": 7, "cost_multiplier": 5, "pack_size": [ 1, 2 ] },
       { "monster": "mon_gkb_mk3", "freq": 5, "cost_multiplier": 15 },
@@ -187,6 +203,8 @@
   },
   {
     "name": "GROUP_HOTEL_POOL",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -196,6 +214,8 @@
   },
   {
     "name": "GROUP_HOTEL_GYM",
+    "override": false,
+    "auto_total": true,	
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -205,6 +225,8 @@
   },
   {
     "name": "GROUP_MALL",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -219,6 +241,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PUBLICWORKERS",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_newt", "freq": 10, "cost_multiplier": 1 },
@@ -233,6 +257,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ELECTRO",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_newt", "freq": 15, "cost_multiplier": 1 },
@@ -245,6 +271,8 @@
   },
   {
     "name": "GROUP_PARK_SCENIC",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -256,6 +284,8 @@
   },
   {
     "name": "GROUP_PARK_PLAYGROUND",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [
@@ -268,6 +298,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_gkb_newt", "freq": 4, "cost_multiplier": 1, "pack_size": [ 1, 2 ] },
       { "monster": "mon_gkb_newt", "freq": 2, "cost_multiplier": 15, "pack_size": [ 1, 4 ] },
@@ -284,6 +316,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SMALL_STATION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_newt", "freq": 20, "cost_multiplier": 1 },
@@ -301,6 +335,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LARGE_STATION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_gkb_newt", "freq": 20, "cost_multiplier": 1 },

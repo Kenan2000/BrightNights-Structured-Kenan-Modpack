@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_tengu_monk", "freq": 1, "cost_multiplier": 50 },
@@ -14,12 +16,16 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [ { "monster": "mon_tengu_monk", "freq": 100, "cost_multiplier": 10 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [ { "monster": "mon_nekomata", "freq": 1, "cost_multiplier": 50 } ]
   },
@@ -47,6 +53,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_RIVER",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_kappa", "freq": 12, "cost_multiplier": 30, "pack_size": [ 1, 2 ] },

@@ -3,7 +3,7 @@
     "type": "monstergroup",
     "name": "GROUP_FOREST",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_null", "freq": 15, "cost_multiplier": 1, "conditions": [ "SPRING", "AUTUMN" ] },
@@ -2169,7 +2169,7 @@
     "type": "monstergroup",
     "name": "GROUP_RIVER",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       {
@@ -2461,7 +2461,7 @@
     "type": "monstergroup",
     "name": "GROUP_SWAMP",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_null", "freq": 100, "cost_multiplier": 1 },

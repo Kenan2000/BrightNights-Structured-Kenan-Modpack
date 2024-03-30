@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_nec_ZQ_chang", "freq": 2, "cost_multiplier": 30 },
@@ -13,6 +15,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_nec_hiruko", "freq": 10, "cost_multiplier": 30 }
@@ -21,6 +25,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOSPITAL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_nec_ZQ_chang", "freq": 2, "cost_multiplier": 30 },
@@ -32,6 +38,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CHURCH_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_nec_ZQ_chang", "freq": 20, "cost_multiplier": 30 },
@@ -41,6 +49,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MANSION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters":[
       { "monster": "mon_nec_ZQ_chang", "freq": 25, "cost_multiplier": 30 },
@@ -50,12 +60,16 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [ { "monster": "mon_nec_valkyrie", "freq": 15, "cost_multiplier": 5 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_ICE_LAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [ { "monster": "mon_nec_valkyrie", "freq": 15, "cost_multiplier": 5 } ]
   }

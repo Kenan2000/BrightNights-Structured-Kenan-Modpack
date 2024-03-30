@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       {
         "//": "Make swarmers spawn rarer. Horde size increases by time in this formulation: 1*2=2*2=4... (integers shown by days)",
@@ -125,27 +127,37 @@
   },
   {
     "name": "GROUP_MALL",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_disser", "freq": 1, "cost_multiplier": 8 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_SMALL_STATION",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_jolt", "freq": 1, "cost_multiplier": 10 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_LARGE_STATION",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_jolt", "freq": 1, "cost_multiplier": 10 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_ELECTRO",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_jolt", "freq": 1, "cost_multiplier": 8 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_PREPPER_HOUSE",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_zombie_fake_ichorus", "freq": 1, "cost_multiplier": 35 },
       { "monster": "mon_zombie_fake_psyrus", "freq": 1, "cost_multiplier": 35 }
@@ -153,6 +165,8 @@
   },
   {
     "name": "GROUP_PANICROOM",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_zombie_fake_ichorus", "freq": 1, "cost_multiplier": 35 },
@@ -162,6 +176,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_zombie_fake_ichorus", "freq": 1, "cost_multiplier": 35 },
       { "monster": "mon_zombie_fake_psyrus", "freq": 1, "cost_multiplier": 35 }
@@ -170,16 +186,22 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CHURCH_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_uruxis", "freq": 1, "cost_multiplier": 25 } ]
   },
   {
     "name": "GROUP_VETS",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "monsters": [ { "monster": "mon_zombie_cling", "freq": 1, "cost_multiplier": 6 } ]
   },
   {
     "type": "monstergroup",
     "name": "DUMP_ZOMBIES",
+    "override": false,
+    "auto_total": true,
     "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 1460 } ]
   },
   {
@@ -244,6 +266,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
+    "override": false,
+    "auto_total": true,
     "//": "Break the law and let this appear in sewers!",
     "is_animal": false,
     "monsters": [ { "monster": "mon_zombie_nautilus", "freq": 125, "cost_multiplier": 10 } ]
@@ -251,6 +275,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_ayenel", "freq": 1, "cost_multiplier": 60 },
       { "monster": "mon_maneater", "freq": 1, "cost_multiplier": 50 },
@@ -261,6 +287,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SWAMP",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_ayenel", "freq": 1, "cost_multiplier": 60 },
       { "monster": "mon_maneater", "freq": 1, "cost_multiplier": 50 },

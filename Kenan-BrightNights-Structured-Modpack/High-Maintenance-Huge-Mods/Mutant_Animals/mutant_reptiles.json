@@ -28,6 +28,8 @@
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
+    "reproduction": { "baby_egg": "egg_reptile", "baby_count": 1, "baby_timer": 21 },
+    "baby_flags": [ "SPRING" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "SWIMS" ]
   },
   {
@@ -37,7 +39,7 @@
     "name": { "str": "molting snake" },
     "description": "A mutating snake shedding its dried epidermis.  Although vulnerable and weak, this snake still has a venomous bite.",
     "color": "light_green",
-    "upgrades": { "half_life": 30, "into_group": "GROUP_SNAKE_MUTANT" },
+    "upgrades": { "half_life": 15, "into_group": "GROUP_SNAKE_MUTANT" },
     "extend": { "flags": [ "VENOM" ] }
   },
   {
@@ -146,7 +148,7 @@
     "armor_bullet": 6,
     "vision_day": 50,
     "vision_night": 10,
-    "upgrades": { "half_life": 364, "into": "mon_gamma_toad" },
+    "upgrades": { "half_life": 33, "into": "mon_gamma_toad" },
     "special_attacks": [
       [ "SMASH", 100 ],
       [ "RANGED_PULL", 10 ],

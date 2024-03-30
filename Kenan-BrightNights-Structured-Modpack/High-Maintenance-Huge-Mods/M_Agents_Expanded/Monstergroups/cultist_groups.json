@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CHURCH_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_cultist_one",
     "monsters": [
       { "monster": "mon_cultist_one", "freq": 1, "cost_multiplier": 7, "pack_size": [ 5, 10 ] },
@@ -19,6 +21,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_SEXSHOP_A",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_cultist_one", "freq": 10, "cost_multiplier": 7, "pack_size": [ 1, 3 ] },
@@ -32,6 +36,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_SEXSHOP_B",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_cultist_one", "freq": 5, "cost_multiplier": 7, "pack_size": [ 1, 4 ] },

@@ -11,6 +11,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_MIL",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_dkz_glowdrone", "freq": 40, "cost_multiplier": 0 },
       { "monster": "mon_dkz_scidrone", "freq": 40, "cost_multiplier": 0 },
@@ -67,6 +69,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MIL_WEAK",
+    "override": false,
+    "auto_total": true,
     "monsters": [
       { "monster": "mon_dkz_glowdrone", "freq": 50, "cost_multiplier": 0, "pack_size": [ 2, 3 ] },
       { "monster": "mon_dkz_scidrone", "freq": 50, "cost_multiplier": 0, "pack_size": [ 1, 3 ] },
@@ -77,6 +81,8 @@
   },
   {
     "name": "GROUP_FUNGI_TOWER",
+    "override": false,
+    "auto_total": true,
     "//": "Xenoids prioritize raiding Fungal Towers. Starts with rangers, enforcers and drones, ends with emissaries, earlier than normal spawns.",
     "type": "monstergroup",
     "monsters": [
@@ -93,6 +99,8 @@
   },
   {
     "name": "GROUP_DIMENSIONAL_SURFACE",
+    "override": false,
+    "auto_total": true,
     "//": "Xenoids prioritize dimensional intrusions. Starts with rangers, enforcers and drones, no pyros, nor emissaries, it would be overkill.",
     "type": "monstergroup",
     "monsters": [
@@ -106,6 +114,8 @@
   },
   {
     "name": "GROUP_TRIFFID_OUTER",
+    "override": false,
+    "auto_total": true,
     "//": "Xenoids prioritize raiding triffids. Starts with rangers, enforcers and drones, no pyros, nor emissaries, it would be overkill.",
     "type": "monstergroup",
     "monsters": [
@@ -119,6 +129,8 @@
   },
   {
     "name": "GROUP_MI-GO_CAMP_OM",
+    "override": false,
+    "auto_total": true,
     "//": "Xenoids prioritize raiding Mi-go camps. Starts with rangers, enforcers and drones, ends with emissaries, earlier than normal spawns.",
     "type": "monstergroup",
     "monsters": [
@@ -137,6 +149,8 @@
   },
   {
     "name": "GROUP_MIL_STRONG",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "monsters": [
       { "monster": "mon_dkz_glowdrone", "freq": 100, "cost_multiplier": 0, "pack_size": [ 1, 2 ] },
@@ -154,6 +168,8 @@
   },
   {
     "name": "GROUP_MIL_BASE",
+    "override": false,
+    "auto_total": true,
     "//": "Xenoids prioritize attacking military bases.. Starts with large groups of knights and drones, ends with emissaries, earlier than normal spawns.",
     "type": "monstergroup",
     "monsters": [
@@ -173,6 +189,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
+    "override": false,
+    "auto_total": true,
     "default": "dkz_mon_lurker_rectified",
     "is_animal": true,
     "monsters": [ { "monster": "dkz_mon_lurker_rectified", "freq": 5, "cost_multiplier": 0 } ]
@@ -180,6 +198,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_WORM",
+    "override": false,
+    "auto_total": true,
     "default": "dkz_mon_bileworm_rectified",
     "is_animal": true,
     "monsters": [ { "monster": "dkz_mon_bileworm_rectified", "freq": 25, "cost_multiplier": 0 } ]
@@ -187,6 +207,8 @@
   {
     "type": "monstergroup",
     "name": "DUMP_ANIMALS",
+    "override": false,
+    "auto_total": true,
     "default": "dkz_mon_bileworm_rectified",
     "monsters": [ { "monster": "dkz_mon_bileworm_rectified", "freq": 5, "cost_multiplier": 0 } ]
   }

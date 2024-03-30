@@ -1,5 +1,5 @@
 [
- {
+  {
     "abstract": "mon_dog_mutant",
     "type": "MONSTER",
     "name": { "str": "mutant dog" },
@@ -80,7 +80,7 @@
     "morale": 45,
     "dodge": 1,
     "harvest": "mammal_small_leather",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_CANINE_MUTANT" },
+    "upgrades": { "half_life": 21, "into_group": "GROUP_CANINE_MUTANT" },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -96,7 +96,7 @@
     "morale": 25,
     "dodge": 1,
     "harvest": "mammal_small_leather",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_CANINE_MUTANT" },
+    "upgrades": { "half_life": 21, "into_group": "GROUP_CANINE_MUTANT" },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -112,7 +112,7 @@
     "morale": 100,
     "dodge": 1,
     "harvest": "mammal_small_leather",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_CANINE_MUTANT" },
+    "upgrades": { "half_life": 21, "into_group": "GROUP_CANINE_MUTANT" },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -122,7 +122,7 @@
     "name": { "str": "deformed whelp" },
     "description": "A mutating puppy with patchy fur and malformed limbs.",
     "color": "green",
-    "upgrades": { "age_grow": 42, "into_group": "GROUP_CANINE_MUTANT" }
+    "upgrades": { "age_grow": 14, "into_group": "GROUP_CANINE_MUTANT" }
   },
   {
     "id": "mon_dog_mutant_worm",
@@ -145,9 +145,9 @@
     "aggression": 50,
     "morale": 10,
     "vision_night": 20,
-    "reproduction": { "baby_monster": "mon_dog_mutant_worm_pup", "baby_count": 2, "baby_timer": 270 },
+    "reproduction": { "baby_monster": "mon_dog_mutant_worm_pup", "baby_count": 2, "baby_timer": 21 },
     "harvest": "mammal_small_leather",
-    "extend": { "flags": [  "BILE_BLOOD" ] }
+    "extend": { "flags": [ "BILE_BLOOD" ] }
   },
   {
     "id": "mon_dog_mutant_worm_pup",
@@ -159,7 +159,7 @@
     "morale": 30,
     "vision_night": 10,
     "harvest": "mammal_small_leather",
-    "upgrades": { "age_grow": 30, "into": "mon_dog_mutant_worm" },
+    "upgrades": { "age_grow": 15, "into": "mon_dog_mutant_worm" },
     "extend": { "flags": [ "BILE_BLOOD" ] }
   },
   {
@@ -180,7 +180,7 @@
     "aggression": 100,
     "morale": 50,
     "harvest": "mammal_small_leather",
-    "reproduction": { "baby_monster": "mon_dog_mutant_happy_pup", "baby_count": 2, "baby_timer": 270 }
+    "reproduction": { "baby_monster": "mon_dog_mutant_happy_pup", "baby_count": 2, "baby_timer": 21 }
   },
   {
     "id": "mon_dog_mutant_happy_pup",
@@ -189,7 +189,7 @@
     "name": { "str": "happysmile puppy" },
     "description": "The chittering whelp of a happysmile dog. It has a permanent grin of venomous fangs.",
     "harvest": "mammal_small_leather",
-    "upgrades": { "age_grow": 42, "into": "mon_dog_mutant_happy" },
+    "upgrades": { "age_grow": 14, "into": "mon_dog_mutant_happy" },
     "color": "pink"
   },
   {
@@ -210,7 +210,7 @@
     "color": "light_blue",
     "aggression": 50,
     "morale": 50,
-    "reproduction": { "baby_monster": "mon_dog_mutant_digiri_pup", "baby_count": 2, "baby_timer": 270 }
+    "reproduction": { "baby_monster": "mon_dog_mutant_digiri_pup", "baby_count": 2, "baby_timer": 21 }
   },
   {
     "id": "mon_dog_mutant_digiri_pup",
@@ -219,7 +219,7 @@
     "name": { "str": "digiridog whelp" },
     "description": "The offspring of a digiridog. Its bone tubes are not yet developed and it looks almost like a real dog.",
     "color": "light_blue",
-    "upgrades": { "age_grow": 42, "into": "mon_dog_mutant_digiri" }
+    "upgrades": { "age_grow": 14, "into": "mon_dog_mutant_digiri" }
   },
   {
     "id": "mon_dog_mutant_dire",
@@ -248,7 +248,7 @@
     "regenerates": 1,
     "anger_triggers": [ "FRIEND_ATTACKED", "HURT", "FRIEND_DIED", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "placate_triggers": [ "MEAT" ],
-    "reproduction": { "baby_monster": "mon_dog_mutant_dire_pup", "baby_count": 1, "baby_timer": 270 },
+    "reproduction": { "baby_monster": "mon_dog_mutant_dire_pup", "baby_count": 1, "baby_timer": 21 },
     "delete": { "flags": [ "HIT_AND_RUN" ] },
     "extend": { "flags": [ "FUR", "PET_MOUNTABLE" ] }
   },
@@ -275,7 +275,7 @@
     "vision_night": 5,
     "harvest": "mammal_fur",
     "regenerates": 1,
-    "upgrades": { "age_grow": 60, "into": "mon_dog_mutant_dire" },
+    "upgrades": { "age_grow": 21, "into": "mon_dog_mutant_dire" },
     "extend": { "flags": [ "FUR", "DOGFOOD" ] }
   }
 ]

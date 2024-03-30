@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_BRUTE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_brute",
     "monsters": [
       { "monster": "mon_zombie_brute_grappler", "freq": 500, "cost_multiplier": 1 },
@@ -88,6 +90,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_UPGRADE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_pk",
     "//": "Masters pick from here when upgrading; no dogs, bionics, or profession-types.  This is a mid-game list.",
     "monsters": [
@@ -141,6 +145,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_FAT",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_fat",
     "monsters": [
       { "monster": "mon_zombie_gasbag", "freq": 250, "cost_multiplier": 5 },
@@ -289,6 +295,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_WORM",
+    "override": false,
+    "auto_total": true,
     "default": "mon_worm",
     "monsters": [
       { "monster": "mon_graboid", "freq": 50, "cost_multiplier": 15 },

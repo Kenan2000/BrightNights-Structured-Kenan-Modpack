@@ -27,7 +27,8 @@
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
     "harvest": "mammal_tiny",
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN" ]
+    "reproduction": { "baby_monster": "mon_cat_kitten", "baby_count": 1, "baby_timer": 21 },
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "ANIMAL", "CLIMBS", "PATH_AVOID_DANGER_1", "WARM", "HIT_AND_RUN" ]
   },
   {
     "id": "mon_cat_sick_hairless",
@@ -37,7 +38,7 @@
     "description": "A mutating feline that has lost its coat of fur, making it appear weird and sickly.",
     "color": "brown",
     "harvest": "animal_noskin",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_FELINE_MUTANT" },
+    "upgrades": { "half_life": 21, "into_group": "GROUP_FELINE_MUTANT" },
     "extend": { "flags": [ "NO_BREED" ] }
   },
   {
@@ -48,7 +49,7 @@
     "description": "A mutating feline that has sprouted extra sets of vestigal legs and multiple tails.  Its movements are slow and clumsy.",
     "color": "brown",
     "speed": 80,
-    "upgrades": { "half_life": 60, "into_group": "GROUP_FELINE_MUTANT" },
+    "upgrades": { "half_life": 21, "into_group": "GROUP_FELINE_MUTANT" },
     "extend": { "flags": [ "NO_BREED", "STUMBLES" ] }
   },
   {

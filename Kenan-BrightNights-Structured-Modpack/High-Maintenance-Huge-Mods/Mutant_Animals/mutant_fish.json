@@ -20,7 +20,7 @@
     "melee_dice_sides": 4,
     "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
     "luminance": 0,
-    "reproduction": { "baby_egg": "egg_fish", "baby_count": 3, "baby_timer": 150 },
+    "reproduction": { "baby_egg": "egg_fish", "baby_count": 3, "baby_timer": 21 },
     "baby_flags": [ "AUTUMN", "WINTER" ],
     "fear_triggers": [ "PLAYER_CLOSE", "SOUND" ],
     "death_function": [ "NORMAL" ],
@@ -34,7 +34,7 @@
     "name": { "str": "puke fish", "str_pl": "puke fish" },
     "description": "A disgustingly mutating fish about the size of a large carp.  It exudes a gooey brown gel and smells like rotting milk.",
     "color": "green",
-    "upgrades": { "half_life": 30, "into_group": "GROUP_FISH_MUTANT" }
+    "upgrades": { "half_life": 15, "into_group": "GROUP_FISH_MUTANT" }
   },
   {
     "id": "mon_fish_sick_finger",
@@ -43,7 +43,7 @@
     "name": { "str": "finger fish", "str_pl": "finger fish" },
     "description": "A freakishly mutating fish about the size of a large carp.  A cluster of finger-like limbs have burst from its head.",
     "color": "brown",
-    "upgrades": { "half_life": 30, "into_group": "GROUP_FISH_MUTANT" }
+    "upgrades": { "half_life": 15, "into_group": "GROUP_FISH_MUTANT" }
   },
   {
     "id": "mon_fish_sick_tumor",
@@ -53,7 +53,7 @@
     "description": "An odious mutating fish about the size of a large carp. It's so covered in bleeding tumors and fleshy nodules that it can barely swim.",
     "speed": 100,
     "color": "brown",
-    "upgrades": { "half_life": 30, "into_group": "GROUP_FISH_MUTANT" }
+    "upgrades": { "half_life": 15, "into_group": "GROUP_FISH_MUTANT" }
   },
   {
     "id": "mon_fish_mutant_angel",

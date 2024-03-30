@@ -194,7 +194,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
     "dodge": 1,
     "aggression": 10,
-    "upgrades": { "half_life": 30, "into": "mon_ant_acid_soldier" },
+    "upgrades": { "half_life": 15, "into": "mon_ant_acid_soldier" },
     "special_attacks": [ [ "ACID", 23 ], [ "EAT_FOOD", 30 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "ACID", "NORMAL" ],
@@ -241,7 +241,7 @@
     "armor_bash": 6,
     "armor_cut": 12,
     "armor_bullet": 10,
-    "upgrades": { "half_life": 364, "into": "mon_mega_acid_ant" },
+    "upgrades": { "half_life": 120, "into": "mon_mega_acid_ant" },
     "//": "half life set high due to large population",
     "special_attacks": [ [ "ACID", 15 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
@@ -292,7 +292,7 @@
     "type": "MONSTER",
     "copy-from": "mon_ant_acid_larva",
     "description": "A yellow grub the size of a dog.  It squirms and oozes gelatinous fluids.  This one seems unusually friendly.",
-    "upgrades": { "age_grow": 30, "into": "mon_mega_acid_ant" },
+    "upgrades": { "age_grow": 15, "into": "mon_mega_acid_ant" },
     "extend": { "flags": [ "DOGFOOD" ] }
   },
   {
@@ -307,7 +307,7 @@
     "color": "brown",
     "dodge": 1,
     "aggression": 10,
-    "upgrades": { "half_life": 30, "into": "mon_ant_soldier" },
+    "upgrades": { "half_life": 15, "into": "mon_ant_soldier" },
     "special_attacks": [ [ "EAT_FOOD", 30 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_WEAK" ],
     "flags": [ "CLIMBS", "HEARS", "SEES", "SMELLS", "PET_MOUNTABLE"  ]
@@ -349,7 +349,7 @@
     "armor_bash": 8,
     "armor_cut": 10,
     "armor_bullet": 8,
-    "upgrades": { "half_life": 364, "into": "mon_mega_ant" },
+    "upgrades": { "half_life": 120, "into": "mon_mega_ant" },
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "ACID", "NORMAL" ],
     "flags": [ "CLIMBS", "HEARS", "SEES", "SMELLS", "PET_MOUNTABLE"  ]
@@ -393,7 +393,7 @@
     "type": "MONSTER",
     "copy-from": "mon_ant_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a dog.  On one end is a set of squirming mouth parts.  THis one seems rather playful.",
-    "upgrades": { "age_grow": 30, "into": "mon_mega_ant" },
+    "upgrades": { "age_grow": 15, "into": "mon_mega_ant" },
     "extend": { "flags": [ "DOGFOOD" ] }
   },
   {
@@ -436,7 +436,8 @@
     "morale": 50,
     "reproduction": { "baby_egg": "egg_bee", "baby_count": 5, "baby_timer": 1 },
     "harvest": "arachnid_stinger",
-    "attack_effs": [ { "id": "poison", "chance": 30, "duration": 20 } ],    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
+    "attack_effs": [ { "id": "poison", "chance": 30, "duration": 20 } ], 
+    "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE" ],
     "flags": [ "HEARS", "SEES", "SMELLS" ]
   },
   {
@@ -464,7 +465,7 @@
     "type": "MONSTER",
     "copy-from": "mon_small_bee_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a squirrel.  On one end is a set of squirming mouth parts.  This one seems proud and commanding.",
-    "upgrades": { "age_grow": 15, "into": "mon_mega_bee_queen" },
+    "upgrades": { "age_grow": 10, "into": "mon_mega_bee_queen" },
     "extend": { "flags": [ "BIRDFOOD" ] }
   },
   {
@@ -483,8 +484,8 @@
     "armor_cut": 12,
     "armor_bullet": 10,
     "aggression": 10,
-    "upgrades": { "half_life": 182, "into": "mon_mega_beetle" },
-    "reproduction": { "baby_egg": "egg_beetle", "baby_count": 5, "baby_timer": 90 },
+    "upgrades": { "half_life": 60, "into": "mon_mega_beetle" },
+    "reproduction": { "baby_egg": "egg_beetle", "baby_count": 5, "baby_timer": 31 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
     "anger_triggers": [ "HURT" ],
@@ -506,7 +507,7 @@
     "armor_cut": 20,
     "armor_bullet": 17,
     "aggression": 10,
-    "reproduction": { "baby_egg": "egg_beetle", "baby_count": 10, "baby_timer": 90 },
+    "reproduction": { "baby_egg": "egg_beetle", "baby_count": 10, "baby_timer": 31 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "special_attacks": [ [ "EAT_FOOD", 50 ] ],
     "anger_triggers": [ "HURT" ],
@@ -531,7 +532,7 @@
     "type": "MONSTER",
     "copy-from": "mon_large_beetle_larva",
     "description": "A worm-like larva the size of a dog. This one seems fairly tame.",
-    "upgrades": { "age_grow": 30, "into": "mon_mega_beetle" },
+    "upgrades": { "age_grow": 15, "into": "mon_mega_beetle" },
     "extend": { "flags": [ "CATTLEFODDER" ] }
   },
   {
@@ -549,7 +550,7 @@
     "melee_dice_sides": 1,
     "dodge": 9,
     "fear_triggers": [ "HURT", "SOUND", "FIRE", "PLAYER_CLOSE" ],
-    "reproduction": { "baby_egg": "egg_butterfly", "baby_count": 1, "baby_timer": 200 },
+    "reproduction": { "baby_egg": "egg_butterfly", "baby_count": 1, "baby_timer": 68 },
     "baby_flags": [ "SPRING" ],
     "flags": [ "CLIMBS", "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HARDTOSHOOT" ]
   },
@@ -599,7 +600,7 @@
     "morale": 100,
     "dodge": 4,
     "attack_effs": [ { "id": "poison", "chance": 75, "duration": 20 } ],
-    "upgrades": { "half_life": 91, "into": "mon_centipede_giant" },
+    "upgrades": { "half_life": 31, "into": "mon_centipede_giant" },
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
     "flags": [ "CLIMBS", "HEARS", "SEES", "SMELLS" ]
   },
@@ -621,7 +622,7 @@
     "attack_effs": [ { "id": "poison", "chance": 75, "duration": 20 } ],
     "special_attacks": [ [ "EAT_FOOD", 30 ] ],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
-    "reproduction": { "baby_egg": "egg_centipede", "baby_count": 1, "baby_timer": 200 },
+    "reproduction": { "baby_egg": "egg_centipede", "baby_count": 1, "baby_timer": 68 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "flags": [ "CLIMBS", "HEARS", "SEES", "SMELLS" ]
   },
@@ -807,7 +808,7 @@
     "copy-from": "mon_small_dragonfly",
     "name": { "str": "mutant dragonfly" },
     "description": "A mutant dragonfly which has grown to the size of a crow.  It darts and weaves through the air.  This one seems especially intelligent.",
-    "upgrades": { "age_grow": 30, "into": "mon_mega_dragonfly" },
+    "upgrades": { "age_grow": 15, "into": "mon_mega_dragonfly" },
     "flags": [ "CLIMBS", "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "HARDTOSHOOT", "DOGFOOD" ]
   },
   {
@@ -826,8 +827,8 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "special_attacks": [ [ "PARROT", 30 ] ],
     "dodge": 9,
-    "upgrades": { "age_grow": 30, "into": "mon_dragonfly_giant" },
-    "reproduction": { "baby_egg": "egg_dragonfly", "baby_count": 1, "baby_timer": 91 },
+    "upgrades": { "age_grow": 15, "into": "mon_dragonfly_giant" },
+    "reproduction": { "baby_egg": "egg_dragonfly", "baby_count": 1, "baby_timer": 31 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "vision_day": 30,
     "fear_triggers": [ "FIRE"],
@@ -849,13 +850,13 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "special_attacks": [ [ "PARROT", 30 ] ],
     "dodge": 6,
-    "upgrades": { "half_life": 91, "into": "mon_mega_dragonfly" },
-    "reproduction": { "baby_egg": "egg_dragonfly", "baby_count": 2, "baby_timer": 91 },
+    "upgrades": { "half_life": 31, "into": "mon_mega_dragonfly" },
+    "reproduction": { "baby_egg": "egg_dragonfly", "baby_count": 2, "baby_timer": 31 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "vision_day": 30,
     "fear_triggers": [ "FIRE"],
     "anger_triggers": [ "HURT", "PLAYER_WEAK" ],
-    "flags": [ "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "PET_MOUNTABLE"  ]
+    "flags": [ "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "PET_MOUNTABLE" ]
   },
   {
     "id": "mon_mega_dragonfly",
@@ -871,7 +872,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
     "special_attacks": [ [ "PARROT", 20 ] ],
     "dodge": 5,
-    "reproduction": { "baby_egg": "egg_dragonfly", "baby_count": 3, "baby_timer": 91 },
+    "reproduction": { "baby_egg": "egg_dragonfly", "baby_count": 3, "baby_timer": 31 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "vision_day": 30,
     "anger_triggers": [ "HURT", "PLAYER_WEAK", "PLAYER_CLOSE" ],
@@ -912,7 +913,7 @@
     "dodge": 9,
     "fear_triggers": [ "FIRE", "PLAYER_CLOSE", "HURT" ],
     "upgrades": { "age_grow": 10, "into": "mon_giant_fly" },
-    "reproduction": { "baby_egg": "egg_fly", "baby_count": 1, "baby_timer": 30 },
+    "reproduction": { "baby_egg": "egg_fly", "baby_count": 1, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "flags": [ "CLIMBS", "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HARDTOSHOOT" ]
   },
@@ -929,11 +930,11 @@
     "aggression": -10,
     "special_attacks": [ [ "PARROT", 30 ] ],
     "dodge": 6,
-    "upgrades": { "half_life": 91, "into": "mon_mega_fly" },
-    "reproduction": { "baby_egg": "egg_fly", "baby_count": 2, "baby_timer": 30 },
+    "upgrades": { "half_life": 31, "into": "mon_mega_fly" },
+    "reproduction": { "baby_egg": "egg_fly", "baby_count": 2, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "fear_triggers": [ "FIRE", "PLAYER_CLOSE", "HURT" ],
-    "flags": [ "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "PET_MOUNTABLE"  ]
+    "flags": [ "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "PET_MOUNTABLE" ]
   },
   {
     "id": "mon_mega_fly",
@@ -948,7 +949,7 @@
     "aggression": -5,
     "special_attacks": [ [ "PARROT", 20 ] ],
     "dodge": 5,
-    "reproduction": { "baby_egg": "egg_fly", "baby_count": 3, "baby_timer": 30 },
+    "reproduction": { "baby_egg": "egg_fly", "baby_count": 3, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "vision_day": 20,
     "fear_triggers": [ "FIRE", "HURT" ],
@@ -972,7 +973,7 @@
     "type": "MONSTER",
     "copy-from": "mon_small_fly_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a housecat.  On one end is a set of squirming mouth parts.  This one seems rather playful.",
-    "upgrades": { "age_grow": 30, "into": "mon_mega_fly" },
+    "upgrades": { "age_grow": 15, "into": "mon_mega_fly" },
     "extend": { "flags": [ "DOGFOOD" ] }
   },
   {
@@ -1005,7 +1006,7 @@
     "color": "light_green",
     "aggression": -10,
     "dodge": 6,
-    "reproduction": { "baby_egg": "egg_locust", "baby_count": 1, "baby_timer": 30 },
+    "reproduction": { "baby_egg": "egg_locust", "baby_count": 1, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "fear_triggers": [ "FIRE", "PLAYER_CLOSE", "HURT" ],
     "special_attacks": [ { "type": "leap", "cooldown": 4, "max_range": 4 }, [ "EAT_CROP", 60 ] ],
@@ -1047,7 +1048,7 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 4 } ],
     "dodge": 8,
     "fear_triggers": [ "HURT"],
-    "reproduction": { "baby_egg": "egg_mosquito", "baby_count": 1, "baby_timer": 30 },
+    "reproduction": { "baby_egg": "egg_mosquito", "baby_count": 1, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER" ],
     "flags": [ "BLEED", "CLIMBS", "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "SWARMS", "HARDTOSHOOT" ]
   },
@@ -1082,11 +1083,11 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
     "special_attacks": [ [ "PARROT", 30 ] ],
     "dodge": 9,
-    "upgrades": { "half_life": 182, "into": "mon_mega_wasp" },
-    "reproduction": { "baby_egg": "egg_wasp", "baby_count": 1, "baby_timer": 30 },
+    "upgrades": { "half_life": 68, "into": "mon_mega_wasp" },
+    "reproduction": { "baby_egg": "egg_wasp", "baby_count": 1, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "harvest": "arachnid_stinger",
-    "attack_effs": [ { "id": "poison", "chance": 50, "duration": 20 },{ "id": "paralyzepoison", "chance": 50, "duration": 10 }  ],
+    "attack_effs": [ { "id": "poison", "chance": 50, "duration": 20 }, { "id": "paralyzepoison", "chance": 50, "duration": 10 } ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "flags": [ "SEES", "SMELLS", "FLIES", "SWARMS", "GROUP_MORALE" ]
   },
@@ -1106,11 +1107,11 @@
     "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
     "special_attacks": [ [ "PARROT", 30 ] ],
     "dodge": 4,
-    "upgrades": { "half_life": 91, "into": "mon_mega_fly" },
-    "reproduction": { "baby_egg": "egg_wasp", "baby_count": 3, "baby_timer": 30 },
+    "upgrades": { "half_life": 31, "into": "mon_mega_fly" },
+    "reproduction": { "baby_egg": "egg_wasp", "baby_count": 3, "baby_timer": 15 },
     "baby_flags": [ "SPRING", "SUMMER", "AUTUMN" ],
     "harvest": "arachnid_stinger",
-    "attack_effs": [ { "id": "poison", "chance": 50, "duration": 20 },{ "id": "paralyzepoison", "chance": 50, "duration": 10 }  ],
+    "attack_effs": [ { "id": "poison", "chance": 50, "duration": 20 }, { "id": "paralyzepoison", "chance": 50, "duration": 10 } ],
     "anger_triggers": [ "HURT", "FRIEND_DIED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
     "flags": [ "SEES", "SMELLS", "FLIES", "SWARMS", "GROUP_MORALE" ]
   },
@@ -1132,7 +1133,7 @@
     "type": "MONSTER",
     "copy-from": "mon_large_wasp_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a dog.  On one end is a set of squirming mouth parts.  This one seems less aggressive.",
-    "upgrades": { "age_grow": 30, "into": "mon_mega_wasp" },
+    "upgrades": { "age_grow": 15, "into": "mon_mega_wasp" },
     "extend": { "flags": [ "DOGFOOD" ] }
   }
 ]

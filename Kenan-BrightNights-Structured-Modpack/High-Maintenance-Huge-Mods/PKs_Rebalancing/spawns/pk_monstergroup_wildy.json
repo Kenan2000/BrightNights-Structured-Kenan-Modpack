@@ -3,7 +3,7 @@
     "type": "monstergroup",
     "name": "GROUP_PEST",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_maggot",
     "monsters": [
       {
@@ -70,7 +70,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PEST_FLYING",
-    "override": false,
     "freq_total": 1001,
     "default": "mon_crow",
     "monsters": [
@@ -107,7 +106,7 @@
     "type": "monstergroup",
     "name": "GROUP_ANT",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_ant", "freq": 330, "cost_multiplier": 0 },
@@ -134,7 +133,7 @@
     "type": "monstergroup",
     "name": "GROUP_SPIDER",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_spider_web",
     "monsters": [
       { "monster": "mon_null", "freq": 1000, "cost_multiplier": 0, "conditions": [ "WINTER" ] },
@@ -186,7 +185,7 @@
     "type": "monstergroup",
     "name": "GROUP_CAVE",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       {
@@ -278,8 +277,8 @@
     "type": "monstergroup",
     "name": "GROUP_SAFE",
     "is_safe": false,
-    "override": true,
-    "freq_total": 1001,
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_null", "freq": 50, "cost_multiplier": 1, "conditions": [ "SPRING", "AUTUMN" ] },
@@ -363,7 +362,7 @@
     "type": "monstergroup",
     "name": "GROUP_DOMESTIC",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_dog",
     "monsters": [
       { "monster": "mon_horse_zombie", "freq": 10, "cost_multiplier": 20, "starts": 75, "pack_size": [ 1, 2 ] },
@@ -432,7 +431,7 @@
     "type": "monstergroup",
     "name": "GROUP_BEE",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_bee", "freq": 200, "cost_multiplier": 0 },
@@ -447,7 +446,7 @@
     "type": "monstergroup",
     "name": "CAMPERS",
     "override": false,
-    "freq_total": 1001,
+    "auto_total": false,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_thing_swamp", "freq": 10, "cost_multiplier": 5 },
@@ -573,7 +572,6 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HORROR",
-    "override": false,
     "freq_total": 1001,
     "default": "mon_null",
     "monsters": [

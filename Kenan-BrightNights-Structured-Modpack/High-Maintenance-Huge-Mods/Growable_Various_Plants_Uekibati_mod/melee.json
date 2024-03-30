@@ -5,7 +5,7 @@
     "symbol": ")",
     "color": "brown",
     "name": { "str": "Flower Pot", "str_pl": "Flower Pots" },
-    "description": "This is a flower pot made of clay. It is big enough for most crops.",
+    "description": "This is a flower pot made of clay. It is big enough for most of crops along with plants. Growth time of plants ranges from approximately 16 days to approximately 121 days. When plants have fully grown, a pot with them like this should be activated, then crafted into an empty pot. This provides with edible or usable, or both, plants.",
     "price": "20 USD",
     "material": "clay",
     "weight": "480 g",
@@ -19,8 +19,8 @@
   {
     "type": "GENERIC",
     "id": "ueki_tomato",
-    "name": { "str": "Flower Pot(growing tomato)", "str_pl": "Flower Pots(growing tomatoes)" },
-    "description": "This is a flower pot growing tomatoes",
+    "name": { "str": "Flower Pot(growing tomatoes)", "str_pl": "Flower Pots(growing tomatoes)" },
+    "description": "This is a flower pot growing tomatoes.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -33,9 +33,9 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 129600,
-      "not_ready_msg": "It is growing quickly.",
-      "msg": "Tomatoes are ready to harvest!",
+      "transform_age": 2160000,
+      "not_ready_msg": "The tomatoes are still growing.",
+      "msg": "The tomatoes are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_tomato"
     }
@@ -43,8 +43,8 @@
   {
     "type": "GENERIC",
     "id": "fi_ueki_tomato",
-    "name": { "str": "Flower Pot(tomato)", "str_pl": "Flower Pots(tomatoes)" },
-    "description": "This is a flower pot containing a ready to harvest tomato.",
+    "name": { "str": "Flower Pot(tomatoes)", "str_pl": "Flower Pots(tomatoes)" },
+    "description": "This is a flower pot containing a ready to harvest tomatoes.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -73,8 +73,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "The blueberries are growing quickly.",
+      "transform_age": 9937300,
+      "not_ready_msg": "The blueberries are still growing.",
       "msg": "The blueberries are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_blueberries"
@@ -113,8 +113,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "The strawberries are growing quickly.",
+      "transform_age": 2160000,
+      "not_ready_msg": "The strawberries are still growing.",
       "msg": "The strawberries are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_strawberries"
@@ -153,8 +153,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "The blackberries are growing quickly.",
+      "transform_age": 9937300,
+      "not_ready_msg": "The blackberries are still growing.",
       "msg": "The blackberries are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_blackberries"
@@ -193,8 +193,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "The cranberries are growing quickly.",
+      "transform_age": 8640000,
+      "not_ready_msg": "The cranberries are still growing.",
       "msg": "The cranberries are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_cranberries"
@@ -233,8 +233,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "The raspberries are growing quickly.",
+      "transform_age": 8640000,
+      "not_ready_msg": "The raspberries are still growing.",
       "msg": "The raspberries are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_raspberries"
@@ -273,8 +273,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 244800,
-      "not_ready_msg": "The wheat is growing quickly.",
+      "transform_age": 4147200,
+      "not_ready_msg": "The wheat is still growing.",
       "msg": "The wheat is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_wheat"
@@ -313,8 +313,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 244800,
-      "not_ready_msg": "The hops are growing quickly.",
+      "transform_age": 3628800,
+      "not_ready_msg": "The hops are still growing.",
       "msg": "The hops are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_hops"
@@ -353,8 +353,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 144000,
-      "not_ready_msg": "The barley is growing quickly.",
+      "transform_age": 2679500,
+      "not_ready_msg": "The barley is still growing.",
       "msg": "The barley is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_barley"
@@ -379,7 +379,7 @@
   {
     "type": "GENERIC",
     "id": "ueki_sugar_beet",
-    "name": { "str": "Flower Pot(sugar beet)", "str_pl": "Flower Pots(sugar beet)" },
+    "name": { "str": "Flower Pot(sugar beets)", "str_pl": "Flower Pots(sugar beets)" },
     "description": "This flower pot contains growing sugar beets.",
     "weight": "480 g",
     "symbol": ")",
@@ -393,8 +393,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "The sugar beets are growing quickly.",
+      "transform_age": 7776000,
+      "not_ready_msg": "The sugar beets are still growing.",
       "msg": "The sugar beets are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_sugar_beet"
@@ -433,8 +433,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 172800,
-      "not_ready_msg": "The lettuce is growing quickly.",
+      "transform_age": 1382400,
+      "not_ready_msg": "The lettuce is still growing.",
       "msg": "The lettuce is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_lettuce"
@@ -473,8 +473,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 172800,
-      "not_ready_msg": "The cabbage is growing quickly.",
+      "transform_age": 3369600,
+      "not_ready_msg": "The cabbage is still growing.",
       "msg": "The cabbage is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_cabbage"
@@ -499,7 +499,7 @@
   {
     "type": "GENERIC",
     "id": "ueki_cotton_boll",
-    "name": { "str": "Flower Pot(growing cotton boll)", "str_pl": "Flower Pots(growing cotton boll)" },
+    "name": { "str": "Flower Pot(growing cotton bolls)", "str_pl": "Flower Pots(growing cotton bolls)" },
     "description": "This flower pot contains growing cotton bolls.",
     "weight": "480 g",
     "symbol": ")",
@@ -513,8 +513,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 259200,
-      "not_ready_msg": "The cotton bolls are growing quickly.",
+      "transform_age": 3628800,
+      "not_ready_msg": "The cotton bolls are still growing.",
       "msg": "The cotton bolls are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_cotton_boll"
@@ -523,7 +523,7 @@
   {
     "type": "GENERIC",
     "id": "fi_ueki_cotton_boll",
-    "name": { "str": "Flower Pot(cotton boll)", "str_pl": "Flower Pots(cotton boll)" },
+    "name": { "str": "Flower Pot(cotton bolls)", "str_pl": "Flower Pots(cotton bolls)" },
     "description": "This flower pot contains ready to harvest cotton bolls.",
     "weight": "480 g",
     "symbol": ")",
@@ -553,8 +553,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 144000,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 1814400,
+      "not_ready_msg": "The broccoli is still growing.",
       "msg": "The broccoli is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_broccoli"
@@ -593,8 +593,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 100800,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 1814400,
+      "not_ready_msg": "The zucchini is still growing.",
       "msg": "The zucchini is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_zucchini"
@@ -619,7 +619,7 @@
   {
     "type": "GENERIC",
     "id": "ueki_onion",
-    "name": { "str": "Flower Pot(growing onion)", "str_pl": "Flower Pots(growing onion)" },
+    "name": { "str": "Flower Pot(growing onions)", "str_pl": "Flower Pots(growing onions)" },
     "description": "This flower pot contains growing onions.",
     "weight": "480 g",
     "symbol": ")",
@@ -633,9 +633,9 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 129600,
-      "not_ready_msg": "It is growing quickly.",
-      "msg": "The onion is ready to harvest.",
+      "transform_age": 3196800,
+      "not_ready_msg": "The onions are still growing.",
+      "msg": "The onions are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_onion"
     }
@@ -643,7 +643,7 @@
   {
     "type": "GENERIC",
     "id": "fi_ueki_onion",
-    "name": { "str": "Flower Pot(onion)", "str_pl": "Flower Pots(onion)" },
+    "name": { "str": "Flower Pot(onions)", "str_pl": "Flower Pots(onions)" },
     "description": "This flower pot contains ready to harvest onions.",
     "weight": "480 g",
     "symbol": ")",
@@ -673,8 +673,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 129600,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 7603200,
+      "not_ready_msg": "The garlic is still growing.",
       "msg": "The garlic is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_garlic"
@@ -684,7 +684,7 @@
     "type": "GENERIC",
     "id": "fi_ueki_garlic",
     "name": { "str": "Flower Pot(garlic)", "str_pl": "Flower Pots(garlic)" },
-    "description": "This flower pot contains ready to harvest garlic,",
+    "description": "This flower pot contains ready to harvest garlic.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -699,7 +699,7 @@
   {
     "type": "GENERIC",
     "id": "ueki_carrot",
-    "name": { "str": "Flower Pot(growing carrot)", "str_pl": "Flower Pots(growing carrot)" },
+    "name": { "str": "Flower Pot(growing carrots)", "str_pl": "Flower Pots(growing carrots)" },
     "description": "This flower pot contains growing carrots.",
     "weight": "480 g",
     "symbol": ")",
@@ -713,8 +713,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 129600,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2679500,
+      "not_ready_msg": "The carrots are still growing.",
       "msg": "The carrots are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_carrot"
@@ -723,8 +723,8 @@
   {
     "type": "GENERIC",
     "id": "fi_ueki_carrot",
-    "name": { "str": "Flower Pot(carrot)", "str_pl": "Flower Pots(carrot)" },
-    "description": "This flower pot contains ready to harvest carrots",
+    "name": { "str": "Flower Pot(carrots)", "str_pl": "Flower Pots(carrots)" },
+    "description": "This flower pot contains ready to harvest carrots.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -753,8 +753,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 129600,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2679500,
+      "not_ready_msg": "The corn is still growing.",
       "msg": "The corn is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_corn"
@@ -793,9 +793,9 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 86400,
-      "not_ready_msg": "It is growing quickly.",
-      "msg": "燕麦がready to harvest.",
+      "transform_age": 2851200,
+      "not_ready_msg": "The oats are still growing.",
+      "msg": "The oats are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_oats"
     }
@@ -833,8 +833,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 3024000,
+      "not_ready_msg": "The beans are still growing.",
       "msg": "The beans are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_raw_beans"
@@ -859,7 +859,7 @@
   {
     "type": "GENERIC",
     "id": "ueki_potato_raw",
-    "name": { "str": "Flower Pot(growing potato)", "str_pl": "Flower Pots(growing potatoes)" },
+    "name": { "str": "Flower Pot(growing potatoes)", "str_pl": "Flower Pots(growing potatoes)" },
     "description": "This flower pot contains growing potatoes.",
     "weight": "480 g",
     "symbol": ")",
@@ -873,8 +873,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 3283200,
+      "not_ready_msg": "The potatoes are still growing.",
       "msg": "The potatoes are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_potato_raw"
@@ -883,7 +883,7 @@
   {
     "type": "GENERIC",
     "id": "fi_ueki_potato_raw",
-    "name": { "str": "Flower Pot(potato)", "str_pl": "Flower Pots(potato)" },
+    "name": { "str": "Flower Pot(potatoes)", "str_pl": "Flower Pots(potatoes)" },
     "description": "This flower pot contains ready to harvest potatoes.",
     "weight": "480 g",
     "symbol": ")",
@@ -913,8 +913,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 115200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 1900800,
+      "not_ready_msg": "The cucumber is still growing.",
       "msg": "The cucumber is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_cucumber"
@@ -953,8 +953,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 259200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 4406700,
+      "not_ready_msg": "The celery is still growing.",
       "msg": "The celery is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_celery"
@@ -993,8 +993,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2505600,
+      "not_ready_msg": "The thyme is still growing.",
       "msg": "The thyme is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_thyme"
@@ -1033,8 +1033,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 1900800,
+      "not_ready_msg": "The canola is still growing.",
       "msg": "The canola is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_canola"
@@ -1073,8 +1073,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2505600,
+      "not_ready_msg": "The dogbane is still growing.",
       "msg": "The dogbane is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_dogbane"
@@ -1113,8 +1113,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 3369600,
+      "not_ready_msg": "The bee balm is still growing.",
       "msg": "The bee balm is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_bee_balm"
@@ -1153,8 +1153,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2332800,
+      "not_ready_msg": "The mugwort is still growing.",
       "msg": "The mugwort is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_mugwort"
@@ -1193,8 +1193,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2679700,
+      "not_ready_msg": "The buckwheat is still growing.",
       "msg": "The buckwheat is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_buckwheat"
@@ -1233,8 +1233,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2505700,
+      "not_ready_msg": "The wild herbs are still growing.",
       "msg": "The wild herbs are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_wild_herbs"
@@ -1273,8 +1273,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2505700,
+      "not_ready_msg": "The wild veggies are still growing.",
       "msg": "The wild veggies are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_veggy_wild"
@@ -1313,9 +1313,9 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
-      "msg": "The dandelions are ready to harvest.",
+      "transform_age": 2332800,
+      "not_ready_msg": "The dandelion is still growing.",
+      "msg": "The dandelion is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_raw_dandelion"
     }
@@ -1353,9 +1353,9 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
-      "msg": "大黄がready to harvest.",
+      "transform_age": 2332900,
+      "not_ready_msg": "The rhubarb is still growing.",
+      "msg": "The rhubarb is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_rhubarb"
     }
@@ -1364,7 +1364,7 @@
     "type": "GENERIC",
     "id": "fi_ueki_rhubarb",
     "name": { "str": "Flower Pot(rhubarb)", "str_pl": "Flower Pots(rhubarb)" },
-    "description": "This flower pot contains ready to harvest rhubarb",
+    "description": "This flower pot contains ready to harvest rhubarb.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -1380,7 +1380,7 @@
     "type": "GENERIC",
     "id": "ueki_mushroom",
     "name": { "str": "Flower Pot(growing mushrooms)", "str_pl": "Flower Pots(growing mushrooms)" },
-    "description": "This flower pot contains growing mushrooms",
+    "description": "This flower pot contains growing mushrooms.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -1393,8 +1393,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 187200,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 2505900,
+      "not_ready_msg": "The mushrooms are still growing.",
       "msg": "The mushrooms are ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_mushroom"
@@ -1404,7 +1404,7 @@
     "type": "GENERIC",
     "id": "fi_ueki_mushroom",
     "name": { "str": "Flower Pot(mushrooms)", "str_pl": "Flower Pots(mushrooms)" },
-    "description": "This flower pot contains ready to harvest mushrooms",
+    "description": "This flower pot contains ready to harvest mushrooms.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -1420,7 +1420,7 @@
     "type": "GENERIC",
     "id": "ueki_dry_rice",
     "name": { "str": "Flower Pot(growing dry rice)", "str_pl": "Flower Pots(growing dry rice)" },
-    "description": "This flower pot contains growing dry rice",
+    "description": "This flower pot contains growing dry rice.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -1433,8 +1433,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 360000,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 4406700,
+      "not_ready_msg": "The dry rice is still growing.",
       "msg": "The dry rice is ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_dry_rice"
@@ -1444,7 +1444,7 @@
     "type": "GENERIC",
     "id": "fi_ueki_dry_rice",
     "name": { "str": "Flower Pot(dry rice)", "str_pl": "Flower Pots(dry rice)" },
-    "description": "This flower pot contains ready to harvest dry rice",
+    "description": "This flower pot contains ready to harvest dry rice.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -1460,7 +1460,7 @@
     "type": "GENERIC",
     "id": "ueki_coffee_bean",
     "name": { "str": "Flower Pot(growing coffee beans)", "str_pl": "Flower Pots(growing coffee beans)" },
-    "description": "This flower pot contains growing coffee beans",
+    "description": "This flower pot contains growing coffee beans.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",
@@ -1473,8 +1473,8 @@
     "category": "tools",
     "use_action": {
       "type": "delayed_transform",
-      "transform_age": 216000,
-      "not_ready_msg": "It is growing quickly.",
+      "transform_age": 9937300,
+      "not_ready_msg": "The coffee beans are still growing.",
       "msg": "The coffee beans ready to harvest.",
       "moves": 0,
       "target": "fi_ueki_coffee_bean"
@@ -1484,7 +1484,7 @@
     "type": "GENERIC",
     "id": "fi_ueki_coffee_bean",
     "name": { "str": "Flower Pot(coffee beans)", "str_pl": "Flower Pots(coffee beans)" },
-    "description": "This flower pot contains ready to harvest coffee beans",
+    "description": "This flower pot contains ready to harvest coffee beans.",
     "weight": "480 g",
     "symbol": ")",
     "color": "brown",

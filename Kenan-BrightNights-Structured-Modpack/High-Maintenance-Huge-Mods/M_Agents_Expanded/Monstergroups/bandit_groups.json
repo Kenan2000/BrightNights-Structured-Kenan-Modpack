@@ -2,6 +2,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_FOREST",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 8, "cost_multiplier": 5 },
@@ -22,6 +24,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_CAVE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 17, "cost_multiplier": 10 },
@@ -33,6 +37,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 13, "cost_multiplier": 4 },
@@ -68,6 +74,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SEWER",
+    "override": false,
+    "auto_total": true,
     "default": "mon_sewer_rat",
     "monsters": [
       { "monster": "mon_toxic_one_m", "freq": 10, "cost_multiplier": 0 },
@@ -79,6 +87,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_VANILLA",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 10, "cost_multiplier": 5 },
@@ -89,6 +99,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ROBOT",
+    "override": false,
+    "auto_total": true,
     "default": "mon_manhack",
     "monsters": [
       { "monster": "mon_bandit_shotgun", "freq": 6, "cost_multiplier": 7 },
@@ -98,12 +110,16 @@
   {
     "type": "monstergroup",
     "name": "GROUP_TURRET",
+    "override": false,
+    "auto_total": true,
     "default": "mon_turret",
     "monsters": [ { "monster": "mon_bandit_looter", "freq": 10, "cost_multiplier": 5 } ]
   },
   {
     "type": "monstergroup",
     "name": "GROUP_HOUSE",
+    "override": false,
+    "auto_total": true,
     "//": "+15% child",
     "default": "mon_zombie",
     "monsters": [
@@ -123,6 +139,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PREPPER_HOUSE",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 8, "cost_multiplier": 5 },
@@ -141,6 +159,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PHARM",
+    "override": false,
+    "auto_total": true,
     "//": "+15% fast",
     "default": "mon_zombie",
     "monsters": [
@@ -155,6 +175,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ELECTRO",
+    "override": false,
+    "auto_total": true,
     "//": "+15% electric",
     "default": "mon_zombie",
     "monsters": [
@@ -171,6 +193,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_GROCERY",
+    "override": false,
+    "auto_total": true,
     "//": "+15% bommers",
     "default": "mon_zombie",
     "monsters": [
@@ -188,6 +212,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_MIL",
+    "override": false,
+    "auto_total": true,
     "//": "50% chance military zombie",
     "default": "mon_null",
     "monsters": [
@@ -205,6 +231,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_PUBLICWORKERS",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_electric",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 20, "cost_multiplier": 5 },
@@ -221,6 +249,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MAYBE_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "//": "10% chance of a zombie",
     "default": "mon_null",
     "monsters": [
@@ -233,6 +263,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SMALL_STATION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_technician",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 20, "cost_multiplier": 5 },
@@ -245,6 +277,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_LARGE_STATION",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_technician",
     "monsters": [
       { "monster": "mon_bandit_glock", "freq": 20, "cost_multiplier": 4 },
@@ -259,6 +293,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_ZOMBIE_PRISON",
+    "override": false,
+    "auto_total": true,
     "default": "mon_prison_one",
     "monsters": [
       { "monster": "mon_prison_one", "freq": 8, "cost_multiplier": 5, "pack_size": [ 3, 6 ] },
@@ -271,6 +307,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_HOSPITAL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "//": "Hospital monster spawns. Same as GROUP_ZOMBIE, but without Z-dogs.",
     "monsters": [
@@ -286,6 +324,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_STEEL_MILL",
+    "override": false,
+    "auto_total": true,
     "//": "+15% bommers",
     "default": "mon_zombie",
     "monsters": [
@@ -305,6 +345,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_SCHOOL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_null",
     "//": "School monster spawns.",
     "monsters": [
@@ -315,6 +357,8 @@
   {
     "type": "monstergroup",
     "name": "DUMP_ZOMBIES",
+    "override": false,
+    "auto_total": true,
     "default": "mon_toxic_one_m",
     "monsters": [
       { "monster": "mon_toxic_one_m", "freq": 150, "cost_multiplier": 1 },
@@ -328,6 +372,8 @@
   {
     "type": "monstergroup",
     "name": "GROUP_MALL",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie",
     "monsters": [
       { "monster": "mon_bandit_looter", "freq": 20, "cost_multiplier": 5 },
@@ -361,6 +407,8 @@
   },
   {
     "name": "GROUP_ROOF_ZOMBIE",
+    "override": false,
+    "auto_total": true,
     "type": "monstergroup",
     "default": "mon_null",
     "monsters": [

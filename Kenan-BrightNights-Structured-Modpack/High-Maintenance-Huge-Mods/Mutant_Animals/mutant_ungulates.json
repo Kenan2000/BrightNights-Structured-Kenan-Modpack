@@ -11,8 +11,8 @@
     "delete": {
       "starting_ammo": { "milk_raw": 40 },
       "flags": [ "CATTLEFODDER", "PET_WONT_FOLLOW", "MILKABLE" ],
-      "upgrades": { "half_life": 120, "into_group": "GROUP_COW_ALL" },
-      "reproduction": { "baby_monster": "mon_cow_calf", "baby_count": 1, "baby_timer": 343 }
+      "upgrades": { "half_life": 39, "into_group": "GROUP_COW_ALL" },
+      "reproduction": { "baby_monster": "mon_cow_calf", "baby_count": 1, "baby_timer": 88 }
     }
   },
   {
@@ -24,7 +24,7 @@
     "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
-    "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "age_grow": 180, "into": "mon_cow" } }
+    "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "age_grow": 60, "into": "mon_cow" } }
   },
   {
     "id": "mon_cow_sick_twisthorn",
@@ -34,7 +34,7 @@
     "description": "A mutating cow with mutiple horns bursting from its skull at odd angles.  Its skin has dried and contracted, causing a network of bloody cracks to cover the unfortunate animal.  Due to extreme pain, the cow is violent and agitated.",
     "color": "red",
     "extend": { "flags": [ "NO_BREED" ] },
-    "upgrades": { "half_life": 60, "into_group": "GROUP_COW_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_COW_MUTANT" }
   },
   {
     "id": "mon_cow_sick_obese",
@@ -50,7 +50,7 @@
     "weight": "1600000 g",
     "color": "brown",
     "extend": { "flags": [ "NO_BREED", "CATTLEFODDER" ] },
-    "upgrades": { "half_life": 60, "into_group": "GROUP_COW_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_COW_MUTANT" }
   },
   {
     "id": "mon_cow_mutant_ironhorn",
@@ -61,7 +61,7 @@
     "fear_triggers": [ "FIRE" ],
     "description": "A mutated cow that has somehow grown a pair of metal horns which it can use to great effect.  It is a highly aggressive animal.",
     "harvest": "mammal_large_metalbone",
-    "reproduction": { "baby_monster": "mon_cow_calf_mutant_ironhorn", "baby_count": 1, "baby_timer": 240 },
+    "reproduction": { "baby_monster": "mon_cow_calf_mutant_ironhorn", "baby_count": 1, "baby_timer": 79 },
     "color": "light_gray",
     "aggression": 50,
     "morale": 60,
@@ -80,7 +80,7 @@
     "name": { "str": "ironhorn calf", "str_pl": "ironhorn calves" },
     "description": "A young mutated cow with a pair of metal horns.",
     "harvest": "mammal_large_metalbone",
-    "upgrades": { "age_grow": 28, "into": "mon_cow_mutant_ironhorn" },
+    "upgrades": { "age_grow": 14, "into": "mon_cow_mutant_ironhorn" },
     "color": "light_gray"
   },
   {
@@ -93,7 +93,7 @@
     "volume": "1400000 ml",
     "weight": "1400000 g",
     "harvest": "mammal_large_fur",
-    "reproduction": { "baby_monster": "mon_cow_calf_mutant_auroch", "baby_count": 1, "baby_timer": 240 },
+    "reproduction": { "baby_monster": "mon_cow_calf_mutant_auroch", "baby_count": 1, "baby_timer": 79 },
     "color": "brown",
     "starting_ammo": { "milk_raw": 60 },
     "extend": { "flags": [ "CATTLEFODDER", "MILKABLE" ] }
@@ -105,7 +105,7 @@
     "name": { "str": "auroch calf", "str_pl": "auroch calves" },
     "description": "A young mutated cow that has evolved back into its prehistoric state.",
     "harvest": "mammal_large_fur",
-    "upgrades": { "age_grow": 120, "into": "mon_cow_mutant_auroch" },
+    "upgrades": { "age_grow": 39, "into": "mon_cow_mutant_auroch" },
     "color": "light_gray"
   },
   {
@@ -114,7 +114,7 @@
     "copy-from": "mon_cow_mutant",
     "name": { "str": "moss bison", "str_pl": "moss bison" },
     "description": "A mutated cow that can photosynthesize sunlight through its moss-like fur.  This green beast is quite lethargic and is often mistaken for a bush or hedge.",
-    "reproduction": { "baby_monster": "mon_cow_calf_mutant_moss", "baby_count": 1, "baby_timer": 120 },
+    "reproduction": { "baby_monster": "mon_cow_calf_mutant_moss", "baby_count": 1, "baby_timer": 39 },
     "default_faction": "triffid",
     "death_drops": "mutant_cowmoss_death_drops",
     "color": "green"
@@ -127,7 +127,7 @@
     "description": "A young mutated cow that can photosynthesize sunlight through its moss-like fur.  This green beast is quite lethargic and is often mistaken for a bush or hedge.",
     "default_faction": "plant",
     "death_drops": "mutant_cowmoss_death_drops",
-    "upgrades": { "age_grow": 60, "into": "mon_cow_mutant_moss" },
+    "upgrades": { "age_grow": 21, "into": "mon_cow_mutant_moss" },
     "color": "light_gray"
   },
   {
@@ -139,7 +139,7 @@
     "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
-    "delete": { "upgrades": { "half_life": 120, "into_group": "GROUP_DEER_ALL" } }
+    "delete": { "upgrades": { "half_life": 39, "into_group": "GROUP_DEER_ALL" } }
   },
   {
     "id": "mon_deer_sick_crying",
@@ -151,7 +151,7 @@
     "special_attacks": [ [ "PARROT", 100 ] ],
     "color": "brown",
     "extend": { "flags": [ "NO_BREED" ] },
-    "upgrades": { "half_life": 60, "into_group": "GROUP_UNGULATE_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_UNGULATE_MUTANT" }
   },
   {
     "id": "mon_deer_sick_burnt",
@@ -162,7 +162,7 @@
     "speed": 150,
     "color": "dark_gray",
     "extend": { "flags": [ "NO_BREED" ] },
-    "upgrades": { "half_life": 60, "into_group": "GROUP_UNGULATE_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_UNGULATE_MUTANT" }
   },
   {
     "abstract": "mon_horse_mutant",
@@ -175,8 +175,8 @@
     "species": [ "MUTANT" ],
     "delete": { 
       "flags": [ "CATTLEFODDER", "PET_MOUNTABLE" ],
-      "upgrades": { "half_life": 120, "into_group": "GROUP_HORSE_ALL" },
-      "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 360 }
+      "upgrades": { "half_life": 39, "into_group": "GROUP_HORSE_ALL" },
+      "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 115 }
     }
   },
   {
@@ -191,7 +191,7 @@
     "weight": "350000 g",
     "extend": { "flags": [ "NO_BREED", "CATTLEFODDER" ] },
     "color": "brown",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_HORSE_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_HORSE_MUTANT" }
   },
   {
     "id": "mon_horse_sick_glue",
@@ -202,7 +202,7 @@
     "extend": { "flags": [ "CATTLEFODDER" ] },
     "reproduction": { "baby_egg": "bone_glue", "baby_count": 20, "baby_timer": 1 },
     "color": "white",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_HORSE_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_HORSE_MUTANT" }
   },
   {
     "abstract": "mon_sheep_mutant",
@@ -212,7 +212,7 @@
     "default_faction": "herbivore",
     "bodytype": "quadruped",
     "categories": [ "NULL" ],
-    "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "half_life": 120, "into_group": "GROUP_SHEEP_ALL" } },
+    "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "half_life": 39, "into_group": "GROUP_SHEEP_ALL" } },
     "species": [ "MUTANT" ]
   },
   {
@@ -224,7 +224,7 @@
     "harvest": "mammal_leather",
     "extend": { "flags": [ "NO_BREED" ] },
     "color": "light_gray",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_UNGULATE_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_UNGULATE_MUTANT" }
   },
   {
     "id": "mon_sheep_sick_gamma",
@@ -236,7 +236,7 @@
     "emit_fields": [ "emit_nuclear_trail" ],
     "extend": { "flags": [ "NO_BREED" ] },
     "color": "light_green",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_UNGULATE_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_UNGULATE_MUTANT" }
   },
   {
     "id": "mon_ungulate_mutant_glass",
@@ -286,7 +286,7 @@
     "fear_triggers": [ "FIRE" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
     "harvest": "mammal_large_fur",
-    "reproduction": { "baby_monster": "mon_ungulate_mutant_brat", "baby_count": 8, "baby_timer": 120 },
+    "reproduction": { "baby_monster": "mon_ungulate_mutant_brat", "baby_count": 8, "baby_timer": 39 },
     "starting_ammo": { "mucus_spit": 10 },
     "special_attacks": [
       [ "SHRIEK_STUN", 10 ],
@@ -323,7 +323,7 @@
     "fear_triggers": [ "FIRE" ],
     "placate_triggers": [ "PLAYER_WEAK" ],
     "harvest": "mammal_large_fur",
-    "upgrades": { "age_grow": 60, "into": "mon_ungulate_mutant_screech" },
+    "upgrades": { "age_grow": 21, "into": "mon_ungulate_mutant_screech" },
     "starting_ammo": { "mucus_spit": 10 },
     "special_attacks": [
       [ "SHRIEK_STUN", 20 ],
@@ -356,7 +356,7 @@
     "armor_bash": 6,
     "armor_cut": 2,
     "armor_bullet": 2,
-    "reproduction": { "baby_monster": "mon_ungulate_mutant_foal_sleipnir", "baby_count": 1, "baby_timer": 240 },
+    "reproduction": { "baby_monster": "mon_ungulate_mutant_foal_sleipnir", "baby_count": 1, "baby_timer": 79 },
     "symbol": "S",
     "color": "cyan",
     "extend": { "flags": [ "CATTLEFODDER", "PET_MOUNTABLE" ] }
@@ -367,7 +367,7 @@
     "copy-from": "mon_cow_calf_mutant",
     "name": { "str": "sleipnir foal", "str_pl": "sleipnir foals" },
     "description": "A young mutated horse with a third pair of legs. It appears to not mind human company.",
-    "upgrades": { "age_grow": 120, "into": "mon_ungulate_mutant_sleipnir" },
+    "upgrades": { "age_grow": 39, "into": "mon_ungulate_mutant_sleipnir" },
     "symbol": "s",
     "color": "cyan",
     "extend": { "flags": [ "CATTLEFODDER" ] }
@@ -381,7 +381,7 @@
     "bodytype": "pig",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
-    "delete": { "upgrades": { "half_life": 120, "into_group": "GROUP_PIG_ALL" }, "reproduction": { "baby_monster": "mon_pig_piglet", "baby_count": 8, "baby_timer": 154 } }
+    "delete": { "upgrades": { "half_life": 39, "into_group": "GROUP_PIG_ALL" }, "reproduction": { "baby_monster": "mon_pig_piglet", "baby_count": 8, "baby_timer": 39 } }
   },
   {
     "abstract": "mon_pig_piglet_mutant",
@@ -390,7 +390,7 @@
     "name": { "str": "mutant piglet" },
     "default_faction": "pig",
     "bodytype": "pig",
-    "delete": { "upgrades": { "age_grow": 38, "into": "mon_pig" } },
+    "delete": { "upgrades": { "age_grow": 21, "into": "mon_pig" } },
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ]
   },
@@ -406,7 +406,7 @@
     "description": "A mutating pig infested with fly larva. It can barely see or move due to its necrotic wounds.",
     "extend": { "flags": [ "NO_BREED" ] },
     "color": "brown",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_PIG_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_PIG_MUTANT" }
   },
   {
     "id": "mon_pig_sick_tumor",
@@ -418,7 +418,7 @@
     "description": "A mutating pig that has inflamed tumors all over its body. It looks to be in constant pain and distress.",
     "extend": { "flags": [ "NO_BREED" ] },
     "color": "brown",
-    "upgrades": { "half_life": 60, "into_group": "GROUP_PIG_MUTANT" }
+    "upgrades": { "half_life": 21, "into_group": "GROUP_PIG_MUTANT" }
   },
   {
     "id": "mon_pig_mutant_rhino",
@@ -441,7 +441,7 @@
     "armor_cut": 10,
     "armor_bullet": 6,
     "armor_stab": 6,
-    "reproduction": { "baby_monster": "mon_pig_piglet_mutant_rhino", "baby_count": 3, "baby_timer": 120 }
+    "reproduction": { "baby_monster": "mon_pig_piglet_mutant_rhino", "baby_count": 3, "baby_timer": 39 }
   },
   {
     "id": "mon_pig_piglet_mutant_rhino",
@@ -449,7 +449,7 @@
     "copy-from": "mon_pig_piglet_mutant",
     "name": { "str": "rhino piglet" },
     "description": "A juvenile mutated pig that is growing a thick protective hide similar to that of a rhino.",
-    "upgrades": { "age_grow": 30, "into": "mon_pig_mutant_rhino" },
+    "upgrades": { "age_grow": 15, "into": "mon_pig_mutant_rhino" },
     "color": "light_gray"
   },
   {
@@ -471,7 +471,7 @@
     "armor_bash": 5,
     "armor_cut": 5,
     "armor_bullet": 4,
-    "reproduction": { "baby_monster": "mon_pig_piglet_mutant_quill", "baby_count": 3, "baby_timer": 120 },
+    "reproduction": { "baby_monster": "mon_pig_piglet_mutant_quill", "baby_count": 3, "baby_timer": 39 },
     "extend": { "flags": [ "DOGFOOD" ] }
   },
   {
@@ -480,7 +480,7 @@
     "copy-from": "mon_pig_piglet",
     "name": { "str": "quill piglet" },
     "description": "A juvenile mutated pig covered in small bone nubs.",
-    "upgrades": { "age_grow": 30, "into": "mon_pig_mutant_quill" },
+    "upgrades": { "age_grow": 15, "into": "mon_pig_mutant_quill" },
     "extend": { "flags": [ "DOGFOOD" ] },
     "color": "light_gray"
   }

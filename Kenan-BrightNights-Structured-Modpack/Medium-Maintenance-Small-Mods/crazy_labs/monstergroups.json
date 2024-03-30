@@ -2,6 +2,8 @@
 {
     "type": "monstergroup",
     "name": "GROUP_CENTRAL_LAB",
+    "override": false,
+    "auto_total": true,
     "default": "mon_zombie_scientist",
     "monsters": [
       { "monster": "mon_zombie_soldier", "freq": 60, "cost_multiplier": 1, "pack_size": [ 1, 4 ] },
