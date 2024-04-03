@@ -4,15 +4,15 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "badge_marshal",
-      "yes": "Another survivor it is. I'm trading some military supplies and munitions smuggled from near camp. You wanna trade?",
-      "no": "Another survivor it is. I'm trading some military supplies and munitions smuggled from near camp. You wanna trade?"},
+      "yes": "Another survivor it is. I'm trading some military supplies and munitions smuggled from one of the camps nearby. You wanna trade?",
+      "no": "Another survivor it is. I'm trading some military supplies and munitions smuggled from one of the camps nearby. You wanna trade?"},
     "responses": [
       {
-        "text": "Is there anything I can help?",
+        "text": "Is there anything I can help with?",
         "topic": "TALK_Merc_Mil_Help"
       },
       {
-        "text": "Let's see what you got...",
+        "text": "Let's see what you have got...",
         "effect": "start_trade",
         "topic": "TALK_Merc_Mil"
       },

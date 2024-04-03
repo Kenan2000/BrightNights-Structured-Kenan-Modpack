@@ -4,15 +4,15 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "badge_marshal",
-      "yes": "Batteries, fuel, irons, medicines...All right. Munitions are the best. I have something edible. Do not think like robbing. We are all armed. Anyway, Trade?",
-      "no": "Batteries, fuel, irons, medicines...All right. Munitions are the best. I have something edible. Do not think like robbing. We are all armed. Anyway, Trade?"},
+      "yes": "Batteries, fuel, irons, medicines...All right. Munitions are the best, they are preferred. I have edible things to trade. Do not think of robbing anyone here. We are all armed. Anyway, Let's Trade?",
+      "no": "Batteries, fuel, irons, medicines...All right. Munitions are the best, preferred. I have edible things to trade. Do not think of robbing anyone here. We are all armed. Anyway, Let's Trade?"},
     "responses": [
       {
-        "text": "Is there anything I can help?",
+        "text": "Is there anything I can help with?",
         "topic": "TALK_Merc_Mil_Help"
       },
       {
-        "text": "Let's see what you got...",
+        "text": "Let's see what you have got...",
         "effect": "start_trade",
         "topic": "TALK_Merc_Mil"
       },
