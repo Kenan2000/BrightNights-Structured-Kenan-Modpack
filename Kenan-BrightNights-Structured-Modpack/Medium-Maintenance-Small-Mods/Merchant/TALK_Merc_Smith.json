@@ -5,14 +5,15 @@
     "dynamic_line": {
       "u_is_wearing": "badge_marshal",
       "yes": "Makeshift firearms, tools, armors. What do you need?",
-      "no": "Makeshift firearms, tools, armors. What do you need?"},
+      "no": "Makeshift firearms, tools, armors. What do you need?"
+    },
     "responses": [
       {
-        "text": "Do you need anything help?",
+        "text": "Do you take forging commisions?",
         "topic": "TALK_Merc_Smith_Help"
       },
       {
-        "text": "I wanna trade.",
+        "text": "Let's trade.",
         "effect": "start_trade",
         "topic": "TALK_Merc_Smith"
       },

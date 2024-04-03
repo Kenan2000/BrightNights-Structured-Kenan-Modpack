@@ -4,11 +4,11 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_is_wearing": "badge_marshal",
-      "yes": "<greet>, I'm dealing in something useful to treat diseases. Do you need drugs?",
-      "no": "<greet>, I'm dealing in something useful to treat diseases. Do you need drugs?"},
+      "yes": "<greet>, I deal with diseases and drugs. Want to buy some?",
+      "no": "<greet>, I deal with diseases and drugs. Want to buy some?"},
     "responses": [
       {
-        "text": "Are you doctor? Can you treat me?",
+        "text": "Are you a doctor? Can you treat me?",
         "topic": "TALK_Merc_Med_Help"
       },
       {
@@ -25,7 +25,7 @@
   {
     "id": "TALK_Merc_Med_Help",
     "type": "talk_topic",
-    "dynamic_line": "Unfortunately, I'm not a real doctor. He died some ago... I'm just selling some of his possessions.",
+    "dynamic_line": "Unfortunately, I'm not a real doctor. He died somewhat recently... I'm just selling some of his possessions.",
     "responses": [
       {
         "text": "Got it.",
