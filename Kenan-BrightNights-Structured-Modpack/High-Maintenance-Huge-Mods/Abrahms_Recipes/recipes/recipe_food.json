@@ -47,7 +47,7 @@
       [ [ "water", 1 ], [ "water_clean", 1 ] ],
       [ [ "any_butter_or_oil", 2, "LIST" ] ],
       [ [ "powder_eggs", 8 ], [ "eggs_bird", 8, "LIST" ], [ "egg_reptile", 8 ] ],
-      [ [ "meat_red_raw", 1, "LIST" ] ],
+      [ [ "meat_red", 1, "LIST" ] ],
       [ [ "sambal", 3 ] ],
       [ [ "ketjap", 5 ] ],
       [ [ "soysauce", 1 ] ]
@@ -69,7 +69,7 @@
       [ [ "spaghetti_cooked", 1 ] ],
       [ [ "any_butter_or_oil", 2, "LIST" ] ],
       [ [ "powder_eggs", 8 ], [ "eggs_bird", 8, "LIST" ], [ "egg_reptile", 8 ] ],
-      [ [ "meat_red_raw", 1, "LIST" ] ],
+      [ [ "meat_red", 1, "LIST" ] ],
       [ [ "sambal", 3 ] ],
       [ [ "ketjap", 5 ] ],
       [ [ "soysauce", 1 ] ],
@@ -92,7 +92,7 @@
       [ [ "fun_raw", 5 ] ],
       [ [ "any_butter_or_oil", 2, "LIST" ] ],
       [ [ "powder_eggs", 4 ], [ "eggs_bird", 4, "LIST" ], [ "egg_reptile", 4 ] ],
-      [ [ "meat_red_raw", 1, "LIST" ] ],
+      [ [ "meat_red", 1, "LIST" ] ],
       [ [ "ketjap", 2 ] ],
       [ [ "soysauce", 2 ] ],
       [ [ "broth", 1 ] ]
@@ -114,7 +114,7 @@
       [ [ "dry_rice", 2 ] ],
       [ [ "water", 1 ], [ "water_clean", 1 ] ],
       [ [ "veggy_any", 1, "LIST" ] ],
-      [ [ "meat_red_raw", 2, "LIST" ] ],
+      [ [ "meat_red", 2, "LIST" ] ],
       [ [ "ketjap", 2 ] ],
       [ [ "soysauce", 2 ] ]
     ]
@@ -355,7 +355,7 @@
     "autolearn": true,
     "batch_time_factors": [ 25, 1 ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "meat_red_raw", 2, "LIST" ] ] ]
+    "components": [ [ [ "meat_red", 2, "LIST" ] ] ]
   },
   {
     "type": "recipe",
