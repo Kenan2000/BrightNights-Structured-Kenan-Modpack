@@ -20,7 +20,7 @@
     "smoking_result": "dried_apple",
     "vitamins": [ [ "vitC", 3 ] ]
   },
-    {
+  {
     "type": "COMESTIBLE",
     "id": "plum_slices",
     "name": { "str": "plum slices" },
@@ -41,7 +41,7 @@
     "smoking_result": "dried_plums",
     "vitamins": [ [ "vitC", 2 ] ]
   },
-    {
+  {
     "type": "COMESTIBLE",
     "id": "apricot_slices",
     "name": { "str": "apricot slices", "str_pl": "handful of apricots" },
@@ -63,7 +63,7 @@
     "smoking_result": "dried_apricots",
     "vitamins": [ [ "vitA", 4 ], [ "vitC", 4 ], [ "iron", 1 ] ]
   },
-    {
+  {
     "type": "COMESTIBLE",
     "id": "peach_slices",
     "name": { "str": "peach slices", "str_pl": "peaches" },
@@ -83,7 +83,7 @@
     "flags": [ "SMOKABLE" ],
     "smoking_result": "dried_peaches",
     "vitamins": [ [ "vitC", 3 ] ]
-  },  
+  },
   {
     "type": "COMESTIBLE",
     "id": "banana_slices",
@@ -103,8 +103,8 @@
     "flags": [ "SMOKABLE" ],
     "smoking_result": "dried_bananas",
     "vitamins": [ [ "vitC", 4 ] ]
-  },  
-   {
+  },
+  {
     "type": "COMESTIBLE",
     "id": "pineapple_slices",
     "name": { "str": "pineapple slices" },
@@ -144,11 +144,11 @@
     "//": "serving size is 250 ml of edible material, extra volume is the pit.",
     "volume": "1 L",
     "fun": 5,
-	"flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE" ],
     "smoking_result": "dried_pineapple",
     "vitamins": [ [ "vitA", 2 ], [ "vitC", 17 ] ]
   },
-    {
+  {
     "type": "COMESTIBLE",
     "id": "kiwi_slices",
     "name": { "str": "kiwi slices" },
@@ -169,7 +169,7 @@
     "smoking_result": "dried_kiwi",
     "vitamins": [ [ "vitC", 1 ], [ "calcium", 2 ], [ "iron", 2 ] ]
   },
-    {
+  {
     "type": "COMESTIBLE",
     "id": "papaya_slices",
     "name": { "str": "papaya slices" },
@@ -186,7 +186,7 @@
     "material": "fruit",
     "volume": "750 ml",
     "fun": 5,
-	"flags": [ "SMOKABLE" ],
+    "flags": [ "SMOKABLE" ],
     "smoking_result": "dried_papaya",
     "vitamins": [ [ "vitA", 3 ], [ "vitC", 39 ], [ "calcium", 1 ] ]
   },
@@ -210,7 +210,7 @@
     "flags": [ "SMOKABLE" ],
     "smoking_result": "raisins",
     "vitamins": [ [ "vitC", 1 ] ]
-  },  
+  },
   {
     "type": "COMESTIBLE",
     "id": "blueberries",
@@ -231,14 +231,14 @@
     "flags": [ "SMOKABLE" ],
     "smoking_result": "dried_blueberries",
     "vitamins": [ [ "vitC", 6 ] ]
-  },  
+  },
   {
     "type": "COMESTIBLE",
     "id": "cranberries",
     "name": { "str": "handful of cranberries", "str_pl": "handful of cranberries" },
     "weight": "116 g",
     "color": "red",
-    "spoils_in": 640,
+    "spoils_in": "26 days 16 hours",
     "comestible_type": "FOOD",
     "symbol": "%",
     "quench": 2,
@@ -251,7 +251,8 @@
     "flags": [ "SMOKABLE" ],
     "smoking_result": "dried_cranberries",
     "vitamins": [ [ "vitC", 6 ] ]
-  },   {
+  },
+  {
     "type": "COMESTIBLE",
     "id": "strawberries",
     "name": { "str": "handful of strawberries", "str_pl": "handful of strawberries" },
@@ -293,7 +294,7 @@
     "smoking_result": "dry_fruit",
     "vitamins": [ [ "vitC", 15 ], [ "iron", 1 ] ]
   },
-{
+  {
     "type": "COMESTIBLE",
     "id": "huckleberries",
     "name": { "str": "handful of huckleberries", "str_pl": "handful of huckleberries" },
@@ -391,5 +392,47 @@
     "flags": [ "SMOKABLE" ],
     "smoking_result": "dry_fruit",
     "vitamins": [ [ "vitC", 2 ] ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "fig",
+    "name": { "str": "fig" },
+    "weight": "151 g",
+    "color": "yellow",
+    "spoils_in": "5 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 5,
+    "calories": 105,
+    "description": "A small obovoid slightly wrinkled purple fruit with a leathery skin.  This fruit which is known to mankind since ancient times is very sweet, tasty.",
+    "price": "120 cent",
+    "price_postapoc": "1 USD",
+    "material": "fruit",
+    "volume": "250 ml",
+    "fun": 5,
+    "flags": [ "SMOKABLE" ],
+    "smoking_result": "dried_figs",
+    "vitamins": [ [ "vitA", 1 ], [ "vitC", 15 ], [ "iron", 1 ] ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "dates",
+    "name": { "str": "dates" },
+    "weight": "151 g",
+    "color": "yellow",
+    "spoils_in": "5 days",
+    "comestible_type": "FOOD",
+    "symbol": "%",
+    "healthy": 5,
+    "calories": 201,
+    "description": "A small oval-shaped hard yellow fruit with a leathery skin.  This fruit which is known to mankind since ancient times is very sweet, tasty.",
+    "price": "120 cent",
+    "price_postapoc": "1 USD",
+    "material": "fruit",
+    "volume": "250 ml",
+    "fun": 5,
+    "flags": [ "SMOKABLE" ],
+    "smoking_result": "dried_dates",
+    "vitamins": [ [ "vitA", 1 ], [ "vitC", 15 ], [ "iron", 1 ] ]
   }
 ]

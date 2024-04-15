@@ -1,7 +1,7 @@
 [
   {
     "type" : "recipe",
-    "result": "inactive_cyborg",
+    "result": "inactive_blob_cyborg",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_PARTS",
     "skill_used": "fabrication",
@@ -38,7 +38,7 @@
   },
   {
     "type" : "recipe",
-    "result": "inactive_cyborg_heavy",
+    "result": "inactive_blob_cyborg_heavy",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_PARTS",
     "skill_used": "fabrication",
@@ -75,7 +75,7 @@
   },
   {
     "type" : "recipe",
-    "result": "inactive_cyborg_advanced",
+    "result": "inactive_blob_cyborg_advanced",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_PARTS",
     "skill_used": "fabrication",
@@ -166,7 +166,7 @@
 	  [ [ "storage_battery", 1 ] ],
 	  [ [ "hose", 4 ] ],
 	  [ [ "blood", 8 ] ],
-	  [ [ "human_flesh", 12 ] ],
+	  [ [ "slime_scrap", 70 ] ],
 	  [ [ "cable", 6 ] ],
 	  [ [ "cyborg_organ_heart", 1 ] ],
 	  [ [ "cyborg_organ_lung", 2 ] ],
@@ -226,7 +226,7 @@
 	  [ [ "storage_battery", 2 ] ],
 	  [ [ "hose", 8 ] ],
 	  [ [ "blood", 10 ] ],
-	  [ [ "human_flesh", 12 ] ],
+	  [ [ "slime_scrap", 70 ] ],
 	  [ [ "cable", 8 ] ],
 	  [ [ "cyborg_organ_heart", 1 ] ],
 	  [ [ "cyborg_organ_lung", 2 ] ],
@@ -270,7 +270,7 @@
 	  [ [ "hose", 8 ] ],
 	  [ [ "cable", 8 ] ],
 	  [ [ "e_scrap", 2 ] ],
-	  [ [ "human_flesh", 4 ] ],
+	  [ [ "slime_scrap", 21 ] ],
       [ ["burnt_out_bionic", 1] ],
       [ ["power_supply", 2 ] ]
     ]
@@ -305,7 +305,6 @@
 	  [ [ "processor", 2 ] ],
 	  [ [ "lens", 2 ] ],
 	  [ [ "cable", 6 ] ],
-	  [ [ "human_flesh", 2 ] ],
       [ [ "burnt_out_bionic", 1] ],
       [ [ "processor", 2 ] ]
     ]
@@ -418,6 +417,7 @@
 	  [ [ "hose", 3 ] ],
 	  [ [ "cable", 3 ] ],
 	  [ [ "e_scrap", 2 ] ],
+      [ [ "slime_scrap", 21 ] ],
       [ [ "burnt_out_bionic", 1] ]
     ]
   }

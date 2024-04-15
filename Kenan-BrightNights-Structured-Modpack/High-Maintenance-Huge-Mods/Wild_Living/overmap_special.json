@@ -1,0 +1,28 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "WL tree farm",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "TreeFarm_1a_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 2, 0, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 3, 0, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 4, 0, 0 ], "overmap": "TreeFarm_1a_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "TreeFarm_1a_north" },
+      { "point": [ 1, 1, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 2, 1, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 3, 1, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 4, 1, 0 ], "overmap": "TreeFarm_1a_north" },
+      { "point": [ 0, 2, 0 ], "overmap": "TreeFarm_1a_north" },
+      { "point": [ 1, 2, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 2, 2, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 3, 2, 0 ], "overmap": "TreeFarm_1b_north" },
+      { "point": [ 4, 2, 0 ], "overmap": "TreeFarm_1a_north" }
+    ],
+    "connections": [ { "point": [ -1, 1, 0 ], "connection": "local_road" } ],
+    "locations": [ "forest" ],
+    "city_distance": [ 5, 37 ],
+    "occurrences": [ 1, 1 ],
+    "flags": [ "CLASSIC", "FARM", "ELECTRIC_GRID" ]
+  }
+]

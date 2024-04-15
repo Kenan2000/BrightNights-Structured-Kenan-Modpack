@@ -1,0 +1,143 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_tree_date",
+    "name": "date tree",
+    "looks_like": "t_tree_pistachio",
+    "description": "This is 'Phoenix dactylifera', commonly known as the date palm or even much more commonly as the date tree, belonging to the 'Phoenix' genus, naturalized in many tropical along with subtropical regions worldwide like North Africa, Middle East, South Asia, that has been genetically engineered to withstand New England's four seasons. It bears dates in the summer.  If you examined the branches more closely, you could probably find some mature dates.  You could also cut it down with the right tools.",
+    "symbol": "7",
+    "color": [ "light_green", "light_red_green", "light_green", "brown" ],
+    "//": "barren in winter, fruits in summer",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ],
+    "transforms_into": "t_tree_date_harvested",
+    "examine_action": "harvest_ter_nectar",
+    "harvest_by_season": [ { "seasons": [ "summer" ], "entries": [ { "drop": "dates", "base_num": [ 3, 5 ], "scale_num": [ 0, 0.5 ] } ] } ],
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_date_harvested",
+    "name": "date tree",
+    "looks_like": "t_tree_pistachio_harvested",
+    "description": "This is 'Phoenix dactylifera', commonly known as the date palm or even much more commonly as the date tree, belonging to the 'Phoenix' genus, naturalized in many tropical along with subtropical regions worldwide like North Africa, Middle East, South Asia, that has been genetically engineered to withstand New England's four seasons. It bears dates in the summer.  Looks like all the ripe dates have been picked.  You could also cut it down with the right tools.",
+    "symbol": "7",
+    "color": [ "light_green", "light_green", "light_green", "brown" ],
+    "//": "barren in winter, no fruits anymore",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "HARVESTED" ],
+    "examine_action": "harvested_plant",
+    "transforms_into": "t_tree_date",
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_fig",
+    "name": "fig tree",
+    "looks_like": "t_tree_pistachio",
+    "description": "This is 'Ficus carica', commonly known as fig tree, belonging to the 'Ficus' genus, naturalized in many tropical along with subtropical regions like Mediterranean, West Asia, South Asia, which is now widely grown throughout the world, that has been genetically engineered to withstand New England's four seasons. It bears figs in the summer.  If you examined the branches more closely, you could probably find some mature figs.  You could also cut it down with the right tools.",
+    "symbol": "7",
+    "color": [ "light_green", "light_red_green", "light_green", "brown" ],
+    "//": "barren in winter, fruits in summer",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ],
+    "transforms_into": "t_tree_fig_harvested",
+    "examine_action": "harvest_ter_nectar",
+    "harvest_by_season": [ { "seasons": [ "summer" ], "entries": [ { "drop": "fig", "base_num": [ 3, 5 ], "scale_num": [ 0, 0.5 ] } ] } ],
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_fig_harvested",
+    "name": "fig tree",
+    "looks_like": "t_tree_pistachio_harvested",
+    "description": "This is 'Ficus carica', commonly known as fig tree, belonging to the 'Ficus' genus, naturalized in many tropical along with subtropical regions like Mediterranean, West Asia, South Asia, which is now widely grown throughout the world, that has been genetically engineered to withstand New England's four seasons. It bears figs in the summer.  Looks like all the ripe figs have been picked.  You could also cut it down with the right tools.",
+    "symbol": "7",
+    "color": [ "light_green", "light_green", "light_green", "brown" ],
+    "//": "barren in winter, no fruits anymore",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "HARVESTED" ],
+    "examine_action": "harvested_plant",
+    "transforms_into": "t_tree_fig",
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_banana",
+    "name": "banana tree",
+    "looks_like": "t_tree_pistachio",
+    "description": "This is 'Musa acuminata', commonly known as banana plants or even much more commonly known as banana trees, belonging to the 'Musa' genus, naturalized in tropical regions of South Asia, Southeast Asia, that has been genetically engineered to withstand New England's four seasons. It bears bananas in the summer.  If you examined the branches more closely, you could probably find some mature bananas.  You could also cut it down with the right tools.",
+    "symbol": "7",
+    "color": [ "light_green", "light_red_green", "light_green", "brown" ],
+    "//": "barren in winter, fruits in summer",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT" ],
+    "transforms_into": "t_tree_banana_harvested",
+    "examine_action": "harvest_ter_nectar",
+    "harvest_by_season": [ { "seasons": [ "summer" ], "entries": [ { "drop": "banana", "base_num": [ 3, 5 ], "scale_num": [ 0, 0.5 ] } ] } ],
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_tree_banana_harvested",
+    "name": "banana tree",
+    "looks_like": "t_tree_pistachio_harvested",
+    "description": "This is 'Musa acuminata', commonly known as banana plants or even much more commonly known as banana trees, belonging to the 'Musa' genus, naturalized in tropical regions of South Asia, Southeast Asia, that has been genetically engineered to withstand New England's four seasons. It bears bananas in the summer.  Looks like all the ripe bananas have been picked.  You could also cut it down with the right tools.",
+    "symbol": "7",
+    "color": [ "light_green", "light_green", "light_green", "brown" ],
+    "//": "barren in winter, no fruits anymore",
+    "move_cost": 0,
+    "coverage": 80,
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "SUPPORTS_ROOF", "TREE", "REDUCE_SCENT", "HARVESTED" ],
+    "examine_action": "harvested_plant",
+    "transforms_into": "t_tree_banana",
+    "bash": {
+      "str_min": 80,
+      "str_max": 180,
+      "sound": "crunch!",
+      "sound_fail": "whack!",
+      "ter_set": "t_dirt",
+      "items": [ { "item": "stick_long", "count": [ 3, 10 ] }, { "item": "splinter", "count": [ 10, 25 ] } ]
+    }
+  }
+]

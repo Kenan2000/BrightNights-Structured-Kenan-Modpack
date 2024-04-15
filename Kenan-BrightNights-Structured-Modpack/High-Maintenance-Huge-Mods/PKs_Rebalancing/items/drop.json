@@ -16,7 +16,7 @@
     "calories": 4,
     "quench": 11,
     "fun": 0,
-    "spoils_in": 168
+    "spoils_in": "7 days"
   },
   {
     "type": "COMESTIBLE",
@@ -33,7 +33,7 @@
     "calories": 3,
     "quench": 2,
     "fun": -2,
-    "spoils_in": 256,
+    "spoils_in": "10 days 16 hours",
     "flags": [ "TRADER_AVOID" ]
   },
   {
@@ -68,7 +68,7 @@
     "quench": 15,
     "healthy": -1,
     "fun": -12,
-    "spoils_in": 16,
+    "spoils_in": "16 hours",
     "proportional": { "calories": 0.5, "parasites": 1.5 },
     "flags": [ "TRADER_AVOID" ]
   },
@@ -147,7 +147,7 @@
     "quench": 5,
     "healthy": -6,
     "fun": -20,
-    "spoils_in": 128,
+    "spoils_in": "5 days 8 hours",
     "parasites": 0,
     "use_action": { "type": "mutagen", "is_weak": true },
     "flags": [ "TRADER_AVOID" ]
@@ -169,7 +169,7 @@
     "quench": 2,
     "healthy": -1,
     "fun": -12,
-    "spoils_in": 96,
+    "spoils_in": "4 days",
     "parasites": 0,
     "use_action": { "type": "mutagen", "is_weak": true },
     "flags": [ "TRADER_AVOID" ]
@@ -192,7 +192,7 @@
     "quench": 1,
     "healthy": 1,
     "fun": 1,
-    "spoils_in": 56,
+    "spoils_in": "2 days 8 hours",
     "parasites": 0,
     "flags": [ "EATEN_HOT" ]
   },
@@ -212,7 +212,7 @@
     "calories": 42,
     "quench": -4,
     "fun": 16,
-    "spoils_in": 42,
+    "spoils_in": "1 days 18 hours",
     "flags": [ "EATEN_HOT" ]
   },
   {
@@ -234,7 +234,7 @@
     "quench": 10,
     "healthy": 1,
     "fun": 1,
-    "spoils_in": 244,
+    "spoils_in": "10 days 4 hours",
     "flags": [ "EATEN_HOT", "USE_EAT_VERB" ]
   },
   {
@@ -254,7 +254,7 @@
     "quench": 0,
     "healthy": 1,
     "fun": 8,
-    "spoils_in": 56,
+    "spoils_in": "2 days 8 hours",
     "flags": [ "EATEN_HOT" ]
   },
   {
@@ -378,7 +378,7 @@
     "name": { "str_sp": "wasp egg" },
     "weight": "60 g",
     "color": "white",
-    "spoils_in": 672,
+    "spoils_in": "28 days",
     "comestible_type": "FOOD",
     "symbol": "o",
     "quench": -6,
