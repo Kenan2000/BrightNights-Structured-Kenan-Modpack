@@ -91,53 +91,6 @@
     "upgrades": { "half_life": 14, "into": "mon_locust" }
   },
   {
-    "id": "mon_dragonfly_mega",
-    "type": "MONSTER",
-    "name": { "str_sp": "fused dragonflies" },
-    "description": "If you see this - it's a placeholder monster, nothing more - nothing less",
-    "volume": "600 L",
-    "weight": "800 kg",
-    "default_faction": "dragonfly",
-    "bodytype": "insect",
-    "species": [ "INSECT" ],
-    "hp": 1100,
-    "speed": 100,
-    "material": [ "iflesh" ],
-    "symbol": "Y",
-    "color": "light_green",
-    "aggression": 20,
-    "morale": 80,
-    "melee_skill": 7,
-    "melee_dice": 3,
-    "melee_damage": [ { "damage_type": "cut", "amount": 15 } ],
-    "special_attacks": [
-      {
-        "type": "bite",
-        "cooldown": 6,
-        "damage_max_instance": [ { "damage_type": "cut", "amount": 40, "armor_penetration": 20 } ]
-      }
-    ],
-    "vision_day": 30,
-    "vision_night": 5,
-    "harvest": "exempt",
-    "anger_triggers": [ "PLAYER_WEAK", "STALK" ],
-    "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "SWIMS", "BASHES", "PUSH_MON", "PUSH_VEH" ]
-  },
-  {
-    "id": "mon_wasp_mega",
-    "type": "MONSTER",
-    "name": { "str": "whale wasp" },
-    "description": "If you see this - it's a placeholder monster, nothing more - nothing less",
-    "copy-from": "mon_wasp",
-    "proportional": { "hp": 10, "speed": 0.25, "dodge": 0.25, "vision_day": 2 },
-    "volume": "625 L",
-    "weight": "815 kg",
-    "melee_dice": 3,
-    "special_attacks": [ { "id": "impale" } ],
-    "extend": { "flags": [ "DESTROYS", "PUSH_MON", "PUSH_VEH" ] }
-  },
-  {
     "id": "mon_spawn_raptor",
     "type": "MONSTER",
     "name": { "str": "flesh-raptor" },
