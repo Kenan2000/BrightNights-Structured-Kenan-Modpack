@@ -13,17 +13,16 @@
     "color": "red",
     "covers": [ "torso" ],
     "coverage": 5,
-    "encumbrance": 3,
-    "max_encumbrance": 15,
+    "encumbrance": 5,
     "material_thickness": 1,
     "use_action": {
       "type": "holster",
-      "max_volume": "9 L",
+      "max_volume": "10 L",
       "min_volume": "1500 ml",
       "draw_cost": 150,
       "skills": [ "smg", "shotgun", "rifle", "launcher" ]
     },
-    "flags": [ "BELTED", "OVERSIZE", "NO_QUICKDRAW" ]
+    "flags": [ "BELTED", "COMPACT", "OVERSIZE", "NO_QUICKDRAW" ]
   },
   {
     "id": "secro_flesh_baldric_holster",
@@ -62,14 +61,13 @@
     "color": "red",
     "covers": [ "foot_either" ],
     "coverage": 5,
-    "encumbrance": 3,
-    "max_encumbrance": 4,
+    "encumbrance": 2,
     "material_thickness": 1,
-    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "NOT_FOOTWEAR" ],
+    "flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS" ],
     "use_action": {
       "type": "holster",
       "min_volume": "100 ml",
-      "max_volume": "400 ml",
+      "max_volume": "500 ml",
       "max_weight": "1 kg",
       "draw_cost": 150,
       "skills": [ "pistol" ]
@@ -91,8 +89,7 @@
     "color": "light_red",
     "covers": [ "leg_either" ],
     "coverage": 5,
-    "encumbrance": 3,
-    "max_encumbrance": 4,
+    "encumbrance": 2,
     "material_thickness": 1,
     "use_action": {
       "type": "holster",
@@ -100,9 +97,9 @@
       "max_volume": "1 L",
       "max_weight": "2 kg",
       "draw_cost": 50,
-      "skills": [ "pistol" ]
+      "skills": [ "pistol", "smg", "shotgun" ]
     },
-    "flags": [ "WAIST", "OVERSIZE" ]
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE" ]
   },
   {
     "id": "secro_flesh_survivor_vest",
@@ -118,8 +115,7 @@
     "color": "red",
     "covers": [ "torso" ],
     "coverage": 20,
-    "encumbrance": 4,
-    "max_encumbrance": 12,
+    "encumbrance": 6,
     "material_thickness": 1,
     "storage": "4500 ml",
     "use_action": {
@@ -155,17 +151,15 @@
     "color": "light_red",
     "covers": [ "leg_either" ],
     "coverage": 10,
-    "encumbrance": 2,
-    "max_encumbrance": 7,
+    "encumbrance": 5,
     "material_thickness": 1,
     "use_action": {
       "type": "holster",
       "min_volume": "500 ml",
       "max_volume": "1500 ml",
       "max_weight": "5 kg",
-      "draw_cost": 70,
-      "skills": [ "smg", "shotgun", "rifle" ]
+      "skills": [ "pistol", "smg", "shotgun", "rifle" ]
     },
-    "flags": [ "WAIST", "OVERSIZE" ]
+    "flags": [ "WAIST", "COMPACT", "OVERSIZE" ]
   }
 ]
