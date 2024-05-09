@@ -18,6 +18,7 @@
   {
     "type": "recipe",
     "result": "bio_cable",
+    "id_suffix": "from_bioco",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",
@@ -78,6 +79,7 @@
   {
     "type": "recipe",
     "result": "bio_infolink",
+    "id_suffix": "from_bioco",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",
@@ -108,6 +110,7 @@
   {
     "type": "recipe",
     "result": "bio_batteries",
+    "id_suffix": "from_bioco",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",
@@ -136,9 +139,42 @@
     "components": [ [ [ "Pristine_Bionic_Components", 2 ] ], [ [ "e_scrap", 2 ] ] ]
   },
   {
+    "type": "recipe",
+    "result": "bio_memory",
+    "id_suffix": "from_bioco",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_CBMS",
+    "skill_used": "electronics",
+    "skills_required": [ "computer", 5 ],
+    "difficulty": 5,
+    "time": "10 m",
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "recipe_mil_augs", 5 ] ],
+    "qualities": [ { "id": "BIOASSEMBLE", "level": 3 } ],
+    "tools": [ [ [ "Software_BioCo_Civilian_Designs", -1 ] ] ],
+    "components": [ [ [ "burnt_out_bionic", 2 ] ], [ [ "e_scrap", 2 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "bio_power_armor_interface",
+    "id_suffix": "from_bioco",
+    "category": "CC_ELECTRONIC",
+    "subcategory": "CSC_ELECTRONIC_CBMS",
+    "skill_used": "electronics",
+    "skills_required": [ "computer", 5 ],
+    "difficulty": 5,
+    "time": "10 m",
+    "decomp_learn": 5,
+    "book_learn": [ [ "recipe_lab_elec", 6 ], [ "recipe_mil_augs", 5 ] ],
+    "qualities": [ { "id": "BIOASSEMBLE", "level": 3 } ],
+    "tools": [ [ [ "Software_BioCo_Civilian_Designs", -1 ] ] ],
+    "components": [ [ [ "burnt_out_bionic", 2 ] ], [ [ "e_scrap", 2 ] ] ]
+  },
+  {
     "//": "Power Storage Bionics",
     "type": "recipe",
     "result": "bio_power_storage",
+    "id_suffix": "from_bioco",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",
@@ -154,6 +190,7 @@
   {
     "type": "recipe",
     "result": "bio_power_storage_mkII",
+    "id_suffix": "from_bioco",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",
@@ -170,6 +207,7 @@
     "//": "Medical Bionics",
     "type": "recipe",
     "result": "bio_blood_anal",
+    "id_suffix": "from_bioco",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_CBMS",
     "skill_used": "electronics",

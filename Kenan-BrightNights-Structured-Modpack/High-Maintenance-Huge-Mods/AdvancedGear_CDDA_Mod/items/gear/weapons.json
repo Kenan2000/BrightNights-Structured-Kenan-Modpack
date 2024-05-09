@@ -3,6 +3,7 @@
     "id": "nano_blade",
     "type": "GENERIC",
     "name": { "str": "nanotech blade" },
+    "weapon_category": [ "1H_SWORDS" ],
     "category": "weapons",
     "looks_like": "broadsword",
     "description": "An incredibly sharp blade of active nanites with a small handle.  Compresses itself into the handle when not in use.",
@@ -22,6 +23,7 @@
     "id": "nano_dagger",
     "type": "GENERIC",
     "name": { "str": "nanotech dagger" },
+    "weapon_category": [ "KNIVES" ],
     "category": "weapons",
     "looks_like": "punch_dagger",
     "description": "An incredibly sharp blade of active nanites with a small handle.  Compresses itself into the handle when not in use.  In addition to the typical blade, it can project blades around your fingers to be used as a claw or punching dagger.",
@@ -41,6 +43,7 @@
     "id": "nano_spear",
     "type": "GENERIC",
     "name": { "str": "nanotech spear" },
+    "weapon_category": [ "SPEARS" ],
     "category": "weapons",
     "looks_like": "pike",
     "description": "An incredibly sharp spike of active nanites on a long handle, it contains small but powerful boosters for sweeping strikes as a staff as well.  Compresses itself into a small tube when not in use.",
@@ -90,6 +93,7 @@
   {
     "id": "nano_shredder",
     "type": "GUN",
+    "weapon_category": [ "SHOTGUNS" ],
     "name": { "str": "nanotech shredder" },
     "copy-from": "nanogun",
     "description": "Nanotech shotgun, blasts out large clouds of different configurations of monomolecular ammo based on loaded ammo core.",
@@ -108,6 +112,7 @@
   {
     "id": "nano_pistol",
     "type": "GUN",
+    "weapon_category": [ "PISTOLS" ],
     "name": { "str": "nanotech pistol" },
     "copy-from": "nanogun",
     "description": "Nanotech pistol, fires bursts of different configurations of monomolecular ammo based on loaded ammo core.",
@@ -126,6 +131,7 @@
   {
     "id": "nano_rifle",
     "type": "GUN",
+    "weapon_category": [ "RIFLES" ],
     "name": { "str": "nanotech rifle" },
     "copy-from": "nanogun",
     "description": "Nanotech rifle, fires large bursts of different configurations of monomolecular ammo based on loaded ammo core.",
@@ -143,6 +149,7 @@
   {
     "id": "nano_smg",
     "type": "GUN",
+    "weapon_category": [ "SUBMACHINE_GUNS" ],
     "name": { "str": "nanotech smg" },
     "copy-from": "nanogun",
     "description": "Nanotech smg, fires a storm of different configurations of monomolecular ammo based on loaded ammo core.",
@@ -161,6 +168,7 @@
   {
     "id": "nano_launcher",
     "type": "GUN",
+    "weapon_category": [ "GRENADE_LAUNCHERS" ],
     "name": { "str": "nanotech launcher" },
     "copy-from": "nanogun",
     "description": "Nanotech launcher, fires huge masses of monomolecular wire that shreds anything that isn't heavily protected.",

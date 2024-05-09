@@ -2,6 +2,8 @@
   {
     "type": "GENERIC",
     "id": "makeshift_mace",
+    "weapon_category": [ "MACES" ],
+    "category": "weapons",
     "name": { "str": "makeshift mace" },
     "description": "A makeshift mace. You cannot think of any fancy techniques you may use with it, but it's rather compact and gets the job done.",
     "weight": "1850 g",
@@ -11,12 +13,13 @@
     "volume": "1250 ml",
     "bashing": 19,
     "flags": [ "BELT_CLIP", "NONCONDUCTIVE" ],
-    "category": "weapons",
     "price": "2 USD"
   },
   {
     "type": "GENERIC",
     "id": "crude_dagger",
+    "weapon_category": [ "KNIVES" ],
+    "category": "weapons",
     "name": { "str": "crude dagger" },
     "description": "A crude and thick welded dagger with a sharpened point suitable only for combat. ",
     "weight": "925 g",
@@ -29,12 +32,13 @@
     "bashing": 4,
     "cutting": 14,
     "flags": [ "STAB", "SHEATH_KNIFE" ],
-    "category": "weapons",
     "price": "5 USD"
   },
   {
     "type": "GENERIC",
     "id": "crude_mace",
+    "weapon_category": [ "MACES" ],
+    "category": "weapons",
     "name": { "str": "crude mace" },
     "description": "A crude welded mace. You cannot think of any fancy techniques you may use with it, but it's rather compact and gets the job done.",
     "weight": "2600 g",
@@ -45,12 +49,13 @@
     "volume": "1250 ml",
     "bashing": 27,
     "flags": [ "BELT_CLIP" ],
-    "category": "weapons",
     "price": "5 USD"
   },
   {
     "type": "GENERIC",
     "id": "wooden_pike",
+    "weapon_category": [ "PIKES" ],
+    "category": "weapons",
     "name": { "str": "wooden pike" },
     "description": "A long wooden pike with a fire-hardened point. Quite sturdy because of its thickness, this weapon is more suited to supporting others, fighting in formation and defending on rough terrain. ",
     "weight": "6 kg",
@@ -62,12 +67,13 @@
     "bashing": 15,
     "cutting": 21,
     "flags": [ "DURABLE_MELEE", "STAB", "SPEAR", "REACH_ATTACK", "REACH3" ],
-    "category": "weapons",
     "price": "50 USD"
   },
   {
     "type": "GENERIC",
     "id": "tele_spear",
+    "weapon_category": [ "SPEARS" ],
+    "category": "weapons",
     "name": { "str": "telescopic spear" },
     "description": "A crude telescopic spear with a long and broad head and a primitive locking mechanism. (A)ctivate to collapse and use it as a more suited for close combat blade.",
     "weight": "1500 g",
@@ -82,12 +88,13 @@
     "flags": [ "STAB", "SPEAR", "REACH_ATTACK" ],
     "use_action": { "type": "transform", "moves": 40, "target": "tele_spear_sw", "msg": "You collapse your spear." },
     "price": "50 USD",
-    "category": "weapons",
     "qualities": [ [ "BUTCHER", -10 ] ]
   },
   {
     "type": "GENERIC",
     "id": "tele_spear_sw",
+    "weapon_category": [ "SPEARS" ],
+    "category": "weapons",
     "name": { "str": "telescopic spear (collapsed)" },
     "description": "The spear is now collapsed and used as a chopping blade.",
     "weight": "1500 g",
@@ -102,12 +109,13 @@
     "flags": [ "SHEATH_SWORD" ],
     "use_action": { "type": "transform", "moves": 40, "target": "tele_spear", "msg": "You extend your spear." },
     "price": "50 USD",
-    "category": "weapons",
     "qualities": [ [ "BUTCHER", -10 ] ]
   },
   {
     "type": "GENERIC",
     "id": "stone_maul",
+    "weapon_category": [ "2H_HAMMERS" ],
+    "category": "weapons",
     "name": { "str": "stone maul" },
     "description": "This is not a tool, but perhaps the most destructive stone weapon you can make. Its long handle allows you to strike with a great momentum.",
     "weight": "3800 g",
@@ -118,8 +126,7 @@
     "techniques": [ "BRUTAL", "IMPALE" ],
     "volume": "3500 ml",
     "bashing": 30,
-    "flags": [ "BELT_CLIP" ],
-    "category": "weapons",
+    "flags": [ "BELT_CLIP", "ALWAYS_TWOHAND" ],
     "price": "5 USD"
   }
 ]

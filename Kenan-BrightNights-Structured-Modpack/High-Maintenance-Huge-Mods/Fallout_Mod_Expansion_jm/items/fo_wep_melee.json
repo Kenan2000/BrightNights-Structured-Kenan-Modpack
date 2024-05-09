@@ -2,6 +2,7 @@
   {
     "id": "machete_gladius",
     "type": "TOOL",
+    "weapon_category": [ "1H_SWORDS" ],
     "category": "weapons",
     "name": { "str": "machete gladius" },
     "description": "This huge steel knife is basically a shortsword at this point. Its clearly hand-forged with love.",
@@ -70,6 +71,7 @@
   {
     "id": "fo_vertibird_sword",
     "type": "GENERIC",
+    "weapon_category": [ "2H_SWORDS" ],
     "category": "weapons",
     "name": { "str": "vertibird blade" },
     "description": "This is a huge two-handed makeshift sword made from a sharpened vertibird rotor blade.",
@@ -162,13 +164,14 @@
   {
     "type": "GENERIC",
     "id": "super_sledge",
+    "weapon_category": [ "2H_HAMMERS" ],
     "name": { "str": "super sledge" },
     "description": "A Super Sledgehammer, manufactured by the Gun Runners, using the finest weapon technology available. Includes a kinetic energy storage device to increase damage and knockback.",
     "weight": "4500 g",
     "color": "green",
     "symbol": "/",
     "material": [ "wood", "steel" ],
-    "flags": [ "NONCONDUCTIVE" ],
+    "flags": [ "NONCONDUCTIVE", "ALWAYS_TWOHAND" ],
     "techniques": [ "WBLOCK_1", "BRUTAL", "WIDE", "SWEEP" ],
     "volume": "2500 ml",
     "bashing": 60,

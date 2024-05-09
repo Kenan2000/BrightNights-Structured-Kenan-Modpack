@@ -2,6 +2,7 @@
   {
     "id": "vorpal_kitchen_knife",
     "type": "TOOL",
+    "weapon_category": [ "KNIVES" ],
     "category": "weapons",
     "symbol": "/",
     "color": "light_gray",
@@ -33,6 +34,7 @@
   {
     "id": "vorpal_kitchen_knife_on",
     "type": "TOOL",
+    "weapon_category": [ "KNIVES" ],
     "category": "weapons",
     "symbol": "/",
     "color": "light_gray",
@@ -63,6 +65,7 @@
   },
   {
     "type": "TOOL",
+    "weapon_category": [ "1H_HAMMERS" ],
     "category": "weapons",
     "id": "slaying_pan",
     "symbol": ")",
@@ -94,6 +97,7 @@
   },
   {
     "type": "TOOL",
+    "weapon_category": [ "1H_HAMMERS" ],
     "category": "weapons",
     "id": "slaying_pan_on",
     "symbol": ")",
@@ -138,6 +142,7 @@
   },
   {
     "type": "GENERIC",
+    "weapon_category": [ "WHIPS" ],
     "category": "weapons",
     "id": "spiked_whip",
     "name": { "str": "maid's whip" },
@@ -195,6 +200,7 @@
   {
     "type": "GENERIC",
     "category": "weapons",
+    "weapon_category": [ "BATONS" ],
     "id": "shikomi_stick",
     "name": { "str": "maid's shirasaya" },
     "description": "A matching wooden handle and scabbard, concealing a full length katana blade. It appears as a solid wooden stick to those unfamiliar with it, due to how well the handle and scabbard fit together. Activate to unsheath.",
@@ -213,6 +219,7 @@
   },
   {
     "type": "GENERIC",
+    "weapon_category": [ "1H_SWORDS" ],
     "category": "weapons",
     "id": "shikomi_stick_draw",
     "name": { "str": "maid's shirasaya (unsheathed)" },
@@ -233,6 +240,7 @@
   {
     "id": "maid_claw",
     "type": "GUN",
+    "weapon_category": [ "FIST_WEAPONS" ],
     "category": "weapons",
     "symbol": "/",
     "color": "dark_gray",
@@ -263,6 +271,7 @@
   {
     "id": "battle_mop",
     "type": "TOOL",
+    "weapon_category": [ "QUARTERSTAVES" ],
     "category": "weapons",
     "symbol": "/",
     "color": "light_gray",
@@ -271,11 +280,11 @@
     "price": "10 USD",
     "material": [ "wood", "iron" ],
     "flags": [ "DURABLE_MELEE", "REACH_ATTACK" ],
-    "techniques": "WBLOCK_1",
+    "techniques": [ "WBLOCK_1" ],
     "weight": "1100 g",
     "volume": "1750 ml",
     "bashing": 26,
     "to_hit": 1,
-    "use_action": "MOP"
+    "use_action": [ "MOP" ]
   }
 ]

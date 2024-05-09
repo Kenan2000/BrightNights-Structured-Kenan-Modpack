@@ -2,23 +2,26 @@
   {
     "type": "GENERIC",
     "id": "boxing_gloves_vo",
+    "weapon_category": [ "FIST_WEAPONS" ],
+    "category": "weapons",
     "name": { "str": "Boxing gloves with stone", "str_pl": "Boxing gloves with stone" },
     "weight": "1110 g",
     "color": "red",
     "to_hit": -2,
-    "bashing": 13,
+    "bashing": 15,
     "techniques": [ "BRUTAL" ],
     "symbol": "[",
     "description": "It is a stuffed stone divided into two into a large ounce red boxing glove. I only need to beat up on my strength, so I do not need any detailed work. It is about 19.6 ounces.",
     "price": "40 USD",
     "material": [ "leather", "stone" ],
     "volume": "1 L",
-    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ],
-    "category": "weapons"
+    "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ]
   },
   {
     "type": "GENERIC",
     "id": "unbio_claws_weapon_vo",
+    "weapon_category": [ "BIONIC_WEAPONRY", "FIST_WEAPONS" ],
+    "category": "weapons",
     "name": { "str": "bionic claws", "str_pl": "bionic claws" },
     "description": "Short and sharp claws made from a high-tech metal.",
     "weight": "1650 g",
@@ -30,13 +33,14 @@
     "bashing": 18,
     "cutting": 12,
     "flags": [ "UNARMED_WEAPON", "UNBREAKABLE_MELEE" ],
-    "category": "weapons",
     "price": "3000 USD",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 12 ] ]
   },
   {
     "type": "GENERIC",
     "id": "unbio_blade_weapon_vo",
+    "weapon_category": [ "BIONIC_WEAPONRY", "BIONIC_SWORDS" ],
+    "category": "weapons",
     "name": { "str": "monomolecular blade" },
     "description": "A foot-long blade made from high-tech alloy and edged with bonded nanocrystals.",
     "weight": "100 g",
@@ -49,12 +53,13 @@
     "cutting": 24,
     "flags": [ "SHEATH_KNIFE", "STAB", "UNARMED_WEAPON", "UNBREAKABLE_MELEE" ],
     "price": "3000 USD",
-    "category": "weapons",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", 22 ] ]
   },
   {
     "type": "GENERIC",
     "id": "pata_vo",
+    "weapon_category": [ "1H_SWORDS" ],
+    "category": "weapons",
     "name": { "str": "Pata" },
     "description": "It is a long sword with a structure resembling Jamadahar, which is fitted with swords in armor of a shape like a gauntlet covering the forearm, the outside of the fist. Although it is a powerful weapon, you can not pick up objects because the arms are fixed.",
     "weight": "1500 g",
@@ -69,12 +74,13 @@
     "looks_like": "longsword",
     "flags": [ "DURABLE_MELEE" ],
     "price": "30 USD",
-    "category": "weapons",
     "qualities": [ [ "CUT", 1 ], [ "BUTCHER", -12 ] ]
   },
   {
     "type": "GENERIC",
     "id": "battlehook_vo",
+    "weapon_category": [ "1H_HOOKED" ],
+    "category": "weapons",
     "name": { "str": "Battle Hook" },
     "description": "It is a simple weapon just having a claw attached to the long handle. I can only pull it down, but it may be tossed off as much as a rotten head.",
     "weight": "1200 g",
@@ -86,7 +92,6 @@
     "volume": "1500 ml",
     "bashing": 5,
     "cutting": 9,
-    "category": "weapons",
     "looks_like": "grapnel",
     "flags": [ "STAB", "REACH_ATTACK", "NONCONDUCTIVE" ],
     "price": "3 USD"
@@ -94,6 +99,8 @@
   {
     "type": "TOOL",
     "id": "laser_sword_off_vo",
+    "weapon_category": [ "1H_SWORDS" ],
+    "category": "weapons",
     "name": { "str": "Laser sword (off)" },
     "description": "It is my original lightsaber that is supposed to work with UPS. Although it is possible to irradiate an illegal output laser and burn enemies, it is a drawback that electric power is applied too much. It is also a substitute for acetylene lamp.",
     "weight": "1200 g",
@@ -103,7 +110,6 @@
     "flags": [ "BELT_CLIP" ],
     "volume": "500 ml",
     "bashing": 5,
-    "category": "weapons",
     "max_charges": 300,
     "charges_per_use": 10,
     "sub": "oxy_torch",
@@ -126,6 +132,8 @@
   {
     "id": "laser_sword_on_vo",
     "type": "TOOL",
+    "weapon_category": [ "1H_SWORDS" ],
+    "category": "weapons",
     "symbol": "/",
     "color": "red",
     "name": { "str": "Laser sword (on)" },
@@ -144,7 +152,6 @@
     "ammo": [ "battery" ],
     "revert_to": "laser_sword_off_vo",
     "qualities": [ [ "WELD", 2 ] ],
-    "category": "weapons",
     "use_action": [
       {
         "type": "fireweapon_on",
@@ -160,12 +167,14 @@
   {
     "id": "plutonium_sword_vo",
     "type": "TOOL",
+    "weapon_category": [ "2H_SWORDS" ],
+    "category": "weapons",
     "symbol": "/",
     "color": "blue",
     "name": { "str": "Sword of plutonium" },
     "description": "It is a beautiful sword that fires lightly.",
     "price": "30000 USD",
-    "flags": [ "LIGHT_120", "UNBREAKABLE_MELEE", "RADIOACTIVE", "LEAK_ALWAYS" ],
+    "flags": [ "LIGHT_120", "UNBREAKABLE_MELEE", "RADIOACTIVE", "LEAK_ALWAYS", "ALWAYS_TWOHAND" ],
     "techniques": [ "SPIN", "WIDE" ],
     "weight": "4000 g",
     "volume": "3750 ml",
@@ -173,8 +182,7 @@
     "cutting": 46,
     "max_charges": 1,
     "charges_per_use": 1,
-    "category": "weapons",
-    "use_action": "ARTIFACT",
+    "use_action": [ "ARTIFACT" ],
     "artifact_data": {
       "charge_type": "ARTC_TIME",
       "effects_activated": [ "AEA_RADIATION", "AEA_MAP" ],

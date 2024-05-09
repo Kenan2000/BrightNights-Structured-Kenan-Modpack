@@ -12,7 +12,7 @@
     "durability": 8,
     "loudness": 12,
     "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "4 rd.", 4 ], [ "AUTO", "auto", 6 ] ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ]
+    "ammo_effects": [ "LASER" ]
   },
   {
     "id": "bot_colt_rangemaster",
@@ -204,7 +204,7 @@
     "description": "A Wattz 2000 Laser Rifle. Uses a UPS for more powerful lasers, and an extended barrel for additional range.",
     "price": "16000 USD",
     "material": [ "steel", "plastic" ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "ammo_effects": [ "LASER" ],
     "ups_charges": 84,
     "weight": "2950 g",
     "volume": "3 L",
@@ -235,10 +235,10 @@
     "copy-from": "rifle_energy",
     "color": "yellow",
     "name": { "str": "AER9 Laser Rifle" },
-    "description": "A AER9 Lase Rifle. Not the top model in service, but it's high durability and reliability renders it far more popular than the finnicky AEP12, while the use of batteries over UPS makes it simpler for the laser user in a pinch.",
+    "description": "A AER9 Laser Rifle. Not the top model in service, but it's high durability and reliability renders it far more popular than the finnicky AEP12, while the use of batteries over UPS makes it simpler for the laser user in a pinch.",
     "price": "16000 USD",
     "material": [ "steel", "plastic" ],
-    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "ammo_effects": [ "LASER" ],
     "extend": { "flags": [ "FIRE_20" ] },
     "delete": { "flags": [ "NO_UNLOAD" ] },
     "ammo": [ "battery" ],
