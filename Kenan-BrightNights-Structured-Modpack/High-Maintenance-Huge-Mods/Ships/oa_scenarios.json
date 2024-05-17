@@ -37,6 +37,7 @@
     "description": "You finally saved up enough money to take that cruise around New England that you always dreamed about; only to find yourself on a ship overrun with the undead! Fight your way out and swim to safety!",
     "start_name": "Cruise Ship",
     "allowed_locs": ["ws_cruise_ship_x0y0z0","ws_cruise_ship_x0y1z0","ws_cruise_ship_x0y2z0","ws_cruise_ship_x1y1z0","ws_cruise_ship_x1y2z0"],
-    "flags": ["CHALLENGE","SUR_START","CITY_START"]
+    "surround_groups": [ [ "GROUP_BLACK_ROAD", 70.0 ] ],
+    "flags": ["CHALLENGE","CITY_START"]
   }
 ]
