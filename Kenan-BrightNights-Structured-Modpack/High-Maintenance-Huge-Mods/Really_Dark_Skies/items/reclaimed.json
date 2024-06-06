@@ -197,7 +197,7 @@
       "explosion": {
         "damage": 40,
         "radius": 5,
-        "fragment": { "impact": { "damage_type": "cut", "amount": 80, "armor_multiplier": 5 }, "range": 6 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 80, "armor_multiplier": 5 }, "range": 6 }
       }
     },
     "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "NPC_ACTIVATE", "ACT_IN_FIRE", "TRADER_AVOID" ]
@@ -258,7 +258,7 @@
       "explosion": {
         "damage": 40,
         "radius": 5,
-        "fragment": { "impact": { "damage_type": "cut", "amount": 120, "armor_multiplier": 7 }, "range": 12 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 120, "armor_multiplier": 7 }, "range": 12 }
       }
     },
     "flags": [ "ACT_IN_FIRE", "BOMB", "TRADER_AVOID", "DANGEROUS" ]

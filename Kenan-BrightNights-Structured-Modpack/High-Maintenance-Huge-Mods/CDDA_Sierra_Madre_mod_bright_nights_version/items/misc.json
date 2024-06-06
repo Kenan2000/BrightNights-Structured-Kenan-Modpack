@@ -63,7 +63,7 @@
 		  "sound_volume": 0,
 		  "sound_msg": "Beep.",
 		  "no_deactivate_msg": "The collar is about to explode. While the blast won't be very strong since initially it's been designed to only blow the wearer's head off, it's still strongly encouraged to get away from it.",
-		  "explosion": { "damage": 10, "radius": 3, "fragment": { "impact": { "damage_type": "cut", "amount": 100, "armor_multiplier": 3 }, "range": 3 } }
+		  "explosion": { "damage": 10, "radius": 3, "fragment": { "impact": { "damage_type": "bullet", "amount": 100, "armor_multiplier": 3 }, "range": 3 } }
 		},
 		"covers": [ "head" ],
 		"coverage": 10,

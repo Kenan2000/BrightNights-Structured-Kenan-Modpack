@@ -134,7 +134,7 @@
     "material": [ "steel", "plastic" ],
     "symbol": "o",
     "color": "light_red",
-    "properties": [ [ "monster_size_capacity", "HUGE" ] ],
+    "properties": [ [ "creature_size_capacity", "HUGE" ] ],
     "use_action": [ "CAPTURE_MONSTER_ACT" ]
   },
   {
@@ -280,7 +280,7 @@
       "explosion": {
         "damage": 12,
         "radius": 3,
-        "fragment": { "impact": { "damage_type": "stab", "amount": 600, "armor_multiplier": 3 }, "range": 10 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 600, "armor_multiplier": 3 }, "range": 10 }
       }
     },
     "flags": [ "BOMB", "TRADER_AVOID", "CUSTOM_EXPLOSION" ]

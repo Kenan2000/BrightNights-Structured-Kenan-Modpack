@@ -142,7 +142,7 @@
     "explosion": {
       "damage": 2,
       "radius": 3,
-      "fragment": { "impact": { "damage_type": "stab", "amount": 75, "armor_multiplier": 3 }, "range": 10 }
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 75, "armor_multiplier": 3 }, "range": 10 }
     }
   },
   {
@@ -323,7 +323,7 @@
       "explosion": {
         "damage": 40,
         "radius": 3,
-        "fragment": { "impact": { "damage_type": "stab", "amount": 105, "armor_multiplier": 3 }, "range": 10 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 105, "armor_multiplier": 3 }, "range": 10 }
       }
     },
     "flags": [ "LIGHT_15", "TRADER_AVOID", "NPC_THROW_NOW" ]

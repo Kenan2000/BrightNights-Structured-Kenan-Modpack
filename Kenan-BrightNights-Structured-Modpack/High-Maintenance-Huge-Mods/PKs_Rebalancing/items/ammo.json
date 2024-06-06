@@ -92,7 +92,7 @@
     "explosion": {
       "damage": 36,
       "radius": 3,
-      "fragment": { "impact": { "damage_type": "stab", "amount": 10, "armor_multiplier": 3 }, "range": 6 }
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 10, "armor_multiplier": 3 }, "range": 6 }
     }
   },
   {
@@ -116,7 +116,7 @@
     "explosion": {
       "damage": 4,
       "radius": 3,
-      "fragment": { "impact": { "damage_type": "stab", "amount": 68, "armor_multiplier": 3 }, "range": 6 }
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 68, "armor_multiplier": 3 }, "range": 6 }
     }
   },
   {
@@ -208,7 +208,7 @@
       "explosion": {
         "damage": 1,
         "radius": 3,
-        "fragment": { "impact": { "damage_type": "stab", "amount": 3, "armor_multiplier": 3 }, "range": 10 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 3, "armor_multiplier": 3 }, "range": 10 }
       }
     }
   },
@@ -436,7 +436,7 @@
       "explosion": {
         "damage": 120,
         "radius": 3,
-        "fragment": { "impact": { "damage_type": "stab", "amount": 2400, "armor_multiplier": 3 }, "range": 10 }
+        "fragment": { "impact": { "damage_type": "bullet", "amount": 2400, "armor_multiplier": 3 }, "range": 10 }
       },
       "fields_type": "fd_plasma",
       "fields_radius": 2,

@@ -228,7 +228,7 @@
     "charges_per_use": 0,
     "turns_per_charge": 0,
     "explode_in_fire": true,
-    "explosion": { "damage": 15, "radius": 1, "fragment": { "impact": { "damage_type": "stab", "amount": 1185, "armor_multiplier": 3 }, "range": 10 } },
+    "explosion": { "damage": 15, "radius": 1, "fragment": { "impact": { "damage_type": "bullet", "amount": 1185, "armor_multiplier": 3 }, "range": 10 } },
     "use_action": {
       "target": "cddaxp_tbomb_act",
       "msg": "The bomb say:  'Beware!  I LIVE!!!'.",
@@ -257,13 +257,13 @@
     "charges_per_use": 0,
     "turns_per_charge": 1,
     "explode_in_fire": true,
-    "explosion": { "damage": 15, "radius": 1, "fragment": { "impact": { "damage_type": "stab", "amount": 1185, "armor_multiplier": 3 }, "range": 10 } },
+    "explosion": { "damage": 15, "radius": 1, "fragment": { "impact": { "damage_type": "bullet", "amount": 1185, "armor_multiplier": 3 }, "range": 10 } },
     "use_action": {
       "type": "explosion",
       "sound_volume": 75,
       "sound_msg": "Tic-toc!  HUG-MEEE!  AHAHAH!!!",
       "no_deactivate_msg": "The bomb say:  'Throw me, STUPID!!!'.",
-      "explosion": { "damage": 15, "radius": 1, "fragment": { "impact": { "damage_type": "stab", "amount": 1185, "armor_multiplier": 3 }, "range": 10 } }
+      "explosion": { "damage": 15, "radius": 1, "fragment": { "impact": { "damage_type": "bullet", "amount": 1185, "armor_multiplier": 3 }, "range": 10 } }
     }
   },
   {

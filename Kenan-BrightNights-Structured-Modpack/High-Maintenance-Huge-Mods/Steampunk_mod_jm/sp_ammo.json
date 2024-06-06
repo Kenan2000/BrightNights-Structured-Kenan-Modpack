@@ -75,7 +75,7 @@
     "explosion": {
       "damage": 40,
       "radius": 1,
-      "fragment": { "impact": { "damage_type": "cut", "amount": 40, "armor_multiplier": 3 }, "range": 3 }
+      "fragment": { "impact": { "damage_type": "bullet", "amount": 40, "armor_multiplier": 3 }, "range": 3 }
     },
     "effects": [ "COOKOFF", "MUZZLE_SMOKE", "CUSTOM_EXPLOSION" ]
   },
