@@ -582,7 +582,8 @@
     "fear_triggers": [ "HURT", "SOUND", "FIRE", "PLAYER_CLOSE" ],
     "upgrades": { "age_grow": 10, "into": "mon_small_butterfly_chrysalis" },
     "baby_flags": [ "SPRING" ],
-    "flags": [ "CLIMBS", "SEES", "SMELLS", "BIRDFOOD" ]
+    "petfood": { "food": [ "BIRDFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly" },
+    "flags": [ "CLIMBS", "SEES", "SMELLS" ]
   },
   {
     "id": "mon_large_centipede",
@@ -809,7 +810,8 @@
     "name": { "str": "mutant dragonfly" },
     "description": "A mutant dragonfly which has grown to the size of a crow.  It darts and weaves through the air.  This one seems especially intelligent.",
     "upgrades": { "age_grow": 15, "into": "mon_mega_dragonfly" },
-    "flags": [ "CLIMBS", "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "HARDTOSHOOT", "DOGFOOD" ]
+    "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly" },
+    "flags": [ "CLIMBS", "HEARS", "STUMBLES", "FLIES", "SEES", "SMELLS", "HIT_AND_RUN", "HARDTOSHOOT" ]
   },
   {
     "id": "mon_large_dragonfly",
