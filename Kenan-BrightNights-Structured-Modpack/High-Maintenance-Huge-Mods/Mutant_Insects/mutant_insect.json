@@ -293,7 +293,7 @@
     "copy-from": "mon_ant_acid_larva",
     "description": "A yellow grub the size of a dog.  It squirms and oozes gelatinous fluids.  This one seems unusually friendly.",
     "upgrades": { "age_grow": 15, "into": "mon_mega_acid_ant" },
-    "extend": { "flags": [ "DOGFOOD" ] }
+    "extend": { "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_ant",
@@ -394,7 +394,7 @@
     "copy-from": "mon_ant_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a dog.  On one end is a set of squirming mouth parts.  THis one seems rather playful.",
     "upgrades": { "age_grow": 15, "into": "mon_mega_ant" },
-    "extend": { "flags": [ "DOGFOOD" ] }
+    "extend": { "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_bee",
@@ -458,7 +458,7 @@
     "type": "MONSTER",
     "copy-from": "mon_small_bee_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a squirrel.  On one end is a set of squirming mouth parts.  This one seems rather playful.",
-    "extend": { "flags": [ "BIRDFOOD" ] }
+    "extend": { "petfood": { "food": [ "BIRDFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_tame_small_bee_queen_larva",
@@ -466,7 +466,7 @@
     "copy-from": "mon_small_bee_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a squirrel.  On one end is a set of squirming mouth parts.  This one seems proud and commanding.",
     "upgrades": { "age_grow": 10, "into": "mon_mega_bee_queen" },
-    "extend": { "flags": [ "BIRDFOOD" ] }
+    "extend": { "petfood": { "food": [ "BIRDFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_giant_beetle",
@@ -533,7 +533,7 @@
     "copy-from": "mon_large_beetle_larva",
     "description": "A worm-like larva the size of a dog. This one seems fairly tame.",
     "upgrades": { "age_grow": 15, "into": "mon_mega_beetle" },
-    "extend": { "flags": [ "CATTLEFODDER" ] }
+    "extend": { "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_small_butterfly",
@@ -974,7 +974,7 @@
     "copy-from": "mon_small_fly_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a housecat.  On one end is a set of squirming mouth parts.  This one seems rather playful.",
     "upgrades": { "age_grow": 15, "into": "mon_mega_fly" },
-    "extend": { "flags": [ "DOGFOOD" ] }
+    "extend": { "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_locust_nymph",
@@ -1134,6 +1134,6 @@
     "copy-from": "mon_large_wasp_larva",
     "description": "A pulsating sausage of glistening white flesh, the size of a dog.  On one end is a set of squirming mouth parts.  This one seems less aggressive.",
     "upgrades": { "age_grow": 15, "into": "mon_mega_wasp" },
-    "extend": { "flags": [ "DOGFOOD" ] }
+    "extend": { "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   }
 ]

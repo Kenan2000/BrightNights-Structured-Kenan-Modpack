@@ -2,6 +2,7 @@
   {
     "id": "fo_scribe_coat",
     "looks_like": "robe",
+    "repairs_like": "trenchcoat",
     "type": "ARMOR",
     "name": { "str": "brotherhood scribe outfit" },
     "description": "A thick, red longcoat.  Has many pockets for storage. Seen in use among the various scribes and learned men and women of the Brotherhood of Steel.",
@@ -24,7 +25,7 @@
   },
   {
     "id": "fo_ncr_trooper_helmet",
-    "repairs_like": "xlkevlar",
+    "repairs_like": "helmet_survivor",
     "type": "ARMOR",
     "category": "armor",
     "name": { "str": "NCR trooper helmet" },
@@ -48,6 +49,8 @@
   },
   {
     "id": "fo_courser_uniform",
+    "looks_like": "trenchcoat",
+    "repairs_like": "lsurvivor_suit",
     "type": "ARMOR",
     "name": { "str": "Courser Uniform" },
     "description": "A durable leather trenchcoat used by the infamous coursers of the institute. Many a synth's last image recorded into their datafeed was of coursers clad in black wearing uniforms such as this. Carries a wide variety of pockets for ample storage opportunities.",
@@ -58,7 +61,6 @@
     "to_hit": -1,
     "material": [ "leather", "kevlar", "nomex" ],
     "symbol": "[",
-    "looks_like": "trenchcoat",
     "color": "dark_gray",
     "covers": [ "torso", "arms", "legs" ],
     "coverage": 90,

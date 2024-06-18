@@ -30,7 +30,7 @@
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
     "special_attacks": [ [ "EAT_FOOD", 120 ] ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "SWIMS", "ANIMAL", "PATH_AVOID_DANGER_1", "FUR", "CATFOOD" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "SWIMS", "ANIMAL", "PATH_AVOID_DANGER_1" ]
   },
   {
     "id": "mon_rat_piglet",
@@ -72,12 +72,7 @@
       "WARM",
       "SWIMS",
       "ANIMAL",
-      "PATH_AVOID_DANGER_1",
-      "FUR",
-      "CATFOOD",
-      "DOGFOOD",
-      "BIRDFOOD",
-      "CATTLEFODDER"
+      "PATH_AVOID_DANGER_1"
     ]
   },
   {
@@ -120,27 +115,22 @@
       "WARM",
       "SWIMS",
       "ANIMAL",
-      "PATH_AVOID_DANGER_1",
-      "FUR",
-      "CATFOOD",
-      "DOGFOOD",
-      "BIRDFOOD",
-      "CATTLEFODDER"
+      "PATH_AVOID_DANGER_1"
     ]
   },
   {
     "id": "mon_rat_mole_young",
     "type": "MONSTER",
     "name": { "str": "young mole rat" },
-    "description": "A small, mutated mole rat! These little things are good eating, and can be tamed, surprisingly They get fierce when they grow up.",
+    "description": "A small, mutated mole rat! These little things are good eating, and can be tamed, surprisingly. They get fierce when they grow up.",
     "default_faction": "rat",
     "categories": [ "WILDLIFE" ],
     "species": [ "MAMMAL" ],
     "diff": 2,
     "volume": "10000 ml",
     "weight": "10000 g",
-    "hp": 10,
-    "speed": 80,
+    "hp": 35,
+    "speed": 100,
     "material": [ "flesh" ],
     "symbol": "r",
     "color": "dark_gray",
@@ -150,7 +140,7 @@
     "melee_skill": 5,
     "melee_dice": 1,
     "melee_dice_sides": 1,
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 2,
     "vision_day": 30,
     "vision_night": 10,
@@ -161,33 +151,30 @@
     "death_function": [ "NORMAL" ],
     "upgrades": { "age_grow": 5, "into": "mon_rat_mole_lesser" },
     "special_attacks": [ [ "EAT_FOOD", 120 ] ],
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
     "flags": [
       "SEES",
       "SMELLS",
       "HEARS",
+      "KEENNOSE",
       "WARM",
       "SWIMS",
       "ANIMAL",
-      "PATH_AVOID_DANGER_1",
-      "FUR",
-      "CATFOOD",
-      "DOGFOOD",
-      "BIRDFOOD",
-      "CATTLEFODDER"
+      "PATH_AVOID_DANGER_1"
     ]
   },
   {
     "id": "mon_rat_mole_lesser",
     "type": "MONSTER",
     "name": { "str": "lesser mole rat" },
-    "description": "A large, aggressive rat around the size of the cow. While menacing and aggressive, this can be reduced with food and training.",
+    "description": "A large, aggressive mole rat around the size of the cow. While menacing and aggressive, this can be reduced with food and training.",
     "default_faction": "rat",
     "categories": [ "WILDLIFE" ],
     "species": [ "MAMMAL" ],
     "diff": 8,
     "volume": "120000 ml",
     "weight": "120000 g",
-    "hp": 100,
+    "hp": 200,
     "speed": 100,
     "material": [ "flesh" ],
     "symbol": "r",
@@ -197,9 +184,9 @@
     "melee_skill": 5,
     "melee_dice": 1,
     "melee_dice_sides": 1,
-    "melee_damage": [ { "damage_type": "cut", "amount": 1 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "dodge": 2,
-    "reproduction": { "baby_monster": "mon_rat_mole_young", "baby_count": 3, "baby_timer": 10 },
+    "reproduction": { "baby_monster": "mon_rat_mole_young", "baby_count": 5, "baby_timer": 10 },
     "baby_flags": [ "SPRING", "AUTUMN" ],
     "vision_day": 30,
     "vision_night": 10,
@@ -210,20 +197,19 @@
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
     "special_attacks": [ [ "EAT_FOOD", 120 ] ],
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
     "flags": [
       "SEES",
       "SMELLS",
       "HEARS",
+      "KEENNOSE",
       "WARM",
       "SWIMS",
       "ANIMAL",
       "PATH_AVOID_DANGER_1",
-      "MILKABLE",
-      "FUR",
-      "CATFOOD",
-      "DOGFOOD",
-      "BIRDFOOD",
-      "CATTLEFODDER"
+      "MILKABLE"
     ]
   }
 ]
+
+

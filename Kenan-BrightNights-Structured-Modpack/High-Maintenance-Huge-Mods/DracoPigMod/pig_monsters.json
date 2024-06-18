@@ -30,7 +30,8 @@
     "death_function": [ "NORMAL" ],
     "upgrades": { "age_grow": 15, "into": "mon_pig" },
     "special_attacks": [ [ "EAT_FOOD", 40 ] ],
-    "flags": [ "ANIMAL", "BLEED", "CATTLEFODDER", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PET_MOUNTABLE", "SEES", "SMELLS", "WARM" ]
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "ANIMAL", "BLEED", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PET_MOUNTABLE", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_pig",
@@ -64,6 +65,7 @@
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
     "special_attacks": [ [ "EAT_FOOD", 20 ] ],
-    "flags": [ "ANIMAL", "BLEED", "CATTLEFODDER", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PET_MOUNTABLE", "SEES", "SMELLS", "WARM" ]
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "ANIMAL", "BLEED", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "PET_MOUNTABLE", "SEES", "SMELLS", "WARM" ]
   }
 ]

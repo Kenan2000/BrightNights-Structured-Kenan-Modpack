@@ -33,9 +33,14 @@
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
     "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ] ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "ANIMAL",
-      "DOGFOOD",
+      "CANPLAY",
       "GROUP_MORALE",
       "HEARS",
       "PET_MOUNTABLE",
@@ -76,7 +81,12 @@
     "revert_to_itype": "mon_dog_bull_crate",
     "reproduction": { "baby_monster": "mon_dog_bull_pup", "baby_count": 7, "baby_timer": 22 },
     "//": "7 puppies and 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CANPLAY", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkbull",
@@ -109,7 +119,12 @@
     "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], { "type": "leap", "cooldown": 8, "max_range": 2 } ],
     "reproduction": { "baby_monster": "mon_dog_auscattle_pup", "baby_count": 5, "baby_timer": 21 },
     "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
-    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CLIMBS", "CANPLAY", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkauscattle",
@@ -143,7 +158,12 @@
     "special_attacks": [ [ "dogbite", 5 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], [ "fdogbite", 15 ] ],
     "reproduction": { "baby_monster": "mon_dog_pitbullmix_pup", "baby_count": 5, "baby_timer": 21 },
     "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CANPLAY", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkpitbullmix",
@@ -177,9 +197,14 @@
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_beagle_pup", "baby_count": 5, "baby_timer": 21 },
     "//": "1-5 puppies & 65 days per-litter for size tiny canines, that's 21 days per-litter for average season length",
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "ANIMAL",
-      "DOGFOOD",
+      "CANPLAY",
       "GROUP_MORALE",
       "GUILT",
       "HARDTOSHOOT",
@@ -223,7 +248,12 @@
     "special_attacks": [ [ "dogbite", 20 ], [ "EAT_FOOD", 100 ], [ "PARROT_AT_DANGER", 0 ], { "type": "leap", "cooldown": 8, "max_range": 2 } ],
     "reproduction": { "baby_monster": "mon_dog_bcollie_pup", "baby_count": 5, "baby_timer": 21 },
     "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
-    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CLIMBS", "CANPLAY", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkbcollie",
@@ -256,7 +286,12 @@
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_boxer_pup", "baby_count": 5, "baby_timer": 21 },
     "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
-    "flags": [ "ANIMAL", "CLIMBS", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CLIMBS", "CANPLAY", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkboxer",
@@ -292,9 +327,14 @@
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_chihuahua_pup", "baby_count": 3, "baby_timer": 21 },
     "//": "1-3 puppies & 65 days per-litter for size tiny canines, that's 21 days per-litter for average season length",
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "ANIMAL",
-      "DOGFOOD",
+      "CANPLAY",
       "GUILT",
       "HARDTOSHOOT",
       "HEARS",
@@ -338,9 +378,14 @@
     "fear_triggers": [ "HURT" ],
     "reproduction": { "baby_monster": "mon_dog_dachshund_pup", "baby_count": 5, "baby_timer": 21 },
     "//": "1-5 puppies & 68 days per-litter for size small canines, that's 21 days per-litter for average season length",
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "ANIMAL",
-      "DOGFOOD",
+      "CANPLAY",
       "GUILT",
       "HARDTOSHOOT",
       "HEARS",
@@ -381,7 +426,12 @@
     "revert_to_itype": "mon_dog_gshepherd_crate",
     "reproduction": { "baby_monster": "mon_dog_gshepherd_pup", "baby_count": 7, "baby_timer": 22 },
     "//": "1-7 puppies & 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CANPLAY", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkgshepherd",
@@ -417,7 +467,12 @@
     "revert_to_itype": "mon_dog_gpyrenees_crate",
     "reproduction": { "baby_monster": "mon_dog_gpyrenees_pup", "baby_count": 7, "baby_timer": 22 },
     "//1": "1-7 puppies & 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CANPLAY", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkgpyrenees",
@@ -452,7 +507,12 @@
     "revert_to_itype": "mon_dog_rottweiler_crate",
     "reproduction": { "baby_monster": "mon_dog_rottweiler_pup", "baby_count": 7, "baby_timer": 22 },
     "//1": "1-7 puppies & 75 days per-litter for size medium canines, that's 22 days per-litter for average season length",
-    "flags": [ "ANIMAL", "DOGFOOD", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CANPLAY", "HEARS", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   },
   {
     "id": "mon_dog_atkrottweiler",

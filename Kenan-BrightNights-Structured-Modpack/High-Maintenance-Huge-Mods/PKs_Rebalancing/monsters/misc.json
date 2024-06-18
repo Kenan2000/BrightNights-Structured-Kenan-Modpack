@@ -529,13 +529,17 @@
     "vision_day": 45,
     "vision_night": 5,
     "path_settings": { "max_dist": 25 },
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "SEES",
       "HEARS",
       "PET_MOUNTABLE",
       "SMELLS",
       "ANIMAL",
-      "DOGFOOD",
       "PATH_AVOID_DANGER_1",
       "WARM",
       "HIT_AND_RUN",
@@ -574,13 +578,17 @@
     "anger_triggers": [ "STALK", "HURT", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_triggers": [ "FRIEND_DIED" ],
     "placate_triggers": [ "MEAT", "SOUND" ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "SEES",
       "HEARS",
       "PET_MOUNTABLE",
       "SMELLS",
       "ANIMAL",
-      "DOGFOOD",
       "PATH_AVOID_DANGER_1",
       "WARM",
       "KEENNOSE",

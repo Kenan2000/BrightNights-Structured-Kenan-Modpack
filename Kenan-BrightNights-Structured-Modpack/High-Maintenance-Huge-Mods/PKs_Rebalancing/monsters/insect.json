@@ -282,8 +282,7 @@
       "ARTHROPOD_BLOOD",
       "NO_BREATHE",
       "SWIMS",
-      "ANIMAL",
-      "CHITIN"
+      "ANIMAL"
     ]
   },
   {
@@ -336,7 +335,7 @@
     "attack_effs": [ { "id": "poison", "duration": 1200, "chance": 50 }, { "id": "badpoison", "duration": 1200, "chance": 50 } ],
     "emit_fields": [ "emit_web" ],
     "special_attacks": [ [ "wound_minor", 20 ] ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CHITIN", "CLIMBS" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS" ]
   },
   {
     "id": "mon_spider_trapdoor_giant",
@@ -371,7 +370,7 @@
     "harvest": "arachnid",
     "death_function": [ "NORMAL" ],
 	"upgrades": { "half_life": 19, "into_group": "TRAP_SPIDER_UPGRADE" },
-    "flags": [ "SEES", "SMELLS", "HEARS", "CAN_DIG", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "CAN_DIG", "WEBWALK", "CLIMBS", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_jumping_giant",
@@ -392,7 +391,7 @@
     "special_attacks": [ [ "wound_minor", 20 ] ],
     "fear_triggers": [ "HURT", "FIRE" ],
     "upgrades": { "half_life": 17, "into": "mon_spider_jumping_giant_acid" },
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "CHITIN", "CLIMBS", "ACIDPROOF", "PUSH_MON" ],
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "CLIMBS", "ACIDPROOF", "PUSH_MON" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "FRIEND_ATTACKED", "STALK" ]
   },
   {
@@ -427,7 +426,7 @@
     "death_function": [ "NORMAL" ],
     "special_attacks": [ [ "wound_minor", 30 ] ],
 	"upgrades": { "half_life": 3, "into": "mon_spider_web_small" },
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "STUMBLES", "CLIMBS", "PUSH_MON", "CHITIN" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "STUMBLES", "CLIMBS", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_web_small",
@@ -460,7 +459,7 @@
     "harvest": "arachnid",
 	"emit_fields": [ "emit_web_small" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "PUSH_MON" ]
   },
 
   {
@@ -496,7 +495,7 @@
 	"emit_fields": [ "emit_web_small" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 19, "into_group": "WEB_SPIDER_UPGRADE" },
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_wolf_giant",
@@ -535,7 +534,7 @@
     "anger_triggers": [ "STALK", "PLAYER_WEAK", "HURT", "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
 	"fear_triggers": [ "FRIEND_DIED" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "CHITIN", "PATH_AVOID_DANGER_1", "VENOM", "CLIMBS", "PATH_AVOID_FIRE", "PATH_AVOID_FALL" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "PATH_AVOID_DANGER_1", "VENOM", "CLIMBS", "PATH_AVOID_FIRE", "PATH_AVOID_FALL" ]
   },
   
   {
@@ -568,7 +567,7 @@
     "vision_night": 20,
     "special_attacks": [ [ "wound_minor", 20 ] ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "CHITIN", "CLIMBS", "PATH_AVOID_DANGER_1" ],
+    "flags": [ "SEES", "SMELLS", "HEARS", "CLIMBS", "PATH_AVOID_DANGER_1" ],
     "anger_triggers": [ "STALK", "PLAYER_WEAK", "PLAYER_CLOSE" ],
     "fear_triggers": [ "HURT", "FRIEND_DIED" ]
   },
@@ -692,7 +691,7 @@
     "special_attacks": [ [ "wound_minor", 30 ] ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 3, "into": "mon_spider_trapdoor_giant" },
-    "flags": [ "SEES", "SMELLS", "STUMBLES", "HEARS", "GRABS", "CAN_DIG", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "STUMBLES", "HEARS", "GRABS", "CAN_DIG", "WEBWALK", "CLIMBS", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_trapdoor_giant_guardian",
@@ -723,7 +722,7 @@
     "vision_night": 13,
     "special_attacks": [ [ "wound_minor", 20 ], [ "wasp_sting", 20 ] ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "CAN_DIG", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON", "PATH_AVOID_DANGER_1" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "CAN_DIG", "WEBWALK", "CLIMBS", "PUSH_MON", "PATH_AVOID_DANGER_1" ]
   },
   {
     "id": "mon_spider_trapdoor_giant_pk",
@@ -754,7 +753,7 @@
     "vision_night": 7,
     "special_attacks": [ [ "LUNGE", 30 ], [ "wound_minor", 20 ] ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "CAN_DIG", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "CAN_DIG", "WEBWALK", "CLIMBS", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_web_alpha",
@@ -789,7 +788,7 @@
     "vision_night": 10,
     "emit_fields": [ "emit_web_small" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_web_omega",
@@ -824,7 +823,7 @@
     "vision_night": 10,
     "emit_fields": [ "emit_web_small" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CHITIN", "CLIMBS", "PUSH_MON", "PRIORITIZE_TARGETS" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "PUSH_MON", "PRIORITIZE_TARGETS" ]
   },
   {
     "id": "mon_spider_web_mu",
@@ -859,7 +858,7 @@
     "vision_night": 10,
     "emit_fields": [ "emit_web_small" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CHITIN", "CLIMBS", "PARALYZEVENOM", "HIT_AND_RUN", "PUSH_MON" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "PARALYZEVENOM", "HIT_AND_RUN", "PUSH_MON" ]
   },
   {
     "id": "mon_spider_jumping_giant_acid",
@@ -896,7 +895,7 @@
     ],
     "special_when_hit": [ "ACIDSPLASH", 10 ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "CHITIN", "CLIMBS", "ACIDPROOF", "ACID_BLOOD", "PUSH_MON" ],
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "HEARS", "CLIMBS", "ACIDPROOF", "ACID_BLOOD", "PUSH_MON" ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "FRIEND_ATTACKED", "STALK" ],
     "fear_triggers": [ "HURT", "FIRE" ]
   },
@@ -933,7 +932,7 @@
     ],
     "special_when_hit": [ "ZAPBACK", 20 ],
     "death_drops": { "subtype": "collection", "groups": [ [ "bees", 35 ] ] },
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "CHITIN", "SWARMS", "GROUP_MORALE", "ELECTRIC" ],
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "SWARMS", "GROUP_MORALE", "ELECTRIC" ],
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED" ]
   },
   {
@@ -978,7 +977,7 @@
     "death_drops": { "subtype": "collection", "groups": [ [ "bees", 35 ] ] },
     "attack_effs": [ { "id": "poison", "duration": 400, "chance": 75 } ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "CHITIN", "SWARMS", "GROUP_MORALE", "ELECTRIC" ],
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "SWARMS", "GROUP_MORALE", "ELECTRIC" ],
     "anger_triggers": [ "HURT", "FRIEND_DIED" ]
   },
   {
@@ -1023,7 +1022,7 @@
     "death_drops": { "subtype": "collection", "groups": [ [ "bees", 35 ] ] },
     "death_function": [ "NORMAL" ],
     "attack_effs": [ { "id": "poison", "duration": 400, "chance": 75 } ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "CHITIN", "SWARMS", "GROUP_MORALE", "ELECTRIC" ],
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "SWARMS", "GROUP_MORALE", "ELECTRIC" ],
     "anger_triggers": [ "HURT", "FRIEND_ATTACKED", "PLAYER_CLOSE" ]
   },
   {
@@ -1070,7 +1069,7 @@
     "death_drops": { "subtype": "collection", "groups": [ [ "bees", 20 ] ] },
     "death_function": [ "NORMAL" ],
     "attack_effs": [ { "id": "poison", "duration": 400, "chance": 75 } ],
-    "flags": [ "SEES", "SMELLS", "FLIES", "STUMBLES", "CHITIN", "SWARMS", "GROUP_MORALE", "ELECTRIC", "QUEEN" ]
+    "flags": [ "SEES", "SMELLS", "FLIES", "STUMBLES", "SWARMS", "GROUP_MORALE", "ELECTRIC", "QUEEN" ]
   },
   {
     "id": "mon_bee_king",
@@ -1116,7 +1115,7 @@
     "death_drops": { "subtype": "collection", "groups": [ [ "bees", 20 ] ] },
     "death_function": [ "NORMAL" ],
     "attack_effs": [ { "id": "poison", "duration": 400, "chance": 50 } ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "CHITIN", "SWARMS", "GROUP_MORALE", "ELECTRIC" ]
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "FLIES", "STUMBLES", "SWARMS", "GROUP_MORALE", "ELECTRIC" ]
   },
   {
     "id": "mon_bee_larvae",
@@ -1146,7 +1145,7 @@
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 14, "into_group": "GROUP_BEE" },
-    "flags": [ "HEARS", "SMELLS", "LARVA", "CHITIN", "IMMOBILE" ]
+    "flags": [ "HEARS", "SMELLS", "LARVA", "IMMOBILE" ]
   },
   {
     "id": "mon_wasp",
@@ -1155,7 +1154,7 @@
     "vision_day": 12,
     "vision_night": 7,
     "special_attacks": [ [ "wasp_sting", 3 ], [ "ant_sinject", 3 ] ],
-    "flags": [ "SEES", "SMELLS", "FLIES", "CHITIN", "SWARMS", "GROUP_MORALE" ]
+    "flags": [ "SEES", "SMELLS", "FLIES", "SWARMS", "GROUP_MORALE" ]
   },
   {
     "id": "mon_wasp_queen",
@@ -1178,7 +1177,7 @@
     "vision_day": 12,
     "vision_night": 7,
     "special_attacks": [ [ "wasp_sting", 3 ], [ "ant_sinject", 3 ] ],
-    "flags": [ "SEES", "SMELLS", "FLIES", "CHITIN", "SWARMS", "GROUP_MORALE", "QUEEN" ]
+    "flags": [ "SEES", "SMELLS", "FLIES", "SWARMS", "GROUP_MORALE", "QUEEN" ]
   },
   {
     "id": "mon_wasp_larvae",

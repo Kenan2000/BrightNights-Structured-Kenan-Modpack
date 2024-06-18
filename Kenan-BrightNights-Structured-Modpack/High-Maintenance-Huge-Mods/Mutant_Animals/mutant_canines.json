@@ -250,7 +250,7 @@
     "placate_triggers": [ "MEAT" ],
     "reproduction": { "baby_monster": "mon_dog_mutant_dire_pup", "baby_count": 1, "baby_timer": 21 },
     "delete": { "flags": [ "HIT_AND_RUN" ] },
-    "extend": { "flags": [ "FUR", "PET_MOUNTABLE" ] }
+    "extend": { "flags": [ "PET_MOUNTABLE" ] }
   },
   {
     "id": "mon_dog_mutant_dire_pup",
@@ -276,6 +276,13 @@
     "harvest": "mammal_fur",
     "regenerates": 1,
     "upgrades": { "age_grow": 21, "into": "mon_dog_mutant_dire" },
-    "extend": { "flags": [ "FUR", "DOGFOOD" ] }
+    "extend": {
+      "petfood": {
+        "food": [ "DOGFOOD" ],
+        "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+        "pet": "The %s happily wags its tail while you pat their head."
+      },
+      "flags": [ "CANPLAY" ]
+    }
   }
 ]

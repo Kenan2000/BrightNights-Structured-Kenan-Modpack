@@ -16,11 +16,16 @@
     "vision_night": 6,
     "harvest": "mammal_tiny",
     "fear_triggers": [ "HURT" ],
-    "reproduction": { "baby_monster": "mon_dog_pug_pup", "baby_count": 3, "baby_timer": 240 },
-    "//": "1-3 puppies & 240 days per-litter for size tiny canines",
+    "reproduction": { "baby_monster": "mon_dog_pug_pup", "baby_count": 5, "baby_timer": 65 },
+    "//": "1-5 puppies & 65 days per-litter for size tiny canines, that's 21 days per-litter for average season length",
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
     "flags": [
       "ANIMAL",
-      "DOGFOOD",
+      "CANPLAY",
       "HARDTOSHOOT",
       "HEARS",
       "HIT_AND_RUN",
@@ -43,7 +48,7 @@
     "volume": "500 ml",
     "weight": "500 g",
     "hp": 2,
-    "speed": 78,
+    "speed": 79,
     "material": [ "flesh" ],
     "symbol": "d",
     "color": "light_gray",
@@ -57,10 +62,15 @@
     "vision_night": 5,
     "harvest": "mammal_tiny",
     "path_settings": { "max_dist": 10 },
-    "upgrades": { "age_grow": 42, "into": "mon_dog_pug" },
+    "upgrades": { "age_grow": 14, "into": "mon_dog_pug" },
     "fear_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT" ],
     "death_function": [ "NORMAL" ],
     "special_attacks": [ [ "EAT_FOOD", 100 ] ],
-    "flags": [ "ANIMAL", "DOGFOOD", "HARDTOSHOOT", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its head and seems friendly.",
+      "pet": "The %s happily wags its tail while you pat their head."
+    },
+    "flags": [ "ANIMAL", "CANPLAY", "HARDTOSHOOT", "HEARS", "KEENNOSE", "PATH_AVOID_DANGER_1", "SEES", "SMELLS", "WARM" ]
   }
 ]

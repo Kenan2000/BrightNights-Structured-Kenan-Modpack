@@ -44,7 +44,7 @@
     "special_attacks": [ [ "DERMATIK", 20 ], [ "wound_minor", 30 ] ],
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_WEAK", "STALK" ],
     "fear_triggers": [ "HURT" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "FLIES", "CHITIN" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "STUMBLES", "FLIES" ]
   },
   {
     "id": "mon_coyote_wolf",
@@ -65,7 +65,7 @@
       { "id": "skunk_spray", "duration": 3000 },
       { "id": "rad_tenths", "duration": 120 }
     ],
-    "flags": [ "SEES", "SMELLS", "WARM", "VENOM", "SWIMS", "LEATHER" ]
+    "flags": [ "SEES", "SMELLS", "WARM", "VENOM", "SWIMS" ]
   },
   {
     "id": "mon_sewer_fish",
@@ -173,7 +173,7 @@
     "emit_fields": [ "emit_acid_small", "emit_acid_trail_slow" ],
     "special_attacks": [ [ "ACID_ACCURATE", 15 ], [ "hammer", 30 ] ],
     "special_when_hit": [ "ACIDSPLASH", 80 ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "GOODHEARING", "CAN_DIG", "BASHES", "BORES", "POISON", "SUNDEATH", "ACIDPROOF", "LEATHER" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "GOODHEARING", "CAN_DIG", "BASHES", "BORES", "POISON", "SUNDEATH", "ACIDPROOF" ]
   },
   {
     "id": "mon_amigara_horror",
@@ -213,7 +213,6 @@
       "STUMBLES",
       "HARDTOSHOOT",
       "HUMAN",
-      "LEATHER",
       "PATH_AVOID_DANGER_2",
       "PRIORITIZE_TARGETS"
     ]
@@ -282,7 +281,7 @@
     "copy-from": "mon_dog_thing",
     "default_faction": "mutant_predator",
     "special_attacks": [ [ "DOGTHING", 80 ], [ "DARKMAN", 5 ] ],
-    "flags": [ "SEES", "SMELLS", "HEARS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "FUR", "HARDTOSHOOT" ]
+    "flags": [ "SEES", "SMELLS", "HEARS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "HARDTOSHOOT" ]
   },
   {
     "id": "mon_headless_dog_thing",
@@ -378,7 +377,7 @@
     "special_attacks": [ [ "wound_minor", 40 ], [ "scratch", 20 ], [ "slash", 40 ] ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK", "FRIEND_ATTACKED" ],
     "regenerates": 1,
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "POISON", "HUMAN", "LEATHER", "CLIMBS", "SWARMS" ]
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "POISON", "HUMAN", "CLIMBS", "SWARMS" ]
   },
   {
     "id": "mon_jabberwock",
@@ -415,8 +414,6 @@
       "BASHES",
       "DESTROYS",
       "ATTACKMON",
-      "FUR",
-      "LEATHER",
       "POISON",
       "REVIVES",
       "NO_NECRO"
@@ -473,8 +470,6 @@
       "BASHES",
       "DESTROYS",
       "ATTACKMON",
-      "FUR",
-      "LEATHER",
       "POISON",
       "REVIVES",
       "NO_NECRO"
@@ -528,7 +523,6 @@
       "WARM",
       "FLIES",
       "ANIMAL",
-      "LEATHER",
       "HARDTOSHOOT",
       "SWARMS",
       "HIT_AND_RUN",
@@ -590,7 +584,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "WARM",
-      "FUR",
       "KEENNOSE",
       "BLEED",
       "SWARMS",
@@ -913,7 +906,7 @@
       }
     ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SMELLS", "HEARS", "SEES", "CHITIN", "SWIMS", "GRABS", "ARTHROPOD_BLOOD" ],
+    "flags": [ "SMELLS", "HEARS", "SEES", "SWIMS", "GRABS", "ARTHROPOD_BLOOD" ],
     "anger_triggers": [ "PLAYER_CLOSE", "HURT" ],
     "fear_triggers": [ "FIRE" ]
   },
@@ -959,7 +952,7 @@
       }
     ],
     "death_function": [ "WORM", "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "DIGS", "BASHES", "POISON", "WARM", "LEATHER" ],
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "DIGS", "BASHES", "POISON", "WARM" ],
     "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT", "FRIEND_DIED", "FIRE" ]
   },
@@ -984,7 +977,7 @@
     "special_attacks": [ [ "wound_minor", 30 ] ],
     "regen_morale": true,
     "regenerates": 1,
-    "flags": [ "DIGS", "HEARS", "GOODHEARING", "WARM", "LEATHER" ],
+    "flags": [ "DIGS", "HEARS", "GOODHEARING", "WARM" ],
     "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT", "FRIEND_DIED" ]
   },
@@ -1016,7 +1009,7 @@
     "upgrades": { "half_life": 3, "into_group": "GROUP_WORM" },
     "regenerates": 1,
     "regen_morale": true,
-    "flags": [ "CAN_DIG", "HEARS", "GOODHEARING", "WARM", "LEATHER" ],
+    "flags": [ "CAN_DIG", "HEARS", "GOODHEARING", "WARM" ],
     "anger_triggers": [ "SOUND", "FRIEND_ATTACKED", "PLAYER_WEAK" ],
     "fear_triggers": [ "HURT", "FRIEND_DIED" ]
   },
@@ -1066,7 +1059,6 @@
       "GROUP_BASH",
       "BLEED",
       "NO_BREATHE",
-      "LEATHER",
       "STUMBLES"
     ]
   }

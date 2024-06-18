@@ -23,8 +23,8 @@
     "special_attacks": [ [ "PARROT", 10 ] ],
     "fear_triggers": [ "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
-    "upgrades": { "half_life": 364, "into": "mon_bird_mutant_songbird" },
-    "reproduction": { "baby_egg": "egg_songbird", "baby_count": 3, "baby_timer": 8 },
+    "upgrades": { "half_life": 121, "into": "mon_bird_mutant_songbird" },
+    "reproduction": { "baby_egg": "egg_songbird", "baby_count": 5, "baby_timer": 8 },
     "baby_flags": [ "SPRING" ],
     "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "FLIES" ]
   },
@@ -97,9 +97,9 @@
     "fear_triggers": [ "PLAYER_CLOSE", "HURT", "SOUND", "FIRE" ],
     "death_function": [ "NORMAL" ],
     "harvest": "mammal_fur",
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
     "flags": [
       "PET_MOUNTABLE",
-      "CATTLEFODDER",
       "SEES",
       "HEARS",
       "GOODHEARING",
@@ -144,6 +144,7 @@
     "anger_triggers": [ "HURT" ],
     "fear_triggers": [ "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SMELLS", "HEARS", "SEES", "SWIMS", "FLIES", "GRABS", "STUMBLES", "PATH_AVOID_DANGER_2", "ACIDPROOF", "DOGFOOD"]
+    "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SMELLS", "HEARS", "SEES", "SWIMS", "FLIES", "GRABS", "STUMBLES", "PATH_AVOID_DANGER_2", "ACIDPROOF"]
   }
 ]

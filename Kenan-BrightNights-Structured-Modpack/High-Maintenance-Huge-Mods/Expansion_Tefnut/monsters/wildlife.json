@@ -73,8 +73,7 @@
       "WARM",
       "HIT_AND_RUN",
       "KEENNOSE",
-      "BLEED",
-	  "CATFOOD"
+      "BLEED"
     ]
   },
   
@@ -98,6 +97,7 @@
     "morale": -8,
     "melee_dice": 1,
     "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "dodge": 4,
     "harvest": "bird_small",
     "fear_triggers": [ "HURT" ],
@@ -105,7 +105,8 @@
     "death_function": [ "NORMAL" ],
     "reproduction": { "baby_egg": "egg_bird", "baby_count": 3, "baby_timer": 5 },
     "baby_flags": [ "SPRING" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "FLIES", "BIRDFOOD" ]
+    "petfood": { "food": [ "BIRDFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "FLIES" ]
   },
   
   {
@@ -128,6 +129,7 @@
     "morale": -8,
     "melee_dice": 1,
     "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "dodge": 4,
     "harvest": "bird_small",
     "fear_triggers": [ "HURT", "PLAYER_CLOSE" ],
@@ -135,7 +137,8 @@
     "death_function": [ "NORMAL" ],
     "reproduction": { "baby_egg": "egg_bird", "baby_count": 3, "baby_timer": 5 },
     "baby_flags": [ "SPRING" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "FLIES", "BIRDFOOD" ]
+    "petfood": { "food": [ "BIRDFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "FLIES" ]
   },
   
   
@@ -159,11 +162,13 @@
     "morale": -8,
     "melee_dice": 1,
     "melee_dice_sides": 1,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
     "dodge": 4,
     "harvest": "mammal_tiny",
     "fear_triggers": [ "SOUND", "PLAYER_CLOSE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM", "BIRDFOOD" ]
+    "petfood": { "food": [ "BIRDFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "SMELLS", "ANIMAL", "PATH_AVOID_DANGER_1", "WARM" ]
   }
   
   

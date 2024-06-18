@@ -44,7 +44,12 @@
     "attack_effs": [ { "id": "slimed", "duration": 200 } ],
     "special_attacks": [ [ "sliming", 20 ] ],
     "death_drops": "mon_gelatin_death_drops",
-    "flags": [ "CANPLAY", "DOGFOOD", "SEES", "SMELLS", "HEARS", "PET_MOUNTABLE", "CLIMBS", "PLASTIC", "NO_BREATHE", "NOHEAD", "NOGIB", "ABSORBS" ],
+    "petfood": {
+      "food": [ "DOGFOOD" ],
+      "feed": "The %s seems to like you!  It lets you pat its top and seems friendly.",
+      "pet": "The %s happily wobbles around while you pat their top."
+    },
+    "flags": [ "CANPLAY", "SEES", "SMELLS", "HEARS", "PET_MOUNTABLE", "CLIMBS", "PLASTIC", "NO_BREATHE", "NOHEAD", "NOGIB", "ABSORBS" ],
     "death_function": [ "MELT" ],
     "anger_triggers": [ "HURT" ],
     "placate_triggers": [ "FRIEND_ATTACKED" ]

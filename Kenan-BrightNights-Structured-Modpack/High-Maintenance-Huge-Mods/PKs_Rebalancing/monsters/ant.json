@@ -203,7 +203,7 @@
     "special_attacks": [ [ "scrib", 40 ], [ "SHRIEK_ALERT", 40 ], [ "SHRIEK_STUN", 1 ] ],
     "anger_triggers": [ "FRIEND_DIED", "HURT" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "PATH_AVOID_DANGER_1", "CHITIN", "CLIMBS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "PATH_AVOID_DANGER_1", "CLIMBS" ]
   },
   {
     "id": "mon_ant_terminal",
@@ -250,7 +250,7 @@
     ],
     "anger_triggers": [ "FRIEND_DIED", "HURT", "PLAYER_WEAK" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CHITIN", "CLIMBS" ]
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS" ]
   },
   {
     "id": "mon_ant_soldier_terminal",
@@ -296,7 +296,7 @@
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "CHITIN", "CLIMBS" ]
+    "flags": [ "SEES", "HEARS", "SMELLS", "KEENNOSE", "CLIMBS" ]
   },
   {
     "id": "mon_ant_soldier_pk_weak",
@@ -355,7 +355,7 @@
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "FIRE" ],
     "death_function": [ "NORMAL" ],
     "upgrades": { "half_life": 28, "into": "mon_ant_soldier_pk" },
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CHITIN", "CLIMBS", "BASHES" ]
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "BASHES" ]
   },
   {
     "id": "mon_ant_soldier_pk",
@@ -413,7 +413,7 @@
     ],
     "anger_triggers": [ "FRIEND_ATTACKED", "FRIEND_DIED", "HURT", "PLAYER_CLOSE", "PLAYER_WEAK", "FIRE" ],
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CHITIN", "CLIMBS", "BASHES" ]
+    "flags": [ "SEES", "SMELLS", "KEENNOSE", "CLIMBS", "BASHES" ]
   },
   {
     "copy-from": "mon_ant_acid_queen",
@@ -710,7 +710,7 @@
     ],
     "death_function": "NORMAL",
     "harvest": "arachnid_acid",
-    "flags": [ "SEES", "HEARS", "BASHES", "DESTROYS", "PUSH_MON", "CHITIN" ],
+    "flags": [ "SEES", "HEARS", "BASHES", "DESTROYS", "PUSH_MON" ],
     "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE", "FIRE", "HURT" ]
   }
 ]

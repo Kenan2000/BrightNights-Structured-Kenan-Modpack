@@ -97,7 +97,8 @@
     "type": "MONSTER",
     "copy-from": "mon_small_jumping_spider",
     "description": "A newly-hatched mutant jumping spider the size of a rat.  This one is highly intelligent.",
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "HARDTOSHOOT", "DOGFOOD" ]
+    "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "HARDTOSHOOT" ]
   },
   {
     "id": "mon_spider_jumping_giant",
@@ -250,7 +251,8 @@
     "type": "MONSTER",
     "copy-from": "mon_small_web_spider",
     "description": "A newly-hatched mutant web-spider the size of a rat.  This one is rather friendly.",
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "HARDTOSHOOT", "DOGFOOD" ]
+    "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "HARDTOSHOOT" ]
   },
   {
     "id": "mon_large_web_spider",
@@ -364,7 +366,8 @@
     "type": "MONSTER",
     "copy-from": "mon_small_wolf_spider",
     "description": "A newly-hatched mutant wolf spider the size of a rat.  This one is excepptionally cute and fuzzy.",
-    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "HARDTOSHOOT", "DOGFOOD" ]
+    "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "SMELLS", "HEARS", "WEBWALK", "CLIMBS", "HARDTOSHOOT" ]
   },
   {
     "id": "mon_large_wolf_spider",

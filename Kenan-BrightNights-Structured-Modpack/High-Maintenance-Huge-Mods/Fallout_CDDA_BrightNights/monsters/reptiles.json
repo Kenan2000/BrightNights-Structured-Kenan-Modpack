@@ -20,11 +20,11 @@
     "melee_skill": 4,
     "melee_dice": 1,
     "melee_dice_sides": 10,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 2,
-    "armor_bash": 6,
-    "armor_cut": 8,
-    "armor_bullet": 6,
+    "armor_bash": 2,
+    "armor_cut": 3,
+    "armor_bullet": 2,
     "vision_day": 3,
     "vision_night": 35,
     "harvest": "gecko",
@@ -35,11 +35,11 @@
         "cooldown": 20,
         "accuracy": 6,
         "damage_max_instance": [
-          { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "stab", "amount": 2, "armor_multiplier": 0.5 },
+          { "damage_type": "bash", "amount": 7, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -48,7 +48,6 @@
     "death_function": [ "NORMAL" ],
     "upgrades": { "age_grow": 5, "into": "mon_gecko" },
     "flags": [
-      "DOGFOOD",
       "SEES",
       "HEARS",
       "GOODHEARING",
@@ -57,7 +56,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -82,11 +80,11 @@
     "melee_skill": 4,
     "melee_dice": 1,
     "melee_dice_sides": 10,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 5 } ],
     "dodge": 2,
-    "armor_bash": 6,
-    "armor_cut": 8,
-    "armor_bullet": 6,
+    "armor_bash": 3,
+    "armor_cut": 5,
+    "armor_bullet": 3,
     "vision_day": 35,
     "vision_night": 35,
     "harvest": "gecko",
@@ -97,11 +95,11 @@
         "cooldown": 20,
         "accuracy": 6,
         "damage_max_instance": [
-          { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "stab", "amount": 5, "armor_multiplier": 0.5 },
+          { "damage_type": "bash", "amount": 10, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -118,7 +116,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -143,11 +140,11 @@
     "melee_skill": 4,
     "melee_dice": 1,
     "melee_dice_sides": 10,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 2,
-    "armor_bash": 6,
-    "armor_cut": 8,
-    "armor_bullet": 6,
+    "armor_bash": 3,
+    "armor_cut": 5,
+    "armor_bullet": 3,
     "vision_day": 3,
     "vision_night": 35,
     "harvest": "gecko_gold",
@@ -158,11 +155,11 @@
         "cooldown": 20,
         "accuracy": 6,
         "damage_max_instance": [
-          { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "stab", "amount": 5, "armor_multiplier": 0.5 },
+          { "damage_type": "bash", "amount": 10, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -173,7 +170,6 @@
     "flags": [
       "ACIDPROOF",
       "POISON",
-      "DOGFOOD",
       "SEES",
       "HEARS",
       "GOODHEARING",
@@ -182,7 +178,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -207,7 +202,7 @@
     "melee_skill": 4,
     "melee_dice": 1,
     "melee_dice_sides": 10,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 8 } ],
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 8,
@@ -222,11 +217,11 @@
         "cooldown": 20,
         "accuracy": 6,
         "damage_max_instance": [
-          { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "stab", "amount": 8, "armor_multiplier": 0.5 },
+          { "damage_type": "bash", "amount": 15, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -245,7 +240,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -270,11 +264,11 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
     "dodge": 2,
-    "armor_bash": 6,
-    "armor_cut": 8,
-    "armor_bullet": 6,
+    "armor_bash": 8,
+    "armor_cut": 10,
+    "armor_bullet": 8,
     "vision_day": 70,
     "vision_night": 70,
     "harvest": "animal_large_noskin",
@@ -286,10 +280,10 @@
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "bash", "amount": 21, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -300,14 +294,12 @@
     "flags": [
       "SEES",
       "HEARS",
-      "DOGFOOD",
       "GOODHEARING",
       "SMELLS",
       "KEENNOSE",
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -332,11 +324,11 @@
     "melee_skill": 6,
     "melee_dice": 2,
     "melee_dice_sides": 20,
-    "melee_damage": [ { "damage_type": "cut", "amount": 24 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 21 } ],
     "dodge": 2,
-    "armor_bash": 12,
+    "armor_bash": 14,
     "armor_cut": 12,
-    "armor_bullet": 10,
+    "armor_bullet": 14,
     "vision_day": 70,
     "vision_night": 70,
     "harvest": "animal_large_noskin",
@@ -348,10 +340,10 @@
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "bash", "amount": 23, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -368,7 +360,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -392,12 +383,12 @@
     "morale": 100,
     "melee_skill": 10,
     "melee_dice": 3,
-    "melee_dice_sides": 20,
-    "melee_damage": [ { "damage_type": "cut", "amount": 24 } ],
+    "melee_dice_sides": 23,
+    "melee_damage": [ { "damage_type": "cut", "amount": 37 } ],
     "dodge": 2,
-    "armor_bash": 12,
-    "armor_cut": 12,
-    "armor_bullet": 10,
+    "armor_bash": 23,
+    "armor_cut": 21,
+    "armor_bullet": 23,
     "vision_day": 70,
     "vision_night": 70,
     "harvest": "animal_large_noskin",
@@ -412,14 +403,14 @@
           { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
     "fear_triggers": [ "FIRE", "HURT" ],
     "placate_triggers": [ "MEAT" ],
     "death_function": [ "NORMAL" ],
-    "reproduction": { "baby_egg": "egg_deathclaw", "baby_count": 3, "baby_timer": 3 },
+    "reproduction": { "baby_egg": "egg_deathclaw", "baby_count": 3, "baby_timer": 10 },
     "flags": [
       "SEES",
       "HEARS",
@@ -429,7 +420,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -454,11 +444,11 @@
     "melee_skill": 4,
     "melee_dice": 4,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
     "dodge": 2,
-    "armor_bash": 6,
-    "armor_cut": 8,
-    "armor_bullet": 6,
+    "armor_bash": 8,
+    "armor_cut": 10,
+    "armor_bullet": 8,
     "vision_day": 70,
     "vision_night": 70,
     "harvest": "animal_large_noskin",
@@ -470,10 +460,10 @@
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "bash", "amount": 21, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -484,14 +474,12 @@
     "flags": [
       "SEES",
       "HEARS",
-      "DOGFOOD",
       "GOODHEARING",
       "SMELLS",
       "KEENNOSE",
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -516,11 +504,11 @@
     "melee_skill": 6,
     "melee_dice": 3,
     "melee_dice_sides": 20,
-    "melee_damage": [ { "damage_type": "cut", "amount": 24 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 21 } ],
     "dodge": 2,
-    "armor_bash": 12,
-    "armor_cut": 12,
-    "armor_bullet": 10,
+    "armor_bash": 14,
+    "armor_cut": 14,
+    "armor_bullet": 12,
     "vision_day": 70,
     "vision_night": 70,
     "harvest": "animal_large_noskin",
@@ -532,10 +520,10 @@
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "bash", "amount": 23, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -552,7 +540,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS"
     ]
   },
@@ -577,11 +564,11 @@
     "melee_skill": 4,
     "melee_dice": 3,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 10 } ],
     "dodge": 2,
-    "armor_bash": 6,
-    "armor_cut": 8,
-    "armor_bullet": 6,
+    "armor_bash": 8,
+    "armor_cut": 10,
+    "armor_bullet": 8,
     "luminance": 200,
     "emit_fields": [ { "emit_id": "emit_rad_cloud_deathclaw", "delay": "1 s" } ],
     "vision_day": 70,
@@ -595,10 +582,10 @@
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "bash", "amount": 21, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -617,7 +604,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS",
       "NO_BREATHE"
     ]
@@ -643,12 +629,12 @@
     "melee_skill": 6,
     "melee_dice": 2,
     "melee_dice_sides": 20,
-    "melee_damage": [ { "damage_type": "cut", "amount": 24 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 21 } ],
     "luminance": 200,
     "dodge": 2,
-    "armor_bash": 12,
-    "armor_cut": 12,
-    "armor_bullet": 10,
+    "armor_bash": 14,
+    "armor_cut": 14,
+    "armor_bullet": 12,
     "vision_day": 70,
     "vision_night": 70,
     "emit_fields": [ { "emit_id": "emit_rad_cloud_deathclaw", "delay": "1 s" } ],
@@ -661,10 +647,10 @@
         "accuracy": 6,
         "damage_max_instance": [
           { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "bash", "amount": 23, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ],
-        "no_infection_chance": 2
+        "no_infection_chance": 68
       }
     ],
     "anger_triggers": [ "PLAYER_CLOSE", "PLAYER_WEAK" ],
@@ -683,7 +669,6 @@
       "PATH_AVOID_DANGER_1",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS",
       "NO_BREATHE"
     ]
@@ -692,7 +677,7 @@
     "id": "mon_iguana",
     "type": "MONSTER",
     "name": { "str": "common iguana" },
-    "description": "A common iguana; a popular pet, and even more popular food source.",
+    "description": "A common iguana; it can be tamed, it's a popular pet, and even more popular food source.",
     "default_faction": "gator",
     "bodytype": "gator",
     "categories": [ "WILDLIFE" ],
@@ -708,8 +693,8 @@
     "morale": 50,
     "melee_skill": 4,
     "melee_dice": 1,
-    "melee_dice_sides": 10,
-    "melee_damage": [ { "damage_type": "cut", "amount": 12 } ],
+    "melee_dice_sides": 3,
+    "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 2,
     "armor_bash": 6,
     "armor_cut": 8,
@@ -724,17 +709,18 @@
         "cooldown": 20,
         "accuracy": 6,
         "damage_max_instance": [
-          { "damage_type": "stab", "amount": 9, "armor_multiplier": 0.5 },
-          { "damage_type": "bash", "amount": 27, "armor_multiplier": 0.5 }
+          { "damage_type": "stab", "amount": 3, "armor_multiplier": 0.5 },
+          { "damage_type": "bash", "amount": 7, "armor_multiplier": 0.5 }
         ],
         "effects": [ { "id": "grabbed", "duration": 1000, "bp": "torso" } ]
       }
     ],
     "fear_triggers": [ "FIRE", "HURT", "PLAYER_CLOSE" ],
     "placate_triggers": [ "MEAT" ],
-    "reproduction": { "baby_egg": "egg_reptile", "baby_count": 3, "baby_timer": 10 },
+    "reproduction": { "baby_egg": "egg_reptile", "baby_count": 5, "baby_timer": 10 },
     "death_function": [ "NORMAL" ],
-    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "KEENNOSE", "PATH_AVOID_DANGER_1", "ANIMAL", "ATTACKMON", "DOGFOOD" ]
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "KEENNOSE", "PATH_AVOID_DANGER_1", "ANIMAL", "ATTACKMON" ]
   },
   {
     "id": "mon_feathclaw",
@@ -757,11 +743,11 @@
     "melee_skill": 6,
     "melee_dice": 2,
     "melee_dice_sides": 20,
-    "melee_damage": [ { "damage_type": "cut", "amount": 24 } ],
+    "melee_damage": [ { "damage_type": "cut", "amount": 21 } ],
     "dodge": 2,
-    "armor_bash": 12,
-    "armor_cut": 12,
-    "armor_bullet": 10,
+    "armor_bash": 14,
+    "armor_cut": 14,
+    "armor_bullet": 12,
     "vision_day": 70,
     "vision_night": 70,
     "harvest": "animal_large_noskin",
@@ -780,7 +766,6 @@
       "PATH_AVOID_DANGER_2",
       "ANIMAL",
       "ATTACKMON",
-      "LEATHER",
       "SWIMS",
       "NO_BREATHE"
     ]

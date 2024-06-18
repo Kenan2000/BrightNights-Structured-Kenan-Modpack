@@ -801,24 +801,24 @@
       { "item": "cola_nuka", "prob": 120 },
       { "item": "cola_newka", "prob": 15 },
       { "item": "cola_nuka_quantum", "prob": 15 },
-      { "item": "cola_nuka_orange", "prob": 15 },
-      { "item": "cola_nuka_cherry", "prob": 15 },
-      { "item": "cola_nuka_grape", "prob": 15 },
-      { "item": "cola_nuka_cranberry", "prob": 15 },
+      { "item": "cola_nuka_orange", "prob": 30 },
+      { "item": "cola_nuka_cherry", "prob": 30 },
+      { "item": "cola_nuka_grape", "prob": 30 },
+      { "item": "cola_nuka_cranberry", "prob": 30 },
       { "item": "cola_nuka_dark", "prob": 15 },
       { "item": "cola_nuka_quartz", "prob": 15 },
       { "item": "cola_nuka_victory", "prob": 15 },
       { "item": "cola_nuka_wild", "prob": 15 },
       { "item": "cola_nuka_black", "prob": 15 },
-      { "item": "cola_nuka_berry", "prob": 15 },
+      { "item": "cola_nuka_berry", "prob": 30 },
       { "item": "cola_nuka_fusion", "prob": 15 },
       { "item": "cherry_nuka_cola", "prob": 15 },
       { "item": "cola_nuka_classic", "prob": 15 },
       { "item": "cola_nuka_sunrise", "prob": 15 },
       { "item": "cola_nuka_rad", "prob": 15 },
       { "item": "cola_nuka_lime", "prob": 15 },
-      { "item": "sunset_sarsaparilla", "prob": 55 },
-      { "item": "healing_powder_drink", "prob": 25 }
+      { "item": "sunset_sarsaparilla", "prob": 95 },
+      { "item": "healing_powder_drink", "prob": 35 }
     ]
   },
   {
@@ -1008,6 +1008,31 @@
       { "item": "fo_industrial_fist_off", "prob": 30 },
       { "item": "fo_zapfist", "prob": 30 },
       { "item": "fo_bladedgauntlet", "prob": 45 }
+    ]
+  },
+  {
+    "id": "office_paper",
+    "type": "item_group",
+    "subtype": "collection",
+    "//": "Random paper/data items. for filing cabinets or other office locations",
+    "items": [
+      { "item": "Fallout_Expansion_common_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_irradiated_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_nuka_plant_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_research_facility_mission_hologram", "prob": 68 }
+    ]
+  },
+  {
+    "id": "SUS_office_filing_cabinet",
+    "type": "item_group",
+    "//": "SUS item groups are collections that contain a reasonable realistic distribution of items that might spawn in a given storage furniture.",
+    "//2": "This group is for an office filing cabinet containing folders and documents.",
+    "subtype": "collection",
+    "items": [
+      { "item": "Fallout_Expansion_common_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_irradiated_vault_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_nuka_plant_mission_hologram", "prob": 68 },
+      { "item": "Fallout_Expansion_research_facility_mission_hologram", "prob": 68 }
     ]
   }
 ]

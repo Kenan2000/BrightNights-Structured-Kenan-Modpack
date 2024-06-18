@@ -10,7 +10,8 @@
     "species": [ "MUTANT" ],
     "delete": {
       "starting_ammo": { "milk_raw": 40 },
-      "flags": [ "CATTLEFODDER", "PET_WONT_FOLLOW", "MILKABLE" ],
+      "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+      "flags": [ "PET_WONT_FOLLOW", "MILKABLE" ],
       "upgrades": { "half_life": 39, "into_group": "GROUP_COW_ALL" },
       "reproduction": { "baby_monster": "mon_cow_calf", "baby_count": 1, "baby_timer": 88 }
     }
@@ -24,7 +25,7 @@
     "bodytype": "quadruped",
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
-    "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "age_grow": 60, "into": "mon_cow" } }
+    "delete": { "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." }, "upgrades": { "age_grow": 60, "into": "mon_cow" } }
   },
   {
     "id": "mon_cow_sick_twisthorn",
@@ -49,7 +50,7 @@
     "volume": "1600000 ml",
     "weight": "1600000 g",
     "color": "brown",
-    "extend": { "flags": [ "NO_BREED", "CATTLEFODDER" ] },
+    "extend": { "flags": [ "NO_BREED" ], "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } },
     "upgrades": { "half_life": 21, "into_group": "GROUP_COW_MUTANT" }
   },
   {
@@ -96,7 +97,7 @@
     "reproduction": { "baby_monster": "mon_cow_calf_mutant_auroch", "baby_count": 1, "baby_timer": 79 },
     "color": "brown",
     "starting_ammo": { "milk_raw": 60 },
-    "extend": { "flags": [ "CATTLEFODDER", "MILKABLE" ] }
+    "extend": { "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." }, "flags": [ "MILKABLE" ] }
   },
   {
     "id": "mon_cow_calf_mutant_auroch",
@@ -174,7 +175,8 @@
     "categories": [ "NULL" ],
     "species": [ "MUTANT" ],
     "delete": { 
-      "flags": [ "CATTLEFODDER", "PET_MOUNTABLE" ],
+      "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+      "flags": [ "PET_MOUNTABLE" ],
       "upgrades": { "half_life": 39, "into_group": "GROUP_HORSE_ALL" },
       "reproduction": { "baby_monster": "mon_horse_foal", "baby_count": 1, "baby_timer": 115 }
     }
@@ -189,19 +191,49 @@
     "speed": 110,
     "volume": "350000 ml",
     "weight": "350000 g",
-    "extend": { "flags": [ "NO_BREED", "CATTLEFODDER" ] },
+    "extend": { "flags": [ "NO_BREED" ], "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } },
     "color": "brown",
     "upgrades": { "half_life": 21, "into_group": "GROUP_HORSE_MUTANT" }
   },
   {
     "id": "mon_horse_sick_glue",
     "type": "MONSTER",
-    "copy-from": "mon_horse_mutant",
     "name": { "str": "glue horse" },
     "description": "A mutating horse that oozes a sticky substance from pulsing pores.  Driven mad by this affliction, the horse scratches itself against trees and buildings, leaving traces of disgusting glue everywhere it goes.",
-    "extend": { "flags": [ "CATTLEFODDER" ] },
-    "reproduction": { "baby_egg": "bone_glue", "baby_count": 20, "baby_timer": 1 },
+    "default_faction": "herbivore",
+    "bodytype": "quadruped",
+    "categories": [ "NULL" ],
+    "species": [ "MUTANT" ],
+    "volume": "550 L",
+    "weight": "750 kg",
+    "hp": 90,
+    "speed": 300,
+    "material": [ "flesh" ],
+    "symbol": "H",
     "color": "white",
+    "melee_skill": 6,
+    "melee_dice": 2,
+    "melee_dice_sides": 12,
+    "melee_damage": [ { "damage_type": "cut", "amount": 0 } ],
+    "dodge": 2,
+    "armor_bash": 2,
+    "anger_triggers": [ "FRIEND_ATTACKED" ],
+    "fear_triggers": [ "PLAYER_CLOSE" ],
+    "placate_triggers": [ "PLAYER_WEAK" ],
+    "death_function": [ "NORMAL" ],
+    "harvest": "mammal_large_leather",
+    "reproduction": { "baby_egg": "bone_glue", "baby_count": 20, "baby_timer": 1 },
+    "special_attacks": [ [ "EAT_CROP", 60 ] ],
+    "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." },
+    "flags": [
+      "SEES",
+      "HEARS",
+      "SMELLS",
+      "ANIMAL",
+      "PET_WONT_FOLLOW",
+      "PATH_AVOID_DANGER_1",
+      "WARM"
+    ],
     "upgrades": { "half_life": 21, "into_group": "GROUP_HORSE_MUTANT" }
   },
   {
@@ -212,7 +244,7 @@
     "default_faction": "herbivore",
     "bodytype": "quadruped",
     "categories": [ "NULL" ],
-    "delete": { "flags": [ "CATTLEFODDER" ], "upgrades": { "half_life": 39, "into_group": "GROUP_SHEEP_ALL" } },
+    "delete": { "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." }, "upgrades": { "half_life": 39, "into_group": "GROUP_SHEEP_ALL" } },
     "species": [ "MUTANT" ]
   },
   {
@@ -359,7 +391,7 @@
     "reproduction": { "baby_monster": "mon_ungulate_mutant_foal_sleipnir", "baby_count": 1, "baby_timer": 79 },
     "symbol": "S",
     "color": "cyan",
-    "extend": { "flags": [ "CATTLEFODDER", "PET_MOUNTABLE" ] }
+    "extend": { "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." }, "flags": [ "PET_MOUNTABLE" ] }
   },
   {
     "id": "mon_ungulate_mutant_foal_sleipnir",
@@ -370,7 +402,7 @@
     "upgrades": { "age_grow": 39, "into": "mon_ungulate_mutant_sleipnir" },
     "symbol": "s",
     "color": "cyan",
-    "extend": { "flags": [ "CATTLEFODDER" ] }
+    "extend": { "petfood": { "food": [ "CATTLEFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "abstract": "mon_pig_mutant",
@@ -472,7 +504,7 @@
     "armor_cut": 5,
     "armor_bullet": 4,
     "reproduction": { "baby_monster": "mon_pig_piglet_mutant_quill", "baby_count": 3, "baby_timer": 39 },
-    "extend": { "flags": [ "DOGFOOD" ] }
+    "extend": { "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } }
   },
   {
     "id": "mon_pig_piglet_mutant_quill",
@@ -481,7 +513,7 @@
     "name": { "str": "quill piglet" },
     "description": "A juvenile mutated pig covered in small bone nubs.",
     "upgrades": { "age_grow": 15, "into": "mon_pig_mutant_quill" },
-    "extend": { "flags": [ "DOGFOOD" ] },
+    "extend": { "petfood": { "food": [ "DOGFOOD" ], "feed": "The %s seems to like you! It lets you pat its head and seems friendly." } },
     "color": "light_gray"
   }
 ]
