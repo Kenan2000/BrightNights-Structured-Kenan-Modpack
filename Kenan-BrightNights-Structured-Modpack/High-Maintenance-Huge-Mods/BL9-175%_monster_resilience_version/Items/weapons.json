@@ -8,7 +8,7 @@
     "name": { "str": "BL9-infused pistol" },
     "description": "A semi-automatic pistol with very ergonomic design that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "9mmBL9_type", "9mm", "45", "22", "380" ],
+    "ammo": [ "9mmBL9_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -34,13 +34,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [
-      [ "9mmBL9_type", [ "9mmBL9mag" ] ],
-      [ "9mm", [ "9mmBL9mag" ] ],
-      [ "45", [ "9mmBL9mag" ] ],
-      [ "22", [ "9mmBL9mag" ] ],
-      [ "380", [ "9mmBL9mag" ] ]
-    ],
+    "magazines": [ [ "9mmBL9_type", [ "9mmBL9mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -52,7 +46,7 @@
     "name": { "str": "BL9-infused submachine gun" },
     "description": "A fully automatic pistol caliber weapon with a very high rate of fire that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "9mmBL9smg_type", "9mm", "45", "22", "40" ],
+    "ammo": [ "9mmBL9smg_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -79,13 +73,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [
-      [ "9mmBL9smg_type", [ "9mmBL9smgmag" ] ],
-      [ "9mm", [ "9mmBL9smgmag" ] ],
-      [ "45", [ "9mmBL9smgmag" ] ],
-      [ "22", [ "9mmBL9smgmag" ] ],
-      [ "40", [ "9mmBL9smgmag" ] ]
-    ],
+    "magazines": [ [ "9mmBL9smg_type", [ "9mmBL9smgmag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -97,7 +85,7 @@
     "name": { "str": "BL9-infused sniper rifle" },
     "description": "A semi-automatic high quality sniper rifle that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "308BL9_type", "308", "3006" ],
+    "ammo": [ "308BL9_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -123,7 +111,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "308BL9_type", [ "308BL9mag" ] ], [ "308", [ "308BL9mag" ] ], [ "3006", [ "308BL9mag" ] ] ],
+    "magazines": [ [ "308BL9_type", [ "308BL9mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -135,7 +123,7 @@
     "name": { "str": "BL9-infused automatic rifle" },
     "description": "A fully automatic sleek military automatic rifle that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "556BL9_type", "223" ],
+    "ammo": [ "556BL9_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -162,7 +150,7 @@
       [ "underbarrel", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "556BL9_type", [ "556223BL9mag" ] ], [ "223", [ "556223BL9mag" ] ] ],
+    "magazines": [ [ "556BL9_type", [ "556223BL9mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -174,7 +162,7 @@
     "name": { "str": "BL9-infused shotgun" },
     "description": "12-gauge Pump-action shotgun that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "BL9shot_type", "shot" ],
+    "ammo": [ "BL9shot_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "SHOT", "TANGLE", "BEANBAG" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "RELOAD_ONE", "WATERPROOF_GUN" ],
@@ -211,7 +199,7 @@
     "name": { "str": "BL9-infused magnum" },
     "description": "A very high recoil, inaccurate even but quite deadly revolver that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "357magBL9_type", "357mag", "38", "44" ],
+    "ammo": [ "357magBL9_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "flags": [ "NEVER_JAMS", "RELOAD_ONE", "NON_FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -306,7 +294,7 @@
     "name": { "str": "BL9-infused railgun" },
     "description": "An experimental railgun propelling ferromagnetic projectile via alternating current that has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
     "price": "5800 USD",
-    "ammo": [ "railBL9_type", "12mm" ],
+    "ammo": [ "railBL9_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "extend": { "flags": [ "WATERPROOF_GUN" ] },
@@ -329,7 +317,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "railBL9_type", [ "railBL9mag" ] ], [ "12mm", [ "railBL9mag" ] ] ],
+    "magazines": [ [ "railBL9_type", [ "railBL9mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -339,7 +327,7 @@
     "copy-from": "launcher_base",
     "name": { "str": "BL9-infused launcher" },
     "description": "A high-quality modern grenade launcher with a well constructed magazine for the bomblets, it has somehow been infused with the almost sentient BL9, it seems to have made some sort of a home out of this weapon, covering it partially and strengthening it with it's tissue",
-    "ammo": [ "40mmBL9_type", "40x46mm" ],
+    "ammo": [ "40mmBL9_type" ],
     "material": [ "BL9", "steel" ],
     "ammo_effects": [ "NEVER_MISFIRES", "TANGLE" ],
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "WATERPROOF_GUN" ],
@@ -365,7 +353,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "40mmBL9_type", [ "40BL9mag" ] ], [ "40x46mm", [ "40BL9mag" ] ] ],
+    "magazines": [ [ "40mmBL9_type", [ "40BL9mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -712,17 +700,11 @@
     "copy-from": "BL9_pistol",
     "name": { "str": "BL9-infused pistol MK ii" },
     "description": "A semi-automatic pistol with very ergonomic design that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "9mmBL9mk2_type", "9mm", "45", "22", "380" ],
+    "ammo": [ "9mmBL9mk2_type" ],
     "range": 18,
     "dispersion": 160,
     "durability": 9,
-    "magazines": [
-      [ "9mmBL9mk2_type", [ "9mmBL9mk2mag" ] ],
-      [ "9mm", [ "9mmBL9mk2mag" ] ],
-      [ "45", [ "9mmBL9mk2mag" ] ],
-      [ "22", [ "9mmBL9mk2mag" ] ],
-      [ "380", [ "9mmBL9mk2mag" ] ]
-    ],
+    "magazines": [ [ "9mmBL9mk2_type", [ "9mmBL9mk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -732,17 +714,11 @@
     "copy-from": "BL9_smg",
     "name": { "str": "BL9-infused submachine gun MK ii" },
     "description": "A fully automatic pistol caliber weapon with a very high rate of fire that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "9mmBL9smgmk2_type", "9mm", "45", "22", "40" ],
+    "ammo": [ "9mmBL9smgmk2_type" ],
     "range": 18,
     "dispersion": 165,
     "durability": 9,
-    "magazines": [
-      [ "9mmBL9smgmk2_type", [ "9mmBL9smgmk2mag" ] ],
-      [ "9mm", [ "9mmBL9smgmk2mag" ] ],
-      [ "45", [ "9mmBL9smgmk2mag" ] ],
-      [ "22", [ "9mmBL9smgmk2mag" ] ],
-      [ "40", [ "9mmBL9smgmk2mag" ] ]
-    ],
+    "magazines": [ [ "9mmBL9smgmk2_type", [ "9mmBL9smgmk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -752,11 +728,11 @@
     "copy-from": "BL9_sniper",
     "name": { "str": "BL9-infused sniper rifle MK ii" },
     "description": "A semi-automatic high quality sniper rifle that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look ",
-    "ammo": [ "308BL9mk2_type", "308", "3006" ],
+    "ammo": [ "308BL9mk2_type" ],
     "range": 35,
     "dispersion": 88,
     "durability": 9,
-    "magazines": [ [ "308BL9mk2_type", [ "308BL9mk2mag" ] ], [ "308", [ "308BL9mk2mag" ] ], [ "3006", [ "308BL9mk2mag" ] ] ],
+    "magazines": [ [ "308BL9mk2_type", [ "308BL9mk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -766,11 +742,11 @@
     "copy-from": "BL9_auto",
     "name": { "str": "BL9-infused automatic rifle MK ii" },
     "description": "A fully automatic sleek military automatic rifle that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "556BL9mk2_type", "223" ],
+    "ammo": [ "556BL9mk2_type" ],
     "range": 25,
     "dispersion": 125,
     "durability": 9,
-    "magazines": [ [ "556BL9mk2_type", [ "556223BL9mk2mag" ] ], [ "223", [ "556223BL9mk2mag" ] ] ],
+    "magazines": [ [ "556BL9mk2_type", [ "556223BL9mk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -780,7 +756,7 @@
     "copy-from": "BL9_shotgun",
     "name": { "str": "BL9-infused shotgun MK ii" },
     "description": "12-gauge Pump-action shotgun that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "BL9shotmk2_type", "shot", "20x66mm" ],
+    "ammo": [ "BL9shotmk2_type" ],
     "range": 16,
     "dispersion": 245,
     "durability": 9,
@@ -793,7 +769,7 @@
     "copy-from": "BL9_magnum",
     "name": { "str": "BL9-infused magnum MK ii" },
     "description": "A very high recoil, inaccurate even but quite deadly revolver that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "357magBL9mk2_type", "357mag", "38", "44" ],
+    "ammo": [ "357magBL9mk2_type" ],
     "range": 18,
     "dispersion": 175,
     "durability": 9,
@@ -829,11 +805,11 @@
     "copy-from": "BL9_railgun",
     "name": { "str": "BL9-infused railgun MK ii" },
     "description": "An experimental railgun propelling ferromagnetic projectile via alternating current that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "railBL9mk2_type", "12mm" ],
+    "ammo": [ "railBL9mk2_type" ],
     "range": 45,
     "dispersion": 55,
     "durability": 9,
-    "magazines": [ [ "railBL9mk2_type", [ "railBL9mk2mag" ] ], [ "12mm", [ "railBL9mk2mag" ] ] ],
+    "magazines": [ [ "railBL9mk2_type", [ "railBL9mk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -843,11 +819,11 @@
     "copy-from": "BL9_launcher",
     "name": { "str": "BL9-infused launcher MK ii" },
     "description": "A high-quality modern grenade launcher with a well constructed magazine for the bomblets, it has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is covered and entirely reinforced with it's thick tissue with multiple spiky almost unnoticeabely vibrating protrusions that give it a more intimidating, animate look",
-    "ammo": [ "40mmBL9mk2_type", "40x46mm" ],
+    "ammo": [ "40mmBL9mk2_type" ],
     "range": 23,
     "dispersion": 115,
     "durability": 9,
-    "magazines": [ [ "40mmBL9mk2_type", [ "40_BL9mk2mag" ] ], [ "40x46mm", [ "40_BL9mk2mag" ] ] ],
+    "magazines": [ [ "40mmBL9mk2_type", [ "40_BL9mk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1091,17 +1067,11 @@
     "copy-from": "BL9_pistol",
     "name": { "str": "BL9-infused pistol MK iii" },
     "description": "A semi-automatic pistol with very ergonomic design that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
-    "ammo": [ "9mmBL9mk3_type", "9mm", "45", "22", "380" ],
+    "ammo": [ "9mmBL9mk3_type" ],
     "range": 24,
     "dispersion": 125,
     "durability": 10,
-    "magazines": [
-      [ "9mmBL9mk3_type", [ "9mmBL9mk3mag" ] ],
-      [ "9mm", [ "9mmBL9mk3mag" ] ],
-      [ "45", [ "9mmBL9mk3mag" ] ],
-      [ "22", [ "9mmBL9mk3mag" ] ],
-      [ "380", [ "9mmBL9mk3mag" ] ]
-    ],
+    "magazines": [ [ "9mmBL9mk3_type", [ "9mmBL9mk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1111,17 +1081,11 @@
     "copy-from": "BL9_smg",
     "name": { "str": "BL9-infused submachine gun MK iii" },
     "description": "A fully automatic pistol caliber weapon with a very high rate of fire that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
-    "ammo": [ "9mmBL9smgmk3_type", "9mm", "45", "22", "40" ],
+    "ammo": [ "9mmBL9smgmk3_type" ],
     "range": 24,
     "dispersion": 135,
     "durability": 10,
-    "magazines": [
-      [ "9mmBL9smgmk3_type", [ "9mmBL9smgmk3mag" ] ],
-      [ "9mm", [ "9mmBL9smgmk3mag" ] ],
-      [ "45", [ "9mmBL9smgmk3mag" ] ],
-      [ "22", [ "9mmBL9smgmk3mag" ] ],
-      [ "40", [ "9mmBL9smgmk3mag" ] ]
-    ],
+    "magazines": [ [ "9mmBL9smgmk3_type", [ "9mmBL9smgmk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1131,11 +1095,11 @@
     "copy-from": "BL9_sniper",
     "name": { "str": "BL9-infused sniper rifle MK iii" },
     "description": "A semi-automatic high quality sniper rifle that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
-    "ammo": [ "308BL9mk3_type", "308", "3006" ],
+    "ammo": [ "308BL9mk3_type" ],
     "range": 45,
     "dispersion": 72,
     "durability": 10,
-    "magazines": [ [ "308BL9mk3_type", [ "308BL9mk3mag" ] ], [ "308", [ "308BL9mk3mag" ] ], [ "3006", [ "308BL9mk3mag" ] ] ],
+    "magazines": [ [ "308BL9mk3_type", [ "308BL9mk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1145,11 +1109,11 @@
     "copy-from": "BL9_auto",
     "name": { "str": "BL9-infused automatic rifle MK iii" },
     "description": "A fully automatic sleek military automatic rifle that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
-    "ammo": [ "556BL9mk3_type", "223" ],
+    "ammo": [ "556BL9mk3_type" ],
     "range": 35,
     "dispersion": 88,
     "durability": 10,
-    "magazines": [ [ "556BL9mk3_type", [ "556223BL9mk3mag" ] ], [ "223", [ "556223BL9mk3mag" ] ] ],
+    "magazines": [ [ "556BL9mk3_type", [ "556223BL9mk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1159,7 +1123,7 @@
     "copy-from": "BL9_shotgun",
     "name": { "str": "BL9-infused shotgun MK iii" },
     "description": "12-gauge Pump-action shotgun that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'shots'",
-    "ammo": [ "BL9shotmk3_type", "shot", "20x66mm" ],
+    "ammo": [ "BL9shotmk3_type" ],
     "range": 24,
     "dispersion": 210,
     "durability": 10,
@@ -1172,7 +1136,7 @@
     "copy-from": "BL9_magnum",
     "name": { "str": "BL9-infused magnum MK iii" },
     "description": "A very high recoil, inaccurate even but quite deadly revolver that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'bullets'",
-    "ammo": [ "357magBL9mk3_type", "357mag", "38", "44" ],
+    "ammo": [ "357magBL9mk3_type" ],
     "range": 24,
     "dispersion": 145,
     "durability": 10,
@@ -1209,11 +1173,11 @@
     "copy-from": "BL9_railgun",
     "name": { "str": "BL9-infused railgun MK iii" },
     "description": "An experimental railgun propelling ferromagnetic projectile via alternating current that has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'rails'",
-    "ammo": [ "railBL9mk3_type", "12mm" ],
+    "ammo": [ "railBL9mk3_type" ],
     "range": 69,
     "dispersion": 45,
     "durability": 10,
-    "magazines": [ [ "railBL9mk3_type", [ "railBL9mk3mag" ] ], [ "12mm", [ "railBL9mk3mag" ] ] ],
+    "magazines": [ [ "railBL9mk3_type", [ "railBL9mk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1223,11 +1187,11 @@
     "copy-from": "BL9_launcher",
     "name": { "str": "BL9-infused launcher MK iii" },
     "description": "A high-quality modern grenade launcher with a well constructed magazine for the bomblets, it has somehow been infused with the entirely sentient BL9 that somehow mentally communicates with you, it is entirely made out of BL9 and looks even more horrifying and fear instilling than ever - a live organism that somehow satisfies it's insatiable vile hunger by devouring everything with it's 'fragments'",
-    "ammo": [ "40mmBL9mk3_type", "40x46mm" ],
+    "ammo": [ "40mmBL9mk3_type" ],
     "range": 30,
     "dispersion": 88,
     "durability": 10,
-    "magazines": [ [ "40mmBL9mk3_type", [ "40_BL9mk3mag" ] ], [ "40x46mm", [ "40_BL9mk3mag" ] ] ],
+    "magazines": [ [ "40mmBL9mk3_type", [ "40_BL9mk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {

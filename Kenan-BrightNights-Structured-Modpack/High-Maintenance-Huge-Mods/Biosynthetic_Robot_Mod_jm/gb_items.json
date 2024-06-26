@@ -90,7 +90,6 @@
   {
     "id": "chi_digibow",
     "type": "GUN",
-    "copy-from": "rifle_energy",
     "looks_like": "longbow",
     "name": { "str": "Type 13 DigiBow" },
     "description": "A modern bow designed by Chi-Industries, this weapon is an eclectic mixture of modern forays into direct energy warfare and the ancient Japanese tradition of Kyudo: The art of the bow. It's sleek white exterior hides an immense array of laser projectors, that create a complex arrangement of light to act not only as the bowstring, but the arrow as well. Uses medium batteries.",
@@ -98,6 +97,8 @@
     "price_postapoc": "150 USD",
     "material": [ "superalloy", "plastic" ],
     "flags": [ "WATERPROOF_GUN", "NEVER_JAMS", "FIRE_TWOHAND", "STR_DRAW", "PRIMITIVE_RANGED_WEAPON", "BELTED", "FIRE_20" ],
+    "skill": "archery",
+    "extend": { "weapon_categories": [ "BOWS", "ENERGY_WEAPONS" ] },
     "min_strength": 5,
     "weight": "250 g",
     "volume": "1500 ml",
@@ -148,6 +149,7 @@
     "loudness": 12,
     "reload": 0,
     "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "delete": { "flags": [ "NO_UNLOAD" ] },
     "extend": { "flags": [ "FIRE_20" ] },
     "magazines": [
       [
@@ -239,3 +241,4 @@
     "color": "light_gray"
   }
 ]
+
