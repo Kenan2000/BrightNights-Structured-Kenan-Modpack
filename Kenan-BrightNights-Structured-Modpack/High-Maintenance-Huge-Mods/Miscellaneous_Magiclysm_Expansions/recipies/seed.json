@@ -1,4 +1,6 @@
-[{  "result": "seed_mushroom_mana",
+[
+  {
+    "result": "seed_mushroom_mana",
     "type": "recipe",
     "category": "CC_ENCHANTED",
     "subcategory": "CSC_ENCHANTED_OTHER",
@@ -6,8 +8,8 @@
     "skills_required": [ "spellcraft", 1 ],
     "difficulty": 1,
     "time": "15 m",
-	"autolearn": true,
-        "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
-	 "components": [ 
-       [ [ "seed_mushroom", 1 ], [ "seed_mushroom_morel", 1 ] ] ]                                          
-  }]
+    "autolearn": true,
+    "qualities": [ { "id": "MANA_INFUSE", "level": 1 } ],
+    "components": [ [ [ "mushroom_culture", 1 ], [ "mushroom_morel_culture", 1 ] ] ]
+  }
+]

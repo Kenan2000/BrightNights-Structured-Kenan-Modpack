@@ -25,9 +25,9 @@
   {
     "type": "COMESTIBLE",
     "id": "seed_cave_fungus",
-    "copy-from": "seed_mushroom_base",
-    "name": { "str": "Cave Fungus spores", "str_pl": "Cave Fungus spores" },
-    "seed_data": { "plant_name": "Cave Fungus", "fruit": "cave_fungus", "grow": "3 days" }
+    "copy-from": "mushroom_culture",
+    "name": { "str_sp": "Cave Fungus culture" },
+    "seed_data": { "plant_name": "Cave Fungus", "fruit": "cave_fungus", "required_terrain_flag": "MUSHROOM_PLANTABLE", "grow": "3 days" }
   },
   {
     "id": "seed_crunchy_mutfruit",

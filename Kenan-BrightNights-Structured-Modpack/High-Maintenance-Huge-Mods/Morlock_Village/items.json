@@ -9,7 +9,18 @@
     "use_action": {
       "type": "reveal_map",
       "radius": 180,
-      "terrain": [ "sub_station", "underground_sub_station", "sewer_sub_station", "sewer", "subway", "morlock_village_mid_a", "morlock_village_mid_b", "morlock_village_edge_b", "morlock_village_edge_b","morlock_village_corner_a"],
+      "terrain": [
+        "sub_station",
+        "underground_sub_station",
+        "sewer_sub_station",
+        "sewer",
+        "subway",
+        "morlock_village_mid_a",
+        "morlock_village_mid_b",
+        "morlock_village_edge_b",
+        "morlock_village_edge_b",
+        "morlock_village_corner_a"
+      ],
       "message": "You add the underground sites to your map."
     }
   },
@@ -73,20 +84,21 @@
     "use_action": {
       "type": "consume_drug",
       "activation_message": "You eat the magic.",
-      "effects": [ 
-         { "id": "blind", "duration": 10 },
-         { "id": "foodpoison", "duration": 6000 },
-         { "id": "hallu", "duration": 3600 }
-      ]
+      "effects": [ { "id": "blind", "duration": 10 }, { "id": "foodpoison", "duration": 6000 }, { "id": "hallu", "duration": 3600 } ]
     }
   },
   {
     "type": "COMESTIBLE",
     "id": "seed_mushroom_glowing",
-    "copy-from": "seed_mushroom_base",
-    "name": { "str": "glowing mushroom spores", "str_pl": "glowing mushroom spores" },
+    "copy-from": "mushroom_culture",
+    "name": { "str_sp": "glowing mushroom culture" },
     "flags": [ "FREEZERBURN", "LIGHT_2" ],
-    "seed_data": { "plant_name": "glowing mushroom", "fruit": "mushroom_glowing", "grow": "45 days" }
+    "seed_data": {
+      "plant_name": "glowing mushroom",
+      "fruit": "mushroom_glowing",
+      "required_terrain_flag": "MUSHROOM_PLANTABLE",
+      "grow": "3 days"
+    }
   },
   {
     "type": "COMESTIBLE",
