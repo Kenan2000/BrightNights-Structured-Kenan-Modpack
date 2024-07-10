@@ -15,7 +15,6 @@
     "symbol": "/",
     "color": "red",
     "ammo": [ "battery" ],
-    "charges_per_use": 5,
     "techniques": [ "WBLOCK_1" ],
     "use_action": {
       "type": "transform",
@@ -23,6 +22,7 @@
       "active": true,
       "msg": "You start up the vibroblade.",
       "need_charges": 1,
+      "transform_charges": 5,
       "need_charges_msg": "The vibroblade has no batteries."
     },
 	    "qualities": [ [ "CUT", 1 ], [ "CUT_FINE", 1 ], [ "BUTCHER", 19 ] ],

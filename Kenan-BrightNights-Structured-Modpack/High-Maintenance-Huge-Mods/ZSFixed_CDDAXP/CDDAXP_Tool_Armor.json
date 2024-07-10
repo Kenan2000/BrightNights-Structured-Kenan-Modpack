@@ -49,7 +49,6 @@
     "ammo": [ "battery" ],
     "initial_charges": 0,
     "max_charges": 300,
-    "charges_per_use": 6,
     "turns_per_charge": 0,
     "revert_to": null,
     "covers": [ "eyes" ],
@@ -63,6 +62,7 @@
       "msg": "You activate your %s",
       "active": true,
       "need_charges": 6,
+      "transform_charges": 6,
       "need_charges_msg": "The %s's batteries are dead.",
       "type": "transform"
     },
@@ -123,7 +123,6 @@
     "ammo": [ "battery" ],
     "initial_charges": 0,
     "max_charges": 200,
-    "charges_per_use": 4,
     "turns_per_charge": 0,
     "revert_to": null,
     "covers": [ "torso", "head", "arms", "hands", "legs" ],
@@ -137,6 +136,7 @@
       "msg": "You activate your %s.  You are invisible!",
       "active": true,
       "need_charges": 4,
+      "transform_charges": 4,
       "need_charges_msg": "The %s's batteries are dead.",
       "type": "transform"
     },
@@ -196,7 +196,6 @@
     "ammo": [ "plutonium" ],
     "initial_charges": 0,
     "max_charges": 5000,
-    "charges_per_use": 5,
     "turns_per_charge": 0,
     "revert_to": null,
     "covers": [ "torso", "arms", "legs" ],
@@ -210,6 +209,7 @@
       "msg": "You activate your %s.",
       "active": true,
       "need_charges": 5,
+      "transform_charges": 5,
       "need_charges_msg": "The %s's batteries are dead.",
       "type": "transform"
     },
@@ -268,7 +268,6 @@
     "ammo": [ "battery" ],
     "initial_charges": 0,
     "max_charges": 200,
-    "charges_per_use": 4,
     "turns_per_charge": 0,
     "revert_to": null,
     "covers": [ "hands" ],
@@ -282,6 +281,7 @@
       "msg": "You activate your %s.",
       "active": true,
       "need_charges": 4,
+      "transform_charges": 4,
       "need_charges_msg": "The %s's batteries are dead.",
       "type": "transform"
     },
@@ -369,7 +369,6 @@
     "ammo": [ "battery" ],
     "initial_charges": 500,
     "max_charges": 500,
-    "charges_per_use": 1,
     "covers": [ "head", "mouth", "torso", "arms", "legs", "hands", "feet" ],
     "coverage": 100,
     "encumbrance": 0,
@@ -381,6 +380,7 @@
       "msg": "You activate your %s.",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The %s's batteries are dead.",
       "type": "transform"
     },
@@ -416,4 +416,7 @@
     },
     "flags": [ "VARSIZE", "SKINTIGHT", "WATER_FRIENDLY", "WATERPROOF" ]
   }
+
+
+
 ]

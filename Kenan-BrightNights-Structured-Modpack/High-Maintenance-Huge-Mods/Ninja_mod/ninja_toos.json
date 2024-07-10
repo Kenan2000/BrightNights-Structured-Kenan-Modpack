@@ -443,7 +443,6 @@
     "ammo": [ "ammo_type_ninja_jet_fuel" ],
     "initial_charges": 0,
     "max_charges": 50,
-    "charges_per_use": 0,
     "covers": [ "torso" ],
     "coverage": 50,
     "encumbrance": 20,
@@ -455,6 +454,7 @@
       "msg": "You zoom forward using your jet pack.",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 0,
       "need_charges_msg": "You need rocket fuel for your jet pack.",
       "type": "transform"
     },
@@ -514,4 +514,7 @@
     "magazines": [ [ "9mm", [ "glockbigmag" ] ], [ "9mm", [ "glockmag" ] ] ],
     "flags": [ "DURABLE_MELEE" ]
   }
+
 ]
+
+

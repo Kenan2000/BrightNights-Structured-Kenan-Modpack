@@ -99,7 +99,6 @@
     "material_thickness": 2,
     "max_charges": 100,
     "initial_charges": 100,
-    "charges_per_use": 50,
     "ammo": [ "maid_point" ],
     "use_action": {
       "type": "transform",
@@ -107,6 +106,7 @@
       "target": "maid_cloak_on",
       "active": true,
       "need_charges": 100,
+      "transform_charges": 50,
       "need_charges_msg": "Not enough maid points!"
     }
   },
@@ -163,7 +163,6 @@
     "material_thickness": 4,
     "max_charges": 100,
     "initial_charges": 50,
-    "charges_per_use": 50,
     "ammo": [ "maid_point" ],
     "use_action": {
       "type": "transform",
@@ -171,6 +170,7 @@
       "target": "maidguy_mask_on",
       "active": true,
       "need_charges": 100,
+      "transform_charges": 50,
       "need_charges_msg": "Not enough maid points!"
     }
   },

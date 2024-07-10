@@ -20,7 +20,6 @@
     "qualities": [ [ "CUT", 3 ], [ "BUTCHER", 30 ], [ "CUT_FINE", 3 ] ],
     "max_charges": 100,
     "initial_charges": 100,
-    "charges_per_use": 80,
     "ammo": [ "maid_point" ],
     "use_action": {
       "type": "transform",
@@ -28,6 +27,7 @@
       "target": "vorpal_kitchen_knife_on",
       "active": true,
       "need_charges": 80,
+      "transform_charges": 80,
       "need_charges_msg": "Not enough maid energy！"
     }
   },
@@ -84,7 +84,6 @@
     "qualities": [ [ "COOK", 2 ], [ "BOIL", 2 ], [ "CONTAIN", 1 ] ],
     "max_charges": 100,
     "initial_charges": 100,
-    "charges_per_use": 1,
     "ammo": [ "maid_point" ],
     "use_action": {
       "type": "transform",
@@ -92,6 +91,7 @@
       "target": "slaying_pan_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "Not enough maid energy!"
     }
   },

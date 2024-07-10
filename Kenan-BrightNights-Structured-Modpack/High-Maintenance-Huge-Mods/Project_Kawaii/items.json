@@ -86,13 +86,13 @@
     "looks_like": "kawaii_maid_dress",
     "flags": [ "VARSIZE", "WATERPROOF", "POCKETS", "RAINPROOF", "STURDY", "FANCY" ],
     "ammo": [ "battery" ],
-    "charges_per_use": 1,
     "use_action": {
       "type": "transform",
       "msg": "You activate the uniform's climate control.",
       "target": "kawaii_maid_dress_lss_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The uniform does not have enough power left."
     },
     "magazines": [
@@ -392,7 +392,6 @@
     "looks_like": "kawaii_maid_hat",
     "warmth": 10,
     "flags": [ "VARSIZE", "FANCY", "WATERPROOF", "RAINPROOF" ],
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "use_action": {
       "type": "transform",
@@ -401,6 +400,7 @@
       "active": true,
       "menu_text": "Activate heater",
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "%s does not have enough power left."
     },
     "magazines": [
@@ -458,7 +458,6 @@
     "looks_like": "kawaii_maid_hat",
     "warmth": 20,
     "flags": [ "VARSIZE", "FANCY", "WATERPROOF", "RAINPROOF", "STURDY" ],
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "use_action": {
       "type": "transform",
@@ -467,6 +466,7 @@
       "active": true,
       "menu_text": "Change climate control settings",
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "%s does not have enough power left."
     },
     "magazines": [
@@ -535,7 +535,6 @@
     "looks_like": "kawaii_maid_megane_02",
     "qualities": [ [ "GLARE", 1 ] ],
     "flags": [ "WATER_FRIENDLY", "FIRESTARTER", "FANCY", "FIX_NEARSIGHT", "FIX_FARSIGHT", "SUN_GLASSES", "FLASH_PROTECTION" ],
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "use_action": [
       {
@@ -545,6 +544,7 @@
         "target": "kawaii_hitec_megane_nv",
         "active": true,
         "need_charges": 1,
+        "transform_charges": 1,
         "need_charges_msg": "%s does not have enough power left."
       },
       { "type": "firestarter", "moves": 1000, "moves_slow": 25000, "need_sunlight": true }
@@ -1346,3 +1346,6 @@
     "flags": [ "VARSIZE", "WATER_FRIENDLY", "FANCY" ]
   }
 ]
+
+
+

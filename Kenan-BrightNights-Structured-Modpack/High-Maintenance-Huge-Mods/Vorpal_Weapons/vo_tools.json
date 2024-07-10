@@ -120,14 +120,14 @@
     "volume": "500 ml",
     "max_charges": 1,
     "initial_charges": 1,
-    "charges_per_use": 1,
     "use_action": [
       {
         "type": "transform",
         "msg": "I have a headache···.",
         "target": "brainwash_on_vo",
         "active": true,
-        "need_charges": 1
+        "need_charges": 1,
+        "transform_charges": 1
       }
     ],
     "artifact_data": { "charge_type": "ARTC_SOLAR" }

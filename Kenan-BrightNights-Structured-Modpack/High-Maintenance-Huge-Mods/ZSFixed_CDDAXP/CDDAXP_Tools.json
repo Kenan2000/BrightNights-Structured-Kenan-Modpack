@@ -175,13 +175,13 @@
     "ammo": [ "battery" ],
     "initial_charges": 0,
     "max_charges": 200,
-    "charges_per_use": 4,
     "turns_per_charge": 0,
     "use_action": {
       "target": "cddaxp_patablet_on",
       "msg": "You activate your %s",
       "active": true,
       "need_charges": 4,
+      "transform_charges": 4,
       "need_charges_msg": "The %s's batteries are dead.",
       "type": "transform"
     }

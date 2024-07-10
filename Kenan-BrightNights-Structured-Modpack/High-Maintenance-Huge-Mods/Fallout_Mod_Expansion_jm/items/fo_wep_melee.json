@@ -37,13 +37,13 @@
     "symbol": "/",
     "color": "red",
     "ammo": [ "gasoline" ],
-    "charges_per_use": 10,
     "use_action": {
       "menu_text": "Activate",
       "type": "transform",
       "target": "fo_ripper_on",
       "msg": "The ripper's cutting blades roar to life!",
       "need_charges": 1,
+      "transform_charges": 10,
       "need_charges_msg": "The ripper refuses to turn on. It needs more gasoline to function.",
       "active": true
     },
@@ -107,13 +107,13 @@
     "cutting": 15,
     "ammo": [ "battery" ],
     "flags": [ "DURABLE_MELEE", "STAB", "SPEAR", "REACH_ATTACK", "SHEATH_SPEAR", "POLEARM" ],
-    "charges_per_use": 1,
     "use_action": {
       "menu_text": "Activate",
       "type": "transform",
       "target": "fo_thermic_lance_on",
       "msg": "The thermal lance begins to crackle with immense amounts of heat energy!",
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The thermic lance's heating electrodes remains inert. It needs more energy to function.",
       "active": true
     },

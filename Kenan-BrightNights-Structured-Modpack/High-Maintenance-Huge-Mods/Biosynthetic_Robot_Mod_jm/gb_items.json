@@ -12,13 +12,13 @@
     "symbol": "[",
     "color": "cyan",
     "ammo": [ "battery" ],
-    "charges_per_use": 1,
     "use_action": {
       "menu_text": "Activate",
       "type": "transform",
       "target": "chi_digisword_on",
       "msg": "The Digisword is activated!",
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The Digisword's beam-edge sputters out due to lack of charge.",
       "active": true
     },

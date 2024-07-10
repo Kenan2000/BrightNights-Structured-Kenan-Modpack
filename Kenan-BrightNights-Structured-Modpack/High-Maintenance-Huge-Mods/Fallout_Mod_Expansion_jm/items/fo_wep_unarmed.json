@@ -60,13 +60,13 @@
     "flags": [ "UNARMED_WEAPON", "DURABLE_MELEE" ],
     "qualities": [ [ "AXE", 3 ], [ "SAW_M", 2 ] ],
     "ammo": [ "battery" ],
-    "charges_per_use": 1,
     "use_action": {
       "menu_text": "Activate",
       "type": "transform",
       "target": "fo_industrial_fist_on",
       "msg": "The industrial hand's saw whirrs to life!",
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The industrial hand's saw remains inert. It needs more energy to function.",
       "active": true
     },

@@ -613,7 +613,6 @@
     "volume": "10500 ml",
     "max_charges": 1000,
     "initial_charges": 0,
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "price": "28500 USD",
     "material": [ "kevlar", "refinedalloy" ],
@@ -645,6 +644,7 @@
       "target": "cbma_enhanced_armor_ups_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The system started for a moment... and then went silent."
     }
   },
@@ -695,7 +695,6 @@
     "volume": "2500 ml",
     "max_charges": 1000,
     "initial_charges": 0,
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "price": "960 USD",
     "to_hit": -1,
@@ -718,6 +717,7 @@
       "target": "cbma_enhanced_helmet_ups_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The system started for a moment... and then went silent."
     },
     "flags": [
@@ -791,7 +791,6 @@
     "volume": "1 L",
     "max_charges": 1000,
     "initial_charges": 0,
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "price": "380 USD",
     "to_hit": 2,
@@ -811,6 +810,7 @@
       "target": "cbma_enhanced_gloves_ups_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The system started for a moment... and then went silent."
     },
     "flags": [ "VARSIZE", "WATERPROOF", "WATER_FRIENDLY", "STURDY", "OVERSIZE", "TRADER_AVOID", "USE_UPS", "NO_UNLOAD", "NO_RELOAD" ]
@@ -850,7 +850,6 @@
     "volume": "3 L",
     "max_charges": 1000,
     "initial_charges": 0,
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "price": "500 USD",
     "to_hit": -1,
@@ -872,6 +871,7 @@
       "target": "cbma_enhanced_boots_ups_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The system started for a moment... and then went silent."
     }
   },
@@ -912,7 +912,6 @@
     "volume": "7 L",
     "max_charges": 1000,
     "initial_charges": 0,
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "price": "400 USD",
     "to_hit": -1,
@@ -949,6 +948,7 @@
       "target": "cbma_enhanced_duster_ups_on",
       "active": true,
       "need_charges": 1,
+      "transform_charges": 1,
       "need_charges_msg": "The system started for a moment... and then went silent."
     }
   },
@@ -1010,7 +1010,6 @@
     "looks_like": "union_suit",
     "max_charges": 1000,
     "initial_charges": 0,
-    "charges_per_use": 1,
     "ammo": [ "battery" ],
     "covers": [ "torso", "arms", "hands", "legs", "feet" ],
     "coverage": 100,
@@ -1036,6 +1035,7 @@
         "target": "cbma_inner_suite_ups_on",
         "active": true,
         "need_charges": 1,
+        "transform_charges": 1,
         "need_charges_msg": "The system started for a moment... and then went silent."
       }
     ]
