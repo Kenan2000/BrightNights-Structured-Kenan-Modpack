@@ -1,7 +1,7 @@
 # BrightNights-Structured-Kenan-Modpack
-Kenan's **personal** structured modpack (**IMPORTANT TO READ Modpack INSTALLATION Guide, try to NOT enable ALL mods at the same time unless you really want to play with all mods**) for **LATEST** Cataclysm - Bright Nights versions by Coolcthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
+Kenan's **personal** structured modpack (**IMPORTANT TO SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 for PROPER GAMEPLAY EXPERIENCE, READ Modpack INSTALLATION Guide, try to NOT enable ALL mods at the same time unless you really want to play with all of mods**) for **LATEST** Cataclysm - Bright Nights versions by Coolthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
 
-**original modpack creator is Chromosome Kun! - without his help, this would not exist** 
+**original modpack creator is Chromosome Kun! - thanks to his help, all of this work exists** 
 
 **IF YOU ARE EXPERIENCING ANY BUGS OR ERRORS - EITHER THE FIXES WILL BE RELEASED SOON-ISH OR THE MOD IS WIP**
 
@@ -9,7 +9,7 @@ Kenan's **personal** structured modpack (**IMPORTANT TO READ Modpack INSTALLATIO
 
 **1. Download and install latest release of Cataclysm fork by **Coolthulhu/BroadFlatNails** - [*Bright Nights*](https://github.com/cataclysmbnteam/Cataclysm-BN/releases)**
 
-**2. Download current modpack by clicking Code - Download ZIP, or clicking [**here**](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/archive/master.zip)**
+**2. Download current modpack by clicking Code - Download ZIP, or simply clicking [**here**](https://github.com/Kenan2000/BrightNights-Structured-Kenan-Modpack/archive/master.zip)**
 
 **3. Unpack contents of the downloaded .zip archive into new folder; results should be looking** [**like this**](https://i.imgur.com/UfvpOyV.png)
 
@@ -17,7 +17,9 @@ Kenan's **personal** structured modpack (**IMPORTANT TO READ Modpack INSTALLATIO
 
 **5. Overwrite and replace all of the files if you get a prompt**
 
-**6. Enjoy the mods!**
+**6. It's important to set 'Monster evolution scaling factor' during in-game world generation around 5.00 for proper gameplay experience**
+
+**7. Enjoy the mods!**
 
 # Modpack UPDATE Guide
 
@@ -51,5 +53,4 @@ Legendary **UndeadPeople** tileset by SomeDeadGuy, while Theawesomeboophis is it
 ## Link to my CDDA/Bright Nights modding server 
 
 **https://discord.gg/sg5cM89Veb**
-
 

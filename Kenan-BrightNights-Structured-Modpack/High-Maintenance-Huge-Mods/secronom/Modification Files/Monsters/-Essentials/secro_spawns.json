@@ -11,62 +11,62 @@
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 25, 35 ],
-        "ends": 24
+        "ends": 5
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 35, 45 ],
-        "starts": 24,
-        "ends": 48
+        "starts": 5,
+        "ends": 10
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 45, 55 ],
-        "starts": 48,
-        "ends": 96
+        "starts": 10,
+        "ends": 21
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 55, 65 ],
-        "starts": 96,
-        "ends": 192
+        "starts": 21,
+        "ends": 42
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 65, 75 ],
-        "starts": 192,
-        "ends": 384
+        "starts": 42,
+        "ends": 88
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 75, 85 ],
-        "starts": 384,
-        "ends": 768
+        "starts": 88,
+        "ends": 177
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 85, 100 ],
-        "starts": 768,
-        "ends": 1536
+        "starts": 177,
+        "ends": 354
       },
       {
         "monster": "mon_zombie_swarmer_weak",
         "freq": 1,
         "cost_multiplier": 10,
         "pack_size": [ 100, 200 ],
-        "starts": 1536
+        "starts": 354
       },
       { "monster": "mon_zombie_swarmer_segway", "freq": 1, "cost_multiplier": 1, "pack_size": [ 3, 9 ] },
       { "monster": "mon_zombie_charger", "freq": 1, "cost_multiplier": 8 },
@@ -85,21 +85,21 @@
         "monster": "mon_zombie_bootlegsmoker",
         "freq": 1,
         "cost_multiplier": 15,
-        "starts": 168,
+        "starts": 35,
         "//": "These appear after a week."
       },
       {
         "monster": "mon_zombie_lick",
         "freq": 1,
         "cost_multiplier": 10,
-        "starts": 336,
+        "starts": 71,
         "//": "These appear after 2 weeks."
       },
       {
         "monster": "mon_zombie_nocturne",
         "freq": 1,
         "cost_multiplier": 40,
-        "starts": 1460,
+        "starts": 300,
         "//": "These appears after 2 months.",
         "conditions": [ "DUSK", "NIGHT" ]
       },
@@ -109,20 +109,20 @@
         "monster": "mon_zombie_gorepit",
         "freq": 1,
         "cost_multiplier": 65,
-        "starts": 4380,
+        "starts": 893,
         "//": "These appears after 6 months."
       },
-      { "monster": "mon_zombie_cordev", "freq": 1, "cost_multiplier": 55, "starts": 4380 },
+      { "monster": "mon_zombie_cordev", "freq": 1, "cost_multiplier": 55, "starts": 893 },
       {
         "monster": "mon_zombie_fleshysnaky",
         "freq": 1,
         "cost_multiplier": 125,
-        "starts": 8760,
+        "starts": 1752,
         "//": "These appears after a year."
       },
-      { "monster": "mon_zombie_akin", "freq": 1, "cost_multiplier": 30, "starts": 8760 },
-      { "monster": "mon_zombie_equinox", "freq": 1, "cost_multiplier": 80, "starts": 8760 },
-      { "monster": "mon_zombie_relinquish", "freq": 1, "cost_multiplier": 110, "starts": 8760 }
+      { "monster": "mon_zombie_akin", "freq": 1, "cost_multiplier": 30, "starts": 1752 },
+      { "monster": "mon_zombie_equinox", "freq": 1, "cost_multiplier": 80, "starts": 1752 },
+      { "monster": "mon_zombie_relinquish", "freq": 1, "cost_multiplier": 110, "starts": 1752 }
     ]
   },
   {
@@ -202,7 +202,7 @@
     "name": "DUMP_ZOMBIES",
     "override": false,
     "auto_total": true,
-    "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 1460 } ]
+    "monsters": [ { "monster": "mon_zombie_fleshmonger", "freq": 1, "cost_multiplier": 30, "starts": 300 } ]
   },
   {
     "//": "Spawn random secrolab and vanilla creatures. Scientist are common here, followed by failed specimens.",
@@ -559,7 +559,7 @@
       { "monster": "mon_sflesh_zombie_soldier", "freq": 10, "cost_multiplier": 2 },
       { "monster": "mon_sflesh_zombie_static", "freq": 10, "cost_multiplier": 5 },
       { "monster": "mon_sflesh_zombie_survivor", "freq": 1, "cost_multiplier": 25 },
-      { "monster": "mon_sflesh_zombie_survivor_elite", "freq": 1, "cost_multiplier": 25, "starts": 1440 },
+      { "monster": "mon_sflesh_zombie_survivor_elite", "freq": 1, "cost_multiplier": 25, "starts": 293 },
       { "monster": "mon_sflesh_zombie_brainless", "freq": 65, "cost_multiplier": 1 },
       { "monster": "mon_sflesh_skeleton", "freq": 10, "cost_multiplier": 5 },
       { "monster": "mon_sflesh_zombie_spitter", "freq": 1, "cost_multiplier": 20 },
@@ -653,10 +653,10 @@
     "default": "mon_null",
     "monsters": [
       { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0 },
-      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 42 },
-      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 126 },
-      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 378 },
-      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 1134 }
+      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 9 },
+      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 23 },
+      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 81 },
+      { "monster": "mon_zombie_bootlegsmoker", "freq": 250, "cost_multiplier": 0, "starts": 227 }
     ]
   }
 ]
