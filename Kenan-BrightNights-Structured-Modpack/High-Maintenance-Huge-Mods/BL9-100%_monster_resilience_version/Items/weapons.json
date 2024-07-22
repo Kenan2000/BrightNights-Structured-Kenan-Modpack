@@ -1,7 +1,7 @@
 [
   {
     "id": "BL9_pistol",
-    "looks_like": "m1911",
+    "looks_like": "walther_p38",
     "type": "GUN",
     "copy-from": "pistol_base",
     "color": "green",
@@ -78,7 +78,7 @@
   },
   {
     "id": "BL9_sniper",
-    "looks_like": "M24",
+    "looks_like": "fn_fal",
     "type": "GUN",
     "copy-from": "rifle_semi",
     "color": "green",
@@ -150,7 +150,7 @@
       [ "underbarrel", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "556BL9_type", [ "556223BL9mag" ] ] ],
+    "magazines": [ [ "556BL9_type", [ "556BL9mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -353,8 +353,7 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "magazines": [ [ "40mmBL9_type", [ "40BL9mag" ] ] ],
-    "magazine_well": "250 ml"
+    "clip_size": 5
   },
   {
     "id": "BL9_bow",
@@ -393,7 +392,7 @@
     "description": "A high-power crossbow with a modern design that has somehow been infused with sentient, but not fully grown, BL9 covering it partially and strengthening it with it's tissue",
     "price": "2000 USD",
     "material": [ "BL9", "steel" ],
-    "flags": [ "FIRE_TWOHAND", "PRIMITIVE_RANGED_WEAPON", "CROSSBOW" ],
+    "extend": { "flags": [ "NEVER_JAMS", "FIRE_TWOHAND" ] },
     "min_strength": 7,
     "ammo": [ "BL9bolt_type" ],
     "weight": "3000 g",
@@ -695,7 +694,7 @@
   },
   {
     "id": "BL9_pistol_mk2",
-    "looks_like": "walther_p38",
+    "looks_like": "m9",
     "type": "GUN",
     "copy-from": "BL9_pistol",
     "name": { "str": "BL9-infused pistol MK ii" },
@@ -746,7 +745,7 @@
     "range": 25,
     "dispersion": 125,
     "durability": 9,
-    "magazines": [ [ "556BL9mk2_type", [ "556223BL9mk2mag" ] ] ],
+    "magazines": [ [ "556BL9mk2_type", [ "556BL9mk2mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -823,8 +822,7 @@
     "range": 23,
     "dispersion": 115,
     "durability": 9,
-    "magazines": [ [ "40mmBL9mk2_type", [ "40_BL9mk2mag" ] ] ],
-    "magazine_well": "250 ml"
+    "clip_size": 7
   },
   {
     "id": "BL9_bow_mk2",
@@ -1062,7 +1060,7 @@
   },
   {
     "id": "BL9_pistol_mk3",
-    "looks_like": "walther_p38",
+    "looks_like": "m9",
     "type": "GUN",
     "copy-from": "BL9_pistol",
     "name": { "str": "BL9-infused pistol MK iii" },
@@ -1113,7 +1111,7 @@
     "range": 35,
     "dispersion": 88,
     "durability": 10,
-    "magazines": [ [ "556BL9mk3_type", [ "556223BL9mk3mag" ] ] ],
+    "magazines": [ [ "556BL9mk3_type", [ "556BL9mk3mag" ] ] ],
     "magazine_well": "250 ml"
   },
   {
@@ -1191,8 +1189,7 @@
     "range": 30,
     "dispersion": 88,
     "durability": 10,
-    "magazines": [ [ "40mmBL9mk3_type", [ "40_BL9mk3mag" ] ] ],
-    "magazine_well": "250 ml"
+    "clip_size": 10
   },
   {
     "id": "BL9_bow_mk3",
