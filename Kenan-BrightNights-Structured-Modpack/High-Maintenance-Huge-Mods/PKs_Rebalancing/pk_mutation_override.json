@@ -52,7 +52,7 @@
     "copy-from": "GOODCARDIO",
     "name": { "str": "Indefatigable" },
     "points": 2,
-    "description": "Whether due to exercise and good diet, or due to a natural propensity to physical endurance, you tire due to physical exertion much less readily than others.  Your maximum stamina is 25% higher than usual.",
+    "description": "Whether due to exercise and good diet, or due to a natural propensity to physical endurance, you tire due to physical exertion much less readily than others.  Your maximum stamina and stamina regeneration is 25% higher than usual.",
     "starting_trait": true,
     "valid": false,
     "extend": { "category": [ "CHIMERA", "RAPTOR" ] },
@@ -187,7 +187,7 @@
     "copy-from": "PACKMULE",
     "name": { "str": "Packmule" },
     "points": 2,
-    "description": "You pack things very efficiently!  You can retrieve things from containers 25% faster.",
+    "description": "You can manage to find space for everything!  You can carry 40% more volume.",
     "starting_trait": true,
     "valid": false,
     "category": [ "RAT" ]
@@ -281,11 +281,10 @@
     "copy-from": "BADCARDIO",
     "name": { "str": "Languorous" },
     "points": -2,
-    "description": "Whether due to lack of exercise and poor diet, or due to a natural disinclination to physical endurance, you tire due to physical exertion much more readily than others and find it harder to catch your breath afterwards.  Your maximum stamina is 25% lower than usual.",
+    "description": "Whether due to lack of exercise and poor diet, or due to a natural disinclination to physical endurance, you tire due to physical exertion much more readily than others.  Your maximum stamina and stamina regeneration is 25% lower than usual.",
     "starting_trait": true,
     "valid": false,
-    "category": [ "BEAST", "CATTLE", "ELFA" ],
-    "stamina_regen_modifier": -0.2
+    "category": [ "BEAST", "CATTLE", "ELFA" ]
   },
   {
     "type": "mutation",
@@ -303,7 +302,7 @@
     "copy-from": "SLOWHEALER",
     "name": { "str": "Slow Healer" },
     "points": -2,
-    "description": "Your wounds heal a little slower than most.  Your HP whilst asleep, as well as your broken limbs, heal at 75% of the regular rate.",
+    "description": "Your wounds heal a little slower than most.  Your HP whilst asleep heals at 75% of the regular rate.",
     "starting_trait": true,
     "healing_resting": -0.25,
     "metabolism_modifier": -0.05
@@ -314,7 +313,7 @@
     "copy-from": "SLOWHEALER2",
     "name": { "str": "Poor Healer" },
     "points": -4,
-    "description": "Your health recovery is severely impaired.  Your HP whilst asleep, as well as your broken limbs, heal at 33% of the regular rate.",
+    "description": "Your health recovery is severely impaired.  Your HP whilst asleep heals at 33% of the regular rate.",
     "starting_trait": true,
     "valid": false,
     "purifiable": false,
@@ -327,7 +326,7 @@
     "copy-from": "SLOWHEALER3",
     "name": { "str": "Imperceptive Healer" },
     "points": -8,
-    "description": "Wounds are incredibly dangerous to you, as they barely heal at all.  Your HP whilst asleep, as well as your broken limbs, heal at 10% of the regular rate.",
+    "description": "Wounds are incredibly dangerous to you, as they barely heal at all.  Your HP whilst asleep heals at 10% of the regular rate.",
     "starting_trait": true,
     "valid": false,
     "purifiable": false,
@@ -360,7 +359,7 @@
     "copy-from": "DISORGANIZED",
     "name": { "str": "Disorganized" },
     "points": -3,
-    "description": "You are terrible at organizing and storing your possessions.  You retrieve things from containers 10% slower.",
+    "description": "You are terrible at organizing and storing your possessions.  You can carry 40% less volume.",
     "starting_trait": true,
     "valid": false,
     "category": [ "LUPINE" ]
@@ -393,7 +392,7 @@
     "copy-from": "VEGETARIAN",
     "name": { "str": "Meat Intolerance" },
     "points": -2,
-    "description": "You have problems with eating meat.  It's possible for you to eat it, but you will suffer morale penalties due to nausea.",
+    "description": "You have problems with eating meat.  It's possible for you to eat it, but you will suffer morale penalties and obtain less nutrition from it obviously.",
     "starting_trait": true,
     "valid": false,
     "category": [ "CATTLE", "PLANT" ]
@@ -404,7 +403,7 @@
     "copy-from": "THINSKIN",
     "name": { "str": "Thin-Skinned" },
     "points": -1,
-    "description": "Your skin is fragile.  Cutting and bashing damage is slightly increased for you (all: -2 cut and -2 bash).",
+    "description": "Your skin is fragile.  Physical damage is slightly increased for you (all: -2 with regards to all physical damage types).",
     "starting_trait": true,
     "category": [ "MEDICAL", "CEPHALOPOD" ],
     "healing_awake": -0.05
@@ -415,7 +414,7 @@
     "copy-from": "MEATARIAN",
     "name": { "str": "Hates Vegetables" },
     "points": -2,
-    "description": "You have problems with eating vegetables.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them.",
+    "description": "You have problems with eating vegetables.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them obviously.",
     "starting_trait": true,
     "valid": false,
     "category": [ "SPIDER", "LUPINE" ]
@@ -426,7 +425,7 @@
     "copy-from": "ANTIFRUIT",
     "name": { "str": "Hates Fruit" },
     "points": -3,
-    "description": "You despise eating fruits.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them.",
+    "description": "You despise eating fruits.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them obviously.",
     "starting_trait": true,
     "valid": false,
     "category": [ "BEAST", "FELINE" ]
@@ -437,7 +436,7 @@
     "copy-from": "LACTOSE",
     "name": { "str": "Lactose Intolerance" },
     "points": -1,
-    "description": "You, like 75 percent of the world, cannot tolerate milk or milk based products.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them.",
+    "description": "You, like 75 percent of the world, cannot tolerate milk or milk based products.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them obviously.",
     "starting_trait": true,
     "category": [ "TROGLOBITE", "FISH", "PLANT" ]
   },
@@ -447,7 +446,7 @@
     "copy-from": "ANTIJUNK",
     "name": { "str": "Junkfood Intolerance" },
     "points": -1,
-    "description": "Something in those heavily processed foods doesn't agree with you.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them.",
+    "description": "Something in those heavily processed foods doesn't agree with you.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them obviously.",
     "starting_trait": true,
     "extend": { "category": [ "FELINE" ] }
   },
@@ -457,7 +456,7 @@
     "copy-from": "ANTIWHEAT",
     "name": { "str": "Grain Intolerance" },
     "points": -2,
-    "description": "You have a rare allergy that prevents you from eating wheat.  It's possible for you to eat wheat-based products, but you will suffer morale penalties and obtain less nutrition from them.",
+    "description": "You have a rare allergy that prevents you from eating most types of grains such as wheat or oats.  It's possible for you to eat them, but you will suffer morale penalties and obtain less nutrition from them obviously.",
     "starting_trait": true,
     "category": [ "CHIMERA", "ELFA", "LIZARD" ]
   },
@@ -470,17 +469,6 @@
     "description": "It's easier for you to become addicted to substances, and harder to rid yourself of these addictions.",
     "starting_trait": true,
     "extend": { "category": [ "ALPHA" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "TRIGGERHAPPY",
-    "copy-from": "TRIGGERHAPPY",
-    "name": { "str": "Trigger Happy" },
-    "points": -1,
-    "description": "Unimplemented.  To be removed after 0.F. to preserve save compatibility.",
-    "starting_trait": true,
-    "threshreq": [ "THRESH_MEDICAL", "THRESH_RAT", "THRESH_LUPINE" ],
-    "category": [ "MEDICAL", "RAT", "LUPINE" ]
   },
   {
     "type": "mutation",
@@ -567,7 +555,7 @@
     "copy-from": "NIGHTVISION3",
     "name": { "str": "Full Night Vision" },
     "points": 6,
-    "description": "You can see in pitch blackness as if you were wearing night-vision goggles.  Activate to toggle NV-visible areas on or off.",
+    "description": "You can see in pitch blackness as if you were wearing night-vision goggles and read in darkness as one can in dim lighting.  Activate to toggle NV-visible areas on or off.",
     "cancels": [ "20_15", "ELFA_NV", "ELFA_FNV", "FEL_NV", "URSINE_EYE" ],
     "active": true,
     "starts_active": true

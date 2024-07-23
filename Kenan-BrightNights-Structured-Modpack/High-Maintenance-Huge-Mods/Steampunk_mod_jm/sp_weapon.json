@@ -17,7 +17,7 @@
     "color": "dark_gray",
     "ammo": [ "flintlock", "44paper" ],
     "range": 11,
-    "ranged_damage": { "damage_type": "bullet", "amount": -6 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 6 },
     "dispersion": 160,
     "durability": 6,
     "min_cycle_recoil": 1350,
@@ -51,7 +51,7 @@
     "color": "brown",
     "ammo": [ "flintlock", "44paper" ],
     "range": 13,
-    "ranged_damage": { "damage_type": "bullet", "amount": -7 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 7 },
     "dispersion": 280,
     "durability": 6,
     "blackpowder_tolerance": 96,
@@ -85,7 +85,7 @@
     "color": "brown",
     "ammo": [ "flintlock", "44paper" ],
     "range": 6,
-    "ranged_damage": { "damage_type": "bullet", "amount": -8, "armor_penetration": 3 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 8, "armor_penetration": 3 },
     "dispersion": 280,
     "durability": 6,
     "blackpowder_tolerance": 96,
@@ -200,7 +200,8 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "magazines": [
       [ "battery", [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ] ]
-    ]
+    ],
+    "magazine_well": "250 ml"
   },
   {
     "id": "sp_pyro_gun",
@@ -221,7 +222,7 @@
     "ammo": [ "flintlock", "44paper" ],
     "range": 11,
     "clip_size": 3,
-    "ranged_damage": { "damage_type": "bullet", "amount": -13, "armor_penetration": 4 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 15, "armor_penetration": 9 },
     "dispersion": 150,
     "durability": 7,
     "loudness": 15,
@@ -255,7 +256,7 @@
     "durability": 10,
     "blackpowder_tolerance": 85,
     "clip_size": 5,
-    "ranged_damage": { "damage_type": "bullet", "amount": 3, "armor_penetration": 10 },
+    "ranged_damage": { "damage_type": "bullet", "amount": 5, "armor_penetration": 10 },
     "flags": [ "RELOAD_ONE" ],
     "valid_mod_locations": [
       [ "accessories", 2 ],
@@ -287,7 +288,15 @@
     "bashing": 9,
     "to_hit": 2,
     "charges_per_use": 20,
-    "use_action": "TAZER",
+    "use_action": {
+      "menu_text": "Activate",
+      "type": "transform",
+      "target": "sp_shocking_staff_on",
+      "msg": "Staff starts to crackle with energy provided by current!",
+      "need_charges": 20,
+      "need_charges_msg": "The staff remains the same. It needs more energy to function.",
+      "active": true
+    },
     "flags": [ "BELT_CLIP", "REACH_ATTACK" ],
     "magazines": [
       [
@@ -329,6 +338,20 @@
       "target": "sp_shocking_staff_off",
       "msg": "Current disappears from the staff."
     },
+    "magazines": [
+      [
+        "battery",
+        [
+          "light_battery_cell",
+          "light_minus_battery_cell",
+          "light_plus_battery_cell",
+          "light_minus_atomic_battery_cell",
+          "light_atomic_battery_cell",
+          "light_minus_disposable_cell",
+          "light_disposable_cell"
+        ]
+      ]
+    ],
     "magazine_well": "250 ml"
   },
   {
@@ -399,7 +422,8 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "magazines": [
       [ "battery", [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ] ]
-    ]
+    ],
+    "magazine_well": "250 ml"
   },
   {
     "id": "spchar_gun",
@@ -434,7 +458,8 @@
     "flags": [ "NEVER_JAMS", "NON_FOULING", "NEEDS_NO_LUBE", "FIRE_20" ],
     "magazines": [
       [ "battery", [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ] ]
-    ]
+    ],
+    "magazine_well": "250 ml"
   },
   {
     "type": "GENERIC",
