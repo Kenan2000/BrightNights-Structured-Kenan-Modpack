@@ -1,4 +1,4 @@
-[ 
+[
   {
     "//": "Readding obsoleted survivor helmets ONLY for the proper use of `looks_like`",
     "id": "helmet_survivor",
@@ -211,7 +211,7 @@
     "id": "BL9_ammo_pouch",
     "type": "ARMOR",
     "name": { "str": "BL9 ammo pouch", "str_pl": "BL9 ammo pouches" },
-    "description": "A small BL9 pouch that can be used to store most types of small, medium size ammunition including BL9 ammunition, rockets, however, will not fit.  Activate to store ammunition.",
+    "description": "A small BL9 pouch that can be used to store most types of small, medium size ammunition including most of BL9 ammunition, rockets, however, will not fit.  Activate to store ammunition.",
     "weight": "500 g",
     "rigid": false,
     "volume": "500 ml",
@@ -298,12 +298,6 @@
         "556BL9_type",
         "556BL9mk2_type",
         "556BL9mk3_type",
-        "BL9spray_type",
-        "BL9meltingspray_type",
-        "BL9spraymk2_type",
-        "BL9meltingspraymk2_type",
-        "BL9spraymk3_type",
-        "BL9meltingspraymk3_type",
         "railBL9_type",
         "railBL9mk2_type",
         "railBL9mk3_type",
@@ -438,7 +432,7 @@
     "id": "BL9_ammo_pouch_leg",
     "type": "ARMOR",
     "name": { "str": "BL9 leg ammo pouch", "str_pl": "BL9 leg ammo pouches" },
-    "description": "A small BL9 pouch wrapped around the leg that can be used to store most types of small, medium size ammunition including BL9 ammunition, rockets, however, will not fit.  Activate to store ammunition.",
+    "description": "A small BL9 pouch wrapped around the leg that can be used to store most types of small, medium size ammunition including most of BL9 ammunition, rockets, however, will not fit.  Activate to store ammunition.",
     "weight": "248 g",
     "rigid": false,
     "volume": "250 ml",
@@ -525,12 +519,6 @@
         "556BL9_type",
         "556BL9mk2_type",
         "556BL9mk3_type",
-        "BL9spray_type",
-        "BL9meltingspray_type",
-        "BL9spraymk2_type",
-        "BL9meltingspraymk2_type",
-        "BL9spraymk3_type",
-        "BL9meltingspraymk3_type",
         "railBL9_type",
         "railBL9mk2_type",
         "railBL9mk3_type",
@@ -1110,5 +1098,3 @@
     "flags": [ "VARSIZE", "FIT", "STURDY", "WATERPROOF", "RAINPROOF", "OUTER" ]
   }
 ]
-
-
