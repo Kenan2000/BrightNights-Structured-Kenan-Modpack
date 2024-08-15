@@ -1,0 +1,26 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [ "UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockRealXotto", "MSX++DEAD_PEOPLE", "MSXotto+" ],
+    "tiles-new": [
+      {
+        "file": "anti_fungal_gears_normal.png",
+        "tiles": [
+          { "id": "223_fungicidal", "fg": 1 },
+          { "id": "308_fungicidal", "fg": 2 },
+          { "id": "50_fungicidal", "fg": 3 },
+          { "id": "fungicidal_bomb", "fg": 4 },
+          { "id": "overlay_wielded_fungicidal_bomb", "fg": 5 },
+          { "id": "fungicidal_bomb_act", "fg": 6 },
+          { "id": "overlay_wielded_fungicidal_bomb_act", "fg": 7 },
+          { "id": "40mm_fungicidal", "fg": 8 }
+        ],
+        "//": "range 1 to 512",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  }
+]
