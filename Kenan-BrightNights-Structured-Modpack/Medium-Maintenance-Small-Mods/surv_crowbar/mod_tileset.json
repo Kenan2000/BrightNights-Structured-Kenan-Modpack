@@ -1,0 +1,26 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE",
+      "MShockRealXotto",
+      "MSX++DEAD_PEOPLE",
+      "MSXotto+"
+    ],
+    "tiles-new": [
+      {
+        "file": "surv_crowbar_normal.png",
+        "tiles": [
+          { "id": "surv_crowbar", "fg": 1 },
+          { "id": "overlay_wielded_surv_crowbar", "fg": 2 }
+          ],
+        "//": "range 1 to 2",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0
+      }
+    ]
+  }
+]
