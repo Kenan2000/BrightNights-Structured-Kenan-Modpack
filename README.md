@@ -1,5 +1,5 @@
 # BrightNights-Structured-Kenan-Modpack
-Kenan's **personal** structured modpack (**IMPORTANT TO SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 for PROPER GAMEPLAY EXPERIENCE, READ Modpack INSTALLATION Guide, try to NOT enable ALL mods at the same time unless you really want to play with all of mods**) for **LATEST** Cataclysm - Bright Nights versions by Coolthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
+Not updated anymore. If you want to play with it, you have to fix it yourself, preferably, via making a fork of it if you don't mind. Kenan's **personal** structured modpack (**IMPORTANT TO SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 for PROPER GAMEPLAY EXPERIENCE, READ Modpack INSTALLATION Guide, try to NOT enable ALL mods at the same time unless you really want to play with all of mods**) for **LATEST** Cataclysm - Bright Nights versions by Coolthulhu: https://github.com/cataclysmbnteam/Cataclysm-BN/ 
 
 **original modpack creator is Chromosome Kun! - thanks to his help, all of this work exists** 
 
@@ -46,8 +46,8 @@ Example commit of mod erasure: [603464b7d4ee27430b84f3625cc4644f4510fb53](https:
 Legendary **UndeadPeople** tileset by SomeDeadGuy, while Theawesomeboophis is it's current maintainer: https://github.com/Theawesomeboophis/UndeadPeopleTileset
 
 # Links to other cool stuff
-1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack)
-2. Updated and even more awesome Otopack soundpack maintained by me: https://github.com/Kenan2000/Otopack-Mods-Updates
+1. My HUGE and AWESOME **BL9** mod: https://github.com/Kenan2000/BL9 (included in this modpack for Bright Nights version)
+2. Updated and even more awesome my personal version of Otopack soundpack: https://github.com/Kenan2000/Otopack-Mods-Updates
 3. CO.AG MusicPack Redux: https://discourse.cataclysmdda.org/t/musicpack-co-ag-musicpack-redux-11-dec-2019/18992
 
 ## Link to my CDDA/Bright Nights modding server 
